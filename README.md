@@ -8,7 +8,9 @@ Implementation of research software involves numerous challenges; a rigorous sta
 
 
 ## Folder structure
-.
+
+
+```md
 ├── data
 │   ├── raw                 # Unprocessed data, as obtained.
 │   ├── processed           # Cleaned and processed data ready for analysis.
@@ -36,3 +38,4 @@ Implementation of research software involves numerous challenges; a rigorous sta
 ├── README.md               # Project overview and usage instructions.
 ├── requirements.txt        # The dependencies file for reproducing the analysis environment.
 └── setup.py                # Makes project pip installable (pip install -e .) so src can be imported.
+```
