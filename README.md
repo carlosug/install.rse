@@ -1,5 +1,5 @@
 # install.rse
-Repository on the paper "detecting installation instructions" for MSR 2025
+Repository that holds the code used for the paper *"detecting installation instructions"* at IEEE MSR 2025
 
 **tl;dr**:
 
@@ -38,4 +38,20 @@ Implementation of research software involves numerous challenges; a rigorous sta
 ├── README.md               # Project overview and usage instructions.
 ├── requirements.txt        # The dependencies file for reproducing the analysis environment.
 └── setup.py                # Makes project pip installable (pip install -e .) so src can be imported.
+```
+
+## Analysis
+The analysis described in our paper should be replicated with `.py` files and jupyter notebook `.ipynb`
+
+## Citation
+
+If you use our provided data or results, please cite our paper:
+
+```
+@article{carlosug,
+  title={},
+  author={Carlos Utrilla Guerrero, Oscar Corcho and Daniel Garijo},
+  journal={arXiv preprint arXiv:XXX.XXX},
+  year={2024}
+}
 ```
