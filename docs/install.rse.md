@@ -86,6 +86,24 @@ List of articles, papers and notes about research software documentation. We see
 | [Karimzadeh et al](https://academic.oup.com/bib/article/19/4/693/2907814?login=false)  | 2018  |   |   |   |
 
 
+### Related Work
+
+Brief Scoping Literature Review - Paper to include - Criteria:
+
+- On conferences MSR and or ICSE
+- Terms “README” and/or “installation instructions”
+- Information databases:
+       + ACM Digital Library (DONE)
+       + IEEE Xplore 
+       + Google scholar
+
+1. ACM: [Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=dl&EpubDate=%5B20190703+TO+20240703%5D&AllField=Fulltext%3A%28readme%29+OR+Fulltext%3A%28installation+instructions%29+OR+Fulltext%3A%28research+software%29)
+MSR (results:268) ("query": { Fulltext:(readme) OR Fulltext:(installation instructions) OR Fulltext:(research software) }
+"filter": { Conference Collections: MSR: Mining Software Repositories, E-Publication Date: Past 5 years, ACM Content: DL })
+
+
+
+
 | Title                                                              | Conf year | What is about:                                                                                                                                               | Strategy                                                      | Relevant for us in: |
 |--------------------------------------------------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|---------------------|
 | [Software ingredients: detection of Third-party Component reuse in JAVA](https://sel.ist.osaka-u.ac.jp/lab-db/betuzuri/archive/1038/1038.pdf) | MSR 2016  | Analysis of reuse activity detection of software reuse define a method to detect multiple third-party components in jar file                                   | query                                                         |                     |
