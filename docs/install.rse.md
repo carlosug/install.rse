@@ -10,9 +10,9 @@ List of articles, papers and notes about research software documentation. We see
 
 **- RQ2: What is the practice of documenting research software?**
 
-### Education
+<!-- ### Education
 - [eScience Center](https://esciencecenter-digital-skills.github.io/2024-10-22-ds-cr/)
-- [Code Refinery](https://coderefinery.org/lessons/)
+- [Code Refinery](https://coderefinery.org/lessons/) -->
 
 
 ### High level guidelines
@@ -34,7 +34,7 @@ List of articles, papers and notes about research software documentation. We see
 - Making Biomedical Research Software FAIR: Step by step guidelines
     * [https://www.nature.com/articles/s41597-023-02463-x](https://www.nature.com/articles/s41597-023-02463-x)
 
-### Domain specific community used software descriptors:
+### Domain specific communities developing research software descriptors:
 - **Research Sofware community community:**
     1. [CodeMeta Project](https://codemeta.github.io/index.html):
         - `buildInstructions` property
@@ -48,6 +48,9 @@ List of articles, papers and notes about research software documentation. We see
     3. Computational biology: [Ten simple rules for making research software more robust](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005412):
         - Rule 2 - > provide compilation or installation instructions
         - Rule 6 - > Rely on build tools and package managers for installation
+    4. [PHA4GE Proposed Standards for Public Health Bioinformatics Software](https://pha4ge.org/resource/proposed-standards-for-public-health-bioinformatics-software/):
+        - *Providing clear local installation and/or remote access instructions for public health bioinformatics*
+        - *Installation instructions should include a step-by-step list*
 
 - **Documenting research software in engineering science:**
     1. Examined existing recommendations: [https://www.nature.com/articles/s41598-022-10376-9](https://www.nature.com/articles/s41598-022-10376-9)
@@ -61,8 +64,6 @@ List of articles, papers and notes about research software documentation. We see
 - [4TUResearchData](https://data.4tu.nl/s/documents/Guidelines_for_creating_a_README_file.pdf)
 - [Template for FAIR readme](https://github.com/manuGil/fair-code?tab=readme-ov-file)
 - [How-to guidelines of Divio Cloud](https://docs.divio.com/documentation-system/how-to-guides/)
-
-### Installation (Software includes qualified references to how to install the artefact)
 - [Makeareadme.com](https://www.makeareadme.com/#installation-1)
 - [Installation and Usage](https://awegroup.github.io/developer-guide/docs/documentation.html#installation-and-usage)
 - [GovUSA](https://github.com/18F/open-source-guide/blob/18f-pages/pages/making-readmes-readable.md#instructions-for-how-to-develop-use-and-test-the-code)
@@ -70,7 +71,16 @@ List of articles, papers and notes about research software documentation. We see
 
 ### Coding standards and conventions on README
 - [GNU Coding starndards](https://www.gnu.org/prep/standards/standards.html) - Install command categories [https://www.gnu.org/prep/standards/standards.html#Install-Command-Categories](https://www.gnu.org/prep/standards/standards.html#Install-Command-Categories)
+- [PEP-8 Python]()
+...
 
+### Articles focused in installation methods and instructions:
+- [Taxonomy of Installation Instruction Changes]()
+- [Open Source Software Development Tool Installation-Challenges and Strategies For Novice Developers]()
+
+
+
+### Installation method mentioned in the recommendations
 
 |Article   | Year  | Sections   | Installation methods   |   |
 |---|---|---|---|---|
@@ -84,9 +94,15 @@ List of articles, papers and notes about research software documentation. We see
 | [Gil et al](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2015EA000136)  | 2016  |   |   |   |
 | [Morgan et al](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005412)  | 2016  |   |   |   |
 | [Karimzadeh et al](https://academic.oup.com/bib/article/19/4/693/2907814?login=false)  | 2018  |   |   |   |
+| [Barker et al](https://www.nature.com/articles/s41597-022-01710-x)  | 2022  |   |   |   |
+| [Lamprecht et al](https://content.iospress.com/articles/data-science/ds190026)  | 2022  |   |   |   |
+| [Fabien et al](https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2017.00069/full)  | 2018  |   |   |   |
+| [Connolly et al](https://hdsr.mitpress.mit.edu/pub/f0f7h5cu/release/2)  | 2023  |   |   |   |
+| [Patel et al](https://www.nature.com/articles/s41597-023-02463-x)  | 2023  |   |   |   |
+| [Jean-Quartier et al](https://link.springer.com/article/10.1007/s41060-024-00617-7)  | 2023  |   |   |   |
 
 
-### Related Work
+### Empirical Studies on Software Documentation
 
 Brief Scoping Literature Review - Paper to include - Criteria:
 
@@ -140,4 +156,5 @@ MSR (results:268) ("query": { Fulltext:(readme) OR Fulltext:(installation instru
 | [Model-based test complexity analysis for software installation testing](https://ecommons.luc.edu/cgi/viewcontent.cgi?referer=&httpsredir=1&article=1036&context=cs_facpubs#page=660) | 2008 SEKE | Test complexity analysis for system installation functions - http://www.wikicfp.com/cfp/program?id=2619                                                       | search engine                                                 | Complex measurement |
 | [Measuring Installability](https://www.uni-bamberg.de/fileadmin/pi/Dateien/SOCA13-Installability.pdf)                                             | 2013 SOCA | http://www.wikicfp.com/cfp/program?id=2718                                                                                                                    | search engine                                                 | Complex measurement |
 | A complexity Measure for Textual requirements                        |          | https://www.researchgate.net/publication/312184512_A_Complexity_Measure_for_Textual_Requirements                                                              | search engine                                                 |                     |
-| A complexity Measure for Textual requirements                        |          | https://www.researchgate.net/publication/312184512_A_Complexity_Measure_for_Textual_Requirements                                                              | search engine                                                 |                     |
+| [Categorizing the Content of GitHub README File](https://arxiv.org/abs/1802.06997)                        |          | https://www.researchgate.net/publication/312184512_A_Complexity_Measure_for_Textual_Requirements                                                              | search engine                                                 |                     |
+| [A large-scale analysis of bioinformatics code on GitHub](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205898)                        |          | https://www.researchgate.net/publication/312184512_A_Complexity_Measure_for_Textual_Requirements                                                              | search engine                                                 |                     |
