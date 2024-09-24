@@ -82,25 +82,35 @@ List of articles, papers and notes about research software documentation. We see
 
 ### Installation method mentioned in the recommendations
 
-|Article   | Year  | Sections   | Installation methods   |   |
-|---|---|---|---|---|
-| [Stodden and Miguez](https://openresearchsoftware.metajnl.com/articles/10.5334/jors.ay)  | 2014   |   |   |   |
-| [Fehr and Heiland](http://www.aimspress.com/article/10.3934/Math.2016.3.261)  | 2016   |   |   |   |
-| [Wilson et al](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745)  | 2014   |   |   |   |
-| [Wilson et al](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)  | 2017  |   |   |   |
-| [Hastings et al](https://academic.oup.com/gigascience/article/3/1/2047-217X-3-31/2682967)  | 2014  |   |   |   |
-| [Sandve et al](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)  | 2013  |   |   |   |
-| [Lee et al](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006561)  | 2013  |   |   |   |
-| [Gil et al](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2015EA000136)  | 2016  |   |   |   |
-| [Morgan et al](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005412)  | 2016  |   |   |   |
-| [Karimzadeh et al](https://academic.oup.com/bib/article/19/4/693/2907814?login=false)  | 2018  |   |   |   |
-| [Barker et al](https://www.nature.com/articles/s41597-022-01710-x)  | 2022  |   |   |   |
-| [Lamprecht et al](https://content.iospress.com/articles/data-science/ds190026)  | 2022  |   |   |   |
-| [Fabien et al](https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2017.00069/full)  | 2018  |   |   |   |
-| [Connolly et al](https://hdsr.mitpress.mit.edu/pub/f0f7h5cu/release/2)  | 2023  |   |   |   |
-| [Patel et al](https://www.nature.com/articles/s41597-023-02463-x)  | 2023  |   |   |   |
-| [Jean-Quartier et al](https://link.springer.com/article/10.1007/s41060-024-00617-7)  | 2023  |   |   |   |
+**Table: Summary of previous articles about research software and relevant installation methods/types**
 
+|Article   | Year  | Field   |  Scope  | Installation methods  | Summary of findings|
+|---|---|---|---|---|---|
+| [Stodden and Miguez](https://openresearchsoftware.metajnl.com/articles/10.5334/jors.ay)  | 2014   |   |   |   | |
+| [Fehr and Heiland](http://www.aimspress.com/article/10.3934/Math.2016.3.261)  | 2016   |   |   |   ||
+| [Wilson et al](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745)  | 2014   |   |   |   ||
+| [Wilson et al](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)  | 2017  |   |   |   ||
+| [Hastings et al](https://academic.oup.com/gigascience/article/3/1/2047-217X-3-31/2682967)  | 2014  |   |   |   ||
+| [Sandve et al](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285)  | 2013  |   |   |   ||
+| [Lee et al](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006561)  | 2013  |   |   |   ||
+| [Gil et al](https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2015EA000136)  | 2016  |   |   |   ||
+| [Morgan et al](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005412)  | 2016  |   |   |   ||
+| [Karimzadeh et al](https://academic.oup.com/bib/article/19/4/693/2907814?login=false)  | 2018  |   |   |   ||
+| [Barker et al](https://www.nature.com/articles/s41597-022-01710-x)  | 2022  |   |   |   ||
+| [Lamprecht et al](https://content.iospress.com/articles/data-science/ds190026)  | 2022  |   |   |   ||
+| [Fabien et al](https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2017.00069/full)  | 2018  |   |   |   ||
+| [Connolly et al](https://hdsr.mitpress.mit.edu/pub/f0f7h5cu/release/2)  | 2023  | Software Engineering   | Accessibility of the tools might differ from project scope e.g., solo or community-based software   |   |Engineering practices that promote 3R software in academia|
+| [Patel et al](https://www.nature.com/articles/s41597-023-02463-x)  | 2023  |   |   |   ||
+| [Jean-Quartier et al](https://link.springer.com/article/10.1007/s41060-024-00617-7)  | 2023  |   |   |   ||
+| [Russell et al](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205898)  | 2018  | bioinformatic  | software and tools  |  - |Usability refers to ease and transparency of installation and usage.|
+| [Gao et al](http://arxiv.org/abs/2312.03250))  | 2024  | software engineer  | updates in readmes about installation  |  Source Code Operations, installation alternatives such as Docker, Published Package Operations |installation-related instructions updates and taxonomy of installation major categories of changes in READMEs.|
+| [Aghajani et al.,](https://doi.org/10.1145/3377811.3380405)  | 2019  | software engineer  | issues on documentation in general  |   |installation-related instructions updates and taxonomy of installation major categories of changes in READMEs.|
+| [Aghajani et al.,](https://doi.org/10.1145/3377811.3380405)  | 2018  | software engineer  | documentation issues taxonomy: about correctness and completeness in docs  |   |inappropriate installation instructions.|
+| [Treude et al.,](https://arxiv.org/abs/2007.10744)  | 2020  | software engineer  | Accuracy of software documentation  |   |inappropriate installation instructions.|
+| [Treude et al.,](https://arxiv.org/abs/2007.10744)  | 2020  | software engineer  | large-scale empirical study of code-comment inconsistencies, identifying the taxonomy of inconsistencies fixed by developers  |   |inappropriate installation instructions.|
+| [Mangul et al.,](https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.3000333&type=printable)  | 2019  | computational biology  | instabillity test  |   |Tools available in well-maintained package managers such as Bioconda were always installable, whereas tools not shipped via package managers were prone to problems|
+| [Jimenez et al.,](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5490478/)  | 2017  | guidelines, best practices, recommendations  | ELIXIR  |   |Four simple recommendations to encourage best practices in research software|
+| [Andreas Prlić et al.,](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002802)  | 2012  | Ten Simple Rules for the Open Development of Scientific Software  | -  |   |Rule 5: Be simple, employ standard package - open-source packaging communities|
 
 ### Empirical Studies on Software Documentation
 
