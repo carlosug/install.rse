@@ -35,7 +35,7 @@ List of articles, papers and notes about research software documentation. We see
     * [https://www.nature.com/articles/s41597-023-02463-x](https://www.nature.com/articles/s41597-023-02463-x)
 
 ### Domain specific communities developing research software descriptors:
-- **Research Sofware community community:**
+- **Research Sofware community:**
     1. [CodeMeta Project](https://codemeta.github.io/index.html):
         - `buildInstructions` property
     2. [FAIR4RS WG RDA](https://www.rd-alliance.org/groups/fair-research-software-fair4rs-wg/)
