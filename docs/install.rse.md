@@ -5,8 +5,6 @@ List of articles, papers and notes about research software documentation. We see
 **- RQ1: What are the recommendations for documenting installation methods of research software?**
 
         * Which rules and best practices exist? Do the given recommendations cover the defined categories?;
-        * Which rules and best practices exist? Do the given recommendations cover the defined categories?
-        * Which rules and best practices exist? Do the given recommendations cover the defined categories?
 
 **- RQ2: What is the practice of documenting research software?**
 
