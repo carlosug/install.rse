@@ -32,6 +32,11 @@ List of articles, papers and notes about research software documentation. We see
 - Making Biomedical Research Software FAIR: Step by step guidelines
     * [https://www.nature.com/articles/s41597-023-02463-x](https://www.nature.com/articles/s41597-023-02463-x)
 
+
+**TODO:**
+- [https://www.bestpractices.dev/en](https://www.bestpractices.dev/en)
+- [https://zenodo.org/records/10723608](https://zenodo.org/records/10723608) - check installability
+
 ### Domain specific communities developing research software descriptors:
 - **Research Sofware community:**
     1. [CodeMeta Project](https://codemeta.github.io/index.html):
