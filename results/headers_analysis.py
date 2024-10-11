@@ -13,7 +13,7 @@ nltk.download('stopwords')
 nltk.download('punkt')
 
 # Load the dataset
-file_path = './repo_manual_annotation.csv'  # Replace with your actual dataset path
+file_path = 'data/golden/repo_manual_annotation.csv'  # Dataset for the golden annotations
 data = pd.read_csv(file_path)
 
 # Convert 'Star' column to numeric, removing commas
@@ -80,7 +80,7 @@ sns.heatmap(heatmap_data, annot=False, cmap="YlGnBu", cbar=True)
 plt.title('Heatmap of Most Common Words in Headers')
 plt.xlabel('Headers')
 plt.ylabel('Words')
-plt.savefig('headers_heatmap.png', bbox_inches='tight')
+plt.savefig('visualisations/golden/headers_heatmap.png', bbox_inches='tight')
 plt.show()
 
 # Plot the heatmap for bi-grams
@@ -89,7 +89,7 @@ sns.heatmap(bigram_heatmap_data, annot=False, cmap="YlGnBu", cbar=True)
 plt.title('Heatmap of Most Common Bi-grams in Headers')
 plt.xlabel('Headers')
 plt.ylabel('Bi-grams')
-plt.savefig('bigrams_heatmap.png', bbox_inches='tight')
+plt.savefig('visualisations/golden/bigrams_heatmap.png', bbox_inches='tight')
 plt.show()
 
 # Plot the heatmap for tri-grams
@@ -98,7 +98,7 @@ sns.heatmap(trigram_heatmap_data, annot=False, cmap="YlGnBu", cbar=True)
 plt.title('Heatmap of Most Common Tri-grams in Headers')
 plt.xlabel('Headers')
 plt.ylabel('Tri-grams')
-plt.savefig('trigrams_heatmap.png', bbox_inches='tight')
+plt.savefig('visualisations/golden/trigrams_heatmap.png', bbox_inches='tight')
 plt.show()
 
 # Output the most common word for each header

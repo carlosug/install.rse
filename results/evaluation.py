@@ -1,8 +1,11 @@
+"""script for descriptive analysis of annotated repositories with golden data (out sample from bidir.txt dataset)
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the dataset
-file_path = './repo_manual_annotation.csv'  # Replace with your actual dataset path
+file_path = 'data/golden/repo_manual_annotation.csv'  # Dataset for the golden annotations
 data = pd.read_csv(file_path)
 
 # Convert 'Star' column to numeric, removing commas
@@ -36,7 +39,7 @@ plt.ylabel('Percentage (%)')
 plt.xticks(rotation=0)
 plt.ylim(0, 100)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
-installation_proportion_path = 'installation_proportion_figure.png'  # Save path for the figure
+installation_proportion_path = 'visualisations/golden/installation_proportion_figure.png'  # Save path for the figure
 plt.savefig(installation_proportion_path, bbox_inches='tight')
 plt.close()
 
@@ -49,7 +52,7 @@ plt.ylabel('Frequency')
 plt.xticks(rotation=45)
 plt.ylim(0, method_type_frequencies.max() + 1)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
-method_types_distribution_path = 'method_type_distribution.png'  # Save path for the figure
+method_types_distribution_path = 'visualisations/golden/method_type_distribution.png'  # Save path for the figure
 plt.savefig(method_types_distribution_path, bbox_inches='tight')
 plt.close()
 
@@ -66,7 +69,7 @@ plt.xlabel('Number of Installation Methods')
 plt.ylabel('Number of Repositories')
 plt.xticks(rotation=0)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
-installation_method_count_path = 'installation_method_count_distribution.png'  # Save path for the figure
+installation_method_count_path = 'visualisations/golden/installation_method_count_distribution.png'  # Save path for the figure
 plt.savefig(installation_method_count_path, bbox_inches='tight')
 plt.close()
 
@@ -87,7 +90,7 @@ plt.ylabel('Number of Installation Methods')
 plt.grid(True, linestyle='--', alpha=0.7)
 
 # Save the scatter plot
-scatter_plot_path = 'scatter_Star_vs_methods.png'  # Save path for the figure
+scatter_plot_path = 'visualisations/golden/scatter_star_vs_methods.png'  # Save path for the figure
 plt.savefig(scatter_plot_path, bbox_inches='tight')
 plt.close()
 
