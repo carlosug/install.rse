@@ -39,7 +39,7 @@ plt.ylabel('Percentage (%)')
 plt.xticks(rotation=0)
 plt.ylim(0, 100)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
-installation_proportion_path = 'visualisations/golden/installation_proportion_figure.png'  # Save path for the figure
+installation_proportion_path = 'visualisations/RQ2/installation_proportion_figure.png'  # Save path for the figure
 plt.savefig(installation_proportion_path, bbox_inches='tight')
 plt.close()
 
@@ -52,7 +52,7 @@ plt.ylabel('Frequency')
 plt.xticks(rotation=45)
 plt.ylim(0, method_type_frequencies.max() + 1)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
-method_types_distribution_path = 'visualisations/golden/method_type_distribution.png'  # Save path for the figure
+method_types_distribution_path = 'visualisations/RQ2/method_type_distribution.png'  # Save path for the figure
 plt.savefig(method_types_distribution_path, bbox_inches='tight')
 plt.close()
 
@@ -69,7 +69,7 @@ plt.xlabel('Number of Installation Methods')
 plt.ylabel('Number of Repositories')
 plt.xticks(rotation=0)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
-installation_method_count_path = 'visualisations/golden/installation_method_count_distribution.png'  # Save path for the figure
+installation_method_count_path = 'visualisations/RQ2/installation_method_count_distribution.png'  # Save path for the figure
 plt.savefig(installation_method_count_path, bbox_inches='tight')
 plt.close()
 
@@ -90,7 +90,7 @@ plt.ylabel('Number of Installation Methods')
 plt.grid(True, linestyle='--', alpha=0.7)
 
 # Save the scatter plot
-scatter_plot_path = 'visualisations/golden/scatter_star_vs_methods.png'  # Save path for the figure
+scatter_plot_path = 'visualisations/RQ2/scatter_star_vs_methods.png'  # Save path for the figure
 plt.savefig(scatter_plot_path, bbox_inches='tight')
 plt.close()
 
