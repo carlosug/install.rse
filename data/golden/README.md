@@ -11,7 +11,7 @@ The dataset was manually annotated to investigate how researchers report install
 1. Check whether installation-related information appears in the readme
 2. Annotate headers
 3. If headers contain information to detect a method e.g., `## With Pip`, then annotate method type `Package_manager`
-4. If headers does not contain information to detect a method, check the text under the header and verify its method (**very often researchers use headers for `## Installation` and add text and code commands ```pip install .```**)
+4. If headers does not contain information to detect a method, check the text under the header and verify its method (*very often researchers use headers for `## Installation` and add text and code commands ```pip install .```*)
 
 ## Variable Descriptions
 
