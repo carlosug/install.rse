@@ -1,0 +1,242 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:04:48"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/AutoQML/Whitepaper-Framework-Selection",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "AutoQML",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-07-25T13:13:04Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-10-06T14:19:57Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "This repository contains additional material for the whitepaper about the AutoML framework selection process in the AutoQML project",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Quantum Computing (QC) is becoming an increasingly promising technology for\nmodern computation, especially in the field of data driven approaches like simulation\nand machine learning. With the high momentum of research and development of\nnew hard- and software, QC holds a big promise in redefining many state-of-the-art\ncomputation approaches today. \nOn the other hand, the nowadays well-established field of machine learning (ML)\nfaces challenges like the discrepancy of demand by industry and availability of ML\nexperts, reproducibility, and efficiency in prototyping. To overcome some of these\nissues, several frameworks have been created for automating the process of pipeline\nconstruction, data preprocessing, model training and hyperparameter optimization\n(HPO), many of them open source. In most cases, these Automated Machine Learn-\ning (AutoML) frameworks implement a fixed subset of known approaches and al-\ngorithms, or encapsulate an established ML backend, that defines the available\nalgorithms. \nThis work describes the selection approach and analysis of existing AutoML frameworks regarding their capability of a) incorporating Quantum Machine Learning (QML) algorithms into this automated solving approach of the AutoML framing and b) solving a set of industrial use-cases with different ML problem types by benchmarking their most important characteristics. For that, available open-source tools are condensed into a market overview and suitable frameworks are ystematically selected on a multi-phase, multi-criteria approach. This is done by considering software selection approaches (*Middendorf et al.*), as well as in terms of the technical perspective of AutoML (*Hutter et al.*, *Z\u00f6ller et al.*). \nThe requirements for the framework selection are divided into hard and soft criteria regarding their software and ML attributes. Additionally, a classification of AutoML frameworks is made into high- and low-level types, inspired by the findings of (*Z\u00f6ller et al.*). Finally, we select Ray and AutoGluon as the suitable low- and high-level frameworks respectively, as they fulfil all requirements sufficiently and received the best evaluation feedback during the use-case study. \nBased on those findings, we build an extended Automated Quantum Machine Learning (AutoQML) framework with QC-specific pipeline steps and decision characteristics for hardware and software constraints.\n \n",
+                "original_header": "Abstract"
+            },
+            "confidence": 0.941132321614052,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/autoqml/whitepaper-framework-selection/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Whitepaper-Framework-Selection",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "AutoQML/Whitepaper-Framework-Selection",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/AutoQML/Whitepaper-Framework-Selection/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/AutoQML/Whitepaper-Framework-Selection/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/autoqml/whitepaper-framework-selection/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/autoqml/whitepaper-framework-selection/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "This work was created in the context of the AutoQML project, funded by the Federal Ministry\nfor Economic Affairs and Climate Action of Germany. \\\nThe project website can be found at [this URL](https://www.autoqml.ai/en).\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgement",
+                "parent_header": [
+                    "*Whitepaper* Bringing Quantum Algorithms to Automated Machine Learning"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/autoqml/whitepaper-framework-selection/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Whitepaper Bringing Quantum Algorithms to Automated Machine Learning"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/autoqml/whitepaper-framework-selection/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/autoqml/whitepaper-framework-selection/main/doc/AutoQML.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/autoqml/whitepaper-framework-selection/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/autoqml/whitepaper-framework-selection/main/doc/ml-pipeline-framework.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/autoqml/whitepaper-framework-selection/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2310.04238](https://arxiv.org/abs/2310.04238"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/autoqml/whitepaper-framework-selection/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2310.04238"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/autoqml/whitepaper-framework-selection/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/ [https://arxiv.org/abs/2310.04238](https://arxiv.org/abs/2310.04238)\n\n#### Acknowledgement\nThis work was created in the context of the AutoQML project, funded by the Federal Ministry\nfor Economic Affairs and Climate Action of Germany. \\\nThe project website can be found at [this URL](https://www.autoqml.ai/en).\n\n\n### This repo contains\n- The [Whitepaper](Bringing_Quantum_Algorithms_to_Automated_Machine_Learning.pdf) itself\n- The [AutoML framework candidate list](doc/AutoML-Framework-Overview.xlsx) with the decision features and rankings\n- The [interview questionnaire](doc/Interviews/Questionnair_Framework-Use-Case-Study.pdf) for the use-case study (made with MS Forms)\n- The [interview results](doc/Interviews/) in an excel list (in German)\n\n<img src=\"doc/ml-pipeline-framework.png\" alt=\"ML Pipeline\" width=\"800\"/>\n\n### Abstract\n\nQuantum Computing (QC) is becoming an increasingly promising technology for\nmodern computation, especially in the field of data driven approaches like simulation\nand machine learning. With the high momentum of research and development of\nnew hard- and software, QC holds a big promise in redefining many state-of-the-art\ncomputation approaches today.\n\nOn the other hand, the nowadays well-established field of machine learning (ML)\nfaces challenges like the discrepancy of demand by industry and availability of ML\nexperts, reproducibility, and efficiency in prototyping. To overcome some of these\nissues, several frameworks have been created for automating the process of pipeline\nconstruction, data preprocessing, model training and hyperparameter optimization\n(HPO), many of them open source. In most cases, these Automated Machine Learn-\ning (AutoML) frameworks implement a fixed subset of known approaches and al-\ngorithms, or encapsulate an established ML backend, that defines the available\nalgorithms.\n\nThis work describes the selection approach and analysis of existing AutoML frameworks regarding their capability of a) incorporating Quantum Machine Learning (QML) algorithms into this automated solving approach of the AutoML framing and b) solving a set of industrial use-cases with different ML problem types by benchmarking their most important characteristics. For that, available open-source tools are condensed into a market overview and suitable frameworks are ystematically selected on a multi-phase, multi-criteria approach. This is done by considering software selection approaches (*Middendorf et al.*), as well as in terms of the technical perspective of AutoML (*Hutter et al.*, *Z\u00f6ller et al.*).\n\nThe requirements for the framework selection are divided into hard and soft criteria regarding their software and ML attributes. Additionally, a classification of AutoML frameworks is made into high- and low-level types, inspired by the findings of (*Z\u00f6ller et al.*). Finally, we select Ray and AutoGluon as the suitable low- and high-level frameworks respectively, as they fulfil all requirements sufficiently and received the best evaluation feedback during the use-case study.\n\nBased on those findings, we build an extended Automated Quantum Machine Learning (AutoQML) framework with QC-specific pipeline steps and decision characteristics for hardware and software constraints."
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/autoqml/whitepaper-framework-selection/main/README.md"
+        }
+    ]
+}

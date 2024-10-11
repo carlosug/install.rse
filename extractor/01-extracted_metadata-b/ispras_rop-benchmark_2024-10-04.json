@@ -1,0 +1,589 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:02:44"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ispras/rop-benchmark",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ispras",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-10-14T11:00:08Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-20T19:13:18Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "ROP Benchmark is a tool to compare ROP compilers",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains tests for benchmarking ROP compilers. ROP Benchmark is\nintended to compare ROP compilers. ROP Benchmark was used to evaluate\nexisting open source tools in \"Survey of Methods for Automated Code-Reuse\nExploit Generation\" paper \n\\[[english](https://arxiv.org/abs/2011.07862)\\]\n\\[[russian](https://www.ispras.ru/preprints/docs/prep_32_2019.pdf)\\].\n \n",
+                "original_header": "ROP Benchmark"
+            },
+            "confidence": 0.9652323393422129,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The benchmark provides target binaries for ROP compilers. These binaries supply\ntwo things: exploitable vulnerability and a set of ROP gadgets. A set of ROP\ngadgets can be of two different types: synthetically created or just taken from\nreal life binaries. To use both of them we created the simple vulnerable program\n`vul.c` which reads an input file into the buffer placed on the stack (without\nboundary checking, of course). Then we compiled this program and inserted each\ntarget binary as code section inside a separate ELF file. So we get exploitable\nvulnerability and target binary code all together in one address space.\n \n",
+                "original_header": "Target binaries"
+            },
+            "confidence": 0.9928554575368745,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "In synthetic tests, a trick is used to get rid off extra gadgets emitted by C\nruntime. We want a tool to construct chains only from gadgets written in nasm\nsource files. Two custom linker scripts were created to achieve this. Using\nthem a linker creates two binaries `.gdt64` and `.vuln64` inside\n`binaries/x86/synthetic/vuln` directory. The first one is used only for a chain\ncreation, whereas the second one is used only for checking generated chains.\nBoth files contain two executable segments: one contains code from `vul.c`\nand C runtime, the another contains only sections with actual code of gadgets\nnamed `.gadgets.text`. The only difference between `.gdt64` and `.vuln64` files\nis the first segment flags. File `.gdt64` has only read permissions that have\nto restrict tools taking gadgets from them. So you should name section with\ngadgets in `nasm` files as `.gadgets.text`.\n \n",
+                "original_header": "Synthetic test suite"
+            },
+            "confidence": 0.9384993586879106,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "There are many tools to automatically create ROP chains. Supporting all of\nthem is not a easy task; so we pick these ones as most popular and easier to\nsupport. \n",
+                "original_header": "Supported tools"
+            },
+            "confidence": 0.9782515065280608,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "rop-benchmark",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ispras/rop-benchmark",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ispras/rop-benchmark/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ispras/rop-benchmark/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 38,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "benchmark, payload, return-oriented-programming, rop, rop-chain, rop-compilers, rop-gadgets, security",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 6,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/ispras/rop-benchmark/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 40714
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "TeX",
+                "name": "TeX",
+                "type": "Programming_language",
+                "size": 4641
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 4470
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 2921
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 2835
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 554
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/bash.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/docker/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/docker/Dockerfile"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "    binutils gcc gcc-multilib nasm make docker\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites",
+                "parent_header": [
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "value": "    $ sudo apt install build-essential nasm gcc-multilib\n    $ sudo snap install docker\n",
+                "type": "Text_excerpt",
+                "original_header": "Ubuntu 18.04",
+                "parent_header": [
+                    "Installation",
+                    "Prerequisites"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "    $ sudo apt install build-essential nasm gcc-multilib\n    $ sudo snap install docker\n",
+                "type": "Text_excerpt",
+                "original_header": "Ubuntu 18.04",
+                "parent_header": [
+                    "Installation",
+                    "Prerequisites"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "    $ sudo ./bash.sh\n \n",
+                "original_header": "Bash to Docker"
+            },
+            "confidence": 0.9973889305585478,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "    $ ./run.sh -s \n",
+                "original_header": "Synthetic test suite"
+            },
+            "confidence": 0.9578381369739282,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Real life binaries are placed in `binaries/x86/reallife/orig`. It contains several\nset of binaries from different Linux distributions: \nIt is just almost all ELF files (both binaries and shared libraries) of default\ninstallation. \n    $ ./run.sh -r openbsd-62 \n",
+                "original_header": "Real life binaries test suite"
+            },
+            "confidence": 0.9763673614607508,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "    $ ./run.sh -t ropper\n \n",
+                "original_header": "Supported tools"
+            },
+            "confidence": 0.9578381369739282,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "    === Tool 'angrop' === Exp. type 'execve'\n    1:rop-benchmark:angrop:binaries/x86/reallife/vuln/centos-7.1810/ld.bfd.bin - INFO - OK\n    2:rop-benchmark:angrop:binaries/x86/reallife/vuln/centos-7.1810/ld.gold.bin - CRITICAL - FAIL TIMEOUT\n    3:rop-benchmark:angrop:binaries/x86/reallife/vuln/centos-7.1810/libBrokenLocale-2.17.so.bin - ERROR - Compilation ERROR with 1 (angrop)\n    4:rop-benchmark:angrop:binaries/x86/reallife/vuln/centos-7.1810/libasound.so.2.0.0.bin - CRITICAL - FAIL HIJACK\n    --- Test suite --- binaries/x86/reallife/vuln/centos-7.1810 : 53 / 649 (passed/all) \n1. `ERROR` - tool didn't generate a ROP chain.\n2. `FAIL TIMEOUT` (TL) -  tool exceeds the time limit (300 s as default).\n3. `FAIL HIJACK` (F) - tool generated a ROP chain but it didn't run `/bin/sh`.\n4. `OK` - tool generated a ROP chain and it ran `/bin/sh`.\n \n",
+                "original_header": "Benchmark results"
+            },
+            "confidence": 0.9937090218454763,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "At least one OK means at least one tool produced OK. \n",
+                "original_header": "Evaluation"
+            },
+            "confidence": 0.9582441462322191,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "ROP Benchmark is supposed to run in docker container. It provides configured\nenvironment with all tools installed and `/bin/sh` replaced by script reporting\nsuccess status of ROP chain execution.\n\nDockerfile is placed inside `docker` folder. To build docker image:\n\n    $ cd docker\n    $ sudo docker build -t rop-benchmark .\n",
+                "type": "Text_excerpt",
+                "original_header": "Running environment",
+                "parent_header": [
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Entry point to run benchmark is `run.sh` script.\n\n    $ ./run.sh --help\n\n\t\tusage: run.py [-h] [-s] [-t TOOL] [-r REAL_LIFE] [-n CORES] [-a ARCH] [-c]\n\t\t              [-g] [-b BINARY] [--timeout TIMEOUT] [--clean]\n\t\t\n\t\tRop-benchmark entry point. By default it runs all tests.\n\t\t\n\t\toptional arguments:\n\t\t  -h, --help            show this help message and exit\n\t\t  -s, --synthetic       Run only synthetic test-suite\n\t\t  -t TOOL, --tool TOOL  Run only tool\n\t\t  -r REAL_LIFE, --real-life REAL_LIFE\n\t\t                        Run only specified real life binary test-suite.\n\t\t  -n CORES, --cores CORES\n\t\t                        The number of parallel instances to run.\n\t\t  -a ARCH, --arch ARCH  The target architecture of framework.\n\t\t  -c, --check-only      Only check chains generated previously\n\t\t  -g, --generate-only   Only generate chains. Do not try to run and check\n\t\t                        them.\n\t\t  -b BINARY, --binary BINARY\n\t\t                        Run particular binary e.g. openbsd-62/ac.bin\n\t\t  -d BADCHARS, --badchars BADCHARS\n\t\t\t\t\tBytes banned for use as part of chain\n\t\t  --timeout TIMEOUT     The timeout in seconds for each binary\n\t\t  --clean               Clean rop-benchmark working tree from any artifacts of\n\t\t                        previous runs\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "If you want to contribute then you may:\n\n1. Support new ROP chain generating tool.\n2. Add new type of payload: memory write, direct call of linked function,\n   indirect call of linked function, something with bad characters.\n3. Add more synthetic tests (any kind of jop call ending gadgets also).\n4. Add more real life tests.\n5. Support Windows.\n6. Support x86 32-bit tests.\n",
+                "type": "Text_excerpt",
+                "original_header": "How to Contribute"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "value": "New payload type can be supported by adding new job runners inside every tool\ndirectory `job_{exploit_type}.py`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Add new payload type",
+                "parent_header": [
+                    "How to Contribute"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To add a new synthetic test one may just write new .nasm64 file in\n`binaries/x86/synthetic/source` and then compile them:\n\n    $ cd binaries/x86/synthetic\n    $ make\n",
+                "type": "Text_excerpt",
+                "original_header": "Add more synthetic tests",
+                "parent_header": [
+                    "How to Contribute"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To add a new test suite of real life binaries one may create directory under\n`binaries/x86/reallife/orig` and place original binaries there. Then compile them to\ntarget test programs with vulnerabilities:\n\n    $ cd binaries/x86/reallife/\n    $ make\n",
+                "type": "Text_excerpt",
+                "original_header": "Add more real life binaries",
+                "parent_header": [
+                    "How to Contribute"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "Everything related to a particular tool should be placed under folder with\ncorresponding name. This directory should contain job runners for every\nsupported payload type with names `job_{payload_type}.py`:\n\n```python\nfrom roptest import get_class_name\njob_class = get_class_name()\nclass ExecveToolNameJob(job_class):\n    def __init__(self):\n        super().__init__()\n        self.rop_tool = \"ToolName\"\n    def run_rop_tool(self):\n        # Implement here commands to run tool\n        ...\nExecveToolNameJob().run()\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Support new tool",
+                "parent_header": [
+                    "How to Contribute"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To support windows you should implement platform specific functions in\n`roptest/windows_job.py` and create environment suitable for testing\nworkability of exploits like docker container on Linux.\n",
+                "type": "Text_excerpt",
+                "original_header": "Support Windows",
+                "parent_header": [
+                    "How to Contribute"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "Vishnyakov, A.V. and Nurmukhametov, A.R., 2021. Survey of Methods for Automated Code-Reuse Exploit Generation. Programming and Computer Software 47(4), pp. 271-297. DOI: [10.1134/S0361768821040071](https://doi.org/10.1134/S0361768821040071)\n\n    @article{vishnyakov21,\n      title = {Survey of Methods for Automated Code-Reuse Exploit Generation},\n      author = {Vishnyakov, A.~V. and Nurmukhametov, A.~R.},\n      journal = {Programming and Computer Software},\n      volume = {47},\n      number = {4},\n      pages = {271--297},\n      year = {2021},\n      doi = {10.1134/S0361768821040071},\n    }\n\nNurmukhametov, A., Vishnyakov, A., Logunova V., Kurmangaleev Sh. MAJORCA: Multi-Architecture JOP and ROP Chain Assembler. 2021 Ivannikov ISPRAS Open Conference (ISPRAS), IEEE, 2021, pp. 37-46. DOI: [10.1109/ISPRAS53967.2021.00011](https://doi.org/10.1109/ISPRAS53967.2021.00011)\n\n    @inproceedings{nurmukhametov21,\n      title = {{{MAJORCA}}: Multi-Architecture JOP and ROP Chain Assembler},\n      author = {Nurmukhametov, Alexey and Vishnyakov, Alexey and Logunova, Vlada and\n                Kurmangaleev, Shamil},\n      booktitle = {2021 Ivannikov ISPRAS Open Conference (ISPRAS)},\n      pages = {37--46},\n      year = {2021},\n      publisher = {IEEE},\n      doi = {10.1109/ISPRAS53967.2021.00011},\n    }\n",
+                "type": "Text_excerpt",
+                "original_header": "Cite us"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{vishnyakov21,\n    doi = {10.1134/S0361768821040071},\n    year = {2021},\n    pages = {271--297},\n    number = {4},\n    volume = {47},\n    journal = {Programming and Computer Software},\n    author = {Vishnyakov, A.~V. and Nurmukhametov, A.~R.},\n    title = {Survey of Methods for Automated Code-Reuse Exploit Generation},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1134/S0361768821040071",
+                "title": "Survey of Methods for Automated Code-Reuse Exploit Generation",
+                "author": "Vishnyakov, A.~V. and Nurmukhametov, A.~R."
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{nurmukhametov21,\n    doi = {10.1109/ISPRAS53967.2021.00011},\n    publisher = {IEEE},\n    year = {2021},\n    pages = {37--46},\n    booktitle = {2021 Ivannikov ISPRAS Open Conference (ISPRAS)},\n    author = {Nurmukhametov, Alexey and Vishnyakov, Alexey and Logunova, Vlada and\nKurmangaleev, Shamil},\n    title = {{{MAJORCA}}: Multi-Architecture JOP and ROP Chain Assembler},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/ISPRAS53967.2021.00011",
+                "title": "{{MAJORCA}}: Multi-Architecture JOP and ROP Chain Assembler",
+                "author": "Nurmukhametov, Alexey and Vishnyakov, Alexey and Logunova, Vlada and\nKurmangaleev, Shamil"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "ROP Benchmark"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/results.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/majorca.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2011.07862"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2111.05781"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ispras/rop-benchmark/master/README.md"
+        }
+    ]
+}

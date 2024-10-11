@@ -1,0 +1,1079 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 21:37:26"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ASSERT-KTH/royal-chaos",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ASSERT-KTH",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-02-06T10:29:27Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-03T19:35:31Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2018 GluckZhang\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Chaos engineering systems invented at KTH Royal Institute of Technology. http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-320638",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "TripleAgent is a system for fault injection for Java applications. The unique feature of this system is to combine automated monitoring and automated perturbation injection. It outputs concrete hints to improve the resilience against unhandled exceptions. \n",
+                "original_header": "TripleAgent"
+            },
+            "confidence": 0.9184599850344327,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We seek to attain a simplified illustration about chaos engineering applied on a simulated Netflix environment in ns-3 with the intention to provide some enlightenment for the principles of chaos engineering and in addition to this we will also present a suggestion about how to infer an unknown system as a possible application, derived from the knowledges acquired from our chaos journey. \n",
+                "original_header": "Chaos-NS-3"
+            },
+            "confidence": 0.9631929026406245,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "ChaosOrca is a tool for doing Chaos Engineering on containers by perturbing system calls for processes inside containers. Where monitoring/observability is a key part of the system to be able to reason about the given perturbations effect on the container. The system utilises strace built in system call fault injections, as such it can add delays, return error codes, do so intermittenly and more. Metrics recorded are System calls, HTTP, Logs and Performance related ones.  \n",
+                "original_header": "ChaosOrca"
+            },
+            "confidence": 0.9192921479868338,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Phoebe is a fault injection framework for reliability analysis with respect to system call invocation errors. First, Phoebe enables developers to have full observability of system call invocations. Second, Phoebe generates error models that are realistic in the sense that they resemble errors that naturally happen in production. With the generated error models, Phoebe automatically conducts a series of experiments to systematically assess the reliability of applications with respect to system call invocation errors in production. \n",
+                "original_header": "Phoebe"
+            },
+            "confidence": 0.9008871009664131,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "royal-chaos",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ASSERT-KTH/royal-chaos",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/royal-chaos/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/royal-chaos/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 132,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "bytecode, chaos-engineering, exception-handling, fault-injection, jvm, monitoring, resilience",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 27,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/KTH/royal-chaos/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 49240942
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 25976900
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 599097
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 562659
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 365670
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Perl",
+                "name": "Perl",
+                "type": "Programming_language",
+                "size": 302867
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 137537
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 92522
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MATLAB",
+                "name": "MATLAB",
+                "type": "Programming_language",
+                "size": 39069
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 21423
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Click",
+                "name": "Click",
+                "type": "Programming_language",
+                "size": 19348
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 19067
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Gnuplot",
+                "name": "Gnuplot",
+                "type": "Programming_language",
+                "size": 9919
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 8933
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Smarty",
+                "name": "Smarty",
+                "type": "Programming_language",
+                "size": 7402
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "QMake",
+                "name": "QMake",
+                "type": "Programming_language",
+                "size": 6602
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 3281
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Batchfile",
+                "name": "Batchfile",
+                "type": "Programming_language",
+                "size": 3021
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "SWIG",
+                "name": "SWIG",
+                "type": "Programming_language",
+                "size": 543
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/pobs/tools/projects_analyzer/analyze.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/pobs/tools/projects_analyzer/analyze.ipynb"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/pobs/experiments/hawkbit/docker-compose.yml",
+                "type": "Url",
+                "format": "docker_compose"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/pobs/experiments/hawkbit/docker-compose.yml"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/netm/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/netm/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/benchmark/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/benchmark/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/ttorrent-ubuntu/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/ttorrent-ubuntu/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/sysc/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/sysc/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/sysm/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/sysm/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/orc/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/orc/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/tracers/bpftrace/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/tracers/bpftrace/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/tracers/ftrace/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/tracers/ftrace/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/tracers/perf/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/tracers/perf/Dockerfile"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaos-ns-3/ns-3.27/utils/run-examples-with-full-logging.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaos-ns-3/ns-3.27/utils/rescale-pdf.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaos-ns-3/ns-3.27/utils/coverity-report.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaos-ns-3/ns-3.27/examples/stats/wifi-example-db.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaos-ns-3/ns-3.27/doc/doxygen.warnings.report.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaos-ns-3/ns-3.27/doc/ns3_html_theme/get_version.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaos-ns-3/ns-3.27/src/lte/doc/source/figures/convert_workaround.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaos-ns-3/ns-3.27/src/tap-bridge/examples/virtual-network-setup.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaos-ns-3/ns-3.27/src/tap-bridge/examples/virtual-network-teardown.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/phoebe/install_bcc.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/phoebe/visualization/up.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/hello_world.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/demo/4-open-webpage.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/demo/0-start-nginx.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/demo/1-start-prom.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/demo/9-detach-monitoring.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/demo/5-start-perturbation.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/demo/10-containers.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/demo/8-open-webpage.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/demo/6-open-webpage.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/demo/echxute.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/demo/3-container.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/demo/2-attach-monitoring.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/demo/7-stop-perturbation.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/netm/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/benchmark/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/ttorrent-ubuntu/script.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/ttorrent-ubuntu/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/ttorrent-ubuntu/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/ttorrent-ubuntu/cmd.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/ttorrent-ubuntu/stop.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/nginx-hello/hello_replay_loop.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/nginx-hello/hello_replay.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/nginx-hello/exp.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/nginx-hello/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/nginx-hello/stop.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/bookinfo/old_run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/bookinfo/install.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/bookinfo/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/bookinfo/replay-loop.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/bookinfo/stop.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/example-voting-app/replay.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/example-voting-app/record.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/example-voting-app/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/example-voting-app/replay-loop.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/experiments/example-voting-app/stop.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/sysc/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/sysm/trace_command.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/sysm/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/sysm/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/orc/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/orc/misc/install_autocomplete.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/tracers/bpftrace/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/tracers/bpftrace/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/tracers/ftrace/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/tracers/ftrace/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/tracers/perf/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaosorca/tracers/perf/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/tripleagent/agents_controller/hedwig_evaluation_0.7/restart_hedwig.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chore/travis/travis-jdk8.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chore/travis/travis-test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaoseth/install_bcc.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KTH/royal-chaos/master/chaoseth/visualization/up.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Royal Chaos "
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1907.13039"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2006.04444"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1912.06914"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1805.05246"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2111.00221"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/KTH/royal-chaos/master/README.md"
+        }
+    ]
+}

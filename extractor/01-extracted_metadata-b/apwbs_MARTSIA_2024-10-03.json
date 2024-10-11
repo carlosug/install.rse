@@ -1,0 +1,319 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 23:57:29"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/apwbs/MARTSIA",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "apwbs",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-09-28T10:45:05Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-07-15T11:10:39Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 apwbs\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/LICENSE"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "MARTSIA",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "apwbs/MARTSIA",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/apwbs/MARTSIA/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/apwbs/MARTSIA/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/apwbs/MARTSIA/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Finally, we provide a demo of MARTSIA. The repository with the MARTSIA-demo paper and its corresponding code, video and Wiki is available at\n[MARTSIA-demo](https://github.com/apwbs/MARTSIA-demo).\n",
+                "type": "Text_excerpt",
+                "original_header": "Demo",
+                "parent_header": [
+                    "MARTSIA: Multi-Authority Approach to Transaction Systems for Interoperating Applications"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Along with the MARTSIA demo, you can find a video presentation of its usage:\n[MARTSIA demo video](https://www.youtube.com/watch?v=RAcifWw1_B0)\n",
+                "type": "Text_excerpt",
+                "original_header": "Demo - Video presentation",
+                "parent_header": [
+                    "MARTSIA: Multi-Authority Approach to Transaction Systems for Interoperating Applications",
+                    "Demo"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you liked our approach, are using it as a building block of your tool or are considering it for your related work,\nfeel free and welcome to cite our manuscript!\nPlease find the BibTeX below for convenience:\n```\n@InProceedings{   Marangone.etal/EDOC2023:MARTSIA,\n  author        = {Marangone, Edoardo and Di Ciccio, Claudio and Friolo,\n                  Daniele and Nemmi, Eugenio Nerio and Venturi, Daniele and\n                  Weber, Ingo},\n  booktitle     = {EDOC},\n  title         = {{MARTSIA}: Enabling Data Confidentiality for\n                  Blockchain-based Process Execution},\n  year          = {2023},\n  pages         = {58--76},\n  series        = {Lecture Notes in Computer Science},\n  crossref      = {EDOC2023},\n  doi           = {10.1007/978-3-031-46587-1_4}\n}\n@Proceedings{     EDOC2023,\n  title         = {Enterprise Design, Operations, and Computing - 27th\n                  International Conference, {EDOC} 2023, Groningen, The\n                  Netherlands, October 30 - November 3, 2023, Proceedings},\n  year          = {2024},\n  editor        = {Henderik A. Proper and Luise Pufahl and Dimka\n                  Karastoyanova and van Sinderen, Marten and Jo{\\~{a}}o L. R.\n                  Moreira},\n  isbn          = {978-3-031-46586-4},\n  publisher     = {Springer},\n  series        = {Lecture Notes in Computer Science},\n  volume        = {14367}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "MARTSIA: Multi-Authority Approach to Transaction Systems for Interoperating Applications"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{Marangone.etal/EDOC2023:MARTSIA,\n    doi = {10.1007/978-3-031-46587-1_4},\n    crossref = {EDOC2023},\n    series = {Lecture Notes in Computer Science},\n    pages = {58--76},\n    year = {2023},\n    title = {{MARTSIA}: Enabling Data Confidentiality for\nBlockchain-based Process Execution},\n    booktitle = {EDOC},\n    author = {Marangone, Edoardo and Di Ciccio, Claudio and Friolo,\nDaniele and Nemmi, Eugenio Nerio and Venturi, Daniele and\nWeber, Ingo},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1007/978-3-031-46587-1_4",
+                "title": "{MARTSIA}: Enabling Data Confidentiality for\nBlockchain-based Process Execution",
+                "author": "Marangone, Edoardo and Di Ciccio, Claudio and Friolo,\nDaniele and Nemmi, Eugenio Nerio and Venturi, Daniele and\nWeber, Ingo"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@proceedings{EDOC2023,\n    volume = {14367},\n    series = {Lecture Notes in Computer Science},\n    publisher = {Springer},\n    isbn = {978-3-031-46586-4},\n    editor = {Henderik A. Proper and Luise Pufahl and Dimka\nKarastoyanova and van Sinderen, Marten and Jo{\\~{a}}o L. R.\nMoreira},\n    year = {2024},\n    title = {Enterprise Design, Operations, and Computing - 27th\nInternational Conference, {EDOC} 2023, Groningen, The\nNetherlands, October 30 - November 3, 2023, Proceedings},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Enterprise Design, Operations, and Computing - 27th\nInternational Conference, {EDOC} 2023, Groningen, The\nNetherlands, October 30 - November 3, 2023, Proceedings"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is the master and principal GitHub repo of the Multi-Authority Approach to Transaction Systems for Interoperating \nApplications (MARTSIA) project. From here, you will be redirected to all the available repositories.\nThe MARTSIA approach is presented in two papers. The first one is \n\u201c[MARTSIA: Enabling Data Confidentiality for Blockchain-based Process \nExecution](https://arxiv.org/abs/2303.17977)\u201d accepted at \n[EDOC 2023](https://www.rug.nl/research/bernoulli/conf/?lang=en) and published with DOI [10.1007/978-3-031-46587-1_4](https://doi.org/10.1007/978-3-031-46587-1_4). \nPlease find the presented slides on [SlideShare](https://www.slideshare.net/EdoardoMarangone/martsia-enabling-data-confidentiality-for-blockchainbased-process-execution).\nAn extended version of the paper is available on arXiv: \n\u201c[Enabling Data Confidentiality with Public Blockchains](https://arxiv.org/abs/2308.03791)\u201d.\n \n",
+                "original_header": "MARTSIA: Multi-Authority Approach to Transaction Systems for Interoperating Applications"
+            },
+            "confidence": 0.931342284051869,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "MARTSIA's smart contracts are implemented in\n[Ethereum](https://github.com/apwbs/MARTSIA-Ethereum)\nand\n[Algorand](https://github.com/apwbs/MARTSIA-Algorand).\nThe folder named `caterpillar-interaction` in the\n[MARTSIA-Ethereum](https://github.com/apwbs/MARTSIA-Ethereum) repository \ncontains an integrated porting of\n[Caterpillar](https://github.com/orlenyslp/Caterpillar)\nwith MARTSIA (please read our [paper](https://arxiv.org/abs/2303.17977) for more information). \n",
+                "original_header": "Client-server key exchange"
+            },
+            "confidence": 0.9715473701300485,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We have also designed an alternative scheme for the exchange\nthat uses the blockchain itself as a backbone.\nPlease find it implemented in\n[Ethereum](https://github.com/apwbs/MARTSIA-Ethereum-KoB)\nand [Algorand](https://github.com/apwbs/MARTSIA-Algorand-KoB).\n \n",
+                "original_header": "Blockchain-based key exchange"
+            },
+            "confidence": 0.9360542434129572,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Furthermore, we provide alternative versions of the smart contracts\nrequiring multiple signatures to enable operations.\nAgain, the code is available for both the\n[Ethereum](https://github.com/apwbs/MARTSIA-Ethereum-CSC) and\n[Algorand](https://github.com/apwbs/MARTSIA-Algorand-CSC) platforms.\n \n",
+                "original_header": "Multi-signature smart contracts"
+            },
+            "confidence": 0.9755261374961698,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "MARTSIA: Multi-Authority Approach to Transaction Systems for Interoperating Applications"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2303.17977"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2308.03791"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/ \n\u201c[Enabling Data Confidentiality with Public Blockchains](https://arxiv.org/abs/2308.03791)\u201d.\n\n## Client-server key exchange\n\nMARTSIA's smart contracts are implemented in\n[Ethereum](https://github.com/apwbs/MARTSIA-Ethereum)\nand\n[Algorand](https://github.com/apwbs/MARTSIA-Algorand).\nThe folder named `caterpillar-interaction` in the\n[MARTSIA-Ethereum](https://github.com/apwbs/MARTSIA-Ethereum) repository \ncontains an integrated porting of\n[Caterpillar](https://github.com/orlenyslp/Caterpillar)\nwith MARTSIA (please read our [paper](https://arxiv.org/abs/2303.17977) for more information).\n\nThe versions above resort to a\nSecure Sockets Layer (SSL) client-server connection\nto exchange decryption keys.\n\n## Blockchain-based key exchange\nWe have also designed an alternative scheme for the exchange\nthat uses the blockchain itself as a backbone.\nPlease find it implemented in\n[Ethereum](https://github.com/apwbs/MARTSIA-Ethereum-KoB)\nand [Algorand](https://github.com/apwbs/MARTSIA-Algorand-KoB).\n\n## Multi-signature smart contracts\n\nFurthermore, we provide alternative versions of the smart contracts\nrequiring multiple signatures to enable operations.\nAgain, the code is available for both the\n[Ethereum](https://github.com/apwbs/MARTSIA-Ethereum-CSC) and\n[Algorand](https://github.com/apwbs/MARTSIA-Algorand-CSC) platforms.\n\n## Demo\nFinally, we provide a demo of MARTSIA. The repository with the MARTSIA-demo paper and its corresponding code, video and Wiki is available at\n[MARTSIA-demo](https://github.com/apwbs/MARTSIA-demo).\n\n### Demo - Video presentation\nAlong with the MARTSIA demo, you can find a video presentation of its usage:\n[MARTSIA demo video](https://www.youtube.com/watch?v=RAcifWw1_B0)\n\n## Citation\nIf you liked our approach, are using it as a building block of your tool or are considering it for your related work,\nfeel free and welcome to cite our manuscript!\nPlease find the BibTeX below for convenience:\n```\n@InProceedings{   Marangone.etal/EDOC2023:MARTSIA,\n  author        = {Marangone, Edoardo and Di Ciccio, Claudio and Friolo,\n                  Daniele and Nemmi, Eugenio Nerio and Venturi, Daniele and\n                  Weber, Ingo"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/apwbs/MARTSIA/main/README.md"
+        }
+    ]
+}

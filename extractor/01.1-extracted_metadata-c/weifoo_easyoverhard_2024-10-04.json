@@ -1,0 +1,264 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 18:49:35"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/WeiFoo/EasyOverHard",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "WeiFoo",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2017-03-22T16:18:52Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-17T12:33:47Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2017 Wei Fu\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/weifoo/easyoverhard/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "a case study on deep learning where tuning simple SVM is much faster  and better than CNN",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "This repo is the source code of  [Easy over Hard: A Case Study on Deep learning](https://arxiv.org/abs/1703.00133),\n which is to replicate and comment on the results of\n Bowen Xu et al. [Predicting Semantically Linkable Knowledge in Developer\n  Online Forums\n via Convolutional Neural Network.](http://dl.acm.org/citation.cfm?id=2970357) ASE'16.\n \nThe main idea is, by using some simple technique, like parameter tuning by \nDE, the traditional machine learning method, like SVM, could \ncompete with deep learning method for some SE tasks in terms of \nperformance scores, while with quite few computing resources and time cost\n(10 minutes vs. 14 hours in this case). We offer these results as a cautionary \ntale to the software analytics community and suggest that not every new innovation\n should be applied without critical analysis.\n  If researchers deploy some new and expensive process, that work should be \n  baselined against some simpler and faster alternatives.\n  ",
+                "type": "Text_excerpt",
+                "original_header": "Introduction"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/weifoo/easyoverhard/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "EasyOverHard",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "WeiFoo/EasyOverHard",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/WeiFoo/EasyOverHard/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/WeiFoo/EasyOverHard/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 9,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "deep-learning, parameter-tuning, software-analysis",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/weifoo/easyoverhard/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 25262
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/weifoo/easyoverhard/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "```\n@inproceedings{fu2017easy,\n author = {Fu, Wei and Menzies, Tim},\n title = {Easy over Hard: A Case Study on Deep Learning},\n booktitle = {Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering},\n series = {ESEC/FSE 2017},\n year = {2017},\n location = {Paderborn, Germany},\n pages = {49--60},\n numpages = {12},\n publisher = {ACM},\n} \n```\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Reference"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/weifoo/easyoverhard/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{fu2017easy,\n    publisher = {ACM},\n    numpages = {12},\n    pages = {49--60},\n    location = {Paderborn, Germany},\n    year = {2017},\n    series = {ESEC/FSE 2017},\n    booktitle = {Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering},\n    title = {Easy over Hard: A Case Study on Deep Learning},\n    author = {Fu, Wei and Menzies, Tim},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Easy over Hard: A Case Study on Deep Learning",
+                "author": "Fu, Wei and Menzies, Tim"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/weifoo/easyoverhard/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "__NOTE: only tested on Linux(ubuntu 16.04) and Mac(10.12), sorry for Windows users.__\n\nIf you don't want to mess up your local pacakges, please install dependencies\naccording to ```requirement.txt``` manually.\n\nOr simply run the following command in your terminal\n\n```\nsudo pip install -r requirements.txt\n\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Setup"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/weifoo/easyoverhard/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "* ```pytohn experiment.py```\n\n*  Note that, for each word2vec model, we did a 10-fold cross evaluation for parameter tuning, which also means we evaluate the testing data 10 times using each model. \n\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "10 word2vec models",
+                "parent_header": [
+                    "Run"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/weifoo/easyoverhard/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/weifoo/easyoverhard/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1703.00133"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/weifoo/easyoverhard/master/README.md"
+        }
+    ]
+}

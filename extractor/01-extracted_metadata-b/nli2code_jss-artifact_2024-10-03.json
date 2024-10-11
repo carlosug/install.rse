@@ -1,0 +1,262 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:34:58"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/nli2code/jss-artifact",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "nli2code",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-10-22T16:15:20Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-10-03T11:57:31Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "This is the artifacts for jss submission",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Implementation for paper `From API to NLI: A New Interface for Library Reuse` , which is published in Journal of Systems and Software (JSS), vol.169. \n",
+                "original_header": "jss-nli2code-artifact"
+            },
+            "confidence": 0.9654294227283607,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nli2code/jss-artifact/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\n**NLI2Code** is an abstract framework promoted in the paper which is designed to help developers reuse existing libraries.\nWe instantiate the framework and this repository contains source code, developed tools and user study materials mentioned in the paper.\n \n"
+            },
+            "confidence": 0.9873716343902579,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nli2code/jss-artifact/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "jss-artifact",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "nli2code/jss-artifact",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/nli2code/jss-artifact/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/nli2code/jss-artifact/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/nli2code/jss-artifact/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 3006783
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 23438
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nli2code/jss-artifact/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "We conducted a user study with 8 developers on 5 programming tasks on Apache-POI. To experience the user study, you could download:\n\n1. `user_study/PoiUserStudy.zip`, this zip file can be imported using Jetbrains IntelliJ Idea.\n2. `user_study/Survey.pdf` is the survey file after the user study.\n\nNotice you need to install a plugin named `EduTools` and at least have `JDK1.8` to reproduce our user study.\n\nHere is a [reference](https://www.jetbrains.com/help/education/install-edutools-plugin.html) about `EduTools` of IntelliJ Idea. \n\n",
+                "type": "Text_excerpt",
+                "original_header": "user study",
+                "parent_header": [
+                    "jss-nli2code-artifact"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nli2code/jss-artifact/master/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9493217935412659,
+            "technique": "supervised_classification"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Each directory contains a simple `README.md` file to help you install and execute the demo.\n \n",
+                "original_header": "src"
+            },
+            "confidence": 0.984363694183318,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nli2code/jss-artifact/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1. `tool/mps`: a Jetbrains MPS plugin\n2. `http://nli2code.cn`: a web editor \n",
+                "original_header": "tool"
+            },
+            "confidence": 0.9719369324389628,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nli2code/jss-artifact/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@article{SHEN2020110728,\n    author = {Qi Shen and Shijun Wu and Yanzhen Zou and Zixiao Zhu and Bing Xie},\n    url = {http://www.sciencedirect.com/science/article/pii/S016412122030162X},\n    doi = {https://doi.org/10.1016/j.jss.2020.110728},\n    issn = {0164-1212},\n    year = {2020},\n    pages = {110728},\n    volume = {169},\n    journal = {Journal of Systems and Software},\n    title = {From API to NLI: A new interface for library reuse},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "https://doi.org/10.1016/j.jss.2020.110728",
+                "title": "From API to NLI: A new interface for library reuse",
+                "author": "Qi Shen and Shijun Wu and Yanzhen Zou and Zixiao Zhu and Bing Xie",
+                "url": "http://www.sciencedirect.com/science/article/pii/S016412122030162X"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nli2code/jss-artifact/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "jss-nli2code-artifact"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nli2code/jss-artifact/master/README.md"
+        }
+    ]
+}

@@ -1,0 +1,258 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:40:07"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/JohannesBetz/AutonomousRacing_Literature",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "JohannesBetz",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-11-02T14:22:33Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-06T20:21:51Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021 Johannes Betz\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/johannesbetz/autonomousracing_literature/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Autonomous Literature Overview",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains an .csv and a .bib (LaTeX Bibtex) file that includes all the literature, research papers and publications in the field of autonomous racing. Although the term of autonomous racing can be referred to different applications (e.g. drone racing) we are focusing in this literature overview only on research from the field of autonomous race cars. This list does not claim to be complete, we are happy to receive feedback from the community about missing papers. This list will be updated a few times a year to include new papers that were recently published. \n",
+                "original_header": "Autonomous Racing Literature"
+            },
+            "confidence": 0.9623148138909864,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/johannesbetz/autonomousracing_literature/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We are welcome interested researchers and developers in the field to contribute to this autonomous racing literature overview. People can integrate new papers in this last and/or even extend the list to more categories. \n**Preliminary Remarks and Autonomous Racing Definition:** \\\nAs stated in the paper, the term of autonomous racing can be referred to different applications (e.g. drone racing) but we are focusing in this list only on research in the field of autonomous racing **cars**. These racecars need to have four wheels, can either have a combustion engine or electrical engine as a main power unit, can be real racecars (e.g. Formula 1 car) or small-scale vehicles (e.g. 1:10 scale). In addition, the soft- and hardware that is displayed in this list must have a clear connection to the field of racing. This means that the authors of these papers either used a specific hardware that is acting in a racing environment (e.g. racetrack, adversarial setup), they are using a simulation environment that displays a racecar within an racing environment (e.g. racing game for PC) or their research displays a solution for a racing problem (e.g. driving fast around the racetrack). Although some authors present results and algorithms for high speed autonomous driving on the freeway this work is **not** covered in this survey because neither the aspect of handling the cars at the limit nor the adversarial context is given here sufficiently. \n",
+                "original_header": "Contribution"
+            },
+            "confidence": 0.9579086697262786,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/johannesbetz/autonomousracing_literature/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "AutonomousRacing_Literature",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "JohannesBetz/AutonomousRacing_Literature",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/JohannesBetz/AutonomousRacing_Literature/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/JohannesBetz/AutonomousRacing_Literature/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 93,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "autonomous-car-simulator, autonomous-cars, autonomous-racing, autonomous-vehicles, control, control-systems, deep-learning, end-to-end-machine-learning, machine-learning, motorsports, path-planning, perception, research",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 15,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/johannesbetz/autonomousracing_literature/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "TeX",
+                "name": "TeX",
+                "type": "Programming_language",
+                "size": 110136
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/johannesbetz/autonomousracing_literature/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "The collected research papers in this repository were used to create the paper [\"Autonomous Vehicles on the Edge: A Survey on Autonomous Vehicle Racing\"](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9790832). If you find the information in this repository useful we would be happy if you cite it based on the following definition:\n\n```\n@article{Betz2022_RacingSurvey,\ntitle     = \"Autonomous vehicles on the edge: A survey on autonomous vehicle\n             racing\",\nauthor    = \"Betz, Johannes and Zheng, Hongrui and Liniger, Alexander and\n             Rosolia, Ugo and Karle, Phillip and Behl, Madhur and Krovi,\n             Venkat and Mangharam, Rahul\",\njournal   = \"IEEE Open J. Intell. Transp. Syst.\",\npublisher = \"Institute of Electrical and Electronics Engineers (IEEE)\",\nvolume    =  3,\npages     = \"458--488\",\nyear      =  2022,\ndoi = \"10.1109/ojits.2022.3181510\"\n}\n\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Paper Reference"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/johannesbetz/autonomousracing_literature/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{Betz2022_RacingSurvey,\n    doi = {10.1109/ojits.2022.3181510},\n    year = {2022},\n    pages = {458--488},\n    volume = {3},\n    publisher = {Institute of Electrical and Electronics Engineers (IEEE)},\n    journal = {IEEE Open J. Intell. Transp. Syst.},\n    author = {Betz, Johannes and Zheng, Hongrui and Liniger, Alexander and\nRosolia, Ugo and Karle, Phillip and Behl, Madhur and Krovi,\nVenkat and Mangharam, Rahul},\n    title = {Autonomous vehicles on the edge: A survey on autonomous vehicle\nracing},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/ojits.2022.3181510",
+                "title": "Autonomous vehicles on the edge: A survey on autonomous vehicle\nracing",
+                "author": "Betz, Johannes and Zheng, Hongrui and Liniger, Alexander and\nRosolia, Ugo and Karle, Phillip and Behl, Madhur and Krovi,\nVenkat and Mangharam, Rahul"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/johannesbetz/autonomousracing_literature/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Autonomous Racing Literature"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/johannesbetz/autonomousracing_literature/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/johannesbetz/autonomousracing_literature/main/docs/Title.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/johannesbetz/autonomousracing_literature/main/README.md"
+        }
+    ]
+}

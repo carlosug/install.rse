@@ -1,0 +1,204 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:02:16"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/se2p/artifact-iticse2020",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "se2p",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-04-03T07:36:40Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2020-04-14T06:26:48Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Following licenses apply to our artifact:\n\n./data/\n\n    The data is licensed under CC BY 4.0 (Attribution 4.0 International).\n    https://creativecommons.org/licenses/by/4.0/\n\n./software/\n\n    The software is licensed under GPL 3.0.\n    https://www.gnu.org/licenses/gpl-3.0.txt\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/se2p/artifact-iticse2020/master/LICENSE.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "artifact-iticse2020",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "se2p/artifact-iticse2020",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/se2p/artifact-iticse2020/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/se2p/artifact-iticse2020/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/se2p/artifact-iticse2020/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 1168365
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 5503
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/se2p/artifact-iticse2020/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Artifact for the paper \n\n    \"Common bugs in Scratch Programs\"\n\nby the authors\n\n    Christoph Fr\u00e4drich, Florian Oberm\u00fcller, Nina K\u00f6rber, Ute Heuer and Gordon Fraser.\n\nThis artifact consists of two parts:\n    \n    1) [Software] The software LitterBox, an automated program analysis tool which can \n        find bug patterns in Scratch Programs. It can be found in the \n        folder ./software/. The file ./software/LitterBox/README.md provides \n        more details on how to use this part of the artifact.\n\n    2) [Data] The data and scripts to reproduce the results of\n        our empirical study on the frequency and severity of bug patterns\n        in Scratch Programs.\n        The file ./data/README.md provides more details.\n",
+                "type": "Text_excerpt",
+                "original_header": "Artifact Description"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/se2p/artifact-iticse2020/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Artifact Description"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/se2p/artifact-iticse2020/master/README.md"
+        }
+    ]
+}

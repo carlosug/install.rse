@@ -1,0 +1,179 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:07:44"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/nemo9cby/ICSE2022Rep",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "nemo9cby",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-02-02T23:19:15Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-12-11T15:09:27Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "The replication package for our paper accepted in ICSE 2022 - Towards Training Reproducible Deep Learning Models",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is the replication package for paper submission: Towards Training Reproducible Deep Learning Models.\r\n\r\nThis replication package contains the following parts:\r\n- experiment results/ contains the experimental results for the six open source models\r\n- implementation/ contains the code for training the six open source models\r\n- record-and-replay/ contains the binary format of the record-and-replay tool\r\n- Time.xlsx contains the table for the time overhead comparison\r\n\r\nTo use the record-and-replay tool, in Linux, \r\npoint the absolute location to LD_PRELOAD and start the training process as usual.\r\nCheck the system log: cat /var/log/syslog \r\n\r\n---\r\nFor the semi-formal interview:\r\n\r\nWe worked closely with ~20 practitioners, who are either senior software developers or ML scientists with Ph.D. degrees. Their tasks are to prototype DL models and/or productionalize DL models. We have conducted two separate interviews with them and each round lasted for about 2 hours. During the interview, we presented our survey on the state-of-the-art techniques towards reproducibility and gathered their feedback (reported in Section 2.3).\r\n \n"
+            },
+            "confidence": 0.9858316814223712,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nemo9cby/icse2022rep/main/readme.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "ICSE2022Rep",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "nemo9cby/ICSE2022Rep",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/nemo9cby/ICSE2022Rep/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/nemo9cby/ICSE2022Rep/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/nemo9cby/icse2022rep/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 41998
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nemo9cby/icse2022rep/main/readme.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nemo9cby/icse2022rep/main/readme.md"
+        }
+    ]
+}

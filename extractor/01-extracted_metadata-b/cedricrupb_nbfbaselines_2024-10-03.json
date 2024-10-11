@@ -1,0 +1,329 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:05:46"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/cedricrupb/nbfbaselines",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "cedricrupb",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-06-28T12:21:39Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-07-24T23:07:33Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 Cedric Richter\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/cedricrupb/nbfbaselines/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Neural baselines for finding and fixing single token bugs in Python",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Software bugs can interrupt our workflow and finding them can often be very time-consuming. Especially smaller bugs are often hard to spot since they affect only a few lines of code out of thousands. For example, recognizing that a variable was not renamed after refactoring or that a loop will run in an out-of-bounds error because of the comparison operator is often difficult. \n",
+                "original_header": "NBFBaselines"
+            },
+            "confidence": 0.9360797574706118,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/cedricrupb/nbfbaselines/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "RealiT is a neural bug localization and repair model trained on mutants and real bug fixes obtained from open source Python projects. Due to this combined training RealiT achieves a high performance in the localization and repair of real bugs. RealiT currently support the localization and repair of the four types of single statement bugs discussed before. You can try RealiT yourself by following our quick start guide.\n \n",
+                "original_header": "RealiT: Training on mutants and real bugs"
+            },
+            "confidence": 0.9371970807040102,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/cedricrupb/nbfbaselines/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\nThis project is currently incomplete and mainly designed to showcase `RealiT`. However, we plan to release the full code base including further pre-trained models, training script and evaluation code. \n"
+            },
+            "confidence": 0.9758828014812992,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/cedricrupb/nbfbaselines/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "nbfbaselines",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "cedricrupb/nbfbaselines",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/cedricrupb/nbfbaselines/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/cedricrupb/nbfbaselines/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 8,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "bugs, neural-networks, repair",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/cedricrupb/nbfbaselines/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 92159
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 11742
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/cedricrupb/nbfbaselines/releases/71169037",
+                "tag": "v0.1.0",
+                "name": "Initial release for preprint",
+                "author": {
+                    "name": "cedricrupb",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/cedricrupb/nbfbaselines/tarball/v0.1.0",
+                "zipball_url": "https://api.github.com/repos/cedricrupb/nbfbaselines/zipball/v0.1.0",
+                "html_url": "https://github.com/cedricrupb/nbfbaselines/releases/tag/v0.1.0",
+                "url": "https://api.github.com/repos/cedricrupb/nbfbaselines/releases/71169037",
+                "release_id": 71169037,
+                "date_created": "2022-07-04T05:56:14Z",
+                "date_published": "2022-07-04T05:57:07Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/cedricrupb/nbfbaselines/main/demo.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/cedricrupb/nbfbaselines/main/demo.ipynb"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/cedricrupb/nbfbaselines/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "You can try `RealiT` with only a few lines of code:\n```python\nfrom nbfbaselines import NBFModel\n\nrealit_model = NBFModel.from_pretrained(\"realit\")\n\nrealit_model(\"\"\"\n\ndef f(x, y):\n    return x + x\n\n\"\"\")\n\n# Output:\n# [{'text': 'def f ( x , y ) :\\n    return x + y\\n    ',\n#  'before': 'x', 'after': 'y',\n#  'prob': 0.981337789216316}]\n\n```\n`RealiT` is mostly trained on function implementation written in Python 3. Therefore, it will work best if provided with a complete function implementation. It will likely also work on partial code snippets (e.g. partial function implementation or statement outside of a function).\n\nYou can also test `RealiT` in your browser without cloning this project. For this, open the following [Colab link](https://colab.research.google.com/github/cedricrupb/nbfbaselines/blob/main/demo.ipynb).\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Quick start",
+                "parent_header": [
+                    "RealiT: Training on mutants and real bugs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/cedricrupb/nbfbaselines/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "You can try these models easily yourself:\n```python\nfrom nbfbaselines import NBFModel\n\nnbf_model = NBFModel.from_pretrained([model_id])\n\n```\n \n",
+                "original_header": "Models"
+            },
+            "confidence": 0.964466456244689,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/cedricrupb/nbfbaselines/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{richter2023how,\n    year = {2023},\n    booktitle = {ASE},\n    author = {Cedric Richter, Heike Wehrheim},\n    title = {How to Train Your Neural Bug Detector: Artificial vs Real Bugs},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "How to Train Your Neural Bug Detector: Artificial vs Real Bugs",
+                "author": "Cedric Richter, Heike Wehrheim"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/cedricrupb/nbfbaselines/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "NBFBaselines"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/cedricrupb/nbfbaselines/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://colab.research.google.com/assets/colab-badge.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/cedricrupb/nbfbaselines/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2207.00301"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/cedricrupb/nbfbaselines/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,366 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:39:14"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/prog-autom/hidden-demo",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "prog-autom",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-12-01T14:08:33Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-03-02T10:57:59Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2020-2021 Anton S. Khritankov\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/LICENSE"
+        },
+        {
+            "result": {
+                "value": "The code is licensed under MIT license, see [LICENSE](LICENSE)\n\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "Welcome to the hidden loops demo!"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "hidden-demo",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "prog-autom/hidden-demo",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/prog-autom/hidden-demo/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/prog-autom/hidden-demo/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/prog-autom/hidden-demo/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 14216
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 363
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/run_experiment.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "This repo contains the source code accompanying the paper on hidden loops \nnamed \"Hidden Feedback Loops in Machine Learning Systems: A Simulation Model and Preliminary Results\"\n\nIn this concept paper, we explore some of the aspects of quality of continuous learning artificial\nintelligence systems as they interact with and influence their environment. We study an important problem\nof implicit feedback loops that occurs in recommendation systems, web bulletins and price estimation\nsystems. We demonstrate how feedback loops intervene with user behavior on an exemplary housing\nprices prediction system. Based on a preliminary model, we highlight sufficient existence conditions when\nsuch feedback loops arise and discuss possible solution approaches.\n",
+                "type": "Text_excerpt",
+                "original_header": "Welcome to the hidden loops demo!"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md"
+        },
+        {
+            "result": {
+                "value": "There is a script ``./run_experiment.sh`` that runs the experiment\nfor a grid of parameters, usage from 0.1 to 0.9, adherenec from 0.1 to 0.9 \nand step size 10 or 20.\n\nThe script relies on mldev to run trials for a fixed set of parameters.\n",
+                "type": "Text_excerpt",
+                "original_header": "Complete experiment with mldev",
+                "parent_header": [
+                    "Welcome to the hidden loops demo!"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Source code can be found in ``./src`` folder. The [main.py](./src/main.py) file contains glue code to run experiments.\nThe [experiment.py](./src/experiment.py) contains experiment implementation and utility procedures.\n",
+                "type": "Text_excerpt",
+                "original_header": "Source code",
+                "parent_header": [
+                    "Welcome to the hidden loops demo!"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md"
+        }
+    ],
+    "faq": [
+        {
+            "result": {
+                "value": "We running the experiment as show at the figure below \n\n<img src=\".img/experiment-setup.png\" alt=\"experiment setup\" width=\"700\"/>\n",
+                "type": "Text_excerpt",
+                "original_header": "Problem statement",
+                "parent_header": [
+                    "Welcome to the hidden loops demo!"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "There are two experiments included in this repo.\n\n - single model experiment that demonstrates how housing prices prediction can be solved \n - hidden loops experiment shows the feedback loop effect as dscribed in the paper\n\nIn order to run any experiment, get the repo and install its requirements:\n\n```bash\n$ git clone https://github.com/prog-autom/hidden-demo.git\n$ cd ./hidden-demo && pip install -r requirements.txt\n```\n\nFor single model experiment run\n\n```bash\n$ python ./src/main.py single-model \\\n         --folder ./results/single-model \\\n         --model_params \"{\\\"gbr_model\\\": {\\\"n_estimators\\\": 150, \\\"max_depth\\\": 3, \\\"criterion\\\": \\\"mae\\\", \\\"loss\\\": \\\"huber\\\"}, \\\"ridge_model\\\": {}}\" \\\n         --params \"{\\\"train_size\\\": 0.3}\" \\\n         --random_seed 42 \n```\n\nFor hidden loops you need\n\n```bash\n$ python ./src/main.py hidden-loop \\\n        --folder ./results/hidden-loop \\\n        --model_params \"{\\\"gbr_model\\\": {\\\"n_estimators\\\": 150, \\\"max_depth\\\": 3, \\\"criterion\\\": \\\"mae\\\", \\\"loss\\\": \\\"huber\\\"}, \\\"ridge_model\\\": {}}\" \\\n        --params \"{\\\"adherence\\\": 0.2, \\\"usage\\\": 1.0, \\\"step\\\": 10}\" \\\n        --random_seed 42\n```\nResulting figures will be placed in the corresponding ``./results`` folder. \n\n",
+                "type": "Text_excerpt",
+                "original_header": "How to run",
+                "parent_header": [
+                    "Welcome to the hidden loops demo!"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Running the same experiment with [mldev](https://gitlab.com/mlrep/mldev) involves the following steps.\n\nInstall the ``mldev`` by executing\n\n```bash\n$ git clone https://github.com/prog-autom/hidden-demo.git\n$ curl https://gitlab.com/mlrep/mldev/-/raw/develop/install_mldev.sh -o install_mldev.sh\n$ chmod +x install_mldev.sh\n$ yes n | install_mldev.sh\n``` \nThen initialize the experiment, this will install required dependencies\n\n```bash\n$ mldev --config ./hidden-demo/.mldev/config.yaml init --no-commit -r ./hidden-demo\n```\n\nDetailed description of the experiment can be found in ``./experiment.yml``. See docs for ``mldev`` for details.\n\nAnd now, run the experiment\n\n```bash\n$ cd ./hidden-demo && mldev --config ./hidden-demo/.mldev/config.yaml run --no-commit -f experiment.yml pipeline\n```\n\nResults will be placed into ``./results`` folder as well.\n",
+                "type": "Text_excerpt",
+                "original_header": "How to run with mldev",
+                "parent_header": [
+                    "Welcome to the hidden loops demo!"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you find results useful, please cite the paper and the reproducibility tool as following\n\n```bibtex\n@inproceedings{Khritankov2021Hidden,\n    title = \"Hidden feedback loops in machine learning systems: a simulation model and preliminary results\",\n    author = \"Khritankov, Anton\",\n    booktitle = \"Proceedings of the 13th International Conference, SWQD 2021, Vienna, Austria, January 19\u201321, 2021\",\n    year = \"2021\",\n    pages={54--65},\n    volume = \"404\",\n    series = \"Software Quality: Future Perspectives on Software Engineering Quality\",\n    publisher = \"Springer International Publishing\"\n}\n\n@InProceedings{10.1007/978-3-031-12285-9_1,\n author=\"Khritankov, Anton and Pershin, Nikita and Ukhov, Nikita and Ukhov, Artem\",\n editor=\"Pozanenko, Alexei and Stupnikov, Sergey and Thalheim, Bernhard and Mendez, Eva and Kiselyova, Nadezhda\",\n title=\"MLDev: Data Science Experiment Automation and\u00a0Reproducibility Software\",\n booktitle=\"Data Analytics and Management in Data Intensive Domains\",\n year=\"2022\",\n publisher=\"Springer International Publishing\",\n address=\"Cham\",\n pages=\"3--18\",\n isbn=\"978-3-031-12285-9\"\n}\n\n```\n\nThere is an updated version of the paper at [arXiv:2101.05673](https://arxiv.org/abs/2101.05673)\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing",
+                "parent_header": [
+                    "Welcome to the hidden loops demo!"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{Khritankov2021Hidden,\n    publisher = {Springer International Publishing},\n    series = {Software Quality: Future Perspectives on Software Engineering Quality},\n    volume = {404},\n    pages = {54--65},\n    year = {2021},\n    booktitle = {Proceedings of the 13th International Conference, SWQD 2021, Vienna, Austria, January 19\u201321, 2021},\n    author = {Khritankov, Anton},\n    title = {Hidden feedback loops in machine learning systems: a simulation model and preliminary results},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Hidden feedback loops in machine learning systems: a simulation model and preliminary results",
+                "author": "Khritankov, Anton"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{10.1007/978-3-031-12285-9_1,\n    isbn = {978-3-031-12285-9},\n    pages = {3--18},\n    address = {Cham},\n    publisher = {Springer International Publishing},\n    year = {2022},\n    booktitle = {Data Analytics and Management in Data Intensive Domains},\n    title = {MLDev: Data Science Experiment Automation and\u00a0Reproducibility Software},\n    editor = {Pozanenko, Alexei and Stupnikov, Sergey and Thalheim, Bernhard and Mendez, Eva and Kiselyova, Nadezhda},\n    author = {Khritankov, Anton and Pershin, Nikita and Ukhov, Nikita and Ukhov, Artem},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "MLDev: Data Science Experiment Automation and\u00a0Reproducibility Software",
+                "author": "Khritankov, Anton and Pershin, Nikita and Ukhov, Nikita and Ukhov, Artem"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Welcome to the hidden loops demo!"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/.img/experiment-setup.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2101.05673](https://arxiv.org/abs/2101.05673)\n\n## License\n\nThe code is licensed under MIT license, see [LICENSE](LICENSE)\n\n\n"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2101.05673"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/prog-autom/hidden-demo/master/README.md"
+        }
+    ]
+}

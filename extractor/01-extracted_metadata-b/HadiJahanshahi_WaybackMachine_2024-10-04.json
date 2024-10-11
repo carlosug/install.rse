@@ -1,0 +1,216 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:53:10"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/HadiJahanshahi/WaybackMachine",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "HadiJahanshahi",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-10-26T16:04:19Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2022-03-15T02:43:18Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "This is the repository for the paper \"Wayback Machine: Capturing the evolutionary behaviour of the bug dependency graph in open-source software systems\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "It includes graph operations, e.g., adding or removing arcs and nodes, together with graph-related updates, e.g., updating depth, degree, severity, and priority of the bugs in the BDG.\n \n",
+                "original_header": "bin"
+            },
+            "confidence": 0.9087775823917952,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/HadiJahanshahi/WaybackMachine/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "*  `wayback.py` codes the process of the Wayback machine and its elements. The main variables are\n  *  `keep_track_of_resolved_bugs` which keeps all the info related to the resolved bugs during the testing phase.\n  *  `track_BDG_info` keeps track of the BDG during the life span of the project.\n  *  `verbose` defines how to print the output during the running time, e.g.. `nothing`, `some`, or `all` the information should be printed.\n  It has also some important methods, including\n  * `acceptable_solving_time` which determines the acceptable solving time based on the IQR.\n  * `possible_developers` which finds the list of feasible developers at the end of the training phase.\n  * `fixing_time_calculation` which uses bug info and evolutionary database to calculate fixing time according to the Costriage paper.\n  * `track_and_assign` which assigns the bugs to proper developers and tracks the info of the assigned/fixed bug.\n  * `triage` module to apply triage algorithms. Researchers can manipulate this method and add their own triage algorithms to the Wayback Machine. `DABT` `RABT`, `CosTriage`, `CBR`, `Actual` and `Random` triage are already implemented.\n  * `prioritization` module to apply prioritization algorithms. Researchers can manipulate this method and add their own prioritization algorithms to the wayback machine. `max_priority` `max_severity`, `cost_estimation`, `priority_estimation`, `cost_priority_estimation`, `max_depth_degree`, `Actual` and `Random` prioritization are already implemented. \n",
+                "original_header": "simulator"
+            },
+            "confidence": 0.9375086082463576,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/HadiJahanshahi/WaybackMachine/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "WaybackMachine",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "HadiJahanshahi/WaybackMachine",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/HadiJahanshahi/WaybackMachine/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/HadiJahanshahi/WaybackMachine/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/HadiJahanshahi/WaybackMachine/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 164540
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/HadiJahanshahi/WaybackMachine/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": " * networkx \n * random\n * tqdm\n * time\n * collections\n * statistics\n * numpy\n * pandas\n * datetime\n * os\n * ast\n * json\n * pickle\n * copy\n * matplotlib\n * gensim \n * nltk \n * sklearn \n * tensorflow\n * gurobipy \n * plotly\n\n____________\nThe output of each run will be saved in the output folder automatically. \n\nAny questions? Please do not hesitate to contact me: hadi . jahanshahi [at] ryerson.ca\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites:",
+                "parent_header": [
+                    "Wayback Machine"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/HadiJahanshahi/WaybackMachine/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Wayback Machine"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/HadiJahanshahi/WaybackMachine/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2011.05382.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/HadiJahanshahi/WaybackMachine/main/README.md"
+        }
+    ]
+}

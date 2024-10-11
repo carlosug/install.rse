@@ -1,0 +1,299 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:16:40"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/apcl-research/funcom-useloss",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "apcl-research",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-08-01T19:47:49Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-13T17:43:51Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "funcom-useloss",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "apcl-research/funcom-useloss",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/apcl-research/funcom-useloss/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/apcl-research/funcom-useloss/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/apcl-research/funcom-useloss/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 348918
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 14579
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/apcl-research/funcom-useloss/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 Andrej Karpathy\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/apcl-research/funcom-useloss/main/gpt2/LICENSE"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/apcl-research/funcom-useloss/main/gpt2/transformer_sizing.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/apcl-research/funcom-useloss/main/gpt2/transformer_sizing.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "- Please create a directory named outdir with 3 subdirectories named histories, models, and predictions.\n- Please download the model and config file from our [Hugginface profile](https://huggingface.co/apcl/funcom_useloss/tree/main) and put the files in the config directory to your local directory called histories and put the files in funcom-java-long/funcom-java/funcom-python directory to your local directory called models if you want to finetune models with SIMILE or BLEU.\n- Note that you need to put files in config directory to the same directory as the outdir argument in train.py\n- For setting up your environment, run the following command. We recommend you to use virtual environment.\n\n  ```\n  pip install -r requirements.txt\n  ```\n",
+                "type": "Text_excerpt",
+                "original_header": "Preparation",
+                "parent_header": [
+                    "code for replication of results for paper \"Semantic Similarity Loss for Neural Source Code Summarization\""
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/apcl-research/funcom-useloss/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "  ```\n  python3 predict.py {path to your model} --gpu=0 --data={your data path}\n  ```\n  \n  For example, if your model path is outdir/models/transformer-base.h5 and your data path is ./mydata, run the following command.\n  \n  BASH2* \n",
+                "original_header": "Step 2 Predictions"
+            },
+            "confidence": 0.9992003868439867,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/funcom-useloss/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- We provide scripts for calculating the metrics that we report on the paper. The following commands are for BLEU score, METEOR, and USE score respectively.\n  ```\n  python3 bleu.py {path to your preiction file} --data={path to reference file}\n  ```\n  \n  BASH2*\n  \n  BASH3*\n  For example, if we want to compute the Bleu score and the path of the prediction file is outdir/predictions/transformer-base.txt and the reference file is on ./mydata directory, the command will be as follows.\n  \n  BASH4* \n",
+                "original_header": "Step 3 Metrics"
+            },
+            "confidence": 0.9965860143076513,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/funcom-useloss/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "This work was accepted to [Journal of Software Evolution and Process (JSME)](https://onlinelibrary.wiley.com/journal/20477481), an academic journal. If you use this work in an academic paper, please cite the following:\n```\n@misc{su2024semantic,\n      title={Semantic Similarity Loss for Neural Source Code Summarization}, \n      author={Chia-Yi Su and Collin McMillan},\n      year={2024},\n      journal={Journal of Software Evolution and Process}\n}\n```\nPDF available here: https://arxiv.org/abs/2308.07429\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "code for replication of results for paper \"Semantic Similarity Loss for Neural Source Code Summarization\""
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/apcl-research/funcom-useloss/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@misc{su2024semantic,\n    journal = {Journal of Software Evolution and Process},\n    year = {2024},\n    author = {Chia-Yi Su and Collin McMillan},\n    title = {Semantic Similarity Loss for Neural Source Code Summarization},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Semantic Similarity Loss for Neural Source Code Summarization",
+                "author": "Chia-Yi Su and Collin McMillan"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/apcl-research/funcom-useloss/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- We use three datasets for our experiments.\n  - funcom-java: Le Clair et al. [[Arxiv](https://arxiv.org/abs/1904.02660)]\n  - funcom-java-long: Bansal et al. [[Data](https://github.com/aakashba/humanattn)]. Please download q90 data and extract it to /nfs/projects/funcom/data/javastmt/q90 or the same directory as your --data argument in train.py.\n  - funcom-python: We provide this dataset in our [Hugginface Profile](https://huggingface.co/datasets/apcl/funcom_python/tree/main). Please downlaod all files and put it to the same directory as your --data argument in train.py.\n \n",
+                "original_header": "Step 0 Dataset"
+            },
+            "confidence": 0.9148089485689518,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/funcom-useloss/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "  ```\n  python3 train.py --model-type={transformer-base | ast-attendgru | codegnngru | setransformer}-use-seq  --gpu=0 --batch-size=50 --data={your data path}\n  ``` \n  ```\n  python3 train.py --model-type=transformer-base-use-seq  --gpu=0 --batch-size=50 --data=./mydata\n  ```\n  \n- To finetune baseline model with SIMILE or BLEU for one epoch, run the following command.\n  \n   BASH3*\n   \n   For example, fintuning transformer-base model with SIMILE on ./mydata with the model file called transformer.h5 on ./mymodel\n    BASH4*    \n",
+                "original_header": "Step 1 Training"
+            },
+            "confidence": 0.9353781157436312,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/funcom-useloss/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "code for replication of results for paper \"Semantic Similarity Loss for Neural Source Code Summarization\""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/apcl-research/funcom-useloss/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2308.07429"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/apcl-research/funcom-useloss/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1904.02660"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/apcl-research/funcom-useloss/main/README.md"
+        }
+    ]
+}

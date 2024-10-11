@@ -1,0 +1,431 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:08:47"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/SageSELab/AidUI",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "SageSELab",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-09-23T15:06:17Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-01T08:09:52Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Copyright <2023> <SageSELab>\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \u201cSoftware\u201d), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED \u201cAS IS\u201d, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "This repository contains the replication package of our ICSE'23 paper \"AidUI: Toward Automated Recognition of Dark Patterns in User Interfaces\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This replication package includes three main parts which we discuss in details in later sections:\n- Part1: Our proposed unified taxonomy of UI Dark Patterns\n- Part2: Source code and setup instructions of AidUI, our developed research prototype to detect UI Dark Patterns\n- Part3: Datasets and model for AidUI \n## Part1: Unified Taxonomy of UI Dark Patterns\nThere has been a wealth of work from the general HCI community that has constructed Dark Pattern taxonomies. Given the somewhat complementary, yet disparate nature of existing taxonomies of Dark Patterns, we aimed to create a unified taxonomy that merges together similar categories and provides a larger landscape of patterns for mobile and web apps toward which we can design and evaluate our automated detection approach. Our unified taxonomy is primarily a fusing of the various categories and subcategories derived by Gray et al. [1], Mathur et al. [2] and Brignull et al. [3]. Our final unified taxonomy, illustrated in the following figure, spans 7 parent categories which organize a total of 27 classes that describe different Dark Patterns. \nWe aimed to prioritize the detection strategy of AidUI toward certain patterns that carry with them distinct visual and textual cues which both manifest on a single screen. Thus, we identified a final set of 10 target Dark Patterns, toward which we oriented AidUI\u2019S analysis. The targeted Dark Pattern categories are marked with a <img src=\"docs_images/check.png\" width=\"18\"> in the above figure. We provide descriptions and examples of each Dark Pattern in this [document](docs_images/DP_patterns_examples.xlsx). \n",
+                "original_header": "Install Docker"
+            },
+            "confidence": 0.9488403987578664,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The architecture of AidUI, depicted in in the Figure above, is designed around four main phases: (1) the *Visual Cue Detection* phase, which leverages a deep learning based object detection model to identify UI objects representing visual cues for DPs, (2) the *UI \\& Text Content Detection* phase, which *extracts UI segments containing both text  and non-text content*, (3) the *DP Analysis Phase* phase, which employs text pattern matching, as well as color and spatial analysis techniques to analyze the extracted UI segments and identifies a set of potential DPs,  and (4) the *DP Resolution* phase, which uses results from both Visual Cue Detection and DP Analysis phases to predict a final set of underlying DPs in the given UI. It is important to note that AidUI operates *purely on pixel data* from UI screenshots, making it extensible to different software domains. \nWe set up the directory structure of the project to closely follow the architecture of the tool presented above. The following subsections present the directory structure of the source code of AidUI as well as the instructions to set it up. \n",
+                "original_header": "Part2: Source code and setup instructions of AidUI"
+            },
+            "confidence": 0.9648709263894162,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\n## Part3: Datasets and model for AidUI\n_CONTEXTDP_, the evaluation dataset for AidUI, contains 162 web and 339 mobile screenshots depicting 301 DP and 243 Non-DP instances. We make this dataset fully open source to encourage future work on automated DP detection and localization. \n",
+                "original_header": "Setup AidUI Using Docker (Recommended)"
+            },
+            "confidence": 0.9247156339175445,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "AidUI",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "SageSELab/AidUI",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SageSELab/AidUI/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SageSELab/AidUI/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 18,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 9,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/SageSELab/AidUI/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 387330
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 317091
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 2624
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 589
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SageSELab/AidUI/releases/90475895",
+                "tag": "v-ICSE'23-data",
+                "name": "AidUI Evaluation Data & Trained Model",
+                "author": {
+                    "name": "kpmoran",
+                    "type": "User"
+                },
+                "description": "This release holds files related to the AidUI Evaluation Dataset as well as the trained visual cue detection model.",
+                "tarball_url": "https://api.github.com/repos/SageSELab/AidUI/tarball/v-ICSE'23-data",
+                "zipball_url": "https://api.github.com/repos/SageSELab/AidUI/zipball/v-ICSE'23-data",
+                "html_url": "https://github.com/SageSELab/AidUI/releases/tag/v-ICSE'23-data",
+                "url": "https://api.github.com/repos/SageSELab/AidUI/releases/90475895",
+                "release_id": 90475895,
+                "date_created": "2023-01-27T16:50:17Z",
+                "date_published": "2023-01-27T20:52:08Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SageSELab/AidUI/master/run_dp_detection.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SageSELab/AidUI/master/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/Dockerfile"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "For installation instructions, please go to our GitHub repository: https://github.com/SageSELab/AidUI\n\nThe README file in the repository provides the directory structure of the source code of AidUI as well as the instructions to set it up.\n\nWe provide installation instructions for Ubuntu 20.04.2 LTS\n\t\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/INSTALL.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To setup and run AidUI, following steps need to be done. \n1. #### Install Docker\nTo install Docker, please follow the instructions at this [link](https://www.docker.com/). \n2. #### Download AidUI docker image by executing the following command:\n```bash\ndocker pull smhasanmansur/aidui-img\n``` \n3. #### Run the container by executing the following command:\n```bash\ndocker run -it smhasanmansur/aidui-img\n``` \n4. #### Use following command to move to the root directory of AidUI:\n```bash\ncd AidUI/\n``` \n5. #### Execute the following command to run AidUI\n```bash\n./run_dp_detection.sh\n``` \n### Install and Run AidUI without Docker (Ubuntu Only) \n**NOTE**: ***Our provided instructions for installing AidUI are currently only applicable to Ubuntu 20.04.2 LTS (although other recent versions of Ubuntu should be fine), due to the specific Anaconda packages required. As such, these instructions will likely not work on Windows or mcOS.***  \n1. #### Clone AidUI\nClone this repository by using the ```git clone``` command. If git is not already installed, please follow the installation instructions provided [here](https://git-scm.com/downloads). \n2. #### Install Anaconda\nTo install Anaconda, please follow the instructions at this [link](https://www.anaconda.com/). \n3. #### Setup the conda environments\nInstalled Anaconda comes with a default conda environment _\"base\"_. We can check the available environments using the following command:\n```bash\nconda info --envs\n```\nFor AidUI, two conda environments need to be setup: _**\"dl_dp_obj_det_env\"**_ and _**\"dp_uied3\"**_ \nWe provide the specification files to build identical conda environments as ours:\n- _**\"dl_dp_obj_det_env\"**_: [env_specification_files/dl_dp_obj_det_env.txt](env_specification_files/dl_dp_obj_det_env.txt)\n- _**\"dp_uied3\"**_: [env_specification_files/dp_uied3.txt](env_specification_files/dp_uied3.txt) \n",
+                "original_header": "Setup AidUI Using Docker (Recommended)"
+            },
+            "confidence": 0.998951284574758,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Following commands can be used to create the required environments from the root of the cloned repository:\n```bash\nconda create --name dl_dp_obj_det_env --file env_specification_files/dl_dp_obj_det_env.txt\n```\nBASH11* \n",
+                "original_header": "Install Docker"
+            },
+            "confidence": 0.9999988364107486,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "5. #### Run AidUI\n- Move to the root directory of AidUI \n",
+                "original_header": "Setup AidUI Using Docker (Recommended)"
+            },
+            "confidence": 0.9457216330208236,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Execute the following command to run AidUI\n```bash\n./run_dp_detection.sh\n```\n- You should see the following prompt:\nBASH6*\n- Type y and press ENTER \n",
+                "original_header": "Install Docker"
+            },
+            "confidence": 0.9999998442848984,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SageSELab/AidUI/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SageSELab/AidUI/master/UIED/result_processing/Untitled.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/UIED/result_processing/Untitled.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SageSELab/AidUI/master/object_detection/object_detection_frcnn_mscoco_boilerplate/object_detection_frcnn_mscoco.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/object_detection/object_detection_frcnn_mscoco_boilerplate/object_detection_frcnn_mscoco.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SageSELab/AidUI/master/object_detection/object_detection_frcnn_mscoco_boilerplate/object_detection_frcnn_mscoco_inference.nbconvert.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/object_detection/object_detection_frcnn_mscoco_boilerplate/object_detection_frcnn_mscoco_inference.nbconvert.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SageSELab/AidUI/master/object_detection/object_detection_frcnn_mscoco_boilerplate/object_detection_frcnn_mscoco_inference.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/object_detection/object_detection_frcnn_mscoco_boilerplate/object_detection_frcnn_mscoco_inference.ipynb"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://doi.org/10.5281/zenodo.7644966"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/SageSELab/AidUI/master/docs_images/dp-taxonomy.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/SageSELab/AidUI/master/docs_images/check.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/SageSELab/AidUI/master/docs_images/design.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SageSELab/AidUI/master/README.md"
+        }
+    ]
+}

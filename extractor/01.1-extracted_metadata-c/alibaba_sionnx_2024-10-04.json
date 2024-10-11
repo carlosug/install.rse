@@ -1,0 +1,726 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:23:40"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/alibaba/sionnx",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "alibaba",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-05-29T03:13:57Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-14T13:39:11Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "\nCopyright (C) 2017-2019 Alibaba Group Holding Limited\n \nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n \n     http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/LICENSE.md"
+        },
+        {
+            "result": {
+                "value": "```\nCopyright (C) 2017-2019 Alibaba Group Holding Limited\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n     http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "SIONNX"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Auto-gen Tests Tool for ONNX Compliance",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "   Sionnx is a tool to automatically generate tests for ONNX compliance. It's originated from Sinian project and can generate compliance tests with configurable settings for ONNX runtime. The generated tests can be exported to protobuf format to be compatible with many ONNX runtime frameworks.\n\n   Sionnx includes a DSL to describe ONNX instrucitons. It leverages LLVM TableGen toolchain to parse the DSL files and generate tests in Python. The TableGen is customized to handle the DSL syntax.\n\n   Sinian is Alibaba\u2019s heterogeneous hardware acceleration and optimization platform, targeting extreme performance and high execution efficiency for machine learning and data-intensive applications. Sinian is a unified platform to support both machine learning training and inferencing, but fully tailorable statically for cloud computing, edge computing, and IoT devices. Sinian makes it seamless to build, train, and deploy machine learning models without suffering the loss of performance portability.\n\n![sinian](logo.png \"Sinian\") \n![sionnx](logo-sionnx.png \"Sionnx\")\n",
+                "type": "Text_excerpt",
+                "original_header": "Introduction",
+                "parent_header": [
+                    "SIONNX"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "sionnx",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "alibaba/sionnx",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/alibaba/sionnx/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/alibaba/sionnx/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 38,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/alibaba/sionnx/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "LLVM",
+                "name": "LLVM",
+                "type": "Programming_language",
+                "size": 120772594
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 80348638
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Assembly",
+                "name": "Assembly",
+                "type": "Programming_language",
+                "size": 45286438
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 996629
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 838705
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CMake",
+                "name": "CMake",
+                "type": "Programming_language",
+                "size": 514505
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "OCaml",
+                "name": "OCaml",
+                "type": "Programming_language",
+                "size": 414841
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Go",
+                "name": "Go",
+                "type": "Programming_language",
+                "size": 141288
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 97206
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 37873
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Perl",
+                "name": "Perl",
+                "type": "Programming_language",
+                "size": 25354
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Roff",
+                "name": "Roff",
+                "type": "Programming_language",
+                "size": 24063
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Vim Script",
+                "name": "Vim Script",
+                "type": "Programming_language",
+                "size": 17449
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 15944
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Batchfile",
+                "name": "Batchfile",
+                "type": "Programming_language",
+                "size": 14026
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Emacs Lisp",
+                "name": "Emacs Lisp",
+                "type": "Programming_language",
+                "size": 10683
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Objective-C",
+                "name": "Objective-C",
+                "type": "Programming_language",
+                "size": 10254
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 5884
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Pawn",
+                "name": "Pawn",
+                "type": "Programming_language",
+                "size": 1572
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Swift",
+                "name": "Swift",
+                "type": "Programming_language",
+                "size": 271
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Logos",
+                "name": "Logos",
+                "type": "Programming_language",
+                "size": 28
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/alibaba/sionnx/tree/master/llvm/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://github.com/alibaba/sionnx/tree/master/llvm/utils/benchmark/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "Sionnx: Automatic Unit Test Generator for ONNX Conformance: https://arxiv.org/abs/1906.05676\n",
+                "type": "Text_excerpt",
+                "original_header": "Documentation",
+                "parent_header": [
+                    "SIONNX"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/README.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/getsrcs.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/countloc.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/crosstool/create-snapshots.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/crosstool/ARM/build-install-linux.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/lint/remove_trailing_whitespace.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/docker/build_docker_image.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/docker/scripts/checkout.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/docker/scripts/build_install_llvm.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/release/merge-git.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/release/tag.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/release/merge.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/release/test-release.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/release/export.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/release/merge-request.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/bugpoint/RemoteRunSafely.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/bindings/go/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributors": [
+        {
+            "result": {
+                "value": "# People who have agreed to one of the CLAs and can contribute patches.\n# The AUTHORS file lists the copyright holders; this file\n# lists people.  For example, Google employees are listed here\n# but not in AUTHORS, because Google holds the copyright.\n#\n# Names should be added to this file only after verifying that\n# the individual or the individual's organization has agreed to\n# the appropriate Contributor License Agreement, found here:\n#\n# https://developers.google.com/open-source/cla/individual\n# https://developers.google.com/open-source/cla/corporate\n#\n# The agreement for individuals can be filled out on the web.\n#\n# When adding J Random Contributor's name to this file,\n# either J's name or J's organization's name should be\n# added to the AUTHORS file, depending on whether the\n# individual or corporate CLA was used.\n#\n# Names should be added to this file as:\n#     Name <email address>\n#\n# Please keep the list sorted.\n\nAlbert Pretorius <pretoalb@gmail.com>\nArne Beer <arne@twobeer.de>\nBilly Robert O'Neal III <billy.oneal@gmail.com> <bion@microsoft.com>\nChris Kennelly <ckennelly@google.com> <ckennelly@ckennelly.com>\nChristopher Seymour <chris.j.seymour@hotmail.com>\nDavid Coeurjolly <david.coeurjolly@liris.cnrs.fr>\nDeniz Evrenci <denizevrenci@gmail.com>\nDominic Hamon <dma@stripysock.com> <dominic@google.com>\nDominik Czarnota <dominik.b.czarnota@gmail.com>\nEric Fiselier <eric@efcs.ca>\nEugene Zhuk <eugene.zhuk@gmail.com>\nEvgeny Safronov <division494@gmail.com>\nFelix Homann <linuxaudio@showlabor.de>\nIsmael Jimenez Martinez <ismael.jimenez.martinez@gmail.com>\nJern-Kuan Leong <jernkuan@gmail.com>\nJianXiong Zhou <zhoujianxiong2@gmail.com>\nJoao Paulo Magalhaes <joaoppmagalhaes@gmail.com>\nJohn Millikin <jmillikin@stripe.com>\nJussi Knuuttila <jussi.knuuttila@gmail.com>\nKai Wolf <kai.wolf@gmail.com>\nKishan Kumar <kumar.kishan@outlook.com>\nKaito Udagawa <umireon@gmail.com>\nLei Xu <eddyxu@gmail.com>\nMatt Clarkson <mattyclarkson@gmail.com>\nMaxim Vafin <maxvafin@gmail.com>\nNick Hutchinson <nshutchinson@gmail.com>\nOleksandr Sochka <sasha.sochka@gmail.com>\nPascal Leroy <phl@google.com>\nPaul Redmond <paul.redmond@gmail.com>\nPierre Phaneuf <pphaneuf@google.com>\nRadoslav Yovchev <radoslav.tm@gmail.com>\nRaul Marin <rmrodriguez@cartodb.com>\nRay Glover <ray.glover@uk.ibm.com>\nRobert Guo <robert.guo@mongodb.com>\nRoman Lebedev <lebedev.ri@gmail.com>\nShuo Chen <chenshuo@chenshuo.com>\nTobias Ulvg\u00e5rd <tobias.ulvgard@dirac.se>\nTom Madams <tom.ej.madams@gmail.com> <tmadams@google.com>\nYixuan Qiu <yixuanq@gmail.com>\nYusuke Suzuki <utatane.tea@gmail.com>\nZbigniew Skowron <zbychs@gmail.com>\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/benchmark/CONTRIBUTORS"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# How to contribute #\n\nWe'd love to accept your patches and contributions to this project.  There are\na just a few small guidelines you need to follow.\n\n\n## Contributor License Agreement ##\n\nContributions to any Google project must be accompanied by a Contributor\nLicense Agreement.  This is not a copyright **assignment**, it simply gives\nGoogle permission to use and redistribute your contributions as part of the\nproject.\n\n  * If you are an individual writing original source code and you're sure you\n    own the intellectual property, then you'll need to sign an [individual\n    CLA][].\n\n  * If you work for a company that wants to allow you to contribute your work,\n    then you'll need to sign a [corporate CLA][].\n\nYou generally only need to submit a CLA once, so if you've already submitted\none (even if it was for a different project), you probably don't need to do it\nagain.\n\n[individual CLA]: https://developers.google.com/open-source/cla/individual\n[corporate CLA]: https://developers.google.com/open-source/cla/corporate\n\nOnce your CLA is submitted (or if you already submitted one for\nanother Google project), make a commit adding yourself to the\n[AUTHORS][] and [CONTRIBUTORS][] files. This commit can be part\nof your first [pull request][].\n\n[AUTHORS]: AUTHORS\n[CONTRIBUTORS]: CONTRIBUTORS\n\n\n## Submitting a patch ##\n\n  1. It's generally best to start by opening a new issue describing the bug or\n     feature you're intending to fix.  Even if you think it's relatively minor,\n     it's helpful to know what people are working on.  Mention in the initial\n     issue that you are planning to work on that bug or feature so that it can\n     be assigned to you.\n\n  1. Follow the normal process of [forking][] the project, and setup a new\n     branch to work in.  It's important that each group of changes be done in\n     separate branches in order to ensure that a pull request only includes the\n     commits related to that bug or feature.\n\n  1. Do your best to have [well-formed commit messages][] for each change.\n     This provides consistency throughout the project, and ensures that commit\n     messages are able to be formatted properly by various git tools.\n\n  1. Finally, push the commits to your fork and submit a [pull request][].\n\n[forking]: https://help.github.com/articles/fork-a-repo\n[well-formed commit messages]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html\n[pull request]: https://help.github.com/articles/creating-a-pull-request\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/benchmark/CONTRIBUTING.md"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/docker/nvidia-cuda/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/docker/nvidia-cuda/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/docker/example/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/docker/example/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/docker/debian8/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/llvm/utils/docker/debian8/Dockerfile"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "- git clone https://github.com/alibaba/sionnx.git\n- cd sionnx/llvm && mkdir build\n- cd build && cmake ../\n- make llvm-tblgen\n",
+                "type": "Text_excerpt",
+                "original_header": "Build From Source",
+                "parent_header": [
+                    "SIONNX",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/README.md"
+        },
+        {
+            "result": {
+                "value": "- cd sionnx/scripts\n- python generate_tests.py (-profile_level: 0=smoke tests; 1=full tests. Default is 0)\n- Generated tests are under folder sionnx/scripts/tests.\n",
+                "type": "Text_excerpt",
+                "original_header": "Generate unit ONNX tests:",
+                "parent_header": [
+                    "SIONNX",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/README.md"
+        },
+        {
+            "result": {
+                "value": "- Prerequisite: Download ONNX(https://github.com/onnx/onnx) source code.\n- cd sionnx/scripts\n- python export.py #onnx_path#(the absolute root path of onnx source code).\n",
+                "type": "Text_excerpt",
+                "original_header": "Export Tests as Model File + Data Files:",
+                "parent_header": [
+                    "SIONNX",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/README.md"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "1. Add/modify .td file in include/.\n2. Add .algorithm file(written in numpy) in include/.\n3. Update llvm/utils/TableGen/OnnxTestsEmitter.cpp if necessary.\n4. Build.\n",
+                "type": "Text_excerpt",
+                "original_header": "Support A New Op:",
+                "parent_header": [
+                    "SIONNX",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "SIONNX"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/logo-sionnx.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/alibaba/sionnx/master/logo.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1906.05676\n\n## License\n```\nCopyright (C"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/alibaba/sionnx/master/README.md"
+        }
+    ]
+}

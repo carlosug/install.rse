@@ -1,0 +1,305 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 18:27:14"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/soarsmu/IncBL",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "soarsmu",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-04-18T07:30:45Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-05-08T05:04:00Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021 jiekeshi\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/soarsmu/incbl/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "IncBL: Incremental Bug Localization",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "[IncBL (**Inc**remental **B**ug **L**ocalization)](https://arxiv.org/abs/2106.07413) is an efficient information retrieval-based bug localization tool for evolving software repositories. It can store and update model parameters incrementally to save running time without sacrificing accuracy. IncBL is implemented as an open-source GitHub app that can analyze the issues labelled as **bug** and comment with the suspicious code files to remind developers.\n \n",
+                "original_header": "What is IncBL?"
+            },
+            "confidence": 0.9708418238629075,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/soarsmu/incbl/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "IncBL",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "soarsmu/IncBL",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/soarsmu/IncBL/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/soarsmu/IncBL/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "bug-tracker, bugreports, github-app",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/soarsmu/incbl/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 69342
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 6675
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/incbl/main/RQ1.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/incbl/main/clone.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/incbl/main/env_config.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/incbl/main/evaluation.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/incbl/main/RQ2.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/incbl/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "When using IncBL, all you need to do is installing IncBL to your GitHub repositories by following this [link](https://github.com/apps/incbl). Once IncBL being installed, it will automatically analyze the codebases and past issues. Each time when a new issue tagged with **bug** is raised, IncBL updates models incrementally and localizes relevant buggy files for this issue. After files are retrieved, IncBL posts the top 10 most relevant files in the issue so developers can get notified.\n\nIt should be noted that IncBL's running time depends on the size of projects. For small repos, IncBL can return results in **5-40 seconds**. But for lager code project it may need **several minutes**. Please be patient when waiting for the returned results.\n\nA video demonstration of IncBL can found [here](https://youtu.be/G4gMuvlJSb0).\n",
+                "type": "Text_excerpt",
+                "original_header": "How to use IncBL app?"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/soarsmu/incbl/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "First, fork this repository and run `bash env_config.sh` to create a virtual environment and install necessary dependencies. Then, run `python local.py -h` to find the usage instructions.\n\nThere are three positional arguments in IncBL:\n\n- `incbl_root`: IncBL's root directory\n- `bug_report_directory`: Bug report directory\n- `code_base_path`: Codebase directory\n\nThere are two optional argument you may care about when localizing bugs in multi-language project:\n\n- `-ft [file_type_list]` The `file_type_list` is to clarify the suffixes of files to be processed, in other words, they represents the programming languages. You can specify like `-ft [\"java\", \"py\"]`.\n\n- `-sp storage_path` This is for storage of incremental data.\n\nOne usage example is: `python local.py ./IncBL ./data/example.XML /dataset/example -ft [\"java\", \"py\"] -sp ./data` It means that:\n\n- The bug report is `./data/example.XML`\n- The codebase is `/dataset/example`\n- IncBL will localize bug in `java` and `python` files, and save incremental data in `./data` folder.\n\nThe localizing results and the Mean Average Precision (if ground truths exist) will be returned to the terminal.\n",
+                "type": "Text_excerpt",
+                "original_header": "How to customize and run IncBL locally?"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/soarsmu/incbl/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{yang2021incbl,\n    doi = {10.1109/ASE51524.2021.9678546},\n    url = {https://doi.org/10.1109/ASE51524.2021.9678546},\n    year = {2021},\n    publisher = {{IEEE}},\n    pages = {1223--1226},\n    booktitle = {36th {IEEE/ACM} International Conference on Automated Software Engineering,\n{ASE} 2021, Melbourne, Australia, November 15-19, 2021},\n    title = {IncBL: Incremental Bug Localization},\n    author = {Zhou Yang and\nJieke Shi and\nShaowei Wang and\nDavid Lo},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/ASE51524.2021.9678546",
+                "title": "IncBL: Incremental Bug Localization",
+                "author": "Zhou Yang and\nJieke Shi and\nShaowei Wang and\nDavid Lo",
+                "url": "https://doi.org/10.1109/ASE51524.2021.9678546"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/soarsmu/incbl/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/soarsmu/incbl/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2106.07413"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/soarsmu/incbl/main/README.md"
+        }
+    ]
+}

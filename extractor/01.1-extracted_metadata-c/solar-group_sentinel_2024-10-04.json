@@ -1,0 +1,232 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:08:01"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/SOLAR-group/sentinel",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "SOLAR-group",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2016-10-20T20:46:08Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2021-05-20T12:15:11Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "sentinel",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "SOLAR-group/sentinel",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SOLAR-group/sentinel/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SOLAR-group/sentinel/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "algorithm-generation, evolutionary-algorithms, grammatical-evolution, hyper-heuristic, java, java-8, mutation-testing",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/solar-group/sentinel/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 795420
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/solar-group/sentinel/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "This project uses maven. So, the first step is to compile and test Sentinel with the following command:\n\n```bash\nmvn clean install\n```\n\nBear in mind that the testing phase may take a while (up to 10 minutes).\n\nSentinel can be invoked through its command line class `br.ufpr.inf.gres.sentinel.main.cli.Sentinel`. Try:\n\n```bash\njava -cp target/Sentinel-0.3-jar-with-dependencies.jar  br.ufpr.inf.gres.sentinel.main.cli.Sentinel --help\n```\n\nor directly from the jar:\n\n```bash\njava -jar target/Sentinel-0.3-jar-with-dependencies.jar --help\n```\n\nThe most important and usually the only required argument for training and testing is `-tp`, which defines the training/testing program. This argument is given in the format:\n\n```bash\n<name>;<sourceDir>;<targetClassesGlob>;<targetTestsGlob>;<excludedTestClassesGlob>;<classpathItems>\n```\n\nFor example, to train Sentinel with the included project `Triangle`, you can run the following command line from the project's main directory:\n\n```bash\njava -cp 'target/Sentinel-0.3-jar-with-dependencies.jar' br.ufpr.inf.gres.sentinel.main.cli.Sentinel train -c -tp \"Triangle;src/test;br.ufpr.inf.gres.Tri*;br.ufpr.inf.gres.Tri*Test*;org.excluded.tests.*;src/test\"\n```\n\nOptionally (and also encouraged), the argument `-c` can be provided to improve the performance of Sentinel training with the usage a of a cache mechanism. The first few mutant executions will take longer, but then the training will be done in a matter of seconds. The cache results are stored in `.cache` for future use, thus any subsequent training will use such a file.\n\nAt the end, the default training output directory `training` will contain the results of the training process with the best strategies found. These files describe the strategies. If used with Sentinel in the testing phase, the strategies will be reconstructed, executed, and then compared to predefined Random Mutant Sampling, Random Operator Selection, and Selective Mutation strategies.\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/solar-group/sentinel/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "The published paper can be found [here](https://ieeexplore.ieee.org/document/9117067) ([preprint](https://bit.ly/Guizzo-TSE-2020)).\n\nMore information about the research behind Sentinel can be found on its [official webpage](https://solar.cs.ucl.ac.uk/os/sentinel).\n\nAn experimental package can be downloaded [from this link](https://bit.ly/Sentinel-Replication). It contains the assets needed to run the experiments for the testing phase.\n",
+                "type": "Text_excerpt",
+                "original_header": "Reference"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/solar-group/sentinel/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```bibtex\n@Article{Guizzo2020,\n  author =  {Giovani Guizzo and Federica Sarro and Jens Krinke and Silvia Regina Vergilio},\n  title =   {{Sentinel: A Hyper-Heuristic for the Generation of Mutant Reduction Strategies}},\n  journal = {Transactions on Software Engineering},\n  year =    {2020},\n  issn =    {1939-3520},\n  doi =     {10.1109/TSE.2020.3002496}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Bibtex:",
+                "parent_header": [
+                    "Reference"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/solar-group/sentinel/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{Guizzo2020,\n    doi = {10.1109/TSE.2020.3002496},\n    issn = {1939-3520},\n    year = {2020},\n    journal = {Transactions on Software Engineering},\n    title = {{Sentinel: A Hyper-Heuristic for the Generation of Mutant Reduction Strategies}},\n    author = {Giovani Guizzo and Federica Sarro and Jens Krinke and Silvia Regina Vergilio},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/TSE.2020.3002496",
+                "title": "{Sentinel: A Hyper-Heuristic for the Generation of Mutant Reduction Strategies}",
+                "author": "Giovani Guizzo and Federica Sarro and Jens Krinke and Silvia Regina Vergilio"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/solar-group/sentinel/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We propose a novel multi-objective evolutionary hyper-heuristic approach, dubbed Sentinel, to automate the generation of optimal cost reduction strategies for every new SUT. Sentinel generates strategies that can be reused in newer versions of the software. \n",
+                "original_header": "Sentinel"
+            },
+            "confidence": 0.916794773360851,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/solar-group/sentinel/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Sentinel"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/solar-group/sentinel/master/README.md"
+        }
+    ]
+}

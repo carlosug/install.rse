@@ -1,0 +1,256 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:08:07"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/guanqun-yang/testaug",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "guanqun-yang",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-06-03T17:45:21Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-05-06T11:26:36Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "TestAug: A Framework for Augmenting Capability-based NLP Tests (COLING '22)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Step 2: Inspect the labeled data in `data/labeling/003/` to see if the ratio of valid sentences $\\tau$ is above the predefined threshold (in our project, this threshold is set to 90%).  \n  In our case, we do need to go through this additional step as the ratio is below 90%. \n",
+                "original_header": "Pipeline"
+            },
+            "confidence": 0.9642303818964201,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/guanqun-yang/testaug/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "testaug",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "guanqun-yang/testaug",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/guanqun-yang/testaug/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/guanqun-yang/testaug/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/guanqun-yang/testaug/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 58977
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 241
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/guanqun-yang/testaug/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/guanqun-yang/testaug/master/reproduce.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The following will demonstrate how TestAug is applied to testing a sentiment classifier's ability to handle negation in a sentence. Before going through each step, make sure that \n   ```bash\n   export OPENAI_API_KEY=\"XYZ\"\n   ``` \nNow we are ready to use the TestAug system: \n- Step 0: Clone the repository and make sure the paths in the `setting/setting.py` are set correctly. \n  - If $\\tau \\geq 90\\%$, directly proceed to Step 4 without stepping into Step 3.\n  - if $\\tau < 90\\%$, repeat Step 1 as follows, where `--phase2` will query a training set to train a `roberta-base` classifier to filter out the invalid sentences. Proceed to Step 3 after this step. \n  ```bash\n  # prepare training data\n  python pipeline/02_prepare_data.py --task sentiment --description 3 --save\n  \n  # train the classifier\n  python pipeline/03_classify.py --task sentiment --description 3 --train --test\n  ``` \n",
+                "original_header": "Pipeline"
+            },
+            "confidence": 0.9713512408250669,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/guanqun-yang/testaug/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "With all three tasks' test suites available, Table 3 could be reproduced following the steps below. \n- Step 1: Run the `reproduce.sh` script below: \n  ```bash\n  bash reproduce.sh\n  ``` \n  ```bash\n  python pipeline/07_report.py --task sentiment --table\n  ```\n  \n \n",
+                "original_header": "Reproducing Experiments"
+            },
+            "confidence": 0.9676395343287882,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/guanqun-yang/testaug/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "It is recommended to set up our system using a computing platform with GPU support.\n```bash\nconda create --name testaug python==3.8.0\nconda activate testaug\n\n# generic libraries\nconda install numpy pandas matplotlib seaborn scikit-learn ipython tqdm termcolor\nconda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=10.1 -c pytorch \n\n# libraries related to NLP models\npip install transformers datasets\npip install simpletransformers\n\npip install -U pip setuptools wheel\npip install -U spacy\npython -m spacy download en_core_web_sm\n\n# libraries related to capability-based testing\npip install checklist\n\n# library related to querying GPT-3\npip install openai\npip install retelimit\n\n# library related to evaluation metrics\npip install networkx\npip install fast_bleu\n\n# current project\npip install -e .\n```\n \n",
+                "original_header": "Environment"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/guanqun-yang/testaug/master/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "  ```bash\n  # prepare training data\n  python pipeline/02_prepare_data.py --task sentiment --description 3 --save\n  \n  # train the classifier\n  python pipeline/03_classify.py --task sentiment --description 3 --train --test\n  ``` \n",
+                "original_header": "Pipeline"
+            },
+            "confidence": 0.9057224774055019,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/guanqun-yang/testaug/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "TestAug - A Framework for Augmenting Capability-based NLP Tests"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/guanqun-yang/testaug/master/README.md"
+        }
+    ],
+    "related_documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://textattack.readthedocs.io/",
+                "format": "readthedocs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/guanqun-yang/testaug/master/README.md"
+        }
+    ]
+}

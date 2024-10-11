@@ -1,0 +1,438 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:21:20"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/coinse/fonte",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "coinse",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-09-16T01:53:39Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-01-09T13:36:51Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 COINSE, KAIST\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Artifact of a paper \u201cFonte: Finding Bug Inducing Commits From Failures\u201d (ICSE'23)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "**Fonte** is a technique for finding the commit that introduced a bug in a software project given a failure. The purpose of this research artifact is to provide the necessary information and instructions for using Fonte. This artifact would be useful for researchers or developers who are interested in analysing the commit history of software projects or identifying their bug inducing commits. \n- Instructions for setting up the environment, including required hardware and software (Python and Docker) and information on how to install dependencies\n- Instructions for running Fonte, including an example command and a list of available arguments\n- Instructions for reproducing the experiment results, including information on using a Jupyter notebook\n- Optional instructions for extracting the core data for other Defects4J faults using a pre-built Docker image\n- Information on the structure of the data directory and the location of the core data and BIC dataset\n \n",
+                "original_header": "**Fonte: Finding Bug Inducing Commit From Failure (ICSE'23)**"
+            },
+            "confidence": 0.9607620540191706,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To support further extension, we have created a pre-built Docker image that includes our data collection scripts and a fully installed version of Defects4J. This image can be used to extract the core data, in the same format as found in ./data/Defects4J/core/, for any Defects4J fault. \n",
+                "original_header": "**D. Extension for other Defects4J faults** (Optional)"
+            },
+            "confidence": 0.991925670745357,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "fonte",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "coinse/fonte",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/coinse/fonte/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/coinse/fonte/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 12,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/coinse/fonte/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/coinse/fonte/releases/89502593",
+                "tag": "v1.0",
+                "name": "First release",
+                "author": {
+                    "name": "agb94",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/coinse/fonte/tarball/v1.0",
+                "zipball_url": "https://api.github.com/repos/coinse/fonte/zipball/v1.0",
+                "html_url": "https://github.com/coinse/fonte/releases/tag/v1.0",
+                "url": "https://api.github.com/repos/coinse/fonte/releases/89502593",
+                "release_id": 89502593,
+                "date_created": "2023-01-19T06:25:25Z",
+                "date_published": "2023-01-19T06:28:19Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/fonte/main/experiment.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/experiment.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/fonte/main/lib/SBFL/main.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/lib/SBFL/main.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "# Installation\n1. Install Python 3.9 on your machine\n    - If using `pyenv`, use these commands:\n\n      ```\n      pyenv install 3.9.1\n      pyenv local 3.9.1\n      ```\n2. Install the required Python packages:\n    ```\n    python -m pip install numpy==1.21.0 pandas==1.4.3 scipy==1.9.0 tqdm matplotlib==3.4.0 seaborn==0.11.1 rank-bm25==0.2.2 tabulate==0.8.9 jupyter setuptools\n    python -m pip install lib/SBFL\n    python -m pip install lib/spiral\n    ```\n\n3. Verify the installation by running Fonte using the following sample command:\n    ```bash\n    python Fonte.py data/Defects4J/core/Cli-29b -o output.csv\n    # Number of total commits: 616\n    #          vote  rank  is_style_change\n    # commit\n    # c0d5c79   1.0   1.0            False\n    # 147df44   0.0   2.0             True\n    ```\n---\n**Note: The following steps are only needed for future extension**\n\n4. Download the [Docker client](https://www.docker.com/products/docker-desktop/) and start the Docker daemon\n\n5. Verify the Docker installation by running these command:\n    ```bash\n    docker pull agb94/fonte:latest\n    ```\n    Please note that due to the large size of the image, the download process may take some time.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/INSTALL.md"
+        },
+        {
+            "result": {
+                "value": "- Hardware\n  - Developed under Mac with Intel chip\n  - Compatible with AMD64 processors\n- Software\n  - Tested with bash (recommended), zsh, PowerShell\n  - Python 3.9+\n    - If using `pyenv`, use these commands:\n      ```bash\n      pyenv install 3.9.1\n      pyenv local 3.9.1\n      ```\n    - **Install dependencies**:\n        ```bash\n        pip install --upgrade pip\n        python -m pip install numpy pandas scipy tqdm matplotlib seaborn rank-bm25 tabulate jupyter setuptools\n        python -m pip install lib/SBFL\n        # Alternative: python -m pip install git+https://github.com/Suresoft-GLaDOS/SBFL \n        python -m pip install lib/spiral\n        # Alternative: python -m pip install git+https://github.com/casics/spiral\n        ```\n  - [Docker client](https://www.docker.com/products/docker-desktop) (only for the future extension)\n",
+                "type": "Text_excerpt",
+                "original_header": "**A. Environmental Setup**",
+                "parent_header": [
+                    "**Fonte: Finding Bug Inducing Commit From Failure (ICSE'23)**"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "![Fonte_Logo](./fonte.png)\n```\ngit clone git@github.com:coinse/fonte.git\n```\n \n|File|Description|\n|------------------------------------|----------------|\n|\ud83d\udcc4 [PREPRINT](./preprint.pdf) | Preprint of the paper |\n|\ud83d\udda5 [REQUIREMENTS](./REQUIREMENTS.md)| HW/OS/SW requirements |\n|\ud83d\udd28 [INSTALL](./INSTALL.md)| Installation guide |\n|\ud83e\udeaa [LICENSE](LICENSE)|MIT license|  \n- Instructions for setting up the environment, including required hardware and software (Python and Docker) and information on how to install dependencies\n- Instructions for running Fonte, including an example command and a list of available arguments\n- Instructions for reproducing the experiment results, including information on using a Jupyter notebook\n- Optional instructions for extracting the core data for other Defects4J faults using a pre-built Docker image\n- Information on the structure of the data directory and the location of the core data and BIC dataset\n \n",
+                "original_header": "**Fonte: Finding Bug Inducing Commit From Failure (ICSE'23)**"
+            },
+            "confidence": 0.9950483738608407,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1. Run the Jupyter notebook\n    ```bash\n    jupyter notebook\n    ```\n    If you're a VSCode user, just install the `Jupyter` extension.\n2. Open `experiment.ipynb` and run the cells to reproduce our experiment results.\n    - The output will be saved to `./experiment_results/`. Note that the directory already contains the pre-computed results. If you want to fully replicate our experiments, remove all files from the `./experiment_results/` and run the cells again.\n \n",
+                "original_header": "**C. Reproducing the experiment results**"
+            },
+            "confidence": 0.9999999943003104,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1. Pull the image from DockerHub. This may take a while because the image size is about 4GB.\n    ```bash\n    docker pull agb94/fonte:latest\n    ```\n2. Start a Docker container\n    BASH2*\n    - The directory `./docker/workspace` in the local machine will share data with `/root/workspace` in the container.\n    - `$(pwd)`: The current directory. Change it to `${PWD}` or `%cd%` if you're using PowerShell or Windows Command Prompt, respectively.\n3. Collect the coverage information and the commit history of `<pid>-<vid>b`\n    BASH3*\n    - The output will be saved to `./docker/workspace/data/<pid>-<vid>b/`\n    - Don't forget to append the tool option (`git` or `shovel`)!\n4. Run Fonte on the newly collected data:\n    BASH4*\n    \ud83d\udca1 To **speed up** the AST comparison, you can disable code formatting using OpenRewrite by appending `false` when calling the `collect_core.sh` script:\n    \n    BASH5*\n \n",
+                "original_header": "**D. Extension for other Defects4J faults** (Optional)"
+            },
+            "confidence": 0.9999993691326097,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/fonte/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/fonte/main/docker/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/docker/Dockerfile"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/fonte/main/docker/resources/install_defects4j.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/fonte/main/docker/workspace/measure_coverage.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/fonte/main/docker/workspace/collect_core.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/fonte/main/docker/workspace/tools/check_astdiff.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/fonte/main/docker/workspace/tools/combine_style_change_results.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/fonte/main/docker/workspace/tools/detect_style_change.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "cff-version: 1.2\nmessage: \"If you use this software, please cite it using these metadata.\"\ntitle: \"Spiral\"\nauthors: \n  -\n    affiliation: \"Caltech\"\n    given-names: Mike\n    family-names: Hucka\n    orcid: \"0000-0001-9105-5960\"\nversion: \"1.1.0\"\nabstract: \"Spiral: splitters for identifiers in source code files\"\nrepository-code: \"https://github.com/casics/spiral\"\ntype: software\nlicense-url: \"https://github.com/casics/spiral/blob/master/LICENSE\"\nkeywords: \n  - source code\n  - splitting identifiers\n  - code search\n  - machine learning\n  - mining software repositories\ndate-released: 2018-04-29\n",
+                "type": "File_dump",
+                "format": "cff"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/lib/spiral/CITATION.cff"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# Guidelines for contributing to this project\n\nAny constructive contributions &ndash; bug reports, pull requests (code or documentation), suggestions for improvements, and more &ndash; are welcome.\n\n## Conduct\n\nEveryone is asked to read and respect the [code of conduct](CONDUCT.md) before participating in this project.\n\n## Submitting contributions\n\nPlease feel free to contact the author directly, or even better, jump right in and use the standard GitHub approach of forking the repo and creating a pull request.  When committing code changes and submitting pull requests, please write a clear log message for your commits. One-line messages are fine for small changes, but bigger changes should look like this:\n\n    $ git commit -m \"A brief summary of the commit\n    > \n    > A paragraph describing what changed and its impact.\"\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/lib/spiral/.github/CONTRIBUTING.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "- Information on the file and directory structure can be found at the end of this README file.\n- The necessary data including coverage matrix and commit history for each fault can be found in `./data/Defects4J/core/`\n- The BIC dataset is located at `./data/Defects4J/BIC_dataset/`\n",
+                "type": "Text_excerpt",
+                "original_header": "Please be aware that",
+                "parent_header": [
+                    "**Fonte: Finding Bug Inducing Commit From Failure (ICSE'23)**",
+                    "**B. Getting Started**"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "```bash\npython Fonte.py data/Defecst4J/core/<pid>-<vid>b -o <savepath>\n```\n- Example:\n  ```bash\n  python Fonte.py data/Defects4J/core/Cli-29b -o output.csv\n  # Number of total commits: 616\n  #          vote  rank  is_style_change\n  # commit\n  # c0d5c79   1.0   1.0            False\n  # 147df44   0.0   2.0             True\n  ```\n\n- Available arguments:\n  ```bash\n  usage: Fonte.py [-h] [--tool TOOL] [--formula FORMULA] [--alpha ALPHA] [--tau TAU] [--lamb LAMB] [--skip-stage-2] [--output OUTPUT] coredir\n\n  Compute commit scores\n\n  positional arguments:\n    coredir               data/Defects4J/core/<pid>-<vid>b\n\n  optional arguments:\n    -h, --help            show this help message and exit\n    --tool TOOL           history retrieval tool, git or shovel (default: git)\n    --formula FORMULA     SBFL formula (default: Ochiai)\n    --alpha ALPHA         alpha: 0 or 1 (default: 0)\n    --tau TAU             tau: max or dense (default: max)\n    --lamb LAMB           lambda: [0.0, 1.0) (default: 0.1)\n    --skip-stage-2        skip stage 2 (default: False)\n    --output OUTPUT, -o OUTPUT\n                          path to output file (example: output.csv)\n  ```\n",
+                "type": "Text_excerpt",
+                "original_header": "Running Fonte",
+                "parent_header": [
+                    "**Fonte: Finding Bug Inducing Commit From Failure (ICSE'23)**",
+                    "**B. Getting Started**"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/README.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://zenodo.org/badge/latestdoi/537269386"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Fonte: Finding Bug Inducing Commit From Failure (ICSE'23)"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/coinse/fonte/main/./fonte.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/coinse/fonte/main/README.md"
+        }
+    ]
+}

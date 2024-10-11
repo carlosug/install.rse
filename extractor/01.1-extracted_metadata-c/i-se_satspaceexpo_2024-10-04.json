@@ -1,0 +1,563 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 16:53:13"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ai-se/SatSpaceExpo",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ai-se",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-01-28T14:44:14Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2022-11-18T09:20:46Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/lgpl-3.0",
+                "type": "License",
+                "name": "GNU Lesser General Public License v3.0",
+                "url": "https://api.github.com/licenses/lgpl-3.0",
+                "spdx_id": "LGPL-3.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "                   GNU LESSER GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n\n  This version of the GNU Lesser General Public License incorporates\nthe terms and conditions of version 3 of the GNU General Public\nLicense, supplemented by the additional permissions listed below.\n\n  0. Additional Definitions.\n\n  As used herein, \"this License\" refers to version 3 of the GNU Lesser\nGeneral Public License, and the \"GNU GPL\" refers to version 3 of the GNU\nGeneral Public License.\n\n  \"The Library\" refers to a covered work governed by this License,\nother than an Application or a Combined Work as defined below.\n\n  An \"Application\" is any work that makes use of an interface provided\nby the Library, but which is not otherwise based on the Library.\nDefining a subclass of a class defined by the Library is deemed a mode\nof using an interface provided by the Library.\n\n  A \"Combined Work\" is a work produced by combining or linking an\nApplication with the Library.  The particular version of the Library\nwith which the Combined Work was made is also called the \"Linked\nVersion\".\n\n  The \"Minimal Corresponding Source\" for a Combined Work means the\nCorresponding Source for the Combined Work, excluding any source code\nfor portions of the Combined Work that, considered in isolation, are\nbased on the Application, and not on the Linked Version.\n\n  The \"Corresponding Application Code\" for a Combined Work means the\nobject code and/or source code for the Application, including any data\nand utility programs needed for reproducing the Combined Work from the\nApplication, but excluding the System Libraries of the Combined Work.\n\n  1. Exception to Section 3 of the GNU GPL.\n\n  You may convey a covered work under sections 3 and 4 of this License\nwithout being bound by section 3 of the GNU GPL.\n\n  2. Conveying Modified Versions.\n\n  If you modify a copy of the Library, and, in your modifications, a\nfacility refers to a function or data to be supplied by an Application\nthat uses the facility (other than as an argument passed when the\nfacility is invoked), then you may convey a copy of the modified\nversion:\n\n   a) under this License, provided that you make a good faith effort to\n   ensure that, in the event an Application does not supply the\n   function or data, the facility still operates, and performs\n   whatever part of its purpose remains meaningful, or\n\n   b) under the GNU GPL, with none of the additional permissions of\n   this License applicable to that copy.\n\n  3. Object Code Incorporating Material from Library Header Files.\n\n  The object code form of an Application may incorporate material from\na header file that is part of the Library.  You may convey such object\ncode under terms of your choice, provided that, if the incorporated\nmaterial is not limited to numerical parameters, data structure\nlayouts and accessors, or small macros, inline functions and templates\n(ten or fewer lines in length), you do both of the following:\n\n   a) Give prominent notice with each copy of the object code that the\n   Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the object code with a copy of the GNU GPL and this license\n   document.\n\n  4. Combined Works.\n\n  You may convey a Combined Work under terms of your choice that,\ntaken together, effectively do not restrict modification of the\nportions of the Library contained in the Combined Work and reverse\nengineering for debugging such modifications, if you also do each of\nthe following:\n\n   a) Give prominent notice with each copy of the Combined Work that\n   the Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the Combined Work with a copy of the GNU GPL and this license\n   document.\n\n   c) For a Combined Work that displays copyright notices during\n   execution, include the copyright notice for the Library among\n   these notices, as well as a reference directing the user to the\n   copies of the GNU GPL and this license document.\n\n   d) Do one of the following:\n\n       0) Convey the Minimal Corresponding Source under the terms of this\n       License, and the Corresponding Application Code in a form\n       suitable for, and under terms that permit, the user to\n       recombine or relink the Application with a modified version of\n       the Linked Version to produce a modified Combined Work, in the\n       manner specified by section 6 of the GNU GPL for conveying\n       Corresponding Source.\n\n       1) Use a suitable shared library mechanism for linking with the\n       Library.  A suitable mechanism is one that (a) uses at run time\n       a copy of the Library already present on the user's computer\n       system, and (b) will operate properly with a modified version\n       of the Library that is interface-compatible with the Linked\n       Version.\n\n   e) Provide Installation Information, but only if you would otherwise\n   be required to provide such information under section 6 of the\n   GNU GPL, and only to the extent that such information is\n   necessary to install and execute a modified version of the\n   Combined Work produced by recombining or relinking the\n   Application with a modified version of the Linked Version. (If\n   you use option 4d0, the Installation Information must accompany\n   the Minimal Corresponding Source and Corresponding Application\n   Code. If you use option 4d1, you must provide the Installation\n   Information in the manner specified by section 6 of the GNU GPL\n   for conveying Corresponding Source.)\n\n  5. Combined Libraries.\n\n  You may place library facilities that are a work based on the\nLibrary side by side in a single library together with other library\nfacilities that are not Applications and are not covered by this\nLicense, and convey such a combined library under terms of your\nchoice, if you do both of the following:\n\n   a) Accompany the combined library with a copy of the same work based\n   on the Library, uncombined with any other library facilities,\n   conveyed under the terms of this License.\n\n   b) Give prominent notice with the combined library that part of it\n   is a work based on the Library, and explaining where to find the\n   accompanying uncombined form of the same work.\n\n  6. Revised Versions of the GNU Lesser General Public License.\n\n  The Free Software Foundation may publish revised and/or new versions\nof the GNU Lesser General Public License from time to time. Such new\nversions will be similar in spirit to the present version, but may\ndiffer in detail to address new problems or concerns.\n\n  Each version is given a distinguishing version number. If the\nLibrary as you received it specifies that a certain numbered version\nof the GNU Lesser General Public License \"or any later version\"\napplies to it, you have the option of following the terms and\nconditions either of that published version or of any later version\npublished by the Free Software Foundation. If the Library as you\nreceived it does not specify a version number of the GNU Lesser\nGeneral Public License, you may choose any version of the GNU Lesser\nGeneral Public License ever published by the Free Software Foundation.\n\n  If the Library as you received it specifies that a proxy can decide\nwhether future versions of the GNU Lesser General Public License shall\napply, that proxy's public statement of acceptance of any version is\npermanent authorization for you to choose that version for the\nLibrary.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Explore the SAT problem spaces via sampling",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "SatSpaceExpo",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ai-se/SatSpaceExpo",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ai-se/SatSpaceExpo/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ai-se/SatSpaceExpo/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/ai-se/satspaceexpo/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 14162865
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 1116034
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 148813
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Assembly",
+                "name": "Assembly",
+                "type": "Programming_language",
+                "size": 141281
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Ada",
+                "name": "Ada",
+                "type": "Programming_language",
+                "size": 89079
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Pascal",
+                "name": "Pascal",
+                "type": "Programming_language",
+                "size": 75208
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C#",
+                "name": "C#",
+                "type": "Programming_language",
+                "size": 55627
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 44252
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 29824
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "DIGITAL Command Language",
+                "name": "DIGITAL Command Language",
+                "type": "Programming_language",
+                "size": 27303
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Objective-C",
+                "name": "Objective-C",
+                "type": "Programming_language",
+                "size": 21403
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 18594
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 10727
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CMake",
+                "name": "CMake",
+                "type": "Programming_language",
+                "size": 8099
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Roff",
+                "name": "Roff",
+                "type": "Programming_language",
+                "size": 7800
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Perl",
+                "name": "Perl",
+                "type": "Programming_language",
+                "size": 3895
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "SAS",
+                "name": "SAS",
+                "type": "Programming_language",
+                "size": 1847
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Module Management System",
+                "name": "Module Management System",
+                "type": "Programming_language",
+                "size": 1545
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "M4",
+                "name": "M4",
+                "type": "Programming_language",
+                "size": 787
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Batchfile",
+                "name": "Batchfile",
+                "type": "Programming_language",
+                "size": 178
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/plots/plot_uniform.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/plots/plot_uniform.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/src/PyWorthy/Experimental.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/src/PyWorthy/Experimental.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/src/PyWorthy/.ipynb_checkpoints/Experimental-checkpoint.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/src/PyWorthy/.ipynb_checkpoints/Experimental-checkpoint.ipynb"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/src/zlib/os400/make.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "We used [Z3 v4.8.4](https://github.com/Z3Prover/z3/releases/tag/z3-4.8.4) during the experiment, but newer version could be probably faster.\n```\nwget https://github.com/Z3Prover/z3/archive/z3-4.8.4.tar.gz\ntar -xzf z3-4.8.4.tar.gz\n# follow steps in README.md inside the z3-4.8.4 like following...\npython scripts/mk_make.py\ncd build\nmake\nsudo make install\n```",
+                "type": "Text_excerpt",
+                "original_header": "Step 1. Download and set up Z3 solvers",
+                "parent_header": [
+                    "SNAP for building very small test suites",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/README.md"
+        },
+        {
+            "result": {
+                "value": "In most machines, Boost C++ libraries have already been instead. In case they're not instead, you can follow these steps:\n```\nwget https://dl.bintray.com/boostorg/release/1.73.0/source/boost_1_73_0.tar.gz\ntar -xzf boost_1_73_0.tar.gz\n# You don't need to compile the whole libraries of boost actually since it's very huge. Continue on Step 3...\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 2. Download Boost C++ libraries if applicable",
+                "parent_header": [
+                    "SNAP for building very small test suites",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\ngit clone https://github.com/ai-se/SatSpaceExpo.git\ngit clone https://github.com/RafaelTupynamba/quicksampler.git # for the benchamarks\ncp -rf quicksampler/Benchmarks SatSpaceExpo\nboost_path=\"/path/to/boost/include\"\nsed -i \"1s/.*/CC=g++ -I$boost_path/\" SatSpaceExpo/Makefile\n``` \n",
+                "type": "Text_excerpt",
+                "original_header": "Step 3. Download SNAP as well as the benchmarks",
+                "parent_header": [
+                    "SNAP for building very small test suites",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "We used [Z3 v4.8.4](https://github.com/Z3Prover/z3/releases/tag/z3-4.8.4) during the experiment, but newer version could be probably faster.\n```\nwget https://github.com/Z3Prover/z3/archive/z3-4.8.4.tar.gz\ntar -xzf z3-4.8.4.tar.gz\n# follow steps in README.md inside the z3-4.8.4 like following...\npython scripts/mk_make.py\ncd build\nmake\nsudo make install\n```",
+                "type": "Text_excerpt",
+                "original_header": "Step 1. Download and set up Z3 solvers",
+                "parent_header": [
+                    "SNAP for building very small test suites",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/README.md"
+        },
+        {
+            "result": {
+                "value": "In the SNAP, for convenient, we use the ID to represent the benchmarks,  you can also replace or add more test cases by editing the `src/commons/utility/utility.h`.\nBe default, the id shows as \n```\nstatic std::vector<std::string> benchmark_models{\n    \"Benchmarks/Blasted_Real/blasted_case47.cnf\", // 0\n    \"Benchmarks/Blasted_Real/blasted_case110.cnf\", // 1\n    \"Benchmarks/V7/s820a_7_4.cnf\", // 2\n    \"Benchmarks/V15/s820a_15_7.cnf\", // 3\n    \"Benchmarks/V3/s1238a_3_2.cnf\", // 4\n    \"Benchmarks/V3/s1196a_3_2.cnf\", // 5\n    \"Benchmarks/V15/s832a_15_7.cnf\", // 6\n    \"Benchmarks/Blasted_Real/blasted_case_1_b12_2.cnf\", // 7\n    \"Benchmarks/Blasted_Real/blasted_squaring16.cnf\", // 8\n    \"Benchmarks/Blasted_Real/blasted_squaring7.cnf\", // 9\n    \"Benchmarks/70.sk_3_40.cnf\", // 10\n    \"Benchmarks/ProcessBean.sk_8_64.cnf\", // 11\n    \"Benchmarks/56.sk_6_38.cnf\", // 12\n    \"Benchmarks/35.sk_3_52.cnf\", // 13\n    \"Benchmarks/80.sk_2_48.cnf\", // 14\n    \"Benchmarks/7.sk_4_50.cnf\", // 15\n    \"Benchmarks/doublyLinkedList.sk_8_37.cnf\", // 16\n    \"Benchmarks/19.sk_3_48.cnf\", // 17\n    \"Benchmarks/29.sk_3_45.cnf\", // 18\n    \"Benchmarks/isolateRightmost.sk_7_481.cnf\", //19\n    \"Benchmarks/17.sk_3_45.cnf\", // 20\n    \"Benchmarks/81.sk_5_51.cnf\", // 21\n    \"Benchmarks/LoginService2.sk_23_36.cnf\", // 22\n    \"Benchmarks/sort.sk_8_52.cnf\", // 23\n    \"Benchmarks/parity.sk_11_11.cnf\", // 24\n    \"Benchmarks/77.sk_3_44.cnf\", // 25\n    \"Benchmarks/20.sk_1_51.cnf\", // 26\n    \"Benchmarks/enqueueSeqSK.sk_10_42.cnf\", // 27\n    \"Benchmarks/karatsuba.sk_7_41.cnf\", // 28\n    \"Benchmarks/tutorial3.sk_4_31.cnf\" // 29\n};\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 4. Understanding the Benchmark ID",
+                "parent_header": [
+                    "SNAP for building very small test suites",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\ncd /path/to/SatSpaceExpo\nmake snap\n/path/to/SatSpaceExpo/bin/snap -i ID@Step4\n\n# To clean up all compiled binaries\ncd /path/to/SatSpaceExpo\nmake clean\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 5. Compile SNAP and execution",
+                "parent_header": [
+                    "SNAP for building very small test suites",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "- Boost installation [https://www.boost.org/users/history/version_1_73_0.html](https://www.boost.org/users/history/version_1_73_0.html)\n- Z3 introduction [https://github.com/Z3Prover/z3](https://github.com/Z3Prover/z3)\n",
+                "type": "Text_excerpt",
+                "original_header": "Other referencing",
+                "parent_header": [
+                    "SNAP for building very small test suites"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/README.md"
+        },
+        {
+            "result": {
+                "value": "*The paper has been submitted and under reviewed in IEEE Transactions on Software Engineering*\n```\n@article{chen2019building,\n  title={Building Very Small Test Suites (with Snap)},\n  author={Chen, Jianfeng and Shen, Xipeng and Menzies, Tim},\n  journal={arXiv preprint arXiv:1905.05358},\n  year={2019}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "SNAP for building very small test suites"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{chen2019building,\n    year = {2019},\n    journal = {arXiv preprint arXiv:1905.05358},\n    author = {Chen, Jianfeng and Shen, Xipeng and Menzies, Tim},\n    title = {Building Very Small Test Suites (with Snap)},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Building Very Small Test Suites (with Snap)",
+                "author": "Chen, Jianfeng and Shen, Xipeng and Menzies, Tim"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "SNAP for building very small test suites"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1905.05358"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ai-se/satspaceexpo/master/README.md"
+        }
+    ]
+}

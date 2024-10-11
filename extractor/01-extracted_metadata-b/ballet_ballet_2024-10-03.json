@@ -1,0 +1,324 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:58:14"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ballet/ballet",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ballet",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-04-08T21:35:51Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-01-27T23:22:42Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2018, Micah Smith\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ballet/ballet/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "\u2600\ufe0f\ud83e\uddb6 A lightweight framework for collaborative, open-source feature engineering",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "While the open-source model for software development has led to successful, large-scale collaborations in building software applications, chess engines, and scientific analyses, data science has not benefited from this development paradigm. In part, this is due to the divide between the development processes used by software engineers and those used by data scientists. \nBallet tries to address this disparity. It is a lightweight software framework that supports collaborative data science development by composing a data science pipeline from a collection of modular patches that can be written in parallel. Ballet provides the underlying functionality to support interactive development, test and merge high-quality contributions, and compose the accepted contributions into a single product. \nWe have deployed Ballet for feature engineering collaborations on tabular survey datasets of public interest. For example, [predict-census-income](https://github.com/ballet/predict-census-income) is a large real-world collaborative project to engineer features from raw individual survey responses to the U.S. Census American Community Survey (ACS) and predict personal income. The resulting project is one of the largest data science collaborations GitHub, and outperforms state-of-the-art tabular AutoML systems and independent data science experts.\n \n",
+                "original_header": "Overview"
+            },
+            "confidence": 0.9680929201224568,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ballet/ballet/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* The Ballet framework core is developed in this repository and includes:\n    * the *feature definition* abstraction, a tuple of input variables and transformer steps (`ballet.feature`)\n    * the *feature engineering pipeline* abstraction, a data flow graph over feature functions (`ballet.pipeline`)\n    * the *transformer step* abstraction and a library of transformer steps that can be used in feature engineering (`ballet.tranformer`, `ballet.eng`)\n    * a comprehensive feature validation library, that includes test suites and statistical methods for validating the machine learning performance and software quality of proposed feature definitions (`ballet.validation`)\n    * functionality for programmatically collecting submitted feature definitions from file systems (`ballet.contrib`)\n    * a project template  for individual Ballet projects that can be automatically updated with upstream template improvements (`ballet/templates/project_template`, `ballet.update`)\n    * a command line tool for maintaining and developing Ballet projects (`ballet.cli`)\n    * an interface to interact with Ballet projects following the project template (`ballet.project`)\n    * an interactive client for users during development (`ballet.client`)\n* [Assembl\u00e9](https://github.com/ballet/ballet-assemble): A development environment for Ballet collaborations on top of Jupyter Lab\n* [Ballet Bot](https://github.com/ballet/ballet-bot): A bot to help manage Ballet projects on GitHub \n",
+                "original_header": "The Ballet framework"
+            },
+            "confidence": 0.9729626170731909,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ballet/ballet/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "You can also read our research paper about the Ballet framework and our case study analysis, which appeared at ACM CSCW 2021: \n",
+                "original_header": "Learn more about Ballet"
+            },
+            "confidence": 0.9084572860139316,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ballet/ballet/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* [ballet/predict-house-prices](https://github.com/ballet/predict-house-prices): This is a sandbox collaboration that showcases Ballet. All submissions that pass the feature API validation will be automatically accepted.\n* [ballet/predict-census-income](https://github.com/ballet/predict-census-income): This is a collaboration as part of a past research case study to better understand collaborative data science in action.\n* [ballet/predict-life-outcomes](https://github.com/ballet/predict-life-outcomes): This is an ongoing collaboration to predict life outcomes for disadvantaged children and their families, inspired by the recent [Fragile Families Challenge](https://www.fragilefamilieschallenge.org/).\n \n",
+                "original_header": "Join a Ballet collaboration"
+            },
+            "confidence": 0.977572703045427,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ballet/ballet/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "ballet",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ballet/ballet",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ballet/ballet/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ballet/ballet/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 32,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "collaborative-data-science, feature-engineering",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 6,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/ballet/ballet/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 355389
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 8443
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 3738
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 378
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ballet/ballet/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ballet/ballet/master/ballet/templates/project_template/%7B%7Bcookiecutter.project_slug%7D%7D/notebooks/Analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ballet/ballet/master/ballet/templates/project_template/%7B%7Bcookiecutter.project_slug%7D%7D/notebooks/Analysis.ipynb"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you use Ballet in your work, please consider citing the following paper:\n\n```bibtex\n@article{smith2021enabling,\n    author = {Smith, Micah J. and Cito, J{\\\"u}rgen and Lu, Kelvin and Veeramachaneni, Kalyan},\n    title = \"Enabling Collaborative Data Science Development with the {Ballet} Framework\",\n    year = \"2021\",\n    month = \"October\",\n    volume = \"5\",\n    pages = \"1--39\",\n    doi = \"10.1145/3479575\",\n    journal = \"Proceedings of the {ACM} on Human-Computer Interaction\",\n    publisher = \"{ACM}\",\n    language = \"en\",\n    number = \"CSCW2\"\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing Ballet",
+                "parent_header": [
+                    "ballet"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ballet/ballet/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{smith2021enabling,\n    number = {CSCW2},\n    language = {en},\n    publisher = {{ACM}},\n    journal = {Proceedings of the {ACM} on Human-Computer Interaction},\n    doi = {10.1145/3479575},\n    pages = {1--39},\n    volume = {5},\n    month = {October},\n    year = {2021},\n    title = {Enabling Collaborative Data Science Development with the {Ballet} Framework},\n    author = {Smith, Micah J. and Cito, J{\\\"u}rgen and Lu, Kelvin and Veeramachaneni, Kalyan},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1145/3479575",
+                "title": "Enabling Collaborative Data Science Development with the {Ballet} Framework",
+                "author": "Smith, Micah J. and Cito, J{\\\"u}rgen and Lu, Kelvin and Veeramachaneni, Kalyan"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ballet/ballet/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Free software: MIT license\n- Documentation: https://ballet.github.io/ballet\n- Repo: https://github.com/ballet/ballet\n- Project homepage: https://ballet.github.io\n \n",
+                "original_header": "ballet"
+            },
+            "confidence": 0.9999999981932461,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ballet/ballet/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "ballet"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ballet/ballet/master/README.md"
+        }
+    ]
+}

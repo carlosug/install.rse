@@ -1,0 +1,302 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 21:38:45"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/roozbehaghili/studying_aiops_github",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "roozbehaghili",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-06-06T20:56:41Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-04-18T09:04:57Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 AIOpsstudy\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Replication package for the paper \"Studying the Characteristics of AIOps Projects on GitHub\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "We organize the replication package into three file folders.\n\n1. Experiments: this folder contains code for our main experiments (i.e., extracting GitHub metrics for projects (RQ1) and analyze projects in terms of code quality (RQ3));\n2. Results: this folder contains the results CSV files for all of our research questions;\n3. Results analysis: this folder contains code for analyzing the dataset and experiment results.\n\nThe needed libraries and versions can be found on `requirements.txt` file.\n",
+                "type": "Text_excerpt",
+                "original_header": "Introduction",
+                "parent_header": [
+                    "Characteristics of AIOps Projects - Replication Package"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains the replication package for the paper \"Studying the Characteristics of AIOps Projects on GitHub\".\n \n",
+                "original_header": "Characteristics of AIOps Projects - Replication Package"
+            },
+            "confidence": 0.9506862559013557,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This part contains code for the analysis of our experiment results. All code could be found under the `analysis` folder. \n \n",
+                "original_header": "Result Analysis"
+            },
+            "confidence": 0.9355073977924473,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "studying_aiops_github",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "roozbehaghili/studying_aiops_github",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/roozbehaghili/studying_aiops_github/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/roozbehaghili/studying_aiops_github/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/roozbehaghili/studying_aiops_github/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 1059272
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 10027
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/analysis/rq1_analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/analysis/rq1_analysis.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/analysis/rq3_analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/analysis/rq3_analysis.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/experiments/rq1/github_aiops.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/experiments/rq1/github_aiops.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/experiments/rq1/github_ml.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/experiments/rq1/github_ml.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/experiments/rq1/github_general.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/experiments/rq1/github_general.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "```bash\ngit clone https://github.com/AIOpsstudy/understanding_aiops\npip install -r requirements.txt\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Install",
+                "parent_header": [
+                    "Characteristics of AIOps Projects - Replication Package"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Characteristics of AIOps Projects - Replication Package"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/roozbehaghili/studying_aiops_github/main/README.md"
+        }
+    ]
+}

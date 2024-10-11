@@ -1,0 +1,287 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:01:58"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/giangnm58/Manas",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "giangnm58",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-11-21T10:30:51Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-08-18T21:32:22Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 Giang Nguyen\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/giangnm58/Manas/main/LICENSE"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Manas",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "giangnm58/Manas",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/giangnm58/Manas/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/giangnm58/Manas/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/giangnm58/Manas/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 524053
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "\n## Installation\n### Environment Setup\nTo run Fair-AutoML, we need to install Python 3 environment on Linux. Follow these steps to clone the Fair-AutoML repository and install Fair-AutoML.\n\n1. Clone this repository and move to the directory:\n\n```\ngit clone https://github.com/giangnm58/Manas.git\ncd Manas/\n``` \n\n2. Navigate to the cloned repository: `cd Manas/` and install required packages:\n\n```\npip install -r requirements.txt\n```\n## Run the Manas tool\n\nFor optimal program execution, we employ PyCharm, a user-friendly integrated development environment.\n\nTo acquire PyCharm, visit https://www.jetbrains.com/pycharm/ and proceed with the installation.\n\nHere's a concise guide to getting started:\n\nStep 1: Launch PyCharm.\n\nStep 2: Navigate to the \"File\" menu and select \"Open.\"\n\nStep 3: Locate the Manas directory and select it to open the project.\n\n## Additional Data\n\nDue to the extensive size of the dataset, you can access the complete artifact along with the dataset by downloading it from Google Drive via the following link: [Google Drive Link](https://drive.google.com/file/d/1x8jZ27Ho9tZ5H1bVOvOCQB0xpi6n3FnN/view?usp=sharing).\n\nThe provided dataset encompasses the following components:\n\n* Python files essential for result replication.\n* Both training and testing data subsets.\n* Trained models, available as pkl files, for Original Manas, Transformed Manas, Manas, and Auto-Keras.\n* Excel files containing error rate information for Original Manas, Transformed Manas, Manas, and Auto-Keras across different time periods. These errors can also be visualized using the provided trained model pkl files.\n\n#### Model Mining\nTo mine the model, execute the following command:\n```\npython3 clone/model_mining/database_creation/model_collection.py\n```  \nThe process of mining the model will require some time investment. Fortunately, we've already completed the download of the models from the autokeras/mined_model directory. These models are stored in the format of abstract neural networks (ANN), ready for further utilization.\n\n#### Manas\nTo replicate Manas' outcomes, follow these steps:\n\n**We use Blood Cell problem as an example.**\n\nStep 1: Download the data from [Google Drive Link](https://drive.google.com/file/d/1x8jZ27Ho9tZ5H1bVOvOCQB0xpi6n3FnN/view?usp=sharing). Extract the zip file.\n\nStep 2: copy the \"Blood Cell.py\", \"xtest_bc.npy\", \"ytest_bc.npy\", \"xtrain_bc.npy\", \"ytrain_bc.npy\" to \"autokeras\"\n```\ncd Manas Data/Blood Cell\ncp xtest_bc.npy ytest_bc.npy xtrain_bc.npy ytrain_bc.npy autokeras/\ncp Classification/Blood Cell.py autokeras/\n```\n\nStep 3: Run the file \"Blood Cell.py\" to get the result.\n```\npython3 Blood Cell.py\n```\n\n**Example to evaluate trained models:**\n\nIn the folder autokeras, there is a file \"eval.py\" which contains the code to run the trained models on the testing data.\n\nStep 1: Replace \"path\" with correct path.\n\nStep 2: Run the file \"eval.py\" \n```\npython3 eval.py\n```\n\n\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/giangnm58/Manas/main/INSTALL.md"
+        },
+        {
+            "result": {
+                "value": "To run Fair-AutoML, we need to install Python 3 environment on Linux. Follow these steps to clone the Fair-AutoML repository and install Fair-AutoML.\n\n1. Clone this repository and move to the directory:\n\n```\ngit clone https://github.com/giangnm58/Manas.git\ncd Manas/\n``` \n\n2. Navigate to the cloned repository: `cd Manas/` and install required packages:\n\n```\npip install -r requirements.txt\n```\n\nTo run the tool, please refer to the [installation file](/INSTALL.md) for detailed instructions. \n\n",
+                "type": "Text_excerpt",
+                "original_header": "Environment Setup",
+                "parent_header": [
+                    "Manas"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/giangnm58/Manas/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The provided dataset encompasses the following components: \n",
+                "original_header": "Additional Data"
+            },
+            "confidence": 0.9441035401301858,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/giangnm58/Manas/main/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/giangnm58/Manas/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "```\n@inproceedings{nguyen2022manas,\n  title={Manas: Mining software repositories to assist automl},\n  author={Nguyen, Giang and Islam, Md Johirul and Pan, Rangeet and Rajan, Hridesh},\n  booktitle={Proceedings of the 44th International Conference on Software Engineering},\n  pages={1368--1380},\n  year={2022}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Cite the paper as",
+                "parent_header": [
+                    "Manas",
+                    "Additional Data"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/giangnm58/Manas/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{nguyen2022manas,\n    year = {2022},\n    pages = {1368--1380},\n    booktitle = {Proceedings of the 44th International Conference on Software Engineering},\n    author = {Nguyen, Giang and Islam, Md Johirul and Pan, Rangeet and Rajan, Hridesh},\n    title = {Manas: Mining software repositories to assist automl},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Manas: Mining software repositories to assist automl",
+                "author": "Nguyen, Giang and Islam, Md Johirul and Pan, Rangeet and Rajan, Hridesh"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/giangnm58/Manas/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains the source code, benchmark models, and datasets for the paper - **\"Manas: Mining Software Repositories to Assist AutoML\"**, appeared in ICSE 2022 at Pittsburgh, Pennsylvania, United States.\n \n",
+                "original_header": "Manas"
+            },
+            "confidence": 0.9523197844054047,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/giangnm58/Manas/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Today deep learning is widely used for building software. A software engineering problem with deep learning is that finding an appropriate convolutional neural network (CNN) model for the task can be a challenge for developers. Recent work on AutoML, more precisely neural architecture search (NAS), embodied by tools like Auto-Keras aims to solve this problem by essentially viewing it as a search problem where the starting point is a default CNN model, and mutation of this CNN model allows exploration of the space of CNN models to find a CNN model that will work best for the problem. These works have had significant success in producing high-accuracy CNN models. There are two problems, however. First, NAS can be very costly, often taking several hours to complete. Second, CNN models produced by NAS can be very complex that makes it harder to understand them and costlier to train them. We propose a novel approach for NAS, where instead of starting from a default CNN model, the initial model is selected from a repository of models extracted from GitHub. The intuition being that developers solving a similar problem may have developed a better starting point compared to the default model. We also analyze common layer patterns of CNN models in the wild to understand changes that the developers make to improve their models. Our approach uses commonly occurring changes as mutation operators\nin NAS. We have extended Auto-Keras to implement our approach. Our evaluation using 8 top voted problems from Kaggle for tasks including image classification and image regression shows that given the same search time, without loss of accuracy, Manas produces models with 42.9% to 99.6% fewer number of parameters than Auto-Keras\u2019 models. Benchmarked on GPU, Manas\u2019 models train 30.3% to 641.6% faster than Auto-Keras\u2019 models. \n",
+                "original_header": "Abstract"
+            },
+            "confidence": 0.967498605787865,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/giangnm58/Manas/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* Python files essential for result replication.\n* Both training and testing data subsets.\n* Trained models, available as pkl files, for Original Manas, Transformed Manas, Manas, and Auto-Keras.\n* Excel files containing error rate information for Original Manas, Transformed Manas, Manas, and Auto-Keras across different time periods. These errors can also be visualized using the provided trained model pkl files.\n \n",
+                "original_header": "Additional Data"
+            },
+            "confidence": 0.9257359810045209,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/giangnm58/Manas/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Manas"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/giangnm58/Manas/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/giangnm58/Manas/main/overview.JPG"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/giangnm58/Manas/main/README.md"
+        }
+    ]
+}

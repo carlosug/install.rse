@@ -1,0 +1,255 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 21:07:23"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/zfj1998/M3NSCT5",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "zfj1998",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-07-29T02:16:15Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-12-26T11:12:06Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "the code base for our paper \"Diverse Title Generation for Stack Overflow Posts with Multiple Sampling Enhanced Transformer\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "M3NSCT5 is a hybrid method combining the Maximal Marginal Multiple Nucleus Sampling strategy and the CodeT5 model, which is proposed to tackle the ambiguity issue when generating Stack Overflow post titles from code snippets. \n",
+                "original_header": "M3NSCT5"
+            },
+            "confidence": 0.9637778999053802,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zfj1998/M3NSCT5/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "M3NSCT5",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "zfj1998/M3NSCT5",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/zfj1998/M3NSCT5/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/zfj1998/M3NSCT5/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/zfj1998/M3NSCT5/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 55470
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 1829
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/zfj1998/M3NSCT5/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you find this work inspiring for your research, please cite our paper:\n```\n@article{ZHANG2023111672,\ntitle = {Diverse title generation for Stack Overflow posts with multiple-sampling-enhanced transformer},\njournal = {Journal of Systems and Software},\nvolume = {200},\npages = {111672},\nyear = {2023},\nissn = {0164-1212},\ndoi = {https://doi.org/10.1016/j.jss.2023.111672},\nurl = {https://www.sciencedirect.com/science/article/pii/S0164121223000675},\nauthor = {Fengji Zhang and Jin Liu and Yao Wan and Xiao Yu and Xiao Liu and Jacky Keung},\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "M3NSCT5",
+                    "Dataset and Models"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/zfj1998/M3NSCT5/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{ZHANG2023111672,\n    author = {Fengji Zhang and Jin Liu and Yao Wan and Xiao Yu and Xiao Liu and Jacky Keung},\n    url = {https://www.sciencedirect.com/science/article/pii/S0164121223000675},\n    doi = {https://doi.org/10.1016/j.jss.2023.111672},\n    issn = {0164-1212},\n    year = {2023},\n    pages = {111672},\n    volume = {200},\n    journal = {Journal of Systems and Software},\n    title = {Diverse title generation for Stack Overflow posts with multiple-sampling-enhanced transformer},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "https://doi.org/10.1016/j.jss.2023.111672",
+                "title": "Diverse title generation for Stack Overflow posts with multiple-sampling-enhanced transformer",
+                "author": "Fengji Zhang and Jin Liu and Yao Wan and Xiao Yu and Xiao Liu and Jacky Keung",
+                "url": "https://www.sciencedirect.com/science/article/pii/S0164121223000675"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zfj1998/M3NSCT5/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Before you run the code, make sure you have prepared the necessary environment:\n```\nconda create -n m3nsct5 python=3.7\nconda activate m3nsct5\npip install -r requirements.txt\n```\n \n",
+                "original_header": "Environment"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zfj1998/M3NSCT5/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Here is the directory structure of our repository:\n```\n\u251c\u2500main.py  # entry_point\n\u251c\u2500mytrainer.py  # top-p + CodeT5\n\u251c\u2500dataset  # the train/val/test data\n\u251c\u2500metrics\n\u2502   \u251c\u2500myrouge.py  # wrapper of rouge metric\n\u2502   \u251c\u2500ranking.py  # maximal marginal ranking\n\u2502   \u2514\u2500scorer.py  # entry for evaluation\n\u2502\n\u2514\u2500scripts\n    \u251c\u2500codet5_sample.sbatch  # example reference script\n    \u2514\u2500codet5_train.sbatch  # example train script\n```\n \n",
+                "original_header": "Dataset and Models"
+            },
+            "confidence": 0.9640551149394093,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zfj1998/M3NSCT5/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "M3NSCT5"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zfj1998/M3NSCT5/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/zfj1998/M3NSCT5/main/./figs/framework.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zfj1998/M3NSCT5/main/README.md"
+        }
+    ]
+}

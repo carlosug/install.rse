@@ -1,0 +1,522 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:30:30"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/basedrhys/obfuscated-code2vec",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "basedrhys",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-08-10T08:46:28Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-21T06:26:31Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2018 Technion\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Code for the paper \"Embedding Java Classes with code2vec: Improvements from Variable Obfuscation\" in MSR 2020",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains the java obfuscation tool created with [Spoon](https://github.com/INRIA/spoon) and the dataset pipeline as described in:  \nAlso included are all models and data used in the paper for reproducing/further research.\n \n",
+                "original_header": "Embedding Java Classes with code2vec: Improvements from Variable Obfuscation"
+            },
+            "confidence": 0.9082152556237191,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The `.java` datasets used to train each of the models (different versions of `java-large` from the [code2seq repository](https://github.com/tech-srl/code2seq)), as well as the preprocessed code2vec-ready versions of those datasets are also available: [Google Drive Link](https://drive.google.com/open?id=1CXgSXKf292BTlryASui2kBvYvJSvFnWN)\n \n",
+                "original_header": "Trained code2vec Models"
+            },
+            "confidence": 0.9189538021225284,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "obfuscated-code2vec",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "basedrhys/obfuscated-code2vec",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/basedrhys/obfuscated-code2vec/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/basedrhys/obfuscated-code2vec/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 31,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/basedrhys/obfuscated-code2vec/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 79042
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 54671
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 1169
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/basedrhys/obfuscated-code2vec/releases/22228063",
+                "tag": "v1.0",
+                "name": "Main Release",
+                "author": {
+                    "name": "basedrhys",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/basedrhys/obfuscated-code2vec/tarball/v1.0",
+                "zipball_url": "https://api.github.com/repos/basedrhys/obfuscated-code2vec/zipball/v1.0",
+                "html_url": "https://github.com/basedrhys/obfuscated-code2vec/releases/tag/v1.0",
+                "url": "https://api.github.com/repos/basedrhys/obfuscated-code2vec/releases/22228063",
+                "release_id": 22228063,
+                "date_created": "2019-12-14T07:56:05Z",
+                "date_published": "2019-12-14T08:51:12Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/basedrhys/obfuscated-code2vec/releases/22224546",
+                "tag": "v0.1",
+                "name": "Initial Beta Release",
+                "author": {
+                    "name": "basedrhys",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/basedrhys/obfuscated-code2vec/tarball/v0.1",
+                "zipball_url": "https://api.github.com/repos/basedrhys/obfuscated-code2vec/zipball/v0.1",
+                "html_url": "https://github.com/basedrhys/obfuscated-code2vec/releases/tag/v0.1",
+                "url": "https://api.github.com/repos/basedrhys/obfuscated-code2vec/releases/22224546",
+                "release_id": 22224546,
+                "date_created": "2019-12-13T22:14:15Z",
+                "date_published": "2019-12-13T23:23:26Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/pipeline/scripts/create_datasets.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/java-obfuscator/obfs-script.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "- Java 8+\n- Python 3\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "Table of Contents"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "1. `cd java-obfuscator`\n1. Locate a folder of `.java` files (e.g., from the [code2seq](https://github.com/tech-srl/code2seq#datasets) repository)\n2. Alter the input and output directories in `obfs-script.sh`, as well as the number of threads of your machine. If you're running this on a particularly large folder (e.g., millions of files) then you may need to increase the `NUM_PARTITIONS` to 3 or 4, otherwise memory issues can occur, grinding the obfuscator to a near halt.\n3. Run `obfs-script.sh` i.e. `$ source obfs-script.sh`\n\nThis will result in a new obfuscated folder of `.java` files, that can be used to train a new obfuscated code2vec model (or any model that performs learning from source code for that matter).\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage: Obfuscator",
+                "parent_header": [
+                    "Table of Contents"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "value": "![Dataset Pipeline View](img/pipeline.png)\n\nThe pipeline uses a trained code2vec model as a feature extractor, converting a classification dataset of `.java` files into a numerical form (`.arff` by default), that can then be used as input for any standard classifier.\n\nAll of the model-related code (`common.py`, `model.py`, `PathContextReader.py`) as well as the `JavaExtractor` folder is code from the original [code2vec repository](https://github.com/tech-srl/code2vec). This was used for invoking the trained code2vec models to create method embeddings - using the code2vec model as a feature extractor.\n\nThe dataset should be in the form of those supplied with this paper i.e.:\n```\ndataset_name\n|-- class1\n    |-- file1.java\n    |-- file2.java\n    ...\n|-- class2\n    |-- file251.java\n    |-- file252.java\n    ...\n\n...\n```\n\nTo run the dataset pipeline and create class-level embeddings for a dataset of Java files:\n1. `cd pipeline`\n2. `pip install -r requirements.txt`\n3. Download a `.java` dataset (from the datasets supplied or your own) and put in the `java_files/` directory\n4. Download a code2vec model checkpoint and put the checkpoint folder in the `models/` directory\n5. Change the paths and definitions in `model_defs.py` and number of models in `scripts/create_datasets.sh` to match your setup\n6. Run `create_datasets.sh` (`source scripts/create_datasets.sh`). This will loop through each model and create class-level embeddings for the supplied datasets. The resulting datasets will be in `.arff` format in the `weka_files/` folder. \n\nYou can now perform class-level classification on the dataset using any off-the-shelf WEKA classifier. Note that the dataset contains the original filename as a string attribute for debugging purposes; you'll likely need to remove this attribute before you pass the dataset into a classifier.\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage: Dataset Pipeline",
+                "parent_header": [
+                    "Table of Contents"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "value": "By default the pipeline will use the full range of values for each parameter, which creates a huge number of resulting `.arff` datasets (>1000). To reduce the number of these, remove (or comment out) some of the items in the arrays in `reduction_methods.py` and `selection_methods.py` (at the end of the file). Our experiments showed that the `SelectAll` selection method and `NoReduction` reduction method performed best in most cases so you may want to just keep these.\n",
+                "type": "Text_excerpt",
+                "original_header": "Config",
+                "parent_header": [
+                    "Table of Contents",
+                    "Usage: Dataset Pipeline"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "[Embedding Java Classes with code2vec: Improvements from Variable Obfuscation](https://arxiv.org/pdf/2004.02942.pdf)\n\n```\n@inproceedings{10.1145/3379597.3387445,\nauthor = {Compton, Rhys and Frank, Eibe and Patros, Panos and Koay, Abigail},\ntitle = {Embedding Java Classes with Code2vec: Improvements from Variable Obfuscation},\nyear = {2020},\nisbn = {9781450375177},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nurl = {https://doi.org/10.1145/3379597.3387445},\ndoi = {10.1145/3379597.3387445},\nbooktitle = {Proceedings of the 17th International Conference on Mining Software Repositories},\npages = {243\u2013253},\nnumpages = {11},\nkeywords = {machine learning, code obfuscation, neural networks, code2vec, source code},\nlocation = {Seoul, Republic of Korea},\nseries = {MSR '20}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "Table of Contents"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{10.1145/3379597.3387445,\n    series = {MSR '20},\n    location = {Seoul, Republic of Korea},\n    keywords = {machine learning, code obfuscation, neural networks, code2vec, source code},\n    numpages = {11},\n    pages = {243\u2013253},\n    booktitle = {Proceedings of the 17th International Conference on Mining Software Repositories},\n    doi = {10.1145/3379597.3387445},\n    url = {https://doi.org/10.1145/3379597.3387445},\n    address = {New York, NY, USA},\n    publisher = {Association for Computing Machinery},\n    isbn = {9781450375177},\n    year = {2020},\n    title = {Embedding Java Classes with Code2vec: Improvements from Variable Obfuscation},\n    author = {Compton, Rhys and Frank, Eibe and Patros, Panos and Koay, Abigail},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1145/3379597.3387445",
+                "title": "Embedding Java Classes with Code2vec: Improvements from Variable Obfuscation",
+                "author": "Compton, Rhys and Frank, Eibe and Patros, Panos and Koay, Abigail",
+                "url": "https://doi.org/10.1145/3379597.3387445"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Class distributions shown below generated by [WEKA](https://www.cs.waikato.ac.nz/ml/weka/)\n \n",
+                "original_header": "Datasets"
+            },
+            "confidence": 0.9757226697452905,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Embedding Java Classes with code2vec: Improvements from Variable Obfuscation"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/img/overall.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/img/pipeline.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/img/classDist_opencv.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/img/vis_opencv.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/img/classDist_algorithms.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/img/vis_algorithm.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/img/classDist_Author.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/img/vis_authors.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/img/classDist_javaBugs.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/img/classDist_dupFiles.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/img/classDist_dupFunc.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/img/classDist_malware.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2004.02942.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2004.02942"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/basedrhys/obfuscated-code2vec/master/README.md"
+        }
+    ]
+}

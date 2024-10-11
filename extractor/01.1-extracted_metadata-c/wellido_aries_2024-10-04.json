@@ -1,0 +1,253 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 18:50:42"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/wellido/Aries",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "wellido",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-01-30T12:00:39Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-07-04T09:50:26Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Aries",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "wellido/Aries",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/wellido/Aries/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/wellido/Aries/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/wellido/aries/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 154280
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 392
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wellido/aries/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wellido/aries/main/baselines/meta_set/imagenet_prepare.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wellido/aries/main/baselines/meta_set/run_FD.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "    - Tensorflow 2.3\n    - Keras 2.4.3\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "Source Code of Aries"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wellido/aries/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you use the code in your research, please cite:\n```bibtex\n    @article{hu2022efficient,\n    title={Aries: Efficient Testing of Deep Neural Networks via Labeling-Free Accuracy Estimation},\n    author={Hu, Qiang and Guo, Yuejun and Xie, Xiaofei and Cordy, Maxime and Ma, Lei and Papadakis, Mike and Traon, Yves Le},\n    journal={arXiv preprint arXiv:2207.10942},\n    year={2022}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "Source Code of Aries"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wellido/aries/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{hu2022efficient,\n    year = {2022},\n    journal = {arXiv preprint arXiv:2207.10942},\n    author = {Hu, Qiang and Guo, Yuejun and Xie, Xiaofei and Cordy, Maxime and Ma, Lei and Papadakis, Mike and Traon, Yves Le},\n    title = {Aries: Efficient Testing of Deep Neural Networks via Labeling-Free Accuracy Estimation},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Aries: Efficient Testing of Deep Neural Networks via Labeling-Free Accuracy Estimation",
+                "author": "Hu, Qiang and Guo, Yuejun and Xie, Xiaofei and Cordy, Maxime and Ma, Lei and Papadakis, Mike and Traon, Yves Le"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/wellido/aries/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- PACE code is from https://github.com/pace2019/pace \n- CES code is from https://github.com/Lizn-zn/DNNOpAcc\n- Meta-set code is from https://github.com/Simon4Yan/Meta-set\n- CIFAR10-C data: https://zenodo.org/record/2535967#.YfRacRNKhQI\n- Tiny-ImageNet-C data: https://zenodo.org/record/2469796#.YnPl6hMzZhE \n",
+                "original_header": "Others"
+            },
+            "confidence": 0.999999999873836,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/wellido/aries/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Source Code of Aries"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/wellido/aries/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2207.10942"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/wellido/aries/main/README.md"
+        }
+    ]
+}

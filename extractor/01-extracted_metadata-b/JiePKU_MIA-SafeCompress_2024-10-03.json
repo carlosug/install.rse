@@ -1,0 +1,265 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 21:01:09"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/JiePKU/MIA-SafeCompress",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "JiePKU",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-05-06T06:07:08Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-13T06:13:48Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "MIA-SafeCompress",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "JiePKU/MIA-SafeCompress",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/JiePKU/MIA-SafeCompress/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/JiePKU/MIA-SafeCompress/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/JiePKU/MIA-SafeCompress/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 130115
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/JiePKU/MIA-SafeCompress/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "* Python 3.7\n* pytorch 1.8\n* cuda 10.2\n* datetime\n* numpy\n* torchvision\n* itertools\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/JiePKU/MIA-SafeCompress/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "We take vgg with sparsity=0.05 on CIFAR100 for example\nYou can obtain the task acuracy (Task Acc) for vgg by running the following command:\n```python\npython main.py --sparse --seed 18 --sparse_init ERK  --multiplier 1 --lr 0.1 --density 0.05 --update_frequency 4000 --epochs 300 --model vgg-c --data cifar100 --decay_frequency 30000 --batch-size 128 --n_class 100\n```\nTo perform membership inference attacks (to obtain MIA Acc), you can run:\n```python\npython mia_main.py --density 0.05 --epochs 100 --model vgg-c --data cifar100 --batch-size 128 --n_class 100\n```\n\nif it is helpful, please cite our paper:\n```python\n@inproceedings{zhu2022safety,\n  title={Safety and Performance, Why not Both? Bi-Objective Optimized Model Compression toward AI Software Deployment},\n  author={Zhu, Jie and Wang, Leye and Han, Xiao},\n  booktitle={Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering},\n  pages={1--13},\n  year={2022}\n}\n\n@article{zhu2024safety,\n  title={Safety and Performance, Why Not Both? Bi-Objective Optimized Model Compression against Heterogeneous Attacks Toward AI Software Deployment},\n  author={Zhu, Jie and Wang, Leye and Han, Xiao and Liu, Anmin and Xie, Tao},\n  journal={IEEE Transactions on Software Engineering},\n  year={2024},\n  publisher={IEEE}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Quick Start"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/JiePKU/MIA-SafeCompress/master/README.md"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "This code is based on [ITOP](https://github.com/Shiweiliuiiiiiii/In-Time-Over-Parameterization)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgement"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/JiePKU/MIA-SafeCompress/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This code is an instance of our *SafeCompress* framework called *MIA-SafeCompress* against membership inference attacks (MIAs)\n \n",
+                "original_header": "MIA-SafeCompress"
+            },
+            "confidence": 0.9710184172833524,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/JiePKU/MIA-SafeCompress/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{zhu2022safety,\n    year = {2022},\n    pages = {1--13},\n    booktitle = {Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering},\n    author = {Zhu, Jie and Wang, Leye and Han, Xiao},\n    title = {Safety and Performance, Why not Both? Bi-Objective Optimized Model Compression toward AI Software Deployment},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Safety and Performance, Why not Both? Bi-Objective Optimized Model Compression toward AI Software Deployment",
+                "author": "Zhu, Jie and Wang, Leye and Han, Xiao"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JiePKU/MIA-SafeCompress/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{zhu2024safety,\n    publisher = {IEEE},\n    year = {2024},\n    journal = {IEEE Transactions on Software Engineering},\n    author = {Zhu, Jie and Wang, Leye and Han, Xiao and Liu, Anmin and Xie, Tao},\n    title = {Safety and Performance, Why Not Both? Bi-Objective Optimized Model Compression against Heterogeneous Attacks Toward AI Software Deployment},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Safety and Performance, Why Not Both? Bi-Objective Optimized Model Compression against Heterogeneous Attacks Toward AI Software Deployment",
+                "author": "Zhu, Jie and Wang, Leye and Han, Xiao and Liu, Anmin and Xie, Tao"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JiePKU/MIA-SafeCompress/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JiePKU/MIA-SafeCompress/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/JiePKU/MIA-SafeCompress/master/img/SafeCompress.JPG"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JiePKU/MIA-SafeCompress/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2208.05969"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JiePKU/MIA-SafeCompress/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2401.00996"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JiePKU/MIA-SafeCompress/master/README.md"
+        }
+    ]
+}

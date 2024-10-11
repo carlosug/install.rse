@@ -1,0 +1,344 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:38:56"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/S2-group/icra-ws-robotics-rosbag",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "S2-group",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-03-10T23:52:31Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-08-18T19:38:32Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Automatic Extraction of Time-windowed ROS Computation Graphs from ROS Bag Files",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This project is about a tool to statically extract time-windowed computation graphs from [ROS bag files](http://wiki.ros.org/rosbag). Our approach is an alternative to dynamic extractors, such as the [rqt_graph](http://wiki.ros.org/rqt_graph) tool.\n \n",
+                "original_header": "Automatic Extraction of Time-windowed ROS Computation Graphs from ROS Bag Files"
+            },
+            "confidence": 0.9606728445526308,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* ***Rosbag Extraction***: in this phase, we read the ROS bag content data and store it in a tabular format (CSV file), which is broadly used for data conversion and analysis. Both, ROS 1 and ROS 2 bag formats are supported.\n* ***Time-window Slicing***: in this phase, we select only the computation graph components within a time interval (time-window passed as a parameter), which benefits from the data that is already tabulated in the CSV file from phase 1\n* ***Computation Graph Building***: finally, in this phase, we generate a computation graph compatible with RQT, \nwhich is a standard among ROS community. \n",
+                "original_header": "The Approach"
+            },
+            "confidence": 0.9952141333803325,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```\n./bagfiles/          - Contains samples of bag files and a list of all we found on GitHub.\n./src/git_api/       - Contains the code used and documentation to crawl GitHub repositories.\n./src/extractor/     - Contains the source code and documentation of the architecture extractor.\n```\n \n",
+                "original_header": "Repository Organization"
+            },
+            "confidence": 0.9501751488816254,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "icra-ws-robotics-rosbag",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "S2-group/icra-ws-robotics-rosbag",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/S2-group/icra-ws-robotics-rosbag/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/S2-group/icra-ws-robotics-rosbag/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/S2-group/icra-ws-robotics-rosbag/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 18291
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 7540
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 6663
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/extractor.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/src/git_api/extract_repo.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/src/git_api/extract_commits.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/src/git_api/extract_ros_exp.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/src/git_api/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/src/bag_lookup/download-driver.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/src/git_api/draft_merge.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/src/git_api/draft_merge.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Note that it is not necessary for our architecture extractor, which is independent of platforms. However, it requires a few dependencies, solved by the following commands:\n\n```\n$ pip3 install -r ./requirements.txt\n$ sudo apt install graphviz\n```\nIf the requirements list is/becomes broken, do not hesitate to pull request the necessary updates.\n\nThen, just run the extraction script on a bag file: \n```\n$ ./extractor.sh <ros_version> [<start_time> <end_time>] /path/file\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "Automatic Extraction of Time-windowed ROS Computation Graphs from ROS Bag Files"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Here, we provide and example with a very simple ROS 2 bag file:\n```\n$ export root_dir='your project dir'\n$ ./extractor.sh ros2 \"2020-02-04 07:23:55\" \"2020-02-04 07:23:59\" $root_dir/bagfiles/ros2/talker/\n```\n\nThe expected result is the following image, which will be in the rosbag file directory:\n\n<img src=\"./ros2_extraction.png\" alt=\"Extracted Graph: Minimal Publisher\" width=\"350\"/>\n",
+                "type": "Text_excerpt",
+                "original_header": "Example",
+                "parent_header": [
+                    "Automatic Extraction of Time-windowed ROS Computation Graphs from ROS Bag Files",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Automatic Extraction of Time-windowed ROS Computation Graphs from ROS Bag Files"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/./rosbag_extractor-hd.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/./ros2_extraction.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2305.16405"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/S2-group/icra-ws-robotics-rosbag/icra-workshop/README.md"
+        }
+    ]
+}

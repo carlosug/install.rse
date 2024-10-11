@@ -1,0 +1,540 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 23:59:37"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/rohanpadhye/JQF",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "rohanpadhye",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2017-02-23T01:27:45Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-02T18:45:24Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/bsd-2-clause",
+                "type": "License",
+                "name": "BSD 2-Clause \"Simplified\" License",
+                "url": "https://api.github.com/licenses/bsd-2-clause",
+                "spdx_id": "BSD-2-Clause"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Copyright (c) 2017-2020 The Regents of the University of California\nCopyright (c) 2021-2023 Rohan Padhye and JQF Contributors\n\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n1. Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\nnotice, this list of conditions and the following disclaimer in the\ndocumentation and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nHOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "JQF + Zest: Coverage-guided semantic fuzzing for Java.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "JQF is a feedback-directed fuzz testing platform for Java (think: AFL/LibFuzzer but for JVM bytecode). JQF uses the abstraction of *property-based testing*, which makes it nice to write fuzz drivers as parameteric JUnit test methods. JQF is built on top of [junit-quickcheck](https://github.com/pholser/junit-quickcheck). JQF enables running junit-quickcheck style parameterized unit tests with the power of **coverage-guided** fuzzing algorithms such as **Zest**. \n",
+                "original_header": "JQF + Zest: Semantic Fuzzing for Java"
+            },
+            "confidence": 0.9652255503524371,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To reference Zest in your research, we request you to cite our [ISSTA'19 paper]: \n",
+                "original_header": "Zest Research Paper"
+            },
+            "confidence": 0.9535912464669197,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Structure-aware fuzzing tools need a way to understand the input structure. Some other tools use declarative specifications of the input format such as [context-free grammars](https://embed.cs.utah.edu/csmith/) or [protocol buffers](https://github.com/google/libprotobuf-mutator). **JQF** uses QuickCheck's imperative approach for specifying the space of inputs: arbitrary ***generator*** programs whose job is to generate a single random input.  \nA `Generator<T>` provides a method for producing random instances of type `T`. For example, a generator for type `Calendar` returns randomly-generated `Calendar` objects. One can easily write generators for more complex types, such as \n[XML documents](examples/src/main/java/edu/berkeley/cs/jqf/examples/xml/XmlDocumentGenerator.java), \n[JavaScript programs](examples/src/main/java/edu/berkeley/cs/jqf/examples/js/JavaScriptCodeGenerator.java), \n[JVM class files](examples/src/main/java/edu/berkeley/cs/jqf/examples/bcel/JavaClassGenerator.java), SQL queries, HTTP requests, and [many more](https://github.com/pholser/junit-quickcheck/tree/master/examples/src/test/java/com/pholser/junit/quickcheck/examples) -- this is **generator-based fuzzing**. However, simply sampling random inputs of type `T` is not usually very effective, since the generator does not know if the inputs that it produces are any good. \n",
+                "original_header": "What is *generator-based* fuzzing (QuickCheck)?"
+            },
+            "confidence": 0.9352889895269714,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "JQF supports the **[*Zest algorithm*][ISSTA'19 paper], which uses code-coverage and input-validity feedback to bias a QuickCheck-style generator** towards generating structured inputs that can reveal deep semantic bugs. JQF extracts code coverage using bytecode instrumentation, and input validity using JUnit's [`Assume`](https://junit.org/junit4/javadoc/4.12/org/junit/Assume.html) API. An input is valid if no assumptions are violated.\n \n",
+                "original_header": "What is *semantic fuzzing* (Zest)?"
+            },
+            "confidence": 0.9296009279829768,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "If you find bugs with JQF and you comfortable with sharing, We would be happy to add them to this list. \nPlease send a PR for README.md with a link to the bug/cve you found. \n- [google/closure-compiler#2842](https://github.com/google/closure-compiler/issues/2842): IllegalStateException in VarCheck: Unexpected variable\n- [google/closure-compiler#2843](https://github.com/google/closure-compiler/issues/2843): NullPointerException when using Arrow Functions in dead code \n- [google/closure-compiler#3173](https://github.com/google/closure-compiler/issues/3173): Algorithmic complexity / performance issue on fuzzed input\n- [google/closure-compiler#3220](https://github.com/google/closure-compiler/issues/3220): ExpressionDecomposer throws IllegalStateException: Object method calls can not be decomposed\n- [JDK-8190332](https://bugs.openjdk.java.net/browse/JDK-8190332): PngReader throws NegativeArraySizeException when width is too large\n- [JDK-8190511](https://bugs.openjdk.java.net/browse/JDK-8190511): PngReader throws OutOfMemoryError for very small malformed PNGs\n- [JDK-8190512](https://bugs.openjdk.java.net/browse/JDK-8190512): PngReader throws undocumented IllegalArgumentException: \"Empty Region\" instead of IOException for malformed images with negative dimensions\n- [JDK-8190997](https://bugs.openjdk.java.net/browse/JDK-8190997): PngReader throws NullPointerException when PLTE section is missing\n- [JDK-8191023](https://bugs.openjdk.java.net/browse/JDK-8191023): PngReader throws NegativeArraySizeException in parse_tEXt_chunk when keyword length exceeeds chunk size\n- [JDK-8191076](https://bugs.openjdk.java.net/browse/JDK-8191076): PngReader throws  NegativeArraySizeException in parse_zTXt_chunk when keyword length exceeds chunk size\n- [JDK-8191109](https://bugs.openjdk.java.net/browse/JDK-8191109): PngReader throws NegativeArraySizeException in parse_iCCP_chunk when keyword length exceeds chunk size\n- [JDK-8191174](https://bugs.openjdk.java.net/browse/JDK-8191174): PngReader throws undocumented llegalArgumentException with message \"Pixel stride times width must be <= scanline stride\"\n- [JDK-8191073](https://bugs.openjdk.java.net/browse/JDK-8191073): JpegImageReader throws IndexOutOfBoundsException when reading malformed header\n- [JDK-8193444](https://bugs.openjdk.java.net/browse/JDK-8193444): SimpleDateFormat throws ArrayIndexOutOfBoundsException when format contains long sequences of unicode characters\n- [JDK-8193877](https://bugs.openjdk.java.net/browse/JDK-8193877): DateTimeFormatterBuilder throws ClassCastException when using padding\n- [mozilla/rhino#405](https://github.com/mozilla/rhino/issues/405): FAILED ASSERTION due to malformed destructuring syntax\n- [mozilla/rhino#406](https://github.com/mozilla/rhino/issues/406): ClassCastException when compiling malformed destructuring expression\n- [mozilla/rhino#407](https://github.com/mozilla/rhino/issues/407): java.lang.VerifyError in bytecode produced by CodeGen\n- [mozilla/rhino#409](https://github.com/mozilla/rhino/issues/409): ArrayIndexOutOfBoundsException when parsing '<!-'\n- [mozilla/rhino#410](https://github.com/mozilla/rhino/issues/410): NullPointerException in BodyCodeGen\n- [COLLECTIONS-714](https://issues.apache.org/jira/browse/COLLECTIONS-714): PatriciaTrie ignores trailing null characters in keys\n- [COMPRESS-424](https://issues.apache.org/jira/browse/COMPRESS-424): BZip2CompressorInputStream throws ArrayIndexOutOfBoundsException(s) when decompressing malformed input\n- [LANG-1385](https://issues.apache.org/jira/browse/LANG-1385): StringIndexOutOfBoundsException in NumberUtils.createNumber\n- [**CVE-2018-11771**](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-11771): Infinite Loop in Commons-Compress ZipArchiveInputStream ([found by Tobias Ospelt](https://www.floyd.ch/?p=1090))\n- [MNG-6375](https://issues.apache.org/jira/browse/MNG-6375) / [plexus-utils#34](https://github.com/codehaus-plexus/plexus-utils/issues/34): NullPointerException when pom.xml has incomplete XML tag\n- [MNG-6374](https://issues.apache.org/jira/browse/MNG-6374) / [plexus-utils#35](https://github.com/codehaus-plexus/plexus-utils/issues/35): ModelBuilder hangs with malformed pom.xml\n- [MNG-6577](https://issues.apache.org/jira/browse/MNG-6577) / [plexus-utils#57](https://github.com/codehaus-plexus/plexus-utils/issues/57): Uncaught IllegalArgumentException when parsing unicode entity ref\n- [Bug 62655](https://bz.apache.org/bugzilla/show_bug.cgi?id=62655): Augment task: IllegalStateException when \"id\" attribute is missing \n- [BCEL-303](https://issues.apache.org/jira/browse/BCEL-303): AssertionViolatedException in Pass 3A Verification of invoke instructions\n- [BCEL-307](https://issues.apache.org/jira/browse/BCEL-307): ClassFormatException thrown in Pass 3A verification\n- [BCEL-308](https://issues.apache.org/jira/browse/BCEL-308): NullPointerException in Verifier Pass 3A\n- [BCEL-309](https://issues.apache.org/jira/browse/BCEL-309): NegativeArraySizeException when Code attribute length is negative\n- [BCEL-310](https://issues.apache.org/jira/browse/BCEL-310): ArrayIndexOutOfBounds in Verifier Pass 3A\n- [BCEL-311](https://issues.apache.org/jira/browse/BCEL-311): ClassCastException in Verifier Pass 2\n- [BCEL-312](https://issues.apache.org/jira/browse/BCEL-312): AssertionViolation: INTERNAL ERROR Please adapt StringRepresentation to deal with ConstantPackage in Verifier Pass 2\n- [BCEL-313](https://issues.apache.org/jira/browse/BCEL-313): ClassFormatException: Invalid signature: Ljava/lang/String)V in Verifier Pass 3A\n- [**CVE-2018-8036**](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8036): Infinite Loop leading to OOM in PDFBox's AFMParser ([found by Tobias Ospelt](https://www.floyd.ch/?p=1090))\n- [PDFBOX-4333](https://issues.apache.org/jira/browse/PDFBOX-4333): ClassCastException when loading PDF (found by Robin Schimpf)\n- [PDFBOX-4338](https://issues.apache.org/jira/browse/PDFBOX-4338): ArrayIndexOutOfBoundsException in COSParser (found by Robin Schimpf)\n- [PDFBOX-4339](https://issues.apache.org/jira/browse/PDFBOX-4339): NullPointerException in COSParser (found by Robin Schimpf)\n- [**CVE-2018-8017**](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8017): Infinite Loop in IptcAnpaParser \n- [**CVE-2018-12418**](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12418): Infinite Loop in junrar ([found by Tobias Ospelt](https://www.floyd.ch/?p=1090))\n- [**CVE-2019-17359**](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-17359): Attempt to trigger a large allocation leads to OOM in Bouncycastle ASN.1 parser ([found by Tobias Ospelt](https://www.youtube.com/watch?v=RaBGEgQiE-4))\n \n",
+                "original_header": "Trophies"
+            },
+            "confidence": 0.9745533765625998,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "JQF",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "rohanpadhye/JQF",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/rohanpadhye/JQF/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/rohanpadhye/JQF/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 661,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "afl, coverage-guided-fuzzing, fuzzing, junit, property-based-testing, quickcheck",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 112,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/rohanpadhye/jqf/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 702515
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 32312
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 9067
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 8147
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 133
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/setup.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/scripts/jqf-driver.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/scripts/classpath.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/scripts/examples_classpath.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/scripts/experiments/zest/synt_sem_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/scripts/experiments/zest/cov_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/scripts/experiments/zest/bench.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/scripts/experiments/zest/run_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/scripts/experiments/zest/cov.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/scripts/experiments/zest/synt_sem.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/scripts/experiments/ei/cov_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/scripts/experiments/ei/bench.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/scripts/experiments/ei/run_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/scripts/experiments/ei/cov.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Here is a JUnit-Quickcheck test for checking a property of the [PatriciaTrie](https://commons.apache.org/proper/commons-collections/apidocs/org/apache/commons/collections4/trie/PatriciaTrie.html) class from [Apache Commons Collections](https://commons.apache.org/proper/commons-collections/). The property tests that if a `PatriciaTrie` is initialized with an input JDK `Map`, and if the input map already contains a key, then that key should also exist in the newly constructed `PatriciaTrie`.\n\n```java\n@RunWith(JQF.class)\npublic class PatriciaTrieTest {\n\n    @Fuzz  /* The args to this method will be generated automatically by JQF */\n    public void testMap2Trie(Map<String, Integer> map, String key) {\n        // Key should exist in map\n        assumeTrue(map.containsKey(key));   // the test is invalid if this predicate is not true\n\n        // Create new trie with input `map`\n        Trie trie = new PatriciaTrie(map);\n\n        // The key should exist in the trie as well\n        assertTrue(trie.containsKey(key));  // fails when map = {\"x\": 1, \"x\\0\": 2} and key = \"x\"\n    }\n}\n```\n\nRunning `mvn jqf:fuzz` causes JQF to invoke the `testMap2Trie()` method repeatedly with automatically generated values for `map` and `key`. After about 5 seconds on average (~5,000 inputs), JQF will report an assertion violation. It finds [a bug in the implementation of `PatriciaTrie`](https://issues.apache.org/jira/browse/COLLECTIONS-714) that is unresolved as of v4.4. Random sampling of `map` and `key` values is unlikely to find the failing test case, which is a very special corner case (see the comments next to the assertion in the code above). JQF finds this violation easily using a coverage-guided called [**Zest**][ISSTA'19 paper]. To run this example as a standalone Maven project, check out the [jqf-zest-example repository](https://github.com/rohanpadhye/jqf-zest-example).\n\nIn the above example, the generators for `Map` and `String` were synthesized automatically by JUnitQuickCheck. It is also possible to specify generators for structured inputs manually. See the [tutorials](#tutorials) below.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Example",
+                "parent_header": [
+                    "JQF + Zest: Semantic Fuzzing for Java"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        },
+        {
+            "result": {
+                "value": "* [Zest 101](https://github.com/rohanpadhye/jqf/wiki/Fuzzing-with-Zest): A basic tutorial for fuzzing a standalone toy program using command-line scripts. Walks through the process of writing a test driver and structured input generator for `Calendar` objects.\n* [Fuzzing a compiler with Zest](https://github.com/rohanpadhye/jqf/wiki/Fuzzing-a-Compiler): A tutorial for fuzzing a non-trivial program -- the [Google Closure Compiler](https://github.com/google/closure-compiler) -- using a generator for JavaScript programs. This tutorial makes use of the [JQF Maven plugin](https://github.com/rohanpadhye/jqf/wiki/JQF-Maven-Plugin).\n* [Fuzzing with AFL](https://github.com/rohanpadhye/jqf/wiki/Fuzzing-with-AFL): A tutorial for fuzzing a Java program that parses binary data, such as PNG image files, using the AFL binary fuzzing engine.\n* [Fuzzing with ZestCLI](https://gitlab.com/gitlab-org/security-products/demos/coverage-fuzzing/java-fuzzing-example): A tutorial of fuzzing a Java program with ZestCLI \n",
+                "type": "Text_excerpt",
+                "original_header": "Tutorials",
+                "parent_header": [
+                    "JQF + Zest: Semantic Fuzzing for Java",
+                    "Documentation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "* The [JQF Maven Plugin](https://github.com/rohanpadhye/JQF/wiki/JQF-Maven-Plugin) documentation shows how to run `mvn jqf:fuzz` and `mvn jqf:repro`.\n* [Writing a JQF Test](https://github.com/rohanpadhye/JQF/wiki/Writing-a-JQF-test) demonstrates the creation of a JUnit-based parameterized test method for JQF.\n* [The Guidance interface](https://github.com/rohanpadhye/jqf/wiki/The-Guidance-interface) docs show how JQF works internally, which is useful for researchers wishing to build custom guidance algorithms on top of JQF.\n* [API docs](https://rohanpadhye.github.io/JQF/apidocs) are published at every major release, which is again useful for researchers wishing to extend JQF.\n",
+                "type": "Text_excerpt",
+                "original_header": "Documentation",
+                "parent_header": [
+                    "JQF + Zest: Semantic Fuzzing for Java"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        },
+        {
+            "result": {
+                "value": "[GitLab](https://docs.gitlab.com/ee/user/application_security/coverage_fuzzing/) supports running JQF in CI/CD ([tutorial](https://gitlab.com/gitlab-org/security-products/demos/coverage-fuzzing/java-fuzzing-example)), though they have recently rolled out their own custom Java fuzzer for this purpose.\n",
+                "type": "Text_excerpt",
+                "original_header": "Continuous Fuzzing",
+                "parent_header": [
+                    "JQF + Zest: Semantic Fuzzing for Java",
+                    "Documentation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/rohanpadhye/jqf/wiki",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        }
+    ],
+    "contact": [
+        {
+            "result": {
+                "value": "If you've found a bug in JQF or are having trouble getting JQF to work, please open an issue on the [issue tracker](https://github.com/rohanpadhye/jqf/issues). You can also use this platform to post feature requests.\n\nIf it's some sort of fuzzing emergency you can always send an email to the main developer: [Rohan Padhye](https://rohan.padhye.org).\n",
+                "type": "Text_excerpt",
+                "original_header": "Contact the developers",
+                "parent_header": [
+                    "JQF + Zest: Semantic Fuzzing for Java"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "[ISSTA'19 paper]: https://rohan.padhye.org/files/zest-issta19.pdf\n[ISSTA'18 paper]: https://rohan.padhye.org/files/perffuzz-issta18.pdf\n[ISSTA'19 tool paper]: https://rohan.padhye.org/files/jqf-issta19.pdf\n[ICSE'20 paper]: https://rohan.padhye.org/files/rlcheck-icse20.pdf\n[ASE'20 paper]: https://rohan.padhye.org/files/bigfuzz-ase20.pdf\n[ICSE'21 paper]: https://rohan.padhye.org/files/bonsai-icse21.pdf\n[ISSTA'23 paper]: https://dx.doi.org/10.1145/3597926.3598107 \n",
+                "original_header": "JQF + Zest: Semantic Fuzzing for Java"
+            },
+            "confidence": 0.9976759590572669,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "If you find bugs with JQF and you comfortable with sharing, We would be happy to add them to this list. \nPlease send a PR for README.md with a link to the bug/cve you found. \n",
+                "original_header": "Trophies"
+            },
+            "confidence": 0.9990529939578269,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "JQF + Zest: Semantic Fuzzing for Java"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2209.04026"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2304.04233.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2303.07593.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rohanpadhye/jqf/master/README.md"
+        }
+    ]
+}

@@ -1,0 +1,430 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:51:07"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/AIG-ist-tugraz/DirectDebug",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "AIG-ist-tugraz",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-02-02T22:35:10Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2021-12-17T11:45:05Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021 Applied Artificial Intelligence & Software Engineering Research Group at the Institute for Software Technology, Graz University of Technology\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Source code to support ICSE-NIER 2021 paper \"DirectDebug: Automated Testing and Debugging of Feature Models\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository shows the implementation and the evaluation of the DirectDebug algorithm, \npresented at the ICSE-NIER 2021 in the paper entitled \n*DirectDebug: Automated Testing and Debugging of Feature Models*. \nThe research community can exploit this repository to reproduce the work described in our paper fully. \nDirectDebug is a direct diagnosis approach to the automated testing and debugging of variability models. \nThe algorithm supports software engineers in the identification of minimal sets of faulty constraints \nthat are responsible for an unintended behavior of a feature model. This approach has the potential \nto significantly decrease development and maintenance efforts for feature models.\n \n",
+                "original_header": "DirectDebug: Automated Testing and Debugging of Feature Models"
+            },
+            "confidence": 0.9682148984424908,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "In our paper, the input of this final step is 18 feature models and 378 selected scenarios of test cases. \nThe output is a table in which each entry represents the average diagnosis computing time derived from 3 repetitions\n(see Table III in [1]).\n \n",
+                "original_header": "Step 5 - DirectDebug evaluation"
+            },
+            "confidence": 0.9775623710266644,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The software package supports a wide range of parameters as follows: \n",
+                "original_header": "Construct Configuration files"
+            },
+            "confidence": 0.9258602745121209,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "DirectDebug",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "AIG-ist-tugraz/DirectDebug",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/AIG-ist-tugraz/DirectDebug/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/AIG-ist-tugraz/DirectDebug/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/AIG-ist-tugraz/DirectDebug/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 179030
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 1644
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "TypeScript",
+                "name": "TypeScript",
+                "type": "Programming_language",
+                "size": 128
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/AIG-ist-tugraz/DirectDebug/releases/41656891",
+                "tag": "v1.1",
+                "name": "d2bug_eval.jar",
+                "author": {
+                    "name": "manleviet",
+                    "type": "User"
+                },
+                "description": "# d2bug_eval.jar\r\n\r\n**d2bug_eval.jar** is a standalone Java application that encapsulates all evaluation steps in one program. \r\nThe latest version of Java (Java version 8 update 270 or later) is necessary to execute **d2bug_eval.jar**.\r\n\r\n**d2bug_eval.jar** provides 6 functionalities as follows:\r\n\r\n### Feature models generation\r\n\r\n**Syntax**:\r\n```\r\njava -jar d2bug_eval.jar -g <configuration file>\r\n```\r\n\r\n*The configuration file needs the following parameters*\r\n\r\n| *parameters* | *description* |\r\n| ----------- | ----------- |\r\n| ```numGenFM``` | the number of feature models to be generated |\r\n| ```CF``` | a list of the numbers of constraints |CF| |\r\n| ```CTC``` | the ratio of cross-tree constraints which generated feature models has to be attained |\r\n| ```resultsPath``` | the path to the folder where generated feature models will be saved |\r\n\r\n**Configuration file example**:\r\n```\r\nCF: 10,20,50,100,500,1000\r\nnumGenFM: 3\r\nCTC: 0.4\r\nresultsPath: ./results/\r\n```\r\n\r\n### Feature model statistics\r\n\r\n**Syntax**:\r\n```\r\njava -jar d2bug_eval.jar -st <configuration file>\r\n```\r\n\r\n*The configuration file needs the following parameters*\r\n\r\n| *parameters* | *description* |\r\n| ----------- | ----------- |\r\n| ```dataPath``` | the folder where feature models locate |\r\n| ```resultsPath``` | the path to the save file |\r\n\r\n### Test suite generation\r\n\r\n**Syntax**:\r\n```\r\njava -jar d2bug_eval.jar -ts <configuration file>\r\n```\r\n*The configuration file needs the following parameters*\r\n\r\n| *parameters* | *description* |\r\n| ----------- | ----------- |\r\n| ```dataPath``` | the folder where feature models locate |\r\n| ```resultsPath``` | the folder where generated testsuites will be saved |\r\n\r\n### Test cases classification\r\n\r\n**Syntax**:\r\n```\r\njava -jar d2bug_eval.jar -tc <configuration file>\r\n```\r\n\r\n*The configuration file needs the following parameters*\r\n\r\n| *parameters* | *description* |\r\n| ----------- | ----------- |\r\n| ```numGenFM``` | the number of feature models to be generated |\r\n| ```CF``` | a list of the numbers of constraints |CF| |\r\n| ```dataPath``` | the folder where feature models and testsuites locate |\r\n| ```resultsPath``` | the folder where classified testsuites will be saved |\r\n\r\n### Test cases selection / scenario selection\r\n\r\n**Syntax**:\r\n```\r\njava -jar d2bug_eval.jar -ss <configuration file>\r\n```\r\n\r\n*The configuration file needs the following parameters*\r\n\r\n| *parameters* | *description* |\r\n| ----------- | ----------- |\r\n| ```numGenFM``` | the number of feature models to be generated |\r\n| ```CF``` | a list of the numbers of constraints |CF| |\r\n| ```TS``` | a list of the numbers of test cases |T\u03c0| |\r\n| ```numIter``` | the number of iterations |iter| |\r\n| ```perViolated_nonViolated``` | the percentage of violated test cases to non-violated test cases |\r\n| ```dataPath``` | the folder where classified testsuites locate |\r\n| ```resultsPath``` | the folder where scenarios will be saved |\r\n\r\n### DirectDebug evaluation\r\n\r\n**Syntax**:\r\n```\r\njava -jar d2bug_eval.jar -e <configuration file>\r\n```\r\n\r\n*The configuration file needs the following parameters*\r\n\r\n| *parameters* | *description* |\r\n| ----------- | ----------- |\r\n| ```showEvaluation``` | **true** |\r\n| ```showDebug``` | **true** |\r\n| ```CF``` | a list of the numbers of constraints |CF| |\r\n| ```TS``` | a list of the numbers of test cases |T\u03c0| |\r\n| ```numGenFM``` | the number of feature models to be generated |\r\n| ```numIter``` | the number of iterations |iter| |\r\n| ```dataPath``` | the folder where feature models and scenarios locate |\r\n| ```resultsPath``` | the folder where the *results.txt* file will be saved |\r\n\r\n### Construct Configuration files\r\n\r\nThe software package supports a wide range of parameters as follows:\r\n\r\n- ```showEvaluation```: (**false** by default) determines whether the program prints out the results to the console and the *results.txt* file.\r\n- ```showDebug```: (**false** by default) determines whether the program prints out the information messages to the console and the *results.txt* file.\r\n- ```CF```: (**10,20,50,100,500,1000** by default) a list of the numbers of constraints |CF|.\r\n- ```TC```: (**5,10,25,50,100,250,500** by default) a list of the numbers of test cases |T\u03c0|.\r\n- ```numGenFM```: (**3** by default) the number of feature model generated for each number of constraints |CF|.\r\n- ```CTC```: (**0.4** by default) the ratio of cross-tree constraints which generated feature models has to be attained.\r\n- ```numIter```: (**3** by default) the number of iterations |iter|.\r\n- ```perViolated_nonViolated```: (**0.3** by default) the percentage of violated test cases to non-violated test cases.\r\n- ```dataPath```: (**./data/** by default) the folder where the dataset is stored.\r\n- ```resultsPath```: (**./results/** by default) the folder where the results will be saved.\r\n\r\nFor further details on configuring these parameters, we refer to three example configuration files, **confForPaper.txt**, **conf1.1.txt**, **conf1.2.txt**. **confForPaper.txt** is used by **run.sh**, and two remaining files are used by **run_all.sh**.",
+                "tarball_url": "https://api.github.com/repos/AIG-ist-tugraz/DirectDebug/tarball/v1.1",
+                "zipball_url": "https://api.github.com/repos/AIG-ist-tugraz/DirectDebug/zipball/v1.1",
+                "html_url": "https://github.com/AIG-ist-tugraz/DirectDebug/releases/tag/v1.1",
+                "url": "https://api.github.com/repos/AIG-ist-tugraz/DirectDebug/releases/41656891",
+                "release_id": 41656891,
+                "date_created": "2021-04-19T21:59:02Z",
+                "date_published": "2021-04-19T22:01:40Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/AIG-ist-tugraz/DirectDebug/releases/37752355",
+                "tag": "v1.0",
+                "name": "dd.jar",
+                "author": {
+                    "name": "manleviet",
+                    "type": "User"
+                },
+                "description": "# dd.jar\r\n\r\n**dd.jar** is a standalone Java application that encapsulates all evaluation steps in one program. The latest version of Java (Java version 8 update 270 or later) is necessary to execute **dd.jar**.\r\n\r\n**dd.jar** provides 6 functionalities as follows:\r\n\r\n### Feature models generation\r\n\r\nSyntax:\r\n```\r\njava -jar dd.jar -g <#feature models> <#features> <%CTC> <#max products> <path to save>\r\n```\r\n\r\nwhere\r\n\r\n| *parameters* | *description* |\r\n| ----------- | ----------- |\r\n| ```<#feature models>``` | the number of feature models to be generated |\r\n| ```<#features>``` | the number of features in the feature model to be generated |\r\n| ```<%CTC>``` | the percentage of cross-tree constraints |\r\n| ```<#max products>``` | the max number of products of the feature model to be generated |\r\n| ```<path to save>``` | the path to the folder where generated feature models will be saved |\r\n\r\nExample:\r\n```\r\njava -jar dd.jar -g 2 500 40 10000 ./data/fms\r\n``` \r\n\r\n### Feature model statistics\r\n\r\nSyntax:\r\n```\r\njava -jar dd.jar -s <folder path> <output file path>\r\n```\r\n\r\nwhere\r\n\r\n| *parameters* | *description* |\r\n| ----------- | ----------- |\r\n| ```<folder path>``` | the folder where feature models locate |\r\n| ```<output file path>``` | the path to a saved file |\r\n\r\nExample:\r\n```\r\njava -jar dd.jar -s ./data/fms ./data/statisticsAll.re\r\n```\r\n\r\n### Testsuite generation\r\n\r\nSyntax:\r\n```\r\njava -jar dd.jar -ts -g <folder path> <path to save> <#max combinations> <randomly search>\r\n```\r\nwhere\r\n\r\n| *parameters* | *description* |\r\n| ----------- | ----------- |\r\n| ```<folder path>``` | the folder where feature models locate |\r\n| ```<path to save>``` | the folder where generated testsuites will be saved |\r\n| ```<#max combinations>``` | the maximum number of combinations to be selected when generating partial configurations |\r\n|```<randomly search>```| true/false - if true, then the selection of combinations is random |\r\n\r\nEx:\r\n```\r\njava -jar dd.jar -ts -g ./data/fms ./data/testsuite 1000 false\r\n```\r\n\r\n### Test cases classification\r\n\r\nSyntax:\r\n```\r\njava -jar dd.jar -tc -c <configuration file>\r\n```\r\n\r\nwhere\r\n\r\n| *parameters* | *description* |\r\n| ----------- | ----------- |\r\n| ```<configuration file>``` | a configuration file |\r\n\r\nEx:\r\n```\r\njava -jar dd.jar -tc -c ./data/configurations.csv\r\n```\r\n\r\n### Test cases selection\r\n\r\nSyntax:\r\n```\r\njava -jar dd.jar -tc -s <configuration file> <#scenarios> <%violated test cases>\r\n```\r\n\r\nEx:\r\n```\r\njava -jar dd.jar -tc -s ./data/configuration.csv 5 0.3\r\n```\r\n\r\n### DirectDebug evaluation\r\n\r\nSyntax:\r\n```\r\njava -jar dd.jar -e <configuration file> <filesave>\r\n```\r\n\r\nEx:\r\n```\r\njava -jar dd.jar -e ./data/conf/conf.csv ./data/results.txt\r\n```",
+                "tarball_url": "https://api.github.com/repos/AIG-ist-tugraz/DirectDebug/tarball/v1.0",
+                "zipball_url": "https://api.github.com/repos/AIG-ist-tugraz/DirectDebug/zipball/v1.0",
+                "html_url": "https://github.com/AIG-ist-tugraz/DirectDebug/releases/tag/v1.0",
+                "url": "https://api.github.com/repos/AIG-ist-tugraz/DirectDebug/releases/37752355",
+                "release_id": 37752355,
+                "date_created": "2021-02-09T02:17:51Z",
+                "date_published": "2021-02-09T02:32:52Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/run_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "We published a standalone Java application naming **d2bug_eval.jar** that encapsulates the evaluation steps in one program.\n\n**d2bug_eval.jar** is available from the [latest release](https://github.com/AIG-ist-tugraz/DirectDebug/releases/tag/v1.1).\nFor further details of this app, we refer to [d2bug_eval.jar guideline](https://github.com/AIG-ist-tugraz/DirectDebug/blob/main/d2bug_eval.jar.md).\n",
+                "type": "Text_excerpt",
+                "original_header": "Use the standalone Java application",
+                "parent_header": [
+                    "DirectDebug: Automated Testing and Debugging of Feature Models",
+                    "How to reproduce the experiment"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/README.md"
+        },
+        {
+            "result": {
+                "value": "We provide two bash scripts that perform all necessary steps from *compiling the source code* to *running the DirectDebug evaluation process*.\n\nFirst, **run.sh** will compile the source files, package them in one *jar* file, and run only the DirectDebug evaluation step (Step 5) with the dataset used for the paper.\n\nSecond, **run_all.sh** will carry out all five steps of the DirectDebug evaluation process, and you will get the new dataset, new results. Three steps Feature model generation, Testsuite generation, and Test case classification will take a long time to complete. Thus, if you have around 3-4 free days, then try with **run_all.sh**. Otherwise, please run the evaluation process step-by-step using our **d2bug_eval.jar**.\n\nTo run these bash scripts on your system after cloning the source code:\n\n1. First, you need to make the script executable with **chmod**:\n\n```\n$ chmod u+x run.sh\n```\n\n2. Run the script by prefixing it with ```./```:\n\n```\n$ ./run.sh\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Use a bash script",
+                "parent_header": [
+                    "DirectDebug: Automated Testing and Debugging of Feature Models",
+                    "How to reproduce the experiment",
+                    "Get your own copy to run offline"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Some part of our implementation depends on [Betty framework](https://www.isa.us.es/betty/welcome) \nand [\"fmapi\" library](http://gsd.uwaterloo.ca/). Thus, after cloning the source code into your system, \nyou need to run 7 Maven configurations, which already included in the project. If you use the IntelliJ IDE,\nthen open Maven window (*View/Tool Windows/Maven*) and double-click on 7 configurations in the Run Configurations section.\n",
+                "type": "Text_excerpt",
+                "original_header": "Build your own software",
+                "parent_header": [
+                    "DirectDebug: Automated Testing and Debugging of Feature Models",
+                    "How to reproduce the experiment",
+                    "Get your own copy to run offline"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/README.md"
+        },
+        {
+            "result": {
+                "value": "[An example of using DirectDebug algorithm for testing and debugging in feature models](https://github.com/AIG-ist-tugraz/DirectDebug/blob/main/src/test/java/at/tugraz/ist/ase/debugging/DirectDebugV1Test.java)\n\n**d2bug_eval** consists of three sub-packages: **Feature Model**, **MBDiagLib**, and **Debugging**.  **Feature Model** reads feature model files and supports *feature model generation* and *feature model statistics*. **MBDiagLib** provides (1) an abstract model to hold variables and constraints, (2) an abstract consistency checker for underlying solvers, (3) a *Choco* consistency checker using [Choco Solver](https://choco-solver.org), and (4) functions to measure the performance of algorithms in terms of run-time or the number of solver calls. **Debugging** provides components w.r.t. test-cases management, the DirectDebug implementation, a debugging model with test-cases integration, and debugging-related applications (e.g. *test suite generation*, *test cases classification*, and *test case selection*).\n\nBesides feature models encoded in the *SXFM* format and consistency checks conducted by [Choco Solver](https://choco-solver.org), **d2bug_eval** can be extended to support further formats (e.g., *FeatureIDE* format) and other off-the-shelf solvers. Furthermore, the program can be extended to evaluate other constraint-based algorithms, such as conflict detection algorithms and diagnosis identification algorithms.\n",
+                "type": "Text_excerpt",
+                "original_header": "Use the code source for your project",
+                "parent_header": [
+                    "DirectDebug: Automated Testing and Debugging of Feature Models"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Some part of our implementation depends on [Betty framework](https://www.isa.us.es/betty/welcome) \nand [\"fmapi\" library](http://gsd.uwaterloo.ca/). Thus, after cloning the source code into your system, \nyou need to run 7 Maven configurations, which already included in the project. If you use the IntelliJ IDE,\nthen open Maven window (*View/Tool Windows/Maven*) and double-click on 7 configurations in the Run Configurations section.\n",
+                "type": "Text_excerpt",
+                "original_header": "Build your own software",
+                "parent_header": [
+                    "DirectDebug: Automated Testing and Debugging of Feature Models",
+                    "How to reproduce the experiment",
+                    "Get your own copy to run offline"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "[1] V.M. Le, A. Felfernig, M. Uta, D. Benavides, J. Galindo and T.N.T. Tran, DirectDebug: Automated Testing and Debugging of Feature Models, 2021 IEEE/ACM 43rd International Conference on Software Engineering: New Ideas and Emerging Results (ICSE-NIER), 2021, pp. 81-85, doi: https://doi.org/10.1109/ICSE-NIER52604.2021.00025. [[PDF] from arxiv.org](https://arxiv.org/pdf/2102.05949.pdf)\n",
+                "type": "Text_excerpt",
+                "original_header": "References",
+                "parent_header": [
+                    "DirectDebug: Automated Testing and Debugging of Feature Models"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "For further details on configuring these parameters, we refer to three example configuration files, **confForPaper.txt**, **conf1.1.txt**, **conf1.2.txt**. **confForPaper.txt** is used by **run.sh**, and two remaining files are used by **run_all.sh**.\n \n",
+                "original_header": "Construct Configuration files"
+            },
+            "confidence": 0.9998957972947213,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "DirectDebug: Automated Testing and Debugging of Feature Models"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2102.05949.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/AIG-ist-tugraz/DirectDebug/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,837 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:03:38"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ASSERT-KTH/sorald",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ASSERT-KTH",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-05-09T17:38:29Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-26T22:07:02Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2020 KTH Theoretical Computer Science  Department\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Automatic repair system for static analysis warnings from SonarQube's SonarJava, TDSC 2022 http://arxiv.org/pdf/2103.12033",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Sorald is a tool to automatically repair violations of static analysis rules checked with [SonarQube](https://rules.sonarsource.com).\nIt can currently repair violations of [25+ rules](/docs/HANDLED_RULES.md) based on the design described in [Sorald: Automatic Patch Suggestions for SonarQube Static Analysis Violations](http://arxiv.org/pdf/2103.12033) ([doi:10.1109/TDSC.2022.3167316](http://dx.doi.org/10.1109/TDSC.2022.3167316)). \n",
+                "original_header": "Sorald <a href=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml\"><img alt=\"GHA tests Workflow Status\" src=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/sorald\"><img alt=\"Code Coverage\" src=\"https://codecov.io/gh/SpoonLabs/sorald/branch/master/graph/badge.svg\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" />"
+            },
+            "confidence": 0.9655314567858632,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "sorald",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ASSERT-KTH/sorald",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 89,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "kth, program-repair, sonarjava, sonarqube, ssf",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 27,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/spoonlabs/sorald/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 553311
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 66233
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/126421380",
+                "tag": "sorald-0.8.6",
+                "name": "sorald-0.8.6",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\r\n\r\n## \ud83d\udc1b Fixes\r\n- 77e4209 fix(deps): update dependency org.apache.maven.plugin-tools:maven-plugin-annotations to v3.10.1 (#1091)\r\n- f2a2689 fix(deps): update dependency commons-io:commons-io to v2.14.0 (#1084)\r\n- 007e8a3 fix(deps): update dependency org.apache.maven:maven-plugin-api to v3.9.5 (#1086)\r\n- bafec59 fix(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.4.2 (#1060)\r\n- 3eb9970 fix(deps): update dependency org.eclipse.jgit:org.eclipse.jgit to v6.7.0.202309050840-r (#1078)\r\n- 02c0721 fix(deps): update dependency org.eclipse.jgit:org.eclipse.jgit to v6.6.1.202309021850-r (#1076)\r\n- d3d5f30 fix(deps): update picocli.version to v4.7.5 (#1074)\r\n- 7a21ea9 fix(deps): update dependency org.apache.maven:maven-plugin-api to v3.9.4 (#1067)\r\n- f4eb5c7 fix(deps): update dependency org.json:json to v20230618 (#1064)\r\n- 37b3185 fix(deps): update dependency org.eclipse.jgit:org.eclipse.jgit to v6.6.0.202305301015-r (#1062)\r\n- 4e13410 fix(deps): update dependency org.apache.maven.plugin-tools:maven-plugin-annotations to v3.9.0 (#1061)\r\n- 0ed80a6 fix(deps): update dependency commons-io:commons-io to v2.13.0 (#1059)\r\n\r\n## \ud83e\uddf0 Tasks\r\n- e8a3153 chore: releasing sorald 0.8.6\r\n- 08ff690 chore: combine renovate[bot] PRs (#1094)\r\n- d418fdb chore(deps): update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.2.1 (#1093)\r\n- 9229138 chore(deps): update dependency org.apache.maven.plugins:maven-plugin-plugin to v3.10.1 (#1090)\r\n- 7a8ece0 chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.40.0 (#1083)\r\n- 83fe5d2 chore(deps): update actions/setup-java action to v3.13.0 (#1082)\r\n- 594f337 chore(deps): update dependency org.jacoco:jacoco-maven-plugin to v0.8.11 (#1089)\r\n- f78c359 chore(deps): update actions/setup-python action to v4.7.1 (#1085)\r\n- b593673 chore(deps): update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.6.0 (#1081)\r\n- f8bfd20 chore: fix snapshot repo\r\n- 9e1c027 chore(deps): update actions/cache action to v3.3.2 (#1079)\r\n- 34fda65 chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.39.0 (#1075)\r\n- 13ebd4c chore(deps): update actions/checkout action to v3.6.0 (#1073)\r\n- 5309605 chore(deps): update dependency ch.qos.logback:logback-classic to v1.4.11 (#1071)\r\n- 79c4609 chore(deps): update dependency ch.qos.logback:logback-classic to v1.4.10 (#1070)\r\n- 546fef0 chore(deps): update github/combine-prs action to v3.1.2 (#1069)\r\n- 1dc649d chore(deps): update dependency ch.qos.logback:logback-classic to v1.4.9 (#1068)\r\n- 664d0d6 chore(deps): update dependency org.codehaus.mojo:buildnumber-maven-plugin to v3.2.0 (#1058)\r\n- 490c8d7 chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.38.0 - abandoned (#1050)\r\n- 8fee29e chore: combine renovate[bot] PRs (#1057)\r\n- e7beb08 chore(deps): update dependency org.apache.maven.plugins:maven-assembly-plugin to v3.6.0 (#1053)\r\n- 0cead9b chore: combine renovate[bot] PRs (#1052)\r\n- 7bb9807 chore(deps): update actions/setup-java action to v3.12.0 (#1047)\r\n- c476ae1 chore: combine renovate[bot] PRs (#1049)\r\n- 51b3d1c chore(deps): update codecov/codecov-action action to v3.1.4 (#1036)\r\n- a4c0d42 chore(deps): update actions/checkout action to v3.5.3 (#1035)\r\n- 97758ed chore: prepare for next development iteration of sorald\r\n\r\n## \ud83d\udee0  Build\r\n- a2c9c01 ci: use skipTests for skipping tests (#1066)\r\n- 318bba4 ci: use github's combine pr action\r\n- 033cfc8 ci: fix the failing ci (#1045)\r\n\r\n## \ud83d\udcdd Documentation\r\n- 6d286f9 docs: remove custom combine-prs documentation\r\n\r\n---\r\n- 17f5b8d Update README.md\r\n\r\n\r\n## Contributors\r\nWe'd like to thank the following people for their contributions:\r\n- Aman Sharma (@algomaster99)\r\n- GitHub ()\r\n- Martin Monperrus (@monperrus)\r\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))\r\n- renovate[bot] ([@renovate[bot]](https://github.com/apps/renovate))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.8.6",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.8.6",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.8.6",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/126421380",
+                "release_id": 126421380,
+                "date_created": "2023-10-24T13:42:32Z",
+                "date_published": "2023-10-24T13:51:26Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/101909989",
+                "tag": "sorald-0.8.5",
+                "name": "sorald-0.8.5",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udc1b Fixes\n- 036c965 fix(S1481): add repair for enhanced for-loop (#1033)\n\n## \ud83e\uddf0 Tasks\n- cfdee77 chore: releasing sorald 0.8.5\n- 1d65137 chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.36.0 (#1014)\n- 380e815 chore: prepare for next development iteration of sorald\n\n## \ud83d\udcdd Documentation\n- ea97917 docs: Update docs/HANDLED_RULES.md (#1034)\n\n---\n- 91e67bd doc: add open-access link (#1032)\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ()\n- Martin Monperrus ([@monperrus](https://github.com/monperrus))\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))\n- renovate[bot] ([@renovate[bot]](https://github.com/apps/renovate))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.8.5",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.8.5",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.8.5",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/101909989",
+                "release_id": 101909989,
+                "date_created": "2023-05-04T17:01:47Z",
+                "date_published": "2023-05-04T17:04:21Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/101096894",
+                "tag": "sorald-0.8.4",
+                "name": "sorald-0.8.4",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udc1b Fixes\n- a85ec45 fix: cover the exhaustive cases in S1155 (#1029)\n\n## \ud83e\uddf0 Tasks\n- 8f41a55 chore: releasing sorald 0.8.4\n- f3c59bc chore: prepare for next development iteration of sorald\n\n## \ud83d\udee0  Build\n- 11f7622 ci: remove sonar check (#1030)\n\n## \ud83d\udcdd Documentation\n- a3c1b43 docs: Update docs/HANDLED_RULES.md (#1031)\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ()\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.8.4",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.8.4",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.8.4",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/101096894",
+                "release_id": 101096894,
+                "date_created": "2023-04-27T12:49:00Z",
+                "date_published": "2023-04-27T12:51:46Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/100983335",
+                "tag": "sorald-0.8.3",
+                "name": "sorald-0.8.3",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udc1b Fixes\n- 5241e92 fix(S1155): return empty check for collections whose size `< 1` (#1026)\n\n## \ud83e\uddf0 Tasks\n- ccef909 chore: releasing sorald 0.8.3\n- e2ddfed chore: prepare for next development iteration of sorald\n\n## \ud83d\udee0  Build\n- e5e0cb1 ci: comply with conventional commits\n- 44ecff5 ci: rename organization\n- 73b9837 ci: fix tag and release names\n\n## \ud83d\udcdd Documentation\n- ea79fa6 docs: update link to manuscript\n- f05cbf7 docs: update artifact verification protocol\n\n---\n- 7d6cae2 doc: Update docs/HANDLED_RULES.md (#1027)\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ()\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.8.3",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.8.3",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.8.3",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/100983335",
+                "release_id": 100983335,
+                "date_created": "2023-04-26T16:29:33Z",
+                "date_published": "2023-04-26T16:31:47Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/99818164",
+                "tag": "sorald-0.8.2",
+                "name": "sorald-0.8.2",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\r\n\r\n## \ud83d\udd00 Merge\r\n- 8b9cdad Merge pull request #1024 from SpoonLabs/debug-jreleaser\r\n- 3155fb3 Merge branch 'master' into debug-jreleaser\r\n\r\n## \ud83e\uddf0 Tasks\r\n- 9f52994 chore: releasing sorald 0.8.2\r\n- 6698b40 chore: prepare for next development iteration of sorald\r\n- 0ed3e65 chore: releasing sorald 0.8.1\r\n\r\n## \ud83d\udee0  Build\r\n- 9e00603 ci: Remove gpg passphrase from SNAPSHOT deployment\r\n\r\n---\r\n- 1ec9591 Merge remote-tracking branch 'origin/main' into debug-jreleaser\r\n- 5a07e83 Revert branch name\r\n\r\n\r\n## Contributors\r\nWe'd like to thank the following people for their contributions:\r\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\r\n- GitHub ()\r\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.8.2",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.8.2",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.8.2",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/99818164",
+                "release_id": 99818164,
+                "date_created": "2023-04-17T21:23:16Z",
+                "date_published": "2023-04-17T21:26:28Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/84317987",
+                "tag": "sorald-0.8.0",
+                "name": "sorald-0.8.0",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Announcement\r\n\r\nNow we rely on sonar-java 7.15.0.30507 so mining output has changed. See #900 for more details.\r\n\r\n## What's Changed\r\n* chore: release sorald 0.7.3 by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/927\r\n* docs: add content prepared for EclipseCon2022 by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/928\r\n* chore: combine renovate upgrades by @combine-pr in https://github.com/SpoonLabs/sorald/pull/931\r\n* chore: update Spoon by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/934\r\n* chore: fix sorald SNAPSHOT deployment by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/935\r\n* chore: release sorald-parent 0.0.3 by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/936\r\n* chore: combine renovate upgrades by @combine-pr in https://github.com/SpoonLabs/sorald/pull/937\r\n* **chore(deps): update SonarJava dependency by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/900**\r\n* fix: return correct version of sorald by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/924\r\n* fix(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.3.0-beta-3 by @renovate in https://github.com/SpoonLabs/sorald/pull/939\r\n* tests: use latest release for pom_configured test by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/944\r\n* [SECURITY] Fix Temporary File Information Disclosure Vulnerability\r\n by @JLLeitschuh in https://github.com/SpoonLabs/sorald/pull/942\r\n* chore: combine renovate upgrades by @combine-pr in https://github.com/SpoonLabs/sorald/pull/946\r\n\r\n## New Contributors\r\n* @JLLeitschuh made their first contribution in https://github.com/SpoonLabs/sorald/pull/942\r\n\r\n**Full Changelog**: https://github.com/SpoonLabs/sorald/compare/sorald-0.7.3...sorald-0.8.0",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.8.0",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.8.0",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.8.0",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/84317987",
+                "release_id": 84317987,
+                "date_created": "2022-11-28T11:20:47Z",
+                "date_published": "2022-11-28T12:01:41Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/80740451",
+                "tag": "sorald-0.7.3",
+                "name": "sorald-0.7.3",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* chore: release sorald 0.7.2 by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/919\r\n* chore: combine renovate upgrades by @combine-pr in https://github.com/SpoonLabs/sorald/pull/922\r\n* fix(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.2.0 by @renovate in https://github.com/SpoonLabs/sorald/pull/923\r\n* fix(S4973): add null check to the overall expression by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/918\r\n* fix(S1068): delete field writes of violated field only by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/921\r\n* doc: Update docs/HANDLED_RULES.md by @github-actions in https://github.com/SpoonLabs/sorald/pull/925\r\n\r\n\r\n**Full Changelog**: https://github.com/SpoonLabs/sorald/compare/sorald-0.7.2...sorald-0.7.3",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.7.3",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.7.3",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.7.3",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/80740451",
+                "release_id": 80740451,
+                "date_created": "2022-10-23T20:35:51Z",
+                "date_published": "2022-10-23T20:46:40Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/80587941",
+                "tag": "sorald-0.7.2",
+                "name": "sorald-0.7.2",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* chore: release sorald 0.7.1 by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/912\r\n* doc: add an example for running the maven plugin to the README by @khaes-kth in https://github.com/SpoonLabs/sorald/pull/916\r\n* fix(S1068): delete field writes as well by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/917\r\n\r\n\r\n**Full Changelog**: https://github.com/SpoonLabs/sorald/compare/sorald-0.7.1...sorald-0.7.2",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.7.2",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.7.2",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.7.2",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/80587941",
+                "release_id": 80587941,
+                "date_created": "2022-10-21T10:12:49Z",
+                "date_published": "2022-10-21T10:49:38Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/80134075",
+                "tag": "sorald-0.7.1",
+                "name": "sorald-0.7.1",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Announcement\r\n\r\nIt is working now! Sorald now really has a `maven-plugin` :tada: \r\n\r\n## What's Changed\r\n* Added a fix for bug that prevented sorald-0.7.0 from executing\r\n\r\n\r\n**Full Changelog**: https://github.com/SpoonLabs/sorald/compare/sorald-0.7.0...sorald-0.7.1",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.7.1",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.7.1",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.7.1",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/80134075",
+                "release_id": 80134075,
+                "date_created": "2022-10-17T20:24:57Z",
+                "date_published": "2022-10-17T21:29:05Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/80122233",
+                "tag": "sorald-0.7.0",
+                "name": "sorald-0.7.0",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Warning :warning: \r\n\r\nThe `maven-plugin` in this version does not work due to the bug explained in https://github.com/SpoonLabs/sorald/pull/912#issue-1412172250. Please use later versions.\r\n\r\n## Announcement\r\n\r\nSorald is now available as a `maven-plugin`! :blush: \r\n\r\n## What's Changed\r\n* chore: release sorald 0.6.0 by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/854\r\n* chore: combine renovate upgrades by @combine-pr in https://github.com/SpoonLabs/sorald/pull/861\r\n* chore: fix windows build failure by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/865\r\n* fix: mark `MathOnFloatProcessor` as incomplete by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/866\r\n* doc: Update docs/HANDLED_RULES.md by @github-actions in https://github.com/SpoonLabs/sorald/pull/870\r\n* doc: Update docs/usage by @github-actions in https://github.com/SpoonLabs/sorald/pull/871\r\n* doc: Update docs/usage by @github-actions in https://github.com/SpoonLabs/sorald/pull/872\r\n* governance: Remove slarse as developer by @slarse in https://github.com/SpoonLabs/sorald/pull/878\r\n* chore: combine renovate upgrades by @combine-pr in https://github.com/SpoonLabs/sorald/pull/880\r\n* chore: update google-java-format to 1.15.0 by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/881\r\n* chore: update sonarlint-core to 8.8.1.54103 by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/882\r\n* chore(deps): update junit5 monorepo by @renovate in https://github.com/SpoonLabs/sorald/pull/883\r\n* chore: combine renovate upgrades by @combine-pr in https://github.com/SpoonLabs/sorald/pull/894\r\n* chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.27.2 by @renovate in https://github.com/SpoonLabs/sorald/pull/887\r\n* chore(deps): update actions/checkout action to v3.1.0 by @renovate in https://github.com/SpoonLabs/sorald/pull/896\r\n* chore: add configuration options for sonatype-lift by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/904\r\n* feat: extend project to run as maven plugin by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/898\r\n* feat: add support for `stats-output-file` in maven-plugin by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/908\r\n* chore: release sorald 0.7.0 by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/909\r\n\r\n\r\n**Full Changelog**: https://github.com/SpoonLabs/sorald/compare/sorald-0.6.0...sorald-0.7.0",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.7.0",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.7.0",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.7.0",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/80122233",
+                "release_id": 80122233,
+                "date_created": "2022-10-17T18:31:37Z",
+                "date_published": "2022-10-17T18:45:09Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/72551444",
+                "tag": "sorald-0.6.0",
+                "name": "sorald-0.6.0",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* chore: release sorald 0.5.0 by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/824\r\n* fix(deps): update dependency org.sonarsource.sonarlint.core:sonarlint-core to v8.6.0.47852 by @renovate in https://github.com/SpoonLabs/sorald/pull/806\r\n* chore: create combined PR using GitHub app by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/803\r\n* Combined PR by @combine-pr in https://github.com/SpoonLabs/sorald/pull/829\r\n* chore: combine renovate upgrades by @combine-pr in https://github.com/SpoonLabs/sorald/pull/831\r\n* chore: fix failing tests by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/837\r\n* chore: combine renovate upgrades by @combine-pr in https://github.com/SpoonLabs/sorald/pull/839\r\n* chore: rename combine prs workflow by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/846\r\n* chore: combine renovate upgrades by @combine-pr in https://github.com/SpoonLabs/sorald/pull/845\r\n* feat: add option to specify rules to mine for (sorald-api) by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/849\r\n* chore: release sorald-api `0.0.2` by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/850\r\n* feat: add option to mine for specific rules only (sorald) by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/848\r\n* doc: Update docs/usage by @github-actions in https://github.com/SpoonLabs/sorald/pull/852\r\n* chore: release sorald 0.6.0 by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/853\r\n\r\n## New Contributors\r\n* @combine-pr made their first contribution in https://github.com/SpoonLabs/sorald/pull/829\r\n\r\n**Full Changelog**: https://github.com/SpoonLabs/sorald/compare/sorald-0.5.0...sorald-0.6.0",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.6.0",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.6.0",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.6.0",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/72551444",
+                "release_id": 72551444,
+                "date_created": "2022-07-21T17:11:11Z",
+                "date_published": "2022-07-21T17:43:09Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/67659263",
+                "tag": "sorald-0.5.0",
+                "name": "sorald-0.5.0",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "> This release is equivalent to [`0.4.1`](https://mvnrepository.com/artifact/se.kth.castor/sorald/0.4.1)\r\n\r\n## What's Changed\r\n* feat: use SPI for analyzer loading by @MartinWitt in https://github.com/SpoonLabs/sorald/pull/758\r\n* feat: abstract ruletype enum with IRuleType by @MartinWitt in https://github.com/SpoonLabs/sorald/pull/759\r\n* feat: Add processor repository api and sonar implementation by @MartinWitt in https://github.com/SpoonLabs/sorald/pull/760\r\n* feat: add rule repository by @MartinWitt in https://github.com/SpoonLabs/sorald/pull/763\r\n* refactor: create parent pom by @MartinWitt in https://github.com/SpoonLabs/sorald/pull/776\r\n* Review: move sorald to subfolder by @MartinWitt in https://github.com/SpoonLabs/sorald/pull/779\r\n* refactor: create sorald-api by @MartinWitt in https://github.com/SpoonLabs/sorald/pull/783\r\n* chore: release sorald 0.4.0 by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/786\r\n* fix: fix `test_prrecorder::test_make_full_record` by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/794\r\n* doc: update bibliographic info by @monperrus in https://github.com/SpoonLabs/sorald/pull/793\r\n* chore: update dependencies using `combined-prs` workflow by @github-actions in https://github.com/SpoonLabs/sorald/pull/795\r\n* chore: fix `test_prrecorder::test_make_full_record` by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/801\r\n* fix(deps): update dependency org.sonarsource.sonarlint.core:sonarlint-core to v8.5.0.46449 by @renovate in https://github.com/SpoonLabs/sorald/pull/791\r\n* chore(deps): update codecov/codecov-action action to v3.1.0 by @renovate in https://github.com/SpoonLabs/sorald/pull/800\r\n* tests: be aware of what rules Sorald can report by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/804\r\n* chore(deps): update actions/setup-java action to v3.3.0 by @renovate in https://github.com/SpoonLabs/sorald/pull/777\r\n* chore: let Sonar to scan all modules by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/811\r\n* docs: update instructions for building JAR by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/810\r\n* chore: fix `MineCommand` cli documentation by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/809\r\n* refactor: reuse APIs defined in RuleRepository in RuleProvider by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/812\r\n* refactor: restructure project to load Sorald as a service using Java SPI by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/808\r\n* refactor: pass CLI context rather than individual parameter by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/815\r\n* **feat: add parameters for individual rules while mining by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/816**\r\n* chore: fix path to processors by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/818\r\n* doc: Update docs/usage by @github-actions in https://github.com/SpoonLabs/sorald/pull/820\r\n* chore: fix release script by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/822\r\n\r\n\r\n**Full Changelog**: https://github.com/SpoonLabs/sorald/compare/sorald-0.4.0...sorald-0.5.0",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.5.0",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.5.0",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.5.0",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/67659263",
+                "release_id": 67659263,
+                "date_created": "2022-05-24T12:42:38Z",
+                "date_published": "2022-05-24T12:59:10Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/63841143",
+                "tag": "sorald-0.4.0",
+                "name": "sorald-0.4.0",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* fix(1854): Handle dead stores in expression position by @slarse in https://github.com/SpoonLabs/sorald/pull/545\r\n* feat(2095): Handle multiple unclosed closeables in same try by @slarse in https://github.com/SpoonLabs/sorald/pull/550\r\n* experimentation: Add full record for Spoon pr 3972 by @slarse in https://github.com/SpoonLabs/sorald/pull/552\r\n* doc: Update docs/ACHIEVEMENTS.md by @github-actions in https://github.com/SpoonLabs/sorald/pull/553\r\n* fix(3984): Retain simply qualified name of throwable type by @slarse in https://github.com/SpoonLabs/sorald/pull/555\r\n* fix(1854): Fix handling of unary operators in statement position by @slarse in https://github.com/SpoonLabs/sorald/pull/556\r\n* chore: Do not fail build if Codecov fails by @slarse in https://github.com/SpoonLabs/sorald/pull/558\r\n* refactor(2095): Refactor UnclosedResourcesProcessor by @slarse in https://github.com/SpoonLabs/sorald/pull/557\r\n* fix(2095): Retain finally-block from try when converting to try-with-resources by @slarse in https://github.com/SpoonLabs/sorald/pull/559\r\n* feat: Add StringLiteralInsideEqualsProcessor (SonarSource rule 1132) by @fermadeiral in https://github.com/SpoonLabs/sorald/pull/562\r\n* fix: Clean up out-of-scope references to auto-managed resource by @slarse in https://github.com/SpoonLabs/sorald/pull/564\r\n* Update README.md by @fermadeiral in https://github.com/SpoonLabs/sorald/pull/567\r\n* test: Verify that processor test resources compile by @slarse in https://github.com/SpoonLabs/sorald/pull/566\r\n* test: Verify that compilable Java files still compile after repair by @slarse in https://github.com/SpoonLabs/sorald/pull/569\r\n* feat: Add CollectionIsEmptyProcessor (SonarSource rule 1155) by @fermadeiral in https://github.com/SpoonLabs/sorald/pull/571\r\n* fix: Fix test errors caused by compile output in test resources by @slarse in https://github.com/SpoonLabs/sorald/pull/575\r\n* feat: Add CollectionsEmptyConstantsProcessor (SonarSource rule 1596) by @fermadeiral in https://github.com/SpoonLabs/sorald/pull/574\r\n* refactor: Replace use of ImmutableList with List.copyOf by @slarse in https://github.com/SpoonLabs/sorald/pull/577\r\n* refactor: Use full string key for Sonar rules by @slarse in https://github.com/SpoonLabs/sorald/pull/581\r\n* refactor: Extract not method into Transformations utility class by @slarse in https://github.com/SpoonLabs/sorald/pull/576\r\n* refactor: Encapsulate SonarJava in sorald.sonar subpackage by @slarse in https://github.com/SpoonLabs/sorald/pull/582\r\n* feat: Add processor for deleting unused private fields (S1068) by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/584\r\n* fix: modify hyperlink in HANDLED_RULES.md to correctly link list item to its description by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/585\r\n* doc: adds SoraldBot merged PRs by @khaes-kth in https://github.com/SpoonLabs/sorald/pull/586\r\n* doc: Update docs/ACHIEVEMENTS.md by @github-actions in https://github.com/SpoonLabs/sorald/pull/587\r\n* doc: Add badge and text on platform support by @slarse in https://github.com/SpoonLabs/sorald/pull/590\r\n* chore: Add script for generating HANDLED_RULES.md by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/588\r\n* feat: Add Windows support by @slarse in https://github.com/SpoonLabs/sorald/pull/591\r\n* fix: Fix linking of `handled_rules.py` by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/593\r\n* chore: Integrate generation of HANDLED_RULES.md with CI by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/595\r\n* docs: Fix typographical and grammatical errors in few processors' README by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/596\r\n* doc: Update docs/HANDLED_RULES.md by @github-actions in https://github.com/SpoonLabs/sorald/pull/597\r\n* fix: Check for flow breaks before patching with the repair for S2142 by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/610\r\n* doc: add Sorald paper by @monperrus in https://github.com/SpoonLabs/sorald/pull/609\r\n* fix: disable custom security manager for tests which indirectly look up the path of `mvn` executable by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/617\r\n* refactor: store excluded references in a set which wraps `IdentityHashMap` by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/611\r\n* chore: configure renovate by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/619\r\n* chore: prevent renovate from updating digests by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/644\r\n* chore(deps): update dependency org.jacoco:jacoco-maven-plugin to v0.8.7 by @renovate in https://github.com/SpoonLabs/sorald/pull/633\r\n* chore(deps): update dependency org.json:json to v20210307 by @renovate in https://github.com/SpoonLabs/sorald/pull/651\r\n* chore(deps): update dependency org.apache.maven.plugins:maven-gpg-plugin to v3 by @renovate in https://github.com/SpoonLabs/sorald/pull/650\r\n* chore(deps): update picocli.version to v4.6.2 by @renovate in https://github.com/SpoonLabs/sorald/pull/648\r\n* chore(deps): update dependency ch.qos.logback:logback-classic to v1.2.7 by @renovate in https://github.com/SpoonLabs/sorald/pull/629\r\n* chore(deps): update dependency org.apache.maven.plugins:maven-deploy-plugin to v2.8.2 by @renovate in https://github.com/SpoonLabs/sorald/pull/631\r\n* chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.17.4 by @renovate in https://github.com/SpoonLabs/sorald/pull/634\r\n* chore(deps): update dependency commons-io:commons-io to v2.11.0 by @renovate in https://github.com/SpoonLabs/sorald/pull/635\r\n* chore(deps): update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.3.1 by @renovate in https://github.com/SpoonLabs/sorald/pull/636\r\n* chore(deps): update dependency org.apache.maven.scm:maven-scm-provider-gitexe to v1.12.0 by @renovate in https://github.com/SpoonLabs/sorald/pull/638\r\n* chore(deps): update junit5 monorepo by @renovate in https://github.com/SpoonLabs/sorald/pull/647\r\n* chore(deps): update dependency org.apache.maven.plugins:maven-release-plugin to v2.5.3 by @renovate in https://github.com/SpoonLabs/sorald/pull/632\r\n* chore(deps): update dependency org.apache.maven.plugins:maven-source-plugin to v3.2.1 by @renovate in https://github.com/SpoonLabs/sorald/pull/637\r\n* chore(deps): update dependency org.eclipse.jgit:org.eclipse.jgit to v5.13.0.202109080827-r by @renovate in https://github.com/SpoonLabs/sorald/pull/657\r\n* chore(deps): update dependency org.sonarsource.java:java-checks-testkit to v7 by @renovate in https://github.com/SpoonLabs/sorald/pull/655\r\n* chore(deps): update dependency org.eclipse.jgit:org.eclipse.jgit to v6 by @renovate in https://github.com/SpoonLabs/sorald/pull/660\r\n* chore: remove org.reflections:reflections by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/654\r\n* chore: activate renovate for suggesting version updates of actions by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/661\r\n* chore(deps): update codecov/codecov-action action to v1.5.2 by @renovate in https://github.com/SpoonLabs/sorald/pull/663\r\n* chore(deps): update actions/cache action to v2.1.7 by @renovate in https://github.com/SpoonLabs/sorald/pull/662\r\n* chore(deps): update actions/setup-java action to v2.4.0 by @renovate in https://github.com/SpoonLabs/sorald/pull/665\r\n* chore(deps): update actions/setup-python action to v2.3.1 by @renovate in https://github.com/SpoonLabs/sorald/pull/666\r\n* docs: update tests' status badge by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/668\r\n* chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.17.5 by @renovate in https://github.com/SpoonLabs/sorald/pull/669\r\n* chore(deps): update codecov/codecov-action action to v2 by @renovate in https://github.com/SpoonLabs/sorald/pull/667\r\n* chore(deps): update actions/checkout action to v2.4.0 by @renovate in https://github.com/SpoonLabs/sorald/pull/664\r\n* docs: update tests files and description for S2111 by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/670\r\n* doc: Update docs/HANDLED_RULES.md by @github-actions in https://github.com/SpoonLabs/sorald/pull/671\r\n* chore: upgrade Spoon to `10.0.1-beta-2` by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/676\r\n* fix(SynchronizationOnStringOrBoxedProcessor): enables Sorald to generate multiple similar fields in separate classes for synchronization by @khaes-kth in https://github.com/SpoonLabs/sorald/pull/680\r\n* chore: add profile for using spoon SNAPSHOT by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/682\r\n* docs: update usage of `repair` command by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/683\r\n* chore: automate generation of subcommand usage with picoli by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/686\r\n* chore: configure `env.JAVA_DISTRIBUTION` in support.yml by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/687\r\n* doc: Update docs/usage by @github-actions in https://github.com/SpoonLabs/sorald/pull/688\r\n* docs: explain incomplete rules after listing the rules by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/689\r\n* doc: Update docs/usage by @github-actions in https://github.com/SpoonLabs/sorald/pull/690\r\n* docs: remove detailed description of subcommand from README by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/685\r\n* chore(deps): update actions/setup-java action to v2.5.0 by @renovate in https://github.com/SpoonLabs/sorald/pull/691\r\n* chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.19.2 by @renovate in https://github.com/SpoonLabs/sorald/pull/674\r\n* chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.20.0 by @renovate in https://github.com/SpoonLabs/sorald/pull/694\r\n* chore(deps): update dependency org.apache.maven.plugins:maven-compiler-plugin to v3.9.0 by @renovate in https://github.com/SpoonLabs/sorald/pull/693\r\n* chore(deps): update dependency ch.qos.logback:logback-classic to v1.2.10 by @renovate in https://github.com/SpoonLabs/sorald/pull/679\r\n* chore: add factorypath to gitignore by @MartinWitt in https://github.com/SpoonLabs/sorald/pull/705\r\n* fix(deps): update dependency org.json:json to v20211205 by @renovate in https://github.com/SpoonLabs/sorald/pull/673\r\n* chore(deps): update dependency org.codehaus.mojo:buildnumber-maven-plugin to v3 by @renovate in https://github.com/SpoonLabs/sorald/pull/672\r\n* chore(deps): update dependency org.apache.maven.scm:maven-scm-provider-gitexe to v1.12.2 by @renovate in https://github.com/SpoonLabs/sorald/pull/692\r\n* fix: repair of S2142 should not induce S1193 violation by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/703\r\n* doc: Update docs/HANDLED_RULES.md by @github-actions in https://github.com/SpoonLabs/sorald/pull/708\r\n* feat: Add processor fixing sonar rule S4065_ThreadLocalWithInitial by @MartinWitt in https://github.com/SpoonLabs/sorald/pull/706\r\n* doc: Update docs/HANDLED_RULES.md by @github-actions in https://github.com/SpoonLabs/sorald/pull/710\r\n* doc: Update docs/usage by @github-actions in https://github.com/SpoonLabs/sorald/pull/711\r\n* refactor: Use SonarLint core in Sorald by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/696\r\n* chore: Remove dependence of SonarJava jar plugin by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/715\r\n* fix(deps): update dependency org.sonarsource.sonarlint.core:sonarlint-core to v8.0.2.42487 by @renovate in https://github.com/SpoonLabs/sorald/pull/719\r\n* chore: Parse rule title from processor to keep HANDLED_RULES.md in sync with processors by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/724\r\n* doc: Update docs/HANDLED_RULES.md by @github-actions in https://github.com/SpoonLabs/sorald/pull/725\r\n* chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.20.1 by @renovate in https://github.com/SpoonLabs/sorald/pull/723\r\n* style: remove never updated field by @MartinWitt in https://github.com/SpoonLabs/sorald/pull/726\r\n* review: fix CI on windows by @MartinWitt in https://github.com/SpoonLabs/sorald/pull/704\r\n* chore(deps): update actions/setup-python action to v2.3.2 by @renovate in https://github.com/SpoonLabs/sorald/pull/727\r\n* doc(readme): update supported platforms and fix typo by @MartinWitt in https://github.com/SpoonLabs/sorald/pull/728\r\n* chore: parse SonarJava plugin URL from config by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/733\r\n* fix(deps): update dependency org.sonarsource.sonarlint.core:sonarlint-core to v8.1.0.43110 by @renovate in https://github.com/SpoonLabs/sorald/pull/732\r\n* fix(deps): update dependency org.sonarsource.sonarlint.core:sonarlint-core to v8.2.0.43778 by @renovate in https://github.com/SpoonLabs/sorald/pull/738\r\n* fix(deps): update picocli.version to v4.6.3 by @renovate in https://github.com/SpoonLabs/sorald/pull/729\r\n* chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.21.0 by @renovate in https://github.com/SpoonLabs/sorald/pull/730\r\n* fix(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.0.1-beta-5 by @renovate in https://github.com/SpoonLabs/sorald/pull/737\r\n* chore(deps): update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.3.2 by @renovate in https://github.com/SpoonLabs/sorald/pull/734\r\n* chore(deps): update dependency org.apache.maven.plugins:maven-compiler-plugin to v3.10.0 by @renovate in https://github.com/SpoonLabs/sorald/pull/736\r\n* chore(deps): update actions/setup-java action to v3 by @renovate in https://github.com/SpoonLabs/sorald/pull/740\r\n* chore(deps): update actions/setup-python action to v3 by @renovate in https://github.com/SpoonLabs/sorald/pull/741\r\n* chore(deps): update actions/checkout action by @renovate in https://github.com/SpoonLabs/sorald/pull/743\r\n* chore(deps): update dependency ch.qos.logback:logback-classic to v1.2.11 by @renovate in https://github.com/SpoonLabs/sorald/pull/744\r\n* fix(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.0.1-beta-7 by @renovate in https://github.com/SpoonLabs/sorald/pull/742\r\n* fix(deps): update dependency org.eclipse.jgit:org.eclipse.jgit to v6.1.0.202203080745-r by @renovate in https://github.com/SpoonLabs/sorald/pull/745\r\n* chore(deps): update dependency org.apache.maven.plugins:maven-compiler-plugin to v3.10.1 by @renovate in https://github.com/SpoonLabs/sorald/pull/747\r\n* feat: add checks which were assumed to be deprecated by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/746\r\n* chore(deps): update actions/cache action to v3 by @renovate in https://github.com/SpoonLabs/sorald/pull/753\r\n* refactor: remove dependence on sonar-java-checks by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/751\r\n* fix(deps): update dependency org.json:json to v20220320 by @renovate in https://github.com/SpoonLabs/sorald/pull/754\r\n* fix(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.0.1-beta-9 by @renovate in https://github.com/SpoonLabs/sorald/pull/749\r\n* refactor: convert constructor args to method parameter and store `SonarLintEngine` as a local variable by @MartinWitt in https://github.com/SpoonLabs/sorald/pull/757\r\n* chore: add workflow for combining PRs by renovate by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/765\r\n* Combined PR by @github-actions in https://github.com/SpoonLabs/sorald/pull/780\r\n* docs: elaborate steps to trigger combine-prs workflow by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/771\r\n* Combined PR by @github-actions in https://github.com/SpoonLabs/sorald/pull/784\r\n* chore: fix release script by @algomaster99 in https://github.com/SpoonLabs/sorald/pull/785\r\n\r\n## New Contributors\r\n* @algomaster99 made their first contribution in https://github.com/SpoonLabs/sorald/pull/584\r\n* @renovate made their first contribution in https://github.com/SpoonLabs/sorald/pull/633\r\n\r\n**Full Changelog**: https://github.com/SpoonLabs/sorald/compare/sorald-0.3.0...sorald-0.4.0",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.4.0",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.4.0",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.4.0",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/63841143",
+                "release_id": 63841143,
+                "date_created": "2022-04-07T09:50:55Z",
+                "date_published": "2022-04-07T09:50:58Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/43582635",
+                "tag": "sorald-0.3.0",
+                "name": "sorald-0.3.0",
+                "author": {
+                    "name": "slarse",
+                    "type": "User"
+                },
+                "description": "Release sorald-0.3.0",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.3.0",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.3.0",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.3.0",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/43582635",
+                "release_id": 43582635,
+                "date_created": "2021-05-26T09:06:26Z",
+                "date_published": "2021-05-26T09:06:36Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/42192549",
+                "tag": "sorald-0.2.0",
+                "name": "sorald-0.2.0",
+                "author": {
+                    "name": "slarse",
+                    "type": "User"
+                },
+                "description": "Release sorald-0.2.0",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.2.0",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.2.0",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.2.0",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/42192549",
+                "release_id": 42192549,
+                "date_created": "2021-04-29T10:22:50Z",
+                "date_published": "2021-04-29T10:22:59Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/41419918",
+                "tag": "sorald-0.1.0",
+                "name": "sorald-0.1.0",
+                "author": {
+                    "name": "slarse",
+                    "type": "User"
+                },
+                "description": "This is the first release of Sorald (after the name change from SonarQube-Repair).\r\n\r\nThe CLI is currently unstable and may change with any minor version increment.",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/sorald-0.1.0",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/sorald-0.1.0",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/sorald-0.1.0",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/41419918",
+                "release_id": 41419918,
+                "date_created": "2021-04-14T13:34:54Z",
+                "date_published": "2021-04-14T14:16:40Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/25375533",
+                "tag": "v1.0",
+                "name": "Release 1.0",
+                "author": {
+                    "name": "fermadeiral",
+                    "type": "User"
+                },
+                "description": "## Handled rules\r\n\r\n* Bug\r\n    * Resources should be closed ([Sonar Rule 2095](https://rules.sonarsource.com/java/RSPEC-2095))\r\n    * \"BigDecimal(double)\" should not be used ([Sonar Rule 2111](https://rules.sonarsource.com/java/RSPEC-2111))\r\n    * \"hashCode\" and \"toString\" should not be called on array instances ([Sonar Rule 2116](https://rules.sonarsource.com/java/RSPEC-2116))\r\n    * \"Iterator.next()\" methods should throw \"NoSuchElementException\" ([Sonar Rule 2272](https://rules.sonarsource.com/java/RSPEC-2272))\r\n    * Strings and Boxed types should be compared using \"equals()\" ([Sonar Rule 4973](https://rules.sonarsource.com/java/RSPEC-4973))\r\n* Code Smell\r\n    * Unused assignments should be removed ([Sonar Rule 1854](https://rules.sonarsource.com/java/RSPEC-1854))\r\n    * Fields in a \"Serializable\" class should either be transient or serializable ([Sonar Rule 1948](https://rules.sonarsource.com/java/RSPEC-1948))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/tarball/v1.0",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/sorald/zipball/v1.0",
+                "html_url": "https://github.com/ASSERT-KTH/sorald/releases/tag/v1.0",
+                "url": "https://api.github.com/repos/ASSERT-KTH/sorald/releases/25375533",
+                "release_id": 25375533,
+                "date_created": "2020-04-09T19:56:26Z",
+                "date_published": "2020-04-09T20:01:23Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "cff-version: 1.2.0\npreferred-citation:\n  title: \"Sorald: Automatic Patch Suggestions for SonarQube Static Analysis Violations\"\n  doi: \"10.1109/TDSC.2022.3167316\"\n  year: \"2022\"\n  type: article\n  journal: \"IEEE Transactions on Dependable and Secure Computing\"\n  authors:\n    - family-names: Etemadi\n      given-names: Khashayar\n    - family-names: Harrand\n      given-names: Nicolas\n    - family-names: Lars\u00e9n\n      given-names: Simon\n    - family-names: Adzemovic\n      given-names: Haris\n    - family-names: Luong\n      given-names: Henry\n    - family-names: Verma\n      given-names: Ashutosh\n    - family-names: Madeiral\n      given-names: Fernanda\n    - family-names: Wikstr\u00f6m\n      given-names: Douglas\n    - family-names: Monperrus\n      given-names: Martin\n",
+                "type": "File_dump",
+                "format": "cff"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "\"[Sorald: Automatic Patch Suggestions for SonarQube Static Analysis Violations](https://ieeexplore.ieee.org/document/9756950)\" (Khashayar Etemadi, Nicolas Harrand, Simon Larsen, Haris Adzemovic, Henry Luong Phu, Ashutosh Verma, Fernanda Madeiral, Douglas Wikstrom and Martin Monperrus), Technical report, arXiv 2103.12033, 2021. \n\n\"[A template-based approach to automatic program repair of Sonarqube static warnings](http://kth.diva-portal.org/smash/get/diva2:1433710/FULLTEXT01.pdf)\", by Haris Adzemovic, Master's thesis, KTH, School of Electrical Engineering and Computer Science (EECS), 2020. [(bibtex)](http://www.diva-portal.org/smash/references?referenceFormat=BIBTEX&pids=[diva2:1433710]&fileName=export.txt)\n",
+                "type": "Text_excerpt",
+                "original_header": "Academic bibliographic references",
+                "parent_header": [
+                    "Sorald <a href=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml\"><img alt=\"GHA tests Workflow Status\" src=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/sorald\"><img alt=\"Code Coverage\" src=\"https://codecov.io/gh/SpoonLabs/sorald/branch/master/graph/badge.svg\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" />"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        },
+        {
+            "result": {
+                "value": "[Sorald-Experiments repository](https://github.com/khaes-kth/Sorald-experiments) includes the data related to our experiments with Sorald that are part of a recently conducted research project.\n\nSorald downloads `sonar-java-plugin.jar` at runtime. See [config file](https://github.com/ASSERT-KTH/sorald/blob/master/sorald/src/main/resources/config.properties) for its URL.\nAlthough most of the time it automatically downloads and loads it, you can manually download and store it if needed.\nSee https://github.com/ASSERT-KTH/sorald/blob/02c07213264663f4fbc4728009dc4fbe7a4c00e5/sorald/src/main/java/sorald/FileUtils.java#L127 for the name of the directory for different filesystems.\nThe file is called `sonar-java-plugin.jar`. In linux, `~/.cache/sorald/sonar-java-plugin.jar` is the path of the downloaded jar.\n",
+                "type": "Text_excerpt",
+                "original_header": "Experiments with Sorald",
+                "parent_header": [
+                    "Sorald <a href=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml\"><img alt=\"GHA tests Workflow Status\" src=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/sorald\"><img alt=\"Code Coverage\" src=\"https://codecov.io/gh/SpoonLabs/sorald/branch/master/graph/badge.svg\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" />",
+                    "Academic bibliographic references"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/spoonlabs/sorald/tree/master/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "## Contributing\n\nPull requests are very welcome by the Sorald team!\n\n### Guidelines for all pull-requests\n\nYou may open a PR at any time when working on something. Prefix the title of\nthe PR with `wip:` if it is not ready to be merged. A PR will be accepted and\nmerged when:\n\n- The title of the PR is prefixed with `<CATEGORY>:`, where `<CATEGORY>` is the\n  most applicable of:\n    - `feat`: A change to user-facing features\n    - `refactor`: A refactoring\n    - `fix`: A bugfix\n    - `chore`: A change to the CI setup or other supporting files (e.g. `pom.xml`)\n    - `test`: A change to the test suite\n    - `doc`: A change to the documentation\n    - Having trouble picking a category? Open your PR anyway and a maintainer will\n    help you!\n- It is minimal in the sense of doing a single thing (for example, an addition of a single new processor and a single bug fix).\n- It has a clear explanation of its goal and what was changed.\n- It passes in the continuous integration service being used in the project.\n- If the PR relates to an issue, the first line in the body says `Fix\n  #<ISSUE_NUMBER>` if it resolves the issue, or just `#<ISSUE_NUMBER>` if it is\n  related but does not resolve the issue.\n    - See the [PR that introduced this very line](https://github.com/SpoonLabs/sorald/pull/239) for an example\n    - Contributions such as touch-ups to documentation, new test cases and pure\n      refactorings do not need to be related to an issue\n\n> **Note:** _Change_ in this context means any of _addition_, _removal_ or\n> _modification_.\n\n### Guidelines for maintainers\n\nWhen merging a PR, maintainers should take care to:\n\n* Squash the merge\n* Ensure that the squash message starts with the `<CATEGORY>:` prefix\n* Ensure that the squash message ends with `(#<PR_NUMBER>)`\n* Ensure that any related issue is properly referenced in the PR body\n\n### Guidelines for new-processor pull-requests\n\nFor adding a new processor in Sorald, please, follow the instructions described below.\n\n0) Familiarize yourself with the [`sorald.util` utility package](#reusable-utility-classes-and-methods)\n\nThis is to ensure that you do not recreate functionality that we already have a\nsolution for.\n\n1) Find the name for the new processor\n\nThe first step is to find the name for the new processor.\nTo do so, you need to find the name that SonarSource uses for the rule that the new processor targets.\nSo let's suppose that the new processor targets the rule [\"Math operands should be cast before assignment\"](https://rules.sonarsource.com/java/type/Bug/RSPEC-2184), rule key 2184.\nIn [SonarSource for Java](https://github.com/SonarSource/sonar-java/tree/master/java-checks/src/main/java/org/sonar/java/checks), you will find that such a rule is implemented by the class `CastArithmeticOperandCheck`.\nSo the name of your new processor is `CastArithmeticOperandCheck` replacing \"Check\" by \"Processor\", resulting in `CastArithmeticOperandProcessor`.\n\n2) Create the processor\n\nOnce you have the name for the new processor, you can create a class using that\nname in `src/main/java/sorald/processor`.  This new class must extend\n`SoraldAbstractProcessor` and implement the abstract methods, and be annotated\nwith `ProcessorAnnotation`.\n\n> See the documentation for the abstract methods in\n> [SoraldAbstractProcessor](src/main/java/sorald/processor/SoraldAbstractProcessor.java),\n> and check out [the existing implementations\n> here](/src/main/java/sorald/processor) for guidance.\n\nAs soon as you have created a skeleton for the processor, with the\n`ProcessorAnnotation` properly filled in, you should update the `Processors`\nclass. You do this by running the main method of `sorald.CodeGenerator`, which\nyou can either do with your favorite IDE, or by running the following shell\ncommands in `bash`:\n\n```bash\n$ mvn clean compile dependency:build-classpath -Dmdep.outputFile=cp.txt\n$ java -cp \"$(cat cp.txt):./target/classes\" sorald.CodeGenerator\n$ mvn spotless:apply\n```\n\nAfter that, you can start developing your processor for real! Note that if you\nupdate the annotations of your processor, you must update the `Processors`\nclass again as described above.\n\n> **Complicated?:** The procedure for adding a processor is a little bit\n> contrived. It used to be automatic through processor annotations, which\n> worked excellently with Maven, but we experienced so many issues with IDE and\n> editor integration that we eventually gave up on it.\n\n3) Add at least one test file with expected output for your processor\n\nSee [Guidelines for testing processors](#guidelines-for-testing-processors) for\ndetails.\n\n4) Ensure compliance with code style\n\nWe have an automatically enforced code style in sorald, and your code will not\npass CI if it does not adhere to it. To ensure that your code does adhere to it,\nrun `mvn spotless:apply`, and then commit any changes the formatter makes.\n\n5) Update documentation\n\nYour processor is done, it's passing the minimum tests, so now you can update the documentation.\nWrite a summary of the processor supporting it with an example in <PROCESSOR_NAME>.md file and place it inside the\n`sorald.processor` package. For example, if your processor is in `CastArithmeticOperandProcessor.java`, then\nthe description file must be called `CastArithmeticOperandProcessor.md`.\n\n6) Open a PR\n\nThe processor, the tests, and the documentation being ready, your contribution is also ready to be used in a PR.\nOpen a PR, with the title \"feat: Add <PROCESSOR_NAME> (SonarSource rule <RULE_KEY_NUMBER>)\".\nFor the description of the PR, use the following template:  \n\nThis PR adds a processor for the rule [<RULE_DESCRIPTION, which should be the title of the rule in the https://rules.sonarsource.com/java webpage>](LINK TO THE RULE IN THE https://rules.sonarsource.com/java WEBPAGE).\n\nTransformation:\n\n```diff\n<Here it goes the diff between your resource file (the one used in the test) and the Sorald generated output for it>\n```\n\nAnd then you can submit your PR!\n\n### Reusable utility classes and methods\n\nIn the [sorald.util](/src/main/java/sorald/util) package we collect utility classes\nand methods for use throughout Sorald. It's a good idea to have a look through\nit before writing a processor. For example, the\n[Transformations](/src/main/java/sorald/util/Transformations.java) class contains\nhigh-level transformations that may be of use to you.\n\n### Guidelines for testing processors\n\nTests for the processors are automatically generated based on a set of test\nfiles in\n[src/test/resources/processor_test_files](/src/test/resources/processor_test_files).\nTo add test files for a processor, you must find or create a subdirectory called\n`<RULE_KEY>_<RULE_NAME>`, were you substitute `<RULE_KEY>` for the key of the\nrule your processor is related to, and `<RULE_NAME>` for the name of the\nprocessor without to `Processor` suffix. In this subdirectory, you add _test\nfiles_ and _expected files_ for the processor, which are described in more\ndetail below.\n\n#### Test files\n\nA _test file_ is a `.java` source file with at least one violation of the\nconsidered rule. Sorald's test suite automatically converts each test file\ninto a test case for the processor. Each violation in a test file _must_ be\nmarked with an inline comment `// Noncompliant`, like so.\n\n```java\n\"a\" == \"b\" // Noncompliant\n```\n\n> Note the capital `N` in `Noncompliant`!\n\n##### A test file is a test case\n\nAs each test file generates a test case, it is good practice to create one test\nfile per specific case you want to test, and document it with a header. To avoid\nan explosion of test files, we typically create one test file for the general\noperation of a processor, and then individual files for edge cases.\n\nThe name of the test file should ideally reflect what the test case is about,\nbut there are otherwise no particular naming conventions.\n\n> See\n> [src/test/java/sorald/processor/ProcessorTest.java](/src/test/java/sorald/processor/ProcessorTest.java)\n> if you are curious as to how tests are generated from the test files.\n\n##### Test files should be standalone compilable\n\nIn general, a test file must be _standalone compilable_ given only the standard\nlibrary. In other words, it must be syntactically correct, can't reference types\nthat are not part of the standard library, etc. You can easily test this by\nsimply running `javac` on your test file.\n\n> **Important:** Note that this means that test files must abide by Java\n> conventions of having the name of the primary type declaration in the class\n> match the name of the file.\n\nIn some cases, the point of the test case is that the test file does not\ncompile, typically due types or packages that aren't available being referenced.\nTo signify this, the test file name (as well as the class name) should be\nprefixed with `NOCOMPILE`, which will cause it to be ignored by tests that\nrequire compilation.\n\n> **Important:** Don't forget to also prefix the primary type's name with\n> `NOCOMPILE`, such that the file name matches the type name.\n\nIf a test file should be ignored completely, prefix it with `IGNORE` instead.\nThis is useful for keeping test files that Sorald currently cannot handle.\n\n#### Expected files\n\nAn _expected file_ is a `.java` source file that contains the expected output\nafter processing a test file, marked by having the suffix `.expected` tacked on\nto the end. For example, given a test file `A.java` the corresponding expected\nfile would be called `A.java.expected`. After processing `A.java` with the\nappropriate processor, the test suite compares the results to `A.java.expected`\nwith an AST comparison, meaning that most formatting differences are **not**\ncaptured (but e.g. method order still matters).\n\nWhen you add a test file, you should always add a corresponding expected file.\nOtherwise, the test suite can verify that the violations are removed, but not\nthat the output is actually correct, making for weak tests.\n\nFor a concrete example of a test file and expected file pair, see\n[ArrayHashCodeAndToString.java](/src/test/resources/processor_test_files/2116_ArrayHashCodeAndToString/ArrayHashCodeAndToString.java)\nand its expected output\n[ArrayHashCodeAndToString.java.expected](/src/test/resources/processor_test_files/2116_ArrayHashCodeAndToString/ArrayHashCodeAndToString.java.expected).\nFor more examples, see\n[src/test/resources/processor_test_files](/src/test/resources/processor_test_files).\n\n#### Exact match files\n\nAn _exact match file_ contains one or more code snippets that is expected to be\npresent after Sorald has processed a test file, and is marked by having the\nsuffix `.exact`. For example, given a test file `A.java`, the corresponding\nexact match file is `A.java.exact`. Whereas the expected files are matched with\nan AST comparison, the code snippets of exact match files are asserted to be\nliteral substrings of the output file contents, in order.\n\nA simple exact match file contains only a single code snippet to be matched as a\nsubstring. _Do keep in mind that indentation matters!_. For an example, see\n[DeadVariableWithMultipleDeadStores.java.exact](src/test/resources/processor_test_files/1854_DeadStore/DeadVariableWithMultipleDeadStores.java.exact).\n\nAn exact match file can contain multiple code snippets, where each snippet\nexcept for the last one is terminated with a line containing only `###`. See\n[UpperClass.java.exact](src/test/resources/processor_test_files/2057_SerialVersionUidCheck/UpperClass.java.exact)\nfor an example.\n\n> **Important:** Exact match files should be used sparingly, and should only\n> capture formatting that's of absolute relevance to Sorald itself and its\n> transformations. Overspecifying exact matches leads to unnecessary work down\n> the line.\n\n#### Testing partially fixable rules\n\nSome processors cannot repair all cases of a violation, and they are called\n`IncompleteProcessor`. To keep track of which cases we do not attempt to\nrepair, one can create test files prefixed with `INCOMPLETE`. The test suite\nwill ensure that the violation persists after Sorald is run. See\n[INCOMPLETE_DoNotCastFloat.java](sorald/src/test/resources/processor_test_files/S2164_MathOnFloat/INCOMPLETE_DoNotCastFloat.java)\nfor an example.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/docs/CONTRIBUTING.md"
+        },
+        {
+            "result": {
+                "value": "Contributions are welcome! Feel free to open issues on this GitHub repository, and also to open pull requests for making this project nicer (see instructions [here](/docs/CONTRIBUTING.md)).\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributing",
+                "parent_header": [
+                    "Sorald <a href=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml\"><img alt=\"GHA tests Workflow Status\" src=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/sorald\"><img alt=\"Code Coverage\" src=\"https://codecov.io/gh/SpoonLabs/sorald/branch/master/graph/badge.svg\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" />"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/spoonlabs/sorald/master/.github/mem-constrained-exec.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/spoonlabs/sorald/master/.github/submit-pr.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "Sorald supports macOS, Linux, and Windows.\n\nFor running Sorald, all you need is a Java 11+ runtime.\n\nFor building Sorald from source, you need a Java 11+ JDK, Maven >=3.6.3, and Git.\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites",
+                "parent_header": [
+                    "Sorald <a href=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml\"><img alt=\"GHA tests Workflow Status\" src=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/sorald\"><img alt=\"Code Coverage\" src=\"https://codecov.io/gh/SpoonLabs/sorald/branch/master/graph/badge.svg\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" />",
+                    "Getting started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Sorald is available as a `maven-plugin` so you can run it from the command line with Maven.\n\n```bash\nmvn se.kth.castor:sorald:repair -DruleKey=<ruleKey>\n```\n\n> Note: Sorald `maven-plugin` is still in rudimentary stages. We have added two goals to it - `mine` and `repair`. They\n> both are analogous to the CLI tool. However, not all parameters are supported yet. We are working on adding more.\n\n> Use `describe` goal of [maven-help-plugin](https://maven.apache.org/plugins/maven-help-plugin/describe-mojo.html#) to\n> see the list of parameters supported by the plugin. Example:\n> ```bash\n> mvn help:describe -Dplugin=se.kth.castor:sorald -Ddetail\n> ```\n\nFor example, the following commands repair violations of `S1132` in [SonarSource/sonar-scanner-cli@5c518d6](https://github.com/SonarSource/sonar-scanner-cli/commit/5c518d6a6f1a30bed62836790c1233b3f2e763fd).\n\n```bash\n# Cloning and moving into the project\ngit clone git@github.com:SonarSource/sonar-scanner-cli.git\ncd sonar-scanner-cli/\ngit checkout 5c518d6a\n\n# Running Sorald\nmvn se.kth.castor:sorald:repair -DruleKey=S1132\n\n# Checking the result\ngit diff\n```\n\nYou may also see the demo video:\n\nhttps://user-images.githubusercontent.com/35191225/199800315-d5180de6-1fd1-44b2-95d3-82d51140073e.mp4\n",
+                "type": "Text_excerpt",
+                "original_header": "Running Sorald in 2 seconds",
+                "parent_header": [
+                    "Sorald <a href=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml\"><img alt=\"GHA tests Workflow Status\" src=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/sorald\"><img alt=\"Code Coverage\" src=\"https://codecov.io/gh/SpoonLabs/sorald/branch/master/graph/badge.svg\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" />",
+                    "Getting started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To run Sorald on projects towards proposing fixes in the form of PRs, look at [this Git repository](https://github.com/HarisAdzemovic/SQ-Repair-CI-Integration) for an example. In it, Sorald is ran on the three Apache projects defined in the *projects_for_model_1.txt* file.\n",
+                "type": "Text_excerpt",
+                "original_header": "Running Sorald on GitHub projects to propose PRs with fixes",
+                "parent_header": [
+                    "Sorald <a href=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml\"><img alt=\"GHA tests Workflow Status\" src=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/sorald\"><img alt=\"Code Coverage\" src=\"https://codecov.io/gh/SpoonLabs/sorald/branch/master/graph/badge.svg\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" />",
+                    "Getting started",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "To run Sorald, you need to first get your hands on the program. You can do this\neither by [building from source](#build), or going to the [latest\nrelease](https://github.com/spoonlabs/sorald/releases/latest) and\ndownloading the file called `sorald-<VERSION>-jar-with-dependencies.jar` listed\nunder `Assets`. Unless you keep multiple versions of Sorald, we recommend\nrenaming the JAR to `sorald.jar` for the sake of simplicity.\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting a Sorald JAR",
+                "parent_header": [
+                    "Sorald <a href=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml\"><img alt=\"GHA tests Workflow Status\" src=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/sorald\"><img alt=\"Code Coverage\" src=\"https://codecov.io/gh/SpoonLabs/sorald/branch/master/graph/badge.svg\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" />",
+                    "Getting started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        },
+        {
+            "result": {
+                "value": "1. Clone this repository: `git clone https://github.com/SpoonLabs/sorald.git`\n\n2. Build:\n\n ```bash\n$ cd sorald\n$ mvn package -DskipTests\n$ cp sorald/target/sorald-*-jar-with-dependencies.jar sorald.jar\n ```\n\nThe Sorald application can now be found in `sorald.jar` in the current working\ndirectory.\n",
+                "type": "Text_excerpt",
+                "original_header": "Build",
+                "parent_header": [
+                    "Sorald <a href=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml\"><img alt=\"GHA tests Workflow Status\" src=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/sorald\"><img alt=\"Code Coverage\" src=\"https://codecov.io/gh/SpoonLabs/sorald/branch/master/graph/badge.svg\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" />",
+                    "Getting started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Sorald can perform two different tasks: automatically repair violations of Sonar rules in a\nproject, or mine projects for rule violations. These two modes of operations\nare available as the two commands `repair` and `mine`, respectively.\n\nFor the remainder of this section, assume that we have defined the following\nalias:\n\n```bash\nalias sorald='java -jar /abs/path/to/sorald.jar'\n```\n\nIf you don't like using aliases, simply substitute in `java -jar sorald.jar`\nfor any occurrence of `sorald` in these instructions.\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "Sorald <a href=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml\"><img alt=\"GHA tests Workflow Status\" src=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/sorald\"><img alt=\"Code Coverage\" src=\"https://codecov.io/gh/SpoonLabs/sorald/branch/master/graph/badge.svg\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" />",
+                    "Getting started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To repair rule violations, use the `repair` command.\n\n```bash\n$ sorald repair <arguments ...>\n```\n\nBasic usage consists of specifying a project to target and a rule to repair\nviolations of. The available rules [can be found here](docs/HANDLED_RULES.md),\nand are specified by their key. For example, to repair violations of the rule\n`2111: \"BigDecimal(double)\" should not be used` in a project at\n`some/project/path`, one can invoke Sorald like so.\n\n```bash\n$ sorald repair --source some/project/path --rule-key 2111\n```\n\nThe full list of options is documented [here](/docs/usage/repair.adoc)\n(and can also be found by running `sorald repair --help`):\n",
+                "type": "Text_excerpt",
+                "original_header": "Repairing rule violations (the `repair` command)",
+                "parent_header": [
+                    "Sorald <a href=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml\"><img alt=\"GHA tests Workflow Status\" src=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/sorald\"><img alt=\"Code Coverage\" src=\"https://codecov.io/gh/SpoonLabs/sorald/branch/master/graph/badge.svg\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" />",
+                    "Getting started",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To mine projects for Sonar warnings, use the `mine` command. Its most basic\nusage consists of simply pointing it to a project directory.\n\n```bash\n$ sorald mine --source path/to/project\n```\n\nIt will then output statistics for that project with the Sonar checks available\nin Sorald.\n\nAnother option is to execute the miner on a list of remote Git repositories,\nwhich can be done like so.\n\n```bash\n$ sorald mine --stats-on-git-repos --git-repos-list repos.txt --stats-output-file output.txt --temp-dir /tmp\n```\n\nThe `--gitReposList` should be a plain text file with one remote repository url\n(e.g. `https://github.com/SpoonLabs/sorald.git`) per line. Sorald clones each\nrepository and runs Sonar checks on the head of the default branch.\n\nThe full list of options documented [here](/docs/usage/mine.adoc)\n(and can also be found by running `sorald mine --help`).\n",
+                "type": "Text_excerpt",
+                "original_header": "Mining Sonar warnings (the `mine` command)",
+                "parent_header": [
+                    "Sorald <a href=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml\"><img alt=\"GHA tests Workflow Status\" src=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/sorald\"><img alt=\"Code Coverage\" src=\"https://codecov.io/gh/SpoonLabs/sorald/branch/master/graph/badge.svg\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" />",
+                    "Getting started",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "To run Sorald on projects towards proposing fixes in the form of PRs, look at [this Git repository](https://github.com/HarisAdzemovic/SQ-Repair-CI-Integration) for an example. In it, Sorald is ran on the three Apache projects defined in the *projects_for_model_1.txt* file.\n",
+                "type": "Text_excerpt",
+                "original_header": "Running Sorald on GitHub projects to propose PRs with fixes",
+                "parent_header": [
+                    "Sorald <a href=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml\"><img alt=\"GHA tests Workflow Status\" src=\"https://github.com/SpoonLabs/sorald/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/sorald\"><img alt=\"Code Coverage\" src=\"https://codecov.io/gh/SpoonLabs/sorald/branch/master/graph/badge.svg\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" />",
+                    "Getting started",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Our releases are signed using `travis-gumtree-spoon`'s GPG key. The key is hosted\n[here](https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x1429025e3eda19a5).\nYou may run the following commands to verify the signature of a release.\n```shell\ngpg --recv-keys 1429025e3eda19a5\ngpg --verify sorald-<VERSION>-jar-with-dependencies.jar.asc\n```\n> This signature is a type of [detaached signature](https://en.wikipedia.org/wiki/Detached_signature),\n> so you need to have the JAR file as well to verify the signature.\n  \n",
+                "original_header": "Releases"
+            },
+            "confidence": 0.9999055682468356,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Sorald   "
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/spoonlabs/sorald/master/README.md"
+        }
+    ]
+}

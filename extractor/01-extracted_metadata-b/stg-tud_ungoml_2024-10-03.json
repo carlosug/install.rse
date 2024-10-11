@@ -1,0 +1,396 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:13:03"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/stg-tud/ungoml",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "stg-tud",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-10-29T13:17:11Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-01-03T03:49:20Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Copyright 2023 Antonio Zhu @ TU Darmstadt\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \u201cSoftware\u201d), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \u201cAS IS\u201d, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "[@akwick, @Cortys, @gh0st42, @huellermeier, and @miramezini] Tool (UNGOML) for the publication UNGOML: Automated Classification of unsafe Usages in Go",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This toolkit should provide a wrapper / Docker container for\n<https://github.com/Cortys/unsafe-go-classifier>. Snippets of Go code should be given as a parameter for a container. The container will then analyze the code for unsafe usages and try to classify it. \n",
+                "original_header": "Unsafe Toolkit"
+            },
+            "confidence": 0.9151830467840738,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- The implementation of classifier is available in this [Cortys/unsafe-go-classifier](https://github.com/Cortys/unsafe-go-classifier) GitHub repository and archived via [figshare](https://figshare.com/articles/software/unsafe-go-classifier/22259155). The Docker container is available via [GitHub](https://github.com/Cortys/unsafe-go-classifier/pkgs/container/usgoc%2Fpred) and archived via [figshare](https://figshare.com/articles/software/UnGoML_Prediction_Container/22266490).\n- Fork of `unsafe_go_study_result` that includes our CFG generation implementation along with the data used for labelling is available in this [Cortys/unsafe_go_study_results](https://github.com/Cortys/unsafe_go_study_results) GitHub repository.  \n",
+                "original_header": "Classifier"
+            },
+            "confidence": 0.9799485269958207,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "ungoml",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "stg-tud/ungoml",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/stg-tud/ungoml/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/stg-tud/ungoml/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 8,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/stg-tud/ungoml/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 24447
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 683
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Go",
+                "name": "Go",
+                "type": "Programming_language",
+                "size": 227
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/stg-tud/ungoml/main/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/Dockerfile"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "You should have the unsafe-go-classifier image downloaded and tagged as usgoc/pred:latest.\nPull the unsafe-go-classifier from <https://github.com/Cortys/unsafe-go-classifier>.\n\nAlso, install [go-geiger](https://github.com/jlauinger/go-geiger) and make sure it's located in one of your path variables.\nTo install the Python dependencies, run the following command `pip install -r requirements.txt`.\nYou may want to install these packages in a local environment instead of global: `$python3 -m venv .venv ` `$source .venv/bin/activate`.\nIf you want to pull SSH repositories with this tool, make sure you have working SSH access. \n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites",
+                "parent_header": [
+                    "\ud83d\udcd6 Overview",
+                    "Installation (Docker)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Execute the following command to build the image:\n\n`sudo docker build . -t unsafe-go-toolkit`\n",
+                "type": "Text_excerpt",
+                "original_header": "Building the Image",
+                "parent_header": [
+                    "\ud83d\udcd6 Overview",
+                    "Installation (Docker)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This toolkit should provide a wrapper / Docker container for\n<https://github.com/Cortys/unsafe-go-classifier>. Snippets of Go code should be given as a parameter for a container. The container will then analyze the code for unsafe usages and try to classify it. \n",
+                "original_header": "Unsafe Toolkit"
+            },
+            "confidence": 0.9166372301935394,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "`./evaluate.py -p https://github.com/jlauinger/go-safer.git` \n",
+                "original_header": "Arguments for the Evaluation"
+            },
+            "confidence": 0.9999124616860307,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This project can be tested using the tests.py file and the following command: \nYou can also run the tests in Visual Studio Code, the test settings have been preconfigured. \n",
+                "original_header": "Testing"
+            },
+            "confidence": 0.9807129149596783,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Run the run.py file with the following arguments to export analysis data from a file/project:\n\n```\nusage: run.py [-h] -p PROJECT [-o OUTPUT] [-v VISUALIZER_ARGS] [-d]\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -p PROJECT, --project PROJECT\n                        Project path\n  -o OUTPUT, --output OUTPUT\n                        Output path\n  -v VISUALIZER_ARGS, --visualizer-args VISUALIZER_ARGS\n                        Arguments for the visualizer as a string, use of input argument is not recommended\n  -d, --debug           Verbose mode\n```\n\nThe visualizer args should be given in quotes and will then be passed in the container. Note that the output should be in the mounted output directory, because the run.py script mounts only that directory to the host files system. \n\nExample usage: \n\n`./run.py -p https://github.com/jlauinger/go-safer.git`\n",
+                "type": "Text_excerpt",
+                "original_header": "Running the Runner Script for Docker",
+                "parent_header": [
+                    "\ud83d\udcd6 Overview"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "This example runs the analysis on the go-safer repository and saves the data on a custom file location.\n\n`./run.py -p https://github.com/jlauinger/go-safer.git -o output/go_safer.json`\n\nThis example runs the same analysis as above, but with custom visualizer args.\n\n`./run.py -p https://github.com/jlauinger/go-safer.git -o output/go_safer.json --visualizer-args \"-t svg\"`\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage Examples",
+                "parent_header": [
+                    "\ud83d\udcd6 Overview"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Our tool can guide the process of auditing *unsafe* usages by categorizing usages. \nExisting linter can identify an *unsafe* usage while their lack to provide more detailed information about their porpuse. \nOne linter in this category is [gosec](https://github.com/securego/gosec) that provides an option to flag false positives with `#nosec`. \nOptinally, one can add the rule to the comment, such as `G103` for the rule that identify *unsafe* usages.\nThus, this comment helps to identify examples of *unsafe* usages that have been analyzed by a linter and manually verified. \nA simple and fast query to github results in about 370 different Go-files that make use of `#nosec G103`: <https://github.com/search?l=&q=%2F%2F%23nosec+G103+language%3AGo&type=code>.\n\nNote, that this query is via the [GitHub Search API](https://docs.github.com/en/rest/search?apiVersion=2022-11-28#timeouts-and-incomplete-results) and result in incomplete and may differentiating results. \n",
+                "type": "Text_excerpt",
+                "original_header": "Audit examples for *unsafe* usages",
+                "parent_header": [
+                    "\ud83d\udcd6 Overview"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Several members of the Go community are engaged in sharing their knowledge and insights about the _unsafe_* API. \nBelow, we list a few of these resources. \nIn case, you think we missed one worthwhile reading or watching, feel free to open an issue/pull request to get it merged. \nThe Table is ordered alphabetical. \n\n| Author | Where | Title | URL | Date | Last visit |\n| ------ | ----- | ----- | --- | ---- | ------- | \n| Bowes, J. | dotGo 2019 | Shattered Mirror: An Introduction to Reflect and Unsafe | [YouTube](https://www.youtube.com/watch?v=ZJFMvWHtSAA) | Mar, 25 2019 | Jan, 13 2023 | \n| Gopher Academy Blog | Blog | Safe use of unsafe.Pointer | [Blog](https://blog.gopheracademy.com/advent-2019/safe-use-of-unsafe-pointer/) | Dec, 5 2019 | Jan, 13 2023 |\n| Kochetkov, A. | Hackernoon | Golang Unsafe Type Conversions and Memory Access | [Hackernoon](https://hackernoon.com/golang-unsafe-type-conversions-and-memory-access-odz3yrl) | Mar, 15 2020 | Jan, 13 2023 |\n| Lauinger, J. | dev.to | Exploitation Exercise with unsafe.Pointer in Go: Information Leak (Part 1) | [dev.to](https://dev.to/jlauinger/exploitation-exercise-with-unsafe-pointer-in-go-information-leak-part-1-1kga) | May, 13 2020 | Jan, 13 2023 | \n| Walker, J. | GopherCon 2020 | Safety Not Guaranteed: Calling Windows APIs using Unsafe & Syscall | [YouTube](https://www.youtube.com/watch?v=EsPcKkESYPA) | Dec, 22 2020 | Jan, 13 2023 | \n| Wickert, A. | BSides Berlin 2020 | Go is memory safe isn't it? | [YouTube](https://www.youtube.com/watch?v=y5xd6ryxJ3U) | Sep, 20 2020 | Jan, 13 2023 | \n\n",
+                "type": "Text_excerpt",
+                "original_header": "In-depth resources about *unsafe* usages",
+                "parent_header": [
+                    "\ud83d\udcd6 Overview"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Run the evaluate.py file with the following arguments to export analysis data from a file/project:\n```\nusage: evaluate.py [-h] [-p PROJECT] [-o OUTPUT] [-m MODE] [-d] [-c CONCURRENT_THREADS]\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -p PROJECT, --project PROJECT\n                        Path of package where the Go file lies in\n  -o OUTPUT, --output OUTPUT\n                        Output file of JSON file\n  -m MODE, --mode MODE  Mode of output file, choose between the strings readable or machine\n  -d, --debug           Debug mode\n  -c CONCURRENT_THREADS, --concurrent-threads CONCURRENT_THREADS\n                        Number of concurrent evaluation containers the script should run\n```\n \n",
+                "original_header": "Arguments for the Evaluation"
+            },
+            "confidence": 0.9109480292987528,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Unsafe Toolkit"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/stg-tud/ungoml/main/./gfx/ungoml_evaluate.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/stg-tud/ungoml/main/./gfx/overallArchitecture.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/stg-tud/ungoml/main/README.md"
+        }
+    ]
+}

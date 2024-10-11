@@ -1,0 +1,408 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:05:48"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/v2-project/v2",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "v2-project",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-05-07T18:42:32Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-07-30T14:26:08Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Fast Detection of Configuration Drift in Python",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "v2",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "v2-project/v2",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/v2-project/v2/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/v2-project/v2/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/v2-project/v2/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 157622
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 34599
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 1992
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 1529
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/v2-project/v2/master/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/v2-project/v2/master/docker-compose.yml",
+                "type": "Url",
+                "format": "docker_compose"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/docker-compose.yml"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/v2-project/v2/master/examples/mobi/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/examples/mobi/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/v2-project/v2/master/examples/bayes/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/examples/bayes/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/v2-project/v2/master/src/neo4j/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/src/neo4j/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/v2-project/v2/master/src/systems/pip/versions/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/src/systems/pip/versions/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/v2-project/v2/master/src/systems/apt/versions/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/src/systems/apt/versions/Dockerfile"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/v2-project/v2/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/v2-project/v2/master/src/neo4j/load-and-start.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/v2-project/v2/master/src/languages/python/validation/pypi-proxy.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/v2-project/v2/master/src/languages/python/validation/apt-proxy.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/v2-project/v2/master/src/systems/apt/versions/list-versions.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "| Name           | Version |\n| -------------- | ------- |\n| Node.js        | 12.1.0  |\n| Docker         | 18.09.2 |\n| Docker Compose | 1.23.2  |\n",
+                "type": "Text_excerpt",
+                "original_header": "Dependencies",
+                "parent_header": [
+                    "V2: Fast Detection of Configuration Drift in Python"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Install dependencies and link the V2 executable with \n\n```\nnpm i\nnpm link\n```\n\nThen build Docker images and start services\n\n```\nv2 build\ndocker-compose up --detach\n```\n\nV2 requires the Docker daemon to be up and running. Additionally, the user\nmust have permissions to create Docker containers.\n",
+                "type": "Text_excerpt",
+                "original_header": "Setup",
+                "parent_header": [
+                    "V2: Fast Detection of Configuration Drift in Python"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "To run V2 on a code snippet with logging information, run\n\n```\nv2 run --verbose <code-snippet>\n```\n\nV2 will attempt to create a Dockerfile describing a working environment\nconfiguration. If one cannot be found, it will present information about\nwhat instances of configuration drift were found and patched.\n\nV2 may also be run from inside a Docker, but requires having the Docker socket\nbind mounted.\n\n```\ndocker run --rm -it --mount type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock -v \"$(pwd):/data:ro\" --network=<network> localhost:5000/v2/v2:latest v2 run /data\n``` \n",
+                "type": "Text_excerpt",
+                "original_header": "Running V2",
+                "parent_header": [
+                    "V2: Fast Detection of Configuration Drift in Python"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "All examples are stored under `examples/`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Examples",
+                "parent_header": [
+                    "V2: Fast Detection of Configuration Drift in Python"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\nv2 run examples/bayes/bayes.py\n```\n\nRunning on Bayes will produce the following Dockerfile.\n\n```dockerfile\nFROM python:3.7\nCOPY . /app\nRUN [\"apt-get\",\"update\"]\nRUN [\"pip\",\"install\",\"the==0.1.5\"]\nRUN [\"pip\",\"install\",\"PyYAML==5.1\"]\nRUN [\"pip\",\"install\",\"numpy==1.16.3\"]\nRUN [\"pip\",\"install\",\"scipy==1.2.1\"]\nRUN [\"pip\",\"install\",\"Theano==0.8.2\"]\nRUN [\"pip\",\"install\",\"Lasagne==0.1\"]\nCMD [\"python\",\"/app/bayes.py\"]\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Bayes",
+                "parent_header": [
+                    "V2: Fast Detection of Configuration Drift in Python",
+                    "Examples"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\nv2 run examples/guess_candidate_model/guess_candidate_model.py\n```\n\nNo working environment can be found for Guess Candidate Model due to an error\nin the gist. However, two instances of configuration drift are still found.\n\n\n```json\n{\n    \"name\": \"NoWorkingEnvironmentFoundError\",\n    \"time\": 271,\n    \"validations\": 12,\n    \"metadata\": [\n        {\n            \"id\": \"0\",\n            \"fixedValidations\": [\n                {\n                    \"status_code\": \"Failed\",\n                    \"dependencies\": {\n                        \"status_code\": \"Success\",\n                        \"install_errors\": []\n                    },\n                    \"execution\": {\n                        \"status_code\": \"Exception\",\n                        \"exception_name\": \"ModuleNotFoundError\",\n                        \"exception_message\": \"No module named 'sklearn.cross_validation'\",\n                        \"exception_file_name\": \"/data/examples/guess_candidate_model/guess_candidate_model.py\",\n                        \"exception_line_number\": 4,\n                        \"exception_line\": \"from sklearn.cross_validation import train_test_split\",\n                        \"exception_stack\": [\n                            [\n                                \"/data/examples/guess_candidate_model/guess_candidate_model.py\",\n                                4,\n                                \"<module>\",\n                                \"from sklearn.cross_validation import train_test_split\"\n                            ]\n                        ]\n                    },\n                    \"validations\": 1\n                },\n                {\n                    \"status_code\": \"Failed\",\n                    \"dependencies\": {\n                        \"status_code\": \"Success\",\n                        \"install_errors\": []\n                    },\n                    \"execution\": {\n                        \"status_code\": \"Exception\",\n                        \"exception_name\": \"ModuleNotFoundError\",\n                        \"exception_message\": \"No module named 'tensorflow'\",\n                        \"exception_file_name\": \"/usr/local/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py\",\n                        \"exception_line_number\": 5,\n                        \"exception_line\": \"import tensorflow as tf\",\n                        \"exception_stack\": [\n                            [\n                                \"/data/examples/guess_candidate_model/guess_candidate_model.py\",\n                                5,\n                                \"<module>\",\n                                \"from keras.preprocessing import sequence, text\"\n                            ],\n                            [\n                                \"/usr/local/lib/python3.7/site-packages/keras/__init__.py\",\n                                3,\n                                \"<module>\",\n                                \"from . import utils\"\n                            ],\n                            [\n                                \"/usr/local/lib/python3.7/site-packages/keras/utils/__init__.py\",\n                                6,\n                                \"<module>\",\n                                \"from . import conv_utils\"\n                            ],\n                            [\n                                \"/usr/local/lib/python3.7/site-packages/keras/utils/conv_utils.py\",\n                                9,\n                                \"<module>\",\n                                \"from .. import backend as K\"\n                            ],\n                            [\n                                \"/usr/local/lib/python3.7/site-packages/keras/backend/__init__.py\",\n                                89,\n                                \"<module>\",\n                                \"from .tensorflow_backend import *\"\n                            ],\n                            [\n                                \"/usr/local/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py\",\n                                5,\n                                \"<module>\",\n                                \"import tensorflow as tf\"\n                            ]\n                        ]\n                    },\n                    \"validations\": 4\n                }\n            ],\n            \"mutations\": [\n                {\n                    \"type\": \"decrement_semver_minor\",\n                    \"changes\": {\n                        \"package\": \"scikit-learn\",\n                        \"from\": \"0.20.3\",\n                        \"to\": \"0.19.2\"\n                    },\n                    \"iddfs\": {\n                        \"mutatorIndex\": 1\n                    }\n                },\n                {\n                    \"type\": \"decrement_semver_major\",\n                    \"changes\": {\n                        \"package\": \"Keras\",\n                        \"from\": \"2.2.4\",\n                        \"to\": \"1.2.2\"\n                    },\n                    \"iddfs\": {\n                        \"index\": 1,\n                        \"mutatorIndex\": 0\n                    }\n                },\n                {\n                    \"type\": \"decrement_semver_major\",\n                    \"changes\": {\n                        \"package\": \"Keras\",\n                        \"from\": \"1.2.2\",\n                        \"to\": \"0.3.3\"\n                    },\n                    \"iddfs\": {\n                        \"index\": 1,\n                        \"mutatorIndex\": 0\n                    }\n                }\n            ],\n            \"checkpoint\": {\n                \"status_code\": \"Failed\",\n                \"dependencies\": {\n                    \"status_code\": \"Success\",\n                    \"install_errors\": []\n                },\n                \"execution\": {\n                    \"status_code\": \"Exception\",\n                    \"exception_name\": \"NameError\",\n                    \"exception_message\": \"name 'labeled_sample' is not defined\",\n                    \"exception_file_name\": \"/data/examples/guess_candidate_model/guess_candidate_model.py\",\n                    \"exception_line_number\": 27,\n                    \"exception_line\": \"X = [x[1] for x in labeled_sample]\",\n                    \"exception_stack\": [\n                        [\n                            \"/data/examples/guess_candidate_model/guess_candidate_model.py\",\n                            27,\n                            \"<module>\",\n                            \"X = [x[1] for x in labeled_sample]\"\n                        ]\n                    ]\n                },\n                \"validations\": 0\n            },\n            \"code\": \"NotRepairable\",\n            \"message\": \"Validation exception 'NameError' is not repairable.\"\n        },\n        ...\n    ],\n    \"message\": \"Unable to find a working environment configuration\",\n    \"stack\": [\n        \"NoWorkingEnvironmentFoundError: Unable to find a working environment configuration\",\n        \"    at V2.infer (/v2/index.js:359:15)\",\n        \"    at process._tickCallback (internal/process/next_tick.js:68:7)\"\n    ]\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Guess Candidate Model",
+                "parent_header": [
+                    "V2: Fast Detection of Configuration Drift in Python",
+                    "Examples"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\nv2 run examples/mobi/mobi.py\n```\n\nRunning on Mobi will produce the following Dockerfile.\n\n```dockerfile\nFROM python:2.7\nCOPY . /app\nRUN [\"apt-get\",\"update\"]\nRUN [\"pip\",\"install\",\"six==1.12.0\"]\nRUN [\"pip\",\"install\",\"docutils==0.14\"]\nRUN [\"pip\",\"install\",\"pydocumentdb==2.3.3\"]\nRUN [\"pip\",\"install\",\"Sphinx==1.4.5\"]\nCMD [\"python\",\"/app/mobi.py\"]\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Mobi",
+                "parent_header": [
+                    "V2: Fast Detection of Configuration Drift in Python",
+                    "Examples"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "V2: Fast Detection of Configuration Drift in Python"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/v2-project/v2/master/README.md"
+        }
+    ]
+}

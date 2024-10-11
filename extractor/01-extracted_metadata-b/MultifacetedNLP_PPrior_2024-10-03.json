@@ -1,0 +1,232 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 21:20:50"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/MultifacetedNLP/PPrior",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "MultifacetedNLP",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-08-25T21:12:15Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2022-09-12T20:55:24Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Code repository for \"Proactive Prioritization of App Issues via Contrastive Learning\" paper",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\nIn this GitHub repository, we provided the Python implementation of this framework. More specifically, this repository consists of the Codebase, Datasets, and Trained Models. The source code of this framework is in the Codebase folder.\nThe TrainedModels folder contains DVC files pointing to the actual models in Google Drive. Also, the Datasets.dvc file points to the real datasets folder in Google Drive.\n \n",
+                "original_header": "PPrior: Proactive Prioritization of App issues"
+            },
+            "confidence": 0.9834217040678961,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/MultifacetedNLP/PPrior/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "PPrior",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "MultifacetedNLP/PPrior",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/MultifacetedNLP/PPrior/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/MultifacetedNLP/PPrior/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/MultifacetedNLP/PPrior/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 74673
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 527
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/MultifacetedNLP/PPrior/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/MultifacetedNLP/PPrior/main/Codebase/SelfSupervision.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "The steps for setting up the project on a local machine are as follows:\n\n1- Clone the project\n```\ngit clone https://github.com/MultifacetedNLP/PPrior.git\n```\n\n2- Install the [DVC](https://github.com/iterative/dvc) (Data Version Control) command line tool. The DVC is necessary for pulling the trained models and datasets from Google Drive to a local machine. \nThe installation section can be found [here](https://github.com/iterative/dvc#installation).\n\n3- Cd to the cloned project and run the following command lines to pull trained models and datasets separately.\n```\ncd PPrior\n```\n\nPull Datasets:\n```\ndvc pull Datasets\n```\nPull the PreTrainedT5 model:\n```\ndvc pull TrainedModels/PreTrainedT5\n```\nPull the Multiclass SentenceTransformer model:\n```\ndvc pull TrainedModels/contrastive-training-pretrainedT5\n```\nPull the Multiclass KNN index:\n```\ndvc pull TrainedModels/FinalKNN\n```\nPull the Binary SentenceTransformer model:\n```\ndvc pull TrainedModels/contrastive-training-anomaly-pretrainedT5\n```\nPull the Binary KNN index:\n```\ndvc pull TrainedModels/FinalAnomalyKNN\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Setup"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/MultifacetedNLP/PPrior/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1- Datasets can be downloaded from these links: [Train Dataset](https://drive.google.com/uc?export=download&id=1sfILpj4aAAjQ5eDmi4NSx3staDOqHQ1j), [Validation Dataset](https://drive.google.com/uc?export=download&id=1JbtZlQxXCaPf8dxMgWfxAIRIZttMcxcF), [Test Dataset](https://drive.google.com/uc?export=download&id=1YNE6a-uHTrkzmMy9bydZ5Wawt6BIFI6k) \n",
+                "original_header": "Datasets"
+            },
+            "confidence": 0.957529187441191,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/MultifacetedNLP/PPrior/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "PPrior: Proactive Prioritization of App issues"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/MultifacetedNLP/PPrior/main/README.md"
+        }
+    ]
+}

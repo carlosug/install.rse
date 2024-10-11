@@ -1,0 +1,609 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:19:49"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/awsm-research/AIBugHunter",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "awsm-research",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-11-08T10:59:07Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-26T02:46:48Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 AWSM - AI Wizards for Software & Mobile\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/LICENSE"
+        },
+        {
+            "result": {
+                "value": "<a href=\"https://github.com/awsm-research/AIBugHunter/blob/main/LICENSE\">MIT License</a>\n",
+                "type": "Text_excerpt",
+                "original_header": "License"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "AIBugHunter: A Practical Tool for Predicting, Classifying and Repairing Software Vulnerabilities",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "## Table of contents \n",
+                "original_header": "Expected Results"
+            },
+            "confidence": 0.9809583777790519,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "AIBugHunter",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "awsm-research/AIBugHunter",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/awsm-research/AIBugHunter/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/awsm-research/AIBugHunter/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 35,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "vulnerability-classification, vulnerability-localization, vulnerability-prediction, vulnerability-repair",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/awsm-research/AIBugHunter/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 164916
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 8273
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq3_cvss_score_reg/bow_lr/saved_models/download_model.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq3_cvss_score_reg/bert/train_codebert.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq3_cvss_score_reg/bert/test_bert.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq3_cvss_score_reg/bert/train_bert.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq3_cvss_score_reg/bert/test_codebert.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq3_cvss_score_reg/bert/saved_models/checkpoint-best-acc/download_model.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq3_cvss_score_reg/bow_rf/saved_models/download_model.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq1_cwe_id_cls/codebert_base/train.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq1_cwe_id_cls/codebert_base/test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq1_cwe_id_cls/codebert_base/saved_models/checkpoint-best-acc/download_model.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq1_cwe_id_cls/bert_base/train.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq1_cwe_id_cls/bert_base/test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq1_cwe_id_cls/bert_base/saved_models/checkpoint-best-acc/download_model.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq1_cwe_id_cls/multitask_bert/train.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq1_cwe_id_cls/multitask_bert/test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq1_cwe_id_cls/multitask_bert/saved_models/checkpoint-best-loss/download_model.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq1_cwe_id_cls/bow_rf/saved_models/download_model.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq1_cwe_id_cls/naive_bayes/saved_models/download_model.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq1_cwe_id_cls/mo_bert/train.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq1_cwe_id_cls/mo_bert/test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq1_cwe_id_cls/mo_bert/saved_models/checkpoint-best-acc/download_model.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/data/download_data.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq2_cwe_type_cls/bow_rf/saved_models/download_model.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq2_cwe_type_cls/bert_baseline/train_codebert.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq2_cwe_type_cls/bert_baseline/test_bert.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq2_cwe_type_cls/bert_baseline/train_bert.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq2_cwe_type_cls/bert_baseline/test_codebert.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq2_cwe_type_cls/bert_baseline/saved_models/checkpoint-best-acc/download_model.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/rq2_cwe_type_cls/naive_bayes/saved_models/download_model.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "<details open=\"open\">\n  <summary></summary>\n  \nFirst of all, clone this repository to your local machine and access the main dir via the following command:\n```\ngit clone https://github.com/awsm-research/AIBugHunter.git\ncd AIBugHunter\n```\n\nThen, install the python dependencies via the following command:\n```\npip install numpy\npip install torch\npip install transformers\npip install tqdm\npip install pandas\npip install scikit-learn\npip install argparse\npip install gdown\n```\n\nAlternatively, we provide requirements.txt with version of packages specified to ensure the reproducibility,\nyou may install via the following commands:\n```\npip install -r requirements.txt\n```\n\nIf having an issue with the gdown package, try the following commands:\n```\ngit clone https://github.com/wkentaro/gdown.git\ncd gdown\npip install .\ncd ..\n```\n\n* We highly recommend you check out this <a href=\"https://pytorch.org/\">installation guide</a> for the \"torch\" library so you can install the appropriate version on your device.\n  \n* To utilize GPU (optional), you also need to install the CUDA library, you may want to check out this <a href=\"https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html\">installation guide</a>.\n  \n* <a href=\"https://www.python.org/downloads/release/python-397/\">Python 3.9.7</a> is recommended, which has been fully tested without issues.\n \n</details>\n  ",
+                "type": "Text_excerpt",
+                "original_header": "About the Environment Setup",
+                "parent_header": [
+                    "How to replicate"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Run the following command to retrain:\n```\ncd rq1_cwe_id_cls/mo_bert\nsh train.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH3* \nRun the following command to retrain:\n```\ncd rq1_cwe_id_cls/codebert_base\nsh train.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH5* \nRun the following command to retrain:\n```\ncd rq1_cwe_id_cls/bert_base\nsh train.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH7* \nRun the following command to retrain:\n```\ncd rq1_cwe_id_cls/bow_rf\npython rf_main.py\n```\nRun the following command to download the pre-trained model:\nBASH9* \nRun the following command to retrain:\n```\ncd rq1_cwe_id_cls/naive_bayes\npython naive_bayes_main.py\n```\nRun the following command to download the pre-trained model:\nBASH11* \nRun the following command to retrain:\n```\ncd rq1_cwe_id_cls/mo_bert\nsh train.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH3*\nNote. Since our approach is a multi-task learning approach, the model is the same as the one used in RQ1. \nRun the following command to retrain:\n```\ncd rq2_cwe_type_cls/bert_baseline\nsh train_codebert.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH13* \nRun the following command to retrain:\n```\ncd rq2_cwe_type_cls/bert_baseline\nsh train_bert_base.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH15* \nRun the following command to retrain:\n```\ncd rq2_cwe_type_cls/bow_rf\npython rf_main.py\n```\nRun the following command to download the pre-trained model:\nBASH17* \nRun the following command to retrain:\n```\ncd rq2_cwe_type_cls/naive_bayes\npython naive_bayes_main.py\n```\nRun the following command to download the pre-trained model:\nBASH19* \nRun the following command to retrain:\n```\ncd rq3_cvss_score_reg/bert\nsh train_codebert.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH21* \nRun the following command to retrain:\n```\ncd rq3_cvss_score_reg/bert\nsh train_bert_base.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH23* \nRun the following command to retrain:\n```\ncd rq3_cvss_score_reg/bow_rf\npython rf_main.py\n```\nRun the following command to download the pre-trained model:\nBASH25* \nRun the following command to retrain:\n```\ncd rq3_cvss_score_reg/bow_lr\npython lr_main.py\n```\nRun the following command to download the pre-trained model:\nBASH27* \n## License \n<a href=\"https://github.com/awsm-research/AIBugHunter/blob/main/LICENSE\">MIT License</a> \n",
+                "original_header": "About the Experiment Replication"
+            },
+            "confidence": 0.9969689125836756,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<div align=\"center\">\n  \n# <a href=\"https://aibughunter.github.io/\">AIBugHunter</a> Replication Package \n  \n### About the Environment Setup\n<details open=\"open\">\n  <summary></summary>\n  \nFirst of all, clone this repository to your local machine and access the main dir via the following command:\n```\ngit clone https://github.com/awsm-research/AIBugHunter.git\ncd AIBugHunter\n``` \n",
+                "original_header": "Expected Results"
+            },
+            "confidence": 0.9994282201408462,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Then, install the python dependencies via the following command:\n```\npip install numpy\npip install torch\npip install transformers\npip install tqdm\npip install pandas\npip install scikit-learn\npip install argparse\npip install gdown\n``` \nAlternatively, we provide requirements.txt with version of packages specified to ensure the reproducibility,\nyou may install via the following commands:\n```\npip install -r requirements.txt\n``` \nIf having an issue with the gdown package, try the following commands:\n```\ngit clone https://github.com/wkentaro/gdown.git\ncd gdown\npip install .\ncd ..\n``` \n",
+                "original_header": "About the Environment Setup"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* We highly recommend you check out this <a href=\"https://pytorch.org/\">installation guide</a> for the \"torch\" library so you can install the appropriate version on your device.\n  \n* To utilize GPU (optional), you also need to install the CUDA library, you may want to check out this <a href=\"https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html\">installation guide</a>.\n  \n* <a href=\"https://www.python.org/downloads/release/python-397/\">Python 3.9.7</a> is recommended, which has been fully tested without issues.\n \n</details>\n  \n### About the Datasets\n<details open=\"open\">\n  <summary></summary>\nWe use the Big-Vul dataset provided by Fan et al., for more information about the dataset, please refer to <a href=\"https://github.com/ZeoVan/MSR_20_Code_vulnerability_CSV_Dataset\">this repository</a>. \n</div>\n</details> \nRun the following command to retrain:\n```\ncd rq1_cwe_id_cls/mo_bert\nsh train.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH7* \nRun the following command to retrain:\n```\ncd rq1_cwe_id_cls/codebert_base\nsh train.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH9* \nRun the following command to retrain:\n```\ncd rq1_cwe_id_cls/bert_base\nsh train.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH11* \nRun the following command to retrain:\n```\ncd rq1_cwe_id_cls/bow_rf\npython rf_main.py\n```\nRun the following command to download the pre-trained model:\nBASH13* \nRun the following command to retrain:\n```\ncd rq1_cwe_id_cls/naive_bayes\npython naive_bayes_main.py\n```\nRun the following command to download the pre-trained model:\nBASH15* \nRun the following command to retrain:\n```\ncd rq1_cwe_id_cls/mo_bert\nsh train.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH7*\nNote. Since our approach is a multi-task learning approach, the model is the same as the one used in RQ1. \nRun the following command to retrain:\n```\ncd rq2_cwe_type_cls/bert_baseline\nsh train_codebert.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH17* \nRun the following command to retrain:\n```\ncd rq2_cwe_type_cls/bert_baseline\nsh train_bert_base.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH19* \nRun the following command to retrain:\n```\ncd rq2_cwe_type_cls/bow_rf\npython rf_main.py\n```\nRun the following command to download the pre-trained model:\nBASH21* \nRun the following command to retrain:\n```\ncd rq2_cwe_type_cls/naive_bayes\npython naive_bayes_main.py\n```\nRun the following command to download the pre-trained model:\nBASH23* \nRun the following command to retrain:\n```\ncd rq3_cvss_score_reg/bert\nsh train_codebert.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH25* \nRun the following command to retrain:\n```\ncd rq3_cvss_score_reg/bert\nsh train_bert_base.sh\n```\nRun the following command to run inference using the pre-trained model:\nBASH27* \nRun the following command to retrain:\n```\ncd rq3_cvss_score_reg/bow_rf\npython rf_main.py\n```\nRun the following command to download the pre-trained model:\nBASH29* \nRun the following command to retrain:\n```\ncd rq3_cvss_score_reg/bow_lr\npython lr_main.py\n```\nRun the following command to download the pre-trained model:\nBASH31* \n",
+                "original_header": "Expected Results"
+            },
+            "confidence": 0.9986664921655287,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "* Special thanks to dataset providers of Big-Vul (<a href=\"https://dl.acm.org/doi/10.1145/3379597.3387501\">Fan et al.</a>)\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgements"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "```bash\n@article{fu2024aibughunter,\n  title={Aibughunter: A practical tool for predicting, classifying and repairing software vulnerabilities},\n  author={Fu, Michael and Tantithamthavorn, Chakkrit and Le, Trung and Kume, Yuki and Nguyen, Van and Phung, Dinh and Grundy, John},\n  journal={Empirical Software Engineering},\n  volume={29},\n  number={1},\n  pages={4},\n  year={2024},\n  publisher={Springer}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{fu2024aibughunter,\n    publisher = {Springer},\n    year = {2024},\n    pages = {4},\n    number = {1},\n    volume = {29},\n    journal = {Empirical Software Engineering},\n    author = {Fu, Michael and Tantithamthavorn, Chakkrit and Le, Trung and Kume, Yuki and Nguyen, Van and Phung, Dinh and Grundy, John},\n    title = {Aibughunter: A practical tool for predicting, classifying and repairing software vulnerabilities},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Aibughunter: A practical tool for predicting, classifying and repairing software vulnerabilities",
+                "author": "Fu, Michael and Tantithamthavorn, Chakkrit and Le, Trung and Kume, Yuki and Nguyen, Van and Phung, Dinh and Grundy, John"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Run the following command to retrain:\n```\ncd rq1_cwe_id_cls/bow_rf\npython rf_main.py\n```\nRun the following command to download the pre-trained model:\nBASH9* \nRun the following command to retrain:\n```\ncd rq1_cwe_id_cls/naive_bayes\npython naive_bayes_main.py\n```\nRun the following command to download the pre-trained model:\nBASH11* \nRun the following command to retrain:\n```\ncd rq2_cwe_type_cls/bow_rf\npython rf_main.py\n```\nRun the following command to download the pre-trained model:\nBASH17* \nRun the following command to retrain:\n```\ncd rq2_cwe_type_cls/naive_bayes\npython naive_bayes_main.py\n```\nRun the following command to download the pre-trained model:\nBASH19* \nRun the following command to retrain:\n```\ncd rq3_cvss_score_reg/bow_rf\npython rf_main.py\n```\nRun the following command to download the pre-trained model:\nBASH25* \nRun the following command to retrain:\n```\ncd rq3_cvss_score_reg/bow_lr\npython lr_main.py\n```\nRun the following command to download the pre-trained model:\nBASH27* \n",
+                "original_header": "About the Experiment Replication"
+            },
+            "confidence": 0.9261269792185293,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Run the following command to retrain:\n```\ncd rq1_cwe_id_cls/bow_rf\npython rf_main.py\n```\nRun the following command to download the pre-trained model:\nBASH13* \nRun the following command to retrain:\n```\ncd rq1_cwe_id_cls/naive_bayes\npython naive_bayes_main.py\n```\nRun the following command to download the pre-trained model:\nBASH15* \nRun the following command to retrain:\n```\ncd rq2_cwe_type_cls/bow_rf\npython rf_main.py\n```\nRun the following command to download the pre-trained model:\nBASH21* \nRun the following command to retrain:\n```\ncd rq2_cwe_type_cls/naive_bayes\npython naive_bayes_main.py\n```\nRun the following command to download the pre-trained model:\nBASH23* \nRun the following command to retrain:\n```\ncd rq3_cvss_score_reg/bow_rf\npython rf_main.py\n```\nRun the following command to download the pre-trained model:\nBASH29* \nRun the following command to retrain:\n```\ncd rq3_cvss_score_reg/bow_lr\npython lr_main.py\n```\nRun the following command to download the pre-trained model:\nBASH31* \n",
+                "original_header": "Expected Results"
+            },
+            "confidence": 0.9261269792185293,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/imgs/logo.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/./imgs/rq1_results.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/./imgs/rq2_results.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/./imgs/rq3_results.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/awsm-research/AIBugHunter/main/README.md"
+        }
+    ]
+}

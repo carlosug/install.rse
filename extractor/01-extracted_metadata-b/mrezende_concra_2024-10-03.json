@@ -1,0 +1,381 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 22:11:06"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/mrezende/concra",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "mrezende",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-04-10T17:35:23Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-02-21T09:58:18Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "The MIT License (MIT)\n\nCopyright (c) 2016 Benjamin Bolte\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/LICENSE.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "This repository contains the implementations of our experiments and our approach presented in the paper: CoNCRA: A Convolutional Neural Network Code Retrieval Approach",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository is the official implementation of [CoNCRA: A Convolutional Neural Network Code Retrieval Approach](https://arxiv.org/abs/2009.01959).  \nWe propose a technique for semantic code search: A Convolutional Neural Network approach to code retrieval (CoNCRA). Our technique aims to find the code snippet that most closely matches the developer's intent, expressed in natural language. We evaluated our approach's efficacy on a dataset composed of questions and code snippets collected from Stack Overflow. Our preliminary results showed that our technique, which prioritizes local interactions (words nearby), improved the state-of-the-art (SOTA) by 5% on average, retrieving the most relevant code snippets in the top 3 (three) positions by almost 80% of the time. \n",
+                "original_header": "CoNCRA: A Convolutional Neural Network Code Retrieval Approach"
+            },
+            "confidence": 0.9851874885762555,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "concra",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "mrezende/concra",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mrezende/concra/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mrezende/concra/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "code-retrieval, code-search, joint-embedding, neural-networks",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/mrezende/concra/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 39099551
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 243520
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mrezende/concra/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/training/train_unif_embedding_stack_over_flow_qa.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/training/train_unif_embedding_stack_over_flow_qa.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/training/train_cnn_stack_over_flow_qa.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/training/train_cnn_stack_over_flow_qa.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/training/train_shared_cnn_stack_over_flow_qa.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/training/train_shared_cnn_stack_over_flow_qa.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/evaluation/evaluate_best_stack_over_flow_qa.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/evaluation/evaluate_best_stack_over_flow_qa.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/evaluation/evaluate_stack_over_flow_qa.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/evaluation/evaluate_stack_over_flow_qa.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/preprocess_data/migrate_staqc_multiple_code_answers_data_to_json.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/preprocess_data/migrate_staqc_multiple_code_answers_data_to_json.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/preprocess_data/generate_stack_over_flow_embeddings.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/preprocess_data/generate_stack_over_flow_embeddings.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/preprocess_data/generate_input_to_model.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/notebooks/preprocess_data/generate_input_to_model.ipynb"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "We ran our experiments at Google colab. The notebooks and source code to run our models is available at [**notebooks**](https://github.com/mrezende/concra/tree/master/notebooks) folder.\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "CoNCRA: A Convolutional Neural Network Code Retrieval Approach"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you are using our code, please cite the following paper:\n\n```\n@inproceedings{de-rezende-martins-concra-2020,\nauthor = {de Rezende Martins, Marcelo and Gerosa, Marco Aur\\'{e}lio},\ntitle = {CoNCRA: A Convolutional Neural Networks Code Retrieval Approach},\nyear = {2020},\nisbn = {9781450387538},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nurl = {https://doi.org/10.1145/3422392.3422462},\ndoi = {10.1145/3422392.3422462},\nbooktitle = {Proceedings of the 34th Brazilian Symposium on Software Engineering},\npages = {526\u2013531},\nnumpages = {6},\nkeywords = {joint embedding, neural networks, code search},\nlocation = {Natal, Brazil},\nseries = {SBES '20}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Cite",
+                "parent_header": [
+                    "CoNCRA: A Convolutional Neural Network Code Retrieval Approach"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{de-rezende-martins-concra-2020,\n    series = {SBES '20},\n    location = {Natal, Brazil},\n    keywords = {joint embedding, neural networks, code search},\n    numpages = {6},\n    pages = {526\u2013531},\n    booktitle = {Proceedings of the 34th Brazilian Symposium on Software Engineering},\n    doi = {10.1145/3422392.3422462},\n    url = {https://doi.org/10.1145/3422392.3422462},\n    address = {New York, NY, USA},\n    publisher = {Association for Computing Machinery},\n    isbn = {9781450387538},\n    year = {2020},\n    title = {CoNCRA: A Convolutional Neural Networks Code Retrieval Approach},\n    author = {de Rezende Martins, Marcelo and Gerosa, Marco Aur\\'{e}lio},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1145/3422392.3422462",
+                "title": "CoNCRA: A Convolutional Neural Networks Code Retrieval Approach",
+                "author": "de Rezende Martins, Marcelo and Gerosa, Marco Aur\\'{e}lio",
+                "url": "https://doi.org/10.1145/3422392.3422462"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "You can download pretrained models here: \n",
+                "original_header": "Pre-trained Models"
+            },
+            "confidence": 0.9006426121225499,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "CoNCRA: A Convolutional Neural Network Code Retrieval Approach"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/mrezende/concra/master/images/joint_embedding-article.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2009.01959"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1905.03813"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mrezende/concra/master/README.md"
+        }
+    ]
+}

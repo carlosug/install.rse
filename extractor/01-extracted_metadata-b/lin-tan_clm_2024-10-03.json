@@ -1,0 +1,340 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:57:42"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/lin-tan/clm",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "lin-tan",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-01-23T21:10:28Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-27T08:22:29Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "BSD 3-Clause License\t\n\t\n\tDeveloped by:\n\tThe ASSET research group led by Lin Tan\n\tPurdue University\n\t\n\tCopyright (c) 2023\n\tAll rights reserved.\n\t\n\tRedistribution and use in source and binary forms, with or without\n\tmodification, are permitted provided that the following conditions are met:\n\t\n\t1. Redistributions of source code must retain the above copyright notice, this\n\tlist of conditions and the following disclaimer.\n\t\n\t2. Redistributions in binary form must reproduce the above copyright notice,\n\tthis list of conditions and the following disclaimer in the documentation\n\tand/or other materials provided with the distribution.\n\t\n\t3. Neither the name of the copyright holder nor the names of its\n\tcontributors may be used to endorse or promote products derived from\n\tthis software without specific prior written permission.\n\t\n\tTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\n\tAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n\tIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n\tDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\n\tFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n\tDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\n\tSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\n\tCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\n\tOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\n\tOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/lin-tan/clm/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "For our ICSE 2023 paper Impact of Code Language Models on Automated Program Repair",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is the artifact of paper \"Impact of Code Language Models on Automated Program Repair, Nan Jiang, Kevin Liu, Thibaud Lutellier, and Lin Tan\", [ICSE 2023](https://conf.researchr.org/track/icse-2023/icse-2023-technical-track).\n \n",
+                "original_header": "Impact of Code Language Models on Automated Program Repair"
+            },
+            "confidence": 0.9564661843856732,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lin-tan/clm/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The file structure of the artifact is as follow:\n* **clm-apr:**\n    * **plbart:** source code to generate patches with PLBART models.\n    * **codet5:** source code to generate patches with CodeT5 models.\n    * **codegen:** source code to generate patches with CodeGen models.\n    * **incoder:** source code to generate patches with InCoder models.\n    * **plbart_finetune:** source code to finetune PLBART models and generate patches with the finetuned models.\n    * **codet5_finetune:** source code to finetune CodeT5 models and generate patches with the finetuned models.\n    * **codegen_finetune:** source code to finetune CodeGen models and generate patches with the finetuned models.\n    * **incoder_finetune:** source code to finetune InCoder models and generate patches with the finetuned models.\n    * **defects4j:** patches generated for Defects4J benchmark, by different code language models.\n    * **quixbugs:** patches generated for QuixBugs benchmark, by different code language models.\n    * **humaneval:** patches generated for HumanEval-Java benchmark, by different code language models.\n* **humaneval-java:** The HumanEval-Java benchmark created by this work.\n* **jasper:** A Java tool to parse Java files and prepare input for different code language models.\n* **models:** The folder to put downloaded and fine-tuned language models.\n* **tmp_benchmarks:** The folder to put temprary folders for patches validation.\n* **preprint_for_artifact_evaluation.pdf:** An early draft of the preprint for artifact evaluation purpose only (to be updated).\n \n",
+                "original_header": "Content"
+            },
+            "confidence": 0.9465154123822914,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lin-tan/clm/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "clm",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "lin-tan/clm",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/lin-tan/clm/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/lin-tan/clm/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 56,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 8,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/lin-tan/clm/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 340305
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 61100
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 938
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lin-tan/clm/main/setup.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lin-tan/clm/main/download_clms.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "* **To download the artifact**, run:\n```\ngit clone https://github.com/lin-tan/clm.git\n```\nThis is enough to obtain all the patches generated by ten code language models evaluated in the paper (referring to RQ1 and RQ2 in the paper). More details can be found in the README.md file.\n\n\n* **To run the code in Docker**, run:\n```\ndocker pull jiang719/clm-apr:latest\ndocker run -it --name clm --gpus all jiang719/clm-apr:latest\ncd /home/CLM\nbash setup.sh\n```\nMore details about running the code to reproduce this paper's results can be found in the README.md file.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/lin-tan/clm/main/INSTALL.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lin-tan/clm/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "* Python 3.10.4\n* PyTorch 1.12.0\n* Huggingface transformers 4.21.0\n* Java 8\n* Docker\n* nvidia-docker\n* Defects4J\n",
+                "type": "Text_excerpt",
+                "original_header": "Dependency",
+                "parent_header": [
+                    "Impact of Code Language Models on Automated Program Repair"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lin-tan/clm/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "* To run this artifact in docker, you need to have [docker](https://docs.docker.com/desktop/install/linux-install/) installed on the host system first.\n* To use GPUs in docker, you need to install [nvidia-docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) on the host system.\n* Pull the docker image, which contains a copy of the whole artifact as well as all the dependencies satisfied: \n```\ndocker pull jiang719/clm-apr:latest\n```\n* Start the docker image:\n```\ndocker run -it --name clm --gpus all jiang719/clm-apr:latest\ncd /home/CLM\nbash setup.sh\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "To Run in Docker",
+                "parent_header": [
+                    "Impact of Code Language Models on Automated Program Repair"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lin-tan/clm/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you find this code to be useful for your research, please consider citing:\n```\n@inproceedings{jiang@impact,\n   author = {Jiang, Nan and Liu, Kevin and Lutellier, Thibaud and Tan, Lin},\n   title = {Impact of Code Language Models on Automated Program Repair},\n   year = {2023},\n   isbn = {9781665457019},\n   publisher = {IEEE Press},\n   url = {https://doi.org/10.1109/ICSE48619.2023.00125},\n   doi = {10.1109/ICSE48619.2023.00125},\n   booktitle = {Proceedings of the 45th International Conference on Software Engineering},\n   pages = {1430\u20131442},\n   numpages = {13},\n   keywords = {code language model, automated program repair, deep learning, fine-tuning},\n   location = {Melbourne, Victoria, Australia},\n   series = {ICSE '23}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "Impact of Code Language Models on Automated Program Repair"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lin-tan/clm/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{jiang@impact,\n    series = {ICSE '23},\n    location = {Melbourne, Victoria, Australia},\n    keywords = {code language model, automated program repair, deep learning, fine-tuning},\n    numpages = {13},\n    pages = {1430\u20131442},\n    booktitle = {Proceedings of the 45th International Conference on Software Engineering},\n    doi = {10.1109/ICSE48619.2023.00125},\n    url = {https://doi.org/10.1109/ICSE48619.2023.00125},\n    publisher = {IEEE Press},\n    isbn = {9781665457019},\n    year = {2023},\n    title = {Impact of Code Language Models on Automated Program Repair},\n    author = {Jiang, Nan and Liu, Kevin and Lutellier, Thibaud and Tan, Lin},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/ICSE48619.2023.00125",
+                "title": "Impact of Code Language Models on Automated Program Repair",
+                "author": "Jiang, Nan and Liu, Kevin and Lutellier, Thibaud and Tan, Lin",
+                "url": "https://doi.org/10.1109/ICSE48619.2023.00125"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/lin-tan/clm/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Impact of Code Language Models on Automated Program Repair"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/lin-tan/clm/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/lin-tan/clm/main/figures/ft_size.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/lin-tan/clm/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/lin-tan/clm/main/figures/model_size.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/lin-tan/clm/main/README.md"
+        }
+    ]
+}

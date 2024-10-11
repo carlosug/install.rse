@@ -1,0 +1,773 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:08:14"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/chains-project/SBOM-2023",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "chains-project",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-02-28T16:57:18Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-03-31T13:23:36Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 CHAINS research project at KTH Royal Institute of Technology\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Experimental Data about Java SBOMs https://arxiv.org/pdf/2303.11102.pdf",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains the code and data produced for the paper [_Challenges of Producing Software Bill Of Materials for Java_](https://arxiv.org/abs/2303.11102) (IEEE Security \\& Privacy, 2023).  \nThe structure of the repository is as follows: \n"
+            },
+            "confidence": 0.9691983404035569,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* [`sbom-production`](sbom-production) contains all scripts used for creating [CycloneDX](https://www.cyclonedx.org/) SBOM files for each of the 26 study subjects using 6 different SBOM producers.\n* [`ground-truth-production`](ground-truth-production) contains all scripts used for extracting a ground truth dataset of dependency trees for each study subject.\n* [`metrics-computation`](metrics-computation) contains all code used for computing metrics relating to the performance of the SBOM tools.\n* [`results-march-2023`](results-march-2023) contains all experimental data.\n* [`sbom2023_plot`](sbom2023_plot) contains additional code and resources related to the creation of figures for the paper. \n",
+                "original_header": "Overview"
+            },
+            "confidence": 0.9757179030157875,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "SBOM-2023",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "chains-project/SBOM-2023",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/chains-project/SBOM-2023/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/chains-project/SBOM-2023/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/chains-project/SBOM-2023/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 173772
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 27444
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 25490
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 18514
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 8771
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "R",
+                "name": "R",
+                "type": "Programming_language",
+                "size": 2303
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/chains-project/SBOM-2023/releases/115092292",
+                "tag": "v2.0.0",
+                "name": "2.0.0",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "We updated the results during our major revision, and here is the[ version 2](https://arxiv.org/abs/2303.11102v2) of the paper. CHANGELOG: https://github.com/chains-project/SBOM-2023/pull/7",
+                "tarball_url": "https://api.github.com/repos/chains-project/SBOM-2023/tarball/v2.0.0",
+                "zipball_url": "https://api.github.com/repos/chains-project/SBOM-2023/zipball/v2.0.0",
+                "html_url": "https://github.com/chains-project/SBOM-2023/releases/tag/v2.0.0",
+                "url": "https://api.github.com/repos/chains-project/SBOM-2023/releases/115092292",
+                "release_id": 115092292,
+                "date_created": "2023-08-04T10:22:11Z",
+                "date_published": "2023-08-04T10:26:12Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/chains-project/SBOM-2023/releases/97650581",
+                "tag": "v1.0.0",
+                "name": "1.0.0",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "The first release of the dataset used in [arXiv v1](https://arxiv.org/abs/2303.11102v1).",
+                "tarball_url": "https://api.github.com/repos/chains-project/SBOM-2023/tarball/v1.0.0",
+                "zipball_url": "https://api.github.com/repos/chains-project/SBOM-2023/zipball/v1.0.0",
+                "html_url": "https://github.com/chains-project/SBOM-2023/releases/tag/v1.0.0",
+                "url": "https://api.github.com/repos/chains-project/SBOM-2023/releases/97650581",
+                "release_id": 97650581,
+                "date_created": "2023-03-31T15:02:31Z",
+                "date_published": "2023-03-31T15:05:42Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "cff-version: 1.2.0\npreferred-citation:\n  title: \"Challenges of Producing Software Bill Of Materials for Java\"\n  doi: \"https://doi.org/10.48550/arXiv.2303.11102\"\n  year: \"2023\"\n  type: article\n  journal: \"arXiv preprint\"\n  authors:\n    - family-names: Balliu\n      given-names: Musard\n    - family-names: Baudry\n      given-names: Benoit\n    - family-names: Bobadilla\n      given-names: Sofia\n    - family-names: Ekstedt\n      given-names: Mathias\n    - family-names: Monperrus\n      given-names: Martin\n    - family-names: Ron\n      given-names: Javier\n    - family-names: Sharma\n      given-names: Aman\n    - family-names: Skoglund\n      given-names: Gabriel\n    - family-names: Soto-Valero\n      given-names: C\u00e9sar\n    - family-names: Wittlinger\n      given-names: Martin\n",
+                "type": "File_dump",
+                "format": "cff"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "@article{sbomchallenges,\n    url = {http://arxiv.org/pdf/2303.11102},\n    author = {Musard Balliu and Benoit Baudry and Sofia Bobadilla and Mathias Ekstedt and Martin Monperrus and Javier Ron and Aman Sharma and Gabriel Skoglund and C\u00e9sar Soto-Valero and Martin Wittlinger},\n    doi = {10.1109/MSEC.2023.3302956},\n    year = {2023},\n    journal = {IEEE Security \\& Privacy},\n    title = {Challenges of Producing Software Bill Of Materials for Java},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/MSEC.2023.3302956",
+                "title": "Challenges of Producing Software Bill Of Materials for Java",
+                "author": "Musard Balliu and Benoit Baudry and Sofia Bobadilla and Mathias Ekstedt and Martin Monperrus and Javier Ron and Aman Sharma and Gabriel Skoglund and C\u00e9sar Soto-Valero and Martin Wittlinger",
+                "url": "http://arxiv.org/pdf/2303.11102"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/reproduce.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/ground-truth-production/generateGroundTruth.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/jbom.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/cyclonedx.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/swid-maven-plugin.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/spdx-tools.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/syft.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/bom.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/openrewrite.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/sbom-tool.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/generateAll.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/depscan.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/spdx-sbom-generator.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/maven-dependency-graph.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/build-info-go.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/scanoss.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/maven-module-count.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/spdx-maven-plugin.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/cdxgen.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/scancode.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/cyclonedx-maven-plugin.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/ort.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/ground-truth-production/maven-dependency-tree/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/ground-truth-production/maven-dependency-tree/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/openrewrite/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/openrewrite/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/maven-dependency-graph/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/maven-dependency-graph/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/bom/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/bom/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/sbom-tool/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/sbom-tool/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/spdx-maven-plugin/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/spdx-maven-plugin/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/spdx-tools/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/spdx-tools/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/ort/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/ort/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/SCANOSS/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/SCANOSS/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/jbom/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/jbom/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/spdx-sbom-generator/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/spdx-sbom-generator/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/maven-count-modules/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/maven-count-modules/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/syft/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/syft/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/swid-maven-plugin/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/swid-maven-plugin/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/cyclonedx-maven-plugin/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/cyclonedx-maven-plugin/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/scancode/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/scancode/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/dep-scan/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/dep-scan/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/cdxgen/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/cdxgen/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/build-info-go/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom-production/build-info-go/Dockerfile"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom2023_plot/Scatterplot.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/sbom2023_plot/Scatterplot.ipynb"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "The following versions of 26 Java projects using Maven were selected as study subjects:\n\n| # | GitHub Repository | Commit Hash | Stable release as of 01.01.23 |\n| - | ----------------- | ----------- | ----------------------------- |\n| 1 | [jenkins](https://github.com/jenkinsci/jenkins) | [ce7e5d7](https://github.com/jenkinsci/jenkins/commit/ce7e5d70373a36c8d26d4117384a9c5cb57ff1c1) | [2.384](https://mvnrepository.com/artifact/org.jenkins-ci.main/jenkins-core/2.384) |  |  |\n| 2 | [mybatis-3](https://github.com/mybatis/mybatis-3) | [c195f12](https://github.com/mybatis/mybatis-3/commit/c195f12808a88a1ee245dc86d9c1621042655970) | [3.5.11](https://mvnrepository.com/artifact/org.mybatis/mybatis/3.5.11) |  |  |\n| 3 | [flink](https://github.com/apache/flink) | [c41c8e5](https://github.com/apache/flink/commit/c41c8e5cfab683da8135d6c822693ef851d6e2b7) | [1.15.3](https://mvnrepository.com/artifact/org.apache.flink/flink-core/1.15.3) |  |  |\n| 4 | [checkstyle](https://github.com/checkstyle/checkstyle) | [233c91b](https://github.com/checkstyle/checkstyle/commit/233c91be45abc1ddf67c1df7bc8f9f8ab64caa1c) | [10.6.0](https://mvnrepository.com/artifact/com.puppycrawl.tools/checkstyle/10.6.0) |  |  |\n| 5 | [CoreNLP](https://github.com/stanfordnlp/CoreNLP) | [f7782ff](https://github.com/stanfordnlp/CoreNLP/commit/f7782ff5f235584b0fc559f266961b5ab013556a) | [4.5.1](https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-corenlp/4.5.1) |  |  |\n| 6 | [neo4j](https://github.com/neo4j/neo4j) | [c082e80](https://github.com/neo4j/neo4j/commit/c082e80b792d46ad1b342fbf7f1facb2028344c6) | [5.3.0](https://mvnrepository.com/artifact/org.neo4j/neo4j-collections/5.3.0) |  | [Central](https://mvnrepository.com/repos/central) |\n| 7 | [async-http-client](https://github.com/AsyncHttpClient/async-http-client) | [7a370af](https://github.com/AsyncHttpClient/async-http-client/commit/7a370af58dc8895a27a14d0a81af2a3b91930651) | [2.12.3](https://mvnrepository.com/artifact/org.asynchttpclient/async-http-client/2.12.3) |  |  |\n| 8 | [error-prone](https://github.com/google/error-prone) | [27de40b](https://github.com/google/error-prone/commit/27de40ba6008f967c01a55ec83c9127419bfe433) | [2.17.0](https://mvnrepository.com/artifact/com.google.errorprone/error_prone_core/2.17.0) |  |  |\n| 9 | [alluxio](https://github.com/Alluxio/alluxio) | [d5919d8](https://github.com/Alluxio/alluxio/commit/d5919d8d80ae7bfdd914ade30620d5ca14f3b67e) | [2.9.0](https://mvnrepository.com/artifact/org.alluxio/alluxio-core-transport/2.9.0) |  |  |\n| 10 | [javaparser](https://github.com/javaparser/javaparser) | [1ae25f3](https://github.com/javaparser/javaparser/commit/1ae25f3f77f5d680c135d0742257ccd62916f17d) | [3.15.15](https://mvnrepository.com/artifact/com.github.javaparser/javaparser-symbol-solver-logic/3.15.15) |  |  |\n| 11 | [undertow](https://github.com/undertow-io/undertow) | [f52b70c](https://github.com/undertow-io/undertow/commit/f52b70c1520277a1552f0f453c2a908897a8a5dc) | [2.3.2.Final](https://mvnrepository.com/artifact/io.undertow/undertow-benchmarks/2.3.2.Final) |  |  |\n| 12 | [webcam-capture](https://github.com/sarxos/webcam-capture) | [e19125c](https://github.com/sarxos/webcam-capture/commit/e19125c2c728a856231a3b507372e94e02fdfd35) | [0.3.12](https://mvnrepository.com/artifact/com.github.sarxos/webcam-capture-driver-openimaj/0.3.12) |  |  |\n| 13 | [handlebars.java](https://github.com/jknack/handlebars.java) | [2afc50f](https://github.com/jknack/handlebars.java/commit/2afc50fd5dcd32af28f8305b59689b3fec4a3b07) | [4.2.1](https://mvnrepository.com/artifact/com.github.jknack/handlebars-markdown/4.2.1) |  |  |\n| 14 | [jooby](https://github.com/jooby-project/jooby) | [f71b551](https://github.com/jooby-project/jooby/commit/f71b551213ac03523e44a7fbb8c972b752ffc707) | [3.0.0.M1](https://mvnrepository.com/artifact/io.jooby/jooby/3.0.0.M1) |  |  |\n| 15 | [tika](https://github.com/apache/tika) | [41319f3](https://github.com/apache/tika/commit/41319f3c294b13de5342a80570b4540f7dd04a3e) | [2.6.0](https://mvnrepository.com/artifact/org.apache.tika/tika-parsers/2.6.0) |  |  |\n| 16 | [orika](https://github.com/orika-mapper/orika) | [eef8209](https://github.com/orika-mapper/orika/commit/eef82092c8a9dfda04192a5378fa0e49d70ade3a) | [1.5.4](https://mvnrepository.com/artifact/ma.glasnost.orika/orika-eclipse-tools/1.5.4) |  |  |\n| 17 | [spoon](https://github.com/INRIA/spoon) | [ee73f43](https://github.com/INRIA/spoon/commit/ee73f4376aa929d8dce950202fabb8992a77c9fb) | [10.2.0](https://mvnrepository.com/artifact/fr.inria.gforge.spoon/spoon-core/10.2.0) |  |  |\n| 18 | [accumulo](https://github.com/apache/accumulo) | [706612f](https://github.com/apache/accumulo/commit/706612f859d6e68891d487d624eda9ecf3fea7f9) | [2.1.0](https://mvnrepository.com/artifact/org.apache.accumulo/accumulo-core/2.1.0) |  |  |\n| 19 | [couchdb-lucene](https://github.com/rnewson/couchdb-lucene) | [8554737](https://github.com/rnewson/couchdb-lucene/commit/855473709bd4e3d92d3f62ece86ab739d0f0de13) | [2.1.0](https://github.com/rnewson/couchdb-lucene/releases/tag/v2.1.0) |  |  |\n| 20 | [jHiccup](https://github.com/giltene/jHiccup) | [a440bda](https://github.com/giltene/jHiccup/commit/a440bdaed143e1445cbeab7c5bffd30989a435d0) | [2.0.10](https://github.com/giltene/jHiccup/releases/tag/jHiccup-2.0.10) |  |  |\n| 21 | [vulnerability-assessment-tool](https://github.com/SAP/vulnerability-assessment-tool) | [3d261af](https://github.com/SAP/vulnerability-assessment-tool/commit/3d261afe9513f7c708324aa0183423ab2e9e4692) | [3.2.5](https://mvnrepository.com/artifact/org.eclipse.steady/shared/3.2.5) |  |  |\n| 22 | [para](https://github.com/Erudika/para) | [41d9005](https://github.com/Erudika/para/commit/41d900574e2e159b05fbd23aaab1f6e554ab8fc3) | [1.47.2](https://mvnrepository.com/artifact/com.erudika/para-core/1.47.2) |  |  |\n| 23 | [launch4j-maven-plugin](https://github.com/orphan-oss/launch4j-maven-plugin) | [3f9818e](https://github.com/orphan-oss/launch4j-maven-plugin/commit/3f9818ee34b36cdcea58e2d6e6542f140b394faf) | [2.2.0](https://mvnrepository.com/artifact/com.akathist.maven.plugins.launch4j/launch4j-maven-plugin/2.2.0) |  |  |\n| 24 | [jacop](https://github.com/radsz/jacop) | [1a395e6](https://github.com/radsz/jacop/commit/1a395e6add22caf79590fe9d1b2223bfb6ed0cd0) | [4.9.0](https://mvnrepository.com/artifact/org.jacop/jacop/4.9.0) |  |  |\n| 25 | [selenese-runner-java](https://github.com/vmi/selenese-runner-java) | [3e84e8e](https://github.com/vmi/selenese-runner-java/commit/3e84e8e4e7e06aa1bdacaa8266db00f62ebef559) | [4.2.0](https://mvnrepository.com/artifact/jp.vmi/selenese-runner-java/4.2.0) |  |  |\n| 26 | [commons-configuration](https://github.com/apache/commons-configuration) | [59e5152](https://github.com/apache/commons-configuration/commit/59e5152722198526c6ffe5361de7d1a6a87275c7) | [2.8.0](https://mvnrepository.com/artifact/org.apache.commons/commons-configuration2/2.8.0) |  |  |\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Study Subjects",
+                "parent_header": [
+                    "Code and data for *Challenges of Producing Software Bill Of Materials for Java*"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "> These are the latest versions as of `Fri 5 May 2023 13:02:33 CEST`. \n",
+                "original_header": "SBOM Producers"
+            },
+            "confidence": 0.9035534077220818,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "If you are interested in reproducing our results, the script [`reproduce.sh`](reproduce.sh) is provided for your convenience. This script will do the following: \n",
+                "original_header": "Reproduction"
+            },
+            "confidence": 0.9774541236754596,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* Java version 17 or newer\n* Apache Maven \n* Docker\n* Python 3.10 or newer\n \n",
+                "original_header": "The following software is required for reproduction:"
+            },
+            "confidence": 0.9998960503902884,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Code and data for Challenges of Producing Software Bill Of Materials for Java"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2303.11102"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/chains-project/SBOM-2023/main/README.md"
+        }
+    ]
+}

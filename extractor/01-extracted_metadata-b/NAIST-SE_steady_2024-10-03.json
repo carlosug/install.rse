@@ -1,0 +1,594 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:08:02"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/NAIST-SE/steady",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "NAIST-SE",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-01-09T07:55:51Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-02-24T06:11:35Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/apache-2.0",
+                "type": "License",
+                "name": "Apache License 2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "spdx_id": "Apache-2.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Analyses your Java and Python applications for open-source dependencies with known vulnerabilities, using both static analysis and testing to determine code context and usage for greater accuracy.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "**Note**: This is a work in progress repository for **Node.js JavaScript** application analysis. \n**Discover, assess and mitigate known vulnerabilities in your Java and Python projects** \n- detect whether they depend on open-source components with known vulnerabilities,\n- collect evidence regarding the execution of vulnerable code in a given application context (through the combination of static and dynamic analysis techniques), and\n- support developers in the mitigation of such dependencies. \nAs such, it addresses the OWASP Top 10 security risk A9, [Using Components with Known Vulnerabilities](https://www.owasp.org/index.php/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities), which is often the root cause of data breaches: [snyk.io/blog/owasp-top-10-breaches](https://snyk.io/blog/owasp-top-10-breaches/) \nIn comparison to other tools, the detection is code-centric and usage-based, which allows for more accurate detection and assessment than tools relying on meta-data.  It is a collection of client-side scan tools, microservices and rich [OpenUI5](https://openui5.hana.ondemand.com/) Web frontends. \n",
+                "original_header": "Eclipse Steady (Incubator Project)"
+            },
+            "confidence": 0.9480803838791024,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- **Detection of vulnerable code** is realized by discovering method signatures in Java archives and comparing their source and byte code with the vulnerable and fixed version (as known from the fix commit). As such, the detection is more accurate than for approaches based on meta-data (less false-positives and false-negatives). In particular, it is robust against rebundling, a very common practice in the Java ecosystem.\n- **Assessment of vulnerable dependencies** by application developers and security experts is supported by information about the potential and actual execution of vulnerable code. This information is based on call graph analysis and trace information collected during JUnit and integration tests. Going down to the granularity of single methods, application developers are presented with the potential and actual call stack from application code till vulnerable code.\n- The addition of new vulnerabilities to the knowledge base does not require the re-scan of applications. In other words, right after  an addition to the knowledge base, it is immediately known whether previously scanned applications are affected or not.\n- **Mitigation proposals** consider the _reachable_ share of dependencies, i.e., the set of methods that can be potentially reached from application code union the actual executions observed during tests. This information is used to compute several metrics aiming to let developers chose the best non-vulnerable replacement of a vulnerable dependency (best in regards to non-breaking and with least regression likelihood).\n- Individual findings can be exempted if developers come to the conclusion that a vulnerability cannot be exploited in a given application-context. This information can be maintained in an auditable fashion (incl. timestamp and author information) and typically prevents build exceptions during CI/CD pipelines.\n- Organization-internal CERTs can query for all applications affected by a given vulnerability. This feature supports, for instance, larger development organizations with many software applications developed by distributed and de-central development units.\n \n",
+                "original_header": "Features"
+            },
+            "confidence": 0.9988439434508776,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Static and dynamic analysis for Python\n- Support of JavaScript (client- and server-side)\n- UI dashboards for workspaces \n",
+                "original_header": "Todo (upcoming changes)"
+            },
+            "confidence": 0.9199951668238642,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "steady",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "NAIST-SE/steady",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/NAIST-SE/steady/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/NAIST-SE/steady/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/NAIST-SE/steady/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 9994349
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 1452126
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 181425
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 130778
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "ANTLR",
+                "name": "ANTLR",
+                "type": "Programming_language",
+                "size": 108370
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 8230
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 2094
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 1704
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Groovy",
+                "name": "Groovy",
+                "type": "Programming_language",
+                "size": 1336
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributors": [
+        {
+            "result": {
+                "value": "# Contributors\n\nSAP Security Research team\n\n- Henrik Plate\n- Serena Ponta\n- Antonino Sabetta\n\nSAP Security Testing team\n\n- [Alessandro Pezz\u00e9](https://github.com/Naramsim)\n- Cedric Dangremont\n\nUniversity of Paderborn\n\n- [Andreas Dann](https://github.com/anddann)\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/CONTRIBUTORS.md"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# Contributing\n\nFollow the [guide](https://sap.github.io/vulnerability-assessment-tool/contributor/) in our Documentation\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/CONTRIBUTING.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/NAIST-SE/steady/tree/master/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/docker-compose.yml",
+                "type": "Url",
+                "format": "docker_compose"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/docker-compose.yml"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/frontend-apps/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/frontend-apps/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/patch-lib-analyzer/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/patch-lib-analyzer/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/frontend-bugs/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/frontend-bugs/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/rest-lib-utils/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/rest-lib-utils/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/rest-backend/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/rest-backend/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docs/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docs/Dockerfile"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/push-images.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/postgresql/docker-entrypoint-initdb.d/10-vulas-setup.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/patch-lib-analyzer/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docker/rest-backend/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/lang-java/src/main/sh/find_jars.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docs/checklinks.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/.travis/check_dockerfile_location.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/.travis/docker_hub_push_release.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/.travis/docker_hub_push_snapshot.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/.travis/check.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "Eclipse Steady has a distributed architecture composed of a couple of Spring Boot microservices, two Web frontends and a number of client-side scanners/plugins, which perform the actual analysis of application and dependency code on build systems or developer workstations.\n\nTo build/test the entire project, the following tools are needed:\n\n- **[JDK 8](https://www.oracle.com/technetwork/java/javase/downloads/index.html)**\n- **[Maven 3.3+](https://maven.apache.org/download.cgi)** for the analysis of Maven projects using [`plugin-maven`](https://github.com/eclipse/steady/tree/master/plugin-maven)\n- **[Python 3](https://www.python.org/downloads/)** as well as the packages `pip`, `virtualenv` and `setuptools` (`pip install -r requirements.txt`) for the analysis of Python applications using [`cli-scanner`](https://github.com/eclipse/steady/tree/master/cli-scanner)\n- **[Gradle 4](https://gradle.org/install/)** for the analysis of Gradle projects using [`plugin-gradle`](https://github.com/eclipse/steady/tree/master/plugin-gradle).\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "Eclipse Steady (Incubator Project)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9329740991793003,
+            "technique": "supervised_classification"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "**Note**: This is a work in progress repository for **Node.js JavaScript** application analysis. \n",
+                "original_header": "Eclipse Steady (Incubator Project)"
+            },
+            "confidence": 0.9937694312562734,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Eclipse Steady is built with Maven. To enable the support for Gradle the profile `gradle` needs to be activated (`-P gradle`)\n```sh\nmvn clean install\n```\n \nDuring the `install`ation phase of `mvn` all the tests are run. Long-running tests can be disabled with the flag `-DexcludedGroups=com.sap.psr.vulas.shared.categories.Slow`. All the tests can be disabled with the flag `-DskipTests`.\n \n",
+                "original_header": "Build and Test"
+            },
+            "confidence": 0.9981396798988846,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Static and dynamic analyses are not implemented for Python\n- Static analysis for Java is only supported until Java 8\n- Java 9 multi-release archives are not supported (classes below `META-INF/versions` are simply ignored)\n \n",
+                "original_header": "Limitations"
+            },
+            "confidence": 0.9836778962795728,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Eclipse Steady (Incubator Project)"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/NAIST-SE/steady/master/docs/public/content/images/ES-logo-152-transparent.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2008.04568.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1806.05893"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1504.04971.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/NAIST-SE/steady/master/README.md"
+        }
+    ]
+}

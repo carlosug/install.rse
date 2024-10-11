@@ -1,0 +1,670 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:17:30"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/JetBrains-Research/RefactorInsight",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "JetBrains-Research",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-06-30T10:05:16Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-01T09:50:00Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Copyright (c) 2000\u20142020 JetBrains s.r.o.\nCopyright (c) 2020 JetBrains N.V.\nCopyright (c) 2020 IntelliJ Labs Co. Ltd.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "An IntelliJ IDEA plugin that detects refactorings in Git commits",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "RefactorInsight is a plugin for IntelliJ IDEA that enhances the representation of code changes with refactoring information in Java and Kotlin projects. \nRefactorInsight relies on [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner) and [kotlinRMiner](https://github.com/JetBrains-Research/kotlinRMiner) for retrieval of refactorings. \nThe plugin is compatible with IntelliJ IDEA 2023.3 and is [available for free](https://plugins.jetbrains.com/plugin/14704-refactorinsight) on JetBrains Marketplace.\n \n",
+                "original_header": "RefactorInsight Plugin"
+            },
+            "confidence": 0.9622206869346371,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To make reviewing bug fixes or new features easier, the plugin auto folds refactorings in code diffs and shows hints with short descriptions of each refactoring.\nCurrently, it works for the following refactoring types: `Move Method`, `Pull Up/Push Down Method`, `Extract Method`, and `Inline Method`. \n",
+                "original_header": "Smart diff"
+            },
+            "confidence": 0.982862036878448,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "By default, for performance reasons, refactorings are only retrieved from the last 100 commits in the project history. This number can be adjusted in the plugin's settings. Alternatively, you can use **Mine All Refactorings** on the **Tools** menu to go through _all_ commits in the history of your project.\nThe plugin also keeps track of new commits and processes them.\n \n",
+                "original_header": "Settings"
+            },
+            "confidence": 0.9211390584157169,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "RefactorInsight",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "JetBrains-Research/RefactorInsight",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 100,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "code-diff, intellijidea-plugin, jetbrains-plugin, refactoringminer, refactorings, smart-diff",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 10,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/JetBrains-Research/RefactorInsight/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 554804
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 31866
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Perl",
+                "name": "Perl",
+                "type": "Programming_language",
+                "size": 6654
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Kotlin",
+                "name": "Kotlin",
+                "type": "Programming_language",
+                "size": 1715
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/100816074",
+                "tag": "2.0.0",
+                "name": "Release 2023.1-4.0",
+                "author": {
+                    "name": "onewhl",
+                    "type": "User"
+                },
+                "description": "- Updated visualization of Extract Class/Method/Variable, and Move Method refactorings.\r\n- Several UI improvements.\r\n- New plugin icon.\r\n- Bug fixes.",
+                "tarball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/tarball/2.0.0",
+                "zipball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/zipball/2.0.0",
+                "html_url": "https://github.com/JetBrains-Research/RefactorInsight/releases/tag/2.0.0",
+                "url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/100816074",
+                "release_id": 100816074,
+                "date_created": "2023-04-25T09:46:20Z",
+                "date_published": "2023-04-25T13:57:43Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/96386227",
+                "tag": "1.0.93",
+                "name": "Release 2023.1-3.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "tarball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/tarball/1.0.93",
+                "zipball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/zipball/1.0.93",
+                "html_url": "https://github.com/JetBrains-Research/RefactorInsight/releases/tag/1.0.93",
+                "url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/96386227",
+                "release_id": 96386227,
+                "date_created": "2023-03-21T17:51:55Z",
+                "date_published": "2023-03-21T17:59:49Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/95263234",
+                "tag": "1.0.89",
+                "name": "Release 2023.1-2.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "tarball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/tarball/1.0.89",
+                "zipball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/zipball/1.0.89",
+                "html_url": "https://github.com/JetBrains-Research/RefactorInsight/releases/tag/1.0.89",
+                "url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/95263234",
+                "release_id": 95263234,
+                "date_created": "2023-03-10T22:42:50Z",
+                "date_published": "2023-03-10T22:57:04Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/94970352",
+                "tag": "1.0.86",
+                "name": "Release 2023.1-1.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "tarball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/tarball/1.0.86",
+                "zipball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/zipball/1.0.86",
+                "html_url": "https://github.com/JetBrains-Research/RefactorInsight/releases/tag/1.0.86",
+                "url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/94970352",
+                "release_id": 94970352,
+                "date_created": "2023-03-08T16:31:16Z",
+                "date_published": "2023-03-08T18:45:00Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/94838266",
+                "tag": "1.0.85",
+                "name": "Release 2022.3-3.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "tarball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/tarball/1.0.85",
+                "zipball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/zipball/1.0.85",
+                "html_url": "https://github.com/JetBrains-Research/RefactorInsight/releases/tag/1.0.85",
+                "url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/94838266",
+                "release_id": 94838266,
+                "date_created": "2023-03-07T21:51:19Z",
+                "date_published": "2023-03-07T21:55:44Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/92204340",
+                "tag": "1.0.80",
+                "name": "Release 2022.3-2.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "tarball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/tarball/1.0.80",
+                "zipball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/zipball/1.0.80",
+                "html_url": "https://github.com/JetBrains-Research/RefactorInsight/releases/tag/1.0.80",
+                "url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/92204340",
+                "release_id": 92204340,
+                "date_created": "2023-02-13T11:27:55Z",
+                "date_published": "2023-02-13T11:32:09Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/92204035",
+                "tag": "1.0.79",
+                "name": "Release 2022.3-2.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "tarball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/tarball/1.0.79",
+                "zipball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/zipball/1.0.79",
+                "html_url": "https://github.com/JetBrains-Research/RefactorInsight/releases/tag/1.0.79",
+                "url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/92204035",
+                "release_id": 92204035,
+                "date_created": "2023-02-13T11:25:08Z",
+                "date_published": "2023-02-13T11:29:14Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/92203249",
+                "tag": "1.0.78",
+                "name": "Release 2022.3-2.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "tarball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/tarball/1.0.78",
+                "zipball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/zipball/1.0.78",
+                "html_url": "https://github.com/JetBrains-Research/RefactorInsight/releases/tag/1.0.78",
+                "url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/92203249",
+                "release_id": 92203249,
+                "date_created": "2023-02-13T11:20:17Z",
+                "date_published": "2023-02-13T11:22:14Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/43770085",
+                "tag": "1.0.52",
+                "name": "Release 2021.1-2.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "tarball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/tarball/1.0.52",
+                "zipball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/zipball/1.0.52",
+                "html_url": "https://github.com/JetBrains-Research/RefactorInsight/releases/tag/1.0.52",
+                "url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/43770085",
+                "release_id": 43770085,
+                "date_created": "2021-05-28T14:21:36Z",
+                "date_published": "2021-05-28T14:26:45Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/29748364",
+                "tag": "1.0.31",
+                "name": "Release 2020.2-1.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "tarball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/tarball/1.0.31",
+                "zipball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/zipball/1.0.31",
+                "html_url": "https://github.com/JetBrains-Research/RefactorInsight/releases/tag/1.0.31",
+                "url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/29748364",
+                "release_id": 29748364,
+                "date_created": "2020-08-16T16:51:16Z",
+                "date_published": "2020-08-16T16:57:03Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/29133338",
+                "tag": "1.0.24",
+                "name": "Release 2020.2-1.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "tarball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/tarball/1.0.24",
+                "zipball_url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/zipball/1.0.24",
+                "html_url": "https://github.com/JetBrains-Research/RefactorInsight/releases/tag/1.0.24",
+                "url": "https://api.github.com/repos/JetBrains-Research/RefactorInsight/releases/29133338",
+                "release_id": 29133338,
+                "date_created": "2020-07-30T18:46:36Z",
+                "date_published": "2020-07-30T18:50:35Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "A [paper](https://arxiv.org/abs/2108.11202) about RefactorInsight was presented at [ASE'21](https://conf.researchr.org/home/ase-2021). \nIf you use RefactorInsight in your academic work, please cite it.\n```\n@article{kurbatova2021refactorinsight,\n  title={Refactorinsight: Enhancing ide representation of changes in git with refactorings information},\n  author={Kurbatova, Zarina and Kovalenko, Vladimir and Savu, Ioana and Brockbernd, Bob and Andreescu, Dan \n  and Anton, Matei and Venediktov, Roman and Tikhomirova, Elena and Bryksin, Timofey},\n  journal={arXiv preprint arXiv:2108.11202},\n  year={2021}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing RefactorInsight"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{kurbatova2021refactorinsight,\n    year = {2021},\n    journal = {arXiv preprint arXiv:2108.11202},\n    author = {Kurbatova, Zarina and Kovalenko, Vladimir and Savu, Ioana and Brockbernd, Bob and Andreescu, Dan \nand Anton, Matei and Venediktov, Roman and Tikhomirova, Elena and Bryksin, Timofey},\n    title = {Refactorinsight: Enhancing ide representation of changes in git with refactorings information},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Refactorinsight: Enhancing ide representation of changes in git with refactorings information",
+                "author": "Kurbatova, Zarina and Kovalenko, Vladimir and Savu, Ioana and Brockbernd, Bob and Andreescu, Dan \nand Anton, Matei and Venediktov, Roman and Tikhomirova, Elena and Bryksin, Timofey"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<img src=\".github/readme/refactorinsight_toggle_in_diff.png\" alt=\"Code Diff\" width=\"600\"> \n",
+                "original_header": "Smart diff"
+            },
+            "confidence": 0.9265403371632743,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To see refactorings in your Git repository, go to the **Git/Log** tab in IntelliJ IDEA and choose `Refactorings` in the drop-down list next to `Show`. \n",
+                "original_header": "Refactorings in commits"
+            },
+            "confidence": 0.9994117122584781,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To see the refactorings in a specific pull request, go to the **Pull Requests** tab in IntelliJ IDEA, select any pull request and click ![](.github/readme/refactorinsight_toggle.svg). \n",
+                "original_header": "Refactorings in pull requests"
+            },
+            "confidence": 0.9995345179209059,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Available ```Run configurations``` could be found in BASH7*:\n* BASH8* \u2014 builds the plugin;\n* BASH9* \u2014 runs an IDE instance with pre-installed plugin.\n \n",
+                "original_header": "Build instructions"
+            },
+            "confidence": 0.999594777636543,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "You are welcome to submit a bug report or suggest a feature: [open an issue](https://github.com/JetBrains-Research/refactorinsight/issues). \nPull requests are also welcome and encouraged. \n",
+                "original_header": "Contribution and feedback"
+            },
+            "confidence": 0.99569731296435,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/JetBrains-Research/RefactorInsight/wiki",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/.github/readme/refactorinsight-plugin-logo.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/.github/readme/refactorinsight_toggle.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/.github/readme/refactorinsight_toggle_in_diff.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/.github/readme/refactorinsight_hint.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/.github/readme/hide_non_functional_changes.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/.github/readme/refactorinsight_git_log_tab.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/.github/readme/refactorinsight_toggle.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/.github/readme/refactorinsight_pull_requests.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/.github/readme/refactorinsight_history.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2108.11202"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/JetBrains-Research/RefactorInsight/master/README.md"
+        }
+    ]
+}

@@ -1,0 +1,315 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:00:05"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/dritter-hd/db-net-eip-patterns",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "dritter-hd",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-07-06T08:03:22Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2021-06-08T07:25:42Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Enterprise Integration Pattern demonstrator as (timed) db-net extension of CPNTools (from papers: http://arxiv.org/abs/1807.03197, https://ieeexplore.ieee.org/document/8536143)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "db-net-eip-patterns",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "dritter-hd/db-net-eip-patterns",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/dritter-hd/db-net-eip-patterns/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/dritter-hd/db-net-eip-patterns/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "application-integration, cpn, databases, eip, enterprise-architecture, enterprise-service-bus, patterns, petri-nets, postgressql",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/dritter-hd/db-net-eip-patterns/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "1. Windows 10 (due to the CPN Tools, sorry guys)\n2. Working internet connection\n3. JDK8 (eg, from [Oracle](http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html?printOnly=1))\n4. CPN Tools version 4 (eg, from [CPN Tools](http://cpntools.org/2018/01/16/download/))\n5. PostgresSQL version 10 (eg, from [PostgresSQL](https://www.postgresql.org/download/))\n",
+                "type": "Text_excerpt",
+                "original_header": "System Requirements",
+                "parent_header": [
+                    "Db-net EIP implementation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "Please note that the demonstrator is a CPN Tools extension, and thus uses the [Access/CPN](http://cpntools.org/2018/01/15/license-for-access-cpn/) module, which comes with a LGPL license. However, Access/CPN references the [CPN Tools Simulator](http://cpntools.org/2018/01/15/license-for-cpn-tools-simulator/) module, which is dual-licensed and can be used either under the GNU General Public License (GPL) version 2 or by the below license, which is a 4-clause BSD license.\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "Db-net EIP implementation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you find this work useful for your research, please cite:\n```\n@inproceedings{ritter2018formalizing,\n  title={Formalizing Application Integration Patterns},\n  author={Ritter, Daniel and Rinderle-Ma, Stefanie and Montali, Marco and Rivkin, Andrey and Sinha, Aman},\n  booktitle={2018 IEEE 22nd International Enterprise Distributed Object Computing Conference (EDOC)},\n  pages={11--20},\n  year={2018},\n  organization={IEEE}\n}\n```\nand / or the instructive pattern catalog:\n```\n@article{RRMMRS2018b,\n  author    = {Ritter, Daniel and Rinderle-Ma, Stefanie and Montali, Marco and Rivkin, Andrey and Sinha, Aman},\n  title     = {Catalog of Formalized Application Integration Patterns},\n  journal   = {CoRR},\n  volume    = {abs/1807.03197},\n  year      = {2018},\n  url       = {http://arxiv.org/abs/1807.03197},\n  archivePrefix = {arXiv},\n  eprint    = {1807.03197}\n}\n```\n\n[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4BHCBCD9WRYS6&source=url)\n\nor \n\n<a href=\"https://www.buymeacoffee.com/dritter\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 60px !important;width: 217px !important;\" ></a>\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "Db-net EIP implementation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{ritter2018formalizing,\n    organization = {IEEE},\n    year = {2018},\n    pages = {11--20},\n    booktitle = {2018 IEEE 22nd International Enterprise Distributed Object Computing Conference (EDOC)},\n    author = {Ritter, Daniel and Rinderle-Ma, Stefanie and Montali, Marco and Rivkin, Andrey and Sinha, Aman},\n    title = {Formalizing Application Integration Patterns},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Formalizing Application Integration Patterns",
+                "author": "Ritter, Daniel and Rinderle-Ma, Stefanie and Montali, Marco and Rivkin, Andrey and Sinha, Aman"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{RRMMRS2018b,\n    eprint = {1807.03197},\n    archiveprefix = {arXiv},\n    url = {http://arxiv.org/abs/1807.03197},\n    year = {2018},\n    volume = {abs/1807.03197},\n    journal = {CoRR},\n    title = {Catalog of Formalized Application Integration Patterns},\n    author = {Ritter, Daniel and Rinderle-Ma, Stefanie and Montali, Marco and Rivkin, Andrey and Sinha, Aman},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Catalog of Formalized Application Integration Patterns",
+                "author": "Ritter, Daniel and Rinderle-Ma, Stefanie and Montali, Marco and Rivkin, Andrey and Sinha, Aman",
+                "url": "http://arxiv.org/abs/1807.03197"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9250848788426721,
+            "technique": "supervised_classification"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\n7. Enter the port configured in the connect artifact into the extension GUI and connect CPN/COMM (default `9001`).\n![pic4](pictures/comm-connected.png#center)\n8. Start executing enabled transitions.\n![pic5](pictures/fire-transition.png#center)\n \n",
+                "original_header": "Simulating the patterns"
+            },
+            "confidence": 0.9993582561410155,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Db-net EIP implementation"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/pictures/db-connector.png#center"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/pictures/db-connector-connected.png#center"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/pictures/connectDB-right-click.png#center"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/pictures/comm-connected.png#center"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/pictures/fire-transition.png#center"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dritter-hd/db-net-eip-patterns/master/README.md"
+        }
+    ]
+}

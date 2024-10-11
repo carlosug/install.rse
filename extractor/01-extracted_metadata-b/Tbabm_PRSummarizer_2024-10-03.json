@@ -1,0 +1,376 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:51:05"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/Tbabm/PRSummarizer",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "Tbabm",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-08-21T08:44:06Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-05-07T03:23:29Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2019 Zhongxin Liu\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/LICENSE"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "PRSummarizer",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "Tbabm/PRSummarizer",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Tbabm/PRSummarizer/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Tbabm/PRSummarizer/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 19,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 14,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/Tbabm/PRSummarizer/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 100055
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "```bash\n$ git clone https://github.com/Tbabm/PRSummarizer.git\n$ cd PRSummarizer\n$ mkdir data\n# download our preprocessed dataset and place the four files in `data`\n$ mkdir models\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Clone and Prepare Dataset",
+                "parent_header": [
+                    "PRSummarizer",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        },
+        {
+            "result": {
+                "value": "- See [here](https://gist.github.com/Tbabm/65b5d8a3adb9845d55ce27143913e3b2) for instructions about installing ROUGE\n- Please make sure you have correctly set environment variable `ROUGE` to `/absolute/path/to/ROUGE-RELEASE-1.5.5`\n",
+                "type": "Text_excerpt",
+                "original_header": "Install ROUGE",
+                "parent_header": [
+                    "PRSummarizer",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        },
+        {
+            "result": {
+                "value": "**Through conda**:\n\n```bash\n$ conda env create -f environment.yml\n```\n\n**OR** through pip\n\n```bash\n$ pip install -r requirements.txt\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Install Dependencies",
+                "parent_header": [
+                    "PRSummarizer",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        },
+        {
+            "result": {
+                "value": "- install and test pyrouge if you haven't done it.\n\n```bash\n$ git clone https://github.com/bheinzerling/pyrouge\n$ cd pyrouge\n$ pip install .\n\n# set rouge path for pyrouge\n$ pyrouge_set_rouge_path ${ROUGE}\n\n# test the installation of pyrouge\n$ python -m pyrouge.test\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Install pyrouge",
+                "parent_header": [
+                    "PRSummarizer",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Our collected 333K pull requests can be downloaded from [here](https://drive.google.com/drive/folders/1VMByXOEmJDQL_JQY6l63NRiveUySY-Sq?usp=sharing). Here is a PR example in the json file:\n```json\n{\n    \"id\": \"elastic/elasticsearch_37980\",\n    \"body\": \"'Eclipse build files were missing so .eclipse project files were not being generated.\\\\r\\\\nCloses #37973\\\\r\\\\n\\\\r\\\\n'\",\n    \"cms\": [\n      \"'Added missing eclipse-build.gradle files\\\\n\\\\nCloses #fix/37973'\"\n    ],\n    \"commits\": {\n      \"'3e10ee798c932cc1cab1ea6ca679417408fc1416'\": {\n        \"cm\": \"'Added missing eclipse-build.gradle files\\\\n\\\\nCloses #fix/37973'\",\n        \"comments\": []\n      }\n    }\n  }\n```\n \n",
+                "original_header": "Raw Data"
+            },
+            "confidence": 0.999918253820769,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "**Through conda**:\n\n```bash\n$ conda env create -f environment.yml\n```\n\n**OR** through pip\n\n```bash\n$ pip install -r requirements.txt\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Install Dependencies",
+                "parent_header": [
+                    "PRSummarizer",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Train `Attn+PG` first:\n\n```bash\npython3 -m prsum.prsum train --param-path params_attn_pg.json\n```\n\nAfter training, suppose the models are stored in `models/train_12345678/model/`. Select the best `Attn+PG` model:\n\n```bash\npython3 -m prsum.prsum select_model \\\n                       --param_path params_attn_pg.json \\\n                       --model_pattern \"models/train_12345678/model/model_{}_\" \\\n                       --start_iter 1000 \\\n                       --end_iter 26000\n```\n\nSuppose the best model is `model_12000_87654321`. Train `Attn+PG+RL` based on the best model:\n\n```bash\npython3 -m prsum.prsum train \\\n                       --param_path params_attn_pg_rl.json \\\n                       --model_path \"models/train_12345678/model/model_12000_87654321\"\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Train",
+                "parent_header": [
+                    "PRSummarizer",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Select the best `Attn+PG` model:\n\n```bash\n# start_iter = the best iteration of `Attn+PG` (here, 12000) + save_interval (here, 1000)\nSTART_ITER=13000\npython3 -m prsum.prsum select_model\n                       --param_path params_attn_pg_rl.json \\\n                       --model_pattern \"models/train_12345678/model/rl_model_{}_\" \\\n                       --start_iter $START_ITER \\\n                       --end_iter 41000\n```\n\nSuppose the best model is `model_34000_98765432`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Validate",
+                "parent_header": [
+                    "PRSummarizer",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Test the best `Attn+PG+RL` model:\n\n```bash\npython3 -m prsum.prsum decode \\\n                       --param_path params_attn_pg_rl.json \\\n                       --model_path \"models/train_12345678/model/rl_model_34000_98765432\" \\\n                       --ngram_filter 1\n```\n\nNow, you will get the test results.\n\nNOTE: Your test results may be slightly different from those reported in our paper. Because the pointer generator uses the `scatter_add` function in pytorch. When using GPUs, this function is undeterministic. See [here](https://pytorch.org/docs/stable/notes/randomness.html) for more details.\n",
+                "type": "Text_excerpt",
+                "original_header": "Test",
+                "parent_header": [
+                    "PRSummarizer",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Our pre-trained model and test results can be downloaded [here](https://drive.google.com/drive/folders/1VMByXOEmJDQL_JQY6l63NRiveUySY-Sq?usp=sharing). To test with our pre-atrained model:\n\n```bash\nmkdir models\nmv rl_model_34000 ./models\npython3 -m prsum.prsum decode \\\n                       --param_path params_attn_pg_rl.json \\\n                       --model_path \"models/rl_model_34000\" \\\n                       --ngram_filter 1\n``` \n",
+                "type": "Text_excerpt",
+                "original_header": "Pre-trained Model",
+                "parent_header": [
+                    "PRSummarizer",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you use this code, please consider citing our paper:\n\n```bib\n@inproceedings{liu2019automatic,\n  title={Automatic generation of pull request descriptions},\n  author={Liu, Zhongxin and Xia, Xin and Treude, Christoph and Lo, David and Li, Shanping},\n  booktitle={Proceedings of the 34th IEEE/ACM International Conference on Automated Software Engineering},\n  pages={176--188},\n  year={2019},\n}\n```\n\nThanks!\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "PRSummarizer"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        },
+        {
+            "result": {
+                "value": "- Our paper: \"Automatic Generation of Pull Request Description\"\n- https://github.com/atulkum/pointer_summarizer\n- https://github.com/rohithreddy024/Text-Summarizer-Pytorch\n",
+                "type": "Text_excerpt",
+                "original_header": "Reference",
+                "parent_header": [
+                    "PRSummarizer"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{liu2019automatic,\n    year = {2019},\n    pages = {176--188},\n    booktitle = {Proceedings of the 34th IEEE/ACM International Conference on Automated Software Engineering},\n    author = {Liu, Zhongxin and Xia, Xin and Treude, Christoph and Lo, David and Li, Shanping},\n    title = {Automatic generation of pull request descriptions},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Automatic generation of pull request descriptions",
+                "author": "Liu, Zhongxin and Xia, Xin and Treude, Christoph and Lo, David and Li, Shanping"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- id: `$user/$project_$prid`\n- body: PR description\n- cms: the commit messages in this PR\n- commis: the commits in this PR\n    - key is the SHA1 hash digest\n        - cm: commit message\n        - comments: source code comments added in this commit\n \n",
+                "original_header": "Raw Data"
+            },
+            "confidence": 0.9664556938346953,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "PRSummarizer"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Tbabm/PRSummarizer/master/README.md"
+        }
+    ]
+}

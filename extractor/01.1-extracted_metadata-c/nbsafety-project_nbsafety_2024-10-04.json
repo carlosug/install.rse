@@ -1,0 +1,811 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 16:46:45"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ipyflow/ipyflow",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ipyflow",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-01-14T18:02:25Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-02T01:24:16Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/bsd-3-clause",
+                "type": "License",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "spdx_id": "BSD-3-Clause"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Code in this project licensed under the [BSD-3-Clause License](https://opensource.org/licenses/BSD-3-Clause).\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    " <img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-logo.png\" width=\"25\"> IPyflow "
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A reactive Python kernel for Jupyter notebooks.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "IPyflow is a next-generation Python kernel for JupyterLab and Notebook 7 that\ntracks dataflow relationships between symbols and cells during a given\ninteractive session, thereby making it easier to reason about notebook state.\nHere is a\n[video](https://www.youtube.com/watch?v=mZZnDlyKk7g&t=8s)\nof the JupyterCon talk introducing it (and corresponding\n[slides](https://docs.google.com/presentation/d/1D9MSiIkwv7gjRr7jfNYZXki9TfkoUr4Yr-a06i0w_QU)). \n",
+                "original_header": "About"
+            },
+            "confidence": 0.9468450462656116,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "IPyflow provides bolt-on reactivity to Jupyter's default Python kernel, ipykernel.\nIt was was designed with the following goals in mind:\n- **Full backwards-compatibility with ipykernel:** IPyflow aims to be a\n  *drop-in replacement* for ipykernel, providing a strict superset of its\n  features.\n- **Precise dependency inference:** IPyflow understands dependencies between\n  cells beyond just simple variables. For example, IPyflow understands when\n  cell `B` depends on cell `A` because of a subscript reference `x[0]`, and is\n  smart enough not to reactively execute cell `B` when some other part of `x`,\n  e.g. `x[1]`, changes. As a result, it limits unnecessary re-execution to a\n  bare minimum.\n- **Fearless execution:** IPyflow attempts to enforce the following invariant:\n  whenever you execute a cell, the resulting output appears as it would if you\n  had performed a \"restart + run all\" operation. The implication is that you\n  can execute basically any cell in the notebook and trust that It Just\n  Works<sup>TM</sup>. \n",
+                "original_header": "Goals"
+            },
+            "confidence": 0.9551865341181984,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Because IPyflow peeks at runtime state in order to infer dependencies, it needs\nto keep content of the notebook in sync with the kernel's memory state, even\nacross browser refreshes. As such, IPyflow enables autosave-on-change by\ndefault, so that the kernel state, the notebook UI's in-memory state, and the\nnotebook file on disk are all in sync. If you accidentally overwrite a cell's\noutput that you wanted to keep, e.g. during a reactive execution, and autosave\noverwrites the previous result on disk, fear not! IPyflow provides a library\nutility called `reproduce_cell` to recover the input and output of previous\ncell executions (within a given kernel session):\n```python\nfrom ipyflow import reproduce_cell\nreproduce_cell(4, lookback=1)  # to reproduce the previous execution of cell 4\n```\n \n",
+                "original_header": "Autosave and recovering prior executions"
+            },
+            "confidence": 0.9159232568672158,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Whenever a cell references updated data, the collapser next to it is given an\norange color (similar to the color for dirty cells), and cells that\n(recursively) depend on it are given a purple collapser color. (An orange input\nwith a purple output just means that the output may be out-of-sync.) When using\nreactive execution, you usually won't see these, since out-of-sync dependent\ncells will be rerun automatically, though you may see them if using\nctrl+shift+enter to temporarily opt out of reactivity, or if you change which\ndata the cell updates (thereby overwriting previous edges between cells). \nIf you'd like to let IPyflow fix these up for you, you can press \"Space\" when\nin command mode to automatically resolve all stale or dirty cells. This\noperation may introduce more stale cells, in which case you can continue\npressing \"Space\" until all inconsistencies are resolved, if desired: \n",
+                "original_header": "Execution suggestions and shortcut for resolving inconsistencies"
+            },
+            "confidence": 0.9412638220480772,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This functionality can be combined with the `%%memoize` magic to provide near\nreal-time rendering of interactive plots across cells: \n",
+                "original_header": "IPyWidgets integration"
+            },
+            "confidence": 0.9226105034470423,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "IPyflow must understand the underlying execution state at a deep level in\norder to provide its features. It exposes an API for interacting with some of\nthis state, including a `code` function for obtaining the code necessary to\nreconstruct some symbol:\n```python\n# Cell 1\nfrom ipyflow import code\n\n# Cell 2\nx = 0\n\n# Cell 3\ny = x + 1\n\n# Cell 4\nprint(code(y))\n\n# Output:\n\"\"\"\n# Cell 2\nx = 0\n\n# Cell 3\ny = x + 1\n\"\"\"\n```\n \n",
+                "original_header": "State API"
+            },
+            "confidence": 0.9159900087306325,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "ipyflow",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ipyflow/ipyflow",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ipyflow/ipyflow/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ipyflow/ipyflow/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1133,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "dataflow, developer-tools, highlighting, ipyflow, jupyter, jupyter-notebooks, jupyterlab, lineage, nbsafety, notebooks, pypi, python, reactivity, static-analysis, static-code-analysis, tracing",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 20,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/nbsafety-project/nbsafety/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 953145
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "TypeScript",
+                "name": "TypeScript",
+                "type": "Programming_language",
+                "size": 44679
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 3580
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 2124
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 1627
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 1323
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 1179
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ipyflow/ipyflow/releases/177321810",
+                "tag": "0.0.201",
+                "name": "v0.0.201",
+                "author": {
+                    "name": "smacke",
+                    "type": "User"
+                },
+                "description": "This version includes compatibility fixes for newer versions of ipython / ipykernel, and other bugfixes and stability improvements. The main new feature is the ability to interrupt cells that use bare `except` statements. For example, normally the following cell would swallow the `KeyboardInterrupt` when attempting to interrupt, but with ipyflow, it will still successfully interrupt:\r\n\r\n```python\r\nimport time\r\nwhile True:\r\n    try:\r\n        time.sleep(1)\r\n    except:\r\n        pass\r\n```\r\n\r\n**Full Changelog**: https://github.com/ipyflow/ipyflow/compare/0.0.200...0.0.201",
+                "tarball_url": "https://api.github.com/repos/ipyflow/ipyflow/tarball/0.0.201",
+                "zipball_url": "https://api.github.com/repos/ipyflow/ipyflow/zipball/0.0.201",
+                "html_url": "https://github.com/ipyflow/ipyflow/releases/tag/0.0.201",
+                "url": "https://api.github.com/repos/ipyflow/ipyflow/releases/177321810",
+                "release_id": 177321810,
+                "date_created": "2024-09-26T17:29:27Z",
+                "date_published": "2024-09-27T16:01:55Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ipyflow/ipyflow/releases/136242634",
+                "tag": "0.0.193",
+                "name": "v0.0.193",
+                "author": {
+                    "name": "smacke",
+                    "type": "User"
+                },
+                "description": "IPyflow new year's release! With this release, IPyflow's dataflow inference engine (the thing that determines how to draw edges between cells) is the most accurate it's ever been. As such, IPyflow is now **reactive by default** (with opt-outs available of course).\r\n\r\nWe've also added a few usability features -- the `Space` command-mode hotkey to automatically resolve inconsistencies, a `%%memoize` magic, and a `reproduce_cell` API function to recover previous cell inputs / outputs. All of these are described and demoed in the readme.\r\n\r\nFinally, we've updated IPyfllow's color scheme to a more accessible default.\r\n\r\nHappy new year!",
+                "tarball_url": "https://api.github.com/repos/ipyflow/ipyflow/tarball/0.0.193",
+                "zipball_url": "https://api.github.com/repos/ipyflow/ipyflow/zipball/0.0.193",
+                "html_url": "https://github.com/ipyflow/ipyflow/releases/tag/0.0.193",
+                "url": "https://api.github.com/repos/ipyflow/ipyflow/releases/136242634",
+                "release_id": 136242634,
+                "date_created": "2024-01-08T02:40:24Z",
+                "date_published": "2024-01-08T21:15:58Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "code_of_conduct": [
+        {
+            "result": {
+                "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to making participation in our project and\nour community a harassment-free experience for everyone, regardless of age, body\nsize, disability, ethnicity, sex characteristics, gender identity and expression,\nlevel of experience, education, socio-economic status, nationality, personal\nappearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\n advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic\n address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned to this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces\nwhen an individual is representing the project or its community. Examples of\nrepresenting a project or community include using an official project e-mail\naddress, posting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event. Representation of a project may be\nfurther defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the project team at stephen.macke@gmail.com. All\ncomplaints will be reviewed and investigated and will result in a response that\nis deemed necessary and appropriate to the circumstances. The project team is\nobligated to maintain confidentiality with regard to the reporter of an incident.\nFurther details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,\navailable at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html\n\n[homepage]: https://www.contributor-covenant.org\n\nFor answers to common questions about this code of conduct, see\nhttps://www.contributor-covenant.org/faq\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/CODE_OF_CONDUCT.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributors": [
+        {
+            "result": {
+                "value": "## Contributors\n\t\n\n| [<img alt=\"Stephen Macke\" src=\"https://avatars1.githubusercontent.com/u/325653?s=460&v=4\" width=\"100\">](https://github.com/smacke) | [<img alt=\"Ray Gong\" src=\"https://avatars1.githubusercontent.com/u/46979212?s=460&v=4\" width=\"100\">](https://github.com/ruiduoray) | [<img alt=\"Shreya Shankar\" src=\"https://avatars.githubusercontent.com/u/6224969?s=460&v=4\" width=\"100\">](https://github.com/shreyashankar) |\n|:--------------------------------------------------:|:--------------------------------------------------:|:--------------------------------------------------:|\n| [Stephen Macke](https://github.com/smacke)       | [Ray Gong](https://github.com/ruiduoray)         | [Shreya Shankar](https://github.com/shreyashankar) |\n\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/CONTRIBUTORS.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/scripts/bump.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/scripts/runtests.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/scripts/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/scripts/extlink.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/scripts/typecheck.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/scripts/deploy.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/scripts/eslint.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/scripts/blacken.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/notebooks/demo.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/notebooks/demo.ipynb"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "To install, run:\n```bash\npip install ipyflow\n```\n\nTo run an IPyflow kernel, select \"Python 3 (ipyflow)\" from the list of\navailable kernels in the Launcher tab. Similarly, you can switch to / from\nIPyflow from an existing notebook by navigating to the \"Change kernel\" file\nmenu item:\n\nEntrypoint                       |  Kernel Switcher\n:-------------------------------:|:-------------------------------:\n![](https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-launcher.png) | ![](https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/change-kernel-lab.png)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Quick Start",
+                "parent_header": [
+                    " <img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-logo.png\" width=\"25\"> IPyflow "
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "IPyflow started its life under the name nbsafety, which provided the initial\nsuggestions and slicing functionality.\n\nFor the [execution suggestions](http://www.vldb.org/pvldb/vol14/p1093-macke.pdf):\n```bibtex\n@article{macke2021fine,\n  title={Fine-grained lineage for safer notebook interactions},\n  author={Macke, Stephen and Gong, Hongpu and Lee, Doris Jung-Lin and Head, Andrew and Xin, Doris and Parameswaran, Aditya},\n  journal={Proceedings of the VLDB Endowment},\n  volume={14},\n  number={6},\n  pages={1093--1101},\n  year={2021},\n  publisher={VLDB Endowment}\n}\n```\n\nFor the [dynamic slicer](https://smacke.net/papers/nbslicer.pdf) (used for\nreactivity and for the `code` function, for example):\n```bibtex\n@article{shankar2022bolt,\n  title={Bolt-on, Compact, and Rapid Program Slicing for Notebooks},\n  author={Shankar, Shreya and Macke, Stephen and Chasins, Andrew and Head, Andrew and Parameswaran, Aditya},\n  journal={Proceedings of the VLDB Endowment},\n  volume={15},\n  number={13},\n  pages={4038--4047},\n  year={2022},\n  publisher={VLDB Endowment}\n}\n```\n\nFor anything not covered in the above papers, you can cite the IPyflow repo:\n```bibtex\n@misc{ipyflow,\n  title = {{IPyflow: A Next-Generation, Dataflow-Aware IPython Kernel}},\n  howpublished = {\\url{https://github.com/ipyflow/ipyflow}},\n  year = {2022},\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing",
+                "parent_header": [
+                    " <img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-logo.png\" width=\"25\"> IPyflow "
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{macke2021fine,\n    publisher = {VLDB Endowment},\n    year = {2021},\n    pages = {1093--1101},\n    number = {6},\n    volume = {14},\n    journal = {Proceedings of the VLDB Endowment},\n    author = {Macke, Stephen and Gong, Hongpu and Lee, Doris Jung-Lin and Head, Andrew and Xin, Doris and Parameswaran, Aditya},\n    title = {Fine-grained lineage for safer notebook interactions},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Fine-grained lineage for safer notebook interactions",
+                "author": "Macke, Stephen and Gong, Hongpu and Lee, Doris Jung-Lin and Head, Andrew and Xin, Doris and Parameswaran, Aditya"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{shankar2022bolt,\n    publisher = {VLDB Endowment},\n    year = {2022},\n    pages = {4038--4047},\n    number = {13},\n    volume = {15},\n    journal = {Proceedings of the VLDB Endowment},\n    author = {Shankar, Shreya and Macke, Stephen and Chasins, Andrew and Head, Andrew and Parameswaran, Aditya},\n    title = {Bolt-on, Compact, and Rapid Program Slicing for Notebooks},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Bolt-on, Compact, and Rapid Program Slicing for Notebooks",
+                "author": "Shankar, Shreya and Macke, Stephen and Chasins, Andrew and Head, Andrew and Parameswaran, Aditya"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@misc{ipyflow,\n    year = {2022},\n    howpublished = {\\url{https://github.com/ipyflow/ipyflow}},\n    title = {{IPyflow: A Next-Generation, Dataflow-Aware IPython Kernel}},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "{IPyflow: A Next-Generation, Dataflow-Aware IPython Kernel}"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "IPyflow would not have been possible without the amazing academic collaborators\nlisted on the above papers. Its reactive execution features are inspired by\nthose of other excellent tools like [Hex](https://hex.tech/) notebooks,\n[Pluto.jl](https://github.com/fonsp/Pluto.jl), and\n[Observable](https://observablehq.com/). IPyflow also enjoys cross-pollination\nof ideas with other reactive Python notebooks like\n[Marimo](https://github.com/marimo-team/marimo),\n[Jolin.io](https://cloud.jolin.io/), and\n[Datalore](https://blog.jetbrains.com/datalore/2021/10/11/revamped-reactive-mode-and-how-it-makes-your-notebooks-reproducible/)\n--- definitely check them out as well if you like IPyflow.\n\nWork on IPyflow has benefited from the support of folks from a number of\ncompanies -- both in the form of direct financial contributions\n([Databricks](https://www.databricks.com/), [Hex](https://hex.tech/)) as well\nas indirect moral support and encouragement ([Ponder](https://ponder.io/),\n[Meta](https://www.meta.com/)). And of course, IPyflow rests on the foundations\nbuilt by the incredible Jupyter community.\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgements",
+                "parent_header": [
+                    " <img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-logo.png\" width=\"25\"> IPyflow "
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Precise reactive Python notebooks for Jupyter[Lab]: \n1. `pip install ipyflow`\n2. Pick `Python 3 (ipyflow)` from the launcher or kernel selector.\n3. For each cell execution, the (minimal) set of out-of-sync upstream and\n   downstream cells also re-execute, so that executed cells appear as they\n   would when running the notebook from top-to-bottom. \n<p align=\"center\">\n<img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-tldr.gif\" />\n</p>\n \n",
+                "original_header": "TL;DR"
+            },
+            "confidence": 0.9775271645158851,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "If you'd like to skip the elevator pitch and skip straight to installation /\nactivation instructions jump to [quick start](#quick-start) below; otherwise,\nkeep reading to learn about IPyflow's philosophy and feature set.\n \n",
+                "original_header": "About"
+            },
+            "confidence": 0.9913110098066407,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p align=\"center\">\n<img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-dots.gif\" width=\"400\" />\n</p> \n<p align=\"center\">\n<img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-restart.gif\" width=\"400\" />\n</p> \n",
+                "original_header": "Reactive execution model"
+            },
+            "confidence": 0.9998523002488717,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p align=\"center\">\n<img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/reproduce-cell.gif\" width=\"400\" />\n</p> \n",
+                "original_header": "Autosave and recovering prior executions"
+            },
+            "confidence": 0.9995670835929601,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "If you'd like to temporarily opt out of reactive execution, you can use\nctrl+shift+enter (on Mac, cmd+shift+enter also works) to only execute the cell in question: \n<p align=\"center\">\n<img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/alt-mode-execute.gif\" />\n</p> \n<p align=\"center\">\n<img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/reactivity-opt-out.gif\" />\n</p> \nIf you'd like to prevent the default reactive behavior for every new kernel\nsession, you can add this to your IPython profile (default location typically\nat `~/.ipython/profile_default/ipython_config.py`):\n```python\nc = get_config()\nc.ipyflow.exec_mode = \"normal\"  # defaults to \"reactive\"\n```\n \n",
+                "original_header": "Opting out of reactivity"
+            },
+            "confidence": 0.9969658021610224,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p align=\"center\">\n<img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-direction.gif\" />\n</p> \nYou can also update your IPython profile if you'd like to make any-order\nsemantics the default behavior for new kernel sessions:\n```python\nc = get_config()\nc.ipyflow.flow_direction = \"any_order\"  # defaults to \"in_order\"\n```\n \n",
+                "original_header": "In-order and any-order semantics"
+            },
+            "confidence": 0.9983277084779255,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "If you'd like to let IPyflow fix these up for you, you can press \"Space\" when\nin command mode to automatically resolve all stale or dirty cells. This\noperation may introduce more stale cells, in which case you can continue\npressing \"Space\" until all inconsistencies are resolved, if desired: \n<p align=\"center\">\n<img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/resolve-inconsistencies.gif\" width=\"450\" />\n</p> \n",
+                "original_header": "Execution suggestions and shortcut for resolving inconsistencies"
+            },
+            "confidence": 0.9899537678082253,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p align=\"center\">\n<img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-memoization.gif\" />\n</p> \n<p align=\"center\">\n<img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/memoize-quiet-verbose.gif\" />\n</p> \n",
+                "original_header": "Memoization"
+            },
+            "confidence": 0.9998665142921825,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p align=\"center\">\n<img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipywidgets-integration.gif\" width=\"500\" />\n</p> \n<p align=\"center\">\n<img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipywidgets-memoization.gif\" width=\"500\" />\n</p> \nThis functionality can be paired with other extensions like\n[stickyland](https://github.com/xiaohk/stickyland) to build fully reactive\ndashboards on top of JupyterLab + IPyflow. \n<p align=\"center\">\n<img src=\"https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-mercury.gif\" width=\"500\" />\n</p>\n \n",
+                "original_header": "IPyWidgets integration"
+            },
+            "confidence": 0.9967141898139038,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "You can also see the cell (1-indexed) and statement (0-indexed) of when a\nsymbol was last updated with the `timestamp` function:\n```python\nfrom ipyflow import timestamp\ntimestamp(y)\n# Timestamp(cell_num=3, stmt_num=0)\n```\nTo see dependencies and dependents of a particular symbol, use the `deps` and\n`users` fuctions, respectively:\n```python\nfrom ipyflow import deps, users\n\ndeps(y)\n# [<x>]\n\nusers(x)\n# [<y>]\n```\nIf you want to elevate a symbol to the representation used internally by\nIPyflow, use the `lift` function (at your own risk, of course):\n```python\nfrom ipyflow import lift\n\ny_sym = lift(y)\ny_sym.timestamp\n# Timestamp(cell_num=3, stmt_num=0)\n```\n \n",
+                "original_header": "State API"
+            },
+            "confidence": 0.9987416803020768,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Reactivity and other frontend features are not yet working in interfaces like\nColab or VSCode, but you can still use IPyflow's dataflow API on these surfaces\nby initializing your notebook session with the following code:\n```\n%pip install ipyflow\n%load_ext ipyflow\n```\n \n",
+                "original_header": "Colab, VSCode, and other Interfaces"
+            },
+            "confidence": 0.9999565285469629,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "  IPyflow "
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-logo.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "http://www.mypy-lang.org/static/mypy_badge.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-tldr.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-launcher.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/change-kernel-lab.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-dots.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-restart.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/reproduce-cell.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/alt-mode-execute.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/reactivity-opt-out.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-direction.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/resolve-inconsistencies.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-memoization.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/memoize-quiet-verbose.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipywidgets-integration.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipywidgets-memoization.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipyflow/ipyflow/master/img/ipyflow-mercury.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nbsafety-project/nbsafety/master/README.md"
+        }
+    ]
+}

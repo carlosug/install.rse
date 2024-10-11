@@ -1,0 +1,185 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:15:00"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/20200501/OwlEye",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "20200501",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-07-31T07:52:19Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-05-07T04:43:39Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Owl Eyes: Spotting UI Display Issues via Visual Understanding",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "OwlEye",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "20200501/OwlEye",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/20200501/OwlEye/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/20200501/OwlEye/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 11,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 14,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/20200501/OwlEye/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 21899
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/20200501/OwlEye/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "We evaluate the usefulness of our model by applying our OwlEye in detecting the UI display issues in the real-world apps from Google Play and F-Droid. Among 2,200 apps, we find that 56 of them are with UI display issues. We issued bug reports to the development team and 25 are confirmed and fixed by developers.\n\n**APP Name** | **Version** | **Package Name** | **Category** | **APKSource** | **Download** | **Issueid** | **Status**\n :-: | :-: | :-: | :-: |  :-: | :-: | :-: | :-: \n[Open Food Facts][1] | 3.2.8 | openfoodfacts.github.scrachx.openfood_328 | Health | F-droid | 500K+ | #3051 | confirmed  \n[Transdroid][2] | 2.5.17 | org.transdroid.full_237 | Tool | F-droid | 100K+ | #542 | confirmed  \n[Linphone][3] | 4.2.3 | org.linphone_4230 | Communication  | F-droid | 500K+ | #965 | confirmed  \n[NewPipe Legacy][4] | 0.18.6 | org.schabi.newpipe_870 | Media | F-droid | 8K+ | #24 | fixed  \n[CEToolbox][5] | 1.3 | com.github.cetoolbox_5 | Medical | F-droid | 500+ | #4 | confirmed  \n[Yucata Envoy][6] | 0.5.3 | kaba.yucata.envoy_503 | Tool | F-droid | N/A | #3 | confirmed   \n[MTG Familiar][7] | 3.6.4 | com.gelakinetic.mtgfam_70 | Utilities | F-droid | 500K+ | #512 | fixed   \n[OpenTracks-OSM][8]  | 1.5.0 | de.storchp.opentracks.osmplugin_7 | Health | F-droid | 10+ | #26 | fixed   \n[LessPass][9] | 9.1.2 | com.lesspass.android_90102 | Productivity | F-droid | 5K+ | #519 | fixed   \n[ClassyShark3xodus][10] | 1.0-12 | com.oF2pks.classyshark3xodus_12 | Tool | F-droid | N/A | #3 | confirmed   \n[VlcFreemote][11] | 1.10 | com.nicolasbrailo.vlcfreemote_10 | Media | F-droid | N/A | #24 | confirmed   \n[Transistor][12] | 3.2.4 | org.y20k.transistor_71 | Music | F-droid | 10K+ | #254 | fixed   \n[Enhanced Controller for Onkyo and Pioneer][13] | 1.10 | com.mkulesh.onpc_23 | Music | F-droid | 10K+ | #138 | fixed  \n[DemocracyDroid][14] | 3.7.1 | com.workingagenda.democracydroid_43 | News | F-droid | 10K+ | #51 | confirmed \n[ApowerMirror][15] | 1.5.9.34 | ApowerMirror Mirror Control_v1.5.9.34_apkpure.com | Tool | Google | 5M+ | email | confirmed  \n[Degoo Cloud Storage][16] | 1.57.7 | Degoo Cloud Storage_v1.57.7.200316_apkpure.com | Tool | Google | 10M+ | email | fixed  \n[Deezer Music Player][17] | 6.1.22.49 | Deezer Music Player Songs Playlists Podcasts_v6.1.22.49_apkpure.com | Music | Google | 500K+ | email | fixed  \n[MediaFire][18] | 4.2.2 | MediaFire_v4.2.2_apkpure.com | Productivity | Google | 5M+ | email | confirmed  \n[Secure VPN][19] | 2.2.5 | Secure VPN \u2013 A high speed ultra secure VPN_v2.2.5_apkpure.com | Tool | Google | 10M+ | email | confirmed  \n[Nox security][20] | 1.7.6 | Nox Security Antivirus Master Clean Virus Free_v1.7.3_apkpure.com | Tool | Google | 10M+ | email | fixed  \n[Music Player][21] | 3.8.8 | Music Player Audio Player_v3.8.8_apkpure.com | Music | Google | 50M+ | email | confirmed  \n[Proxynel][22] | 2.2.9 | Proxynel Unblock Websites Free VPN Proxy Browser_v2.29_apkpure.com | Tool | Google | 10M+ | email | confirmed  \n[Postegro][23] | 1.23 | Postegro Any Profile Viewer_v1.23_apkpure.com | Communication  | Google | 500K+ | email | fixed   \n[Perfect Piano][24] | 7.5.1 | Perfect Piano_v7.5.1_apkpure.com | Music | Google | 50M+ | email | confirmed\n[Paytm][25] | 2.14.1 | Paytm Canada_v2.14.1_apkpure.com | Finance | Google | 100K+ | email | confirmed\n[Thunder VPN][26] | 3.1.12 | Thunder VPN A Fast Unlimited Free VPN Proxy_v3.1.12 | Tool | Google | 10M+ | email | confirmed\n\n[1]: https://github.com/openfoodfacts/openfoodfacts-androidapp\n[2]: https://github.com/erickok/transdroid\n[3]: https://github.com/BelledonneCommunications/linphone-android\n[4]: https://github.com/TeamNewPipe/NewPipe\n[5]: https://github.com/cetoolbox/cetoolbox\n[6]: https://github.com/ka-ba/yucata.envoy\n[7]: https://github.com/AEFeinstein/mtg-familiar\n[8]: https://github.com/OpenTracksApp/OSMDashboard\n[9]: https://github.com/lesspass/lesspass\n[10]: https://github.com/google/android-classyshark\n[11]: https://github.com/nicolasbrailo/VlcFreemote\n[12]: https://github.com/y20k/transistor\n[13]: https://github.com/mkulesh/onpc\n[14]: https://github.com/fenimore/DemocracyDroid\n[15]: https://play.google.com/store/apps/details?id=com.apowersoft.mirror\n[16]: https://play.google.com/store/apps/details?id=com.degoo.android\n[17]: https://play.google.com/store/apps/details?id=deezer.android.app\n[18]: https://play.google.com/store/apps/details?id=com.mediafire.android\n[19]: https://play.google.com/store/apps/details?id=com.fast.free.unblock.secure.vpn\n[20]: https://play.google.com/store/apps/details?id=com.noxgroup.app.security\n[21]: https://play.google.com/store/apps/details?id=media.music.musicplayer&hl=zh_CN\n[22]: https://play.google.com/store/apps/details?id=com.udicorn.proxybrowser.unblockwebsites\n[23]: https://play.google.com/store/apps/details?id=social.android.postegro\n[24]: https://play.google.com/store/apps/details?id=com.gamestar.perfectpiano\n[25]: https://play.google.com/store/apps/details?id=com.one97.hero\n[26]: https://play.google.com/store/apps/details?id=com.fast.free.unblock.thunder.vpn\n\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Confirmed or fixed issues (RQ3)",
+                "parent_header": [
+                    "OwlEye"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/20200501/OwlEye/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "OwlEye"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/20200501/OwlEye/master/README.md"
+        }
+    ]
+}

@@ -1,0 +1,489 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 21:38:51"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/sidongfeng/CAPdroid",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "sidongfeng",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-02-02T04:52:13Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-04-15T02:39:15Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "CAPdroid",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "sidongfeng/CAPdroid",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/sidongfeng/CAPdroid/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/sidongfeng/CAPdroid/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/sidongfeng/CAPdroid/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "<p align=\"left\">\n<img src=\"figures/ActivityDiary.gif\" width=\"30%\"/> \n</p>\n\nScreen recordings of mobile applications are easy to capture and include a wealth of information, making them a popular mechanism for users to inform developers of the problems encountered in the bug reports.\nHowever, watching the bug recordings and efficiently understanding the semantics of user actions can be time-consuming and tedious for developers.\n\nInspired by the conception of the video subtitle in movie industry, we present a lightweight approach CAPdroid to caption bug recordings automatically.\nCAPdroid is a purely image-based and non-intrusive approach by using image processing and convolutional deep learning models to segment bug recordings, infer user action attributes, and create descriptions as subtitles.\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting Started",
+                "parent_header": [
+                    "Read It, Don't Watch It: Captioning Bug Recordings Automatically"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "To understand the recordings from the end-users, we conducted a small pilot study of the GUI recordings from GitHub.\nWe randomly sampled 1,000 GUI recordings, and we recruited two annotators to manually check the user actions from the recordings.\n\nWe observed that 89% of the recordings included a touch indicator, indicating it as a mechanism for the end-user to depict their actions on the screen.\nWe further classified those touch indicators into three categories, including **default (68%)**, **cursor (27%)**, and **custom (5%)**.\n\n<p align=\"center\">\n<img src=\"figures/touch.png\" width=\"55%\"/> \n</p>\n\n<table width=\"100%\"><tbody>\n    <th valign=\"bottom\" align=\"center\" width=\"33%\">Default</th>\n    <th valign=\"bottom\" align=\"center\" width=\"33%\">Cursor</th>\n    <th valign=\"bottom\" align=\"center\" width=\"33%\">Custom</th>\n    <tr><td align=\"center\"><img src=\"figures/31585576-67410f20-b1c4-11e7-9856-f2a3bdf6bf44.gif\"></td>\n    <td align=\"center\"><img src=\"figures/60604361-296b3f00-9dd5-11e9-9d56-9a6deb05acce.gif\"></td>\n    <td align=\"center\"><img src=\"figures/75782926-ef857a80-5d5f-11ea-97b8-076c41ff8573.gif\"></td>\n    </tr>\n</tbody></table>\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Preliminary Study",
+                "parent_header": [
+                    "Read It, Don't Watch It: Captioning Bug Recordings Automatically",
+                    "Approach"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "<p align=\"center\">\n<img src=\"figures/subtitle.png\" width=\"50%\"/> \n</p>\n<p align=\"center\">Figure: Subtitle and textual steps in the GUI recording.</p>\nOnce the attributes of the action are derived from the previous phases, we proceed by generating in-depth and easy-to-understand natural language descriptions. To accomplish this, we first leverage mature GUI understanding models to obtain GUI information non-intrusively.\nThen, we propose a novel algorithm to phrase actions into descriptions and embed them as subtitles.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Phase 3: Description Generation",
+                "parent_header": [
+                    "Read It, Don't Watch It: Captioning Bug Recordings Automatically",
+                    "Approach"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Given an input GUI recording, we propose an automated approach to segment the recording into a sequence of clips based on user actions and subsequently localize the action positions to generate natural language descriptions.\nBefore discussing each phase in detail, we discuss some preliminary understanding of user actions in GUI recording. \n",
+                "original_header": "Approach"
+            },
+            "confidence": 0.9359897579799902,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "A video consists of a sequence of frames to deliver the visual detail of the story for particular scenes.\nDifferent from the recognition of discontinuities in the visual-content flow of natural-scene videos, detecting clips in the GUI recording is to infer scenes of user actions that generally display significant changes in the GUIs.\nTo that end, we leverage the similarity of consecutive frames to segment user actions (i.e., *TAP*, *SCROLL*, *INPUT*) from GUI recording. \n",
+                "original_header": "Phase 1: Action Segmentation"
+            },
+            "confidence": 0.9673566258836193,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We propose a deep-learning-based method that models the spatial and temporal features across frames to infer the *TAP* location.\nTo infer moving offset of *SCROLL*, we adopt an off-the-shelf image-processing method to detect the continuous motion trajectory of GUIs, thus, measuring the user's scrolling direction and distance.\nTo infer the input text of *INPUT*, we leverage the OCR technique to identify the text difference between the frames of keyboard opening (i.e., where the user starts entering text) and keyboard closing (i.e., where the user ends entering). \n",
+                "original_header": "Phase 2: Action Attribute Inference"
+            },
+            "confidence": 0.9915906586056137,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "For **RQ1**, we presented the performance of our approach for [Action Segmentation](#phase-1-action-segmentation) to accurately segment the recordings into *TAP*, *SCROLL*, *INPUT* action clips.\nFor **RQ2**, we evaluated the ability of our approach for [Action Attribute Inference](#phase-2-action-attribute-inference) to accurately identify the action attributes from clips.\n \n",
+                "original_header": "Automated Evaluation"
+            },
+            "confidence": 0.913581710586413,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The performance of our method is much better than that of other baselines, i.e., 20%, 17% boost in video segmentation F1-score and accuracy compared with the best baseline (HIST).\nAlthough HIST achieves the best performance in the baselines, it does not perform well as it is sensitive to the pixel value.\nThis is because, the recordings can often have image noise due to fluctuations of color or luminance.\nThe image similarity metrics based on structural level (i.e., SIFT, SURF) are not sensitive to image pixel, however, they are not robust to compare GUIs.\nThis is because, unlike images of natural scenes, features in the GUIs may not distinct.\nIn contrast, our method using SSIM achieves better performance as it takes similarity measurements in many aspects from spatial and pixel, which allows for a more robust comparison. \n",
+                "original_header": "RQ1: Accuracy of Action Segmentation"
+            },
+            "confidence": 0.9962489990824533,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "CAPdroid outperforms in all actions, e.g., on average 91.33%, 94.87%, 88.19% for *TAP*, *SCROLL*, *INPUT*, respectively.\nOur method is on average 30.2% more accurate compared with V2S in action attribute inference due to the advanced approaches of CAPdroid.\nCompared with the best baseline (GIFdroid), CAPdroid is on average 28% (91.46% vs 63.35%) more accurate even compared with the best baseline. \n",
+                "original_header": "RQ2: Accuracy of Action Attribute Inference"
+            },
+            "confidence": 0.9333891656126871,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\nWe conducted a user study to evaluate the usefulness of our generated descriptions (reproduction steps) for replaying bug recordings in the real-world development environments.  \n",
+                "original_header": "Usefulness Evaluation"
+            },
+            "confidence": 0.9291228620163406,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Overall, participants appreciate the usefulness of our approach for providing them with clear and concise step descriptions to describe the actions performed on the bug recordings, so that they can easily replay them.\nGiven our generated reproduction steps, the experimental group reproduces the bug recording much faster than that of the control group (with an average of 3.46min versus 5.53min, saving 59.8% of time).\nAll participants admit that our approach can provide more easy-to-understand step descriptions for them, in terms of 4.25 vs 2.50 in clearness, and 4.50 vs 1.75 in conciseness, compared with the control group.\nAnd also the participants strongly agree (4.75) the usefulness of our approach. \n",
+                "original_header": "Results"
+            },
+            "confidence": 0.9669816068529963,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "Please consider citing this paper if you use the code:\n```\n@article{feng2021read,\n  title={Read It, Don't Watch It: Captioning Bug Recordings Automatically},\n  author={Feng, Sidong and Xie, Mulong and Xue, Yinxing and Chen, Chunyang},\n  booktitle={2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)},\n  year={2023},\n  organization={IEEE}\n}\n```",
+                "type": "Text_excerpt",
+                "original_header": "Citations",
+                "parent_header": [
+                    "Read It, Don't Watch It: Captioning Bug Recordings Automatically"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{feng2021read,\n    organization = {IEEE},\n    year = {2023},\n    booktitle = {2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)},\n    author = {Feng, Sidong and Xie, Mulong and Xue, Yinxing and Chen, Chunyang},\n    title = {Read It, Don't Watch It: Captioning Bug Recordings Automatically},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Read It, Don't Watch It: Captioning Bug Recordings Automatically",
+                "author": "Feng, Sidong and Xie, Mulong and Xue, Yinxing and Chen, Chunyang"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "> For more details, experimental setup and results, please check the following instructions:\n> - Overall approach: [approach.md](approach/)\n> - Preliminary Study: [preliminary_study.md](preliminary_study.md)\n> - Phase 1: Action Segmentation: [action_segmentation.md](approach/action_segmentation.md)\n> - Phase 2: Action Attribute Inference: [action_attribute_inference.md](approach/action_attribute_inference.md)\n> - Phase 3: Description Generation: [description_generation.md](approach/description_generation.md) \n",
+                "original_header": "Approach"
+            },
+            "confidence": 0.9389133354930967,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<table width=\"100%\" style=\"font-size:80%\"><tbody>\n<th valign=\"bottom\" width=\"25%\">\n    <a target=\"_blank\" href=\"https://github.com/fossasia/neurolab-android/issues/601\">NeuroLab-Issue#601</a>\n</th>\n<th valign=\"bottom\" width=\"25%\">\n    <a target=\"_blank\" href=\"https://github.com/getodk/collect/issues/3222\">Collect-Issue#3222</a>\n</th>\n<th valign=\"bottom\" width=\"25%\">\n    <a target=\"_blank\" href=\"https://github.com/ramack/ActivityDiary/issues/285\">ActivityDiary-Issue#285</a>\n</th>\n<th valign=\"bottom\" width=\"25%\">\n    <a target=\"_blank\" href=\"https://github.com/MarcusWolschon/osmeditor4android/issues/637\">Osmeditor-Issue#637</a>\n</th>\n<tr>\n<td align=\"center\">\n    <img src=\"figures/neuroLab.gif\">\n</td>\n<td align=\"center\">\n    <img src=\"figures/collect.gif\">\n</td>\n<td align=\"center\">\n    <img src=\"figures/ActivityDiary.gif\">\n</td>\n<td align=\"center\">\n    <img src=\"figures/osmeditor637.gif\">\n</td>\n</tr>\n</tbody></table> \n",
+                "original_header": "Usefulness Evaluation"
+            },
+            "confidence": 0.9999990675152985,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Read It, Don't Watch It: Captioning Bug Recordings Automatically"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/ActivityDiary.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/overview.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/touch.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/31585576-67410f20-b1c4-11e7-9856-f2a3bdf6bf44.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/60604361-296b3f00-9dd5-11e9-9d56-9a6deb05acce.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/75782926-ef857a80-5d5f-11ea-97b8-076c41ff8573.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/time.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/approach.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/subtitle.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/rq1.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/rq2.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/neuroLab.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/collect.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/ActivityDiary.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/osmeditor637.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/user_1.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/figures/user.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sidongfeng/CAPdroid/main/README.md"
+        }
+    ]
+}

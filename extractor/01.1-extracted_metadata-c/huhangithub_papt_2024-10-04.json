@@ -1,0 +1,265 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:30:03"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/huhanGitHub/papt",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "huhanGitHub",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-02-22T04:59:13Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-26T02:20:31Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A pairwise GUI dataset between Android phone and tablet. Accepted by NeurIPS2023.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Second, we compare the similarities of two GUIs from phones and tablets and match two GUIs with high similarity.\n![image](https://user-images.githubusercontent.com/9078829/222718147-98d1c20e-84dc-4913-8a6a-74867bd490a0.png) \nThe `tools` directory contains data collection tools. You may see the introduction in this directory.\nWe open source two tools: Adjust resolution collector and GUI Explorer and similarity comparer.\n \n",
+                "original_header": "Data Collection"
+            },
+            "confidence": 0.9615694704128988,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/huhangithub/papt/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The naming format for all files in the dataset is 'Device_Timestamp_Activity' Name.\nAs shown in Figure, The filename tablet_1676189565_MainActivity.xml indicates that this file was obtained by the tablet and was collected with the timestamp '1676189565', this GUI belongs to 'MainActivity' and this file is a metadata file in XML format.\nWe use timestamps and activity names to distinguish phone-tablet GUI pairs.\n \n",
+                "original_header": "Pair format"
+            },
+            "confidence": 0.9396620938399477,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/huhangithub/papt/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We describe all the details in our source paper. You can refer to this paper to get more details. If this dataset benefits your research, we hope you cite our paper.  \n",
+                "original_header": "Source Paper"
+            },
+            "confidence": 0.9204144276708012,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/huhangithub/papt/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "papt",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "huhanGitHub/papt",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/huhanGitHub/papt/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/huhanGitHub/papt/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/huhangithub/papt/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 188334
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 841
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/huhangithub/papt/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<img width=\"459\" alt=\"image\" src=\"https://user-images.githubusercontent.com/9078829/222717542-07412c06-6393-4046-b03a-8de0af488ca7.png\"> \n",
+                "original_header": "Pair format"
+            },
+            "confidence": 0.9415592075424289,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/huhangithub/papt/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@misc{hu2023pairwise,\n    year = {2024},\n    volume = {36},\n    journal = {Advances in Neural Information Processing Systems},\n    author = {Han Hu and Haolan Zhan and Yujin Huang and Di Liu},\n    title = {Pairwise GUI Dataset Construction Between Android Phones and Tablets},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Pairwise GUI Dataset Construction Between Android Phones and Tablets",
+                "author": "Han Hu and Haolan Zhan and Yujin Huang and Di Liu"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/huhangithub/papt/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "News"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/huhangithub/papt/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://user-images.githubusercontent.com/9078829/222718086-7af79fdb-0537-4d7a-9277-cd7ea7e10205.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/huhangithub/papt/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://user-images.githubusercontent.com/9078829/222718147-98d1c20e-84dc-4913-8a6a-74867bd490a0.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/huhangithub/papt/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://user-images.githubusercontent.com/9078829/222717542-07412c06-6393-4046-b03a-8de0af488ca7.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/huhangithub/papt/main/README.md"
+        }
+    ]
+}

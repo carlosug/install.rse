@@ -1,0 +1,323 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 17:42:09"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ASSERT-KTH/flacoco",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ASSERT-KTH",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-09-11T14:59:33Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-01T18:24:46Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021 SpoonLabs\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/spoonlabs/flacoco/master/LICENSE"
+        },
+        {
+            "result": {
+                "value": "[MIT License](LICENSE)\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "flacoco \u00b7 <a href=\"https://github.com/SpoonLabs/flacoco/actions/workflows/tests.yml\"><img alt=\"tests\" src=\"https://github.com/SpoonLabs/flacoco/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/flacoco\"><img alt=\"codecov\" src=\"https://codecov.io/gh/SpoonLabs/flacoco/branch/master/graph/badge.svg?token=7WWFGI1KWW\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" /> <a href=\"https://mavenbadges.herokuapp.com/maven-central/com.github.spoonlabs/flacoco\"><img alt=\"Maven Central\" src=\"https://maven-badges.herokuapp.com/maven-central/com.github.spoonlabs/flacoco/badge.svg\" /></a>",
+                    "Contributing"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/flacoco/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "FLACOCO: Fault Localization for Java based on Industry-grade Coverage http://arxiv.org/pdf/2111.12513",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* **Ease of use**: With an intuitive, reliable and stable API, flacoco can be easily used in other projects such as automated program repair tools.\n* **Compatibility**: \n    * Supports JUnit3, JUnit4 and JUnit5.\n    * Supports Java 1 to Java 17 bytecode.\n    * Runs on Java 8 to Java 17.\n    * Runs on Linux, MacOS and Windows.\n* **Stability**: Tests are executed in an isolated JVM. \n",
+                "original_header": "flacoco \u00b7 <a href=\"https://github.com/SpoonLabs/flacoco/actions/workflows/tests.yml\"><img alt=\"tests\" src=\"https://github.com/SpoonLabs/flacoco/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/flacoco\"><img alt=\"codecov\" src=\"https://codecov.io/gh/SpoonLabs/flacoco/branch/master/graph/badge.svg?token=7WWFGI1KWW\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" /> <a href=\"https://mavenbadges.herokuapp.com/maven-central/com.github.spoonlabs/flacoco\"><img alt=\"Maven Central\" src=\"https://maven-badges.herokuapp.com/maven-central/com.github.spoonlabs/flacoco/badge.svg\" /></a>"
+            },
+            "confidence": 0.9436949200678081,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/spoonlabs/flacoco/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "flacoco",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ASSERT-KTH/flacoco",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/flacoco/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/flacoco/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 29,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "coverage, fault-localization, hacktoberfest, java, localization-tool",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 15,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/spoonlabs/flacoco/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 331109
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/spoonlabs/flacoco/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/spoonlabs/flacoco/master/examples/math_70/math-RC.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/spoonlabs/flacoco/master/examples/math_70/math-pre-RC.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/spoonlabs/flacoco/master/.github/install_examples.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "flacoco is currently available through Maven Central and as a SNAPSHOT\n\nYou can use it by installing locally yourself (if you do so, the install version will be `1.0.7-SNAPSHOT`), or by adding flacoco as a maven dependency:\n```bash\n$ mvn install -DskipTests\n```\n```xml\n<dependency>\n    <groupId>com.github.spoonlabs</groupId>\n    <artifactId>flacoco</artifactId>\n    <version>1.0.6</version>\n</dependency>\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "flacoco \u00b7 <a href=\"https://github.com/SpoonLabs/flacoco/actions/workflows/tests.yml\"><img alt=\"tests\" src=\"https://github.com/SpoonLabs/flacoco/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/flacoco\"><img alt=\"codecov\" src=\"https://codecov.io/gh/SpoonLabs/flacoco/branch/master/graph/badge.svg?token=7WWFGI1KWW\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" /> <a href=\"https://mavenbadges.herokuapp.com/maven-central/com.github.spoonlabs/flacoco\"><img alt=\"Maven Central\" src=\"https://maven-badges.herokuapp.com/maven-central/com.github.spoonlabs/flacoco/badge.svg\" /></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/flacoco/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* https://github.com/SpoonLabs/CoCoSpoon/\n* https://github.com/GZoltar/gzoltar/\n* https://github.com/saeg/jaguar\n \n",
+                "original_header": "Related tools"
+            },
+            "confidence": 0.9999999929047689,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/spoonlabs/flacoco/master/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "The documentation lives in the Github wiki at <https://github.com/SpoonLabs/flacoco/wiki>\n",
+                "type": "Text_excerpt",
+                "original_header": "Documentation",
+                "parent_header": [
+                    "flacoco \u00b7 <a href=\"https://github.com/SpoonLabs/flacoco/actions/workflows/tests.yml\"><img alt=\"tests\" src=\"https://github.com/SpoonLabs/flacoco/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/flacoco\"><img alt=\"codecov\" src=\"https://codecov.io/gh/SpoonLabs/flacoco/branch/master/graph/badge.svg?token=7WWFGI1KWW\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" /> <a href=\"https://mavenbadges.herokuapp.com/maven-central/com.github.spoonlabs/flacoco\"><img alt=\"Maven Central\" src=\"https://maven-badges.herokuapp.com/maven-central/com.github.spoonlabs/flacoco/badge.svg\" /></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/flacoco/master/README.md"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "External contributions are welcome.\n",
+                "type": "Text_excerpt",
+                "original_header": "Pull requests",
+                "parent_header": [
+                    "flacoco \u00b7 <a href=\"https://github.com/SpoonLabs/flacoco/actions/workflows/tests.yml\"><img alt=\"tests\" src=\"https://github.com/SpoonLabs/flacoco/actions/workflows/tests.yml/badge.svg\" /></a> <a href=\"https://codecov.io/gh/SpoonLabs/flacoco\"><img alt=\"codecov\" src=\"https://codecov.io/gh/SpoonLabs/flacoco/branch/master/graph/badge.svg?token=7WWFGI1KWW\" /></a> <img alt=\"Supported Platforms\" src=\"https://img.shields.io/badge/platforms-Linux%2C%20macOS%2C%20Windows-blue.svg\" /> <a href=\"https://mavenbadges.herokuapp.com/maven-central/com.github.spoonlabs/flacoco\"><img alt=\"Maven Central\" src=\"https://maven-badges.herokuapp.com/maven-central/com.github.spoonlabs/flacoco/badge.svg\" /></a>",
+                    "Contributing"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/spoonlabs/flacoco/master/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9914933668417086,
+            "technique": "supervised_classification"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@techreport{flacoco2021,\n    institution = {arXiv},\n    number = {2111.12513},\n    url = {http://arxiv.org/pdf/2111.12513},\n    author = {Andr\u00e9 Silva and Matias Martinez and Benjamin Danglot and Davide Ginelli and Martin Monperrus},\n    year = {2021},\n    title = {FLACOCO: Fault Localization for Java based on Industry-grade Coverage},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "FLACOCO: Fault Localization for Java based on Industry-grade Coverage",
+                "author": "Andr\u00e9 Silva and Matias Martinez and Benjamin Danglot and Davide Ginelli and Martin Monperrus",
+                "url": "http://arxiv.org/pdf/2111.12513"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/spoonlabs/flacoco/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "flacoco \u00b7    "
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/spoonlabs/flacoco/master/README.md"
+        }
+    ]
+}

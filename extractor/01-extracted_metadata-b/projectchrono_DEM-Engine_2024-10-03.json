@@ -1,0 +1,341 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:03:19"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/projectchrono/DEM-Engine",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "projectchrono",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-04-22T19:11:07Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-12T02:57:01Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "\nCopyright (c) 2021, SBEL GPU Development Team.\nCopyright (c) 2021, University of Wisconsin - Madison\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\n> See CONTRIBUTORS.md for a list of project authors by name and date.\n\n### NOTICE OF THIRDPARTY LICENSES \n\nThis project depends on certain third party software which is governed by its own licensing and distribution guidelines. Project files in the `thirdparty/` directory may contain their own `LICENSE` or `COPYING`` notices which should be consulted before the use or distribution of this software. \n\nSoftware components obtained and modified from external (compatibly-licensed) sources may be found in the project's main source tree (`src/`) and should be clearly marked as modifications of the original work.\n\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/projectchrono/DEM-Engine/main/LICENSE.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A dual-GPU DEM solver with complex grain geometry support",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Using up to two GPUs at the same time (works great on consumer _and_ data center GPUs).\n- With the particles having complex shapes represented by clumped spheres.\n- With support for customizable contact force models (want to add a non-standard cohesive force, or an electrostatic repulsive force? You got this).\n- With an emphasis on computational efficiency. As a rule of thumb, using 3-sphere clump elements, simulating 1 million elements for 1 million time steps takes around 1 hour on two RTX 3080s.\n- Supporting a wide range of problems with flexible API designs. Deformable meshes and grain breakage can be simulated by leveraging the explicit controls given to the user.\n- With support for co-simulation with other C/C++ packages, such as [Chrono](https://github.com/projectchrono/chrono). \nCurrently _DEME_ is a C++ package with an API design similar to Chrono's, and should be easy to learn for existing Chrono users. \n- I recommend getting the newest CUDA. But note that the recent releases CUDA 12.1, 12.2 and 12.3 appear to cause troubles with jitify and you should not use them with DEME.\n- On WSL this code may be buildable (and [this](https://docs.nvidia.com/cuda/wsl-user-guide/index.html) is the guide for installing CUDA on WSL), but may not run. This is due to the [many limitations on unified memory and pinned memory support](https://docs.nvidia.com/cuda/wsl-user-guide/index.html#known-limitations-for-linux-cuda-applications) on WSL. We are looking into it and for now, a native Linux machine or cluster is recommended. \n- `./bin/DEMdemo_SingleSphereCollide` can be used to test a correct installation. If it runs outputting a lot of texts (those are debug messages; the user do not have to worry about the content) and stops without an error in the end, the installation is probably good.\n- An all-rounder beginner example featuring a bladed mixer interacting with complex shaped particles: `./bin/DEMdemo_Mixer`.\n- A place to learn how prescribed motions work in this package, using either analytical boundaries or particle-represented boundaries: `./bin/DEMdemo_Centrifuge` and `./bin/DEMdemo_Sieve`.\n- A few representative engineering experiments reproduced in DEM simulations, which potentially serve as starting points for your own DEM scripts: `/bin/DEMdemo_BallDrop`, `./bin/DEMdemo_ConePenetration`, `/bin/DEMdemo_RotatingDrum`, `./bin/DEMdemo_Repose`, `./bin/DEMdemo_Plow`.\n- `./bin/DEMdemo_WheelDP` shows how to load a checkpointed configuration file to instantly generate a settled granular terrain, then run a drawbar-pull test on it. This demo therefore requires you to first finish the two GRCPrep demos to obtain the terrain checkpoint file. The granular terrain in these demos features DEM particles with a variety of sizes and shapes.\n- `./bin/DEMdemo_WheelDPSimplified` is a simplified version of the previous drawbar-pull test which has no prerequisite. The terrain is simpilified to be made of only one type of irregular-shaped particles. It serves as a quick starting point for people who want to create similar experiments.\n- `./bin/DEMdemo_Indentation` is a more advanced examples showing the usage of the custom additional properties (called _wildcards_) that you can associate with the simulation entities, and use them in the force model and/or change them in simulation then deposit them into the output files. _Wildcards_ have more use cases especially if coupled together with a custom force model, as shown in some of the follwing demos.\n- `./bin/DEMdemo_Electrostatic` simulates a pile of complex-shaped and charged granular particles interacting with a mesh that is also charged. Its purpose is to show how to define a non-local force (electrostatic force) which takes effect even when the bodies are not in contact, using a custom force model file. This idea can be extended to modeling a custom cohesion force etc.\n- `./bin/DEMdemo_FlexibleMesh` simulates a deforming mesh interacting with DEM particles. The intention is to show that the user can extract the force pairs acting on a mesh, then update the mesh with deformation information. _DEME_ does not care how this deformation is calculated. Presumably the user can feed the forces to their own solid mechanics solver to get the deformation. _DEME_ does not come with a built-in linear solver so for simplicity, in this demo the mesh deformation is instead prescribed.\n- `./bin/DEMdemo_GameOfLife` is a fun game-of-life simulator built with the package, showing the flexibility in terms of how you can use this tool.\n- `./bin/DEMdemo_Fracture_Box` simulates a concrete bar breaking using a custom force model that creates inter-particle bonds and lets them break under certain conditions. This is a showcase for advanced usage of custom models that involves per-contact wildcard variables.\n- It is a good idea to read the comment lines at the top of the demo files to understand what they each does. \n- If errors similar to `CUDA_ERROR_UNSUPPORTED_PTX_VERSION` are encountered while you run the demos, or (rarely) the simulations proceed without detecting any contacts, then please make sure the CUDA installation is the same version as when the code is compiled.\n- Another cause for the simulations proceeding without detecting any contacts, could be the force kernel silently failed. This could also lead to a **too-many-geometries-in-bin** crash. The cause is usually that the force kernel was launched with too many threads per block, therefore not enough registers can be leveraged. This can be avoided by calling `SetForceCalcThreadsPerBlock` prior to the start of simulation with the argument being 256 or even smaller choices like 128.\n- Used your own force model but got runtime compilation error like `expression must have pointer-to-object type but it has type \"float\"`, or `unknown variable \"delta_time\"`? Check out what we did in demo `DEMdemo_Electrostatic`. You may need to manually specify what material properties are pairwise and what contact wildcards you have using `SetMustPairwiseMatProp` and `SetPerContactWildcards`.\n- Just running provided demos or a script that used to work, but the jitification of the force model failed or the simulation fails at the first kernel call (probably in `DEMCubContactDetection.cu`)? Then did you pull a new version and just re-built in-place? A new update may modify the force model, and the force model in _DEME_ are given as text files so might not be automatically copied over when the project is re-built. I am sorry for the trouble it might cause, but you can do a clean re-build from an empty directory and it should fix the problem. Do not forget to first commit your own branches' changes and relocate the data you generated in the build directory. Another solution is to copy everything in `src/DEM` to the `DEM` directory in the build directory, then everything in `src/kernel` to the `kernel` directory in the build directory, then try again. \n_DEME_ is designed to simulate the interaction among clump-represented particles, the interaction between particles and mesh-represented bodies, as well as the interaction between particles and analytical boundaries. _DEME_ does not resolve mesh&ndash;mesh or mesh&ndash;analytical contacts. \n- It is able to handle mesh-represented bodies with relatively simple physics, for example a meshed plow moving through granular materials with a prescribed velocity, or several meshed projectiles flying and hitting the granular ground. \n- However, if the bodies' physics are complex multibody problems, say it is a vehicle that has joint-connected parts and a motor with certain driving policies, or the meshed bodies have collisions among themselves that needs to be simulated, then _DEME_ alone does not have the infrastructure to handle them. But you can install _DEME_ as a library and do coupled simulations with other tools such as [Chrono](https://github.com/projectchrono/chrono), where _DEME_ is exclusively tasked with handling the granular materials and the influence they exert on the outside world (with high efficiency, of course). See the following section. \nWe provide examples of linking against both [Chrono](https://github.com/projectchrono/chrono) and _DEME_ for co-simulations in [chrono-projects](https://github.com/projectchrono/chrono-projects/tree/feature/DEME). You need to checkout the `feature/DEME` branch after cloning the code. \nThis project exists independently of Chrono so developers should be sure to include the appropriate BSD license header on any code which is sourced from Chrono::GPU(DEM) or other parts of Chrono. \n> ```\n> Copyright (c) 2021, SBEL GPU Development Team\n> Copyright (c) 2021, University of Wisconsin - Madison\n> \n> SPDX-License-Identifier: BSD-3-Clause\n> \n> \n> This file contains modifications of the code authored by the Project Chrono \n> Development Team. The original license can be found below:\n>\n> Copyright (c) 2016, Project Chrono Development Team\n> All rights reserved.\n> \n> Use of this source code is governed by a BSD-style license that can be found\n> in the LICENSE file at the top level of the distribution and at\n> http://projectchrono.org/license-chrono.txt. A copy of the license is below.\n>\n> Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n> \n>  - Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. \n>  - Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. \n>  - Neither the name of the nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. \n> \n> THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n> ``` \n",
+                "original_header": "Quick links"
+            },
+            "confidence": 0.9670052995499102,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/projectchrono/DEM-Engine/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "DEM-Engine",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "projectchrono/DEM-Engine",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/projectchrono/DEM-Engine/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/projectchrono/DEM-Engine/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 66,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "chrono, cuda, discrete-element-method, gpu, multi-gpu, simulation",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 14,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/projectchrono/DEM-Engine/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 1156163
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Cuda",
+                "name": "Cuda",
+                "type": "Programming_language",
+                "size": 332138
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CMake",
+                "name": "CMake",
+                "type": "Programming_language",
+                "size": 27300
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/projectchrono/DEM-Engine/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributors": [
+        {
+            "result": {
+                "value": "# Authors\n\n- Ruochun Zhang (\u7ae0\u82e5\u6df3)\n\t- Joined: April 2021\n- Dan Negrut\n\t- Joined: April 2021\n- Colin Vanden Heuvel\n\t- Joined: April 2021\n- Bonaventura Tagliafierro\n\t- Joined: April 2023\n- Shlok Sabarwal\n\t- Joined: June 2023\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/projectchrono/DEM-Engine/main/CONTRIBUTORS.md"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p>\n  <img width=\"380\" src=\"https://i.imgur.com/DKGlM14.jpg\">\n  <img width=\"380\" src=\"https://i.imgur.com/A3utANi.gif\">\n</p> \n",
+                "original_header": "SBEL GPU DEM-Engine"
+            },
+            "confidence": 0.9999640697078237,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/projectchrono/DEM-Engine/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p>\n  <img width=\"380\" src=\"https://i.imgur.com/YOEbAd8.gif\">\n  <img width=\"380\" src=\"https://i.imgur.com/4R25TPX.gif\">\n</p> \n",
+                "original_header": "Description"
+            },
+            "confidence": 0.9999883833559414,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/projectchrono/DEM-Engine/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<li><a href=\"#install-as-library\">Install as C++ library</a></li> \n_DEME_ is now available as a Python package, _pyDEME_. It is quick to install and pick up its usage by trying this Python version. If you want to maximize the performance and use the cutting-edge features, you can instead <a href=\"#compilation\">install the C++ version of _DEME_ from source</a>. \nTo install _pyDEME_, use a Linux machine, install CUDA if you do not already have it. Useful installation instructions may be found [here](https://developer.nvidia.com/cuda-downloads).  \nSome additional troubleshooting tips for getting CUDA ready: \n- I recommend getting the newest CUDA. But note that the recent releases CUDA 12.1, 12.2 and 12.3 appear to cause troubles with jitify and you should not use them with DEME.\n- On WSL this code may be buildable (and [this](https://docs.nvidia.com/cuda/wsl-user-guide/index.html) is the guide for installing CUDA on WSL), but may not run. This is due to the [many limitations on unified memory and pinned memory support](https://docs.nvidia.com/cuda/wsl-user-guide/index.html#known-limitations-for-linux-cuda-applications) on WSL. We are looking into it and for now, a native Linux machine or cluster is recommended. \nOnce CUDA is ready, you can `pip` install _pyDEME_. In your conda environement, do\n```\nconda create -n pyDEME python=3.11\nconda activate pyDEME\nconda install cmake\npip3 install DEME\n``` \n~~You can also install pyDEME via `conda install`:~~ (Please don't use `conda install` for now, it is not yet behaving correctly) \n~~`conda create -n pyDEME python=3.11`~~ \n~~`conda activate pyDEME`~~ \n~~`conda install -c projectchrono pydeme`~~ \nOn a Linux machine, [install CUDA](https://developer.nvidia.com/cuda-downloads). The newest release is recommended. \nOnce CUDA is ready, clone this project and then:\n```\ngit submodule init\ngit submodule update\n```\n \nThis will pull the submodule NVIDIA/jitify so that we can do runtime compilation.  \nThen, one typical choice is to make a build directory in it. Then in the build directory, use `cmake` to configure the compilation. An example:\n```\nmkdir build\ncd build\ncmake -DCMAKE_BUILD_TYPE=Release ..\n```\n \nYou may want to use [this information](https://askubuntu.com/questions/1203635/installing-latest-cmake-on-ubuntu-18-04-3-lts-run-via-wsl-openssl-error) if you need to update cmake to the newest.  \nWe suggest that you install a `cmake` GUI such as `ccmake`, and `ninja_build` generator, to better help you configure the project. In this case, the example above can be done like this alternatively:\n```\nmkdir build\ncd build\nccmake -G Ninja ..\n```\n \nYou generally do not have to change the build options in the GUI, but preferably you can change `CMAKE_BUILD_TYPE` to `Release`, and if you need to install this package as a library you can specify a `CMAKE_INSTALL_PREFIX`.  \n- If some dependencies such as CUB are not found, then you probably need to manually set `$PATH` and `$LD_LIBRARY_PATH`. An example is given below for a specific version of CUDA, note it may be different on your machine or cluster. You should also inspect if `nvidia-smi` and `nvcc --version` give correct returns.\n```\nexport CPATH=/usr/local/cuda-12.5/targets/x86_64-linux/include${CPATH:+:${CPATH}}\nexport PATH=/usr/local/cuda-12.5/bin${PATH:+:${PATH}}\nexport PATH=/usr/local/cuda-12.5/lib64/cmake${PATH:+:${PATH}}\nexport LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}\nexport CUDA_HOME=/usr/local/cuda-12.5\n``` \n- If you see some grammatical errors during compilation, such as `filesystem` not being a member of `std` or arguments not expanded with `...`, then manually setting the flag `TargetCXXStandard` to `STD_CXX17` might help.\n- If CUB is not found, then you may manually set it in the `ccmake` GUI as `/usr/local/cuda/lib64/cmake/cub`. It may be a slightly different path on your machine or cluster.\n- If `libcudacxx` is not found, then you may manually set it in the `ccmake` GUI as `/usr/local/cuda-12.0/targets/x86_64-linux/lib/cmake/libcudacxx`. Depending on your CUDA version it may be a slightly different path on your machine or cluster. You may also try to find these packages using `find`. \n<h2 id=\"install-as-library\">Install as library</h2> \nSet the `CMAKE_INSTALL_PREFIX` flag in `cmake` GUI to your desired installation path and then \n```\nninja install\n```\n \nYou need to build `chrono-projects` linking against a Chrono installation (Chrono installation guide is [here](https://api.projectchrono.org/tutorial_install_chrono_linux.html); note you have to `make install` to install Chrono, not just build it), then link against _DEME_. The steps for building `chrono-projects`: \n- Start by linking against Chrono. Set `Chrono_DIR`. It should be in `<your_Chrono_install_dir>/lib/cmake`. Then configure the project;\n- Make sure `ENABLE_PROJECTS` to `ON` and configure the project;\n- Linkage against Chrono is done, now move on to link against _DEME_. Set `ENABLE_DEME_TESTS` to `ON`. Then configure the project;\n- Set `DEME_DIR` when prompted. It should be in `<your_DEME_install_dir>/lib64/cmake/DEME`. Then configure the project.\n- You may see the `ChPF_DIR` option being prompted. If you did not build _DEME_ with USE_CHPF being ON, you can ignore this option. Otherwise CMake will refuse to generate, and you need to set this option to be `<your_DEME_install_dir>/lib64/cmake/ChPF`. \n",
+                "original_header": "Quick links"
+            },
+            "confidence": 0.9925943232709334,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/projectchrono/DEM-Engine/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@article{zhang_2024_deme,\n    keywords = {Discrete Element Method, GPU computing, Physics-based simulation, Scientific package, BSD3 open-source},\n    author = {Ruochun Zhang and Bonaventura Tagliafierro and Colin {Vanden Heuvel} and Shlok Sabarwal and Luning Bakke and Yulong Yue and Xin Wei and Radu Serban and Dan Negru\u0163},\n    doi = {https://doi.org/10.1016/j.cpc.2024.109196},\n    issn = {0010-4655},\n    year = {2024},\n    pages = {109196},\n    volume = {300},\n    journal = {Computer Physics Communications},\n    title = {Chrono {DEM-Engine}: A Discrete Element Method dual-{GPU} simulator with customizable contact forces and element shape},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "https://doi.org/10.1016/j.cpc.2024.109196",
+                "title": "Chrono {DEM-Engine}: A Discrete Element Method dual-{GPU} simulator with customizable contact forces and element shape",
+                "author": "Ruochun Zhang and Bonaventura Tagliafierro and Colin {Vanden Heuvel} and Shlok Sabarwal and Luning Bakke and Yulong Yue and Xin Wei and Radu Serban and Dan Negru\u0163"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/projectchrono/DEM-Engine/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{ruochunGRC-DEM2023,\n    doi = {https://doi.org/10.1007/s00366-023-01921-9},\n    journal = {Engineering with Computers},\n    year = {2024},\n    author = {Ruochun Zhang and Colin {Vanden Heuvel} and Alexander Schepelmann and Arno Rogg and Dimitrios Apostolopoulos and Samuel Chandler and Radu Serban and Dan Negrut},\n    title = {A {GPU}-accelerated simulator for the {DEM} analysis of granular systems composed of clump-shaped elements},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "https://doi.org/10.1007/s00366-023-01921-9",
+                "title": "A {GPU}-accelerated simulator for the {DEM} analysis of granular systems composed of clump-shaped elements",
+                "author": "Ruochun Zhang and Colin {Vanden Heuvel} and Alexander Schepelmann and Arno Rogg and Dimitrios Apostolopoulos and Samuel Chandler and Radu Serban and Dan Negrut"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/projectchrono/DEM-Engine/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "SBEL GPU DEM-Engine"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/projectchrono/DEM-Engine/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://i.imgur.com/DKGlM14.jpg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/projectchrono/DEM-Engine/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://i.imgur.com/A3utANi.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/projectchrono/DEM-Engine/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://i.imgur.com/YOEbAd8.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/projectchrono/DEM-Engine/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://i.imgur.com/4R25TPX.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/projectchrono/DEM-Engine/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,723 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 18:23:24"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/yylonly/ServeNet",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "yylonly",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-03-13T14:49:05Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-19T15:27:01Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Service Classification based on Service Description",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\nAutomated service classification plays a crucial role in service management such as service discovery, selection, and composition. In recent years, machine learning techniques have been used for service classification. However, they can only predict around 10 to 20 service categories due to the quality of feature engineering and the imbalance problem of service dataset. In this project, we present a deep neural network ServeNet with a novel dataset splitting algorithm to deal with these issues. ServeNet can automatically abstract low-level representation to high-level features, and then predict service classification based on the service datasets produced by the proposed splitting algorithm. To demonstrate the effectiveness of our approach, we conducted a comprehensive experimental study on 10,000 real-world services in 50 categories. The result shows that ServeNet can achieve higher accuracy than other machine learning methods.\n \n",
+                "original_header": "ServeNet: A Deep Neural Network for Web Service Classification"
+            },
+            "confidence": 0.9178540222521355,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Directly open .ipynb in Google Colab and prepare data \n \n",
+                "original_header": "(Online) Google Colab"
+            },
+            "confidence": 0.9177052715243667,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "ServeNet",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "yylonly/ServeNet",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/yylonly/ServeNet/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/yylonly/ServeNet/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 35,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "classification, cnn, deep-neural-networks, deeplearning, glove, keras, ltsm, service, service-classification, word2vec",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 15,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/yylonly/servenet/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 37231194
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 164850
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/yylonly/ServeNet/releases/29400266",
+                "tag": "ServiceDataset",
+                "name": "Service Dataset",
+                "author": {
+                    "name": "yylonly",
+                    "type": "User"
+                },
+                "description": "Service DataSet:\r\n\r\n*  RAW data\r\n*  CSV\r\n*  hdf5 or h5 \r\n*  Tensor in pickle\r\n",
+                "tarball_url": "https://api.github.com/repos/yylonly/ServeNet/tarball/ServiceDataset",
+                "zipball_url": "https://api.github.com/repos/yylonly/ServeNet/zipball/ServiceDataset",
+                "html_url": "https://github.com/yylonly/ServeNet/releases/tag/ServiceDataset",
+                "url": "https://api.github.com/repos/yylonly/ServeNet/releases/29400266",
+                "release_id": 29400266,
+                "date_created": "2020-08-06T22:09:41Z",
+                "date_published": "2020-08-08T07:35:01Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/yylonly/ServeNet/releases/29401091",
+                "tag": "ServeNet-ICWS20",
+                "name": "ServeNet Model",
+                "author": {
+                    "name": "yylonly",
+                    "type": "User"
+                },
+                "description": "ICWS'20 Takeaway:\r\n\r\n* ServeNet Model Save Model Weight \r\n* ServeNet Training History \r\n* ServeNet Top5 accuracy in JSON\r\n",
+                "tarball_url": "https://api.github.com/repos/yylonly/ServeNet/tarball/ServeNet-ICWS20",
+                "zipball_url": "https://api.github.com/repos/yylonly/ServeNet/zipball/ServeNet-ICWS20",
+                "html_url": "https://github.com/yylonly/ServeNet/releases/tag/ServeNet-ICWS20",
+                "url": "https://api.github.com/repos/yylonly/ServeNet/releases/29401091",
+                "release_id": 29401091,
+                "date_created": "2020-08-06T22:09:41Z",
+                "date_published": "2020-08-08T07:34:42Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/yylonly/ServeNet/releases/13501539",
+                "tag": "BenmarkModels",
+                "name": "All ML models in benchmark",
+                "author": {
+                    "name": "yylonly",
+                    "type": "User"
+                },
+                "description": "All deep models for service classification",
+                "tarball_url": "https://api.github.com/repos/yylonly/ServeNet/tarball/BenmarkModels",
+                "zipball_url": "https://api.github.com/repos/yylonly/ServeNet/zipball/BenmarkModels",
+                "html_url": "https://github.com/yylonly/ServeNet/releases/tag/BenmarkModels",
+                "url": "https://api.github.com/repos/yylonly/ServeNet/releases/13501539",
+                "release_id": 13501539,
+                "date_created": "2020-08-06T22:09:41Z",
+                "date_published": "2020-08-08T07:33:53Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/Result/radar-figure.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/Result/radar-figure.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/Result/Top5_Radar_figure.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/Result/Top5_Radar_figure.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/LDA_SVM_Net/plot_data.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/LDA_SVM_Net/plot_data.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_BI-LSTM.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_BI-LSTM.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/ServeNet_TF1.5_Keras_TPU_GoogleDrive.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/ServeNet_TF1.5_Keras_TPU_GoogleDrive.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/ServeNet_TF1.5_Keras_GPU_GoogleDrive.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/ServeNet_TF1.5_Keras_GPU_GoogleDrive.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_RCNN.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_RCNN.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_C-LSTM.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_C-LSTM.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/ALBERT_TF2_Keras_TPU_GoogleDrive%28TF_Module%29.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/ALBERT_TF2_Keras_TPU_GoogleDrive%28TF_Module%29.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/2.SplitDataset.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/2.SplitDataset.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/2.RandomSampling.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/2.RandomSampling.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_ServeNet%28old%29.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_ServeNet%28old%29.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_LSTM.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_LSTM.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/Service-tokening-Indexing-by-default-github-code.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/Service-tokening-Indexing-by-default-github-code.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/BERT_TF2_Keras_TPU_GoogleDrive.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/BERT_TF2_Keras_TPU_GoogleDrive.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_ServeNet.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_ServeNet.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/BERT_Service_GPU_Adam_GoogleDrive.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/BERT_Service_GPU_Adam_GoogleDrive.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/ServiceIndexForBERT.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/ServiceIndexForBERT.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/3.ServiceEmbedding%28PaddingAndIndex%29.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/3.ServiceEmbedding%28PaddingAndIndex%29.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/1_Pre_Processing.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/1_Pre_Processing.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/1.Pre-Processing.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/1.Pre-Processing.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_Attention.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_Attention.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_CNN.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet/4_CNN.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet-BERT/1_Pre_Processing_withServiceName.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet-BERT/1_Pre_Processing_withServiceName.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet-BERT/4_Top5_Radar_figure%28ServiceName%29.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet-BERT/4_Top5_Radar_figure%28ServiceName%29.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet-BERT/3_ServeNet_BERT_SName_DataGenerator_Final.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet-BERT/3_ServeNet_BERT_SName_DataGenerator_Final.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet-BERT/2_Data_Prepare_for_DataGenerator.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet-BERT/2_Data_Prepare_for_DataGenerator.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet-LT/serveNet-LT.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/ServeNet-LT/serveNet-LT.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/4_ServeNet_1_LTSM_%28Glove200b_trainedEmbeddingLayer%29.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/4_ServeNet_1_LTSM_%28Glove200b_trainedEmbeddingLayer%29.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/3.ServiceEmbedding.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/3.ServiceEmbedding.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/4_ServeNet_2D_CNN_1_BI_LTSM%28512%29_FC_%28Glove200b_trainedEmbeddingLayer%29.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/4_ServeNet_2D_CNN_1_BI_LTSM%28512%29_FC_%28Glove200b_trainedEmbeddingLayer%29.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/2.SplitDataset.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/2.SplitDataset.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/pre-processing.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/pre-processing.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/4_ServeNet.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/4_ServeNet.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/4_ServeNet%28withoutCNNandBI%29.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/4_ServeNet%28withoutCNNandBI%29.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/4_ServeNet%28withoutCNN%29.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/4_ServeNet%28withoutCNN%29.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/4_ServeNet%28withoutLSTM%29.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/4_ServeNet%28withoutLSTM%29.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/1.Pre-Processing.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/Colab/1.Pre-Processing.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/Tr-ServeNet/1_Pre_Processing.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/Tr-ServeNet/1_Pre_Processing.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yylonly/servenet/master/Tr-ServeNet/2_Data_Prepare_for_DataGenerator.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/Tr-ServeNet/2_Data_Prepare_for_DataGenerator.ipynb"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "\n\n* Yilong Yang, Nafees Qamar, Peng Liu, Katarina Grolinger, Weiru Wang, Zhi Li, Zhifang Liao. \"[ServeNet: A Deep Neural Network for Web Services Classification](http://arxiv.org/abs/1806.05437)\" . to be presented at the IEEE 12th International Conferences on Web Services (ICWS\u201920), Beijing, China, Oct. 2020.\n\n* Yilong Yang, Wei Ke, Weiru Wang, Yongxin Zhao. \"[Deep Learning for Web Services Classification](https://doi.org/10.1109/ICWS.2019.00079)\". presented at the IEEE 11th International Conferences on Web Services (ICWS\u201919), Milan, Italy, July 2019.\n\n* Jing Zhang, Yang Chen, Yilong Yang, Changran Lei, Deqiang Wang. \"ServeNet-LT: A Normalized Multi-head Deep Neural Network for Long-tailed Web Services Classification.\" presented at IEEE International Conferences on Web Services (ICWS\u201921), Sep. 2021. (Regular Full Paper).\n\n* Yilong Yang, Zhaotian Li, Jing Zhang and Yang Chen. \"Transfer Learning for Web Services Classification.\" presented at IEEE 13th International Conferences on Web Services (ICWS'21), Sept. 2021. (Short Paper).\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Please cite our paper as follows:",
+                "parent_header": [
+                    "ServeNet: A Deep Neural Network for Web Service Classification"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "* git clone https://github.com/yylonly/ServeNet.git\n",
+                "type": "Text_excerpt",
+                "original_header": "(Local) Start jupyter lab with docker",
+                "parent_header": [
+                    "ServeNet: A Deep Neural Network for Web Service Classification",
+                    "Development"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* docker build . -t servenet:cpu -f Dockerfile-CPU\n* docker run -itd --rm --name servenet-cpu -p 8888:8888 -v /yourpath:/data servenet:cpu \n",
+                "original_header": "CPU"
+            },
+            "confidence": 0.9998103256514052,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* docker build . -t servenet:gpu -f Dockerfile-GPU\n* docker run -itd --rm --runtime=nvidia --name servenet-gpu -p 8888:8888 -v /yourpath:/data servenet:gpu \n",
+                "original_header": "GPU"
+            },
+            "confidence": 0.9999791183379634,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "ServeNet: A Deep Neural Network for Web Service Classification"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/yylonly/servenet/master/README.md"
+        }
+    ]
+}

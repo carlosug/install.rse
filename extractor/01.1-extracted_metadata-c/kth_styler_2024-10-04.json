@@ -1,0 +1,278 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 16:39:31"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ASSERT-KTH/styler",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ASSERT-KTH",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-09-04T09:11:00Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-04-05T11:41:20Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Automatic repair system for Checkstyle errors based on machine learning. http://arxiv.org/pdf/1904.01754",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "styler",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ASSERT-KTH/styler",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/styler/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/styler/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 10,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 9,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/kth/styler/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 86668
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 563
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/styler/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/styler/master/src/styler_predicting.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/styler/master/src/styler_training.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "faq": [
+        {
+            "result": {
+                "value": "Styler is an automatic repair tool to fix formatting errors raised by Checkstyle, a highly configurable formatting-checker for Java. Styler learns fixes for formatting errors and predicts repairs for new errors using machine learning.\n\nReference: [Styler: Learning Formatting Conventions to Repair Checkstyle Violations](https://arxiv.org/pdf/1904.01754) (Benjamin Loriot, Fernanda Madeiral, Martin Monperrus), Empirical Software Engineering, 2022, DOI:10.1007/s10664-021-10107-0.\n",
+                "type": "Text_excerpt",
+                "original_header": "Abstract",
+                "parent_header": [
+                    "Styler : Learning Formatting Conventions to Repair Checkstyle Errors"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kth/styler/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Don't forget to clone the submodules :\n```\ngit clone --recursive [repo]\n```\nor after clonning :\n```\ngit submodule init\ngit submodule update\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Quickstart",
+                "parent_header": [
+                    "Styler : Learning Formatting Conventions to Repair Checkstyle Errors"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kth/styler/master/README.md"
+        },
+        {
+            "result": {
+                "value": "For exemple\n```Java\n...\nstatic class RootModule {\n  final A a;\n  RootModule(A a) {\n    this.a = a;\n  }\n  @Provides A provideA() { return a; } // <Checkstyle error : \"'{' at column 28 should have line break after.\">\n}\n...\n```\n```Java\n...\nstatic class RootModule {\n  final A a;\n  RootModule(A a) {\n    this.a = a;\n  }\n  @Provides A provideA() {\n    return a;\n  }\n\n}\n...\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Sample output",
+                "parent_header": [
+                    "Styler : Learning Formatting Conventions to Repair Checkstyle Errors"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kth/styler/master/README.md"
+        },
+        {
+            "result": {
+                "value": "This repository is organized as follows:\n\n  * [python](/python) contains the source of Styler and a guide for it's usage.\n  * [datasets](/datasets) contains all the datasets used for the experiments in the paper.\n  * [jars](/resources) contains the jars of Codebuff, Naturalize and Checkstyle used during the experiments.\n  * [results](/website) contains some results of the experiments conducted on Styler.\n\nEach directory contains its own Readme explaining its own internal organization.\n",
+                "type": "Text_excerpt",
+                "original_header": "Content of the repository",
+                "parent_header": [
+                    "Styler : Learning Formatting Conventions to Repair Checkstyle Errors"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kth/styler/master/README.md"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "This repository is under the MIT license.\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "Styler : Learning Formatting Conventions to Repair Checkstyle Errors"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kth/styler/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Styler : Learning Formatting Conventions to Repair Checkstyle Errors"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/kth/styler/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1904.01754"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/kth/styler/master/README.md"
+        }
+    ]
+}

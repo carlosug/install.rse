@@ -1,0 +1,606 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:23:30"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/lfd/PaStA",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "lfd",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2016-06-06T18:57:44Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-01-28T23:24:52Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/gpl-2.0",
+                "type": "License",
+                "name": "GNU General Public License v2.0",
+                "url": "https://api.github.com/licenses/gpl-2.0",
+                "spdx_id": "GPL-2.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "The Patch Stack Analysis",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "**PaStA**  is a tool for detecting similar patches. In PaStA, a patch is\neverything that can be split up to a commit message and a diff. Patches can\neither come from patch stacks or mailboxes. A patch stack is a fork/branch (a\nset of commits) from a git project that are developed and maintained\nindependently of the base project.  . Patch stacks are, for example, used by\nextensions of the Linux kernel (e.g., the Preempt-RT patch stack), or custom\nvendor trees.  Many OSS projects, like the Linux kernel, use a mail-based\nworkflow. PaStA is able to assign mails from mailboxes to commits in\nrepositories. It comes with heuristics that are able to detect patches even if\ntheir content significantly changes over time. In this way, PaStA is able to\ntrack different revisions of a patch. \n- This [LPC 2019 recording](https://www.youtube.com/watch?v=QG1YDQ1HOKE) and\n  [Embedded Linux Conference Europe 2019 recording](https://www.youtube.com/watch?v=YCfU-2dXDq0)\n  present core ideas behind the project. Slides:\n  [here](https://static.sched.com/hosted_files/osseu19/5c/pasta-elce19.pdf)\n- The whole presentation is summarised in [this](https://lwn.net/Articles/804511/) article.\n \n",
+                "original_header": "About"
+            },
+            "confidence": 0.9722390982342661,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "**PaStA** is able to map mails from mailboxes (e.g. dumps of mailing lists or\n[public inboxes][1]) to commit hashes of repositories. PaStA searches for mails\nin the mailbox that contain patches. Yet, PaStA does not entirely understand\nall different mail formats. After all potential patches have been detected,\nPaStA will save those patches in a commit cache file. This file can be used for\nfurther analysis and is compared against all 'upstream' commits (master\nbranch). \n1. `./pasta set_config linux`\n2. Either get mailboxes. PaStA supports raw unix-style mailboxes and public\n   inboxes, and add them to the configuration. Use the linux project\n   configuration as a reference. There are several possibilities to acquire\n   mailbox data:\n   * Use [nntp2mbox][2] on gmane.org\n   * Convert your local maildir\n   * Use public inboxes from [git.kernel.org][3]\n3. Parse mailboxes and create local caches with `./pasta sync -mbox` \n",
+                "original_header": "PaStA Mailbox Analysis"
+            },
+            "confidence": 0.9531361572541829,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Work on PaStA and Patchwork integration was also undertaken as a [Google Summer\nof Code](./documentation/pasta-patchwork.md) project in 2020. The work done is\ndescribed in detail in this [blog post](./documentation/pasta-patchwork.md)\n \n",
+                "original_header": "PaStA and Patchwork"
+            },
+            "confidence": 0.9540716622383049,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "PaStA",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "lfd/PaStA",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/lfd/PaStA/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/lfd/PaStA/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 33,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 20,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/lfd/pasta/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 307217
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "R",
+                "name": "R",
+                "type": "Programming_language",
+                "size": 41077
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 13318
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 3162
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 2315
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/lfd/PaStA/releases/15971318",
+                "tag": "v0.4-icse-artifact",
+                "name": "Release for ICSE Artifact Analysis",
+                "author": {
+                    "name": "rralf",
+                    "type": "User"
+                },
+                "description": "# Introduction\r\n\r\nThis release includes the PaStA software version that was used for the ICSE artifact analysis. Results are described in [our paper][1]. All required artifacts are attached to this release. We strongly recommend to use our prepared docker container instead of these manual steps. Further instructions on using docker can be found [here][2].\r\n\r\n# Instructions\r\n\r\n1. Download [LKML-2012-05.mbox.bz2][3]\r\n2. Download [PaStA-0.4-icse-artifact.tar.gz][4]\r\n3. Download [PaStA-resources-0.4-icse-artifact.tar.gz][5]\r\n\r\n# Prepare Artefacts\r\n\r\n$ bunzip2 LKML-2012-05.mbox.bz2\r\n$ tar -xzf PaStA-0.4-icse-artifact.tar.gz\r\n$ mv PaStA-0.4-icse-artifact PaStA\r\n$ rm -rf PaStA/resources\r\n$ tar -xzf PaStA-resources-0.4-icse-artifact.tar.gz -C PaStA\r\n$ cd PaStA\r\n$ mv PaStA-resources-0.4-icse-artifact resources\r\n$ git clone https://github.com/torvalds/linux.git resources/linux/repo\r\n\r\n# Run the analysis\r\n\r\n$ ./pasta mbox_prepare lkml-2012-05 ../LKML-2012-05.mbox\r\n$ ./pasta cache -create all\r\n$ ./pasta analyse -mbox init\r\n$ ./pasta analyse -mbox rep \r\n$ ./pasta rate\r\n$ ./pasta analyse -mbox upstream\r\n$ ./pasta rate\r\n\r\n# Compare the clusters\r\n\r\n$ ./pasta compare_clusters -fm resources/linux/resources/2012-05-mbox-result.groundtruth resources/linux/resources/mbox-result\r\n\r\n[1]: https://arxiv.org/abs/1902.03147\r\n[2]: https://github.com/lfd/PaStA/tree/master/icse-artifact\r\n[3]: https://github.com/lfd/PaStA/releases/download/v0.4-icse-artifact/LKML-2012-05.mbox.bz2\r\n[4]: https://github.com/lfd/PaStA/archive/v0.4-icse-artifact.tar.gz\r\n[5]: https://github.com/lfd/PaStA/releases/download/v0.4-icse-artifact/PaStA-resources-0.4-icse-artifact.tar.gz",
+                "tarball_url": "https://api.github.com/repos/lfd/PaStA/tarball/v0.4-icse-artifact",
+                "zipball_url": "https://api.github.com/repos/lfd/PaStA/zipball/v0.4-icse-artifact",
+                "html_url": "https://github.com/lfd/PaStA/releases/tag/v0.4-icse-artifact",
+                "url": "https://api.github.com/repos/lfd/PaStA/releases/15971318",
+                "release_id": 15971318,
+                "date_created": "2019-03-07T13:14:42Z",
+                "date_published": "2019-03-07T14:22:46Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lfd/pasta/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lfd/pasta/master/tools/update_resources.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lfd/pasta/master/tools/process_mail_pipe.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lfd/pasta/master/tools/patchwork_integration_test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lfd/pasta/master/tools/all_analyses.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lfd/pasta/master/tools/pubin2mbox.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lfd/pasta/master/tools/process_mailbox_maildir.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lfd/pasta/master/tools/update.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lfd/pasta/master/tools/generate_maintainers_clusters.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lfd/pasta/master/tools/process_mail.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lfd/pasta/master/docker/run-icse-artifact.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lfd/pasta/master/docker/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lfd/pasta/master/docker/icse/icse-artifact-analysis.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Installation and Setup\n======================\n\nTo reproduce our results, we provide a prepared docker container. If desired,\nthe docker container can also be built from scratch, please find the\ninstructions in Section \"Docker from scratch\". These are the requirements for\nthe analysis:\n\n  * A Linux distribution of your choice\n  * Docker\n  * curl, zcat, bash, git\n\n1. Clone the repository\n\n```\n$ git clone https://github.com/lfd/PaStA.git\n$ cd PaStA/docker\n```\n\n2. Run the analysis\n\n```\n$ ./run-icse-artifact.sh\n```\n\nStep 2 will automatically download a prepared container image, start the\ncontainer and run the analysis.\n\nDocker from Scratch (expert)\n============================\n\nWe also provide the dockerfiles to create the docker container from scratch.\n\n1. Clone the repository\n\n```\n$ git clone https://github.com/lfd/PaStA.git\n$ cd PaStA/docker\n```\n\n2. Create the docker container\n\nThe following command will first create a docker container for PaStA's base\nsystem, inherit from that image and create a ICSE Artifact specific container\nthat contains all required artefact files and the correct version of our tool.\n\n```\n$ ./build-icse.sh\n```\n\n3. Start the container, and attach to it\n\n```\n$ docker run -ti pasta:icse-artifact\n```\n\n4. Run the analysis\n\nInside the container, run\n\n```\n$ ./icse-artifact-analysis.sh\n```\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/icse-artifact/INSTALL.md"
+        },
+        {
+            "result": {
+                "value": "Default locations inside that directory:\n- `config`: the main configuration file of the project. This file sets the\n  project name, different version ranges, time windows and default thresholds.\n- `repo/`: This is the default location of the repository of the project. While\n  not strictly required, repos are usually added as git submodules.\n- `resources/patch-stack-definition.dat`: Definition of the patch stacks.\n  Lines beginning with **#** are interpreted as comments, lines beginning with\n  **##** group major versions of projects. Take a look at existing patch stack\n  definitions.\n",
+                "type": "Text_excerpt",
+                "original_header": "Preparing the repository",
+                "parent_header": [
+                    "PaStA - Patch Stack Analysis",
+                    "Creating a new PaStA project"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\n$ ./pasta set_config linux\n```\n\nAll further calls on **PaStA** tools will use this configuration file. To use a\nspecific configuration for a single **PaStA** command, this may be overridden\nwith the `-c` command line parameter:\n```\n$ ./pasta -c busybox subcommand ...\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Set active configuration",
+                "parent_header": [
+                    "PaStA - Patch Stack Analysis",
+                    "Creating a new PaStA project"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        },
+        {
+            "result": {
+                "value": "1. Install Patchwork on your system, following the guidelines in Patchwork's [documentation](https://patchwork.readthedocs.io/en/latest/development/installation/)\n\n2. Start a shell inside Patchwork's docker container with `docker-compose run --rm web --shell`\n\n3. Bring up a Patchwork development server, by running\n`./manage.py runserver 0.0.0.0:8000` inside the shell started in step 2. You should now have a Patchwork instance\nrunning at `<Patchwork-Docker-Container-IP-address>:8000` on your host. The Patchwork container's IP address can be\nfound using `ifconfig` command on Linux distributions.\n\n4. Start PaStA's docker container on the same network as the Patchwork one by running the command:\n`docker run -it --rm --network patchwork_default --name pasta -v </path/to/PaStA>:/home/pasta pasta:latest`\n\n5. Set the Patchwork specific settings in config:\n```\n[mbox]\n...\n\n[mbox.patchwork]\nurl = 'http://<Patchwork-Container-IP-Address>/api/1.2/'\nprojects = [{ id = x, initial_archive=\"path/to/archive\", list_email=\"list@domain.org\"},\n{id = y, initial_archive=\"\", list_email=\"anotherlist@anotherdomain.org\"}, ...]\npage_size = 10\n\n# Provide an api_token token or username/password if restricted api access is\n# needed (e.g updating relations)\ntoken = 'your_token'\nusername = 'your_username'\npassword = 'your_password'\n```\n\nEach Patchwork project from which mails are to be imported needs to be listed in the configuration. If\nthe `initial_archive` property of the project is specified (project with id `x` in the example above)\n, PaStA will import mails from the archive treating it as a raw mail box. If the `initial_archive`\nproperty is an empty string (project with id `y` in the example above),\nPaStA will fetch mails using Patchwork's API, only importing those mails which are not already in PaStA.\n",
+                "type": "Text_excerpt",
+                "original_header": "Setting up PaStA and Patchwork",
+                "parent_header": [
+                    "PaStA - Patch Stack Analysis"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "All configuration file inherit from `resources/common/default.cfg` and\nmust implement some mandatory values. This is a minimal example for a project\nconfiguration file:\n```\n[PaStA]\nPROJECT_NAME = foobar\nMODE = mbox / patchstack\n\nUPSTREAM = v1.0..v2.0\n```\n \n",
+                "original_header": "PaStA configuration format"
+            },
+            "confidence": 0.9830060216355686,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1. `./pasta set_config linux`\n2. Either get mailboxes. PaStA supports raw unix-style mailboxes and public\n   inboxes, and add them to the configuration. Use the linux project\n   configuration as a reference. There are several possibilities to acquire\n   mailbox data:\n   * Use [nntp2mbox][2] on gmane.org\n   * Convert your local maildir\n   * Use public inboxes from [git.kernel.org][3]\n3. Parse mailboxes and create local caches with `./pasta sync -mbox` \n[1]: https://public-inbox.org/README.html\n[2]: https://github.com/xai/nntp2mbox\n[3]: https://git.kernel.org/pub/scm/public-inbox/\n \n",
+                "original_header": "PaStA Mailbox Analysis"
+            },
+            "confidence": 0.9999977992614486,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Clone **PaStA** and its resources submodule. The resources contain\nproject-specific configuration, project-related repositories and public inboxes\nas well as results of **PaStA**'s analysis for some sample projects.\n\n```\n$ git clone https://github.com/lfd/PaStA.git\n$ cd PaStA\n$ ./tools/update_resources.sh # This might take some time to complete\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting PaStA",
+                "parent_header": [
+                    "PaStA - Patch Stack Analysis"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        },
+        {
+            "result": {
+                "value": "- Select the active project configuration\n  `./pasta set_config linux`\n- Run PaStA `./pasta -h`\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting started",
+                "parent_header": [
+                    "PaStA - Patch Stack Analysis"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "**PaStA** requires *Python3* and comes with the following dependencies:\n- git\n- pygit2\n- git-python (for patch_descriptions only)\n- R (tikzDevice, ggplot2)\n- fuzzywuzzy + python-levenshtein\n- procmail\n- python-anytree\n- python-dateparser\n- python-networkx\n- python scikit-learn\n- python-toml\n- python-tqdm\n- python-requests\n- flask\n  - flask-wtf\n  - flask-bootstrap\n  - flask-nav\n\nPlease refer to this [Dockerfile](/docker/pasta-skeleton.dockerfile) to\ndownload the required dependencies.\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "PaStA - Patch Stack Analysis"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "mailing lists. A prime example of this is the Linux kernel. Developers send\npatches to mailing lists, where they are reviewed by other subscribers or\nmaintainers. Note that a project may use several mailing lists. The Linux\nkernel, for example, uses more than 200 different lists for its subsystems.\nDiscussion related to new features, bug reports etc. also takes place on the\nmailing list.\n\nGiven a mailbox of such a mailing list, PaStA searches for all mails that\ncontain patches. PaStA understands regular patch emails, as they are formatted\nby 'git format-patch', or patches that are sent as an attachment. PaStA tries\nto repair emails with best effort (e.g., erroneous encoding, non-conform\nheaders, \u2026). PaStA also maps these patches to their corresponding upstream\ncommits.\n\nPaStA understands several mailbox exchange formats:\n- Raw mboxes\n- Public inboxes (Given a link to the mailbox)\n- Messages from [Patchwork](https://github.com/getpatchwork/patchwork)\n",
+                "type": "Text_excerpt",
+                "original_header": "Mailbox Mode",
+                "parent_header": [
+                    "PaStA - Patch Stack Analysis",
+                    "Running PaStA",
+                    "Modes"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        },
+        {
+            "result": {
+                "value": "patch stacks. Different patch stacks are defined in the patch stack definition.\nAn example configuration, as well as script can be found in the resources of\nthe PreemptRT project.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Patch stack mode",
+                "parent_header": [
+                    "PaStA - Patch Stack Analysis",
+                    "Running PaStA",
+                    "Modes"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        },
+        {
+            "result": {
+                "value": "and load commits. To increase overall performance, PaStA persists lists of\ncommit hashes and creates pkl-based commit caches. Those lists will be created\nwhen needed. PaStA detects changes in the configuration file and automatically\nupdates those lists.\n\nThe commit cache has to be created manually:\n```\n$ ./pasta sync # Creates cache file for commits on the patch stacks\n$ ./pasta sync -mbox # Update / synchronise mailboxes before creating caches if in mail box mode\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Initialise PaStA's caches",
+                "parent_header": [
+                    "PaStA - Patch Stack Analysis",
+                    "Running PaStA"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        },
+        {
+            "result": {
+                "value": "linking them into equivalence classes is split in two different commands:\n`pasta analyse` and `pasta rate`.\nReason for the split is the comparatively long duration of the analysation\nphase. After `pasta analyse`, you might want to reuse the results of the\nanalysation and run `pasta rate` for several times on the same data set.\n\nThe detection phase is split in three steps:\n1. In patch stack mode, the comparison of successive versions on the patch stack:\n   ```\n   $ ./pasta analyse succ\n   $ ./pasta rate\n   ```\n2. For more fine-granular classification, compare representants of existing\n   equivalence classes\n   ```\n   $ ./pasta analyse rep\n   $ ./pasta rate\n   ```\n3. Once you think you have found all equivalence classes you can find to find\n   representants of them upstream\n   ```\n   $ ./pasta analyse upstream\n   $ ./pasta rate\n   ```\n\nThis will create a `patch-groups` file inside the resources directory of your\nproject. Each line represents a group of similar patches, commit hashes are\nseparated by whitespaces. A line can optionally end with ' => ' and point to\nupstream commit hash(es).\n",
+                "type": "Text_excerpt",
+                "original_header": "Detecting and grouping similar patches",
+                "parent_header": [
+                    "PaStA - Patch Stack Analysis",
+                    "Running PaStA"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        },
+        {
+            "result": {
+                "value": "statistics on your data by running\n\n```\n$ ./pasta statistics\n```\n\nThis will automatically create a new directory inside your resources and place\n*csv* files that serve as input for **R**.  Afterwards, `pasta statistics`\nautomatically invokes **R**, plots some graphs and stores them in the same\ndirectory as *png* and *tikz* files.\n\nIf you want **PaStA** only to create the *csv* files only without running\n**R**, you can invoke it by using `./pasta statistics -noR -R /tmp/foo/`. This\nwill not invoke **R** and place the *csv*s in `/tmp/foo`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Run statistics",
+                "parent_header": [
+                    "PaStA - Patch Stack Analysis",
+                    "Running PaStA"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "PaStA - Patch Stack Analysis"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        }
+    ],
+    "related_documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://patchwork.readthedocs.io/",
+                "format": "readthedocs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1607.00905"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1902.03147.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/lfd/pasta/master/README.md"
+        }
+    ]
+}

@@ -1,0 +1,277 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:03:33"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/AutoPurchase/name_compare",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "AutoPurchase",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-04-06T16:21:22Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2022-09-08T14:24:49Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Copyright (c) 2018 The Python Packaging Authority\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/autopurchase/name_compare/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Python Library for Names Comparisons",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Program code contains functions, variables, and data structures that are represented by names. To promote human understanding, these names should describe the role and use of the code elements they represent. But the names given by developers show high variability, reflecting the tastes of each developer, with different words used for the same meaning or the same words used for different meanings. This makes comparing names hard. A precise comparison should be based on matching identical words, but also take into account possible variations on the words (including spelling and typing errors), reordering of the words, matching between synonyms, and so on.  \nTo facilitate this we developed a library of comparison functions specifically targeted to comparing names in code. The different functions calculate the similarity between names in different ways, so a researcher can choose the one appropriate for his specific needs. All of them share an attempt to reflect human perceptions of similarity, at the possible expense of lexical matching. \n",
+                "original_header": "Matching and ratio methods for program code names"
+            },
+            "confidence": 0.9577426020316336,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/autopurchase/name_compare/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- **name_1**: the first string or list of words to be compared.\n- **name_2**: the second string or list of words to be compared.\n- **ratio**: the total ratio between the two strings of lists of words.\n- **matching_type**: *LETTERS_MATCH* for string matching, and *WORDS_MATCH* for list-of-words matching.\n- **cont_type**: *CONTINUOUS_MATCH* for matching only between continuous letters (so if minimum match is 2 letters - two uncontinuous letters will never be related as a one match), and DISCONTINUOUS_MATCH for *unedit_match()* function, that after matching a sub-string, its two sides attached together (so one letter from left side and one from right side will be related as two continuous letters).\n- **continuity_heavy_weight**: the weight to let to continuity. False means relating to the \"glue\" between all the letters or words as one component, while True means relating each \"glue\" as one element. This \"glue\" means: for letting to match of some continuous elements heavy weight than the same number of single elements, we give a weight also to the \"space\" between letters, that will be received only when the elements of both sides of this space matches in one match. The weight of that is set by this variable.     \n \n",
+                "original_header": "class *names_matcher.MatchingBlocks*"
+            },
+            "confidence": 0.9546599820957308,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/autopurchase/name_compare/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is the main library's class, that calculates the matches. It contains: \n",
+                "original_header": "Constants:"
+            },
+            "confidence": 0.9224701418126305,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/autopurchase/name_compare/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "  A method that works like Sequence Matcher algorithm - finding at first the longest match and continue recursively on both sides of the match, but every time that there are more than one match with the same length - this method finds the longest matches **that maximize the ratio between the variables**.\n  \n  **Note:** this method uses Dynamic Programming for calculate that. As a result, the running time is about $`m^{2}n^{2}`$ while m and n are number of letters in the first and second variables, respectively. \n",
+                "original_header": "names_matcher.NamesMatcher.*ordered_match*(min_len=2, continuity_heavy_weight=False)"
+            },
+            "confidence": 0.9110875448498817,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/autopurchase/name_compare/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "***continuity_heavy_weight*** **(boolean, default False):** the weight to let to continuity. False means relating to the \"glue\" between all the letters or words as one component, while True means relating each \"glue\" as one element. This \"glue\" means: for letting to match of some continuous elements heavy weight than the same number of single elements, we give a weight also to the \"space\" between letters, that will be received only when the elements of both sides of this space matches in one match. The weight of that is set by this variable. \n",
+                "original_header": "Parameters:"
+            },
+            "confidence": 0.9599772682900908,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/autopurchase/name_compare/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Note: this method uses dynamic programming for calculate that. As a result, the running time is about m^{2}n^{2}, while m and n are number of words in the first and second variables, respectively. \n",
+                "original_header": "names_matcher.NamesMatcher.*ordered_words_match*(min_word_match_degree=2/3, prefer_num_of_letters=False, continuity_heavy_weight=False, ignore_stop_words=False)"
+            },
+            "confidence": 0.9342341432766522,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/autopurchase/name_compare/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "name_compare",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "AutoPurchase/name_compare",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/AutoPurchase/name_compare/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/AutoPurchase/name_compare/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/autopurchase/name_compare/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 155399
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/autopurchase/name_compare/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "1. install namecompare library (by running \"**pip install namecompare**\").\n2. In the head of the python file type \"**import names_matcher**\".\n3. Generate **names_matcher.NamesMatcher** object, set names to compare, and run comparison function (as detailed below)... \n \n\nExample:\n    \n    import names_matcher\n    print(names_matcher.NamesMatcher('FirstLightAFire', 'LightTheFireFirst').ordered_words_match())\n\nOutput:\n\n    name_1: ['first', 'light', 'a', 'fire'], name_2: ['light', 'the', 'fire', 'first']\n    Ratio: 0.4\n    Matches:\n\t    name_1[1:2], name_2[0:1], length: 1, local ratio: 1.0, partial ratio: 0.2:\n\t\t    ['light'] vs. \n\t\t    ['light']\n\t    name_1[3:4], name_2[2:3], length: 1, local ratio: 1.0, partial ratio: 0.2:\n\t\t    ['fire'] vs. \n\t\t    ['fire']\n\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "User Manual",
+                "parent_header": [
+                    "names_matcher library"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/autopurchase/name_compare/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Get the both name after dividing to words (depends on *word_separators* value).\n \n",
+                "original_header": "names_matcher.NamesMatcher.*get_words*()"
+            },
+            "confidence": 0.9109560047460421,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/autopurchase/name_compare/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "names_matcher library"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/autopurchase/name_compare/main/README.md"
+        }
+    ]
+}

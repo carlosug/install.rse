@@ -1,0 +1,242 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:57:00"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/HadiJahanshahi/ADPTriage",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "HadiJahanshahi",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-07-07T20:55:36Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-04-09T21:12:43Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "ADPTriage: Approximate Dynamic Programming for Bug Triage",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\nThis is a Python implementation of the paper named ADPTriage: Approximate Dynamic Programming for Bug Triage.\n \n",
+                "original_header": "ADPTriage"
+            },
+            "confidence": 0.9324917373252289,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/HadiJahanshahi/ADPTriage/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- **BDG**: This folder contains files related to the bug dependency graph.\n- **components**: This folder includes bug assignee class, bug class, decision class, and state class. They are used for the ADP.\n- **simulator**: This folder includes three files:\n    * `first_run.py`: This file includes the Finding_parameters_training class, runs the model for the training + testing phase once and extracts LDA categories, assignment time, and SVM model.\n    * `second_run.py`: This file includes the estimating_state_transitions class, runs the model for the training phase once, and extracts transition between different states.\n    * `third_run.py`: This file includes the ADP class for the ADP algorithm with many inputs.\n- **dat**: This folder contains the data related to three software projects - `EclipseJDT`, `GCC`, and `Mozilla`. These projects have been used to test the model in the package. Each project has its own subfolder within the `dat` folder. In addition to these project folders, there is also a `ToyExample` folder, which contains a small example dataset that can be used to test the model.\n- **utils**: This includes three files:\n   * `release_dates.py`: This file contains a list of release dates for the EclipseJDT, GCC, and Mozilla projects. These release dates are used to simulate a real-world scenario where we do not have access to future release dates and evaluate the performance of our model based on historical data.\n   * `prerequisites.py`: This file imports all the necessary packages required to run the program. It is used to ensure that all the required packages are installed and available in the user's environment before running the program. \n",
+                "original_header": "Folder Structure"
+            },
+            "confidence": 0.9147496225316125,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/HadiJahanshahi/ADPTriage/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "ADPTriage",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "HadiJahanshahi/ADPTriage",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/HadiJahanshahi/ADPTriage/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/HadiJahanshahi/ADPTriage/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/HadiJahanshahi/ADPTriage/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 236954
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 11904
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/HadiJahanshahi/ADPTriage/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/HadiJahanshahi/ADPTriage/main/Toy_Example/Toy_example.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/HadiJahanshahi/ADPTriage/main/Toy_Example/Toy_example.ipynb"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "Here are the prerequisites needed to run this package using Python 3.7+:\n\n* numpy (version 1.19.5 or later)\n* pandas (version 1.2.4 or later)\n* matplotlib (version 3.4.2 or later)\n* networkx (version 2.5.1 or later)\n* plotly (version 5.1.0 or later)\n* gensim (version 4.0.1 or later)\n* gurobipy (version 9.1.2 or later)\n* nltk (version 3.6.2 or later)\n* scipy (version 1.6.3 or later)\n* sklearn (version 0.24.2 or later)\n* tensorflow (version 2.5.0 or later)\n* tqdm (version 4.60.0 or later)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisite",
+                "parent_header": [
+                    "ADPTriage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/HadiJahanshahi/ADPTriage/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "To run the project, there are three phases, each requiring a different python file to be executed. The first phase is handled by `first_run.py`, the second by `second_run.py`, and the third by `third_run.py`. Additionally, the project has three different datasets available: `EclipseJDT`, `GCC`, and Mozilla`.\n\nBefore running the code, the datasets should be unzipped. \n\n`first_run.py` performs the training and testing of the model and extracts LDA categories, assignment time, and SVM models. It accepts the following arguments:\n\n* `--project`: Specifies the name of the project to run. It accepts a string value from the list: `[LibreOffice, Mozilla, EclipseJDT, GCC]`. Default value is `EclipseJDT`.\n* `--verbose`: Specifies the verbosity of the output. It accepts integer values from 0 to 2 or string values of `[nothing, some, all]`. The default value is 0.\n\nAn example of running `first_run.py` for EclipseJDT project is as follows:\n\n```terminal\npython3.9 simulator/first_run.py --project=EclipseJDT\n```\n\nThe second phase can be run using `second_run.py`. This phase estimates the state transitions by running the model for the training phase once. The arguments for this phase are similar to the first phase, as follows:\n\n* `--project`: It specifies the dataset to use, and it can be selected from the list of available datasets: `[LibreOffice, Mozilla, EclipseJDT, GCC]`.\n* `--verbose`: It determines the level of verbosity of the output. It can be either: `[0, 1, 2, nothing, some, all]`.\n\nHere's an example of how to run the second phase for the EclipseJDT dataset:\n```terminal\npython3.9 simulator/second_run.py --project=EclipseJDT\n```\n\nThe third phase can be run using `third_run.py`, which implements the Approximate Dynamic Programming (ADP) algorithm. This phase has many arguments that you can set to customize the algorithm's behavior. Here are the arguments for this phase:\n\n* `--project`: It specifies the dataset to use, and it can be selected from the list of available datasets: `[LibreOffice, Mozilla, EclipseJDT, GCC]`.\n* `--verbose`: It determines the level of verbosity of the output. It can be either: `[0, 1, 2, nothing, some, all]`.\n* `--epochs_training`: It specifies the number of epochs for the training phase.\n* `--epochs_testing`: It specifies the number of epochs for the testing phase.\n* `--project_horizon`: It specifies the number of days for each epoch.\n* `--method`: It indicates which approach we want to use.\n* `--alpha_update`: It indicates how to update alpha in the ADP algorithm for this set `[constant, harmonic, bakf]`.\n* `--alpha`: It is the alpha value for the constant case.\n* `--early_asg_cost`: It specifies whether to impose a cost for early assignments.\n* `--gamma`: It is the discounting coefficient of the Bellman equation.\n* `--epsilon`: It is the ratio of exploration (e-greedy approach). 1 means no exploration.\n* `--cost_f`: It specifies how the cost function of the late assignment should be.\n* `--idea`: It specifies which idea to use: (a) Sophisticated, (b) Simplified.\n* `--toy_example`: It specifies whether it is a toy example.\n\nHere's an example of how to run the third phase for the EclipseJDT dataset:\n\n```terminal\npython3.9 simulator/third_run.py --project=EclipseJDT --epochs_training=20000 --epochs_testing=100 --method=ADP --alpha_update=Constant --early_asg_cost=False --gamma=0.9 --epsilon=0.25 --cost_f=exponential\n```\n\nIn this example, the ADP algorithm is used with constant alpha, no cost for early assignments, a discounting coefficient of 0.9, an exploration ratio of 0.25, and an exponential cost function for late assignments. The training phase will run for 20000 epochs, and the testing phase will run for 100 epochs. The dataset used is EclipseJDT.\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Running the project",
+                "parent_header": [
+                    "ADPTriage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/HadiJahanshahi/ADPTriage/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "ADPTriage"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/HadiJahanshahi/ADPTriage/main/README.md"
+        }
+    ]
+}

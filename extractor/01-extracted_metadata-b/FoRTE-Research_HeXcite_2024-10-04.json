@@ -1,0 +1,390 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:24:28"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/FoRTE-Research/HeXcite",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "FoRTE-Research",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-09-07T19:57:04Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-24T09:12:41Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "High-Efficiency eXpanded Coverage for Improved Testing of Executables",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* `calib execs` and `trim execs` - Number of testcase calibration and trimming executions, respectively. Tracing is done for both. \n",
+                "original_header": "STATUS SCREEN"
+            },
+            "confidence": 0.9218973052927965,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* `calib execs` and `trim execs` - Number of testcase calibration and trimming executions, respectively. Tracing is done for both.\n* `total coverage` - Coverage percentage found (left) over total (right). Unlike UnTracer, this number does *NOT* directly correspond to basic blocks, as HeXcite repurposes UnTracer-style interrupts to reveal finer-grained edge and hit count coverage.\n* `traced / queued` - Ratio of traced versus queued testcases. This ratio should (ideally) be `(traced - total_crashes) : queued`, but will increase as tracing timeouts occur.\n* `trace tmouts (discarded)` - Number of testcases which timed out during tracing. Like AFL, we do not queue these.\n* `no new bits (discarded)` - Number of testcases which were marked coverage-increasing by the oracle but did not actually increase coverage. This should (ideally) be 0.\n* `oracle intrpts` - Number of testcases that triggered UnTracer-style breakpoints (i.e., hit a new basic block or a higher Bucketed Unrolling loop count). This should (ideally) equal the value shown in `hit interrupt (queued)`. \n* `oracle crashes` - Number of testcases that triggered a Jump Mistargeted critical edge (i.e., hit the critical edge and crashed from being forced to the zero address). This should ideally equal the value shown in `hit mistarget (queued)`. \n"
+            },
+            "confidence": 0.9212324911627507,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "HeXcite",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "FoRTE-Research/HeXcite",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/FoRTE-Research/HeXcite/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/FoRTE-Research/HeXcite/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 22,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/FoRTE-Research/HeXcite/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 349502
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 28779
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 13554
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 5623
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 3476
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Rich Text Format",
+                "name": "Rich Text Format",
+                "type": "Programming_language",
+                "size": 21
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 20
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/FoRTE-Research/HeXcite/tree/main/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/experimental/asan_cgroups/limit_memory.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/experimental/distributed_fuzzing/sync_script.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/experimental/crash_triage/triage_crashes.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "Please follow the build instructions for ZAFL available at the following link: https://git.zephyr-software.com/opensrc/zafl. \n**Make sure to set up ZAFL's environment variables accordingly.**\n",
+                "type": "Text_excerpt",
+                "original_header": "1. Download and build ZAFL",
+                "parent_header": [
+                    "HeXcite: High-Efficiency eXpanded Coverage for Improved Testing of Executables",
+                    "INSTALLATION"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/README.md"
+        },
+        {
+            "result": {
+                "value": "```\ngit clone https://github.com/FoRTE-Research/HeXcite hexcite\ncd hexcite\nmake clean && make all\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "2. Download and build HeXcite",
+                "parent_header": [
+                    "HeXcite: High-Efficiency eXpanded Coverage for Improved Testing of Executables",
+                    "INSTALLATION"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "HeXcite relies on the ZAFL binary fuzzing rewriter to apply both coverage transformations (e.g., edge splitting, bucketed unrolling) and instrumentation (e.g., oracle forkserver, tracer instrumentation). Currently supported are three coverage configurations: **(1) UnTracer-style basic block coverage**, **(2) Jump Mistargeting-supported edge coverage**, and **(3) Bucketed Unrolling-supported loop hit count coverage**. Instructions for applying each configuration are below:\n\n* **UnTracer-style basic block only coverage:**\n```\nzafl.sh [inputBinary] /tmp/oracle.zafl -t oracleDir -f\nzafl.sh [inputBinary] /tmp/tracer.zafl -t tracerDir -u\n```\n\n* **Jump Mistargeting edge coverage:**\n```\nzafl.sh [inputBinary] /tmp/oracle.zafl -t oracleDir -f -c fallthroughs\nzafl.sh [inputBinary] /tmp/tracer.zafl -t tracerDir -u -c all\n```\n\n* **Jump Mistargeting edge coverage + Bucketed Unrolling loop hit counts:**\n```\nzafl.sh [inputBinary] /tmp/oracle.zafl -t oracleDir -f -c fallthroughs -j\nzafl.sh [inputBinary] /tmp/tracer.zafl -t tracerDir -u -c all -j\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "1. Configuring desired coverage mode",
+                "parent_header": [
+                    "HeXcite: High-Efficiency eXpanded Coverage for Improved Testing of Executables",
+                    "USAGE"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/README.md"
+        },
+        {
+            "result": {
+                "value": "To understand where breakpoints must be inserted, HeXcite requires a mapping between the oracle and tracer binaries. To generate this, run `hexcite-mapper.py` on the ZAFL-generated oracle and tracer binary output dirs:\n```\nhexcite-mapper.py oracleDir tracerDir outMap mapLog\n```\nMapping errors will be appended to `mapLog`. While a few mapping errors are normal for most binaries, seeing *many* indicates something is wrong on the ZAFL rewriting/analysis side. Please report to us any such occurrences! \n",
+                "type": "Text_excerpt",
+                "original_header": "2. Producing the oracle-to-tracer mapping",
+                "parent_header": [
+                    "HeXcite: High-Efficiency eXpanded Coverage for Improved Testing of Executables",
+                    "USAGE"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/README.md"
+        },
+        {
+            "result": {
+                "value": "After applying the desired coverage configuration, run HeXcite as follows:\n```\nhexcite-afl -i [/path/to/seeds] -o [/path/to/outdir] [optional_args] \\\n\t-O oracleDir/c.out -T tracerDir/c.out -B outMap \\\n\t-- [/path/to/target] [target_args]\n```\nNote that the target supplied does not matter: the *real* target binary will be `c.out` from the ZAFL-generated `oracleDir`.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "3. Fuzzing with HeXcite",
+                "parent_header": [
+                    "HeXcite: High-Efficiency eXpanded Coverage for Improved Testing of Executables",
+                    "USAGE"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "#\n<p align=center> <a href=\"https://www.cs.vt.edu\"><img border=\"0\" src=\"http://people.cs.vt.edu/snagy2/img/vt_inline_computer_science.png\" width=\"60%\" height=\"60%\">\n</a> </p>\n \n"
+            },
+            "confidence": 0.9973293212762484,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "HeXcite: High-Efficiency eXpanded Coverage for Improved Testing of Executables"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/hexcite.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "http://people.cs.vt.edu/snagy2/img/vt_inline_computer_science.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/HeXcite/main/README.md"
+        }
+    ]
+}

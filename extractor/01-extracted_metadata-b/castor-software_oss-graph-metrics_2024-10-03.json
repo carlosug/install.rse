@@ -1,0 +1,365 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:46:48"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/castor-software/oss-graph-metrics",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "castor-software",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-03-11T05:49:37Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-02-11T23:48:06Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Tools to mine and compute metrics on OSS software.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository is organized as follows: \n- [data_analysis](./data_analysis) contains queries to get various information regarding the repositories, the data itself, and some analysis carried on notebooks.\n- [graph_data](./graph_data) contains some graphs extracted from GHArchive.\n- [gha2sql](./gha2sql) is a small python script to get events from GHArchive and later to include them in another database.\n- [maven-central-diversity](./maven-central-diversity) contains resources from the paper [The Emergence of Software Diversity in Maven Central](https://arxiv.org/abs/1903.05394). \n",
+                "original_header": "Content of the repository"
+            },
+            "confidence": 0.9269789718257775,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- [source{d} Engine](<https://github.com/src-d/engine>) : Powerful language-agnostic analysis of your source code and git history.\n- [Reaper](https://github.com/RepoReapers/reaper) : Calculate the score of a repository based on best engineering practices.\n \n",
+                "original_header": "Softwares"
+            },
+            "confidence": 0.9511769323537449,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "oss-graph-metrics",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "castor-software/oss-graph-metrics",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/castor-software/oss-graph-metrics/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/castor-software/oss-graph-metrics/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/castor-software/oss-graph-metrics/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 14992471
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 7005630
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Vue",
+                "name": "Vue",
+                "type": "Programming_language",
+                "size": 8019
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 5095
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 691
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 243
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/castor-software/oss-graph-metrics/tree/master/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/data_analysis/gen_report.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/data_analysis/start.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/data_analysis/notebook/commit_info.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/data_analysis/notebook/commit_info.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/data_analysis/notebook/pr_lifespan.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/data_analysis/notebook/pr_lifespan.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/data_analysis/notebook/report.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/data_analysis/notebook/report.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/data_analysis/notebook/dev_library.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/data_analysis/notebook/dev_library.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/data_analysis/reports/.ipynb_checkpoints/neo4j-checkpoint.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/data_analysis/reports/.ipynb_checkpoints/neo4j-checkpoint.ipynb"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "The content of this repository is licensed under the MIT terms.",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "oss-graph-metrics"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9756317889377604,
+            "technique": "supervised_classification"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "oss-graph-metrics"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1903.08113>"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1903.05394"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/oss-graph-metrics/master/README.md"
+        }
+    ]
+}

@@ -1,0 +1,212 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:27:25"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/wkyml/K-ST",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "wkyml",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-05-22T04:33:01Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-07-22T09:15:40Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "K-ST",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "wkyml/K-ST",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/wkyml/K-ST/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/wkyml/K-ST/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/wkyml/k-st/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Smalltalk",
+                "name": "Smalltalk",
+                "type": "Programming_language",
+                "size": 88
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wkyml/k-st/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "K-framework version 5.1.11 \n\nJava 8.*\n",
+                "type": "Text_excerpt",
+                "original_header": "1. Requirements",
+                "parent_header": [
+                    "K-ST: A Formal Executable Semantics of the Structured Text Language for PLCs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wkyml/k-st/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "You can simply run\n```c\nkrun XXXX.st\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "3. Run ST program",
+                "parent_header": [
+                    "K-ST: A Formal Executable Semantics of the Structured Text Language for PLCs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wkyml/k-st/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "You can simply run\n```c\n  kompile st.k\n``` \nThe complied K-ST can be downloaded through : https://pan.baidu.com/s/10b6vg22yOXCiwH9Fzhv1wQ?pwd=8y1w\n \n",
+                "original_header": "2. Compile K_ST"
+            },
+            "confidence": 0.967358480099162,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/wkyml/k-st/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "K-ST: A Formal Executable Semantics of the Structured Text Language for PLCs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/wkyml/k-st/main/README.md"
+        }
+    ]
+}

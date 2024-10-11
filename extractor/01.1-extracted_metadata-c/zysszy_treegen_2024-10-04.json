@@ -1,0 +1,379 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:00:51"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/zysszy/TreeGen",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "zysszy",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-11-20T05:52:50Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-03T22:38:16Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2020 Zeyu Sun\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": " A Tree-Based Transformer Architecture for Code Generation. (AAAI'20)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "A Tree-Based Transformer Architecture for Code Generation. \n",
+                "original_header": "TreeGen"
+            },
+            "confidence": 0.9159130784549494,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "and  \n",
+                "original_header": "News:"
+            },
+            "confidence": 0.9628479575834686,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "![avatar](img/1.png)\n![avatar](img/2.png)\nAn example of the attention mechanism following the long-distance dependencies in the partial AST reader self-attention in layer 3. The node ```Name -> id``` (the parent node of BASH2*) in the line BASH3* denotes the information of the value of function BASH4*. As shown, this node relies on complex information, which contains the variables ( BASH2* and  BASH5*, in the defination of function), the body of if statement, and the structure of BASH6*. Different colored columns represent different heads. \n![avatar](img/3.png)\n![avatar](img/4.png)\nAn example of the attention mechanism in the partial AST reader self-attention in layer 1. The node BASH7* in the line BASH8* decides the type of this statement, which mostly relies on the previous statements of the function BASH9* and the variable BASH10* and BASH11* as shown.\n \n",
+                "original_header": "Attention Visualization"
+            },
+            "confidence": 0.944758136545846,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "TreeGen",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "zysszy/TreeGen",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/zysszy/TreeGen/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/zysszy/TreeGen/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 90,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 26,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/zysszy/treegen/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 124913
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "```\npython3 run.py ATIS|HS-B\n```",
+                "type": "Text_excerpt",
+                "original_header": "To train a new model",
+                "parent_header": [
+                    "TreeGen",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\npython3 predict.py ATIS 5\n```\nwhere ```5``` is the beam size.",
+                "type": "Text_excerpt",
+                "original_header": "To predict the code (ATIS)",
+                "parent_header": [
+                    "TreeGen",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\npython3 predict_HS-B.py HS-B 5\n```",
+                "type": "Text_excerpt",
+                "original_header": "To predict the code (HS)",
+                "parent_header": [
+                    "TreeGen",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\npython3 eval.py ATIS|HS-B\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "To check the results",
+                "parent_header": [
+                    "TreeGen",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The Pytorch version is available at https://github.com/zysszy/TreeGen-Pytorch/tree/main.\n \n",
+                "original_header": "TreeGen"
+            },
+            "confidence": 0.9999857962805601,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Code Search (OCoR: An Overlapping-Aware Code Retriever, ASE'20): pdf (https://arxiv.org/pdf/2008.05201.pdf), code (https://github.com/pkuzqh/OCoR)  \nProgram Repair (A Syntax-Guided Edit Decoder for Neural Program Repair, ESEC/FSE'21): pdf (https://arxiv.org/pdf/2106.08253v1.pdf), code (https://github.com/pkuzqh/Recoder).\n \n",
+                "original_header": "News:"
+            },
+            "confidence": 0.9904872266561917,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* NLTK 3.2.1\n* Tensorflow 1.12.1\n* Python 3.7\n* Ubuntu 16.04\n \n",
+                "original_header": "Dependenices"
+            },
+            "confidence": 0.9997860654215128,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "TreeGen"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/zysszy/treegen/master/img/1.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/zysszy/treegen/master/img/2.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/zysszy/treegen/master/img/3.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/zysszy/treegen/master/img/4.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2106.08253v1.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1911.09983. (Accepted by AAAI'20"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2008.05201.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zysszy/treegen/master/README.md"
+        }
+    ]
+}

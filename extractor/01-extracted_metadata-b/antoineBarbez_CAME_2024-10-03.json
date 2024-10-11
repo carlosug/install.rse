@@ -1,0 +1,212 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:01:08"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/antoineBarbez/CAME",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "antoineBarbez",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-11-07T00:24:07Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-19T09:35:22Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2019 Antoine Barbez\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/antoineBarbez/CAME/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Deep Learning Anti-patterns from Code Metrics History",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "CAME (Convolutional Analysis of code Metrics Evolution) is a deep-learning based anti-patterns detection approach. CAME uses a Convolutional Neural Network architecture to detect anti-patterns from both structural and historical information mined from version control systems (e.g., Git). \n",
+                "original_header": "CAME"
+            },
+            "confidence": 0.9105614622581839,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/antoineBarbez/CAME/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository is organized as follows:\n* **approaches:** The source code of the God Class detection approaches investigated in this work, i.e., CAME, MLP, decision tree, svm, DECOR, HIST and JDeodorant.\n* **data:** Contains necessary data to run the experiments.\n  * **antipatterns:** The oracle, i.e., manually-tagged occurrences of God Class in eight software systems.\n  * **metric_files:** Files containing the metrics related to code components. Each file corresponds to one commit in the history of the system.\n* **data_construction:** Code used to generate the metric files through the *repository_miner* component.\n* **experiments:** The source code of our experiments: training, comparison, parameter tuning, etc.\n* **utils:** Modules used to access and manipulate the data.\n \n",
+                "original_header": "Repository Structure"
+            },
+            "confidence": 0.9782903670009904,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/antoineBarbez/CAME/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "CAME",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "antoineBarbez/CAME",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/antoineBarbez/CAME/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/antoineBarbez/CAME/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "antipatterns, codesmells, deep-learning",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/antoineBarbez/CAME/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 47402
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/antoineBarbez/CAME/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "CAME"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/antoineBarbez/CAME/master/README.md"
+        }
+    ]
+}

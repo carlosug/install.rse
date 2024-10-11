@@ -1,0 +1,767 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:08:19"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ASSERT-KTH/collector-sahab",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ASSERT-KTH",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-03-02T16:03:33Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-01T16:42:10Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/unlicense",
+                "type": "License",
+                "name": "The Unlicense",
+                "url": "https://api.github.com/licenses/unlicense",
+                "spdx_id": "Unlicense"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "This is free and unencumbered software released into the public domain.\n\nAnyone is free to copy, modify, publish, use, compile, sell, or\ndistribute this software, either in source code form or as a compiled\nbinary, for any purpose, commercial or non-commercial, and by any\nmeans.\n\nIn jurisdictions that recognize copyright laws, the author or authors\nof this software dedicate any and all copyright interest in the\nsoftware to the public domain. We make this dedication for the benefit\nof the public at large and to the detriment of our heirs and\nsuccessors. We intend this dedication to be an overt act of\nrelinquishment in perpetuity of all present and future rights to this\nsoftware under copyright law.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nFor more information, please refer to <https://unlicense.org>\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ASSERT-KTH/collector-sahab/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Augmenting Diffs With Runtime Information, TSE 2023 http://arxiv.org/pdf/2212.11077",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The project is divided into multiple submodules.\n1. `commons`: Contains common classes used by other modules.\n1. `main`: The main module which contains the CLI and runs all the following modules.\n1. `matched-line-finder`: A submodule which is used to find the _non-diffed_ line numbers\n   in the left and right commits.\n1. `trace-collector`: A submodule which is a java agent which collects runtime data\n   and writes it to a file.\n1. `trace-diff`: A submodule which is used to find the diff between the runtime data\n   collected by `trace-collector` in the left and right commits. \n",
+                "original_header": "Structure of the project"
+            },
+            "confidence": 0.9704373028938702,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ASSERT-KTH/collector-sahab/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "collector-sahab",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ASSERT-KTH/collector-sahab",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 9,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/ASSERT-KTH/collector-sahab/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 1686339
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 893723
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 16007
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/173497365",
+                "tag": "v0.5.4",
+                "name": "v0.5.4",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udc1b Fixes\n- 41e34e5 fix: shade fasterxml dependency (#431)\n\n## \ud83e\uddf0 Tasks\n- 00638ec chore: releasing version 0.5.4\n- 2811bf0 chore: releasing version 0.5.4\n- b50ff28 chore: releasing version 0.5.4\n- 68c6974 chore: releasing version 0.5.4\n- 5d89837 chore: releasing version 0.5.4\n- 362470f chore: releasing version 0.5.4\n- 0653f5d chore(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.15.1\n- 808fef7 chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.24.0\n- d27ac3a chore(deps): update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.5.0\n- 8787fbd chore(deps): update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.10.0\n- 04e1be8 chore(deps): update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.5.0\n- a0a2aa2 chore(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.15.0\n- 40519c4 chore(deps): update dependency org.apache.maven.plugins:maven-dependency-plugin to v3.8.0\n- dae2f60 chore(deps): update dependency org.apache.maven.plugins:maven-deploy-plugin to v3.1.3\n- 219656c chore(deps): update dependency org.kohsuke:github-api to v1.324\n- 5c29114 chore(deps): update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.4.0\n- 4493c9a chore(deps): update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.4.0\n- 78a5dfe chore(deps): update dependency org.apache.maven:maven-model to v3.9.9\n- 02a9182 chore(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.14.19\n- 46e2233 chore(deps): update dependency org.junit.jupiter:junit-jupiter to v5.11.0\n- b7f6a4c chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.23.1\n- 2d504af chore(deps): update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.8.0\n- 940356c chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.23.0\n- 965dd22 chore(deps): update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.3.1\n- 0383f0d chore(deps): update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.3.1\n- c2724c0 chore(deps): update dependency org.jsoup:jsoup to v1.18.1\n- e088163 chore(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.14.18\n- 25b5476 chore(deps): update dependency com.fasterxml.jackson.core:jackson-databind to v2.17.2\n- 6012581 chore(deps): update dependency org.kohsuke:github-api to v1.323\n- 155e844 chore(deps): update s4u/setup-maven-action action to v1.14.0\n- 142634d chore(deps): update dependency org.junit.jupiter:junit-jupiter to v5.10.3\n- 741fec9 chore(deps): update dependency org.apache.maven.plugins:maven-dependency-plugin to v3.7.1\n- 81efd97 chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.22.0\n- 27d51bc chore(deps): update dependency org.kohsuke:github-api to v1.322\n- b714ba3 chore(deps): update dependency org.apache.maven:maven-model to v3.9.8\n- c59ce4c chore(deps): update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.3.0\n- 690811d chore(deps): update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.3.0\n- 342fd2d chore(deps): update dependency org.apache.maven.plugins:maven-dependency-plugin to v3.7.0\n- 7ff96f3 chore(deps): update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.7.0\n- deb53ef chore(deps): update dependency org.apache.maven.plugins:maven-shade-plugin to v3.6.0\n- e184aee chore(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.14.17\n- 8e8df6f chore(deps): update dependency org.apache.maven:maven-model to v3.9.7\n- 7ecafb8 chore(deps): update dependency fr.inria.gforge.spoon.labs:gumtree-spoon-ast-diff to v1.71\n- 3fc3998 chore(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.14.16\n- a4e895c chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.21.0\n- 622688b chore(deps): update s4u/setup-maven-action action to v1.13.0\n- 67a95dd chore(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.14.15\n- 5a9de72 chore(deps): update dependency info.picocli:picocli to v4.7.6\n- c20b2cf chore(deps): update dependency com.fasterxml.jackson.core:jackson-databind to v2.17.1\n- 11df050 chore(deps): update dependency fr.inria.gforge.spoon.labs:gumtree-spoon-ast-diff to v1.70\n- a32b68b chore(deps): update dependency org.apache.maven.plugins:maven-deploy-plugin to v3.1.2\n- dac7ed9 chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.20.0\n- d7fb5a0 chore(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.14.14\n- 62ec8bb chore(deps): update dependency org.apache.maven.plugins:maven-shade-plugin to v3.5.3\n- 78c1e58 chore(deps): update dependency commons-io:commons-io to v2.16.1\n- ef50584 chore(deps): update dependency org.apache.maven.plugins:maven-source-plugin to v3.3.1\n- e1b1434 chore(deps): update dependency org.jacoco:jacoco-maven-plugin to v0.8.12\n- fa6a8f4 chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.19.1\n- 0a7ec99 chore(deps): update dependency commons-io:commons-io to v2.16.0\n- 8472f08 chore(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.14.13\n- ae2c653 chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.19.0\n- 39da99b chore(deps): update dependency org.ow2.asm:asm-util to v9.7\n- 8eade5c chore(deps): update dependency org.ow2.asm:asm-tree to v9.7\n- 5a611d1 chore(deps): update dependency org.ow2.asm:asm to v9.7\n- e8b7f89 chore(deps): update dependency org.kohsuke:github-api to v1.321\n- 5105dff chore(deps): update dependency org.kohsuke:github-api to v1.320\n- fb4a2b0 chore(deps): update dependency org.apache.maven.plugins:maven-compiler-plugin to v3.13.0\n- ea494ab chore(deps): update dependency org.apache.maven.plugins:maven-assembly-plugin to v3.7.1\n- e2ae9bf chore(deps): update dependency org.apache.maven.plugins:maven-assembly-plugin to v3.7.0\n- aa73ca4 chore(deps): update dependency com.fasterxml.jackson.core:jackson-databind to v2.16.2\n- 3bdc0cb chore(deps): update dependency org.kohsuke:github-api to v1.319\n- 3ab2ba8 chore(deps): update dependency org.apache.maven.plugins:maven-shade-plugin to v3.5.2\n- 979adc2 chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.18.1\n- ac585e8 chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.18.0\n- ea08486 chore(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.14.12\n- 025b9df chore(deps): update s4u/setup-maven-action action to v1.12.0\n- ff23375 chore(deps): update dependency org.junit.jupiter:junit-jupiter to v5.10.2\n- 4ce25ab chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.43.0\n- fc67dbf chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.17.0\n- ab8390b chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.42.0\n- 9eba0dd chore(deps): update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.2.5\n- 6c2f68c chore(deps): update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.2.5\n- a5c002c chore(deps): update dependency org.jsoup:jsoup to v1.17.2\n- 0a62c28 chore(deps): update dependency org.apache.maven.plugins:maven-compiler-plugin to v3.12.1\n- 7c2fe2f chore(deps): update dependency com.fasterxml.jackson.core:jackson-databind to v2.16.1\n- e87d6af chore(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.14.11\n- 964753f chore(deps): update dependency org.apache.maven.plugins:maven-compiler-plugin to v3.12.0\n- 1551d56 chore(deps): update dependency fr.inria.gforge.spoon.labs:gumtree-spoon-ast-diff to v1.69\n- b0bf521 chore(deps): update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.2.3\n- 37dce23 chore(deps): update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.2.3\n- 8b9f5a0 chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.16.1\n- 64f2207 chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.16.0\n- 1e869e5 chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.41.1\n- a9ff8ca chore(deps): update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.6.3\n- 83bbc79 chore(deps): update dependency org.apache.maven:maven-model to v3.9.6\n- 9f141c9 chore(deps): update dependency commons-io:commons-io to v2.15.1\n- d6e4e62 chore(deps): update dependency fr.inria.gforge.spoon.labs:gumtree-spoon-ast-diff to v1.68\n- 5dfb36a chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.41.0\n- 8f687af chore(deps): update dependency org.jsoup:jsoup to v1.17.1\n- cc917fb chore(deps): update s4u/setup-maven-action action to v1.11.0\n- 7d880ed chore(deps): update dependency org.kohsuke:github-api to v1.318\n- ad0c71f chore(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.14.10\n- 510bd0c chore(deps): update dependency com.fasterxml.jackson.core:jackson-databind to v2.16.0\n- a15110f chore(deps): update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.2.2\n- 0026edf chore(deps): update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.6.2\n- 94af354 chore(deps): update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.2.2\n- 0e43f9a chore(deps): update dependency org.junit.jupiter:junit-jupiter to v5.10.1\n- 40e674d chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.15.0\n- 9da9d6c chore(deps): update dependency commons-io:commons-io to v2.15.0\n- b34875d chore(deps): update actions/checkout action to v4 (#293)\n- 1281ac0 chore(deps): update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.2.1\n- 7f8ec11 chore(deps): update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.2.1\n- 03ff4ff chore(deps): update dependency org.apache.maven.plugins:maven-dependency-plugin to v3.6.1\n- 96595a0 chore(deps): update dependency org.jsoup:jsoup to v1.16.2\n- 89ed375 chore(deps): update dependency org.kohsuke:github-api to v1.317\n- aac2195 chore(deps): update dependency org.jacoco:jacoco-maven-plugin to v0.8.11\n- d25a7f0 chore(deps): up ...",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.5.4",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.5.4",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.5.4",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/173497365",
+                "release_id": 173497365,
+                "date_created": "2024-09-04T19:21:21Z",
+                "date_published": "2024-09-04T19:24:28Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/110972163",
+                "tag": "v0.5.3",
+                "name": "v0.5.3",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udd04\ufe0f Changes\n- a09356e style: Refactor CollectorAgent.java for readability and performance (#275)\n- c2c1233 revert: remove sbom-monitor as it is being tested in #268\n\n## \ud83e\uddf0 Tasks\n- 7f74813 chore: releasing version 0.5.3\n- c406590 chore(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.4.0-beta-13\n- 9e8a21e chore(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.4.0-beta-12\n- 0a7de8f chore(deps): update dependency org.apache.maven:maven-model to v3.9.3\n- a064656 chore(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.4.0-beta-11\n- 6115aa2 chore(deps): update dependency org.apache.maven.plugins:maven-shade-plugin to v3.5.0\n- bdd3ca6 chore(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.4.0-beta-10\n- 74c646a chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.10.0\n- 41d345d chore(deps): update dependency commons-io:commons-io to v2.13.0\n- 153b812 chore(deps): update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.1.2\n- c0ff91f chore(deps): update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.1.2\n- b98c21b chore(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.4.0-beta-9\n- 4f2c650 chore(deps): update dependency info.picocli:picocli to v4.7.4\n- 376eae6 chore(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.14.5\n- e84b94e chore(deps): update dependency org.kohsuke:github-api to v1.315\n- e22427a chore(deps): update dependency com.fasterxml.jackson.core:jackson-databind to v2.15.2\n- 08d55a8 chore(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.4.0-beta-8\n- 3f89871 chore: setting SNAPSHOT version 0.5.3-SNAPSHOT\n\n## \ud83d\udee0  Build\n- f0160f4 test: disable flaky test (#277)\n- 1c77671 ci: Update GitHub Actions workflows to test with multiple Maven versions (#276)\n- eda302d ci: use git diff to compute diff\n- 5a210ac ci: fix syntax\n- c15ac2c ci: provide absolute path to diff utility\n- 748ba5c ci: use the correct reference for base reference\n- 590806a ci: fix sbom monitor job\n- c1c941f ci: add a job for posting diff in SBOM as PR comments\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ()\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))\n- renovate[bot] ([@renovate[bot]](https://github.com/apps/renovate))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.5.3",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.5.3",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.5.3",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/110972163",
+                "release_id": 110972163,
+                "date_created": "2023-07-04T10:59:31Z",
+                "date_published": "2023-07-04T11:02:54Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/104980434",
+                "tag": "v0.5.2",
+                "name": "v0.5.2",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udc1b Fixes\n- 4a432a7 fix(trace-diff): prevent trailing dot in the last array element (#256)\n\n## \ud83e\uddf0 Tasks\n- d1365a9 chore: releasing version 0.5.2\n- 2d0160f chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.37.0 (#255)\n- 61430c3 chore(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.4.0-beta-7\n- 2c11c9f chore(deps): update dependency org.apache.maven.plugins:maven-dependency-plugin to v3.6.0\n- 4ef657b chore(deps): update dependency fr.inria.gforge.spoon.labs:gumtree-spoon-ast-diff to v1.62\n- df75869 chore(deps): update dependency org.apache.maven.plugins:maven-source-plugin to v3.3.0\n- e3fa78d chore: setting SNAPSHOT version 0.5.2-SNAPSHOT\n\n## \ud83d\udee0  Build\n- a413f12 ci: remove JRELEASER_VERSION file\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ()\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))\n- renovate[bot] ([@renovate[bot]](https://github.com/apps/renovate))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.5.2",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.5.2",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.5.2",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/104980434",
+                "release_id": 104980434,
+                "date_created": "2023-05-28T11:20:47Z",
+                "date_published": "2023-05-28T11:23:11Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/103346313",
+                "tag": "v0.5.1",
+                "name": "v0.5.1",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udc1b Fixes\n- fcea85a fix: avoid caching modules to prevent race-condition (#245)\n\n## \ud83e\uddf0 Tasks\n- 625a7eb chore: releasing version 0.5.1\n- d039302 chore(deps): update dependency commons-io:commons-io to v2.12.0\n- e045714 chore(deps): update dependency com.fasterxml.jackson.core:jackson-databind to v2.15.1\n- 52d6ecf chore(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.4.0-beta-6\n- 3aa4be3 chore(deps): update dependency org.apache.maven.plugins:maven-assembly-plugin to v3.6.0\n- 217248c chore(deps): update dependency org.apache.maven:maven-model to v3.9.2\n- 997f608 chore(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.4.0-beta-5\n- 317b782 chore(deps): update dependency fr.inria.gforge.spoon.labs:gumtree-spoon-ast-diff to v1.61\n- 823c779 chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.9.1\n- ba3be20 chore(deps): update dependency org.apache.maven.plugins:maven-surefire-plugin to v3.1.0\n- 59ec5d5 chore(deps): update dependency org.apache.maven.plugins:maven-failsafe-plugin to v3.1.0\n- 8837463 chore: setting SNAPSHOT version 0.5.1-SNAPSHOT\n\n## \ud83d\udee0  Build\n- 31ec3a5 ci: actually sign commits\n- abd235e ci: sign commits that are created by GitHub action bot while releasing\n- 5156ecf test: add test to verify collection of data for null objects (#236)\n- c7418b4 ci: use latest version for jreleaser\n\n## \ud83d\udcdd Documentation\n- 90062fb docs: add a better example diff\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ()\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))\n- renovate[bot] ([@renovate[bot]](https://github.com/apps/renovate))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.5.1",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.5.1",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.5.1",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/103346313",
+                "release_id": 103346313,
+                "date_created": "2023-05-17T16:03:07Z",
+                "date_published": "2023-05-17T16:05:25Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/101624967",
+                "tag": "v0.5.0",
+                "name": "v0.5.0",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\ude80 Features\n- 1b2bc12 feat: record matched lines inside constructor (#228)\n\n## \ud83d\udd04\ufe0f Changes\n- 31bb9b5 refactor: throw exception when hash is not long enough (#227)\n\n## \ud83e\uddf0 Tasks\n- 0b44b01 chore: releasing version 0.5.0\n- 17a0fec chore(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.4.0-beta-4\n- 8d42d6b chore: setting SNAPSHOT version 0.4.2-SNAPSHOT\n\n## \ud83d\udee0  Build\n- 2f48d9a test: ensure value returned by constructor is recorded (#229)\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ()\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))\n- renovate[bot] ([@renovate[bot]](https://github.com/apps/renovate))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.5.0",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.5.0",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.5.0",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/101624967",
+                "release_id": 101624967,
+                "date_created": "2023-05-02T18:48:57Z",
+                "date_published": "2023-05-02T18:51:14Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/101424669",
+                "tag": "v0.4.1",
+                "name": "v0.4.1",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udd00 Merge\n- 5d635ae Merge pull request #223 from ASSERT-KTH/fix/return-diff-on-unchanged\n\n## \ud83d\udc1b Fixes\n- 55bf933 fix: return diff on unchanged methods ignored\n\n## \ud83e\uddf0 Tasks\n- de20591 chore: releasing version 0.4.1\n- 65db9be chore: removed unused file\n- 80172a0 chore: spotless applied\n- 49734d5 chore(deps): update dependency org.jsoup:jsoup to v1.16.1\n- 296c328 chore: setting SNAPSHOT version 0.4.1-SNAPSHOT\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- GitHub ()\n- Khashayar Etemadi ([@khaes-kth](https://github.com/khaes-kth))\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))\n- renovate[bot] ([@renovate[bot]](https://github.com/apps/renovate))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.4.1",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.4.1",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.4.1",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/101424669",
+                "release_id": 101424669,
+                "date_created": "2023-04-30T23:28:43Z",
+                "date_published": "2023-04-30T23:30:54Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/101137856",
+                "tag": "v0.4.0",
+                "name": "v0.4.0",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\ude80 Features\n- 89fdf98 feat: exclude random values (#205)\n\n## \ud83e\uddf0 Tasks\n- 4ba3a0c chore: releasing version 0.4.0\n- f4a8c34 chore(deps): update dependency org.junit.jupiter:junit-jupiter to v5.9.3\n- cb92601 chore(deps): update dependency org.jacoco:jacoco-maven-plugin to v0.8.10\n- ae11acb chore: setting SNAPSHOT version 0.3.4-SNAPSHOT\n\n## \ud83d\udcdd Documentation\n- bba4f00 docs: add maven central badge\n- 43ec451 docs: update description of tool (#209)\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ()\n- Khashayar Etemadi ([@khaes-kth](https://github.com/khaes-kth))\n- Martin Monperrus ([@monperrus](https://github.com/monperrus))\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))\n- renovate[bot] ([@renovate[bot]](https://github.com/apps/renovate))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.4.0",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.4.0",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.4.0",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/101137856",
+                "release_id": 101137856,
+                "date_created": "2023-04-27T15:06:11Z",
+                "date_published": "2023-04-27T15:09:02Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100865837",
+                "tag": "v0.3.3",
+                "name": "v0.3.3",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udc1b Fixes\n- 1fa9773 fix: do not load classes for verification (#207)\n\n## \ud83e\uddf0 Tasks\n- 878026a chore: releasing version 0.3.3\n- 9f9425e chore(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.4.0-beta-3 (#196)\n- f477bc6 chore: setting SNAPSHOT version 0.3.3-SNAPSHOT\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ()\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))\n- renovate[bot] ([@renovate[bot]](https://github.com/apps/renovate))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.3.3",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.3.3",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.3.3",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100865837",
+                "release_id": 100865837,
+                "date_created": "2023-04-25T20:33:01Z",
+                "date_published": "2023-04-25T20:35:20Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100850020",
+                "tag": "v0.3.2",
+                "name": "v0.3.2",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udc1b Fixes\n- d834103 fix: update versions for maven.compile(r) (#204)\n\n## \ud83e\uddf0 Tasks\n- 59bbbaf chore: releasing version 0.3.2\n- 12c1fca chore: setting SNAPSHOT version 0.3.2-SNAPSHOT\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ()\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.3.2",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.3.2",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.3.2",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100850020",
+                "release_id": 100850020,
+                "date_created": "2023-04-25T18:15:50Z",
+                "date_published": "2023-04-25T18:18:06Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100845303",
+                "tag": "v0.3.1",
+                "name": "v0.3.1",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udc1b Fixes\n- e8eaf3c fix: remove instrumentation of throw instruction (#203)\n\n## \ud83d\udd04\ufe0f Changes\n- db1ce2b refactor: create another methods.txt file for right version (#202)\n\n## \ud83e\uddf0 Tasks\n- bc28c84 chore: releasing version 0.3.1\n- 863364c chore: setting SNAPSHOT version 0.3.1-SNAPSHOT\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ()\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.3.1",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.3.1",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.3.1",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100845303",
+                "release_id": 100845303,
+                "date_created": "2023-04-25T17:32:26Z",
+                "date_published": "2023-04-25T17:34:34Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100811246",
+                "tag": "v0.3.0",
+                "name": "v0.3.0",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\ude80 Features\n- 029f638 feat: update properties to `1.6` if it is `5` or `1.5` (#199)\n\n## \ud83e\uddf0 Tasks\n- be45366 chore: releasing version 0.3.0\n- e0487dc chore: setting SNAPSHOT version 0.2.1-SNAPSHOT\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ()\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.3.0",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.3.0",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.3.0",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100811246",
+                "release_id": 100811246,
+                "date_created": "2023-04-25T13:24:35Z",
+                "date_published": "2023-04-25T13:27:02Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100796101",
+                "tag": "v0.2.0",
+                "name": "v0.2.0",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\ude80 Features\n- 64cc8c7 feat: add option to clean up generated directories after JVM exit (#197)\n\n## \ud83d\udd04\ufe0f Changes\n- 385cd4c refactor: make hardcode consistent with actual behaviour (#193)\n\n## \ud83e\uddf0 Tasks\n- dc6034e chore: releasing version 0.2.0\n- a7be54a chore(deps): update dependency fr.inria.gforge.spoon.labs:gumtree-spoon-ast-diff to v1.60 (#194)\n- 63d627a chore: setting SNAPSHOT version 0.1.7-SNAPSHOT\n\n## \ud83d\udcdd Documentation\n- 65b48cc docs: fix default value of `numberOfArrayElements`\n- 3ed5dd7 docs: add artifact verification protocol (#189)\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ()\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))\n- renovate[bot] ([@renovate[bot]](https://github.com/apps/renovate))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.2.0",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.2.0",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.2.0",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100796101",
+                "release_id": 100796101,
+                "date_created": "2023-04-25T11:33:36Z",
+                "date_published": "2023-04-25T11:36:50Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100677133",
+                "tag": "v0.1.6",
+                "name": "v0.1.6",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udc1b Fixes\n- e900ed1 fix: clone the first `20` elements of array (#191)\n\n## \ud83d\udd04\ufe0f Changes\n- 96eeffa style: please spotless\n- 12f2ff0 revert: Revert \"chore: releasing version 0.1.6\"\n- 48f18e5 revert: Revert \"chore: releasing version 0.1.6\"\n- 1ffe9ee revert: Revert \"chore: releasing version 0.1.6\"\n- 80d89f3 revert: Revert \"chore: releasing version 0.1.6\"\n\n## \ud83e\uddf0 Tasks\n- f877f8c chore: releasing version 0.1.6\n- 2a95b17 chore: releasing version 0.1.6\n- a914931 chore: releasing version 0.1.6\n- bbb1504 chore: update jreleaser version\n- ff21763 chore: releasing version 0.1.6\n- 9531db9 chore: releasing version 0.1.6\n- b7d18c3 chore(deps): update dependency com.fasterxml.jackson.core:jackson-databind to v2.15.0\n- a05227c chore(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.9.0\n- 16ad213 chore(deps): update dependency org.apache.maven.plugins:maven-javadoc-plugin to v3.5.0\n- cfef8f8 chore: configure maven central deployment (#186)\n- 54af9b0 chore: setting SNAPSHOT version 0.1.6-SNAPSHOT\n\n## \ud83d\udee0  Build\n- 5057670 ci: comply with pomchecker run by jreleaser\n- c0e3970 ci: fix POM to comply with maven central requirements\n- aeb3003 ci: be consistent\n\n## \ud83d\udcdd Documentation\n- ffdbc72 docs: fix @throw docstring of MatchedLineFinder (#192)\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ()\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))\n- renovate[bot] ([@renovate[bot]](https://github.com/apps/renovate))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.1.6",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.1.6",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.1.6",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100677133",
+                "release_id": 100677133,
+                "date_created": "2023-04-24T15:10:48Z",
+                "date_published": "2023-04-24T15:13:44Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100169852",
+                "tag": "v0.1.5",
+                "name": "v0.1.5",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udd04\ufe0f Changes\n- 01c6469 perf: exclude our own code (#185)\n\n## \ud83e\uddf0 Tasks\n- a23b7e4 chore: releasing version 0.1.5\n- 2f0725a chore: set a real group ID (#184)\n- 8c08fde chore: remove redundant version\n- b090b08 chore: change commit message of renovate PRs\n- 7d697b6 chore: setting SNAPSHOT version 0.1.5-SNAPSHOT\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ([@betterqualityassuranceuser](https://github.com/betterqualityassuranceuser))\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.1.5",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.1.5",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.1.5",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100169852",
+                "release_id": 100169852,
+                "date_created": "2023-04-20T09:19:31Z",
+                "date_published": "2023-04-20T09:20:22Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100122903",
+                "tag": "v0.1.4",
+                "name": "v0.1.4",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udc1b Fixes\n- e766785 fix: clone array before storing it as runtime value (#179)\n- a2326b1 fix(deps): update dependency info.picocli:picocli to v4.7.3 (#180)\n\n## \ud83e\uddf0 Tasks\n- 5a5ab86 chore: releasing version 0.1.4\n- e336fce chore: setting SNAPSHOT version 0.1.4-SNAPSHOT\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ([@betterqualityassuranceuser](https://github.com/betterqualityassuranceuser))\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))\n- renovate[bot] ([@renovate[bot]](https://github.com/apps/renovate))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.1.4",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.1.4",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.1.4",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/100122903",
+                "release_id": 100122903,
+                "date_created": "2023-04-19T21:35:46Z",
+                "date_published": "2023-04-19T21:36:40Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/99973831",
+                "tag": "v0.1.3",
+                "name": "v0.1.3",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udc1b Fixes\n- fd657ff fix: remove debugging configuration from compiler plugin (#178)\n\n## \ud83e\uddf0 Tasks\n- 0f4d403 chore: releasing version 0.1.3\n- 98c5e5f chore: setting SNAPSHOT version 0.1.3-SNAPSHOT\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ([@betterqualityassuranceuser](https://github.com/betterqualityassuranceuser))\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.1.3",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.1.3",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.1.3",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/99973831",
+                "release_id": 99973831,
+                "date_created": "2023-04-18T21:11:23Z",
+                "date_published": "2023-04-18T21:12:10Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/99948241",
+                "tag": "v0.1.2",
+                "name": "v0.1.2",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\n## \ud83d\udc1b Fixes\n- 27f5dfa fix: set source and target version as `1.6` if they are `5` or `1.5` (#177)\n- b6dc916 fix(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.4.0-beta-2\n\n## \ud83e\uddf0 Tasks\n- 6cabc11 chore: releasing version 0.1.2\n- 4aaff37 chore: specify the version of SNAPSHOT\n- 266cc57 chore: use tag name for name of the release\n- ea98d3c chore: setting SNAPSHOT version 0.1.1\n\n\n## Contributors\nWe'd like to thank the following people for their contributions:\n- Aman Sharma ([@algomaster99](https://github.com/algomaster99))\n- GitHub ([@betterqualityassuranceuser](https://github.com/betterqualityassuranceuser))\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))\n- renovate[bot] ([@renovate[bot]](https://github.com/apps/renovate))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.1.2",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.1.2",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.1.2",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/99948241",
+                "release_id": 99948241,
+                "date_created": "2023-04-18T17:21:27Z",
+                "date_published": "2023-04-18T17:22:14Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/99576290",
+                "tag": "v0.1.1",
+                "name": "v0.1.1",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\r\n\r\n## \ud83d\udc1b Fixes\r\n- a29058f fix: append `.` to array element (#173)\r\n- f8c357d fix: print canonical class name instead of toString representation (#172)\r\n- 75f0829 fix: force fetching of agent (#171)\r\n\r\n## \ud83e\uddf0 Tasks\r\n- 9847a2a chore: releasing version 0.1.1\r\n- 4aaee45 chore: contributor is a contributor!\r\n- 5698fbf chore: prevent files generated by jreleaser from being pushed (#170)\r\n- a14cf17 chore: delete files pushed by JReleaser\r\n- 1e127bc chore: setting SNAPSHOT version 0.1.0\r\n\r\n\r\n## Contributors\r\nWe'd like to thank the following people for their contributions:\r\n- Aman Sharma ()\r\n- GitHub ([@betterqualityassuranceuser](https://github.com/betterqualityassuranceuser))\r\n- github-actions[bot] ([@github-actions[bot]](https://github.com/apps/github-actions))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.1.1",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.1.1",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.1.1",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/99576290",
+                "release_id": 99576290,
+                "date_created": "2023-04-14T17:15:10Z",
+                "date_published": "2023-04-14T17:15:53Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/99563765",
+                "tag": "v0.1.0",
+                "name": "v0.1.0",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\r\n\r\n## \ud83d\udd00 Merge\r\n- 1253a0a Merge pull request #69 from algomaster99/start-maintaining-version\r\n\r\n## \ud83d\ude80 Features\r\n- 71bc8b2 feat: add ability to run specific tests (#148)\r\n- 5172474 feat: integrate patch explainer to run along with Main (#147)\r\n- 92fcbf4 feat: parse default methods in interfaces (#118)\r\n- 6244924 feat: pass methods explicitly to record their return values (#76)\r\n\r\n## \ud83d\udc1b Fixes\r\n- 8bcf830 fix: prevent generation of backup poms (#167)\r\n- 7ad1712 fix: add more attributes to prevent build from failing (#161)\r\n- 60136b3 fix(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.8.3\r\n- 584b910 fix(deps): update dependency org.ow2.asm:asm-util to v9.5\r\n- 7c8a156 fix(deps): update dependency org.ow2.asm:asm-tree to v9.5\r\n- 319a09f fix(deps): update dependency org.ow2.asm:asm to v9.5\r\n- 3b58dc0 fix(deps): update dependency org.kohsuke:github-api to v1.314\r\n- 8c2d5f9 fix(deps): update dependency org.jsoup:jsoup to v1.15.4\r\n- e499e7b fix(deps): update dependency fr.inria.gforge.spoon.labs:gumtree-spoon-ast-diff to v1.59\r\n- 651c87a fix(deps): update dependency org.junit.jupiter:junit-jupiter to v5.9.2\r\n- 2f1b0c2 fix(deps): update dependency com.googlecode.json-simple:json-simple to v1.1.1\r\n- cb9b470 fix: prevent failing tests if none are found (#150)\r\n- 4713ab8 fix: put fully qualified class names with `/` as delimiter (#146)\r\n- 6da313e fix(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.14.4\r\n- dba8a28 fix(deps): update dependency info.picocli:picocli to v4.7.2\r\n- d886b7b fix(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.3.0 (#132)\r\n- ed893af fix: include all line numbers that are part of multi-line expression (#121)\r\n- 45728df fix: ignore imports when computing mapping (#117)\r\n- ea1ad94 fix: add timeout so that event is not looked for forever\r\n- 1007c58 fix: fix serialisation of special floating value (#102)\r\n- e02b54d fix: serialise special floating point values (#100)\r\n- 145c948 fix: check for ignoring prior to performing operation on statement\r\n- 734a545 fix: skip lines in other file that are affected by pure insert and delete operations (#91)\r\n- 3eb35f1 fix: skip all statements inside inserted nodes (#89)\r\n- 6d5316c fix: correct computation of `diff method` when there is an `InsertOperation` (#75)\r\n- 3bec872 fix: optimise serialisation of output (#74)\r\n- 986e769 fix: put breakpoints inside case blocks (#70)\r\n\r\n## \ud83d\udd04\ufe0f Changes\r\n- 556b6c1 refactor: use one fixed path for chromium driver (#165)\r\n- e87123d refactor: use our own Pair (#157)\r\n- 412f874 refactor: use `jackson` in `trace-diff` (#156)\r\n- 035b6da refactor: move common utilities to commons module (#155)\r\n- ad63110 refactor: integrate PatchExplainer as trace-diff (#139)\r\n- 87c6aee refactor: remove unnecessary nesting\r\n- e0037b1 refactor: modularise project (#125)\r\n- 4aa3d36 refactor: use instrumentation to collect trace (#123)\r\n- ca668bc perf: destroy debuggee after the debugger ends (#120)\r\n- a33c5f9 refactor: rewrite MatchedLineFinder to find breakpoints using UNIX diff instead of AST diff (#93)\r\n- 47a344b style: mark options as required to prevent NPE\r\n- 229ced3 refactor: log invalid breakpoints (#71)\r\n\r\n## \ud83e\uddf0 Tasks\r\n- 901237f chore: releasing version 0.1.0\r\n- e608ddf chore: fix name of artifact jar (#169)\r\n- 802ff45 chore: releasing version 0.1.0\r\n- cd23829 chore: package before release (#168)\r\n- be58a87 chore: releasing version 0.1.0\r\n- b47e5cd chore: add workflow to release collector-sahab (#166)\r\n- 307af29 chore(deps): update actions/checkout action to v3 (#138)\r\n- cb2ba05 chore(deps): update dependency org.apache.maven.plugins:maven-dependency-plugin to v3.5.0\r\n- 502abff chore: remove assembly of `trace-diff` (#163)\r\n- 830acb2 chore: distinguish local directory easily\r\n- 843e8b8 chore: transform all POMs in all submodules (#160)\r\n- 772af15 chore: bundle agent (#159)\r\n- b778076 chore(deps): update actions/setup-java action to v3 (#154)\r\n- 623bdb4 chore: remove unused dependency (#158)\r\n- d8cf826 chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.36.0\r\n- 5a85e4b chore(deps): update dependency org.jacoco:jacoco-maven-plugin to v0.8.9\r\n- 40085ee chore: enable automerge\r\n- 9a210f1 chore: add renovate configuration\r\n- a1cda64 chore: port script from Python to Java (#127)\r\n- f979de8 chore: prevent creation of dependency-reduced-pom\r\n- edf7375 chore: rename package (#124)\r\n- bddecba chore: Port gson to jackson\r\n- 01ed5bc chore: rename argument file\r\n- 8b7744a chore: use `@` to pass arguments to Java command (#111)\r\n- 138ce15 chore: fix clean up of generated directories\r\n- 5e7dbf3 chore: remove suppression of slf4j statements\r\n- 7dfc9ec chore: add features to run bribe-sahab on multiple commits simultaneously (#106)\r\n- 5d2980c chore: add config.json to gitignore\r\n- 645552f chore: make spotless compatible with maven 3.8.6 (#107)\r\n- 67ed8ab chore: wrap classpath finder inside try-catch\r\n- 05419f0 chore: prioritise our built classes (#99)\r\n- 0aa4b1f chore: run all JUnit tests in a single container (#97)\r\n- 49917a7 chore: update `JUnitTestRunner` to use the latest JUnit dependencies (#95)\r\n- b50a129 chore: sanitise bash input\r\n- 8888ff2 chore: remove explict setting of maven compiler version\r\n- e52a5c8 chore: handle multi-modular maven projects (#87)\r\n\r\n## \ud83d\udcdd Documentation\r\n- d36c004 docs: add citation information\r\n- ad87ef5 docs: instruction to get chromium driver\r\n- b9d693a docs: update prerequisite\r\n- e2f384f docs: add example diff\r\n- fc4003e docs: add integration test badge\r\n- 28751ba docs: update README\r\n- 19bfdb8 docs: fix example\r\n\r\n---\r\n- 0023c4c Revert \"chore: releasing version 0.1.0\"\r\n- 038303a Revert \"chore: releasing version 0.1.0\"\r\n- ae67783 tests: add infrastructure for integration tests (#162)\r\n- ca58725 tests: add infrastructure for integration tests (#162)\r\n- 243d983 doc: fix module names\r\n- 8d07eba doc: update README based on the sprint in the last two weeks :relieved:\r\n- 325bb98 doc: Give authorship to Khashayar\r\n- 24c50f0 refator: rename parent module (#126)\r\n- b7d5f7d tests: prove JUnit does not care about 'Test' prefix or suffix (#114)\r\n- ab964e0 tests: prove JUnit cannot discover tests in abstract classes (#113)\r\n- 17c910b tests: add test to check data is collected from methods that are run by nested tests\r\n- ee12bdd chrore: Use config file for JAR and output directory (#105)\r\n- fb1957c tests: load classpath from cp.txt (#98)\r\n- f0803bc Build classpath instead of copying dependencies (#96)\r\n- 5cbad7c tests: add test that shows inaccuracy between GitHub diff and AST Diff (#90)\r\n- b2de6b5 tests: add failing test for case when argument difference is not detected (#82)\r\n- 09d2702 tests: ensure methods.json is created even if there are no breakpoints (#81)\r\n- 501e6e0 tests: skip recording return values if fully qualified name does not match (#80)\r\n- 69088ca Prepare for next release\r\n\r\n\r\n## Contributors\r\nWe'd like to thank the following people for their contributions:\r\n- Aman Sharma ()\r\n- I-Al-Istannen ([@I-Al-Istannen](https://github.com/I-Al-Istannen))\r\n- Khashayar Etemadi ([@khaes-kth](https://github.com/khaes-kth))",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/v0.1.0",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/v0.1.0",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/v0.1.0",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/99563765",
+                "release_id": 99563765,
+                "date_created": "2023-04-14T15:15:47Z",
+                "date_published": "2023-04-14T15:16:41Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/99453133",
+                "tag": "early-access",
+                "name": "Release early-access",
+                "author": {
+                    "name": "algomaster99",
+                    "type": "User"
+                },
+                "description": "## Changelog\n\nfc4003e docs: add integration test badge\nae67783 tests: add infrastructure for integration tests (#162)\nca58725 tests: add infrastructure for integration tests (#162)\n502abff chore: remove assembly of `trace-diff` (#163)\n830acb2 chore: distinguish local directory easily\n7ad1712 fix: add more attributes to prevent build from failing (#161)\n843e8b8 chore: transform all POMs in all submodules (#160)\n60136b3 fix(deps): update dependency org.seleniumhq.selenium:selenium-java to v4.8.3\n584b910 fix(deps): update dependency org.ow2.asm:asm-util to v9.5\n7c8a156 fix(deps): update dependency org.ow2.asm:asm-tree to v9.5\n28751ba docs: update README\n772af15 chore: bundle agent (#159)\nb778076 chore(deps): update actions/setup-java action to v3 (#154)\n623bdb4 chore: remove unused dependency (#158)\ne87123d refactor: use our own Pair (#157)\n412f874 refactor: use `jackson` in `trace-diff` (#156)\n035b6da refactor: move common utilities to commons module (#155)\n319a09f fix(deps): update dependency org.ow2.asm:asm to v9.5\n19bfdb8 docs: fix example\n3b58dc0 fix(deps): update dependency org.kohsuke:github-api to v1.314\n8c2d5f9 fix(deps): update dependency org.jsoup:jsoup to v1.15.4\ne499e7b fix(deps): update dependency fr.inria.gforge.spoon.labs:gumtree-spoon-ast-diff to v1.59\nd8cf826 chore(deps): update dependency com.diffplug.spotless:spotless-maven-plugin to v2.36.0\n651c87a fix(deps): update dependency org.junit.jupiter:junit-jupiter to v5.9.2\n2f1b0c2 fix(deps): update dependency com.googlecode.json-simple:json-simple to v1.1.1\ncb9b470 fix: prevent failing tests if none are found (#150)\n243d983 doc: fix module names\n8d07eba doc: update README based on the sprint in the last two weeks :relieved:\n71bc8b2 feat: add ability to run specific tests (#148)\n5172474 feat: integrate patch explainer to run along with Main (#147)\n4713ab8 fix: put fully qualified class names with `/` as delimiter (#146)\n5a85e4b chore(deps): update dependency org.jacoco:jacoco-maven-plugin to v0.8.9\n325bb98 doc: Give authorship to Khashayar\nad63110 refactor: integrate PatchExplainer as trace-diff (#139)\n6da313e fix(deps): update dependency net.bytebuddy:byte-buddy-dep to v1.14.4\ndba8a28 fix(deps): update dependency info.picocli:picocli to v4.7.2\nd886b7b fix(deps): update dependency fr.inria.gforge.spoon:spoon-core to v10.3.0 (#132)\n40085ee chore: enable automerge\n9a210f1 chore: add renovate configuration\na1cda64 chore: port script from Python to Java (#127)\nf979de8 chore: prevent creation of dependency-reduced-pom\n24c50f0 refator: rename parent module (#126)\n87c6aee refactor: remove unnecessary nesting\ne0037b1 refactor: modularise project (#125)\nedf7375 chore: rename package (#124)\nbddecba chore: Port gson to jackson\n4aa3d36 refactor: use instrumentation to collect trace (#123)\n01ed5bc chore: rename argument file\ned893af fix: include all line numbers that are part of multi-line expression (#121)\nca668bc perf: destroy debuggee after the debugger ends (#120)\n92fcbf4 feat: parse default methods in interfaces (#118)\n45728df fix: ignore imports when computing mapping (#117)\nb7d5f7d tests: prove JUnit does not care about 'Test' prefix or suffix (#114)\nab964e0 tests: prove JUnit cannot discover tests in abstract classes (#113)\n8b7744a chore: use `@` to pass arguments to Java command (#111)\n138ce15 chore: fix clean up of generated directories\n5e7dbf3 chore: remove suppression of slf4j statements\nea1ad94 fix: add timeout so that event is not looked for forever\n7dfc9ec chore: add features to run bribe-sahab on multiple commits simultaneously (#106)\n5d2980c chore: add config.json to gitignore\n645552f chore: make spotless compatible with maven 3.8.6 (#107)\n17c910b tests: add test to check data is collected from methods that are run by nested tests\nee12bdd chrore: Use config file for JAR and output directory (#105)\n67ed8ab chore: wrap classpath finder inside try-catch\n1007c58 fix: fix serialisation of special floating value (#102)\ne02b54d fix: serialise special floating point values (#100)\n05419f0 chore: prioritise our built classes (#99)\nfb1957c tests: load classpath from cp.txt (#98)\n0aa4b1f chore: run all JUnit tests in a single container (#97)\nf0803bc Build classpath instead of copying dependencies (#96)\n49917a7 chore: update `JUnitTestRunner` to use the latest JUnit dependencies (#95)\n145c948 fix: check for ignoring prior to performing operation on statement\na33c5f9 refactor: rewrite MatchedLineFinder to find breakpoints using UNIX diff instead of AST diff (#93)\n734a545 fix: skip lines in other file that are affected by pure insert and delete operations (#91)\n5cbad7c tests: add test that shows inaccuracy between GitHub diff and AST Diff (#90)\n3eb35f1 fix: skip all statements inside inserted nodes (#89)\nb50a129 chore: sanitise bash input\n8888ff2 chore: remove explict setting of maven compiler version\ne52a5c8 chore: handle multi-modular maven projects (#87)\nb2de6b5 tests: add failing test for case when argument difference is not detected (#82)\n09d2702 tests: ensure methods.json is created even if there are no breakpoints (#81)\n501e6e0 tests: skip recording return values if fully qualified name does not match (#80)\n6244924 feat: pass methods explicitly to record their return values (#76)\n47a344b style: mark options as required to prevent NPE\n6d5316c fix: correct computation of `diff method` when there is an `InsertOperation` (#75)\n3bec872 fix: optimise serialisation of output (#74)\n229ced3 refactor: log invalid breakpoints (#71)\n986e769 fix: put breakpoints inside case blocks (#70)\n1253a0a Merge pull request #69 from algomaster99/start-maintaining-version\n69088ca Prepare for next release",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/tarball/early-access",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/zipball/early-access",
+                "html_url": "https://github.com/ASSERT-KTH/collector-sahab/releases/tag/early-access",
+                "url": "https://api.github.com/repos/ASSERT-KTH/collector-sahab/releases/99453133",
+                "release_id": 99453133,
+                "date_created": "2023-04-13T19:25:40Z",
+                "date_published": "2023-04-13T19:39:21Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "cff-version: 1.2.0\npreferred-citation:\n  title: \"Augmenting Diffs With Runtime Information\"\n  doi: \"https://doi.org/10.1109/TSE.2023.3324258\"\n  year: \"2023\"\n  type: article\n  journal: \"IEEE Transactions on Software Engineering\"\n  authors:\n    - family-names: Etemadi\n      given-names: Khashayar\n    - family-names: Sharma\n      given-names: Aman\n    - family-names: Madeiral\n      given-names: Fernanda\n    - family-names: Monperrus\n      given-names: Martin\n",
+                "type": "File_dump",
+                "format": "cff"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ASSERT-KTH/collector-sahab/main/CITATION.cff"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ASSERT-KTH/collector-sahab/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ASSERT-KTH/collector-sahab/main/matched-line-finder/src/main/resources/diffn.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "![example-diff.png](readme_assets/example-diff.png)\n",
+                "type": "Text_excerpt",
+                "original_header": "Example Diff",
+                "parent_header": [
+                    "Collector Sahab"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ASSERT-KTH/collector-sahab/main/README.md"
+        },
+        {
+            "result": {
+                "value": " ```json\n{\n   \"breakpoint\": [\n         {\n            \"file\": \"foo/BasicMath.java\",\n            \"lineNumber\": 5,\n            \"stackFrameContext\": [\n            {\n               \"positionFromTopInStackTrace\": 1,\n               \"location\": \"foo.BasicMath:5\",\n               \"stackTrace\": [\n                  \"add:5, foo.BasicMath\",\n                  \"test_add:11, foo.BasicMathTest\",\n                  \"runTest:40, se.kth.debug.JUnitTestRunner\",\n                  \"lambda$main$0:16, se.kth.debug.JUnitTestRunner\",\n                  \"call:-1, se.kth.debug.JUnitTestRunner$$Lambda$1.81628611\"\n               ],\n               \"runtimeValueCollection\": [\n                  {\n                     \"kind\": \"LOCAL_VARIABLE\",\n                     \"name\": \"x\",\n                     \"type\": \"int\",\n                     \"value\": 23,\n                     \"fields\": null,\n                     \"arrayElements\": null\n                  },\n                  {  \n                     \"kind\": \"LOCAL_VARIABLE\",\n                     \"name\": \"y\",\n                     \"type\": \"int\",\n                     \"value\": 2,\n                     \"fields\": null,\n                     \"arrayElements\": null\n                  }\n               ]\n            }\n         ]\n      },\n      {\n         \"file\": \"foo/BasicMath.java\",\n         \"lineNumber\": 9,\n         \"stackFrameContext\": [\n            {\n               \"positionFromTopInStackTrace\": 1,\n               \"location\": \"foo.BasicMath:9\",\n               \"stackTrace\": [\n                  \"subtract:9, foo.BasicMath\",\n                  \"test_subtract:16, foo.BasicMathTest\",\n                  \"runTest:40, se.kth.debug.JUnitTestRunner\",\n                  \"lambda$main$0:16, se.kth.debug.JUnitTestRunner\",\n                  \"call:-1, se.kth.debug.JUnitTestRunner$$Lambda$1.81628611\"\n               ],\n               \"runtimeValueCollection\": [\n                  {\n                     \"kind\": \"LOCAL_VARIABLE\",\n                     \"name\": \"x\",\n                     \"type\": \"int\",\n                     \"value\": 2,\n                     \"fields\": null,\n                     \"arrayElements\": null\n                  },\n                  {\n                     \"kind\": \"LOCAL_VARIABLE\",\n                     \"name\": \"y\",\n                     \"type\": \"int\",\n                     \"value\": 1,\n                     \"fields\": null,\n                     \"arrayElements\": null\n                  } \n               ]\n            }\n         ]\n      }\n   ]\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Example trace",
+                "parent_header": [
+                    "Collector Sahab"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ASSERT-KTH/collector-sahab/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "   Please install `gawk` before proceeding. Use the following command.\n```shell\n$ sudo apt install gawk\n```\n\nYou also need to have ChromeDriver installed at path `/usr/bin/chromedriver`.\nRun the following command to get it:\n```shell\n$ sudo apt install chromium-chromedriver\n```\n\nAnd finally, a maven project hosted on GitHub. :smile:\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites",
+                "parent_header": [
+                    "Collector Sahab",
+                    "Execution"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ASSERT-KTH/collector-sahab/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "1. Package the entire project\n    ```bash\n   $ mvn package -DskipTests\n    ```\n2. (Optional) Run the tests\n    ```bash\n   $ mvn test\n    ```\n\n3. Prepare for execution of `collector sahab` by running. The following are the required parameters.\n   ```bash\n   $ java -jar main/target/collector-sahab-1.0-SNAPSHOT-jar-with-dependencies.jar \\\n          -p <path/to/project>\n          -l <left-commit>\n          -r <right-commit>\n          -c <relative/path/to/classfile>\n          --slug <orgName/repoName>\n   ```\n   The following are the optional parameters.\n   1. `--execution-depth` (integer): The depth of the stack trace to be collected. Default is `0`.\n   1. `--selected-test` (list of tests separated by comma): The tests to be executed. Default is `[]` which\n      runs every test in the target project.\n   2. `--output-path` (string): The path where the output will be stored. Default is `output.html`.\n   3. `--cleanup` (boolean): Whether to clean up the temporary files created during execution. Default is `false`.\n   4. `--exclude-random-values` (boolean): Whether to exclude random values in trace. Example: path to temporary files. Default is `false`.\n\n   Following parameters have not been added to `main`, but planned to be added in the future if needed.\n   \n   1.  `numberOfArrayElements`: The number of array elements to be collected. Default is `20`.\n\n   2. `extractParameters`: Whether to extract parameters of the method. Default is `false`. \n\n",
+                "type": "Text_excerpt",
+                "original_header": "Setup project for collecting runtime statistics",
+                "parent_header": [
+                    "Collector Sahab",
+                    "Execution"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ASSERT-KTH/collector-sahab/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Our releases are signed using `travis-gumtree-spoon`'s GPG key. The key is hosted\n[here](https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x1429025e3eda19a5).\nYou may run the following commands to verify the signature of a release.\n```shell\ngpg --recv-keys 1429025e3eda19a5\ngpg --verify collector-sahab-<VERSION>-jar-with-dependencies.jar.asc\n```\n> This signature is a type of [detached signature](https://en.wikipedia.org/wiki/Detached_signature),\n> so you need to have the JAR file as well to verify the signature.\n \n",
+                "original_header": "Releases"
+            },
+            "confidence": 0.9999055682468356,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ASSERT-KTH/collector-sahab/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Collector Sahab"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ASSERT-KTH/collector-sahab/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ASSERT-KTH/collector-sahab/main/readme_assets/example-diff.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ASSERT-KTH/collector-sahab/main/README.md"
+        }
+    ]
+}

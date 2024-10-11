@@ -1,0 +1,278 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:08:26"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/Code-Rep/HELoC",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "Code-Rep",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-12-28T12:05:17Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-02-08T10:57:39Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "HELoC",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "Code-Rep/HELoC",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Code-Rep/HELoC/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Code-Rep/HELoC/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/Code-Rep/HELoC/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 3644424
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Tcl",
+                "name": "Tcl",
+                "type": "Programming_language",
+                "size": 24432
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "PowerShell",
+                "name": "PowerShell",
+                "type": "Programming_language",
+                "size": 2934
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Batchfile",
+                "name": "Batchfile",
+                "type": "Programming_language",
+                "size": 2768
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Code-Rep/HELoC/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "pytorch 1.7.0 <br />\npython 3.7.8 <br />\ndgl 0.5.3 <br />\nflair 0.7 <br />\npycparser 2.20 <br />\njavalang 0.13.0 <br />\ngensim 3.8.3 <br />",
+                "type": "Text_excerpt",
+                "original_header": "Requirements <br />"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Code-Rep/HELoC/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "We extract the AST node embedding and path embedding in the following two steps:\n```\nrun python pre_training.py\\\n--data_path [The path to the dataset] \\\n--device['cpu'/'cuda']\n```",
+                "type": "Text_excerpt",
+                "original_header": "Usage"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Code-Rep/HELoC/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "A PyTorch Implementation of \"HELoC: Hierarchical Contrastive Learning of Source Code Representation\" \n",
+                "original_header": "HELoC: Hierarchical Contrastive Learning of Source Code Representation"
+            },
+            "confidence": 0.909232410539544,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Code-Rep/HELoC/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "HELoC is a self-supervised hierarchical contrastive learning model of source code representation. Its key idea is to  formulate the learning of AST hierarchy as a pretext task of self-supervised contrastive learning, where node level prediction (NEP) and node relationship optimization (NRO) are adopted as learning objectives to predict the level and learn the three topological relationships between the nodes, which makes the representation vectors of nodes with greater differences in AST levels farther apart in the embedding space. This further manifests as the representation of the AST\u2019s topology become more different in the embedding space, making it easier for the specific representation of a single AST to come to the surface and facilitating the downstream code similarity task. \nIn addition, we design a specialized GNN for AST hierarchical structures called RSGNN, which captures the AST hierarchy comprehensively by combining the self-attention mechanism ( trained for capturing global structure) with GCN ( skilled in capturing local structure). In addition, we add internal residual connection and external residual connection to the self-attention mechanism to address the gradient vanishing problem. \nHELoC is self-supervised and can be applied to many source code related downstream tasks after pre-training.  \n",
+                "original_header": "Map Any Code Snippet into Vector Embedding with HELoC"
+            },
+            "confidence": 0.9552243054847256,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Code-Rep/HELoC/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We evaluate HELoC model on three downstream tasks, code classification, code clone detection and code clustering. It is also expected to be helpful in more downstream tasks. \n",
+                "original_header": "Application of HELoC in downstream tasks"
+            },
+            "confidence": 0.9457789942233245,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Code-Rep/HELoC/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "In the code clustering task, we use the OJ and SA datasets for evaluation. \n",
+                "original_header": "Code Clustering <br />"
+            },
+            "confidence": 0.9460882644791205,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Code-Rep/HELoC/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": " ```\n run python clo.py \\\n--data_path [The path to the dataset] \\\n--device ['cpu'/'cuda']\\\n--pre_model [The path of the pre_model]\\\n--pair_file [The path of the clone pairs]\n``` \n",
+                "original_header": "Code Clone Detection <br />"
+            },
+            "confidence": 0.9999867731266302,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Code-Rep/HELoC/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": " ```\n run python clu.py \\\n --data_path [The path to the dataset]\\\n--device ['cpu'/'cuda']\\\n--pre_model [The path of the pre_model]\n``` \n",
+                "original_header": "Code Clustering <br />"
+            },
+            "confidence": 0.9995217876423609,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Code-Rep/HELoC/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "HELoC: Hierarchical Contrastive Learning of Source Code Representation"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Code-Rep/HELoC/master/README.md"
+        }
+    ]
+}

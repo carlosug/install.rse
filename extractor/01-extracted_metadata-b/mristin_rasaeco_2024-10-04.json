@@ -1,0 +1,650 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:21:26"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/mristin/rasaeco",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "mristin",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-12-11T10:36:49Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2021-07-12T19:17:04Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2020 Marko Ristin\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mristin/rasaeco/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Requirements Analysis for Software in AECO",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Digitalization is forging its path in the architecture, engineering, construction, operation (AECO) industry.\nThis trend demands not only solutions for data governance but also sophisticated cyber-physical systems with a high variety of stakeholder background and very complex requirements.\nExisting approaches to general requirements engineering ignore the context of the AECO industry.\nThis makes it harder for the software engineers usually lacking the knowledge of the industry context to elicit, analyze and structure the requirements and to effectively communicate with AECO professionals.\n\nTo live up to that task, we implemented a tool for collecting AECO-specific software requirements as scenarios with the aim to foster reuse and leverage domain knowledge.\nThe tool is based on a common pre-defined scenario space.\nIt allows you to represent and relate the scenarios in that scenario space, as well as specifically mark how the individual parts of the scenario relate to other scenarios and the space in general.\n\nThe scenarios are written in markdown with additional special markup tags.\nThe tool renders the scenarios into a collection of HTML documents giving you an introductory overview as well as pleasant reading experience based on multi-media and hyper-text.\n\nPlease refer to the corresponding publication for more details (see the next section).\n",
+                "type": "Text_excerpt",
+                "original_header": "Introduction",
+                "parent_header": [
+                    "RASAECO"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mristin/rasaeco/main/README.rst"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "    ```bim\n    reception_platform\n        is IfcBuildingElementType modeled in observed/main\n        with .ElementType == \"ReceptionPlatform\"\n    ``` \n",
+                "original_header": "Cheat-sheet"
+            },
+            "confidence": 0.9406247023589651,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mristin/rasaeco/main/README.rst"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Markdown can be sometimes unintuitive when mixed with the mark-up (XML) tags. You have to be careful\nwhen inserting new lines as they are going to be automatically converted by\n`marko library <https://pypi.org/project/marko/>`_ to ``<p>``. \n",
+                "original_header": "Known Issues"
+            },
+            "confidence": 0.9067486372762172,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mristin/rasaeco/main/README.rst"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "rasaeco",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "mristin/rasaeco",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mristin/rasaeco/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mristin/rasaeco/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/mristin/rasaeco/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 88007
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/45958069",
+                "tag": "v0.0.15",
+                "name": "rasaeco 0.0.15",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "* Instruct to use better `venv` directory name (#59)\r\n* Improve error messages on `scenarios_dir` (#58)\r\n* Describe the tool in more detail (#57)\r\n* Increase font size in volumetric thumbs (#52)",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.15",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.15",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.15",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/45958069",
+                "release_id": 45958069,
+                "date_created": "2021-07-09T10:04:17Z",
+                "date_published": "2021-07-09T10:04:38Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/40075880",
+                "tag": "v0.0.14",
+                "name": "rasaeco 0.0.14",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "* Add levels `person` and `crew` (#50)",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.14",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.14",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.14",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/40075880",
+                "release_id": 40075880,
+                "date_created": "2021-03-19T16:40:52Z",
+                "date_published": "2021-03-19T16:41:32Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/39952373",
+                "tag": "v0.0.13",
+                "name": "rasaeco 0.0.13",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "* Render volumetric thumbnail (#48)\r\n* Refactor loading ontology in a separate function (#47)",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.13",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.13",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.13",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/39952373",
+                "release_id": 39952373,
+                "date_created": "2021-03-17T16:05:33Z",
+                "date_published": "2021-03-17T16:06:28Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/38661737",
+                "tag": "v0.0.12",
+                "name": "rasaeco 0.0.12",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "* Fix markers for multiple paragraphs (#45)\r\n* Add arrows to relations in scenarios (#44)",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.12",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.12",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.12",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/38661737",
+                "release_id": 38661737,
+                "date_created": "2021-02-24T15:34:44Z",
+                "date_published": "2021-02-24T15:35:55Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/37288705",
+                "tag": "v0.0.11",
+                "name": "rasaeco 0.0.11",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "* Export to GraphViz dot format (#41)\r\n* Fix render to ignore invalid ref names (#40)\r\n* Add `<scnearioref>` (#39)",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.11",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.11",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.11",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/37288705",
+                "release_id": 37288705,
+                "date_created": "2021-02-03T11:06:24Z",
+                "date_published": "2021-02-03T11:07:42Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/36263842",
+                "tag": "v0.0.10",
+                "name": "rasaeco 0.0.10",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "* Allow for empty volumetric",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.10",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.10",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.10",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/36263842",
+                "release_id": 36263842,
+                "date_created": "2021-01-12T07:02:49Z",
+                "date_published": "2021-01-12T07:03:16Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/36178299",
+                "tag": "v0.0.9",
+                "name": "rasaeco 0.0.9",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "* Add index pane (#35)",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.9",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.9",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.9",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/36178299",
+                "release_id": 36178299,
+                "date_created": "2021-01-09T15:20:26Z",
+                "date_published": "2021-01-09T15:21:05Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/36174972",
+                "tag": "v0.0.8",
+                "name": "rasaeco 0.0.8",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "*  Introduce `<acceptance>` and `<acceptanceref>` (#32)\r\n* Introduce `<test>` and `<testref>` (#31)\r\n* Prettify references (#30)\r\n* Allow inter-scenario references (#29)\r\n* Add contact data to meta (#28)\r\n* Infer identifier as relative path (#27)\r\n*  Re-introduce `<model>` and `<def>` tags (#26)",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.8",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.8",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.8",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/36174972",
+                "release_id": 36174972,
+                "date_created": "2021-01-09T10:47:48Z",
+                "date_published": "2021-01-09T10:49:58Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/35450190",
+                "tag": "v0.0.7",
+                "name": "rasaeco 0.0.7",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "* Revert back to marko from markdown",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.7",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.7",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.7",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/35450190",
+                "release_id": 35450190,
+                "date_created": "2020-12-18T01:01:43Z",
+                "date_published": "2020-12-18T01:02:15Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/35449828",
+                "tag": "v0.0.6",
+                "name": "rasaeco 0.0.6",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "* Fix and test failure cases",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.6",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.6",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.6",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/35449828",
+                "release_id": 35449828,
+                "date_created": "2020-12-18T00:48:28Z",
+                "date_published": "2020-12-18T00:48:59Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/35316161",
+                "tag": "v0.0.5",
+                "name": "rasaeco 0.0.5",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "* Add relations section to scenarios (#15)",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.5",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.5",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.5",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/35316161",
+                "release_id": 35316161,
+                "date_created": "2020-12-15T21:25:48Z",
+                "date_published": "2020-12-15T21:26:28Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/35209775",
+                "tag": "v0.0.4",
+                "name": "rasaeco 0.0.4",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "* Fix logging in rendering going straihgt to stdout (#13)\r\n* Include sample scenarios in release (#11)\r\n* Pin numpy to 1.19.3 (#12)\r\n  See https://tinyurl.com/y3dm3h86",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.4",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.4",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.4",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/35209775",
+                "release_id": 35209775,
+                "date_created": "2020-12-13T20:45:21Z",
+                "date_published": "2020-12-13T20:49:36Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/35189929",
+                "tag": "v0.0.3",
+                "name": "rasaeco 0.0.3",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "* Move watchdog import to local scope (#8)\r\n* Add demo server (#7)",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.3",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.3",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.3",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/35189929",
+                "release_id": 35189929,
+                "date_created": "2020-12-12T15:30:10Z",
+                "date_published": "2020-12-12T15:30:55Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/35179582",
+                "tag": "v0.0.2",
+                "name": "rasaeco 0.0.2",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "* Add continuous rendering",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.2",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.2",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.2",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/35179582",
+                "release_id": 35179582,
+                "date_created": "2020-12-12T00:23:27Z",
+                "date_published": "2020-12-12T00:23:58Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mristin/rasaeco/releases/35176053",
+                "tag": "v0.0.1",
+                "name": "rasaeco 0.0.1",
+                "author": {
+                    "name": "mristin",
+                    "type": "User"
+                },
+                "description": "Initial kick-off release",
+                "tarball_url": "https://api.github.com/repos/mristin/rasaeco/tarball/v0.0.1",
+                "zipball_url": "https://api.github.com/repos/mristin/rasaeco/zipball/v0.0.1",
+                "html_url": "https://github.com/mristin/rasaeco/releases/tag/v0.0.1",
+                "url": "https://api.github.com/repos/mristin/rasaeco/releases/35176053",
+                "release_id": 35176053,
+                "date_created": "2020-12-11T21:57:45Z",
+                "date_published": "2020-12-11T21:59:37Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mristin/rasaeco/main/README.rst",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributors": [
+        {
+            "result": {
+                "value": "The tools was developed by:\n\n* Marko Ristin (rist@zhaw.ch),\n* Dag Fjeld Edvardsen (dag.fjeld.edvardsen@catenda.no), and\n* Hans Wernher van de Venn (vhns@zhaw.ch).\n\nIf you want to cite the tool, please cite the corresponding publication:\n\n*Ristin, Marko and Edvardsen, Dag Fjeld and van de Venn, Hans Wernher: \"RASAECO: Requirements Analysis of Software for the AECO Industry\", 29th IEEE International Requirements Engineering Conference, 2021.*\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributors and Citation",
+                "parent_header": [
+                    "RASAECO"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mristin/rasaeco/main/README.rst"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "The tools was developed by:\n\n* Marko Ristin (rist@zhaw.ch),\n* Dag Fjeld Edvardsen (dag.fjeld.edvardsen@catenda.no), and\n* Hans Wernher van de Venn (vhns@zhaw.ch).\n\nIf you want to cite the tool, please cite the corresponding publication:\n\n*Ristin, Marko and Edvardsen, Dag Fjeld and van de Venn, Hans Wernher: \"RASAECO: Requirements Analysis of Software for the AECO Industry\", 29th IEEE International Requirements Engineering Conference, 2021.*\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributors and Citation",
+                "parent_header": [
+                    "RASAECO"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mristin/rasaeco/main/README.rst"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Single-File Release\n~~~~~~~~~~~~~~~~~~~\nPlease download and unzip the latest release from\n`the GitHub release page <https://github.com/mristin/rasaeco/releases>`_.\n\nFrom PyPI\n~~~~~~~~~\nThe tool is also available on `PyPI <https://pypi.org>`_.\n\nCreate a virtual environment:\n\n.. code-block::\n\n    python -m venv venv-rasaeco\n\nActivate it (in Windows):\n\n.. code-block::\n\n    venv-rasaeco\\Scripts\\activate\n\nor in Linux and OS X:\n\n.. code-block::\n\n    source venv-rasaeco/bin/activate\n\nInstall the tool in the virtual environment:\n\n.. code-block::\n\n    pip3 install rasaeco\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "RASAECO"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mristin/rasaeco/main/README.rst"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": ".. image:: https://github.com/mristin/rasaeco/actions/workflows/check.yml/badge.svg\n    :target: https://github.com/mristin/rasaeco/actions/workflows/check.yml\n    :alt: Check \n.. image:: https://coveralls.io/repos/github/mristin/rasaeco/badge.svg?branch=main\n    :target: https://coveralls.io/github/mristin/rasaeco?branch=main\n    :alt: Test coverage \n.. image:: https://badge.fury.io/py/rasaeco.svg\n    :target: https://badge.fury.io/py/rasaeco\n    :alt: PyPI - version \n.. image:: https://img.shields.io/pypi/pyversions/rasaeco.svg\n    :alt: PyPI - Python Version \n\nRASAECO (\"Requirements Analysis for Software in AECO Industry\") is a tool\nwe developed within the `BIMprove Project <https://www.bimprove-h2020.eu/>`_ to\nhelp us analyze the software requirements after the finished elicitation phase.\n \n",
+                "original_header": "RASAECO"
+            },
+            "confidence": 0.9941814227392989,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mristin/rasaeco/main/README.rst"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "**Test cases**. Test cases are marked using ``<test name=\"...\">...</test>``. You can reference the\nindividual tests using ``<testref name=\"...\" />``. \n**Acceptance criteria**. Acceptance criteria are marked using ``<acceptance name=\"...\">...</test>``.\nYou can reference the individual acceptance criteria using ``<acceptanceref name=\"...\" />``. \nFurther Examples\n~~~~~~~~~~~~~~~~\nPlease see\n`Sample scenarios <https://github.com/mristin/rasaeco/tree/main/sample_scenarios>`_\nfor further examples.\n \n",
+                "original_header": "Cheat-sheet"
+            },
+            "confidence": 0.9609633225651758,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mristin/rasaeco/main/README.rst"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "*(Please see below for the instructions for Linux / OS X.)*\n\nStart your native Windows command prompt.\n\n(Please be careful not to start \"Developer Command Prompt for VS 2019\" or similar\nas it includes a 32bit version of Python3 in its environment!)\n\nChange to the directory where you unzipped the release.\n\nRender once (Windows)\n~~~~~~~~~~~~~~~~~~~~~\nRender the scenarios in-place once:\n\n.. code-block::\n\n    pyrasaeco-render.exe once --scenarios_dir c:\\some\\path\\to\\scenarios\n\n(Change ``c:\\some\\path\\to\\scenarios`` to fit your system.)\n\nOpen the scenario ontology with your browser from:\n``c:\\some\\path\\to\\scenarios\\ontology.html``.\n\n(Don't forget to change ``c:\\some\\path\\to\\scenarios`` again to fit \nyour system.)\n\nRender continuously (Windows)\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nMonitor the scenario files and re-render on changes:\n\n.. code-block::\n\n    pyrasaeco-render.exe continuously --scenarios_dir c:\\some\\path\\to\\scenarios\n\n(Change ``c:\\some\\path\\to\\scenarios`` to fit your system.)\n\nOpen the scenario ontology with your browser from:\n``c:\\some\\path\\to\\scenarios\\ontology.html``.\n\n(Don't forget to change ``c:\\some\\path\\to\\scenarios`` again to fit \nyour system.)\n\n\nRender continuously + automatic refresh (Windows)\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n`pyrasaeco-render` can also start a demo server for you so that you do not have\nto manually re-load in the browser. You have to specify the port and the server\nwill be automatically started:\n\n.. code-block::\n\n    pyrasaeco-render.exe continuously\n        --scenarios_dir c:\\some\\path\\to\\scenarios\n        --port 8000\n\n(Change ``c:\\some\\path\\to\\scenarios`` to fit your system.)\n\nThe ontology will be available on: ``http://localhost:8000``.\n\nHelp (Windows)\n~~~~~~~~~~~~~~\n.. code-block::\n\n    pyrasaeco-render.exe -h\n    pyrasaeco-render.exe once -h\n    pyrasaeco-render.exe continuously -h\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage (Windows)",
+                "parent_header": [
+                    "RASAECO"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mristin/rasaeco/main/README.rst"
+        },
+        {
+            "result": {
+                "value": "Start your preferred terminal.\n\nActivate the virtual environment in which you installed the RASAECO tool (please see Section \"Installation\" above).\n\nRender once (Linux / OS X)\n~~~~~~~~~~~~~~~~~~~~~~~~~~\nRender the scenarios in-place once:\n\n.. code-block::\n\n    pyrasaeco-render once --scenarios_dir /some/path/to/scenarios\n\n(Change ``/some/path/to/scenarios`` to fit your system.\nIf it is relative to your virtual environment, omit the leading slash, *e.g.*, ``some/path/to/scenarios``.)\n\nOpen the scenario ontology with your browser from:\n``/some/path/to/scenarios/ontology.html``.\n\n(Don't forget to change ``/some/path/to/scenarios`` again to fit your system.)\n\nRender continuously (Linux / OS X)\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nMonitor the scenario files and re-render on changes:\n\n.. code-block::\n\n    pyrasaeco-render continuously --scenarios_dir /some/path/to/scenarios\n\n(Change ``/some/path/to/scenarios`` to fit your system.)\n\nOpen the scenario ontology with your browser from:\n``/some/path/to/scenarios/ontology.html``.\n\n(Don't forget to change ``/some/path/to/scenarios`` again to fit your system.)\n\nRender continuously + automatic refresh (Linux / OS X)\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n`pyrasaeco-render` can also start a demo server for you so that you do not have to manually re-load in the browser.\nYou have to specify the port and the server will be automatically started:\n\n.. code-block::\n\n    pyrasaeco-render continuously\n        --scenarios_dir /some/path/to/scenarios\n        --port 8000\n\n(Change ``/some/path/to/scenarios`` to fit your system.)\n\nThe ontology will be available on: ``http://localhost:8000``.\n\nHelp (Linux / OS X)\n~~~~~~~~~~~~~~~~~~~\n.. code-block::\n\n    pyrasaeco-render -h\n    pyrasaeco-render once -h\n    pyrasaeco-render continuously -h\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage (Linux / OS X)",
+                "parent_header": [
+                    "RASAECO"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mristin/rasaeco/main/README.rst"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "RASAECO"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mristin/rasaeco/main/README.rst"
+        }
+    ]
+}

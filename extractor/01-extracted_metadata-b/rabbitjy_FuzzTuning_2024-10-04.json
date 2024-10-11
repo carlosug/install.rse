@@ -1,0 +1,298 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:05:37"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/rabbitjy/FuzzTuning",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "rabbitjy",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-05-19T02:03:26Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-04-07T03:02:50Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "FuzzTuning",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "rabbitjy/FuzzTuning",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/rabbitjy/FuzzTuning/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/rabbitjy/FuzzTuning/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 24,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/rabbitjy/FuzzTuning/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 86712
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 2707
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rabbitjy/FuzzTuning/main/Readme.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rabbitjy/FuzzTuning/main/cls/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rabbitjy/FuzzTuning/main/clone/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "torch 1.7.0\n\ntransformers 4.18.0\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "FuzzTuning"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rabbitjy/FuzzTuning/main/Readme.md"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "Download POJ dataset from [programs.tar.gz](https://drive.google.com/file/d/1x0nucnROMhDDxyJmoUnYWfggRPk9pQUu/view?usp=drive_link) and download POJ fuzzing data from [POJ104.io.tar.gz](https://drive.google.com/file/d/1fS0m7oGztT1RLh69wQgxxMIGd8qkL6d1/view?usp=sharing). \n```shell\nmv programs.tar.gz POJ104.io.tar.gz ./dataset\ncd dataset\ntar zxvf programs.tar.gz\ntar zxvf POJ104.io.tar.gz\nmv fuzz output\npython preprocess_clone.py\ncd ..\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Download and Preprocess",
+                "parent_header": [
+                    "FuzzTuning",
+                    "Code Classification (POJ-104)",
+                    "Dataset"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rabbitjy/FuzzTuning/main/Readme.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "Please cite our work in your publications if it helps your research:\n\n<pre><code>@article{zhao2023understanding,\n  title={Understanding Programs by Exploiting (Fuzzing) Test Cases},\n  author={Zhao, Jianyu and Rong, Yuyang and Guo, Yiwen and He, Yifeng and Chen, Hao},\n  journal={arXiv preprint arXiv:2305.13592},\n  year={2023}\n}</code></pre>\n",
+                "type": "Text_excerpt",
+                "original_header": "Reference",
+                "parent_header": [
+                    "FuzzTuning"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rabbitjy/FuzzTuning/main/Readme.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "code for our acl 2023 paper [Understanding Programs by Exploiting (Fuzzing) Test Cases](https://arxiv.org/pdf/2305.13592.pdf)\n \n",
+                "original_header": "FuzzTuning"
+            },
+            "confidence": 0.9015581408921582,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/rabbitjy/FuzzTuning/main/Readme.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Given a code and a collection of candidates as the input, the task is to return Top K codes with the same semantic. Models are evaluated by MAP@R score. MAP@R is defined as the mean of average precision scores, each of which is evaluated for retrieving R most similar samples given a query. For a code (query), R is the number of other codes in the same class, i.e. R=499 in this dataset. \n",
+                "original_header": "Task Definition"
+            },
+            "confidence": 0.9961785820319546,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/rabbitjy/FuzzTuning/main/Readme.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We also provide a pipeline of FuzzTuning on this task in ```./clone/run.sh```.  \n",
+                "original_header": "Pipeline-FuzzTuning-Clone"
+            },
+            "confidence": 0.9926467673127018,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/rabbitjy/FuzzTuning/main/Readme.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "FuzzTuning"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rabbitjy/FuzzTuning/main/Readme.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2305.13592.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rabbitjy/FuzzTuning/main/Readme.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1409.5718.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rabbitjy/FuzzTuning/main/Readme.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2305.13592"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rabbitjy/FuzzTuning/main/Readme.md"
+        }
+    ]
+}

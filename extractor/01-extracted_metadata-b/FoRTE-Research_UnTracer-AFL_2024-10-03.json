@@ -1,0 +1,381 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:00:49"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/FoRTE-Research/UnTracer-AFL",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "FoRTE-Research",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-11-03T06:36:17Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-03-24T11:40:38Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nMuch of UnTracer-AFL is adapted from Michal Zalewski's AFL, Paradyn's Dyninst, \nand Cisco Talos' / Marc Heuse's AFL-Dyninst. \n\nCopyright (c) 2019 Virginia Polytechnic Institute and State University\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/UnTracer-AFL/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "An AFL implementation with UnTracer (our coverage-guided tracer)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains an implementation of our prototype coverage-guided tracing framework **UnTracer** in the popular coverage-guided fuzzer [AFL](http://lcamtuf.coredump.cx/afl). Coverage-guided tracing employs two versions of the target binary: (1) a forkserver-only `oracle` binary modified with basic block-level software interrupts on unseen basic blocks for quickly identifying coverage-increasing testcases and (2) a fully-instrumented `tracer` binary for tracing the coverage of all coverage-increasing testcases.  \nIn UnTracer, both the oracle and tracer binaries use the AFL-inspired [forkserver execution model](http://lcamtuf.blogspot.com/2014/10/fuzzing-binaries-without-execve.html). For `oracle` instrumentation we require all target binaries be compiled with `untracer-cc` -- our \"forkserver-only\" modification of AFL's assembly-time instrumenter `afl-cc`. For `tracer` binary instrumentation we utilize [Dyninst](http://www.dyninst.org/) with much of our code based-off [AFL-Dyninst](https://github.com/vanhauser-thc/afl-dyninst). We plan to incorporate a purely binary-only (\"black-box\") instrumentation approach in the near future. Our current implementation of UnTracer supports **basic block coverage**.  \n",
+                "original_header": "UnTracer-AFL"
+            },
+            "confidence": 0.9553317358737928,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/UnTracer-AFL/master/readme.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "UnTracer-AFL",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "FoRTE-Research/UnTracer-AFL",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/FoRTE-Research/UnTracer-AFL/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/FoRTE-Research/UnTracer-AFL/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 123,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 29,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/FoRTE-Research/UnTracer-AFL/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 306665
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 21835
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 6971
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 4913
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Rich Text Format",
+                "name": "Rich Text Format",
+                "type": "Programming_language",
+                "size": 21
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 20
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/FoRTE-Research/UnTracer-AFL/master/readme.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "```\nsudo apt-get install cmake m4 zlib1g-dev libboost-all-dev libiberty-dev\nwget https://github.com/dyninst/dyninst/archive/v9.3.2.tar.gz\ntar -xf v9.3.2.tar.gz dyninst-9.3.2/\nmkdir dynBuildDir\ncd dynBuildDir\ncmake ../dyninst-9.3.2/ -DCMAKE_INSTALL_PREFIX=`pwd`\nmake\nmake install\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "1. Download and build Dyninst (we used v9.3.2)",
+                "parent_header": [
+                    "UnTracer-AFL",
+                    "INSTALLATION"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/UnTracer-AFL/master/readme.md"
+        },
+        {
+            "result": {
+                "value": "```\ngit clone https://github.com/FoRTE-Research/UnTracer-AFL\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "2. Download UnTracer-AFL (this repo)",
+                "parent_header": [
+                    "UnTracer-AFL",
+                    "INSTALLATION"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/UnTracer-AFL/master/readme.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "```\nexport DYNINST_INSTALL=/path/to/dynBuildDir\nexport UNTRACER_AFL_PATH=/path/to/Untracer-AFL\n\nexport DYNINSTAPI_RT_LIB=$DYNINST_INSTALL/lib/libdyninstAPI_RT.so\nexport LD_LIBRARY_PATH=$DYNINST_INSTALL/lib:$UNTRACER_AFL_PATH\nexport PATH=$PATH:$UNTRACER_AFL_PATH\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "3. Configure environment variables",
+                "parent_header": [
+                    "UnTracer-AFL",
+                    "INSTALLATION"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/UnTracer-AFL/master/readme.md"
+        },
+        {
+            "result": {
+                "value": "Update `DYN_ROOT` in `UnTracer-AFL/Makefile` to your Dyninst install directory. \nThen, run the following commands:\n```\nmake clean && make all\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "4. Build UnTracer-AFL",
+                "parent_header": [
+                    "UnTracer-AFL",
+                    "INSTALLATION"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/UnTracer-AFL/master/readme.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "#\n<p align=center> <a href=\"https://www.cs.vt.edu\"><img border=\"0\" src=\"http://people.cs.vt.edu/snagy2/img/vt_inline_computer_science.png\" width=\"60%\" height=\"60%\">\n</a> </p>\n \n"
+            },
+            "confidence": 0.9973293212762484,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/UnTracer-AFL/master/readme.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "First, compile all target binaries using \"forkserver-only\" instrumentation. [As with AFL](https://github.com/mcarpenter/afl), you will need to manually set the C compiler (`untracer-clang` or `untracer-gcc`) and/or C++ compiler (`untracer-clang++` or `untracer-g++`). Note that only **non-position-independent** target binaries are supported, so compile all target binaries with CFLAG `-no-pie` (unnecessary for Clang). For example:\n\n**NOTE:** We provide a set of **fuzzing-ready benchmarks** available here: [https://github.com/FoRTE-Research/FoRTE-FuzzBench](https://github.com/FoRTE-Research/FoRTE-FuzzBench).\n\n```\n$ CC=/path/to/afl/untracer-clang ./configure --disable-shared\n$ CXX=/path/to/afl/untracer-clang++.\n$ make clean all\nInstrumenting in forkserver-only mode...\n```\n\nThen, run `untracer-afl` as follows:\n\n```\nuntracer-afl -i [/path/to/seed/dir] -o [/path/to/out/dir] [optional_args] -- [/path/to/target] [target_args]\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "USAGE",
+                "parent_header": [
+                    "UnTracer-AFL"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/UnTracer-AFL/master/readme.md"
+        },
+        {
+            "result": {
+                "value": "<p align=\"center\">",
+                "type": "Text_excerpt",
+                "original_header": "Status Screen",
+                "parent_header": [
+                    "UnTracer-AFL",
+                    "USAGE"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/UnTracer-AFL/master/readme.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "UnTracer-AFL"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/UnTracer-AFL/master/readme.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "http://people.cs.vt.edu/snagy2/img/untracer-afl.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/UnTracer-AFL/master/readme.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "http://people.cs.vt.edu/snagy2/img/vt_inline_computer_science.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/UnTracer-AFL/master/readme.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1812.11875\"><i>Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing</i></a><br>(2019 IEEE Symposium on Security and Privacy"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/UnTracer-AFL/master/readme.md"
+        }
+    ]
+}

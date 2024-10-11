@@ -1,0 +1,711 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:54:51"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ASSERT-KTH/MEWE",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ASSERT-KTH",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-01-13T16:48:36Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-04T08:30:45Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 Javier Cabrera\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Jacarte/MEWE/main/LICENSE"
+        },
+        {
+            "result": {
+                "value": "This project is licensed under the MIT license. See [LICENSE](LICENSE.md) for more details.\n",
+                "type": "Text_excerpt",
+                "original_header": "License"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Jacarte/MEWE/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Moving target defense for WebAssembly edge computing http://arxiv.org/pdf/2108.08125",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "MEWE is a toolset and methodology tailored to provide multivariant execution. \n",
+                "original_header": "MEWE"
+            },
+            "confidence": 0.9544814458641094,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jacarte/MEWE/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Our [linker](multivariant-mixer) takes a collection of LLVM libraries as input and outputs a big library containing semantically equivalent functions (yet statically different) for which we orchestrate their execution at runtime. \n",
+                "original_header": "Extended linker and multivariant generation"
+            },
+            "confidence": 0.9499509992442571,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jacarte/MEWE/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "With our linker, you can start creating multivariant libraries. To do so, you need to be able of creating semantically equivalent functions out of the original library. A previous [work of us](https://github.com/KTH/slumps/tree/master/crow) uses a superoptimizer to create a handful number of variants out of a single LLVM bitcode. We provide an [example](examples/calling_crow) about how to use CROW to generate variants. \n",
+                "original_header": "MEWE multivariants"
+            },
+            "confidence": 0.9817193204010979,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jacarte/MEWE/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "MEWE",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ASSERT-KTH/MEWE",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/MEWE/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/MEWE/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/Jacarte/MEWE/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "LLVM",
+                "name": "LLVM",
+                "type": "Programming_language",
+                "size": 8768815
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 186982
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Rust",
+                "name": "Rust",
+                "type": "Programming_language",
+                "size": 59537
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 54558
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 39234
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CMake",
+                "name": "CMake",
+                "type": "Programming_language",
+                "size": 4313
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 689
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/MEWE/releases/59798855",
+                "tag": "binaries",
+                "name": "MEWE binaries",
+                "author": {
+                    "name": "Jacarte",
+                    "type": "User"
+                },
+                "description": "MEWE linker binaries for specific os and LLVM versions",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/MEWE/tarball/binaries",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/MEWE/zipball/binaries",
+                "html_url": "https://github.com/ASSERT-KTH/MEWE/releases/tag/binaries",
+                "url": "https://api.github.com/repos/ASSERT-KTH/MEWE/releases/59798855",
+                "release_id": 59798855,
+                "date_created": "2022-02-17T10:48:10Z",
+                "date_published": "2022-02-17T12:42:53Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/MEWE/releases/51043149",
+                "tag": "data",
+                "name": "Experimental data",
+                "author": {
+                    "name": "Jacarte",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/MEWE/tarball/data",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/MEWE/zipball/data",
+                "html_url": "https://github.com/ASSERT-KTH/MEWE/releases/tag/data",
+                "url": "https://api.github.com/repos/ASSERT-KTH/MEWE/releases/51043149",
+                "release_id": 51043149,
+                "date_created": "2021-07-22T19:34:31Z",
+                "date_published": "2021-10-08T15:11:34Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/mewe.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/link_sodium/test_multiversion.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/link_sodium/extract_wasm_stats.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/link_sodium/extract_fat_stats.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/link_qrcode/rust/mewe2.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/link_qrcode/rust/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/link_qrcode/rust/get_bitcodes.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/link_qrcode/rust/fastly_deploy/diagnose.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/link_qrcode/rust/fastly_deploy/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/download_results.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/report_preservation.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/compare_times.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/compare_times_entropy.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/create_traces_report_multiple_pops.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/plot_traces_report_multiple_pops.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/generate_stability_reports.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/report_entropy.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/rq6_security/get_stats.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/rq5_performance/compare_deployments.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/rq5_performance/package.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/rq5_performance/collect_times.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/old/execute_STRAC.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/old/report_stability.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/old/create_STRAC_payloads.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/old/STRAC_image/launch.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/multivariant-mixer/build_deps_on_version.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/multivariant-mixer/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/multivariant-mixer/build_deps.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/multivariant-mixer/cd/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/examples/merging_simple_prexisting/build_multivariant.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/examples/libsodium/invert/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/examples/libsodium/bin2base64/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/examples/libsodium/random/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/examples/libsodium/encrypt/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/examples/libsodium/decrypt/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/examples/crow_paper/diversify.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/examples/crow_paper/test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/old/STRAC_image/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Jacarte/MEWE/main/old/fastly/experiments/old/STRAC_image/Dockerfile"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "MEWE supports rust based projects for now and uses the LLVM toolchain to generate the multivariant binaries. Here you can find the whole list of dependencies you should install in your local pc.\n\n- docker\n- LLVM toolchain, version 12 or 13\n- cargo and rust compiler\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "MEWE"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Jacarte/MEWE/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The following example generates a multivariant binary that can execute in your local machine. Make sure you have the LLVM toolchain in your system version 12.\n```bash\ngit clone https://github.com/Jacarte/MEWE\ncd MEWE\nsource mewe.sh\ncd examples/simple\nmewerustc  --llvm-version 12 --generation-timeout 3600 --exploration-timeout 120\n```\n \n",
+                "original_header": "Try it out"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jacarte/MEWE/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "MEWE uses an extended LLVM linker and CROW to build multivariant binaries. In the following diagram, we dissect how it works.  \n",
+                "original_header": "MEWE pipeline"
+            },
+            "confidence": 0.9720085714521992,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jacarte/MEWE/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{10.1145/3560828.3564007,\n    series = {MTD'22},\n    location = {Los Angeles, CA, USA},\n    keywords = {moving target defense, multivariant execution, edge-cloud computing, webassembly, diversification},\n    numpages = {12},\n    pages = {11\u201322},\n    booktitle = {Proceedings of the 9th ACM Workshop on Moving Target Defense},\n    abstract = {Edge-Cloud computing offloads parts of the computations that traditionally occurs in the cloud to edge nodes. The binary format WebAssembly is increasingly used to distribute and deploy services on such platforms. Edge-Cloud computing providers let their clients deploy stateless services in the form of WebAssembly binaries, which are then translated to machine code, sandboxed and executed at the edge. In this context, we propose a technique that (i) automatically diversifies WebAssembly binaries that are deployed to the edge and (ii) randomizes execution paths at runtime. Thus, an attacker cannot exploit all edge nodes with the same payload. Given a service, we automatically synthesize functionally equivalent variants for the functions providing the service. All the variants are then wrapped into a single multivariant WebAssembly binary. When the service endpoint is executed, every time a function is invoked, one of its variants is randomly selected. We implement this technique in the MEWE tool and we validate it with 7 services for which MEWE generates multivariant binaries that embed hundreds of function variants. We execute the multivariant binaries on the world-wide edge platform provided by Fastly, as part as a research collaboration. We show that multivariant binaries exhibit a real diversity of execution traces across the whole edge platform distributed around the globe.},\n    doi = {10.1145/3560828.3564007},\n    url = {https://doi.org/10.1145/3560828.3564007},\n    address = {New York, NY, USA},\n    publisher = {Association for Computing Machinery},\n    isbn = {9781450398787},\n    year = {2022},\n    title = {Multi-Variant Execution at the Edge},\n    author = {Cabrera Arteaga, Javier and Laperdrix, Pierre and Monperrus, Martin and Baudry, Benoit},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1145/3560828.3564007",
+                "title": "Multi-Variant Execution at the Edge",
+                "author": "Cabrera Arteaga, Javier and Laperdrix, Pierre and Monperrus, Martin and Baudry, Benoit",
+                "url": "https://doi.org/10.1145/3560828.3564007"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Jacarte/MEWE/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "MEWE"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Jacarte/MEWE/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/Jacarte/MEWE/main/docs/diagram3.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Jacarte/MEWE/main/README.md"
+        }
+    ]
+}

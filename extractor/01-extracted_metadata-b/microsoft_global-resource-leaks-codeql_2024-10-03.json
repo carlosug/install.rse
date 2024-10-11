@@ -1,0 +1,348 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:41:08"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/microsoft/global-resource-leaks-codeql",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "microsoft",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-03-31T13:46:42Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-05-21T19:46:30Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "    MIT License\n\n    Copyright (c) Microsoft Corporation.\n\n    Permission is hereby granted, free of charge, to any person obtaining a copy\n    of this software and associated documentation files (the \"Software\"), to deal\n    in the Software without restriction, including without limitation the rights\n    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n    copies of the Software, and to permit persons to whom the Software is\n    furnished to do so, subject to the following conditions:\n\n    The above copyright notice and this permission notice shall be included in all\n    copies or substantial portions of the Software.\n\n    THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n    SOFTWARE\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/global-resource-leaks-codeql/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Global analysis of C# for resource leaks, using CodeQL",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "RLC# is a light-weight and modular resource leak checker for C# code. It is inspired by [Checker Framework's](https://checkerframework.org/) resource leak checker (RLC) for Java.\nRLC# is developed as a CodeQL query.\n \n",
+                "original_header": "Resource Leak Checker (RLC#) for C# code using CodeQL"
+            },
+            "confidence": 0.9810572602691565,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/global-resource-leaks-codeql/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft \ntrademarks or logos is subject to and must follow \n[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).\nUse of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.\nAny use of third-party trademarks or logos are subject to those third-party's policies.\n \n",
+                "original_header": "Trademarks"
+            },
+            "confidence": 0.9725227067402532,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/global-resource-leaks-codeql/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "global-resource-leaks-codeql",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "microsoft/global-resource-leaks-codeql",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/microsoft/global-resource-leaks-codeql/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/microsoft/global-resource-leaks-codeql/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/microsoft/global-resource-leaks-codeql/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "CodeQL",
+                "name": "CodeQL",
+                "type": "Programming_language",
+                "size": 97487
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C#",
+                "name": "C#",
+                "type": "Programming_language",
+                "size": 12226
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 4698
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "code_of_conduct": [
+        {
+            "result": {
+                "value": "# Microsoft Open Source Code of Conduct\n\nThis project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).\n\nResources:\n\n- [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)\n- [Microsoft Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)\n- Contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with questions or concerns\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/global-resource-leaks-codeql/main/CODE_OF_CONDUCT.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "cff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\nauthors:\n- family-names: \"Shadab\"\n  given-names: \"Narges\"\n- family-names: \"Gharat\"\n  given-names: \"Pritam\"\n- family-names: \"Tiwari\"\n  given-names: \"Shrey\"\n- family-names: \"Ernst\"\n  given-names: \"Michael\"\n- family-names: \"Kellogg\"\n  given-names: \"Martin\"\n- family-names: \"Lahiri\"\n  given-names: \"Shuvendu\"\n- family-names: \"Lal\"\n  given-names: \"Akash\"\n- family-names: \"Sridharan\"\n  given-names: \"Manu\"\ntitle: \"Inference of Resource Management Specifications\"\nversion: 2.0.4\ndoi: 10.5281/zenodo.8149274 \ndate-released: 2023-07-15\nurl: \"https://github.com/microsoft/global-resource-leaks-codeql\"\n",
+                "type": "File_dump",
+                "format": "cff"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/global-resource-leaks-codeql/main/CITATION.cff"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/global-resource-leaks-codeql/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/global-resource-leaks-codeql/main/scripts/inference.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/global-resource-leaks-codeql/main/scripts/run-all-services.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/global-resource-leaks-codeql/main/scripts/RLC-inferred-annotations.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "This setup currently works only for Windows machine\n\n- Install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).\n- Install [CodeQL CLI](https://docs.github.com/en/code-security/codeql-cli/using-the-codeql-cli/getting-started-with-the-codeql-cli#checking-out-the-codeql-source-code-directly).\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites",
+                "parent_header": [
+                    "Resource Leak Checker (RLC#) for C# code using CodeQL"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/global-resource-leaks-codeql/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "First download the CodeQL databases from LGTM and extract the database folders from the compressed files. You can also [create a CodeQL database](https://docs.github.com/en/code-security/codeql-cli/using-the-codeql-cli/creating-codeql-databases).\n\nUpdate the `HOME` variable in `run-all-services.sh` to provide path to the CodeQL repository that is cloned when you install CodeQL CLI.\n\nTo run RLC# on a list of CodeQL databases, run the following script with a list of paths to the CodeQL database folders.\n```bash\n./scripts/run-all-services.sh <list-of-codeql-databases>\n```\n\nFor each database, a sub-directory is created inside results/rlc-warnings that contains a file named `f-rlc-i-all.csv`. The resource leak warnings generated by RLC# are listed in this file.\nEach row in the file `f-rlc-i-all.csv` corresponds to a potential resource leak. The second column in a row gives the name of the source file in which the resource leak is detected and the third column gives the start line number. The first column provides meta information (type of resource, `L` stands for library type and `C` stands for custom type) for the resource leak warning.\n",
+                "type": "Text_excerpt",
+                "original_header": "How to use?",
+                "parent_header": [
+                    "Resource Leak Checker (RLC#) for C# code using CodeQL"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/global-resource-leaks-codeql/main/README.md"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "This project welcomes contributions and suggestions.  Most contributions require you to agree to a\nContributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us\nthe rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.\n\nWhen you submit a pull request, a CLA bot will automatically determine whether you need to provide\na CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions\nprovided by the bot. You will only need to do this once across all repos using our CLA.\n\nThis project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).\nFor more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or\ncontact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributing",
+                "parent_header": [
+                    "Resource Leak Checker (RLC#) for C# code using CodeQL"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/global-resource-leaks-codeql/main/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9433357998916272,
+            "technique": "supervised_classification"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft \ntrademarks or logos is subject to and must follow \n[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).\nUse of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.\nAny use of third-party trademarks or logos are subject to those third-party's policies.\n \n",
+                "original_header": "Trademarks"
+            },
+            "confidence": 0.9988852287322683,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/global-resource-leaks-codeql/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Resource Leak Checker (RLC#) for C# code using CodeQL"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/global-resource-leaks-codeql/main/README.md"
+        }
+    ]
+}

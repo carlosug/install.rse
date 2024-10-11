@@ -1,0 +1,474 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:04:53"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ctuning/cbench",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ctuning",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-04-05T13:33:38Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-22T23:58:33Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/apache-2.0",
+                "type": "License",
+                "name": "Apache License 2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "spdx_id": "Apache-2.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "News: we have moved this code to the CK framework:",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "cBench is a small and cross-platform framework \nconnected with the [open Collective Knowledge portal](https://cKnowledge.io)\nto help researchers and practitioners \n[reproduce ML&systems research](https://cKnowledge.io/reproduced-papers)\non their own bare-metal platforms, participate in collaborative\nbenchmarking and optimization, \nand share results on [live scoreobards](https://cKnowledge.io/reproduced-results).\n\nYou can try to reproduce MLPerf inference benchmark on your machine using [this solution](https://cKnowledge.io/test)\nand see public results from the community on this [scoreboard](https://cknowledge.io/c/result/sota-mlperf-object-detection-v0.5-crowd-benchmarking).\n\ncBench is a part of the [Collective Knowledge project (CK)](https://cKnowledge.org)\nand uses [portable CK solutions](https://cknowledge.io/docs/intro/introduction.html#portable-ck-solution)\nto describe how to download, build, benchmark and optimize applications\nacross different hardware, software, models and data sets.\n",
+                "type": "Text_excerpt",
+                "original_header": "Introduction"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ctuning/cbench/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* We have successfully completed the prototyping phase of the Collective Knowledge technology\n  to make it easier to reproduce AI&ML and deploy it in production with the help of portable CK workflows, reusable artifacts and MLOps\n  as described in this [white paper](https://arxiv.org/abs/2006.07161)\n  and the [CK presentation](https://cKnowledge.io/presentation/ck).\n  We are now preparing the second phase of this project to make CK simpler to use, more stable and more user friendly - \n  don't hesitate to get in touch with the [CK author](https://cKnowledge.io/@gfursin) to know more! \n",
+                "original_header": "News"
+            },
+            "confidence": 0.9836105646524081,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ctuning/cbench/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* This is an ongoing project - don't hesitate to [contact us](https://cKnowledge.org/contacts.html) \n  if you have any feedback and suggestions!\n \n",
+                "original_header": "Feedback"
+            },
+            "confidence": 0.9241969363235798,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ctuning/cbench/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "cbench",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ctuning/cbench",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ctuning/cbench/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ctuning/cbench/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 6,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "benchmarking, collaboration, crowd-benchmarking, live-paper, machine-learning, open-science, optimization, portable-workflows, reproducible-research, research-paper, scoreboard, sota, systems",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/ctuning/cbench/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 165219
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ctuning/cbench/releases/30654170",
+                "tag": "v1.2.11",
+                "name": "Extra functionality",
+                "author": {
+                    "name": "gfursin",
+                    "type": "User"
+                },
+                "description": "* Added --extra_tags to \"cb publish\"\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/ctuning/cbench/tarball/v1.2.11",
+                "zipball_url": "https://api.github.com/repos/ctuning/cbench/zipball/v1.2.11",
+                "html_url": "https://github.com/ctuning/cbench/releases/tag/v1.2.11",
+                "url": "https://api.github.com/repos/ctuning/cbench/releases/30654170",
+                "release_id": 30654170,
+                "date_created": "2020-09-03T11:49:03Z",
+                "date_published": "2020-09-03T11:51:03Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-image-classification-openvino-resnet50-imagenet-val-500-linux/_run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-image-classification-openvino-resnet50-imagenet-val-500-linux/_run_benchmark.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-image-classification-openvino-resnet50-imagenet-val-500-linux/_activate.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-image-classification-openvino-resnet50-imagenet-val-500-linux/_publish.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-image-classification-openvino-resnet50-imagenet-val-500-linux/_init.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-image-classification-openvino-resnet50-imagenet-val-500-linux/_init_graph.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-detection-openvino-ssd-mobilenet-coco-500-linux/_run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-detection-openvino-ssd-mobilenet-coco-500-linux/_run_benchmark.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-detection-openvino-ssd-mobilenet-coco-500-linux/_activate.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-detection-openvino-ssd-mobilenet-coco-500-linux/_publish.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-detection-openvino-ssd-mobilenet-coco-500-linux/_init.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-detection-openvino-ssd-mobilenet-coco-500-linux/_init_graph.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-image-classification-openvino-mobilenet-imagenet-val-500-linux/_run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-image-classification-openvino-mobilenet-imagenet-val-500-linux/_run_benchmark.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-image-classification-openvino-mobilenet-imagenet-val-500-linux/_activate.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-image-classification-openvino-mobilenet-imagenet-val-500-linux/_publish.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-image-classification-openvino-mobilenet-imagenet-val-500-linux/_init.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ctuning/cbench/master/examples/solutions/mlperf-inference-v0.5-image-classification-openvino-mobilenet-imagenet-val-500-linux/_init_graph.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "|               | As a host platform | As a target platform |\n|---------------|:------------------:|:--------------------:|\n| Generic Linux | \u2713 | \u2713 |\n| Linux (Arm)   | \u2713 | \u2713 |\n| Raspberry Pi  | \u2713 | \u2713 |\n| MacOS         | \u2713 | \u00b1 |\n| Windows       | \u2713 | \u2713 |\n| Android       | \u00b1 | \u2713 |\n| iOS           | TBD | TBD |\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Platform support:"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ctuning/cbench/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Install prerequisites:\n\n```\nsudo apt update\nsudo apt install git wget libz-dev curl cmake\nsudo apt install gcc g++ autoconf autogen libtool\nsudo apt install libfreetype6-dev\nsudo apt install python3.7-dev\nsudo apt install -y libsm6 libxext6 libxrender-dev\n```\n\nInstall cbench:\n\n```\npython3 -m pip install cbench\n```\n\nInitialize the [CK solution for MLPerf](https://cknowledge.io/solution/demo-obj-detection-coco-tf-cpu-benchmark-linux-portable-workflows):\n\n```\ncb init demo-obj-detection-coco-tf-cpu-benchmark-linux-portable-workflows\n```\n\nParticipate in crowd-benchmarking:\n\n```\ncb benchmark demo-obj-detection-coco-tf-cpu-benchmark-linux-portable-workflows\n```\n\nSee your results on a public [SOTA dashboard](https://cknowledge.io/c/result/sota-mlperf-object-detection-v0.5-crowd-benchmarking).\n\nYou can also use the stable Docker image to participate in crowd-benchmarking:\n\n```\nsudo docker run ctuning/cbench-obj-detection-coco-tf-cpu-benchmark-linux-portable-workflows /bin/bash -c \"cb benchmark demo-obj-detection-coco-tf-cpu-benchmark-linux-portable-workflows\"\n```\n\nYou can also check [all dependencies for this solution](https://cknowledge.io/solution/demo-obj-detection-coco-tf-cpu-benchmark-linux-portable-workflows/#dependencies).\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Object detection crowd-benchmarking demo on Ubuntu"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ctuning/cbench/master/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "* [Online docs for the Collective Knowledge technology](https://cKnowledge.io/docs)\n",
+                "type": "Text_excerpt",
+                "original_header": "Documentation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ctuning/cbench/master/README.md"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "We would like to thank all [CK partners](https://cKnowledge.org/partners.html) \nfor fruitful discussions and feedback!\n\n\n*Copyright 2020 [cTuning foundation](https://cTuning.org)*\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgments"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ctuning/cbench/master/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Computer Vision"
+            },
+            "confidence": 0.9541666666666666,
+            "technique": "supervised_classification"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Linux/MacOS: \nWindows: \n"
+            },
+            "confidence": 0.995500723646355,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ctuning/cbench/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ctuning/cbench/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://ci.appveyor.com/api/projects/status/yjq5myrrrkx3rydc?svg=true"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ctuning/cbench/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2006.07161"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ctuning/cbench/master/README.md"
+        }
+    ]
+}

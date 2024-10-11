@@ -1,0 +1,371 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:08:23"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/mehdigolzadeh/BoDeGHa",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "mehdigolzadeh",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-06-04T12:05:00Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-07-28T16:53:29Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "This tool is distributed under [LGPLv3 - GNU Lesser General Public License, version 3](https://github.com/mehdigolzadeh/BoDeGHa/blob/master/LICENSE.txt).\n      \n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "BoDeGHa"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mehdigolzadeh/BoDeGHa/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A python tool to predict the identity type in github activities (Human,Bot)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "**Note about misclassifications** The tool is based on a classification model that has been validated on a [ground-truth dataset](https://doi.org/10.5281/zenodo.4000387), and cannot reach a precision and recall of 100%. The accuracy may differ from one project to another, depending on the amount and types of accounts and comments. When running the tool on a GitHub repository of your choice, it is therefore possible that the tool may produce misclassifications in practice (humans misclassified as bots, or vice versa). For more details we refer to the association research publication. If you would encounter such situations while running the tool, please inform us about it, so that we can strive to further improve the accurracy of the classification algorithm. A known reason for the presence of misclassifations is the use of templates in pull request and issue comments by human commenters.\nSince the classification model's performance has been validated on accounts containing between 10 and 100 comments, the default parameters of the tool have been set to 10 for *--min-comments* and 100 for *--max-comments*. One can run the tool with other values on its own risk, without any guarantees on the accuracy. \n",
+                "original_header": "BoDeGHa"
+            },
+            "confidence": 0.9251703469970617,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mehdigolzadeh/BoDeGHa/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "BoDeGHa",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "mehdigolzadeh/BoDeGHa",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mehdigolzadeh/BoDeGHa/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mehdigolzadeh/BoDeGHa/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 25,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 13,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/mehdigolzadeh/BoDeGHa/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 21897
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mehdigolzadeh/BoDeGHa/releases/33827630",
+                "tag": "v1.0.0",
+                "name": "First release",
+                "author": {
+                    "name": "mehdigolzadeh",
+                    "type": "User"
+                },
+                "description": "- Tests done,\r\n- New features like exclude accounts and list of not predicted accounts added\r\n- Bug fixes",
+                "tarball_url": "https://api.github.com/repos/mehdigolzadeh/BoDeGHa/tarball/v1.0.0",
+                "zipball_url": "https://api.github.com/repos/mehdigolzadeh/BoDeGHa/zipball/v1.0.0",
+                "html_url": "https://github.com/mehdigolzadeh/BoDeGHa/releases/tag/v1.0.0",
+                "url": "https://api.github.com/repos/mehdigolzadeh/BoDeGHa/releases/33827630",
+                "release_id": 33827630,
+                "date_created": "2020-11-11T21:52:37Z",
+                "date_published": "2020-11-11T22:14:44Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mehdigolzadeh/BoDeGHa/releases/30512165",
+                "tag": "v0.2.2",
+                "name": "First pre-release version",
+                "author": {
+                    "name": "mehdigolzadeh",
+                    "type": "User"
+                },
+                "description": "Features:\r\n\r\n* Supports minimum number of comments and maximum number of comments for analysis\r\n* Supports List of accounts\r\n* Supports 3 different types for output\r\n* Minor bug fixed for python 3.5\r\n* Deprecated packages removed\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/mehdigolzadeh/BoDeGHa/tarball/v0.2.2",
+                "zipball_url": "https://api.github.com/repos/mehdigolzadeh/BoDeGHa/zipball/v0.2.2",
+                "html_url": "https://github.com/mehdigolzadeh/BoDeGHa/releases/tag/v0.2.2",
+                "url": "https://api.github.com/repos/mehdigolzadeh/BoDeGHa/releases/30512165",
+                "release_id": 30512165,
+                "date_created": "2020-09-01T13:49:46Z",
+                "date_published": "2020-09-01T13:58:37Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mehdigolzadeh/BoDeGHa/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "To install BoDeGHa, run the following command:\n```\npip install git+https://github.com/mehdigolzadeh/BoDeGHa\n```\nGiven that this tool has many dependencies, and in order not to conflict with already installed packages, it is recommended to use a virtual environment before its installation. You can install and create a _Python virtual environment_ and then install and run the tool in this environment. You can use any virtual environment of your choice. Below are the steps to install and create a virtual environment with **virtualenv**.\n\nUse the following command to install the virtual environment:\n```\npip install virtualenv\n```\nCreate a virtual environment in the folder where you want to place your files:\n```\nvirtualenv <name>\n```\nStart using the environment by:\n```\nsource <name>/bin/activate\n```\nAfter running this command your command line prompt will change to `(<name>) ...` and now you can install BoDeGHa with the pip command.\nWhen you are finished running the tool, you can quit the environment by:\n```\ndeactivate\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "BoDeGHa"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mehdigolzadeh/BoDeGHa/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "To run *BoDeGHa* you need to provide a *GitHub personal access token* (API key). You can follow the instructions [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) to obtain such a token (**You don't need any of permissions in the list**).\n\nYou can execute the tool with all default parameters by running `bodegha repo_owner\\repo_name --key <token>`\n\nHere is the list of parameters:\n\n`--accounts [ACCOUNT [ACCOUNT ...]]` \t**User login of one or more accounts**\n> Example: $ bodegha repo_owner/repo_name --accounts mehdigolzadeh alexandredecan tommens --key <token>\n  \n_By default all accounts in the repository will be analysed_\n\n`--start-date START_DATE` \t\t**Start date of pull request and issue comments in the repository to be considered**\n> Example: $ bodegha repo_owner/repo_name --start-date 01-01-2018 --key <token>\n  \n_The default start-date is 6 months before the current date. \n\n`--verbose` **To have verbose output result**\n> Example: $ bodegha repo_owner/repo_name --verbose --key <token>\n\n_The default value is false, if you don't pass this parameter the output will only be the accounts and their type_\n  \n`--min-comments MIN_COMMENTS` \t\t**Minimum number of pull request and issue comments that are required to analyze an account**\n> Example: $ bodegha repo_owner/repo_name --min-comments 20 --key <token>\n \n_The default value is 10 comments (the reason explained earlier in this file)_\n\n`--max-comments MAX_COMMENTS` \t\t**Maximum number of pull request and issue comments to be considered for each account (default=100)**\n> Example: $ bodegha repo_owner/repo_name --max-comments 120 --key <token>\n\n_The default value is 100 comments (the reason explained earlier in this file)_\n\n`--key APIKEY` \t\t\t\t**GitHub personal access token required to download comments from GitHub GraphQL API**\n_This parameter is mandatory and you can obtain an access token as described earlier_\n\n`--text`                \tOutput results as plain text\n`--csv`                \t\tOutput results in comma-separated values (csv) format\n`--json`                \tOutput results in json format\n> Example: $ bodegha repo_owner/repo_name --json --key <token> \n\n_This group of parameters is the type of output, e.g., if you pass --json you will get the result in JSON format_\n\n`--exclude [ACCOUNT [ACCOUNT ...]]` **List of accounts to be excluded from the analysis**\n> Example: $ bodegha repo_owner/repo_name --exclude mehdigolzadeh alexandredecan tommens --key <token>\n\n`--only-predicted` **Only list accounts that the prediction is available**\n> Example: $ bodegha repo_owner/repo_name --only-predicted\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "BoDeGHa"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mehdigolzadeh/BoDeGHa/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\n$ bodegha request/request --key <my token> --start-date 01-01-2017  --verbose  --only-predicted\n                   comments  empty comments  patterns  dispersion prediction                          \naccount                                                                     \ngreenkeeperio-bot        12               0         1    0.108246        Bot\nstale                   100               0         1    0.000000        Bot\nFredKSchott              64               0        53    0.040618      Human\nahmadnassri              11               0        11    0.037776      Human\ncsvan                    12               0        12    0.031019      Human\ndvishniakov              11               0         9    0.068446      Human\nhktalent                 11               0        10    0.034367      Human\njohnnysprinkles          12               0        11    0.033187      Human\nmikeal                  100               0       100    0.035073      Human\nnicjansma                12               0        12    0.035834      Human\nplroebuck                10               0        10    0.035052      Human\nreconbot                 93               0        81    0.036863      Human\nsimov                    41               0        37    0.031932      Human\n```\n\n```\n$ bodegha fthomas/refined --key <my token> --start-date 01-01-2017  --verbose --min-comments 20 --max-comments 90 --json  --only-predicted\n\n[{\"account\":\"codecov\",\"comments\":90,\"empty comments\":0,\"patterns\":2,\"dispersion\":0.2501228703,\"prediction\":\"Bot\"},{\"account\":\"codecov-io\",\"comments\":51,\"empty comments\":0,\"patterns\":2,\"dispersion\":0.2291022525,\"prediction\":\"Bot\"},{\"account\":\"scala-steward\",\"comments\":90,\"empty comments\":0,\"patterns\":1,\"dispersion\":0.1819953352,\"prediction\":\"Bot\"},{\"account\":\"NeQuissimus\",\"comments\":36,\"empty comments\":0,\"patterns\":36,\"dispersion\":0.0282932021,\"prediction\":\"Human\"},{\"account\":\"erikerlandson\",\"comments\":20,\"empty comments\":1,\"patterns\":20,\"dispersion\":0.0314103784,\"prediction\":\"Human\"},{\"account\":\"fthomas\",\"comments\":90,\"empty comments\":14,\"patterns\":63,\"dispersion\":0.0441094382,\"prediction\":\"Human\"},{\"account\":\"howyp\",\"comments\":43,\"empty comments\":1,\"patterns\":43,\"dispersion\":0.0321397659,\"prediction\":\"Human\"}]\n```\n\n```\n$ bodegha servo/servo --key <my token> --verbose --max-comments 80 --csv --accounts bors-servo Darkspirit Eijebong PeterZhizhin SimonSapin highfive  --only-predicted\n\naccount,comments,empty comments,patterns,dispersion,prediction                                        \nbors-servo,80,0,11,0.12661359778212722,Bot\nhighfive,80,0,6,0.16390462912896814,Bot\nDarkspirit,32,0,32,0.025969293313879968,Human\nEijebong,27,2,23,0.02551053114396642,Human\nPeterZhizhin,13,0,12,0.025372037602093358,Human\nSimonSapin,80,3,57,0.04771309733409579,Human\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Examples of BoDeGHa output (for illustration purposes only)",
+                "parent_header": [
+                    "BoDeGHa"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mehdigolzadeh/BoDeGHa/master/README.md"
+        }
+    ],
+    "contributors": [
+        {
+            "result": {
+                "value": "![Contributors](https://github.com/mehdigolzadeh/BoDeGHa/blob/master/CONTRIBUTORS.svg?raw=true)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributors",
+                "parent_header": [
+                    "BoDeGHa"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mehdigolzadeh/BoDeGHa/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@article{Golzadeh2021JSS,\n    doi = {https://doi.org/10.1016/j.jss.2021.110911},\n    journal = {Journal of Systems and Software},\n    month = {may},\n    volume = {175},\n    year = {2021},\n    author = {Golzadeh, Mehdi and Decan, Alexandre and Legay, Damien and Mens, Tom},\n    title = {A ground-truth dataset and classification model for detecting bots in GitHub issue and PR comments},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "https://doi.org/10.1016/j.jss.2021.110911",
+                "title": "A ground-truth dataset and classification model for detecting bots in GitHub issue and PR comments",
+                "author": "Golzadeh, Mehdi and Decan, Alexandre and Legay, Damien and Mens, Tom"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mehdigolzadeh/BoDeGHa/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@misc{Golzadeh2020dataset,\n    url = {http://doi.org/10.5281/zenodo.4000388},\n    doi = {10.5281/zenodo.4000388},\n    publisher = {Zenodo},\n    year = {2020},\n    author = {Golzadeh, Mehdi and Decan, Alexandre and Legay, Damien and Mens, Tom},\n    title = {A ground-truth dataset to identify bots in GitHub},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.5281/zenodo.4000388",
+                "title": "A ground-truth dataset to identify bots in GitHub",
+                "author": "Golzadeh, Mehdi and Decan, Alexandre and Legay, Damien and Mens, Tom",
+                "url": "http://doi.org/10.5281/zenodo.4000388"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mehdigolzadeh/BoDeGHa/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "BoDeGHa"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mehdigolzadeh/BoDeGHa/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/mehdigolzadeh/BoDeGHa/master/CONTRIBUTORS.svg?raw=true"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mehdigolzadeh/BoDeGHa/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2010.03303"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mehdigolzadeh/BoDeGHa/master/README.md"
+        }
+    ]
+}

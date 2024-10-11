@@ -1,0 +1,629 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 18:06:32"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ASSERT-KTH/sequencer",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ASSERT-KTH",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-11-27T10:35:03Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-05-14T04:26:00Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Sequence-to-Sequence Learning for End-to-End Program Repair (IEEE TSE 2019). Open-science repo. http://arxiv.org/pdf/1901.01808",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "For details on model training, refer to OpenNMT documentation. To run SequenceR training:\n\n```bash\ncd src\nsequencer-train.sh\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Train",
+                "parent_header": [
+                    "SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair",
+                    "Model creation, training and use:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/README.md"
+        },
+        {
+            "result": {
+                "value": "For details on model usage (translation), refer to OpenNMT documentation. To run SequenceR testing:\n\n```bash\ncd src\nsequencer-test.sh\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Test",
+                "parent_header": [
+                    "SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair",
+                    "Model creation, training and use:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "sequencer",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ASSERT-KTH/sequencer",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/sequencer/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/sequencer/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 81,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 42,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/kth/sequencer/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 73385569
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 38525
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 33404
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 7059
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Perl",
+                "name": "Perl",
+                "type": "Programming_language",
+                "size": 6341
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 2010
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/src/Docker_Images/Sequencer_Repair/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/src/Docker_Images/Sequencer_Repair/Dockerfile"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/results/Golden/translateBFP.10.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/results/Golden/translate1klim.10.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/results/Golden/translate1klim.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/results/Golden/train.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/results/Golden/translateBFP.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/results/Golden/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/results/Golden/translate.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/results/Golden/translate.10.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/results/Golden/preprocess.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/results/Golden/run.10.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/results/Golden/translate4K.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/data/train.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/data/translate.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/data/preprocess.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/src/sequencer-train.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/src/sequencer-predict.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/src/setup_env.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/src/sequencer-test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/src/Defects4J_Experiment/Defects4J_experiment.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/src/Defects4J_Experiment/Defects4J_experiment_bulk.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/src/Continuous_Learning/codrep-test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/src/Continuous_Learning/continuous-learning-train-and-test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/src/Continuous_Learning/continuous-learning-get-and-submit.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/src/Continuous_Learning/continuous-learning-trigger.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/src/Continuous_Learning/public/run_server.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/src/Docker_Images/Sequencer_Repair/create-docker-image.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kth/sequencer/master/src/Docker_Images/Sequencer_Repair/docker-sequencer-predict.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Simply run the following two commands to set up use of the SequenceR Golden model:\n```bash\ndocker build --tag=sequencer .\ndocker run -it sequencer\n```\n\nAnd now all dependecies are installed (including defects4j).\n\nOr, use our [this version](https://cloud.docker.com/repository/docker/zimin/sequencer) from the Docker Hub.\n",
+                "type": "Text_excerpt",
+                "original_header": "Docker",
+                "parent_header": [
+                    "SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/README.md"
+        },
+        {
+            "result": {
+                "value": "**Install dependencies**\n\nFirst run `src/setup_env.sh` to setup enviroment and clone/compile project. Please view `src/setup_env.sh` for more details.\n\nAll models are versioned using [git-lfs](https://git-lfs.github.com/), make sure to configure it and correctly fetch the models before using.\n\n**Execution**\n\nThen run `src/sequencer-predict.sh` with the following parameters:\n```bash\n./sequencer-predict.sh --model=[model path] --buggy_file=[abs path] --buggy_line=[int] --beam_size=[int] --output=[abs path]\n```\n* --model: Absolute path to the model\n* --buggy_file: Absolute path to buggy file\n* --buggy_line: Line number indicating where the bug is, or just want it get changed.\n* --beam_size: Beam size for prediction\n* --output: Output directory to store the generated patches\n",
+                "type": "Text_excerpt",
+                "original_header": "Without docker",
+                "parent_header": [
+                    "SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/README.md"
+        },
+        {
+            "result": {
+                "value": "For details on model training, refer to OpenNMT documentation. To run SequenceR training:\n\n```bash\ncd src\nsequencer-train.sh\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Train",
+                "parent_header": [
+                    "SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair",
+                    "Model creation, training and use:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/README.md"
+        },
+        {
+            "result": {
+                "value": "For details on model usage (translation), refer to OpenNMT documentation. To run SequenceR testing:\n\n```bash\ncd src\nsequencer-test.sh\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Test",
+                "parent_header": [
+                    "SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair",
+                    "Model creation, training and use:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "SequenceR uses the OpenNMT library to set up program repair as a translation from buggy code to fixed code. Documentation on OpenNMT including parameter setup is at http://opennmt.net/OpenNMT-py/\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites",
+                "parent_header": [
+                    "SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair",
+                    "Model creation, training and use:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Choose a directory and:\n```bash\ngit clone https://github.com/OpenNMT/OpenNMT-py\n```\nWhen testing a new configuration, copy a working data directory and modify *sh files as desired.\n\nSet up environment variables:\n\n```bash\nexport CUDA_VISIBLE_DEVICES=0\nexport THC_CACHING_ALLOCATOR=0\nexport OpenNMT_py=.../OpenNMT-py\nexport data_path=.../results/Golden  # Or a new directory path as desired\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Setup",
+                "parent_header": [
+                    "SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair",
+                    "Model creation, training and use:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To rerun our experiment of SequenceR over [Defects4J](https://github.com/rjust/defects4j). Run `src/Defects4J_Experiment/Defects4J_experiment.sh`, make sure you have `defects4j` installed. \n",
+                "original_header": "Defects4J experiment"
+            },
+            "confidence": 0.9945422490173241,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/README.md"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "The code and data in this repository are under the MIT license.\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The training data consists of `results/Golden/src-train.txt` and `results/Golden/tgt-train.txt` (line to line correspondence). \nThe CodRep4 testing data consists of `results/Golden/src-test.txt` and `results/Golden/tgt-test.txt` (line to line correspondence).\n \n",
+                "original_header": "CodRep experiment"
+            },
+            "confidence": 0.9303601451204355,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@article{chen2018sequencer,\n    year = {2019},\n    journal = {IEEE Transaction on Software Engineering},\n    author = {Chen, Zimin and Kommrusch, Steve and Tufano, Michele and Pouchet, Louis-No{\\\"e}l and Poshyvanyk, Denys and Monperrus, Martin},\n    title = {SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair",
+                "author": "Chen, Zimin and Kommrusch, Steve and Tufano, Michele and Pouchet, Louis-No{\\\"e}l and Poshyvanyk, Denys and Monperrus, Martin"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/kth/sequencer/master/README.md"
+        }
+    ]
+}

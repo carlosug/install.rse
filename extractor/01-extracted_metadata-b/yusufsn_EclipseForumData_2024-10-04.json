@@ -1,0 +1,299 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:52:51"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/yusufsn/EclipseForumData",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "yusufsn",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-07-02T02:59:25Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2021-10-14T06:25:18Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "# CC0 1.0 Universal\nCC0 [summary](https://creativecommons.org/publicdomain/zero/1.0/) and [legal text](https://creativecommons.org/publicdomain/zero/1.0/legalcode)\n\nOur dataset is released in the public domain, so that anyone may freely build upon, enhance and reuse the dataset for any purposes without restriction under copyright or database law.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yusufsn/EclipseForumData/master/LICENSE.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Research Artifact: How are Project-Specific Forums Utilized? A Study of Participation, Content, and Sentiment in the Eclipse Ecosystem",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "EclipseForumData",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "yusufsn/EclipseForumData",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/yusufsn/EclipseForumData/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/yusufsn/EclipseForumData/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "analysis, dataset",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/yusufsn/EclipseForumData/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/yusufsn/EclipseForumData/releases/36638435",
+                "tag": "1.0",
+                "name": "Research Artifact: Sustaining a Healthy Ecosystem: Participation, Discussion, and Interaction in Eclipse Forums",
+                "author": {
+                    "name": "yusufsn",
+                    "type": "User"
+                },
+                "description": "# Research Artifact: Sustaining a Healthy Ecosystem: Participation, Discussion, and Interaction in Eclipse Forums\r\n\r\nhttps://github.com/yusufsn/EclipseForumData\r\n\r\nThis is a research artifact for the paper: Sustaining a Healthy Ecosystem: Participation, Discussion, and Interaction in Eclipse Forums. This artifact is a repository consisting of collected dataset including (i) 289,061 threads, (ii) 216,864 extracted links from threads, (iii) 2,170 contributors, and the results of our qualitative analysis, (i) 1,149 manually annotated type of discussion and (ii) 1,149 manually annotated sentiment analysis. The purposes of this artifact are to enable researchers to replicate our mixed-methods quantitative results of the paper, and to reuse the dataset for further software engineering research.\r\n\r\n## Contents\r\n\r\n* dataset: \r\n  * `289061_threads.csv.zip` - 289,061 collected main threads of all users without post from webmaster (.zip format)\r\n  * `216864_links.csv.zip` - 216,864 extracted links from collected threads (.zip format)\r\n  * `2170_contributors.csv` - 2,170 list of contributions (.csv format)\r\n* Results of manual analysis:\r\n  * [Manual annotation of discussion type](https://docs.google.com/spreadsheets/d/e/2PACX-1vQoRpcbrV66OEB4vaCG9Njq65zW7XpLRITYG3BlUOoa_DmeOKcdQIgYJ8y2aSlmL3y9bCUhjpP3rYmT/pubhtml)\r\n  * [Manual annotation of sentiment analysis](https://docs.google.com/spreadsheets/d/e/2PACX-1vQfyvsP1Zq3b9p_BYwkkgYXuEePJB6sIroC47jOUMcR5P8t7DCJFNpOJD565SPgqi--L3AAIQWs2kC5/pubhtml)\r\n  \r\n## Authors\r\n- [Yusuf Sulistyo Nugroho](https://yusufsn.github.io/)\r\n- [Syful Islam](https://syful-is.github.io/)\r\n- Keitaro Nakasai\r\n- [Ifraz Rehman](https://ifrazrehman.github.io/)\r\n- [Hideaki Hata](https://hideakihata.github.io/)\r\n- [Raula Gaikovina Kula](https://raux.github.io/)\r\n- [Meiyappan Nagappan](https://cs.uwaterloo.ca/~m2nagapp/)\r\n- [Kenichi Matsumoto](https://matsumotokenichi.github.io/)",
+                "tarball_url": "https://api.github.com/repos/yusufsn/EclipseForumData/tarball/1.0",
+                "zipball_url": "https://api.github.com/repos/yusufsn/EclipseForumData/zipball/1.0",
+                "html_url": "https://github.com/yusufsn/EclipseForumData/releases/tag/1.0",
+                "url": "https://api.github.com/repos/yusufsn/EclipseForumData/releases/36638435",
+                "release_id": 36638435,
+                "date_created": "2020-09-29T05:17:42Z",
+                "date_published": "2021-01-20T06:42:11Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "cff-version: 1.2.0\nauthors:\n- family-names: \"Nugroho\"\n  given-names: \"Yusuf Sulistyo\"\n- family-names: \"Islam\"\n  given-names: \"Syful\"\n- family-names: \"Nakasai\"\n  given-names: \"Keitaro\"\n- family-names: \"Rehman\"\n  given-names: \"Ifraz\"\n- family-names: \"Hata\"\n  given-names: \"Hideaki\"\n- family-names: \"Gaikovina Kula\"\n  given-names: \"Raula\"\n- family-names: \"Nagappan\"\n  given-names: \"Meiyappan\"\n- family-names: \"Matsumoto\"\n  given-names: \"Kenichi\"\ntitle: \"Research Artifact: How are Project-Specific Forums Utilized? A Study of Participation, Content, and Sentiment in the Eclipse Ecosystem\"\ndoi: 10.5281/zenodo.4451766\nurl: \"https://github.com/yusufsn/EclipseForumData\"\ntype: dataset\n",
+                "type": "File_dump",
+                "format": "cff"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/yusufsn/EclipseForumData/master/CITATION.cff"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yusufsn/EclipseForumData/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "https://github.com/yusufsn/EclipseForumData\n\n[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4451766.svg)](https://doi.org/10.5281/zenodo.4451766)\n\nThis is a research artifact for the paper: **How are Project-Specific Forums Utilized? A Study of Participation, Content, and Sentiment in the Eclipse Ecosystem**. This artifact is a repository consisting of collected dataset including (i) 289,061 threads, (ii) 216,864 extracted links from threads, (iii) 2,170 contributors, and the results of our qualitative analysis, (i) 1,142 manually annotated type of discussion and (ii) 1,142 manually annotated sentiment analysis. The purposes of this artifact are to enable researchers to replicate our mixed-methods quantitative results of the paper, and to reuse the dataset for further software engineering research.\n",
+                "type": "Text_excerpt",
+                "original_header": "Research Artifact: How are Project-Specific Forums Utilized? A Study of Participation, Content, and Sentiment in the Eclipse Ecosystem"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/yusufsn/EclipseForumData/master/README.md"
+        },
+        {
+            "result": {
+                "value": "* `LICENSE.md` - [CC0 1.0 Universal.](https://creativecommons.org/publicdomain/zero/1.0/)\n* `README.md` - this file.\n* dataset: directory for the dataset\n  * `289061_threads.csv.zip` - 289,061 collected main threads of all users without post from webmaster (.zip format)\n  * `216864_links.csv.zip` - 216,864 extracted links from collected threads (.zip format)\n  * `2170_contributors.csv` - 2,170 list of contributions (.csv format)\n* Results of manual analysis:\n  * [Manual annotation of discussion type](https://docs.google.com/spreadsheets/d/e/2PACX-1vQoRpcbrV66OEB4vaCG9Njq65zW7XpLRITYG3BlUOoa_DmeOKcdQIgYJ8y2aSlmL3y9bCUhjpP3rYmT/pubhtml)\n  * [Manual annotation of sentiment analysis](https://docs.google.com/spreadsheets/d/e/2PACX-1vQfyvsP1Zq3b9p_BYwkkgYXuEePJB6sIroC47jOUMcR5P8t7DCJFNpOJD565SPgqi--L3AAIQWs2kC5/pubhtml)\n",
+                "type": "Text_excerpt",
+                "original_header": "Contents",
+                "parent_header": [
+                    "Research Artifact: How are Project-Specific Forums Utilized? A Study of Participation, Content, and Sentiment in the Eclipse Ecosystem"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/yusufsn/EclipseForumData/master/README.md"
+        },
+        {
+            "result": {
+                "value": "* Published version in [Journal of Empirical Software Engineering](https://doi.org/10.1007/s10664-021-10032-2)\n* Preprint version in [ArXiv](https://arxiv.org/abs/2009.09130)\n  ",
+                "type": "Text_excerpt",
+                "original_header": "Related Paper",
+                "parent_header": [
+                    "Research Artifact: How are Project-Specific Forums Utilized? A Study of Participation, Content, and Sentiment in the Eclipse Ecosystem"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/yusufsn/EclipseForumData/master/README.md"
+        },
+        {
+            "result": {
+                "value": "- [Yusuf Sulistyo Nugroho](https://yusufsn.github.io/)\n- [Syful Islam](https://syful-is.github.io/)\n- Keitaro Nakasai\n- [Ifraz Rehman](https://ifrazrehman.github.io/)\n- [Hideaki Hata](https://hideakihata.github.io/)\n- [Raula Gaikovina Kula](https://raux.github.io/)\n- [Meiyappan Nagappan](https://cs.uwaterloo.ca/~m2nagapp/)\n- [Kenichi Matsumoto](https://matsumotokenichi.github.io/)\n",
+                "type": "Text_excerpt",
+                "original_header": "Authors",
+                "parent_header": [
+                    "Research Artifact: How are Project-Specific Forums Utilized? A Study of Participation, Content, and Sentiment in the Eclipse Ecosystem"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/yusufsn/EclipseForumData/master/README.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://doi.org/10.5281/zenodo.4451766"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/yusufsn/EclipseForumData/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Research Artifact: How are Project-Specific Forums Utilized? A Study of Participation, Content, and Sentiment in the Eclipse Ecosystem"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/yusufsn/EclipseForumData/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2009.09130"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/yusufsn/EclipseForumData/master/README.md"
+        }
+    ]
+}

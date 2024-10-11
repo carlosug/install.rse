@@ -1,0 +1,491 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:01:03"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/Trustworthy-Software/Quatrain",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "Trustworthy-Software",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-07-31T20:50:44Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-03-23T09:14:16Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021 Haoye TIAN\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/LICENSE"
+        },
+        {
+            "result": {
+                "value": "Quatrain is distributed under the terms of the MIT License, see [LICENSE](LICENSE).\n\n[//]: # (### deduplicate.py)\n[//]: # (deduplicating same patches.)",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "Quatrain"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Quatrain(Question Answering for Patch Correctness Evaluation), a supervised learning approach that exploits a deep NLP model to classify the relatedness of a bug report with a patch description. ",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "```bibtex\n@inproceedings{tian2022change,\n  title={Is this Change the Answer to that Problem? Correlating Descriptions of Bug and Code Changes for Evaluating Patch Correctness},\n  author={Tian, Haoye and Tang, Xunzhu and Habib, Andrew and Wang, Shangwen and Liu, Kui and Xia, Xin and Klein, Jacques and Bissyand{\\'E}, Tegawend{\\'E} F},\n  booktitle={37th IEEE/ACM International Conference on Automated Software Engineering},\n  pages={1--13},\n  url = {https://doi.org/10.1145/3551349.3556914}, \n  doi = {10.1145/3551349.3556914},\n  year={2022}\n}\n```\nPaper Link: https://dl.acm.org/doi/abs/10.1145/3551349.3556914\n",
+                "type": "Text_excerpt",
+                "original_header": "Is this Change the Answer to that Problem? Correlating Descriptions of Bug and Code Changes for Evaluating Patch Correctness"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Quatrain",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "Trustworthy-Software/Quatrain",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Trustworthy-Software/Quatrain/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Trustworthy-Software/Quatrain/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 8,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/Trustworthy-Software/Quatrain/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 326384
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 1613
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/Trustworthy-Software/Quatrain/releases/75680902",
+                "tag": "v1.7",
+                "name": "v1.7",
+                "author": {
+                    "name": "HaoyeTianCoder",
+                    "type": "User"
+                },
+                "description": "**Full Changelog**: https://github.com/Trustworthy-Software/Quatrain/compare/v1.6...v1.7",
+                "tarball_url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/tarball/v1.7",
+                "zipball_url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/zipball/v1.7",
+                "html_url": "https://github.com/Trustworthy-Software/Quatrain/releases/tag/v1.7",
+                "url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/releases/75680902",
+                "release_id": 75680902,
+                "date_created": "2022-08-29T09:14:56Z",
+                "date_published": "2022-08-29T19:30:18Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/Trustworthy-Software/Quatrain/releases/75575614",
+                "tag": "v1.6",
+                "name": "v1.6",
+                "author": {
+                    "name": "HaoyeTianCoder",
+                    "type": "User"
+                },
+                "description": "**Full Changelog**: https://github.com/Trustworthy-Software/Quatrain/compare/v1.5...v1.6",
+                "tarball_url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/tarball/v1.6",
+                "zipball_url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/zipball/v1.6",
+                "html_url": "https://github.com/Trustworthy-Software/Quatrain/releases/tag/v1.6",
+                "url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/releases/75575614",
+                "release_id": 75575614,
+                "date_created": "2022-08-28T15:36:30Z",
+                "date_published": "2022-08-28T15:39:32Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/Trustworthy-Software/Quatrain/releases/73875991",
+                "tag": "v1.5",
+                "name": "v1.5",
+                "author": {
+                    "name": "HaoyeTianCoder",
+                    "type": "User"
+                },
+                "description": "**Full Changelog**: https://github.com/Trustworthy-Software/Quatrain/compare/v1.4...v1.5\r\nfix DOI in README",
+                "tarball_url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/tarball/v1.5",
+                "zipball_url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/zipball/v1.5",
+                "html_url": "https://github.com/Trustworthy-Software/Quatrain/releases/tag/v1.5",
+                "url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/releases/73875991",
+                "release_id": 73875991,
+                "date_created": "2022-08-04T10:35:41Z",
+                "date_published": "2022-08-08T10:43:12Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/Trustworthy-Software/Quatrain/releases/73627814",
+                "tag": "v1.4",
+                "name": "v1.4",
+                "author": {
+                    "name": "HaoyeTianCoder",
+                    "type": "User"
+                },
+                "description": "**Full Changelog**: https://github.com/Trustworthy-Software/Quatrain/compare/v1.3...v1.4",
+                "tarball_url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/tarball/v1.4",
+                "zipball_url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/zipball/v1.4",
+                "html_url": "https://github.com/Trustworthy-Software/Quatrain/releases/tag/v1.4",
+                "url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/releases/73627814",
+                "release_id": 73627814,
+                "date_created": "2022-08-04T10:23:05Z",
+                "date_published": "2022-08-04T10:25:29Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/Trustworthy-Software/Quatrain/releases/73588644",
+                "tag": "v1.3",
+                "name": "v1.3",
+                "author": {
+                    "name": "HaoyeTianCoder",
+                    "type": "User"
+                },
+                "description": "**Full Changelog**: https://github.com/Trustworthy-Software/Quatrain/compare/v1.1...v1.3",
+                "tarball_url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/tarball/v1.3",
+                "zipball_url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/zipball/v1.3",
+                "html_url": "https://github.com/Trustworthy-Software/Quatrain/releases/tag/v1.3",
+                "url": "https://api.github.com/repos/Trustworthy-Software/Quatrain/releases/73588644",
+                "release_id": 73588644,
+                "date_created": "2022-08-03T22:14:04Z",
+                "date_published": "2022-08-03T22:16:04Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "#### For complete reproduction, please go to [README.md](https://github.com/Trustworthy-Software/Quatrain#readme).\n\n## \u2160) Requirements for Reproduction\n### A) Environment\n  * python 3.7 (Anaconda recommended)\n  * ```pip install -r requirements.txt```\n\nrun `sudo apt-get install python3.7-dev` first if you don't have python3.7 dev package.\n\n### B) Data elements \n  download _ASE2022withTextUnique.zip_ (need to be unzipped) and _ASE_features2_bert.pickle_ from [data in Zenodo](https://zenodo.org/record/6946294#.Yub3NWQzZhE \"Dataset for Quatrain\"), \n  accordingly change the absolute path of these two files in **experiment/config.py** of this repository as below.\n  1. self.path_patch ---> ASE2022withTextUnique.  Original dataset with patches text and commit messages text.\n  2. self.path_ASE2020_feature ---> ASE_features2_bert.pickle. The feature from Tian et al.'s ASE2020 [paper](https://ieeexplore.ieee.org/abstract/document/9286101) for our RQ3 DL experiment. \n\n### C) Test\nExecute the following command to see if you can successfully obtain RQ1 results (Figure 6 & Table 2).\n```\npython run.py RQ1\n```\n\n## \u2161) Custom Prediction\nTo predict the correctness of your custom patches, you are welcome to use the prediction interface.\n### A) Requirements\n  * **BERT model client&server:** 24-layer, 1024-hidden, 16-heads, 340M parameters. download it [here](https://storage.googleapis.com/bert_models/2019_05_30/wwm_cased_L-24_H-1024_A-16.zip).\n    \n  * **Environment for BERT server** (different from reproduction)\n    * python 3.7 \n    * pip install tensorflow==1.14\n    * pip install bert-serving-client==1.10.0\n    * pip install bert-serving-server==1.10.0\n    * pip install protobuf==3.20.1\n    * Launch BERT server via `bert-serving-start -model_dir \"Path2BertModel\"/wwm_cased_L-24_H-1024_A-16 -num_worker=2 -max_seq_len=360 -port 8190`\n    * switch the port in [BERT_Port](https://github.com/Trustworthy-Software/Quatrain/blob/main/representation/word2vec.py#L42) in case your port 8190 is occupied.\n  * **Bug report text:** developer-written bug report.\n  * **Patch description text:** generating patch description for your plausible patches with commit message generation tools, e.g. CodeTrans. [Github](https://github.com/agemagician/CodeTrans) and [API](https://huggingface.co/SEBIS/code_trans_t5_large_commit_generation_transfer_learning_finetune).\n\n### B) Predict\nLet's give it a try!\n```\npython run.py predict $bug_report_text $patch_description_text\n```\nFor instance: `python run.py predict 'Missing type-checks for var_args notation' 'check var_args properly'`\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/INSTALL.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```\nartifact_detection_model: a model to detect codes in text.\ndata: processed and structured dataset.\nexperiment: scripts to obtain experimental results of paper. \nfigure: saved figures for experiment\npreprocess: scripts to extract bug reports and commit messages.\nrepresentation: embeddings representation model.\nutils: scripts to deduplicate dataset.\n---------------\nINSTALL.md: installation instructions.\nquatrain_model.h5: pre-trained QUATRAIN model for users' custom prediction.\nrequirements.txt: required dependencies.\nrun.py: entrance to conduct experiment.\n``` \n",
+                "original_header": "Catalogue of Repository"
+            },
+            "confidence": 0.9998100857162449,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "  1. bug report summary: title for bug issue.\n  2. bug report description: detailed description for bug issue.\n  3. patch description: CodeTrans-generated commit message for patch.\n \n",
+                "original_header": "\u2160) Dataset"
+            },
+            "confidence": 0.9923263246127765,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* [data/bugreport_patch.txt](https://github.com/Trustworthy-Software/Quatrain/blob/main/data/bugreport_patch.txt): 9135 (1591:7544) Pairs of Bug report & Commit message. Structured as `bug-id $$ bug report summary $$ bug report description $$ patchId $$ patch description $$ label`\n* [data/bugreport_patch_json_bert.pickle](https://github.com/Trustworthy-Software/Quatrain/blob/main/data/bugreport_patch_json_bert.pickle): Bert embeddings of Pairs of Bug report & Commit message.\n* data/bugreport_patch_array_bert.pickle: Bert embeddings of paris for 10-fold cross validation.\n \n",
+                "original_header": "A) Table 1: Datasets of labelled patches."
+            },
+            "confidence": 0.9841082575040132,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Let's give it a try!\n```\npython run.py predict $bug_report_text $patch_description_text\n```\nFor instance: `python run.py predict 'Missing type-checks for var_args notation' 'check var_args properly'`\n \n",
+                "original_header": "B) Predict"
+            },
+            "confidence": 0.9332492813736711,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To re-train QUATRAIN model on our or other dataset, execute the following steps.\n  1. Structure your dataset as [data/bugreport_patch.txt](https://github.com/Trustworthy-Software/Quatrain/blob/main/data/bugreport_patch.txt). \n  2. Obtain Bert embeddings of your dataset via `experiment/save_bugreport_dataset_json.py`\n  3. Accordingly, change self.dataset_json in experiment/config.py \n  4. Execute `python run.py RQ1`\n \n",
+                "original_header": "\u2164) Custom Train"
+            },
+            "confidence": 0.9992444785420531,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/preprocess/Dev_fixed_commit/createBugsV2.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "faq": [
+        {
+            "result": {
+                "value": "```bibtex\n@inproceedings{tian2022change,\n  title={Is this Change the Answer to that Problem? Correlating Descriptions of Bug and Code Changes for Evaluating Patch Correctness},\n  author={Tian, Haoye and Tang, Xunzhu and Habib, Andrew and Wang, Shangwen and Liu, Kui and Xia, Xin and Klein, Jacques and Bissyand{\\'E}, Tegawend{\\'E} F},\n  booktitle={37th IEEE/ACM International Conference on Automated Software Engineering},\n  pages={1--13},\n  url = {https://doi.org/10.1145/3551349.3556914}, \n  doi = {10.1145/3551349.3556914},\n  year={2022}\n}\n```\nPaper Link: https://dl.acm.org/doi/abs/10.1145/3551349.3556914\n",
+                "type": "Text_excerpt",
+                "original_header": "Is this Change the Answer to that Problem? Correlating Descriptions of Bug and Code Changes for Evaluating Patch Correctness"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "  * python 3.7 (Anaconda recommended)\n  * pip install -r requirements.txt\n\nrun `sudo apt-get install python3.7-dev` first if you don't have python3.7 dev package.\n",
+                "type": "Text_excerpt",
+                "original_header": "A) Environment",
+                "parent_header": [
+                    "Quatrain",
+                    "\u2161) Requirements"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md"
+        },
+        {
+            "result": {
+                "value": "  download _ASE2022withTextUnique.zip_ (need to be unzipped) and _ASE_features2_bert.pickle_ from [data in Zenodo](https://zenodo.org/record/7029808#.YwuKF2QzZb8 \"Dataset for Quatrain\"), \n  accordingly change the absolute path of these two files in **experiment/config.py** of this repository as below.\n  1. self.path_patch ---> ASE2022withTextUnique.  Original dataset with patches text and commit messages text.\n  2. self.path_ASE2020_feature ---> ASE_features2_bert.pickle. The feature from Tian et al.'s ASE2020 [paper](https://ieeexplore.ieee.org/abstract/document/9286101) for our RQ3 DL experiment. \n  \nSimplified dataset: [ASE2022withText.](https://zenodo.org/record/7315302#.Y293X2RKhhE)\n",
+                "type": "Text_excerpt",
+                "original_header": "B) Data elements",
+                "parent_header": [
+                    "Quatrain",
+                    "\u2161) Requirements"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md"
+        },
+        {
+            "result": {
+                "value": "  * **BERT model client&server:** 24-layer, 1024-hidden, 16-heads, 340M parameters. download it [here](https://storage.googleapis.com/bert_models/2019_05_30/wwm_cased_L-24_H-1024_A-16.zip).\n  * **Environment for BERT server** (different from reproduction)\n    * python 3.7 \n    * pip install tensorflow==1.14\n    * pip install bert-serving-client==1.10.0\n    * pip install bert-serving-server==1.10.0\n    * pip install protobuf==3.20.1\n    * Launch BERT server via `bert-serving-start -model_dir \"Path2BertModel\"/wwm_cased_L-24_H-1024_A-16 -num_worker=2 -max_seq_len=360 -port 8190`\n    * switch the port in [BERT_Port](https://github.com/Trustworthy-Software/Quatrain/blob/main/representation/word2vec.py#L42) in case your port 8190 is occupied.\n  * **Bug report text:** developer-written bug report.\n  * **Patch description text:** generating patch description for your plausible patches with commit message generation tools, e.g. CodeTrans. [Github](https://github.com/agemagician/CodeTrans) and [API](https://huggingface.co/SEBIS/code_trans_t5_large_commit_generation_transfer_learning_finetune).\n",
+                "type": "Text_excerpt",
+                "original_header": "A) Requirements for BERT",
+                "parent_header": [
+                    "Quatrain",
+                    "\u2163) Custom Prediction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{tian2022change,\n    year = {2022},\n    doi = {10.1145/3551349.3556914},\n    url = {https://doi.org/10.1145/3551349.3556914},\n    pages = {1--13},\n    booktitle = {37th IEEE/ACM International Conference on Automated Software Engineering},\n    author = {Tian, Haoye and Tang, Xunzhu and Habib, Andrew and Wang, Shangwen and Liu, Kui and Xia, Xin and Klein, Jacques and Bissyand{\\'E}, Tegawend{\\'E} F},\n    title = {Is this Change the Answer to that Problem? Correlating Descriptions of Bug and Code Changes for Evaluating Patch Correctness},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1145/3551349.3556914",
+                "title": "Is this Change the Answer to that Problem? Correlating Descriptions of Bug and Code Changes for Evaluating Patch Correctness",
+                "author": "Tian, Haoye and Tang, Xunzhu and Habib, Andrew and Wang, Shangwen and Liu, Kui and Xia, Xin and Klein, Jacques and Bissyand{\\'E}, Tegawend{\\'E} F",
+                "url": "https://doi.org/10.1145/3551349.3556914"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://zenodo.org/badge/latestdoi/519884433"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Is this Change the Answer to that Problem? Correlating Descriptions of Bug and Code Changes for Evaluating Patch Correctness"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Trustworthy-Software/Quatrain/main/README.md"
+        }
+    ]
+}

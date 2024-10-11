@@ -1,0 +1,264 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:16:52"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/zhongxingyu/Java-Annotation-Study",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "zhongxingyu",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-08-21T02:10:08Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-08-14T15:58:19Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Source code and data about our large scale study about Java annotaion in practice",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains our code for studying Java annotation and its evolution, the collected large scale data about evolution of\nannotations in three years for each project, and our manual analysis of the characteristics of annotation evolution.  \n \n",
+                "original_header": "What is this repository?"
+            },
+            "confidence": 0.9957632321888822,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zhongxingyu/Java-Annotation-Study/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The repository mainly contains three folders: src, annotation-evolution-data, and Sampled-data.\n \n",
+                "original_header": "Structure of this repository"
+            },
+            "confidence": 0.9405216702538137,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zhongxingyu/Java-Annotation-Study/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The src folder contains the code for conducting our study. In particular, it contains two sub-folders: repositoryPrepare and annotationRetriver.\nThe repositoryPrepare folder contains code related for selecting large and popular projects according to stargazer counts, commit numbers,\nand contributor numbers, which finally results in the 1,094 projects used in this study. For the 1,094 projects specified in file\n\"download-repository.sh\", the code in the annotationRetriver folder downloads these projects to local machine, retrives the evolution \nhistory for these projects, and finally extracts different kinds of annotation change behaviors. The entry class is AnnotationEvolutionGenerator \nand will generate a csv file that conatins the evolution of annotations in the past three years for each project. \n \n",
+                "original_header": "Folder src"
+            },
+            "confidence": 0.9547618938427902,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zhongxingyu/Java-Annotation-Study/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The annotation-evolution-data folder conatins the generated data about evolution of annotations for three years. For each project, there is \nis a csv file named \"info_for_all_commits_use\" which has 22 columns. Some columns contain annotation unrelated info. The column \"pName\" represents the name of the project, \"ID\" means the \ncommit number, \"PE\" means whether we have encountered parse error when we used Spoon (https://github.com/INRIA/spoon) to parse the file, \n\"bType1\" and \"bType2\" mean whether the commit is a bug-fixing commit (we use two different sets of error-related key words to estimate \nwhether the commit is a bug-fixing commit, \"bType1\" is the result of using less words and \"bType2\" is the result of using more words, we \nfinally adop \"bType2\" as we find it more accurate), \"cName\" means the name of the changed class, \"cType\" means the change type of the changed\nclass (\"M\" stands for modification, \"A\" stands for addition, and \"D\" stands for deletion), \"Size\" means the lines of code (LOC) for the\nchanged class, \"nbCC\" means code churn for the changed class (code lines added, modified, or deleted), \"aName\" means the author name for\nthe commit, and finally \"Date\" means the date for the commit.  \n",
+                "original_header": "Folder annotation-evolution-data"
+            },
+            "confidence": 0.9682097386554082,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zhongxingyu/Java-Annotation-Study/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The Sampled-data folder contains our manual analysis results. Basically, it contains two kinds of reults. First, we separate code independent \nannotation changes (annotation changes that are not related with other code changes) form code consistent annotation changes (annotation\nchanges that are related with other code changes). Code independent annotation changes are are likely to reflect more directly developers\u2019 concerns \nover the annotations (missing annotations or problems with existing annotations). Change instances correspond to \"nbUseAE\", \"nbUseDE\", \"nbUseC\",\nand \"nbUseU\" are likely to be code independent annotation changesare, and we further use some heuristics to eliminate potential code consistent \nannotation changes among them. After that, we sample 384 instances for each of them and study the characteristics of them, such as the reason\nbehind the changes and what in detail are the changes. The results are summaried in csv files ANNOTATION-ADD-SAMPLE, ANNOTATION-CHANGE-SAMPLE,\nANNOTATION-DELETE-SAMPLE, and ANNOTATION-UPDATE-SAMPLE. These files contain columns like \"Repository Name\", \"Commit Link\", \"File Name\",\n\"Involved Annotation\", \"Reason\", \"Behavior\", and \"Remark\".  \nSecond, we find that nearly three-quarter of the assigned annotation values are typed as\nString, and the String content could actually be better typed (for instance, as Class or Primitive) in some cases. We doubt types of some \nannotation members are wrongly designed as String. We sample some String type annotation members for which the assigned annotation values match\nwith Primitive and class name, and manually check them. We find that there are truly many wrongly designed String types. The results are\nsummarized in csv files String-Type-Annotation-Member-Check (Assigned Value Matches with Class Name) and String-Type-Annotation-Member-Check\n(Assigned Value Matches with Primitive). These files contain columns like \"Repository Name\", \"Annotation Name\", \"Annotation Member Name\", \n\"Assigned Value (in Our Sample)\", and \"Wrongly Designed as String Type?\". \n",
+                "original_header": "Folder Sampled-data"
+            },
+            "confidence": 0.9175766539898278,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zhongxingyu/Java-Annotation-Study/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Java-Annotation-Study",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "zhongxingyu/Java-Annotation-Study",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/zhongxingyu/Java-Annotation-Study/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/zhongxingyu/Java-Annotation-Study/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 12,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/zhongxingyu/Java-Annotation-Study/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 167392
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 105910
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/zhongxingyu/Java-Annotation-Study/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/zhongxingyu/Java-Annotation-Study/master/download-repository.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/zhongxingyu/Java-Annotation-Study/master/src/repositoryPrepare/download-studied-repository.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@article{yu:hal-02091516,\n    doi = {10.1109/TSE.2019.2910516},\n    year = {2019},\n    publisher = {{Institute of Electrical and Electronics Engineers}},\n    journal = {{IEEE Transactions on Software Engineering}},\n    url = {https://hal.inria.fr/hal-02091516/document},\n    author = {Yu, Zhongxing and Bai, Chenggang and Seinturier, Lionel and Monperrus, Martin},\n    title = {Characterizing the Usage, Evolution and Impact of Java Annotations in Practice},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/TSE.2019.2910516",
+                "title": "Characterizing the Usage, Evolution and Impact of Java Annotations in Practice",
+                "author": "Yu, Zhongxing and Bai, Chenggang and Seinturier, Lionel and Monperrus, Martin",
+                "url": "https://hal.inria.fr/hal-02091516/document"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zhongxingyu/Java-Annotation-Study/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Java-Annotation-Study"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zhongxingyu/Java-Annotation-Study/master/README.md"
+        }
+    ]
+}

@@ -1,0 +1,283 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 23:58:45"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ideas-labo/DaL",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ideas-labo",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-06-02T08:03:15Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-04-15T05:46:03Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "The is the supplementary repository for the paper \"Predicting Software Performance with Divide-and-Learn\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "> Predicting the performance of highly configurable software systems is the foundation for performance testing and quality assurance. To that end, recent work has been relying on machine/deep learning to model software performance. However, a **crucial yet unaddressed challenge** is how to cater for the **sparsity** inherited from the configuration landscape: the influence of configuration options (features) and the distribution of data samples are highly sparse.\n> \n> In this paper, we propose an approach based on the concept of **'divide-and-learn'**, dubbed *DaL*. The basic idea is that, to handle sample sparsity, we divide the samples from the configuration landscape into **distant divisions**, for each of which we build a **regularized Deep Neural Network** as the local model to deal with the feature sparsity. A newly given configuration would then be assigned to the right model of division for the final prediction. \n> \n> Experiment results from eight real-world systems and five sets of training data reveal that, compared with the state-of-the-art approaches, *DaL* performs **no worse than the best counterpart on 33 out of 40 cases** (within which 26 cases are significantly better) with up to **1.94\u00d7** improvement on accuracy; requires fewer samples to reach the same/better accuracy; and producing acceptable training overhead. Practically, *DaL* also considerably improves different global models when using them as the underlying local models, which further strengthens its flexibility. \n> \nThis repository contains the **key codes**, **full data used**, **raw experiment results** and **the supplementary tables** for the paper.\n \n",
+                "original_header": "Predicting Software Performance with Divide-and-Learn"
+            },
+            "confidence": 0.9909683559893927,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ideas-labo/DaL/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "    CART with data-efficient sampling method. \n    Linear regression with optimal binary and numerical sampling method and stepwise feature selection. \n",
+                "original_header": "State-of-the-art Performance Prediction Models"
+            },
+            "confidence": 0.9104870769715223,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ideas-labo/DaL/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "DaL",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ideas-labo/DaL",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ideas-labo/DaL/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ideas-labo/DaL/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/ideas-labo/DaL/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 61789
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ideas-labo/DaL/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": ">Jingzhi Gong and Tao Chen. Predicting Software Performance with Divide-and-Learn. *In Proceedings of the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)*, December 3\u20139, 2023, San Francisco, CA, USA., 13 pages.\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ideas-labo/DaL/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "1. Download all the files into the same folder/clone the repository.\n\n2. Install the specified version of Python and Tensorflow:\nthe codes have been tested with **Python 3.6 - 3.9** and **Tensorflow 2.x**, other versions might cause errors.\n\n3. Install all missing packages according to **requirements.txt** and runtime messages.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites and Installation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ideas-labo/DaL/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "1. Download all the files into the same folder/clone the repository.\n\n2. Install the specified version of Python and Tensorflow:\nthe codes have been tested with **Python 3.6 - 3.9** and **Tensorflow 2.x**, other versions might cause errors.\n\n3. Install all missing packages according to **requirements.txt** and runtime messages.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites and Installation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ideas-labo/DaL/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To run more complicated experiments, alter the codes following the instructions below and comments in *DaL_main.py*.\n \n",
+                "original_header": "Change Experiment Settings"
+            },
+            "confidence": 0.9990559765500389,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ideas-labo/DaL/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "- **Command line**: cd to the folder with the codes, input the command below, and the rest of the processes will be fully automated.\n\n        python DaL_main.py\n        \n- **Python IDE (e.g. Pycharm)**: Open the *DaL_main.py* file on the IDE, and simply click 'Run'.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Run *DaL*"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ideas-labo/DaL/main/README.md"
+        },
+        {
+            "result": {
+                "value": "    Add the dedicated d into the list 'depths' at line 27.\n    \n    E.g, run DaL with d=2: set 'depths = [2]'.\n\n    E.g, run DaL with d=3 and d=4, respectively: set 'depths = [3, 4]'.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "To run DaL with different depth d",
+                "parent_header": [
+                    "Change Experiment Settings"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ideas-labo/DaL/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "The main program *DaL_main.py* defaultly runs a demo experiment that evaluates *DaL* with 5 sample sizes of *Lrzip*, \neach repeated 30 times, without hyperparameter tuning (to save demonstration time).\n\nA **successful run** would produce similar messages as below: \n\n        Run 1\n        N_train:  127\n        N_test:  5057\n        ---DNN_DaL depth 1---\n        Dividing...\n          106 samples with feature 5 <= 0.5:\n          21 samples with feature 5 > 0.5:\n        Training...\n        Testing...\n        Best shot rate: 4885/5057 = 0.9659877397666601\n        > DNN_DaL MRE: 30.88\n        DNN_DaL total time cost (minutes): 0.91\n\nThe results will be saved in a file in the same directory with a name in the format *'System_Nsamples_Nexperiments_Date'*, for example, *'Lrzip_127_01-30_05-05'*.\n",
+                "type": "Text_excerpt",
+                "original_header": "Demo Experiment"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ideas-labo/DaL/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Predicting Software Performance with Divide-and-Learn"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ideas-labo/DaL/main/README.md"
+        }
+    ]
+}

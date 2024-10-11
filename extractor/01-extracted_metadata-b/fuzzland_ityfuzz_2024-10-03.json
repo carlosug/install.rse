@@ -1,0 +1,795 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:08:16"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/fuzzland/ityfuzz",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "fuzzland",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-10-25T00:09:33Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-02T14:41:35Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 FuzzLand\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Blazing Fast Bytecode-Level Hybrid Fuzzer for Smart Contracts",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "ItyFuzz is a blazing-fast EVM and MoveVM smart contract hybrid fuzzer that combines symbolic execution and fuzzing to find bugs in smart contracts offchain and onchain. \n \n",
+                "original_header": "\ud83c\udf66 ItyFuzz"
+            },
+            "confidence": 0.9459679455649938,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "ityfuzz",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "fuzzland/ityfuzz",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 830,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "aptos, blockchain, concolic-execution, ethereum, evm, fuzzing, move, smart-contracts, solidity, sui",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 134,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/fuzzland/ityfuzz/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Rust",
+                "name": "Rust",
+                "type": "Programming_language",
+                "size": 1598548
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Solidity",
+                "name": "Solidity",
+                "type": "Programming_language",
+                "size": 78805
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 29050
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 12420
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Move",
+                "name": "Move",
+                "type": "Programming_language",
+                "size": 7800
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Handlebars",
+                "name": "Handlebars",
+                "type": "Programming_language",
+                "size": 4417
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 1513
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 1284
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 427
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "RenderScript",
+                "name": "RenderScript",
+                "type": "Programming_language",
+                "size": 1
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/177195709",
+                "tag": "nightly-fb4e87a36ae3b4596fe74178004d1b51e4cfcad5",
+                "name": "Nightly (2024-10-03)",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- No changes",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/nightly-fb4e87a36ae3b4596fe74178004d1b51e4cfcad5",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/nightly-fb4e87a36ae3b4596fe74178004d1b51e4cfcad5",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/nightly-fb4e87a36ae3b4596fe74178004d1b51e4cfcad5",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/177195709",
+                "release_id": 177195709,
+                "date_created": "2024-09-27T02:24:12Z",
+                "date_published": "2024-09-27T02:30:28Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/128237851",
+                "tag": "nightly",
+                "name": "Nightly",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- No changes",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/nightly",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/nightly",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/nightly",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/128237851",
+                "release_id": 128237851,
+                "date_created": "2024-09-27T02:24:12Z",
+                "date_published": "2023-11-07T00:39:58Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/172669051",
+                "tag": "nightly-3d32fb22e925052ad3a3360ae126a8569b380d9c",
+                "name": "Nightly (2024-09-13)",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "\n## Other\n\n- Add constructor args (#524)\n- support ipc request (#528)\n- Support arbitrum (#529)\n- Support scroll (#531)\n- Fix bug. (#532)\n- Save trace of the found bug correctly (#533)\n- Revert \"save trace of the found bug (#533)\" (#534)\n",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/nightly-3d32fb22e925052ad3a3360ae126a8569b380d9c",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/nightly-3d32fb22e925052ad3a3360ae126a8569b380d9c",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/nightly-3d32fb22e925052ad3a3360ae126a8569b380d9c",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/172669051",
+                "release_id": 172669051,
+                "date_created": "2024-08-29T04:40:52Z",
+                "date_published": "2024-08-30T00:08:50Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/170734700",
+                "tag": "nightly-6b1c2d86c95d8d279d0b436ec9adc40f97405d23",
+                "name": "Nightly (2024-08-29)",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "\n## Other\n\n- Add constructor args (#524)\n- support ipc request (#528)\n- Support arbitrum (#529)\n- Support scroll (#531)\n- Fix bug. (#532)\n- Save trace of the found bug correctly (#533)\n",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/nightly-6b1c2d86c95d8d279d0b436ec9adc40f97405d23",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/nightly-6b1c2d86c95d8d279d0b436ec9adc40f97405d23",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/nightly-6b1c2d86c95d8d279d0b436ec9adc40f97405d23",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/170734700",
+                "release_id": 170734700,
+                "date_created": "2024-08-17T21:44:27Z",
+                "date_published": "2024-08-18T00:08:49Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/169870231",
+                "tag": "nightly-d63fe0c6df66819515dcd899d7081bbf5fa7d363",
+                "name": "Nightly (2024-08-17)",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "\n## Other\n\n- Add constructor args (#524)\n- support ipc request (#528)\n- Support arbitrum (#529)\n- Support scroll (#531)\n- Fix bug. (#532)\n",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/nightly-d63fe0c6df66819515dcd899d7081bbf5fa7d363",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/nightly-d63fe0c6df66819515dcd899d7081bbf5fa7d363",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/nightly-d63fe0c6df66819515dcd899d7081bbf5fa7d363",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/169870231",
+                "release_id": 169870231,
+                "date_created": "2024-08-12T20:39:09Z",
+                "date_published": "2024-08-13T00:09:03Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/169690684",
+                "tag": "nightly-d269f601bb710fc35e1c158a989ad27d73df8e1c",
+                "name": "Nightly (2024-08-12)",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "\n## Other\n\n- Add constructor args (#524)\n- support ipc request (#528)\n- Support arbitrum (#529)\n- Support scroll (#531)\n",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/nightly-d269f601bb710fc35e1c158a989ad27d73df8e1c",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/nightly-d269f601bb710fc35e1c158a989ad27d73df8e1c",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/nightly-d269f601bb710fc35e1c158a989ad27d73df8e1c",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/169690684",
+                "release_id": 169690684,
+                "date_created": "2024-08-11T04:01:11Z",
+                "date_published": "2024-08-12T00:08:40Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/169598454",
+                "tag": "nightly-2b14ae612bfb0a620140371dda41499e7a95febb",
+                "name": "Nightly (2024-08-11)",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "\n## Other\n\n- Add constructor args (#524)\n- support ipc request (#528)\n- Support arbitrum (#529)\n- Support scroll (#531)\n",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/nightly-2b14ae612bfb0a620140371dda41499e7a95febb",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/nightly-2b14ae612bfb0a620140371dda41499e7a95febb",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/nightly-2b14ae612bfb0a620140371dda41499e7a95febb",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/169598454",
+                "release_id": 169598454,
+                "date_created": "2024-08-09T02:56:58Z",
+                "date_published": "2024-08-10T00:08:24Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/168355335",
+                "tag": "nightly-f12392103e13ef11e3b86813fa1fc7b53352477b",
+                "name": "Nightly (2024-08-09)",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "\n## Other\n\n- Add constructor args (#524)\n- support ipc request (#528)\n- Support arbitrum (#529)\n",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/nightly-f12392103e13ef11e3b86813fa1fc7b53352477b",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/nightly-f12392103e13ef11e3b86813fa1fc7b53352477b",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/nightly-f12392103e13ef11e3b86813fa1fc7b53352477b",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/168355335",
+                "release_id": 168355335,
+                "date_created": "2024-08-01T08:40:30Z",
+                "date_published": "2024-08-02T00:08:16Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/167746595",
+                "tag": "nightly-91f68011f68c151260ce213984ed09da173fb320",
+                "name": "Nightly (2024-08-01)",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "\n## Other\n\n- Add constructor args (#524)\n- support ipc request (#528)\n",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/nightly-91f68011f68c151260ce213984ed09da173fb320",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/nightly-91f68011f68c151260ce213984ed09da173fb320",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/nightly-91f68011f68c151260ce213984ed09da173fb320",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/167746595",
+                "release_id": 167746595,
+                "date_created": "2024-07-29T02:00:53Z",
+                "date_published": "2024-07-30T00:10:58Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/167441741",
+                "tag": "nightly-d7469be3d979ae1692d40ecaa8829f55c20e82ee",
+                "name": "Nightly (2024-07-29)",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- No changes",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/nightly-d7469be3d979ae1692d40ecaa8829f55c20e82ee",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/nightly-d7469be3d979ae1692d40ecaa8829f55c20e82ee",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/nightly-d7469be3d979ae1692d40ecaa8829f55c20e82ee",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/167441741",
+                "release_id": 167441741,
+                "date_created": "2024-07-26T04:15:51Z",
+                "date_published": "2024-07-27T00:08:25Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/167225388",
+                "tag": "nightly-8aa26615b7d258f513e88b7f435b791f08a26cce",
+                "name": "Nightly (2024-07-26)",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "\n## Other\n\n- upgrade EVMole to 0.3.6 (#525)\n- update bsc rpc (#526)\n",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/nightly-8aa26615b7d258f513e88b7f435b791f08a26cce",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/nightly-8aa26615b7d258f513e88b7f435b791f08a26cce",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/nightly-8aa26615b7d258f513e88b7f435b791f08a26cce",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/167225388",
+                "release_id": 167225388,
+                "date_created": "2024-07-25T21:53:51Z",
+                "date_published": "2024-07-26T00:11:39Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/162659315",
+                "tag": "nightly-03d33038e8406663168e5c6b6952ec3c38260974",
+                "name": "Nightly (2024-07-25)",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- No changes",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/nightly-03d33038e8406663168e5c6b6952ec3c38260974",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/nightly-03d33038e8406663168e5c6b6952ec3c38260974",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/nightly-03d33038e8406663168e5c6b6952ec3c38260974",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/162659315",
+                "release_id": 162659315,
+                "date_created": "2024-06-26T04:41:41Z",
+                "date_published": "2024-06-27T00:08:02Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/132357790",
+                "tag": "nightly-bfa61e6dae2634a25dc06eb846655ac71572da4d",
+                "name": "Nightly (2023-12-05)",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- No changes",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/nightly-bfa61e6dae2634a25dc06eb846655ac71572da4d",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/nightly-bfa61e6dae2634a25dc06eb846655ac71572da4d",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/nightly-bfa61e6dae2634a25dc06eb846655ac71572da4d",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/132357790",
+                "release_id": 132357790,
+                "date_created": "2023-12-01T06:32:11Z",
+                "date_published": "2023-12-02T00:09:37Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/127613466",
+                "tag": "nightly-6c14383630d93d6a03828417cf26bc254d9db5bf",
+                "name": "Nightly (2023-11-02)",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "\n## Other\n\n- Wrap ityfuzz CLI (#228)\n- Update readme (#230)\n- Update readme (#232)\n- Fix builder results parsing issues (#229)\n- Remove core (#236)\n- Update Permissions of executable file (#241)\n- Fix #235: fix build/test errors when enabling 'sui_support' (#239)\n- [skip ci] Fix ityfuzz bin (#244)\n- Fix Onchain FP due to incorrect liquidation logic (#240)\n- use fixed latest blocknumber when undefined (#245)\n- Fix #208: move_fuzzer supports generic structs (#243)\n- Fix reserve oracle (#247)\n- fix abi corpus(receive/fallback) (#246)\n- handle instrinc tx (#250)\n- Fix #248: upgrade heimdall (#254)\n- Reduce Havoc + Fix for Olympus + Reentrancy Oracle (#251)\n- etherscan_key as env (#255)\n- Typo fix (#256)\n- Del unused code [Liquidite] (#258)\n- Feature generate foundry test file (#261)\n- skip bytecode decode when using builder (#263)\n- Fix concolic solution conflict with abi (#262)\n- Fix #259: more elegant way to build (#264)\n- More elegant way to build (#270)\n- allow whitespace in bin file (#274)\n- Feature: generate foundry test file (#266)\n- Optimize ERC20 Oracles (#273)\n- New Sequential Minimizer (#267)\n- Fix #260: failed to parse abis file (#280)\n- Fix #275: onchain verilog ctf test on longer pwnable (#278)\n- Fix #269: use tracing instead of println (#281)\n- Revert \"Fix #269: use tracing instead of println\" (#286)\n- Fix #282: use minimized concise_inputs to generate foundry test (#290)\n- fix coverge on_insert (#287)\n- Fix #283: skip solving after call stack exceeds MAX_CALL_DEPTH (#291)\n- [skip ci] redirect to docs (#299)\n- Update README.md (#300)\n- Update README.md (#301)\n- [skip ci] redirect to docs (#302)\n- Update Cargo.toml (#305)\n- Multithreaded constraint solving (#292)\n- Add ExploitTemplate (#276)\n- Invariant (#279)\n- Feat:integer overflow oracle (#293)\n",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/nightly-6c14383630d93d6a03828417cf26bc254d9db5bf",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/nightly-6c14383630d93d6a03828417cf26bc254d9db5bf",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/nightly-6c14383630d93d6a03828417cf26bc254d9db5bf",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/127613466",
+                "release_id": 127613466,
+                "date_created": "2023-11-01T11:52:28Z",
+                "date_published": "2023-11-02T00:38:57Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/113527200",
+                "tag": "v0.0.2",
+                "name": "0.0.2",
+                "author": {
+                    "name": "shouc",
+                    "type": "User"
+                },
+                "description": "### New Feature\r\n* Support one-click Foundry & Hardhat project fuzzing by directly deploying to ItyFuzz testnet\r\n* Support Echidna, Scribble, and Foundry (mostly) invariants\r\n* Support generating coverage report with covered and uncovered Solidity code\r\n* Support taint analysis\r\n* Support new chains: Gnosis, zkEVM, Arbitrum, Base, Optimism, and their testnets\r\n* Support fuzzing contracts without ABI onchain \r\n* Support fuzzing with older EVM specs\r\n* Support dumping contract relations\r\n\r\n\r\n### Improvements\r\n* More accurate coverage tracking using source map\r\n* Optimized for reentrancy attack\r\n* Removed Python proxy and use file system for caching\r\n* Faster corpus manager\r\n* Faster feedback\r\n* Faster EVM executor\r\n\r\n\r\n### Bug Fix\r\n* Fixed multiple bugs causing FP for reentrancy\r\n* Fixed multiple bugs when handling flashloan\r\n* Fixed crashes due to failing RPC calls\r\n* Fixed crashes due to calling unfetched code in onchain campaign\r\n",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/v0.0.2",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/v0.0.2",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/v0.0.2",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/113527200",
+                "release_id": 113527200,
+                "date_created": "2023-07-23T22:50:59Z",
+                "date_published": "2023-07-25T15:46:48Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fuzzland/ityfuzz/releases/101157621",
+                "tag": "v0.0.1",
+                "name": "0.0.1",
+                "author": {
+                    "name": "shouc",
+                    "type": "User"
+                },
+                "description": "alpha release",
+                "tarball_url": "https://api.github.com/repos/fuzzland/ityfuzz/tarball/v0.0.1",
+                "zipball_url": "https://api.github.com/repos/fuzzland/ityfuzz/zipball/v0.0.1",
+                "html_url": "https://github.com/fuzzland/ityfuzz/releases/tag/v0.0.1",
+                "url": "https://api.github.com/repos/fuzzland/ityfuzz/releases/101157621",
+                "release_id": 101157621,
+                "date_created": "2023-04-27T17:01:41Z",
+                "date_published": "2023-04-27T17:07:16Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/Dockerfile"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/ui/start.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "```\ncurl -L https://ity.fuzz.land/ | bash\nityfuzzup\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Install",
+                "parent_header": [
+                    "\ud83c\udf66 ItyFuzz"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p align=\"middle\">\n    <img src=\"https://ityfuzz.assets.fuzz.land/daedaluzz-bar.jpeg\" width=\"49%\">\n    <img src=\"https://ityfuzz.assets.fuzz.land/FvRIuhfWwAEdBBz.jpg\" width=\"49%\">\n</p>\n \n",
+                "original_header": "Performance"
+            },
+            "confidence": 0.9674118989224696,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Generating full exploit to steal funds from a [contract](https://polygonscan.com/address/0x5d6c48f05ad0fde3f64bab50628637d73b1eb0bb) with flashloan + read-only reentrancy vulnerability on Polygon.\n\n```bash\n# Fork Polygon at block 35718198 and fuzz the contract\nETH_RPC_URL=https://polygon-rpc.com ityfuzz evm\\\n    -t 0xbcf6e9d27bf95f3f5eddb93c38656d684317d5b4,0x5d6c48f05ad0fde3f64bab50628637d73b1eb0bb\\\n    -c polygon\\\n    --flashloan\\\n    --onchain-block-number 35718198\\\n    --onchain-etherscan-api-key TR24XDQF35QCNK9PZBV8XEH2XRSWTPWFWT # <-- Get your own API key at https://polygonscan.com/apis if this one is rate limited \n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Fuzzing Deployed Smart Contract",
+                "parent_header": [
+                    "\ud83c\udf66 ItyFuzz",
+                    "Example"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Run a Foundry invariant test defined in `Invariant` contract in `test/Invariant.sol`.\n\n```bash\n# Replaces: forge test --mc test/Invariant.sol:Invariant\nityfuzz evm -m test/Invariant.sol:Invariant -- forge test\n```\n\nFor other examples and usages, check out the [docs](https://docs.ityfuzz.rs).\n",
+                "type": "Text_excerpt",
+                "original_header": "Foundry Invariant Test",
+                "parent_header": [
+                    "\ud83c\udf66 ItyFuzz",
+                    "Example"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "\ud83c\udf66 ItyFuzz"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/fuzzland/ityfuzz/wiki",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/README.md"
+        }
+    ],
+    "support_channels": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://discord.com/invite/qQa436VEwt"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://ityfuzz.assets.fuzz.land/ityfuzz3.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://ityfuzz.assets.fuzz.land/demo-out.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://ityfuzz.assets.fuzz.land/ityfuzz1.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://ityfuzz.assets.fuzz.land/daedaluzz-bar.jpeg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://ityfuzz.assets.fuzz.land/FvRIuhfWwAEdBBz.jpg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fuzzland/ityfuzz/master/README.md"
+        }
+    ]
+}

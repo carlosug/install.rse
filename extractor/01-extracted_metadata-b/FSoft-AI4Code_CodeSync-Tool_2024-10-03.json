@@ -1,0 +1,366 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:04:20"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/FSoft-AI4Code/DocChecker",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "FSoft-AI4Code",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-05-08T20:39:59Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-25T23:16:52Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "DocChecker: Bootstrapping Code-Text Pretrained Language Model to Detect Inconsistency Between Code and Comment",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Comments on source code serve as critical documentation for enabling developers to understand the code's functionality and use it properly. However, it is challenging to ensure that comments accurately reflect the corresponding code, particularly as the software evolves over time. Although increasing interest has been taken in developing automated methods for identifying and fixing inconsistencies between code and comments, the existing methods have primarily relied on heuristic rules. \n\nDocChecker is trained on top of encoder-decoder model to learn from code-text pairs. It is jointly pre-trained with three objectives: code-text contrastive learning, binary classification, and text generation. DocChecker is a tool that be used to detect noisy code-comment pairs and generate synthetic comments, enabling it to determine comments that do not match their associated code snippets and correct them.\nIts effectiveness is demonstrated on the Just-In-Time dataset compared with other state-of-the-art methods. \n\n<p align=\"center\">\n  <img src=\"./assets/overview.png\" width=\"800px\" alt=\"overview\">\n</p>\n",
+                "type": "Text_excerpt",
+                "original_header": "Introduction"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "DocChecker",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "FSoft-AI4Code/DocChecker",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/FSoft-AI4Code/DocChecker/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/FSoft-AI4Code/DocChecker/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 12,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/FSoft-AI4Code/CodeSync-Tool/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 116252
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "1. (Optional) Creating conda environment\n\n```bash\nconda create -n docchecker python=3.8\nconda activate docchecker\n```\n\n2. Install from [PyPI](https://pypi.org/project/docchecker/):\n```bash\npip install docchecker\n```\n    \n3. Alternatively, build DocChecker from source:\n\n```bash\ngit clone https://github.com/FSoft-AI4Code/DocChecker.git\ncd DocChecker\npip install -r requirements.txt .\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation Guide"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Setup environment and install dependencies for pre-training.\n```bash\ncd ./DocChecker\npip -r install requirements.txt\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation for Pre-training",
+                "parent_header": [
+                    "Getting Started",
+                    "Pre-training Pipeline"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Getting started with DocChecker is simple and quick with our tool by using ``inference()`` function. \n\n```python\nfrom DocChecker.utils import inference\n```\nThere are a few notable arguments that need to be considered:\n\nParameters:\n\n- ``input_file_path`` (str): the file path that contains source code, if you want to check all the functions in there.\n- ``raw_code`` (str): a sequence of source code if\u00a0`input_file_path`\u00a0is not given.\n- ``language`` (str, required): the programming language that corresponds your raw_code. We support 10 popular programming languages, including Java, JavaScript, Python, Ruby, Rust, Golang, C#, C++, C, and PHP.\n- ``output_file_path`` (str): if\u00a0`output_file_path`\u00a0is given, the results from our tool will be written in\u00a0`output_file_path`; otherwise, they will be printed on the screen.\n\nReturns:\n\n- list of dictionaries, including:\n    - ``function_name``: the name of each function in the raw code\n    - ``code``: code snippet\n    - ``docstring``: the docstring corresponding code snippet\n    - ``predict``: the prediction of DocChecker. It returns \u201cInconsistent!\u201d or \u201cConsistent!\u201d, corresponding the docstring is inconsistent/consistent with the code in a code-text pair\n    - ``recommend_docstring``: If a code-text pair is considered as \u201cInconsistent!\u201d, DocChecker will replace its docstring by giving comprehensive ones; otherwise, it will keep the original version.\n\nHere's an example showing how to load docchecker model and perform inference on inconsistent detection task:\n\n```python\nfrom DocChecker.utils import inference\n\ncode = \"\"\"\n            def inject_func_as_unbound_method(class_, func, method_name=None):\n                # This is actually quite simple\n                if method_name is None:\n                    method_name = get_funcname(func)\n                setattr(class_, method_name, func)\n\n            def e(message, exit_code=None):\n                # Print an error log message.\n                print_log(message, YELLOW, BOLD)\n                if exit_code is not None:\n                    sys.exit(exit_code)\n        \"\"\"\n\ninference(raw_code=code,language='python')\n\n>>[\n    {\n    \"function_name\": \"inject_func_as_unbound_method\",\n    \"code\": \"def inject_func_as_unbound_method(class_, func, method_name=None):\\n    \\n    if method_name is None:\\n        method_name = get_funcname(func)\\n    setattr(class_, method_name, func)\",\n    \"docstring\": \" This is actually quite simple\",\n    \"predict\": \"Inconsistent!\",\n    \"recommended_docstring\": \"Inject a function as an unbound method.\"\n    },\n    {\n        \"function_name\": \"e\",\n        \"code\": \"def e(message, exit_code=None):\\n    \\n    print_log(message, YELLOW, BOLD)\\n    if exit_code is not None:\\n        sys.exit(exit_code)\",\n        \"docstring\": \"Print an error log message.\",\n        \"predict\": \"Consistent!\",\n        \"recommended_docstring\": \"Print an error log message.\"\n    }\n]\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Inferencing pipeline",
+                "parent_header": [
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        },
+        {
+            "result": {
+                "value": "We also provide our source code for you to re-pretraining DocChecker.\n",
+                "type": "Text_excerpt",
+                "original_header": "Pre-training Pipeline",
+                "parent_header": [
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The dataset we used comes from [CodeXGLUE](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Text/code-to-text).\nIt can be downloaded by following the command line:\n\n```bash\nwget https://github.com/microsoft/CodeXGLUE/raw/main/Code-Text/code-to-text/dataset.zip\nunzip dataset.zip\nrm dataset.zip\ncd dataset\nwget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/python.zip\nwget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/java.zip\nwget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/ruby.zip\nwget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/javascript.zip\nwget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/go.zip\nwget https://s3.amazonaws.com/code-search-net/CodeSearchNet/v2/php.zip\n\nunzip python.zip\nunzip java.zip\nunzip ruby.zip\nunzip javascript.zip\nunzip go.zip\nunzip php.zip\nrm *.zip\nrm *.pkl\n\npython preprocess.py\nrm -r */final\ncd ..\n```\n\nTo re-pretrain, follow the below command line:\n```shell\npython -m torch.distributed.run --nproc_per_node=2 run.py \\\n\t--do_train \\\n\t--do_eval \\\n\t--task pretrain \\\n\t--data_folder dataset/pretrain_dataset \\ \n\t--num_train_epochs 10 \n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Dataset for Pre-training",
+                "parent_header": [
+                    "Getting Started",
+                    "Pre-training Pipeline"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        },
+        {
+            "result": {
+                "value": "To demonstrate the performance of our approach, we fine-tune DocChecker on the Just-In-Time task. The purpose of this task is to determine whether the comment is semantically out of sync with the corresponding code function.\n",
+                "type": "Text_excerpt",
+                "original_header": "Fine-tuning Pipeline",
+                "parent_header": [
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Download data for the [Just-In-Time](https://github.com/panthap2/deep-jit-inconsistency-detection) task from [here](https://drive.google.com/drive/folders/1heqEQGZHgO6gZzCjuQD1EyYertN4SAYZ?usp=sharing).\n\nWe also provide fine-tune settings for DocChecker, whose results are reported in the paper.\n\n```shell\n\n# Training\npython -m torch.distributed.run --nproc_per_node=2 run.py \\\n\t--do_train \\\n\t--do_eval \\\n\t--post_hoc \\\n\t--task just_in_time \\\n\t--load_model \\\n\t--data_folder dataset/just_in_time \\ \n\t--num_train_epochs 30 \n\n# Testing\npython -m torch.distributed.run --nproc_per_node=2 run.py \\\n\t--do_test \\\n\t--post_hoc \\\n\t--task just_in_time \\\n\t--data_folder dataset/just_in_time \\ \n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Dataset for Fine-tuning",
+                "parent_header": [
+                    "Getting Started",
+                    "Fine-tuning Pipeline"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "More details can be found in our [paper](https://arxiv.org/abs/2306.06347). \nIf you use this code or our package, please consider citing us:\n\n```bibtex\n@article{DocChecker,\n  title={Bootstrapping Code-Text Pretrained Language Model to Detect Inconsistency Between Code and Comment},\n  author={Anh T. V. Dau, Jin L.C. Guo, Nghi D. Q. Bui},\n  journal={EACL 2024 - Demonstration track},\n  pages={},\n  year={2024}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing Us"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{DocChecker,\n    year = {2024},\n    pages = {},\n    journal = {EACL 2024 - Demonstration track},\n    author = {Anh T. V. Dau, Jin L.C. Guo, Nghi D. Q. Bui},\n    title = {Bootstrapping Code-Text Pretrained Language Model to Detect Inconsistency Between Code and Comment},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Bootstrapping Code-Text Pretrained Language Model to Detect Inconsistency Between Code and Comment",
+                "author": "Anh T. V. Dau, Jin L.C. Guo, Nghi D. Q. Bui"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        }
+    ],
+    "contact": [
+        {
+            "result": {
+                "value": "If you have any questions, comments or suggestions, please do not hesitate to contact us.\n- Website: [fpt-aicenter](https://www.fpt-aicenter.com/ai-residency/)\n- Email: support.ailab@fpt.com\n",
+                "type": "Text_excerpt",
+                "original_header": "Contact us"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "[Apache License Version 2.0](LICENSE.txt)\n",
+                "type": "Text_excerpt",
+                "original_header": "License"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Table of content"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/./assets/logo.jpg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/./assets/overview.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2306.06347"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FSoft-AI4Code/CodeSync-Tool/main/README.md"
+        }
+    ]
+}

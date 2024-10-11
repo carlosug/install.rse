@@ -1,0 +1,312 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 16:22:35"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/verse-lab/hippodrome",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "verse-lab",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-07-22T01:53:37Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-04-09T14:14:11Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "An automatic program repair tool for data races in Java programs.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is an automatic program repair tool for Java programs. It statically detects and fixes _data race conditions_ for small to large scale Java programs. The bug detection part is enabled by a modified version of [Infer](https://fbinfer.com/), while the patch algorithm is detailed in [this technical report](https://arxiv.org/abs/2108.02490). \n",
+                "original_header": "HIPPODROME"
+            },
+            "confidence": 0.9432712844515807,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/andrecostea/hippodrome/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "hippodrome",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "verse-lab/hippodrome",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/verse-lab/hippodrome/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/verse-lab/hippodrome/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/andrecostea/hippodrome/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 162313
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Scala",
+                "name": "Scala",
+                "type": "Programming_language",
+                "size": 141937
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 335
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/andrecostea/hippodrome/master/install_infer.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/andrecostea/hippodrome/master/install_antlr.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/andrecostea/hippodrome/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "* Make sure you have JDK version 1.7 or higher installed on your machine \n* [maven](https://maven.apache.org/install.html)\n* [infer](https://github.com/andrecostea/infer) (RacerD) - the extended version which tackles a more fine grained tracking of the locks when analysing for data races:\n* [antlr for java](https://github.com/andrecostea/antlr-java)\n\nFor each of the above just follow the given instructions. \n",
+                "type": "Text_excerpt",
+                "original_header": "Dependencies:",
+                "parent_header": [
+                    "HIPPODROME",
+                    "Setup and Build"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/andrecostea/hippodrome/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "1. install antlr to your local maven repository:\n\n`mvn install:install-file -Dfile=\"<path-to-your-antlr-for-java-jar>\" -DgroupId=org.racerdfix.antlr -DartifactId=antlr -Dversion=1.0 -Dpackaging=jar`\n\n2. set the path to local `infer` (the version recommended earlier) and the options expected to run with in `src/main/resources/APP_CONFIG.json`:\n```json\n{\n  \"infer\": \"<path-to-infer>/infer/infer/bin/infer\",\n  \"infer_options\": [\"--racerdfix-only\", \"--starvation\", \"--no-deduplicate\", <list-of-strings-representing-additional-infer-options>],\n  \"json_path\": \"./infer-out/\",\n}\n```\nwhere\n* ``infer`` sets the path to the running infer\n* ``options`` sets the options passed to the infer process\n* ``json_path`` indicates the path to the directory where infer writes its reports\n \n\n3. install HIPPODROME:\n`mvn install` (from the project's main directory); \nuse `mvn install -Dmaven.test.skip=true` to skip the testing phase\n \n",
+                "type": "Text_excerpt",
+                "original_header": "Install HIPPODROME:",
+                "parent_header": [
+                    "HIPPODROME",
+                    "Setup and Build"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/andrecostea/hippodrome/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Solution: makes sure you have installed the infer version we recommended and that you have correctly set the path to this version in your `APP_CONFIG.json` file, or in `CONFIG.json`. \n",
+                "original_header": "Common execution issues"
+            },
+            "confidence": 0.999999644258174,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/andrecostea/hippodrome/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "HIPPODROME requires a configuration file to indicate which files to analyse. The config file is in json format, as follows:\n\n```json\n{\n \"infer\": \"<path-to-infer>/infer/infer/bin/infer\",\n \"infer_options\": [\"--racerdfix-only\", \"--starvation\", \"--no-deduplicate\", <list-of-strings-representing-additional-infer-options>],\n \"json_path\": \"./infer-out/\",\n \"target_options\": [\"--\", \"javac\", \"<java-files-to-be-analysed>\"],\n \"prio_file\": [],\n \"iterations\": 10,\n \"hippodrome_options\": [\"--atomicity=true\"]\n}\n```\nwhere\n * [optional] ``infer`` sets the path to the running infer (overwrites the corresponding confing set in `APP_CONFIG.json`)\n * [optional] ``options`` sets the options passed to the infer process (overwrites the corresponding confing set in `APP_CONFIG.json`)\n * [optional] ``json_path`` indicates the path to the directory where infer writes its reports (overwrites the corresponding confing set in `APP_CONFIG.json`)\n * ``target_options`` sets the compiler used by infer and the target files\n * ``prio_files`` selects only these files to be fixed. If left empty, HIPPODROME will attempt to fix all the files\n * [optional] ``iterations`` sets the max number of iterations to re-analyse and re-patch the target files before stopping the patching process.\n * [optional] ``hippodrome_options`` enables other options specific to hippodrome. \n\nSee the `CONFIG.json` file in the project's root directory for a config file example.\n\nAssuming that the name of the resulted jar is `hippodrome.jar` you could test it as follows:\n\n`java -jar hippodrome.jar --config_file=\"CONFIG.json\"`\n",
+                "type": "Text_excerpt",
+                "original_header": "Run",
+                "parent_header": [
+                    "HIPPODROME"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/andrecostea/hippodrome/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Say we have a directory `/tmp/` with the following content:\n\n```\n.\n\u251c\u2500\u2500 CONFIG.json\n\u251c\u2500\u2500 RacerDFix-1.0.jar\n\u2514\u2500\u2500 java\n    \u2514\u2500\u2500 RacyFalseNeg.java\n```\n\nand the following content for `CONFIG.json`:\n\n```json\n{\"infer\":\"infer\",\n \"options\":[\"--racerdfix-only\", \"--starvation\"],\n \"json_path\": \"./infer-out/\",\n \"target_options\": [\"--\", \"javac\", \"java/RacyFalseNeg.java\"],\n \"prio_files\": [],\n \"iterations\": 3\n}\n```\n\nRunning HIPPPODROME in this setting leads to the following structure:\n\n```bash\n.\n\u251c\u2500\u2500 CONFIG.json\n\u251c\u2500\u2500 RacerDFix-1.0.jar\n\u251c\u2500\u2500 infer-out\n...\n\u2514\u2500\u2500 java\n    \u251c\u2500\u2500 RacyFalseNeg.java\n    \u2514\u2500\u2500 RacyFalseNeg.java.orig\n```\n\n* The `infer-out` directory has beed created by infer to store the results of the analysis in json format. \n* The `java` directory now contains the fixed java file `RacyFalseNeg.java` and its original counterpart  `RacyFalseNeg.java.orig`\n\n\nADD RACE EXAMPLE, PATCH AND FIX EXAMPLE\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Example",
+                "parent_header": [
+                    "HIPPODROME",
+                    "Run"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/andrecostea/hippodrome/master/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9075119960665654,
+            "technique": "supervised_classification"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "HIPPODROME"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/andrecostea/hippodrome/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2108.02490"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/andrecostea/hippodrome/master/README.md"
+        }
+    ]
+}

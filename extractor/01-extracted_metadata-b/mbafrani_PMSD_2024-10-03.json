@@ -1,0 +1,382 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:54:28"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/mbafrani/PMSD",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "mbafrani",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-05-28T12:12:04Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-04-07T22:50:18Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Forward-looking approach in process mining (using system dynamics and process mining to simulate business processes)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "- The relations based on their strengths are shown and the user can check which are affected by others. \r\n- The causal loop diagram (conceptual model) is generated in the application and the 'ModelsFormat' folder. \r\n    - The generated CLD is in the form of '.mdl' file, which can be uploaded and used in system dynamics software such as Venism. \r",
+                "type": "Text_excerpt",
+                "original_header": "CLD creation",
+                "parent_header": [
+                    "Coarse-grained Process Log Generation for Forward-looking Process Mining"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mbafrani/PMSD/master/README.md"
+        },
+        {
+            "result": {
+                "value": "- Based on the number of variables inside the sd log, a specific number of stocks and in/outflows are generated. \r\n-  The stock-flow diagram (simulation model) is generated in the application and the 'ModelsFormat' folder. \r\n    - The generated SFD is in the form of '.mdl' file, which can be uploaded and used in system dynamics software such as Venism. \r",
+                "type": "Text_excerpt",
+                "original_header": "SFD creation",
+                "parent_header": [
+                    "Coarse-grained Process Log Generation for Forward-looking Process Mining"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mbafrani/PMSD/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Forward-looking approach in process mining (using system dynamics and process mining to simulate business processes at an aggregated level).\r\nProcess mining field has been enriched with multiple techniques and tools for different purposes. However, these techniques are mostly 'backward-looking'. \r\n'PMSD' is a web application tool that supports forward-looking simulation techniques. It transforms the event data and process mining results into a simulation model.\r\n\r\n- The screen-cast of the tool is available under the name **PMSDDemo.mp4**.\r\n- The detailed information and the tool tutorial are provided in **PMSDToolTutorial.pdf**. \r\n- The modules are using the output of the previous step as infrastructure and inputs, therefore each should be used as the provided order in the application for a better result.\r\n\r \n",
+                "original_header": "PMSD: Data-Driven Simulation of Business Processes Using Process Mining and System Dynamics"
+            },
+            "confidence": 0.9098747437084859,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mbafrani/PMSD/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- In this section, event logs in both '.csv' and '.xes' formats can be uploaded.\r\n- The main information of the log is shown and the option to indicate the main attributes are provided.\r\n    - It is recommended to use the event logs with **both** start and complete timestamp. In case of only complete timestamp set both start and complete timestamp to the **existing timestamp** in the event log.\r\n- The generated event log which is stored in the 'Output' folder and can be saved using the link. \r\n- The process model in the form of a directly-follows graph is discovered and shown. \r \n",
+                "original_header": "Inside event log"
+            },
+            "confidence": 0.9768547261024285,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mbafrani/PMSD/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Using this tab, an sd log can be generated for different aspects. \r\n- Sd logs can also be used from the time window stability step directly for the next steps.\r\n- Statistical analyses of sd log in the given time window and the selected aspects such as closest distribution are calculated and shown. \r \n",
+                "original_header": "Event log to sd log"
+            },
+            "confidence": 0.9729818966844326,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mbafrani/PMSD/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Using one of the generated sd logs in previous steps, and the set threshold for the strength of a relation, the linear and nonlinear relationships between variables are examined.\r\n- The time window shift gives you the option to assess the linear/nonlinear relations between variables in different time steps, e.g., the effect of arrival rate in the first hour on the average waiting time in the third hour. \r \n",
+                "original_header": "Relation detection"
+            },
+            "confidence": 0.9351667039543384,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mbafrani/PMSD/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "PMSD",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "mbafrani/PMSD",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mbafrani/PMSD/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mbafrani/PMSD/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 11,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/mbafrani/PMSD/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 423337
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 151668
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 47024
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 19721
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Standard ML",
+                "name": "Standard ML",
+                "type": "Programming_language",
+                "size": 8584
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Roff",
+                "name": "Roff",
+                "type": "Programming_language",
+                "size": 5897
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 226
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mbafrani/PMSD/master/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mbafrani/PMSD/master/Dockerfile"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mbafrani/PMSD/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mbafrani/PMSD/master/HybridSiminPmSharedMaterialforReview/HybridSiminPmSharedMaterialforReview.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mbafrani/PMSD/master/HybridSiminPmSharedMaterialforReview/HybridSiminPmSharedMaterialforReview.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mbafrani/PMSD/master/HybridSiminPmSharedMaterialforReview/.ipynb_checkpoints/HybridSiminPmSharedMaterialforReview-checkpoint.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mbafrani/PMSD/master/HybridSiminPmSharedMaterialforReview/.ipynb_checkpoints/HybridSiminPmSharedMaterialforReview-checkpoint.ipynb"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "The MIT License (MIT)\n\nCopyright (c) 2017 Luca Perico\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mbafrani/PMSD/master/static/vendor/wheelzoom/LICENSE.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "- Run app.py and use the \"127.0.0.1:5000\" as the homepage URL in the browser. \r\n- App First Page:\r\n![Click to see the first page](https://github.com/mbafrani/PMSD/tree/master/static/images/AppFirstPage.png?raw=true)\r\n\r",
+                "type": "Text_excerpt",
+                "original_header": "Running the application",
+                "parent_header": [
+                    "Coarse-grained Process Log Generation for Forward-looking Process Mining"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mbafrani/PMSD/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "- Pourbafrani, M., van der Aalst, W.M.P.: PMSD: data-driven simulation using system dynamics and process mining. In: Proceedings of the Best Dissertation Award, Doctoral Consortium, and Demonstration & Resources Track, pp. 77\u201381 (2020). http://ceur-ws.org/Vol-2673/paperDR03.pdf\r\n- Bibtex Citation:\r\n    -   @inproceedings{PMSDTool2020,\r\n  author    = {Mahsa Pourbafrani and\r\n               Wil M. P. van der Aalst},\r\n  title     = {{PMSD:} Data-Driven Simulation Using System Dynamics and Process Mining},\r\n  booktitle = {Proceedings of the Best Dissertation Award, Doctoral Consortium, and\r\n               Demonstration {\\&} Resources Track at {BPM} 2020 co-located with\r\n               the 18th International Conference on Business Process Management {(BPM}\r\n               2020), Sevilla, Spain, September 13-18, 2020},\r\n  pages     = {77--81},\r\n  year      = {2020},\r\n  url       = {http://ceur-ws.org/Vol-2673/paperDR03.pdf},\r\n  timestamp = {Wed, 23 Sep 2020 17:50:25 +0200},\r\n  biburl    = {https://dblp.org/rec/conf/bpm/PourbafraniA20.bib},\r\n  bibsource = {dblp computer science bibliography, https://dblp.org}\r\n}\r\n\r\n",
+                "type": "Text_excerpt",
+                "original_header": "Information for Citation",
+                "parent_header": [
+                    "Coarse-grained Process Log Generation for Forward-looking Process Mining"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mbafrani/PMSD/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Coarse-grained Process Log Generation for Forward-looking Process Mining"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mbafrani/PMSD/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/mbafrani/PMSD/tree/master/static/images/AppFirstPage.png?raw=true"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mbafrani/PMSD/master/README.md"
+        }
+    ]
+}

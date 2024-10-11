@@ -1,0 +1,978 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:00:05"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/SOLAR-group/GIDroid",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "SOLAR-group",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-07-28T15:14:08Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-05-02T18:17:04Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Copyright 2017 David R. White and [Contributors](https://github.com/gintool/gin/graphs/contributors)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/LICENSE.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "GIDroid",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "SOLAR-group/GIDroid",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SOLAR-group/GIDroid/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SOLAR-group/GIDroid/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/SOLAR-group/GIDroid/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 42878480
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 2991424
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 1675858
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Kotlin",
+                "name": "Kotlin",
+                "type": "Programming_language",
+                "size": 1195578
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 195606
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CMake",
+                "name": "CMake",
+                "type": "Programming_language",
+                "size": 186953
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 143452
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 92153
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 69094
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 41580
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "AIDL",
+                "name": "AIDL",
+                "type": "Programming_language",
+                "size": 23172
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Batchfile",
+                "name": "Batchfile",
+                "type": "Programming_language",
+                "size": 13156
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 12828
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GB1/config/travis/validate_fastlane_metadata.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GB1/fastlane/collect_screenshots.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/build_fossil_hr_watchface.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/check-magic-strings.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/check-sonarqube.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/rss-measure.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/gen-test-libm.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/run-mem-stats-test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/apt-get-install-qemu-arm.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/run-perf-test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/apt-get-install-deps.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/check-vera.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/check-cppcheck.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/check-signed-off.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/update-webpage.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/brew-install-deps.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/perf.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/check-doxygen.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/check-pylint.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/mem-stats-measure.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/babel/scripts/transpile.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/runners/run-benchmarks.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/runners/run-debugger-test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/tools/runners/run-test-suite.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/jerryscript/targets/mbedos5/tools/check_pins.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/external/fossil-hr-watchface/env_init.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/GBN/src/main/fastlane/collect_screenshots.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/FDN/create_ota.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/FDN/tools/fix-ellipsis.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/FDN/app/tools/test-search-intents.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/FDN/app/tools/download-material-icon.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/FDN/app/tools/svg-to-drawables.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/FDN/hooks/install-hooks.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/FD2/create_ota.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/FD2/tools/fix-ellipsis.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/FD2/app/tools/test-search-intents.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/FD2/app/tools/download-material-icon.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/FD2/app/tools/svg-to-drawables.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/FD2/hooks/install-hooks.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/build_fossil_hr_watchface.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/check-magic-strings.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/check-sonarqube.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/rss-measure.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/gen-test-libm.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/run-mem-stats-test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/apt-get-install-qemu-arm.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/run-perf-test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/apt-get-install-deps.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/check-vera.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/check-cppcheck.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/check-signed-off.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/update-webpage.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/brew-install-deps.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/perf.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/check-doxygen.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/check-pylint.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/mem-stats-measure.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/babel/scripts/transpile.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/runners/run-benchmarks.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/runners/run-debugger-test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/tools/runners/run-test-suite.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/jerryscript/targets/mbedos5/tools/check_pins.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/external/fossil-hr-watchface/env_init.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/Benchmark/PA7/GBN/src/main/fastlane/collect_screenshots.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/examples/ExampleAndroid/AntennaPod/makeRelease.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/examples/ExampleAndroid/AntennaPod/.github/workflows/runTests.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/githooks/pre-commit.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/githooks/install_hook.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "How to report a bug\n-------------------\n- Before anything else, please make sure you are on the latest version, the bug you are experiencing may have been fixed already!\n- Use the search function to see if someone else has already submitted the same bug report.\n- Try to describe the problem with as much detail as possible.\n- Some bugs may only occur on certain devices or versions of Android. Please add information about your device and the version of Android that is running on it (you can look these up under `Settings \u2192 About Phone`), as well as which version of AntennaPod you are using.\n- If the bug only seems to occur with a certain podcast, please include the URL of that podcast.\n- If possible, add instructions on how to reproduce the bug.\n- If possible, add a logfile to your post. This is especially useful if the bug makes the application crash. AntennaPod has an `export logs` feature for this.\n- Usually, you can take a screenshot of your smartphone by pressing *Power* + *Volume down* for a few seconds.\n- Please use the following **[template](.github/ISSUE_TEMPLATE/bug_report.md)**.\n\n\nHow to submit a feature request\n-------------------------------\n- Make sure you are using the latest version of AntennaPod. Perhaps the feature you are looking for has already been implemented.\n- Use the search function to see if someone else has already submitted the same feature request. If there is another request already, please upvote the first post instead of commenting something like \"I also want this\".\n- To make it easier for us to keep track of requests, please only make one feature request per issue.\n- Give a brief explanation about the problem that may currently exist and how your requested feature solves this problem.\n- Try to be as specific as possible. Please not only explain what the feature does, but also how. If your request is about (or includes) changing or extending the UI, describe what the UI would look like and how the user would interact with it.\n\n\nTranslating AntennaPod\n----------------------\nIf you would like to translate the app into another language or improve an existing translation, you can visit the [Transifex project page](https://www.transifex.com/antennapod/antennapod/). From there, you can either join a language team if it already exists or create a new language team.\n\n\nSubmit a pull request\n---------------------\n- If you want to work on a feature that has been requested or fix a bug that has been reported on the \"issues\" page, add a comment to it so that other people know that you are working on it.\n- Fork the repository.\n- Almost all changes of AntennaPod are done on the `develop` branch. If a new version of AntennaPod is released, the `develop` branch is merged into `master`. As a result, the `master` branch probably doesn't contain the latest changes when you are reading this. Please make sure that you are branching from `develop`! Otherwise, there might be a lot of merge-conflicts when merging your changes into `develop` and therefore it might take longer to review your pull-request. Exceptions are urgent issues that need to be fixed in the production version.\n- If your pull request fixes a bug that has been reported or implements a feature that has been requested in another issue, try to mention it in the message, so that it can be closed once your pull request has been merged. If you use special keywords in the [commit comment](https://help.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue) or [pull request text](https://github.blog/2013-05-14-closing-issues-via-pull-requests/), GitHub will close the issue(s) automatically.\n- If possible, add unit tests for your pull request and make sure that they pass.\n- Please do not upgrade dependencies or build tools unless you have a good reason for it. Doing so can easily introduce bugs that are hard to track down.\n- If you plan to do a change that touches many files (10+), please ask beforehand. This usually causes merge conflicts for other developers.\n- Please follow our code style. You can use Checkstyle within Android Studio using our [configuration file](https://github.com/AntennaPod/AntennaPod/blob/develop/config/checkstyle/checkstyle-new-code.xml).\n- Please only change the English string resources. Translations are handled on [Transifex](https://www.transifex.com/antennapod/antennapod/).\n\nBuilding From Source\n--------------------------\n1. Fork this repository\n1. Download Android Studio\n1. In Android Studio\n   1. File \u00bb New \u00bb Project from version control\n   2. Enter the remote url of the forked repo\n   2. Wait for a long time until all progress bars go away\n   3. Press the Play button\n\nTesting and Verifying\n--------------------------\nAs a developer contributing to AntennaPod, we ask that you test the feature yourself manually and better yet, add unit and functional tests to any feature of bug you fix.\n\n### Running Unit Tests\n* `./gradlew :core:testPlayDebugUnitTest`\n\n### Running Integration Tests\n\n#### Using Android Studio\n* Create a configuration via 'Run->Edit Configurations...'\n\n<img width=\"768\" alt=\"antennapod-run-tests\"\nsrc=\"https://user-images.githubusercontent.com/149837/105122859-e1317180-5a8b-11eb-8d45-d54a3b051a9b.png\">\n\n#### Using the command line\n* Start an AVD or plug in your phone\n* `sh .github/workflows/runTests.sh`\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/examples/ExampleAndroid/AntennaPod/CONTRIBUTING.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/SOLAR-group/GIDroid/tree/main/Benchmark/GBN/external/jerryscript/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://github.com/SOLAR-group/GIDroid/tree/main/Benchmark/GBN/external/jerryscript/targets/esp8266/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://github.com/SOLAR-group/GIDroid/tree/main/Benchmark/PA7/GBN/external/jerryscript/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://github.com/SOLAR-group/GIDroid/tree/main/Benchmark/PA7/GBN/external/jerryscript/targets/esp8266/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributors": [
+        {
+            "result": {
+                "value": "# Developers\n\n[ByteHamster](https://github.com/ByteHamster), [danieloeh](https://github.com/danieloeh), [mfietz](https://github.com/mfietz), [TomHennen](https://github.com/TomHennen), [orionlee](https://github.com/orionlee), [domingos86](https://github.com/domingos86), [damoasda](https://github.com/damoasda), [tonytamsf](https://github.com/tonytamsf), [andersonvom](https://github.com/andersonvom), [TacoTheDank](https://github.com/TacoTheDank), [shortspider](https://github.com/shortspider), [spacecowboy](https://github.com/spacecowboy), [ebraminio](https://github.com/ebraminio), [asdoi](https://github.com/asdoi), [patheticpat](https://github.com/patheticpat), [brad](https://github.com/brad), [Cj-Malone](https://github.com/Cj-Malone), [maxbechtold](https://github.com/maxbechtold), [gaul](https://github.com/gaul), [qkolj](https://github.com/qkolj), [keunes](https://github.com/keunes), [pachecosf](https://github.com/pachecosf), [gerardolgvr](https://github.com/gerardolgvr), [bws9000](https://github.com/bws9000), [ahangarha](https://github.com/ahangarha), [hannesa2](https://github.com/hannesa2), [rharriso](https://github.com/rharriso), [xgouchet](https://github.com/xgouchet), [sevenmaster](https://github.com/sevenmaster), [TheRealFalcon](https://github.com/TheRealFalcon), [Slinger](https://github.com/Slinger), [johnjohndoe](https://github.com/johnjohndoe), [jas14](https://github.com/jas14), [udif](https://github.com/udif), [malockin](https://github.com/malockin), [dirkmueller](https://github.com/dirkmueller), [jatinkumarg](https://github.com/jatinkumarg), [peschmae0](https://github.com/peschmae0), [orelogo](https://github.com/orelogo), [txtd](https://github.com/txtd), [ydinath](https://github.com/ydinath), [CedricCabessa](https://github.com/CedricCabessa), [mchelen](https://github.com/mchelen), [dethstar](https://github.com/dethstar), [drabux](https://github.com/drabux), [saqura](https://github.com/saqura), [binarytoto](https://github.com/binarytoto), [bibz](https://github.com/bibz), [hzulla](https://github.com/hzulla), [deandreamatias](https://github.com/deandreamatias), [MeirAtIMDDE](https://github.com/MeirAtIMDDE), [egsavage](https://github.com/egsavage), [ligi](https://github.com/ligi), [Xeitor](https://github.com/Xeitor), [dreiss](https://github.com/dreiss), [liesen](https://github.com/liesen), [nereocystis](https://github.com/nereocystis), [rezanejati](https://github.com/rezanejati), [twiceyuan](https://github.com/twiceyuan), [JessieVela](https://github.com/JessieVela), [HaBaLeS](https://github.com/HaBaLeS), [volhol](https://github.com/volhol), [michaelmwhite](https://github.com/michaelmwhite), [CameronBanga](https://github.com/CameronBanga), [HrBDev](https://github.com/HrBDev), [HolgerJeromin](https://github.com/HolgerJeromin), [xisberto](https://github.com/xisberto), [jmue](https://github.com/jmue), [jonasburian](https://github.com/jonasburian), [katrinleinweber](https://github.com/katrinleinweber), [LatinSuD](https://github.com/LatinSuD), [24hours](https://github.com/24hours), [SosoTughushi](https://github.com/SosoTughushi), [fabolhak](https://github.com/fabolhak), [archibishop](https://github.com/archibishop), [alifeflow](https://github.com/alifeflow), [avirajrsingh](https://github.com/avirajrsingh), [toggles](https://github.com/toggles), [connectety](https://github.com/connectety), [matdb](https://github.com/matdb), [damlayildiz](https://github.com/damlayildiz), [kingargyle](https://github.com/kingargyle), [dsmith47](https://github.com/dsmith47), [hannesaa2](https://github.com/hannesaa2), [jhunnius](https://github.com/jhunnius), [a1291762](https://github.com/a1291762), [ShadowIce](https://github.com/ShadowIce), [Niffler](https://github.com/Niffler), [raghulj](https://github.com/raghulj), [raghulrm](https://github.com/raghulrm), [mamehacker](https://github.com/mamehacker), [skitt](https://github.com/skitt), [Thom-Merrilin](https://github.com/Thom-Merrilin), [wseemann](https://github.com/wseemann), [markamaze](https://github.com/markamaze), [mohitshah3111999](https://github.com/mohitshah3111999), [moralesg](https://github.com/moralesg), [mr-intj](https://github.com/mr-intj), [tuxayo](https://github.com/tuxayo), [alimemonzx](https://github.com/alimemonzx), [dev-darrell](https://github.com/dev-darrell), [jmdouglas](https://github.com/jmdouglas), [olivoto](https://github.com/olivoto), [PtilopsisLeucotis](https://github.com/PtilopsisLeucotis), [abhinavg1997](https://github.com/abhinavg1997), [alanorth](https://github.com/alanorth), [alexte](https://github.com/alexte), [andrey-krutov](https://github.com/andrey-krutov), [arantius](https://github.com/arantius), [BoJacobs](https://github.com/BoJacobs), [chetan882777](https://github.com/chetan882777), [chrissicool](https://github.com/chrissicool), [britiger](https://github.com/britiger), [cszucko](https://github.com/cszucko), [CWftw](https://github.com/CWftw), [danielm5](https://github.com/danielm5), [ariedov](https://github.com/ariedov), [brettle](https://github.com/brettle), [edwinhere](https://github.com/edwinhere), [eirikv](https://github.com/eirikv), [eerden](https://github.com/eerden), [Geist5000](https://github.com/Geist5000), [jklippel](https://github.com/jklippel), [jannic](https://github.com/jannic), [Foso](https://github.com/Foso), [Kaligule](https://github.com/Kaligule), [kvithayathil](https://github.com/kvithayathil), [luiscruz](https://github.com/luiscruz), [MStrecke](https://github.com/MStrecke), [mlasson](https://github.com/mlasson), [schwedenmut](https://github.com/schwedenmut), [M-arcel](https://github.com/M-arcel), [mgborowiec](https://github.com/mgborowiec), [msoose](https://github.com/msoose), [mo](https://github.com/mo), [mdeveloper20](https://github.com/mdeveloper20), [mschuetz](https://github.com/mschuetz), [max-wittig](https://github.com/max-wittig), [MolarAmbiguity](https://github.com/MolarAmbiguity), [mounirlamouri](https://github.com/mounirlamouri), [nikhil097](https://github.com/nikhil097), [panoreak](https://github.com/panoreak), [patrickjkennedy](https://github.com/patrickjkennedy), [ortylp](https://github.com/ortylp), [ramzan](https://github.com/ramzan), [iamrichR](https://github.com/iamrichR), [SamWhited](https://github.com/SamWhited), [SebiderSushi](https://github.com/SebiderSushi), [selivan](https://github.com/selivan), [sonnayasomnambula](https://github.com/sonnayasomnambula), [sethoscope](https://github.com/sethoscope), [shantanahardy](https://github.com/shantanahardy), [danners](https://github.com/danners), [corecode](https://github.com/corecode), [vimsick](https://github.com/vimsick), [lyallemma](https://github.com/lyallemma), [edent](https://github.com/edent), [atrus6](https://github.com/atrus6), [timakro](https://github.com/timakro), [heyyviv](https://github.com/heyyviv), [waylife](https://github.com/waylife), [yarons](https://github.com/yarons), [amhokies](https://github.com/amhokies), [andrewc1](https://github.com/andrewc1), [axq](https://github.com/axq), [chrk2205](https://github.com/chrk2205), [fossterer](https://github.com/fossterer), [lightonflux](https://github.com/lightonflux), [minusf](https://github.com/minusf), [s3lph](https://github.com/s3lph), [tamizh138](https://github.com/tamizh138), [zawad2221](https://github.com/zawad2221)\n\n# Translators\n\n| Language | Translators |\n| :-- | :-- |\n| Arabic | abuzar3.khalid, badarotti, keunes, MustafaAlgurabi, nabilMaghura, rex07, shubbar |\n| Asturian (ast_ES) | enolp |\n| Basque | gaztainalde, keunes, Osoitz, pospolos |\n| Breton | Belvar, keunes |\n| Bulgarian | keunes, ma4ko, solusitor |\n| Catalan | carles.llacer, dvd1985, exort12, IvanAmarante, javiercoll, keunes, Kintu, lambdani, marcmetallextrem, xc70 |\n| Chinese (zh_CN) | brnme, cyril3, Felix2yu, gaohongyuan, Guaidaodl, Huck0, iconteral, jhxie, jxj2zzz79pfp9bpo, keunes, kyleehee, molisiye, owen8877, RainSlide, RangerNJU, Sak94664, spice2wolf, tupunco, wongsyrone, yangyang, yiqiok |\n| Chinese (zh_TW) | bobchao, ijliao, keunes, mapobi, pggdt, ymhuang0808 |\n| Czech (cs_CZ) | anotheranonymoususer, elich, Hanzmeister, md.share, svetlemodry, Thomaash |\n| Danish | JFreak, jhertel, keunes, petterbejo, SebastianKiwiDk |\n| Dutch | e2jk, keunes, rwv, Vistaus |\n| Estonian | Eraser, keunes, mahfiaz |\n| Finnish | Ban3, keunes, Sahtor |\n| French | ChaoticMind, clombion, Cornegidouille, e2jk, keunes, lacouture, LouFex, Matth78, petterbejo, Poussinou, RomainTT, sterylmreep |\n| Galician | antiparvos, pikamoku, Raichely |\n| German | _Er, ByteHamster, ceving, dadosch, DerSilly, elkangaroo, enz, f_grubm, finsterwalder, forght, hbilke, HolgerJeromin, JoeMcFly, kalei, keunes, max.wittig, mfietz, Michael_Strecke, petterbejo, pudeeh, Quiss42, repat, toaskoas, tomte, tweimer, Willhelm, ypid |\n| Modern Greek (1453-) | AnimaRain, antonist, keunes, pavlosv |\n| Hebrew (he_IL) | amir.dafnyman, E1i9, mongoose4004, pinkasey, rellieberman, Yaron |\n| Hindi (hi_IN) | keunes, purple.coder, siddhusengar, thelazyoxymoron |\n| Hu | hurrikan, keunes, lna91, marthynw, meskobalazs, naren93 |\n| Icelandic | keunes, marthjod |\n| Indonesian | dbrw, keunes, levirs565 |\n| Italian (it_IT) | aalex70, allin, alvami, Bonnee, dontknowcris, giuseppep, Guybrush88, ilmanzo, keunes, m.chinni, marco_pag, neonsoftware, niccord, salorock, theloca95 |\n| Japanese | keunes, KotaKato, Naofumi, sh3llc4t, TranslatorG |\n| Kannada (kn_IN) | chiraag.nataraj, keunes, thejeshgn |\n| Ko | changwoo, keunes, libliboom |\n| Lithuanian | keunes, naglis, Sharper |\n| Macedonian | krisfremen |\n| Malayalam | joice, keunes, rashivkp |\n| Norwegian Bokm\u00e5l (nb_NO) | abstrakct, ahysing, bablecopherye, corkie, forteller, heraldo, jakobkg, keunes, kongk, sevenmaster, timbast |\n| Persian | ahangarha, danialbehzadi, ebadi, ebraminio, F7D, hamidrezabayat76, keunes, sinamoghaddas |\n| Polish (pl_PL) | befeleme, hiro2020, Iwangelion, kamila.miodek1991, keunes, lomapur, mandlus, maniexx, Mephistofeles, shark103, tyle |\n| Portuguese | emansije, keunes, smarquespt |\n| Portuguese (pt_BR) | alexupits, alysonborges, andersonvom, aracnus, arua, bandreghetti, caioau, carlo_valente, castrors, edman, keunes, lipefire, mbaltar, olivoto, rogervezaro, RubeensVinicius, SamWilliam |\n| Romanian (ro_RO) | corneliu.e, fuzzmz, keunes, ralienpp |\n| Russian (ru_RU) | ashed, btimofeev, Duke_Raven, gammja, homocomputeris, IgorPolyakov, keunes, mercutiy, null, overmind88, Platun0v, PtilopsisLeucotis, s.chebotar, tepxd, un_logic, Vladryyu, whereisthetea |\n| Slovak | ati3, jose1711, keunes, marulinko, tiborepcek |\n| Slovenian (sl_SI) | asovic, keunes, panter23, trus2 |\n| Spanish | AleksSyntek, andersonvom, andrespelaezp, Atreyu94, CaeM0R, deandreamatias, dvd1985, elojodepajaro, Fitoschido, frandavid100, hard_ware, javiercoll, keunes, LatinSuD, leogrignafini, rafael.osuna, tres.14159, vfmatzkin, wakutiteo |\n| Swahili (macrolanguage) | 1silvester, keunes, kmtra |\n| Swedish (sv_SE) | bpnilsson, keunes, nilso, TwoD |\n| Telugu | keunes, veeven |\n| Turkish | AhmedDuran, brsata, Erdy, keunes, overbite, Slsdem |\n| Ukrainian (uk_UA) | keunes, older, paul_sm, sergiyr, zhenya97 |\n| Vietnamese | abnvolk, keunes, ppanhh |\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/examples/ExampleAndroid/AntennaPod/CONTRIBUTORS.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "These instructions will show you how to build GIDroid and run a local search or multiobjective search an android app.\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting Started",
+                "parent_header": [
+                    "GIDroid: A Tool for Multi-Objective GI in Android"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "GIDroid requires:\n\n* JDK 11  \n* Gradle (tested with version 4.10.2)\n* A number of dependencies, which can be downloaded manually or via Gradle (recommended)\n* Android SDK installed\n* Linux, GIDroid will run in Windows, however, requires the linux time cmd line tool to measure execution time.\n\nJDK downloads:<http://www.oracle.com/technetwork/java/javase/downloads/index.html>\n\nGradle can be downloaded from their website:<https://gradle.org/install>\n\nThe library dependencies can be found in the build.gradle file.\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites",
+                "parent_header": [
+                    "GIDroid: A Tool for Multi-Objective GI in Android",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "\nFirst clone the project and open a terminal in the directory that it is cloned too.\n\nBuild using gradle (alternatively import into your favourite IDE, such as IntelliJ). We also provide a gradle wrapper with Gradle 4.10.2.\n\n```\n./gradlew assemble\n```\n\nThis will build and test GIDroid, and also create a fat jar at `build/gin.jar` containing all required dependencies.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Installing and Building gin",
+                "parent_header": [
+                    "GIDroid: A Tool for Multi-Objective GI in Android",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "You can run GIDroid on an app by doing the following:\n\nFirst ensure your app builds and tests can be run successfully, this can be a tricky process but we recommend booting the app up in Android studio and testing from there.\nNext create a config file as seen in each of the applications in our benchmark to tell gin where the application is, what is beig improved and which tests should be run.\nThis file should be saved as \"config.properties\" in the diretory where you wish to run GIDroid.\nThen chose the algorithm you wish to run, in the AndroidGI file, uncomment the algorithm/algorithms that you wish to run. \nAfter this, build GIDroid  as described above. \nfinally run GIDroid with the call:\n\n```\njava -jar build/gin.jar \n```\n\nThe results of these runs will then be outputted to a file called log.txt\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Running GIDroid on an app",
+                "parent_header": [
+                    "GIDroid: A Tool for Multi-Objective GI in Android"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "GIDroid is a [Genetic Improvement](https://en.wikipedia.org/wiki/Genetic_improvement_(computer_science)) (GI) tool. Genetic Improvement is the application of [Genetic Programming](https://en.wikipedia.org/wiki/Genetic_programming) and other [Metaheuristics](https://en.wikipedia.org/wiki/Metaheuristic) to existing software, to improve it in some way.\nThis repository all contains the benchmark and experimental data from the paper: \n",
+                "original_header": "GIDroid: A Tool for Multi-Objective GI in Android"
+            },
+            "confidence": 0.9853979441504681,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "GIDroid: A Tool for Multi-Objective GI in Android"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SOLAR-group/GIDroid/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,221 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:36:59"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/rashidzaman84/MemoryEfficientOCC",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "rashidzaman84",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-12-23T14:42:36Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2022-01-03T15:44:43Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Prototype Implementation for Memory Efficient OCC",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This prototype implementation is related to the Memory-efficient prefix-alignments based Online Conformance Checking (OCC) approaches of [[1]](#1) and [[2]](#2). The provided prototype implementation\nis dependent on the prefix-alignment based Online Conformance package of [[3]](#3) which uses the A<sup>*</sup> algorithm for shortest path search based\nprefix-alignment computation. This parent package requires a Petri net process model, its initial marking, and its final marking. Additionally, our approach requires the state\nlimit as input.\n \n",
+                "original_header": "Memory Efficient Online Conformance Checking"
+            },
+            "confidence": 0.9466831557392252,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/rashidzaman84/MemoryEfficientOCC/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "MemoryEfficientOCC",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "rashidzaman84/MemoryEfficientOCC",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/rashidzaman84/MemoryEfficientOCC/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/rashidzaman84/MemoryEfficientOCC/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/rashidzaman84/MemoryEfficientOCC/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 38775
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rashidzaman84/MemoryEfficientOCC/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": " - Download the code to your local machine.\n - Run the \"UITopia (MAOCC_States).launch\". Let the code to download all the required ProM packages on the first run.\n - Load your event log and the reference process model in the displayed window and run the plugin \"01 Compute Prefix Alignments - With Bounded States\" with these inputs.\n - The next window requires as input the state limit.\n - The results are displayed on the console.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "Memory Efficient Online Conformance Checking"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rashidzaman84/MemoryEfficientOCC/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "<a id=\"1\">[1]</a> \nRashid Zaman, Marwan Hassani, and Boudewijn F. Van Dongen. (2022).\nEfficient Memory Utilization in Conformance Checking of Process Event Streams.\nIn SAC2022. ACM.\n\n<a id=\"2\">[2]</a> \nRashid Zaman, Marwan Hassani, and Boudewijn F. Van Dongen. (2021).\nA Framework for Efficient Memory Utilization in Online Conformance Checking\nIn arXiv. https://arxiv.org/abs/2112.13640\n\n<a id=\"3\">[3]</a> \nSebastiaan J van Zelst, Alfredo Bolt, Marwan Hassani, Boudewijn F van Dongen, and Wil MP van der Aalst. (2019).\nOnline conformance checking: relating event streams to process models using prefix-alignments.\nInternational Journal of Data Science and Analytics 8, 3 (2019), 269\u2013284.\n",
+                "type": "Text_excerpt",
+                "original_header": "References",
+                "parent_header": [
+                    "Memory Efficient Online Conformance Checking"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rashidzaman84/MemoryEfficientOCC/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Memory Efficient Online Conformance Checking"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rashidzaman84/MemoryEfficientOCC/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2112.13640\n\n<a id=\"3\">[3]</a> \nSebastiaan J van Zelst, Alfredo Bolt, Marwan Hassani, Boudewijn F van Dongen, and Wil MP van der Aalst. (2019"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rashidzaman84/MemoryEfficientOCC/master/README.md"
+        }
+    ]
+}

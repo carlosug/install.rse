@@ -1,0 +1,443 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:06:24"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/delas/plg",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "delas",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2015-01-12T07:30:21Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-29T03:16:17Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/gpl-3.0",
+                "type": "License",
+                "name": "GNU General Public License v3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "spdx_id": "GPL-3.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A Business Processes and Logs Generator",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This software is designed to help researchers in the construction of a large set of processes and corresponding execution logs. This software is released with a small library which could help in the programmatical creation of processes. \n",
+                "original_header": "Processes and Logs Generator"
+            },
+            "confidence": 0.9892965587011893,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/delas/plg/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* Random process generation, with different complexity parameters\n* Random process evolution (to generate slight variations of existing processes)\n* Configuration of time for activities duration and time between activities (via Python scripts)\n* Generation of static/dynamic data objects for multi-perspective event log generation (via Python scripts)\n* Import of process from\n  * PLG file format\n  * BPMN files (generated from SAP Signavio)\n* Export of generated processes as\n  * PLG file format\n  * BPMN 2.0 XML file\n  * BPMN as Graphviz Dot file\n  * Petri net as Graphviz Dot file\n  * Petri net as LoLA file\n  * Petri net as PNML file\n  * Petri net as TPN file\n* Generation of an event log with any number of traces\n* Fine-tuned configuration of noise parameters for event log generation\n* Export of the generated event log as\n  * XES file (both compressed as `.xes.gz` and not compressed as `.xes`)\n  * MXML file (both compressed as `.mxml.gz` and not compressed as `.mxml`)\n* Generation of an infinite stream of events\n* Event streams generated as MQTT-XES format (cf. https://www.beamline.cloud/mqtt-xes/)\n* Ability to dynamically switch the process generting the events (to simulate concept drift in streams)\n* Generation of noise into the stream\n \n",
+                "original_header": "Main features"
+            },
+            "confidence": 0.9323320463656594,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/delas/plg/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "PLG makes use of the following libraries:\n* [`libPlg`](https://github.com/delas/libPlg): library for processes and event generation\n* [`libPlgStream`](https://github.com/delas/libPlgStream): library for stream generation\n* [`libPlgVisualizer`](https://github.com/delas/libPlgVisualizer): library for process visualization\n \n",
+                "original_header": "Libraries"
+            },
+            "confidence": 0.9578779676635268,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/delas/plg/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "plg",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "delas/plg",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/delas/plg/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/delas/plg/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 32,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "bpm, bpmn, java, petrinet, plg, processmining, simulation",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 9,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/delas/plg/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 200252
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 1338
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/delas/plg/releases/126565773",
+                "tag": "2.1.1",
+                "name": "v2.1.1",
+                "author": {
+                    "name": "delas",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/delas/plg/tarball/2.1.1",
+                "zipball_url": "https://api.github.com/repos/delas/plg/zipball/2.1.1",
+                "html_url": "https://github.com/delas/plg/releases/tag/2.1.1",
+                "url": "https://api.github.com/repos/delas/plg/releases/126565773",
+                "release_id": 126565773,
+                "date_created": "2023-10-25T09:10:32Z",
+                "date_published": "2023-10-25T09:15:00Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/delas/plg/releases/122563542",
+                "tag": "2.1.0",
+                "name": "v2.1.0",
+                "author": {
+                    "name": "delas",
+                    "type": "User"
+                },
+                "description": "Converted the project into Maven, with important fixes, including #11 and #7.",
+                "tarball_url": "https://api.github.com/repos/delas/plg/tarball/2.1.0",
+                "zipball_url": "https://api.github.com/repos/delas/plg/zipball/2.1.0",
+                "html_url": "https://github.com/delas/plg/releases/tag/2.1.0",
+                "url": "https://api.github.com/repos/delas/plg/releases/122563542",
+                "release_id": 122563542,
+                "date_created": "2023-09-26T08:04:42Z",
+                "date_published": "2023-09-26T08:07:58Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/delas/plg/releases/58278858",
+                "tag": "2.0.7",
+                "name": "v2.0.7",
+                "author": {
+                    "name": "delas",
+                    "type": "User"
+                },
+                "description": "A couple of bug fixes with icons loading.",
+                "tarball_url": "https://api.github.com/repos/delas/plg/tarball/2.0.7",
+                "zipball_url": "https://api.github.com/repos/delas/plg/zipball/2.0.7",
+                "html_url": "https://github.com/delas/plg/releases/tag/2.0.7",
+                "url": "https://api.github.com/repos/delas/plg/releases/58278858",
+                "release_id": 58278858,
+                "date_created": "2022-01-30T11:21:31Z",
+                "date_published": "2022-01-30T11:24:19Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/delas/plg/releases/25295470",
+                "tag": "2.0.6",
+                "name": "v2.0.6",
+                "author": {
+                    "name": "delas",
+                    "type": "User"
+                },
+                "description": "Fixed bug with loading icons.",
+                "tarball_url": "https://api.github.com/repos/delas/plg/tarball/2.0.6",
+                "zipball_url": "https://api.github.com/repos/delas/plg/zipball/2.0.6",
+                "html_url": "https://github.com/delas/plg/releases/tag/2.0.6",
+                "url": "https://api.github.com/repos/delas/plg/releases/25295470",
+                "release_id": 25295470,
+                "date_created": "2020-04-07T20:16:10Z",
+                "date_published": "2020-04-07T20:22:11Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/delas/plg/releases/4688451",
+                "tag": "2.0.5",
+                "name": "v2.0.5",
+                "author": {
+                    "name": "delas",
+                    "type": "User"
+                },
+                "description": "- Implemented export of models as BPMN 2.0 XML (using Camunda library)\r\n",
+                "tarball_url": "https://api.github.com/repos/delas/plg/tarball/2.0.5",
+                "zipball_url": "https://api.github.com/repos/delas/plg/zipball/2.0.5",
+                "html_url": "https://github.com/delas/plg/releases/tag/2.0.5",
+                "url": "https://api.github.com/repos/delas/plg/releases/4688451",
+                "release_id": 4688451,
+                "date_created": "2016-11-17T15:14:28Z",
+                "date_published": "2016-11-17T15:30:21Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/delas/plg/releases/4695240",
+                "tag": "2.0.4",
+                "name": "v2.0.4",
+                "author": {
+                    "name": "delas",
+                    "type": "User"
+                },
+                "description": "- Implemented bug fix on Petri net conversion\n- Improved timing for streamed events (from 2.0.3)\n- Added export of processes as TPN file (from 2.0.3)\n- Minor bug fixes (from 2.0.1)\n",
+                "tarball_url": "https://api.github.com/repos/delas/plg/tarball/2.0.4",
+                "zipball_url": "https://api.github.com/repos/delas/plg/zipball/2.0.4",
+                "html_url": "https://github.com/delas/plg/releases/tag/2.0.4",
+                "url": "https://api.github.com/repos/delas/plg/releases/4695240",
+                "release_id": 4695240,
+                "date_created": "2016-06-27T12:58:31Z",
+                "date_published": "2016-11-18T06:54:09Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/delas/plg/releases/1305140",
+                "tag": "2.0.0",
+                "name": "v2.0.0",
+                "author": {
+                    "name": "delas",
+                    "type": "User"
+                },
+                "description": "- First release of PLG2\n",
+                "tarball_url": "https://api.github.com/repos/delas/plg/tarball/2.0.0",
+                "zipball_url": "https://api.github.com/repos/delas/plg/zipball/2.0.0",
+                "html_url": "https://github.com/delas/plg/releases/tag/2.0.0",
+                "url": "https://api.github.com/repos/delas/plg/releases/1305140",
+                "release_id": 1305140,
+                "date_created": "2015-05-17T13:20:27Z",
+                "date_published": "2015-05-17T13:28:49Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/delas/plg/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "* Visit the [Wiki](https://github.com/delas/plg/wiki) for all information. Useful quick documentation:\n * How to specify [Data Objects](https://github.com/delas/plg/wiki/Data-Objects-Definition) to generate multiperspectives logs\n * How to work with [times in PLG](https://github.com/delas/plg/wiki/Managing-Timestamps)\n",
+                "type": "Text_excerpt",
+                "original_header": "Help",
+                "parent_header": [
+                    "Processes and Logs Generator"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/delas/plg/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "Please, cite this work as:\n* Andrea Burattin. \"[PLG2: Multiperspective Process Randomization with Online and Offline Simulations](https://andrea.burattin.net/publications/2016-bpm-demo)\". In *Online Proceedings of the BPM Demo Track* 2016; Rio de Janeiro, Brasil; September, 18 2016; CEUR-WS.org 2016.\n\nOther relevant publications:\n* Andrea Burattin. \"[PLG2: Multiperspective Processes Randomization and Simulation for Online and Offline Settings](http://arxiv.org/abs/1506.08415)\". In *CoRR* abs/1506.08415, Jun. 2015.\n* Andrea Burattin and Alessandro Sperduti. \"[PLG: a Framework for the Generation of Business Process Models and their Execution Logs](http://andrea.burattin.net/publications/2010-bpi)\". In *Proceedings of the 6th International Workshop on Business Process Intelligence* (BPI 2010); Stevens Institute of Technology; Hoboken, New Jersey, USA; September 13, [2010.10.1007/978-3-642-20511-8_20](http://dx.doi.org/10.1007/978-3-642-20511-8_20).\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "Processes and Logs Generator"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/delas/plg/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "**Attention:** this repository is a complete rewriting of the project already available at: https://github.com/delas/plg-old. \n",
+                "original_header": "Processes and Logs Generator"
+            },
+            "confidence": 0.9932395771866507,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/delas/plg/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Processes and Logs Generator"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/delas/plg/master/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/delas/plg/wiki",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/delas/plg/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/delas/plg/assets/867237/5d5dd159-826c-4b09-9de5-0b7176a3c5a6"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/delas/plg/master/README.md"
+        }
+    ]
+}

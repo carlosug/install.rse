@@ -1,0 +1,341 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:52:18"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/NVlabs/verilog-eval",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "NVlabs",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-08-23T17:00:58Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-30T22:46:57Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023-2024 NVIDIA Research Projects\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n\nThis project contains code from human-eval (https://github.com/openai/human-eval/).\n\nThe MIT License\n\nCopyright (c) OpenAI (https://openai.com)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/NVlabs/verilog-eval/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Verilog evaluation benchmark for large language model",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is an evaluation harness for the VerilogEval problem solving dataset originally described in the paper \"[VerilogEval: Evaluating Large Language Models for Verilog Code Generation](https://arxiv.org/abs/2309.07544),\" published in 2023. In August 2024, this repository was revised to cover specification-to-RTL tasks in addition to the original code completion task, add in-context learning examples to prompts, and categorize common iverilog failures. Please see the related apaper \"[Revisiting VerilogEval: Newer LLMs, In-Context Learning, and Specification-to-RTL Tasks](https://arxiv.org/abs/2408.11053),\" published in 2024. \n",
+                "original_header": "VerilogEval Overview"
+            },
+            "confidence": 0.9729255876758651,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/NVlabs/verilog-eval/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repo contains the original VerilogEval dataset with reframed prompts\nand new scripts. The original VerilogEval prompts explicitly included the\nVerilog module interface, while in this version we specify the module\ninterface more abstractly. The new scripts manage the dataset as plain\ntext files (instead of a large JSONL file), include generation and\nanalysis scripts, and include a Makefile to drive the workflow. The\ngeneration script includes support for easily changing the LLM model,\nincluding/excluding in-context learning rules and in-context learning\nexamples. The analysis script includes support for categorizing common\niverilog errors and outputing the results in both plain text and CSV\nfiles. \nMachineEval is not supported in VerilogEvalV2, only the Human Eval problem statements. Pass@10 is no longer being reported either, instead Pass@1 with number of samples n=1 (temperature=0, top_p=0.01) and n=20 (temperature=0.85, top_p=0.95) for low and high and temperature results, respectively.\n \n",
+                "original_header": "VerilogEvalV2 with Reframed Prompts and New Scripts"
+            },
+            "confidence": 0.9472469131169614,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/NVlabs/verilog-eval/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "verilog-eval",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "NVlabs/verilog-eval",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/NVlabs/verilog-eval/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/NVlabs/verilog-eval/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 162,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 22,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/NVlabs/verilog-eval/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "SystemVerilog",
+                "name": "SystemVerilog",
+                "type": "Programming_language",
+                "size": 1234549
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 38254
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "M4",
+                "name": "M4",
+                "type": "Programming_language",
+                "size": 7741
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 7728
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/NVlabs/verilog-eval/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "In order to use PyHDL-Eval you will need to install iverilog, verilator,\nand python3 along with several Python packages. These are the versions\nwhich were used for this project:\n\n - iverilog (v12)\n - python3 (v3.11.0)\n\n**Please note that iverilog v13 (development release) is not supported.**\n\nTo install Python 3.11:\n```\n$ conda create -n codex python=3.11\n$ conda activate codex\n```\n\nInstall [ICARUS Verilog](https://github.com/steveicarus/iverilog):\n```\n$ git clone https://github.com/steveicarus/iverilog.git && cd iverilog \\\n        && git checkout v12-branch \\\n        && sh ./autoconf.sh && ./configure && make -j4\\\n        && make install\n```\n\nYou will also need the following Python packages:\n\n```\n % pip install langchain langchain-openai langchain-nvidia-ai-endpoints\n```\n\nWe plan to provide a Dockerfile and backwards compatibility mode with a prebuilt jsonl soon.\n",
+                "type": "Text_excerpt",
+                "original_header": "Setup Linux Environment",
+                "parent_header": [
+                    "VerilogEval Overview"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/NVlabs/verilog-eval/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "The evalution harness is run using make and various evaluation parameters can be set as below:\n\n```\nmkdir -p build/\n../configure  --with-task=$task --with-model=$model --with-examples=$shots --with-samples=$samples --with-temperature=$temperature --with-top-p=$top_p\nmake\n```\n\nEvaluation can be sped up by providing the `-j` flag to make, such as `-j4` to run 4 worker processes.\n\nAvailable tasks are `code-complete-iccad2023` and `spec-to-rtl` with each referencing their corresponding `dataset_$task` directory containig the problems. Problem themselves are identical between the two datasets and only the task format changes.\n\nValid models are listed at the top of `scripts/sv-generate`. The number of in-context learning examples can be between 0-4, and given with `--with-examples`. Samples to collect per problem are given by `--with-samples`. Finally, model temperature and top_p can be set to --with-temperature and --with-top-p, respectively.\n\nThese parameters can be easily swept with a shell script, to create separate build directories for each evaluation harness configuration target. \n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "VerilogEval Overview"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/NVlabs/verilog-eval/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "For this VerilogEval v2, please cite the following paper:\n\n```\n@misc{pinckney2024revisitingverilogevalnewerllms,\n      title={Revisiting VerilogEval: Newer LLMs, In-Context Learning, and Specification-to-RTL Tasks}, \n      author={Nathaniel Pinckney and Christopher Batten and Mingjie Liu and Haoxing Ren and Brucek Khailany},\n      year={2024},\n      eprint={2408.11053},\n      archivePrefix={arXiv},\n      primaryClass={cs.SE},\n      url={https://arxiv.org/abs/2408.11053}, \n}\n```\n\nFor the original VerilogEval v1, please use:\n\n```\n@inproceedings{liu2023verilogeval,\n  title={{VerilogEval:} Evaluating Large Language Models for Verilog Code Generation},\n  author={Liu, Mingjie and Pinckney, Nathaniel and Khailany, Brucek and Ren, Haoxing},\n  booktitle={2023 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)}, \n  year={2023}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "VerilogEval Overview"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/NVlabs/verilog-eval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@misc{pinckney2024revisitingverilogevalnewerllms,\n    url = {https://arxiv.org/abs/2408.11053},\n    primaryclass = {cs.SE},\n    archiveprefix = {arXiv},\n    eprint = {2408.11053},\n    year = {2024},\n    author = {Nathaniel Pinckney and Christopher Batten and Mingjie Liu and Haoxing Ren and Brucek Khailany},\n    title = {Revisiting VerilogEval: Newer LLMs, In-Context Learning, and Specification-to-RTL Tasks},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Revisiting VerilogEval: Newer LLMs, In-Context Learning, and Specification-to-RTL Tasks",
+                "author": "Nathaniel Pinckney and Christopher Batten and Mingjie Liu and Haoxing Ren and Brucek Khailany",
+                "url": "https://arxiv.org/abs/2408.11053"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/NVlabs/verilog-eval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{liu2023verilogeval,\n    year = {2023},\n    booktitle = {2023 IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},\n    author = {Liu, Mingjie and Pinckney, Nathaniel and Khailany, Brucek and Ren, Haoxing},\n    title = {{VerilogEval:} Evaluating Large Language Models for Verilog Code Generation},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "{VerilogEval:} Evaluating Large Language Models for Verilog Code Generation",
+                "author": "Liu, Mingjie and Pinckney, Nathaniel and Khailany, Brucek and Ren, Haoxing"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/NVlabs/verilog-eval/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "VerilogEval Overview"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/NVlabs/verilog-eval/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2408.11053"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/NVlabs/verilog-eval/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2408.11053}, \n}\n```\n\nFor the original VerilogEval v1, please use:\n\n```\n@inproceedings{liu2023verilogeval,\n  title={{VerilogEval:} Evaluating Large Language Models for Verilog Code Generation},\n  author={Liu, Mingjie and Pinckney, Nathaniel and Khailany, Brucek and Ren, Haoxing},\n  booktitle={2023 IEEE/ACM International Conference on Computer-Aided Design (ICCAD"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/NVlabs/verilog-eval/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2309.07544"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/NVlabs/verilog-eval/main/README.md"
+        }
+    ]
+}

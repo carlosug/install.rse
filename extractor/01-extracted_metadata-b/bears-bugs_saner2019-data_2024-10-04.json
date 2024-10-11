@@ -1,0 +1,220 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:19:42"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/bears-bugs/saner2019-data",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "bears-bugs",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-12-11T11:00:26Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2019-12-02T01:29:58Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "saner2019-data",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "bears-bugs/saner2019-data",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/bears-bugs/saner2019-data/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/bears-bugs/saner2019-data/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/bears-bugs/saner2019-data/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bears-bugs/saner2019-data/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "contact": [
+        {
+            "result": {
+                "value": "For more details, please drop an email to fer.madeiral@gmail.com\n",
+                "type": "Text_excerpt",
+                "original_header": "Contact",
+                "parent_header": [
+                    "saner2019-data"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/bears-bugs/saner2019-data/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains data from our paper: \n"
+            },
+            "confidence": 0.981368697878709,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/bears-bugs/saner2019-data/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The data is separeted in folders by execution rounds 1, 2 and 3. In each folder, one can find:\n1) the list of pairs of builds, for both failing-passing and passing-passing cases and\n2) the list of reproduction attempts and their outcomes, also for both failing-passing and passing-passing cases\n \n",
+                "original_header": "saner2019-data"
+            },
+            "confidence": 0.9723128610419013,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/bears-bugs/saner2019-data/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{Madeiral2019,\n    url = {https://arxiv.org/abs/1901.06024},\n    year = {2019},\n    booktitle = {Proceedings of the 26th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER '19)},\n    title = {{Bears: An Extensible Java Bug Benchmark for Automatic Program Repair Studies}},\n    author = {Fernanda Madeiral and Simon Urli and Marcelo Maia and Martin Monperrus},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "{Bears: An Extensible Java Bug Benchmark for Automatic Program Repair Studies}",
+                "author": "Fernanda Madeiral and Simon Urli and Marcelo Maia and Martin Monperrus",
+                "url": "https://arxiv.org/abs/1901.06024"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/bears-bugs/saner2019-data/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "saner2019-data"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/bears-bugs/saner2019-data/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1901.06024}\n}\n```\n\nThe data is separeted in folders by execution rounds 1, 2 and 3. In each folder, one can find:\n1"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/bears-bugs/saner2019-data/master/README.md"
+        }
+    ]
+}

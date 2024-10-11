@@ -1,0 +1,989 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:08:19"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/mull-project/mull",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "mull-project",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2016-05-15T19:08:23Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-28T15:50:21Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/apache-2.0",
+                "type": "License",
+                "name": "Apache License 2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "spdx_id": "Apache-2.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright [yyyy] [name of copyright owner]\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mull-project/mull/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Practical mutation testing and fault injection for C and C++",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "mull",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "mull-project/mull",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mull-project/mull/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mull-project/mull/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 737,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "c, c-plus-plus, fault-injection, jit, llvm, mutation-analysis, mutation-testing, testing",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 75,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/mull-project/mull/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 629655
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 29826
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CMake",
+                "name": "CMake",
+                "type": "Programming_language",
+                "size": 25762
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 981
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 252
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/165514585",
+                "tag": "0.23.0",
+                "name": "0.23.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- New CLI option `--mutation-score-threshold` (by [mpownby](https://github.com/mpownby)) [#1045](https://github.com/mull-project/mull/pull/1052)\r\n\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2024-05-28..2024-07-15)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.23.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.23.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.23.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/165514585",
+                "release_id": 165514585,
+                "date_created": "2024-07-15T18:36:38Z",
+                "date_published": "2024-07-15T19:02:25Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/157691769",
+                "tag": "0.22.0",
+                "name": "0.22.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- LLVM 17 support (by [rjaegers](https://github.com/rjaegers)) [#1045](https://github.com/mull-project/mull/pull/1045)\r\n- Packages for Ubuntu 24.04 (by [rjaegers](https://github.com/rjaegers)) [#1048](https://github.com/mull-project/mull/pull/1048)\r\n- Better support for universal binaries on macOS [#1038](https://github.com/mull-project/mull/pull/1038)\r\n\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2023-07-01..2024-05-27)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.22.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.22.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.22.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/157691769",
+                "release_id": 157691769,
+                "date_created": "2024-05-27T21:26:04Z",
+                "date_published": "2024-05-27T21:53:23Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/110467827",
+                "tag": "0.21.1",
+                "name": "0.21.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- No real changes, just added Ubuntu 22.04 packages [#1015](https://github.com/mull-project/mull/pull/1015)\r\n\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2023-06-03..2023-06-30)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.21.1",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.21.1",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.21.1",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/110467827",
+                "release_id": 110467827,
+                "date_created": "2023-06-30T08:00:15Z",
+                "date_published": "2023-06-30T08:32:48Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/105884682",
+                "tag": "0.21.0",
+                "name": "0.21.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- Fixed wrong diff generation [#1025](https://github.com/mull-project/mull/issues/1025) [#1023](https://github.com/mull-project/mull/issues/1023)\r\n- Fixed GitHub annotations for relative paths [#1028](https://github.com/mull-project/mull/pull/1028) [#738](https://github.com/mull-project/mull/issues/738)\r\n\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2023-01-18..2023-06-02)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.21.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.21.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.21.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/105884682",
+                "release_id": 105884682,
+                "date_created": "2023-06-02T19:56:40Z",
+                "date_published": "2023-06-02T20:28:01Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/89310604",
+                "tag": "0.20.0",
+                "name": "0.20.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "\ud83d\udea8 Breaking change: Mull now exits with an error if mutants survive. Use `--allow-surviving` to preserve old behavior.\r\n\r\n- Exit with error if mutants survive (by [Vilhelm Engstr\u00f6m](https://github.com/vengaer)) [#1017](https://github.com/mull-project/mull/pull/1017)\r\n- Removed LLVM 10, added LLVM 15 [#1014](https://github.com/mull-project/mull/pull/1014)\r\n\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2022-08-29..2023-01-17)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.20.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.20.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.20.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/89310604",
+                "release_id": 89310604,
+                "date_created": "2023-01-17T20:26:20Z",
+                "date_published": "2023-01-17T20:55:20Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/75555256",
+                "tag": "0.19.0",
+                "name": "0.19.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- Removed LLVM 9 support [#1009](https://github.com/mull-project/mull/pull/1009)\r\n- Added LLVM 14 support [#1007](https://github.com/mull-project/mull/pull/1007)\r\n- Added explicit support page [#1010](https://github.com/mull-project/mull/pull/1010)\r\n- Deprecated `all` group (replaced with `cxx_all`) [#1008](https://github.com/mull-project/mull/pull/1008)\r\n\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2022-05-06..2022-08-28)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.19.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.19.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.19.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/75555256",
+                "release_id": 75555256,
+                "date_created": "2022-08-27T23:15:46Z",
+                "date_published": "2022-08-27T23:47:09Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/66153725",
+                "tag": "0.18.0",
+                "name": "0.18.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- Fixed a phi-node miscompilation caused by `cxx_logical_and_to_or` and `cxx_logical_or_to_and` [#994](https://github.com/mull-project/mull/pull/994) [#998](https://github.com/mull-project/mull/pull/998)\r\n- Improved diagnostics to track and workaround miscompilations [#1000](https://github.com/mull-project/mull/pull/1000)\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2022-03-18..2022-05-05)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.18.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.18.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.18.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/66153725",
+                "release_id": 66153725,
+                "date_created": "2022-05-05T18:16:02Z",
+                "date_published": "2022-05-05T18:47:35Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/62075071",
+                "tag": "0.17.1",
+                "name": "0.17.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- Fixed a bug when reporters crash if a source file cannot be opened [#991](https://github.com/mull-project/mull/pull/991)\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2022-03-10..2022-03-17)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.17.1",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.17.1",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.17.1",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/62075071",
+                "release_id": 62075071,
+                "date_created": "2022-03-17T07:01:13Z",
+                "date_published": "2022-03-17T07:37:08Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/61403447",
+                "tag": "0.17.0",
+                "name": "0.17.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "\ud83d\udea8 With this release, the `mull-cxx` tool is [removed](https://github.com/mull-project/mull/pull/984).\r\n\r\n- Fixed 'inconsistency in registered CommandLine options' when building against certain configs of LLVM [#983](https://github.com/mull-project/mull/pull/983)\r\n- Removed `mull-cxx` [#984](https://github.com/mull-project/mull/pull/984)\r\n- Simplified database schema for SQLite reporter [#987](https://github.com/mull-project/mull/pull/987)\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2022-02-21..2022-03-09)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.17.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.17.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.17.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/61403447",
+                "release_id": 61403447,
+                "date_created": "2022-03-09T17:05:51Z",
+                "date_published": "2022-03-09T17:35:23Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/60008776",
+                "tag": "0.16.0",
+                "name": "0.16.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- Added a workaround to not miscompile functions that use variadic arguments [#977](https://github.com/mull-project/mull/pull/977) [#978](https://github.com/mull-project/mull/issues/978)\r\n- Fixed an issue when `mull-ir-frontend` could not find Clang's headers (such as `stdarg.h`) [#979](https://github.com/mull-project/mull/pull/979)\r\n- `mull-runner` uses code coverage automatically [#971](https://github.com/mull-project/mull/pull/971) [#967](https://github.com/mull-project/mull/pull/967)\r\n- Added tutorials on CMake and Makefile integration [#980](https://github.com/mull-project/mull/pull/980)\r\n- `mull-ir-frontend` and `mull-runner` share the config [#972](https://github.com/mull-project/mull/pull/972)\r\n- Added more debugging facilities [#975](https://github.com/mull-project/mull/pull/975) [#976](https://github.com/mull-project/mull/pull/976)\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2022-02-01..2022-02-20)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.16.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.16.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.16.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/60008776",
+                "release_id": 60008776,
+                "date_created": "2022-02-20T23:29:29Z",
+                "date_published": "2022-02-21T00:35:42Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/58315916",
+                "tag": "0.15.1",
+                "name": "0.15.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- Added a workaround to not miscompile functions that use \"jump-tables\" [#963](https://github.com/mull-project/mull/pull/963)\r\n- Added module verification [#964](https://github.com/mull-project/mull/pull/964)\r\n- Added more debugging facilities [#962](https://github.com/mull-project/mull/pull/962)\r\n- Mull is using itself for testing [#952](https://github.com/mull-project/mull/pull/952)\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2022-01-21..2022-01-31)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.15.1",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.15.1",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.15.1",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/58315916",
+                "release_id": 58315916,
+                "date_created": "2022-01-31T08:39:38Z",
+                "date_published": "2022-01-31T09:26:50Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/57619010",
+                "tag": "0.15.0",
+                "name": "0.15.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "\ud83d\udea8 With this release, the `mull-cxx` tool is [deprecated](https://github.com/mull-project/mull/issues/945) and will be removed in the future.\r\n\r\nMull switches to the new model - compiler plugin called [Mull IR Frontend](https://github.com/mull-project/mull/pull/938).\r\n[The tutorial](https://mull.readthedocs.io/en/0.15.0/tutorials/HelloWorld.html) showing how to use it was updated.\r\n\r\n- Introduce Mull IR Frontend [#938](https://github.com/mull-project/mull/pull/938)\r\n- Introduce YAML-based configuration [#934](https://github.com/mull-project/mull/pull/934)\r\n- Drop LLVM 7 [#936](https://github.com/mull-project/mull/pull/936)\r\n- Drop LLVM 8 [#942](https://github.com/mull-project/mull/pull/942)\r\n- Fix a bug in `mull-runner` with duplicated mutants from templates [#940](https://github.com/mull-project/mull/pull/940)\r\n- Fix a bug with junk detection when the code is located in symlinked folders [#943](https://github.com/mull-project/mull/pull/943) \r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2021-12-21..2022-01-20)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.15.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.15.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.15.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/57619010",
+                "release_id": 57619010,
+                "date_created": "2022-01-20T21:44:33Z",
+                "date_published": "2022-01-20T22:14:05Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/55656243",
+                "tag": "0.14.0",
+                "name": "0.14.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- Mutants are now also extracted from dependent dynamic libraries [#903](https://github.com/mull-project/mull/issues/903) [#931](https://github.com/mull-project/mull/pull/931)\r\n- Fixed linking by deferring object code lowering to external compiler instead of using (mostly) incorrect defaults [#929](https://github.com/mull-project/mull/pull/929) \r\n- Added warning if the number of workers specified exceeds available CPU cores (by [Matthias Bilger](https://github.com/m42e)) [#928](https://github.com/mull-project/mull/pull/928)\r\n- Most of the Ubuntu packages are now built against the official LLVM/Clang instead of precompiled ones [#926](https://github.com/mull-project/mull/pull/926)\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2021-11-24..2021-12-18)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.14.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.14.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.14.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/55656243",
+                "release_id": 55656243,
+                "date_created": "2021-12-20T09:11:38Z",
+                "date_published": "2021-12-20T10:03:03Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/53952897",
+                "tag": "0.13.0",
+                "name": "0.13.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "This release happens solely due to [m42e](https://github.com/m42e)'s efforts. Thank you, Matthias!\r\n\r\n- Added patch reporter (by [Matthias Bilger](https://github.com/m42e)) [#911](https://github.com/mull-project/mull/pull/911) [#587](https://github.com/mull-project/mull/issues/587)\r\n- Added GithubAnnotations reporter (by [Matthias Bilger](https://github.com/m42e)) [#917](https://github.com/mull-project/mull/pull/917) [#738](https://github.com/mull-project/mull/issues/738)\r\n- `Elements` and `SQLite` reports now include information about the Mull invocation (by [Matthias Bilger](https://github.com/m42e)) [#921](https://github.com/mull-project/mull/pull/921) [#920](https://github.com/mull-project/mull/issues/920)\r\n- Code coverage now cuts off more unreachable mutants (by [Matthias Bilger](https://github.com/m42e)) [#923](https://github.com/mull-project/mull/pull/923)\r\n- Fixed a bug with child-process handling causing incorrect test results (by [Matthias Bilger](https://github.com/m42e)) [#915](https://github.com/mull-project/mull/pull/915)\r\n- Fixed a bug when Mull terminates when invalid regex passed to filters (by [Matthias Bilger](https://github.com/m42e)) [#918](https://github.com/mull-project/mull/pull/918) [#845](https://github.com/mull-project/mull/issues/845)\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2021-10-23..2021-11-23)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.13.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.13.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.13.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/53952897",
+                "release_id": 53952897,
+                "date_created": "2021-11-23T20:54:57Z",
+                "date_published": "2021-11-23T22:02:32Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/51915920",
+                "tag": "0.12.0",
+                "name": "0.12.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "**Important note**: The `mull` package is now replaced with a separate package for each\r\nsupported LLVM version, e.g. `mull-8`, `mull-13`, etc.\r\n**The `mull` package won't be updated!**\r\n\r\n**Important note**: The binaries `mull-cxx` and `mull-runner` are now named after\r\nthe corresponding LLVM version, e.g. `mull-cxx-8`, `mull-runner-13`, etc.\r\n\r\n- Publish mull-${LLVM_VERSION} package instead of mull package [904](https://github.com/mull-project/mull/pull/904)\r\n- Include LLVM version into the package/binary name [904](https://github.com/mull-project/mull/pull/904)\r\n- Added LLVM 13 support [#905](https://github.com/mull-project/mull/pull/905)\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2021-08-27..2021-10-23)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.12.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.12.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.12.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/51915920",
+                "release_id": 51915920,
+                "date_created": "2021-10-23T18:23:37Z",
+                "date_published": "2021-10-23T18:55:11Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/51916733",
+                "tag": "0.11.3",
+                "name": "0.11.3",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "\"Fake\" release to roll-out the deprecation warning",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.11.3",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.11.3",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.11.3",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/51916733",
+                "release_id": 51916733,
+                "date_created": "2021-10-23T19:06:05Z",
+                "date_published": "2021-10-23T19:43:37Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/48529288",
+                "tag": "0.11.2",
+                "name": "0.11.2",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "Fixed segfault caused by a data race (by [Matthias Bilger](https://github.com/m42e)) [#895](https://github.com/mull-project/mull/pull/895)\r\n",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.11.2",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.11.2",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.11.2",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/48529288",
+                "release_id": 48529288,
+                "date_created": "2021-08-26T19:30:33Z",
+                "date_published": "2021-08-26T20:34:21Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/47325488",
+                "tag": "0.11.1",
+                "name": "0.11.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- Switched to `main` instead of `master` for the main branch [#892](https://github.com/mull-project/mull/pull/892)\r\n- Added LLVM 12 support [#886](https://github.com/mull-project/mull/pull/886)\r\n- Dropped debug output from `mull-runner` [#889](https://github.com/mull-project/mull/pull/889)\r\n- Fixed a bug leading to non-deterministic results [#890](https://github.com/mull-project/mull/pull/890) [#891](https://github.com/mull-project/mull/pull/891)\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2021-06-14..2021-08-04)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.11.1",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.11.1",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.11.1",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/47325488",
+                "release_id": 47325488,
+                "date_created": "2021-08-04T21:44:08Z",
+                "date_published": "2021-08-04T22:17:30Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/44537895",
+                "tag": "0.11.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "**Important note**: AST-based mutations are [in the works](https://github.com/mull-project/mull/issues/867),\r\nbut not yet available in the pre-built packages.\r\n\r\n- Fixed a bug when mutants may be eliminated from the mutated program (by [Yuta Saito](https://github.com/kateinoigakukun)) [863](https://github.com/mull-project/mull/pull/863)\r\n- Fixed a bug when `test-program` vs `./test-program` changed Mull behavior [868](https://github.com/mull-project/mull/pull/868)\r\n- Fixed a multi-threading-related bug [865](https://github.com/mull-project/mull/pull/865)\r\n- Mull uses `grep -E` compatible regular expressions [850](https://github.com/mull-project/mull/pull/850)\r\n- Introduced `mull-runner` [854](https://github.com/mull-project/mull/pull/854)\r\n- Incremental mutation testing using `git diff` filter [#833](https://github.com/mull-project/mull/pull/833)\r\n- Dropped the package size by ~3.5-4Mb [884](https://github.com/mull-project/mull/pull/884)\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2021-03-08..2021-06-13)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.11.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.11.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.11.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/44537895",
+                "release_id": 44537895,
+                "date_created": "2021-06-13T14:43:56Z",
+                "date_published": "2021-06-13T15:17:02Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/39398254",
+                "tag": "0.10.0",
+                "name": "0.10.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "**Important note**: Bintray is shutting down, so Mull moved to [Cloudsmith](https://cloudsmith.io/~mull-project/repos/)!\r\n\r\n- Fixed bug with incorrect mutation of intrinsics (by [Yuta Saito](https://github.com/kateinoigakukun)) [#libirm/24](https://github.com/mull-project/libirm/pull/24)\r\n- Fixed bug with losing calling conventions (by [Yuta Saito](https://github.com/kateinoigakukun)) [#834](https://github.com/mull-project/mull/pull/834)\r\n- Fixed bug with incorrect locations of mutants in the header files [#837](https://github.com/mull-project/mull/pull/837)\r\n- Deduplicate mutants coming from inlined functions/templates [#829](https://github.com/mull-project/mull/pull/829)\r\n- Add support for not covered mutants [#831](https://github.com/mull-project/mull/pull/831)\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2021-01-08..2021-03-07)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.10.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.10.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.10.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/39398254",
+                "release_id": 39398254,
+                "date_created": "2021-03-07T15:26:54Z",
+                "date_published": "2021-03-07T15:59:30Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/36105937",
+                "tag": "0.9.0",
+                "name": "0.9.0",
+                "author": {
+                    "name": "AlexDenisov",
+                    "type": "User"
+                },
+                "description": "**Important note**: this release is a breaking change!\r\n\r\nWe decided to [move away from JIT](https://github.com/mull-project/mull/issues/798) and because of that Mull's API has changed.\r\nMake sure you go through the first three [tutorials](https://mull.readthedocs.io/en/0.9.0/Tutorials.html) to see the difference.\r\n\r\nActual changelog:\r\n\r\n- Moved to Discord from Slack: [Join Us There](https://discord.gg/Hphp7dW)\r\n- Added LLVM 11 support [789](https://github.com/mull-project/mull/pull/789)\r\n- Added Ubuntu 20 support [789](https://github.com/mull-project/mull/pull/789)\r\n- Moved away from JIT [#798](https://github.com/mull-project/mull/issues/798)\r\n- Removed explicit test framework support [814](https://github.com/mull-project/mull/pull/814)\r\n- Special thanks go to [Joakim Nohlg\u00e5rd](https://github.com/gebart) for bringing Boost test framework support, which is now unfortunately gone [#746](https://github.com/mull-project/mull/pull/746)\r\n- [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2020-10-14..2021-01-07)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.9.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.9.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.9.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/36105937",
+                "release_id": 36105937,
+                "date_created": "2021-01-07T17:25:03Z",
+                "date_published": "2021-01-07T17:51:52Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/32533071",
+                "tag": "0.8.0",
+                "name": "0.8.0",
+                "author": {
+                    "name": "AlexDenisov",
+                    "type": "User"
+                },
+                "description": " - Implemented mutators for (almost) all C++ expressions [#577](https://github.com/mull-project/mull/issues/577)\r\n - Print total execution time (regression) [#741](https://github.com/mull-project/mull/pull/741)\r\n - Allow combined include-path + exclude-path (by [Joakim Nohlg\u00e5rd](https://github.com/gebart)) [#747](https://github.com/mull-project/mull/pull/747)\r\n - Fix a possible infinite loop in SourceManager (by [Evan Lojewski](https://github.com/meklort)) [#748](https://github.com/mull-project/mull/pull/748)\r\n - Add [CppUTest](http://cpputest.github.io) support (by [Oskari Mantere](https://github.com/OMantere)) [#750](https://github.com/mull-project/mull/pull/750)\r\n - Fix ppc64le builds (by [Evan Lojewski](https://github.com/meklort)) [#751](https://github.com/mull-project/mull/pull/751)\r\n - Added `-ld-preload` command line option (by [Joakim Nohlg\u00e5rd](https://github.com/gebart)) [#756](https://github.com/mull-project/mull/pull/756)\r\n - Compilation database speedup (by [Joakim Nohlg\u00e5rd](https://github.com/gebart)) [#760](https://github.com/mull-project/mull/pull/760)\r\n - LLVM 10 Support [#761](https://github.com/mull-project/mull/pull/761)\r\n - LLVM 3.9, 4.0, and 5.0 no longer supported [#762](https://github.com/mull-project/mull/pull/762)\r\n - Add command line option to configure timeout per test run [#772](https://github.com/mull-project/mull/pull/772)\r\n - [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2020-03-25..2020-10-14)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.8.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.8.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.8.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/32533071",
+                "release_id": 32533071,
+                "date_created": "2020-10-13T21:55:03Z",
+                "date_published": "2020-10-13T21:59:08Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/24830605",
+                "tag": "0.7.0",
+                "name": "0.7.0",
+                "author": {
+                    "name": "AlexDenisov",
+                    "type": "User"
+                },
+                "description": "- Introduced online documentation https://mull.readthedocs.io/en/latest/\r\n- Stable and nightly builds are now hosted on [Bintray](http://bintray.com/mull-project) [#676](https://github.com/mull-project/mull/pull/676)\r\n- Ubuntu packages now can be installed/updated via `apt-get` https://mull.readthedocs.io/en/latest/Installation.html#install-on-ubuntu\r\n- Also, packages are now smaller [#690](https://github.com/mull-project/mull/pull/690)\r\n- Mull can read compilation flags from the bitcode file (`-grecord-command-line` compiler option) [#663](https://github.com/mull-project/mull/pull/663)\r\n- Improve JUnit report integration [#660](https://github.com/mull-project/mull/pull/660)\r\n- Added options to control capture of the stderr/stdout from test runs [#674](https://github.com/mull-project/mull/pull/674)\r\n- Fixed a bug with junk detection not reading compilation database correctly [#679](https://github.com/mull-project/mull/pull/679)\r\n- Revamped the logging mechanism [#655](https://github.com/mull-project/mull/pull/655)\r\n- Show warning when there is no debug information [#654](https://github.com/mull-project/mull/pull/654)\r\n- Logger has a debug option [#669](https://github.com/mull-project/mull/pull/669)\r\n- Strict mode added: treat warnings as fatal errors [#673](https://github.com/mull-project/mull/pull/673)\r\n- Work on the \"white list\" AST search has started [#677](https://github.com/mull-project/mull/pull/677)\r\n- [All the changes](https://github.com/mull-project/mull/pulls?page=2&q=is%3Apr+merged%3A2019-12-15..2020-03-24)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.7.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.7.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.7.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/24830605",
+                "release_id": 24830605,
+                "date_created": "2020-03-28T18:42:07Z",
+                "date_published": "2020-03-26T08:16:31Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/22232663",
+                "tag": "0.6.1",
+                "name": "0.6.1",
+                "author": {
+                    "name": "AlexDenisov",
+                    "type": "User"
+                },
+                "description": " - Moved `LogicalAndToOr` and `LogicalOrToAnd` to `experimental` group #638\r\n - `IDEReporter` now can also show killed mutants next to survived #640\r\n - Fixed an issue with the compilation database containing relative paths #637\r\n - Gained first proper integration tests #631\r\n - [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2019-12-04..2019-12-14)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.6.1",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.6.1",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.6.1",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/22232663",
+                "release_id": 22232663,
+                "date_created": "2019-12-14T18:39:16Z",
+                "date_published": "2019-12-14T21:33:32Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/22008389",
+                "tag": "0.6.0",
+                "name": "Release 0.6.0",
+                "author": {
+                    "name": "AlexDenisov",
+                    "type": "User"
+                },
+                "description": " - Switched to [libirm](https://github.com/mull-project/libirm) - generic library for LLVM mutations #566\r\n - Started building online documentation: https://mull.readthedocs.io\r\n - Introduce more granular mutation operators: https://mull.readthedocs.io/en/0.6.0/SupportedMutations.html\r\n - Fixed compilation database parsing issue #632 #629\r\n - Fixed gcc builds #630\r\n - Report warning when JIT cannot resolve undefined symbol #628\r\n - Added an option to whitelist mutants by paths (`-include-path=...`) #617\r\n - Added `-dry-run` options #616\r\n - Removed the old driver (`mull-driver`) #612\r\n - Added LLVM 9 support #609\r\n - Fixed a bug when even junk mutations were applied, resulting in a longer execution time #595\r\n - Sped up junk detection by an order of magnitude #582 \r\n - [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2019-08-29..2019-12-04)\r\n",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.6.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.6.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.6.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/22008389",
+                "release_id": 22008389,
+                "date_created": "2019-12-04T19:46:57Z",
+                "date_published": "2019-12-05T19:51:31Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/19612462",
+                "tag": "0.5.0",
+                "name": "Release 0.5.0",
+                "author": {
+                    "name": "AlexDenisov",
+                    "type": "User"
+                },
+                "description": " - Print more info when original test fails #549\r\n - Reporting JSON to Mutation Testing Elements (initial support) #517, #507\r\n - Introduce `-exclude-path` option to filter mutations #553\r\n - Enable reporters configuration via `-reporters` option #555\r\n - Junk detection for the Scalar Value mutator #557\r\n - Junk detection for the Replace Assignment mutator #559\r\n - [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2019-08-12..2019-08-28)\r\n\r\nThe FreeBSD build fails for a weird reason, so no FreeBSD package for this release, see #562 for more details.\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.5.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.5.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.5.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/19612462",
+                "release_id": 19612462,
+                "date_created": "2019-08-28T15:34:35Z",
+                "date_published": "2019-08-29T09:29:16Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/19214738",
+                "tag": "0.4.0",
+                "name": "Release 0.4.0",
+                "author": {
+                    "name": "AlexDenisov",
+                    "type": "User"
+                },
+                "description": " - Fixed the original value use-after-free issue #532, #536\r\n - Automated release process on macOS #537\r\n - Fix incorrect handling of the NSW/NUW flags #540\r\n - Bring back abandoned sandbox approach #541, #542\r\n - Add LLVM 9 support #544\r\n - Include build date into the version info #546\r\n - Include Ubuntu 18.04 into release process #547\r\n - [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2019-06-03..2019-08-11)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.4.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.4.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.4.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/19214738",
+                "release_id": 19214738,
+                "date_created": "2019-08-11T06:17:32Z",
+                "date_published": "2019-08-11T12:10:39Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/17726595",
+                "tag": "0.3.0",
+                "name": "Release 0.3.0",
+                "author": {
+                    "name": "AlexDenisov",
+                    "type": "User"
+                },
+                "description": " - Add junk detection\r\n   - AndOrReplacement #509\r\n   - MathDiv #511\r\n   - MathMul #511\r\n   - ReplaceCall #512\r\n - Handle edge case for AND-OR mutator #501\r\n - Add better handling of edge cases when there is no debug information #519, #520, #524\r\n - Print more info when Junk Detector fails to parse a file #524\r\n - [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2019-05-03..2019-06-02)",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.3.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.3.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.3.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/17726595",
+                "release_id": 17726595,
+                "date_created": "2019-06-02T07:54:25Z",
+                "date_published": "2019-06-02T19:46:51Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/17102675",
+                "tag": "0.2.0",
+                "name": "Release 0.2.0",
+                "author": {
+                    "name": "AlexDenisov",
+                    "type": "User"
+                },
+                "description": " - Add FreeBSD Package #503\r\n - Switch back to PackageMaker on macOS #504\r\n - Add internal target to validate mutants #500\r\n - Lots of refactoring\r\n - [All the changes](https://github.com/mull-project/mull/pulls?q=is%3Apr+merged%3A2019-04-03..2019-05-02)\r\n",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.2.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.2.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.2.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/17102675",
+                "release_id": 17102675,
+                "date_created": "2019-05-02T05:58:12Z",
+                "date_published": "2019-05-02T07:39:05Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mull-project/mull/releases/16508989",
+                "tag": "0.1.0",
+                "name": "0.1.0",
+                "author": {
+                    "name": "AlexDenisov",
+                    "type": "User"
+                },
+                "description": "Initial Release. See README.md for details: https://github.com/mull-project/mull#usage",
+                "tarball_url": "https://api.github.com/repos/mull-project/mull/tarball/0.1.0",
+                "zipball_url": "https://api.github.com/repos/mull-project/mull/zipball/0.1.0",
+                "html_url": "https://github.com/mull-project/mull/releases/tag/0.1.0",
+                "url": "https://api.github.com/repos/mull-project/mull/releases/16508989",
+                "release_id": 16508989,
+                "date_created": "2019-04-02T17:28:13Z",
+                "date_published": "2019-04-02T20:13:26Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mull-project/mull/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# How to contribute\n\nThere are several ways you can help the project.\n\n### Spread the word\n\nWe have found that not many people are aware of Mutation Testing. You can help \nby simply asking your colleagues or friends about their opinion on mutation testing.\n\n### Give it a try\n\nTry using Mull on one of your projects, or on one of the many open source\nprojects. Mull uses JIT for performance and flexibility, which is inherently\ncomplex and easy to get wrong. We covered some cases, but certainly not all of\nthem. The project would benefit from more samples.\n\n### Ask questions\n\nYou might get confused by the documentation, or by our design decisions. Some of\nthe decisions are done on purpose, some of them are accidental. If something is\nnot clear, confusing, or can be improved - please open an issue and raise your\nconcern.\n\n### File a bug report\n\nIf you gave it a try, then you probably hit some bug or crash. Please, file\na report, we will take care of it eventually.\n\n### Implement new features\n\nThere is a non-exhaustive [list](https://github.com/mull-project/mull/issues)\nof planned features. Feel free to implement any of them, or come up with some\nfeatures you think would be beneficial for the project.\n\nHere is the starting point: [Hacking on Mull](https://mull.readthedocs.io/en/latest/HackingOnMull.html).\n\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mull-project/mull/main/CONTRIBUTING.md"
+        },
+        {
+            "result": {
+                "value": "Here is the starting point: [CONTRIBUTING.md](CONTRIBUTING.md)\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributing",
+                "parent_header": [
+                    "Mull"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mull-project/mull/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "[Mull it over: mutation testing based on LLVM (preprint)](https://lowlevelbits.org/pdfs/Mull_Mutation_2018.pdf)\n\n```\n@INPROCEEDINGS{8411727,\nauthor={A. Denisov and S. Pankevich},\nbooktitle={2018 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW)},\ntitle={Mull It Over: Mutation Testing Based on LLVM},\nyear={2018},\nvolume={},\nnumber={},\npages={25-31},\nkeywords={just-in-time;program compilers;program testing;program verification;mutations;Mull;LLVM IR;mutated programs;compiled programming languages;LLVM framework;LLVM JIT;tested program;mutation testing tool;Testing;Tools;Computer languages;Instruments;Runtime;Computer crashes;Open source software;mutation testing;llvm},\ndoi={10.1109/ICSTW.2018.00024},\nISSN={},\nmonth={April},}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "Mull"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mull-project/mull/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{8411727,\n    month = {April},\n    issn = {},\n    doi = {10.1109/ICSTW.2018.00024},\n    keywords = {just-in-time;program compilers;program testing;program verification;mutations;Mull;LLVM IR;mutated programs;compiled programming languages;LLVM framework;LLVM JIT;tested program;mutation testing tool;Testing;Tools;Computer languages;Instruments;Runtime;Computer crashes;Open source software;mutation testing;llvm},\n    pages = {25-31},\n    number = {},\n    volume = {},\n    year = {2018},\n    title = {Mull It Over: Mutation Testing Based on LLVM},\n    booktitle = {2018 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW)},\n    author = {A. Denisov and S. Pankevich},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/ICSTW.2018.00024",
+                "title": "Mull It Over: Mutation Testing Based on LLVM",
+                "author": "A. Denisov and S. Pankevich"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mull-project/mull/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "For installation and usage please refer to the latest documentation: https://mull.readthedocs.io \n",
+                "original_header": "Mull"
+            },
+            "confidence": 0.995022842663913,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mull-project/mull/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Here is the invitation link to the Discord channel: https://discord.gg/Hphp7dW\n \n",
+                "original_header": "Join us in Discord"
+            },
+            "confidence": 0.9065608786992643,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mull-project/mull/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Copyright (c) 2016-2024 Alex Denisov <alex@lowlevelbits.org> and Stanislav Pankevich <s.pankevich@gmail.com>. See LICENSE for details.\n \n",
+                "original_header": "Copyright"
+            },
+            "confidence": 0.9053959630260268,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mull-project/mull/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Mull"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mull-project/mull/main/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://mull.readthedocs.io/",
+                "format": "readthedocs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mull-project/mull/main/README.md"
+        }
+    ]
+}

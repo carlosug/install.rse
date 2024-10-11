@@ -1,0 +1,270 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:38:49"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/khesoem/Defects4J-Plus-M",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "khesoem",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-06-26T21:32:26Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-07-23T12:30:20Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2019 khashayar\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/khesoem/Defects4J-Plus-M/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A database of computed source code metrics and test coverage for Defects4J projects",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains a dataset of computed metrics and test coverages for Defects4J projects.\n \n",
+                "original_header": "Defects4J+M"
+            },
+            "confidence": 0.9189679459402199,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/khesoem/Defects4J-Plus-M/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The structure of the directories of this repository is as follows: \nThere is a separate folder for each of the projects in the\ninitial published version of Defects4J. Each project folder includes a number of folders (let\u2019s call\nthem *bug folders*) each of which provides the extracted information about a corresponding bug. For\nexample, \u201cRoot Folder->Chart->1\u201d folder contains the extracted information about the bug whose id is\n\u201c1\u201d in \u201cChart\u201d project. These ids are the same as ids in Defects4J. For example, users of Defects4J can\ncheckout to the mentioned buggy version with this command: \n",
+                "original_header": "Data"
+            },
+            "confidence": 0.9738740740827054,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/khesoem/Defects4J-Plus-M/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "In order to better understand the content of the \u201cTestCoverage.h5\u201d file, consider this example:\nSuppose that the *i*th elements of \u2018data\u2019, \u2018row\u2019, and \u2018column\u2019 datasets are x, ind_r, and ind_c, respectively.\nAlso, let say the *ind_r*th element of \u2018rowMethodNamesArray\u2019 dataset is MName and *ind_c*th element of\n\u2018columnTestNamesArray\u2019 dataset is TName. This means that the coverage of TName test method over\nMName program method is x. \n",
+                "original_header": "Computed Test Coverages"
+            },
+            "confidence": 0.9700068866215074,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/khesoem/Defects4J-Plus-M/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Defects4J-Plus-M",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "khesoem/Defects4J-Plus-M",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/khesoem/Defects4J-Plus-M/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/khesoem/Defects4J-Plus-M/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 8,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/khesoem/Defects4J-Plus-M/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/khesoem/Defects4J-Plus-M/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you are using this dataset for your research, we would be really glad if you cite our paper using the following bibtex:\n```\n@article{mahdieh2019incorporating,\n\tAuthor = {Mostafa Mahdieh and Seyed-Hassan Mirian-Hosseinabadi and Khashayar Etemadi and Ali Nosrati and Sajad Jalali},\n\tTitle = {Incorporating fault-proneness estimations into coverage-based test case prioritization methods},\n\tjournal={arXiv preprint arXiv:1908.06502},\n\tYear = {2019}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing Defects4J+M",
+                "parent_header": [
+                    "Defects4J+M"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/khesoem/Defects4J-Plus-M/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{mahdieh2019incorporating,\n    year = {2019},\n    journal = {arXiv preprint arXiv:1908.06502},\n    title = {Incorporating fault-proneness estimations into coverage-based test case prioritization methods},\n    author = {Mostafa Mahdieh and Seyed-Hassan Mirian-Hosseinabadi and Khashayar Etemadi and Ali Nosrati and Sajad Jalali},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Incorporating fault-proneness estimations into coverage-based test case prioritization methods",
+                "author": "Mostafa Mahdieh and Seyed-Hassan Mirian-Hosseinabadi and Khashayar Etemadi and Ali Nosrati and Sajad Jalali"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/khesoem/Defects4J-Plus-M/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\tRoot Folder\n\t|\n\t|--- Chart\n\t    |--- 1\n\t        |--- Metrics.zip\n\t        |--- TestCoverage.zip\n\t|--- Closure\n\t|--- Land\n\t|--- Math\n\t|--- Time \n",
+                "original_header": "Data"
+            },
+            "confidence": 0.9505573652875132,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/khesoem/Defects4J-Plus-M/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Defects4J+M"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/khesoem/Defects4J-Plus-M/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1908.06502"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/khesoem/Defects4J-Plus-M/master/README.md"
+        }
+    ]
+}

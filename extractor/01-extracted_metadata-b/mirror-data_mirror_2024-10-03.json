@@ -1,0 +1,359 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:10:35"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/mirror-data/mirror",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "mirror-data",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-10-21T04:40:36Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-05-22T10:35:44Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/apache-2.0",
+                "type": "License",
+                "name": "Apache License 2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "spdx_id": "Apache-2.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Mirror: Plug-and-Play Data Query, Summarization and Visualization with Natural Language Interface",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "### A Natural Language Interface for Data Querying, Summarization, and Visualization \nMirror is a project that aims to build and share a natural language interface for data querying, summarization, and visualization. This repository contains the code for the user interface (UI) as well as the code for creating SQL queries, summaries, and visualizations. \n"
+            },
+            "confidence": 0.9698712085393644,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mirror-data/mirror/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Mirror is an open-source platform for data exploration and analysis powered by large language and code models, GPT-3 and Codex. It offers an intuitive natural language interface for querying databases, automatically generates SQL commands, and provides visualizations for data understanding.  \nMirror is designed to be flexible and suitable for both experienced data analysts and non-technical professionals. It is a \"plug-and-play\" tool that leverages pretrained models, eliminating the need for annotated data. The platform is demonstrated through two use cases: automatic question answering for sports with real-time updates, and OSS Insight Data Explorer for open-source event analysis.  \nThe components and workflow of Mirror in the data query stage. The red dashed lines indicate human-in-the-loop components that can allow user interaction or editing. Query auto-completion with metadata is omitted \n",
+                "original_header": "Overview"
+            },
+            "confidence": 0.9875979304063,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mirror-data/mirror/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Mirror was a participating and award-winning project at PingCAP TiDB Hackathon 2022. We would like to thank PingCAP, Inc. for the generous awards and support. The intellectual property of OSS Insight (including but not limited to its Mirror integration) is owned by PingCAP, Inc.\n \n",
+                "original_header": "Acknowledgments"
+            },
+            "confidence": 0.902043856014914,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mirror-data/mirror/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "mirror",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "mirror-data/mirror",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mirror-data/mirror/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mirror-data/mirror/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 36,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/mirror-data/mirror/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "TypeScript",
+                "name": "TypeScript",
+                "type": "Programming_language",
+                "size": 44238
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 1868
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 508
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 122
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mirror-data/mirror/main/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mirror-data/mirror/main/Dockerfile"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mirror-data/mirror/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9769047128090491,
+            "technique": "supervised_classification"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<h1 align=\"center\"><a href=\"https://mirror-data.github.io/\">\ud83e\ude9e Mirror </a> </h1>\n<p align=\"center\"><a href=\"https://arxiv.org/abs/2303.08697\">[\ud83d\udcc4 Paper]</a> | <a href=\"https://mirror-data.github.io/\">[\ud83c\udfe0 Website]</a> </p>\n<hr> \n"
+            },
+            "confidence": 0.9995116412251678,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mirror-data/mirror/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- React\n- Matine.dev\n- Vega \nTo set up a development environment, you will need the following: \n",
+                "original_header": "Dependencies"
+            },
+            "confidence": 0.9686010329451742,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mirror-data/mirror/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Node.js version 16 or higher\n- Yarn as the package manager \n"
+            },
+            "confidence": 0.9999910216148931,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mirror-data/mirror/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Follow these steps to run the code locally: \n1. Set environment variables \n   ```\n   # .env.local\n   \n   # Your OpenAI API key\n   OPENAI_API_KEY={{REPLACE_IT_WITH_YOUR_OPENAI_API_KEY}}\n   \n   # Your Postgres URL, e.g. postgres://user:password@localhost:5432/dbname\n   PG_URL=\"{{REPLACE_IT_WITH_YOUR_POSTGRES_URL}}\"\n   \n   # Enable basic auth\n   # BASIC_AUTH={username}:{password}\n   ``` \n2. Install the dependencies with `yarn install` \n3. Run `yarn dev` to start the development server \n",
+                "original_header": "Running the Code"
+            },
+            "confidence": 0.9814238700787481,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mirror-data/mirror/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To deploy Mirror, follow these steps: \n1. Build the web static server \n   ```\n   yarn build & yarn export\n   ``` \n",
+                "original_header": "Deployment"
+            },
+            "confidence": 0.9931595364315756,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mirror-data/mirror/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "   ```\n   # Build Docker image\n   docker build -t mirror-data/mirror .\n   \n   # Multi-arch build\n   docker buildx build --platform linux/amd64,linux/arm64 -t mirror-data/mirror .\n   ``` \nPlease cite the repo if you use the code in this repo. \n"
+            },
+            "confidence": 0.9825659102569196,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mirror-data/mirror/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@misc{mirror,\n    howpublished = {\\url{https://github.com/mirror-data/mirror}},\n    journal = {GitHub repository},\n    publisher = {GitHub},\n    year = {2023},\n    title = {Mirror: A Natural Language Interface for Data Querying, Summarization, and Visualization},\n    author = {Canwen Xu and Julian McAuley and Penghan Wang},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Mirror: A Natural Language Interface for Data Querying, Summarization, and Visualization",
+                "author": "Canwen Xu and Julian McAuley and Penghan Wang"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mirror-data/mirror/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mirror-data/mirror/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/mirror-data/mirror/main/./docs/flow.jpg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mirror-data/mirror/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2303.08697\">[\ud83d\udcc4 Paper]</a> | <a href=\"https://mirror-data.github.io/\">[\ud83c\udfe0 Website]</a> </p>\n<hr>\n\n### A Natural Language Interface for Data Querying, Summarization, and Visualization\n\nMirror is a project that aims to build and share a natural language interface for data querying, summarization, and visualization. This repository contains the code for the user interface (UI"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mirror-data/mirror/main/README.md"
+        }
+    ]
+}

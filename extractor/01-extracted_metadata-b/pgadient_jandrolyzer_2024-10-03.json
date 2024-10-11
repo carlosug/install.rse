@@ -1,0 +1,244 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 21:03:37"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/pgadient/jandrolyzer",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "pgadient",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-04-26T05:40:02Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-06-13T06:59:20Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "jandrolyzer",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "pgadient/jandrolyzer",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/pgadient/jandrolyzer/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/pgadient/jandrolyzer/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/pgadient/jandrolyzer/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 326660
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/pgadient/jandrolyzer/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "You can find a compiled version (using OpenJDK 12) in the `/bin` folder.\n\nThe tool requires the following parameters:\n \n- `lp` The folder path that contains external libraries required for resolving the imports used in the apps. You can get a ready to use copy of that folder from https://drive.google.com/file/d/1tfwFbw_DqrqjaVRbc_tx9P96BT3Kqpbl\n- `ap` The file path to a single APK file to be analysed.\n- `jp` The file path to the (non-GUI) JADX executable. You can get the latest one from https://github.com/skylot/jadx/releases\n- `op` The folder path that will be used for the decompilation of the apps.\n- `oj` The folder path that will contain the reconstructed JSON data.\n- `os` The folder path that will contain information whether the analyses succeeded or encountered issues.\n\n\nThe tool supports these optional parameters:\n- `asp` Used instead of `ap`. The path to a folder containing APK files to be analysed.\n- `do` Decompilation only.\n- `pp` Used instead of `ap` or `asp`. The folder path to a single open-source app project to be analysed. \n- `psp` Used instead of `ap` or `asp`. The folder path that contains multiple open-source app projects to be analysed.\n- `rd` Sets the maximal allowed recursion depth for variable resolving. `-1` can be used for unlimited recursion depth.  \n- **ONLY USE THE FEATURE BELOW WHEN YOU ARE AWARE OF THE POSSIBLE IMPLICATIONS.**\n    \n  `app` Analyzes web API server responses of an already analyzed project. Requires the parameter `http` set to be `true`.\n\n- **ONLY USE THE FEATURE BELOW WHEN YOU ARE AWARE OF THE POSSIBLE IMPLICATIONS.**\n  \n  `http` Can be set to `true` or `false`. Enables HTTP requests for the collected web APIs. \n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "jandrolyzer"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/pgadient/jandrolyzer/master/README.md"
+        },
+        {
+            "result": {
+                "value": "A typical command for the analysis of a single APK file looks like:\n\n```\njava -jar jandrolyzer.jar -lp ./libraries -ap sample.apk -jp ./jadx/bin/jadx.bat -op ./decompiled -oj ./json -os ./state\n```\n\nThe tool supports current Debian and Windows operating systems and requires at least Java 8, respectively Java 12 for the compiled jar file in the `/bin` folder.\n",
+                "type": "Text_excerpt",
+                "original_header": "Example",
+                "parent_header": [
+                    "jandrolyzer",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/pgadient/jandrolyzer/master/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9521943912653643,
+            "technique": "supervised_classification"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "A scriptable lightweight tool for reconstructing web API URLs and JSON data structures from Android closed and open-source apps.\nIt supports the validation of found data. Use that feature with care as it could cause issues on API servers. \n> This is the accompanying material for the publication titled \u201cWeb APIs in Android through the Lens of Security\u201d that has been presented at the 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER 2020). The preprint can be downloaded [here](https://arxiv.org/abs/2001.00195) and a presentation that builds on the results of this tool is available [here](https://www.youtube.com/watch?v=Ylgu-0CFUXA). \n",
+                "original_header": "jandrolyzer"
+            },
+            "confidence": 0.956050043321488,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/pgadient/jandrolyzer/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The console output reveals errors during the analysis and presents the found web API data with the corresponding source code snippets.\nThe extracted web API data is also stored in the provided JSON folder (`oj`).\nAn example output for a successful analysis is shown below.\n```Starting decompilation process...\nOutput stream: INFO  - loading ...\nOutput stream: INFO  - processing ...\nOutput stream: INFO  - done\nDecompilation process completed.\nDecompiled project path: .\\decompiled\\sample.apk, jadxSuccess: true, timer ran out: false\nAnalyzing project: .\\decompiled\\sample.apk\nWARNING: An illegal reflective access operation has occurred\n<...> (more errors and warnings during the decompilation process)\nFound libraries: {android.core=23}\nAdded library: .\\libraries\\android.core-23\n1 detected JSON models:\n2 detected base API URLs:\nProcessed: 1 of 1\nName:\nsample.apk\n<...> (extracted web API data with corresponding code snippets)\nAnalyzing API endpoints of project: sample.apk\nPreparing data...\nSaved data\nAll done!\n```\n \n",
+                "original_header": "Console"
+            },
+            "confidence": 0.9177191834750541,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/pgadient/jandrolyzer/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This folder contains the reconstructed JSON data structures. The detected data type is provided for each variable.\nIf a value could be traced back to a certain JSON variable, the resolved value is provided in place. An example is shown below.\n```\n<...> (found web API URLs)\n<...> (found JSON key-value pairs)\n<...> (found String variables with assigned values)\nJSON DETAILS:\nPath:\n/home/decompiled/sample.apk/src/main/java/com/crashlytics/android/answers/SessionEventTransform.java\nLibrary:\norg.json\nJSON Object: \n{\"advertisingId\":\"<STRING>\",\"buildId\":\"<STRING>\",\"appVersionName\":\"<STRING>\",\"type\":\"<STRING>\",\"appVersionCode\":\"<STRING>\",\"limitAdTrackingEnabled\":\"<BOOLEAN>\",\"betaDeviceToken\":\"<STRING>\",\"executionId\":\"<STRING>\",\"customType\":\"<STRING>\",\"osVersion\":\"<STRING>\",\"predefinedType\":\"<STRING>\",\"appBundleId\":\"<STRING>\",\"deviceModel\":\"<STRING>\",\"installationId\":\"<STRING>\",\"androidId\":\"<STRING>\"}\n<...> (web API URLs with corresponding query parameters)\n<...> (relevant code snippets)\n```\n \n",
+                "original_header": "JSON folder (`oj`)"
+            },
+            "confidence": 0.9999874068293461,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/pgadient/jandrolyzer/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "jandrolyzer"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/pgadient/jandrolyzer/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2001.00195"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/pgadient/jandrolyzer/master/README.md"
+        }
+    ]
+}

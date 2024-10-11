@@ -1,0 +1,277 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:13:06"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/wssun/EACS",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "wssun",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-03-18T02:30:35Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-13T03:37:11Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 WeisongSun\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/wssun/EACS/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "An Extractive-and-Abstractive Framework for Source Code Summarization",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "EACS",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "wssun/EACS",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/wssun/EACS/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/wssun/EACS/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/wssun/EACS/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 246177
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wssun/EACS/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "The dependencies can be installed using the following command:\n\n```bash\npip install -r requirements.txt\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "EACS"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wssun/EACS/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Run the `Extractor_ classifier/make_label/make_dataset_label.py` to generate the classification labels for classifier training.\n\nFor example:\n```bash\ncd Extractor_ classifier/make_label/\n```\n```bash\npython make_dataset_label.py\n```\n\nAnd run the `Extractor_ classifier/train.py` to train the classifier model.\nFor example:\n```bash\ncd Extractor_ classifier/\n```\n```bash\npython train.py {language}\n```\n\nThe classifier model will be saved in the `Extractor_ classifier/model/`, and run the `Extractor_ classifier/classifier.py` to generate the important sentences predicted value.\n```bash\ncd Extractor_ classifier/\n```\n```bash\npython classifier.py {language}\n```\n\nThe {language} can be selected in `java, python, go, php, ruby, javascript, JCSD, PCSD`\n\nthe output samples are as follows:\n```\n- output samples:\n{\n    \"idx\":0, \n    \"code_tokens\":[\"private\", \"int\", \"currentDepth\", ...], \n    \"docstring_tokens\": [\"returns\", \"a\", \"0\", ...],  \n    ...,  \n    \"ex_labels\": [1, 0, 1, ...], \n    \"cleaned_seqs_pred\": [1, 0, 1, ...] \n}\n...\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Extractor",
+                "parent_header": [
+                    "EACS",
+                    "Quick Start"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wssun/EACS/main/README.md"
+        },
+        {
+            "result": {
+                "value": "To train the EACS CodeBert model:\n```bash\ncd EACS_codeBert/\n```\n```bash\npython train.py {language}\n```\n\nTo test and output the EACS CodeBert results:\n```bash\npython test.py {language}\n```\n\nThe {language} can be selected in `java, python, go, php, ruby, javascript, JCSD, PCSD`\n",
+                "type": "Text_excerpt",
+                "original_header": "EACS + CodeBert",
+                "parent_header": [
+                    "EACS",
+                    "Quick Start"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wssun/EACS/main/README.md"
+        },
+        {
+            "result": {
+                "value": "To train the EACS CodeBert model and it also will outputs the results: \n```bash\ncd EACS_codeT5/\n```\n```bash\npython run_gen.py {language}\n```\n\nThe {language} can be selected in `java, python, go, php, ruby, javascript, JCSD, PCSD`\n",
+                "type": "Text_excerpt",
+                "original_header": "EACS + CodeT5",
+                "parent_header": [
+                    "EACS",
+                    "Quick Start"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wssun/EACS/main/README.md"
+        },
+        {
+            "result": {
+                "value": "After trainning the EACS + CodeBert and EACS + CodeT5 models, run the evaluation code to output Bleu, Meteor and Rouge-L:\n\n(*Switch into python 2.7*)\n```bash\ncd Evaluation/\n```\n```bash\npython evaluate.py\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Evaluation",
+                "parent_header": [
+                    "EACS",
+                    "Quick Start"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wssun/EACS/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The CodeSearchNet original dataset can be downloaded from the github repo: [https://github.com/github/CodeSearchNet](https://github.com/github/CodeSearchNet), and the cleaned dataset (CodeXGLUE) can be downloaded from the [https://drive.google.com/open?id=1rd2Tc6oUWBo7JouwexW3ksQ0PaOhUr6h](https://drive.google.com/open?id=1rd2Tc6oUWBo7JouwexW3ksQ0PaOhUr6h) \nThe JCSD and PCSD dataset can be downloaded from the github repo: [https://github.com/xing-hu/TL-CodeSum](https://github.com/xing-hu/TL-CodeSum) and [https://github.com/wanyao1992/code_summarization_public](https://github.com/wanyao1992/code_summarization_public)\n \n",
+                "original_header": "Original Dataset"
+            },
+            "confidence": 0.9938551111615648,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/wssun/EACS/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "EACS"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/wssun/EACS/main/README.md"
+        }
+    ]
+}

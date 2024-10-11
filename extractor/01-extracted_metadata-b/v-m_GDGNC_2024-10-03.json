@@ -1,0 +1,373 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:50:43"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/v-m/GDGNC",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "v-m",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2016-01-22T10:11:07Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-19T17:56:59Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Software Graph Generation Model",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This project contains scripts used for my PhD research on software graph shape and generated software graphs.\n \n",
+                "original_header": "Overview"
+            },
+            "confidence": 0.933821584664893,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "GDGNC",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "v-m/GDGNC",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/v-m/GDGNC/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/v-m/GDGNC/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/v-m/GDGNC/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 89164
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "Those scripts runs on __Python 2__. Following libraries are requires:\n\n - networkx\n - numpy\n - matplotlib\n - scipy\n\nOn Linux:\n\n    aptitude install python-networkx python-numpy\n",
+                "type": "Text_excerpt",
+                "original_header": "Dependencies",
+                "parent_header": [
+                    "Generalized Double GNC (GDGNC)",
+                    "Running",
+                    "Extracting software dependencies"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Software dependencies extractions can be found in the `graphs/real` folder for my dataset used in my paper (see Research Papers section).\n",
+                "type": "Text_excerpt",
+                "original_header": "Extracting software dependencies",
+                "parent_header": [
+                    "Generalized Double GNC (GDGNC)",
+                    "Running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To extract real graph dependencies you need to download [dependency finder](http://sourceforge.net/projects/depfind/). Extract the content of the archive somewhere in your system.\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisite",
+                "parent_header": [
+                    "Generalized Double GNC (GDGNC)",
+                    "Running",
+                    "Extracting software dependencies"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To extract the dependency finder xml file, use:\n\n```\n$ xmldepgraph.py <folder> <output_xmlfile> <pathtodepfindbin>\n```\n\nFor instance: \n```\n$ python2 xmldepgraph.py /home/vince/Temp/ant/ ant.xml /home/vince/Temp/depfinder/bin\n```\n\nThis command will extract the xml file to `<output_xmlfile>`. The file will contains all dependencies contained in the jars found recursively in `<folder>`. Note that `<pathtodepfindbin>` is the absolute path to the `bin` folder of the dependency finder project (ie. if I do extract dependency finder in my home dir: `/home/vince/DependencyFinder-1.2.1-beta4/bin/`).\n\n\n#### Dependencies\n\nOnce you produced an XML file, you can obtain dependencies using:\n\n```\ndepgraph.py <xmlfile> <outfile> <mode> <granluarity> <depfinder_root> <signaturefilter ...>\n```\nLet assume I do installed ant in `/home/vince/Temp/ant/` and dependency finder in `/home/vince/Temp/depfinder`. Those two lines will produce `ant.xml` XML file and `and.csv` graph file for internal connections only and at the class granularity:\n\n```\n$ python2 src/depgraph.py ant.xml ant.csv internal class /home/vince/Temp/depfinder/bin ant '!'\n```\n\nParameters:\n\n- `<xmlfile>` the input xml file;\n- `<outfile>` the output dependency file;\n- `<mode>` indicated if only endo dependencies should be considered. To do so, use __internal__. The opposite is obtained using __external__. Use __all__ to consider all;\n- `<granluarity>` indicates the granularity of extracted items, can be: __package__, __class__ or __feature__;\n  - `<depfinder_root>`  specify the absolute path to the dependency finder bin folder;\n  - `<signaturefilter ...>` specify string which validate an item (according to its signature). Use '!' for default package.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Dependency finder XML file",
+                "parent_header": [
+                    "Generalized Double GNC (GDGNC)",
+                    "Running",
+                    "Extracting software dependencies"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Script `projectpipe.py` shows an example of full execution of such scripts. This script cannot be directly run without adapting its contents.\nIt is intended to work with SF100 dataset (http://www.evosuite.org/files/SF100-20120316.tar.gz, accessed on June, 1th 2016) but can be easily adapted to another dataset.\n",
+                "type": "Text_excerpt",
+                "original_header": "Running",
+                "parent_header": [
+                    "Generalized Double GNC (GDGNC)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Generations can be found in the `graphs/experiment-arxiv-1410.7921` and `graphs/generated-examples` folders for my dataset used in my paper (see Research Papers section).\n\nExecute `python2 graphgen.py` to display the help for graph generation.\nTo generate a graph to the standard output, use:\n\n```\n$ python2 src/graphgen.py [graph-type-id] [parameters]\n```\n\nParameters are dependent of the chosen generator. Some generator requires a number of nodes (`nodes=x`), some other a number of edges (`edges=x`). Moreover, almost all generators requires some parameters.\n",
+                "type": "Text_excerpt",
+                "original_header": "Digraph generation",
+                "parent_header": [
+                    "Generalized Double GNC (GDGNC)",
+                    "Running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "\n| Nr | Name | Nodes | Edges | Floats parameters | Constants parameters |\n|----|------|-------|-------|-------------------|----------------------|\n| 0 |                  GNC |  True | False |  |  \n| 1 |               GD-GNC |  True | False |                 p, q |  \n| 2 |       Baxter & Frean | False |  True |                gamma |  \n| 3 |              Vazquez |  True | False |                    p |  \n| 4 |          Dorogovtsev |  True | False |  |                 m, A\n| 5 |             Grindrod |  True | False |        alpha, lambda |  \n| 6 |         Kumar Linear |  True | False |           copyfactor |                    d\n| 7 |          Erdos Renyi |  True | False |                    p |  \n| 8 |                R-MAT |  True |  True |           a, b, c, d |  \n| 9 |             Bollobas | False |  True |   alpha, beta, gamma |    deltain, deltaout\n| 10 |                  Goh |  True |  True |  alpha_in, alpha_out |  \n",
+                "type": "Text_excerpt",
+                "original_header": "Available generators",
+                "parent_header": [
+                    "Generalized Double GNC (GDGNC)",
+                    "Running",
+                    "Digraph generation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Use `ks_scores.py`:\n\n```\n$ python2 src/ks_scores.py <file1> [<fileorfolder2>]\n```\n\nThis script takes as input a csv file `<file1>` which describe the software graph and a file or a folder containing a set of csv files `<fileorfolder2>` to compare with.\nIn the case if `<fileorfolder2>` is omitted, then the distance of `<file1>` will be computed with all other programs in the same folder than `<file1>`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Comparing kolmogorov-smirnov distances of programs",
+                "parent_header": [
+                    "Generalized Double GNC (GDGNC)",
+                    "Running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Use `mw_scores.py`:\n\n```\nmw_scores.py <realcsvfile> <generationfolder> [<<othergenerationfolder>]\n```\n\nThis script takes as input a csv file `<realcsvfile>` which describe the software graph and two folders (`<generationfolder>` and `<othergenerationfolder>`) each containing a set of csv files of generated graphs with two different algorithms. If `<othergenerationfolder>` is omitted, then the generated graphs will be compared to all other software contained in the same folder than `<realcsvfile>`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Computing mann-whitney p-value of generated graphs",
+                "parent_header": [
+                    "Generalized Double GNC (GDGNC)",
+                    "Running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Use `softwareshape.py`:\n\n```\nsoftwareshape.py <softwaregraph1 ... softwaregraphn>\n```\n\nCalculate the komlogorov-smirnov p-value with each pair of software cumulative in-/out- degree distrbution.\nPrint to the standard output each pair computation details and a summary.\n",
+                "type": "Text_excerpt",
+                "original_header": "Comparing software shapes using kolmogorov-smirnov p-value",
+                "parent_header": [
+                    "Generalized Double GNC (GDGNC)",
+                    "Running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Use `softwareshape_plot.py`:\n\n```\nsoftwareshape_plot.py <graphplotfile> <softwarecsvfile ...>\n```\n\nPlot the cumulative degree distribution for the list of softwares <softwarecsvfile ...>. Software graphs are __.csv__ files which describes the graph.\nTwo files ares produced (one for in- and another for out- degree): `<graphplotfile>_in.pdf` and `<graphplotfile>_out.pdf`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Plot the software cumulative in-/out- degree distribution",
+                "parent_header": [
+                    "Generalized Double GNC (GDGNC)",
+                    "Running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "GDGNC (graph type id *1*) requires a number of nodes and two parameters, *p* and *q*, thus we can, by example, generate a graph with 50 nodes, p and q = 0.5 by invoking:\n\n```\npython2 graphgen.py 1 nodes=50 p=0.5 q=0.5\n```\n\nOther examples:\n\n```\npython2 graphgen.py 8 nodes=50 edges=50 a=.2 b=.3 c=.4 d=.9\npython2 graphgen.py 9 edges=50 alpha=.2 beta=.3 gamma=.4 deltain=10 deltaout=20\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Examples",
+                "parent_header": [
+                    "Generalized Double GNC (GDGNC)",
+                    "Running",
+                    "Digraph generation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        }
+    ],
+    "contact": [
+        {
+            "result": {
+                "value": "See: http://www.vmusco.com or http://www.vincenzomusco.com\n",
+                "type": "Text_excerpt",
+                "original_header": "Contact",
+                "parent_header": [
+                    "Generalized Double GNC (GDGNC)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Generalized Double GNC (GDGNC)"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/v-m/GDGNC/master/README.md"
+        }
+    ]
+}

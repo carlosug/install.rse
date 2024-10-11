@@ -1,0 +1,275 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 23:58:09"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/mwshinn/paranoidscientist",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "mwshinn",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2017-12-04T02:00:38Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-05T10:24:41Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "All code is available under the MIT license.  See LICENSE.txt for more\ninformation.  Paranoid Scientist is copyright 2018-2020 Max Shinn.\nThe logo is copyright 2018 Anastasia Ershova.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "<img alt=\"Paranoid Scientist\" src=\"https://raw.githubusercontent.com/mwshinn/paranoidscientist/master/doc/images/paranoid_scientist_mini_small.png\" width=\"400\">"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mwshinn/paranoidscientist/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Runtime software verification and automated testing for scientific software in Python",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Paranoid Scientist is a Python module for verifying scientific\nsoftware which provides: \n",
+                "original_header": "<img alt=\"Paranoid Scientist\" src=\"https://raw.githubusercontent.com/mwshinn/paranoidscientist/master/doc/images/paranoid_scientist_mini_small.png\" width=\"400\">"
+            },
+            "confidence": 0.9694778939993188,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mwshinn/paranoidscientist/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "paranoidscientist",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "mwshinn/paranoidscientist",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mwshinn/paranoidscientist/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mwshinn/paranoidscientist/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 92,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/mwshinn/paranoidscientist/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 87866
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 101
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mwshinn/paranoidscientist/master/runtests.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mwshinn/paranoidscientist/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "- Python 3.5 or above\n- Optional: Numpy (for Numpy types support)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "System requirements",
+                "parent_header": [
+                    "<img alt=\"Paranoid Scientist\" src=\"https://raw.githubusercontent.com/mwshinn/paranoidscientist/master/doc/images/paranoid_scientist_mini_small.png\" width=\"400\">"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mwshinn/paranoidscientist/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mwshinn/paranoidscientist/master/README.md"
+        }
+    ],
+    "related_documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://paranoid-scientist.readthedocs.io/",
+                "format": "readthedocs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mwshinn/paranoidscientist/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/mwshinn/paranoidscientist/master/doc/images/paranoid_scientist_mini_small.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mwshinn/paranoidscientist/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1909.00427"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mwshinn/paranoidscientist/master/README.md"
+        }
+    ]
+}

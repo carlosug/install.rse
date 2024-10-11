@@ -1,0 +1,397 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:36:39"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/STAR-RG/shipwright",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "STAR-RG",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-01-12T19:21:54Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-10T02:32:41Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/LICENSE.md"
+        },
+        {
+            "result": {
+                "value": "If you have just set up a fresh Docker installation and are attempting to run the `./shipwright.sh` script, you may encounter `permission denied` errors. Many docker installations are configured so that the user who runs docker is in the `docker` group. To fix this, you can follow these steps ([or reference this link](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)):\n\n1. Run `sudo usermod -aG docker ${USER}`\n2. Close all terminals / logout \n3. Log back in \n\nThe above instructions assume you're on linux. Alternatively, you should be able to run `sudo ./shipwright.sh` if you don't want to add yourself to the `docker` group.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Troubleshooting docker 'permission denied' errors",
+                "parent_header": [
+                    "Shipwright: A Human-in-the-Loop System for Dockerfile Repair"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "ICSE 2021 Artifact for: Shipwright: A Human-in-the-Loop System for Dockerfile Repair.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "ICSE 2021 Artifact for: _Shipwright: A Human-in-the-Loop System for Dockerfile Repair._ This artifact and paper build off of data and tools from [binnacle (ICSE'20)](https://github.com/jjhenkel/binnacle-icse2020).\n \n",
+                "original_header": "Shipwright: A Human-in-the-Loop System for Dockerfile Repair"
+            },
+            "confidence": 0.9854575417515907,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "In the root directory of this repository you can find: \n",
+                "original_header": "Required files"
+            },
+            "confidence": 0.984202138813727,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "shipwright",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "STAR-RG/shipwright",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/STAR-RG/shipwright/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/STAR-RG/shipwright/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 22,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "artifacts-repository, automated-repair, devops, docker, icse2021",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/STAR-RG/shipwright/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 6570490
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 81409
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 11041
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/STAR-RG/shipwright/releases/38438638",
+                "tag": "icse21-artifact-zenodo",
+                "name": "ICSE'21 Artifact Release: Assigning DOI in Zenodo",
+                "author": {
+                    "name": "leopoldomt",
+                    "type": "User"
+                },
+                "description": "This tag/release denotes the version of this repository we wish to be published for the ICSE'21 artifact evaluation in Zenodo. We are seeking the reusable and available badges.\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/STAR-RG/shipwright/tarball/icse21-artifact-zenodo",
+                "zipball_url": "https://api.github.com/repos/STAR-RG/shipwright/zipball/icse21-artifact-zenodo",
+                "html_url": "https://github.com/STAR-RG/shipwright/releases/tag/icse21-artifact-zenodo",
+                "url": "https://api.github.com/repos/STAR-RG/shipwright/releases/38438638",
+                "release_id": 38438638,
+                "date_created": "2021-01-22T19:55:11Z",
+                "date_published": "2021-02-22T17:25:48Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/STAR-RG/shipwright/releases/36786001",
+                "tag": "icse21-artifact-release",
+                "name": "ICSE'21 Artifact Release : Submitted Version",
+                "author": {
+                    "name": "jjhenkel",
+                    "type": "User"
+                },
+                "description": "This tag/release denotes the version of this repository we wish to be reviewed for the ICSE'21 artifact evaluation. We are seeking the reusable and available badges.\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/STAR-RG/shipwright/tarball/icse21-artifact-release",
+                "zipball_url": "https://api.github.com/repos/STAR-RG/shipwright/zipball/icse21-artifact-release",
+                "html_url": "https://github.com/STAR-RG/shipwright/releases/tag/icse21-artifact-release",
+                "url": "https://api.github.com/repos/STAR-RG/shipwright/releases/36786001",
+                "release_id": 36786001,
+                "date_created": "2021-01-22T19:33:40Z",
+                "date_published": "2021-01-22T19:37:00Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/shipwright.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/standalone/shipwright.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/rq1/analyze.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/rq1/generate.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/data/raw-build-results/extract.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/Dockerfile"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "# Installation\n\nCloning the git repository gives you our data and tools. We assume you have a working installation of Docker to use this artifact (see `REQUIREMENTS.md`).\n\nRun:\n\n```bash\ngit clone https://github.com/STAR-RG/shipwright\n\ncd ./shipwright\n```\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/INSTALL.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "To run and evaluate this artifact, you can use on or more of the following commands:\n\n```bash\n# To run things related to our paper's rq1\n./shipwright.sh run-rq1\n\n# To run things related to our paper's rq2\n./shipwright.sh run-rq2\n\n# To run things related to our paper's rq3\n./shipwright.sh run-rq3\n\n# To extract raw build results \n# NOTE: this uses many CPU cores during decompression\n# and may take a few minutes to complete\n./shipwright.sh extract\n```\n\nJust running `./shipwright.sh` will show all available commands. To see data related to our `rq4`, you can reference the [`./rq4/README.md` (link)](./rq4) file which includes a breakdown of the pull requests we sent and their statuses.\n\nAdditionally, many of the folders in this repository include additional details on the options for various commands and the data we've included with this artifact. (See, for example, `./data/README.md`.)\n",
+                "type": "Text_excerpt",
+                "original_header": "Running this artifact",
+                "parent_header": [
+                    "Shipwright: A Human-in-the-Loop System for Dockerfile Repair"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/README.md"
+        }
+    ],
+    "faq": [
+        {
+            "result": {
+                "value": "If you have just set up a fresh Docker installation and are attempting to run the `./shipwright.sh` script, you may encounter `permission denied` errors. Many docker installations are configured so that the user who runs docker is in the `docker` group. To fix this, you can follow these steps ([or reference this link](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)):\n\n1. Run `sudo usermod -aG docker ${USER}`\n2. Close all terminals / logout \n3. Log back in \n\nThe above instructions assume you're on linux. Alternatively, you should be able to run `sudo ./shipwright.sh` if you don't want to add yourself to the `docker` group.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Troubleshooting docker 'permission denied' errors",
+                "parent_header": [
+                    "Shipwright: A Human-in-the-Loop System for Dockerfile Repair"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/README.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://zenodo.org/badge/latestdoi/329089043"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Shipwright: A Human-in-the-Loop System for Dockerfile Repair"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/STAR-RG/shipwright/main/README.md"
+        }
+    ]
+}

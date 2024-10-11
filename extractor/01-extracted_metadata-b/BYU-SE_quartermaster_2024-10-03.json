@@ -1,0 +1,389 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 21:00:03"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/BYU-SE/quartermaster",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "BYU-SE",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-11-12T17:58:12Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2021-12-09T20:23:01Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Model and Simulate System Degradation",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Some tools are provided to implement these methods and simulate their behavior, such as a variety of prebuilt fault tolerant techniques. Since this repository is a TypeScript implementation of the model, we've included a brief overview here. You can [read more in-depth about how Quartermaster simulates a system](docs/simulation.md) in our docs.\n \n",
+                "original_header": "Simulating With Quartermaster"
+            },
+            "confidence": 0.976468664966722,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/BYU-SE/quartermaster/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Caching\n  - Unbounded: An unlimited size cache\n  - LRU: A fixed capacity cache, that evicts the least-recently-used elements.\n  - Background Cache: A cache which serves inbound requests strictly from cached data, and refreshes the requested data in the background.\n- Circuit Breaker Pattern: Don't wait for an operation that will (or is likely to) fail.\n- Retry: Attempt multiple times upon a failure.\n- Timeout: Limit how much time is being spent working on an event. \nOur [examples](docs/examples.md) show you many of these in action.\n \n",
+                "original_header": "Prebuilt Techniques"
+            },
+            "confidence": 0.9188729835321179,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/BYU-SE/quartermaster/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "quartermaster",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "BYU-SE/quartermaster",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/BYU-SE/quartermaster/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/BYU-SE/quartermaster/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/BYU-SE/quartermaster/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "TypeScript",
+                "name": "TypeScript",
+                "type": "Programming_language",
+                "size": 83001
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 6429
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/BYU-SE/quartermaster/releases/72894890",
+                "tag": "v1.1.5",
+                "name": "v1.1.5",
+                "author": {
+                    "name": "matt4530",
+                    "type": "User"
+                },
+                "description": "**Breaking Changes**\r\n* Response objects now are split into a `responseType` which is `success` or `fail` and a `responsePayload` which has returned from the network of stages. Previously, `response` would be `success` or `fail` strings only.\r\n* Removed Adaptive Circuit Breaker Stage. This stage isn't used anywhere and so there is no immediate demand to support it.\r\n\r\n**Non-breaking Changes**\r\n* Stages can now return arbitrary data, separate from the success / fail `responseType`\r\n* Bug fix: Circuit breaker could exist in some stuck states. Improved tests to ensure this doesn't happen\r\n* Improve documentation inside classes\r\n* Improve code readability (see `Event.ts`)\r\n* Add documentation for custom event properties\r\n* Update Jest framework",
+                "tarball_url": "https://api.github.com/repos/BYU-SE/quartermaster/tarball/v1.1.5",
+                "zipball_url": "https://api.github.com/repos/BYU-SE/quartermaster/zipball/v1.1.5",
+                "html_url": "https://github.com/BYU-SE/quartermaster/releases/tag/v1.1.5",
+                "url": "https://api.github.com/repos/BYU-SE/quartermaster/releases/72894890",
+                "release_id": 72894890,
+                "date_created": "2022-07-26T19:31:44Z",
+                "date_published": "2022-07-26T19:42:53Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/BYU-SE/quartermaster/releases/53739817",
+                "tag": "v1.1.1",
+                "name": "v1.1.1",
+                "author": {
+                    "name": "matt4530",
+                    "type": "User"
+                },
+                "description": "Several breaking changes included in v1.1.0 and v1.1.1. Will move to semantic versioning in a future version.\r\n\r\nBreaking:\r\n\r\n- Queue contract changes\r\n- Event keys are no longer prefixed with `e-`\r\n\r\nCritical Bug fixes:\r\n- Caches (eviction)\r\n- Queues (timing, working() returning incorrect values)\r\n\r\n\r\nSee each PR for full list of changes. #1 and #3 \r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/BYU-SE/quartermaster/tarball/v1.1.1",
+                "zipball_url": "https://api.github.com/repos/BYU-SE/quartermaster/zipball/v1.1.1",
+                "html_url": "https://github.com/BYU-SE/quartermaster/releases/tag/v1.1.1",
+                "url": "https://api.github.com/repos/BYU-SE/quartermaster/releases/53739817",
+                "release_id": 53739817,
+                "date_created": "2021-11-19T17:45:53Z",
+                "date_published": "2021-11-19T17:51:07Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/BYU-SE/quartermaster/releases/33892996",
+                "tag": "v1.0.0",
+                "name": "First Release",
+                "author": {
+                    "name": "matt4530",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/BYU-SE/quartermaster/tarball/v1.0.0",
+                "zipball_url": "https://api.github.com/repos/BYU-SE/quartermaster/zipball/v1.0.0",
+                "html_url": "https://github.com/BYU-SE/quartermaster/releases/tag/v1.0.0",
+                "url": "https://api.github.com/repos/BYU-SE/quartermaster/releases/33892996",
+                "release_id": 33892996,
+                "date_created": "2020-11-13T03:25:05Z",
+                "date_published": "2020-11-13T03:27:09Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/BYU-SE/quartermaster/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/BYU-SE/quartermaster/tree/master/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "To explore and develop locally, you can clone this repository. Then, run `npm i` to install dependencies. This provides the examples and Typescript source code in an easy to consume format.\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "Quartermaster"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/BYU-SE/quartermaster/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "You don't need to code your entire system up in Quartermaster to use it. Quartermaster comes with a set of prebuilt components and techniques that are easily configured. If they don't cover all of your requirements, we've provided examples to help build whatever you need. \n",
+                "original_header": "Prebuilt Techniques"
+            },
+            "confidence": 0.9999880669378772,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/BYU-SE/quartermaster/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Tests can be run with `npm test`. \n",
+                "original_header": "Tests"
+            },
+            "confidence": 0.9909902281107499,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/BYU-SE/quartermaster/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "A sample usage, representing a call to a remote dependency with a cache:\n\n```typescript\nimport {\n  TimedDependency,\n  LRUCache,\n  simulation,\n  eventSummary,\n  stageSummary,\n} from \".\";\n\n/**\n * The timed example is the basic unit of several other examples. It features\n * a timed dependency with available 99.5% of the time and a normally\n * distributed latency with mean = 150 ticks and standard deviation = 20 ticks.\n * Additionally, there is an LRU cache that can contain up to 500 cached items\n * with a max age of 30,000 ticks.\n *\n * The timed dependecy stage could represent a database and the lru cache\n * stage could represent a small, in memory cache that serves to speed up\n * responses to commonly queried items.\n */\n\nconst live = new TimedDependency();\nlive.availability = 0.995;\nlive.mean = 150;\nlive.std = 20;\n\nconst cache = new LRUCache(live);\ncache.ttl = 30000;\ncache.capacity = 500;\n\n/**\n * The keyspace is defined with normally distributed keys with a mean of 999\n * and a standard deviation of 90. Additionally, the simulation will push\n * 40 events every 1,000 ticks through the stages.\n *\n * This keyspace could represent a service which responds to a (relatively)\n * small set of distinct events at the rate of 40 requests per second.\n */\n\nsimulation.keyspaceMean = 999;\nsimulation.keyspaceStd = 90;\nsimulation.eventsPer1000Ticks = 40;\n\nwork();\nasync function work() {\n  const events = await simulation.run(cache, 20000);\n  eventSummary(events);\n  stageSummary([cache, live]);\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "Quartermaster"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/BYU-SE/quartermaster/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The `./examples` directory includes some interesting examples with documentation and descriptions.\n\n[Read more about examples provided with Quartermaster.](docs/examples.md)\n",
+                "type": "Text_excerpt",
+                "original_header": "Examples",
+                "parent_header": [
+                    "Quartermaster"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/BYU-SE/quartermaster/master/README.md"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "Open a pull request with your contributions to the Quartermaster, or request a feature by opening an issue.\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributing",
+                "parent_header": [
+                    "Quartermaster"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/BYU-SE/quartermaster/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Quartermaster"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/BYU-SE/quartermaster/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2103.03956#"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/BYU-SE/quartermaster/master/README.md"
+        }
+    ]
+}

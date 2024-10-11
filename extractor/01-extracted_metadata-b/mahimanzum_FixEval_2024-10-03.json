@@ -1,0 +1,629 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:56:32"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/mahimanzum/FixEval",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "mahimanzum",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-02-06T15:01:24Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-07-11T06:00:34Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 Md. Mahim Anjum Haque\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/LICENSE"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 Md. Mahim Anjum Haque\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n",
+                "type": "Text_excerpt",
+                "original_header": "License"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "We introduce FixEval , a dataset for competitive programming bug fixing along with a comprehensive test suite and show the necessity of execution based evaluation compared to suboptimal match based evaluation metrics like BLEU, CodeBLEU, Syntax Match, Exact Match etc.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "FixEval",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "mahimanzum/FixEval",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mahimanzum/FixEval/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mahimanzum/FixEval/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 20,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/mahimanzum/FixEval/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 1295668
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 498923
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 16723
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Perl",
+                "name": "Perl",
+                "type": "Programming_language",
+                "size": 10466
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 4475
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/batch_run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/install_env.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/codet5/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/plbart/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/evaluation/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/evaluation/codegen/model/install-tools.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/evaluation/codegen/model/tools/tokenize.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/src/codegen/model/install-tools.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/src/codegen/model/tools/tokenize.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/src/01_preprocessing.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/src/01_preprocessing.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Source code repositories consist of large codebases, often containing error-prone programs. The increasing complexity of software has led to a drastic rise in time and costs for identifying and fixing these defects. Various methods exist to automatically generate fixes for buggy code. However, due to the large combinatorial space of possible solutions for a particular bug, there are not many tools and datasets available to evaluate generated code effectively. In this work, we introduce FixEval, a benchmark comprising buggy code submissions to competitive programming problems and their respective fixes. We introduce a richtest suite to evaluate and assess the correctness of model-generated program fixes. We consider two Transformer language models pretrained on programming languages as our baselines, and compare them using match-based and execution-based evaluation metrics. Our experiments show that match-based metrics do not reflect model-generated program fixes accurately, while execution-based methods evaluate programs through all cases and scenarios specifically designed for that solution. Therefore, we believe FixEval provides a step towards real-world automatic bug fixing and model-generated code evaluation.\n",
+                "type": "Text_excerpt",
+                "original_header": "Abstract:",
+                "parent_header": [
+                    "Official Code for <a href=\"https://arxiv.org/abs/2206.07796\">FixEval: Execution-based Evaluation of Program Fixes for Competitive Programming Problems</a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The preferred installation method is to run this command (You may need to change the bash file to update the environment names, etc.):\n```\nbash install_env.sh\n```\n\nAnother method is to run the following (You may need to manually add some libraries): \n```\nconda env create -n python -f src/environment.yml\nconda activate python36\n```\nAll the commands below assume that you installed everything in this environment correctly and activated the environment. \n",
+                "type": "Text_excerpt",
+                "original_header": "Installation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```\n\n\u251c\u2500\u2500 codet5\n\u2502   \u251c\u2500\u2500 run.sh \n\u2502   \u251c\u2500\u2500 configs.py\n\u2502   \u251c\u2500\u2500 models.py\n\u2502   \u251c\u2500\u2500 run_gen.py\n\u2502   \u2514\u2500\u2500 ...\n\u2502 \n\u251c\u2500\u2500 plbart\n\u2502   \u251c\u2500\u2500 run.sh \n\u2502   \u251c\u2500\u2500 configs.py\n\u2502   \u251c\u2500\u2500 models.py\n\u2502   \u251c\u2500\u2500 run_gen.py\n\u2502   \u2514\u2500\u2500 ...\n\u2502\n\u251c\u2500\u2500 data\n\u2502   \u251c\u2500\u2500 java\n\u2502   \u2502    \u251c\u2500\u2500jsons\n\u2502   \u2502    \u251c\u2500\u2500processed\n\u2502   \u251c\u2500\u2500 python\n\u2502   \u2502    \u251c\u2500\u2500jsons\n\u2502   \u2502    \u251c\u2500\u2500processed\n\u2502   \u251c\u2500\u2500 atcoder_test_cases\n\u2502   \u2514\u2500\u2500 processed.json\n\u2502\n\u251c\u2500\u2500 third_party\n\u2502   \u251c\u2500\u2500 apex\n\u2502   \u251c\u2500\u2500 fairseq\n\u2502   \u251c\u2500\u2500 tree-sitter-cpp\n\u2502   \u251c\u2500\u2500 tree-sitter-java\n\u2502   \u2514\u2500\u2500 tree-sitter-python\n\u2502\n\u251c\u2500\u2500 evaluation\n\u2502   \u251c\u2500\u2500 CodeBLEU \n\u2502   \u251c\u2500\u2500 codegen \n\u2502   \u251c\u2500\u2500 bleu.py\n\u2502   \u251c\u2500\u2500 compile.py\n\u2502   \u251c\u2500\u2500 compute_ca.py\n\u2502   \u251c\u2500\u2500 evaluator.py\n\u2502   \u251c\u2500\u2500 execution_evaluation_TC_arc_MP.py\n\u2502   \u2514\u2500\u2500 ...\n\u2502\n\u2514\u2500\u2500 src\n    \u251c\u2500\u2500 01_preprocessing.ipynb\n    \u251c\u2500\u2500 make_submission_list_json.py\n    \u251c\u2500\u2500 process_json.py\n    \u251c\u2500\u2500 deduplication.py\n    \u251c\u2500\u2500 generate_eval_files.py\n    \u251c\u2500\u2500 merge.py\n    \u251c\u2500\u2500 split.py\n    \u2514\u2500\u2500 ...\n```\n \n",
+                "original_header": "Folder Structure"
+            },
+            "confidence": 0.999999967696852,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Run the following commands in the root folder.\n \n",
+                "original_header": "Dataset"
+            },
+            "confidence": 0.9921731890291018,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Go to the specific model folder and execute the `run.sh` command with only the `generate` function uncommented and `save_dir`, `path_2_data`, and `languages` set to the correct versions. For example:\n```\ncd plbart/\n./run.sh\n```\nTo use our open sourced pretrained models, download plbart.zip or codeT5.zip from the link below and verify the results using the same procedure.\nBASH2* \n",
+                "original_header": "Let's generate the file with the model predictions"
+            },
+            "confidence": 0.9934831386736689,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "First, we need to create a self-contained json with all of the necessary versions to detokenize the code and execute. We split this portion explicitly because it is not possible to run the code and install all the libraries required to tokenize the Java and Python programs using the ARC (Advanced Research Computing) supercomputer at Virginia Tech. Thus, we do it elsewhere and create the resulting json file which can be used to generate results. \n```\ncd src/\npython merge.py --references data/java/processed/generation.json --language java\npython merge.py --references data/java/processed_with_verdict/generation.json --language java\npython merge.py --references data/python/processed/generation.json --language python\npython merge.py --references data/python/processed_with_verdict/generation.json --language python\ncd ../\n```\nThese will create 4 json files. You may need to change the output file names for your own clarification.\n \n",
+                "original_header": "Pre-preprocess the generated files that contains all tokenized and detokenized source, target, and predictions"
+            },
+            "confidence": 0.9999980503631284,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "Run this command to download the whole CodeNet dataset (around 8GB zip file) in the root directory and decompress it.\n```\nwget https://dax-cdn.cdn.appdomain.cloud/dax-project-codenet/1.0.0/Project_CodeNet.tar.gz\ntar -xf Project_CodeNet.tar.gz\n```",
+                "type": "Text_excerpt",
+                "original_header": "Download Project CodeNet Dataset (Skip this if you want to run from our preprocessed files)",
+                "parent_header": [
+                    "Dataset"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Run this command to download the CodeNet metadata (281Mb zip file) in the root directory and decompress it\n```\nwget https://dax-cdn.cdn.appdomain.cloud/dax-project-codenet/1.0.0/Project_CodeNet_metadata.tar.gz\ntar -xf Project_CodeNet_metadata.tar.gz\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Download CodeNet Metadata",
+                "parent_header": [
+                    "Dataset"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Make the data folder to store the test cases along with the Java and Python data files.\n```\nwget --load-cookies /tmp/cookies.txt \"https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1AInTHzaZqym7WsT1B7yc8nZy7dA3ovPf' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\\1\\n/p')&id=1AInTHzaZqym7WsT1B7yc8nZy7dA3ovPf\" -O atcoder_test_cases.zip && rm -rf /tmp/cookies.txt\nunzip atcoder_test_cases.zip\ncd ../\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Download Test Cases",
+                "parent_header": [
+                    "Dataset"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "We use the `processed.json` file to create the training data chunk by chunk (10k per file) and store them in the data folder for individual programming languages. The following code preprocesses and stores both Java and Python data into the json format in folders stored at `data/{language}/jsons/`.\n```\ncd src\npython process_json.py\ncd ../\n```\n\nOr, you can also download the `processed.json` file, which is the root file for all data generation and processing: \n```\ncd data/\nwget --load-cookies /tmp/cookies.txt \"https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1gxZYObARqJytI9gf6gEX-CZhCpc4JPE6' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\\1\\n/p')&id=1gxZYObARqJytI9gf6gEX-CZhCpc4JPE6\" -O processed.zip && rm -rf /tmp/cookies.txt\nunzip processed.zip\ncd ../\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Create Language Specific Data (Skip this part if you just want to download our version)",
+                "parent_header": [
+                    "Pre-processing (Skip this if you want to run from our preprocessed files)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Run the following commands if you want to download the processed data and train:\n",
+                "type": "Text_excerpt",
+                "original_header": "Download Preprocessed Data"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "```\nwget --load-cookies /tmp/cookies.txt \"https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1vsuUrJ2j86EYGb2WWQatqsqJ-V8Sl6en' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\\1\\n/p')&id=1vsuUrJ2j86EYGb2WWQatqsqJ-V8Sl6en\" -O java.zip && rm -rf /tmp/cookies.txt\nunzip java.zip\n```",
+                "type": "Text_excerpt",
+                "original_header": "Download and unzip our preprocessed Java dataset",
+                "parent_header": [
+                    "Download Preprocessed Data"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "```\nwget --load-cookies /tmp/cookies.txt \"https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1rjjYW8SB8f5Hr34ig84OKpNYOzdt03Ar' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\\1\\n/p')&id=1rjjYW8SB8f5Hr34ig84OKpNYOzdt03Ar\" -O python.zip && rm -rf /tmp/cookies.txt\nunzip python.zip\n```\nAfter successful completion, we derive 4 datasets from this part:  <br>\n* java buggy code to java fixed code (`data/java/processed/`) <br>\n* java buggy code with verdict information to java fixed code (`data/java/processed_with_verdict/`)<br>\n* python buggy code to python fixed code (`data/python/processed/`)<br>\n* python buggy code with verdict information to python fixed code in (`data/python/processed_with_verdict/`)<br>\n\nEach of these 4 directories contains:\n* `{train, test, valid}.jsonl` files containing all the information for the datapoints. This also allows us to always revert back to the original dataset <br>\n* `{train, test, valid}.{language-language}.id` files, where language is in the set [java, python] <br>\n* 6 raw test files for training.  <br>\n* `{src, tgt}_{train, test, valid}.{language-language}.language`\n",
+                "type": "Text_excerpt",
+                "original_header": "Download and unzip our preprocessed Python dataset",
+                "parent_header": [
+                    "Download Preprocessed Data"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Run this command to download the whole CodeNet dataset (around 8GB zip file) in the root directory and decompress it.\n```\nwget https://dax-cdn.cdn.appdomain.cloud/dax-project-codenet/1.0.0/Project_CodeNet.tar.gz\ntar -xf Project_CodeNet.tar.gz\n```",
+                "type": "Text_excerpt",
+                "original_header": "Download Project CodeNet Dataset (Skip this if you want to run from our preprocessed files)",
+                "parent_header": [
+                    "Dataset"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "`src/make_submission_list_json.py` parses problem submission information, problem list csv, and the actual submission files folder to create an initial json, `processed.json`, which uses the following format:\n\n`processed` is a dictionary containing a list of user_id's with information about each user in `processed.keys()`. <br>\n`processed['user_id']` is a list containing a list of problem_id's solved by that user. <br>\n`processed['user_id']['problem_id']` contains list of tuples. Each tuple consists of information about a submission (submission_id,date,language,original_language,filename_ext,status) <br>\n\n\nTo create this, use the followint script (You may need to change the path information):\n```\ncd src\npython make_submission_list_json.py\ncd ../\n```\nIf there is any file missing Like \"my_languages.so\" Please check the folder and if it's not there please create an issue. I will make that available ASAP.\n```\nhttps://drive.google.com/drive/folders/1dzuHuouuWzlFCy1CMj9DYG9JGraEay27?usp=sharing\n```",
+                "type": "Text_excerpt",
+                "original_header": "Pre-processing (Skip this if you want to run from our preprocessed files)"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "`split.py` merges all the json chunks, deduplicates using jaccard similarity function, and splits the data into the train-valid-test (80-10-10) ratio. This is done on the problem level so that no datapoints for a single problem exist in multiple splits, like train and test. During the split, we also mantain the condition that for all the datapoints in the valid and test sets- we have the test cases available so that execution-based evaluation can be done on both the valid and test set data. \n```\ncd src\npython split.py \npython split.py --lang py --src_file ../data/Python/jsons/ --src_dir ../data/Python/processed/ --out_dir ../data/Python/processed/\ncd ../\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Split The Data (Skip this if you want to continue from our preprocessed files)",
+                "parent_header": [
+                    "Pre-processing (Skip this if you want to run from our preprocessed files)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "To use our open sourced pretrained models and data files, download plbart.zip or codeT5.zip from the link below and verify the results using the same procedure.\n```\nhttps://drive.google.com/drive/folders/1dzuHuouuWzlFCy1CMj9DYG9JGraEay27?usp=sharing\n```\nAnd then go to that specific folder and run the run.sh command. More instructions later n this page. \n```\ncd plbart/\n./run.sh\n```\nTo run the codet5 model, go to the `codet5` folder and use the `run.sh` script file. This will also evalualte the model on match-based metrics (BLEU, CodeBleu, Syntax Match, Dataflow Match, etc.).\nSome changes are required to execute the `run.sh` script: <br>\n* Change the source and target languages on lines 14-15 to one of these ['java', 'python'] <br>\n* Change `path_2_data` at the end of line 22 to the folder name with the processed or processed_with_verdict data <br>\n* Change line 27 to make the Model and Cached data save directory consistent with the data as well. For example, append \"\\_with_verdict\" if the associated data path contains \"\\_with_verdict\" as well. <br>\nTo simply run the evaluation, comment out the train function in the bottom of the `run.sh` file <br>\n\nEach `run.sh` file has a similar structure:\n\n```\n./run.sh GPU_ID SRC_LANGUAGE TARGET_LANGUAGE DATA_SOURCE WITH_VERDICT\n```\n\n`GPU_ID` is how many GPUs you want to use. For single GPU, input \"0\". <br>\n`SRC_LANGUAGE`, `TARGET_LANGUAGE` are both the same for a single run. They can be either \"java\" or \"python\".<br>\n`DATA_SOURCE` is the location of the preprocessed data. For example, \"`codenet`\" if the stored preprocessed data folder is named \"codenet\".<br>\n`WITH_VERDICT` can be either \"true\" or \"false\" depending on if you want to use the verdict information in the input or not.\n```\ncd codet5/\nnohup ./run.sh 0 java java codenet false #TODO Briefly explain one or all of these examples i.e.:\nnohup ./run.sh 0 java java codenet true #Executes the Java dataset with one GPU and verdict information\nnohup ./run.sh 0 python python codenet false #Executes the Python dataset with one GPU and without verdict information\nnohup ./run.sh 0 python python codenet true\n```\n\nSimilarly, for training and evaluating the plbart model, navigate to the root directory and use the following:\n\n```\ncd plbart/\nnohup ./run.sh 0 java java codenet false\nnohup ./run.sh 0 java java codenet true\nnohup ./run.sh 0 python python codenet false\nnohup ./run.sh 0 python python codenet true\n```\nThe `run.sh` script for each of the models contains 3 function: <br>\n* `train` -> Trains that specific model and saves the checkpoints and logs all the necessary matrices. <br>\n* `evaluate` -> Loads a pretrained model (usually the checkpoint-best-ppl) model and evaluates all metrics except the execution-based evaluation with pass@k accuracy. <br>\n* `generate` -> Loads a pretrained model (usually the checkpoint-best-ppl) and generates a json file with the predictions from the loaded model.\n",
+                "type": "Text_excerpt",
+                "original_header": "GPU is required to run the experiments.",
+                "parent_header": [
+                    "Training and Evaluation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "First, we expect the test cases folder and the \"`problem_list.csv`\" file to be in the root directory. So let's copy those: <br>\n\n```\ncp -r data/atcoder_test_cases atcoder_test_cases\ncp Project_CodeNet/metadata/problem_list.csv problem_list.csv \n```\nNow, let's run the `execute` and `evaluate` methods:\n```\npython evaluation/execution_evaluation_TC_arc_MP.py --references test_python2python_with_verdict_output.jsonl --language python --test_cases atcoder_test_cases --problem_list problem_list.csv\n```\nTo run on ARC, we provide a file for using in slurm clusters where you might need to change your credentials.\n```\nsbatch batch_run.sh\n```\nThe previous commands will create a json file which contains all the fields necessary for visualizing and getting pass@k accuracy.\n",
+                "type": "Text_excerpt",
+                "original_header": "Finally, let's run the code to execute and evaluate",
+                "parent_header": [
+                    "Evaluation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "We can use `results.py` to generate the results.\nWe can also use the previous json in the `src/01_preprocessing.ipynb` notebook for visualizing.\n",
+                "type": "Text_excerpt",
+                "original_header": "Use results.py to get the results",
+                "parent_header": [
+                    "Evaluation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "```\n@article{haque2022fixeval,\n  title={FixEval: Execution-based Evaluation of Program Fixes for Competitive Programming Problems},\n  author={Haque, Md Mahim Anjum and Ahmad, Wasi Uddin and Lourentzou, Ismini and Brown, Chris},\n  journal={arXiv preprint arXiv:2206.07796},\n  year={2022}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{haque2022fixeval,\n    year = {2022},\n    journal = {arXiv preprint arXiv:2206.07796},\n    author = {Haque, Md Mahim Anjum and Ahmad, Wasi Uddin and Lourentzou, Ismini and Brown, Chris},\n    title = {FixEval: Execution-based Evaluation of Program Fixes for Competitive Programming Problems},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "FixEval: Execution-based Evaluation of Program Fixes for Competitive Programming Problems",
+                "author": "Haque, Md Mahim Anjum and Ahmad, Wasi Uddin and Lourentzou, Ismini and Brown, Chris"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```\n\n\u251c\u2500\u2500 codet5\n\u2502   \u251c\u2500\u2500 run.sh \n\u2502   \u251c\u2500\u2500 configs.py\n\u2502   \u251c\u2500\u2500 models.py\n\u2502   \u251c\u2500\u2500 run_gen.py\n\u2502   \u2514\u2500\u2500 ...\n\u2502 \n\u251c\u2500\u2500 plbart\n\u2502   \u251c\u2500\u2500 run.sh \n\u2502   \u251c\u2500\u2500 configs.py\n\u2502   \u251c\u2500\u2500 models.py\n\u2502   \u251c\u2500\u2500 run_gen.py\n\u2502   \u2514\u2500\u2500 ...\n\u2502\n\u251c\u2500\u2500 data\n\u2502   \u251c\u2500\u2500 java\n\u2502   \u2502    \u251c\u2500\u2500jsons\n\u2502   \u2502    \u251c\u2500\u2500processed\n\u2502   \u251c\u2500\u2500 python\n\u2502   \u2502    \u251c\u2500\u2500jsons\n\u2502   \u2502    \u251c\u2500\u2500processed\n\u2502   \u251c\u2500\u2500 atcoder_test_cases\n\u2502   \u2514\u2500\u2500 processed.json\n\u2502\n\u251c\u2500\u2500 third_party\n\u2502   \u251c\u2500\u2500 apex\n\u2502   \u251c\u2500\u2500 fairseq\n\u2502   \u251c\u2500\u2500 tree-sitter-cpp\n\u2502   \u251c\u2500\u2500 tree-sitter-java\n\u2502   \u2514\u2500\u2500 tree-sitter-python\n\u2502\n\u251c\u2500\u2500 evaluation\n\u2502   \u251c\u2500\u2500 CodeBLEU \n\u2502   \u251c\u2500\u2500 codegen \n\u2502   \u251c\u2500\u2500 bleu.py\n\u2502   \u251c\u2500\u2500 compile.py\n\u2502   \u251c\u2500\u2500 compute_ca.py\n\u2502   \u251c\u2500\u2500 evaluator.py\n\u2502   \u251c\u2500\u2500 execution_evaluation_TC_arc_MP.py\n\u2502   \u2514\u2500\u2500 ...\n\u2502\n\u2514\u2500\u2500 src\n    \u251c\u2500\u2500 01_preprocessing.ipynb\n    \u251c\u2500\u2500 make_submission_list_json.py\n    \u251c\u2500\u2500 process_json.py\n    \u251c\u2500\u2500 deduplication.py\n    \u251c\u2500\u2500 generate_eval_files.py\n    \u251c\u2500\u2500 merge.py\n    \u251c\u2500\u2500 split.py\n    \u2514\u2500\u2500 ...\n```\n \n",
+                "original_header": "Folder Structure"
+            },
+            "confidence": 0.9484833648780034,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "First, run the below commands. These commands will create 4 additional splits in the 4 core data folders (`data/language/{processed, processed_with_verdict}`) named `eval` which are similar to `train`, `valid`, and `test` but smaller.\nThe main difference between eval and test set is that `{train, test, valid}` are created using our split method and all the datapoints are split between these. <br>\nBut here we create an eval split which is sampled from the test datapoints using `generate_eval_files.py`, keeping the true data distribution similar to the test file but on a smaller scale (500 in our case) to keep the runtime and computational complexity in check as we need to generate multiple submissions and run each of them with many test cases to calculate our pass@k accuracy.\n```\ncd src/\npython generate_eval_files.py \npython generate_eval_files.py --with_verdict True\npython generate_eval_files.py --lang python\npython generate_eval_files.py --with_verdict True --lang python\ncd ../\n```\n \n",
+                "original_header": "Evaluate on Execution"
+            },
+            "confidence": 0.9132975853327805,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Go to the specific model folder and execute the `run.sh` command with only the `generate` function uncommented and `save_dir`, `path_2_data`, and `languages` set to the correct versions. For example:\n```\ncd plbart/\n./run.sh\n```\nTo use our open sourced pretrained models, download plbart.zip or codeT5.zip from the link below and verify the results using the same procedure.\nBASH2* \n",
+                "original_header": "Let's generate the file with the model predictions"
+            },
+            "confidence": 0.9403772572538658,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2206.07796"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mahimanzum/FixEval/main/README.md"
+        }
+    ]
+}

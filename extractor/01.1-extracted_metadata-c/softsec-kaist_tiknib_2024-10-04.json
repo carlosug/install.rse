@@ -1,0 +1,541 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:22:05"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/SoftSec-KAIST/TikNib",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "SoftSec-KAIST",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-11-21T11:07:59Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-03T10:27:50Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Binary Code Similarity Analysis (BCSA) Tool",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "TikNib is a binary code similarity analysis (BCSA) tool. TikNib enables\nevaluating the effectiveness of features used in BCSA. One can extend it to\nevaluate other interesting features as well as similarity metrics.\n\nCurrently, TikNib supports features as listed below. TikNib also employs an\ninterpretable feature engineering model, which essentially measures the relative\ndifference between each feature. In other words, it captures how much each\nfeature differs across different compile options. Note that this model and its\ninternal similarity scoring metric is not the best approach for addressing BCSA\nproblems, but it can help analyze how the way of compilation affects each\nfeature.\n\nTikNib currently focuses on function-level similarity analysis, which is a\nfundamental unit of binary analysis.\n\nFor more details, please check [our\npaper](https://arxiv.org/abs/2011.10749).\n",
+                "type": "Text_excerpt",
+                "original_header": "Description"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "TikNib",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "SoftSec-KAIST/TikNib",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SoftSec-KAIST/TikNib/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SoftSec-KAIST/TikNib/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 114,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "binary-analysis, similarity-analysis",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 22,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/softsec-kaist/tiknib/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 196405
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 19824
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/config/add_type_feature.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/config/add_type_suffix.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/example/example.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/example/test_all_features.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/helper/run_openssl_roc_topk_type.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/helper/run_gnu.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/helper/run_ase.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/helper/run_gnu_roc_type.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/helper/run_ase_roc.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/helper/run_extra_roc.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/helper/run_openssl_roc_type.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/helper/run_gnu_roc.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/helper/run_openssl_roc_topk.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/helper/run_openssl_roc.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "TikNib has two parts: ground truth building and feature extraction.\n",
+                "type": "Text_excerpt",
+                "original_header": "How to use"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To see the scripts used in our evaluation, please check the shell scripts under\n[/helper](/helper/). For example, [run_gnu.sh](/helper/run_gnu.sh) builds ground\ntruth and extracts features for GNU packages. Then,\n[run_gnu_roc.sh](/helper/run_gnu_roc.sh) computes the ROC AUC for the results.\nYou have to run these scripts sequentially as the second one utilizes the cached\nresults obtained from the first one.\nWe also added top-k results for the OpenSSL package, which is described in\nSec 5.3 in [our paper](https://arxiv.org/abs/2011.10749).\nPlease check [run_openssl_roc.sh](/helper/run_openssl_roc.sh) and\n[run_openssl_roc_topk.sh](/helper/run_openssl_roc_topk.sh) in the same\ndirectory, of which should also be executed sequentially.\n",
+                "type": "Text_excerpt",
+                "original_header": "Scripts Used for Our Evaluation",
+                "parent_header": [
+                    "How to use"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        },
+        {
+            "result": {
+                "value": "TikNib includes scripts for building ground truth for evaluation, as described\nin Sec 3.2 in [our paper](https://arxiv.org/abs/2011.10749). After compiling the\ndatasets using [BinKit](https://github.com/SoftSec-KAIST/BinKit), we build\nground truth as below.\n\nGiven two functions of the same name, we check if they originated from the same\nsource files and if their line numbers are the same. We also check if both\nfunctions are from the same package and from the binaries of the same name to\nconfirm their equivalence. Based on these criteria we conducted several steps to\nbuild ground truth and clean the datasets. For more details, please check [our\npaper](https://arxiv.org/abs/2011.10749).\n",
+                "type": "Text_excerpt",
+                "original_header": "Building Ground Truth",
+                "parent_header": [
+                    "How to use"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Configure path variables for your environment at `config/path_variables.py`.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "1. Configure path variables for IDA Pro and this repository.",
+                "parent_header": [
+                    "How to use",
+                    "Building Ground Truth"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        },
+        {
+            "result": {
+                "value": "This extracts source file name and line number by parsing the debugging\ninformation in a given binary. The binary must have been compiled with\nthe `-g` option.\n\n```bash\n$ python helper/extract_lineno.py \\\n    --input_list \"example/input_list_find.txt\" \\\n    --threshold 1\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "3. Extract source file names and line numbers to build ground truth.",
+                "parent_header": [
+                    "How to use",
+                    "Building Ground Truth"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        },
+        {
+            "result": {
+                "value": "This filters functions by checking the source file name and line number.\nThis removes compiler intrinsic functions and duplicate functions spread\nover multiple binaries within the same package.\n\n```bash\n$ python helper/filter_functions.py \\\n    --input_list \"example/input_list_find.txt\" \\\n    --threshold 1\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "4. Filter functions.",
+                "parent_header": [
+                    "How to use",
+                    "Building Ground Truth"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        },
+        {
+            "result": {
+                "value": "This counts the number of functions and generates a graph of that function\non the same path of `input_list`. This also prints the numbers separated\nby `','`. In the below example, a pdf file containing the graph will be\ncreated in `example/input_list_find.pdf`\n\n```bash\n$ python helper/count_functions.py \\\n    --input_list \"example/input_list_find.txt\" \\\n    --threshold 1\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "(Optional) 5. Counting the number of functions.",
+                "parent_header": [
+                    "How to use",
+                    "Building Ground Truth"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        },
+        {
+            "result": {
+                "value": "By utilizing `ctags`, this will extract type information. This will add\n`abstract_args_type` and `abstract_ret_type` into the previously created\n`.pickle` file.\n\n```bash\n$ python helper/extract_functype.py \\\n    --source_list \"example/source_list.txt\" \\\n    --input_list \"example/input_list_find.txt\" \\\n    --ctags_dir \"data/ctags\" \\\n    --threshold 1\n```\n\nFor example, for a function type of `mode_change *__usercall@<rax>(const char\n*ref_file@<rsi>)` extracted from IDA Pro, it will follow the ctags and\nrecognizes `mode_change` represents for a custom `struct`. Consequently, it adds\nnew data as below.\n\n``` python\n    'abstract_args_type': ['char *'],\n    'abstract_ret_type': 'struct *',\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "2. Extract function type information for type features.",
+                "parent_header": [
+                    "How to use",
+                    "Extracting Features"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        },
+        {
+            "result": {
+                "value": "This extracts numeric presemantic features as stated above.\n\n```bash\n$ python helper/extract_features.py \\\n    --input_list \"example/input_list_find.txt\" \\\n    --threshold 1\n```\n\nThe extracted features will be stored in each `.pickle` file. Below is an\nexample showing a part of extracted features for the `mode_create_from_ref`\nfunction in the `find` binary in `findutils`.\n\n```python\n{\n    'package': 'findutils-4.6.0',\n    'bin_name': 'find.elf',\n    'name': 'mode_create_from_ref',\n    'arch': 'x86_64',\n    'opti': 'O3',\n    'compiler': 'gcc-8.2.0',\n    'others': 'normal',\n    'func_type': 'mode_change *__usercall@<rax>(const char *ref_file@<rsi>)',\n    'abstract_args_type': ['char *'],\n    'ret_type': 'mode_change *',\n    'abstract_ret_type': 'struct *',\n    'cfg': [(0, 1), (0, 2), (1, 2)],\n    'cfg_size': 3,\n    'feature': {\n        'cfg_avg_degree': 2,\n        'cfg_avg_indegree': 1,\n        'cfg_avg_loopintersize': 0,\n        'cfg_avg_loopsize': 0,\n        'cfg_avg_outdegree': 1,\n        'cfg_avg_sccsize': 1,\n        'cfg_max_depth': 2,\n        'cfg_max_width': 2,\n        'cfg_num_backedges': 0,\n        'cfg_num_bfs_edges': 2,\n        'cfg_num_degree': 6,\n        'cfg_num_indegree': 3,\n        'cfg_num_loops': 0,\n        'cfg_num_loops_inter': 0,\n        'cfg_num_outdegree': 3,\n        'cfg_num_scc': 3,\n        'cfg_size': 3,\n        'cfg_sum_loopintersize': 0,\n        'cfg_sum_loopsize': 0,\n        'cfg_sum_sccsize': 3,\n        'cg_num_callees': 2,\n        'cg_num_callers': 0,\n        'cg_num_imported_callees': 1,\n        'cg_num_imported_calls': 1,\n        'cg_num_incalls': 0,\n        'cg_num_outcalls': 2,\n        'data_avg_abs_strings': 0,\n        'data_avg_arg_type': 2,\n        'data_avg_consts': 144,\n        'data_avg_strlen': 0,\n        'data_mul_arg_type': 2,\n        'data_num_args': 1,\n        'data_num_consts': 1,\n        'data_num_strings': 0,\n        'data_ret_type': 2,\n        'data_sum_abs_strings': 0,\n        'data_sum_abs_strings_seq': 0,\n        'data_sum_arg_type': 2,\n        'data_sum_arg_type_seq': 2,\n        'data_sum_consts_seq': 144,\n        'data_sum_strlen': 0,\n        'data_sum_strlen_seq': 0,\n        'inst_avg_abs_arith': 0.6666666666666666,\n        'inst_avg_abs_ctransfer': 1.3333333333333333,\n        'inst_avg_abs_dtransfer': 4.666666666666667,\n        'inst_avg_arith': 0.6666666666666666,\n        'inst_avg_bitflag': 0.3333333333333333,\n        'inst_avg_cmp': 0.3333333333333333,\n        'inst_avg_cndctransfer': 0.3333333333333333,\n        'inst_avg_ctransfer': 1.0,\n        'inst_avg_dtransfer': 4.666666666666667,\n        'inst_avg_grp_call': 0.6666666666666666,\n        'inst_avg_grp_jump': 0.3333333333333333,\n        'inst_avg_grp_ret': 0.3333333333333333,\n        'inst_avg_logic': 0.3333333333333333,\n        'inst_avg_total': 7.333333333333333,\n        'inst_num_abs_arith': 2.0,\n        'inst_num_abs_ctransfer': 4.0,\n        'inst_num_abs_dtransfer': 14.0,\n        'inst_num_arith': 2.0,\n        'inst_num_bitflag': 1.0,\n        'inst_num_cmp': 1.0,\n        'inst_num_cndctransfer': 1.0,\n        'inst_num_ctransfer': 3.0,\n        'inst_num_dtransfer': 14.0,\n        'inst_num_grp_call': 2.0,\n        'inst_num_grp_jump': 1.0,\n        'inst_num_grp_ret': 1.0,\n        'inst_num_logic': 1.0,\n        'inst_num_total': 22\n    },\n    ...\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "3. Extract numeric presemantic features and type features.",
+                "parent_header": [
+                    "How to use",
+                    "Extracting Features"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```bash\n$ python helper/test_roc.py \\\n    --input_list \"example/input_list_find.txt\" \\\n    --train_funcs_limit 200000 \\\n    --config \"config/gnu/config_gnu_normal_all.yml\"\n```\n\nFor more details, please check `example/`. All configuration files for our\nexperiments are in `config/`. The time spent for running `example/example.sh`\ntook as below.\n\n- Processing IDA analysis: 1384 s\n- Extracting function types: 102 s\n- Extracting features: 61 s\n- Training: 31 s\n- Testing: 0.8 s\n\nYou can obtain below information after running `test_roc.py`.\n\n```\nFeatures:\ninst_num_abs_ctransfer (inter): 0.4749\ninst_num_cmp (inter): 0.5500\ninst_num_cndctransfer (inter): 0.5906\n...\n...\n...\nAvg \\# of selected features: 13.0000\nAvg. TP-TN Gap: 0.3866\nAvg. TP-TN Gap of Grey: 0.4699\nAvg. ROC: 0.9424\nStd. of ROC: 0.0056\nAvg. AP: 0.9453\nStd. of AP: 0.0058\nAvg. Train time: 30.4179\nAVg. Test time: 1.4817\nAvg. # of Train Pairs: 155437\nAvg. # of Test Pairs: 17270\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "4. Evaluate target configuration",
+                "parent_header": [
+                    "How to use",
+                    "Extracting Features"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        },
+        {
+            "result": {
+                "value": "One may use BCSA for several tasks such as malware detectio, plagiarism\ndetection, authorship identification, or vulnerability discovery.\n\nYou can take a look at [this repo](https://github.com/SysSec-KAIST/FirmKit)\nfor an example of IoT vulnerability discovery.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Use Case"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "**This step takes the most time.**\n\nThis step fetches preliminary data for the functions in each binary and stores\nthe data in a `pickle` format. For a given binary, it generates a pickle file on\nthe same path with a suffix of `.pickle`. Please configure the `chunk_size` for\nparallel processing.\n\nFor IDA Pro v6.95 (original version in the paper), use\n`tiknib/ida/fetch_funcdata.py`.\n\n```bash\n$ python helper/do_idascript.py \\\n    --idapath \"/home/dongkwan/.tools/ida-6.95\" \\\n    --idc \"tiknib/ida/fetch_funcdata.py\" \\\n    --input_list \"example/input_list_find.txt\" \\\n    --log\n```\n\nFor IDA Pro v7.5, use `tiknib/ida/fetch_funcdata_v7.5.py`.\n\n```bash\n$ python helper/do_idascript.py \\\n    --idapath \"/home/dongkwan/.tools/ida-7.5\" \\\n    --idc \"tiknib/ida/fetch_funcdata_v7.5.py\" \\\n    --input_list \"example/input_list_find.txt\" \\\n    --log\n```\n\nAdditionally, **you can use this script to run any idascript for numerous\nbinaries in parallel.**\n\n",
+                "type": "Text_excerpt",
+                "original_header": "2. Run IDA Pro to extract preliminary data for each functions.",
+                "parent_header": [
+                    "How to use",
+                    "Building Ground Truth"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        },
+        {
+            "result": {
+                "value": "This is the exact same step as the one described above.\n",
+                "type": "Text_excerpt",
+                "original_header": "1. Run IDA Pro to extract preliminary data for each functions.",
+                "parent_header": [
+                    "How to use",
+                    "Extracting Features"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "We would appreciate if you consider citing [our\npaper](https://ieeexplore.ieee.org/document/9813408) when using BinKit.\n```bibtex\n@ARTICLE{kim:tse:2022,\n  author={Kim, Dongkwan and Kim, Eunsoo and Cha, Sang Kil and Son, Sooel and Kim, Yongdae},\n  journal={IEEE Transactions on Software Engineering}, \n  title={Revisiting Binary Code Similarity Analysis using Interpretable Feature Engineering and Lessons Learned}, \n  year={2022},\n  volume={},\n  number={},\n  pages={1-23},\n  doi={10.1109/TSE.2022.3187689}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{kim:tse:2022,\n    doi = {10.1109/TSE.2022.3187689},\n    pages = {1-23},\n    number = {},\n    volume = {},\n    year = {2022},\n    title = {Revisiting Binary Code Similarity Analysis using Interpretable Feature Engineering and Lessons Learned},\n    journal = {IEEE Transactions on Software Engineering},\n    author = {Kim, Dongkwan and Kim, Eunsoo and Cha, Sang Kil and Son, Sooel and Kim, Yongdae},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/TSE.2022.3187689",
+                "title": "Revisiting Binary Code Similarity Analysis using Interpretable Feature Engineering and Lessons Learned",
+                "author": "Kim, Dongkwan and Kim, Eunsoo and Cha, Sang Kil and Son, Sooel and Kim, Yongdae"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We ran all our experiments on a server equipped with four Intel Xeon E7-8867v4\n2.40 GHz CPUs (total 144 cores), 896 GB DDR4 RAM, and 4 TB SSD. We setup Ubuntu\n16.04 with IDA Pro v6.95 on the server. \n",
+                "original_header": "Tested environment"
+            },
+            "confidence": 0.9994158173858145,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Description"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2011.10749"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/softsec-kaist/tiknib/master/README.md"
+        }
+    ]
+}

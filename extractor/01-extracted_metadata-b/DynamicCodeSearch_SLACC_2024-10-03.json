@@ -1,0 +1,766 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:50:04"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/DynamicCodeSearch/SLACC",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "DynamicCodeSearch",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-01-22T12:23:46Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-04T12:48:48Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2020 George Mathew, Chris Parnin, Kathryn T Stolee\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/LICENSE.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "SLACC",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "DynamicCodeSearch/SLACC",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/DynamicCodeSearch/SLACC/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/DynamicCodeSearch/SLACC/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 11,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 10,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/DynamicCodeSearch/SLACC/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 19037503
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 1258610
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "ANTLR",
+                "name": "ANTLR",
+                "type": "Programming_language",
+                "size": 34991
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 25977
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "R",
+                "name": "R",
+                "type": "Programming_language",
+                "size": 9391
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 3708
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "# Installing SLACC\nSLACC can be setup from scratch on a [local machine](#setting-up-from-scratch) or a [preconfigured virtualbox](#preconfigured-image) image can be used. We would recommend the preconfigured virtualbox for prototyping and while setting up from scratch for replicating the ICSE results.\n\n## Preconfigured Image\nSetting up SLACC can be a cumbersome task. We have preset SLACC as a virtualbox image with the `CodeJam` dataset used in our study and a sample `Example` dataset which we used in the motivation section of our paper.\n\n### Setting up\n* First download the latest version of [VirtualBox](https://www.virtualbox.org/wiki/Downloads) for your operating system.\n* Download the virtualbox image of [SLACC](https://drive.google.com/drive/u/3/folders/1UqWRvwiSy9ILwFMEDC6_bimzP2mg9m_T).\n* Open Virtualbox and import the image. `File -> Import Appliance`. Please note that the virtual box is configured for smaller experiments so it might not be ideal for large experiments like the one used in our paper.\n* **Hardware Requirements**: 8GB memory, 20GB storage(dynamically expands based on source code)\n\n### Navigating around\n* Once the image is booted up, it can be logged in using the credentials\n```\nUSER_NAME :  SLACC\nPASS_WORD: slacc\n```\n* The source code is already downloaded and unpacked in the folder `~/Raise/ProgramRepair/SLACC`. Navigate into this folder\n```\n> cd ~/Raise/ProgramRepair/SLACC\n```\n* Setting up DB. Check if mongoDB is running using the command `mongo`. If not start mongoDB using\n```\n> mongostart\n```\n* You are now set to use SLACC. No changes have to be made to the java or python properties. Head over to the [README](https://github.com/DynamicCodeSearch/SLACC/tree/ICSE20/README.md#running-slacc) to try out a on the `Example` dataset or the `CodeJam` dataset.\n\n\n## Setting up from Scratch\nClone SLACC from github using \n```\n> git clone https://github.com/DynamicCodeSearch/SLACC.git\n```\n\n### Hardware\n* SLACC requires atleast 4GB of memory to function on smaller programs. Storage and number of processors vary based on the size of the targe code for clone detection.\n* For the CodeJam dataset used in the paper, we used a 16 node cluster 4-core AMD opteron processor and 32GB DDR3 1333 ECCDRAM. This took around 2 hours for SLACC to identify clusters in the dataset.\n\n### Java\n* SLACC requires [JDK version 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). After downloading this version configure the environment variable **$JAVA_HOME** to the path where Java is installed.\n* We also use [maven version 3.3+](https://maven.apache.org/download.cgi). Make sure you can access the maven command `mvn` form a command line window.\n* We would recommend a GUI like [Intellij Idea](https://www.jetbrains.com/idea/) or [Eclipse](https://www.eclipse.org/downloads/) if you plan on editing the source code.\n* The additional java dependecies can be installed by running `mvn clean install` in `SLACC/code` folder.\n\n### Python\n* We use python [2.7.6+](https://www.python.org/downloads/release/python-2716/). Make sure you can access `python` from the command line after installing python.\n* For managing python packages we use [pip 9.0+](https://pip.pypa.io/en/stable/installing/). Make sure you can access `pip` from the command line after installing pip.\n* To install required python libraries \n```\n> cd SLACC/code\n> pip install -r requirements.txt\n```\n\n### Database\n* Most of the data and meta-data used by SLACC is stored in MongoDB. We use [MongoDB 3.6](https://docs.mongodb.com/manual/installation/) for our experiments but it should work on later versions as well.\n* Set the environment variable **$MONGO_HOME** to the path where Mongo is installed.\n\n### Properties\nFinally the properties have to be set for Java and Python\n* Open `SLACC/code/src/main/java/edu/ncsu/config/Settings.java` and set the variable `ROOT_PATH` to the parent folder where SLACC is cloned.\n* Open `/SLACC/code/src/main/python/properties.py` and set the variable `ROOT_HOME` to the parent folder where SLACC is cloned.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/INSTALL.md"
+        },
+        {
+            "result": {
+                "value": "The artifacts for SLACC can be installed by following the instructions in [INSTALL.md](https://github.com/DynamicCodeSearch/SLACC/blob/ICSE20/INSTALL.md). SLACC can either be [setup from scratch](https://github.com/DynamicCodeSearch/SLACC/edit/ICSE20/INSTALL.md#setting-up-from-scratch) or reusing the preconfigured [virtualbox image](https://github.com/DynamicCodeSearch/SLACC/edit/ICSE20/INSTALL.md#preconfigured-image). We would recommend using the preconfigured image for prototyping or running the `Example` dataset used in the motivation section of the paper. For running the `CodeJam` dataset, it might be best to setup from the scratch or use the image on a machine with at least 16GB of memory and 2 processors.\n",
+                "type": "Text_excerpt",
+                "original_header": "Setting it up",
+                "parent_header": [
+                    "SLACC: Simion-based Language Agnostic Code Clones"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/python/snip.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/python/extract_file_metadata.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/python/extract_metadata.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/python/execute.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/python/crawl_codejam.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/java/snip.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/java/store_objects.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/java/execute_single_function.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/java/dead_code_elimination.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/java/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/java/permutate.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/java/extract_metadata.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/java/preprocess.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/java/extract_primitive_arguments.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/java/extract_fuzzed_arguments.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/java/execute.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/java/crawl_codejam.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/java/crawl_introclass.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/common/cluster.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/common/sh_stop_mongo.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/common/analyze.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/common/start_mongo.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/common/runner.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/common/initialize.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/introclass/snip.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/introclass/cluster.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/introclass/store_objects.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/introclass/execute_single_function.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/introclass/dead_code_elimination.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/introclass/crawl.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/introclass/permutate.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/introclass/extract_metadata.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/introclass/extract_primitive_arguments.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/introclass/extract_fuzzed_arguments.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/introclass/execute.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/introclass/snip_parallel.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/introclass/execute_parallel.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/codejam/cluster.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/codejam/python/download.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/code/scripts/codejam/java/download.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Make sure [SLACC is setup](https://github.com/DynamicCodeSearch/SLACC/blob/ICSE20/INSTALL.md) before trying to run the following scripts. Ensure that the database is running as a daemon. Check this by running `mongo` on the terminal. If not, start mongo as a daemon process. \n\n**On Ubuntu**\n```\n> sudo systemctl start mongod\n```\n\n[**On MacOS**](https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/#start-mongod-as-a-daemon)\n```\n> mongod --fork --logpath /var/log/mongodb/mongod.log\n```\n\nAll code to run SLACC is made from the directory code. Navigate into this folder before executing subsequent scripts.\n```\n> cd code\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Running SLACC",
+                "parent_header": [
+                    "SLACC: Simion-based Language Agnostic Code Clones"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "This stage is not required on the preconfigured image or when cloned, since the source code for both datasets are automatically added in the `projects/` folder. That said, if the datasets need to be changed follow the following commands.",
+                "type": "Text_excerpt",
+                "original_header": "1. Obtaining Datasets(OPTIONAL)",
+                "parent_header": [
+                    "SLACC: Simion-based Language Agnostic Code Clones",
+                    "Running SLACC"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "* The repository already contains the java and python files in `projects/src/main/java/CodeJam` and `projects/src/main/python/Codejam` respectively.\n* To download these projects again, run \n```\n# For java\n> sh scripts/codejam/java/download.sh\n# For python\n> sh scripts/codejam/python/download.sh\n```",
+                "type": "Text_excerpt",
+                "original_header": "For `CodeJam`",
+                "parent_header": [
+                    "SLACC: Simion-based Language Agnostic Code Clones",
+                    "Running SLACC",
+                    "1. Obtaining Datasets(OPTIONAL)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Next up we initialize SLACC for a dataset. This phase reinitializes the database and clears all the old metadata. To run this, execute\n```\n> sh scripts/common/initialize.sh <dataset>\n```\n\nFor example, to initialize the dataset `Example`, execute\n```\n> sh scripts/common/initialize.sh Example\n```\n\nSLACC can then be executed on a dataset by [running all stages at once](https://github.com/DynamicCodeSearch/SLACC/blob/ICSE20/README.md#3-running-all-stages-for-a-dataset) or [each stage independently](https://github.com/DynamicCodeSearch/SLACC/blob/ICSE20/README.md#4-running-each-stage-separately). For small datasets like `Example` or prototyping, it is best to run all stages at once as it will take under 2 minutes on the Virtualbox image. For larger datasets like `CodeJam`, we would advice to run each stage independently as the **Function Execution** stage might crash due to excessive memory usage and might need to be restarted. In such instances, the function execution will pick up from where it crashed and no prior execution results will be lost.\n",
+                "type": "Text_excerpt",
+                "original_header": "2. Initializing SLACC",
+                "parent_header": [
+                    "SLACC: Simion-based Language Agnostic Code Clones",
+                    "Running SLACC"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To run all stages of SLACC for a dataset, execute\n```\n> sh scripts/common/runner.sh <dataset>\n```\n\nFor example, to run all stages of SLACC for the dataset `Example`, execute\n```\n> sh scripts/common/runner.sh Example\n```\nThe results can be accessed by following the steps in [results](https://github.com/DynamicCodeSearch/SLACC/blob/ICSE20/README.md#5-results) section below.\n",
+                "type": "Text_excerpt",
+                "original_header": "3. Running all stages for a dataset",
+                "parent_header": [
+                    "SLACC: Simion-based Language Agnostic Code Clones",
+                    "Running SLACC"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "  * For snipping the functions, run \n  ```\n  > scripts/java/snip.sh <dataset>\n  ```\n  * For generating permutations for the snipped functions, run \n  ```\n  > sh scripts/java/permutate.sh <dataset>\n  ```",
+                "type": "Text_excerpt",
+                "original_header": "Java",
+                "parent_header": [
+                    "SLACC: Simion-based Language Agnostic Code Clones",
+                    "Running SLACC",
+                    "4. Running each stage separately",
+                    "a) Snip"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "  * For snipping and permutating the functions, run \n  ```\n  > sh scripts/python/snip.sh <dataset>\n  ```\n  ",
+                "type": "Text_excerpt",
+                "original_header": "Python:",
+                "parent_header": [
+                    "SLACC: Simion-based Language Agnostic Code Clones",
+                    "Running SLACC",
+                    "4. Running each stage separately",
+                    "c) Execute functions"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "  * First, objects are identified and the metadata is stored in the database. Run\n  ```\n  > sh scripts/java/store_objects.sh <dataset>`\n  ```\n  * Next, we extract the primitive arguments. Run \n  ```\n  > sh scripts/java/extract_primitive_arguments.sh <dataset>\n  ```\n  * Finally we extract the Fuzzed Arguments. Run \n  ```\n  > sh scripts/java/extract_fuzzed_arguments.sh <dataset> True\n  ```\n##### Python:\n  * For Python we extract the metadata and any additional argument types not covered by the java argument extractor. Run \n  ```\n  > sh scripts/python/extract_metadata.sh <dataset>\n  ```\nThe extracted arguemnts are stored in `primitive_arguments` and `fuzzed_arguments` collection in MongoDB\n",
+                "type": "Text_excerpt",
+                "original_header": "Java:",
+                "parent_header": [
+                    "SLACC: Simion-based Language Agnostic Code Clones",
+                    "Running SLACC",
+                    "4. Running each stage separately",
+                    "c) Execute functions"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "  Finally the executed functions are can be clustered by running\n  ```\n  > `sh scripts/common/analyze.sh <dataset>`\n  ```\n  This script ensures that the functions are clustered for similarity thresholds of `0.01, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30`.\n  ",
+                "type": "Text_excerpt",
+                "original_header": "d) Cluster",
+                "parent_header": [
+                    "SLACC: Simion-based Language Agnostic Code Clones",
+                    "Running SLACC",
+                    "4. Running each stage separately"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        },
+        {
+            "result": {
+                "value": "  The cluster results are stored as `.txt` files, `.pkl` files and in the database.\n  * `.txt` - These files contains the functions grouped as clusters in a readable format. This can be accessed from the folder `code/meta_results/<dataset>/clusters/cluster_testing/eps_<threshold>/*.txt`. There are four types of `.txt` files in this folder\n    * `java_python.txt` : Contains all the clusters.\n    * `only_java.txt`: Contains all the clusters with only java functions.\n    * `only_python.txt`: Contains all the clusters with only python functions.\n    * `only_mixed.txt`: Contains all the clusters with only mixed functions.\n  * `.pkl` - These files contains the functions grouped as clusters in a reusable python format. This can be accessed from the folder `code/meta_results/<dataset>/clusters/cluster_testing/eps_<threshold>/*.pkl`. Like the `.txt` files, there are four types of `.pkl` files in this folder all representing the same types of clusters.\n  * **Database**: Clusters are also stored in the database for thresholds varying between `0.01` and `0.30` in collections approporiately named as `clusters_<threshold>`.\n  \n  \n  To access the clusters generated for the `Example` dataset, run\n  ```\n  > cat meta_results/Example/clusters/cluster_testing/eps_0.01/only_mixed.txt\n  ```\n  There should be two clusters, one representing the complete interleave and another representing a partial interleave. The clusters should look as show below\n  ```\n  \n\n****** Cluster 68 ******\npublic static String func_29bae602199d4dc7accf137be62131e0(Integer[] a, Integer[] b){\n    String result = \"\";\n    int i = 0;\n    for (i = 0; i < a.length && i < b.length; i++) {\n        result += a[i];\n        result += b[i];\n    }\n    Integer[] remaining = a.length < b.length ? b : a;\n    for (int j = i; j < remaining.length; j++) {\n        result += remaining[j];\n    }\n    return result;\n}\ndef func_4e0f71a6fbd248af83dc763c508a14e5(l1, l2):\n    result = ''\n    a1, a2 = len(l1), len(l2)\n    for i in range(max(a1, a2)):\n        if i < a1:\n            result += str(l1[i])\n        if i < a2:\n            result += str(l2[i])\n    return result\n\n\n\n****** Cluster 20 ******\npublic static String func_d5770ad5257d4e5da0ff719987570b1a(Integer[] a, Integer[] b){\n    String result = \"\";\n    int i = 0;\n    for (i = 0; i < a.length && i < b.length; i++) {\n        result += a[i];\n        result += b[i];\n    }\n    return result;\n}\npublic static String func_31fe2eac986843068d97c5d5883d2708(Integer[] a, Integer[] b){\n    String result = \"\";\n    int i = 0;\n    for (i = 0; i < a.length && i < b.length; i++) {\n        result += a[i];\n        result += b[i];\n    }\n    Integer[] remaining = a.length < b.length ? b : a;\n    return result;\n}\ndef func_6552277742934f47bca79259b014f81c(l1, l2):\n    zipped = chain.from_iterable(zip(l1, l2))\n    return ''.join([str(x) for x in zipped])\n\n  ```\n",
+                "type": "Text_excerpt",
+                "original_header": "5. Results",
+                "parent_header": [
+                    "SLACC: Simion-based Language Agnostic Code Clones",
+                    "Running SLACC"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "* The repository already contains the java and python files in `projects/src/main/java/Example` and `projects/src/main/python/Example` respectively. Modify it and rerun SLACC for observing differnet clusters.\n",
+                "type": "Text_excerpt",
+                "original_header": "For `Example`",
+                "parent_header": [
+                    "SLACC: Simion-based Language Agnostic Code Clones",
+                    "Running SLACC",
+                    "1. Obtaining Datasets(OPTIONAL)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains source code and scripts to obtain results for the paper [\"SLACC: Simion-based Language Agnostic Code Clones\"](https://github.com/DynamicCodeSearch/SLACC/blob/ICSE20/SLACC_preprint.pdf). \n",
+                "original_header": "SLACC: Simion-based Language Agnostic Code Clones"
+            },
+            "confidence": 0.9201366632152292,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* `CodeJam` : Study on four problems from Google Code Jam (GCJ) repository and their valid submissions in Java and Python. We use the first problem from the fifth round of GCJ from 2011 to 2014. Overall in this study, we consider 247 projects; 170 from Java and 77 from Python. \n* `Example`: A sample program that contains 3 (2 in python, 1 in java) implementations of interleaving of arrays used in the `Motivation` section of the paper. \n \n",
+                "original_header": "Datasets"
+            },
+            "confidence": 0.9350080530184964,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "SLACC: Simion-based Language Agnostic Code Clones"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/DynamicCodeSearch/SLACC/master/README.md"
+        }
+    ]
+}

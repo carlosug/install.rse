@@ -1,0 +1,335 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 21:39:56"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/soarsmu/CrossASRplus",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "soarsmu",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-05-07T02:39:21Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2021-12-23T14:45:09Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\nCopyright (c) 2018 YOUR NAME\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/soarsmu/CrossASRplus/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "CrossASR++ | ESEC/FSE 2021 | A Modular Differential Testing Framework for Automatic Speech Recognition",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We have 3 base classes, i.e. `ASR`, `TTS`, and `Estimator`. When inheriting from each class, users need to specify a name in the constructor. This name will be associated with a folder for saving the audio files and transcriptions. Thus having a unique name for each class is required. When inheriting `ASR` base class, users must override the `recognizeAudio()` method which takes an audio as input and returns recognized transcription. TTS and failure estimator can be added similarly. In `TTS` base class, the method `generateAudio()` must be overrided by inherited classes. This method converts a piece of text into audio. In `Estimator` base class, methods `fit()` and `predict()` must be overrided by inherited classes. These methods are used for training and predicting, respectively. \n",
+                "original_header": "Extensibility"
+            },
+            "confidence": 0.9052172466305685,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/soarsmu/CrossASRplus/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "CrossASRplus",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "soarsmu/CrossASRplus",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/soarsmu/CrossASRplus/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/soarsmu/CrossASRplus/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/soarsmu/CrossASRplus/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 25528
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/soarsmu/CrossASRplus/releases/42825032",
+                "tag": "v0.1.2",
+                "name": "CrossASR++ v0.1.2",
+                "author": {
+                    "name": "mhilmiasyrofi",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/soarsmu/CrossASRplus/tarball/v0.1.2",
+                "zipball_url": "https://api.github.com/repos/soarsmu/CrossASRplus/zipball/v0.1.2",
+                "html_url": "https://github.com/soarsmu/CrossASRplus/releases/tag/v0.1.2",
+                "url": "https://api.github.com/repos/soarsmu/CrossASRplus/releases/42825032",
+                "release_id": 42825032,
+                "date_created": "2021-05-12T09:13:16Z",
+                "date_published": "2021-05-12T09:14:22Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/CrossASRplus/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/CrossASRplus/main/examples/install_requirement.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/CrossASRplus/main/examples/others/experiment.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/soarsmu/CrossASRplus/main/examples/others/experiment.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "CrossASR++ is designed and tested to run with Python 3. CrossASR++ can be installed from the PyPi repository using this command\n\n```pip install crossasr```\n",
+                "type": "Text_excerpt",
+                "original_header": "1. PyPI installation",
+                "parent_header": [
+                    "CrossASR++",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/soarsmu/CrossASRplus/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The most recent version of CrossASR++ can be cloned from this repository using this command\n\n```git clone https://github.com/soarsmu/CrossASRplus```\n\nInstall CrossASR++ with the following command from the project folder CrossASRplus, using this command\n\n```pip install .```\n",
+                "type": "Text_excerpt",
+                "original_header": "2. Manual installation",
+                "parent_header": [
+                    "CrossASR++",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/soarsmu/CrossASRplus/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "To make CrossASR++ a plug-and-play tool, we have incorporated some latest components. The suppported TTSes are [Google Translate\u2019s TTS](https://pypi.org/project/gTTS/), [ResponsiveVoice](https://pypi.org/project/rvtts/), [Festival](https://www.cstr.ed.ac.uk/projects/festival/), and [Espeak](http://espeak.sourceforge.net). The supported ASRs are [DeepSpeech](https://pypi.org/project/deepspeech/), [DeepSpeech2](https://github.com/PaddlePaddle/DeepSpeech), [Wit](https://wit.ai), and [wav2letter++](https://github.com/flashlight/wav2letter). CrossASR++ supports any transformed-based classifier available at [HuggingFace](https://huggingface.co). CrossASR++ can also be easily extended to leverage more advanced tools in the future.\n\nWe provide real examples for cross-referencing ASR systems in folder [`examples`](https://github.com/soarsmu/CrossASRplus/tree/main/examples). It provides clear instruction on how to create the suppported TTS, ASR, and Estimator and how to test a specific ASR system.\n",
+                "type": "Text_excerpt",
+                "original_header": "Real-world Examples",
+                "parent_header": [
+                    "CrossASR++",
+                    "Extensibility"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/soarsmu/CrossASRplus/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "```\n@INPROCEEDINGS{Asyrofi2021CrossASRplus,  \n    author={M. H. {Asyrofi} and Z. {Yang} and D. {Lo}},  \n    booktitle={Proceedings of the 29th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE '21), August 23--28, 2021, Athens, Greece},\n    title={CrossASR++: : A Modular Differential Testing Framework for Automatic Speech Recognition},   \n    year={2021},  volume={},  number={},  \n    pages={},  \n    doi={10.1145/3468264.3473124}}\n    \n@INPROCEEDINGS{Asyrofi2020CrossASR,  \n    author={M. H. {Asyrofi} and F. {Thung} and D. {Lo} and L. {Jiang}},  \n    booktitle={2020 IEEE International Conference on Software Maintenance and Evolution (ICSME)},\n    title={CrossASR: Efficient Differential Testing of Automatic Speech Recognition via Text-To-Speech},   \n    year={2020},  volume={},  number={},  \n    pages={640-650},  \n    doi={10.1109/ICSME46990.2020.00066}}\n    \n```\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Please cite our work!",
+                "parent_header": [
+                    "CrossASR++",
+                    "Extensibility"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/soarsmu/CrossASRplus/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{Asyrofi2021CrossASRplus,\n    doi = {10.1145/3468264.3473124},\n    pages = {},\n    number = {},\n    volume = {},\n    year = {2021},\n    title = {CrossASR++: : A Modular Differential Testing Framework for Automatic Speech Recognition},\n    booktitle = {Proceedings of the 29th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE '21), August 23--28, 2021, Athens, Greece},\n    author = {M. H. {Asyrofi} and Z. {Yang} and D. {Lo}},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1145/3468264.3473124",
+                "title": "CrossASR++: : A Modular Differential Testing Framework for Automatic Speech Recognition",
+                "author": "M. H. {Asyrofi} and Z. {Yang} and D. {Lo}"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/soarsmu/CrossASRplus/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{Asyrofi2020CrossASR,\n    doi = {10.1109/ICSME46990.2020.00066},\n    pages = {640-650},\n    number = {},\n    volume = {},\n    year = {2020},\n    title = {CrossASR: Efficient Differential Testing of Automatic Speech Recognition via Text-To-Speech},\n    booktitle = {2020 IEEE International Conference on Software Maintenance and Evolution (ICSME)},\n    author = {M. H. {Asyrofi} and F. {Thung} and D. {Lo} and L. {Jiang}},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/ICSME46990.2020.00066",
+                "title": "CrossASR: Efficient Differential Testing of Automatic Speech Recognition via Text-To-Speech",
+                "author": "M. H. {Asyrofi} and F. {Thung} and D. {Lo} and L. {Jiang}"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/soarsmu/CrossASRplus/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "CrossASR++"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/soarsmu/CrossASRplus/main/README.md"
+        }
+    ]
+}

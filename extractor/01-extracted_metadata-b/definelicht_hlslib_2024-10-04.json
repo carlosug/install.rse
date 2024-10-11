@@ -1,0 +1,758 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:02:32"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/definelicht/hlslib",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "definelicht",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-02-21T12:10:04Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-20T08:39:37Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/bsd-3-clause",
+                "type": "License",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "spdx_id": "BSD-3-Clause"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "BSD 3-Clause License\n\nCopyright (c) 2017-2020, Johannes de Fine Licht, Scalable Parallel Computing Lab (SPCL), Department of Computer Science, ETH Zurich\n\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or other materials provided with the distribution.\n\n* Neither the name of the copyright holder nor the names of its\n  contributors may be used to endorse or promote products derived from\n  this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/LICENSE.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A collection of extensions for Vitis and Intel FPGA OpenCL to improve developer quality of life.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "hlslib is a collection of C++ headers, CMake files, and examples, aimed at improving the quality of life of HLS developers. The current repertoire primarily supports Vitis and Vitis HLS (formerly SDAccel and Vivado HLS), with some support for Intel FPGA OpenCL. An extended abstract describing the project is [available here](https://arxiv.org/abs/1910.04436).\n\nThis project is developed at the [Scalable Parallel Computing Lab](https://spcl.inf.ethz.ch/) (SPCL) at ETH Zurich (see our [github](https://github.com/spcl)).\n",
+                "type": "Text_excerpt",
+                "original_header": "Quick introduction"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "A brief overview of hlslib features is given below.\n \n",
+                "original_header": "Feature overview"
+            },
+            "confidence": 0.9655111875258033,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The `hlslib::DataPack` class located in `hlslib/xilinx/DataPack.h` facilitates SIMD-style vectorization, and makes it easy to build wide data paths in your code. \n",
+                "original_header": "DataPack"
+            },
+            "confidence": 0.9287562072733834,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "While Vivado HLS provides the `hls::stream` class, it is somewhat lacking in features, in particular when simulating multiple processing elements. The `hlslib::Stream` class in `hlslib/xilinx/Stream.h` compiles to Vivado HLS streams, but provides a richer interface. hlslib streams are:\n- thread-safe during simulation, allowing producer and consumer to be executed in parallel;\n- bounded, simulating the finite capacity of hardware FIFOs, allowing easier detection of deadlocks in software; and\n- self-contained, allowing the stream depth and implementation (e.g., using LUTRAM or BRAM) to be specified directly in the object, without excess pragmas. \n",
+                "original_header": "Stream"
+            },
+            "confidence": 0.9296503449316943,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Various other features are provided, including:\n* Classes to flatten loop nests and keep track of indices (`include/hlslib/xilinx/Flatten.h`), both for bounds known at runtime (`hlslib::Flatten`) and bounds known at compile-time (`hlslib::ConstFlatten`). Example usage can be found in `xilinx_test/kernels/Flatten.cpp`.\n* Various compile-time functions commonly used when designing hardware, such as log2, in `include/hlslib/xilinx/Utility.h`.\n* A template tcl-file that can be used with CMake or another templating engine to produce a high-level synthesis script.\n* `xilinx_test/CMakeLists.txt` that builds a number of tests to verify hlslib functionality, doubling as a reference for how to integrate HLS projects with CMake using the provided module files .\n* An example of how to use the Simulation and Stream headers, at `xilinx_test/kernels/MultiStageAdd.cpp`, both as a host-only simulation (`xilinx_test/test/TestMultiStageAdd.cpp`), and as a hardware kernel (`xilinx_test/host/RunMultiStageAdd.cpp`). \n* `include/hlslib/xilinx/Accumulate.h`, which includes a streaming implementation of accumulation, including for type/operator combinations with a non-zero latency (such as floating point addition). Example kernels of usage for both integer and floating point types are included as `xilinx_test/kernel/AccumulateInt.cpp` and `xilinx_test/kernel/AccumulateFloat.cpp`, respectively. \n* `include/hlslib/xilinx/Operators.h`, which includes some commonly used operators as functors to be plugged into templated functions such as `TreeReduce` and `Accumulate`.\n* `include/hlslib/xilinx/Axi.h`, which implements the AXI Stream interface and the bus interfaces required by the DataMover IP, enabling the use of a command stream-based memory interface for HLS kernels if packaged as an RTL kernel where the DataMover IP is connected to the AXI interfaces. \n",
+                "original_header": "Other features"
+            },
+            "confidence": 0.9819610838126971,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- [Matrix multiplication code](https://github.com/spcl/gemm_hls) [1]: Uses a wide range of hlslib features, including simulation, streams, vectors, CMake integration, and OpenCL wrapper code.\n- [SMI](https://github.com/spcl/SMI) [2]: Streaming message passing library for inter-FPGA communication in OpenCL. Uses hlslib for OpenCL host code.\n- [HelmGemm](https://ieeexplore.ieee.org/document/8825124/) [3]: uses the simulation features of hlslib, and incorporates the matrix multiplication code above.\n- [DaCe](https://github.com/spcl/dace) [4]: A data-centric parallel programming framework targeting a wide range of architectures, including both Intel and Xilinx FPGAs. Uses hlslib for CMake integration, OpenCL host code, vectors, streams, and simulation.\n- [REVD](https://arxiv.org/abs/2102.00294) [5]: Uses hlslib streaming and simulation features to accelerate the deconvolution workloads of GANs with reverse looping optimizations on Xilinx FPGAs. \n_If you use hlslib in your project, please let us know, so we can add you to the list._\n \n",
+                "original_header": "Projects using hlslib"
+            },
+            "confidence": 0.9709563342981613,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "_Do you use hlslib? Please consider , and let us know so we can feature your project in the list of examples._ \n"
+            },
+            "confidence": 0.9675105495847692,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "hlslib",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "definelicht/hlslib",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/definelicht/hlslib/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/definelicht/hlslib/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 298,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "cmake, fpga, high-level-synthesis, hpc, intel-fpga, intel-fpga-opencl, sdaccel, vitis, vivado-hls, xilinx",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 54,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/definelicht/hlslib/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 839521
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CMake",
+                "name": "CMake",
+                "type": "Programming_language",
+                "size": 51335
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 2891
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 1324
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Tcl",
+                "name": "Tcl",
+                "type": "Programming_language",
+                "size": 633
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/148539506",
+                "tag": "v1.4.5",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "- Search for Vitis in more default locations\r\n- Use the updated convention for including OpenCL",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.4.5",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.4.5",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.4.5",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/148539506",
+                "release_id": 148539506,
+                "date_created": "2024-03-26T18:20:29Z",
+                "date_published": "2024-03-26T18:22:33Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/124455374",
+                "tag": "v1.4.4",
+                "name": "v1.4.4",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "Support newer versions of Vitis that use v7.1 of the floating point IP library.",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.4.4",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.4.4",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.4.4",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/124455374",
+                "release_id": 124455374,
+                "date_created": "2023-02-01T14:15:37Z",
+                "date_published": "2023-10-10T16:08:51Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/56382989",
+                "tag": "v1.4.3",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "Added support for Vitis 2021.2.",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.4.3",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.4.3",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.4.3",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/56382989",
+                "release_id": 56382989,
+                "date_created": "2022-01-04T14:42:45Z",
+                "date_published": "2022-01-04T14:43:34Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/51992373",
+                "tag": "v1.4.2",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "Bug fixes:\r\n- Fixed missing prefix in code configuring the `HLS_CONFIG` tcl commands.\r\n- Fixed synthesis always being rerun even if dependencies didn't changed.",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.4.2",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.4.2",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.4.2",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/51992373",
+                "release_id": 51992373,
+                "date_created": "2021-10-25T16:21:04Z",
+                "date_published": "2021-10-25T16:28:40Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/50799840",
+                "tag": "v1.4.1",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "Fix OpenCL events being constructed/destructed when simulating OpenCL behavior causing crashes in simulation mode.",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.4.1",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.4.1",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.4.1",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/50799840",
+                "release_id": 50799840,
+                "date_created": "2021-10-05T09:18:32Z",
+                "date_published": "2021-10-05T09:19:16Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/50040876",
+                "tag": "v1.4.0",
+                "name": "v1.4.0",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "`DataPack` vectors of types that are not byte-aligned are now tightly packed.",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.4.0",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.4.0",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.4.0",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/50040876",
+                "release_id": 50040876,
+                "date_created": "2021-09-22T08:56:22Z",
+                "date_published": "2021-09-22T08:58:04Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/49999255",
+                "tag": "v1.3.2",
+                "name": "v1.3.2",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "Fix `ConstLog2`.",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.3.2",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.3.2",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.3.2",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/49999255",
+                "release_id": 49999255,
+                "date_created": "2021-09-21T16:28:27Z",
+                "date_published": "2021-09-21T16:29:45Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/49996138",
+                "tag": "v1.3.1",
+                "name": "v1.3.1",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "Split `add_vitis_kernel` into a separate `add_vitis_program` function, so that multiple kernels can be linked together.",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.3.1",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.3.1",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.3.1",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/49996138",
+                "release_id": 49996138,
+                "date_created": "2021-09-21T15:44:01Z",
+                "date_published": "2021-09-21T15:44:42Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/49540838",
+                "tag": "v1.3.0",
+                "name": "v1.3.0",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "This release introduces a major new feature: the `add_vitis_kernel` function in `FindVitis.cmake`, which creates all the necessary targets to build for hardware emulation and hardware from the specified kernel files.\r\n\r\nUsers no longer have to use `add_custom_command` and `add_custom_target` to build their kernels, but can rely on hlslib to do the CMake heavy lifting for this, including all the dependencies and configuration flags, which have shorthands in the interface.",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.3.0",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.3.0",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.3.0",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/49540838",
+                "release_id": 49540838,
+                "date_created": "2021-09-14T15:49:46Z",
+                "date_published": "2021-09-14T15:52:00Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/49442448",
+                "tag": "v1.2.2",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "Changes include:\r\n- Updated `catch.cpp`\r\n- Fixes for HBM support.\r\n- Updates to default values in the CMake scripts.\r\n- README updated to reflect newer versions of Vitis.",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.2.2",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.2.2",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.2.2",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/49442448",
+                "release_id": 49442448,
+                "date_created": "2021-09-13T09:41:12Z",
+                "date_published": "2021-09-13T09:43:38Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/45552320",
+                "tag": "v1.2.1",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "Updates and fixes to HBM support for Xilinx FPGAs.",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.2.1",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.2.1",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.2.1",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/45552320",
+                "release_id": 45552320,
+                "date_created": "2021-07-01T11:14:01Z",
+                "date_published": "2021-07-01T11:14:37Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/43854636",
+                "tag": "v1.2.0",
+                "name": "v1.2.0",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "First release with support for HBM on the Xilinx Alveo U280 FPGA by using a new interface for allocation, which requires both the type of memory to use (DDR/HBM) and the bank number (0-31).",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.2.0",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.2.0",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.2.0",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/43854636",
+                "release_id": 43854636,
+                "date_created": "2021-05-31T13:13:20Z",
+                "date_published": "2021-05-31T13:14:52Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/43617098",
+                "tag": "v1.1.1",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "Last tag that might support pre-Vitis devices (many things might already have broken, since we haven't tested pre-Vitis SDAccel or SDX for a while). Past this tag, only the Vitis-based build flow is intended to be supported (some components might work by accident).",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.1.1",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.1.1",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.1.1",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/43617098",
+                "release_id": 43617098,
+                "date_created": "2021-04-30T12:39:14Z",
+                "date_published": "2021-05-26T15:51:27Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/40678112",
+                "tag": "v1.1.0",
+                "name": "v1.1.0",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "- The previously deprecated `FindSDAccel.cmake` has been removed.\r\n- The Xilinx header `SDAccel.h` has been deprecated in favor of `OpenCL.h`.\r\n- Dataflow functions can now be nested.\r\n- Including hlslib as a subproject now exposes Xilinx and Intel headers and libraries in the interface, if found.\r\n- If not built as the primary project, documentation and tests will not be built.\r\n- `std::vector<T>` was replaced with `std::unique_ptr<T[]>` for Xilinx simulation to avoid issues with `std::vector<bool>`.\r\n- `FindVitis.cmake` now exposes the `platforminfo` binary that can be used to query the device used by Vitis platforms.\r\n- Assorted minor fixes.",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.1.0",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.1.0",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.1.0",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/40678112",
+                "release_id": 40678112,
+                "date_created": "2021-03-30T07:35:33Z",
+                "date_published": "2021-03-30T07:39:37Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/definelicht/hlslib/releases/30985049",
+                "tag": "v1.0.0",
+                "name": "v1.0.0",
+                "author": {
+                    "name": "definelicht",
+                    "type": "User"
+                },
+                "description": "First \"official\" release of hlslib, coinciding with implementing support for Vitis 2020.1.\r\nIt is still recommended to use the head of master to gain quick access to bug fixes.",
+                "tarball_url": "https://api.github.com/repos/definelicht/hlslib/tarball/v1.0.0",
+                "zipball_url": "https://api.github.com/repos/definelicht/hlslib/zipball/v1.0.0",
+                "html_url": "https://github.com/definelicht/hlslib/releases/tag/v1.0.0",
+                "url": "https://api.github.com/repos/definelicht/hlslib/releases/30985049",
+                "release_id": 30985049,
+                "date_created": "2020-09-09T14:44:46Z",
+                "date_published": "2020-09-09T14:46:55Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "There are a few ways:\n- Grab the headers and/or CMake files you need and stick them in your project.\n- Install hlslib using the standard CMake installation procedure to a location of your choice.\n- Clone this repository into your project as a git submodule and integrate it, with or without CMake.\n",
+                "type": "Text_excerpt",
+                "original_header": "How do I install it?",
+                "parent_header": [
+                    "Quick introduction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We have Doxygen! Set the CMake flag `HLSLIB_BUILD_DOCUMENTATION=ON` to generate the docs. \n",
+                "original_header": "Feature overview"
+            },
+            "confidence": 0.9005261130881578,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "For integrating the Xilinx or Intel HLS tools in your project, the `FindVitis.cmake` and `FindIntelFPGAOpenCL.cmake` are provided in the `cmake` subdirectory. The scripts will set all necessary variables required to build both host and device code. It also provides the `add_vitis_kernel` and `add_vitis_program` functions, which will produce targets for building hardware emulation, hardware, and high-level synthesis. \nExample `CMakeLists.txt`:\n```cmake\nset(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} hlslib/cmake)\nfind_package(Vitis REQUIRED)\n\nadd_executable(MyHostExecutable src/MyHostExecutable.cpp)\ninclude_directories(${Vitis_INCLUDE_DIRS})\ntarget_link_libraries(MyHostExecutable ${Vitis_LIBRARIES})\n\n# Will populate the \"hw\", \"hw_emu\", and \"synthesis\" targets\nadd_vitis_kernel(MyKernel FILES src/MyKernel.cpp)\nadd_vitis_program(MyKernel xilinx_u250_gen3x16_xdma_3_1_202020_1)\n``` \nKernels can then be built with:\n```bash\nmake hw\n```\nThe `add_vitis_kernel` and `add_vitis_program` functions takes a number of optional arguments that can be used to configure the hardware targets:\n```cmake\nadd_vitis_kernel(MyKernel\n                 FILES src/MyKernel.cpp src/MyKernelHelper.cpp\n                 # All flags below this are optional keywords, and any\n                 # combination of them can be specified/not specified.\n                 KERNEL MyKernelName  # If different from target name\n                 HLS_FLAGS \"-DMY_IMPORTANT_DEFINITION -O2\"\n                 DEPENDS include/MyHeader.h include/OtherDependency.h\n                 INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include hlslib/include\n                 PORT_MAPPING \"ddr0:DDR[0]\" \"ddr1:DDR[1]\")\nadd_vitis_kernel(MyOtherKernel\n                 FILES src/MyOtherKernel.cpp)\nadd_vitis_program(MyProgram\n                  xilinx_u250_gen3x16_xdma_3_1_202020_1  # Name of Vitis platform\n                  # All flags below this are optional keywords, and any\n                  # combination of them can be specified/not specified.\n                  KERNELS MyKernel       # If KERNELS is not specified, the function checks for a kernel\n                          MyOtherKernel  # with the same name as specified for the program\n                  # Connect multiple linked kernels using streaming interfaces\n                  CONNECTIVITY \"MyKernel_1.stream_out:MyOtherKernel_1.stream_in\"\n                  CLOCK 400  # Target a different clock frequency than the default\n                  CONFIG scripts/my_config.cfg  # Given as --config to Vitis\n                  SAVE_TEMPS ON  # Forwards --save-temps to Vitis\n                  BUILD_FLAGS \"-Os --export_script\"\n                  DEBUGGING ON  # Enables Chipscope debugging on all interfaces\n                  PROFILING ON)  # Enables profiling for stalls, data transfers, and execution\n```\n \n",
+                "original_header": "CMake integration"
+            },
+            "confidence": 0.986374556491425,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "On Ubuntu, the following package might need to be installed to run hardware emulation:\n```\nsudo apt install libc6-dev-i386\n```\n \n",
+                "original_header": "Ubuntu packages"
+            },
+            "confidence": 0.9999999998936602,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "_If you use hlslib in your project, please let us know, so we can add you to the list._\n \n",
+                "original_header": "Projects using hlslib"
+            },
+            "confidence": 0.9833727145991717,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Just `#include` the header(s) you are interested in, and/or put the CMake files somewhere in your project directory and\nadd their path to your `${CMAKE_MODULE_PATH}`. You can see an example [here](https://github.com/spcl/gemm_hls)!\n\nOfficially supported versions of Vitis currently include 2021.2, 2021.1, 2020.2, 2020.1, and 2019.2. Older versions (including SDx and SDAccel) _might_ work, but should be used at your own discretion.\n",
+                "type": "Text_excerpt",
+                "original_header": "How do I use it?",
+                "parent_header": [
+                    "Quick introduction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "- [1] Johannes de Fine Licht, Grzegorz Kwasniewski, and Torsten Hoefler. _\"Flexible Communication Avoiding Matrix Multiplication on FPGA with High-Level Synthesis\"_, in Proceedings of 28th ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA'20).\n- [2] Tiziano De Matteis, Johannes de Fine Licht, Jakub Ber\u00e1nek, and Torsten Hoefler. _\"Streaming Message Interface: High-Performance Distributed Memory Programming on Reconfigurable Hardware\"_, in Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC'19).\n- [3] Dionysios Diamantopoulos, and Christoph Hagleitner. _\"HelmGemm: Managing GPUs and FPGAs for transprecision GEMM workloads in containerized environments.\"_, in Proceedings of the 2019 IEEE 30th International Conference on Application-specific Systems, Architectures and Processors (ASAP'19).\n- [4] Tal Ben-Nun, Johannes de Fine Licht, Alexandros Nikolaos Ziogas, Timo Schneider, and Torsten Hoefler. _\"Stateful Dataflow Multigraphs: A Data-Centric Model for High-Performance Parallel Programs\"_, in Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC'19).\n- [5] Ian Colbert, Jake Daly, Ken Kreutz-Delgado, and Srinjoy Das. _\"A Competitive Edge: Can FPGAs Beat GPUs at DCNN Inference Acceleration in Resource-Limited Edge Computing Applications?\"_, arXiv:2102.00294.\n",
+                "type": "Text_excerpt",
+                "original_header": "References"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{hlslib,\n    year = {2019},\n    journal = {arXiv:1910.04436},\n    author = {de~Fine~Licht, Johannes and Hoefler, Torsten},\n    title = {{hlslib}: Software Engineering for Hardware Design},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "{hlslib}: Software Engineering for Hardware Design",
+                "author": "de~Fine~Licht, Johannes and Hoefler, Torsten"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2102.00294"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1910.04436 (2019).\n```\n\n## References\n\n- [1] Johannes de Fine Licht, Grzegorz Kwasniewski, and Torsten Hoefler. _\"Flexible Communication Avoiding Matrix Multiplication on FPGA with High-Level Synthesis\"_, in Proceedings of 28th ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA'20).\n- [2] Tiziano De Matteis, Johannes de Fine Licht, Jakub Ber\u00e1nek, and Torsten Hoefler. _\"Streaming Message Interface: High-Performance Distributed Memory Programming on Reconfigurable Hardware\"_, in Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC'19).\n- [3] Dionysios Diamantopoulos, and Christoph Hagleitner. _\"HelmGemm: Managing GPUs and FPGAs for transprecision GEMM workloads in containerized environments.\"_, in Proceedings of the 2019 IEEE 30th International Conference on Application-specific Systems, Architectures and Processors (ASAP'19).\n- [4] Tal Ben-Nun, Johannes de Fine Licht, Alexandros Nikolaos Ziogas, Timo Schneider, and Torsten Hoefler. _\"Stateful Dataflow Multigraphs: A Data-Centric Model for High-Performance Parallel Programs\"_, in Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC'19).\n- [5] Ian Colbert, Jake Daly, Ken Kreutz-Delgado, and Srinjoy Das. _\"A Competitive Edge: Can FPGAs Beat GPUs at DCNN Inference Acceleration in Resource-Limited Edge Computing Applications?\"_, https://arxiv.org/abs/2102.00294."
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2102.00294."
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1910.04436"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/definelicht/hlslib/master/README.md"
+        }
+    ]
+}

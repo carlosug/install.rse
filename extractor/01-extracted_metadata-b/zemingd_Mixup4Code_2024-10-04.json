@@ -1,0 +1,309 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:25:27"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/zemingd/Mixup4Code",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "zemingd",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-01-09T06:09:57Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-18T12:51:30Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "[SANER 2023] MixCode: Enhancing Code Classification by Mixup-Based Data Augmentation",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIXCODE aims to effectively supplement valid training data without manually collecting or labeling new code, inspired by the recent advance named Mixup in computer vision. Specifically, 1) first utilize multiple code refactoring methods to generate transformed code that holds consistent labels with the original data; 2) adapt the Mixup technique to linearly mix the original code with the transformed code to augment the training data.\n\n<div align=center><img src=\"img/overview.png\"></div>\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Introduction",
+                "parent_header": [
+                    "MixCode: Enhancing Code Classification by Mixup-Based Data Augmentation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/zemingd/Mixup4Code/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Implementation of SANER2023 paper MixCode: Enhancing Code Classification by Mixup-Based Data Augmentation [[arxiv]](https://arxiv.org/abs/2210.03003). \nWe build this project on the top of [Project_CodeNet](https://github.com/IBM/Project_CodeNet). Please refer to this project for more details.\n \n",
+                "original_header": "MixCode: Enhancing Code Classification by Mixup-Based Data Augmentation"
+            },
+            "confidence": 0.969118380042441,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zemingd/Mixup4Code/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Mixup4Code",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "zemingd/Mixup4Code",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/zemingd/Mixup4Code/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/zemingd/Mixup4Code/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 12,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/zemingd/Mixup4Code/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 184090
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 430
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/zemingd/Mixup4Code/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/zemingd/Mixup4Code/main/GraphCodeBERT/parser/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "On Ubuntu:\n\n- Task: Classification\n\n```shell\nPython (>=3.6)\nTensorFlow (version 2.3.0) \nKeras (version 2.4.3)\nCUDA 10.1\ncuDNN (>=7.6)\n```\n\n- Task: Bug Detection\n```shell\nPython (>=3.6)\nPytorch (version 1.6.0) \nCUDA 10.1\ncuDNN (>=7.6)\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "MixCode: Enhancing Code Classification by Mixup-Based Data Augmentation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/zemingd/Mixup4Code/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you use the code in your research, please cite:\n```bibtex\n    @inproceedings{dong2023mixcode,\n      title={MixCode: Enhancing Code Classification by Mixup-Based Data Augmentation},\n      author={Dong, Zeming and Hu, Qiang and Guo, Yuejun and Cordy, Maxime and Papadakis, Mike and Zhang, Zhenya and Le Traon, Yves and Zhao, Jianjun},\n      booktitle={2023 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},\n      pages={379--390},\n      year={2023},\n      organization={IEEE}\n    }\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "MixCode: Enhancing Code Classification by Mixup-Based Data Augmentation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/zemingd/Mixup4Code/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{dong2023mixcode,\n    organization = {IEEE},\n    year = {2023},\n    pages = {379--390},\n    booktitle = {2023 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},\n    author = {Dong, Zeming and Hu, Qiang and Guo, Yuejun and Cordy, Maxime and Papadakis, Mike and Zhang, Zhenya and Le Traon, Yves and Zhao, Jianjun},\n    title = {MixCode: Enhancing Code Classification by Mixup-Based Data Augmentation},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "MixCode: Enhancing Code Classification by Mixup-Based Data Augmentation",
+                "author": "Dong, Zeming and Hu, Qiang and Guo, Yuejun and Cordy, Maxime and Papadakis, Mike and Zhang, Zhenya and Le Traon, Yves and Zhao, Jianjun"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zemingd/Mixup4Code/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- pip install torch==1.4.0\n- pip install transformers==2.5.0\n- pip install filelock\n \n",
+                "original_header": "CodeBERT/GraphCodeBERT for Classification Tasks"
+            },
+            "confidence": 0.9999999999999645,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zemingd/Mixup4Code/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```shell\ncd CodeBERT\n\npython run.py \\\n    --output_dir=./saved_models \\\n    --tokenizer_name=microsoft/codebert-base \\\n    --model_name_or_path=microsoft/codebert-base \\\n    --do_train \\\n    --num_train_epochs 50 \\\n    --block_size 256 \\\n    --train_batch_size 8 \\\n    --eval_batch_size 16 \\\n    --learning_rate 2e-5 \\\n    --max_grad_norm 1.0 \\\n    --num_labels 250 \\  # Number Classifications\n    --seed 123456  2>&1 | tee train.log\n```\n```shell\ncd GraphCodeBERT\n\npython run.py \\\n    --tokenizer_name=microsoft/graphcodebert-base \\\n    --model_name_or_path=microsoft/graphcodebert-base \\\n    --config_name microsoft/graphcodebert-base \\\n    --do_train \\\n    --num_train_epochs 50 \\\n    --code_length 384 \\\n    --data_flow_length 384 \\\n    --train_batch_size 8 \\\n    --eval_batch_size 16 \\\n    --learning_rate 2e-5 \\\n    --max_grad_norm 1.0 \\\n    --evaluate_during_training \\\n    --num_labels 250 \\  # Number Classifications\n    --seed 123456  2>&1 | tee train.log\n```\n \n",
+                "original_header": "Fine-Tune"
+            },
+            "confidence": 0.9999999996617248,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zemingd/Mixup4Code/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Java250: https://developer.ibm.com/exchanges/data/all/project-codenet/\n- Python800: https://developer.ibm.com/exchanges/data/all/project-codenet/\n- Refactory: https://github.com/githubhuyang/refactory\n- CodRep: https://github.com/KTH/CodRep-competition\n \n",
+                "original_header": "Dataset"
+            },
+            "confidence": 0.9999999922586653,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/zemingd/Mixup4Code/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "MixCode: Enhancing Code Classification by Mixup-Based Data Augmentation"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zemingd/Mixup4Code/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/zemingd/Mixup4Code/main/img/overview.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zemingd/Mixup4Code/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2210.03003"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/zemingd/Mixup4Code/main/README.md"
+        }
+    ]
+}

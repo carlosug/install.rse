@@ -1,0 +1,431 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 16:21:23"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ma-labo/DeepSeer",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ma-labo",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-01-25T03:58:58Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-13T02:04:50Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 Zhijie Wang\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/LICENSE.MD"
+        },
+        {
+            "result": {
+                "value": "This project is released under the [MIT license](https://github.com/momentum-lab-workspace/DeepSeer/blob/main/LICENSE.MD).\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Code for CHI'23 - DeepSeer",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "DeepSeer is an interactive system for developers to interpret and debug recurrent (stateful) neural networks. \nThis repository contains the official implementation of our related paper: \n",
+                "original_header": "DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction"
+            },
+            "confidence": 0.9803064274799943,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "DeepSeer",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ma-labo/DeepSeer",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ma-labo/DeepSeer/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ma-labo/DeepSeer/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/momentum-lab-workspace/deepseer/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 130483
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 81631
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 8796
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "RAML",
+                "name": "RAML",
+                "type": "Programming_language",
+                "size": 649
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 364
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "If you only want to try our tool with provided models, you can easily follow the instruction below to setup.\nNote that, only necessary scrips about state abstraction techniques are included in the backend (`server/deepstellar_backend`).\n\nIf you want to use DeepSeer with your own model, please follow the folder `ml_dev` for more details.\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting Started",
+                "parent_header": [
+                    "DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        },
+        {
+            "result": {
+                "value": "*We suggest use virtual environment to avoid messing up your own environments.*\n\n~~~sh\n$ python -m venv ./venv\n$ source ./venv/bin/activate\n$ pip install -r ./server/deepstellar_backend/requirements.txt\n~~~\n",
+                "type": "Text_excerpt",
+                "original_header": "Python &gt;= 3.6",
+                "parent_header": [
+                    "DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction",
+                    "Getting Started",
+                    "Environments Set-up"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        },
+        {
+            "result": {
+                "value": "~~~sh\n$ cd ./web/dashboard\n$ npm install\n~~~\n",
+                "type": "Text_excerpt",
+                "original_header": "NPM &gt;= 7",
+                "parent_header": [
+                    "DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction",
+                    "Getting Started",
+                    "Environments Set-up"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        },
+        {
+            "result": {
+                "value": "~~~sh\n$ npm start\n~~~\nCopy the url and open it in browser.\n",
+                "type": "Text_excerpt",
+                "original_header": "Quick start",
+                "parent_header": [
+                    "DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction",
+                    "Getting Started",
+                    "Basic Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        },
+        {
+            "result": {
+                "value": "~~~sh\n$ source ./venv/bin/activate\n$ cd ./server/deepstellar_backend\n$ python server.py\n~~~\n",
+                "type": "Text_excerpt",
+                "original_header": "Start backend",
+                "parent_header": [
+                    "DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction",
+                    "Getting Started",
+                    "Basic Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The main branch was set to a binary classification RNN model trained on Toxic dataset. To switch, please checkout different branches (remember to restart backend).\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Switch between different models",
+                "parent_header": [
+                    "DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction",
+                    "Getting Started",
+                    "Basic Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "*We suggest use virtual environment to avoid messing up your own environments.*\n\n~~~sh\n$ python -m venv ./venv\n$ source ./venv/bin/activate\n$ pip install -r ./server/deepstellar_backend/requirements.txt\n~~~\n",
+                "type": "Text_excerpt",
+                "original_header": "Python &gt;= 3.6",
+                "parent_header": [
+                    "DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction",
+                    "Getting Started",
+                    "Environments Set-up"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        },
+        {
+            "result": {
+                "value": "~~~sh\n$ cd ./web/dashboard\n$ npm install\n~~~\n",
+                "type": "Text_excerpt",
+                "original_header": "NPM &gt;= 7",
+                "parent_header": [
+                    "DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction",
+                    "Getting Started",
+                    "Environments Set-up"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you found our paper/code useful in your research, please consider citing:\n\n```\n@inproceedings{wang2023deepseer,\n author = {Wang, Zhijie and Huang, Yuheng and Song, Da and Ma, Lei and Zhang, Tianyi},\n title = {DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction}, \n year = {2023}, \n isbn = {9781450394215}, \n publisher = {Association for Computing Machinery}, \n address = {New York, NY, USA},\n doi = {10.1145/3544548.3580852},\n booktitle = {Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems}, \n articleno = {740}, \n numpages = {20}, \n location = {Hamburg, Germany}, \n series = {CHI '23}\n} \n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{wang2023deepseer,\n    series = {CHI '23},\n    location = {Hamburg, Germany},\n    numpages = {20},\n    articleno = {740},\n    booktitle = {Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},\n    doi = {10.1145/3544548.3580852},\n    address = {New York, NY, USA},\n    publisher = {Association for Computing Machinery},\n    isbn = {9781450394215},\n    year = {2023},\n    title = {DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction},\n    author = {Wang, Zhijie and Huang, Yuheng and Song, Da and Ma, Lei and Zhang, Tianyi},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1145/3544548.3580852",
+                "title": "DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction",
+                "author": "Wang, Zhijie and Huang, Yuheng and Song, Da and Ma, Lei and Zhang, Tianyi"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "Special thanks to our pilot study participants for helping us improve DeepSeer.\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgement",
+                "parent_header": [
+                    "DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/./figs/DeepSeer-UI.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/momentum-lab-workspace/deepseer/main/README.md"
+        }
+    ]
+}

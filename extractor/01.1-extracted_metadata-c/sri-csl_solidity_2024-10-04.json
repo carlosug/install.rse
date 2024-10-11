@@ -1,0 +1,885 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:34:52"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/SRI-CSL/solidity",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "SRI-CSL",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-11-17T06:35:21Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-05T09:07:18Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/gpl-3.0",
+                "type": "License",
+                "name": "GNU General Public License v3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "spdx_id": "GPL-3.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Solidity is licensed under [GNU General Public License v3.0](LICENSE.txt).\n\nSome third-party code has its [own licensing terms](cmake/templates/license.h.in).\n\nAny contributions are welcome!\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "The Solidity Contract-Oriented Programming Language"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "This is solc-verify, a modular verifier for Solidity.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "When deploying contracts, you should use the latest released version of\nSolidity. This is because breaking changes, as well as new features and bug fixes are\nintroduced regularly. We currently use a 0.x version\nnumber [to indicate this fast pace of change](https://semver.org/#spec-item-4).\n \n",
+                "original_header": "Background"
+            },
+            "confidence": 0.9896149510810508,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is an extended version of the compiler that is able to perform automated formal verification on Solidity code using annotations and modular program verification. For more information on building, installing and examples, see [SOLC-VERIFY-README.md](SOLC-VERIFY-README.md). \n",
+                "original_header": "Formal Verification Extension"
+            },
+            "confidence": 0.9201637238556639,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "solidity",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "SRI-CSL/solidity",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SRI-CSL/solidity/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SRI-CSL/solidity/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 50,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "ethereum, formal-specification, formal-verification, solidity",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 14,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/sri-csl/solidity/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 5807306
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Solidity",
+                "name": "Solidity",
+                "type": "Programming_language",
+                "size": 2592775
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 171596
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 84833
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CMake",
+                "name": "CMake",
+                "type": "Programming_language",
+                "size": 77684
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 59283
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 14708
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 5018
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Batchfile",
+                "name": "Batchfile",
+                "type": "Programming_language",
+                "size": 4371
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "PowerShell",
+                "name": "PowerShell",
+                "type": "Programming_language",
+                "size": 2519
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SRI-CSL/solidity/releases/29077816",
+                "tag": "v0.5.17-solc-verify",
+                "author": {
+                    "name": "dddejan",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/SRI-CSL/solidity/tarball/v0.5.17-solc-verify",
+                "zipball_url": "https://api.github.com/repos/SRI-CSL/solidity/zipball/v0.5.17-solc-verify",
+                "html_url": "https://github.com/SRI-CSL/solidity/releases/tag/v0.5.17-solc-verify",
+                "url": "https://api.github.com/repos/SRI-CSL/solidity/releases/29077816",
+                "release_id": 29077816,
+                "date_created": "2020-07-28T16:44:42Z",
+                "date_published": "2020-07-29T15:18:05Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "code_of_conduct": [
+        {
+            "result": {
+                "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to making participation in our project and\nour community a harassment-free experience for everyone, regardless of age, body\nsize, disability, ethnicity, sex characteristics, gender identity and expression,\nlevel of experience, education, socio-economic status, nationality, personal\nappearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\n  advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic\n  address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned to this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces\nwhen an individual is representing the project or its community. Examples of\nrepresenting a project or community include using an official project e-mail\naddress, posting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event. Representation of a project may be\nfurther defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the project team at chris@ethereum.org which only goes to\nChristian Reitwiessner or axic@ethereum.org which only goes to Alex Beregszaszi.\nTo report an issue involving either of them please email Hudson Jameson at\nhudson@ethereum.org.\nAll complaints will be reviewed and investigated and will result in a response that\nis deemed necessary and appropriate to the circumstances. The project team is\nobligated to maintain confidentiality with regard to the reporter of an incident.\nFurther details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,\navailable at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html\n\n[homepage]: https://www.contributor-covenant.org\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/CODE_OF_CONDUCT.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# Contribution Guidelines\n\nPlease see our contribution guidelines in [the Solidity documentation](https://docs.soliditylang.org/en/latest/contributing.html).\n\nThank you for your help!\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/CONTRIBUTING.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/docker/runsv.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/common.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/isoltest.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/get_version.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/soltest.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/test_emscripten.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/build_emscripten.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/get_nightly_version.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/docs_version_pragma_check.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/uniqueErrors.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/report_errors.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/check_symlinks.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/tests.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/test_antlr_grammar.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/ASTImportTest.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/install_static_z3.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/install_obsolete_jsoncpp_1_7_4.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/install_deps.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/check_style.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/yul_coverage.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/run_proofs.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/common_cmdline.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/docker_deploy_manual.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/release.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/download_ossfuzz_corpus.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/install_solc_verify_deps.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/release_ppa.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/install_cmake.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/create_source_tarball.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/docs.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/wasm-rebuild/rebuild.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/wasm-rebuild/docker-scripts/rebuild_tags.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/wasm-rebuild/docker-scripts/rebuild_current.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/wasm-rebuild/docker-scripts/genbytecode.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/wasm-rebuild/docker-scripts/patch.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/ci/buildpack-deps_test_ubuntu2004.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/ci/build_emscripten.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/ci/buildpack-deps_test_emscripten.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/ci/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/ci/build_ossfuzz.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/ci/buildpack-deps_test_ubuntu2004.clang.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/ci/buildpack-deps_test_ubuntu1804.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/ci/docker_upgrade.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/ci/buildpack-deps_test_ubuntu1604.clang.ossfuzz.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/bytecodecompare/storebytecode.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/deps-ppa/static_z3.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/endToEndExtraction/create_traces.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/chk_shellscripts/chk_shellscripts.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/.circleci/soltest.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/.circleci/osx_install_dependencies.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/.circleci/soltest_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/scripts/Dockerfile"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Instructions about how to build and install the Solidity compiler can be\nfound in the [Solidity documentation](https://docs.soliditylang.org/en/latest/installing-solidity.html#building-from-source).\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Build and Install",
+                "parent_header": [
+                    "The Solidity Contract-Oriented Programming Language"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Solidity is still under development. Contributions are always welcome!\nPlease follow the\n[Developers Guide](https://docs.soliditylang.org/en/latest/contributing.html)\nif you want to help. \n",
+                "original_header": "Development"
+            },
+            "confidence": 0.9493430443335046,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is an extended version of the compiler that is able to perform automated formal verification on Solidity code using annotations and modular program verification. For more information on building, installing and examples, see [SOLC-VERIFY-README.md](SOLC-VERIFY-README.md). \n",
+                "original_header": "Formal Verification Extension"
+            },
+            "confidence": 0.9900360264538864,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "A \"Hello World\" program in Solidity is of even less use than in other languages, but still:\n\n```solidity\npragma solidity >=0.6.0 <0.8.0;\n\ncontract HelloWorld {\n  function helloWorld() external pure returns (string memory) {\n    return \"Hello, World!\";\n  }\n}\n```\n\nTo get started with Solidity, you can use [Remix](https://remix.ethereum.org/), which is a\nbrowser-based IDE. Here are some example contracts:\n\n1. [Voting](https://docs.soliditylang.org/en/latest/solidity-by-example.html#voting)\n2. [Blind Auction](https://docs.soliditylang.org/en/latest/solidity-by-example.html#blind-auction)\n3. [Safe remote purchase](https://docs.soliditylang.org/en/latest/solidity-by-example.html#safe-remote-purchase)\n4. [Micropayment Channel](https://docs.soliditylang.org/en/latest/solidity-by-example.html#micropayment-channel)\n",
+                "type": "Text_excerpt",
+                "original_header": "Example",
+                "parent_header": [
+                    "The Solidity Contract-Oriented Programming Language"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "The Solidity documentation is hosted at [Read the docs](https://docs.soliditylang.org).\n",
+                "type": "Text_excerpt",
+                "original_header": "Documentation",
+                "parent_header": [
+                    "The Solidity Contract-Oriented Programming Language"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/sri-csl/solidity/wiki",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9123334596071944,
+            "technique": "supervised_classification"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "The Solidity Contract-Oriented Programming Language"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1907.04262"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2001.03256"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sri-csl/solidity/0.7/README.md"
+        }
+    ]
+}

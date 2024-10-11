@@ -1,0 +1,271 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:21:05"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/qibinhang/SeaM",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "qibinhang",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-12-14T02:51:10Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-11T07:21:31Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Reusing Deep Neural Network Models through Model Re-engineering (ICSE'23)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Training deep neural network (DNN) models, which has become an important task in today's software development, is often costly in terms of computational resources and time. With the inspiration of software reuse, building DNN models through reusing existing ones has gained increasing attention recently.  Prior approaches to DNN model reuse have two main limitations: 1) reusing the entire model, while only a small part of the model's functionalities (labels) are required, would cause much overhead (e.g., computational and time costs for inference), and 2) model reuse would inherit the defects and weaknesses of the reused model, and hence put the new system under threats of security attack. To solve the above problem, we propose SeaM, a tool that re-engineers a trained DNN model to improve its reusability. Specifically, given a target problem and a trained model, SeaM utilizes a gradient-based search method to search for the model's weights that are relevant to the target problem. The re-engineered model that only retains the relevant weights is then reused to solve the target problem. Evaluation results on widely-used models show that the re-engineered models produced by SeaM only contain 10.11% weights of the original models, resulting 42.41% reduction in terms of inference time. For the target problem, the re-engineered models even outperform the original models in classification accuracy by 5.85%. Moreover, reusing the re-engineered models inherits an average of 57% fewer defects than reusing the entire model. We believe our approach to reducing reuse overhead and defect inheritance is one important step forward for practical model reuse. \n",
+                "original_header": "Abstract"
+            },
+            "confidence": 0.9714979199005153,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/qibinhang/SeaM/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We investigate the impact of the reduction in the number of weights on the ACC and DIR.\nA threshold $t$ is used to early stop model re-engineering when the rate of removed weights reaches the threshold.\nThe following figure shows the ACC and DIR of the fine-tuned ResNet18 with different values of $t$, where $t=0.3, 0.4, 0.5, 0.6, 0.7$.\nWe find that, as the number of weights reduces, the DIR reduces significantly, while the ACC is stable overall. \nThe results demonstrate the effectiveness of model re-engineering in reducing the DIR and the robustness of SeaM. \n",
+                "original_header": "The impact of reducing the number of weights on ACC and DIR. (for RQ3)"
+            },
+            "confidence": 0.9467906840287665,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/qibinhang/SeaM/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "SeaM",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "qibinhang/SeaM",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/qibinhang/SeaM/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/qibinhang/SeaM/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "dnn-modularization, model-reengineering, model-reuse",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/qibinhang/SeaM/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 184060
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/qibinhang/SeaM/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "+ advertorch 0.2.3<br>\n+ fvcore 0.1.5.post20220512<br>\n+ matplotlib 3.4.2<br>\n+ numpy 1.19.2<br>\n+ python 3.8.10<br>\n+ pytorch 1.8.1<br>\n+ torchvision 0.9.0<br>\n+ tqdm 4.61.0<br>\n+ GPU with CUDA support is also needed\n\n<br>\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "Reusing Deep Neural Network Models through Model Re-engineering"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/qibinhang/SeaM/main/README.md"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "1. We provide the trained models and datasets used in the experiments, as well as the corresponding re-engineered models.<br>\nOne can download `data/` from [here](https://mega.nz/file/tX91ACpR#CSbQ2Xariha7_HLavE_6pKg4FoO5axOPemlv5J0JYwY) and then move it to `SeaM/`.<br>\nThe trained models will be downloaded automatically by PyTorch when running our project. If the download fails, please move our provided trained models to the folder according to the failure information given by PyTorch.<br>\nDue to the huge size of ImageNet, please download it from its [webpage](https://www.image-net.org/).\n2. Modify `self.root_dir` in `src/global_config.py`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Downloading experimental data",
+                "parent_header": [
+                    "Reusing Deep Neural Network Models through Model Re-engineering"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/qibinhang/SeaM/main/README.md"
+        }
+    ],
+    "faq": [
+        {
+            "result": {
+                "value": "1. Go to the directory of experiments related to the binary classification problems.\n```commandline\ncd src/binary_class\n```\n2. Re-engineer VGG16-CIFAR10 on a binary classification problem.\n```commandline\npython model_reengineering.py --model vgg16 --dataset cifar10 --target_class 0 --lr_mask 0.01 --alpha 1\n```\n3. Compute the number of FLOPs required by the original and re-engineered VGG16-CIFAR10, respectively. This command also presents the accuracy of models.\n```commandline\npython calculate_flop.py --model vgg16 --dataset cifar10 --target_class 0 --lr_mask 0.01 --alpha 1\n```\n4. Compute the time cost for inference required by the original and re-engineered VGG16-CIFAR10, respectively. This command also presents the number of a model's weights.\n```commandline\npython calculate_time_cost.py --model vgg16 --dataset cifar10 --target_class 0 --lr_mask 0.01 --alpha 1\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Re-engineering on binary classification problems",
+                "parent_header": [
+                    "Reusing Deep Neural Network Models through Model Re-engineering",
+                    "Direct model reuse"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/qibinhang/SeaM/main/README.md"
+        },
+        {
+            "result": {
+                "value": "1. Go to the directory of experiments related to the multi-class classification problems.\n```commandline\ncd src/multi_class\n```\n2. Re-engineer ResNet20-CIFAR100 on a multi-class classification problem.\n```commandline\npython model_reengineering.py --model resnet20 --dataset cifar100 --target_superclass_idx 0 --lr_mask 0.1 --alpha 2\n```\n3. Compute the number of FLOPs required by the original and re-engineered ResNet20-CIFAR100, respectively. This command also presents the accuracy of models. \n```commandline\npython calculate_flop.py --model resnet20 --dataset cifar100 --target_superclass_idx 0 --lr_mask 0.1 --alpha 2\n```\n4. Compute the time cost for inference required by the original and re-engineered ResNet20-CIFAR100, respectively. This command also presents the number of a model's weights. \n```commandline\npython calculate_time_cost.py --model resnet20 --dataset cifar100 --target_superclass 0 --lr_mask 0.1 --alpha 2\n```\n\n***NOTE***: When computing the time cost for inference, DeepSparse runs a model on several CPUs.\nThe inference process would be interfered with other active processes, leading to fluctuations in inference time cost.\nIn our experiments, we manually kill as many other processes as possible and enable the inference process to occupy the CPUs exclusively.\n",
+                "type": "Text_excerpt",
+                "original_header": "Re-engineering on multi-class classification problems",
+                "parent_header": [
+                    "Reusing Deep Neural Network Models through Model Re-engineering",
+                    "Direct model reuse"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/qibinhang/SeaM/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Reusing Deep Neural Network Models through Model Re-engineering"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/qibinhang/SeaM/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/qibinhang/SeaM/main/src/defect_inherit/prune_ratio.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/qibinhang/SeaM/main/README.md"
+        }
+    ]
+}

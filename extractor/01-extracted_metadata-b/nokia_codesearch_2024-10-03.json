@@ -1,0 +1,582 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:14:41"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/nokia/codesearch",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "nokia",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-08-27T13:04:02Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-12-11T13:38:34Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/bsd-3-clause",
+                "type": "License",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "spdx_id": "BSD-3-Clause"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "BSD 3-Clause License\n\nCopyright (c) 2020, Nokia\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or other materials provided with the distribution.\n\n* Neither the name of the copyright holder nor the names of its\n  contributors may be used to endorse or promote products derived from\n  this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Models and datasets for annotated code search.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This project contains the code to reproduce the experiments in the paper [Neural Code Search Revisited: Enhancing Code Snippet Retrieval through Natural Language Intent](https://arxiv.org/abs/2008.12193). It implements retrieval systems for annotated code snippets: pairs of a code snippet and a short natural language description. Our pretrained models and datasets are hosted on Zenodo (https://zenodo.org/record/4001602). The models and datasets will be downloaded automatically when calling `load_model`, `load_snippet_collection`, etc. (see the code examples below). \nIn addition, the project also implements some *code-only* retrieval models (BM25, NCS, UNIF) for snippet collections that do not come with descriptions. \nThe project is developed by a research team in the [Application Platforms and Software Systems Lab](https://www.bell-labs.com/our-research/areas/applications-and-platforms/) of [Nokia Bell Labs](https://www.bell-labs.com/). \n \n",
+                "original_header": "Code search"
+            },
+            "confidence": 0.935466683318719,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Below you find a table with the pretrained models. For each model, we mention based on what information it computes a snippet embedding: the description and/or the code.  \n",
+                "original_header": "Available models"
+            },
+            "confidence": 0.9720793951607147,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "In the table below you find which snippet collections can be loaded. The staqc-py-cleaned, conala-curated, and codesearchnet collections are derived from existing datasets. For staqc-py and conala-curated we did some additional processing, for the codesearchnet collections we merely load the original dataset in a format that is consistent with our code.  \n",
+                "original_header": "Available snippet collections"
+            },
+            "confidence": 0.9428674319512268,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\nIt is also possible to load a snippet collection as evaluation data. The descriptions will be used as queries. Note that this only makes sense to evaluate code-only models (i.e., models that do not use the description field).\n \n",
+                "original_header": "Available evaluation datasets"
+            },
+            "confidence": 0.9699260926657775,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The different models we implement use different kinds of training data. Code-only models are trained on pairs of code snippets and descriptions. For these models, the snippet collections are used as training data (of course you should never train on a snippet collection when you intent to use that load that collection as evaluation data as well). The USE model is fine-tuned on titles of duplicate Stack Overflow posts. You can take a look our notebooks (e.g., nbs/ncs/ncs.ipynb, nbs/tuse/tuse_tuned) to find out how the training is done/how the training data is loaded. \n",
+                "original_header": "Training data"
+            },
+            "confidence": 0.9940919342406525,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "codesearch",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "nokia/codesearch",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/nokia/codesearch/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/nokia/codesearch/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 33,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "code-reuse, code-search, deep-learning, machine-learning, natural-language-processing, transformer",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/nokia/codesearch/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 369066
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 128173
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/embeddings.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/embeddings.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/evaluate.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/evaluate.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/demo/demo.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/demo/demo.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/tbm25/tbm25.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/tbm25/tbm25.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/tbm25/experiments.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/tbm25/experiments.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/ensemble/ensemble.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/ensemble/ensemble.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/tuse/tuse_tuned.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/tuse/tuse_tuned.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/unif/unif.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/unif/unif.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/datasets/analyse_datasets.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/datasets/analyse_datasets.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/datasets/prepare-conala.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/datasets/prepare-conala.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/datasets/PACS-train-and-valid.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/datasets/PACS-train-and-valid.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/datasets/prepare-staqc.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/datasets/prepare-staqc.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/bm25/experiments.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/bm25/experiments.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/bm25/bm25.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/bm25/bm25.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/ncs/ncs.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/ncs/ncs.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/ncs/experiments.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/ncs/experiments.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/tnbow/tnbow.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/tnbow/tnbow.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/tnbow/experiments.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/nbs/tnbow/experiments.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "1. Install the codesearch library: `pip install .`\n2. Install the tree-sitter parsers (for preprocessing the code snippets): e.g., `codesearch install_parsers python java` or simply `codesearch install_parsers` to install parsers for all supported languages. By default, parsers are installed under the `codesearch/parsers` directory this can be customized by setting the `TREE_SITTER_DIR` variable.\n3. Install spacy (for preprocessing descriptions/code comments): `python -m spacy download en_core_web_md`\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "Code search"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| name                                          | description                                                                                                                  |\n|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|\n| so-ds-feb20                                   | Mined from Python Stack Overflow posts related to data science. Stack Overflow dumps can be found here: https://archive.org/details/stackexchange, [LICENSE](https://creativecommons.org/licenses/by-sa/4.0/)                                                             |\n| staqc-py-cleaned                     | Derived from the Python StaQC snippets (additional cleaning was done as decribed in the paper). See https://github.com/LittleYUYU/StackOverflow-Question-Code-Dataset, [LICENSE](https://github.com/LittleYUYU/StackOverflow-Question-Code-Dataset/blob/master/LICENSE.txt)                               |\n| conala-curated                                | Derived from the curated snippets of the CoNaLa benchmark. See https://conala-corpus.github.io/ , [LICENSE](https://creativecommons.org/licenses/by-sa/4.0/)                                                                                         |\n| codesearchnet-{language}-{train\\|valid\\|test} | The CodeSearchNet snippet collections used for training/MRR validation/MRR testing. See https://github.com/github/CodeSearchNet. Licenses of the individial snippets can be found in pkl files.                                           |\n| codesearchnet-{language}                      | The CodeSearchNet snippet collections used for the weights and biases benchmark. See https://github.com/github/CodeSearchNet. Licenses of the individial snippets can be found in pkl files. **Note**: not all of these snippets have descriptions |\n \n",
+                "original_header": "Available snippet collections"
+            },
+            "confidence": 0.9999766764241858,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "```python\nfrom codesearch.utils import load_model\nfrom codesearch.embedding_retrieval import EmbeddingRetrievalModel\n\nquery = \"plot a bar chart\"\nsnippets = [{                           # a dummy snippet collection with 1 snippet\n    \"id\": \"1\",\n    \"description\": \"Hello world\",\n    \"code\": \"print('hello world')\",\n    \"language\": \"python\"\n    }]\n\nembedding_model = load_model(\"use-embedder-pacs\")\nretrieval_model = EmbeddingRetrievalModel(embedding_model)\nretrieval_model.add_snippets(snippets)\nretrieval_model.query(query)\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Example: Query a snippet collection with a pretrained embedding model",
+                "parent_header": [
+                    "Code search",
+                    "Models"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```python\nfrom codesearch.utils import load_model\n\nmodel_name = \"use-embedder-pacs\"\nqueries = [\"plot a bar chart\"]\nsnippets = [{\n    \"description\": \"Hello world\",\n    \"code\": \"print('hello world')\",\n    \"language\": \"python\"\n    }]\n\nembedding_model = load_model(model_name)\nquery_embs = embedding_model.embed_queries(queries)\nsnippet_embs = embedding_model.embed_snippets(snippets)\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Example: Embed snippets or queries with a pre-trained embedding model",
+                "parent_header": [
+                    "Code search",
+                    "Models"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```python\nfrom codesearch.data import load_snippet_collection\ncollection_name = \"so-ds-feb20\"\nsnippets = load_snippet_collection(collection_name)\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Example: Load a snippet collection",
+                "parent_header": [
+                    "Code search",
+                    "Datasets",
+                    "Snippet collections"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```python\nfrom codesearch.data import load_eval_dataset\nqueries, query2ids = load_eval_dataset(\"so-ds-feb20-valid\")\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Example: load an evaluation dataset",
+                "parent_header": [
+                    "Code search",
+                    "Datasets",
+                    "Evaluation data"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```python\nqueries, query2ids = load_eval_dataset(\"codesearchnet-python-valid\")\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Example: load a snippet collection as evaluation data",
+                "parent_header": [
+                    "Code search",
+                    "Datasets",
+                    "Evaluation data"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        },
+        {
+            "result": {
+                "value": " You can run the demo notebook `nbs/demo/demo.ipynb` to quickly try out any of the pretrained models on one of the snippet collections.\n",
+                "type": "Text_excerpt",
+                "original_header": "Demo notebook",
+                "parent_header": [
+                    "Code search"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```python\nfrom codesearch.benchmark import benchmark_on_pacs\n\nbenchmark_on_pacs(\n    model_path=model_path, # one of the pretrained model names or a path to a model that can be loaded with `codesearch.utils.load_model`\n    output_dir=output_dir\n)\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Example: Benchmark a model on PACS",
+                "parent_header": [
+                    "Code search",
+                    "Benchmark on PACS"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9171330164761491,
+            "technique": "supervised_classification"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Code search"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2008.12193"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nokia/codesearch/master/README.md"
+        }
+    ]
+}

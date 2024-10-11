@@ -1,0 +1,327 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:24:15"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/shaido987/riskloc",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "shaido987",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-10-23T05:54:55Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-17T02:12:20Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Implementation of RiskLoc, a method for localizing multi-dimensional root causes.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains code for the paper [RiskLoc: Localization of Multi-dimensional Root Causes by Weighted Risk](https://arxiv.org/abs/2205.10004). Both the implementation of RiskLoc itself and all baseline multi-dimensional root cause localization methods in the paper are included, as well as the code to generate synthetic datasets as described in the paper. \n**Short problem description:**  \nRiskLoc solves the problem of identifying the root cause of an anomaly occurring in a time series with multi-dimensional attributes. These types of time series can be regarded as aggregations (the total sum in the simplest case) of numerous underlying, more fine-grained, time series.    \nis built up of 9 fine-grained time series (two examples of these are the time series corresponding to {d1: a, d2: d} and {d1: b, d2: f}).  \nThe goal is to find the specific dimension and dimensional values (the elements) of the root cause when an error occurs in the fully aggregated time series T. This is a search problem where any combination of dimensions and values are considered, and there can be multiple elements in the fanal root cause set. For the example time series above, one potential root cause set can be {{d1: a, d2: [d, e]}, {d1: b, d2: e}}. Since any combination and any number of elements needs to be considered, the total search space is huge which is the main challenge.\n \n",
+                "original_header": "RiskLoc"
+            },
+            "confidence": 0.9608637800241494,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shaido987/riskloc/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "riskloc",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "shaido987/riskloc",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/shaido987/riskloc/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/shaido987/riskloc/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 115,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "adtributor, autoroot, hotspot, multi-dimensional, rca, riskloc, root-cause, root-cause-analysis, root-cause-location, squeeze, time-series",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 20,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/shaido987/riskloc/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 132837
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/shaido987/riskloc/releases/68335955",
+                "tag": "v1.0.0",
+                "name": "Initial code",
+                "author": {
+                    "name": "shaido987",
+                    "type": "User"
+                },
+                "description": "Code version used for experiments in the riskloc paper.",
+                "tarball_url": "https://api.github.com/repos/shaido987/riskloc/tarball/v1.0.0",
+                "zipball_url": "https://api.github.com/repos/shaido987/riskloc/zipball/v1.0.0",
+                "html_url": "https://github.com/shaido987/riskloc/releases/tag/v1.0.0",
+                "url": "https://api.github.com/repos/shaido987/riskloc/releases/68335955",
+                "release_id": 68335955,
+                "date_created": "2022-06-01T12:15:04Z",
+                "date_published": "2022-06-01T12:21:39Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/shaido987/riskloc/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "- pandas\n- numpy\n- scipy\n- kneed (for squeeze)\n- loguru (for squeeze)\n- pyyaml\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "RiskLoc"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shaido987/riskloc/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "To run, use the `run.py` file. There are a couple of options, either to use a single file or to run all files in a directory (including all subdirectories).\n\nExample of running a single file using RiskLoc in debug mode:\n```\npython run.py riskloc --run-path /data/B0/B_cuboid_layer_1_n_ele_1/1450653900.csv --debug\n```\n\nExample of running all files in a particular setting for a dataset (setting derived to True):\n```\npython run.py riskloc --run-path /data/D/B_cuboid_layer_3_n_ele_3 --derived\n```\n\nExample of running all files in a dataset:\n```\npython run.py riskloc --run-path /data/B0\n```\n\nExample of running all datasets with 20 threads:\n```\npython run.py riskloc --n-threads 20\n```\n\nChanging `riskloc` to any of the supported algorithms will run those instead, see below.\n",
+                "type": "Text_excerpt",
+                "original_header": "How to run",
+                "parent_header": [
+                    "RiskLoc"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shaido987/riskloc/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you find this code useful, please cite the following paper:\n\n```\n@article{riskloc,\n  title={RiskLoc: Localization of Multi-dimensional Root Causes by Weighted Risk},\n  author={Kalander, Marcus},\n  journal={arXiv preprint arXiv:2205.10004},\n  year={2022}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "RiskLoc"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shaido987/riskloc/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{riskloc,\n    year = {2022},\n    journal = {arXiv preprint arXiv:2205.10004},\n    author = {Kalander, Marcus},\n    title = {RiskLoc: Localization of Multi-dimensional Root Causes by Weighted Risk},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "RiskLoc: Localization of Multi-dimensional Root Causes by Weighted Risk",
+                "author": "Kalander, Marcus"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shaido987/riskloc/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p align=\"center\">\n  <img width=\"736\" alt=\"architecture\" src=\"https://github.com/shaido987/riskloc/assets/1130029/c9b8d791-ac94-4edc-b70f-8555467b6c2a\">\n</p> \n",
+                "original_header": "RiskLoc"
+            },
+            "confidence": 0.9964886474446542,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shaido987/riskloc/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "They can be run by specifying the algorithm name as the first input parameter to the `run.py` file:\n```\n$ python run.py --help\nusage: run.py [-h] {riskloc,autoroot,squeeze,old squeeze,hotspot,r_adtributor,adtributor} ...\n\nRiskLoc\n\npositional arguments: {riskloc,autoroot,robustspot,squeeze,hotspot,r_adtributor,adtributor}\n\n                        algorithm specific help\n    riskloc             riskloc help\n    autoroot            autoroot help\n    robustspot          robustspot help\n    squeeze             squeeze help\n    hotspot             autoroot help\n    r_adtributor        r_adtributor help\n    adtributor          adtributor help\n\noptional arguments:\n  -h, --help            show this help message and exit\n```\nThe code for Squeeze is adapted from the released code from the original publication: https://github.com/NetManAIOps/Squeeze.\nThe code for RobustSpot is similarly adapted from their recently released code: https://github.com/robustspotproject/RobustSpot. \n",
+                "original_header": "Algorithms"
+            },
+            "confidence": 0.9999998997544758,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shaido987/riskloc/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The semi-synthetic datasets can be downloaded from: https://github.com/NetManAIOps/Squeeze.\nTo run these, place them within the data/ directory and name them: A, B0, B1, B2, B3, B4, and D, respectively. \n",
+                "original_header": "Datasets"
+            },
+            "confidence": 0.9992713884070135,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shaido987/riskloc/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To see the algorithm-specific arguments run: `python run.py 'algorithm' --help`. For example, for RiskLoc: \n```\n$ python run.py riskloc --help\nusage: run.py riskloc [-h] [--data-root DATA_ROOT] [--run-path RUN_PATH] [--derived [DERIVED]] [--n-threads N_THREADS] [--output-suffix OUTPUT_SUFFIX] [--debug [DEBUG]] [--risk-threshold RISK_THRESHOLD] [--pep-threshold PEP_THRESHOLD] [--n-remove N_REMOVE] [--remove-relative [REMOVE_RELATIVE]] [--prune-elements [PRUNE_ELEMENTS]]\n\noptions:\n  -h, --help                           show this help message and exit\n  --data-root DATA_ROOT                root directory for all datasets (default ./data)\n  --run-path RUN_PATH                  directory or file to be run; if a directory, any subdirectories will be considered as well;\n                                       must contain data-path as a prefix\n  --derived [DERIVED]                  derived dataset (defaults to True for the D and RS datasets and False for others)\n  --n-threads N_THREADS                number of threads to run\n  --output-suffix OUTPUT_SUFFIX        suffix for output csv file\n  --debug [DEBUG]                      debug mode\n  --risk-threshold RISK_THRESHOLD      risk threshold\n  --pep-threshold PEP_THRESHOLD        proportional explanatory power threshold\n  --n-remove N_REMOVE                  number of elements to ignore when computing the cutoff point\n  --remove-relative [REMOVE_RELATIVE]  if true then n_remove is a percentage value\n  --prune-elements [PRUNE_ELEMENTS]    use element pruning (True/False)\n``` \n",
+                "original_header": "Algorithms"
+            },
+            "confidence": 0.9502812097869545,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shaido987/riskloc/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "RiskLoc"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shaido987/riskloc/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/shaido987/riskloc/assets/1130029/c9b8d791-ac94-4edc-b70f-8555467b6c2a"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shaido987/riskloc/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2205.10004"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shaido987/riskloc/main/README.md"
+        }
+    ]
+}

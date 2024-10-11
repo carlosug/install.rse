@@ -1,0 +1,416 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:18:30"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/FoRTE-Research/afl-fid",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "FoRTE-Research",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-01-24T19:47:35Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-11-09T18:56:36Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nafl-fid is adapted from Michal Zalewski's AFL.\n\nCopyright (c) 2019 Virginia Polytechnic Institute and State University\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A suite of AFL modifications for fixed input dataset experiments",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "afl-fid",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "FoRTE-Research/afl-fid",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/FoRTE-Research/afl-fid/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/FoRTE-Research/afl-fid/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 13,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 8,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/FoRTE-Research/afl-fid/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 528834
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 23694
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 20494
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 19955
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Objective-C",
+                "name": "Objective-C",
+                "type": "Programming_language",
+                "size": 10195
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 3476
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Rich Text Format",
+                "name": "Rich Text Format",
+                "type": "Programming_language",
+                "size": 21
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 20
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/readme.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/experimental/asan_cgroups/limit_memory.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/experimental/distributed_fuzzing/sync_script.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/experimental/crash_triage/triage_crashes.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/qemu_mode_v1/build_qemu_support.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/qemu_mode_v2/build_qemu_v2_support.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "This repository contains several modified versions of [AFL](http://lcamtuf.coredump.cx/afl) components which we utilize in our experiments on fixed (pre-generated) fuzzing input datasets: \n* **afl-saveinputs** - dumps AFL-generated inputs and their sizes to file (for fixed input dataset experiments).\n* **afl-testtrace** - evaluates any tracer's (e.g., QEMU, Dyninst) execution time on a fixed input dataset.\n* **afl-cc forkserver-only extension** - inserts *only* a forkserver during AFL's assembly-time instrumentation (useful for benchmarking).\n\n<table>\n  <tr>\n    <td align=center colspan=\"2\"><div><b>Presented in our paper</b> <a href=\"https://arxiv.org/abs/1812.11875\"><i>Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing</i></a><br>(to appear in the 2019 IEEE Symposium on Security and Privacy).</td>\n  </tr>\n  <tr>\n    <td><b>Citing this repository:</b></td>\n    <td>\n      <code class=\"rich-diff-level-one\">@inproceedings{nagy:fullspeedfuzzing,</code><br>\n      <code class=\"rich-diff-level-one\">title = {Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing},</code><br>\n      <code class=\"rich-diff-level-one\">author = {Stefan Nagy and Matthew Hicks},</code><br>\n      <code class=\"rich-diff-level-one\">booktitle = {{IEEE} Symposium on Security and Privacy (Oakland)},</code><br>\n      <code class=\"rich-diff-level-one\">year = {2019},}</code>\n    </td>\n  </tr>\n  <tr>\n    <td><b>Developer:</b></td>\n    <td>Stefan Nagy (<a href=\"mailto:snagy2@vt.edu\">snagy2@vt.edu</a>) and Matthew Hicks (<a href=\"mailto:mdhicks2@vt.edu\">mdhicks2@vt.edu</a>) </td>\n  </tr>\n  <tr>\n    <td><b>License:</b></td>\n    <td><a href=\"/FoRTE-Research/UnTracer-AFL/blob/master/LICENSE\">MIT License</a></td>\n  </tr>\n  <tr>\n    <td><b>Disclaimer:</b></td>\n    <td><i>This software is strictly a research prototype.</i></td>\n  </tr>\n</table>\n",
+                "type": "Text_excerpt",
+                "original_header": "FoRTE-Research's AFL for Fixed Input Datasets"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/readme.md"
+        },
+        {
+            "result": {
+                "value": "```\nsudo apt-get install libtool-bin libglib2.0-dev automake flex bison\ncd afl-fid/qemu_mode_v1\nsudo ./build_qemu_support.sh\nchmod +x ../afl-qemu-trace\n```\nNote the following: \n* The build may finish with an error even though `afl-qemu-trace` was built correctly. We recommend checking a few build status messages in the log to determine if the build was successful.\n* For running with the optimized QEMU with block chaining enabled, build instead from `qemu_mode_v2`. When running `afl-saveinputs` or `afl-testtrace`, replace `-Q` with `-QQ`.\n",
+                "type": "Text_excerpt",
+                "original_header": "2. (optional) Build AFL's QEMU-mode tracing:",
+                "parent_header": [
+                    "FoRTE-Research's AFL for Fixed Input Datasets",
+                    "INSTALLATION"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/readme.md"
+        },
+        {
+            "result": {
+                "value": "`afl-saveinputs` is a modified version of `afl-fuzz` for dumping generated inputs to file. Usage is as follows:\n```\nafl-saveinputs -i [/path/to/seed_dir] -o [/path/to/out_dir] -e [time budget (# minutes)] [optional_args] -Q -- [/path/to/target] [target_args]\n```\nInput dump and sizes will be stored in `out_dir/_INPUT_DUMP` and `out_dir/_INPUT_SIZES`, respectively.  \n * **Note:** QEMU mode is recommended, otherwise dumps may be explosively large in size (depending on fuzzing speed).\n",
+                "type": "Text_excerpt",
+                "original_header": "afl-saveinputs",
+                "parent_header": [
+                    "FoRTE-Research's AFL for Fixed Input Datasets"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/readme.md"
+        },
+        {
+            "result": {
+                "value": "`afl-testtrace` is an `afl-fuzz` modification for logging each fuzzed input's tracing time. Given an input dump and corresponding sizes file (produced by `afl-saveinputs`), It recreates each input and logs its execution (function `run_target()` in `afl-fuzz`) time. Usage is as follows:\n```\nafl-testrace -i [/path/to/input/data/dump] -s [/path/to/input/sizes/dump] -o [/path/to/outdir] -f [/path/to/outfile] -c [max execs | skip for full dump] -t [exec timeout | skip for default (100ms)] -- [/path/to/target] [target_args]\n```\n * **Note:** only non-position-independent target binaries are supported. Be sure to compile all target binaries with the `-no-pie` compiler flag (unnecessary for Clang).\n ",
+                "type": "Text_excerpt",
+                "original_header": "afl-testtrace",
+                "parent_header": [
+                    "FoRTE-Research's AFL for Fixed Input Datasets"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/readme.md"
+        },
+        {
+            "result": {
+                "value": "We extend the `afl-cc` assembly-time instrumentation with a forkserver-only instrumentation mode for use in benchmarking experiments. To invoke this mode, simply append `-Wa,-F` to your `afl-cc` (e.g., `afl-gcc`, `afl-clang`) compiler flags and compile as usual. Example:",
+                "type": "Text_excerpt",
+                "original_header": "afl-cc forkserver-only extension",
+                "parent_header": [
+                    "FoRTE-Research's AFL for Fixed Input Datasets"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/readme.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We extend the `afl-cc` assembly-time instrumentation with a forkserver-only instrumentation mode for use in benchmarking experiments. To invoke this mode, simply append `-Wa,-F` to your `afl-cc` (e.g., `afl-gcc`, `afl-clang`) compiler flags and compile as usual. Example:\n```\n./configure --disable-shared CC=afl-clang CXX=afl-clang++ CFLAGS=\"-g -O2 -no-pie -Wa,F\" CXXFLAGS=\"-g -O2 -no-pie -Wa,-F\"\nmake all\n``` \n#\n<p align=center> <a href=\"https://www.cs.vt.edu\"><img border=\"0\" src=\"http://people.cs.vt.edu/snagy2/img/vt_inline_computer_science.png\" width=\"60%\" height=\"60%\">\n</a> </p>\n \n"
+            },
+            "confidence": 0.9986154528421503,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/readme.md"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "```\ngit clone https://github.com/FoRTE-Research/afl-fid\ncd afl\nmake all\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "1. Download and build AFL:",
+                "parent_header": [
+                    "FoRTE-Research's AFL for Fixed Input Datasets",
+                    "INSTALLATION"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/readme.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "FoRTE-Research's AFL for Fixed Input Datasets"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/readme.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "http://people.cs.vt.edu/snagy2/img/vt_inline_computer_science.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/readme.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1812.11875\"><i>Full-speed Fuzzing: Reducing Fuzzing Overhead through Coverage-guided Tracing</i></a><br>(to appear in the 2019 IEEE Symposium on Security and Privacy"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/FoRTE-Research/afl-fid/master/readme.md"
+        }
+    ]
+}

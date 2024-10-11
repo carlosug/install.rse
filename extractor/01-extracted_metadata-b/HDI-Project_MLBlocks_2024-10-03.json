@@ -1,0 +1,985 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:10:38"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/MLBazaar/MLBlocks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "MLBazaar",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2015-06-08T15:36:58Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-08T08:25:19Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2018, MIT Data To AI Lab\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A library for composing end-to-end tunable machine learning pipelines. ",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "MLBlocks is a simple framework for composing end-to-end tunable Machine Learning Pipelines by\nseamlessly combining tools from any python library with a simple, common and uniform interface. \nFeatures include: \n* Build Machine Learning Pipelines combining **any Machine Learning Library in Python**.\n* Access a repository with hundreds of primitives and pipelines ready to be used with little to\n  no python code to write, carefully curated by Machine Learning and Domain experts.\n* Extract machine-readable information about which hyperparameters can be tuned and within\n  which ranges, allowing automated integration with Hyperparameter Optimization tools like\n  [BTB](https://github.com/MLBazaar/BTB).\n* Complex multi-branch pipelines and DAG configurations, with unlimited number of inputs and\n  outputs per primitive.\n* Easy save and load Pipelines using JSON Annotations.\n \n",
+                "original_header": "Overview"
+            },
+            "confidence": 0.9258380036482633,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Pipelines and Primitives for Machine Learning and Data Science. \n"
+            },
+            "confidence": 0.9105461079706484,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "MLBlocks",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "MLBazaar/MLBlocks",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 114,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "hyperparameters, machine-learning, pipelines, primitives",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 35,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/HDI-Project/MLBlocks/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 155298
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 8013
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/125823979",
+                "tag": "v0.6.1",
+                "name": "v0.6.1 - 2023-09-26",
+                "author": {
+                    "name": "sarahmish",
+                    "type": "User"
+                },
+                "description": "* Add python 3.11 to MLBlocks - [Issue #143](https://github.com/MLBazaar/MLBlocks/issues/143) by @sarahmish\r\n",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.6.1",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.6.1",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.6.1",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/125823979",
+                "release_id": 125823979,
+                "date_created": "2023-09-26T17:41:51Z",
+                "date_published": "2023-10-19T15:07:36Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/99588740",
+                "tag": "v0.6.0",
+                "name": "v0.6.0 - 2023-04-14",
+                "author": {
+                    "name": "sarahmish",
+                    "type": "User"
+                },
+                "description": "* Support python 3.9 and 3.10 - [Issue #141](https://github.com/MLBazaar/MLBlocks/issues/141) by @sarahmish\r\n",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.6.0",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.6.0",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.6.0",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/99588740",
+                "release_id": 99588740,
+                "date_created": "2023-04-14T19:21:31Z",
+                "date_published": "2023-04-14T19:23:35Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/89856986",
+                "tag": "v0.5.0",
+                "name": "v0.5.0 - 2023-01-22",
+                "author": {
+                    "name": "sarahmish",
+                    "type": "User"
+                },
+                "description": "* Update `numpy` dependency and isolate tests - [Issue #139](https://github.com/MLBazaar/MLBlocks/issues/139) by @sarahmish",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.5.0",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.5.0",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.5.0",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/89856986",
+                "release_id": 89856986,
+                "date_created": "2023-01-22T21:26:03Z",
+                "date_published": "2023-01-22T23:34:08Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/51047004",
+                "tag": "v0.4.1",
+                "name": "v0.4.1 - 2021-10-08",
+                "author": {
+                    "name": "sarahmish",
+                    "type": "User"
+                },
+                "description": "* Update NumPy dependency - [Issue #136](https://github.com/MLBazaar/MLBlocks/issues/136) by @sarahmish\r\n* Support dynamic inputs and outputs - [Issue #134](https://github.com/MLBazaar/MLBlocks/issues/134) by @pvk-developer",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.4.1",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.4.1",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.4.1",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/51047004",
+                "release_id": 51047004,
+                "date_created": "2021-10-08T16:07:26Z",
+                "date_published": "2021-10-08T16:10:04Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/36180882",
+                "tag": "v0.4.0",
+                "name": "v0.4.0 - 2021-01-09",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Stop pipeline fitting after the last block - [Issue #131](https://github.com/MLBazaar/MLBlocks/issues/131) by @sarahmish\r\n* Add memory debug and profiling - [Issue #130](https://github.com/MLBazaar/MLBlocks/issues/130) by @pvk-developer\r\n* Update Python support - [Issue #129](https://github.com/MLBazaar/MLBlocks/issues/129) by @csala\r\n* Get execution time for each block - [Issue #127](https://github.com/MLBazaar/MLBlocks/issues/127) by @sarahmish\r\n* Allow loading a primitive or pipeline directly from the JSON path - [Issue #114](https://github.com/MLBazaar/MLBlocks/issues/114) by @csala\r\n* Pipeline Diagrams - [Issue #113](https://github.com/MLBazaar/MLBlocks/issues/113) by @erica-chiu\r\n* Get Pipeline Inputs - [Issue #112](https://github.com/MLBazaar/MLBlocks/issues/112) by @erica-chiu\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.4.0",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.4.0",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.4.0",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/36180882",
+                "release_id": 36180882,
+                "date_created": "2021-01-09T16:22:42Z",
+                "date_published": "2021-01-09T16:23:30Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/21193814",
+                "tag": "v0.3.4",
+                "name": "v0.3.4 - 2019-11-01",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Ability to return intermediate context - [Issue #110](https://github.com/HDI-Project/MLBlocks/issues/110) by @csala\r\n* Support for static or class methods - [Issue #107](https://github.com/HDI-Project/MLBlocks/issues/107) by @csala",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.3.4",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.3.4",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.3.4",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/21193814",
+                "release_id": 21193814,
+                "date_created": "2019-11-04T15:05:27Z",
+                "date_published": "2019-11-04T15:07:33Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/19845151",
+                "tag": "v0.3.3",
+                "name": "v0.3.3 - 2019-09-09",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Improved intermediate outputs management - [Issue #104](https://github.com/HDI-Project/MLBlocks/issues/104) by @csala\r\n",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.3.3",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.3.3",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.3.3",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/19845151",
+                "release_id": 19845151,
+                "date_created": "2019-09-09T09:29:24Z",
+                "date_published": "2019-09-09T09:30:59Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/19225994",
+                "tag": "v0.3.2",
+                "name": "v0.3.2 - 2019-08-12",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Allow passing fit and produce arguments as `init_params` - [Issue #96](https://github.com/HDI-Project/MLBlocks/issues/96) by @csala\r\n* Support optional fit and produce args and arg defaults - [Issue #95](https://github.com/HDI-Project/MLBlocks/issues/95) by @csala\r\n* Isolate primitives from their hyperparameters dictionary - [Issue #94](https://github.com/HDI-Project/MLBlocks/issues/94) by @csala\r\n* Add functions to explore the available primitives and pipelines - [Issue #90](https://github.com/HDI-Project/MLBlocks/issues/90) by @csala\r\n* Add primitive caching - [Issue #22](https://github.com/HDI-Project/MLBlocks/issues/22) by @csala",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.3.2",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.3.2",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.3.2",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/19225994",
+                "release_id": 19225994,
+                "date_created": "2019-08-12T11:11:23Z",
+                "date_published": "2019-08-12T11:12:27Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/18478756",
+                "tag": "v0.3.1",
+                "name": "v0.3.1 - Pipelines Discovery",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Support flat hyperparameter dictionaries\r\n  [Issue #92](https://github.com/HDI-Project/MLBlocks/issues/92) by @csala\r\n* Load pipelines by name and register them as `entry_points`\r\n  [Issue #88](https://github.com/HDI-Project/MLBlocks/issues/88) by @csala\r\n* Implement partial re-fit\r\n  [Issue #61](https://github.com/HDI-Project/MLBlocks/issues/61) by @csala\r\n* Move argument parsing to MLBlock\r\n  [Issue #86](https://github.com/HDI-Project/MLBlocks/issues/86) by @csala\r\n* Allow getting intermediate outputs\r\n  [Issue #58](https://github.com/HDI-Project/MLBlocks/issues/58) by @csala",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.3.1",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.3.1",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.3.1",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/18478756",
+                "release_id": 18478756,
+                "date_created": "2019-07-08T18:38:04Z",
+                "date_published": "2019-07-08T18:39:16Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/15489303",
+                "tag": "v0.3.0",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* New primitives discovery system based on `entry_points`.\r\n* Conditional Hyperparameters filtering in MLBlock initialization.\r\n* Improved logging and exception reporting.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.3.0",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.3.0",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.3.0",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/15489303",
+                "release_id": 15489303,
+                "date_created": "2019-01-10T17:33:45Z",
+                "date_published": "2019-02-11T17:31:50Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/14656734",
+                "tag": "v0.2.4",
+                "name": "New Datasets and Unit Tests",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Add a new multi-table dataset.\r\n* Add Unit Tests up to 50% coverage.\r\n* Improve documentation.\r\n* Fix minor bug in newsgroups dataset.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.2.4",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.2.4",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.2.4",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/14656734",
+                "release_id": 14656734,
+                "date_created": "2018-12-21T10:46:34Z",
+                "date_published": "2018-12-21T10:49:20Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/13255493",
+                "tag": "v0.2.3",
+                "name": "v0.2.3 - Demo Datasets",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Add new methods to Dataset class.\r\n* Add documentation for the datasets module.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.2.3",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.2.3",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.2.3",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/13255493",
+                "release_id": 13255493,
+                "date_created": "2018-10-04T21:51:28Z",
+                "date_published": "2018-10-04T21:53:27Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/13255486",
+                "tag": "v0.2.2",
+                "name": "v0.2.2 - MLPipeline Load/Save",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Implement save and load methods for MLPipelines\r\n* Add more datasets",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.2.2",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.2.2",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.2.2",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/13255486",
+                "release_id": 13255486,
+                "date_created": "2018-10-02T23:05:41Z",
+                "date_published": "2018-10-04T21:53:04Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/13060303",
+                "tag": "v0.2.1",
+                "name": "0.2.1 - New Documentation",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Add mlblocks.datasets module with demo data download functions.\r\n* Extensive documentation, including multiple pipeline examples.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.2.1",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.2.1",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.2.1",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/13060303",
+                "release_id": 13060303,
+                "date_created": "2018-09-24T14:50:23Z",
+                "date_published": "2018-09-24T15:23:46Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/12458469",
+                "tag": "v0.2.0",
+                "name": "New MLBlocks API",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "A new MLBlocks API and Primitive format.\r\n\r\nThis is a summary of the changes:\r\n\r\n* Primitives JSONs and Python code has been moved to a different repository, called MLPrimitives\r\n* Optional usage of multiple JSON primitive folders.\r\n* JSON format has been changed to allow more flexibility and features:\r\n    * input and output arguments, as well as argument types, can be specified for each method\r\n    * both classes and function as primitives are supported\r\n    * multitype and conditional hyperparameters fully supported\r\n    * data modalities and primitive classifiers introduced\r\n    * metadata such as documentation, description and author fields added\r\n* Parsers are removed, and now the MLBlock class is responsible for loading and reading the\r\n  JSON primitive.\r\n* Multiple blocks of the same primitive are supported within the same pipeline.\r\n* Arbitrary inputs and outputs for both pipelines and blocks are allowed.\r\n* Shared variables during pipeline execution, usable by multiple blocks.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.2.0",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.2.0",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.2.0",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/12458469",
+                "release_id": 12458469,
+                "date_created": "2018-08-17T16:53:48Z",
+                "date_published": "2018-08-17T16:56:49Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/12145727",
+                "tag": "v0.1.9",
+                "name": "Bugfix release",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Disable some NetworkX functions for incompatibilities with some types of graphs.\r\n",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.1.9",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.1.9",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.1.9",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/12145727",
+                "release_id": 12145727,
+                "date_created": "2018-07-28T00:44:01Z",
+                "date_published": "2018-07-28T00:46:29Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/12145721",
+                "tag": "v0.1.8",
+                "name": "New primitives and some improvements",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Improve the NetworkX primitives.\r\n* Add String Vectorization and Datetime Featurization primitives.\r\n* Refactor some Keras primitives to work with single dimension `y` arrays and be compatible with `pickle`.\r\n* Add XGBClassifier and XGBRegressor primitives.\r\n* Add some `keras.applications` pretrained networks as preprocessing primitives.\r\n* Add helper class to allow function primitives.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.1.8",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.1.8",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.1.8",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/12145721",
+                "release_id": 12145721,
+                "date_created": "2018-07-27T23:45:02Z",
+                "date_published": "2018-07-28T00:45:41Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11918531",
+                "tag": "v0.1.7",
+                "name": "Nested hyperparams dicts",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Support passing hyperparams as nested dicts.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.1.7",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.1.7",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.1.7",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11918531",
+                "release_id": 11918531,
+                "date_created": "2018-07-13T15:58:01Z",
+                "date_published": "2018-07-13T15:59:03Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11556837",
+                "tag": "v0.1.6",
+                "name": "Text and Graph Pipelines",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Add LSTM classifier and regressor primitives.\r\n* Add OneHotEncoder and MultiLabelEncoder primitives.\r\n* Add several NetworkX graph featurization primitives.\r\n* Add `community.best_partition` primitive.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.1.6",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.1.6",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.1.6",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11556837",
+                "release_id": 11556837,
+                "date_created": "2018-06-19T20:22:34Z",
+                "date_published": "2018-06-19T20:31:16Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11555296",
+                "tag": "v0.1.5",
+                "name": "Collaborative Filtering Pipelines",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Add LightFM primitive for collaborative filtering",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.1.5",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.1.5",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.1.5",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11555296",
+                "release_id": 11555296,
+                "date_created": "2018-06-19T19:01:53Z",
+                "date_published": "2018-06-19T19:07:10Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11509128",
+                "tag": "v0.1.4",
+                "name": "Image Pipelines Improved",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Allow passing `init_params` on `MLPipeline` creation.\r\n* Fix bug with MLHyperparam types and Keras.\r\n* Rename `produce_params` as `predict_params`.\r\n* Add SingleCNN Classifier and Regressor primitives.\r\n* Simplify and improve Trivial Predictor",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.1.4",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.1.4",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.1.4",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11509128",
+                "release_id": 11509128,
+                "date_created": "2018-06-15T22:01:34Z",
+                "date_published": "2018-06-15T22:04:47Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11509125",
+                "tag": "v0.1.3",
+                "name": "Multi Table Pipelines improved",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Improve RandomForest primitive ranges\r\n* Improve DFS primitive\r\n* Add Tree Based Feature Selection primitives\r\n* Fix bugs in TrivialPredictor\r\n* Improved documentation",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.1.3",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.1.3",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.1.3",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11509125",
+                "release_id": 11509125,
+                "date_created": "2018-06-13T18:44:23Z",
+                "date_published": "2018-06-15T22:04:23Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11398501",
+                "tag": "v0.1.2",
+                "name": "Bugfix release",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* Fix bug in TrivialMedianPredictor\r\n* Fix bug in OneHotLabelEncoder",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.1.2",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.1.2",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.1.2",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11398501",
+                "release_id": 11398501,
+                "date_created": "2018-06-08T20:14:18Z",
+                "date_published": "2018-06-08T20:21:35Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11395125",
+                "tag": "v0.1.1",
+                "name": "Default and Single Table pipelines",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* New project structure\r\n* New Trivial Primitives.\r\n* Default pipelines and Single table pipelines fully working.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.1.1",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.1.1",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.1.1",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11395125",
+                "release_id": 11395125,
+                "date_created": "2018-06-08T17:11:38Z",
+                "date_published": "2018-06-08T17:13:42Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11317738",
+                "tag": "v0.1.0",
+                "name": "First PyPi release",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "* First release on PyPI.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/tarball/v0.1.0",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/MLBlocks/zipball/v0.1.0",
+                "html_url": "https://github.com/MLBazaar/MLBlocks/releases/tag/v0.1.0",
+                "url": "https://api.github.com/repos/MLBazaar/MLBlocks/releases/11317738",
+                "release_id": 11317738,
+                "date_created": "2018-06-04T21:33:23Z",
+                "date_published": "2018-06-04T21:35:13Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/8.%20Searching%20for%20the%20best%20pipeline%20with%20BTBSession.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/8.%20Searching%20for%20the%20best%20pipeline%20with%20BTBSession.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/4.%20Saving%20and%20Loading%20a%20Pipeline.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/4.%20Saving%20and%20Loading%20a%20Pipeline.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/1.%20Using%20and%20MLPipeline.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/1.%20Using%20and%20MLPipeline.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/6.%20Flexible%20outputs%20specification.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/6.%20Flexible%20outputs%20specification.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/7.%20Tuning%20a%20Pipeline.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/7.%20Tuning%20a%20Pipeline.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/3.%20Setting%20MLPipeline%20Hyperparameters.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/3.%20Setting%20MLPipeline%20Hyperparameters.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/5.%20Partial%20execution%20and%20pipeline%20debugging.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/5.%20Partial%20execution%20and%20pipeline%20debugging.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/2.%20Finding%20and%20Loading%20a%20Pipeline.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/examples/tutorials/2.%20Finding%20and%20Loading%20a%20Pipeline.ipynb"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://mybinder.org/v2/gh/MLBazaar/MLBlocks/master?filepath=examples/tutorials"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "**MLBlocks** has been developed and tested on [Python 3.6, 3.7, 3.8, 3.9, and 3.10](https://www.python.org/downloads/)\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "Install"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "The easiest and recommended way to install **MLBlocks** is using [pip](\nhttps://pip.pypa.io/en/stable/):\n\n```bash\npip install mlblocks\n```\n\nThis will pull and install the latest stable release from [PyPi](https://pypi.org/).\n\nIf you want to install from source or contribute to the project please read the\n[Contributing Guide](https://mlbazaar.github.io/MLBlocks/contributing.html#get-started).\n",
+                "type": "Text_excerpt",
+                "original_header": "Install with `pip`",
+                "parent_header": [
+                    "Install"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md"
+        },
+        {
+            "result": {
+                "value": "In order to be usable, MLBlocks requires a compatible primitives library.\n\nThe official library, required in order to follow the following MLBlocks tutorial,\nis [MLPrimitives](https://github.com/MLBazaar/MLPrimitives), which you can install\nwith this command:\n\n```bash\npip install mlprimitives\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "MLPrimitives",
+                "parent_header": [
+                    "Install"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* Documentation: https://mlbazaar.github.io/MLBlocks\n* Github: https://github.com/MLBazaar/MLBlocks\n* License: [MIT](https://github.com/MLBazaar/MLBlocks/blob/master/LICENSE)\n* Development Status: [Pre-Alpha](https://pypi.org/search/?c=Development+Status+%3A%3A+2+-+Pre-Alpha)\n \n",
+                "original_header": "MLBlocks"
+            },
+            "confidence": 0.9999995221029115,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you use MLBlocks for your research, please consider citing our related papers.\n\nFor the current design of MLBlocks and its usage within the larger *Machine Learning Bazaar* project at\nthe MIT Data To AI Lab, please see:\n\nMicah J. Smith, Carles Sala, James Max Kanter, and Kalyan Veeramachaneni. [\"The Machine Learning Bazaar:\nHarnessing the ML Ecosystem for Effective System Development.\"](https://arxiv.org/abs/1905.08942) arXiv\nPreprint 1905.08942. 2019.\n\n```bibtex\n@article{smith2019mlbazaar,\n  author = {Smith, Micah J. and Sala, Carles and Kanter, James Max and Veeramachaneni, Kalyan},\n  title = {The Machine Learning Bazaar: Harnessing the ML Ecosystem for Effective System Development},\n  journal = {arXiv e-prints},\n  year = {2019},\n  eid = {arXiv:1905.08942},\n  pages = {arXiv:1905.08942},\n  archivePrefix = {arXiv},\n  eprint = {1905.08942},\n}\n```\n\nFor the first MLBlocks version from 2015, designed for only multi table, multi entity temporal data, please\nrefer to Bryan Collazo\u2019s thesis:\n\n* [Machine learning blocks](https://dai.lids.mit.edu/wp-content/uploads/2018/06/Mlblocks_Bryan.pdf).\n  Bryan Collazo. Masters thesis, MIT EECS, 2015.\n\nWith recent availability of a multitude of libraries and tools, we decided it was time to integrate\nthem and expand the library to address other data types: images, text, graph, time series and\nintegrate with deep learning libraries.\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing MLBlocks"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{smith2019mlbazaar,\n    eprint = {1905.08942},\n    archiveprefix = {arXiv},\n    pages = {arXiv:1905.08942},\n    eid = {arXiv:1905.08942},\n    year = {2019},\n    journal = {arXiv e-prints},\n    title = {The Machine Learning Bazaar: Harnessing the ML Ecosystem for Effective System Development},\n    author = {Smith, Micah J. and Sala, Carles and Kanter, James Max and Veeramachaneni, Kalyan},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "The Machine Learning Bazaar: Harnessing the ML Ecosystem for Effective System Development",
+                "author": "Smith, Micah J. and Sala, Carles and Kanter, James Max and Veeramachaneni, Kalyan"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "MLBlocks"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md"
+        }
+    ],
+    "related_documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://xgboost.readthedocs.io/",
+                "format": "readthedocs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://dai.lids.mit.edu/wp-content/uploads/2018/06/Logo_DAI_highres.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://dai.lids.mit.edu/wp-content/uploads/2018/06/mlblocks-icon.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1905.08942"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/HDI-Project/MLBlocks/master/README.md"
+        }
+    ]
+}

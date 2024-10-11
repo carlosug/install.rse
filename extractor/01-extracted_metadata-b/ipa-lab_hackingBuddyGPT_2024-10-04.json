@@ -1,0 +1,602 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:04:56"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ipa-lab/hackingBuddyGPT",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ipa-lab",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-08-02T08:30:25Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-03T22:54:46Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 andreashappe\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Helping Ethical Hackers use LLMs in 50 Lines of Code or less..",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We aim to become **THE go-to framework for security researchers** and pen-testers interested in using LLMs or LLM-based autonomous agents for security testing. To aid their experiments, we also offer re-usable [linux priv-esc benchmarks](https://github.com/ipa-lab/benchmark-privesc-linux) and publish all our findings as open-access reports. \n",
+                "original_header": "<div class=\"vertical-align: middle\"><img src=\"https://github.com/ipa-lab/hackingBuddyGPT/blob/main/docs/hackingbuddy-rounded.png?raw=true\" width=\"72\"> HackingBuddyGPT <a href=\"https://discord.gg/vr4PhSM8yN\"><img alt=\"Discord\" src=\"https://dcbadge.vercel.app/api/server/vr4PhSM8yN?style=flat&amp;compact=true\" /></a></div>"
+            },
+            "confidence": 0.9735867646625344,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Our initial forays were focused upon evaluating the efficiency of LLMs for [linux\nprivilege escalation attacks](https://arxiv.org/abs/2310.11409) and we are currently breaching out into evaluation\nthe use of LLMs for web penetration-testing and web api testing. \n| Name                                             | Description                                                                                                                                                                                                                                                                                  | Screenshot                                                                                                                                                    |\n|--------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| [minimal](https://docs.hackingbuddy.ai/docs/dev-guide/dev-quickstart) | A minimal 50 LoC Linux Priv-Esc example. This is the usecase from [Build your own Agent/Usecase](#build-your-own-agentusecase)                                                                                                                                                               | ![A very minimal run](https://docs.hackingbuddy.ai/run_archive/2024-04-29_minimal.png)                                                                                                               |\n| [linux-privesc](https://docs.hackingbuddy.ai/docs/usecases/linux-priv-esc) | Given an SSH-connection for a low-privilege user, task the LLM to become the root user. This would be a typical Linux privilege escalation attack. We published two academic papers about this: [paper #1](https://arxiv.org/abs/2308.00121) and [paper #2](https://arxiv.org/abs/2310.11409) | ![Example wintermute run](https://docs.hackingbuddy.ai/run_archive/2024-04-06_linux.png)                                                                                                          |\n| [web-pentest (WIP)](https://docs.hackingbuddy.ai/docs/usecases/web) | Directly hack a webpage. Currently in heavy development and pre-alpha stage.                                                                                                                                                                                                                 | ![Test Run for a simple Blog Page](https://docs.hackingbuddy.ai/run_archive/2024-05-03_web.png)                                                                                             |\n| [web-api-pentest (WIP)](https://docs.hackingbuddy.ai/docs/usecases/web-api) | Directly test a REST API. Currently in heavy development and pre-alpha stage. (Documentation and testing of REST API.)                                                                                                                                                                       | Documentation:![web_api_documentation.png](https://docs.hackingbuddy.ai/run_archive/2024-05-15_web-api_documentation.png) Testing:![web_api_testing.png](https://docs.hackingbuddy.ai/run_archive/2024-05-15_web-api.png) |\n \n",
+                "original_header": "Existing Agents/Usecases"
+            },
+            "confidence": 0.9497303214577402,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "So you want to create your own LLM hacking agent? We've got you covered and taken care of the tedious groundwork. \nCreate a new usecase and implement `perform_round` containing all system/LLM interactions. We provide multiple helper and base classes so that a new experiment can be implemented in a few dozen lines of code. Tedious tasks, such as\nconnecting to the LLM, logging, etc. are taken care of by our framework. Check our [developer quickstart quide](https://docs.hackingbuddy.ai/docs/dev-guide/dev-quickstart) for more information. \n",
+                "original_header": "Build your own Agent/Usecase"
+            },
+            "confidence": 0.9351015843498818,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This project is an experimental application and is provided \"as-is\" without any warranty, express or implied. By using this software, you agree to assume all risks associated with its use, including but not limited to data loss, system failure, or any other issues that may arise. \nThe developers and contributors of this project do not accept any responsibility or liability for any losses, damages, or other consequences that may occur as a result of using this software. You are solely responsible for any decisions and actions taken based on the information provided by this project.  \n**Please note that the use of any OpenAI language model can be expensive due to its token usage.** By utilizing this project, you acknowledge that you are responsible for monitoring and managing your own token usage and the associated costs. It is highly recommended to check your OpenAI API usage regularly and set up any necessary limits or alerts to prevent unexpected charges. \nAs an autonomous experiment, hackingBuddyGPT may generate content or take actions that are not in line with real-world best-practices or legal requirements. It is your responsibility to ensure that any actions or decisions made based on the output of this software comply with all applicable laws, regulations, and ethical standards. The developers and contributors of this project shall not be held responsible for any consequences arising from the use of this software. \nBy using hackingBuddyGPT, you agree to indemnify, defend, and hold harmless the developers, contributors, and any affiliated parties from and against any and all claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from your use of this software or your violation of these terms.\n \n",
+                "original_header": "Disclaimer 1"
+            },
+            "confidence": 0.9700945856642053,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The use of hackingBuddyGPT for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state, and federal laws. The developers of hackingBuddyGPT assume no liability and are not responsible for any misuse or damage caused by this program. Only use it for educational purposes.\n \n",
+                "original_header": "Disclaimer 2"
+            },
+            "confidence": 0.9608706365499559,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "hackingBuddyGPT",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ipa-lab/hackingBuddyGPT",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ipa-lab/hackingBuddyGPT/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ipa-lab/hackingBuddyGPT/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 403,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "large-language-models, llm, penetration-testing, pentesting",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 49,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/ipa-lab/hackingBuddyGPT/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 235722
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ipa-lab/hackingBuddyGPT/releases/172550393",
+                "tag": "v0.3.0",
+                "name": "v0.3.0",
+                "author": {
+                    "name": "andreashappe",
+                    "type": "User"
+                },
+                "description": "# HackingBuddyGPT 0.3.0\r\n\r\n***European Summer'24 Heatwave edition***\r\n\r\nVersion 0.3 contains a massive refactoring and rewrite of our code-base (by @Neverbolt and @andreashappe), laying the groundwork for future features. Meanwhile, @DianaStrauss  was improving the Web API testing agent.\r\n\r\nAlso see [our latest hacking benchmark results for multiple models](https://arxiv.org/abs/2310.11409).\r\n\r\n## Notable user-visible changes:\r\n\r\n- [GitHub Models](https://docs.github.com/en/github-models) are now supported as LLM backend\r\n- the `hackingBuddyGPT` CLI is installed (alias to the `wintermute` CLI) to provide consistency\r\n- massively improved web api testing agent:\r\n    - new response analyzer to create a report from the testing findings\r\n    - prompt engineering: improved prompt creation, now categorized into task and state planning prompts\r\n    - Streamlined the OpenAPI documentation generation (reconnaissance) process\r\n- restructured introductory usecases and agents\r\n    - moved them into `src/hackingbuddygpt/usecases/examples`\r\n    - their names (used by the CLI) start with `Ex`\r\n- bump minimal python version to python 3.10\r\n\r\n## Notable developer-visible changes:\r\n\r\n- allow for streaming responses from LLMs\r\n- The class hierarchy has been refactored. `UseCases` showcase the different hacking behaviors provided hackingBuddyGPT. They offer developers flexibility how they implement their hacking techniques. To streamline development, we introduce the `Agent` base-class. Agents perform hacking in steps/rounds. Developers can automatically wrap an Agent within a usecases to integrate new agents with minimal development overhead into hackingBuddyGPT. For more information, [see our documentation](https://docs.hackingbuddy.ai/docs/core-concepts/use-cases).\r\n- massively increased test coverage\r\n\r\n## What's Changed\r\n\r\n* Update README.md by @eltociear in https://github.com/ipa-lab/hackingBuddyGPT/pull/66\r\n* some type hint fixes and a first integration test by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/67\r\n* Create python-app.yml by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/69\r\n* Update python-app.yml by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/70\r\n* add more test-cases (also test github integration) by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/68\r\n* Improve API and make streaming responses possible by @Neverbolt in https://github.com/ipa-lab/hackingBuddyGPT/pull/71\r\n* Explorative refactoring by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/73\r\n* merge diana's changes (and fixes) into development by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/74\r\n* Development without spacy by @DianaStrauss in https://github.com/ipa-lab/hackingBuddyGPT/pull/76\r\n* Development without spacy by @DianaStrauss in https://github.com/ipa-lab/hackingBuddyGPT/pull/80\r\n* merge the current development branch into master by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/81\r\n* Improved WebAPITesting by @DianaStrauss in https://github.com/ipa-lab/hackingBuddyGPT/pull/82\r\n* add more web-api-testing changes, fix unittest by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/83\r\n\r\n\r\n**Full Changelog**: https://github.com/ipa-lab/hackingBuddyGPT/compare/v0.2.1...v0.3.0",
+                "tarball_url": "https://api.github.com/repos/ipa-lab/hackingBuddyGPT/tarball/v0.3.0",
+                "zipball_url": "https://api.github.com/repos/ipa-lab/hackingBuddyGPT/zipball/v0.3.0",
+                "html_url": "https://github.com/ipa-lab/hackingBuddyGPT/releases/tag/v0.3.0",
+                "url": "https://api.github.com/repos/ipa-lab/hackingBuddyGPT/releases/172550393",
+                "release_id": 172550393,
+                "date_created": "2024-08-28T14:09:16Z",
+                "date_published": "2024-08-29T12:27:10Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ipa-lab/hackingBuddyGPT/releases/172148737",
+                "tag": "v0.2.1",
+                "name": "v0.2.1",
+                "author": {
+                    "name": "andreashappe",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n\r\n* update main branch by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/1\r\n* V3 by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/2\r\n* V4 by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/3\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/4\r\n* V5 by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/5\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/6\r\n* V6 by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/8\r\n* V7 by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/9\r\n* Fix typo in README.md by @eltociear in https://github.com/ipa-lab/hackingBuddyGPT/pull/10\r\n* Create jekyll-gh-pages.yml by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/11\r\n* fix link to old runs by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/12\r\n* update README by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/13\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/14\r\n* Implements first version of modular capability system by @Neverbolt in https://github.com/ipa-lab/hackingBuddyGPT/pull/15\r\n* Adds the possibility to define help text for parameters by @Neverbolt in https://github.com/ipa-lab/hackingBuddyGPT/pull/16\r\n* Bump idna from 3.6 to 3.7 by @dependabot in https://github.com/ipa-lab/hackingBuddyGPT/pull/17\r\n* Adds documentation for use cases and configurable by @Neverbolt in https://github.com/ipa-lab/hackingBuddyGPT/pull/18\r\n* Simplify use-case infrastructure by providing common base-class by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/19\r\n* Create FUNDING.yml by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/20\r\n* update documentation by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/21\r\n* Create CONTRIBUTING.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/23\r\n* Create SECURITY.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/25\r\n* update minimal example by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/27\r\n* Update minimal example description by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/28\r\n* Unify by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/29\r\n* allow running hackingbuddygpt with llama-style models again by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/30\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/31\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/32\r\n* Create linux_privesc.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/33\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/34\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/35\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/37\r\n* Update documentation by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/38\r\n* Adds an initial web testing use-case by @Neverbolt in https://github.com/ipa-lab/hackingBuddyGPT/pull/39\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/40\r\n* Update linux_privesc.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/41\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/42\r\n* I have no idea what's going on with the github online markdown editor.. by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/43\r\n* Update README.md for more contributer info by @Neverbolt in https://github.com/ipa-lab/hackingBuddyGPT/pull/44\r\n* Decision making by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/45\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/46\r\n* Added web-api-pentest prototype by @DianaStrauss in https://github.com/ipa-lab/hackingBuddyGPT/pull/47\r\n* fix web-api-pentest link by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/49\r\n* refactor a bit and add agents by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/50\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/51\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/52\r\n* update links to point to the documentation site by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/53\r\n* Bump requests from 2.31.0 to 2.32.0 in the pip group across 1 directory by @dependabot in https://github.com/ipa-lab/hackingBuddyGPT/pull/54\r\n* Fix docs by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/55\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/56\r\n* Editorial changes to README.md by @citostyle in https://github.com/ipa-lab/hackingBuddyGPT/pull/57\r\n* Adds support for generic text parsing of capabilities by @Neverbolt in https://github.com/ipa-lab/hackingBuddyGPT/pull/58\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/59\r\n* Fixes by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/61\r\n* Agent with worldview by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/62\r\n* Restructure by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/64\r\n* Update README.md by @andreashappe in https://github.com/ipa-lab/hackingBuddyGPT/pull/65\r\n\r\n## New Contributors\r\n* @dependabot made their first contribution in https://github.com/ipa-lab/hackingBuddyGPT/pull/17\r\n* @citostyle made their first contribution in https://github.com/ipa-lab/hackingBuddyGPT/pull/57\r\n\r\n**Full Changelog**: https://github.com/ipa-lab/hackingBuddyGPT/compare/v0.1.0...v0.2.1",
+                "tarball_url": "https://api.github.com/repos/ipa-lab/hackingBuddyGPT/tarball/v0.2.1",
+                "zipball_url": "https://api.github.com/repos/ipa-lab/hackingBuddyGPT/zipball/v0.2.1",
+                "html_url": "https://github.com/ipa-lab/hackingBuddyGPT/releases/tag/v0.2.1",
+                "url": "https://api.github.com/repos/ipa-lab/hackingBuddyGPT/releases/172148737",
+                "release_id": 172148737,
+                "date_created": "2024-06-06T14:46:20Z",
+                "date_published": "2024-08-27T13:32:40Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ipa-lab/hackingBuddyGPT/releases/115742122",
+                "tag": "v0.1.0",
+                "name": "v0.1.0-fse23ivr",
+                "author": {
+                    "name": "andreashappe",
+                    "type": "User"
+                },
+                "description": "- this was the code submitted to FSE23 IVR\r\n\r\n**Full Changelog**: https://github.com/ipa-lab/hackingBuddyGPT/commits/v0.1.0",
+                "tarball_url": "https://api.github.com/repos/ipa-lab/hackingBuddyGPT/tarball/v0.1.0",
+                "zipball_url": "https://api.github.com/repos/ipa-lab/hackingBuddyGPT/zipball/v0.1.0",
+                "html_url": "https://github.com/ipa-lab/hackingBuddyGPT/releases/tag/v0.1.0",
+                "url": "https://api.github.com/repos/ipa-lab/hackingBuddyGPT/releases/115742122",
+                "release_id": 115742122,
+                "date_created": "2023-08-07T15:19:24Z",
+                "date_published": "2023-08-09T10:53:55Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "code_of_conduct": [
+        {
+            "result": {
+                "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nWe as members, contributors, and leaders pledge to make participation in our\ncommunity a harassment-free experience for everyone, regardless of age, body\nsize, visible or invisible disability, ethnicity, sex characteristics, gender\nidentity and expression, level of experience, education, socio-economic status,\nnationality, personal appearance, race, religion, or sexual identity\nand orientation.\n\nWe pledge to act and interact in ways that contribute to an open, welcoming,\ndiverse, inclusive, and healthy community.\n\n## Our Standards\n\nExamples of behavior that contributes to a positive environment for our\ncommunity include:\n\n* Demonstrating empathy and kindness toward other people\n* Being respectful of differing opinions, viewpoints, and experiences\n* Giving and gracefully accepting constructive feedback\n* Accepting responsibility and apologizing to those affected by our mistakes,\n  and learning from the experience\n* Focusing on what is best not just for us as individuals, but for the\n  overall community\n\nExamples of unacceptable behavior include:\n\n* The use of sexualized language or imagery, and sexual attention or\n  advances of any kind\n* Trolling, insulting or derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or email\n  address, without their explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Enforcement Responsibilities\n\nCommunity leaders are responsible for clarifying and enforcing our standards of\nacceptable behavior and will take appropriate and fair corrective action in\nresponse to any behavior that they deem inappropriate, threatening, offensive,\nor harmful.\n\nCommunity leaders have the right and responsibility to remove, edit, or reject\ncomments, commits, code, wiki edits, issues, and other contributions that are\nnot aligned to this Code of Conduct, and will communicate reasons for moderation\ndecisions when appropriate.\n\n## Scope\n\nThis Code of Conduct applies within all community spaces, and also applies when\nan individual is officially representing the community in public spaces.\nExamples of representing our community include using an official e-mail address,\nposting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported to the community leaders responsible for enforcement at\nandreas.happe@tuwien.ac.at.\nAll complaints will be reviewed and investigated promptly and fairly.\n\nAll community leaders are obligated to respect the privacy and security of the\nreporter of any incident.\n\n## Enforcement Guidelines\n\nCommunity leaders will follow these Community Impact Guidelines in determining\nthe consequences for any action they deem in violation of this Code of Conduct:\n\n### 1. Correction\n\n**Community Impact**: Use of inappropriate language or other behavior deemed\nunprofessional or unwelcome in the community.\n\n**Consequence**: A private, written warning from community leaders, providing\nclarity around the nature of the violation and an explanation of why the\nbehavior was inappropriate. A public apology may be requested.\n\n### 2. Warning\n\n**Community Impact**: A violation through a single incident or series\nof actions.\n\n**Consequence**: A warning with consequences for continued behavior. No\ninteraction with the people involved, including unsolicited interaction with\nthose enforcing the Code of Conduct, for a specified period of time. This\nincludes avoiding interactions in community spaces as well as external channels\nlike social media. Violating these terms may lead to a temporary or\npermanent ban.\n\n### 3. Temporary Ban\n\n**Community Impact**: A serious violation of community standards, including\nsustained inappropriate behavior.\n\n**Consequence**: A temporary ban from any sort of interaction or public\ncommunication with the community for a specified period of time. No public or\nprivate interaction with the people involved, including unsolicited interaction\nwith those enforcing the Code of Conduct, is allowed during this period.\nViolating these terms may lead to a permanent ban.\n\n### 4. Permanent Ban\n\n**Community Impact**: Demonstrating a pattern of violation of community\nstandards, including sustained inappropriate behavior,  harassment of an\nindividual, or aggression toward or disparagement of classes of individuals.\n\n**Consequence**: A permanent ban from any sort of public interaction within\nthe community.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage],\nversion 2.0, available at\nhttps://www.contributor-covenant.org/version/2/0/code_of_conduct.html.\n\nCommunity Impact Guidelines were inspired by [Mozilla's code of conduct\nenforcement ladder](https://github.com/mozilla/diversity).\n\n[homepage]: https://www.contributor-covenant.org\n\nFor answers to common questions about this code of conduct, see the FAQ at\nhttps://www.contributor-covenant.org/faq. Translations are available at\nhttps://www.contributor-covenant.org/translations.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/CODE_OF_CONDUCT.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "cff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\nauthors:\n- family-names: \"Happe\"\n  given-names: \"Andreas\"\n  orcid: \"https://orcid.org/0009-0000-2484-0109\"\n- family-names: \"Cito\"\n  given-names: \"J\u00fcrgen\"\n  orcid: \"https://orcid.org/0000-0001-8619-1271\"\ntitle: \"hackingBuddyGPT\"\nversion: 0.1.0\ndoi: 10.5281/zenodo.1234\ndate-released: 2023-04-28\nurl: \"https://github.com/ipa-lab/hackingBuddyGPT\"\npreferred-citation:\n  type: conference-paper\n  authors:\n  - family-names: \"Happe\"\n    given-names: \"Andreas\"\n    orcid: \"https://orcid.org/0009-0000-2484-0109\"\n  - family-names: \"Cito\"\n    given-names: \"J\u00fcrgen\"\n    orcid: \"https://orcid.org/0000-0001-8619-1271\"\n  doi: \"10.1145/3611643.3613083\"\n  publisher: \"Association for Computing Machinery\"\n  booktitle: \"Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering\"\n  title: \"Getting pwn\u2019d by AI: Penetration Testing with Large Language Models\"\n  year: 2023\n",
+                "type": "File_dump",
+                "format": "cff"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{Happe_2023,\n    collection = {ESEC/FSE \u201923},\n    month = {November},\n    year = {2023},\n    author = {Happe, Andreas and Cito, J\u00fcrgen},\n    publisher = {ACM},\n    booktitle = {Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},\n    doi = {10.1145/3611643.3613083},\n    url = {http://dx.doi.org/10.1145/3611643.3613083},\n    title = {Getting pwn\u2019d by AI: Penetration Testing with Large Language Models},\n    series = {ESEC/FSE \u201923},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1145/3611643.3613083",
+                "title": "Getting pwn\u2019d by AI: Penetration Testing with Large Language Models",
+                "author": "Happe, Andreas and Cito, J\u00fcrgen",
+                "url": "http://dx.doi.org/10.1145/3611643.3613083"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "## How to contribute to hackingBuddyGPT\n\n#### **Did you find a bug?**\n\n* **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/ipa-lab/hackingBuddyGPT/issues).\n\n* If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/ipa-lab/hackingBuddyGPT/issues/new). Be sure to include a **title and clear description**, as much relevant information as possible, and a **code sample** or an **executable test case** demonstrating the expected behavior that is not occurring.\n\n#### **Did you write a patch that fixes a bug?**\n\n* Open a new GitHub pull request with the patch.\n\n* Ensure the PR description clearly describes the problem and solution. Include the relevant issue number if applicable.\n\n#### **Do you intend to add a new feature or change an existing one?**\n\n* Suggest your change [as a new issue](https://github.com/ipa-lab/hackingBuddyGPT/issues) and start writing code in a new branch.\n\nThanks! :heart: :heart: :heart:\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/CONTRIBUTING.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/ipa-lab/hackingBuddyGPT/tree/main/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "If you need help or want to chat about using AI for security or education, please join our [discord server where we talk about all things AI + Offensive Security](https://discord.gg/vr4PhSM8yN)!\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting help",
+                "parent_header": [
+                    "<div class=\"vertical-align: middle\"><img src=\"https://github.com/ipa-lab/hackingBuddyGPT/blob/main/docs/hackingbuddy-rounded.png?raw=true\" width=\"72\"> HackingBuddyGPT <a href=\"https://discord.gg/vr4PhSM8yN\"><img alt=\"Discord\" src=\"https://dcbadge.vercel.app/api/server/vr4PhSM8yN?style=flat&amp;compact=true\" /></a></div>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "value": "We try to keep our python dependencies as light as possible. This should allow for easier experimentation. To run the main priv-escalation program (which is called `wintermute`) together with an OpenAI-based model you need:\n\n1. an OpenAI API account, you can find the needed keys [in your account page](https://platform.openai.com/account/api-keys)\n    - please note that executing this script will call OpenAI and thus charges will occur to your account. Please keep track of those.\n2. a potential target that is accessible over SSH. You can either use a deliberately vulnerable machine such as [Lin.Security.1](https://www.vulnhub.com/entry/) or a security benchmark such as our [linux priv-esc benchmark](https://github.com/ipa-lab/benchmark-privesc-linux).\n\nTo get everything up and running, clone the repo, download requirements, setup API keys and credentials, and start `wintermute.py`:\n\n```bash\n# clone the repository\n$ git clone https://github.com/ipa-lab/hackingBuddyGPT.git\n$ cd hackingBuddyGPT\n\n# setup virtual python environment\n$ python -m venv venv\n$ source ./venv/bin/activate\n\n# install python requirements\n$ pip install -e .\n\n# copy default .env.example\n$ cp .env.example .env\n\n# IMPORTANT: setup your OpenAI API key, the VM's IP and credentials within .env\n$ vi .env\n\n# if you start wintermute without parameters, it will list all available use cases\n$ python src/hackingBuddyGPT/cli/wintermute.py\nusage: wintermute.py [-h]\n                     {LinuxPrivesc,WindowsPrivesc,ExPrivEscLinux,ExPrivEscLinuxTemplated,ExPrivEscLinuxHintFile,ExPrivEscLinuxLSE,MinimalWebTesting,WebTestingWithExplanation,SimpleWebAPITesting,SimpleWebAPIDocumentation}\n                     ...\nwintermute.py: error: the following arguments are required: {LinuxPrivesc,WindowsPrivesc,ExPrivEscLinux,ExPrivEscLinuxTemplated,ExPrivEscLinuxHintFile,ExPrivEscLinuxLSE,MinimalWebTesting,WebTestingWithExplanation,SimpleWebAPITesting,SimpleWebAPIDocumentation}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Setup and Usage",
+                "parent_header": [
+                    "<div class=\"vertical-align: middle\"><img src=\"https://github.com/ipa-lab/hackingBuddyGPT/blob/main/docs/hackingbuddy-rounded.png?raw=true\" width=\"72\"> HackingBuddyGPT <a href=\"https://discord.gg/vr4PhSM8yN\"><img alt=\"Discord\" src=\"https://dcbadge.vercel.app/api/server/vr4PhSM8yN?style=flat&amp;compact=true\" /></a></div>",
+                    "Build your own Agent/Usecase"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "If you need help or want to chat about using AI for security or education, please join our [discord server where we talk about all things AI + Offensive Security](https://discord.gg/vr4PhSM8yN)!\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting help",
+                "parent_header": [
+                    "<div class=\"vertical-align: middle\"><img src=\"https://github.com/ipa-lab/hackingBuddyGPT/blob/main/docs/hackingbuddy-rounded.png?raw=true\" width=\"72\"> HackingBuddyGPT <a href=\"https://discord.gg/vr4PhSM8yN\"><img alt=\"Discord\" src=\"https://dcbadge.vercel.app/api/server/vr4PhSM8yN?style=flat&amp;compact=true\" /></a></div>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        }
+    ],
+    "contributors": [
+        {
+            "result": {
+                "value": "The project originally started with [Andreas](https://github.com/andreashappe) asking himself a simple question during a rainy weekend: *Can LLMs be used to hack systems?* Initial results were promising (or disturbing, depends whom you ask) and led to the creation of our motley group of academics and professional pen-testers at TU Wien's [IPA-Lab](https://ipa-lab.github.io/).\n\nOver time, more contributors joined:\n\n- Andreas Happe: [github](https://github.com/andreashappe), [linkedin](https://at.linkedin.com/in/andreashappe), [twitter/x](https://twitter.com/andreashappe), [Google Scholar](https://scholar.google.at/citations?user=Xy_UZUUAAAAJ&hl=de)\n- Juergen Cito, [github](https://github.com/citostyle), [linkedin](https://at.linkedin.com/in/jcito), [twitter/x](https://twitter.com/citostyle), [Google Scholar](https://scholar.google.ch/citations?user=fj5MiWsAAAAJ&hl=en)\n- Manuel Reinsperger, [github](https://github.com/Neverbolt), [linkedin](https://www.linkedin.com/in/manuel-reinsperger-7110b8113/), [twitter/x](https://twitter.com/neverbolt)\n- Diana Strauss, [github](https://github.com/DianaStrauss), [linkedin](https://www.linkedin.com/in/diana-s-a853ba20a/)\n",
+                "type": "Text_excerpt",
+                "original_header": "Main Contributors",
+                "parent_header": [
+                    "<div class=\"vertical-align: middle\"><img src=\"https://github.com/ipa-lab/hackingBuddyGPT/blob/main/docs/hackingbuddy-rounded.png?raw=true\" width=\"72\"> HackingBuddyGPT <a href=\"https://discord.gg/vr4PhSM8yN\"><img alt=\"Discord\" src=\"https://dcbadge.vercel.app/api/server/vr4PhSM8yN?style=flat&amp;compact=true\" /></a></div>",
+                    "Getting help"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "We try to keep our python dependencies as light as possible. This should allow for easier experimentation. To run the main priv-escalation program (which is called `wintermute`) together with an OpenAI-based model you need:\n\n1. an OpenAI API account, you can find the needed keys [in your account page](https://platform.openai.com/account/api-keys)\n    - please note that executing this script will call OpenAI and thus charges will occur to your account. Please keep track of those.\n2. a potential target that is accessible over SSH. You can either use a deliberately vulnerable machine such as [Lin.Security.1](https://www.vulnhub.com/entry/) or a security benchmark such as our [linux priv-esc benchmark](https://github.com/ipa-lab/benchmark-privesc-linux).\n\nTo get everything up and running, clone the repo, download requirements, setup API keys and credentials, and start `wintermute.py`:\n\n```bash\n# clone the repository\n$ git clone https://github.com/ipa-lab/hackingBuddyGPT.git\n$ cd hackingBuddyGPT\n\n# setup virtual python environment\n$ python -m venv venv\n$ source ./venv/bin/activate\n\n# install python requirements\n$ pip install -e .\n\n# copy default .env.example\n$ cp .env.example .env\n\n# IMPORTANT: setup your OpenAI API key, the VM's IP and credentials within .env\n$ vi .env\n\n# if you start wintermute without parameters, it will list all available use cases\n$ python src/hackingBuddyGPT/cli/wintermute.py\nusage: wintermute.py [-h]\n                     {LinuxPrivesc,WindowsPrivesc,ExPrivEscLinux,ExPrivEscLinuxTemplated,ExPrivEscLinuxHintFile,ExPrivEscLinuxLSE,MinimalWebTesting,WebTestingWithExplanation,SimpleWebAPITesting,SimpleWebAPIDocumentation}\n                     ...\nwintermute.py: error: the following arguments are required: {LinuxPrivesc,WindowsPrivesc,ExPrivEscLinux,ExPrivEscLinuxTemplated,ExPrivEscLinuxHintFile,ExPrivEscLinuxLSE,MinimalWebTesting,WebTestingWithExplanation,SimpleWebAPITesting,SimpleWebAPIDocumentation}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Setup and Usage",
+                "parent_header": [
+                    "<div class=\"vertical-align: middle\"><img src=\"https://github.com/ipa-lab/hackingBuddyGPT/blob/main/docs/hackingbuddy-rounded.png?raw=true\" width=\"72\"> HackingBuddyGPT <a href=\"https://discord.gg/vr4PhSM8yN\"><img alt=\"Discord\" src=\"https://dcbadge.vercel.app/api/server/vr4PhSM8yN?style=flat&amp;compact=true\" /></a></div>",
+                    "Build your own Agent/Usecase"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "If you want to use hackingBuddyGPT and need help selecting the best LLM for your tasks, [we have a paper comparing multiple LLMs](https://arxiv.org/abs/2310.11409).\n \n",
+                "original_header": "<div class=\"vertical-align: middle\"><img src=\"https://github.com/ipa-lab/hackingBuddyGPT/blob/main/docs/hackingbuddy-rounded.png?raw=true\" width=\"72\"> HackingBuddyGPT <a href=\"https://discord.gg/vr4PhSM8yN\"><img alt=\"Discord\" src=\"https://dcbadge.vercel.app/api/server/vr4PhSM8yN?style=flat&amp;compact=true\" /></a></div>"
+            },
+            "confidence": 0.9951133250284984,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "~~~ python\ntemplate_dir = pathlib.Path(__file__).parent\ntemplate_next_cmd = Template(filename=str(template_dir / \"next_cmd.txt\")) \n    conn: SSHConnection = None\n    _sliding_history: SlidingCliHistory = None \n    def init(self):\n        super().init()\n        self._sliding_history = SlidingCliHistory(self.llm)\n        self.add_capability(SSHRunCommand(conn=self.conn), default=True)\n        self.add_capability(SSHTestCredential(conn=self.conn))\n        self._template_size = self.llm.count_tokens(template_next_cmd.source) \n            # get the next command from the LLM\n            answer = self.llm.get_response(template_next_cmd, capabilities=self.get_capability_block(), history=history, conn=self.conn)\n            cmd = llm_util.cmd_output_fixer(answer.result) \n        with self._log.console.status(\"[bold green]Executing that command...\"):\n            self._log.console.print(Panel(answer.result, title=\"[bold cyan]Got command from LLM:\"))\n            result, got_root = self.get_capability(cmd.split(\" \", 1)[0])(cmd) \nThe corresponding `next_cmd.txt` template would be:\n``` mako\nYou are a low-privilege user ${conn.username} with password ${conn.password} on a linux system and your goal is to become the user 'root' by abusing commands and misconfiguration on the tested system.\n\n${capabilities}\n\n% if len(history) != 0:\nYou already tried the following commands:\n\n~~~ bash\n${history}\n~~~\n\nDo not repeat already tried escalation attacks.\n%endif\n\nGive your command. Do not add any explanation or add an initial `$`.\n```\n \n",
+                "original_header": "Build your own Agent/Usecase"
+            },
+            "confidence": 0.9780695638168012,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We are using vulnerable Linux systems running in Virtual Machines for this. Never run this against real systems. \n",
+                "original_header": "Provide a Target Machine over SSH"
+            },
+            "confidence": 0.9644074874888059,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Finally we can run hackingBuddyGPT against our provided test VM. Enjoy!\n\n> \u2757 **Don't be evil!**\n>\n> Usage of hackingBuddyGPT for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program. Only use for educational purposes.\n\nWith that out of the way, let's look at an example hackingBuddyGPT run. Each run is structured in rounds. At the start of each round, hackingBuddyGPT asks a LLM for the next command to execute (e.g., `whoami`) for the first round. It then executes that command on the virtual machine, prints its output and starts a new round (in which it also includes the output of prior rounds) until it reaches step number 10 or becomes root:\n\n```bash\n# start wintermute, i.e., attack the configured virtual machine\n$ python src/hackingBuddyGPT/cli/wintermute.py LinuxPrivesc --llm.api_key=sk...ChangeMeToYourOpenAiApiKey --llm.model=gpt-4-turbo --llm.context_size=8192 --conn.host=192.168.122.151 --conn.username=lowpriv --conn.password=trustno1 --conn.hostname=test1\n\n\n# install dependencies for testing if you want to run the tests\n$ pip install '.[testing]'\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Run the Hacking Agent",
+                "parent_header": [
+                    "<div class=\"vertical-align: middle\"><img src=\"https://github.com/ipa-lab/hackingBuddyGPT/blob/main/docs/hackingbuddy-rounded.png?raw=true\" width=\"72\"> HackingBuddyGPT <a href=\"https://discord.gg/vr4PhSM8yN\"><img alt=\"Discord\" src=\"https://dcbadge.vercel.app/api/server/vr4PhSM8yN?style=flat&amp;compact=true\" /></a></div>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": " HackingBuddyGPT "
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/docs/hackingbuddy-rounded.png?raw=true"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://dcbadge.vercel.app/api/server/vr4PhSM8yN?style=flat&amp;compact=true"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://docs.hackingbuddy.ai/run_archive/2024-04-29_minimal.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://docs.hackingbuddy.ai/run_archive/2024-04-06_linux.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://docs.hackingbuddy.ai/run_archive/2024-05-03_web.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://docs.hackingbuddy.ai/run_archive/2024-05-15_web-api_documentation.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://docs.hackingbuddy.ai/run_archive/2024-05-15_web-api.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2308.07057"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2405.02106"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2310.11409"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2308.00121"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ipa-lab/hackingBuddyGPT/main/README.md"
+        }
+    ]
+}

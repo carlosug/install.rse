@@ -1,0 +1,377 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:06:19"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/mast-group/tassal",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "mast-group",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2014-12-17T17:00:36Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-01-06T16:11:40Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/bsd-3-clause",
+                "type": "License",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "spdx_id": "BSD-3-Clause"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Copyright (c) 2015, Machine Learning for the Analysis of Source Code Text\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or other materials provided with the distribution.\n\n* Neither the name of tassal nor the names of its\n  contributors may be used to endorse or promote products derived from\n  this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/LICENSE"
+        },
+        {
+            "result": {
+                "value": "This tool is released under the new BSD license.\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "TASSAL: Tree-based Autofolding Software Summarization ALgorithm <a href=\"https://travis-ci.org/mast-group/tassal\"><img alt=\"Build Status\" src=\"https://travis-ci.org/mast-group/tassal.svg?branch=master\" /></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Tree-based Autofolding Software Summarization Algorithm",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is an implementation of the code summarizer from our paper:  \n[*Autofolding for Source Code Summarization*](http://arxiv.org/abs/1403.4503)  \nJ. Fowkes, R. Ranca, M. Allamanis, M. Lapata and C. Sutton. arXiv preprint 1403.4503, 2015.    \n",
+                "original_header": "TASSAL: Tree-based Autofolding Software Summarization ALgorithm <a href=\"https://travis-ci.org/mast-group/tassal\"><img alt=\"Build Status\" src=\"https://travis-ci.org/mast-group/tassal.svg?branch=master\" /></a>"
+            },
+            "confidence": 0.9687981951225211,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "TASSAL is also able to summmarize an entire project by finding the top source files (and therefore classes) representative of that project. These top project files can then be autofolded using TASSAL as above (see [Autofolding a source file](#autofolding-a-source-file)). \n",
+                "original_header": "Summarizing a Project"
+            },
+            "confidence": 0.922521144669393,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "tassal",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "mast-group/tassal",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mast-group/tassal/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mast-group/tassal/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 42,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "machine-learning, ml4code, topic-modeling",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/mast-group/tassal/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 593723
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Simply import as a maven project into [Eclipse](https://eclipse.org/) using the *File -> Import...* menu option (note that this requires [m2eclipse](http://eclipse.org/m2e/)). \n\nIt's also possible to export a runnable jar from Eclipse using the *File -> Export...* menu option.\n",
+                "type": "Text_excerpt",
+                "original_header": "Installing in Eclipse",
+                "parent_header": [
+                    "TASSAL: Tree-based Autofolding Software Summarization ALgorithm <a href=\"https://travis-ci.org/mast-group/tassal\"><img alt=\"Build Status\" src=\"https://travis-ci.org/mast-group/tassal.svg?branch=master\" /></a>",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To compile a standalone runnable jar, simply run\n\n```\nmvn package\n```\n\nin the main tassal directory (note that this requires [maven](https://maven.apache.org/)).\n\nThis will create the standalone runnable jar ```tassal-1.1-SNAPSHOT.jar``` in the tassal/target subdirectory.\n",
+                "type": "Text_excerpt",
+                "original_header": "Compiling a Runnable Jar",
+                "parent_header": [
+                    "TASSAL: Tree-based Autofolding Software Summarization ALgorithm <a href=\"https://travis-ci.org/mast-group/tassal\"><img alt=\"Build Status\" src=\"https://travis-ci.org/mast-group/tassal.svg?branch=master\" /></a>",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "**NEW:** For a live demo of TASSAL that allows you to summarize any GitHub project see:   \nhttps://code-summarizer.herokuapp.com \n",
+                "original_header": "TASSAL: Tree-based Autofolding Software Summarization ALgorithm <a href=\"https://travis-ci.org/mast-group/tassal\"><img alt=\"Build Status\" src=\"https://travis-ci.org/mast-group/tassal.svg?branch=master\" /></a>"
+            },
+            "confidence": 0.998232558216727,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* **-s** &nbsp;  working directory where the topic model creates necessary files (same as above)\n* **-d** &nbsp;  directory containing java projects\n* **-p** &nbsp;  project to summarize\n* **-c** &nbsp;  desired compression ratio (% of project files to list)\n* **-b** &nbsp;  (optional)  background topic to back off to (0-2, default=2) \n* **-o** &nbsp;  (optional)  where to save the salient files\n* **-i** &nbsp;  (optional)  whether to ignore unit test files (default=true)  \n",
+                "original_header": "Summarizing a Project"
+            },
+            "confidence": 0.9996036762194547,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Please report any bugs using GitHub's issue tracker.\n \n",
+                "original_header": "Bugs"
+            },
+            "confidence": 0.9946171779528844,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "TASAAL VSM uses a Vector Space Model of source code tokens to determine which are the least relevent code regions to autofold. \nTASSAL VSM can run in real-time. \n",
+                "type": "Text_excerpt",
+                "original_header": "Running TASSAL VSM",
+                "parent_header": [
+                    "TASSAL: Tree-based Autofolding Software Summarization ALgorithm <a href=\"https://travis-ci.org/mast-group/tassal\"><img alt=\"Build Status\" src=\"https://travis-ci.org/mast-group/tassal.svg?branch=master\" /></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md"
+        },
+        {
+            "result": {
+                "value": "*codesum.lm.tui.FoldSourceFileVSM* folds a specified source file. It has the following command line options:\n\n* **-f**  &nbsp;  souce file to autofold\n* **-c**  &nbsp;  desired compression ratio for the file (%)\n* **-o**  &nbsp; (optional)  where to save the folded file\n\nSee the individual file javadocs in *codesum.lm.tui* for information on the Java interface.\nIn Eclipse you can set command line arguments for the TASSAL interface using the *Run Configurations...* menu option. \n",
+                "type": "Text_excerpt",
+                "original_header": "Autofolding a source file",
+                "parent_header": [
+                    "TASSAL: Tree-based Autofolding Software Summarization ALgorithm <a href=\"https://travis-ci.org/mast-group/tassal\"><img alt=\"Build Status\" src=\"https://travis-ci.org/mast-group/tassal.svg?branch=master\" /></a>",
+                    "Running TASSAL"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md"
+        },
+        {
+            "result": {
+                "value": "TASAAL uses a scoped Topic Model of source code tokens to determine which are the least relevent code regions to autofold. \nTASSAL requires the topic model to be trained on a dataset (the larger the better) before it can fold files in the dataset. \nWhile this is slower than using a VSM model, it is considerably more accurate. \n",
+                "type": "Text_excerpt",
+                "original_header": "Running TASSAL",
+                "parent_header": [
+                    "TASSAL: Tree-based Autofolding Software Summarization ALgorithm <a href=\"https://travis-ci.org/mast-group/tassal\"><img alt=\"Build Status\" src=\"https://travis-ci.org/mast-group/tassal.svg?branch=master\" /></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md"
+        },
+        {
+            "result": {
+                "value": "*codesum.lm.tui.TrainTopicModel* trains the underlying topic model. It has the following command line options:\n\n* **-d** &nbsp;  directory containing java projects\n* **-w** &nbsp;  working directory where the topic model creates necessary files\n* **-i** &nbsp;  (optional)  no. iterations to train the topic model for.\n\nThis will output a summary of the top 25 tokens in some of the discovered topics. \n\n#### Autofolding a source file\n\n*codesum.lm.tui.FoldSourceFile* folds a specified source file. It has the following command line options:\n\n* **-w** &nbsp;  working directory where the topic model creates necessary files (same as above)\n* **-f** &nbsp;  souce file to autofold\n* **-p** &nbsp;  project containing the file to fold\n* **-c** &nbsp;  desired compression ratio for the file (%)\n* **-b** &nbsp;  (optional)  background topic to back off to (0-2, default=2) \n* **-o** &nbsp;  (optional)  where to save the folded file\n\nSee the individual file javadocs in *codesum.lm.tui* for information on the Java interface.\nIn Eclipse you can set command line arguments for the TASSAL interface using the *Run Configurations...* menu option. \n\n#### Example Usage\n\nA complete example using the command line interface on a runnable jar.\n\nFirst clone the ActionBarSherlock project into /tmp/java_projects/\n\n  ```sh \n  $ mkdir /tmp/java_projects/\n  $ cd /tmp/java_projects/\n  $ git clone https://github.com/JakeWharton/ActionBarSherlock.git\n  ```\n\nNow you can train the topic model on the java projects in /tmp/java_projects/\n\n  ```sh \n  $ java -cp tassal/target/tassal-1.1-SNAPSHOT.jar codesum.lm.tui.TrainTopicModel   \n   -d /tmp/java_projects/  -w /tmp/ -i 100 \n  ```\n\nThis trains the topic model for 100 iterations and outputs the model to /tmp/. We can then fold a specific file \n\n  ```sh \n  $ java -cp tassal/target/tassal-1.1-SNAPSHOT.jar codesum.lm.tui.FoldSourceFile     \n   -w /tmp/  -c 50 -p ActionBarSherlock \n   -f /tmp/java_projects/ActionBarSherlock/actionbarsherlock/src/com/actionbarsherlock/app/SherlockFragment.java \n   -o /tmp/SherlockFragmentFolded.java \n  ```\n\nwhich will output the folded file to /tmp/SherlockFragmentFolded.java. \n",
+                "type": "Text_excerpt",
+                "original_header": "Training the source code topic model",
+                "parent_header": [
+                    "TASSAL: Tree-based Autofolding Software Summarization ALgorithm <a href=\"https://travis-ci.org/mast-group/tassal\"><img alt=\"Build Status\" src=\"https://travis-ci.org/mast-group/tassal.svg?branch=master\" /></a>",
+                    "Running TASSAL"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "A complete example using the command line interface on a runnable jar.\n\nFirst clone the ActionBarSherlock project into /tmp/java_projects/\n\n  ```sh \n  $ mkdir /tmp/java_projects/\n  $ cd /tmp/java_projects/\n  $ git clone https://github.com/JakeWharton/ActionBarSherlock.git \n  ```\n\nWe can then fold a specific file \n\n  ```sh \n  $ java -cp tassal/target/tassal-1.1-SNAPSHOT.jar codesum.lm.tui.FoldSourceFileVSM     \n   -c 50\n   -f /tmp/java_projects/ActionBarSherlock/actionbarsherlock/src/com/actionbarsherlock/app/SherlockFragment.java \n   -o /tmp/SherlockFragmentFolded.java \n  ```\n\nwhich will output the folded file to /tmp/SherlockFragmentFolded.java. \n",
+                "type": "Text_excerpt",
+                "original_header": "Example Usage",
+                "parent_header": [
+                    "TASSAL: Tree-based Autofolding Software Summarization ALgorithm <a href=\"https://travis-ci.org/mast-group/tassal\"><img alt=\"Build Status\" src=\"https://travis-ci.org/mast-group/tassal.svg?branch=master\" /></a>",
+                    "Running TASSAL"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.968800065460006,
+            "technique": "supervised_classification"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "TASSAL: Tree-based Autofolding Software Summarization ALgorithm "
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mast-group/tassal/master/README.md"
+        }
+    ]
+}

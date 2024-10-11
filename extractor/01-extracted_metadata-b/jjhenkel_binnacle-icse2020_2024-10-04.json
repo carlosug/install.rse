@@ -1,0 +1,592 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:12:57"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/jjhenkel/binnacle-icse2020",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "jjhenkel",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-01-22T17:45:25Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-28T14:21:53Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2020 Jordan Henkel\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/LICENSE.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "ICSE 2020 Artifact for: Learning from, Understanding, and Supporting DevOps Artifacts for Docker",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\nICSE 2020 Artifact for: `Learning from, Understanding, and Supporting DevOps Artifacts for Docker`.\n \n",
+                "original_header": "Binnacle: ICSE 2020 Artifact"
+            },
+            "confidence": 0.9039511866020221,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "In this artifact, we have upgraded our original data pipeline to de-duplicate files prior to running experiments. This has created small deviations in some of the metrics reported in our accepted submission---these metrics have been updated in our Camera Ready draft to correspond with the new (de-duplicated) pipeline outputs.\n \n",
+                "original_header": "Reproducing experimental results"
+            },
+            "confidence": 0.9204415741637406,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "All of the data (including the original source-level `Dockerfiles`) has been included directly in the GitHub repository for `binnacle`. The `./datasets` folder contains, in its `README.md`, extensive documentation on each representation of our data and examples for how to work with our data at each stage of processing. We also include the tools we built for transforming data from one representation to the next. We hope that this will give others a jump-start toward working in this area.\n \n",
+                "original_header": "Accessing our data"
+            },
+            "confidence": 0.9917111166911117,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "binnacle-icse2020",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "jjhenkel/binnacle-icse2020",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/jjhenkel/binnacle-icse2020/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/jjhenkel/binnacle-icse2020/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 18,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 12,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/jjhenkel/binnacle-icse2020/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "TypeScript",
+                "name": "TypeScript",
+                "type": "Programming_language",
+                "size": 309123
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C#",
+                "name": "C#",
+                "type": "Programming_language",
+                "size": 103569
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 23097
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "jq",
+                "name": "jq",
+                "type": "Programming_language",
+                "size": 20843
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 9410
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "TeX",
+                "name": "TeX",
+                "type": "Programming_language",
+                "size": 7437
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 2641
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Haskell",
+                "name": "Haskell",
+                "type": "Programming_language",
+                "size": 1920
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/jjhenkel/binnacle-icse2020/releases/23164058",
+                "tag": "1.0.0",
+                "name": "ICSE2020 Artifact: Initial Release ",
+                "author": {
+                    "name": "jjhenkel",
+                    "type": "User"
+                },
+                "description": "Initial release for ICSE 2020 artifact submission.",
+                "tarball_url": "https://api.github.com/repos/jjhenkel/binnacle-icse2020/tarball/1.0.0",
+                "zipball_url": "https://api.github.com/repos/jjhenkel/binnacle-icse2020/zipball/1.0.0",
+                "html_url": "https://github.com/jjhenkel/binnacle-icse2020/releases/tag/1.0.0",
+                "url": "https://api.github.com/repos/jjhenkel/binnacle-icse2020/releases/23164058",
+                "release_id": 23164058,
+                "date_created": "2020-01-27T20:16:47Z",
+                "date_published": "2020-01-27T20:25:43Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "# Installing Binnacle\n\nTo download both the necessary scripts, infrastructure, and raw data, all you need to do is:\n\n```bash\ngit clone https://github.com/jjhenkel/binnacle-icse2020.git\n\ncd ./binnacle-icse2020\n```\n\nAll examples (unless otherwise noted) assume you are working in the directory corresponding to the root of this GitHub repository. \n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/INSTALL.md"
+        },
+        {
+            "result": {
+                "value": "Run:\n\n```bash\ngit clone https://github.com/jjhenkel/binnacle-icse2020.git\n\ncd ./binnacle-icse2020\n```\n\n**Note:** the rest of this README assumes you are working in the root directory of the `binnacle-icse2020` git repository.\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "Binnacle: ICSE 2020 Artifact"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To reproduce our mined rules the following script can be used:\n```bash\n# To mine rules, automatically\n./experiments/2-automated-rule-mining/run.sh\n```\n \n**Note:** during testing, we've had issues with running this container on Docker installations that are running inside of a Virtual Machine (specifically, an Ubuntu VM, with Docker, on a Windows host). If you attempt to run this in a Linux VM, on a Windows host, and the container hangs, it's likely this issue. (We, unfortunately, have not found any reliable work-arounds for this issue.)\n \n",
+                "original_header": "RQ2 - Automated Rule Mining"
+            },
+            "confidence": 0.998907915846841,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "If you wish to run against ALL of the Dockerfiles, and not just the Gold Set, we have made that functionality available via: \n```bash\n# Runs against `gold.jsonl.xz` AND `github.jsonl.xz`\n./experiments/3-static-rule-enforcement/run.sh --full\n```\nDoing this is much slower (as the full GitHub dataset has 450x the data of the Gold set). Once complete, the following files should be present:\n \n",
+                "original_header": "RQ3 - Extras"
+            },
+            "confidence": 0.9065284702953665,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Thanks to `xz`'s excellent compressions, you already have it! \n",
+                "original_header": "Accessing our data"
+            },
+            "confidence": 0.9734991636110191,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/3-static-rule-enforcement/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/3-static-rule-enforcement/render.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/3-static-rule-enforcement/experiment/prepare-table.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/3-static-rule-enforcement/experiment/entrypoint.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/2-automated-rule-mining/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/2-automated-rule-mining/experiment/entrypoint.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/1-effectively-uninterpretable-nodes/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/1-effectively-uninterpretable-nodes/render.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/1-effectively-uninterpretable-nodes/experiment/entrypoint.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/datasets/2-phase-2-dockerfile-asts/generate.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/datasets/3-phase-3-dockerfile-asts/generate.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/datasets/1-phase-1-dockerfile-asts/generate.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/datasets/1-phase-1-dockerfile-asts/generate/entrypoint.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/datasets/4-abstracted-asts/generate.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/3-static-rule-enforcement/experiment/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/3-static-rule-enforcement/experiment/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/2-automated-rule-mining/experiment/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/2-automated-rule-mining/experiment/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/1-effectively-uninterpretable-nodes/experiment/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/experiments/1-effectively-uninterpretable-nodes/experiment/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/datasets/2-phase-2-dockerfile-asts/generate/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/datasets/2-phase-2-dockerfile-asts/generate/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/datasets/3-phase-3-dockerfile-asts/generate/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/datasets/3-phase-3-dockerfile-asts/generate/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/datasets/1-phase-1-dockerfile-asts/generate/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/datasets/1-phase-1-dockerfile-asts/generate/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/datasets/4-abstracted-asts/generate/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/datasets/4-abstracted-asts/generate/Dockerfile"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "To use this artifact, the following dependencies are required:\n\n- A working installation of [Docker](https://docs.docker.com/get-docker/)\n\n- Bash\n\nTo install Docker please see one of the following resources:\n\n1. [Install Docker for Windows.](https://docs.docker.com/docker-for-windows/install/)\n2. [Install Docker for Mac.](https://docs.docker.com/docker-for-mac/install/)\n3. [Install Docker for Ubuntu.](https://docs.docker.com/install/linux/docker-ce/ubuntu/)\n\nWe recommend running experiments on a `*nix` system but have encapsulated all of the necessary\ninfrastructure via Docker to make it possible (albeit less automatic) to run on any system with\na working Docker install.\n\nFor inspecting data locally (without the use of Docker) the following tools are recommended:\n\n- [xz](https://tukaani.org/xz/) (Commonly provided by `xz-utils`.)\n- [jq](https://github.com/stedolan/jq) (This is an excellent tool allowing `awk` and `grep` like manipulation of JSON objects from the command line.)\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "Binnacle: ICSE 2020 Artifact"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/README.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://doi.org/10.5281/zenodo.3628771"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Binnacle: ICSE 2020 Artifact"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/jjhenkel/binnacle-icse2020/master/README.md"
+        }
+    ]
+}

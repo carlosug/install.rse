@@ -1,0 +1,254 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:38:53"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/anonytomatous/Hybiscus",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "anonytomatous",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-01-25T07:47:17Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2021-12-23T02:55:47Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Hybiscus",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "anonytomatous/Hybiscus",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/anonytomatous/Hybiscus/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/anonytomatous/Hybiscus/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/anonytomatous/Hybiscus/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 57276
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 56780
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/anonytomatous/Hybiscus/flattened/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/anonytomatous/Hybiscus/flattened/Analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/anonytomatous/Hybiscus/flattened/Analysis.ipynb"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "- Python >= 3.8\n- Install packages by typing\n    ```shell\n    pip install -r requirements.txt\n    ```\n\n---",
+                "type": "Text_excerpt",
+                "original_header": "\u2705 Prerequisite",
+                "parent_header": [
+                    "\ud83c\udf3a Hybiscus: Hypergraph-based Failure Clustering Framework"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/anonytomatous/Hybiscus/flattened/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "To evaluate and compare the failure clustering performance of various clustering methods (Hybiscus, MSeer, ...), you need following data:\n\n1. A coverage data file (`.pkl`): A pickled pandas dataframe whose columns are test case IDs, and the indices are the program component IDs.\n    ```python\n    # Initialise data of coverage. \n    data = {\n        'T1':[1, 1, 0, 0, 1, 1],\n        'T2':[1, 1, 0, 0, 1, 1], \n        'T3':[0, 1, 1, 0, 1, 0], \n        'T4':[1, 0, 0, 1, 0, 0], \n        'T5':[0, 1, 0, 1, 1, 0], \n    } \n    \n    # Create and save pandas DataFrame.\n    df = pd.DataFrame(data, index =['C1', 'C2', 'C3', 'C4', 'C5', 'C6']) \n    df.to_pickle(\"resources/example/my_coverage.pkl\") # See resources/example/\n    print(df)\n    \"\"\"\n        T1  T2  T3  T4  T5\n    C1   1   1   0   1   0\n    C2   1   1   1   0   1\n    C3   0   0   1   0   0\n    C4   0   0   0   1   1\n    C5   1   1   1   0   1\n    C6   1   1   0   0   0\n    \"\"\"\n    ```\n2. (*ground-truth*) Files containing failing test cases for each fault (failing test cases should not be ovelapped.)\n   - ex) [./resources/example/fault-1-failing-tests](./resources/example/fault-1-failing-tests):\n        ```\n        T3\n        ```\n\n   - ex) [./resources/example/fault-2-failing-tests](./resources/example/fault-2-failing-tests):\n        ```\n        T4\n        T5\n        ```\n\n3. (*ground-truth*, optional) Files containing faulty components for each faults (to evaluate FL performance)\n   - ex) [./resources/example/fault-1-faulty-components](./resources/example/fault-1-faulty-components):\n        ```\n        C3\n        ```\n   - ex) [./resources/example/fault-2-faulty-components](./resources/example/fault-2-faulty-components):\n        ```\n        C4\n        ```\n",
+                "type": "Text_excerpt",
+                "original_header": "A. Prepare needed information",
+                "parent_header": [
+                    "\ud83c\udf3a Hybiscus: Hypergraph-based Failure Clustering Framework",
+                    "<a name=\"experiment\"></a> \ud83d\udd2c Evaluate the Failure Clustering &amp; Fault Localisation Performance"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/anonytomatous/Hybiscus/flattened/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- **If you want to construct a D4J multi-fault dataset, refer to https://github.com/anonytomatous/docker-D4J-multifault**\n- **If you want to construct a SIR multi-fault dataset, refer to https://github.com/anonytomatous/docker-SIR-multifault**\n \n",
+                "original_header": "B. Generate a Evaluation Dataset"
+            },
+            "confidence": 0.9999910666699049,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/anonytomatous/Hybiscus/flattened/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "- Execute `evaluate.py` to run the experiment.\n    ```shell\n    python evaluate.py [-h] [--id ID] [--no-cache] [--no-fl-cache] [--fl] [--fl-only-knee] dataset\n    # example\n    python evaluate.py ./resources/example/evaluation_example.json\n    python evaluate.py ./resources/example/evaluation_example.json --fl # to run the FL evaluation\n    python evaluate.py ./resources/example/evaluation_example.json --fl --fl-only-knee # run FL for only the suggested \"k\" of AHC\n    ```\n\n- The results will be saved to `./resources/result/evaluation_example_*`.\n- RKT distance will be stored in `resources/MSeer/my-program-v1.pt`.\n- The distance calculation cost is measured only when either there are no existing result files or the `--no-cache` option is provided.\n--- ",
+                "type": "Text_excerpt",
+                "original_header": "C. Run the Evaluation Script",
+                "parent_header": [
+                    "\ud83c\udf3a Hybiscus: Hypergraph-based Failure Clustering Framework",
+                    "<a name=\"experiment\"></a> \ud83d\udd2c Evaluate the Failure Clustering &amp; Fault Localisation Performance"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/anonytomatous/Hybiscus/flattened/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "This is very similar to the experiment running process, but you don't need any ground-truth.\n\nTo run **Hybiscus**, we need following data:\n1. A coverage data (`.pkl`)\n   - ex) [./resources/example/my_coverage.pkl](resources/example/my_coverage.pkl)\n2. A list of failing test cases\n   - ex) [./resources/example/failing-tests](./resources/example/failing-tests):\n        ```\n        T3\n        T4\n        T5\n        ```\n\nBased on the coverage data and failing test information, you can run Hybiscus as follows:\n```shell\n# usage: Hybiscus.py [-h] [--linkage LINKAGE] [--k K] [--threshold THRESHOLD] [--fl-formula FL_FORMULA] [--output OUTPUT] coverage failing\n\npython Hybiscus.py ./resources/example/my_coverage.pkl ./resources/example/failing-tests --linkage complete\n\n# 2021-01-25 00:41:50,229 INFO     Loading coverage data: ./resources/example/my_coverage.pkl\n# 2021-01-25 00:41:50,230 INFO     Loading failing tests data: ./resources/example/failing-tests\n# 2021-01-25 00:41:50,230 INFO     Processing input data....\n# 2021-01-25 00:41:50,232 INFO     Hypergraph modeling takes 0.0 seconds\n# 2021-01-25 00:41:50,233 DEBUG    mdist: 0.4500000476837158 (k=3)\n# 2021-01-25 00:41:50,234 DEBUG    mdist: 1.0 (k=2)\n# 2021-01-25 00:41:50,234 INFO     Calculating k value.... elbow point of mdist curve\n# 2021-01-25 00:41:50,234 INFO     ======================= Hybiscus =======================\n# 2021-01-25 00:41:50,234 INFO     k: 2\n# 2021-01-25 00:41:50,235 INFO     cluster 1: ['T3']\n# 2021-01-25 00:41:50,235 INFO     cluster 2: ['T4' 'T5']\n# 2021-01-25 00:41:50,235 INFO     ========================================================\n```\nBy default, Hybiscus suggests `k` (# clusters) using the distance-based stopping criterion.\n```shell\npython Hybiscus.py ./resources/example/my_coverage.pkl ./resources/example/failing-tests --linkage complete\n```\n\nInstead, you can specify `k` or the distance threshold:\n```shell\npython Hybiscus.py ./resources/example/my_coverage.pkl ./resources/example/failing-tests --linkage complete --k 2 \npython Hybiscus.py ./resources/example/my_coverage.pkl ./resources/example/failing-tests --linkage complete --threshold 0.5\n```\n\nNote that `--k` has priority over `--threshold` if both are given.\n\nAlso, after the failure clustering, you can localise faults by applying a coverage-based fault localisation technique.\n```shell\npython Hybiscus.py ./resources/example/my_coverage.pkl ./resources/example/failing-tests --linkage complete --fl-formula Ochiai # or Crosstab\n```\n\nCheck out `./output.json`. (use the `--output` option to change the path to output)\n- `clusters`: the failure clustering results\n- `FL_result`: the suspiciousness scores of program components when using only the failing tests in a cluster and all passing test cases\n  - For example, using the first cluster `[T3]` (+ passing tests `[T1, T2]`), the most suspicious element is `C3` with 1.0 of suspiciousness score.\n```json\n{\n    \"clusters\": [\n        [\n            \"T3\"\n        ],\n        [\n            \"T4\",\n            \"T5\"\n        ]\n    ],\n    \"FL_result\": [\n        [\n            [\n                \"C1\",\n                0.0\n            ],\n            [\n                \"C2\",\n                0.5773502588272095\n            ],\n            [\n                \"C3\",\n                1.0\n            ],\n            [\n                \"C4\",\n                NaN\n            ],\n            [\n                \"C5\",\n                0.5773502588272095\n            ],\n            [\n                \"C6\",\n                0.0\n            ]\n        ],\n        [\n            [\n                \"C1\",\n                0.40824827551841736\n            ],\n            [\n                \"C2\",\n                0.40824827551841736\n            ],\n            [\n                \"C3\",\n                NaN\n            ],\n            [\n                \"C4\",\n                1.0\n            ],\n            [\n                \"C5\",\n                0.40824827551841736\n            ],\n            [\n                \"C6\",\n                0.0\n            ]\n        ]\n    ]\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "<a name=\"tool\"></a> \ud83d\udee0 Wanna use Hybiscus as a tool?",
+                "parent_header": [
+                    "\ud83c\udf3a Hybiscus: Hypergraph-based Failure Clustering Framework"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/anonytomatous/Hybiscus/flattened/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "\ud83c\udf3a Hybiscus: Hypergraph-based Failure Clustering Framework"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/anonytomatous/Hybiscus/flattened/README.md"
+        }
+    ]
+}

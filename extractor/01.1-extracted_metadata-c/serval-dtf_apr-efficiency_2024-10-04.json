@@ -1,0 +1,228 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 18:05:01"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/TruX-DTF/APR-Efficiency",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "TruX-DTF",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-01-25T03:36:47Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-10-30T07:58:58Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "APR-Efficiency",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "TruX-DTF/APR-Efficiency",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/TruX-DTF/APR-Efficiency/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/TruX-DTF/APR-Efficiency/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 12,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/serval-dtf/apr-efficiency/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/serval-dtf/apr-efficiency/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "----------------------\nAll donor code of fixing a bug is rolled in a method, the patch unrolls the method but not invokes the method.\n> **ACS:** [Math-35];  \n",
+                "original_header": "R5: Unrolling a method"
+            },
+            "confidence": 0.964385936018323,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/serval-dtf/apr-efficiency/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "---------------\nThe patch enumerates and negates the condition that is positively considered in the buggy code.\n> **ACS:** [Math_82], [Math_85].\n\r \n",
+                "original_header": "R7: Enumerating"
+            },
+            "confidence": 0.9548997118378643,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/serval-dtf/apr-efficiency/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "-----------------------------\nThe patch code is not compared with the same accurate value as the code of developer's patch.\n> **ACS\uff1a** [Math-3]\uff1b \n",
+                "original_header": "R13: Less accurate comparison"
+            },
+            "confidence": 0.9440287146696319,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/serval-dtf/apr-efficiency/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "=========\n> ACS and SimFix are available at: https://drive.google.com/drive/folders/1OS9-GG2WQjFpvOPARaLW-k9b-9ZpO_3J?usp=sharing \n> kPAR: https://github.com/SerVal-DTF/FL-VS-APR/tree/master/kPAR \n> AVATAR: https://github.com/SerVal-DTF/AVATAR \n> TBar: https://github.com/SerVal-DTF/TBar\n \n",
+                "original_header": "APR tools"
+            },
+            "confidence": 0.9953572331944254,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/serval-dtf/apr-efficiency/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "> **FixMiner:** [Chart-1], [Chart-4], [Math-22], [Math-30], [Math-34], [Math-57], [Math-70], [Math-75], [Math-79]; \n> **jGenProg:** [Math-5], [Math-53], [Math-70]; \n> **SimFix:** [Chart-1], [Chart-7], [Chart-20], [Closure-14], [Closure-57], [Closure-62], [Closure-63], [Closure-73], [Lang-33], [Lang-43], [Lang-58], [Lang-60], [Math-5], [Math-41], [Math-53], [Math-57], [Math-59], [Math-70], [Math-(71)], [Math-75], [Math-79]; \n",
+                "original_header": "R0: Identical Patch"
+            },
+            "confidence": 0.9790979332509089,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/serval-dtf/apr-efficiency/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{liu2020efficiency,\n    doi = {10.1145/3377811.3380338},\n    url = {https://doi.org/10.1145/3377811.3380338},\n    year = {2020},\n    publisher = {{ACM}},\n    pages = {615--627},\n    booktitle = {Proceedings of the 42nd International Conference on Software Engineering},\n    title = {On the efficiency of test suite based program repair: {A} Systematic Assessment of 16 Automated Repair Systems for Java Programs},\n    author = {Kui Liu and Shangwen Wang and Anil Koyuncu and Kisub Kim and Tegawend{\\'{e}} F. Bissyand{\\'{e}} and Dongsun Kim and Peng Wu and Jacques Klein and Xiaoguang Mao and Yves Le Traon},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1145/3377811.3380338",
+                "title": "On the efficiency of test suite based program repair: {A} Systematic Assessment of 16 Automated Repair Systems for Java Programs",
+                "author": "Kui Liu and Shangwen Wang and Anil Koyuncu and Kisub Kim and Tegawend{\\'{e}} F. Bissyand{\\'{e}} and Dongsun Kim and Peng Wu and Jacques Klein and Xiaoguang Mao and Yves Le Traon",
+                "url": "https://doi.org/10.1145/3377811.3380338"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/serval-dtf/apr-efficiency/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "APR-Efficiency"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/serval-dtf/apr-efficiency/master/README.md"
+        }
+    ]
+}

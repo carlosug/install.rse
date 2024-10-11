@@ -1,0 +1,547 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:18:46"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/microsoft/CodeBERT",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "microsoft",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-06-17T07:37:08Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-03T12:02:32Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Copyright (c) Microsoft Corporation.\n\nMIT License\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "CodeBERT",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repo contains code pretraining models in the CodeBERT series from Microsoft, including six models as of June 2023.\n- CodeBERT (EMNLP 2020)\n- GraphCodeBERT (ICLR 2021)\n- UniXcoder (ACL 2022)\n- CodeReviewer (ESEC/FSE 2022)\n- CodeExecutor (ACL 2023)\n- LongCoder (ICML 2023)\n \n",
+                "original_header": "Code Pretraining Models"
+            },
+            "confidence": 0.9380954867163769,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repo also provides the code for reproducing the experiments in [GraphCodeBERT: Pre-training Code Representations with Data Flow](https://openreview.net/pdf?id=jLoC4ez43PZ). GraphCodeBERT is a pre-trained model for programming language that considers the inherent structure of code i.e. data flow, which is a multi-programming-lingual model pre-trained on NL-PL pairs in 6 programming languages (Python, Java, JavaScript, PHP, Ruby, Go).  \n",
+                "original_header": "GraphCodeBERT"
+            },
+            "confidence": 0.9509605342833262,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repo will provide the code for reproducing the experiments in [UniXcoder: Unified Cross-Modal Pre-training for Code Representation](https://arxiv.org/pdf/2203.03850.pdf). UniXcoder is a unified cross-modal pre-trained model for programming languages to support both code-related understanding and generation tasks.  \n",
+                "original_header": "UniXcoder"
+            },
+            "confidence": 0.9248830170310328,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repo also provides the code for reproducing the experiments in [CodeReviewer: Pre-Training for Automating Code Review Activities](https://arxiv.org/abs/2203.09095). CodeReviewer is a model pre-trained with code change and code review data to support code review tasks. \n",
+                "original_header": "CodeReviewer"
+            },
+            "confidence": 0.9761497651509777,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repo provides the code for reproducing the experiments in [Code Execution with Pre-trained Language Models](https://arxiv.org/pdf/2305.05383.pdf). CodeExecutor is a pre-trained model that learns to predict the execution traces using a code execution pre-training task and curriculum learning. \n",
+                "original_header": "CodeExecutor"
+            },
+            "confidence": 0.939551613591446,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repo will provide the code for reproducing the experiments on LCC datasets in [LongCoder: A Long-Range Pre-trained Language Model for Code Completion](https://arxiv.org/abs/2306.14893). LongCoder is a sparse and efficient pre-trained Transformer model for long code modeling. \n",
+                "original_header": "LongCoder"
+            },
+            "confidence": 0.9091384395741645,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "CodeBERT",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "microsoft/CodeBERT",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/microsoft/CodeBERT/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/microsoft/CodeBERT/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2187,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 449,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/microsoft/CodeBERT/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 1123562
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 17821
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "code_of_conduct": [
+        {
+            "result": {
+                "value": "# Microsoft Open Source Code of Conduct\n\nThis project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).\n\nResources:\n\n- [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)\n- [Microsoft Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)\n- Contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with questions or concerns",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/CODE_OF_CONDUCT.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# Contributing\n\nThis project welcomes contributions and suggestions. Most contributions require you to\nagree to a Contributor License Agreement (CLA) declaring that you have the right to,\nand actually do, grant us the rights to use your contribution. For details, visit\nhttps://cla.microsoft.com.\n\nWhen you submit a pull request, a CLA-bot will automatically determine whether you need\nto provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the\ninstructions provided by the bot. You will only need to do this once across all repositories using our CLA.\n\nThis project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).\nFor more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)\nor contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/CONTRIBUTING.md"
+        },
+        {
+            "result": {
+                "value": "We appreciate all contributions and thank all the contributors!\n<p align=\"center\">\n  <img src=\"https://contributors-img.web.app/image?repo=microsoft/CodeBERT\" />\n</p>\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributing",
+                "parent_header": [
+                    "LongCoder"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/CodeReviewer/code/evaluator/CodeBLEU/parser/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/CodeReviewer/code/sh/test-cls.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/CodeReviewer/code/sh/finetune-ref.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/CodeReviewer/code/sh/finetune-msg.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/CodeReviewer/code/sh/infer-json.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/CodeReviewer/code/sh/test-msg.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/CodeReviewer/code/sh/test-ref.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/CodeReviewer/code/sh/finetune-cls.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/CodeReviewer/code/sh/test_nltk.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/LongCoder/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/LongCoder/parser/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/CodeExecutor/downstream/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/CodeExecutor/pretrain/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/CodeExecutor/inference/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/GraphCodeBERT/translation/parser/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/GraphCodeBERT/codesearch/parser/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/GraphCodeBERT/clonedetection/parser/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/GraphCodeBERT/refinement/parser/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/UniXcoder/downstream-tasks/code-generation/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/UniXcoder/downstream-tasks/clone-detection/BCB/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "- pip install torch\n- pip install transformers\n",
+                "type": "Text_excerpt",
+                "original_header": "Dependency",
+                "parent_header": [
+                    "CodeBERT"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        }
+    ],
+    "contact": [
+        {
+            "result": {
+                "value": "Feel free to contact Daya Guo (guody5@mail2.sysu.edu.cn), Shuai Lu (shuailu@microsoft.com) and Nan Duan (nanduan@microsoft.com) if you have any further questions.\n",
+                "type": "Text_excerpt",
+                "original_header": "Contact",
+                "parent_header": [
+                    "LongCoder"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Code Pretraining Models"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://contributors-img.web.app/image?repo=microsoft/CodeBERT"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2203.09095"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2306.14893"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2203.03850.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2002.08155.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2305.05383.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/CodeBERT/master/README.md"
+        }
+    ]
+}

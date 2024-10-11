@@ -1,0 +1,308 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:50:45"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/tuhh-softsec/code2DFD",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "tuhh-softsec",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-04-25T12:01:08Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-27T16:04:59Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Copyright 2021 Google LLC\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    https://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/tuhh-softsec/code2DFD/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Tool for the automatic extraction of dataflow diagrams from source code of microservices",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Code2DFD can automatically extract dataflow diagrams (DFDs) that are enriched with security-relevant annotations from the source code of microservice applications.\nIt is structured as a framework, where the *technology-specific extractors* in `technology_specific_extractors/` are executed and detect evidence for DFD items in the code.\nThey use some general functionality from `core/`. \n",
+                "original_header": "Code2DFD"
+            },
+            "confidence": 0.9517911322803175,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/tuhh-softsec/code2DFD/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The tool creates multiple outputs:\n- The extracted DFD is saved as a .png rendered with [PlantUML](https://plantuml.com) in `output/png/`.\nAn internet connection is needed for this, otherwise no PNG will be created.\n- A machine-readable version of the DFD is created in JSON format in `output/json/`\n- Additionally, a version in [CodeableModels](https://github.com/uzdun/CodeableModels) format is created in `output/codeable_models/`, if you want a more flexible format for further work.\nTo render these, you need to install CodeableModels as described on their site.\nFurther, our metamodel `microservice_dfds_metamodel.py` is needed for that.\nIf interoperability with other software or further processing of the models is of no concern, this offers no advantages.\nThe DFDs rendered by CodeableModels do not follow standard DFD-notation.\n- A textual version of the results (list of microservices, external entities, and information flows) is created in `output/results/`.\n- The traceability information for the DFD items is saved in `output/traceability/`.\nNote that this is ongoing work and the traceability is not created for all items as of now.\nHowever, we implemented it for enough items to show that this technique works and the full traceability is only a question of further implementation work.\n- Logs are saved in `output/logs/`.\n \n",
+                "original_header": "3. Output"
+            },
+            "confidence": 0.99506094519251,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/tuhh-softsec/code2DFD/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "code2DFD",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "tuhh-softsec/code2DFD",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/tuhh-softsec/code2DFD/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/tuhh-softsec/code2DFD/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/tuhh-softsec/code2DFD/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 420807
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 196
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "# This CITATION.cff file was generated with cffinit.\n# Visit https://bit.ly/cffinit to generate yours today!\n\ncff-version: 1.2.0\ntitle: Code2DFD\nmessage: 'If you use this tool, please cite it as below.'\ntype: software\nauthors:\n  - given-names: Simon\n    family-names: Schneider\n    orcid: 'https://orcid.org/0000-0001-8605-615X'\n  - given-names: Riccardo\n    family-names: Scandariato\n    orcid: 'https://orcid.org/0000-0003-3591-7671'\nabstract: >-\n  Dataflow diagrams (DFDs) are a valuable asset for securing\n  applications, as they are the starting point for many\n  security assessment techniques. Their creation, however,\n  is often done manually, which is time-consuming and\n  introduces problems concerning their correctness.\n  Furthermore, as applications are continuously extended and\n  modified in CI/CD pipelines, the DFDs need to be kept in\n  sync, which is also challenging. In this paper, we present\n  a novel, tool-supported technique to automatically extract\n  DFDs from the implementation code of microservices. The\n  technique parses source code and configuration files in\n  search for keywords that are used as evidence for the\n  model extraction. Our approach uses a novel technique that\n  iteratively detects new keywords, thereby snowballing\n  through an application's codebase. Coupled with other\n  detection techniques, it produces a fully-fledged DFD\n  enriched with security-relevant annotations. The extracted\n  DFDs further provide full traceability between model items\n  and code snippets. We evaluate our approach and the\n  accompanying prototype for applications written in Java on\n  a manually curated dataset of 17 open-source applications.\n  In our testing set of applications, we observe an overall\n  precision of 93% and recall of 85%. \nkeywords:\n  - Dataflow diagram\n  - Automatic extraction\n  - Security\n  - Microservices\n  - Architecture reconstruction\n  - Feature detection\nlicense: Apache-2.0\n",
+                "type": "File_dump",
+                "format": "cff"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/tuhh-softsec/code2DFD/main/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "@article{Code2DFD23,\n    keywords = {Dataflow diagram, Automatic extraction, Security, Microservices, Architecture reconstruction, Feature detection},\n    author = {Simon Schneider and Riccardo Scandariato},\n    doi = {https://doi.org/10.1016/j.jss.2023.111722},\n    issn = {0164-1212},\n    year = {2023},\n    pages = {111722},\n    volume = {202},\n    journal = {Journal of Systems and Software},\n    title = {Automatic Extraction of Security-Rich Dataflow Diagrams for Microservice Applications written in Java},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "https://doi.org/10.1016/j.jss.2023.111722",
+                "title": "Automatic Extraction of Security-Rich Dataflow Diagrams for Microservice Applications written in Java",
+                "author": "Simon Schneider and Riccardo Scandariato"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/tuhh-softsec/code2DFD/main/README.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/tuhh-softsec/code2DFD/main/analyze_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/tuhh-softsec/code2DFD/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Before running the tool, [Python](https://www.python.org/downloads/) version 3.x and the packages specified in `requirements.txt` need to be installed.\nThe path to the application that is to be analysed can be written in the `config/config.ini` file or given as parameter (see 2.).\nA number of repositories is already given in that file, for all of which a manually created DFD exists [here](https://github.com/tuhh-softsec/microSecEnD).\nThe corresponding path only needs to be un-commented for analysis (all others have to be commented out with a \";\")\n\n",
+                "type": "Text_excerpt",
+                "original_header": "1. Installation and configuration",
+                "parent_header": [
+                    "Code2DFD"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/tuhh-softsec/code2DFD/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "To start the tool via the terminal using the config file, simply enter `python3 code2DFD.py --config_path PATH_TO_CONFIG` in a command line opened in the root directory.\nFor example, `python3 code2DFD.py --config_path config/config.ini` for the example config in this repository.\nThe extraction will start and some status messages appear on the screen.\nIf you want to analyse in application on GitHub, simply put in the GitHub handle, using the `--github_path` option.\nFor example, for the repository `https://github.com/sqshq/piggymetrics`, run the command `python3 code2DFD.py --github_path sqshq/piggymetrics`\nOnce the analysis is finished, the results can be found in the `output/` folder.\n\nTo run the tool as a RESTful API service, run `python3 flask_code2DFD.py`.\nThis will spawn up a Flask server and you can trigger DFD-extractions by sending a request to or opening your browser at `localhost:5000/dfd?path=*repository/path*`\n\n",
+                "type": "Text_excerpt",
+                "original_header": "2. Running the tool",
+                "parent_header": [
+                    "Code2DFD"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/tuhh-softsec/code2DFD/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/tuhh-softsec/code2DFD/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2304.12769"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/tuhh-softsec/code2DFD/main/README.md"
+        }
+    ]
+}

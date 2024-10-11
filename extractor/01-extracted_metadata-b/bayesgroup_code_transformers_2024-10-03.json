@@ -1,0 +1,376 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:35:04"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/bayesgroup/code_transformers",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "bayesgroup",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-03-22T16:58:38Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-01-04T16:55:59Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "For license information, see LICENSE.txt files in the subdirectories of the repository.\n\nCopyright (c) 2021 Nadezhda Chirkova, Sergey Troshin\n\nParts of this software are based on the following repositories:\n* https://github.com/wasiahmad/NeuralCodeSum\n* https://github.com/facebookresearch/code-prediction-transformer\n* https://github.com/google-research-datasets/eth_py150_open\n* https://ieee-dataport.org/open-access/deduplication-index-big-code-datasets\n* https://github.com/OpenNMT/OpenNMT-py\n* https://github.com/facebookresearch/DrQA\nCorresponding license files are put in the subdirectories of the repository.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Empirical Study of Transformers for Source Code & A Simple Approach for Handling Out-of-Vocabulary Identifiers in Deep Learning for Source Code",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The official PyTorch implementation of:\n* __Empirical Study of Transformers for Source Code__ [[arxiv](https://arxiv.org/abs/2010.07987)] (accepted to [ESEC/FSE'21](https://2021.esec-fse.org/))\n* __A Simple Approach for Handling Out-of-Vocabulary Identifiers in Deep Learning for Source Code__ [[arxiv](https://arxiv.org/abs/2010.12663)] (accepted to [NAACL'21](https://2021.naacl.org/)) \nThe repository also contains code for resplitting [Python150k](https://www.sri.inf.ethz.ch/py150) and [JavaScript150k](https://www.sri.inf.ethz.ch/js150) datasets (with splitting by repository, removing duplicates and the redistributable version of Py150k).\n \n",
+                "original_header": "Transformers for variable misuse, function naming and code completion tasks"
+            },
+            "confidence": 0.9841555518281339,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* `data_utils`: scripts for downloading Python150k and JavaScript150k datasets and obtaining new train / val / test splits (with splitting by repository, removing duplicates and the redistributable version of Py150k)\n* `vm_fn`: code for Variable Misuse (VM) and Function Naming (FN) tasks (additional preprocessing, models, training etc)\n* `cc`: code for Code Completion (CC) task (additional preprocessing, models, training etc) \n",
+                "original_header": "Repository structure"
+            },
+            "confidence": 0.9265360995464543,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Parts of this code are based on the following repositories:\n* [A Transformer-based Approach for Source Code Summarization](https://github.com/wasiahmad/NeuralCodeSum) \n* [Code Completion by Feeding Trees to Transformers](https://github.com/facebookresearch/code-prediction-transformer)\n* [A redistributable subset of the ETH Py150 corpus](https://github.com/google-research-datasets/eth_py150_open)\n* [Deduplication index for big code datasets](https://ieee-dataport.org/open-access/deduplication-index-big-code-datasets)\n* [OpenNMT](https://github.com/OpenNMT/OpenNMT-py)\n* [DrQA](https://github.com/facebookresearch/DrQA)\n \n",
+                "original_header": "Attribution"
+            },
+            "confidence": 0.9133818019659059,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "code_transformers",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "bayesgroup/code_transformers",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/bayesgroup/code_transformers/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/bayesgroup/code_transformers/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 61,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "code-completion, deep-learning, function-naming, pytorch, variable-misuse",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 18,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/bayesgroup/code_transformers/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 546256
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 15534
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/data_utils/get_data.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/cc/main/experiments/exp2a.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/cc/main/experiments/run_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/cc/main/experiments/preprocess.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/cc/main/experiments/exp1.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/cc/main/experiments/exp2b.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/cc/main/src/srun.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/cc/main/src/scripts/preprocess_data.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "The code was tested on a system with Linux 3.10.0. Experiments were run using a Tesla V100 GPU. Required libraries are listed in `requirments.txt` in `VM_FN` and `CC` directories. The implementation is based on PyTorch>=1.5.\n\nRunning experiments:\n1. Download and resplit data, see `data_utils` for details;\n2. Preprocess data for a task you are interested in (VM, FN or CC), see `vm_fn` or `cc` for details;\n3. Run the experiment you are interested in, see `vm_fn` or `cc` for details.\n",
+                "type": "Text_excerpt",
+                "original_header": "Run",
+                "parent_header": [
+                    "Transformers for variable misuse, function naming and code completion tasks"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you found this code useful, please cite our papers\n```\n@inproceedings{10.1145/3468264.3468611,\n    author = {Chirkova, Nadezhda and Troshin, Sergey},\n    title = {Empirical Study of Transformers for Source Code},\n    year = {2021},\n    isbn = {9781450385626},\n    publisher = {Association for Computing Machinery},\n    address = {New York, NY, USA},\n    url = {https://doi.org/10.1145/3468264.3468611},\n    doi = {10.1145/3468264.3468611},\n    booktitle = {Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},\n    pages = {703\u2013715},\n    numpages = {13},\n    keywords = {code completion, neural networks, transformer, function naming, variable misuse detection},\n    location = {Athens, Greece},\n    series = {ESEC/FSE 2021}\n}\n```\n\n```\n@inproceedings{chirkova-troshin-2021-simple,\n    title = \"A Simple Approach for Handling Out-of-Vocabulary Identifiers in Deep Learning for Source Code\",\n    author = \"Chirkova, Nadezhda and Troshin, Sergey\",\n    booktitle = \"Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies\",\n    month = jun,\n    year = \"2021\",\n    address = \"Online\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2021.naacl-main.26\",\n    doi = \"10.18653/v1/2021.naacl-main.26\",\n    pages = \"278--288\",\n}\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "Transformers for variable misuse, function naming and code completion tasks"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{10.1145/3468264.3468611,\n    series = {ESEC/FSE 2021},\n    location = {Athens, Greece},\n    keywords = {code completion, neural networks, transformer, function naming, variable misuse detection},\n    numpages = {13},\n    pages = {703\u2013715},\n    booktitle = {Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},\n    doi = {10.1145/3468264.3468611},\n    url = {https://doi.org/10.1145/3468264.3468611},\n    address = {New York, NY, USA},\n    publisher = {Association for Computing Machinery},\n    isbn = {9781450385626},\n    year = {2021},\n    title = {Empirical Study of Transformers for Source Code},\n    author = {Chirkova, Nadezhda and Troshin, Sergey},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1145/3468264.3468611",
+                "title": "Empirical Study of Transformers for Source Code",
+                "author": "Chirkova, Nadezhda and Troshin, Sergey",
+                "url": "https://doi.org/10.1145/3468264.3468611"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{chirkova-troshin-2021-simple,\n    pages = {278--288},\n    doi = {10.18653/v1/2021.naacl-main.26},\n    url = {https://aclanthology.org/2021.naacl-main.26},\n    publisher = {Association for Computational Linguistics},\n    address = {Online},\n    year = {2021},\n    month = {June},\n    booktitle = {Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},\n    author = {Chirkova, Nadezhda and Troshin, Sergey},\n    title = {A Simple Approach for Handling Out-of-Vocabulary Identifiers in Deep Learning for Source Code},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.18653/v1/2021.naacl-main.26",
+                "title": "A Simple Approach for Handling Out-of-Vocabulary Identifiers in Deep Learning for Source Code",
+                "author": "Chirkova, Nadezhda and Troshin, Sergey",
+                "url": "https://aclanthology.org/2021.naacl-main.26"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Transformers for variable misuse, function naming and code completion tasks"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2010.12663"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2010.07987"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/bayesgroup/code_transformers/main/README.md"
+        }
+    ]
+}

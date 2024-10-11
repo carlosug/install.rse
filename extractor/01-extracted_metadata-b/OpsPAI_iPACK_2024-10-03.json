@@ -1,0 +1,223 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 22:40:40"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/OpsPAI/iPACK",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "OpsPAI",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-02-10T16:42:54Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-08-17T11:19:15Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Source code&data for paper \"Incident-aware Duplicate Ticket Aggregation for Cloud Systems\" accepted by ICSE 2023.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Our work targets more efficient customer ticket management in large-scale cloud systems. To achieve this goal, we propose to fuse customer-side data (i.e., tickets) and cloud runtime data (i.e., alerts) to aggregate duplicate tickets comprehensively and precisely. \nThe ticket data used in this work is collected from a real-world cloud vendor, which is highly confidential and contains a lot of personally identifiable information (PII). To protect customers\u2019 privacy, we decide not to release the original dataset. However, to facilitate the community to benefit from our work, we release the source code of iPACK together with some *anonymized data samples* as follows.  \n- ./data/iPACK_output_samples.xlsx/  \n### Efficiency of iPACK \nWe evaluate the time of iPACK's each step with 1,000,000 alert-ticket pairs. We run iPACK on a CentOS linux server with 60GB RAM. The CPU is Intel(R) Core(TM) i7-5930K CPU @ 3.50GHz.  The AIN is trained and tested with the GPU acceleration of NVIDIA GeForce GTX TITAN X.  \n"
+            },
+            "confidence": 0.9533120477840866,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/OpsPAI/iPACK/main/README.MD"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "iPACK",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "OpsPAI/iPACK",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/OpsPAI/iPACK/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/OpsPAI/iPACK/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 6,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/OpsPAI/iPACK/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 55428
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/OpsPAI/iPACK/main/README.MD",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "### Installation \n1. Install [python >= 3.8](https://www.python.org/downloads/). \n2. Install the dependency needed by iPACK with the following command. \n   ```pip install -r requirements.txt``` \n"
+            },
+            "confidence": 0.979581695604435,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/OpsPAI/iPACK/main/README.MD"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- ./data/train/historical_alerts.csv/  \n- ./data/train/ticket_alert_pairs.csv/   \n- ./data/test/ticket_alert_pairs.csv/ \n- ./data/test/ticket_alert_chunk.csv/ \n**Step1**: Alert Parsing: parse alerts to events producing two more features *EventId* and *EventTempalte*.\n```\npython alert_parsing.py --file \"../data/train/historical_alerts.csv\" --outdir \"../data/train/\"\npython alert_parsing.py --file \"../data/train/train_ticket_alert_pairs.csv\" --outdir \"../data/train/\"\npython alert_parsing.py --file \"../data/test/test_ticket_alert_pairs.csv\" --outdir \"../data/test/\"\n```\n \n- Output: learned PMI values for event pairs\n```\npython incident_profiling.py --train --file ../data/train/historical_alerts_parsed.csv --outdir \"./ipack_results/\"\n```\n \n- Output: trained AIN\n```\npython ticket_event_correlation.py --train --file ../data/train/train_ticket_alert_pairs_parsed.csv --outdir \"./ipack_results/ain_results\"\n```\n \n- Input: a chunk of data (tickets and alerts within a time window)\n- Output: aggregated tickets\n```\npython online_aggregation.py --file ../data/test/ticket_alert_chunk.csv --outdir \"./ipack_results/\"\n```\n \n"
+            },
+            "confidence": 0.9445155316117191,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/OpsPAI/iPACK/main/README.MD"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/OpsPAI/iPACK/main/README.MD"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/OpsPAI/iPACK/main/./docs/logo.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/OpsPAI/iPACK/main/README.MD"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2302.09520.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/OpsPAI/iPACK/main/README.MD"
+        }
+    ]
+}

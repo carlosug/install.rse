@@ -1,0 +1,247 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:10:48"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/evidencebp/comsum",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "evidencebp",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-07-10T16:29:11Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2021-10-14T08:53:02Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "comsum",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "evidencebp/comsum",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/evidencebp/comsum/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/evidencebp/comsum/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/evidencebp/comsum/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 42739
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 2445
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/evidencebp/comsum/releases/46023745",
+                "tag": "v1.0",
+                "author": {
+                    "name": "evidencebp",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/evidencebp/comsum/tarball/v1.0",
+                "zipball_url": "https://api.github.com/repos/evidencebp/comsum/zipball/v1.0",
+                "html_url": "https://github.com/evidencebp/comsum/releases/tag/v1.0",
+                "url": "https://api.github.com/repos/evidencebp/comsum/releases/46023745",
+                "release_id": 46023745,
+                "date_created": "2021-07-11T05:51:56Z",
+                "date_published": "2021-07-11T16:54:13Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/evidencebp/comsum/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/evidencebp/comsum/main/src/scripts/finetune_distillbart_comsum.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains the code and documantation of \"ComSum: Commit Messages Summarization and Meaning Preservation\" by Leshem Choshen and Idan Amit. \n",
+                "original_header": "comsum"
+            },
+            "confidence": 0.9921791522352162,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/evidencebp/comsum/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Contains data set's data sheet, labeling protocol and general explanitions.\nNot that file level explanations (e.g., explanation about the code), appears in the local directories. \n",
+                "original_header": "<a href=\"https://github.com/evidencebp/comsum/tree/main/documentation\">Documentation</a>"
+            },
+            "confidence": 0.9469502959377909,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/evidencebp/comsum/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Live version is updating at https://github.com/evidencebp/comsum/ \n",
+                "original_header": "Versions"
+            },
+            "confidence": 0.9994295067386849,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/evidencebp/comsum/main/README.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://zenodo.org/badge/latestdoi/384742703"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/evidencebp/comsum/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "comsum"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/evidencebp/comsum/main/README.md"
+        }
+    ]
+}

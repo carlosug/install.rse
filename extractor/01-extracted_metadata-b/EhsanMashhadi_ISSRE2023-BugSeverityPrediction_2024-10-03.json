@@ -1,0 +1,506 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:35:23"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "EhsanMashhadi",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-08-20T23:33:35Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-22T05:14:24Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Code of our paper \"Method-Level Bug Severity Prediction using Source Code Metrics and LLMs\" which is accepted to ISSRE 2023.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "This artifact contains all data (including the data gathering step), code, and scripts required to run the paper's experiment to reproduce the results. The structure of folders and files is as follows:\n",
+                "type": "Text_excerpt",
+                "original_header": "Artifact Description | Paper earned all badges (Available, Reviewed, and Reproducible)",
+                "parent_header": [
+                    "BugSeverityPrediction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        },
+        {
+            "result": {
+                "value": "This folder contains all scripts and code required (specific to this paper) to re-run the training and testing of our models (including classic models, CodeBERT, ConcatInline, and ConcatCLS). The structure of this folder is:\n\n```\n+-- data (contains paper full dataset and preprocessing step script)\n|   +-- preprocess.sh (splitting dataset and scaling values)\n+-- dataset (contains a small subset of the dataset after preprocessing for the getting started section)\n+-- models\n|   +-- code_metrics (contains code for training and testing our classic models)\n|      +-- train_test.sh (training and testing the models)\n|   +-- code_representation\n|      +-- codebert\n|          +-- CodeBertModel.py (code for CodeBERT model)\n|          +-- ConcatInline.py (code ConcatInline model)\n|          +-- ConcatCLS.py (code ConcatCLS model)\n|          +-- train.sh (script for training the models)\n|          +-- inference.sh (script for testing the models)\n|   +-- evaluation\n|      +-- evaluation.py (evaluation metrics)\n+-- utils (constant file)\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "`experiments` folder",
+                "parent_header": [
+                    "BugSeverityPrediction",
+                    "Artifact Description | Paper earned all badges (Available, Reviewed, and Reproducible)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The `data` folder contains bugs from Defects4tJ and Bugs.jar datasets. This folder contains a preprocessing script that unify bug severity values, scale the source code metrics and create `train`, `val`, and `test` splits.\n\nRunning this script using ```bash preprocessing.sh``` command generates 6 files containing `train`, `val`, `tests` splits in `jsonl` (compatible with CodeBERT experiments) and `csv` (compatible with source code metrics experiments) formats. \n",
+                "type": "Text_excerpt",
+                "original_header": "data",
+                "parent_header": [
+                    "BugSeverityPrediction",
+                    "Artifact Description | Paper earned all badges (Available, Reviewed, and Reproducible)",
+                    "`experiments` folder"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Files available in the `dataset` folder represent data for the getting started section (small subset of data). For reproducing paper results the generated files in the `data` folder should be copied to the `dataset` folder that is used by the model training scripts. \n",
+                "type": "Text_excerpt",
+                "original_header": "dataset",
+                "parent_header": [
+                    "BugSeverityPrediction",
+                    "Artifact Description | Paper earned all badges (Available, Reviewed, and Reproducible)",
+                    "`experiments` folder"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        },
+        {
+            "result": {
+                "value": "This folder contains all code and scripts for all of the experiments including classic models, CodeBERT models, ConcatInline, and ConcatCLS.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "models",
+                "parent_header": [
+                    "BugSeverityPrediction",
+                    "Artifact Description | Paper earned all badges (Available, Reviewed, and Reproducible)",
+                    "`experiments` folder"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        },
+        {
+            "result": {
+                "value": "This folder contains all required code to gather the data including issue scraping, method extraction, and metric extraction. While this step is out of this paper's scope, the required step to reproduce the data is available in this instruction.\nWhile there are many directories/files in this folder, the following tree shows the structure of 3 files that need to be run.\n```\n+-- issue_scraper\n|   +-- main.py\n+-- MetricsExtractor\n|   +-- method_extractor\n|      +-- MethodExtractorMain.java\n|   +-- metric_extractor\n|      +-- MetricCalculatorMain.java\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "`data_gathering` folder (out of paper scope):",
+                "parent_header": [
+                    "BugSeverityPrediction",
+                    "Artifact Description | Paper earned all badges (Available, Reviewed, and Reproducible)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "ISSRE2023-BugSeverityPrediction",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "EhsanMashhadi/ISSRE2023-BugSeverityPrediction",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 9,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "bert, bert-model, bug-detection, codebert, deep-learning, embedding, largelanguagemodel, machine-learning, severity-prediction",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 78782
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 54793
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 1191
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/releases/117932821",
+                "tag": "0.1.0",
+                "name": "0.1.0",
+                "author": {
+                    "name": "EhsanMashhadi",
+                    "type": "User"
+                },
+                "description": "This is the first version of our artifacts.",
+                "tarball_url": "https://api.github.com/repos/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/tarball/0.1.0",
+                "zipball_url": "https://api.github.com/repos/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/zipball/0.1.0",
+                "html_url": "https://github.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/releases/tag/0.1.0",
+                "url": "https://api.github.com/repos/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/releases/117932821",
+                "release_id": 117932821,
+                "date_created": "2023-08-21T00:42:16Z",
+                "date_published": "2023-08-21T00:46:48Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/experiments/models/code_representation/codebert/train.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/experiments/models/code_representation/codebert/inference.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/experiments/models/code_metrics/train_test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/experiments/data/preprocessing.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "For Getting Started:\n- Operating System: The provided artifact is tested on Linux (20.04.6 LTS) and macOS (Ventura 13.5).\n- GPU: It is better to have a GPU for running experiments on GPU otherwise it may take a long time.\n- CPU/RAM: There is no strict minimum on these.\n- Python: Python 3 is required.\n",
+                "type": "Text_excerpt",
+                "original_header": "Environment Setup:",
+                "parent_header": [
+                    "BugSeverityPrediction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1. Clone the repository\n   - `git@github.com:EhsanMashhadi/ISSRE2023-BugSeverityPrediction.git` \n2. Install dependencies (You may need to change the torch version for running on your GPU/CPU) \n- **Experiments**:\n  -  It is better to install these dependencies on a virtual env (you can also use requirements.txt)\n  - `pip install pandas==1.4.2`\n  - `pip install jira`\n  - `pip install beautifulsoup4`\n  - `pip install lxml`\n  - `pip install transformers==4.18.0`\n  -  `pip install torch==1.11.0` This should be enough for running on CPU, but install the next for running on GPU\n  - `pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 -f https://download.pytorch.org/whl/torch_stable.html`\n  - `pip install scikit-learn==1.1.1`\n  - `pip install xgboost==1.6.1`\n  - `pip install seaborn==0.11.2`\n  \n3. Adding the project root folder to the `PYTHONPATH`\n  - `export PYTHONPATH=$PYTHONPATH:*/rootpath/you/clone/the/project*/experiments`\n  - e.g., `export PYTHONPATH=$PYTHONPATH:/Users/ehsan/workspace/ISSRE2023-BugSeverityPrediction/experiments`\n4. Running data preprocessing\n   - `cd ISSRE2023-BugSeverityPrediction/experiments/data`\n   - `bash preprocessing.sh`\n   - Copy generated `jsonl` and `csv` files into the dataset folder\n \n",
+                "original_header": "Reproducibility Instructions:"
+            },
+            "confidence": 0.9999999999999858,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The tools below should be installed and configured correctly, otherwise, this step won't work. It may take a long time to do this step and can be skipped (recommended). \n  - Java: Java 18 is required (**only for running data gathering step**).\n  - Git: (brew, apt, ... based on your OS)\n  - SVN: (brew, apt, ... based on your OS)\n  - [Defects4J](https://github.com/rjust/defects4j) (Follow all the steps in the provided installation guide).\n  - [Bugs.jar](https://github.com/bugs-dot-jar/bugs-dot-jar) (You must install this in the `data_gathering` directory). \n1. `cd ISSRE2023-BugSeverityPrediction/data_gathering/issue_scraper`\n2. `python main.py` \nFor the below steps, it can be easier to use `gradlew`or simply open by IntelliJ IDEA to run Java files \n3. `cd ISSRE2023-BugSeverityPrediction/data_gathering/MetricsExtractor/src/main/java/software/ehsan/severityprediction/method_extractor` \n5. `cd ISSRE2023-BugSeverityPrediction/data_gathering/MetricsExtractor/src/main/java/software/ehsan/severityprediction/metric_extractor` \n",
+                "original_header": "How to re-run the data gathering step  (out of paper scope)?"
+            },
+            "confidence": 0.9791413617845529,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "This section only sets up the artifact and validates its general functionality based on a small example data (complete dataset for the classic models, but the first 50 rows for CodeBERT models).\n\n1. Clone the repository\n   - `git@github.com:EhsanMashhadi/ISSRE2023-BugSeverityPrediction.git`\n\n2. Install dependencies (using `requirements.txt` file) or manually :\n  - `pip install pandas==1.4.2`\n  - `pip install jira`\n  - `pip install beautifulsoup4`\n  - `pip install lxml`\n  - `pip install transformers==4.18.0`\n  - `pip install torch==1.11.0` This should be enough for running on CPU, but install the next for running on GPU\n  - `pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 -f https://download.pytorch.org/whl/torch_stable.html`\n  - `pip install scikit-learn==1.1.1`\n  - `pip install xgboost==1.6.1`\n  - `pip install seaborn==0.11.2`\n3. Adding the project root folder to the `PYTHONPATH`\n  - `export PYTHONPATH=$PYTHONPATH:*/rootpath/you/clone/the/project*/experiments`\n  - e.g., `export PYTHONPATH=$PYTHONPATH:/Users/ehsan/workspace/ISSRE2023-BugSeverityPrediction/experiments`\n4. RQ1: \n     - `cd ISSRE2023-BugSeverityPrediction/experiments/models/code_metrics`\n     - `bash train_test.sh`\n     - Results are generated in the `log` folder\n5. RQ2:\n   - `cd ISSRE2023-BugSeverityPrediction/experiments/models/code_representation/codebert`\n   - Set `CodeBERT` as the `model_arch` parameter's value in `train.sh` and `inference.sh` files.\n   - `bash train.sh` for training the model\n   - `bash inference.sh` for evaluating the model with the `test` split\n   - Results are generated in the `log` folder\n6. RQ3:\n   - `cd ISSRE2023-BugSeverityPrediction/experiments/models/code_representation/codebert`\n   - Set `ConcatInline` or `ConcatCLS` as the `model_arch` parameter's value in `train.sh` and `inference.sh` files.\n   - `bash train.sh` for training the model\n   - `bash inference.sh` for evaluating the model with the `test` split\n   - Results are generated in the `log` folder\n   ",
+                "type": "Text_excerpt",
+                "original_header": "Getting Started:",
+                "parent_header": [
+                    "BugSeverityPrediction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "1. `cd ISSRE2023-BugSeverityPrediction/experiments/models/code_metrics`\n2. `bash train_test.sh`\n3. Results are generated in the `log` folder\n",
+                "type": "Text_excerpt",
+                "original_header": "Running Source Code Metrics Models Experiments (RQ1)",
+                "parent_header": [
+                    "BugSeverityPrediction",
+                    "Reproducibility Instructions:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        },
+        {
+            "result": {
+                "value": "1. `cd ISSRE2023-BugSeverityPrediction/experiments/models/code_representation/codebert`\n2. Set `CodeBERT` as the `model_arch` parameter's value in `train.sh` file\n3. `bash train.sh` for training the model\n4. `bash inference.sh` for evaluating the model with the `test` split\n5. Results are generated in the `log` folder\n",
+                "type": "Text_excerpt",
+                "original_header": "Running CodeBERT Model Experiments (RQ2)",
+                "parent_header": [
+                    "BugSeverityPrediction",
+                    "Reproducibility Instructions:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        },
+        {
+            "result": {
+                "value": "1. `cd ISSRE2023-BugSeverityPrediction/experiments/models/code_representation/codebert`\n2. Set `ConcatInline` or `ConcatCLS` as the `model_arch` parameter's value in `train.sh` file\n3. `bash train.sh` for training the model\n4. `bash inference.sh` for evaluating the model with the `test` split\n5. Results are generated in the `log` folder\n",
+                "type": "Text_excerpt",
+                "original_header": "Running Source Code Metrics Integration with CodeBERT Model Experiments (RQ3)",
+                "parent_header": [
+                    "BugSeverityPrediction",
+                    "Reproducibility Instructions:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        },
+        {
+            "result": {
+                "value": "   - You can change/add different hyperparameters/configs in `train.sh` and `inference.sh` files.\n",
+                "type": "Text_excerpt",
+                "original_header": "How to run with different config/hyperparameters?",
+                "parent_header": [
+                    "BugSeverityPrediction",
+                    "Reproducibility Instructions:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        },
+        {
+            "result": {
+                "value": "1. Check the `CUDA` and `PyTorch` compatibility\n2. Assign the correct values for `CUDA_VISIBLE_DEVICES`, `gpu_rank`, and `world_size` based on your GPU numbers in all scripts.\n3. Run on CPU by removing the `gpu_rank`, and `world_size` options in all scripts.\n4. Refer to the [CodeBERT Repo](https://github.com/microsoft/CodeBERT) for finding common issue.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Have trouble running on GPU?",
+                "parent_header": [
+                    "BugSeverityPrediction",
+                    "Reproducibility Instructions:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        }
+    ],
+    "faq": [
+        {
+            "result": {
+                "value": "1. Check the `CUDA` and `PyTorch` compatibility\n2. Assign the correct values for `CUDA_VISIBLE_DEVICES`, `gpu_rank`, and `world_size` based on your GPU numbers in all scripts.\n3. Run on CPU by removing the `gpu_rank`, and `world_size` options in all scripts.\n4. Refer to the [CodeBERT Repo](https://github.com/microsoft/CodeBERT) for finding common issue.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Have trouble running on GPU?",
+                "parent_header": [
+                    "BugSeverityPrediction",
+                    "Reproducibility Instructions:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1. `cd ISSRE2023-BugSeverityPrediction/data_gathering/issue_scraper`\n2. `python main.py` \n",
+                "original_header": "How to re-run the data gathering step  (out of paper scope)?"
+            },
+            "confidence": 0.9114778269530488,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://zenodo.org/badge/latestdoi/680951811"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "BugSeverityPrediction"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2309.03044\n\nPostprint: https://ieeexplore.ieee.org/document/10301266\n\n## Artifact Description | Paper earned all badges (Available, Reviewed, and Reproducible"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/EhsanMashhadi/ISSRE2023-BugSeverityPrediction/main/README.md"
+        }
+    ]
+}

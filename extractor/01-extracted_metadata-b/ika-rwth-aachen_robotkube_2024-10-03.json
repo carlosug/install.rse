@@ -1,0 +1,426 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 21:23:13"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ika-rwth-aachen/robotkube",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ika-rwth-aachen",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-05-23T05:49:05Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-27T16:08:15Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 Institut f\u00fcr Kraftfahrzeuge, RWTH Aachen, ika\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Orchestrating Large-Scale Cooperative Multi-Robot Systems with Kubernetes and ROS",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "The use case involves fifteen connected vehicles, two of which are equipped with a lidar sensor. All vehicles send their poses to a cloud. When the lidar-equipped vehicles are near each other, the deployment of additional applications in the Kubernetes cluster is automatically triggered such that the two lidar-equipped vehicles start to additionally transmit their lidar point clouds to the cloud where they are stored in a database, along with the corresponding poses, e.g., allowing [collective learning](https://doi.org/10.1007/s38314-022-1405-9).\n\n<p align=\"center\">\n  <img src=\"assets/robotkube_teaser.gif\" alt=\"The video shows a section of the data upon which the use case is built. Poses of vehicles with no lidar sensor are visualized as green arrows. Poses of lidar-equipped vehicles are visualized as red arrows. The point clouds can be seen in blue and orange. The playback is sped up eightfold.\" width=\"100%\">\n</p>\n\nThe video shows a section of the data upon which the use case is built. Poses of vehicles with no lidar sensor are visualized as green arrows. Poses of lidar-equipped vehicles are visualized as red arrows. The point clouds can be seen in blue and orange. The playback is sped up eightfold.\n\n<p align=\"center\">\n<img src=\"assets/robotkube_use_case.gif\" alt=\"Animation shows how the different components of RobotKube act during an exemplary use case.\" width=\"100%\">\n</p>\n\nThe animation shows how the different software components interact during the exemplary use case. Some initially deployed services are continually running. Upon the detection of proximity between the lidar-equipped vehicles, additional services are deployed to enable the transfer of poses and point clouds from the vehicles to a database in the cloud. When the proximity ends, the additional services are automatically removed again. \n\nThis approach can be adjusted to various other use cases where additonal software shall be deployed or scenario data shall be recorded when triggered by an event.\n",
+                "type": "Text_excerpt",
+                "original_header": "Use Case Description",
+                "parent_header": [
+                    "RobotKube"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "> [!IMPORTANT]  \n> This repository is open-sourced and maintained by the [**Institute for Automotive Engineering (ika) at RWTH Aachen University**](https://www.ika.rwth-aachen.de/).  \n> **DevOps, Containerization and Orchestration of Software-Defined Vehicles** are some of many research topics within our [*Vehicle Intelligence & Automated Driving*](https://www.ika.rwth-aachen.de/en/competences/fields-of-research/vehicle-intelligence-automated-driving.html) domain.  \n> If you would like to learn more about how we can support your DevOps or automated driving efforts, feel free to reach out to us!  \n> &nbsp;&nbsp;&nbsp;&nbsp; *Timo Woopen - Manager Research Area Vehicle Intelligence & Automated Driving*  \n> &nbsp;&nbsp;&nbsp;&nbsp; *+49\u202f241\u202f80 23549*  \n> &nbsp;&nbsp;&nbsp;&nbsp; *timo.woopen@ika.rwth-aachen.de*  \n \n",
+                "original_header": "RobotKube"
+            },
+            "confidence": 0.9635656623371915,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "robotkube",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ika-rwth-aachen/robotkube",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ika-rwth-aachen/robotkube/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ika-rwth-aachen/robotkube/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 20,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/ika-rwth-aachen/robotkube/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 14026
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 1569
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/createCluster.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/start.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/kubernetes/templates/generateTemplates.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "cff-version: 1.2.0\nmessage: \"We hope that our paper and code can help your research. If this is the case, please cite it using the following metadata.\"\n\ntitle: \"RobotKube\"\ntype: software\nrepository-code: \"https://github.com/ika-rwth-aachen/robotkube\"\ndate-released: 2023-06-06\nauthors:\n  - given-names: Bastian\n    family-names: Lampe\n  - given-names: Lennart\n    family-names: Reiher\n  - given-names: Lukas\n    family-names: Zanger\n\npreferred-citation:\n  title: \"RobotKube: Orchestrating Large-Scale Cooperative Multi-Robot Systems with Kubernetes and ROS\"\n  type: conference-paper\n  conference:\n    name: \"2023 IEEE 26th International Conference on Intelligent Transportation Systems (ITSC)\"\n  month: 9\n  year: 2023\n  doi: \"10.1109/ITSC57777.2023.10422370\"\n  authors:\n    - given-names: Bastian\n      family-names: Lampe\n    - given-names: Lennart\n      family-names: Reiher\n    - given-names: Lukas\n      family-names: Zanger\n    - given-names: Timo\n      family-names: Woopen\n    - given-names: Raphael\n      family-names: van Kempen\n    - given-names: Lutz\n      family-names: Eckstein",
+                "type": "File_dump",
+                "format": "cff"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "We hope our paper, data and code can help in your research. If this is the case, please cite our paper and give this repository a star \u2b50.\n\n<details>\n<summary>BibTeX</summary>\n\n```\n@INPROCEEDINGS{Lampe2023RobotKube,\n  author={Lampe, Bastian and Reiher, Lennart and Zanger, Lukas and Woopen, Timo and van Kempen, Raphael and Eckstein, Lutz},\n  booktitle={2023 IEEE 26th International Conference on Intelligent Transportation Systems (ITSC)}, \n  title={RobotKube: Orchestrating Large-Scale Cooperative Multi-Robot Systems with Kubernetes and ROS}, \n  year={2023},\n  pages={2719-2725},\n  doi={10.1109/ITSC57777.2023.10422370}}\n```\n</details>\n\n> **RobotKube: Orchestrating Large-Scale Cooperative Multi-Robot Systems with Kubernetes and ROS** ([IEEE Xplore](https://ieeexplore.ieee.org/document/10422370), [arXiv](https://arxiv.org/abs/2308.07053))\n>\n> [Bastian Lampe](https://www.ika.rwth-aachen.de/de/institut/team/fahrzeugintelligenz-automatisiertes-fahren/lampe.html), [Lennart Reiher](https://www.ika.rwth-aachen.de/de/institut/team/fahrzeugintelligenz-automatisiertes-fahren/reiher.html), [Lukas Zanger](https://www.ika.rwth-aachen.de/de/institut/team/fahrzeugintelligenz-automatisiertes-fahren/zanger.html), [Timo Woopen](https://www.ika.rwth-aachen.de/de/institut/team/fahrzeugintelligenz-automatisiertes-fahren/woopen.html), [Raphael van Kempen](https://www.ika.rwth-aachen.de/de/institut/team/fahrzeugintelligenz-automatisiertes-fahren/van-kempen.html), and [Lutz Eckstein](https://www.ika.rwth-aachen.de/de/institut/team/univ-prof-dr-ing-lutz-eckstein.html)\n>\n> [Institute for Automotive Engineering (ika), RWTH Aachen University](https://www.ika.rwth-aachen.de/en/)\n> \n> <sup>*Abstract* \u2013 Modern cyber-physical systems (CPS) such as Cooperative Intelligent Transport Systems (C-ITS) are increasingly defined by the software which operates these systems. In practice, service-oriented software architectures can be employed, which may consist of containerized microservices running in a cluster comprised of robots and supporting infrastructure. These microservices need to be orchestrated dynamically according to ever changing requirements posed at the system. Additionally, these systems are embedded in DevOps processes aiming at continually updating and upgrading both the capabilities of CPS components and of the system as a whole. In this paper, we present RobotKube, an approach to orchestrating containerized microservices for large-scale cooperative multi-robot CPS based on Kubernetes. We describe how to automate the orchestration of software across a CPS, and include the possibility to monitor and selectively store relevant accruing data. In this context, we present two main components of such a system: an event detector capable of, e.g., requesting the deployment of additional applications, and an application manager capable of automatically configuring the required changes in the Kubernetes cluster. By combining the widely adopted Kubernetes platform with the Robot Operating System (ROS), we enable the use of standard tools and practices for developing, deploying, scaling, and monitoring microservices in C-ITS. We demonstrate and evaluate RobotKube in an exemplary and reproducible use case that we make publicly available at [github.com/ika-rwth-aachen/robotkube](https://github.com/ika-rwth-aachen/robotkube).</sup>\n",
+                "type": "Text_excerpt",
+                "original_header": "Paper and Citation",
+                "parent_header": [
+                    "RobotKube"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{Lampe2023RobotKube,\n    doi = {10.1109/ITSC57777.2023.10422370},\n    pages = {2719-2725},\n    year = {2023},\n    title = {RobotKube: Orchestrating Large-Scale Cooperative Multi-Robot Systems with Kubernetes and ROS},\n    booktitle = {2023 IEEE 26th International Conference on Intelligent Transportation Systems (ITSC)},\n    author = {Lampe, Bastian and Reiher, Lennart and Zanger, Lukas and Woopen, Timo and van Kempen, Raphael and Eckstein, Lutz},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/ITSC57777.2023.10422370",
+                "title": "RobotKube: Orchestrating Large-Scale Cooperative Multi-Robot Systems with Kubernetes and ROS",
+                "author": "Lampe, Bastian and Reiher, Lennart and Zanger, Lukas and Woopen, Timo and van Kempen, Raphael and Eckstein, Lutz"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/data/docker-compose.yml",
+                "type": "Url",
+                "format": "docker_compose"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/data/docker-compose.yml"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "The use case involves fifteen connected vehicles, two of which are equipped with a lidar sensor. All vehicles send their poses to a cloud. When the lidar-equipped vehicles are near each other, the deployment of additional applications in the Kubernetes cluster is automatically triggered such that the two lidar-equipped vehicles start to additionally transmit their lidar point clouds to the cloud where they are stored in a database, along with the corresponding poses, e.g., allowing [collective learning](https://doi.org/10.1007/s38314-022-1405-9).\n\n<p align=\"center\">\n  <img src=\"assets/robotkube_teaser.gif\" alt=\"The video shows a section of the data upon which the use case is built. Poses of vehicles with no lidar sensor are visualized as green arrows. Poses of lidar-equipped vehicles are visualized as red arrows. The point clouds can be seen in blue and orange. The playback is sped up eightfold.\" width=\"100%\">\n</p>\n\nThe video shows a section of the data upon which the use case is built. Poses of vehicles with no lidar sensor are visualized as green arrows. Poses of lidar-equipped vehicles are visualized as red arrows. The point clouds can be seen in blue and orange. The playback is sped up eightfold.\n\n<p align=\"center\">\n<img src=\"assets/robotkube_use_case.gif\" alt=\"Animation shows how the different components of RobotKube act during an exemplary use case.\" width=\"100%\">\n</p>\n\nThe animation shows how the different software components interact during the exemplary use case. Some initially deployed services are continually running. Upon the detection of proximity between the lidar-equipped vehicles, additional services are deployed to enable the transfer of poses and point clouds from the vehicles to a database in the cloud. When the proximity ends, the additional services are automatically removed again. \n\nThis approach can be adjusted to various other use cases where additonal software shall be deployed or scenario data shall be recorded when triggered by an event.\n",
+                "type": "Text_excerpt",
+                "original_header": "Use Case Description",
+                "parent_header": [
+                    "RobotKube"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        },
+        {
+            "result": {
+                "value": "1. Make sure prerequisites are installed and clone this repository:\n\n    ```bash\n    git clone https://github.com/ika-rwth-aachen/robotkube.git\n    ```\n\n2. Run the provided helper script [createCluster.sh](./createCluster.sh) to create the Kubernetes Cluster\n    ```bash\n    # robotkube\n    ./createCluster.sh\n    ```\n    This might take a couple of minutes and also deletes any previous clusters named 'robotkube'.\n\n3. Monitor the start-up and shut down of the different Kubernetes resources\n    ```bash\n    # robotkube\n    watch -n 0.1 kubectl get all\n    ```\n\n4. In a new terminal, run the provided helper script [start.sh](./start.sh) to trigger the initial deployment.\n    ```bash\n    # robotkube\n    ./start.sh\n    ```\n    This script will reset and reconfigure the cluster every time it is run. \n\n    You can now monitor the different Kubernetes resources in the first terminal. An initial deployment will be started. After a while, you can see the automatic deployment of the recording application, as described in the paper.\n\n    In [data/db](data/db), you find the mongoDB database. It stores recorded poses and paths to corresponding point clouds which are stored in [data/large_data](data/large_data/).\n\n6. If you want to delete the K3D cluster, run\n    ```bash\n    k3d cluster delete robotkube\n    ```\n",
+                "type": "Text_excerpt",
+                "original_header": "Quick Start",
+                "parent_header": [
+                    "RobotKube",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        },
+        {
+            "result": {
+                "value": "If you want to receive more information on what is happening in the cluster, you have the following options:\n\n1. Monitor the current lidar-equipped vehicles' distance to each other\n    ```bash\n    kubectl logs --follow $(kubectl get pods | grep cloud-operator-proximity-ed | awk '{print $1}') | grep \"Distance between clients\"\n    ```\n\n2. Monitor the time it takes to analyze the distances between all vehicles.\n    ```bash\n    kubectl logs --follow $(kubectl get pods | grep cloud-operator-proximity-ed | awk '{print $1}') | grep \"Analyzed rule\"\n\n3. Visualize the content of the database using [mongo-express](https://github.com/mongo-express/mongo-express) by running \n    ```bash\n    # robotkube\n    docker compose -f data/docker-compose.yml up\n    ```\n    and then opening [http://localhost:8081](http://localhost:8081) in your browser (user: `admin`, password: `pass`). Here, choose the `mongodb` database to get the following view:\n\n    <img src=assets/robotkube_database.png alt=\"Image Description\" width=\"300\">\n\n    You may take a look at the content of each collection.\n\n    *Hint*: The deployments in the cluster must be stopped in order for the database visualization to work and you must have gathered data before.\n\n### Interaction and Configuration\n\nIf you want to interact with the applications in the cluster or configure them differently, you have the following options:\n\n1. Attach to one of the containers/pods in the cluster:\n    ```bash\n    kubectl exec -it <POD_NAME> -- bash\n    ```\n    Replace `POD_NAME` with the desired pod's name. To get a list of all available pod names, run\n    \n    ```bash\n    kubectl get pods --no-headers -o custom-columns=\":metadata.name\"\n    ```\n\n2. You may change the [parameters](kubernetes/ros_paramsfiles/ed_params_k8s_rule.yaml) for the proximity event detector after you have created the cluster using `createCluster.sh`. These changes will be applied automatically when you run [start.sh](./start.sh) again\n\n    ```bash\n    # robotkube\n    ./start.sh\n    ```\n",
+                "type": "Text_excerpt",
+                "original_header": "Advanced Monitoring",
+                "parent_header": [
+                    "RobotKube",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "If not available already, install the following:\n\n- [Ubuntu](https://ubuntu.com/download/desktop)\n- [Docker Engine](https://docs.docker.com/engine/install/ubuntu/) \n- [K3D](https://k3d.io/v5.6.0/#install-current-latest-release)\n- [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)\n\nWe recommend *50 GB* of free disk space.\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites",
+                "parent_header": [
+                    "RobotKube",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "This research is accomplished within the research projects \u201d[AUTOtech.*agil*](https://www.ika.rwth-aachen.de/en/competences/projects/automated-driving/autotech-agil-en.html)\u201d (FKZ 1IS22088A), \u201d[UNICAR*agil*](https://www.unicaragil.de/en/)\u201d (FKZ 16EMO0284K), and \u201d[6GEM](https://www.6gem.de/en/)\u201d (FKZ 16KISK036K). We acknowledge the financial support by the Federal Ministry of Education and Research of Germany (BMBF).\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgements",
+                "parent_header": [
+                    "RobotKube"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "RobotKube"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/assets/robotkube_logo.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/assets/robotkube_teaser.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/assets/robotkube_use_case.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/RobotKube</h1>\n<p><img src="
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2308.07053"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ika-rwth-aachen/robotkube/main/README.md"
+        }
+    ]
+}

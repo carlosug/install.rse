@@ -1,0 +1,519 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:28:39"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/Open-UAV/openuav-turbovnc",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "Open-UAV",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-07-04T01:11:46Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-08T08:55:12Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2019 Distributed Robotic Exploration and Mapping Systems Laboratory\n      (ASU School of Earth and Space Exploration).\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Simulation environment for UAVs, ROVs and AUVs using Gazebo physics and Unity3D rendering.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "  The OpenUAV is a simulation environment developed for Unmanned Aerial Vehicles. \n  The goal of this framework is to have an easy to setup, UAV testing framework for single and multi-UAV simulations.\n  The containerized architecture makes this framework capable of scaling and hosting mutiple simulations in an\n  on-premise or cloud environment. This project is a modification of the [willkessler/nvidia-docker-novnc](https://github.com/willkessler/nvidia-docker-novnc) to include PX4/QGroundControl software packages UAV simulations.\n\nTo create a simulation session, please create an account at Cyber-Physical Systems Virtual Organization (CPS-VO) [https://cps-vo.org/group/OpenUAV](https://cps-vo.org/group/OpenUAV). If you are using it for educational use-cases, please mention the reason and university while creating an account. For more details, [https://openuav.us/#cpsvo](https://openuav.us/#cpsvo)\n",
+                "type": "Text_excerpt",
+                "original_header": "Introduction",
+                "parent_header": [
+                    "OpenUAV Cloud Testbed: a Collaborative Design Studio for Field Robotics"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "    Regarding env variables, the `DISPLAY` env variable points to `:1.0` which is the TurboVNC X window session (`Xvnc`), and for applications that needs 3D acceleration, the application does GLX calls which are handled by an Xserver (with GPU) running at `:0.0`. We provide details of second X server using the variable `VGL_DISPLAY` which is set to :0.0 on all containers. If `VGL_DISPLAY` is not set on the container, it assumes the value `:0.0`. \n",
+                "original_header": "Known issues"
+            },
+            "confidence": 0.9175403854709931,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "openuav-turbovnc",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "Open-UAV/openuav-turbovnc",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Open-UAV/openuav-turbovnc/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Open-UAV/openuav-turbovnc/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 41,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "openuav",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 14,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/Open-UAV/openuav-turbovnc/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "QML",
+                "name": "QML",
+                "type": "Programming_language",
+                "size": 2734351
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 76041
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 16896
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 13629
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 477
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/preinstall.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/autonomous_sys_build/setup.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/autonomous_sys_build/start_desktop.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/autonomous_sys_build/samples/leader-follower/run_this.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/autonomous_sys_build/samples/leader-follower/launch.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/autonomous_sys_build/samples/leader-follower/inputs/parameters/swarm.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/autonomous_sys_build/samples/leader-follower/inputs/measures/score.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/autonomous_sys_build/samples/formation/run_this.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/autonomous_sys_build/samples/formation/launch.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/autonomous_sys_build/samples/formation/inputs/parameters/swarm.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/autonomous_sys_build/samples/formation/inputs/measures/score.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/autonomous_sys_build/scripts/qgroundcontrol/qgroundcontrol-start.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/autonomous_sys_build/scripts/qgroundcontrol/flightgear/Aircraft/arducopter/formatXml.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/autonomous_sys_build/scripts/qgroundcontrol/flightgear/Aircraft/Rascal/Models/fix.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/autonomous_sys_build/scripts/qgroundcontrol/flightgear/Aircraft/Rascal110/Models/fix.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/setup_host/basics.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/setup_host/add_xhost.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/setup_host/install-nvidia-drivers.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/setup_host/install-nvidia-docker2.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "- NSF grant CNS-1521617\n- USDA grant 2015-67021-23857\n- GRASP Lab, University of Pennsylvania\n- Penn Aerial Robotics\n- School of Earth and Space Exploration, ASU\n- Arizona State University\n- [@willkessler] (https://github.com/willkessler)\n\n**Authors:**\n   **[Harish Anand](https://web.asu.edu/jdas/people/harish-anand), hanand4 (at) asu (dot) edu;**\n   \n   **[Prof. Jnaneshwar \"JD\" Das](https://sese.asu.edu/node/3438 \"Jnaneshwar Das\"), [Distributed Robotic Exploration and Mapping Systems Laboratory](https://web.asu.edu/jdas), ASU School of Earth and Space Exploration**\n ",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgements:",
+                "parent_header": [
+                    "OpenUAV Cloud Testbed: a Collaborative Design Studio for Field Robotics"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "To run the container on this host, use `run.sh`. Note that NoVNC will\nexpect connections on port 40001. Then surf to your host on that port.\n",
+                "type": "Text_excerpt",
+                "original_header": "Running the container",
+                "parent_header": [
+                    "OpenUAV Cloud Testbed: a Collaborative Design Studio for Field Robotics",
+                    "Building on a local machine with GPU"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1. Spin up a GC GPU host on the google console. Make sure it has at least one Tesla K80 GPU, and decent amount of VCPUs (e.g. 4, and enough disk space, at least 50Gb). Zone `us-east-1c` seems to be the best choice as of April 1, 2018.\n2. Upload this repo and unpack it in `/root/build` or wherever you like as a temporary location.\n3. Run `preinstall.sh`. This just runs `apt-get update` and puts in `screen` and `emacs` for getting started.\n4. Run `build.sh`. This will build everything needed to start up a nvidia-docker2 container with Ubuntu 18.04 and Lubuntu desktop.\n \n",
+                "original_header": "Building a plain vanilla Google Compute GPU host"
+            },
+            "confidence": 0.9999999994215614,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1. Run `nvidia-xconfig --query-gpu-info` and modify the `autonomous_sys_build/xorg.conf` with your GPU's BusId and name.\n2. Run `preinstall.sh`. This runs `apt-get update` and puts in `screen` and `emacs` for getting started.\n3. Run `build.sh`. This will build everything needed to start up a nvidia-docker2 container with Ubuntu 18.04 and Lubuntu desktop.\n \n",
+                "original_header": "Building on a local machine with GPU"
+            },
+            "confidence": 0.9999999999988063,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1. There are 3 docker images created after running `build.sh`, \n   - openuav:base-cuda-10.2-ubuntu18.04 \n   - openuav:ros-cuda-10.2-ubuntu18.04\n   - openuav:px4-cuda-10.2-ubuntu18.04 \n  The first image contains a basic linux ubuntu 18.04 desktop with chrome and pycharm installed. These session are used for python programming courses and can avoid any of the GPU requirements (change the base image in Dockerfile.base to `nvidia/opengl:1.0-glvnd-runtime`). Second image is a robotics specific image that contains ros melodic and gazebo 9.0.0 installed. The third image installs all the necessary PX4 and QGroundControl software to do flight simulations.  \n2. To access, containers through the sub-domain based url, you need to setup a dns proxy to obtain the docker internal DNS for routing. This can be achieved by creating a reverse proxy NginX container, that serves the internal DNS to host machine. \n   - Create a docker network for openuav containers, `docker network create -d bridge cpsvo`.\n   - Create a docker NginX container. Command is `docker run --name dns-proxy --network=cpsvo -d nginx`.\n   - Enter the nginx container, install vim/nano (for editing nginx.conf file) and net-tools. (`apt update && apt install vim net-tools`)\n   - Replace the NginX containers `/etc/nginx/nginx.conf` with the following conf. This provides docker DNS to host machine (127.0.0.11 from inside docker) \n      ```\n      user  nginx;\n      worker_processes  1;\n\n      error_log  /var/log/nginx/error.log warn;\n      pid        /var/run/nginx.pid;\n\n\n      events {\n          worker_connections  1024;\n      }\n\n\n      http {\n          include       /etc/nginx/mime.types;\n          default_type  application/octet-stream;\n\n          log_format  main  '$remote_addr - $remote_user [$time_local] \"$request\" '\n                            '$status $body_bytes_sent \"$http_referer\" '\n                            '\"$http_user_agent\" \"$http_x_forwarded_for\"';\n\n          access_log  /var/log/nginx/access.log  main;\n\n          sendfile        on;\n          #tcp_nopush     on;\n\n          keepalive_timeout  65;\n\n          #gzip  on;\n\n          include /etc/nginx/conf.d/*.conf;\n      }\n      stream {\n         upstream ssh_openuav {\n             server 127.0.0.11:53;\n         }\n         server {\n             listen        53 udp;\n             proxy_pass    ssh_openuav;\n\n         }\n      }\n      ```\n   - Install NginX on the host machine and modify the `/etc/nginx/sites-enabled/default` file to include the following server configuration. \n     You should replace `\\.openuav\\.us$;` with your domain name and the cpsvo in the beginning can be replaced with a any other name. You must \n     also replace 172.18.0.2 in `resolver 172.18.0.2 valid=2s;` to the IP address of the NginX container (`docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' dns-proxy`). You must also replace the ssl_certificate and ssl_certificate_key variables with your variables.\n       BASH2*\n \n",
+                "original_header": "Further details"
+            },
+            "confidence": 0.996757592476485,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1. In the local setup, if you switch users in the local machine the containers have to be restarted to update for Xorg changes.\n   A fix for this is to run the xserver on a GPU specifically used for OpenUAV work. (for more details https://openuav.us/#onpremise )   \n   ```\n   /usr/lib/xorg/Xorg -core :1 -seat seat1 -auth /var/run/lightdm/root/:1 -nolisten tcp vt8 -novtswitch -config /etc/X11/xorg.conf.openuav\n   ```\n2. Working with AMD GPUs (https://github.com/Open-UAV/openuav-turbovnc/issues/29)\n3. GLX issues \n    If you are facing GLX issues, try checking X server running at (`:0.0`) with GPU support is connected properly. You can pass a host X server with GPU ti the inside of the container as `/tmp/X11-unix/X0`. This connection is usually the issue for most GLX problems. \n",
+                "original_header": "Known issues"
+            },
+            "confidence": 0.9993328286026852,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1. You can try our https://hub.docker.com/r/dreamslab/openuav image to setup the system (GCP K80 GPU), it's recommended to use `build.sh`.\n \n",
+                "original_header": "DockerHub Image"
+            },
+            "confidence": 0.9999992088480386,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "OpenUAV Cloud Testbed: a Collaborative Design Studio for Field Robotics"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1910.00739\n\n### Known issues\n\n1. In the local setup, if you switch users in the local machine the containers have to be restarted to update for Xorg changes.\n   A fix for this is to run the xserver on a GPU specifically used for OpenUAV work. (for more details https://openuav.us/#onpremise "
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Open-UAV/openuav-turbovnc/master/README.md"
+        }
+    ]
+}

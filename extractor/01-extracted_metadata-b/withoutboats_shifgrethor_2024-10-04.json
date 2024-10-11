@@ -1,0 +1,287 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:11:36"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/withoutboats/shifgrethor",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "withoutboats",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-10-05T16:04:07Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-14T08:04:35Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "garbage collection",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "shifgrethor is an experiment. The goal is to define an API for precise, tracing\ngarbage collection in Rust which upholds all of Rust's safety guarantees. A\nuser using the API defined in this library will not be at risk for any of the\nkinds of memory errors that Rust can prevent. \nI believe the API presented in shifgrethor is genuinely safe & represents a\nsignificant advancement on our understanding of how garbage collection could be\nencoded in Rust.\n \n",
+                "original_header": "What is `shifgrethor`?"
+            },
+            "confidence": 0.967497793201014,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/withoutboats/shifgrethor/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Some previous garbage collector APIs resolve some of the safety issues with\ngarbage collection by only allowing you to copy data out of them, rather than\nallowing you to hold references directly into the managed memory. This is very\nconvenient for copying collectors as they don't have to implement pinning. \n- Garbage collected objects can own data allocated in the unmanaged heap, and\n  that data will be dropped when those objects are collected.\n- Garbage collected objects can own references into the stack, and you are\n  guaranteed not to be able to read from those references after they have gone\n  out of scope in safe code.\n- You can store pointers to garbage collected objects in the heap or on the\n  stack. \nThe transitive combination of all of these is true: for example, a GC'd object\ncan own a heap-allocated vector of references to objects on the stack which\nthemselves have GC'd objects inside them. \n",
+                "original_header": "What kind of access does `shifgrethor` provide to data?"
+            },
+            "confidence": 0.9563932888031229,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/withoutboats/shifgrethor/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "shifgrethor provides a garbage collector, but that is not what is interesting\nabout shifgrethor. The garbage collector here is a mark-and-sweep of the\nsimplest and least optimized possible variety. However, the API which makes it\nsafe could apply to much more performant garbage collectors, specifically with\nthese properties: \n- This is an API for [tracing garbage collectors][tracing], not for other\n  garbage collection techniques like reference counting.\n- This is an API for [precise][precise] tracing collectors, not a conservative\n  collector like the Boehme GC.\n- The API could be trivially adapted to support concurrent GCs, though the\n  current implementation is not thread safe.\n- The API *can* support moving collectors as long as they implement a pinning\n  mechanism. A moving collector which does not support pinning is incompatible\n  with shifgrethor's API goals.\n \n",
+                "original_header": "What kind of garbage collector is `shifgrethor`?"
+            },
+            "confidence": 0.9842927688750929,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/withoutboats/shifgrethor/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "**You should not use this for anything that you depend on (e.g. \"in\nproduction\")!** But if you want to play around with it for fun, by all means.\n \n",
+                "original_header": "What is the state of the project?"
+            },
+            "confidence": 0.9155313807244516,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/withoutboats/shifgrethor/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "In brief, a precise tracing garbage collector like shifgrethor is designed for\nworks like this: \n- All of the references from the unmanaged portion of memory (stack and heap,\n  in our context) into the managed portion of memory are tracked. These are\n  called *\"roots.\"*\n- From those roots, the collector *\"traces\"* through the graph of objects to\n  find all of the objects that can still be accessed from those roots (and\n  therefore, the objects which are still \"alive.\") \n",
+                "original_header": "How does `shifgrethor` work?"
+            },
+            "confidence": 0.9456264396856575,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/withoutboats/shifgrethor/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Fortunately, we have recently made a lot of progress on supporting intrusive\ndata structures in Rust, thanks to the pinning API. The rooting layer sits on\ntop of an underlying pinning API, which we use to guarantee that roots are\ndropped in a deterministic stack order. \nThe `Gc` pointer is a copyable reference to the data which proves that the data\nhas been rooted. It carries the lifetime of the root, and therefore can't\noutlive the root you used to create it. \n",
+                "original_header": "Rooting"
+            },
+            "confidence": 0.9514910171278114,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/withoutboats/shifgrethor/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The problem that emerges is ensuring that you can only access transitively\nrooted objects when you know they are actually being traced from a rooted\nobject. A few components enable us to solve this: \nThe `Gc` type implements `Deref` and `Copy`, it functionally acts like a normal\nreference, except that you can extend its lifetime by rerooting it. It does not\nexpose a safe API for constructing it: the only constructor is an unsafe\n`Gc::rooted` constructor: to safely call this constructor, you must prove that\nthis will be rooted for the lifetime `'root`. \n",
+                "original_header": "Tracing"
+            },
+            "confidence": 0.9194571220222172,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/withoutboats/shifgrethor/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Because `Finalize` does not give you a `Gc` pointer to your type, you cannot\naccess other `Gc` pointers (in other words, you cannot \"prove rootedness\"\nbecause you are no longer rooted in the finalizer.) However, this is\ninsufficient for preventing you from accessing other non-owned data, like stack\nreferences. \nYou must audit these finalizers and guarantee that your finalizer never reads\nfrom the any of the borrowed references inside of it, otherwise your code is\nnot safe and contains undefined behavior.\n \n",
+                "original_header": "Destructors"
+            },
+            "confidence": 0.9720092418971233,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/withoutboats/shifgrethor/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* There is a separate trait called `NullTrace`, which indicates that tracing\n  through this type is a no-op (i.e. it contains no Gc'd pointers). You are\n  free to have `Cell` and `RefCell` types containing `NullTrace` data.\n* `PinCell` is trace safe, because it does not allow you to move the data it\n  gives you. If you can't move the data, you can't unroot it. \n",
+                "original_header": "Interior mutability"
+            },
+            "confidence": 0.9461117259554704,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/withoutboats/shifgrethor/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "shifgrethor",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "withoutboats/shifgrethor",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/withoutboats/shifgrethor/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/withoutboats/shifgrethor/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 318,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 11,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/withoutboats/shifgrethor/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Rust",
+                "name": "Rust",
+                "type": "Programming_language",
+                "size": 45255
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/withoutboats/shifgrethor/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "No idea! This is currently a research project.\n",
+                "type": "Text_excerpt",
+                "original_header": "What is `shifgrethor` going to be used for?",
+                "parent_header": [
+                    "shifgrethor"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/withoutboats/shifgrethor/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "[tracing]: https://en.wikipedia.org/wiki/Tracing_garbage_collection\n[precise]: https://en.wikipedia.org/wiki/Tracing_garbage_collection#Precise_vs._conservative_and_internal_pointers\n \n",
+                "original_header": "Interior mutability"
+            },
+            "confidence": 0.9998920450984821,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/withoutboats/shifgrethor/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "shifgrethor"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/withoutboats/shifgrethor/master/README.md"
+        }
+    ]
+}

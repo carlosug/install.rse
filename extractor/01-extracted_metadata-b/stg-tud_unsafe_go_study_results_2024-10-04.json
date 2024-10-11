@@ -1,0 +1,421 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:26:57"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/stg-tud/unsafe_go_study_results",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "stg-tud",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-07-23T08:25:13Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-02-23T15:43:24Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Data set and replication scripts for our paper \"Uncovering the Hidden Dangers: Finding Unsafe Go Code in the Wild\" [@jlauinger @gh0st42 @akwick @miramezini]",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "unsafe_go_study_results",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "stg-tud/unsafe_go_study_results",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/stg-tud/unsafe_go_study_results/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/stg-tud/unsafe_go_study_results/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "dataset, go, golang, unsafe-code",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/stg-tud/unsafe_go_study_results/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 99577
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Go",
+                "name": "Go",
+                "type": "Programming_language",
+                "size": 46254
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 11358
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/scripts/paper-figures.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/scripts/paper-figures.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4130780.svg)](https://zenodo.org/record/4130780)\n\nThis is the data set and scripts for our paper \"Uncovering the Hidden Dangers: Finding Unsafe Go Code in the Wild\".\n\n**Authors:**  \nJohannes Lauinger, Lars Baumg\u00e4rtner, Anna-Katharina Wickert, and Mira Mezini  \nTechnische Universit\u00e4t Darmstadt, D-64289 Darmstadt, Germany  \nE-mail: {baumgaertner, wickert, mezini} (with) cs.tu-darmstadt.de, jlauinger (with) seemoo.tu-darmstadt.de\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Data Set: Finding Unsafe Go Code in the Wild"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To create and process the data for our study, we used the following pipeline:\n\n 1. **Raw Projects and Dependencies.** This set contains the 500 open-source Go projects that we crawled from GitHub.\n    The projects at the specific revision that we examined are referenced in this repository through Git submodules.\n    The `projects/` directory contains the submodules.\n 2. **Package and Unsafe Data.** From the projects and their dependencies, we compiled the list of all packages used\n    transitively. Within all packages, we identified usages of `unsafe` Go code. The results of this stage are\n    included in the `data/` directory.\n 3. **Labeled Unsafe Usages.** We used Python to examine the data and sample 1,400 code snippets for manual classification by unsafe usage type\n    and purpose. The results of this stage are included in the `analysis/` and `labeled-usages-dataset/` directories.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Research pipeline",
+                "parent_header": [
+                    "Data Set: Finding Unsafe Go Code in the Wild"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The directories in this repository contain the following:\n\n - `data/` contains gzipped versions of the CSV files holding project, package, and unsafe code block information,\n   as well as the sampled and labeled code snippets.\n - `figures/` contains Figures 1 to 5 as included in our paper.\n - `labeled-usages-dataset/` contains our data set of labaled usages of unsafe code blocks in Go code. The data set\n   is divided into 400 Go standard library usages (*std*) and 1,000 application code (non-standard library) usages\n   (app). Each directory contains subfolders with names similar to `efficiency__cast-struct`, where the purpose\n   label and usage label as used in our paper are included, separated by two underscores. Each of the directories\n   contains one file for each classified usage, as described in more detail below.\n - `projects/` contains Git submodules for each of the 500 projects under examination, set to the specific revision\n   that we analyzed.\n - `scripts/` contains Python scripts to replicate the figures and tables included in our paper, as well as the\n   data acquisition tool that we used to extract unsafe code blocks from the projects and a Jupyter notebook with\n   the Python code that we used to explore the data.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Directory structure",
+                "parent_header": [
+                    "Data Set: Finding Unsafe Go Code in the Wild"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The `data/geiger_findings.csv.gz` file contains the unsafe code findings. Each line in the file represents one\nfinding. It holds the corresponding code line, as +/- 5 lines of code context, as well as meta data about the finding.\nThis meta data includes the line number, column, file, package, module, and project where it was found. Package and\nproject data is a foreign key to the `data/packages.csv.gz` and `data/projects.csv.gz` files, respectively,\nwhich provide more detailed information. For example, the packages file contains total finding counts for each\npackage.\n\nThe `data/vet_findings.csv.gz` and `data/gosec_findings.csv.gz` contain warnings that were generated by `go vet` and\n`gosec` on the packages.\n\nThe `data/` directory also contains the `sampled_usages_app.csv.gz` and `sampled_usages_std.csv.gz` files, which are\nsamples subsets of the `geiger_findings.csv.gz` file containing 1,000 and 400 unique samples together with two\nlabels for each line.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Data: unsafe code blocks",
+                "parent_header": [
+                    "Data Set: Finding Unsafe Go Code in the Wild"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        },
+        {
+            "result": {
+                "value": "As described in our paper, we randomly sampled 1,400 unique unsafe usages from the 10 projects with the most overall\nunsafe usages. We then manually classified these samples in two dimensions: by what is being done and for what purpose.\n\nWe identified the following classes for the first dimension, what is being done:\n\n - `cast-struct`, `cast-basic`, `cast-bytes`, `cast-pointer`, `cast-header` (all summarized as `cast` in our paper to\n   save space): all kinds of casts between arbitrary types and structs, basic Go types, `[]byte` slices or `[N]byte`\n   arrays, actual `unsafe.Pointer` values, or `reflect.SliceHeader` and `reflect.StringHeader` values, respectively.\n - `memory-access`: dereferencing of unsafe pointers, manipulation of referenced memory, or comparison of the actual\n   stored addresses.\n - `pointer-arithmetic`: all kinds of arithmetic manipulation of addresses, such as manually advancing a slice.\n - `definition`: groups usages where a field or method of type `unsafe.Pointer` is declared for later usage.\n - `delegate`: instances where unsafe is needed only because another function requires an argument of type `unsafe.Pointer`.\n - `syscall`: groups calls to `syscall.Syscall` or other native syscalls.\n - `unused`: occurences that are not actually being used, e.g. dead code or unused function parameters.\n\nPurpose of usage is labeled with the following classes:\n\n - `efficiency`: all uses of unsafe to improve time or space complexity, such as in-place casts. Code contained in this class could also be written\n   without the use of unsafe, decreasing effeciency.\n - `serialization`: contains marshalling and serialization operations.\n - `generics`: contains usages of unsafe that achieve functionality that could have been written without unsafe if Go provided\n   support for generics.\n - `no-gc` (avoid garbage collection): contains usages where unsafe is used to tell the compiler to not free a value until\n   a function returns, such as when calling assembly code.\n - `atomic` (atomic operations): contains usages of the atomic package which require unsafe.\n - `ffi` (foreign function interface): contains calls to Cgo or other function interfaces that require unsafe by their contract.\n - `hide-escape`: contains snippets where unsafe is used to hide a value from Go escape analysis.\n - `layout` (memory layout control): contains unsafe usages to achieve low-level memory management, such as precise alignment.\n - `types`: contains unsafe usages needed to implement the Go type system itself. Only present in the `std` samples.\n - `reflect`: contains instances of type reflection and re-implementations of some types from the reflect package,\n   such as using `unsafe.Pointer` instead of `uintptr` for slice headers.\n - `unused`: again, contains occurences that are not actually being used.\n\nThe `labeled-usages-dataset` is organized as follows: the `app` and `std` contain 1,000 and 400 samples, respectively, divided by\napplication (non-standard libraries) and standard-library usages. Each of them contains subdirectories grouping the snippets by\ntheir combination of labels. The subdirectories are named similar to `efficiency__cast-struct`. Both labels of the samples are\nconcatenated using two underscores. Every combination of labels that actually contains samples has its own directory.\n\nThe samples are provided as one file for each sample. The file name is a hash of line number, file, package etc. of the finding,\nproviding a guaranteed unique name. The files contain 4 sections divided by dashes. The first section provides information\nabout the module, version, package, file, and line of the snippet. It also states which project included this snippet (but\nthere can be more projects in the data set that share usage of the snippet), and the labels as already included in the directory\nname. The information is guaranteed to be in the same line number across files. The second section contains the snippet\ncode line. The third and fourth section contain a +/- 5 lines and +/- 100 lines context, respectively.\n\nAdditionally, the labaled data set is included in machine-readable CSV format in the `data/sampled_usages_app.csv.gz` and\n`data/sampled_usaged_std.csv.gz` as described previously.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Labeled data set of unsafe usages in the wild",
+                "parent_header": [
+                    "Data Set: Finding Unsafe Go Code in the Wild"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To reproduce the figures and tables included in our paper, simply execute the corresponding scripts in the `scripts/` directory.\nThey also provide formal documentation about the specific data analysis that we did:\n\n```\ncd scripts\n./create-figure-distribution-unsafe-types.py\n./create-figure-unsafe-import-depth.py\n./create-table-dataset-labels.py\n./create-table-dataset-projects.py\n```\n\nFigures are saved as PDF files in the same directory, tables are written to the terminal as LaTeX code.\n\nTo execute the scripts, you need the following Python libraries:\n\n - Pandas\n - Numpy\n - Matplotlib\n - Tikzplotlib\n - Seaborn\n\n",
+                "type": "Text_excerpt",
+                "original_header": "How to reproduce figures and tables",
+                "parent_header": [
+                    "Data Set: Finding Unsafe Go Code in the Wild"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To reproduce the data set, first obtain the raw project code and dependencies. The easiest way to do this is to get the\ncompressed archive with the exact project code that we used from our Zenodo record:\n[https://zenodo.org/record/4001728](https://zenodo.org/record/4001728)\n\nAlternatively, you can recursively clone this repository to check out the projects data set submodules. The projects\nare included as submodules at the correct revision that we used for analysis in this repository. They are located in\nthe `projects/` directory. After recursively cloning the repositories, you may need to run `go mod vendor` in the root\ndirectory of each repository to make sure that all dependencies are properly downloaded. This step is unnecessary when\nusing the Zenodo record.\n\nThen, build and execute the data acquisition tool in the `scripts/data-acquisition-tool` directory. The folder contains\na README file with the build instructions and usage information.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "How to reproduce the data set",
+                "parent_header": [
+                    "Data Set: Finding Unsafe Go Code in the Wild"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4130780.svg)](https://zenodo.org/record/4130780)\n\nThis is the data set and scripts for our paper \"Uncovering the Hidden Dangers: Finding Unsafe Go Code in the Wild\".\n\n**Authors:**  \nJohannes Lauinger, Lars Baumg\u00e4rtner, Anna-Katharina Wickert, and Mira Mezini  \nTechnische Universit\u00e4t Darmstadt, D-64289 Darmstadt, Germany  \nE-mail: {baumgaertner, wickert, mezini} (with) cs.tu-darmstadt.de, jlauinger (with) seemoo.tu-darmstadt.de\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Data Set: Finding Unsafe Go Code in the Wild"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To create and process the data for our study, we used the following pipeline:\n\n 1. **Raw Projects and Dependencies.** This set contains the 500 open-source Go projects that we crawled from GitHub.\n    The projects at the specific revision that we examined are referenced in this repository through Git submodules.\n    The `projects/` directory contains the submodules.\n 2. **Package and Unsafe Data.** From the projects and their dependencies, we compiled the list of all packages used\n    transitively. Within all packages, we identified usages of `unsafe` Go code. The results of this stage are\n    included in the `data/` directory.\n 3. **Labeled Unsafe Usages.** We used Python to examine the data and sample 1,400 code snippets for manual classification by unsafe usage type\n    and purpose. The results of this stage are included in the `analysis/` and `labeled-usages-dataset/` directories.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Research pipeline",
+                "parent_header": [
+                    "Data Set: Finding Unsafe Go Code in the Wild"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The directories in this repository contain the following:\n\n - `data/` contains gzipped versions of the CSV files holding project, package, and unsafe code block information,\n   as well as the sampled and labeled code snippets.\n - `figures/` contains Figures 1 to 5 as included in our paper.\n - `labeled-usages-dataset/` contains our data set of labaled usages of unsafe code blocks in Go code. The data set\n   is divided into 400 Go standard library usages (*std*) and 1,000 application code (non-standard library) usages\n   (app). Each directory contains subfolders with names similar to `efficiency__cast-struct`, where the purpose\n   label and usage label as used in our paper are included, separated by two underscores. Each of the directories\n   contains one file for each classified usage, as described in more detail below.\n - `projects/` contains Git submodules for each of the 500 projects under examination, set to the specific revision\n   that we analyzed.\n - `scripts/` contains Python scripts to replicate the figures and tables included in our paper, as well as the\n   data acquisition tool that we used to extract unsafe code blocks from the projects and a Jupyter notebook with\n   the Python code that we used to explore the data.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Directory structure",
+                "parent_header": [
+                    "Data Set: Finding Unsafe Go Code in the Wild"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The `data/geiger_findings.csv.gz` file contains the unsafe code findings. Each line in the file represents one\nfinding. It holds the corresponding code line, as +/- 5 lines of code context, as well as meta data about the finding.\nThis meta data includes the line number, column, file, package, module, and project where it was found. Package and\nproject data is a foreign key to the `data/packages.csv.gz` and `data/projects.csv.gz` files, respectively,\nwhich provide more detailed information. For example, the packages file contains total finding counts for each\npackage.\n\nThe `data/vet_findings.csv.gz` and `data/gosec_findings.csv.gz` contain warnings that were generated by `go vet` and\n`gosec` on the packages.\n\nThe `data/` directory also contains the `sampled_usages_app.csv.gz` and `sampled_usages_std.csv.gz` files, which are\nsamples subsets of the `geiger_findings.csv.gz` file containing 1,000 and 400 unique samples together with two\nlabels for each line.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Data: unsafe code blocks",
+                "parent_header": [
+                    "Data Set: Finding Unsafe Go Code in the Wild"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        },
+        {
+            "result": {
+                "value": "As described in our paper, we randomly sampled 1,400 unique unsafe usages from the 10 projects with the most overall\nunsafe usages. We then manually classified these samples in two dimensions: by what is being done and for what purpose.\n\nWe identified the following classes for the first dimension, what is being done:\n\n - `cast-struct`, `cast-basic`, `cast-bytes`, `cast-pointer`, `cast-header` (all summarized as `cast` in our paper to\n   save space): all kinds of casts between arbitrary types and structs, basic Go types, `[]byte` slices or `[N]byte`\n   arrays, actual `unsafe.Pointer` values, or `reflect.SliceHeader` and `reflect.StringHeader` values, respectively.\n - `memory-access`: dereferencing of unsafe pointers, manipulation of referenced memory, or comparison of the actual\n   stored addresses.\n - `pointer-arithmetic`: all kinds of arithmetic manipulation of addresses, such as manually advancing a slice.\n - `definition`: groups usages where a field or method of type `unsafe.Pointer` is declared for later usage.\n - `delegate`: instances where unsafe is needed only because another function requires an argument of type `unsafe.Pointer`.\n - `syscall`: groups calls to `syscall.Syscall` or other native syscalls.\n - `unused`: occurences that are not actually being used, e.g. dead code or unused function parameters.\n\nPurpose of usage is labeled with the following classes:\n\n - `efficiency`: all uses of unsafe to improve time or space complexity, such as in-place casts. Code contained in this class could also be written\n   without the use of unsafe, decreasing effeciency.\n - `serialization`: contains marshalling and serialization operations.\n - `generics`: contains usages of unsafe that achieve functionality that could have been written without unsafe if Go provided\n   support for generics.\n - `no-gc` (avoid garbage collection): contains usages where unsafe is used to tell the compiler to not free a value until\n   a function returns, such as when calling assembly code.\n - `atomic` (atomic operations): contains usages of the atomic package which require unsafe.\n - `ffi` (foreign function interface): contains calls to Cgo or other function interfaces that require unsafe by their contract.\n - `hide-escape`: contains snippets where unsafe is used to hide a value from Go escape analysis.\n - `layout` (memory layout control): contains unsafe usages to achieve low-level memory management, such as precise alignment.\n - `types`: contains unsafe usages needed to implement the Go type system itself. Only present in the `std` samples.\n - `reflect`: contains instances of type reflection and re-implementations of some types from the reflect package,\n   such as using `unsafe.Pointer` instead of `uintptr` for slice headers.\n - `unused`: again, contains occurences that are not actually being used.\n\nThe `labeled-usages-dataset` is organized as follows: the `app` and `std` contain 1,000 and 400 samples, respectively, divided by\napplication (non-standard libraries) and standard-library usages. Each of them contains subdirectories grouping the snippets by\ntheir combination of labels. The subdirectories are named similar to `efficiency__cast-struct`. Both labels of the samples are\nconcatenated using two underscores. Every combination of labels that actually contains samples has its own directory.\n\nThe samples are provided as one file for each sample. The file name is a hash of line number, file, package etc. of the finding,\nproviding a guaranteed unique name. The files contain 4 sections divided by dashes. The first section provides information\nabout the module, version, package, file, and line of the snippet. It also states which project included this snippet (but\nthere can be more projects in the data set that share usage of the snippet), and the labels as already included in the directory\nname. The information is guaranteed to be in the same line number across files. The second section contains the snippet\ncode line. The third and fourth section contain a +/- 5 lines and +/- 100 lines context, respectively.\n\nAdditionally, the labaled data set is included in machine-readable CSV format in the `data/sampled_usages_app.csv.gz` and\n`data/sampled_usaged_std.csv.gz` as described previously.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Labeled data set of unsafe usages in the wild",
+                "parent_header": [
+                    "Data Set: Finding Unsafe Go Code in the Wild"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To reproduce the figures and tables included in our paper, simply execute the corresponding scripts in the `scripts/` directory.\nThey also provide formal documentation about the specific data analysis that we did:\n\n```\ncd scripts\n./create-figure-distribution-unsafe-types.py\n./create-figure-unsafe-import-depth.py\n./create-table-dataset-labels.py\n./create-table-dataset-projects.py\n```\n\nFigures are saved as PDF files in the same directory, tables are written to the terminal as LaTeX code.\n\nTo execute the scripts, you need the following Python libraries:\n\n - Pandas\n - Numpy\n - Matplotlib\n - Tikzplotlib\n - Seaborn\n\n",
+                "type": "Text_excerpt",
+                "original_header": "How to reproduce figures and tables",
+                "parent_header": [
+                    "Data Set: Finding Unsafe Go Code in the Wild"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "We analyzed the 500 top-rated Go projects from GitHub. They are referenced through Git submodules in this repository.\nFrom these, we excluded 150 projecs that did not yet support modules, and 7 which did not compile.\n\nThe projects that did not support Go modules can be identified from the `data/projects.csv.gz` file using the\n`project_used_modules` column. The projects that did not compile are listed in the `data/projects_with_errors.txt`\nfile.\n\nTo make it easier to reproduce our study and to fetch the projects we analyzed with their exact revision, as well as to\nget the correct dependency versions, we also provide the projects and dependencies as `tar.gz` compressed archives on the\nZenodo platform: [https://zenodo.org/record/4001728](https://zenodo.org/record/4001728)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Raw project data: project code and dependencies",
+                "parent_header": [
+                    "Data Set: Finding Unsafe Go Code in the Wild"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "All project and dependency code is licensed under the terms of the respective licenses for the specific projects.\n\n<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons Lizenzvertrag\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />Our study material and data set is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs  4.0 International License</a>.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "Data Set: Finding Unsafe Go Code in the Wild"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://zenodo.org/record/4130780"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Data Set: Finding Unsafe Go Code in the Wild"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/stg-tud/unsafe_go_study_results/master/README.md"
+        }
+    ]
+}

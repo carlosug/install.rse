@@ -1,0 +1,375 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:54:24"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/fewshotcdcs/CDCS",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "fewshotcdcs",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-09-04T01:44:48Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-05-31T06:26:13Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Cross-Domain Deep Code Search with Few-Shot Learning",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "This repo provides the code for reproducing the experiments in [Cross-Domain Deep Code Search with Few-Shot Meta Learning](https://arxiv.org/abs/2201.00150).\nCDCS is a novel approach for domain-specific code search. CDCS employs a transfer learning framework where an initial program representation model is pre-trained on a large corpus of common programming languages (such as Java and Python), and is further adapted to domain-specific languages such as Solidity and SQL. \n\nPaper link: https://arxiv.org/abs/2109.00859\n",
+                "type": "Text_excerpt",
+                "original_header": "Introduction",
+                "parent_header": [
+                    "CDCS"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is the PyTorch implementation for the following ICSE 2022 paper: \n",
+                "original_header": "CDCS"
+            },
+            "confidence": 0.972021694407522,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We use only positive samples for pre-training and use the entire set of pairs for meta learning. \nWe provide the train_valid data in this repo.\n \n",
+                "original_header": "Pre-training &amp; Meta learning"
+            },
+            "confidence": 0.9271466915856148,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We provide the processed data in this repo and the processing details are in our paper.\n \n",
+                "original_header": "Fine-tuning"
+            },
+            "confidence": 0.9534327139013071,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "As the model is based on Roberta, we provide the meta training file maml.py in this repo, which including the implementation details of MAML.\nOther model implementation files can refer to codesearch task in CodeBERT. \n",
+                "original_header": "Script"
+            },
+            "confidence": 0.9685476911544729,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "CDCS",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "fewshotcdcs/CDCS",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/fewshotcdcs/CDCS/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/fewshotcdcs/CDCS/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 11,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 10,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/fewshotcdcs/CDCS/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 60195
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/fewshotcdcs/CDCS/releases/111045333",
+                "tag": "v1.0.0",
+                "name": "checkpoint",
+                "author": {
+                    "name": "fewshotcdcs",
+                    "type": "User"
+                },
+                "description": "This is a checkpoint of CDCS, you can do fine-tuning based on this checkpoint.",
+                "tarball_url": "https://api.github.com/repos/fewshotcdcs/CDCS/tarball/v1.0.0",
+                "zipball_url": "https://api.github.com/repos/fewshotcdcs/CDCS/zipball/v1.0.0",
+                "html_url": "https://github.com/fewshotcdcs/CDCS/releases/tag/v1.0.0",
+                "url": "https://api.github.com/repos/fewshotcdcs/CDCS/releases/111045333",
+                "release_id": 111045333,
+                "date_created": "2023-07-05T00:44:26Z",
+                "date_published": "2023-07-05T00:57:10Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "* pip install torch\n* pip install transformers\n* https://higher.readthedocs.io/en/latest/\n",
+                "type": "Text_excerpt",
+                "original_header": "Dependency",
+                "parent_header": [
+                    "CDCS"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "```bibtex\n@inproceedings{chai2022cdcs,\ntitle={Cross-Domain Deep Code Search with Meta Learning},\nauthor={Chai, Yitian and Zhang, Hongyu and Shen, Beijun and Gu, Xiaodong},\nbooktitle={Proceedings of the 44th International Conference on Software Engineering (ICSE 2022)},\nyear={2022},\norganization={ACM}\n}\n```\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "CDCS"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{chai2022cdcs,\n    organization = {ACM},\n    year = {2022},\n    booktitle = {Proceedings of the 44th International Conference on Software Engineering (ICSE 2022)},\n    author = {Chai, Yitian and Zhang, Hongyu and Shen, Beijun and Gu, Xiaodong},\n    title = {Cross-Domain Deep Code Search with Meta Learning},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Cross-Domain Deep Code Search with Meta Learning",
+                "author": "Chai, Yitian and Zhang, Hongyu and Shen, Beijun and Gu, Xiaodong"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "CDCS pre-trained on Python and Java data from CodeBERT(https://github.com/microsoft/CodeBERT).\nYou can use the following command to download the preprocessed training and validation dataset: \n```\ngdown https://drive.google.com/uc?id=1xgSR34XO8xXZg4cZScDYj2eGerBE9iGo  \n```\n \n",
+                "original_header": "Pre-training &amp; Meta learning"
+            },
+            "confidence": 0.9999997375783269,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "CDCS fine-tuned on Solidty(https://zenodo.org/record/4587089#.YEog9-gzYuV) and SQL(https://github.com/taoyds/spider) data.  \n",
+                "original_header": "Fine-tuning"
+            },
+            "confidence": 0.9992010803598039,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\nFor example, if you want to run the meta learning, you can simple run:\n```\npython maml.py \\\n--model_type roberta \\\n--task_name codesearch \\\n--do_meta_train \\\n--do_eval \\\n--eval_all_checkpoints \\\n--train_file train.txt \\\n--dev_file valid.txt \\\n--max_seq_length 256\\\n--per_gpu_train_batch_size 32 \\\n--per_gpu_eval_batch_size 32 \\\n--learning_rate 1e-5 \\\n--num_train_epochs 2 \\\n--gradient_accumulation_steps 1 \\\n--overwrite_output_dir \\\n--data_dir ../data/codesearch/train_valid/$lang \\\n--output_dir ./models/$lang  \\\n--model_name_or_path $pretrained_model\n``` \nIf you want to run fine-tuning, you can replace the `--do_meta_train` with `--do_train`\n \n",
+                "original_header": "Script"
+            },
+            "confidence": 0.9976627783927154,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "For quick replication, we have released our pre-trained and meta-learned checkpoints at\nhttps://github.com/fewshotcdcs/CDCS/releases/tag/v1.0.0\n \n",
+                "original_header": "Checkpoints"
+            },
+            "confidence": 0.9995610743886901,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\nFor example, if you want to run the meta learning, you can simple run:\n```\npython maml.py \\\n--model_type roberta \\\n--task_name codesearch \\\n--do_meta_train \\\n--do_eval \\\n--eval_all_checkpoints \\\n--train_file train.txt \\\n--dev_file valid.txt \\\n--max_seq_length 256\\\n--per_gpu_train_batch_size 32 \\\n--per_gpu_eval_batch_size 32 \\\n--learning_rate 1e-5 \\\n--num_train_epochs 2 \\\n--gradient_accumulation_steps 1 \\\n--overwrite_output_dir \\\n--data_dir ../data/codesearch/train_valid/$lang \\\n--output_dir ./models/$lang  \\\n--model_name_or_path $pretrained_model\n``` \n",
+                "original_header": "Script"
+            },
+            "confidence": 0.9073860988911715,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "CDCS"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        }
+    ],
+    "related_documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://higher.readthedocs.io/",
+                "format": "readthedocs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2109.00859\n\n## Dataset\n\n### Pre-training & Meta learning\n\nCDCS pre-trained on Python and Java data from CodeBERT(https://github.com/microsoft/CodeBERT"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2201.00150"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fewshotcdcs/CDCS/main/README.md"
+        }
+    ]
+}

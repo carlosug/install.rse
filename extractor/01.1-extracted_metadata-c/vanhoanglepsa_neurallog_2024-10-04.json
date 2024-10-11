@@ -1,0 +1,294 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 18:58:45"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/LogIntelligence/NeuralLog",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "LogIntelligence",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-04-13T18:59:17Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-26T15:02:47Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 LogIntelligence\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/vanhoanglepsa/neurallog/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Log-based Anomaly Detection Without Log Parsing (ASE 2021, Research Track)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "**Abstract**: Software systems often record important runtime information in system logs for troubleshooting purposes. There have been many studies that use log data  to construct machine learning models for detecting system anomalies. Through our empirical study, we find that existing log-based anomaly detection approaches are significantly affected by log parsing errors that are introduced by 1) OOV (out-of-vocabulary) words, and 2) semantic misunderstandings. The log parsing errors could cause the loss of important information for anomaly detection. To address the limitations of existing methods, we propose NeuralLog, a novel log-based anomaly detection approach that does not require log parsing. NeuralLog extracts the semantic meaning of raw log messages and represents them as semantic vectors. These representation vectors are then used to detect anomalies through a Transformer-based classification model, which can capture the contextual information from log sequences. Our experimental results show that the proposed approach can effectively understand the semantic meaning of log messages and achieve accurate anomaly detection results. Overall, NeuralLog achieves F1-scores greater than 0.95 on four public datasets, outperforming the existing approaches.\n \n",
+                "original_header": "NeuralLog"
+            },
+            "confidence": 0.9082158018075025,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/vanhoanglepsa/neurallog/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "NeuralLog",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "LogIntelligence/NeuralLog",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/LogIntelligence/NeuralLog/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/LogIntelligence/NeuralLog/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 103,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "deep-learning, log-based-anomaly-detection, transformer",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 35,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/vanhoanglepsa/neurallog/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 23436
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/vanhoanglepsa/neurallog/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/vanhoanglepsa/neurallog/main/demo/Transformer_based_Classification.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/vanhoanglepsa/neurallog/main/demo/Transformer_based_Classification.ipynb"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "1. Python 3.5 - 3.8\n2. tensorflow 2.4\n3. transformers\n4. tf-models-official 2.4.0\n5. scikit-learn\n6. pandas\n7. numpy\n8. gensim",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "NeuralLog"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/vanhoanglepsa/neurallog/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "- Extract Semantic Vectors\n\n```python\nfrom neurallog import data_loader\n\nlog_file = \"../data/raw/BGL.log\"\nemb_dir = \"../data/embeddings/BGL\"\n\n(x_tr, y_tr), (x_te, y_te) = data_loader.load_Supercomputers(\n     log_file, train_ratio=0.8, windows_size=20,\n     step_size=5, e_type='bert')\n```\n- Train/Test Transformer Model\n\nSee [notebook](demo/Transformer_based_Classification.ipynb)\n\n- Full demo on the BGL dataset\n```shell\n$ pip install -r requirements.txt\n$ wget https://zenodo.org/record/3227177/files/BGL.tar.gz && tar -xvzf BGL.tar.gz\n$ mkdir logs && mv BGL.log logs/.\n$ cd demo\n$ python NeuralLog.py\n```",
+                "type": "Text_excerpt",
+                "original_header": "Demo",
+                "parent_header": [
+                    "NeuralLog"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/vanhoanglepsa/neurallog/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you find the code and models useful for your research, please cite the following paper:\n```\n@inproceedings{le2021log,\n  title={Log-based anomaly detection without log parsing},\n  author={Le, Van-Hoang and Zhang, Hongyu},\n  booktitle={2021 36th IEEE/ACM International Conference on Automated Software Engineering (ASE)},\n  pages={492--504},\n  year={2021},\n  organization={IEEE}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "NeuralLog"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/vanhoanglepsa/neurallog/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{le2021log,\n    organization = {IEEE},\n    year = {2021},\n    pages = {492--504},\n    booktitle = {2021 36th IEEE/ACM International Conference on Automated Software Engineering (ASE)},\n    author = {Le, Van-Hoang and Zhang, Hongyu},\n    title = {Log-based anomaly detection without log parsing},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Log-based anomaly detection without log parsing",
+                "author": "Le, Van-Hoang and Zhang, Hongyu"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/vanhoanglepsa/neurallog/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "[//]: # ([PyTorch version]&#40;https://github.com/LogIntelligence/LogADEmpirical&#41;) \n",
+                "original_header": "Framework"
+            },
+            "confidence": 0.9998686982760133,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/vanhoanglepsa/neurallog/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "NeuralLog"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/vanhoanglepsa/neurallog/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/vanhoanglepsa/neurallog/main/docs/images/framework.jpg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/vanhoanglepsa/neurallog/main/README.md"
+        }
+    ]
+}

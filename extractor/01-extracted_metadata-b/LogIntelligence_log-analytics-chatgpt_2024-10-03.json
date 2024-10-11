@@ -1,0 +1,421 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:57:29"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/LogIntelligence/log-analytics-chatgpt",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "LogIntelligence",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-05-31T11:19:16Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-29T08:27:15Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "log-analytics-chatgpt",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "LogIntelligence/log-analytics-chatgpt",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/LogIntelligence/log-analytics-chatgpt/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/LogIntelligence/log-analytics-chatgpt/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 19,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/LogIntelligence/log-analytics-chatgpt/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 52685
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "[//]: # (Artifact for the ASE 2023 - NIER Track #180: \"Log Parsing: How Far Can ChatGPT Go?\")\n\n**Introduction**:  In this paper, we conduct a preliminary evaluation of \nChatGPT for log parsing. We design appropriate prompts to guide\nChatGPT to understand the log parsing task and extract the\nlog event/template from the input log messages.\n\n**_Example:_**\n\n<p align=\"center\"><img src=\"docs/images/examples.png\" width=\"500\"></p>\n",
+                "type": "Text_excerpt",
+                "original_header": "<a href=\"https://github.com/LogIntelligence/log-analytics-chatgpt\">Repository</a> for the paper Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        },
+        {
+            "result": {
+                "value": "We provide a basic definition of log parsing (i.e., abstracting the dynamic \nvariables in logs) and ask ChatGPT to extract the log template for one log \nmessage using the prompt:\n\n```text\nYou will be provided with a log message delimited by backticks. You must abstract variables with `{placeholders}` to extract the corresponding template.\nPrint the input log\u2019s template delimited by backticks.\n\nLog message: `[LOG]`\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "*a) RQ1: Can ChatGPT effectively perform log parsing?*",
+                "parent_header": [
+                    "<a href=\"https://github.com/LogIntelligence/log-analytics-chatgpt\">Repository</a> for the paper Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)",
+                    "I. Study Design",
+                    "1.1. Research questions"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        },
+        {
+            "result": {
+                "value": "We evaluate the performance of ChatGPT on log parsing in two scenarios:\n- Few-shot scenarios: We use the following prompt to evaluate the generality of ChatGPT generality to a variety of log data.\n\n```text\nYou will be provided with a log message delimited by backticks. You must abstract variables with `{placeholders}` to extract the corresponding template.\nFor example:\nThe template of `[DEMO_LOG1]` is `[TEMPLATE1]`.\nThe template of `[DEMO_LOG2]` is `[TEMPLATE2]`.\n...\nPrint the input log's template delimited by backticks.\n\nLog message: `[LOG]`\n```\n\n- Different prompts: We evaluate the impact of _simple_ and _enhance_ prompts on log parsing with ChatGPT.\n  \n  - Simple:\n  ```text\n  You will be provided with a log message delimited by backticks. Please extract the log template from this log message:\n  `[LOG]`\n  \n  Log template: \n  ```\n  - Enhance:\n  ```text\n  You will be provided with a log message delimited by backticks. You must identify and abstract all the dynamic variables in logs with `{placeholders}` and output a static log template.\n  Print the input log's template delimited by backticks.\n  \n  Log message: `[LOG]`\n  ```\n",
+                "type": "Text_excerpt",
+                "original_header": "*b) RQ2: How does ChatGPT perform with different prompting methods?*",
+                "parent_header": [
+                    "<a href=\"https://github.com/LogIntelligence/log-analytics-chatgpt\">Repository</a> for the paper Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)",
+                    "I. Study Design",
+                    "1.1. Research questions"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        },
+        {
+            "result": {
+                "value": "We use 16 representative log datasets from a wide range of systems for the evaluation,\nincluding distributed systems (i.e., HDFS, Hadoop, Spark, Zookeeper, OpenStack),\nsupercomputers (i.e., BGL, HPC, Thunderbird),\noperating systems (i.e., Windows, Linux, Mac),\nmobile systems (i.e., Android, HealthApp),\nserver applications (i.e., Apache, OpenSSH),\nand standalone softwares (i.e., Proxifier).\nEach dataset contains 2,000 manually labelled log messages\nThe dataset originated from [LogPAI](https://github.com/logpai/logparser). We use a [corrected version](https://figshare.com/articles/software/Artifact_for_Guidelines_for_Assessing_the_Accuracy_of_Log_Message_Template_Identification_Techniques_/18858332) from recent studies for our study. \n",
+                "type": "Text_excerpt",
+                "original_header": "1.2. Datasets",
+                "parent_header": [
+                    "<a href=\"https://github.com/LogIntelligence/log-analytics-chatgpt\">Repository</a> for the paper Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)",
+                    "I. Study Design"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        },
+        {
+            "result": {
+                "value": "1. Set the Open AI API Key at `/chat/__init__.py (OPEN_AI_KEY)`\n2. Run the script `python main.py` to generate log templates with ChatGPT\n3. Set the output directory at `/outputs/post_process.py` and run the script `cd outputs && python post_process.py` to apply common post-process rules for log parsing.\n4. Set the output directory at `evaluate.py` and run the script `python evaluate.py`\n",
+                "type": "Text_excerpt",
+                "original_header": "II. Benchmark",
+                "parent_header": [
+                    "<a href=\"https://github.com/LogIntelligence/log-analytics-chatgpt\">Repository</a> for the paper Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        },
+        {
+            "result": {
+                "value": "<p align=\"center\"><img src=\"docs/images/RQ1.png\" width=\"700\"></p>\n",
+                "type": "Text_excerpt",
+                "original_header": "3.1. RQ1: Can ChatGPT effectively perform log parsing?",
+                "parent_header": [
+                    "<a href=\"https://github.com/LogIntelligence/log-analytics-chatgpt\">Repository</a> for the paper Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)",
+                    "III. Experimental results"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        },
+        {
+            "result": {
+                "value": "<p align=\"center\"><img src=\"docs/images/RQ2.1.png\" width=\"500\"></p>\n\n",
+                "type": "Text_excerpt",
+                "original_header": "***a) Few-shot scenarios:***",
+                "parent_header": [
+                    "<a href=\"https://github.com/LogIntelligence/log-analytics-chatgpt\">Repository</a> for the paper Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)",
+                    "III. Experimental results"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        },
+        {
+            "result": {
+                "value": "<p align=\"center\"><img src=\"docs/images/RQ2.2.png\" width=\"500\"></p>\n",
+                "type": "Text_excerpt",
+                "original_header": "***b) Different prompts:***",
+                "parent_header": [
+                    "<a href=\"https://github.com/LogIntelligence/log-analytics-chatgpt\">Repository</a> for the paper Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)",
+                    "III. Experimental results"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "We provide a basic definition of log parsing (i.e., abstracting the dynamic \nvariables in logs) and ask ChatGPT to extract the log template for one log \nmessage using the prompt:\n\n```text\nYou will be provided with a log message delimited by backticks. You must abstract variables with `{placeholders}` to extract the corresponding template.\nPrint the input log\u2019s template delimited by backticks.\n\nLog message: `[LOG]`\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "*a) RQ1: Can ChatGPT effectively perform log parsing?*",
+                "parent_header": [
+                    "<a href=\"https://github.com/LogIntelligence/log-analytics-chatgpt\">Repository</a> for the paper Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)",
+                    "I. Study Design",
+                    "1.1. Research questions"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        },
+        {
+            "result": {
+                "value": "We evaluate the performance of ChatGPT on log parsing in two scenarios:\n- Few-shot scenarios: We use the following prompt to evaluate the generality of ChatGPT generality to a variety of log data.\n\n```text\nYou will be provided with a log message delimited by backticks. You must abstract variables with `{placeholders}` to extract the corresponding template.\nFor example:\nThe template of `[DEMO_LOG1]` is `[TEMPLATE1]`.\nThe template of `[DEMO_LOG2]` is `[TEMPLATE2]`.\n...\nPrint the input log's template delimited by backticks.\n\nLog message: `[LOG]`\n```\n\n- Different prompts: We evaluate the impact of _simple_ and _enhance_ prompts on log parsing with ChatGPT.\n  \n  - Simple:\n  ```text\n  You will be provided with a log message delimited by backticks. Please extract the log template from this log message:\n  `[LOG]`\n  \n  Log template: \n  ```\n  - Enhance:\n  ```text\n  You will be provided with a log message delimited by backticks. You must identify and abstract all the dynamic variables in logs with `{placeholders}` and output a static log template.\n  Print the input log's template delimited by backticks.\n  \n  Log message: `[LOG]`\n  ```\n",
+                "type": "Text_excerpt",
+                "original_header": "*b) RQ2: How does ChatGPT perform with different prompting methods?*",
+                "parent_header": [
+                    "<a href=\"https://github.com/LogIntelligence/log-analytics-chatgpt\">Repository</a> for the paper Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)",
+                    "I. Study Design",
+                    "1.1. Research questions"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        },
+        {
+            "result": {
+                "value": "We use 16 representative log datasets from a wide range of systems for the evaluation,\nincluding distributed systems (i.e., HDFS, Hadoop, Spark, Zookeeper, OpenStack),\nsupercomputers (i.e., BGL, HPC, Thunderbird),\noperating systems (i.e., Windows, Linux, Mac),\nmobile systems (i.e., Android, HealthApp),\nserver applications (i.e., Apache, OpenSSH),\nand standalone softwares (i.e., Proxifier).\nEach dataset contains 2,000 manually labelled log messages\nThe dataset originated from [LogPAI](https://github.com/logpai/logparser). We use a [corrected version](https://figshare.com/articles/software/Artifact_for_Guidelines_for_Assessing_the_Accuracy_of_Log_Message_Template_Identification_Techniques_/18858332) from recent studies for our study. \n",
+                "type": "Text_excerpt",
+                "original_header": "1.2. Datasets",
+                "parent_header": [
+                    "<a href=\"https://github.com/LogIntelligence/log-analytics-chatgpt\">Repository</a> for the paper Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)",
+                    "I. Study Design"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "- We adopt the implementation for baselines and evaluation metrics from [logparser](https://github.com/logpai/logparser)\nand an [empirical study](https://figshare.com/articles/software/Artifact_for_Guidelines_for_Assessing_the_Accuracy_of_Log_Message_Template_Identification_Techniques_/18858332).\n\n- We use the implementation provided by authors for [SPINE](https://doi.org/10.1145/3540250.3549176).\n\n- We adopt the few-shot data sampling from [LogPPT](https://github.com/LogIntelligence/LogPPT).\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgement",
+                "parent_header": [
+                    "<a href=\"https://github.com/LogIntelligence/log-analytics-chatgpt\">Repository</a> for the paper Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "1. Tools and Benchmarks for Automated Log Parsing. International Conference on Software Engineering (ICSE), 2019.\n2. Guidelines for assessing the accuracy of log message template identification techniques. International Conference on Software Engineering (ICSE), 2022.\n3. Log Parsing with Prompt-based Few-shot Learning. International Conference on Software Engineering (ICSE), 2023.\n",
+                "type": "Text_excerpt",
+                "original_header": "References:",
+                "parent_header": [
+                    "<a href=\"https://github.com/LogIntelligence/log-analytics-chatgpt\">Repository</a> for the paper Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        },
+        {
+            "result": {
+                "value": "If you find the code and models useful for your research, please cite the following paper:\n@INPROCEEDINGS{10298390,\n  author={Le, Van-Hoang and Zhang, Hongyu},\n  booktitle={2023 38th IEEE/ACM International Conference on Automated Software Engineering (ASE)}, \n  title={Log Parsing: How Far Can ChatGPT Go?}, \n  year={2023},\n  pages={1699-1704},\n  doi={10.1109/ASE56229.2023.00206}}\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation:",
+                "parent_header": [
+                    "<a href=\"https://github.com/LogIntelligence/log-analytics-chatgpt\">Repository</a> for the paper Log Parsing: How Far Can ChatGPT Go? (ASE 2023 - NIER Track)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{10298390,\n    doi = {10.1109/ASE56229.2023.00206},\n    pages = {1699-1704},\n    year = {2023},\n    title = {Log Parsing: How Far Can ChatGPT Go?},\n    booktitle = {2023 38th IEEE/ACM International Conference on Automated Software Engineering (ASE)},\n    author = {Le, Van-Hoang and Zhang, Hongyu},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/ASE56229.2023.00206",
+                "title": "Log Parsing: How Far Can ChatGPT Go?",
+                "author": "Le, Van-Hoang and Zhang, Hongyu"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/docs/images/examples.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/docs/images/RQ1.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/docs/images/RQ2.1.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/docs/images/RQ2.2.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/LogIntelligence/log-analytics-chatgpt/master/README.md"
+        }
+    ]
+}

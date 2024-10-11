@@ -1,0 +1,323 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:00:42"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/terryyz/ice-score",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "terryyz",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-04-26T12:21:48Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-24T23:26:14Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2024 Terry Zhuo\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/terryyz/llm-code-eval/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "[EACL 2024] ICE-Score: Instructing Large Language Models to Evaluate Code",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "- `data/` contains all processed data used in the paper.\n    - `data/conala/` contains the CoNaLa dataset with all automatic evaluation results.\n    - `data/humaneval/` contains the HumanEval dataset with all automatic evaluation results.\n      - `data/humaneval/humaneval_java_grade.json`: Java split\n      - `data/humaneval/humaneval_cpp_grade.json`: C++ split\n      - `data/humaneval/humaneval_python_grade.json`: Python split\n      - `data/humaneval/humaneval_js_grade.json`: JavaScript split\n \n- `experiment_source/` contains the scripts to collect all automatic evaluation results. They require specific modifications to run on your machine. Note that for any of these scripts using `metrics_evaluation.metrics`, you need to use the implementations in `metrics_evaluation` folder from [codegen-metrics](https://github.com/JetBrains-Research/codegen-metrics).\n\n\n- `llm_code_eval` contains the implementation of a minimum viable product (MVP) of this project. You are able to use it to evaluate any generated code snippet. Please refer to the `Use Large Language Models To Downstream Tasks Of Source Code` for more details.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Folder Description",
+                "parent_header": [
+                    "ICE-Score: Instructing Large Language Models to Evaluate Code"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/terryyz/llm-code-eval/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "ice-score",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "terryyz/ice-score",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/terryyz/ice-score/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/terryyz/ice-score/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 68,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "automatic-evaluation, code-generation, code-quality, evaluation, gpt-4, large-language-models, llm",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 8,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/terryyz/llm-code-eval/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 40412
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 17538
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/terryyz/llm-code-eval/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/terryyz/llm-code-eval/main/compute_results.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/terryyz/llm-code-eval/main/compute_results.ipynb"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "![](./assets/ice-score.png \"Example\")\n",
+                "type": "Text_excerpt",
+                "original_header": "Example",
+                "parent_header": [
+                    "ICE-Score: Instructing Large Language Models to Evaluate Code"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/terryyz/llm-code-eval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "We implement a minimum viable product (MVP) for this project. To install the project, please use the following command:\n```bash\npip install -e .\n```\nYou can use it to evaluate any generated code snippet, with the inputs of `problem`, `output`, `task`, `aspect` and `model`, like the following example:\n```python\nfrom llm_code_eval import evaluate\n\nscore = evaluate(problem=\"Given a list of integers, return the sum of all the integers.\", \n                    output=\"sum = 0\\nfor i in range(len(list)):\\n\\tsum += list[i]\\nreturn sum\", \n                    task=\"code-gen\", aspect=\"usefulness\", model=\"gpt-3.5-turbo\")\n\nprint(score)\n```\n\nIf you want to evaluate with reference code, you can use the option of `reference` in the following example:\n```python\nfrom llm_code_eval import evaluate\n\nscore = evaluate(problem=\"Given a list of integers, return the sum of all the integers.\", \n                output=\"sum = 0\\nfor i in range(len(list)):\\n\\tsum += list[i]\\nreturn sum\", \n                reference=\"sum = 0\\nfor i in range(len(list)):\\n\\tsum += list[i]\\nreturn sum\", \n                task=\"code-gen\", aspect=\"usefulness\", model=\"gpt-3.5-turbo\")\n\nprint(score)\n```\n\n\nYou can also use the option of `cot=True` to enable the zero-shot chain-of-thought evaluation in the following example:\n```python\nfrom llm_code_eval import evaluate\n\nscore, eval_step = evaluate(problem=\"Given a list of integers, return the sum of all the integers.\", \n                            output=\"sum = 0\\nfor i in range(len(list)):\\n\\tsum += list[i]\\nreturn sum\", \n                            task=\"code-gen\", aspect=\"usefulness\", model=\"gpt-3.5-turbo\", cot=True)\n\nprint(score)\nprint(eval_step)\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "ICE-Score: Instructing Large Language Models to Evaluate Code"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/terryyz/llm-code-eval/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Our experiment is mainly built on the [codegen-metrics](https://github.com/JetBrains-Research/codegen-metrics) and [code-bert-score](https://github.com/neulab/code-bert-score) repositories. To replicate all experiments, please follow their instructions to set up the environment.\n\n\nTo run `compute_results.ipynb` and modules in `llm-code-eval` folder, use the following command to install all dependencies:\n```bash\npip install -r requirements.txt\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Environment Setup",
+                "parent_header": [
+                    "ICE-Score: Instructing Large Language Models to Evaluate Code"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/terryyz/llm-code-eval/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "```\n@inproceedings{zhuo2024ice,\n  title={ICE-Score: Instructing Large Language Models to Evaluate Code},\n  author={Zhuo, Terry Yue},\n  booktitle={Findings of the Association for Computational Linguistics: EACL 2024},\n  pages={2232--2242},\n  year={2024}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "ICE-Score: Instructing Large Language Models to Evaluate Code"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/terryyz/llm-code-eval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{zhuo2024ice,\n    year = {2024},\n    pages = {2232--2242},\n    booktitle = {Findings of the Association for Computational Linguistics: EACL 2024},\n    author = {Zhuo, Terry Yue},\n    title = {ICE-Score: Instructing Large Language Models to Evaluate Code},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "ICE-Score: Instructing Large Language Models to Evaluate Code",
+                "author": "Zhuo, Terry Yue"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/terryyz/llm-code-eval/main/README.md"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "We thank [JetBrains Research](https://research.jetbrains.org/) and [NeuLab](http://www.cs.cmu.edu/~neulab/) for their open-source code and data.\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgement",
+                "parent_header": [
+                    "ICE-Score: Instructing Large Language Models to Evaluate Code"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/terryyz/llm-code-eval/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "ICE-Score: Instructing Large Language Models to Evaluate Code"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/terryyz/llm-code-eval/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/terryyz/llm-code-eval/main/./assets/ice-score.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/terryyz/llm-code-eval/main/README.md"
+        }
+    ]
+}

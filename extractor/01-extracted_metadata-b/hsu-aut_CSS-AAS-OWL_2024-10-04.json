@@ -1,0 +1,269 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:40:49"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/hsu-aut/CSS-AAS-OWL",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "hsu-aut",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-06-09T08:12:54Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-07-31T06:57:22Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 Helmut-Schmidt-University - Institute of Automation\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/hsu-aut/CSS-AAS-OWL/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A bidirectional mapping approach to transform capabilities and skills from AAS to OWL representation",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains mapping rules that can be used to convert a capability and skill model from an Asset Administration Shell (AAS) into an OWL ontology and vice versa. The approach is built on the current version of the AAS submodel specifications for \"Capability\" and \"Control Component\" as defined by the [IDTA](https://industrialdigitaltwin.org/en/content-hub/submodels) and our [capability and skill ontology for manufacturing](https://github.com/aljoshakoecher/caskman).\nThere is currently not a dedicated bidirectional mapping approach for AAS / JSON and ontologies. Thus, the following two unidirectional mapping approaches are combined to have mappings for both directions:\n- [RDF Mapping Language (RML)](https://rml.io/) is used to map an AAS in JSON serialization into an ontology. All RML mapping rules are provided in the directory `rml`.\n- [RDF Mappings to Exchange Formats (RDFex)](https://github.com/hsu-aut/rdfex) are used for the inverse direction, i.e., to map from an ontology to an AAS in JSON serialization. Please note, that the ontology must adher to [our ontology](https://github.com/aljoshakoecher/caskman). All RDFex mapping rules are provided in the directory `rdfex`. \n",
+                "original_header": "Overview"
+            },
+            "confidence": 0.9825921448104756,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hsu-aut/CSS-AAS-OWL/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "CSS-AAS-OWL",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "hsu-aut/CSS-AAS-OWL",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/hsu-aut/CSS-AAS-OWL/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/hsu-aut/CSS-AAS-OWL/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/hsu-aut/CSS-AAS-OWL/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "cff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\nauthors:\n- family-names: \"Vieira da Silva\"\n  given-names: \"Miguel\"\n- family-names: \"K\u00f6cher\"\n  given-names: \"Aljosha\"\n  orcid: \"0000-0002-7228-8387\"\n- family-names: \"Gill\"\n  given-names: \"Milapji Singh\"\ntitle: \"CSS-AAS-OWL: Bidirectional Mapping for Capabilities and Skills\"\ndate-released: 2023-07-09\nurl: \"https://github.com/hsu-aut/CSS-AAS-OWL\"\npreferred-citation:\n  type: conference-paper\n  authors:\n  - family-names: \"Vieira da Silva\"\n  given-names: \"Miguel\"\n  - family-names: \"K\u00f6cher\"\n  given-names: \"Aljosha\"\n  orcid: \"0000-0002-7228-8387\"\n  - family-names: \"Gill\"\n  given-names: \"Milapji Singh\"\n  - family-names: \"Weiss\"\n  given-names: \"Marco\"\n  - family-names: \"Fay\"\n  given-names: \"Alexander\"\n  title: \"Toward a Mapping of Capability and Skill Models using Asset Administration Shells and Ontologies\"\n  year: 2023\n  collection-title: \"Proceedings of the 2023 IEEE 28th International Conference on Emerging Technologies and Factory Automation (ETFA)\"\n  conference:\n    name: 2023 IEEE 28th International Conference on Emerging Technologies and Factory Automation (ETFA)\n    location: Sinaia\n    city: Sinaia\n    country: RO\n    date-start: 2023-09-12\n    date-end: 2023-09-15\n  start: 0\n  end: 0",
+                "type": "File_dump",
+                "format": "cff"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/hsu-aut/CSS-AAS-OWL/main/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "We encourage reuse and extensions of this project but would like to get mentioned in case you built on this mapping approach. This implementation is part of a research paper. If you want to use the mapping in your research work, please cite this paper with this BibTex information:\n```\n@misc{dKG+_TowardaMappingof_03.07.2023,\n   author = {{da Silva}, Luis Miguel Vieira and K{\\\"o}cher, Aljosha and Gill, Milapji Singh and Weiss, Marco and Fay, Alexander},\n   year = {03.07.2023},\n   title = {{Toward a Mapping of Capability and Skill Models using Asset Administration Shells and Ontologies}},\n   url = {https://arxiv.org/pdf/2307.00827},\n   abstract = {In order to react efficiently to changes in production, resources and their functions must be integrated into plants in accordance with the plug and produce principle. In this context, research on so-called capabilities and skills has shown promise. However, there are currently two incompatible approaches to modeling capabilities and skills. On the one hand, formal descriptions using ontologies have been developed. On the other hand, there are efforts to standardize submodels of the Asset Administration Shell (AAS) for this purpose. In this paper, we present ongoing research to connect these two incompatible modeling approaches. Both models are analyzed to identify comparable as well as dissimilar model elements. Subsequently, we present a concept for a bidirectional mapping between AAS submodels and a capability and skill ontology. For this purpose, two unidirectional, declarative mappings are applied that implement transformations from one modeling approach to the other - and vice versa.},\n}\n```\nFurthermore, we would like to hear from you in case you make use of this repo. Please don't hesitate to contact us.\n",
+                "type": "Text_excerpt",
+                "original_header": "How to cite",
+                "parent_header": [
+                    "CSS-AAS-OWL"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/hsu-aut/CSS-AAS-OWL/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@misc{dKG+_TowardaMappingof_03.07.2023,\n    abstract = {In order to react efficiently to changes in production, resources and their functions must be integrated into plants in accordance with the plug and produce principle. In this context, research on so-called capabilities and skills has shown promise. However, there are currently two incompatible approaches to modeling capabilities and skills. On the one hand, formal descriptions using ontologies have been developed. On the other hand, there are efforts to standardize submodels of the Asset Administration Shell (AAS) for this purpose. In this paper, we present ongoing research to connect these two incompatible modeling approaches. Both models are analyzed to identify comparable as well as dissimilar model elements. Subsequently, we present a concept for a bidirectional mapping between AAS submodels and a capability and skill ontology. For this purpose, two unidirectional, declarative mappings are applied that implement transformations from one modeling approach to the other - and vice versa.},\n    url = {https://arxiv.org/pdf/2307.00827},\n    title = {{Toward a Mapping of Capability and Skill Models using Asset Administration Shells and Ontologies}},\n    year = {03.07.2023},\n    author = {{da Silva}, Luis Miguel Vieira and K{\\\"o}cher, Aljosha and Gill, Milapji Singh and Weiss, Marco and Fay, Alexander},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "{Toward a Mapping of Capability and Skill Models using Asset Administration Shells and Ontologies}",
+                "author": "{da Silva}, Luis Miguel Vieira and K{\\\"o}cher, Aljosha and Gill, Milapji Singh and Weiss, Marco and Fay, Alexander",
+                "url": "https://arxiv.org/pdf/2307.00827"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/hsu-aut/CSS-AAS-OWL/main/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hsu-aut/CSS-AAS-OWL/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "First clone or download this repository in order to have all mapping rules on your local machine. Then, in order to execute mappings, you have to download the mapping execution engines provided by RML and RDFex. Both RML and RDFex provide CLI applications that can be used to execute the respective mappings.\nThe releases of RML are available [here](https://github.com/RMLio/rmlmapper-java/releases). Simply download the .jar from the assets section of the latest release.\nThe releases of RDFex can be found [here](https://github.com/hsu-aut/rdfex/releases). Simply download the CLI .jar from the assets section of the latest release.\n\nIn order to execute an RML mapping, execute the following command:<br>\n`java -jar rml-mapper.jar -m <rml-mapping you want to execute> -o <your output file>`<br>\nMake sure to provide a proper path to your RML mapper CLI (might depend on the version you have) and specify the paths for the mapping to be executed as well as your output file (optional). There are additional options (e.g., ontology serialization), please have a look at the [RML CLI documentation](https://github.com/RMLio/rmlmapper-java#cli).\n\nIn order to execute an RDFex mapping, execute the following command:<br>\n`java -jar rdfex-mapper.jar -m <rdfex-mapping you want to execute> -o <your output file>`<br>\nMake sure to provide a proper path to your RDFex mapper CLI (might depend on the version you have) and specify the paths for the mapping to be executed as well as your output file. For additional information, please have a look at the [RDFex documentation](https://github.com/hsu-aut/rdfex#rdfex---a-generic-mapping-language-to-transform-rdf-graphs-into-data-exchange-formats).\n",
+                "type": "Text_excerpt",
+                "original_header": "How to use",
+                "parent_header": [
+                    "CSS-AAS-OWL"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/hsu-aut/CSS-AAS-OWL/main/README.md"
+        }
+    ],
+    "faq": [
+        {
+            "result": {
+                "value": "If you have any questions, suggestions for improvements or in case you encounter bugs, please don't hesitate to open a [new issue](https://github.com/hsu-aut/CSS-AAS-OWL/issues/new/choose).\n",
+                "type": "Text_excerpt",
+                "original_header": "Questions and Problems",
+                "parent_header": [
+                    "CSS-AAS-OWL"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/hsu-aut/CSS-AAS-OWL/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "CSS-AAS-OWL"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/hsu-aut/CSS-AAS-OWL/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2307.00827},\n   abstract = {In order to react efficiently to changes in production, resources and their functions must be integrated into plants in accordance with the plug and produce principle. In this context, research on so-called capabilities and skills has shown promise. However, there are currently two incompatible approaches to modeling capabilities and skills. On the one hand, formal descriptions using ontologies have been developed. On the other hand, there are efforts to standardize submodels of the Asset Administration Shell (AAS"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/hsu-aut/CSS-AAS-OWL/main/README.md"
+        }
+    ]
+}

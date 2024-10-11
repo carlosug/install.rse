@@ -1,0 +1,859 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:44:49"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/WilliamLwj/PyXAB",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "WilliamLwj",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-03-16T19:21:23Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-26T07:07:58Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 Wenjie Li\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "PyXAB - A Python Library for X-Armed Bandit and Online Blackbox Optimization Algorithms",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\nPyXAB is a Python open-source library for *X*-armed bandit algorithms, a prestigious set of optimizers for online black-box optimization and \nhyperparameter optimization. \nPyXAB contains the implementations of **10+** optimization algorithms, including the classic ones such as [Zooming](https://arxiv.org/pdf/0809.4882.pdf), \n [StoSOO](https://github.com/WilliamLwj/PyXAB/blob/main/PyXAB/algos/StoSOO.py), and [HCT](https://proceedings.mlr.press/v32/azar14.html), and the most\nrecent works such as [GPO](https://proceedings.mlr.press/v98/xuedong19a.html), [StroquOOL](https://github.com/WilliamLwj/PyXAB/blob/main/PyXAB/algos/StroquOOL.py) and [VHCT](https://arxiv.org/abs/2106.09215).\nPyXAB also provides the most commonly-used synthetic objectives to evaluate the performance of different algorithms and the implementations for different hierarchical partitions \n**PyXAB is featured for:** \n- **User-friendly APIs, clear documentation, and detailed examples**\n- **Comprehensive library** of optimization algorithms, partitions and synthetic objectives\n- **High standard code quality and high testing coverage**\n- **Low dependency** for flexible combination with other packages such as PyTorch, Scikit-Learn \n",
+                "original_header": "PyXAB - Python *X*-Armed Bandit"
+            },
+            "confidence": 0.9709586958192908,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| Partition                                                                                                             | Description                                                                                                        |\n|-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|\n| [BinaryPartition](https://github.com/WilliamLwj/PyXAB/blob/main/PyXAB/partition/BinaryPartition.py)                   | Equal-size binary partition of the parameter space, the split dimension is chosen uniform randomly                 |\n| [RandomBinaryPartition](https://github.com/WilliamLwj/PyXAB/blob/main/PyXAB/partition/RandomBinaryPartition.py)       | Random-size binary partition of the parameter space, the split dimension is chosen uniform randomly                |\n| [DimensionBinaryPartition](https://github.com/WilliamLwj/PyXAB/blob/main/PyXAB/partition/DimensionBinaryPartition.py) | Equal-size partition of the space with a binary split on each dimension, the number of children of one node is 2^d |\n| [KaryPartition](https://github.com/WilliamLwj/PyXAB/blob/main/PyXAB/partition/KaryPartition.py)       | Equal-size K-ary partition of the parameter space, the split dimension is chosen uniform randomly                  |\n| [RandomKaryPartition](https://github.com/WilliamLwj/PyXAB/blob/main/PyXAB/partition/RandomKaryPartition.py) | Random-size K-ary partition of the parameter space, the split dimension is chosen uniform randomly                 |\n \n",
+                "original_header": "Hierarchical partition"
+            },
+            "confidence": 0.9646055789276324,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "PyXAB",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "WilliamLwj/PyXAB",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 153,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "algorithm, automl, bandit-algorithms, blackbox-optimization, continuous-armed-bandit, data-science, hyperparameter-optimization, hyperparameter-tuning, lipschitz-bandit, machine-learning, machine-learning-algorithms, online-learning, optimization, optimization-algorithms, reinforcement-learning, x-armed-bandit",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 41,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/WilliamLwj/PyXAB/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 198522
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/176705943",
+                "tag": "v0.3.0-paper",
+                "name": "New Release v0.3.0-paper",
+                "author": {
+                    "name": "WilliamLwj",
+                    "type": "User"
+                },
+                "description": "This is our release for the PyXAB paper.",
+                "tarball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/tarball/v0.3.0-paper",
+                "zipball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/zipball/v0.3.0-paper",
+                "html_url": "https://github.com/WilliamLwj/PyXAB/releases/tag/v0.3.0-paper",
+                "url": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/176705943",
+                "release_id": 176705943,
+                "date_created": "2024-09-11T16:52:27Z",
+                "date_published": "2024-09-24T20:00:06Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/108984504",
+                "tag": "v0.3.0",
+                "name": "New Release v0.3.0",
+                "author": {
+                    "name": "WilliamLwj",
+                    "type": "User"
+                },
+                "description": "The newest release of PyXAB v0.3.0, the same as the pip version\r\n\r\nCompared with v0.2.0:\r\n\r\n- New algorithms Zooming and VROOM\r\n- New detailed documentations for EVERY algorithm\r\n- Updated package introduction (README.md and docs/source/index.rst)",
+                "tarball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/tarball/v0.3.0",
+                "zipball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/zipball/v0.3.0",
+                "html_url": "https://github.com/WilliamLwj/PyXAB/releases/tag/v0.3.0",
+                "url": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/108984504",
+                "release_id": 108984504,
+                "date_created": "2023-06-17T23:06:11Z",
+                "date_published": "2023-06-17T23:16:33Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/100891078",
+                "tag": "v0.2.1",
+                "name": "New Release v0.2.1",
+                "author": {
+                    "name": "WilliamLwj",
+                    "type": "User"
+                },
+                "description": "New algorithm Zooming with complete documentations.",
+                "tarball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/tarball/v0.2.1",
+                "zipball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/zipball/v0.2.1",
+                "html_url": "https://github.com/WilliamLwj/PyXAB/releases/tag/v0.2.1",
+                "url": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/100891078",
+                "release_id": 100891078,
+                "date_created": "2023-04-19T19:54:59Z",
+                "date_published": "2023-04-26T03:19:38Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/96397710",
+                "tag": "v0.2.0",
+                "name": "New Release v0.2.0",
+                "author": {
+                    "name": "WilliamLwj",
+                    "type": "User"
+                },
+                "description": "A completely new release with all documentations and testing for the algorithms.",
+                "tarball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/tarball/v0.2.0",
+                "zipball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/zipball/v0.2.0",
+                "html_url": "https://github.com/WilliamLwj/PyXAB/releases/tag/v0.2.0",
+                "url": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/96397710",
+                "release_id": 96397710,
+                "date_created": "2023-03-21T19:40:45Z",
+                "date_published": "2023-03-21T19:45:16Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/95468617",
+                "tag": "v0.1.5",
+                "name": "New Release v0.1.5",
+                "author": {
+                    "name": "WilliamLwj",
+                    "type": "User"
+                },
+                "description": "Fixed major bugs for\r\n1. POO\r\n2. GPO\r\n\r\nFixed minor bugs for \r\n1. VPCT\r\n2. PCT",
+                "tarball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/tarball/v0.1.5",
+                "zipball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/zipball/v0.1.5",
+                "html_url": "https://github.com/WilliamLwj/PyXAB/releases/tag/v0.1.5",
+                "url": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/95468617",
+                "release_id": 95468617,
+                "date_created": "2023-03-13T19:45:33Z",
+                "date_published": "2023-03-13T22:47:16Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/95402019",
+                "tag": "v0.1.4",
+                "name": "New Release v0.1.4",
+                "author": {
+                    "name": "WilliamLwj",
+                    "type": "User"
+                },
+                "description": "New documentations for StroquOOL and SequOOL. New function get_last_point for every algorithm.",
+                "tarball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/tarball/v0.1.4",
+                "zipball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/zipball/v0.1.4",
+                "html_url": "https://github.com/WilliamLwj/PyXAB/releases/tag/v0.1.4",
+                "url": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/95402019",
+                "release_id": 95402019,
+                "date_created": "2023-03-13T14:02:40Z",
+                "date_published": "2023-03-13T14:09:02Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/95144010",
+                "tag": "v0.1.3",
+                "name": "New Release v0.1.3",
+                "author": {
+                    "name": "WilliamLwj",
+                    "type": "User"
+                },
+                "description": "New Implementation of VHCT, better documentation, testing. Black code style.",
+                "tarball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/tarball/v0.1.3",
+                "zipball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/zipball/v0.1.3",
+                "html_url": "https://github.com/WilliamLwj/PyXAB/releases/tag/v0.1.3",
+                "url": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/95144010",
+                "release_id": 95144010,
+                "date_created": "2023-03-09T16:15:26Z",
+                "date_published": "2023-03-09T22:59:06Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/94712183",
+                "tag": "v0.1.2",
+                "name": "New Release v0.1.2",
+                "author": {
+                    "name": "WilliamLwj",
+                    "type": "User"
+                },
+                "description": "New implementations of HCT and HOO, better documentations and testing.",
+                "tarball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/tarball/v0.1.2",
+                "zipball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/zipball/v0.1.2",
+                "html_url": "https://github.com/WilliamLwj/PyXAB/releases/tag/v0.1.2",
+                "url": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/94712183",
+                "release_id": 94712183,
+                "date_created": "2023-03-03T01:33:40Z",
+                "date_published": "2023-03-07T02:15:33Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/94023699",
+                "tag": "v0.1.1",
+                "name": "New Release v0.1.1",
+                "author": {
+                    "name": "WilliamLwj",
+                    "type": "User"
+                },
+                "description": "New algorithm SOO, improved documentations, and more testing files",
+                "tarball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/tarball/v0.1.1",
+                "zipball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/zipball/v0.1.1",
+                "html_url": "https://github.com/WilliamLwj/PyXAB/releases/tag/v0.1.1",
+                "url": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/94023699",
+                "release_id": 94023699,
+                "date_created": "2023-02-28T20:41:45Z",
+                "date_published": "2023-03-01T02:42:51Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/93371914",
+                "tag": "v0.1.0",
+                "name": "New Release 0.1.0",
+                "author": {
+                    "name": "WilliamLwj",
+                    "type": "User"
+                },
+                "description": "New algorithm DOO, better documentation, testing and coverage added.",
+                "tarball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/tarball/v0.1.0",
+                "zipball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/zipball/v0.1.0",
+                "html_url": "https://github.com/WilliamLwj/PyXAB/releases/tag/v0.1.0",
+                "url": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/93371914",
+                "release_id": 93371914,
+                "date_created": "2023-02-22T19:49:28Z",
+                "date_published": "2023-02-22T23:16:44Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/92919257",
+                "tag": "v0.0.5",
+                "name": "New Release 0.0.5",
+                "author": {
+                    "name": "WilliamLwj",
+                    "type": "User"
+                },
+                "description": "Testing added with coverage and improved documentation",
+                "tarball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/tarball/v0.0.5",
+                "zipball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/zipball/v0.0.5",
+                "html_url": "https://github.com/WilliamLwj/PyXAB/releases/tag/v0.0.5",
+                "url": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/92919257",
+                "release_id": 92919257,
+                "date_created": "2023-02-18T16:30:53Z",
+                "date_published": "2023-02-18T16:34:04Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/92779457",
+                "tag": "v0.0.4",
+                "name": "New Release v0.0.4",
+                "author": {
+                    "name": "WilliamLwj",
+                    "type": "User"
+                },
+                "description": "New algorithm SequOOL and much better documentations",
+                "tarball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/tarball/v0.0.4",
+                "zipball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/zipball/v0.0.4",
+                "html_url": "https://github.com/WilliamLwj/PyXAB/releases/tag/v0.0.4",
+                "url": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/92779457",
+                "release_id": 92779457,
+                "date_created": "2023-02-16T03:16:32Z",
+                "date_published": "2023-02-16T23:40:29Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/92149795",
+                "tag": "v0.0.3",
+                "name": "New Release v0.0.3",
+                "author": {
+                    "name": "WilliamLwj",
+                    "type": "User"
+                },
+                "description": "New Release of v0.0.3 with two more algorithms implemented (StoSOO and StroquOOL) and much better documentations.",
+                "tarball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/tarball/v0.0.3",
+                "zipball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/zipball/v0.0.3",
+                "html_url": "https://github.com/WilliamLwj/PyXAB/releases/tag/v0.0.3",
+                "url": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/92149795",
+                "release_id": 92149795,
+                "date_created": "2023-02-12T17:01:41Z",
+                "date_published": "2023-02-12T17:06:10Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/91392717",
+                "tag": "v0.0.2",
+                "name": "First Release v0.0.2",
+                "author": {
+                    "name": "WilliamLwj",
+                    "type": "User"
+                },
+                "description": "PyXAB algorithms with a complete structure of the documentations.",
+                "tarball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/tarball/v0.0.2",
+                "zipball_url": "https://api.github.com/repos/WilliamLwj/PyXAB/zipball/v0.0.2",
+                "html_url": "https://github.com/WilliamLwj/PyXAB/releases/tag/v0.0.2",
+                "url": "https://api.github.com/repos/WilliamLwj/PyXAB/releases/91392717",
+                "release_id": 91392717,
+                "date_created": "2023-02-05T01:46:22Z",
+                "date_published": "2023-02-05T17:52:06Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "cff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\nauthors:\n- family-names: \"Li\"\n  given-names: \"Wenjie\"\n  orcid: \"https://orcid.org/0000-0000-0000-0000\"\n- family-names: \"Li\"\n  given-names: \"Haoze\"\n  orcid: \"https://orcid.org/0000-0000-0000-0000\"\n- family-names: \"Honorio\"\n  given-names: \"Jean\"\n  orcid: \"https://orcid.org/0000-0000-0000-0000\"\n- family-names: \"Song\"\n  given-names: \"Qifan\"\n  orcid: \"https://orcid.org/0000-0000-0000-0000\"\ntitle: \"PyXAB - A Python Library for X-Armed Bandit and Online Blackbox Optimization Algorithms\"\nversion: 0.0.0\ndoi: 10.48550/ARXIV.2303.04030\ndate-released: 2023-03-07\nurl: \"https://arxiv.org/abs/2303.04030\"\npreferred-citation:\n  type: article\n  authors:\n    - family-names: \"Li\"\n      given-names: \"Wenjie\"\n      orcid: \"https://orcid.org/0000-0000-0000-0000\"\n    - family-names: \"Li\"\n      given-names: \"Haoze\"\n      orcid: \"https://orcid.org/0000-0000-0000-0000\"\n    - family-names: \"Honorio\"\n      given-names: \"Jean\"\n      orcid: \"https://orcid.org/0000-0000-0000-0000\"\n    - family-names: \"Song\"\n      given-names: \"Qifan\"\n      orcid: \"https://orcid.org/0000-0000-0000-0000\"\n  title: \"PyXAB - A Python Library for X-Armed Bandit and Online Blackbox Optimization Algorithms\"\n  year: 2023\n  doi: 10.48550/ARXIV.2303.04030\n  date-released: 2023-03-07\n  url: \"https://arxiv.org/abs/2303.04030\"\n  journal: arXiv",
+                "type": "File_dump",
+                "format": "cff"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "If you use our package in your research or projects, we kindly ask you to cite our work\n\n```text\n@misc{Li2023PyXAB,\n  doi = {10.48550/ARXIV.2303.04030},\n  url = {https://arxiv.org/abs/2303.04030},\n  author = {Li, Wenjie and Li, Haoze and Honorio, Jean and Song, Qifan},\n  title = {PyXAB -- A Python Library for $\\mathcal{X}$-Armed Bandit and Online Blackbox Optimization Algorithms},\n  publisher = {arXiv},\n  year = {2023},\n}\n```\n\nWe would also appreciate it if you could cite our related works.\n\n```text\n@article{li2023optimumstatistical,\n    title={Optimum-statistical Collaboration Towards General and Efficient Black-box Optimization},\n    author={Wenjie Li and Chi-Hua Wang and Guang Cheng and Qifan Song},\n    journal={Transactions on Machine Learning Research},\n    issn={2835-8856},\n    year={2023},\n    url={https://openreview.net/forum?id=ClIcmwdlxn},\n    note={}\n}\n```\n\n```text\n@misc{li2022Federated,\n  doi = {10.48550/ARXIV.2205.15268},\n  url = {https://arxiv.org/abs/2205.15268}, \n  author = {Li, Wenjie and Song, Qifan and Honorio, Jean and Lin, Guang},\n  title = {Federated X-Armed Bandit},\n  publisher = {arXiv},\n  year = {2022},\n}\n```",
+                "type": "Text_excerpt",
+                "original_header": "Citations",
+                "parent_header": [
+                    "PyXAB - Python *X*-Armed Bandit"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@misc{Li2023PyXAB,\n    year = {2023},\n    publisher = {arXiv},\n    title = {PyXAB -- A Python Library for $\\mathcal{X}$-Armed Bandit and Online Blackbox Optimization Algorithms},\n    author = {Li, Wenjie and Li, Haoze and Honorio, Jean and Song, Qifan},\n    url = {https://arxiv.org/abs/2303.04030},\n    doi = {10.48550/ARXIV.2303.04030},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.48550/ARXIV.2303.04030",
+                "title": "PyXAB -- A Python Library for $\\mathcal{X}$-Armed Bandit and Online Blackbox Optimization Algorithms",
+                "author": "Li, Wenjie and Li, Haoze and Honorio, Jean and Song, Qifan",
+                "url": "https://arxiv.org/abs/2303.04030"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{li2023optimumstatistical,\n    note = {},\n    url = {https://openreview.net/forum?id=ClIcmwdlxn},\n    year = {2023},\n    issn = {2835-8856},\n    journal = {Transactions on Machine Learning Research},\n    author = {Wenjie Li and Chi-Hua Wang and Guang Cheng and Qifan Song},\n    title = {Optimum-statistical Collaboration Towards General and Efficient Black-box Optimization},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Optimum-statistical Collaboration Towards General and Efficient Black-box Optimization",
+                "author": "Wenjie Li and Chi-Hua Wang and Guang Cheng and Qifan Song",
+                "url": "https://openreview.net/forum?id=ClIcmwdlxn"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@misc{li2022Federated,\n    year = {2022},\n    publisher = {arXiv},\n    title = {Federated X-Armed Bandit},\n    author = {Li, Wenjie and Song, Qifan and Honorio, Jean and Lin, Guang},\n    url = {https://arxiv.org/abs/2205.15268},\n    doi = {10.48550/ARXIV.2205.15268},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.48550/ARXIV.2205.15268",
+                "title": "Federated X-Armed Bandit",
+                "author": "Li, Wenjie and Song, Qifan and Honorio, Jean and Lin, Guang",
+                "url": "https://arxiv.org/abs/2205.15268"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/docs/jupyter_notebooks/simple_leaderboard.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/docs/jupyter_notebooks/simple_leaderboard.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/docs/jupyter_notebooks/cumulative_leaderboard.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/docs/jupyter_notebooks/cumulative_leaderboard.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/docs/jupyter_notebooks/.ipynb_checkpoints/simple_leaderboard-checkpoint.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/docs/jupyter_notebooks/.ipynb_checkpoints/simple_leaderboard-checkpoint.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/docs/jupyter_notebooks/.ipynb_checkpoints/cumulative_leaderboard-checkpoint.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/docs/jupyter_notebooks/.ipynb_checkpoints/cumulative_leaderboard-checkpoint.ipynb"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "PyXAB follows a natural and straightforward API design completely aligned with the online blackbox\noptimization paradigm. The following is a simple 6-line usage example.\n\nFirst, we define the parameter domain and the algorithm to run. \nAt every round  `t`, call `algo.pull(t)` to get a point and call \n`algo.receive_reward(t, reward)` to give the algorithm the objective evaluation (reward)\n\n```python3\ndomain = [[0, 1]]               # Parameter is 1-D and between 0 and 1\nalgo = T_HOO(rounds=1000, domain=domain) \nfor t in range(1000):\n    point = algo.pull(t)\n    reward = 1                  #TODO: User-defined objective returns the reward\n    algo.receive_reward(t, reward)\n```\n\nMore detailed examples can be found [here](https://pyxab.readthedocs.io/en/latest/getting_started/auto_examples/index.html)\n",
+                "type": "Text_excerpt",
+                "original_header": "Quick Example",
+                "parent_header": [
+                    "PyXAB - Python *X*-Armed Bandit"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "  * The most up-to-date [documentations](https://pyxab.readthedocs.io/) \n\n  * The [roadmap](https://github.com/users/WilliamLwj/projects/1) for our project    \n  \n  * Our [manuscript](https://arxiv.org/abs/2303.04030) for the library\n",
+                "type": "Text_excerpt",
+                "original_header": "Documentations",
+                "parent_header": [
+                    "PyXAB - Python *X*-Armed Bandit"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://pyxab.readthedocs.io/",
+                "format": "readthedocs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "To install via pip, run the following lines of code\n```bash\npip install PyXAB                 # normal install\npip install --upgrade PyXAB       # or update if needed\n```\n\n\nTo install via git, run the following lines of code\n```bash\ngit clone https://github.com/WilliamLwj/PyXAB.git\ncd PyXAB\npip install .\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "PyXAB - Python *X*-Armed Bandit"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\n<p align=\"left\">\n<a href='https://pypi.org/project/PyXAB/'>\n       <img src='https://img.shields.io/pypi/v/PyXAB.svg?color=yellow' alt='PyPI version' />\n</a>\n<a href=\"https://codecov.io/gh/WilliamLwj/PyXAB\" > \n <img src=\"https://codecov.io/gh/WilliamLwj/PyXAB/branch/main/graph/badge.svg?token=VACRX9AQBM\"/> \n </a>\n<a href='https://pyxab.readthedocs.io/en/latest/?badge=latest'>\n    <img src='https://readthedocs.org/projects/pyxab/badge/?version=latest' alt='Documentation Status' />\n</a>\n<a href=\"https://github.com/WilliamLwj/PyXAB/actions/workflows/codeql.yml\" target=\"blank\">\n<img src=\"https://github.com/WilliamLwj/PyXAB/actions/workflows/codeql.yml/badge.svg\" alt=\"Code style: black\" />\n</a>\n<a href=\"https://github.com/WilliamLwj/PyXAB/actions/workflows/testing.yml\" target=\"blank\">\n<img src=\"https://github.com/WilliamLwj/PyXAB/actions/workflows/testing.yml/badge.svg\" alt=\"testing\" />\n</a>\n<a href=\"https://github.com/WilliamLwj/PyXAB/fork\" target=\"blank\">\n<img src=\"https://img.shields.io/github/forks/WilliamLwj/PyXAB?\" alt=\"github-PyXAB forks\"/>\n</a>\n<a href=\"https://github.com/WilliamLwj/PyXAB/stargazers\" target=\"blank\">\n<img src=\"https://img.shields.io/github/stars/WilliamLwj/PyXAB?\" alt=\"github-PyXAB stars\"/>\n</a>\n<a href=\"https://pepy.tech/project/pyxab\" target=\"blank\">\n<img src=\"https://static.pepy.tech/badge/pyxab\" alt=\"downloads\"/>\n</a>\n<a href=\"https://github.com/WilliamLwj/PyXAB/blob/main/LICENSE\" target=\"blank\">\n<img src=\"https://img.shields.io/github/license/WilliamLwj/PyXAB?color=purple\" alt=\"github-PyXAB license\" />\n</a>\n<a href=\"https://github.com/psf/black\" target=\"blank\">\n<img src=\"https://img.shields.io/badge/code%20style-black-000000.svg\" alt=\"Code style: black\" />\n</a>\n</p> \n\n<p align='center'>\n  <img src=\"https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/HCT_trajectory.gif\" alt=\"trajectory\" width=\"48%\"/>  \n  <img src=\"https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/HCT_heatmap.gif\" alt=\"heatmap\" width=\"48%\"/>  \n</p> \n",
+                "original_header": "PyXAB - Python *X*-Armed Bandit"
+            },
+            "confidence": 0.9999999179341397,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| Objectives <img width=200/>| Image | \n| --- |--- |\n| [Garland](https://github.com/WilliamLwj/PyXAB/blob/main/PyXAB/synthetic_obj/Garland.py) | <img src=\"https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/synthetic/Garland.png\" alt=\"Garland\" width=\"100\"/> |\n| [DoubleSine](https://github.com/WilliamLwj/PyXAB/blob/main/PyXAB/synthetic_obj/DoubleSine.py)  | <img src=\"https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/synthetic/DoubleSine.png\" alt=\"DoubleSine\" width=\"100\"/>  |\n| [DifficultFunc](https://github.com/WilliamLwj/PyXAB/blob/main/PyXAB/synthetic_obj/DifficultFunc.py) | <img src=\"https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/synthetic/DifficultFunc.png\" alt=\"DifficultFunc\" width=\"100\"/>  |\n| [Ackley](https://github.com/WilliamLwj/PyXAB/blob/main/PyXAB/synthetic_obj/Ackley.py) | <img src=\"https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/synthetic/Ackley.png\" alt=\"Ackley\" width=\"100\"/>  |\n| [Himmelblau](https://github.com/WilliamLwj/PyXAB/blob/main/PyXAB/synthetic_obj/Himmelblau.py) | <img src=\"https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/synthetic/Himmelblau.png\" alt=\"Himmelblau\" width=\"100\"/>  |\n| [Rastrigin](https://github.com/WilliamLwj/PyXAB/blob/main/PyXAB/synthetic_obj/Rastrigin.py) |  <img src=\"https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/synthetic/Rastrigin.png\" alt=\"Rastrigin\" width=\"100\"/>  | \n",
+                "original_header": "Synthetic objectives"
+            },
+            "confidence": 0.9999999999777742,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "We appreciate all forms of help and contributions, including but not limited to\n\n* Star and watch our project\n* Open an issue for any bugs you find or features you want to add to our library\n* Fork our project and submit a pull request with your valuable codes\n\nPlease read the [contributing instructions](https://pyxab.readthedocs.io/en/latest/info/contributing.html) before submitting\na pull request.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributing",
+                "parent_header": [
+                    "PyXAB - Python *X*-Armed Bandit"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "PyXAB - Python X-Armed Bandit"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/HCT_trajectory.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/HCT_heatmap.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/synthetic/Garland.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/synthetic/Garland.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/synthetic/DoubleSine.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/synthetic/DifficultFunc.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/synthetic/Ackley.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/synthetic/Himmelblau.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/figs/synthetic/Rastrigin.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/0809.4882.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2106.09215"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1810.00997.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2205.15268"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2303.04030"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1910.04034.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/WilliamLwj/PyXAB/main/README.md"
+        }
+    ]
+}

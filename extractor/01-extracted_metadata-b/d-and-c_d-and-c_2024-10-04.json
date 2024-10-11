@@ -1,0 +1,222 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:48:45"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/TruX-DTF/d-and-c",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "TruX-DTF",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-06-28T11:33:18Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-26T13:17:30Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "d-and-c",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "TruX-DTF/d-and-c",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/TruX-DTF/d-and-c/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/TruX-DTF/d-and-c/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 10,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/d-and-c/d-and-c/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 29436
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/d-and-c/d-and-c/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "You can cite D&C using the following bibtex:\n\n```\n@article{koyuncu2019d,\n  title={D\\&c: A divide-and-conquer approach to ir-based bug localization},\n  author={Koyuncu, Anil and Bissyand{\\'e}, Tegawend{\\'e} F and Kim, Dongsun and Liu, Kui and Klein, Jacques and Monperrus, Martin and Traon, Yves Le},\n  journal={arXiv preprint arXiv:1902.02703},\n  year={2019}\n}\n  ```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing D&amp;C",
+                "parent_header": [
+                    "D&amp;C"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/d-and-c/d-and-c/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{koyuncu2019d,\n    year = {2019},\n    journal = {arXiv preprint arXiv:1902.02703},\n    author = {Koyuncu, Anil and Bissyand{\\'e}, Tegawend{\\'e} F and Kim, Dongsun and Liu, Kui and Klein, Jacques and Monperrus, Martin and Traon, Yves Le},\n    title = {D\\&c: A divide-and-conquer approach to ir-based bug localization},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "D\\&c: A divide-and-conquer approach to ir-based bug localization",
+                "author": "Koyuncu, Anil and Bissyand{\\'e}, Tegawend{\\'e} F and Kim, Dongsun and Liu, Kui and Klein, Jacques and Monperrus, Martin and Traon, Yves Le"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/d-and-c/d-and-c/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "\tIn order to run the code, python3 is necessary with the additional libraries such as LightGBM.\n\nExtract the archives allResults.db.7z and simiSmall.h5 2.7z.00X which are containing the prediction probabilities of all the classifies and similarity score of the bug report / source code files pairs used in the study.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Setup:"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/d-and-c/d-and-c/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\teval.py\n\t\n\t\tThe evaluation module: It uses the predictions produced by the prediction \n\t\tmodule (predict.py); merge into a result database (allResults.db, or loads if \n\t\tit is already available) and computes the MAP and MRR values of the D&C with \n\t\tdifferent combination strageties (max,min,prod,mean etc..) and finally \n\t\tcompare the results with the state-of-art approaches.\n\t\t\n\tmodels/\n\t\n\t\tThe models that trained in the training module.\n \n",
+                "original_header": "Code Structure:"
+            },
+            "confidence": 0.9173486283594574,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/d-and-c/d-and-c/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "D&amp;C"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/d-and-c/d-and-c/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1902.02703"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/d-and-c/d-and-c/master/README.md"
+        }
+    ]
+}

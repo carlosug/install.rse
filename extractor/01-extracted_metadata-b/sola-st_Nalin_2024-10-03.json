@@ -1,0 +1,593 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:13:56"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/sola-st/Nalin",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "sola-st",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-03-08T12:57:01Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-02T21:39:01Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 Software Lab at University of Stuttgart\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/LICENSE"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Nalin",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "sola-st/Nalin",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/sola-st/Nalin/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/sola-st/Nalin/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/sola-st/Nalin/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 141241
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 110467
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 1211
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sola-st/Nalin/main/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/Dockerfile"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "#### Python Packages\n\nThe required packages are listed in _requirements.txt_. The packages may be installed using the command ```pip install -r requirements.txt```. \nAdditionally, install the [PyTorch](https://pytorch.org/get-started/locally/) package (We have tested on PyTorch version 1.10.1).  \n\n```shell\npip install -r requirements.txt\npip install torch==1.10.1+cpu torchvision==0.11.2+cpu torchaudio==0.10.1+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html\n```\n\n\ud83d\udca1 The above command will install the **CPU** version of PyTorch. If you want CUDA support, please change the command accordingly as mentioned in the [link](https://pytorch.org/get-started/locally).\n\n#### Jupyter Notebook Dataset\n\nWe use the dataset from a CHI\u201918 [paper](https://dl.acm.org/doi/10.1145/3173574.3173606) that has analyzed more than 1.3 million publicly available Jupyter \nNotebooks from GitHub. Download the dataset using the [link](https://library.ucsd.edu/dc/collection/bb6931851t).\nWe provide a sample of about 2000 Jupyter notebooks (_benchmark/jupyter_notebook_datasets/sample.zip_) obtained from this dataset for testing. \n\n#### Embedding\n\nDownload the embedding file from the [link](https://u.pcloud.link/publink/show?code=XZyeJaXZrnrbvwzBcYSOWYgzsn4usJ6DOqPy) and put in the _benchmark_ folder.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/INSTALL.md"
+        },
+        {
+            "result": {
+                "value": "\ud83d\udccc\nWe have tested using Ubuntu 18.04 LTS and Python 3.8.12. Additionally, we use a Docker \ncontainer to run dynamic analysis which also needs to be installed. \n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements &amp; Setup"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The directory structure is as follows:\n\n```shell\nsrc/ # The root directory of all source files\nbenchmark/ # This may contain the input Python files & the Jupyter Notebooks\ndynamic_analysis_runner/ # Code for running Dynamic Analysis\nsrc/dynamic_analysis_tracker_local_package/ # Python package for saving the assignments encountered during execution\nsrc/get_scripts_and_instrument/ # Code for getting Jupyter Notebooks, converting them to Python scripts and instrumenting\nsrc/nn/ # Code for running the Classifier\nresults/ # The results generated by running the experiments are written here\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Directory Structure",
+                "parent_header": [
+                    "Requirements &amp; Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The required packages are listed in _requirements.txt_. The packages may be installed using the command ```pip install -r requirements.txt```. \nAdditionally, install the [PyTorch](https://pytorch.org/get-started/locally/) package (We have tested on PyTorch version 1.10.1).  \n\n\ud83d\udccc\n```shell\npip install -r requirements.txt\npip install torch==1.10.1+cpu torchvision==0.11.2+cpu torchaudio==0.10.1+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html\n```\n\n\ud83d\udca1 The above command will install the **CPU** version of PyTorch. If you want CUDA support, please change the command accordingly as mentioned in the [link](https://pytorch.org/get-started/locally).\n",
+                "type": "Text_excerpt",
+                "original_header": "Python Packages",
+                "parent_header": [
+                    "Requirements &amp; Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "We use the dataset from a CHI\u201918 [paper](https://dl.acm.org/doi/10.1145/3173574.3173606) that has analyzed more than 1.3 million publicly available Jupyter \nNotebooks from GitHub. Download the dataset using the [link](https://library.ucsd.edu/dc/collection/bb6931851t).\nWe provide a sample of about 2000 Jupyter notebooks (_benchmark/jupyter_notebook_datasets/sample.zip_) obtained from this dataset for testing (Download the sample from \nthe Zenodo [archive](https://zenodo.org/record/6078527)). \n",
+                "type": "Text_excerpt",
+                "original_header": "Jupyter Notebook Dataset",
+                "parent_header": [
+                    "Requirements &amp; Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "\ud83d\udccc\nDownload the embedding file present at _benchmark/python_embeddings.bin_ from the Zenodo [archive](https://zenodo.org/record/6078527) and put in the _benchmark_ folder.\n\n---\n",
+                "type": "Text_excerpt",
+                "original_header": "Embedding",
+                "parent_header": [
+                    "Requirements &amp; Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Simply run or follow the \ud83d\udccc marked instructions from the root directory of this repository. \n \n",
+                "original_header": "TL;DR \ud83e\ude9c"
+            },
+            "confidence": 0.9994997770758726,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Run the following command from the root folder. \n\ud83d\udccc\n```bash\npython src/get_scripts_and_instrument/run_get_scripts_and_instrument.py\n``` \nBy default, this script should: \n1) Extract the Jupyter notebooks present in '_benchmark/jupyter_notebook_datasets/sample.zip_' to '_benchmark/python_scripts_'\n2) Convert the extracted notebooks to Python script \n3) Delete the extracted notebooks\n4) Instrument the converted Python scripts \nNot all Jupyter Notebooks present in _sample.zip_ get instrumented. Some encounter errors while conversion to Python\nscripts and some during instrumentation. \n \n",
+                "original_header": "Instrument Python files for tracking assignments"
+            },
+            "confidence": 0.9881671002324744,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "All experiments using the classifier is run using the command ```python src/nn/run_classification.py```.\n \n",
+                "original_header": "2. Classifier \ud83e\udd9e"
+            },
+            "confidence": 0.9958202355966442,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sola-st/Nalin/main/src/nn/run_classification.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/src/nn/run_classification.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sola-st/Nalin/main/src/utils/prediction_dataset_analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/src/utils/prediction_dataset_analysis.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sola-st/Nalin/main/src/utils/ablation_study_results.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/src/utils/ablation_study_results.ipynb"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "\ud83d\udccc\nWe have tested using Ubuntu 18.04 LTS and Python 3.8.12. Additionally, we use a Docker \ncontainer to run dynamic analysis which also needs to be installed. \n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements &amp; Setup"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The directory structure is as follows:\n\n```shell\nsrc/ # The root directory of all source files\nbenchmark/ # This may contain the input Python files & the Jupyter Notebooks\ndynamic_analysis_runner/ # Code for running Dynamic Analysis\nsrc/dynamic_analysis_tracker_local_package/ # Python package for saving the assignments encountered during execution\nsrc/get_scripts_and_instrument/ # Code for getting Jupyter Notebooks, converting them to Python scripts and instrumenting\nsrc/nn/ # Code for running the Classifier\nresults/ # The results generated by running the experiments are written here\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Directory Structure",
+                "parent_header": [
+                    "Requirements &amp; Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The required packages are listed in _requirements.txt_. The packages may be installed using the command ```pip install -r requirements.txt```. \nAdditionally, install the [PyTorch](https://pytorch.org/get-started/locally/) package (We have tested on PyTorch version 1.10.1).  \n\n\ud83d\udccc\n```shell\npip install -r requirements.txt\npip install torch==1.10.1+cpu torchvision==0.11.2+cpu torchaudio==0.10.1+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html\n```\n\n\ud83d\udca1 The above command will install the **CPU** version of PyTorch. If you want CUDA support, please change the command accordingly as mentioned in the [link](https://pytorch.org/get-started/locally).\n",
+                "type": "Text_excerpt",
+                "original_header": "Python Packages",
+                "parent_header": [
+                    "Requirements &amp; Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "We use the dataset from a CHI\u201918 [paper](https://dl.acm.org/doi/10.1145/3173574.3173606) that has analyzed more than 1.3 million publicly available Jupyter \nNotebooks from GitHub. Download the dataset using the [link](https://library.ucsd.edu/dc/collection/bb6931851t).\nWe provide a sample of about 2000 Jupyter notebooks (_benchmark/jupyter_notebook_datasets/sample.zip_) obtained from this dataset for testing (Download the sample from \nthe Zenodo [archive](https://zenodo.org/record/6078527)). \n",
+                "type": "Text_excerpt",
+                "original_header": "Jupyter Notebook Dataset",
+                "parent_header": [
+                    "Requirements &amp; Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "\ud83d\udccc\nDownload the embedding file present at _benchmark/python_embeddings.bin_ from the Zenodo [archive](https://zenodo.org/record/6078527) and put in the _benchmark_ folder.\n\n---\n",
+                "type": "Text_excerpt",
+                "original_header": "Embedding",
+                "parent_header": [
+                    "Requirements &amp; Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "We want to execute a large number of Jupyter notebooks. We follow the following steps:\n\n- Convert the Jupyter notebooks to Python scripts.\n- Instrument the Python scripts individually.\n- Execute the instrumented scripts.\n- Collect the run-time data as:\n    - JSON files where a string representation of the data is saved. _OR_\n    - Pickled files where the value is stored in a binary format that may be read later. WARNING: Takes a lot of disk\n      space.\n",
+                "type": "Text_excerpt",
+                "original_header": "How to execute Jupyter notebooks from command line?",
+                "parent_header": [
+                    "1. Dynamic Analysis \u2699\ufe0f"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "In many occasions, it has been found that the files being executed makes unsolicited network requests and downloads\nlarge datasets. This can lead to filling up the disk space quickly. We avoid this completely by running the instrumented\npython files in a docker container. More specifically, we execute the instrumented files using _ipython3_. Executing\neach file generates many JSON/pickle files if there exists any assignments which are in scope (We do not track\nassignments of type a.b.c = m or a\\[b] = c or aug-assignments of type a\\[b]+=2). Each generated file correspond to an\nassignment.\n",
+                "type": "Text_excerpt",
+                "original_header": "Execute the instrumented Python files in a Docker container",
+                "parent_header": [
+                    "1. Dynamic Analysis \u2699\ufe0f"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The following Dockerfile is included in root directory. \nNotice the last line of the Dockerfile. When docker gets executed, this is the command that is run.\n\n```dockerfile\nFROM python:3.7.5\nCOPY src/dynamic_analysis_tracker_local_package /home/dynamic_analysis_tracker_local_package\n\nWORKDIR /home\n\nRUN python3 -m pip install -e dynamic_analysis_tracker_local_package\nRUN python3 -m pip install --upgrade pip\n# Install some required packages\nRUN python3 -m pip install \\\n        tqdm \\\n        jupyter \\\n        ipython \n# Install the most frequent packages\nCOPY dynamic_analysis_runner/most_frequent_packages.json /home\nCOPY dynamic_analysis_runner/install_freq_packages_python3.py /home\nRUN python3 install_freq_packages_python3.py\n\n# Create the Directories that will be mounted during Running the docker container\nRUN mkdir -p /home/dynamic_analysis_runner\n# We will mount the scripts that we want to execute here\nRUN mkdir -p /home/python_scripts\n# We will mount when \nRUN mkdir -p /home/dynamic_analysis_outputs\nRUN mkdir -p /home/profile_default\n\n# Create a working directory\nRUN mkdir -p /home/temp_working_dir_inside_docker\n\n# For debugging, check if all directories have been created properly\n# RUN ls -al > /home/dynamic_analysis_outputs/directories_in_docker.txt\nWORKDIR /home/temp_working_dir_inside_docker\n\n\nCMD python3 /home/dynamic_analysis_runner/execute_files_py3.py\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Dockerfile",
+                "parent_header": [
+                    "1. Dynamic Analysis \u2699\ufe0f",
+                    "Execute the instrumented Python files in a Docker container"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Build the docker image using the following command from the root of the project directory:\n\n\ud83d\udccc\n```shell\nsudo docker build -t nalin_dynamic_analysis_runner .\n```\n\nOn building the image, it should create the required folders in the Docker container. Some of these \nfolders are useful for mounting local folders (eg. folder containing the instrumented Python scripts) while running the image.\n\nAdditionally, it should also install the most common 100 packages present in _benchmark/python_scripts_. This may be obtained by running\n```python src/get_scripts_and_instrument/utils/get_most_frequent_packages.py```. If you do not want to re-run, we provide a pre-computed \nfile at _dynamic_analysis_runner/most_frequent_packages.json_.\n\nRun the Docker image:\n\n\ud83d\udccc\n```bash\nsudo docker run --network none \\\n-v \"$(pwd)\"/dynamic_analysis_runner:/home/dynamic_analysis_runner:ro \\\n-v \"$(pwd)\"/benchmark/python_scripts:/home/python_scripts:ro \\\n-v \"$(pwd)\"/results/dynamic_analysis_outputs:/home/dynamic_analysis_outputs \\\n-v \"$(pwd)\"/benchmark/profile_default:/home/profile_default:Z \\\n-it --rm nalin_dynamic_analysis_runner\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "The general structure is something like the following",
+                "parent_header": [
+                    "1. Dynamic Analysis \u2699\ufe0f",
+                    "Execute the instrumented Python files in a Docker container"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "1. By default, it should write the dynamic analysis results to the directory _results/dynamic_analysis_outputs_.\n\n2. Mount two folders (read only). One contains own scripts while the other contains the Python files we want to\nexecute. \n   * The _dynamic_analysis_runner_ folder containing the runner script gets mounted at the home directory of the Docker container.\n   * The _benchmark/python_scripts_ that contain the instrumented Python files also gets mounted at the home directory of the Docker container.\n\n3. Mount another folder (writable) where the data is written by the executing scripts.\n   * The _/results/dynamic_analysis_outputs_ folder gets mounted at the home directory of the Docker container.\n\n4. The _benchmark/profile_default_ folder and its content need to be mounted to avoid some iPython specific errors. \n\n",
+                "type": "Text_excerpt",
+                "original_header": "What happens on running the above command?",
+                "parent_header": [
+                    "1. Dynamic Analysis \u2699\ufe0f",
+                    "Execute the instrumented Python files in a Docker container"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "By default, the dynamic analysis outputs are written to the _'results/dynamic_analysis_outputs'_ folder as pickle files. Make sure\nthis path exists. \n\n---\n",
+                "type": "Text_excerpt",
+                "original_header": "Dynamic Analysis Output",
+                "parent_header": [
+                    "1. Dynamic Analysis \u2699\ufe0f",
+                    "Execute the instrumented Python files in a Docker container"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "\ud83d\udccc\n````bash\npython src/nn/run_classification.py --train --num-epochs=5 --name='Nalin'\n````\n",
+                "type": "Text_excerpt",
+                "original_header": "Run training",
+                "parent_header": [
+                    "2. Classifier \ud83e\udd9e"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "value": "During training the best models are saved to _results/saved_models_ directory. The next step is to use the saved model \nfor the test dataset.\n\n\ud83d\udccc Provide path to a saved model and run the following command. \n````shell\npython src/nn/run_classification.py --test --saved-model=results/saved_models/RNNClassifier_Nalin.pt --test-dataset=results/test_examples.pkl\n````\n\n\ud83d\udca1 The names of saved models are of the format: RNNClassifier_Nalin_RUN_ON__FSCORE.pt. For example, the saved model called _RNNClassifier_Nalin_22-12-2021--10/47/00_0.817.pt_ \nwas run on 22-Dec-2021 and the F-score was 0.817\n",
+                "type": "Text_excerpt",
+                "original_header": "Run testing",
+                "parent_header": [
+                    "2. Classifier \ud83e\udd9e"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "All pre-processing and the creation of the negative examples happens at the _process()_ call of run_classification.py.\nYou may refer to the documentation of _process_ to understand how it works.\n\n\ud83d\udca1 Both training and testing needs a pre-trained embedding file. As mentioned earlier in this README, you may download the \none we provide or train your own using [fastText](https://fasttext.cc).\n",
+                "type": "Text_excerpt",
+                "original_header": "Pre-Processing and Creating Negative Examples",
+                "parent_header": [
+                    "2. Classifier \ud83e\udd9e"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is the accompanying repo for our ICSE'22 [paper](https://arxiv.org/pdf/2112.06186.pdf). We present a Zenodo\n[archive](https://zenodo.org/record/6078527) that also contains a list of sample Jupyter notebooks and the embedding file not suitable for this repository\nbecause of their size. \n",
+                "original_header": "\ud83c\udf38 Nalin: Learning from Runtime Behavior to Find Name-Value Inconsistencies in Jupyter Notebooks"
+            },
+            "confidence": 0.9500102042107172,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The directory is _src/get_scripts_and_instrument_ \n",
+                "original_header": "Instrument Python files for tracking assignments"
+            },
+            "confidence": 0.9696438898157576,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\ud83d\udccc\n```bash\npython src/get_scripts_and_instrument/run_get_scripts_and_instrument.py\n``` \n",
+                "original_header": "Instrument Python files for tracking assignments"
+            },
+            "confidence": 0.9430513839248253,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2112.06186.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sola-st/Nalin/main/README.md"
+        }
+    ]
+}

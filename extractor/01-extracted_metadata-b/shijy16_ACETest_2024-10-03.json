@@ -1,0 +1,460 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 22:35:11"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/shijy16/ACETest",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "shijy16",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-05-29T07:04:27Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-10T12:04:55Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "For our ISSTA'23 paper ACETest: Automated Constraint Extraction for Testing Deep Learning Operators",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repo maintains the source code and other data for our research paper, \"ACETest: Automated Constraint Extraction for Testing Deep Learning Operators\", which is accepted by ISSTA 2023. ([preprint](https://arxiv.org/abs/2305.17914)) \n",
+                "original_header": "ACETest"
+            },
+            "confidence": 0.9474535995231224,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "+ **Input validation path extraction**: Identify the input validation code in target DL operator and explore paths in input validation code.\n+ **Constraint extraction**: Extract constraints related to user controllable inputs from the paths extracted in the last step by leveraging a constraint model, a set of controllability propagation rules and a set of constraint construction rules.\n+ **Testing**: Generate solutions for the extracted constraints with Z3 and use the solutions to generate python scripts to execute the target DL operator. \nWe have used ACETest to detect 108 previously unknown bugs on TensorFlow and PyTorch, with 87 of them confirmed by the developers and 7 CVEs assigned. \n",
+                "original_header": "About ACETest"
+            },
+            "confidence": 0.9613444136414908,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "ACETest",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "shijy16/ACETest",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/shijy16/ACETest/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/shijy16/ACETest/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 9,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/shijy16/ACETest/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 118756
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "The source code of Testing part of ACETest is now available at `Tester`, you can test TensorFlow or PyTorch with the constraints extracted by ACETest with it.\n",
+                "type": "Text_excerpt",
+                "original_header": "Quick Start Guide for Tester",
+                "parent_header": [
+                    "ACETest"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The constraints were extracted from the source code of TensorFlow 2.9.0 and PyTorch 1.13.0, so it is better to install tensorflow==2.9.0 and pytorch==1.13.0. \n\nBut it is okay to test other versions.\n",
+                "type": "Text_excerpt",
+                "original_header": "Supported AI Frameworks",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Prerequisites"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Download the necessary constraints and auxiliary files from the following link:\n\n[Download Auxiliary Files](https://drive.google.com/file/d/1BcidVT_j_Fgwg7XyL4lK_59Xc61NlIjE/view?usp=sharing)\n\nAfter downloading, place the uncompressed files in the `Tester/data` directory to maintain the correct directory structure:\n\n```\nTester/\n\u251c\u2500\u2500 data/\n\u2502   \u251c\u2500\u2500 pytorch/\n\u2502   \u2502   \u2514\u2500\u2500 ...\n\u2502   \u2514\u2500\u2500 tensorflow/\n\u2502       \u2514\u2500\u2500 ...\n\u2514\u2500\u2500 src/\n    \u2514\u2500\u2500 ...\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Auxiliary Files",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Navigate to `Tester/src` and execute the following command to test a single operator:\n\n```\npython main.py --test_round=5000 --mode=all --framework=tf --work_path=output --target_api=tf.raw_ops.BiasAdd\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Testing a Single Operator",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Running Tests"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        },
+        {
+            "result": {
+                "value": "To test all operators, use the `filter=all` option:\n\n```\npython main.py --test_round=5000 --mode=all --framework=tf --work_path=output --filter=all\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Testing All Operators",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Running Tests"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        },
+        {
+            "result": {
+                "value": "- `framework`: Specify the AI framework for testing (`tf` for TensorFlow or `torch` for PyTorch).\n- `total_round`: Set the number of test iterations for each operator.\n- `target_api`: Choose the specific operator/API to test. Available APIs can be found in the `API2OP.csv` file located under `Tester/data/*`.\n- `work_path`: Designate a directory for storing results.\n- `mode`: Select the testing mode based on the processing unit (`all`, `cpu_ori`, `cpu_onednn`, or `gpu`).\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Main Options",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Running Tests"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "The source code of Testing part of ACETest is now available at `Tester`, you can test TensorFlow or PyTorch with the constraints extracted by ACETest with it.\n",
+                "type": "Text_excerpt",
+                "original_header": "Quick Start Guide for Tester",
+                "parent_header": [
+                    "ACETest"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The constraints were extracted from the source code of TensorFlow 2.9.0 and PyTorch 1.13.0, so it is better to install tensorflow==2.9.0 and pytorch==1.13.0. \n\nBut it is okay to test other versions.\n",
+                "type": "Text_excerpt",
+                "original_header": "Supported AI Frameworks",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Prerequisites"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Download the necessary constraints and auxiliary files from the following link:\n\n[Download Auxiliary Files](https://drive.google.com/file/d/1BcidVT_j_Fgwg7XyL4lK_59Xc61NlIjE/view?usp=sharing)\n\nAfter downloading, place the uncompressed files in the `Tester/data` directory to maintain the correct directory structure:\n\n```\nTester/\n\u251c\u2500\u2500 data/\n\u2502   \u251c\u2500\u2500 pytorch/\n\u2502   \u2502   \u2514\u2500\u2500 ...\n\u2502   \u2514\u2500\u2500 tensorflow/\n\u2502       \u2514\u2500\u2500 ...\n\u2514\u2500\u2500 src/\n    \u2514\u2500\u2500 ...\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Auxiliary Files",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Navigate to `Tester/src` and execute the following command to test a single operator:\n\n```\npython main.py --test_round=5000 --mode=all --framework=tf --work_path=output --target_api=tf.raw_ops.BiasAdd\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Testing a Single Operator",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Running Tests"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        },
+        {
+            "result": {
+                "value": "To test all operators, use the `filter=all` option:\n\n```\npython main.py --test_round=5000 --mode=all --framework=tf --work_path=output --filter=all\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Testing All Operators",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Running Tests"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        },
+        {
+            "result": {
+                "value": "- `framework`: Specify the AI framework for testing (`tf` for TensorFlow or `torch` for PyTorch).\n- `total_round`: Set the number of test iterations for each operator.\n- `target_api`: Choose the specific operator/API to test. Available APIs can be found in the `API2OP.csv` file located under `Tester/data/*`.\n- `work_path`: Designate a directory for storing results.\n- `mode`: Select the testing mode based on the processing unit (`all`, `cpu_ori`, `cpu_onednn`, or `gpu`).\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Main Options",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Running Tests"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "ACETest requires the following Python packages:\n\n- `z3-solver`\n- `sysv_ipc`\n",
+                "type": "Text_excerpt",
+                "original_header": "Dependencies",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Prerequisites"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The constraints were extracted from the source code of TensorFlow 2.9.0 and PyTorch 1.13.0, so it is better to install tensorflow==2.9.0 and pytorch==1.13.0. \n\nBut it is okay to test other versions.\n",
+                "type": "Text_excerpt",
+                "original_header": "Supported AI Frameworks",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Prerequisites"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Navigate to `Tester/src` and execute the following command to test a single operator:\n\n```\npython main.py --test_round=5000 --mode=all --framework=tf --work_path=output --target_api=tf.raw_ops.BiasAdd\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Testing a Single Operator",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Running Tests"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        },
+        {
+            "result": {
+                "value": "To test all operators, use the `filter=all` option:\n\n```\npython main.py --test_round=5000 --mode=all --framework=tf --work_path=output --filter=all\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Testing All Operators",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Running Tests"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        },
+        {
+            "result": {
+                "value": "- `framework`: Specify the AI framework for testing (`tf` for TensorFlow or `torch` for PyTorch).\n- `total_round`: Set the number of test iterations for each operator.\n- `target_api`: Choose the specific operator/API to test. Available APIs can be found in the `API2OP.csv` file located under `Tester/data/*`.\n- `work_path`: Designate a directory for storing results.\n- `mode`: Select the testing mode based on the processing unit (`all`, `cpu_ori`, `cpu_onednn`, or `gpu`).\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Main Options",
+                "parent_header": [
+                    "ACETest",
+                    "Quick Start Guide for Tester",
+                    "Running Tests"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "ACETest"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2305.17914"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shijy16/ACETest/main/README.md"
+        }
+    ]
+}

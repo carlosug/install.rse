@@ -1,0 +1,351 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:52:15"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/mariomulansky/PySpike",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "mariomulansky",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2014-10-10T15:28:49Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-24T20:26:56Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Python implementation of spike distance metrics",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "PySpike is a Python library for the numerical analysis of spike train similarity. \nIts core functionality is the implementation of the ISI_\\-distance [#]_ and SPIKE_\\-distance [#]_, SPIKE-Synchronization_ [#]_, as well as their adaptive generalizations [#]_.\nIt provides functions to compute multivariate profiles, distance matrices, as well as averaging and general spike train processing.\nAll computation intensive parts are implemented in C via cython_ to reach a competitive performance (factor 100-200 over plain Python). \n",
+                "original_header": "PySpike"
+            },
+            "confidence": 0.986295925916885,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mariomulansky/PySpike/master/Readme.rst"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "With version 0.2.0, the :code:`SpikeTrain` class has been introduced to represent spike trains.\nThis is a breaking change in the function interfaces.\nHence, programs written for older versions of PySpike (0.1.x) will not run with newer versions.\n \n",
+                "original_header": "Important Changelog"
+            },
+            "confidence": 0.9316979319812219,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mariomulansky/PySpike/master/Readme.rst"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "PySpike",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "mariomulansky/PySpike",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mariomulansky/PySpike/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mariomulansky/PySpike/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 71,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 30,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/mariomulansky/PySpike/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 217510
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Cython",
+                "name": "Cython",
+                "type": "Programming_language",
+                "size": 63861
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mariomulansky/PySpike/releases/124926535",
+                "tag": "0.8.0",
+                "name": "PySpike 0.8.0",
+                "author": {
+                    "name": "mariomulansky",
+                    "type": "User"
+                },
+                "description": "PySpike Release 0.8.0",
+                "tarball_url": "https://api.github.com/repos/mariomulansky/PySpike/tarball/0.8.0",
+                "zipball_url": "https://api.github.com/repos/mariomulansky/PySpike/zipball/0.8.0",
+                "html_url": "https://github.com/mariomulansky/PySpike/releases/tag/0.8.0",
+                "url": "https://api.github.com/repos/mariomulansky/PySpike/releases/124926535",
+                "release_id": 124926535,
+                "date_created": "2023-07-14T04:43:40Z",
+                "date_published": "2023-10-13T04:19:14Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/mariomulansky/PySpike/releases/3644093",
+                "tag": "0.5.1",
+                "name": "SoftwareX Publication",
+                "author": {
+                    "name": "mariomulansky",
+                    "type": "User"
+                },
+                "description": "This version is part of the following publication:\r\n\r\nMulansky M, Kreuz T:\r\nPySpike - A Python library for analyzing spike train synchrony\r\nSoftware X 5, 183 (2016)\r\n\r\nhttps://www.sciencedirect.com/science/article/pii/S2352711016300255\r\nhttps://drive.google.com/file/d/1vJA5q4eFCd2ASKGN8ANaDNBfQVpWBPXd/view?usp=sharing\r\nhttp://arxiv.org/pdf/1603.03293v2.pdf\r\n",
+                "tarball_url": "https://api.github.com/repos/mariomulansky/PySpike/tarball/0.5.1",
+                "zipball_url": "https://api.github.com/repos/mariomulansky/PySpike/zipball/0.5.1",
+                "html_url": "https://github.com/mariomulansky/PySpike/releases/tag/0.5.1",
+                "url": "https://api.github.com/repos/mariomulansky/PySpike/releases/3644093",
+                "release_id": 3644093,
+                "date_created": "2016-03-09T12:40:43Z",
+                "date_published": "2016-07-13T02:48:33Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mariomulansky/PySpike/master/Readme.rst",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you use PySpike in your research, please cite our SoftwareX publication on PySpike:\n    Mario Mulansky, Thomas Kreuz, *PySpike - A Python library for analyzing spike train synchrony*, Software X 5, 183 (2016) `[pdf] <https://drive.google.com/file/d/1vJA5q4eFCd2ASKGN8ANaDNBfQVpWBPXd/view>`_\n\nAdditionally, depending on the used methods: ISI-distance [1], SPIKE-distance [2], SPIKE-Synchronization [3], or their adaptive generalizations [4], please cite one or more of the following publications:\n\n.. [#] Kreuz T, Haas JS, Morelli A, Abarbanel HDI, Politi A, *Measuring spike train synchrony.* J Neurosci Methods 165, 151 (2007) `[pdf] <https://drive.google.com/file/d/113cr1xUhKe0rMIiFc1vMoIQ7j9noobKW/view>`_\n\n.. [#] Kreuz T, Chicharro D, Houghton C, Andrzejak RG, Mormann F, *Monitoring spike train synchrony.* J Neurophysiol 109, 1457 (2013) `[pdf] <https://drive.google.com/file/d/1oppf86V4cBVakPiv6Mbn_WaoKoKWzmIl/view>`_\n\n.. [#] Kreuz T, Mulansky M and Bozanic N, *SPIKY: A graphical user interface for monitoring spike train synchrony*, J Neurophysiol 113, 3432 (2015) `[pdf] <https://drive.google.com/file/d/16rdVbJFj7BypaaI10aHpXLk0WJuJ7reM/view>`_\n\n.. [#] Satuvuori E, Mulansky M, Bozanic N, Malvestio I, Zeldenrust F, Lenk K, and Kreuz T, *Measures of spike train synchrony for data with multiple time-scales*, J Neurosci Methods 287, 25 (2017) `[pdf] <https://drive.google.com/file/d/1xOepp9WN0luODH9qF6i5vVRimqC9WweA/view>`_\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing PySpike",
+                "parent_header": [
+                    "PySpike"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mariomulansky/PySpike/master/Readme.rst"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "PySpike is available at Python Package Index and this is the easiest way to obtain the PySpike package.\nIf you have `pip` installed, just run\n\n.. code:: bash\n\n   sudo pip install pyspike\n\nto install pyspike.\nPySpike requires `numpy` as minimal requirement, as well as a C compiler to generate the binaries.\n\nInstall from Github sources\n...........................\n\nYou can also obtain the latest PySpike developer version from the github repository.\nFor that, make sure you have the following Python libraries installed:\n\n- numpy\n- cython\n- matplotlib (for the examples)\n- pytest (for running the tests)\n- scipy (also for the tests)\n\nIn particular, make sure that cython_ is configured properly and able to locate a C compiler, otherwise PySpike will use the much slower Python implementations.\n\nTo install PySpike, simply download the source, e.g. from Github, and run the :code:`setup.py` script:\n\n.. code:: bash\n\n    git clone https://github.com/mariomulansky/PySpike.git\n    cd PySpike\n    python setup.py build_ext --inplace\n\nThen you can run the tests using the `pytest` test framework:\n\n.. code:: bash\n\n    pytest\n\nFinally, you should make PySpike's installation folder known to Python to be able to import pyspike in your own projects.\nTherefore, add your :code:`/path/to/PySpike` to the :code:`$PYTHONPATH` environment variable.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements and Installation",
+                "parent_header": [
+                    "PySpike"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mariomulansky/PySpike/master/Readme.rst"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "PySpike is available at Python Package Index and this is the easiest way to obtain the PySpike package.\nIf you have `pip` installed, just run\n\n.. code:: bash\n\n   sudo pip install pyspike\n\nto install pyspike.\nPySpike requires `numpy` as minimal requirement, as well as a C compiler to generate the binaries.\n\nInstall from Github sources\n...........................\n\nYou can also obtain the latest PySpike developer version from the github repository.\nFor that, make sure you have the following Python libraries installed:\n\n- numpy\n- cython\n- matplotlib (for the examples)\n- pytest (for running the tests)\n- scipy (also for the tests)\n\nIn particular, make sure that cython_ is configured properly and able to locate a C compiler, otherwise PySpike will use the much slower Python implementations.\n\nTo install PySpike, simply download the source, e.g. from Github, and run the :code:`setup.py` script:\n\n.. code:: bash\n\n    git clone https://github.com/mariomulansky/PySpike.git\n    cd PySpike\n    python setup.py build_ext --inplace\n\nThen you can run the tests using the `pytest` test framework:\n\n.. code:: bash\n\n    pytest\n\nFinally, you should make PySpike's installation folder known to Python to be able to import pyspike in your own projects.\nTherefore, add your :code:`/path/to/PySpike` to the :code:`$PYTHONPATH` environment variable.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements and Installation",
+                "parent_header": [
+                    "PySpike"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mariomulansky/PySpike/master/Readme.rst"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": ".. image:: https://badge.fury.io/py/pyspike.png\n    :target: http://badge.fury.io/py/pyspike\n.. image:: https://travis-ci.org/mariomulansky/PySpike.svg?branch=master\n    :target: https://travis-ci.org/mariomulansky/PySpike \nAll source codes are available on `Github <https://github.com/mariomulansky/PySpike>`_  and are published under the BSD_License_.\n \n",
+                "original_header": "PySpike"
+            },
+            "confidence": 0.9998112823350664,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mariomulansky/PySpike/master/Readme.rst"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "With version 0.7.0, support for Python 2 was dropped, PySpike now officially supports\nPython 3.7, 3.8, 3.9, 3.10. \n",
+                "original_header": "Important Changelog"
+            },
+            "confidence": 0.9810327941427542,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mariomulansky/PySpike/master/Readme.rst"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "The following code loads some exemplary spike trains, computes the dissimilarity profile of the ISI-distance of the first two :code:`SpikeTrain` objects, and plots it with matplotlib:\n\n.. code:: python\n\n    import matplotlib.pyplot as plt\n    import pyspike as spk\n    \n    spike_trains = spk.load_spike_trains_from_txt(\"PySpike_testdata.txt\",\n                                                  edges=(0, 4000))\n    isi_profile = spk.isi_profile(spike_trains[0], spike_trains[1])\n    x, y = isi_profile.get_plottable_data()\n    plt.plot(x, y, '--k')\n    print(\"ISI distance: %.8f\" % isi_profile.avrg())\n    plt.show()\n\n\nThe following example computes the multivariate ISI-, SPIKE- and SPIKE-Sync-profile for a list of spike trains loaded from a text file:\n\n.. code:: python\n\n    spike_trains = spk.load_spike_trains_from_txt(\"PySpike_testdata.txt\",\n                                                  edges=(0, 4000))\n    avrg_isi_profile = spk.isi_profile(spike_trains)\n    avrg_spike_profile = spk.spike_profile(spike_trains)\n    avrg_spike_sync_profile = spk.spike_sync_profile(spike_trains)\n\nMore examples with detailed descriptions can be found in the `tutorial section <http://mariomulansky.github.io/PySpike/#tutorial>`_.\n\n===============================================================================\n\n*The work on PySpike was supported by the European Comission through the Marie\nCurie Initial Training Network* `Neural Engineering Transformative Technologies\n(NETT) <http://www.neural-engineering.eu/>`_ *under the project number 289146.*\n\n\n**Python/C Programming:**\n - Mario Mulansky\n - Edmund J Butler\n\n**Scientific Methods:**\n - Thomas Kreuz\n - Daniel Chicharro\n - Conor Houghton\n - Nebojsa Bozanic\n - Mario Mulansky\n\n.. _ISI: http://www.scholarpedia.org/article/Measures_of_spike_train_synchrony#ISI-distance\n.. _SPIKE: http://www.scholarpedia.org/article/SPIKE-distance\n.. _SPIKE-Synchronization: http://www.scholarpedia.org/article/Measures_of_spike_train_synchrony#SPIKE_synchronization\n.. _cython: http://www.cython.org\n.. _SPIKY: https://thomas-kreuz.complexworld.net/source-codes/spiky\n.. _BSD_License: http://opensource.org/licenses/BSD-2-Clause\n",
+                "type": "Text_excerpt",
+                "original_header": "Examples",
+                "parent_header": [
+                    "PySpike"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mariomulansky/PySpike/master/Readme.rst"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "PySpike"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mariomulansky/PySpike/master/Readme.rst"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/mariomulansky/PySpike/wiki",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mariomulansky/PySpike/master/Readme.rst"
+        }
+    ]
+}

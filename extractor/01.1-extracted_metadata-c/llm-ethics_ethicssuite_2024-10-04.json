@@ -1,0 +1,192 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:00:16"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/LLM-Ethics/EthicsSuite",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "LLM-Ethics",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-04-08T10:45:52Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-04-11T13:02:37Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A test suite (a.k.a., dataset) with ~20k moral situations for understanding LLMs' behaviors.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To generate these moral situations, we leverage the moral situations in\n[ETHICS](https://github.com/hendrycks/ethics) as seed input and design an\nin-context learning scheme to contextualize these simple seed inputs. In\naccordance to the ETHICS dataset, EthicsSuite covers five aspects of human\nethics, including justice, commonsense ethics, virtue ethics, deontology and\nutilitarianism. \n",
+                "original_header": "EthicsSuite"
+            },
+            "confidence": 0.9748443559637849,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/llm-ethics/ethicssuite/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "EthicsSuite",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "LLM-Ethics/EthicsSuite",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/LLM-Ethics/EthicsSuite/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/LLM-Ethics/EthicsSuite/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 12,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/llm-ethics/ethicssuite/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/llm-ethics/ethicssuite/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@misc{ma2023oops,\n    primaryclass = {cs.SE},\n    archiveprefix = {arXiv},\n    eprint = {2305.02626},\n    year = {2023},\n    author = {Pingchuan Ma and Zongjie Li and Ao Sun and Shuai Wang},\n    title = {\"Oops, Did I Just Say That?\" Testing and Repairing Unethical Suggestions of Large Language Models with Suggest-Critique-Reflect Process},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "\"Oops, Did I Just Say That?\" Testing and Repairing Unethical Suggestions of Large Language Models with Suggest-Critique-Reflect Process",
+                "author": "Pingchuan Ma and Zongjie Li and Ao Sun and Shuai Wang"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/llm-ethics/ethicssuite/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "EthicsSuite"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/llm-ethics/ethicssuite/main/README.md"
+        }
+    ]
+}

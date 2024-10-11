@@ -1,0 +1,1356 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:54:55"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/sslab-gatech/autofz",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "sslab-gatech",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-02-22T19:41:07Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-20T07:29:16Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 gts3.org (SSLab@Gatech)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "autofz: Automated Fuzzer Composition at Runtime",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- `autofz`: main directory for autofz framework\n    - `main.py`: the entry point for autofz framework\n    - `cli.py`: argument parsing, which lists all tuning parameters for autofz\n    - `config.py`: config file for baseline fuzzers and benchmarks\n      - queue/crash directories for fuzzers\n      - arguments for each benchmark\n    - `evaluator.py`: the thread calculating AFL bitmap for each baseline fuzzer\n    - `aflforkserver.so`: from quickcov component of CUPID, used to get AFL bitmap coverage.\n    - `wather.py`: Inotify handler for new files in fuzzer directories, modify from CollabFuzz\n    - `fuzzer_driver`: directory for fuzzer API implementations\n        - `main.py`: entry-point of fuzzer driver\n            - `afl.py`: AFL-based fuzzers, same for other files\n- `afl-cov`: modified from [original afl-cov](https://github.com/mrash/afl-cov) to do post-processing on fuzzing output to get line/branch (edge) coverage over time. \n",
+                "original_header": "Directory Structure"
+            },
+            "confidence": 0.9138134979252843,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The log file of `autofz` is in JSON format and can be easily parsed by standard\nlibraries in most programming languages. \nThe output is an array and each element of the array contains the coverage\n(`bitmap` field) and\nunique bugs information and the timestamp for that record. By default, a new log\nentry is appended for every 60 seconds. \n",
+                "original_header": "Inspect log files of autofz"
+            },
+            "confidence": 0.9259561740958366,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "autofz",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "sslab-gatech/autofz",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/sslab-gatech/autofz/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/sslab-gatech/autofz/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 73,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 10,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/sslab-gatech/autofz/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 22952820
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "PHP",
+                "name": "PHP",
+                "type": "Programming_language",
+                "size": 889553
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 385771
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 355693
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 107338
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 52275
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Perl",
+                "name": "Perl",
+                "type": "Programming_language",
+                "size": 50724
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Go",
+                "name": "Go",
+                "type": "Programming_language",
+                "size": 26691
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 26426
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 19970
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "SCSS",
+                "name": "SCSS",
+                "type": "Programming_language",
+                "size": 3975
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CMake",
+                "name": "CMake",
+                "type": "Programming_language",
+                "size": 1654
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "GDB",
+                "name": "GDB",
+                "type": "Programming_language",
+                "size": 1320
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "PLpgSQL",
+                "name": "PLpgSQL",
+                "type": "Programming_language",
+                "size": 172
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Rich Text Format",
+                "name": "Rich Text Format",
+                "type": "Programming_language",
+                "size": 21
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 20
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker-compose.yml",
+                "type": "Url",
+                "format": "docker_compose"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker-compose.yml"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/mopt/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/mopt/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/angora/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/angora/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/libfuzzer/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/libfuzzer/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/redqueen/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/redqueen/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/radamsa/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/radamsa/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/aflfast/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/aflfast/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/afl/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/afl/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/gcc/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/gcc/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/lafintel/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/lafintel/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/aflplusplus/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/aflplusplus/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/learnafl/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/learnafl/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/fairfuzz/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/fairfuzz/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/qsym/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/qsym/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/coverage/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/coverage/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/mopt/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/mopt/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/angora/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/angora/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/libfuzzer/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/libfuzzer/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/redqueen/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/redqueen/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/radamsa/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/radamsa/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/aflfast/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/aflfast/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/afl/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/afl/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/lafintel/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/lafintel/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/aflplusplus/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/aflplusplus/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/learnafl/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/learnafl/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/fairfuzz/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/fairfuzz/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/qsym/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/qsym/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/base/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/base/Dockerfile"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/init.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/autofz.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/build-compose.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/angora/build_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/redqueen/build_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/source/unibench/download.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/afl/build_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/gcc/build_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/lafintel/build_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/aflplusplus/build_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/benchmark/coverage/build_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_source/LearnAFL/qemu_mode/build_qemu_support.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_source/LearnAFL/experimental/asan_cgroups/limit_memory.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_source/LearnAFL/experimental/distributed_fuzzing/sync_script.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_source/LearnAFL/experimental/crash_triage/triage_crashes.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/docker/fuzzer_base/qsym/qsym_run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "[![Docker Pulls](https://img.shields.io/docker/pulls/fuyu0425/autofz)](https://hub.docker.com/r/fuyu0425/autofz) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7865366.svg)](https://doi.org/10.5281/zenodo.7865366)\n\nautofz is a meta fuzzer for automated fuzzer composition at runtime.\n\nFor technical details, please check our [paper](https://gts3.org/assets/papers/2023/fu:autofz.pdf) ([extended version](https://arxiv.org/abs/2302.12879)), \"autofz: Automated Fuzzer Composition at Runtime\" published at USENIX Security'23.\n\nSome part of the source code might use `autofuzz` (which is the old name of `autofz`).\n\nWe provided the following for artifact evaluation:\n- A pre-built docker image which includes all baseline fuzzers and benchmarks used in the paper.\n- A VM that configures all necessary things and can be used to launch the docker containers. If you want to use the VM, please jump to [VM setup section](#vm-setup).\n",
+                "type": "Text_excerpt",
+                "original_header": "autofz",
+                "parent_header": [
+                    "autofz",
+                    "Running",
+                    "Fuzzing"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Make sure your uid in the host is `2000`, which is the same as the user in the docker container.\n  - We use this trick to prevent from using `sudo` and make the mounted volume can be read outside of docker.\n\nIt's not mandatory. If you don't do that, you might need to use `sudo` to bypass some permission issues.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "UID check",
+                "parent_header": [
+                    "autofz",
+                    "Before running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "```sh\nsysctl -w fs.inotify.max_user_instances=8192\nsysctl -w fs.inotify.max_user_watches=524288\n```\nTo make it persistent between reboot; add the following lines to `/etc/sysctl.conf` on the host.\n```\nfs.inotify.max_user_instances=8192\nfs.inotify.max_user_watches=524288\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Increase inotify limits",
+                "parent_header": [
+                    "autofz",
+                    "Before running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "```sh\ndocker run --rm --privileged -it autofz /bin/bash\n```\nNote that, the result is not preserved. To preserve the fuzzing output, we need\nto mount a docker volume.\n\n```sh\ndocker run --rm --privileged -v $PWD:/work/autofz -w /work/autofz -it autofz /bin/bash\n```\nThis command mount (by `-v`) your current directory (`$PWD`) to `/work/autofz` in the container and change the working directory to `/work/autofz` (by `-w`).\n\nAfterward, make sure the fuzzing output directory is under `/work/autofz` and it will be preserved under your `$PWD`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Launching a docker container",
+                "parent_header": [
+                    "autofz",
+                    "Running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The default size of shared memory pool is 64 MB, and you can increase it by adding `-shm-size` argument.\n\n```sh\ndocker run --rm --privileged --shm-size=8gb -it autofz /bin/bash\n```\n\nThe above command change the size to 8 GB.\n",
+                "type": "Text_excerpt",
+                "original_header": "Shared Memory Size",
+                "parent_header": [
+                    "autofz",
+                    "Running",
+                    "Launching a docker container"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "It is supposed to run **only one** autofz instance at the same time in a single container for the current implementation.\n\nAll autofz instances in the same container share a single cgroup for the current implementaion.\n\nGenerating different cgroup subgroups for differnet instances is on the roadmap.\n",
+                "type": "Text_excerpt",
+                "original_header": "Note for expeirments",
+                "parent_header": [
+                    "autofz",
+                    "Running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "After entering the docker container, run the following commands; it will setup necessary parameters for fuzzing and create the cgroups.\n```sh\nsudo /init.sh\n```\n\nOr you can do it the manually, the following is the content of `init.sh`\n```sh\n#!/bin/bash\necho \"\" > /proc/sys/kernel/core_pattern\necho 0 > /proc/sys/kernel/core_uses_pid\necho performance | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor\necho 0 > /proc/sys/kernel/yama/ptrace_scope\necho 1 > /proc/sys/kernel/sched_child_runs_first\necho 0 > /proc/sys/kernel/randomize_va_space\n\n# get container id\nCPU_CGROUP_PATH=$(cat /proc/1/cpuset)\nCID=$(basename ${CPU_CGROUP_PATH})\n\nset -x\n# create subgroup\ncgcreate -t autofz -a autofz -g cpu:/autofz\n```\n\nNote that `/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor` might not exist in VM; just ignore that error.\n",
+                "type": "Text_excerpt",
+                "original_header": "Init",
+                "parent_header": [
+                    "autofz",
+                    "Running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Docker shares the same kernel with the host, and we disable some security feature of kernel (e.g. ASLR through `/proc/sys/kernel/randomize_va_space`) for fuzzing.\n\nPlease run it carefully; better in VM.\n",
+                "type": "Text_excerpt",
+                "original_header": "Security implication",
+                "parent_header": [
+                    "autofz",
+                    "Running",
+                    "Init"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "For a system that is using cgroup v2, a manual downgrade to v1 is necessary. This can be done by adding `systemd.unified_cgroup_hierarchy=0` to the kernel command line (e.g., via /etc/default/grub).\n\nThanks for the anonymous reviewers for suggestion.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Cgroups V2",
+                "parent_header": [
+                    "autofz",
+                    "Running",
+                    "Init"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "All the evaluation is run by `autofz` framework.\nPlease refer to [cli.py](./autofz/cli.py) for all possible arguments.\n\n#### autofz ####\n\nFor example, we want to fuzz `exiv2` (by `-t`) using 4 fuzzers by `-f`: `AFL`, `FairFuzz`, `AFLFast`, `QSYM` (`-f all` to use all baseline fuzzers, which is the one we used in the evaluation). `-T` for the timeout (human friendly format like `1d`, `24h` or `30m`).\n\nThe fuzzing result reside in `output` (by specifying `-o`).\n",
+                "type": "Text_excerpt",
+                "original_header": "Fuzzing",
+                "parent_header": [
+                    "autofz",
+                    "Running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "```sh\nautofz -o output -T 24h -f afl fairfuzz aflfast qsym -t exiv2\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Single-core implementation",
+                "parent_header": [
+                    "autofz",
+                    "Running",
+                    "Fuzzing",
+                    "autofz"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "For multi-core implementation, we need to specify CPUs/jobs (by `-j`) and `-p` (shorthand for `--parallel`).\n```sh\nautofz -o output -T 24h -f afl fairfuzz aflfast qsym -j4 -p -t exiv2\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Multi-core implementation",
+                "parent_header": [
+                    "autofz",
+                    "Running",
+                    "Fuzzing",
+                    "autofz"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "- `--prep`: preparation time (in seconds) (default: 300)\n- `--focus`: focus time (in seconds) (default: 300)\n- `--diff_threshold`: initial threshold (default: 100)\n- the default values are used in the paper.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Tuning the parameter of two-phase algorithm.",
+                "parent_header": [
+                    "autofz",
+                    "Running",
+                    "Fuzzing",
+                    "autofz"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "For example, we want to fuzz `exiv2` (by `-t`) using 4 fuzzers by `-f`: `AFL`, `FairFuzz`, `AFLFast`, `QSYM`.\n\nAdditionally, you can specify how many CPUs/jobs by `-j` arguments; here we use 4 CPUs (one for each fuzzer).\n\n\n\nIt is recommended to use at least the same number of CPUs as the number of fuzzers to prevent resource competition.\n\nFinally, enable EnFuzz mode by `--enfuzz ${SYNC_TIME}`; it specifies the time interval (in seconds) for seed synchronization.\n\n```sh\nautofz -o output -T 24h -f afl fairfuzz aflfast qsym -p -j4 -t exiv2 --enfuzz 300\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "EnFuzz/CUPID/autofz-",
+                "parent_header": [
+                    "autofz",
+                    "Running",
+                    "Fuzzing"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "For example, AFL only by specifying `--focus-one`.\n```sh\nautofz -o output -T 24h -f afl -t exiv2 --focus-one afl\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Run a single fuzzer",
+                "parent_header": [
+                    "autofz",
+                    "Running",
+                    "Fuzzing"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "It is built from [quickcov](https://github.com/egueler/quickcov), which is a part of CUPID.\n",
+                "type": "Text_excerpt",
+                "original_header": "aflforkserver.so",
+                "parent_header": [
+                    "autofz",
+                    "Running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "See [running](#running) section.\n",
+                "type": "Text_excerpt",
+                "original_header": "How to run",
+                "parent_header": [
+                    "autofz",
+                    "VM Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "During the evaluation, we use a cluster of Ubuntu 20.04 machines equipped with AMD Ryzen 9\n3900 (12C/24T), 32 GB RAM, and 512 GB SSD disk space.\nTo use the provided docker image or VM image, 30 GB disk space is required.\n",
+                "type": "Text_excerpt",
+                "original_header": "Hardware dependencies",
+                "parent_header": [
+                    "autofz"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "To use the docker image, a working Docker/Podman under Linux is required.\nAlternatively, to use the VM image, VirtualBox/VMware is required.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Software dependencies",
+                "parent_header": [
+                    "autofz"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "- `docker`\n- `docker-compose`\n\n\n\n\n\n\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "required system packages",
+                "parent_header": [
+                    "autofz",
+                    "Installing (Skipped if you are using the provided VM)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "```sh\ndocker pull fuyu0425/autofz:v1.0.1\ndocker tag fuyu0425/autofz:v1.0.1 autofz\n```\nPlease check https://hub.docker.com/repository/docker/fuyu0425/autofz/tags for possible tags. Default is `latest`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Pull docker image",
+                "parent_header": [
+                    "autofz",
+                    "Installing (Skipped if you are using the provided VM)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "1. Download the VirtualBox and install the Oracle Extension Pack\n2. Download and import the OVA files\n   - [OVA URL](https://doi.org/10.5281/zenodo.7865366)\n3. Start the VM, the credential is `autofz:autofz`\n   - SSH is installed, and you need to configure VirtualBox network first to ssh into the VM. Port forwarding would be the easiest way.\n4. All the data will in the home directory\n",
+                "type": "Text_excerpt",
+                "original_header": "VM Setup",
+                "parent_header": [
+                    "autofz"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "- CPU: 2 (more if you want to use multi-core implementation)\n- RAM: 8GM (really depends on the chosen fuzzers and target you want to fuzz, autofz itself takes few memory.)\n",
+                "type": "Text_excerpt",
+                "original_header": "Resource",
+                "parent_header": [
+                    "autofz",
+                    "VM Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To inspect the log file (e.g. `exiv2.json`), we recommend using a tool called\n[jq](https://github.com/stedolan/jq), which can be installed by the\npackage manager in most Linux distributions. We already installed it in both the\ndocker image and the VM image. \nOne of them is `log`, which can be retrieved by the following command.\n```sh\njq .log exiv2.json\n```\n \nTo get the results based on rounds, we can use the following commands.\n```sh\njq .round exiv2.json\n```\n \nIn the provided VM, we provided one of the fuzzing log with the path \n",
+                "original_header": "Inspect log files of autofz"
+            },
+            "confidence": 0.97834623482834,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Example\n```\nautofz.sh run --rm -v `pwd`:/work/autofz -w /work/autofz autofz -o output -t exiv2 -f all -T 24h\n``` \n",
+                "original_header": "Fuzzing using docker image on the host"
+            },
+            "confidence": 0.9839886838231114,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "First build baseline fuzzers and benchmarks.\n```\n./docker/build.sh\n```\nThen, build the all-in-one docker including `autofz` and all the fuzzers/benchmarks.\n```\n./build.sh\n```\n \nYou can tune the image name/tag in these `build.sh`. \nYou might need to tune `_UID` and `GID` (they are hard-coded to `2000` when building the pre-built image) in `build.sh` to bypass docker volume permission issue if you don't want to use root user. \n",
+                "original_header": "Build docker image"
+            },
+            "confidence": 0.9973903280236304,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The build script parallels the compilation process a lot by making the jobs runs in the background (by inserting `&` at the end of shell commands). It will takes a lot of CPU and RAM (especially during linking). Please remove `&` in build scripts (`build.sh` or `build_all.sh` under `docker/benchmark`) when you are building under less performant machines.\n \n",
+                "original_header": "Build Note/Warning"
+            },
+            "confidence": 0.9556435731247086,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- build the fuzzer\n- add it to `config.py` under `Config['fuzzer']`\n \n",
+                "original_header": "How to add a baseline fuzzer"
+            },
+            "confidence": 0.9971336257974444,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- implement fuzzer API/driver under `autofz/fuzzer_driver` directories.\n  - Only Start/Pause/Resume/Stop APIs are needed in single-core (default) mode.\n  - Please take a look at `autofz/fuzzer_driver/afl.py` as a reference.\n  - You might need to add some code in`autofz/fuzzer_driver/db.py` and `autofz/fuzzer_driver/main.py` too.\n- add fuzzer to `autofz/mytypy.py`.\n- add fuzzer to `autofz/watcher.py`.\n \n",
+                "original_header": "Add the necessary group code in autofz"
+            },
+            "confidence": 0.9736312479376579,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "After modifying `config.py`, you need to do `pip install` again. \n",
+                "original_header": "Reinstall after changing `config.py`"
+            },
+            "confidence": 0.9999984943399449,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "```\n\u276f tree -L 1 output\noutput\n\u251c\u2500\u2500 eval\n\u251c\u2500\u2500 exiv2\n\u251c\u2500\u2500 exiv2_2023-02-27-14-49-57.json\n```\n- `eval`: baseline fuzzer evaluation directory\n- `exvi2`: baseline fuzzer raw output\n- `exiv2_2023-02-27-14-49-57.json`: log of `autofz`\n\n`output/eval/global` is the aggregate output for all baseline fuzzers, which is the final `autofz` output.\n```\n.\n\u251c\u2500\u2500 bitmap\n\u251c\u2500\u2500 crashes\n\u251c\u2500\u2500 unique_bugs\n\u251c\u2500\u2500 unique_bugs_ip\n\u251c\u2500\u2500 unique_bugs_trace\n\u2514\u2500\u2500 unique_bugs_trace3\n```\n- `crashes`: crashes output by fuzzers\n- `unique_bugs_*`: deduplicated bugs by `ip` (instruction pointer), `trace` (whole stack traces), `trace3` (top 3 stack frame).\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Example output result",
+                "parent_header": [
+                    "autofz",
+                    "Running",
+                    "Fuzzing"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "`/home/autofz/output_exiv2` is the sample output after 24 hours fuzzing of autofz.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Example Output Result",
+                "parent_header": [
+                    "autofz",
+                    "VM Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "- [AFL](https://github.com/google/AFL)\n- [AFLFast](https://github.com/mboehme/aflfast)\n- [AFL++](https://github.com/AFLplusplus/AFLplusplus)\n- [Angora](https://github.com/AngoraFuzzer/Angora)\n- [FairFuzz](https://github.com/carolemieux/afl-rb)\n- [LAF-Intel](https://lafintel.wordpress.com/)\n  - AFL++ version is used\n- [LearnAFL](https://github.com/MoonLight-SteinsGate/LearnAFL)\n- [LibFuzzer](https://github.com/carolemieux/afl-rb)\n  - [patched version](https://github.com/phi-go/llvm-project/tree/fuzzer_sync) from CUPID team to enable seed sync\n- [MOpt](https://github.com/puppet-meteor/MOpt-AFL)\n- [QSYM](https://github.com/sslab-gatech/qsym)\n- [Radamsa](https://gitlab.com/akihe/radamsa)\n  - AFL++ version with custom mutators is used\n- [RedQueen](https://github.com/RUB-SysSec/redqueen)\n  - AFL++ version is used\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Fuzzers",
+                "parent_header": [
+                    "autofz",
+                    "Reference"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "- [ENFUZZ](https://github.com/enfuzz/enfuzz)\n- [CUPID](https://github.com/RUB-SysSec/cupid)\n- [collabfuzz](https://github.com/vusec/collabfuzz)\n",
+                "type": "Text_excerpt",
+                "original_header": "Collaborative fuzzing",
+                "parent_header": [
+                    "autofz",
+                    "Reference"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "- [UNIFUZZ](https://github.com/unifuzz)\n- [Fuzzer Test Suite](https://github.com/google/fuzzer-test-suite)\n",
+                "type": "Text_excerpt",
+                "original_header": "Benchmarks",
+                "parent_header": [
+                    "autofz",
+                    "Reference"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "- [quickcov](https://github.com/egueler/quickcov)\n- [afl-cov](https://github.com/mrash/afl-cov)\n\nThanks above projects for open sourcing their code.\n",
+                "type": "Text_excerpt",
+                "original_header": "Coverage tools",
+                "parent_header": [
+                    "autofz",
+                    "Reference"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{fu:autofz,\n    address = {Anaheim, CA},\n    year = {2023},\n    month = {August},\n    booktitle = {Proceedings of the 32st USENIX Security Symposium (Security)},\n    author = {Yu-Fu Fu and Jaehyuk Lee and Taesoo Kim},\n    title = {{autofz: Automated Fuzzer Composition at Runtime}},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "{autofz: Automated Fuzzer Composition at Runtime}",
+                "author": "Yu-Fu Fu and Jaehyuk Lee and Taesoo Kim"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://doi.org/10.5281/zenodo.7865366"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "autofz"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2302.12879"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sslab-gatech/autofz/main/README.md"
+        }
+    ]
+}

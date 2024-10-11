@@ -1,0 +1,298 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:07:48"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/martinezmatias/diff-auto-tuning",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "martinezmatias",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-06-11T16:53:47Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-06-07T07:22:39Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "diff-auto-tuning",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "martinezmatias/diff-auto-tuning",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/martinezmatias/diff-auto-tuning/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/martinezmatias/diff-auto-tuning/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/martinezmatias/diff-auto-tuning/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 426252
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 28454
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/martinezmatias/diff-auto-tuning/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "The Java code requires at least Java 17.\n\n```\n$ mvn install\n```\n\nTo use TPE, it's requited to:\n1) Install Python 3.x\n2) Include Python in the path or create the environment variable `python.home` which value corresponds to the path to Python.\n3) In case of using TPE from Hyperopt, install [hyperopt](http://hyperopt.github.io/hyperopt/) e.g., `pip install hyperopt`\n4) In case of using TPE from Optuna,  install [Optuna][https://optuna.org/) e.g., ` pip install optuna`\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Pre-requisites",
+                "parent_header": [
+                    "DAT: Diff-Auto-Tuning",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/martinezmatias/diff-auto-tuning/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "\n```\nfr.gumtree.autotuning.Main -left <path_to_file> -right <path_to_file> -mode exhaustive -scope local\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Mode Exhaustive and Local search",
+                "parent_header": [
+                    "DAT: Diff-Auto-Tuning",
+                    "Usage",
+                    "Commands"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/martinezmatias/diff-auto-tuning/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\nfr.gumtree.autotuning.Main -left <path_to_file> -right <path_to_file> -mode <tpe> -scope local\n```\n\nDAT works with different implementations of TPE, including one from Hyperopt (replace `<tpe>` by `TPE_HYPEROPT`) and from Optuna (replace `<tpe>` by `TPE_OPTUNA`). \n\n",
+                "type": "Text_excerpt",
+                "original_header": "Mode TPE and Local search",
+                "parent_header": [
+                    "DAT: Diff-Auto-Tuning",
+                    "Usage",
+                    "Commands"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/martinezmatias/diff-auto-tuning/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\nfr.gumtree.autotuning.Main -listpairs<path_to_file> -mode exhaustive -scope global\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Mode Exhaustive and Global search",
+                "parent_header": [
+                    "DAT: Diff-Auto-Tuning",
+                    "Usage",
+                    "Commands"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/martinezmatias/diff-auto-tuning/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\nfr.gumtree.autotuning.Main -listpairs <path_to_file> -mode <tpe> -scope global\n```\n\nDAT works with different implementations of TPE, including one from Hyperopt (replace `<tpe>` by `TPE_HYPEROPT`) and from Optuna (replace `<tpe>` by `TPE_OPTUNA`). \n\n",
+                "type": "Text_excerpt",
+                "original_header": "Mode TPE and Global search",
+                "parent_header": [
+                    "DAT: Diff-Auto-Tuning",
+                    "Usage",
+                    "Commands"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/martinezmatias/diff-auto-tuning/master/README.md"
+        }
+    ],
+    "contact": [
+        {
+            "result": {
+                "value": "Matias Martinez <matias.sebastian.martinez@gmail.com>\n\n\n\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Contact:"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/martinezmatias/diff-auto-tuning/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "DAT provides two types of optimization: `global` and `local`. \n",
+                "original_header": "How DAT works?"
+            },
+            "confidence": 0.9296885347844096,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/martinezmatias/diff-auto-tuning/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\nThe current version of DAT provides two optimization methods, which implement the interface `OptimizationMethod`: \nOther optimization methods, not included in the current version of DAT, can be included in DAT by implementing this interface. \n",
+                "original_header": "Architecture"
+            },
+            "confidence": 0.917165298989862,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/martinezmatias/diff-auto-tuning/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@article{martinez2023dat,\n    url = {http://arxiv.org/pdf/2011.10268},\n    author = {Matias Martinez and Jean-R\u00e9my Falleri and Martin Monperrus},\n    doi = {10.1109/TSE.2023.3315935},\n    year = {2023},\n    journal = {IEEE Transactions on Software Engineering},\n    title = {Hyperparameter Optimization for AST Differencing},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/TSE.2023.3315935",
+                "title": "Hyperparameter Optimization for AST Differencing",
+                "author": "Matias Martinez and Jean-R\u00e9my Falleri and Martin Monperrus",
+                "url": "http://arxiv.org/pdf/2011.10268"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/martinezmatias/diff-auto-tuning/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "DAT: Diff-Auto-Tuning"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/martinezmatias/diff-auto-tuning/master/README.md"
+        }
+    ]
+}

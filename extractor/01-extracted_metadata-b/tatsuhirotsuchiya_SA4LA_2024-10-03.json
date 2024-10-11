@@ -1,0 +1,231 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 23:59:43"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/tatsuhirotsuchiya/SA4LA",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "tatsuhirotsuchiya",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-03-14T02:54:45Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-05-13T09:01:15Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Simulated annealing for obtaining locating arrays",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "SA4LA",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "tatsuhirotsuchiya/SA4LA",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/tatsuhirotsuchiya/SA4LA/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/tatsuhirotsuchiya/SA4LA/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "combinatorial-testing, covering-array, locating-array, simulated-annealing",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/tatsuhirotsuchiya/SA4LA/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 55603
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/tatsuhirotsuchiya/SA4LA/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "`java -jar program.jar inputfile`\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/tatsuhirotsuchiya/SA4LA/master/README.md"
+        },
+        {
+            "result": {
+                "value": "    2\n    10\n    2 2 2 2 2 2 3 3 3 4\n",
+                "type": "Text_excerpt",
+                "original_header": "Example",
+                "parent_header": [
+                    "Inputfile format"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/tatsuhirotsuchiya/SA4LA/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "The source code as of 14/3/2019 is written by Tatsuya Konishi.\n",
+                "type": "Text_excerpt",
+                "original_header": "Credit"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/tatsuhirotsuchiya/SA4LA/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{KONISHI2020106346,\ntitle = {Using simulated annealing for locating array construction},\njournal = {Information and Software Technology},\nvolume = {126},\npages = {106346},\nyear = {2020},\nissn = {0950-5849},\ndoi = {https://doi.org/10.1016/j.infsof.2020.106346},\nurl = {https://www.sciencedirect.com/science/article/pii/S0950584920301130},\nauthor = {Tatsuya Konishi and Hideharu Kojima and Hiroyuki Nakagawa and Tatsuhiro Tsuchiya},\nkeywords = {Locating arrays, Combinatorial interaction testing, Software testing, Simulated annealing}\n}",
+                "type": "Text_excerpt",
+                "original_header": "Citation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/tatsuhirotsuchiya/SA4LA/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{KONISHI2020106346,\n    keywords = {Locating arrays, Combinatorial interaction testing, Software testing, Simulated annealing},\n    author = {Tatsuya Konishi and Hideharu Kojima and Hiroyuki Nakagawa and Tatsuhiro Tsuchiya},\n    url = {https://www.sciencedirect.com/science/article/pii/S0950584920301130},\n    doi = {https://doi.org/10.1016/j.infsof.2020.106346},\n    issn = {0950-5849},\n    year = {2020},\n    pages = {106346},\n    volume = {126},\n    journal = {Information and Software Technology},\n    title = {Using simulated annealing for locating array construction},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "https://doi.org/10.1016/j.infsof.2020.106346",
+                "title": "Using simulated annealing for locating array construction",
+                "author": "Tatsuya Konishi and Hideharu Kojima and Hiroyuki Nakagawa and Tatsuhiro Tsuchiya",
+                "url": "https://www.sciencedirect.com/science/article/pii/S0950584920301130"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/tatsuhirotsuchiya/SA4LA/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "SA4LA"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/tatsuhirotsuchiya/SA4LA/master/README.md"
+        }
+    ]
+}

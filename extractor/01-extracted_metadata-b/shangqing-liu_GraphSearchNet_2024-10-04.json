@@ -1,0 +1,284 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:05:17"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/shangqing-liu/GraphSearchNet",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "shangqing-liu",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-12-11T07:11:04Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-14T15:15:14Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "This repo is the implementation of the paper \"GraphSearchNet: Enhancing GNNs via Capturing Global Dependency for Semantic Code Search\". We encode the programs and descriptions in a dual graph framework to learn the semantic similarity.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repo is the implementation of the paper \"GraphSearchNet: Enhancing GNNs via Capturing Global Dependencies for Semantic Code Search\". We encode the programs and descriptions in a dual graph framework\nto learn the semantic similarity. \n",
+                "original_header": "GraphSearchNet"
+            },
+            "confidence": 0.9677786040962626,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shangqing-liu/GraphSearchNet/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "GraphSearchNet",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "shangqing-liu/GraphSearchNet",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/shangqing-liu/GraphSearchNet/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/shangqing-liu/GraphSearchNet/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 32,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/shangqing-liu/GraphSearchNet/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 145693
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/shangqing-liu/GraphSearchNet/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "This code is written in python 3. You will need to install the required packages in order to run the code.\nWe recommend to use conda virtual environment for the package management. Install the package requirements with ```pip install -r requirements.txt```.",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites",
+                "parent_header": [
+                    "GraphSearchNet",
+                    "Get started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shangqing-liu/GraphSearchNet/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "1. Download the raw data from [CodeSearchNet](https://github.com/github/CodeSearchNet). \n2. For Java Graph Construction, please run the scripts at graph-based-search/parsers/sourcecode/java/build_java_graph.py\n3. For Python Graph Construction, please run the scripts at graph-based-search/parsers/sourcecode/java/build_python_graph.py\nWe provide the partial data in this repo to help run our model quickly. The whole processed data will be public.",
+                "type": "Text_excerpt",
+                "original_header": "Preprocess",
+                "parent_header": [
+                    "GraphSearchNet",
+                    "Get started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shangqing-liu/GraphSearchNet/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "1. Train Java model ```python main.py --config config/search_train_java.yml```\n2. Train Python model ```python main.py --config config/search_train_puython.yml```\n\nWe also provide the queried results generated by our model based on the 99 queries from CodeSearchNet in graph-based-search/answers.\n",
+                "type": "Text_excerpt",
+                "original_header": "Run the model",
+                "parent_header": [
+                    "GraphSearchNet",
+                    "Get started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shangqing-liu/GraphSearchNet/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you find this code or our paper relevant to your work, please cite our arXiv paper:\n\n```\n@article{liu2021graphsearchnet,\n  title={GraphSearchNet: Enhancing GNNs via Capturing Global Dependency for Semantic Code Search},\n  author={Liu, Shangqing and Xie, Xiaofei and Ma, Lei and Siow, Jingkai and Liu, Yang},\n  journal={arXiv preprint arXiv:2111.02671},\n  year={2021}\n}\n```",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "GraphSearchNet"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shangqing-liu/GraphSearchNet/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{liu2021graphsearchnet,\n    year = {2021},\n    journal = {arXiv preprint arXiv:2111.02671},\n    author = {Liu, Shangqing and Xie, Xiaofei and Ma, Lei and Siow, Jingkai and Liu, Yang},\n    title = {GraphSearchNet: Enhancing GNNs via Capturing Global Dependency for Semantic Code Search},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "GraphSearchNet: Enhancing GNNs via Capturing Global Dependency for Semantic Code Search",
+                "author": "Liu, Shangqing and Xie, Xiaofei and Ma, Lei and Siow, Jingkai and Liu, Yang"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shangqing-liu/GraphSearchNet/main/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9837150472591467,
+            "technique": "supervised_classification"
+        },
+        {
+            "result": {
+                "type": "String",
+                "value": "Graphs"
+            },
+            "confidence": 0.9225194108792192,
+            "technique": "supervised_classification"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "GraphSearchNet"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shangqing-liu/GraphSearchNet/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2111.02671"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shangqing-liu/GraphSearchNet/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,272 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:59:38"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/se2p/artifact-scam2021",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "se2p",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-08-13T06:16:48Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-07-14T07:05:28Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "artifact-scam2021",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "se2p/artifact-scam2021",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/se2p/artifact-scam2021/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/se2p/artifact-scam2021/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/se2p/artifact-scam2021/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 403277
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 96112
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 3626
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 1733
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/se2p/artifact-scam2021/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/se2p/artifact-scam2021/main/run_everything.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/se2p/artifact-scam2021/main/analysis/Refactoring%20Analysis30.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/se2p/artifact-scam2021/main/analysis/Refactoring%20Analysis30.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Set up a Python virtual environment at some arbitrary path\u2014referenced as\n*<path>* from now.\nMake sure to use Python 3!\nTo execute the execution pipeline you need to have the virtual environment\nactive.\n```\nvirtualenv -p python3 <path>\nsource <path>/bin/activate\npip install -r requirements.txt\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Preparations",
+                "parent_header": [
+                    "Experiment Execution"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/se2p/artifact-scam2021/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The following assumes that you have a terminal window open with a prompt\nin the directory of this file.\n \n",
+                "original_header": "Experiment Execution"
+            },
+            "confidence": 0.9966162550350272,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/se2p/artifact-scam2021/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Execute the script `./run_everything.sh`.\nIt will clone the LitterBox repository,\ncheckout revision `6b193f88`,\nbuild LitterBox,\ncopy the JAR archive to the expected location,\nexecute the runs,\nand create a `results.csv` in the `data` folder.\nAfterwards, the statistical evaluation can be\nperformed by exeuction the Jupyter Notebook\nscript in the `analysis` folder. \n",
+                "original_header": "Execution"
+            },
+            "confidence": 0.9999968515724158,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/se2p/artifact-scam2021/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{ImprovingReadabilityScratch,\n    year = {2021},\n    publisher = {{IEEE}},\n    booktitle = {{21st {IEEE} International Working Conference on Source Code Analysis\nand Manipulation, {SCAM} 2021}},\n    title = {Improving Readability of Scratch Programs with Search-based Refactoring},\n    author = {Felix Adler and\nGordon Fraser and\nEva Gr\u00fcndinger and\nNina K\u00f6rber and\nSimon Labrenz and\nJonas Lerchenberger and\nStephan Lukasczyk and\nSebastian Schweikl},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Improving Readability of Scratch Programs with Search-based Refactoring",
+                "author": "Felix Adler and\nGordon Fraser and\nEva Gr\u00fcndinger and\nNina K\u00f6rber and\nSimon Labrenz and\nJonas Lerchenberger and\nStephan Lukasczyk and\nSebastian Schweikl"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/se2p/artifact-scam2021/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Experiment Execution"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/se2p/artifact-scam2021/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2108.07114"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/se2p/artifact-scam2021/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,262 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:58:58"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ryderling/DGMS",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ryderling",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-01-21T12:58:38Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-04-28T04:58:45Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Code for \"Deep Graph Matching and Searching for Semantic Code Retrieval\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "In this paper, we propose an end-to-end [Deep Graph Matching and Searching (**DGMS**) model](https://dl.acm.org/doi/abs/10.1145/3447571) for the task of semantic code retrieval. Specifically, we first represent both natural\nlanguage query texts and programming language codes with the unified graph structured data, and then use the proposed graph matching and searching model to retrieve the best\nmatching code snippet.\n![system](./Model.png)\n",
+                "type": "Text_excerpt",
+                "original_header": "1. Description",
+                "parent_header": [
+                    "Deep Graph Matching and Searching for Semantic Code Retrieval"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kleincup/DGMS/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\n\u251c\u2500\u2500\u2500 src\n\u2502    \u251c\u2500\u2500\u2500 model\n\u2502    \u2502    \u251c\u2500\u2500\u2500 GraphMatchModel.py\n\u2502    \u251c\u2500\u2500\u2500 config.py\n\u2502    \u251c\u2500\u2500\u2500 ProcessedDataset.py\n\u2502    \u251c\u2500\u2500\u2500 train.py\n\u2502    \u251c\u2500\u2500\u2500 utils.py\n\u251c\u2500\u2500\u2500 Dataset\n\u2502    \u251c\u2500\u2500\u2500 java\n\u2502    \u2502    \u251c\u2500\u2500\u2500 code_graph_ids.pt\n\u2502    \u2502    \u251c\u2500\u2500\u2500 code_processed\n\u2502    \u2502    \u2502    \u251c\u2500\u2500\u2500 code_100000.pt\n\u2502    \u2502    \u2502    \u251c\u2500\u2500\u2500 ...\n\u2502    \u2502    \u251c\u2500\u2500\u2500 text_graph_ids.pt\n\u2502    \u2502    \u251c\u2500\u2500\u2500 text_processed\n\u2502    \u2502    \u2502    \u251c\u2500\u2500\u2500 text_100000.pt\n\u2502    \u2502    \u2502    \u251c\u2500\u2500\u2500 ...\n\u2502    \u2502    \u251c\u2500\u2500\u2500 split.json\n\u2502    \u251c\u2500\u2500\u2500 python\n\u2502    \u2502    \u251c\u2500\u2500\u2500 code_graph_ids.pt\n\u2502    \u2502    \u251c\u2500\u2500\u2500 code_processed\n\u2502    \u2502    \u2502    \u251c\u2500\u2500\u2500 code_100000.pt\n\u2502    \u2502    \u2502    \u251c\u2500\u2500\u2500 ...\n\u2502    \u2502    \u251c\u2500\u2500\u2500 text_graph_ids.pt\n\u2502    \u2502    \u251c\u2500\u2500\u2500 text_processed\n\u2502    \u2502    \u2502    \u251c\u2500\u2500\u2500 text_100000.pt\n\u2502    \u2502    \u2502    \u251c\u2500\u2500\u2500 ...\n\u2502    \u2502    \u251c\u2500\u2500\u2500 split.json\n```\n\nWe build our model on the graph representation of the source code or description text and save each graph representation with ``torch_geometric.data.Data`` (PyTorch_Geometric). To\nbe specific, each ``code/text_X.pt`` in ``text/code_processed`` folder is the saved graph representation of one text/code graph whose index is `X`. The total size of two datasets\nis over 100G, please download the zipped files from Baidu NetDisc and unzip them into the corresponding folder in this repo.\n\n> NetDisc Link: https://pan.baidu.com/s/1CbzQWireoH5hMopK3CRZOw\n> Extraction code: 9xz5 \n",
+                "type": "Text_excerpt",
+                "original_header": "1.2 glance:",
+                "parent_header": [
+                    "Deep Graph Matching and Searching for Semantic Code Retrieval",
+                    "1. Description"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kleincup/DGMS/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "DGMS",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ryderling/DGMS",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ryderling/DGMS/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ryderling/DGMS/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 24,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/kleincup/DGMS/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 27439
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/kleincup/DGMS/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "Xiang Ling, Lingfei Wu, Saizhuo Wang, Gaoning Pan, Tengfei Ma, Fangli Xu, Alex X. Liu, Chunming Wu, and Shouling Ji, **Deep Graph Matching and Searching for Semantic Code Retrieval**, ACM Transactions on Knowledge Discovery from Data (**TKDD**), 2021, 15(5): 1-21.\n\n ``` \n  @article{ling2020deep,\n    title={Deep Graph Matching and Searching for Semantic Code Retrieval},\n    author={Ling, Xiang and Wu, Lingfei and Wang, Saizhuo and Pan, Gaoning and Ma, Tengfei and Xu, Fangli and Liu, Alex X and Wu, Chunming and Ji, Shouling},\n    journal={ACM Transactions on Knowledge Discovery from Data (TKDD)},\n    volume={15},\n    number={5},\n    publisher={ACM},\n    url={https://dl.acm.org/doi/10.1145/3447571},\n    year={2021}\n  }\n ```\n",
+                "type": "Text_excerpt",
+                "original_header": "1.1 citation:",
+                "parent_header": [
+                    "Deep Graph Matching and Searching for Semantic Code Retrieval",
+                    "1. Description"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kleincup/DGMS/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{ling2020deep,\n    year = {2021},\n    url = {https://dl.acm.org/doi/10.1145/3447571},\n    publisher = {ACM},\n    number = {5},\n    volume = {15},\n    journal = {ACM Transactions on Knowledge Discovery from Data (TKDD)},\n    author = {Ling, Xiang and Wu, Lingfei and Wang, Saizhuo and Pan, Gaoning and Ma, Tengfei and Xu, Fangli and Liu, Alex X and Wu, Chunming and Ji, Shouling},\n    title = {Deep Graph Matching and Searching for Semantic Code Retrieval},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Deep Graph Matching and Searching for Semantic Code Retrieval",
+                "author": "Ling, Xiang and Wu, Lingfei and Wang, Saizhuo and Pan, Gaoning and Ma, Tengfei and Xu, Fangli and Liu, Alex X and Wu, Chunming and Ji, Shouling",
+                "url": "https://dl.acm.org/doi/10.1145/3447571"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/kleincup/DGMS/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "- **Step 1**: All hyper-parameters of our model can be found and customized in the `config.py` file. For instance, the employed graph neural network, the semantic matching \n  operation, the aggregation function, number of training iterations, etc.\n\n- **Step2**: Examples of training & testing scripts are given as follows.\n```shell\n# java\npython main.py --conv='rgcn' --filters='100' --match='submul' --match_agg='fc_max' --margin=0.5 --max_iter=216259 --val_start=100000 --valid_interval=10000 --log_dir='../JavaLogs/' --data_dir='../Datasets/java/'\n# python\npython main.py --conv='rgcn' --filters='100' --match='submul' --match_agg='fc_max' --margin=0.5 --max_iter=312189 --val_start=150000 --valid_interval=15000 --log_dir='../PythonLogs/' --data_dir='../Datasets/python/'\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "2. Example of usage",
+                "parent_header": [
+                    "Deep Graph Matching and Searching for Semantic Code Retrieval"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/kleincup/DGMS/master/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Graphs"
+            },
+            "confidence": 0.9730823590699317,
+            "technique": "supervised_classification"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Deep Graph Matching and Searching for Semantic Code Retrieval"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/kleincup/DGMS/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/kleincup/DGMS/master/./Model.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/kleincup/DGMS/master/README.md"
+        }
+    ]
+}

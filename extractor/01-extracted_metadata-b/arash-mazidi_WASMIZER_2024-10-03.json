@@ -1,0 +1,260 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:56:04"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/arash-mazidi/WASMIZER",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "arash-mazidi",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-01-25T17:44:13Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-05-29T17:40:06Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 Arash Mazidi\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/arash-mazidi/WASMIZER/main/LICENSE"
+        },
+        {
+            "result": {
+                "value": "\r\nMIT License. \r\n\r\nThis tool is free, and you are welcome to send pull requests to improve/extend it. Please cite the tool as shown below when it is used elsewhere:\r\n\r\nA. Nicholson, Q. Sti\u00e9venart, A. Mazidi and M. Ghafari, \"Wasmizer: Curating WebAssembly-driven Projects on GitHub\", 20th International Conference on Mining Software Repositories (MSR), 2023.\r\n",
+                "type": "Text_excerpt",
+                "original_header": "LICENSE",
+                "parent_header": [
+                    "Wasmizer: Curating WebAssembly-driven Projects on GitHub",
+                    "How dataset is structured?"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/arash-mazidi/WASMIZER/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Wasmizer: Curating WebAssembly-driven Projects on GitHub - A tool that regularly mines GitHub projects and makes an up-to-date dataset of WebAssembly sources",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Wasmizer, a tool that regularly collects WebAssembly-driven projects on GitHub, compiles them, and curates an up-to-date and growing dataset of WebAssembly sources and binaries.\r\n\r\nWasmizer has two main phases:\r\n\r\n_1. Repository collection_\r\n\r\nIt identifies C and C++ projects on GitHub using Github search API (https://docs.github.com/en/rest/search?apiVersion=2022-11-28). There are some limitations on the search API such as rate limitation that we make a delay between requests to overcome this limitation. Another limitation is the maximum number of retrieved repositories in the search API that is 1000. We overcome this limitation by defining short period of date to have less than 1000 repositories. In addition, each page includes 100 repositories and we use a loop to have repositories in all pages.\r\nWe excluded the forks of another repository to prevent duplicate projects.\r\nWe had to select GitHub projects as, practically, we cannot analyse all the C or C++ projects. Therefore, we set up several selection criteria such as WebAssembly-related keywords, minimum number of stars and forks, minimum size of the projects, date of the last pushed, and WebAssembly symptoms in the config.json. It firstly collect projects based on the keywords, then filters the projects based on the symptoms in their code.\r\n\r\n_2. Compilation_\r\n\r\nIn the compilation phase, Wasmizer clones the target repositories as long as they are not already compiled or it is pushed after the previous compilation date. We need to install the necessary tools for compilation and build tools. As Wasmizer is initially built to compile C/C++ projects to WebAssembly and therefore we use Emscripten (https://emscripten.org/docs/getting_started/downloads.html | We used Docker image). In addition, In addition, in order to convert wat files to wasm files, you need to install wat2wasm tool. You can use https://github.com/WebAssembly/wabt for this goal. \r\nIt then searches for precompilation and compilation source files and automatically compiles each project based on the compilation commands. We identified each CMakeLists.txt file, indicating the use of the cmake build system, we run Emscripten\u2019s cmake wrapper (emcmake). Then, for each Makefile, either resulting from the previous step, or standalone, we run Emscripten\u2019s make wrapper (emmake). It should be noted, compilation source files and commands are stored in the config.json file. Therefore, Wasmizer can be adapted to a different language such as rust by replacing the compilation commands in the config.json file. We also use github commit API in order to retrieve the commit sha of the projects. We consider the latest commit, so the first commit in the retrieved list will be the target commit. Then, we get the commit sha and store it in the metadata.csv file. \r\n\r\nAfter applying the compilation phase to all projects, it looks for files that are named with either a .wasm or a .wat extension, indicating that they are WebAssembly files. We try to convert all .wat files found into their binary version (.wasm) relying on the wat2wasm tool from the WebAssembly Binary Toolkit, configured with the --enable-all flag to enable all available WebAssembly extensions. We then store all .wasm files in a new directory (wasm-wat-files), under a name composed of the SHA-256 sum of their content. This is to ensure that duplicate files are only present once in the dataset. We store a metadata.csv contains information of the binary files such as name, url, forks, stars, size, creation date, last commit date, commit sha etc.\r\nWasmizer also separates the binary files that were already exist and new generated binary files in two folders (wasm-wat-files-pre and wasm-wat-files). \r\n\r\n\r \n",
+                "original_header": "What is Wasmizer?"
+            },
+            "confidence": 0.9870194253216352,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/arash-mazidi/WASMIZER/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\r\nIn order to configure the Wasmizer, there is a config.json file in the project. It contains: \r\n\r\n* \"keywords\" --> Wasmizer collects repositories based on the keywords. It means, if a repository has the keywords in the name, topics, description, and readme, it will be collected.\r\n\r\n* \"date\" --> Wasmizer collects repositories based on the date. It means, if repository had been pushed in the period, it will be collected.\r\n\r\n* \"stars\" --> Wasmizer collects repositories which their stars are more than this number of stars.\r\n\r\n* \"forks\" --> Wasmizer collects repositories which their forks are more than this number of forks.\r\n\r\n* \"size\" Wasmizer collects repositories which their size are more than this number (KB).\r\n\r\n* \"numOfSymptoms\" --> Wasmizer gets symptoms in order to filter the repositories. You can define the number of symptoms and the symptoms in this parameter and following parameters, respectively.\r\n\r\n* \"precompilation_command\" and \"compilation_command\"--> These two parameters are used for compilation commands. As Wasmizer is initially built to compile the C/C++ programs to WebAssembly, we used emcmake cmake, and emmake make command to configure, build, and compile the programs. Therefore, for compilation of the programs in other languages, you should change these commands.\r\nNote: If you don't need to precompilation phase (based on the project language), you can make it empty (e.g., precompilation_command = \"\").\r\n\r\n* \"precompilation_sourcefile\" and \"compilation_sourcefile\"--> These two parameters are used as compilation source files. As Wasmizer is initially built to compile the C/C++ programs to WebAssembly, we used CMakelist.txt and Makefile for precompilation and compilation source files, respectively.\r\nNote: If you don't need to precompilation phase (based on the project language), you can make it empty (e.g., precompilation_sourcefile = \"\").\r\n\r\n* \"token\" --> Wasmizer uses Github API in order to collect the commit sha, and search code in the repositories. These APIs need a token that you should generate a Githab token on the Github website (https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). \r\n\r\n* \"github_username\" --> Authentication of APIs needs token and username of a github account. You should input your github username.\r\n\r \n",
+                "original_header": "How to configure Wasmizer?"
+            },
+            "confidence": 0.9887888473485325,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/arash-mazidi/WASMIZER/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "WASMIZER",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "arash-mazidi/WASMIZER",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/arash-mazidi/WASMIZER/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/arash-mazidi/WASMIZER/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "binary-files, wasm, web-assembly, webassembly",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/arash-mazidi/WASMIZER/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 41660
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/arash-mazidi/WASMIZER/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Wasmizer, a tool that regularly collects WebAssembly-driven projects on GitHub, compiles them, and curates an up-to-date and growing dataset of WebAssembly sources and binaries.\r\n\r\nWasmizer has two main phases:\r\n\r\n_1. Repository collection_\r\n\r\nIt identifies C and C++ projects on GitHub using Github search API (https://docs.github.com/en/rest/search?apiVersion=2022-11-28). There are some limitations on the search API such as rate limitation that we make a delay between requests to overcome this limitation. Another limitation is the maximum number of retrieved repositories in the search API that is 1000. We overcome this limitation by defining short period of date to have less than 1000 repositories. In addition, each page includes 100 repositories and we use a loop to have repositories in all pages.\r\nWe excluded the forks of another repository to prevent duplicate projects.\r\nWe had to select GitHub projects as, practically, we cannot analyse all the C or C++ projects. Therefore, we set up several selection criteria such as WebAssembly-related keywords, minimum number of stars and forks, minimum size of the projects, date of the last pushed, and WebAssembly symptoms in the config.json. It firstly collect projects based on the keywords, then filters the projects based on the symptoms in their code.\r\n\r\n_2. Compilation_\r\n\r\nIn the compilation phase, Wasmizer clones the target repositories as long as they are not already compiled or it is pushed after the previous compilation date. We need to install the necessary tools for compilation and build tools. As Wasmizer is initially built to compile C/C++ projects to WebAssembly and therefore we use Emscripten (https://emscripten.org/docs/getting_started/downloads.html | We used Docker image). In addition, In addition, in order to convert wat files to wasm files, you need to install wat2wasm tool. You can use https://github.com/WebAssembly/wabt for this goal. \r\nIt then searches for precompilation and compilation source files and automatically compiles each project based on the compilation commands. We identified each CMakeLists.txt file, indicating the use of the cmake build system, we run Emscripten\u2019s cmake wrapper (emcmake). Then, for each Makefile, either resulting from the previous step, or standalone, we run Emscripten\u2019s make wrapper (emmake). It should be noted, compilation source files and commands are stored in the config.json file. Therefore, Wasmizer can be adapted to a different language such as rust by replacing the compilation commands in the config.json file. We also use github commit API in order to retrieve the commit sha of the projects. We consider the latest commit, so the first commit in the retrieved list will be the target commit. Then, we get the commit sha and store it in the metadata.csv file. \r\n\r\nAfter applying the compilation phase to all projects, it looks for files that are named with either a .wasm or a .wat extension, indicating that they are WebAssembly files. We try to convert all .wat files found into their binary version (.wasm) relying on the wat2wasm tool from the WebAssembly Binary Toolkit, configured with the --enable-all flag to enable all available WebAssembly extensions. We then store all .wasm files in a new directory (wasm-wat-files), under a name composed of the SHA-256 sum of their content. This is to ensure that duplicate files are only present once in the dataset. We store a metadata.csv contains information of the binary files such as name, url, forks, stars, size, creation date, last commit date, commit sha etc.\r\nWasmizer also separates the binary files that were already exist and new generated binary files in two folders (wasm-wat-files-pre and wasm-wat-files). \r\n\r\n\r \n",
+                "original_header": "What is Wasmizer?"
+            },
+            "confidence": 0.9935224930610018,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/arash-mazidi/WASMIZER/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\r\nYou can clone and run the Wasmizer:\r\n\r\n1- Clone the project: Open a Command Prompt (cmd.exe), use this command: git clone https://github.com/arash-mazidi/WASMIZER.git\r\n\r\n2- Open the project in Eclipse IDE\r\n\r\n3- There is a lib folder in the project that contains libraries that are needed to run Wasmizer. You can import all libraries in the classpath of the project. We tested the Wasmizer on the Eclipse IDE.\r\n\r\n4- Set up the config.json file (It is explained in the previous sections).\r\n\r\n5- Run the Wasmizer by running the WASMIZER/blob/main/src/WASMIZER/WASMIZER_class.java.\r\n\r\n\r\nFurthermore, name and date of all cloned repositories will be stored in the clonedrepo.csv and cloneddate.csv files, respectively.\r\n\r\n\r \n",
+                "original_header": "How to launch Wasmizer?"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/arash-mazidi/WASMIZER/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Wasmizer: Curating WebAssembly-driven Projects on GitHub"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/arash-mazidi/WASMIZER/main/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/arash-mazidi/WASMIZER/wiki",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/arash-mazidi/WASMIZER/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,325 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 18:22:37"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/secureIT-project/FAVD",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "secureIT-project",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-02-08T13:28:27Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-07-04T00:19:03Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021-2022 David Binkley, Leon Moonen, Sibren Isaacman\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/secureit-project/favd/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Replication package for the paper \"Featherweight Assisted Vulnerability Discovery\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The replication package is archived on Zenodo with DOI: [10.5281/zenodo.5957264](https://doi.org/10.5281/zenodo.5957264). The source code is distributed under the [MIT license](LICENSE), the data is distributed under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).\n \n",
+                "original_header": "FAVD: Featherweight Assisted Vulnerability Discovery"
+            },
+            "confidence": 0.9504824846610288,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/secureit-project/favd/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1. gathering of the labeled function names that are used as the source for step 2, in [`names`](names/README.md)\n2. dangerous word identification, in [`dangerous-words`](dangerous-words/README.md)\n3. analysis of the data gathered during step 2, in [`analysis`](analysis/README.md) \n",
+                "original_header": "Repository Organization"
+            },
+            "confidence": 0.9284743571021732,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/secureit-project/favd/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "FAVD",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "secureIT-project/FAVD",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/secureIT-project/FAVD/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/secureIT-project/FAVD/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/secureit-project/favd/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "R",
+                "name": "R",
+                "type": "Programming_language",
+                "size": 68506
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 48290
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 12874
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/secureIT-project/FAVD/releases/59028472",
+                "tag": "v1.0.0",
+                "author": {
+                    "name": "leonmoonen",
+                    "type": "User"
+                },
+                "description": "Initial release",
+                "tarball_url": "https://api.github.com/repos/secureIT-project/FAVD/tarball/v1.0.0",
+                "zipball_url": "https://api.github.com/repos/secureIT-project/FAVD/zipball/v1.0.0",
+                "html_url": "https://github.com/secureIT-project/FAVD/releases/tag/v1.0.0",
+                "url": "https://api.github.com/repos/secureIT-project/FAVD/releases/59028472",
+                "release_id": 59028472,
+                "date_created": "2022-02-08T15:52:48Z",
+                "date_published": "2022-02-08T16:05:18Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/secureit-project/favd/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "The following tools are required for the replication:\n\n* python >= 3.5\n* R\n* tcsh\n* csvcut from [csvkit](https://csvkit.rtfd.org/)\n* cntk as keras backend for running the LAVDNN model\n\nIn addition, the following python packages are needed\n\n* [for the collection of our input data](names/requirements.txt)\n* [for dangerous word identification](dangerous-words/requirements.txt)\n\nFinally, for the analysis in step 3, the following R libraries are needed:\n\n* agricolae, ggplot2, reshape2, xtable\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "FAVD: Featherweight Assisted Vulnerability Discovery"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/secureit-project/favd/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you build on this data or code, please cite this work by referring to the paper: \n\n    @article{binkley2022:featherweight,\n       title = {Featherweight assisted vulnerability discovery},\n       author = {David Binkley and Leon Moonen and Sibren Isaacman},\n       journal = {Information and Software Technology},\n       pages = {106844},\n       year = {2022},\n       issn = {0950-5849},\n       doi = {https://doi.org/10.1016/j.infsof.2022.106844},\n       url = {https://www.sciencedirect.com/science/article/pii/S0950584922000209},\n       copyright = {Open Access},\n       publisher = {Elsevier},\n    }\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "FAVD: Featherweight Assisted Vulnerability Discovery"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/secureit-project/favd/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{binkley2022:featherweight,\n    publisher = {Elsevier},\n    copyright = {Open Access},\n    url = {https://www.sciencedirect.com/science/article/pii/S0950584922000209},\n    doi = {https://doi.org/10.1016/j.infsof.2022.106844},\n    issn = {0950-5849},\n    year = {2022},\n    pages = {106844},\n    journal = {Information and Software Technology},\n    author = {David Binkley and Leon Moonen and Sibren Isaacman},\n    title = {Featherweight assisted vulnerability discovery},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "https://doi.org/10.1016/j.infsof.2022.106844",
+                "title": "Featherweight assisted vulnerability discovery",
+                "author": "David Binkley and Leon Moonen and Sibren Isaacman",
+                "url": "https://www.sciencedirect.com/science/article/pii/S0950584922000209"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/secureit-project/favd/main/README.md"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "Part of this work has been financially supported by the Research Council of\nNorway through the secureIT project (RCN contract \\#288787).\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgement",
+                "parent_header": [
+                    "FAVD: Featherweight Assisted Vulnerability Discovery"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/secureit-project/favd/main/README.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://doi.org/10.5281/zenodo.5957264"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/secureit-project/favd/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "FAVD: Featherweight Assisted Vulnerability Discovery"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/secureit-project/favd/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,983 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 16:55:15"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/MLBazaar/BTB",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "MLBazaar",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2017-11-03T00:18:41Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-12T17:10:58Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2018, MIT Data To AI Lab\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A simple, extensible library for developing AutoML systems",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "BTB (\"Bayesian Tuning and Bandits\") is a simple, extensible backend for developing auto-tuning\nsystems such as AutoML systems. It provides an easy-to-use interface for *tuning* models and\n*selecting* between models. \n",
+                "original_header": "Overview"
+            },
+            "confidence": 0.9438772182274943,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We have a comprehensive [benchmarking framework](https://github.com/MLBazaar/BTB/tree/master/benchmark)\nthat we use to evaluate the performance of our `Tuners`. For every release, we perform benchmarking\nagainst 100's of challenges, comparing tuners against each other in terms of number of wins.\nWe present the latest leaderboard from latest release below:\n \n",
+                "original_header": "How does BTB perform?"
+            },
+            "confidence": 0.9129845281487241,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Detailed results from which this summary emerged are available [here](https://docs.google.com/spreadsheets/d/15a-pAV_t7CCDvqDyloYmdVNFhiKJFOJ7bbgpmYIpyTs/edit?usp=sharing).\n- If you want to compare your own tuner, follow the steps in our benchmarking framework [here](https://github.com/MLBazaar/BTB/tree/master/benchmark).\n- If you have a proposal for tuner that we should include in our benchmarking get in touch\nwith us at [dailabmit@gmail.com](mailto:dailabmit@gmail.com).\n \n",
+                "original_header": "Number of Wins on latest Version"
+            },
+            "confidence": 0.9511111580024885,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "BTB",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "MLBazaar/BTB",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/MLBazaar/BTB/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/MLBazaar/BTB/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 171,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "automl, gaussian-processes, hyperparameter-optimization, multi-armed-bandit",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 41,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/hdi-project/btb/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 314452
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 79741
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 1596
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 552
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/114020747",
+                "tag": "v0.5.0",
+                "name": "v0.5.0",
+                "author": {
+                    "name": "gsheni",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* Rename folder to baytune and use pyproject.toml by @gsheni in https://github.com/MLBazaar/BTB/pull/218\r\n* Update BTB Python and dependency versions by @PatrikDurdevic in https://github.com/MLBazaar/BTB/pull/217\r\n* v0.5.0 by @gsheni in https://github.com/MLBazaar/BTB/pull/220\r\n\r\n## New Contributors\r\n* @gsheni made their first contribution in https://github.com/MLBazaar/BTB/pull/218\r\n* @PatrikDurdevic made their first contribution in https://github.com/MLBazaar/BTB/pull/217\r\n\r\n**Full Changelog**: https://github.com/MLBazaar/BTB/compare/v0.4.0...v0.5.0",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.5.0",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.5.0",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.5.0",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/114020747",
+                "release_id": 114020747,
+                "date_created": "2023-07-28T16:52:41Z",
+                "date_published": "2023-07-28T16:53:13Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/35853429",
+                "tag": "v0.4.0",
+                "name": "0.4.0 - 2020-12-30",
+                "author": {
+                    "name": "pvk-developer",
+                    "type": "User"
+                },
+                "description": "This release increases the supported version of python to 3.8 and also includes changes in the\r\ninstallation requirements, where ``pandas`` and ``scikit-optimize`` packages have been updated\r\nto support higher versions.\r\n\r\n## Internal improvements\r\n\r\n* Added github actions.\r\n\r\n### Resolved Issues\r\n\r\n* Issue #210: Integrate Scikit-Optimize for benchmarking.\r\n\r\n## Benchmarking\r\n\r\n![Screenshot from 2020-12-30 19-42-23](https://user-images.githubusercontent.com/41479552/103376199-48d34d00-4adc-11eb-8add-e64507a603f0.png)\r\n",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.4.0",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.4.0",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.4.0",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/35853429",
+                "release_id": 35853429,
+                "date_created": "2020-12-30T18:51:09Z",
+                "date_published": "2020-12-30T19:20:51Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/30900800",
+                "tag": "v0.3.12",
+                "name": "0.3.12 - 2020-09-08",
+                "author": {
+                    "name": "pvk-developer",
+                    "type": "User"
+                },
+                "description": "In this release BTB includes two new tuners, based on `Copulas` : `GCP` and `GCPEi`. They use a `GaussianCopulaProcessRegressor` meta-model which uses `sklearn.gaussian_process` after applying `copulas.univariate.Univariate` transformations to the input data. The data is afterwards reverted when making a proposal for the `hyperparameters` .\r\n\r\n### Resolved Issues\r\n\r\n* Issue #15: Implement a `GaussianCopulaProcessRegressor`.\r\n* Issue #205: Separate datasets from `MLChallenge`.\r\n* Issue #208: Implement `GaussianCopulaProcessMetaModel`.\r\n\r\n### Benchmarking\r\n![Benchmarking Results](https://user-images.githubusercontent.com/41479552/92483180-d23ad880-f1e8-11ea-9205-c24618f20371.png)\r\n\r\nDetailed results from which this summary emerged are available [here](https://docs.google.com/spreadsheets/d/15a-pAV_t7CCDvqDyloYmdVNFhiKJFOJ7bbgpmYIpyTs/edit?usp=sharing).\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.3.12",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.3.12",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.3.12",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/30900800",
+                "release_id": 30900800,
+                "date_created": "2020-09-08T09:39:27Z",
+                "date_published": "2020-09-08T10:25:08Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/27498309",
+                "tag": "v0.3.11",
+                "name": "0.3.11 - 2020-06-12",
+                "author": {
+                    "name": "pvk-developer",
+                    "type": "User"
+                },
+                "description": "With this release we fix the `AX.optimize` tuning function by casting the values of the hyperparameters to the type of value that they represent.\r\n\r\n### Resolved Issues\r\n\r\n* Issue #201: Fix AX.optimize malfunction.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.3.11",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.3.11",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.3.11",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/27498309",
+                "release_id": 27498309,
+                "date_created": "2020-06-12T13:53:35Z",
+                "date_published": "2020-06-12T14:41:45Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/27049533",
+                "tag": "v0.3.10",
+                "name": "0.3.10 - 2020-05-29",
+                "author": {
+                    "name": "pvk-developer",
+                    "type": "User"
+                },
+                "description": "With this release we integrate a new tuning library, `SMAC`, with our benchmarking process. A new\r\nleaderboard including this library has been generated. The following two tuners from this library\r\nhave been added:\r\n* `SMAC4HPO`: Bayesian optimization using a Random Forest model of *pyrfr*.\r\n* `HB4AC`: Uses Successive Halving for proposals.\r\n\r\n### Internal improvements\r\n\r\n* Renamed `btb_benchmark/tuners` to `btb_benchmark/tuning_functions`.\r\n* Ready to use tuning functions from `btb_benchmark/tuning_functions`.\r\n\r\n### Resolved Issues\r\n\r\n* Issue #195: Integrate `SMAC` for benchmarking.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.3.10",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.3.10",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.3.10",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/27049533",
+                "release_id": 27049533,
+                "date_created": "2020-05-29T21:40:03Z",
+                "date_published": "2020-05-29T21:51:38Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/26640309",
+                "tag": "v0.3.9",
+                "name": "0.3.9 - 2020-05-18",
+                "author": {
+                    "name": "pvk-developer",
+                    "type": "User"
+                },
+                "description": "With this release we integrate a new tuning function for the benchmarking process: [Ax.optimize](https://ax.dev/), that implements Bayesian optimization and bandit optimization, powered by [BoTorch](https://botorch.org). A new leaderboard including this tuning function has been generated.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.3.9",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.3.9",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.3.9",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/26640309",
+                "release_id": 26640309,
+                "date_created": "2020-05-18T13:59:24Z",
+                "date_published": "2020-05-18T18:38:26Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/26325638",
+                "tag": "v0.3.8",
+                "name": "0.3.8 - 2020-05-08",
+                "author": {
+                    "name": "pvk-developer",
+                    "type": "User"
+                },
+                "description": "This version adds a new functionality which allows running the benchmarking framework on a Kubernetes cluster. By doing this, the benchmarking process can be executed distributedly, which reduces the time necessary to generate a new leaderboard.\r\n\r\n### Internal improvements\r\n\r\n* `btb_benchmark.kubernetes.run_dask_function`: Run dask function inside a pod using the given config.\r\n* `btb_benchmark.kubernetes.run_on_kubernetes`: Start a Dask Cluster using dask-kubernetes and run a function.\r\n* Documentation updated.\r\n* Jupyter notebooks with examples on how to run the benchmarking process and how to run it on kubernetes.\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.3.8",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.3.8",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.3.8",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/26325638",
+                "release_id": 26325638,
+                "date_created": "2020-05-08T19:06:33Z",
+                "date_published": "2020-05-08T19:08:53Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/25525843",
+                "tag": "v0.3.7",
+                "name": "0.3.7 - 2020-04-15",
+                "author": {
+                    "name": "pvk-developer",
+                    "type": "User"
+                },
+                "description": "This release brings a new `benchmark` framework with public leaderboard.\r\nAs part of our benchmarking efforts we will run the framework at every release and make the results\r\npublic. In each run we compare it to other tuners and optimizer libraries. We are constantly adding\r\nnew libraries for comparison. If you have suggestions for a tuner library we should include in our\r\ncompraison, please contact us via email at [dailabmit@gmail.com](mailto:dailabmit@gmail.com).\r\n\r\n\r\n### Resolved Issues\r\n\r\n* Issue #159: Implement more `MLChallenges` and generate a public leaderboard.\r\n* Issue #180: Update BTB Benchmarking module.\r\n* Issue #182: Integrate HyperOPT with benchmarking.\r\n* Issue #184: Integrate dask to benchmarking.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.3.7",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.3.7",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.3.7",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/25525843",
+                "release_id": 25525843,
+                "date_created": "2020-04-15T11:39:38Z",
+                "date_published": "2020-04-15T11:41:41Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/24201087",
+                "tag": "v0.3.6",
+                "name": "0.3.6 - 2020-03-04",
+                "author": {
+                    "name": "pvk-developer",
+                    "type": "User"
+                },
+                "description": "This release improves `BTBSession` error handling and allows `Tunables` with cardinality\r\nequal to 1 to be scored with `BTBSession`. Also, we provide a new documentation for\r\nthis version of `BTB`.\r\n\r\n### Internal Improvements\r\n\r\nImproved documentation, unittests and integration tests.\r\n\r\n### Resolved Issues\r\n\r\n* Issue #164: Improve documentation for `v0.3.5+`.\r\n* Issue #166: Wrong erro raised by BTBSession on too many errors.\r\n* Issue #170: Tuner has no scores attribute until record is run once.\r\n* Issue #175: BTBSession crashes when record is not performed.\r\n* Issue #176: BTBSession fails to select a proper Tunable when normalized_scores becomse None.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.3.6",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.3.6",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.3.6",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/24201087",
+                "release_id": 24201087,
+                "date_created": "2020-03-04T09:08:17Z",
+                "date_published": "2020-03-04T09:09:53Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/23014131",
+                "tag": "v0.3.5",
+                "name": "0.3.5 - 2020-01-21",
+                "author": {
+                    "name": "pvk-developer",
+                    "type": "User"
+                },
+                "description": "With this release we are improving `BTBSession` by adding private attributes, or not intended to\r\nbe public / modified by the user and also improving the documentation of it.\r\n\r\n### Internal Improvements\r\n\r\nImproved docstrings, unittests and public interface of `BTBSession`.\r\n\r\n### Resolved Issues\r\n\r\n* Issue #162: Fix session with the given comments on PR 156.\r\n",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.3.5",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.3.5",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.3.5",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/23014131",
+                "release_id": 23014131,
+                "date_created": "2020-01-21T17:01:50Z",
+                "date_published": "2020-01-21T17:51:26Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/22449194",
+                "tag": "v0.3.4",
+                "name": "v0.3.4 - 2019-12-24",
+                "author": {
+                    "name": "pvk-developer",
+                    "type": "User"
+                },
+                "description": "With this release we introduce a `BTBSession` class. This class represents the process of selecting\r\nand tuning several tunables until the best possible configuration fo a specific `scorer` is found.\r\nWe also have improved and fixed some minor bugs arround the code (described in the issues below).\r\n\r\n### New Features\r\n\r\n* `BTBSession` that makes `BTB` more user friendly.\r\n\r\n### Internal Improvements\r\n\r\nImproved unittests, removed old dependencies, added more `MLChallenges` and fixed an issue with\r\nthe bound methods.\r\n\r\n### Resolved Issues\r\n\r\n* Issue #145: Implement `BTBSession`.\r\n* Issue #155: Set defaut to `None` for `CategoricalHyperParam` is not possible.\r\n* Issue #157: Metamodel `_MODEL_KWARGS_DEFAULT` becomes mutable.\r\n* Issue #158: Remove `mock` dependency from the package.\r\n* Issue #160: Add more Machine Learning Challenges and more estimators.\r\n\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.3.4",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.3.4",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.3.4",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/22449194",
+                "release_id": 22449194,
+                "date_created": "2019-12-24T16:44:28Z",
+                "date_published": "2019-12-24T16:46:36Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/22151449",
+                "tag": "v0.3.3",
+                "name": "0.3.3 - 2019-12-11",
+                "author": {
+                    "name": "pvk-developer",
+                    "type": "User"
+                },
+                "description": "Fix a bug where creating an instance of `Tuner` ends in an error.\r\n\r\n### Internal Improvements\r\n\r\nImprove unittests to use `spec_set` in order to detect errors while mocking an object.\r\n\r\n### Resolved Issues\r\n\r\n* Issue #153: Bug with tunner logger message that avoids creating the Tunner.\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.3.3",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.3.3",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.3.3",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/22151449",
+                "release_id": 22151449,
+                "date_created": "2019-12-11T16:24:58Z",
+                "date_published": "2019-12-11T16:49:57Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/22123569",
+                "tag": "v0.3.2",
+                "name": "0.3.2 - 2019-12-10",
+                "author": {
+                    "name": "pvk-developer",
+                    "type": "User"
+                },
+                "description": "With this release we add the new `benchmark` challenge `MLChallenge` which allows users to\r\nperform benchmarking over datasets with machine learning estimators, and also some new\r\nfeatures to make the workflow easier.\r\n\r\n### New Features\r\n\r\n* New `MLChallenge` challenge that allows performing crossvalidation over datasets and machine\r\nlearning estimators.\r\n* New `from_dict` function for `Tunable` class in order to instantiate from a dictionary that\r\ncontains information over hyperparameters.\r\n* New `default` value for each hyperparameter type.\r\n\r\n### Resolved Issues\r\n\r\n* Issue #68: Remove `btb.tuning.constants` module.\r\n* Issue #120: Tuner repr not helpful.\r\n* Issue #121: HyperParameter repr not helpful.\r\n* Issue #141: Imlement propper logging to the tuning section.\r\n* Issue #150: Implement Tunable `from_dict`.\r\n* Issue #151: Add default value for hyperparameters.\r\n* Issue #152: Support `None` as a choice in `CategoricalHyperPrameters`.\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.3.2",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.3.2",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.3.2",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/22123569",
+                "release_id": 22123569,
+                "date_created": "2019-12-10T20:14:34Z",
+                "date_published": "2019-12-10T20:17:40Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/21743409",
+                "tag": "v0.3.1",
+                "name": "0.3.1 - 2019-11-25",
+                "author": {
+                    "name": "pvk-developer",
+                    "type": "User"
+                },
+                "description": "With this release we introduce a `benchmark` module for `BTB` which allows the users to perform a benchmark over a series of `challenges`.\r\n\r\n### New Features\r\n\r\n* New `benchmark` module.\r\n* New submodule named `challenges` to work toghether with `benchmark` module.\r\n\r\n### Resolved Issues\r\n\r\n* Issue #139: Implement a Benchmark for BTB\r\n",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.3.1",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.3.1",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.3.1",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/21743409",
+                "release_id": 21743409,
+                "date_created": "2019-11-25T18:50:40Z",
+                "date_published": "2019-11-25T18:52:48Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/21385305",
+                "tag": "v0.3.0",
+                "name": "v0.3.0 2019-11-11",
+                "author": {
+                    "name": "pvk-developer",
+                    "type": "User"
+                },
+                "description": "With this release we introduce an improved `BTB` that has a major reorganization of the project\r\nwith emphasis on an easier way of interacting with `BTB` and an easy way of developing, testing and\r\ncontributing new acquisition functions, metamodels, tuners  and hyperparameters.\r\n\r\n### New project structure\r\n\r\nThe new major reorganization comes with the `btb.tuning` module. This module provides everything\r\nneeded for the `tuning` process and comes with three new additions `Acquisition`, `Metamodel` and\r\n`Tunable`. Also there is an update to the `Hyperparamters` and `Tuners`. This changes are meant\r\nto help developers and contributors to easily develop, test and contribute new `Tuners`.\r\n\r\n### New API\r\n\r\nThere is a slightly new way of using `BTB` as the new `Tunable` class is introduced, that is meant\r\nto be the only required object to instantiate a `Tuner`. This `Tunable` class represents a\r\ncollection of `HyperParams` that need to be tuned as a whole, at once. Now, in order to create a\r\n`Tuner`, a `Tunable` instance must be created first with the `hyperparameters` of the\r\n`objective function`.\r\n\r\n### New Features\r\n\r\n* New `Hyperparameters` that allow an easier interaction for the final user.\r\n* New `Tunable` class that manages a collection of `Hyperparameters`.\r\n* New `Tuner` class that is a python mixin that requieres of `Acquisition` and `Metamodel` as\r\nparents. Also now works with a single `Tunable` object.\r\n* New `Acquisition` class, meant to implement an acquisition function to be inherit by a `Tuner`.\r\n* New `Metamodel` class, meant to implement everything that a certain `model` needs and be inherit\r\nby the `Tuner`.\r\n* Reorganization of the `selection` module to follow a similar `API` to `tuning`.\r\n\r\n### Resolved Issues\r\n\r\n* Issue #131: Reorganize the project structure.\r\n* Issue #133: Implement Tunable class to control a list of hyperparameters.\r\n* Issue #134: Implementation of Tuners for the new structure.\r\n* Issue #140: Reorganize selectors.\r\n",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.3.0",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.3.0",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.3.0",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/21385305",
+                "release_id": 21385305,
+                "date_created": "2019-11-12T01:05:57Z",
+                "date_published": "2019-11-12T01:11:25Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/16147046",
+                "tag": "v0.2.5",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "### Bug Fixes\r\n\r\n* Issue #115: HyperParameter subclass instantiation not working properly",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.2.5",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.2.5",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.2.5",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/16147046",
+                "release_id": 16147046,
+                "date_created": "2019-03-15T17:52:34Z",
+                "date_published": "2019-03-15T17:53:30Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/15095694",
+                "tag": "v0.2.4",
+                "name": "v0.2.4",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "### Internal Improvements\r\n\r\n* Issue #62: Test for `None` in `HyperParameter.cast` instead of `HyperParameter.__init__`\r\n\r\n### Bug fixes\r\n\r\n* Issue #98: Categorical hyperparameters do not support `None` as input\r\n* Issue #89: Fix the computation of `avg_rewards` in `BestKReward`",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.2.4",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.2.4",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.2.4",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/15095694",
+                "release_id": 15095694,
+                "date_created": "2019-01-21T19:10:09Z",
+                "date_published": "2019-01-21T19:11:23Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/11336519",
+                "tag": "v0.2.1",
+                "name": "Bugfix release",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "### Bug fixes\r\n\r\n* Issue #74: `ParamTypes.STRING` tunables do not work",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.2.1",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.2.1",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.2.1",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/11336519",
+                "release_id": 11336519,
+                "date_created": "2018-06-05T19:55:45Z",
+                "date_published": "2018-06-05T19:56:39Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/11316002",
+                "tag": "v0.2.0",
+                "name": "0.2.0",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "### New Features\r\n\r\n* New Recommendation module\r\n* New HyperParameter types\r\n* Improved documentation and examples\r\n* Fully tested Python 2.7, 3.4, 3.5 and 3.6 compatibility\r\n* HyperParameter copy and deepcopy support\r\n* Replace print statements with logging\r\n\r\n### Internal Improvements\r\n\r\n* Integrated with Travis-CI\r\n* Exhaustive unit testing\r\n* New implementation of HyperParameter\r\n* Tuner builds a grid of real values instead of indices\r\n* Resolve Issue #29: Make args explicit in `__init__` methods\r\n* Resolve Issue #34: make all imports explicit\r\n\r\n### Bug fixes\r\n\r\n* Fix error from mixing string/numerical hyperparameters\r\n* Inverse transform for categorical hyperparameter returns single item",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.2.0",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.2.0",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.2.0",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/11316002",
+                "release_id": 11316002,
+                "date_created": "2018-06-04T19:44:55Z",
+                "date_published": "2018-06-04T19:48:08Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/11262678",
+                "tag": "v0.1.2",
+                "name": "Bugfix release",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "Bugfixing release that covers two small bugs:\r\n\r\n* https://github.com/HDI-Project/BTB/issues/47: Add missing requirements in v0.1.1 setup.py\r\n* https://github.com/HDI-Project/BTB/issues/46: Error on v0.1.1: 'GP' object has no attribute 'X' ",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.1.2",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.1.2",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.1.2",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/11262678",
+                "release_id": 11262678,
+                "date_created": "2018-05-02T15:45:42Z",
+                "date_published": "2018-05-31T14:47:02Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/11262528",
+                "tag": "v0.1.1",
+                "name": "First PyPi release",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "Project renamed to `baytune` for the first PyPi publication, as the `btb` name is already taken.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.1.1",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.1.1",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.1.1",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/11262528",
+                "release_id": 11262528,
+                "date_created": "2018-04-28T17:23:34Z",
+                "date_published": "2018-05-31T14:42:26Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/MLBazaar/BTB/releases/11262483",
+                "tag": "v0.1.0",
+                "name": "First release",
+                "author": {
+                    "name": "csala",
+                    "type": "User"
+                },
+                "description": "Initial release\r\n\r\nModules:\r\n* `btb.hyper_parameter`\r\n* `btb.tuning`\r\n* `btb.selection`\r\n\r\nProject still called `btb`, and not available in PyPi yet.",
+                "tarball_url": "https://api.github.com/repos/MLBazaar/BTB/tarball/v0.1.0",
+                "zipball_url": "https://api.github.com/repos/MLBazaar/BTB/zipball/v0.1.0",
+                "html_url": "https://github.com/MLBazaar/BTB/releases/tag/v0.1.0",
+                "url": "https://api.github.com/repos/MLBazaar/BTB/releases/11262483",
+                "release_id": 11262483,
+                "date_created": "2018-04-11T19:26:19Z",
+                "date_published": "2018-05-31T14:40:24Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hdi-project/btb/main/benchmark/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/benchmark/Dockerfile"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hdi-project/btb/main/benchmark/notebooks/Run%20on%20Kubernetes.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/benchmark/notebooks/Run%20on%20Kubernetes.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hdi-project/btb/main/benchmark/notebooks/Benchmarking.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/benchmark/notebooks/Benchmarking.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hdi-project/btb/main/tutorials/00_Quickstart.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/tutorials/00_Quickstart.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hdi-project/btb/main/tutorials/01_Tuning.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/tutorials/01_Tuning.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hdi-project/btb/main/tutorials/03_Session.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/tutorials/03_Session.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hdi-project/btb/main/tutorials/02_Selection.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/tutorials/02_Selection.ipynb"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://mybinder.org/v2/gh/MLBazaar/BTB/master?filepath=tutorials"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "**BTB** has been developed and tested on [Python 3.6, 3.7 and 3.8](https://www.python.org/downloads/)\n\nAlso, although it is not strictly required, the usage of a\n[virtualenv](https://virtualenv.pypa.io/en/latest/) is highly recommended in order to avoid\ninterfering with other software installed in the system where **BTB** is run.\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "Install"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "The easiest and recommended way to install **BTB** is using [pip](\nhttps://pip.pypa.io/en/stable/):\n\n```bash\npip install baytune\n```\n\nThis will pull and install the latest stable release from [PyPi](https://pypi.org/).\n\nIf you want to install from source or contribute to the project please read the\n[Contributing Guide](https://mlbazaar.github.io/BTB/contributing.html#get-started).\n",
+                "type": "Text_excerpt",
+                "original_header": "Install with pip",
+                "parent_header": [
+                    "Install"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The first step in order to use the `BTBSession` class is to develop a `scoring` function.\n\nThis is a Python function that, given a model name and a `hyperparameter` configuration,\nevaluates the performance of the model on your data and returns a score.\n\n```python3\nfrom sklearn.datasets import load_wine\nfrom sklearn.linear_model import SGDClassifier\nfrom sklearn.metrics import f1_score, make_scorer\nfrom sklearn.model_selection import cross_val_score\nfrom sklearn.tree import DecisionTreeClassifier\n\n\ndataset = load_wine()\nmodels = {\n    'DTC': DecisionTreeClassifier,\n    'SGDC': SGDClassifier,\n}\n\ndef scoring_function(model_name, hyperparameter_values):\n    model_class = models[model_name]\n    model_instance = model_class(**hyperparameter_values)\n    scores = cross_val_score(\n        estimator=model_instance,\n        X=dataset.data,\n        y=dataset.target,\n        scoring=make_scorer(f1_score, average='macro')\n    )\n    return scores.mean()\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Prepare a scoring function",
+                "parent_header": [
+                    "Quickstart"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "If you want to quickly discover **BTB**, simply click the button below and follow the tutorials! \n",
+                "original_header": "Try it out now!"
+            },
+            "confidence": 0.9999079529512398,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Detailed results from which this summary emerged are available [here](https://docs.google.com/spreadsheets/d/15a-pAV_t7CCDvqDyloYmdVNFhiKJFOJ7bbgpmYIpyTs/edit?usp=sharing).\n- If you want to compare your own tuner, follow the steps in our benchmarking framework [here](https://github.com/MLBazaar/BTB/tree/master/benchmark).\n- If you have a proposal for tuner that we should include in our benchmarking get in touch\nwith us at [dailabmit@gmail.com](mailto:dailabmit@gmail.com).\n \n",
+                "original_header": "Number of Wins on latest Version"
+            },
+            "confidence": 0.9695879450749633,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\n* License: \n* Development Status: \n* Documentation: https://mlbazaar.github.io/BTB\n* Homepage: https://github.com/MLBazaar/BTB \n"
+            },
+            "confidence": 0.9999964157830163,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Once you have defined a `scoring` function and the tunable `hyperparameters` specification of your\nmodels, you can start the searching for the best model and `hyperparameter` configuration by using\nthe `btb.BTBSession`.\n\nAll you need to do is create an instance passing the tunable `hyperparameters` scpecification\nand the scoring function.\n\n```python3\nfrom btb import BTBSession\n\nsession = BTBSession(\n    tunables=tunables,\n    scorer=scoring_function\n)\n```\n\nAnd then call the `run` method indicating how many tunable iterations you want the `BTBSession` to\nperform:\n\n\n```python3\nbest_proposal = session.run(20)\n```\n\nThe result will be a dictionary indicating the name of the best model that could be found\nand the `hyperparameter` configuration that was used:\n\n```\n{\n    'id': '826aedc2eff31635444e8104f0f3da43',\n    'name': 'DTC',\n    'config': {\n        'max_depth': 21,\n        'min_samples_split': 0.044010284821858835\n    },\n    'score': 0.907229308339589\n}\n ```\n",
+                "type": "Text_excerpt",
+                "original_header": "Start the searching process",
+                "parent_header": [
+                    "Quickstart"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        },
+        {
+            "result": {
+                "value": "1. To just `tune` `hyperparameters` - see our `tuning` tutorial [here](\nhttps://github.com/MLBazaar/BTB/blob/master/tutorials/01_Tuning.ipynb) and\n[documentation here](https://mlbazaar.github.io/BTB/tutorials/01_Tuning.html).\n2. To see the [types of `hyperparameters`](\nhttps://mlbazaar.github.io/BTB/tutorials/01_Tuning.html#What-is-a-Hyperparameter?) we support\nsee our [documentation here](https://mlbazaar.github.io/BTB/tutorials/01_Tuning.html#What-is-a-Hyperparameter?).\n3. You can read about [our benchmarking framework here](https://mlbazaar.github.io/BTB/benchmark.html#).\n4. See our [tutorial on `selection` here](https://github.com/MLBazaar/BTB/blob/master/tutorials/02_Selection.ipynb)\nand [documentation here](https://mlbazaar.github.io/BTB/tutorials/02_Selection.html).\n\nFor more details about **BTB** and all its possibilities and features, please check the\n[project documentation site](https://mlbazaar.github.io/BTB/)!\n\nAlso do not forget to have a look at the [notebook tutorials](tutorials).\n",
+                "type": "Text_excerpt",
+                "original_header": "More tutorials"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you use **BTB**, please consider citing the following [paper](\nhttps://arxiv.org/pdf/1905.08942.pdf):\n\n```\n@article{smith2019mlbazaar,\n  author = {Smith, Micah J. and Sala, Carles and Kanter, James Max and Veeramachaneni, Kalyan},\n  title = {The Machine Learning Bazaar: Harnessing the ML Ecosystem for Effective System Development},\n  journal = {arXiv e-prints},\n  year = {2019},\n  eid = {arXiv:1905.08942},\n  pages = {arxiv:1904.09535},\n  archivePrefix = {arXiv},\n  eprint = {1905.08942},\n}\n`````\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing BTB"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{smith2019mlbazaar,\n    eprint = {1905.08942},\n    archiveprefix = {arXiv},\n    pages = {arxiv:1904.09535},\n    eid = {arXiv:1905.08942},\n    year = {2019},\n    journal = {arXiv e-prints},\n    title = {The Machine Learning Bazaar: Harnessing the ML Ecosystem for Effective System Development},\n    author = {Smith, Micah J. and Sala, Carles and Kanter, James Max and Veeramachaneni, Kalyan},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "The Machine Learning Bazaar: Harnessing the ML Ecosystem for Effective System Development",
+                "author": "Smith, Micah J. and Sala, Carles and Kanter, James Max and Veeramachaneni, Kalyan"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Overview"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://dai.lids.mit.edu/wp-content/uploads/2018/06/Logo_DAI_highres.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/MLBazaar/BTB/master/docs/images/BTB-Icon-small.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1905.08942.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1905.08942"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/hdi-project/btb/main/README.md"
+        }
+    ]
+}

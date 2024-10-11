@@ -1,0 +1,301 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:53:13"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/microsoft/coverage-eval",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "microsoft",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-06-23T00:15:34Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-04-18T06:53:34Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "    MIT License\n\n    Copyright (c) Microsoft Corporation.\n\n    Permission is hereby granted, free of charge, to any person obtaining a copy\n    of this software and associated documentation files (the \"Software\"), to deal\n    in the Software without restriction, including without limitation the rights\n    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n    copies of the Software, and to permit persons to whom the Software is\n    furnished to do so, subject to the following conditions:\n\n    The above copyright notice and this permission notice shall be included in all\n    copies or substantial portions of the Software.\n\n    THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n    SOFTWARE\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coverage-eval/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Dataset with coverage annotations for HumanEval dataset",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is the data and usage code for the dataset introduced in the paper \"[Predicting Code Coverage without Execution](https://arxiv.org/abs/2307.13383)\". \nThe CoverageEval dataset is an extension of the [HumanEval](https://github.com/openai/human-eval) dataset. We augment the problems in HumanEval with code coverage information for each test within the problem. We propose this dataset as a useful metric for evaluating Large Language Models, as code coverage prediction from LLMs can be seen as a proxy for code understanding. \n \n",
+                "original_header": "CoverageEval"
+            },
+            "confidence": 0.9666993875655057,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/coverage-eval/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft \ntrademarks or logos is subject to and must follow \n[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).\nUse of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.\nAny use of third-party trademarks or logos are subject to those third-party's policies.\n \n",
+                "original_header": "Trademarks"
+            },
+            "confidence": 0.9725227067402532,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/coverage-eval/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "coverage-eval",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "microsoft/coverage-eval",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/microsoft/coverage-eval/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/microsoft/coverage-eval/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 21,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/microsoft/coverage-eval/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 4159
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "code_of_conduct": [
+        {
+            "result": {
+                "value": "# Microsoft Open Source Code of Conduct\n\nThis project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).\n\nResources:\n\n- [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)\n- [Microsoft Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)\n- Contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with questions or concerns\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coverage-eval/main/CODE_OF_CONDUCT.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/coverage-eval/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Check out this repository and install the necessary requirements\n\n`git clone https://github.com/microsoft/coverage-eval.git`\n\n`pip install -r requirements.txt`\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "CoverageEval"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/coverage-eval/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft \ntrademarks or logos is subject to and must follow \n[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).\nUse of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.\nAny use of third-party trademarks or logos are subject to those third-party's policies.\n \n",
+                "original_header": "Trademarks"
+            },
+            "confidence": 0.9988852287322683,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/coverage-eval/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Access the coverage-augmented problems via the `read_problems()` function:\n\n```\nfrom utils import read_problems\n\nproblems = read_problems()\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "CoverageEval"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/coverage-eval/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "Please cite using the following bibtex entry:\n\n```\n@misc{tufano2023predicting,\n      title={Predicting Code Coverage without Execution}, \n      author={Michele Tufano and Shubham Chandel and Anisha Agarwal and Neel Sundaresan and Colin Clement},\n      year={2023},\n      eprint={2307.13383},\n      archivePrefix={arXiv},\n      primaryClass={cs.SE}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "CoverageEval"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/coverage-eval/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@misc{tufano2023predicting,\n    primaryclass = {cs.SE},\n    archiveprefix = {arXiv},\n    eprint = {2307.13383},\n    year = {2023},\n    author = {Michele Tufano and Shubham Chandel and Anisha Agarwal and Neel Sundaresan and Colin Clement},\n    title = {Predicting Code Coverage without Execution},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Predicting Code Coverage without Execution",
+                "author": "Michele Tufano and Shubham Chandel and Anisha Agarwal and Neel Sundaresan and Colin Clement"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/coverage-eval/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "CoverageEval"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/coverage-eval/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2307.13383"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/coverage-eval/main/README.md"
+        }
+    ]
+}

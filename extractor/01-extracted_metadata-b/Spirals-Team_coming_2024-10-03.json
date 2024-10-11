@@ -1,0 +1,487 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:46:05"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/SpoonLabs/coming",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "SpoonLabs",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2015-10-01T14:15:55Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-05-30T13:11:00Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "The MIT License (MIT)\n\nCopyright (c) 2019 Matias Martinez & Github contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A tool for mining commits  from Git repositories and diffs to automatically extract code change pattern instances and features with ast analysis ",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "When running Coming in mode `-mode diff` the output is a file name `change_frequency.json` , which shows the frequency and probability of each type of change (i.e., frequency of actions applied  to each type of entities). \n",
+                "original_header": "Mode Change Frequency"
+            },
+            "confidence": 0.9100334492730138,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "coming",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "SpoonLabs/coming",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SpoonLabs/coming/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SpoonLabs/coming/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 92,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "ast-analysis, inria, kth, mining-software-repositories",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 33,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/Spirals-Team/coming/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 117331202
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 2257
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 1763
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/Spirals-Team/coming/tree/master/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Spirals-Team/coming/master/docs/SVM_Analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/docs/SVM_Analysis.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Spirals-Team/coming/master/docs/SVM_Classification_PCA.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/docs/SVM_Classification_PCA.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Spirals-Team/coming/master/docs/SVM_Classification%20%282%29.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/docs/SVM_Classification%20%282%29.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Spirals-Team/coming/master/docs/SVM_Classification.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/docs/SVM_Classification.ipynb"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Spirals-Team/coming/master/.buildscript/deploy_to_maven.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Coming is deployed on Maven Central, see [past versions](https://repo1.maven.org/maven2/com/github/spoonlabs/coming/).\nAs of version 1.72 (May 2024), it requires Java 17.\n\nTo build yourself, the procedure is as follows.\n\nAdd a github token in `.m2/settings.xml`.\n\n```xml\n<settings>\n  <servers>\n    <server>\n      <id>brufulascam</id>\n      <username>yourlogin</username>\n      \n      <password>FOOBAR</password>\n    </server>\n  </servers>\n</settings>\n```\n\n\nInstall a JDK 17 and configure Maven or your IDE to use it.\n\n\n```\n$ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64/\n$ mvn -version\nApache Maven 3.6.3\nMaven home: /usr/share/maven\nJava version: 17.0.9, vendor: Private Build, runtime: /usr/lib/jvm/java-17-openjdk-amd64\n\n# now installing\n$ mvn install -DskipTests\n```\n\nTests:\n\n```\ngit clone https://github.com/SpoonLabs/repogit4testv0\nmvn test\n```\n\n\n`repogit4testv0` is a GIT repository included inside Coming which is used by the test cases.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Install",
+                "parent_header": [
+                    "Coming"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        },
+        {
+            "result": {
+                "value": "\nFor studying only commits which messages include words related to bug fixing (e.g., bug, fix, issue), add the following command.\n\n```\n\n-filter bugfix \n```\n\nThe bugfix keywords are predefined. If you want to use  other keywords, use the `Custom keywords`.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Bug fix keywords",
+                "parent_header": [
+                    "Coming",
+                    "Filtering Commits",
+                    "By commit message"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Coming is a tool for commit analysis in git repositories. \n",
+                "original_header": "Coming"
+            },
+            "confidence": 0.9599959789662506,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "In order to perform an analysis of possible repair tools that may have generated commits use the python script at https://github.com/kth-tcs/defects4j-repair-reloaded/tree/comrepair-coming/. \n",
+                "original_header": "Mode Repairability"
+            },
+            "confidence": 0.9964233947156539,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Coming read the input from the folder indicated by the argument `-location`. The kind of input depends on the argument `-input`. \n \n",
+                "original_header": "Input Types"
+            },
+            "confidence": 0.9268920145664327,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "If `-input filespair`, the location argument is supposed to specified in the following format: `-location <source_file_path>:<target_file_path>` \n",
+                "original_header": "filespair"
+            },
+            "confidence": 0.9783324316147742,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "### files \nIf `-input files`, the location path should follow the following hierarchy. Note here `-location <location_arg>`.\n```\n<location_arg>\n\u251c\u2500\u2500 <diff_folder>\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 <modif_file>\n\u2502\u00a0\u00a0     \u251c\u2500\u2500 <diff_folder>_<modif_file>_s.java\n\u2502\u00a0\u00a0     \u2514\u2500\u2500 <diff_folder>_<modif_file>_t.java\n```\nIn the above case, the analysis are performed on the revision form `<diff_folder>_<modif_file>_s.java` to `<diff_folder>_<modif_file>_t.java`, where `s` stands for source and `t` stands for target. \n",
+                "original_header": "files"
+            },
+            "confidence": 0.9993044110650349,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "For studying only commits which messages include `[MATH-`, add the following two commands:\n```\n\n-filter keywords filtervalue [MATH- \n\n```\n \n",
+                "original_header": "Custom keywords"
+            },
+            "confidence": 0.994973291005867,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The argument `-filter withtest` indicates that only commits with at least one modification on test cases are considered.\n \n",
+                "original_header": "By presence of Tests"
+            },
+            "confidence": 0.9217881708805058,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "The main class is: `fr.inria.coming.main.ComingMain`.\n\n```\nmvn exec:java -Dexec.mainClass=fr.inria.coming.main.ComingMain\n\n -action <INS | DEL | UPD | MOV | PER | ANY>                          tye of action to be mined\n -branch <branch name>                                                In case of -input='git', use this branch name. Default is master.\n -entitytype <arg>                                                    entity type to be mine\n -entityvalue <arg>                                                   the value of the entity  mentioned in -entitytype\n -filter <arg>                                                        name of the filter\n -filtervalue <arg>                                                   values of the filter  mentioned in -filter\n -hunkanalysis <arg>                                                  include analysis of hunks\n -input <git(default) | files | filespair | repairability>            format of the content present in the given -path. git implies that the path is a git repository. files implies the path contains .patch files\n -location <path>                                                     analyse the content in 'path'\n -message <arg>                                                       comming message\n -mode <mineinstance | diff | features>                               the mode of execution of the analysis\n -output <path>                                                       dump the output of the analysis in the given path\n -outputprocessor <classname>                                         output processors for result\n -parameters <arg>                                                    Parameters, divided by :\n -parentlevel <arg>                                                   numbers of AST node where the parent is located. 1 implies immediate parent\n -parenttype <arg>                                                    parent type of the nodes to be considered\n -pattern <path>                                                      path of the pattern file to be used when the -mode is 'mineinstance'\n -patternparser <classname>                                           parser to be used for parsing the file specified -pattern. Default is XML\n -repairtool <ALL | JMutRepair | Nopol | JKali | NPEfix | JGenProg>   If -mode=repairability, this option specifies which repair tools should we consider in our analysis. Can be a list separated by :\n -showactions                                                         show all actions\n -showentities                                                        show all entities\n```\n\n**Parameters** Most of the properties are configured in file `config-coming.properties`\n\nOne can change any of those properties from the command line by using   `-parameters`\n\nThe value of those argument are the following format `<name_property_1>:<value_property_1>:<name_property_2>:<value_property_2> `\n\nIn the following command we change the value of two properties: `max_nb_hunks` and `max_files_per_commit` \n\n``` \n   -parameters max_nb_hunks:2:max_files_per_commit:1\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Run with main class",
+                "parent_header": [
+                    "Coming"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "When running Coming in mode `-mode mineinstance` the output is a file name `instances_found.json` , which shows the different instances of the pattern passed as parameter.\n\n* [Automatically Extracting Instances of Code Change Patterns with AST Analysis](https://hal.inria.fr/hal-00861883/file/paper-short.pdf) (Martinez, M.; Duchien, L.; Monperrus, M.) IEEE International Conference on Software Maintenance (ICSM), pp.388-391, 2013, doi: 10.1109/ICSM.2013.54 [bibtex](https://www.monperrus.net/martin/bibtexbrowser.php?key=martinez%3Ahal-00861883&bib=monperrus.bib)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Mode Instance Mining",
+                "parent_header": [
+                    "Coming",
+                    "Modes"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        },
+        {
+            "result": {
+                "value": "\nExtract all commits of `repogit4testv0` that insert a binary operator AST node\n\n\n```\njava -classpath ./coming.jar fr.inria.coming.main.ComingMain -location  ./repogit4testv0/ -mode mineinstance -action INS -entitytype BinaryOperator   -output ./out\n```\n\nThe argument `-mode` indicates the analyzer that Coming will use.\nThe value `-mode mineinstance` means to detect instances of a change pattern (in the previous example, insert a binary operator AST node).\n\nThe argument `-location` indicates the location of the project to analyze. \nBy default, Coming analyzes Git projects(as per `-input`), so the `-location`  should be the path to the cloned project. Moreover, the argument `branch` allows to specify the Git branch to analyze (by default, it analyzes  the `master` branch).\n\n\nThe argument  `-output` is used to indicate the folder where Coming will write the results.\n\nTo know the values accepted by the arguments `-action` and  `-entitytype`, \nplease call ComingMain with the following arguments: `-showactions` and `-showentities`, resp.\nYou can also find those values on this [page](/docs/types.md).\n",
+                "type": "Text_excerpt",
+                "original_header": "Mining Simple Changes (i.e., with exactly one change)",
+                "parent_header": [
+                    "Coming",
+                    "Modes",
+                    "Mode Instance Mining"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Instead of passing the action type and entity type per command line (which defines simple pattern),\nwe can pass to Coming complex change pattern specified in a XML file.\n\n\n```\n-mode mineinstance -pattern ./pattern_INS_IF_MOVE_ASSIG.xml\n```\n\n\nHere, `-pattern` must receive the location to an XML with the pattern specification.\n\nThis pattern is specified as follows: \n\n\n```\n<pattern>\n\t<entity id=\"1\" type=\"Assignment\">\n\t\t<parent parentId=\"2\" distance=\"10\" />\n\t</entity>\n\t<entity id=\"2\" type=\"If\" />\n\n\t<action entityId=\"2\" type=\"INS\" />\n\t<action entityId=\"1\" type=\"MOV\" />\n</pattern>\n\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Mining Complex Changes (i.e., Two or more changes)",
+                "parent_header": [
+                    "Coming",
+                    "Modes",
+                    "Mode Instance Mining"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Coming accepts Change Patterns specified in a XML files.\nAs example the pattern `Add If-Return`:\n\n```\n<pattern>\n\t<entity id=``1\" type=``Return\">\n\t\t<parent parentId=``2\" distance=``2\" />\n\t</entity>\n\t<entity id=``2\" type=``If\" />\n\t<action entityId=``1\" type=``INS\" />\n\t<action entityId=``2\" type=``INS\" />\n</pattern>\n\n```\nSpecifies:\n\na) two  entities  (id  1  and  2),  one  representing  a `Return`,  the second  one  an `If`;\n\nb) a  parent  relation  between  theifandtheReturnentities  (with  a  max  distance  of  2  nodes);  and\n\nc) two actions of type INS (insert), one affecting the entity id 1 (i.e., the `Return`), the other one the entity id 2 (i.e., the `if`)\n\n\nThis pattern is able to match a changes such:\n\n```\n+  if ((n1 * n2) < MathUtils.SAFE_MIN) {\n+           return ZERO;\n+    }\n\n```\n\nThat change is an *instance*  of the pattern `Add If-Return`.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Change Pattern Specification",
+                "parent_header": [
+                    "Coming",
+                    "Modes",
+                    "Mode Instance Mining",
+                    "Mining Complex Changes (i.e., Two or more changes)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The pattern specification also allows to specify the *role* of an entity in its parent entity.\nGiven the code:\n\n```\n   if (exception == null) {\n-      l.connectionClosed(event);\n+      l.connectionErrorOccurred(event);\n\n...\n+  if (realConnection != null)\n-  if (realConnection == null)\n\n```\n\nThe following pattern, that matches any changes inside an entity which parent is an IF, is able to detect two instances:\n\n```\n<pattern>\n<entity id=\"1\" type = \"If\"/>\n<entity id=\"2\" type = \"*\">\n\t<parent parentId=\"1\" distance=\"10\" />\n</entity>\n<action entityId =\"2\" type = \"*\" />\n</pattern>\n```\n\nOne of the instances is over the method invocation (which was an updated parameter), and the second one the operator inside the IF.\n\nThe role feature allows to specify a pattern that matches an element according to the role of the element in its parent.\n\n\nFor example,  the following pattern matches an element (with ID 2) which role in parent is **condition**: \n\n```\n<pattern>\n\n<entity id=\"1\" type = \"If\"/>\n<entity id=\"2\" type = \"*\" role = \"condition\">\n\t<parent parentId=\"1\" distance=\"10\" />\n</entity>\n\n<action entityId =\"2\" type = \"*\" />\n\n</pattern>\n```\n\nThus, this patches will find one instance: the change inside the IF condition (update of binary operator) and it does not match with the other change (update of parameter).\n\nHowever, the next pattern will uniquely match the second change: changes on an entity which parent has a role of **Then** block.\n\n```\n<pattern>\n<entity id=\"1\" type = \"If\"/>\n<entity id=\"3\" type = \"Block\" role = \"Then\">\n\t<parent parentId=\"1\" distance=\"10\" />\n</entity>\n<entity id=\"2\" type = \"*\">\n\t<parent parentId=\"3\" distance=\"10\" />\n</entity>\n<action entityId =\"2\" type = \"*\" />\n</pattern>\n```\n\nThis pattern matches with the update of the method invocation's parameter (and not with the binary operator update)\n\nThe list of available Roles is presented on this [page](/docs/types.md).\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Roles of Entities",
+                "parent_header": [
+                    "Coming",
+                    "Modes",
+                    "Mode Instance Mining",
+                    "Mining Complex Changes (i.e., Two or more changes)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Coming"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Spirals-Team/coming/master/README.md"
+        }
+    ]
+}

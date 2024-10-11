@@ -1,0 +1,358 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:54:47"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/shrivastavadisha/N-PEPS",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "shrivastavadisha",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-06-06T05:47:02Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-07-10T04:15:22Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nOriginal work Copyright (c) 2018 amitz25\nModified work Copyright 2021 shrivastavadisha\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/LICENSE"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "N-PEPS",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "shrivastavadisha/N-PEPS",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/shrivastavadisha/N-PEPS/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/shrivastavadisha/N-PEPS/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 18,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/shrivastavadisha/N-PEPS/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 151019
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "* python 3.8.5\n* pytorch 1.4.0\n* pathos\n* tqdm\n* pandas\n",
+                "type": "Text_excerpt",
+                "original_header": "Dependencies"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "Download the data from [here](https://drive.google.com/file/d/1gjeHn0tXhm0XJgNb0-XI53Pf6VFiaBLJ/view?usp=sharing). Extract the data and place in the root folder. It contains two subfolders for E1 and E2, each containing the 30 test splits and training and validation data for learning GPS model and PE model.\n",
+                "type": "Text_excerpt",
+                "original_header": "Downloading data used in the paper",
+                "parent_header": [
+                    "Data"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Trained_Models can be downloaded from [here](https://drive.google.com/file/d/1ldTyBfZdpIZZ4fUYiu5INmQb__KwWRZb/view?usp=sharing). Extract and place in the root folder. It contains two subfolders for E1 and E2, each containing trained models for GPS, PEPS, N-PEPS and N-PEPS+U.\n",
+                "type": "Text_excerpt",
+                "original_header": "Downloading trained models used in the paper",
+                "parent_header": [
+                    "Training"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "`python -m scripts.gen_train_programs --num_train=100000 --train_output_path=data/E1/trainval_dataset --max_train_len=4`",
+                "type": "Text_excerpt",
+                "original_header": "Setting E1: Train programs up to length 4 and test programs of length = 4",
+                "parent_header": [
+                    "Data",
+                    "Generating training and validation programs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        },
+        {
+            "result": {
+                "value": "`python -m scripts.gen_train_programs --num_train=100000 --train_output_path=data/E2/trainval_dataset --max_train_len=12`\n\nThe training and validation datasets for training the GPS model are stored as train_dataset_gps and val_dataset_gps, and the corresponding datasets for training the PE model as train_dataset_pe and val_dataset_pe, respectively. Note that since the generation process is random, the generated programs and examples may differ each time the script is run.\n",
+                "type": "Text_excerpt",
+                "original_header": "Setting E2: Train programs up to length 12 and test programs of length = 5, 8, 10, 12, 14",
+                "parent_header": [
+                    "Data",
+                    "Generating training and validation programs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* We have build upon PCCoder implementation available at https://github.com/amitz25/PCCoder (MIT License)\n \n",
+                "original_header": "Notes"
+            },
+            "confidence": 0.9996914880181138,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "We generate aggregator instances for training and validation data for both E1 and E2 separately corresponding to the three timeouts (see Appendix B.2 of the paper for details). Note that we need a trained PE model for this stage.\n\n`python -m scripts.gen_agg_instances --input_data_path=data/E2/train_dataset --peps_timeout_type=rand --output_data_path=data/E2/agg_train_dataset_rand --max_program_len=12`\n\nUse max_program_len = 4 for E1 and 12 for E2. After generating the aggregator instances, we can have the two inclusion conditions (agg_inp in the script) as well as the two modes of discovering PE solutions (see Appendix B.2). This is done using the script `scripts/preprocess_agg_instances.py`. An example usage is:\n\n`python -m scripts.preprocess_agg_instances --input_path=data/E2/agg_train_dataset_rand --agg_inp=tot --include_perfect_PE_programs`\n\nAfter both these steps, we will have 12 datasets (3 x 2 X 2) to train the CA module and 12 datasets for validation.\n",
+                "type": "Text_excerpt",
+                "original_header": "Generating aggregator instances",
+                "parent_header": [
+                    "Data"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you use our code, please consider citing us as below:\n\n```\n@inproceedings{\nshrivastava2021learning,\ntitle={Learning to Combine Per-Example Solutions for Neural Program Synthesis},\nauthor={Disha Shrivastava and Hugo Larochelle and Daniel Tarlow},\nbooktitle={Advances in Neural Information Processing Systems},\neditor={A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},\nyear={2021},\nurl={https://openreview.net/forum?id=4PK-St2iVZn}\n}\n\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{shrivastava2021learning,\n    url = {https://openreview.net/forum?id=4PK-St2iVZn},\n    year = {2021},\n    editor = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},\n    booktitle = {Advances in Neural Information Processing Systems},\n    author = {Disha Shrivastava and Hugo Larochelle and Daniel Tarlow},\n    title = {Learning to Combine Per-Example Solutions for Neural Program Synthesis},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Learning to Combine Per-Example Solutions for Neural Program Synthesis",
+                "author": "Disha Shrivastava and Hugo Larochelle and Daniel Tarlow",
+                "url": "https://openreview.net/forum?id=4PK-St2iVZn"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains implementation and data for our NeurIPS 2021 paper [Learning to Combine Per-Example Solutions for Neural Program Synthesis](https://arxiv.org/abs/2106.07175). A block diagram of our approach can be found below. For more details, refer to the paper. \n",
+                "original_header": "Learning to Combine Per-Example Solutions for Neural Program Synthesis"
+            },
+            "confidence": 0.9546020168478568,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Use `scripts/solve_problems.py` for doing inference on the test splits. Vary the `agg_type` argument in the script to run inference on different methods. Based on the method, vary the `alpha` and `peps_timeout` values (see Appendix C.4 of paper for details of hyperparameters used in our experiments). The result file has a json dictionary line for each program predicted. The dictionary contains the predicted program and some details about the search, like the amount of time the search took and the final beam size.\n \n",
+                "original_header": "Inference"
+            },
+            "confidence": 0.9200007414869567,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Train GPS and PE models by running `scripts/train.py`. Depending on what model is being trained, change the training and validation data paths, batch_size and model_output_path in file params.py (see Appendix C.1 of the paper for hyperparameter values used in our experiments).\n \n",
+                "original_header": "Training the GPS and PE models"
+            },
+            "confidence": 0.9042098526569725,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/block_diagram.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2106.07175"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/N-PEPS/master/README.md"
+        }
+    ]
+}

@@ -1,0 +1,242 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 16:53:05"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/Testing4AI/RobOT",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "Testing4AI",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-02-03T13:36:39Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-07-08T08:51:36Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021 SmallkeyChen\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/smallkeychen/robot/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Code release for RobOT (ICSE'21)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "RobOT",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "Testing4AI/RobOT",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Testing4AI/RobOT/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Testing4AI/RobOT/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 14,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 8,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/smallkeychen/robot/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 59262
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/smallkeychen/robot/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "The code are run successfully using Python 3.6 and Tensorflow 2.2.0.\n\nWe recommend using conda to install the tensorflow-gpu environment\n```shell\nconda create -n tf2-gpu tensorflow-gpu==2.2.0\nconda activate tf2-gpu\n```\n\nChecking installed environments\n```shell\nconda env list\n```\n\nto run the code in jupyter, you should add the kernel in jupyter notebook \n```\npip install ipykernel\npython -m ipykernel install --name tf2-gpu\n```\n\nthen start jupyter notebook for experiments\n```\njupyter notebook\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisite (Py3.6 &amp; Tf2)",
+                "parent_header": [
+                    "RobOT: Robustness-Oriented Testing for Deep Learning Systems published at ICSE 2021"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/smallkeychen/robot/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "gen_adv.py is to generate adversarial inputs for test selection and robustness evaluation. You could also use toolbox like <a href=\"https://github.com/cleverhans-lab/cleverhans\" target=\"_blank\">cleverhans</a> for the test case generation.  \n\nFor testing methods (DeepXplore, DLFuzz, ADAPT), we use the code repository <a href=\"https://github.com/kupl/ADAPT\" target=\"_blank\">ADAPT</a>.  \nFor testing methods (AEQUITAS, ADF), we use the code repository <a href=\"https://github.com/pxzhang94/ADF\" target=\"_blank\">ADF</a>. \n \n",
+                "original_header": "Functions"
+            },
+            "confidence": 0.9658851726632259,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/smallkeychen/robot/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "train_model.py is to train the DNN model. \n",
+                "original_header": "Functions"
+            },
+            "confidence": 0.9020595611584529,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/smallkeychen/robot/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "RobOT: Robustness-Oriented Testing for Deep Learning Systems published at ICSE 2021"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/smallkeychen/robot/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2102.05913.pdf\" target=\"_blank\">ICSE2021 paper</a>  for more details. \n\n## Prerequisite (Py3.6 & Tf2"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/smallkeychen/robot/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,464 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:13:44"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/salesforce/PyRCA",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "salesforce",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-02-24T07:57:00Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-02T05:50:06Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/bsd-3-clause",
+                "type": "License",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "spdx_id": "BSD-3-Clause"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "BSD 3-Clause License\n\nCopyright (c) 2023, Salesforce\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its\n   contributors may be used to endorse or promote products derived from\n   this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/LICENSE"
+        },
+        {
+            "result": {
+                "value": "[BSD 3-Clause License](LICENSE)\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "PyRCA: A Python library for Root Cause Analysis"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "PyRCA: A Python Machine Learning Library for Root Cause Analysis",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "The adoption of microservices architectures is growing at a rapid pace, making multi-service applications \nthe standard paradigm in real-world IT applications. Typically, a multi-service application consists of \nhundreds of interacting services, making it increasingly challenging to detect service failures and identify \ntheir root causes. Root cause analysis (RCA) methods typically rely on KPI metrics, traces, or logs monitored \non these services to determine the root causes when a system failure is detected. Such methods can aid \nengineers and SREs in the troubleshooting process.\n\nPyRCA is a Python machine-learning library designed to facilitate root cause analysis by offering various \nstate-of-the-art RCA algorithms and an end-to-end pipeline for building RCA solutions. At present, PyRCA \nprimarily focuses on metric-based RCA, including two types of algorithms: (1) identifying anomalous metrics \nin parallel with the observed anomaly through metric data analysis, such as \u03b5-diagnosis, and (2) identifying \nroot causes based on a topology/causal graph representing the causal relationships between the observed \nmetrics, such as Bayesian inference and Random Walk. PyRCA also provides a convenient tool for building \ncausal graphs from the observed time series data and domain knowledge, enabling users to develop graph-based \nsolutions quickly. Furthermore, PyRCA offers a benchmark for evaluating various RCA methods, which is \nvaluable for industry and academic research.\n\nThe following list shows the supported RCA methods in our library:\n1. [\u03b5-Diagnosis](https://dl.acm.org/doi/10.1145/3308558.3313653)\n2. Bayesian Inference-based RCA (BI)\n3. Random Walk-based RCA (RW)\n4. [Root Cause Discovery method (RCD)](https://openreview.net/pdf?id=weoLjoYFvXY)\n5. [Hypothesis Testing-based RCA (HT)](https://dl.acm.org/doi/10.1145/3534678.3539041)\n\nWe will continue improving this library to make it more comprehensive in the future. In the future, \nPyRCA will support trace and log-based RCA methods as well.\n",
+                "type": "Text_excerpt",
+                "original_header": "Introduction",
+                "parent_header": [
+                    "PyRCA: A Python library for Root Cause Analysis"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "PyRCA",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "salesforce/PyRCA",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/salesforce/PyRCA/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/salesforce/PyRCA/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 423,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 43,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/salesforce/PyRCA/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 220086
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 15872
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 292
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/salesforce/PyRCA/releases/109992806",
+                "tag": "v1.0.1",
+                "name": "PyRCA v1.0.1",
+                "author": {
+                    "name": "yangwenz",
+                    "type": "User"
+                },
+                "description": "Fixed a setup issue and updated some docs",
+                "tarball_url": "https://api.github.com/repos/salesforce/PyRCA/tarball/v1.0.1",
+                "zipball_url": "https://api.github.com/repos/salesforce/PyRCA/zipball/v1.0.1",
+                "html_url": "https://github.com/salesforce/PyRCA/releases/tag/v1.0.1",
+                "url": "https://api.github.com/repos/salesforce/PyRCA/releases/109992806",
+                "release_id": 109992806,
+                "date_created": "2023-06-27T02:23:41Z",
+                "date_published": "2023-06-27T02:26:33Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/salesforce/PyRCA/releases/103414267",
+                "tag": "v1.0.0",
+                "name": "PyRCA v1.0.0",
+                "author": {
+                    "name": "yangwenzhuo08",
+                    "type": "User"
+                },
+                "description": "The first release of PyRCA",
+                "tarball_url": "https://api.github.com/repos/salesforce/PyRCA/tarball/v1.0.0",
+                "zipball_url": "https://api.github.com/repos/salesforce/PyRCA/zipball/v1.0.0",
+                "html_url": "https://github.com/salesforce/PyRCA/releases/tag/v1.0.0",
+                "url": "https://api.github.com/repos/salesforce/PyRCA/releases/103414267",
+                "release_id": 103414267,
+                "date_created": "2023-05-18T06:17:48Z",
+                "date_published": "2023-05-18T06:28:32Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/salesforce/PyRCA/releases/101053981",
+                "tag": "v0.0.1",
+                "name": "PyRCA v0.0.1",
+                "author": {
+                    "name": "yangwenzhuo08",
+                    "type": "User"
+                },
+                "description": "The initial release of PyRCA\r\n",
+                "tarball_url": "https://api.github.com/repos/salesforce/PyRCA/tarball/v0.0.1",
+                "zipball_url": "https://api.github.com/repos/salesforce/PyRCA/zipball/v0.0.1",
+                "html_url": "https://github.com/salesforce/PyRCA/releases/tag/v0.0.1",
+                "url": "https://api.github.com/repos/salesforce/PyRCA/releases/101053981",
+                "release_id": 101053981,
+                "date_created": "2023-04-27T06:52:23Z",
+                "date_published": "2023-04-27T06:54:46Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "code_of_conduct": [
+        {
+            "result": {
+                "value": "# Salesforce Open Source Community Code of Conduct\n\n## About the Code of Conduct\n\nEquality is a core value at Salesforce. We believe a diverse and inclusive\ncommunity fosters innovation and creativity, and are committed to building a\nculture where everyone feels included.\n\nSalesforce open-source projects are committed to providing a friendly, safe, and\nwelcoming environment for all, regardless of gender identity and expression,\nsexual orientation, disability, physical appearance, body size, ethnicity, nationality, \nrace, age, religion, level of experience, education, socioeconomic status, or \nother similar personal characteristics.\n\nThe goal of this code of conduct is to specify a baseline standard of behavior so\nthat people with different social values and communication styles can work\ntogether effectively, productively, and respectfully in our open source community.\nIt also establishes a mechanism for reporting issues and resolving conflicts.\n\nAll questions and reports of abusive, harassing, or otherwise unacceptable behavior\nin a Salesforce open-source project may be reported by contacting the Salesforce\nOpen Source Conduct Committee at ossconduct@salesforce.com.\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to making participation in our project and\nour community a harassment-free experience for everyone, regardless of gender \nidentity and expression, sexual orientation, disability, physical appearance, \nbody size, ethnicity, nationality, race, age, religion, level of experience, education, \nsocioeconomic status, or other similar personal characteristics.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy toward other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\nadvances\n* Personal attacks, insulting/derogatory comments, or trolling\n* Public or private harassment\n* Publishing, or threatening to publish, others' private information\u2014such as\na physical or electronic address\u2014without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\nprofessional setting\n* Advocating for or encouraging any of the above behaviors\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned with this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces\nwhen an individual is representing the project or its community. Examples of\nrepresenting a project or community include using an official project email\naddress, posting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event. Representation of a project may be\nfurther defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the Salesforce Open Source Conduct Committee \nat ossconduct@salesforce.com. All complaints will be reviewed and investigated \nand will result in a response that is deemed necessary and appropriate to the \ncircumstances. The committee is obligated to maintain confidentiality with \nregard to the reporter of an incident. Further details of specific enforcement \npolicies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership and the Salesforce Open Source Conduct \nCommittee.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][contributor-covenant-home],\nversion 1.4, available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html. \nIt includes adaptions and additions from [Go Community Code of Conduct][golang-coc], \n[CNCF Code of Conduct][cncf-coc], and [Microsoft Open Source Code of Conduct][microsoft-coc].\n\nThis Code of Conduct is licensed under the [Creative Commons Attribution 3.0 License][cc-by-3-us].\n\n[contributor-covenant-home]: https://www.contributor-covenant.org (https://www.contributor-covenant.org/)\n[golang-coc]: https://golang.org/conduct\n[cncf-coc]: https://github.com/cncf/foundation/blob/master/code-of-conduct.md\n[microsoft-coc]: https://opensource.microsoft.com/codeofconduct/\n[cc-by-3-us]: https://creativecommons.org/licenses/by/3.0/us/",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/CODE_OF_CONDUCT.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/PyRCA/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/PyRCA/main/docs/build_docs.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/PyRCA/main/examples/DataGeneration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/examples/DataGeneration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/PyRCA/main/examples/Root%20Cause%20Analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/examples/Root%20Cause%20Analysis.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "You can install ``pyrca`` from PyPI by calling ``pip install sfr-pyrca``. You may install from source by\ncloning the PyRCA repo, navigating to the root directory, and calling\n``pip install .``, or ``pip install -e .`` to install in editable mode. You may install additional dependencies:\n\n- **For plotting & visualization**: Calling ``pip install sfr-pyrca[plot]``, or ``pip install .[plot]`` from the\n  root directory of the repo.\n- **Install all the dependencies**: Calling ``pip install sfr-pyrca[all]``, or ``pip install .[all]`` from the\n  root directory of the repo.\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "PyRCA: A Python library for Root Cause Analysis"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<div align=\"center\">\n  <a href=\"#\">\n  <img src=\"https://img.shields.io/badge/Python-3.7, 3.8, 3.9-blue\">\n  </a>\n  <a href=\"https://pypi.python.org/pypi/sfr-pyrca\">\n  <img alt=\"PyPI\" src=\"https://img.shields.io/pypi/v/sfr-pyrca.svg\"/>\n  </a>\n  <a href=\"https://opensource.salesforce.com/PyRCA/\">\n  <img alt=\"Documentation\" src=\"https://github.com/salesforce/PyRCA/actions/workflows/docs.yml/badge.svg\"/>\n  </a>\n  <a href=\"https://pepy.tech/project/sfr-pyrca\">\n  <img alt=\"Downloads\" src=\"https://static.pepy.tech/badge/sfr-pyrca\">\n  </a>\n  <a href=\"https://arxiv.org/abs/2306.11417\">\n  <img alt=\"DOI\" src=\"https://zenodo.org/badge/DOI/10.48550/ARXIV.2306.11417.svg\"/>\n  </a>\n</div>\n \n",
+                "original_header": "PyRCA: A Python library for Root Cause Analysis"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "|                             |  Recall@1   |  Recall@3   |  Recall@5   |\n:---------------------------:|:-----------:|:-----------:|:-----------:\n|         \u03b5-Diagnosis         | 0.06 \u00b1 0.02 | 0.16 \u00b1 0.04 | 0.16 \u00b1 0.04 |\n|             RCD             | 0.28 \u00b1 0.05 | 0.29 \u00b1 0.05 | 0.30 \u00b1 0.05 |\n|          Local-RCD          | 0.44 \u00b1 0.05 | 0.70 \u00b1 0.05 | 0.70 \u00b1 0.05 |\n|         Random Walk         | 0.07 \u00b1 0.03 | 0.20 \u00b1 0.04 | 0.24 \u00b1 0.04 |\n|      Random Walk (PC)       | 0.06 \u00b1 0.02 | 0.17 \u00b1 0.04 | 0.21 \u00b1 0.04 |\n|     Bayesian Inference      | 0.15 \u00b1 0.04 | 0.35 \u00b1 0.05 | 0.43 \u00b1 0.05 |\n|   Bayesian Inference (PC)   | 0.11 \u00b1 0.03 | 0.30 \u00b1 0.05 | 0.40 \u00b1 0.05 |\n|     Hypothesis-testing      | 1.00 \u00b1 0.00 | 1.00 \u00b1 0.00 | 1.00 \u00b1 0.00 |\n|   Hypothesis-testing (PC)   | 0.95 \u00b1 0.02 | 1.00 \u00b1 0.00 | 1.00 \u00b1 0.00 |\n|  Hypothesis-testing (ADJ)   | 0.95 \u00b1 0.02 | 1.00 \u00b1 0.00 | 1.00 \u00b1 0.00 |\n| Hypothesis-testing (ADJ-PC) | 0.77 \u00b1 0.04 | 0.92 \u00b1 0.03 | 0.92 \u00b1 0.03 | \n",
+                "original_header": "Benchmarks"
+            },
+            "confidence": 0.9999999628683447,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "PyRCA provides a unified interface for training RCA models and finding root causes. To apply\na certain RCA method, you only need to specify: \n\n- **The selected RCA method**: e.g., ``BayesianNetwork``, ``EpsilonDiagnosis``.\n- **The method configuration**: e.g., ``BayesianNetworkConfig``, ``EpsilonDiagnosisConfig``.\n- **Time series data for initialization/training**: e.g., A time series data in a \n  pandas dataframe.\n- **Abnormal time series data in an incident window**: The RCA methods require the anomalous \n  KPI metrics in an incident window.\n\nLet's take ``BayesianNetwork`` as an example. Suppose that ``graph_df`` is the pandas dataframe of\na graph representing the causal relationships between metrics (how to construct such causal graph\nwill be discussed later), and ``df`` is the pandas dataframe containing the historical observed time series \ndata (e.g., the index is the timestamp and each column represents one monitored metric). To train a \n``BayesianNetwork``, you can simply run the following code:\n\n```python\nfrom pyrca.analyzers.bayesian import BayesianNetwork\nmodel = BayesianNetwork(config=BayesianNetwork.config_class(graph=graph_df))\nmodel.train(df)\nmodel.save(\"model_folder\")\n```\n\nAfter the model is trained, you can use it to find root causes of an incident given a list of anomalous\nmetrics detected by a certain anomaly detector (you can use the stats-based detector supported in PyRCA\nor other anomaly detection methods supported by our [Merlion](https://github.com/salesforce/Merlion) library), \ne.g.,\n\n```python\nfrom pyrca.analyzers.bayesian import BayesianNetwork\nmodel = BayesianNetwork.load(\"model_folder\")\nresults = model.find_root_causes([\"observed_anomalous_metric\", ...])\nprint(results.to_dict())\n```\n\nFor other RCA methods, you can write similar code as above for finding root causes. For example, if you want\nto try ``EpsilonDiagnosis``, you can initalize ``EpsilonDiagnosis`` as follows:\n\n```python\nfrom pyrca.analyzers.epsilon_diagnosis import EpsilonDiagnosis\nmodel = EpsilonDiagnosis(config=EpsilonDiagnosis.config_class(alpha=0.01))\nmodel.train(normal_data)\n```\n\nHere ``normal_data`` is the historically observed time series data without anomalies. To identify root causes,\nyou can run:\n\n```python\nresults = model.find_root_causes(abnormal_data)\nprint(results.to_dict())\n```\n\nwhere ``abnormal_data`` is the time series data collected in an incident window.\n\nAs mentioned above, some RCA methods such as ``BayesianNetwork`` require causal graphs as their inputs. To construct such causal\ngraphs from the observed time series data, you can utilize our tool by running ``python -m pyrca.tools``.\nThis command will launch a Dash app for time series data analysis and causal discovery.\n![alt text](https://github.com/salesforce/PyRCA/raw/main/docs/_static/dashboard_gif.gif)\n\nThe dashboard enables users to experiment with different causal discovery methods, customize causal discovery \nparameters, add domain knowledge constraints (e.g., root/leaf nodes, forbidden/required links), and visualize \nthe generated causal graphs. This feature simplifies the process of manually revising causal graphs based on \ndomain knowledge. Users can download the graph generated by this tool if they are satisfied with it. The graph \ncan then be used by the RCA methods supported in PyRCA.\n\nAlternatively, users can write code to build such graphs instead of using the dashboard. The package \n``pyrca.graphs.causal`` includes several popular causal discovery methods that users can leverage. \nAll of these methods support domain knowledge constraints. For instance, if users wish to apply the PC \nalgorithm for building causal graphs on the observed time series data ``df``, the following code can be used:\n\n```python\nfrom pyrca.graphs.causal.pc import PC\nmodel = PC(PC.config_class())\ngraph_df = model.train(df)\n```\n\nIf you have some domain knowledge constraints, you may run:\n\n```python\nfrom pyrca.graphs.causal.pc import PC\nmodel = PC(PC.config_class(domain_knowledge_file=\"file_path\"))\ngraph_df = model.train(df)\n```\n\nThe domain knowledge file has a YAML format, e.g.,\n\n```yaml\ncausal-graph:\n  root-nodes: [\"A\", \"B\"]\n  leaf-nodes: [\"E\", \"F\"]\n  forbids:\n    - [\"A\", \"E\"]\n  requires: \n    - [\"A\", \"C\"]\n```\n\nThis domain knowledge file states that: \n1. Metrics A and B must the root nodes, \n2. Metrics E and F must be the leaf nodes,\n3. There is no connection from A to E, and \n4. There is a connection from A to C. \n\nYou can write your domain knowledge file based on this template for generating more reliable causal\ngraphs.\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting Started",
+                "parent_header": [
+                    "PyRCA: A Python library for Root Cause Analysis"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/README.md"
+        },
+        {
+            "result": {
+                "value": "[Here](https://github.com/salesforce/PyRCA/tree/main/pyrca/applications/example) is a real-world example\nof applying ``BayesianNetwork`` to build a solution for RCA, which is adapted from our internal use cases. \nThe \"config\" folder includes the settings for the stats-based anomaly detector and the domain knowledge. \nThe \"models\" folder stores the causal graph and the trained Bayesian network. The ``RCAEngine`` class in the \"rca.py\" \nfile implements the methods for building causal graphs, training Bayesian networks and finding root causes \nby utilizing the modules provided by PyRCA. You can directly use this class if the stats-based anomaly detector \nand Bayesian inference are suitable for your problems. For example, given a time series dataframe ``df``, \nyou can build and train a Bayesian network via the following code:\n\n```python\nfrom pyrca.applications.example.rca import RCAEngine\nengine = RCAEngine()\nengine.build_causal_graph(\n    df=df,\n    run_pdag2dag=True,\n    max_num_points=5000000,\n    verbose=True\n)\nbn = engine.train_bayesian_network(dfs=[df])\nbn.print_probabilities()\n```\n\nAfter the Bayesian network is constructed, you can use it directly for finding root causes:\n\n```python\nengine = RCAEngine()\nresult = engine.find_root_causes_bn(anomalies=[\"conn_pool\", \"apt\"])\npprint.pprint(result)\n```\n\nThe inputs of ``find_root_causes_bn`` is a list of the anomalous metrics detected by the stats-based\nanomaly detector. This method will estimate the probability of a node being a root cause and extract\nthe paths from a potential root cause node to the leaf nodes.\n",
+                "type": "Text_excerpt",
+                "original_header": "Application Example",
+                "parent_header": [
+                    "PyRCA: A Python library for Root Cause Analysis"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/README.md"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "We welcome the contribution from the open-source community to improve the library!\nBefore you get started, clone this repo, run `pip install pre-commit`, and run `pre-commit install` \nfrom the root directory of the repo. This will ensure all files are formatted correctly and contain \nthe appropriate license headers whenever you make a commit. \n\nTo add a new RCA method into the library, you may follow the steps below:\n1. Create a new python script file for this RCA method in the ``pyrca/analyzers`` folder.\n2. Create the configuration class inheriting from ``pyrca.base.BaseConfig``.\n3. Create the method class inheriting from ``pyrca.analyzers.base.BaseRCA``. The constructor for the new \nmethod takes the new configuration instance as its input.\n4. Implement the ``train`` function that trains or initializes the new method.\n5. Implement the ``find_root_causes`` function that returns a ``pyrca.analyzers.base.RCAResults`` \ninstance for root cause analysis results.\n\nTo add a new causal discovery method, you may follow the following steps:\n1. Create a new python script file for this RCA method in the ``pyrca/graphs/causal`` folder.\n2. Create the configuration class that inherits from ``pyrca.graphs.causal.base.CausalModelConfig``.\n3. Create the method class that inherits from ``pyrca.graphs.causal.base.CausalModel``. \nThe constructor for the new method takes the new configuration instance as its input.\n4. Implement the ``_train`` function that returns the discovered casual graph. The input parameters\nof ``_train`` are the time series dataframe, the lists of forbidden and required links, and other\nadditional parameters.\n",
+                "type": "Text_excerpt",
+                "original_header": "How to Contribute",
+                "parent_header": [
+                    "PyRCA: A Python library for Root Cause Analysis"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/README.md"
+        }
+    ],
+    "contact": [
+        {
+            "result": {
+                "value": "If you have any questions, comments or suggestions, please do not hesitate to contact us at pyrca@salesforce.com.\n",
+                "type": "Text_excerpt",
+                "original_header": "Contact Us",
+                "parent_header": [
+                    "PyRCA: A Python library for Root Cause Analysis"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "PyRCA: A Python library for Root Cause Analysis"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/salesforce/PyRCA/raw/main/docs/_static/dashboard_gif.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2306.11417\">\n  <img alt=\"DOI\" src=\"https://zenodo.org/badge/DOI/10.48550/ARXIV.2306.11417.svg\"/>\n  </a>\n</div>\n\n## Table of Contents\n1. [Introduction](#introduction"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/salesforce/PyRCA/main/README.md"
+        }
+    ]
+}

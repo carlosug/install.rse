@@ -1,0 +1,802 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:43:35"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/microwalk-project/Microwalk",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "microwalk-project",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-07-30T15:44:27Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-20T21:41:58Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) Institute for IT Security, University of L\u00fcbeck\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/LICENSE"
+        },
+        {
+            "result": {
+                "value": "The entire project is licensed under the MIT license. For further information refer to the [LICENSE](LICENSE) file.\n\nThe Microwalk logo can be used under the CC-BY-SA license.\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "Microwalk"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A microarchitectural leakage detection framework using dynamic instrumentation.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "If you just want to use Microwalk with your project, you don't need to read further -- we recommend using our templates and the pre-built Docker images, as detailed above. The following documentation is for building and running Microwalk directly from source, as is required when working on the Microwalk code and adding new analysis plugins. \n",
+                "original_header": "Compiling"
+            },
+            "confidence": 0.9732348844146106,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Alternatively, it is also possible to use an own wrapper implementation, as long as it exports the Pin notification functions and correctly handles `stdin`.\n \n",
+                "original_header": "Pin wrapper executable"
+            },
+            "confidence": 0.9274734833888796,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Follow these steps to create a custom framework plugin with a new module:\n1. Create a new project `MyPlugin` and add a reference to the `Microwalk.FrameworkBase` project. \n3. Create a class `MyModule` for your new module, which inherits from `XXXStage` and has a `[FrameworkModule(<name>, <description>)]` attribute. `XXXStage` here corresponds to one of the framework's pipeline stages:\n    - `TestcaseStage`: Produces a new testcase on each call.\n    - `TraceStage`: Takes a testcases and generates raw trace data.\n    - `PreprocessorStage`: Takes raw trace data and preprocesses it.\n    - `AnalysisStage`: Takes preprocessed trace data and updates its internal state for each trace. Yields an analysis result once the finish function is called.\n    \n4. Implement the module logic. \n",
+                "original_header": "Creating own framework modules"
+            },
+            "confidence": 0.9662265125332485,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Microwalk",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "microwalk-project/Microwalk",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/microwalk-project/Microwalk/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/microwalk-project/Microwalk/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 67,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "crypto, dynamic-instrumentation, side-channel-attacks",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 9,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/microwalk-project/microwalk/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "C#",
+                "name": "C#",
+                "type": "Programming_language",
+                "size": 480111
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 108785
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 49218
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 33280
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 7036
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 5454
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 1822
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 775
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/microwalk-project/Microwalk/releases/102665704",
+                "tag": "v3.1.1",
+                "name": "Release v3.1.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "### Running Microwalk\r\n\r\n```\r\nunzip Microwalk.zip -d Microwalk\r\ndotnet Microwalk/Microwalk.dll <configuration file>\r\n```\r\n\r\n### Running Pin\r\n\r\n```\r\npin -t PinTracer.so -o /path/to/output/file -- /path/to/wrapper/executable\r\n```\r\n",
+                "tarball_url": "https://api.github.com/repos/microwalk-project/Microwalk/tarball/v3.1.1",
+                "zipball_url": "https://api.github.com/repos/microwalk-project/Microwalk/zipball/v3.1.1",
+                "html_url": "https://github.com/microwalk-project/Microwalk/releases/tag/v3.1.1",
+                "url": "https://api.github.com/repos/microwalk-project/Microwalk/releases/102665704",
+                "release_id": 102665704,
+                "date_created": "2023-05-11T15:57:41Z",
+                "date_published": "2023-05-11T16:04:31Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/microwalk-project/Microwalk/releases/99553478",
+                "tag": "v3.1.0",
+                "name": "Release v3.1.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "### Running Microwalk\r\n\r\n```\r\nunzip Microwalk.zip -d Microwalk\r\ndotnet Microwalk/Microwalk.dll <configuration file>\r\n```\r\n\r\n### Running Pin\r\n\r\n```\r\npin -t PinTracer.so -o /path/to/output/file -- /path/to/wrapper/executable\r\n```\r\n",
+                "tarball_url": "https://api.github.com/repos/microwalk-project/Microwalk/tarball/v3.1.0",
+                "zipball_url": "https://api.github.com/repos/microwalk-project/Microwalk/zipball/v3.1.0",
+                "html_url": "https://github.com/microwalk-project/Microwalk/releases/tag/v3.1.0",
+                "url": "https://api.github.com/repos/microwalk-project/Microwalk/releases/99553478",
+                "release_id": 99553478,
+                "date_created": "2023-04-14T14:11:44Z",
+                "date_published": "2023-05-11T16:04:22Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/microwalk-project/Microwalk/releases/99519038",
+                "tag": "v3.0.6",
+                "name": "Release v3.0.6",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "### Running Microwalk\r\n\r\n```\r\nunzip Microwalk.zip -d Microwalk\r\ndotnet Microwalk/Microwalk.dll <configuration file>\r\n```\r\n\r\n### Running Pin\r\n\r\n```\r\npin -t PinTracer.so -o /path/to/output/file -- /path/to/wrapper/executable\r\n```\r\n",
+                "tarball_url": "https://api.github.com/repos/microwalk-project/Microwalk/tarball/v3.0.6",
+                "zipball_url": "https://api.github.com/repos/microwalk-project/Microwalk/zipball/v3.0.6",
+                "html_url": "https://github.com/microwalk-project/Microwalk/releases/tag/v3.0.6",
+                "url": "https://api.github.com/repos/microwalk-project/Microwalk/releases/99519038",
+                "release_id": 99519038,
+                "date_created": "2023-04-14T09:29:04Z",
+                "date_published": "2023-04-14T09:34:43Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/microwalk-project/Microwalk/releases/67461308",
+                "tag": "v3.0.4",
+                "name": "Release v3.0.4",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "### Running Microwalk\r\n\r\n```\r\nunzip Microwalk.zip -d Microwalk\r\ndotnet Microwalk/Microwalk.dll <configuration file>\r\n```\r\n\r\n### Running Pin\r\n\r\n```\r\npin -t PinTracer.so -o /path/to/output/file -- /path/to/wrapper/executable\r\n```\r\n",
+                "tarball_url": "https://api.github.com/repos/microwalk-project/Microwalk/tarball/v3.0.4",
+                "zipball_url": "https://api.github.com/repos/microwalk-project/Microwalk/zipball/v3.0.4",
+                "html_url": "https://github.com/microwalk-project/Microwalk/releases/tag/v3.0.4",
+                "url": "https://api.github.com/repos/microwalk-project/Microwalk/releases/67461308",
+                "release_id": 67461308,
+                "date_created": "2022-07-29T16:37:22Z",
+                "date_published": "2022-08-12T11:53:37Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/microwalk-project/Microwalk/releases/72221142",
+                "tag": "v3.0.5",
+                "name": "Release v3.0.5",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "### Running Microwalk\r\n\r\n```\r\nunzip Microwalk.zip -d Microwalk\r\ndotnet Microwalk/Microwalk.dll <configuration file>\r\n```\r\n\r\n### Running Pin\r\n\r\n```\r\npin -t PinTracer.so -o /path/to/output/file -- /path/to/wrapper/executable\r\n```\r\n",
+                "tarball_url": "https://api.github.com/repos/microwalk-project/Microwalk/tarball/v3.0.5",
+                "zipball_url": "https://api.github.com/repos/microwalk-project/Microwalk/zipball/v3.0.5",
+                "html_url": "https://github.com/microwalk-project/Microwalk/releases/tag/v3.0.5",
+                "url": "https://api.github.com/repos/microwalk-project/Microwalk/releases/72221142",
+                "release_id": 72221142,
+                "date_created": "2022-07-18T12:37:56Z",
+                "date_published": "2022-08-12T11:53:18Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/microwalk-project/Microwalk/releases/67461068",
+                "tag": "v3.0.3",
+                "name": "Release v3.0.3",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "### Running Microwalk\r\n\r\n```\r\nunzip Microwalk.zip -d Microwalk\r\ndotnet Microwalk/Microwalk.dll <configuration file>\r\n```\r\n\r\n### Running Pin\r\n\r\n```\r\npin -t PinTracer.so -o /path/to/output/file -- /path/to/wrapper/executable\r\n```\r\n",
+                "tarball_url": "https://api.github.com/repos/microwalk-project/Microwalk/tarball/v3.0.3",
+                "zipball_url": "https://api.github.com/repos/microwalk-project/Microwalk/zipball/v3.0.3",
+                "html_url": "https://github.com/microwalk-project/Microwalk/releases/tag/v3.0.3",
+                "url": "https://api.github.com/repos/microwalk-project/Microwalk/releases/67461068",
+                "release_id": 67461068,
+                "date_created": "2022-05-21T19:02:06Z",
+                "date_published": "2022-08-12T11:53:46Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/microwalk-project/Microwalk/releases/67450957",
+                "tag": "v3.0.2",
+                "name": "Release v3.0.2",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "### Running Microwalk\r\n\r\n```\r\nunzip Microwalk.zip -d Microwalk\r\ndotnet Microwalk/Microwalk.dll <configuration file>\r\n```\r\n\r\n### Running Pin\r\n\r\n```\r\npin -t PinTracer.so -o /path/to/output/file -- /path/to/wrapper/executable\r\n```\r\n",
+                "tarball_url": "https://api.github.com/repos/microwalk-project/Microwalk/tarball/v3.0.2",
+                "zipball_url": "https://api.github.com/repos/microwalk-project/Microwalk/zipball/v3.0.2",
+                "html_url": "https://github.com/microwalk-project/Microwalk/releases/tag/v3.0.2",
+                "url": "https://api.github.com/repos/microwalk-project/Microwalk/releases/67450957",
+                "release_id": 67450957,
+                "date_created": "2022-05-21T09:04:30Z",
+                "date_published": "2022-08-12T11:54:00Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/microwalk-project/Microwalk/releases/67436556",
+                "tag": "v3.0.1",
+                "name": "Release v3.0.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "### Running Microwalk\r\n\r\n```\r\nunzip Microwalk.zip -d Microwalk\r\ndotnet Microwalk/Microwalk.dll <configuration file>\r\n```\r\n\r\n### Running Pin\r\n\r\n```\r\npin -t PinTracer.so -o /path/to/output/file -- /path/to/wrapper/executable\r\n```\r\n",
+                "tarball_url": "https://api.github.com/repos/microwalk-project/Microwalk/tarball/v3.0.1",
+                "zipball_url": "https://api.github.com/repos/microwalk-project/Microwalk/zipball/v3.0.1",
+                "html_url": "https://github.com/microwalk-project/Microwalk/releases/tag/v3.0.1",
+                "url": "https://api.github.com/repos/microwalk-project/Microwalk/releases/67436556",
+                "release_id": 67436556,
+                "date_created": "2022-05-20T22:55:46Z",
+                "date_published": "2022-08-12T11:54:07Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/microwalk-project/Microwalk/releases/67229216",
+                "tag": "v3.0.0",
+                "name": "Release v3.0.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "### Running Microwalk\r\n\r\n```\r\nunzip Microwalk.zip -d Microwalk\r\ndotnet Microwalk/Microwalk.dll <configuration file>\r\n```\r\n\r\n### Running Pin\r\n\r\n```\r\npin -t PinTracer.so -o /path/to/output/file -- /path/to/wrapper/executable\r\n```\r\n",
+                "tarball_url": "https://api.github.com/repos/microwalk-project/Microwalk/tarball/v3.0.0",
+                "zipball_url": "https://api.github.com/repos/microwalk-project/Microwalk/zipball/v3.0.0",
+                "html_url": "https://github.com/microwalk-project/Microwalk/releases/tag/v3.0.0",
+                "url": "https://api.github.com/repos/microwalk-project/Microwalk/releases/67229216",
+                "release_id": 67229216,
+                "date_created": "2022-05-18T23:09:06Z",
+                "date_published": "2022-05-18T23:14:05Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/microwalk-project/Microwalk/releases/48298820",
+                "tag": "v2.2.0",
+                "name": "Release v2.2.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "### Running Microwalk\r\n\r\n```\r\nunzip Microwalk.zip -d Microwalk\r\ndotnet Microwalk/Microwalk.dll <configuration file>\r\n```\r\n\r\n### Running Pin\r\n\r\n```\r\npin -t PinTracer.so -o /path/to/output/file -- /path/to/wrapper/executable\r\n```\r\n",
+                "tarball_url": "https://api.github.com/repos/microwalk-project/Microwalk/tarball/v2.2.0",
+                "zipball_url": "https://api.github.com/repos/microwalk-project/Microwalk/zipball/v2.2.0",
+                "html_url": "https://github.com/microwalk-project/Microwalk/releases/tag/v2.2.0",
+                "url": "https://api.github.com/repos/microwalk-project/Microwalk/releases/48298820",
+                "release_id": 48298820,
+                "date_created": "2021-08-23T17:41:03Z",
+                "date_published": "2021-08-23T17:47:30Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/microwalk-project/Microwalk/releases/30178643",
+                "tag": "v2.1.0",
+                "name": "Release v2.1.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "### Running Microwalk\r\n\r\n```\r\nunzip Microwalk.zip -d Microwalk\r\ndotnet Microwalk/Microwalk.dll <configuration file>\r\n```\r\n\r\n### Running Pin\r\n\r\n```\r\npin -t PinTracer.so -o /path/to/output/file -- /path/to/wrapper/executable\r\n```\r\n",
+                "tarball_url": "https://api.github.com/repos/microwalk-project/Microwalk/tarball/v2.1.0",
+                "zipball_url": "https://api.github.com/repos/microwalk-project/Microwalk/zipball/v2.1.0",
+                "html_url": "https://github.com/microwalk-project/Microwalk/releases/tag/v2.1.0",
+                "url": "https://api.github.com/repos/microwalk-project/Microwalk/releases/30178643",
+                "release_id": 30178643,
+                "date_created": "2020-08-26T22:30:56Z",
+                "date_published": "2020-08-26T22:34:55Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/microwalk-project/Microwalk/releases/29416307",
+                "tag": "v2.0.0",
+                "name": "Release v2.0.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "### Running Microwalk\r\n\r\n```\r\nunzip Microwalk.zip -d Microwalk\r\ndotnet Microwalk/Microwalk.dll <configuration file>\r\n```\r\n\r\n### Running Pin\r\n\r\n```\r\npin -t PinTracer.so -o /path/to/output/file -- /path/to/wrapper/executable\r\n```\r\n",
+                "tarball_url": "https://api.github.com/repos/microwalk-project/Microwalk/tarball/v2.0.0",
+                "zipball_url": "https://api.github.com/repos/microwalk-project/Microwalk/zipball/v2.0.0",
+                "html_url": "https://github.com/microwalk-project/Microwalk/releases/tag/v2.0.0",
+                "url": "https://api.github.com/repos/microwalk-project/Microwalk/releases/29416307",
+                "release_id": 29416307,
+                "date_created": "2020-08-06T16:17:07Z",
+                "date_published": "2020-08-06T16:19:31Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/microwalk-project/microwalk/tree/master/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/docker/pin/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/docker/pin/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/docker/javascript/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/docker/javascript/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/docker/jalangi2/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/docker/jalangi2/Dockerfile"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/templates/c-github/microwalk/analyze.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/templates/c-github/microwalk/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/templates/javascript-github/microwalk/analyze.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/templates/javascript-gitlab/microwalk/analyze.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/templates/c/microwalk/analyze.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/templates/c/microwalk/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "A tutorial showing the necessary steps for running Microwalk locally is in [docs/usage.md](docs/usage.md).\n\nIn addition, we offer a number of simple [templates](templates/) for generic analysis tasks, which serve as configuration examples and can be adapted for your specific workload. This also includes templates for running Microwalk within a continuous integration pipeline (CI) like GitHub Actions (feel free to also checkout the [example-c](https://github.com/microwalk-project/example-c) and [example-js](https://github.com/microwalk-project/example-js) repositories for a demo of Microwalk's GitHub integration).\n\n<p align=\"center\">\n  <img width=\"500px\" src=\"resources/images/screenshot.png\" alt=\"Microwalk analysis report embedded into the source code, as shown in the GitHub UI\">\n</p>\n\nMicrowalk comes with a set of preconfigured Docker images, which hold all necessary dependencies and configuration, and are used by the various template. Pre-built images are located in [GitHub's container registry](https://github.com/microwalk-project/Microwalk/pkgs/container/microwalk). See [Microwalk Docker Images](docker/README.md) for details.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "Microwalk"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "After composing a suitable configuration file (see [documentation](docs/config.md)), you can run Microwalk with the following command line arguments:\n\n- `<configuration file>` (mandatory)<br>\n  The path to the configuration file.\n  \n- `-p <plugin directory>` (optional)<br>\n  A directory containing plugin binaries. This needs to be specified when the configuration references a plugin that is not in Microwalk's main build directory. This option can be supplied multiple times.\n  \n",
+                "type": "Text_excerpt",
+                "original_header": "Running Microwalk",
+                "parent_header": [
+                    "Microwalk"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "Contributions are appreciated! Feel free to submit issues and pull requests.\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributing",
+                "parent_header": [
+                    "Microwalk"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "If you just want to use Microwalk with your project, you don't need to read further -- we recommend using our templates and the pre-built Docker images, as detailed above. The following documentation is for building and running Microwalk directly from source, as is required when working on the Microwalk code and adding new analysis plugins. \nFor Windows, it is recommended to install Visual Studio, as it brings almost all dependencies and compilers, as well as debugging support. The solution can then be built directly in the IDE. \nThe following guide is mostly for Linux systems and command line builds on Windows.\n \n",
+                "original_header": "Compiling"
+            },
+            "confidence": 0.9996100671751785,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Compile (optional):\n```\ncd Microwalk\ndotnet build -c Release\n``` \nRun (compiles and executes; if you compile manually, you can suppress compiliation with `--no-build`):\n```\ncd Microwalk\ndotnet run -c Release <args>\n``` \n",
+                "original_header": "Main application"
+            },
+            "confidence": 0.9999927281656535,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Microwalk comes with a Pin tool for instrumenting and tracing x86 binaries. Building the Pin tool requires the [full Pin kit](https://software.intel.com/content/www/us/en/develop/articles/pin-a-binary-instrumentation-tool-downloads.html), preferably the latest version. It is assumed that Pin's directory path is contained in the variable `$pinDir`. \n**When building through Visual Studio**: Edit [Settings.props](PinTracer/Settings.props) to point to the Pin directory. You also need to install the clang-cl toolset for Visual Studio. \nCompiling and running the Pin tool via command line on Linux:\n```\ncd PinTracer\nmake PIN_ROOT=\"$pinDir\" obj-intel64/PinTracer.so\n$pinDir/pin -t PinTracer/obj-intel64/PinTracer.so -o /path/to/output/file -- /path/to/wrapper/executable\n``` \nNote that the above run command is needed for testing/debugging only, since `Microwalk` calls the Pin tool itself.\n \n",
+                "original_header": "Pin tool"
+            },
+            "confidence": 0.9881897880802422,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Follow these steps to create a custom framework plugin with a new module:\n1. Create a new project `MyPlugin` and add a reference to the `Microwalk.FrameworkBase` project. \n6. Compile the plugin project. \n7. Run Microwalk and pass the plugin's build folder via the `-p` command line switch. \n",
+                "original_header": "Creating own framework modules"
+            },
+            "confidence": 0.991670137011897,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Microwalk"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/resources/logo/microwalk.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/resources/images/screenshot.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1808.05575"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2208.14942"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microwalk-project/microwalk/master/README.md"
+        }
+    ]
+}

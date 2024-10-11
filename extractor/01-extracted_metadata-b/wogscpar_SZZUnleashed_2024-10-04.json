@@ -1,0 +1,491 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:52:34"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/wogscpar/SZZUnleashed",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "wogscpar",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-05-09T09:47:32Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-05T13:39:52Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2018 Axis Communications AB\n\nPermission is hereby granted, free of charge, to any person obtaining a copy \nof this software and associated documentation files (the \"Software\"), to deal \nin the Software without restriction, including without limitation the rights \nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell \ncopies of the Software, and to permit persons to whom the Software is \nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all \ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR \nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE \nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER \nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, \nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE \nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "An implementation of the SZZ algorithm, i.e., an approach to identify bug-introducing commits.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "SZZ Unleashed is an implementation of the SZZ algorithm, i.e. an approach to identify bug-introducing commits, introduced by \u015aliwerski et al's in [\"When Do Changes Induce Fixes?\"](https://www.st.cs.uni-saarland.de/papers/msr2005/), in *Proc. of the International Workshop on Mining Software Repositories*, May 17, 2005. \nThe implementation uses \"line number mappings\" as proposed by Williams and Spacco in [\"SZZ Revisited: Verifying When Changes Induce Fixes\"](https://www.researchgate.net/publication/220854597_SZZ_revisited_verifying_when_changes_induce_fixes), in *Proc. of the Workshop on Defects in Large Software Systems*, July 20, 2008. \nIf you find SZZ Unleashed useful for your research, please cite our paper:\n- Borg, M., Svensson, O., Berg, K., & Hansson, D., SZZ Unleashed: An Open Implementation of the SZZ Algorithm - Featuring Example Usage in a Study of Just-in-Time Bug Prediction for the Jenkins Project. In *Proc. of the 3rd ACM SIGSOFT International Workshop on Machine Learning Techniques for Software Quality Evaluation (MaLTeSQuE)*, pp. 7-12, 2019. arXiv preprint [arXiv:1903.01742](https://arxiv.org/abs/1903.01742).\n \n",
+                "original_header": "SZZ Unleashed"
+            },
+            "confidence": 0.9095448028338726,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The SZZ algorithm is used to find bug-introducing commits from a set of bug-fixing commits. \nThe bug-introducing commits can be extracted either from a bug tracking system such as Jira or simply by searching for commits that state that they are fixing something. The identified bug-introducing commits can then be used to support empirical software engineering research, e.g., defect prediction or software quality. As an example, this implementation has been used to collect training data for a machine learning-based approach to risk classification of individual commits, i.e., training a random forest classifier to highlight commits that deserve particularily careful code review. The work is described in a [MSc. thesis from Lund University](https://www.lunduniversity.lu.se/lup/publication/8971266).\n \n",
+                "original_header": "Background <a name=\"background\"></a>"
+            },
+            "confidence": 0.9774581443492713,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The `annotations.json` is a representation of the graph that is generated by the\nalgorithm in the blaming phase. Each bug fixing commit is linked to all possible\ncommits which could be responsible for the bug. Using the improvement from\nWilliams et al's, the graph also contains subgraphs which gives a deeper search\nfor responsible commits. It enables the algorithm to blame other commits than\njust the one closest in history for a bug. \nLastly, the `fix_and_bug_introducing_pairs.json` includes all possible pairs\nwhich could lead to a bug introduction and fix. This file is not sorted in any\nway and it includes duplicates when it comes to both introducers and fixes. A\nfix can be made several times and a introducer could be responsible for many\nfixes.\n \n",
+                "original_header": "Output from SZZ Unleashed"
+            },
+            "confidence": 0.9447275444744343,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "SZZUnleashed",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "wogscpar/SZZUnleashed",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/wogscpar/SZZUnleashed/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/wogscpar/SZZUnleashed/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 109,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "defect-prediction, git, mining-software-repositories, software-engineering-research, szz, szz-algorithm",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 76,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/wogscpar/SZZUnleashed/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 91549
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 82377
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 499
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 421
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/Dockerfile"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Building and running SZZ Unleashed requires Java 8 and Gradle. Python is required to run the supporting scripts and Docker must be installed to use the provided Docker images. All scripts and compilations has been tested on Linux and Mac, and partly on Windows 10.\n\nThe figure shows a suggested workflow consisting of four steps. Step 1 and Step 2 are pre-steps needed to collect and format required data. Step 3 is SZZ Phase 1, i.e., identifying bug-fixing commits. Step 4 is SZZ Phase 2, i.e., identifying bug-introducing commits. Steps 1-3 are implemented in Python scripts, whereas Step 4 is implemented in Java.\n\n![SZZ Unleashed workflow](/workflow.png) <a name=\"workflow\"></a>\n",
+                "type": "Text_excerpt",
+                "original_header": "Running SZZ Unleashed <a name=\"szz_usage\"></a>",
+                "parent_header": [
+                    "Table of Contents"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To get issues one needs a bug tracking system. As an example the project Jenkins uses [Jira](https://issues.jenkins-ci.org).\nFrom here it is possible to fetch issues that we then can link to bug fixing commits.\n\nWe have provided an example script that can be used to fetch issues from Jenkins issues (see 1 in the [figure](#workflow)). In the directory fetch_jira_bugs, one can find the **fetch.py** script. The script has a jql string which is used as a filter to get certain issues. Jira provides a neat way to test these jql strings directly in the [web page](https://issues.jenkins-ci.org/browse/JENKINS-41020?jql=). Change to the advanced view and then enter the search criteria. Notice that the jql string is generated in the browser's url bar once enter is hit.\n\nTo fetch issues from Jenkins Jira, just run:\n```python\npython fetch.py --issue-code <issue_code> --jira-project <jira_project_base_url>\n```\npassing as parameters the code used for the project issues on Jira and the name of the Jira repository of the project (e.g., _issues.jenkins-ci.org_). The script creates a directory with issues (see issues folder in the [figure](#workflow)). These issues will later on be used by the `find_bug_fixes.py` script. \n\nA more thorough example of this script can be found [here](./examples/Fetch.md).\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 1. Fetch issues (SZZ pre-step)",
+                "parent_header": [
+                    "Table of Contents",
+                    "Running SZZ Unleashed <a name=\"szz_usage\"></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Second we need to convert the `git log` output to something that can be processed. That requires a local copy of the repository that we aim to analyze, [Jenkins Core Repository](https://github.com/jenkinsci/jenkins). Once cloned, one can now run the **git_log_to_array.py** script (see 2 in the [figure](#workflow)). The script requires an absolute path to the cloned repository and a SHA-1 for an initial commit.\n```python\npython git_log_to_array.py --from-commit <SHA-1_of_initial_commit> --repo-path <path_to_local_repo>\n```\nOnce executed, this creates a file `gitlog.json` that can be used together with issues that we created with the `fetch.py` script. \n\nAn example of this script and what it produces can be found [in the examples](./examples/GitlogToArray.md).\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 2. Preprocess the git log output (SZZ pre-step)",
+                "parent_header": [
+                    "Table of Contents",
+                    "Running SZZ Unleashed <a name=\"szz_usage\"></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Now, using the `find_bug_fixes.py` (see 3 in the [figure](#workflow)) and this file, we can get a json file\nthat contains the issue and its corresponding commit SHA-1, the commit date, the creation date and the resolution date. Just run:\n```python\npython find_bug_fixes.py --gitlog <path_to_gitlog_file> --issue-list <path_to_issues_directory> --gitlog-pattern \"<a_pattern_for_matching_fixes>\"\n```\nThe output is `issue_list.json` which is later used in the SZZ algorithm.\n\nAn example output of this script can be found in [the examples](./examples/FindBugFixes.md).\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 3. Identify bug-fixing commits (SZZ Phase 1)",
+                "parent_header": [
+                    "Table of Contents",
+                    "Running SZZ Unleashed <a name=\"szz_usage\"></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "value": "This implementation works regardless which language and file type. It uses\n[JGIT](https://www.eclipse.org/jgit/) to parse a git repository.\n\nTo build a runnable jar file, use the gradle build script in the szz directory\nlike:\n\n```shell\ngradle build && gradle fatJar\n```\n\nOr if the algorithm should be run without building a jar:\n\n```shell\ngradle build && gradle runJar\n```\n\nThe algorithm tries to use as many cores as possible during runtime.\n\nTo get the bug introducing commits from a repository using the file produced\nby the previous issue to bug fix commit step, run (see 4 in the [figure](#workflow)):\n\n```shell\njava -jar szz_find_bug_introducers-<version_number>.jar -i <path_to_issue_list.json> -r <path_to_local_repo>\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Identify bug-introducing commits (SZZ Phase 2)",
+                "parent_header": [
+                    "Table of Contents",
+                    "Running SZZ Unleashed <a name=\"szz_usage\"></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "A more thorough instruction in using Docker to produce the results can be found in [doc/Docker.md](doc/Docker.md). Below is a very brief instruction.\n\nThere exists a *Dockerfile* in the repository. It contains all the steps in chronological order that is needed to generate the `fix_and_bug_introducing_pairs.json`. Simply run this command in the directory where the Dockerfile is located:\n\n```bash\ndocker build -t ssz .\n```\n\nThen start a temporary docker container:\n```bash\ndocker run -it --name szz_con szz ash\n```\nIn this container it is possible to study the results from the algorithm. The results are located in *./szz/results*.\n\nLastly, to copy the results from the container to your own computer run:\n```bash\ndocker cp szz_con:/root/szz/results .\n```\n\nNote that the temporary container must be running while the *docker cp* command is executed. To be sure, check that the *szz_con* is listed when running:\n```bash\ndocker ps\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Use SZZ Unleashed with Docker <a name=\"szz_docker\"></a>",
+                "parent_header": [
+                    "Table of Contents"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To illustrate what the output from SZZ Unleashed can be used for, we show how to train a classifier for Just-in-Time Bug prediction, i.e., predicting if individual commits are bug-introducing or not. We now have a set of bug-introducing commits and a set or correct commits. We proceed by representing individual commits by a set of features, based on previous research on bug prediction. \n",
+                "type": "Text_excerpt",
+                "original_header": "Example Application: Training a Classifier for Just-in-Time Bug Prediction <a name=\"feat_extract\"></a>",
+                "parent_header": [
+                    "Table of Contents"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The most simple features are the code churns. These are easily extracted by\njust parsing each diff for each commit. The ones that are extracted are:\n\n1. **Total lines of code** - Which simply is how many lines of code in total for all changed files.\n2. **Churned lines of code** - This is how many lines that have been inserted.\n3. **Deleted lines of code** - The number of deleted lines.\n4. **Number of Files** - The total number of changed files.\n\nTo get these features, run: `python assemble_code_churns.py <path_to_repo> <branch>`\n",
+                "type": "Text_excerpt",
+                "original_header": "Code Churns",
+                "parent_header": [
+                    "Table of Contents",
+                    "Example Application: Training a Classifier for Just-in-Time Bug Prediction <a name=\"feat_extract\"></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The diffusion features are:\n\n1. The number of modified subsystems.\n2. The number of modified subdirectories.\n3. The entropy of the change.\n\nTo extract the diffusion features, just run:\n`python assemble_diffusion_features.py --repository <path_to_repo> --branch <branch>`\n",
+                "type": "Text_excerpt",
+                "original_header": "Diffusion Features",
+                "parent_header": [
+                    "Table of Contents",
+                    "Example Application: Training a Classifier for Just-in-Time Bug Prediction <a name=\"feat_extract\"></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Maybe the most sensitive feature group. The experience features are the\nfeatures that measure how much experience a developer has, calculated based on both overall \nactivity in the repository and recent activity.\n\nThe features are:\n\n1. Overall experience.\n2. Recent experience.\n\nThe script builds a graph to keep track of each authors experience. The initial\nrun is:\n`python assemble_experience_features.py --repository <repo_path> --branch <branch> --save-graph`\n\nThis results in a graph that the script below uses for future analysis\n\nTo rerun the analysis without generating a new graph, just run:\n`python assemble_experience_features.py --repository <repo_path> --branch <branch>`\n",
+                "type": "Text_excerpt",
+                "original_header": "Experience Features",
+                "parent_header": [
+                    "Table of Contents",
+                    "Example Application: Training a Classifier for Just-in-Time Bug Prediction <a name=\"feat_extract\"></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The history is represented by the following:\n\n1. The number of authors in a file.\n2. The time between contributions made by the author.\n3. The number of unique changes between the last commit.\n\nAnalogous to the experience features, the script must initially generate a graph\nwhere the file meta data is saved.\n`python assemble_history_features.py --repository <repo_path> --branch <branch> --save-graph`\n\nTo rerun the script without generating a new graph, use:\n`python assemble_history_features.py --repository <repo_path> --branch <branch>`\n",
+                "type": "Text_excerpt",
+                "original_header": "History Features",
+                "parent_header": [
+                    "Table of Contents",
+                    "Example Application: Training a Classifier for Just-in-Time Bug Prediction <a name=\"feat_extract\"></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The purpose feature is just a binary feature representing whether a commit is a fix or\nnot. This feature can be extracted by running:\n\n`python assemble_purpose_features.py --repository <repo_path> --branch <branch>`\n",
+                "type": "Text_excerpt",
+                "original_header": "Purpose Features",
+                "parent_header": [
+                    "Table of Contents",
+                    "Example Application: Training a Classifier for Just-in-Time Bug Prediction <a name=\"feat_extract\"></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "value": "A more complex type of features are the coupling features. These indicate\nhow strong the relation is between files and modules for a revision. This means\nthat two files can have a relation even though they don't have a relation\ninside the source code itself. By mining these, features that give\nindications of how many files that a commit actually has made changes to are\nfound.\n\nThe mining is made by a Docker image containing the tool code-maat.\n\nNote that calculating these features is time-consuming. They are extracted by:\n\n```python\npython assemble_features.py --image code-maat --repo-dir <path_to_repo> --result-dir <path_to_write_result>\npython assemble_coupling_features.py <path_to_repo>\n```\n\nIt is also possible to specify which commits to analyze. This is done with the\nCLI option `--commits <path_to_file_with_commits>`. The format of this file is\njust lines where each line is equal to the corresponding commit SHA-1.\n\nIf the analysis is made by several Docker containers, one has to specify\nthe `--assemble` option which stands for assemble. This will collect and store\nall results in a single directory.\n\nThe script can check if there are any commits that haven't been\nanalyzed. To do that, specify the `--missing-commits` option.\n",
+                "type": "Text_excerpt",
+                "original_header": "Coupling",
+                "parent_header": [
+                    "Table of Contents",
+                    "Example Application: Training a Classifier for Just-in-Time Bug Prediction <a name=\"feat_extract\"></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "value": "In [the examples](./examples) directory, one can find documents containing descriptions about each script. There is also [a data directory](./examples/data) containing data produced by the scripts. It can be used to either study how the output should look like or if anyone just wants a dataset to train on.\n",
+                "type": "Text_excerpt",
+                "original_header": "Examples and executables <a name=\"examples_n_exec\"></a>",
+                "parent_header": [
+                    "Table of Contents"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "SZZ Unleashed"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master//workflow.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1903.01742](https://arxiv.org/abs/1903.01742).\n\n# Table of Contents\n1. [Background](#background)\n2. [Running SZZ Unleashed](#szz_usage)\n3. [SZZ Unleashed with Docker](#szz_docker)\n4. [Example Application: Training a Classifier for Just-in-Time Bug Prediction](#feat_extract)\n5. [Examples and executables](#examples_n_exec)\n6. [Authors](#authors)\n\n## Background <a name=\"background\"></a>\n\nThe SZZ algorithm is used to find bug-introducing commits from a set of bug-fixing commits. \nThe bug-introducing commits can be extracted either from a bug tracking system such as Jira or simply by searching for commits that state that they are fixing something. The identified bug-introducing commits can then be used to support empirical software engineering research, e.g., defect prediction or software quality. As an example, this implementation has been used to collect training data for a machine learning-based approach to risk classification of individual commits, i.e., training a random forest classifier to highlight commits that deserve particularily careful code review. The work is described in a [MSc. thesis from Lund University](https://www.lunduniversity.lu.se/lup/publication/8971266).\n\n## Running SZZ Unleashed <a name=\"szz_usage\"></a>\nBuilding and running SZZ Unleashed requires Java 8 and Gradle. Python is required to run the supporting scripts and Docker must be installed to use the provided Docker images. All scripts and compilations has been tested on Linux and Mac, and partly on Windows 10.\n\nThe figure shows a suggested workflow consisting of four steps. Step 1 and Step 2 are pre-steps needed to collect and format required data. Step 3 is SZZ Phase 1, i.e., identifying bug-fixing commits. Step 4 is SZZ Phase 2, i.e., identifying bug-introducing commits. Steps 1-3 are implemented in Python scripts, whereas Step 4 is implemented in Java.\n\n![SZZ Unleashed workflow](/workflow.png) <a name=\"workflow\"></a>\n\n### Step 1. Fetch issues (SZZ pre-step) ###\nTo get issues one needs a bug tracking system. As an example the project Jenkins uses [Jira](https://issues.jenkins-ci.org).\nFrom here it is possible to fetch issues that we then can link to bug fixing commits.\n\nWe have provided an example script that can be used to fetch issues from Jenkins issues (see 1 in the [figure](#workflow)). In the directory fetch_jira_bugs, one can find the **fetch.py** script. The script has a jql string which is used as a filter to get certain issues. Jira provides a neat way to test these jql strings directly in the [web page](https://issues.jenkins-ci.org/browse/JENKINS-41020?jql=). Change to the advanced view and then enter the search criteria. Notice that the jql string is generated in the browser's url bar once enter is hit.\n\nTo fetch issues from Jenkins Jira, just run:\n```python\npython fetch.py --issue-code <issue_code> --jira-project <jira_project_base_url>\n```\npassing as parameters the code used for the project issues on Jira and the name of the Jira repository of the project (e.g., _issues.jenkins-ci.org_). The script creates a directory with issues (see issues folder in the [figure](#workflow)). These issues will later on be used by the `find_bug_fixes.py` script. \n\nA more thorough example of this script can be found [here](./examples/Fetch.md).\n\n### Step 2. Preprocess the git log output (SZZ pre-step) ###\nSecond we need to convert the `git log` output to something that can be processed. That requires a local copy of the repository that we aim to analyze, [Jenkins Core Repository](https://github.com/jenkinsci/jenkins). Once cloned, one can now run the **git_log_to_array.py** script (see 2 in the [figure](#workflow)). The script requires an absolute path to the cloned repository and a SHA-1 for an initial commit.\n```python\npython git_log_to_array.py --from-commit <SHA-1_of_initial_commit> --repo-path <path_to_local_repo>\n```\nOnce executed, this creates a file `gitlog.json` that can be used together with issues that we created with the `fetch.py` script. \n\nAn example of this script and what it produces can be found [in the examples](./examples/GitlogToArray.md).\n\n### Step 3. Identify bug-fixing commits (SZZ Phase 1) ###\nNow, using the `find_bug_fixes.py` (see 3 in the [figure](#workflow)) and this file, we can get a json file\nthat contains the issue and its corresponding commit SHA-1, the commit date, the creation date and the resolution date. Just run:\n```python\npython find_bug_fixes.py --gitlog <path_to_gitlog_file> --issue-list <path_to_issues_directory> --gitlog-pattern \"<a_pattern_for_matching_fixes>\"\n```\nThe output is `issue_list.json` which is later used in the SZZ algorithm.\n\nAn example output of this script can be found in [the examples](./examples/FindBugFixes.md).\n\n### Identify bug-introducing commits (SZZ Phase 2) ###\nThis implementation works regardless which language and file type. It uses\n[JGIT](https://www.eclipse.org/jgit/) to parse a git repository.\n\nTo build a runnable jar file, use the gradle build script in the szz directory\nlike:\n\n```shell\ngradle build && gradle fatJar\n```\n\nOr if the algorithm should be run without building a jar:\n\n```shell\ngradle build && gradle runJar\n```\n\nThe algorithm tries to use as many cores as possible during runtime.\n\nTo get the bug introducing commits from a repository using the file produced\nby the previous issue to bug fix commit step, run (see 4 in the [figure](#workflow)):\n\n```shell\njava -jar szz_find_bug_introducers-<version_number>.jar -i <path_to_issue_list.json> -r <path_to_local_repo>\n```\n\n## Output from SZZ Unleashed\nAs shown in the [figure](#workflow), the output consists of three different files: `commits.json`,\n`annotations.json` and `fix_and_bug_introducing_pairs.json`.\n\nThe `commits.json` file includes all commits that have been blamed to be bug\nintroducing but which haven't been analyzed by anything.\n\nThe `annotations.json` is a representation of the graph that is generated by the\nalgorithm in the blaming phase. Each bug fixing commit is linked to all possible\ncommits which could be responsible for the bug. Using the improvement from\nWilliams et al's, the graph also contains subgraphs which gives a deeper search\nfor responsible commits. It enables the algorithm to blame other commits than\njust the one closest in history for a bug.\n\nLastly, the `fix_and_bug_introducing_pairs.json` includes all possible pairs\nwhich could lead to a bug introduction and fix. This file is not sorted in any\nway and it includes duplicates when it comes to both introducers and fixes. A\nfix can be made several times and a introducer could be responsible for many\nfixes.\n\n## Configuring SZZ Unleashed\n\nA description of how to configure SZZUnleashed further can be found in [the examples](./examples/BugIntroducersFinder.md).\n\n## Use SZZ Unleashed with Docker <a name=\"szz_docker\"></a>\n\nA more thorough instruction in using Docker to produce the results can be found in [doc/Docker.md](doc/Docker.md). Below is a very brief instruction.\n\nThere exists a *Dockerfile* in the repository. It contains all the steps in chronological order that is needed to generate the `fix_and_bug_introducing_pairs.json`. Simply run this command in the directory where the Dockerfile is located:\n\n```bash\ndocker build -t ssz .\n```\n\nThen start a temporary docker container:\n```bash\ndocker run -it --name szz_con szz ash\n```\nIn this container it is possible to study the results from the algorithm. The results are located in *./szz/results*.\n\nLastly, to copy the results from the container to your own computer run:\n```bash\ndocker cp szz_con:/root/szz/results .\n```\n\nNote that the temporary container must be running while the *docker cp* command is executed. To be sure, check that the *szz_con* is listed when running:\n```bash\ndocker ps\n```\n\n## Example Application: Training a Classifier for Just-in-Time Bug Prediction <a name=\"feat_extract\"></a>\nTo illustrate what the output from SZZ Unleashed can be used for, we show how to train a classifier for Just-in-Time Bug prediction, i.e., predicting if individual commits are bug-introducing or not. We now have a set of bug-introducing commits and a set or correct commits. We proceed by representing individual commits by a set of features, based on previous research on bug prediction. \n\n### Code Churns ###\nThe most simple features are the code churns. These are easily extracted by\njust parsing each diff for each commit. The ones that are extracted are:\n\n1. **Total lines of code** - Which simply is how many lines of code in total for all changed files.\n2. **Churned lines of code** - This is how many lines that have been inserted.\n3. **Deleted lines of code** - The number of deleted lines.\n4. **Number of Files** - The total number of changed files.\n\nTo get these features, run: `python assemble_code_churns.py <path_to_repo> <branch>`\n\n### Diffusion Features ###\nThe diffusion features are:\n\n1. The number of modified subsystems.\n2. The number of modified subdirectories.\n3. The entropy of the change.\n\nTo extract the diffusion features, just run:\n`python assemble_diffusion_features.py --repository <path_to_repo> --branch <branch>`\n\n### Experience Features ###\nMaybe the most sensitive feature group. The experience features are the\nfeatures that measure how much experience a developer has, calculated based on both overall \nactivity in the repository and recent activity.\n\nThe features are:\n\n1. Overall experience.\n2. Recent experience.\n\nThe script builds a graph to keep track of each authors experience. The initial\nrun is:\n`python assemble_experience_features.py --repository <repo_path> --branch <branch> --save-graph`\n\nThis results in a graph that the script below uses for future analysis\n\nTo rerun the analysis without generating a new graph, just run:\n`python assemble_experience_features.py --repository <repo_path> --branch <branch>`\n\n### History Features ###\nThe history is represented by the following:\n\n1. The number of authors in a file.\n2. The time between contributions made by the author.\n3. The number of unique changes between the last commit.\n\nAnalogous to the experience features, the script must initially generate a graph\nwhere the file meta data is saved.\n`python assemble_history_features.py --repository <repo_path> --branch <branch> --save-graph`\n\nTo rerun the script without generating a new graph, use:\n`python assemble_history_features.py --repository <repo_path> --branch <branch>`\n\n### Purpose Features ###\nThe purpose feature is just a binary feature representing whether a commit is a fix or\nnot. This feature can be extracted by running:\n\n`python assemble_purpose_features.py --repository <repo_path> --branch <branch>`\n\n### Coupling ###\nA more complex type of features are the coupling features. These indicate\nhow strong the relation is between files and modules for a revision. This means\nthat two files can have a relation even though they don't have a relation\ninside the source code itself. By mining these, features that give\nindications of how many files that a commit actually has made changes to are\nfound.\n\nThe mining is made by a Docker image containing the tool code-maat.\n\nNote that calculating these features is time-consuming. They are extracted by:\n\n```python\npython assemble_features.py --image code-maat --repo-dir <path_to_repo> --result-dir <path_to_write_result>\npython assemble_coupling_features.py <path_to_repo>\n```\n\nIt is also possible to specify which commits to analyze. This is done with the\nCLI option `--commits <path_to_file_with_commits>`. The format of this file is\njust lines where each line is equal to the corresponding commit SHA-1.\n\nIf the analysis is made by several Docker containers, one has to specify\nthe `--assemble` option which stands for assemble. This will collect and store\nall results in a single directory.\n\nThe script can check if there are any commits that haven't been\nanalyzed. To do that, specify the `--missing-commits` option.\n\n## Classification ##\nNow that all features have been extracted, the training and testing of the machine learning classifier can\nbe made. In this example, we train a random forest classifier. To do this, run the model script in the model directory:\n```python\npython model.py train\n```\n\n## Examples and executables <a name=\"examples_n_exec\"></a>\n\nIn [the examples](./examples) directory, one can find documents containing descriptions about each script. There is also [a data directory](./examples/data) containing data produced by the scripts. It can be used to either study how the output should look like or if anyone just wants a dataset to train on.\n\n## Authors <a name=\"authors\"></a>\n\n[Oscar Svensson](mailto:wgcp92@gmail.com)\n[Kristian Berg](mailto:kristianberg.jobb@gmail.com)"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1903.01742"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/wogscpar/SZZUnleashed/master/README.md"
+        }
+    ]
+}

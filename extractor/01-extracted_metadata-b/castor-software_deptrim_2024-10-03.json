@@ -1,0 +1,485 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:52:11"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ASSERT-KTH/deptrim",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ASSERT-KTH",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-09-20T19:47:02Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-29T08:31:10Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 CASTOR-Software\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/LICENSE"
+        },
+        {
+            "result": {
+                "value": "Distributed under the MIT License. See [LICENSE](https://github.com/castor-software/depclean/blob/master/LICENSE.md) for more information.\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "DepTrim <img src=\".img/logo.svg\" align=\"left\" height=\"135px\" alt=\"DepTrim logo\"/>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "DepTrim automatically specializes the software supply chain of dependencies in Maven projects https://arxiv.org/pdf/2302.08370",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "DepTrim is a Maven plugin that automatically specializes the dependencies of a project.\nThe objective is hardening the [software supply chain](https://www.cesarsotovalero.net/blog/the-software-supply-chain.html) of third-party dependencies of a project by using dependencies that only contain the classes and interfaces that are **actually necessary** to build the project.\nRelying on specialized variants of dependencies is **good for security**, as it reduces the attack surface of the project, and **good for performance**, as it reduces the size of the final artifact. \nAfter running DepTrim, a directory named `libs-specialized` is created in the root of the project.\nThis directory contains the specialized variants of all the dependencies necessary to build the project (inc. direct and transitive dependencies).\nDepTrim can also create a specialized POM file, named `pom-specialized.xml`.\nThis specialized POM uses the specialized variants of the dependencies instead of the original dependencies.\nDepTrim deploys the specialized variants of the dependencies in the local Maven repository. \n",
+                "original_header": "What is DepTrim?"
+            },
+            "confidence": 0.9528874552272812,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| Name                        |     Type      | Description                                                                                                                                                                                                                                                                                                                                                                                                        | \n|:----------------------------|:-------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| \n| `<specializeDependencies>`  | `Set<String>` | Add a list of dependencies, identified by their coordinates, to be specialized by DepTrim. **Dependency format is:** `groupId:artifactId:version:scope`. An empty string indicates that all the dependencies in the dependency tree of the project will be specialized (`default`).                                                                                                                                |\n| `<ignoreDependencies>`      | `Set<String>` | Add a list of dependencies, identified by their coordinates, to be ignored by DepTrim during the analysis. This is useful to override incomplete result caused by bytecode-level static analysis. **Dependency format is:** `groupId:artifactId:version:scope`.                                                                                                                                                    |\n| `<ignoreScopes>`            | `Set<String>` | Add a list of scopes, to be ignored by DepTrim during the analysis. Useful to not analyze dependencies with scopes that are not needed at runtime. **Valid scopes are:** `compile`, `provided`, `test`, `runtime`, `system`, `import`. An empty string indicates no scopes (`default`).                                                                                                                            |\n| `<createSinglePomSpecialized>`    |   `boolean`   | If this is `true`, DepTrim creates a specialized version of the POM file in the root of the project, called `pom-specialized.xml`, which points to the variant of the specialized the dependencies. **Default value is:** `false`.                                                                                                                                                                                 |\n| `<createDependencySpecializedPerPom>`    |   `boolean`   | If this is `true`, DepTrim creates one specialized version of the POM file per specialized dependency, called `pom-specialized-x-y.xml`, where `x` is an integer identifying a specialized dependency, and `y` is the total number of specialized dependencies. **Default value is:** `false`.                                                                                                                    |\n| `<createAllPomSpecialized>` |   `boolean`   | If this is `true`, DepTrim creates all the combinations of specialized version of the original POM in the root of the project (i.e., $2^y$ POM files will be created). Name format is `pom-specialized-n-x-y.xml`, where `n` is the combination number, `x` is the number of specialized dependencies in this combination, and `y` is the total number of specialized dependencies. **Default value is:** `false`. |\n| `<verboseMode>`             |   `boolean`   | Run DepTrim in verbose mode. **Default value is:** `false`.                                                                                                                                                                                                                                                                                                                                                        |\n| `<skipDepTrim>`             |   `boolean`   | Skip plugin execution completely. **Default value is:** `false`.                                                                                                                                                                                                                                                                                                                                                   |\n \n",
+                "original_header": "Optional parameters"
+            },
+            "confidence": 0.9873113134082137,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "DepTrim runs before executing during the [`pre-package`](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#some-phases-are-not-usually-called-from-the-command-line) phase of the Maven build lifecycle. \nDepTrim relies on [depclean-core](https://github.com/castor-software/depclean) to statically collects all the types used by the project under analysis, as well as in its dependencies. \nWith this information, DepTrim removes all the types in the dependencies that are not used by the project.\nDepTrim also creates a directory named `libs-specialized` in the root of the project, which contains the specialized versions of the dependencies.\nDepTrim creates a new `pom-specialized.xml` file that contains only the specialized versions of the dependencies. \n",
+                "original_header": "How does DepTrim works?"
+            },
+            "confidence": 0.9667395204492476,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "DepTrim needs to know all the types used by the project under analysis, as well as in its dependencies.\nThis is a challenging task, as it requires \"seeing\" all the project's codebase.\nIn particular, it is not possible to detect the usage of [dynamic Java features](https://www.graalvm.org/latest/reference-manual/native-image/dynamic-features/), such as reflection, dynamic proxies, or custom class loaders, in Java.\nThis necessitates both a thorough understanding of Java's dynamic features and a careful examination of the project's codebase.\nTo detect the utilization of dynamic features within a Java application, we recommend the use of the [GraalVM Tracing Agent](https://www.graalvm.org/22.0/reference-manual/native-image/Agent/).\n```bash\njava -agentlib:native-image-agent=config-output-dir=/path/to/config-dir/ -jar yourApp.jar\n```\nBy running your application with the agent, it will generate a configuration directory (`/path/to/config-dir/`) containing the files that describe the observed dynamic behavior.\nThis useful for specialization tasks, e.g., when specializing dependencies that could be accessed dynamically and lack complete a priori knowledge about all possible dynamic behaviors.\n \n",
+                "original_header": "Known limitations"
+            },
+            "confidence": 0.9779064568127561,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "deptrim",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ASSERT-KTH/deptrim",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/deptrim/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/deptrim/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 13,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "bytecode, dependencies, java, maven-plugin, specialization",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/castor-software/deptrim/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 58520
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/deptrim/releases/89256053",
+                "tag": "0.1.2",
+                "name": "0.1.2",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "**Full Changelog**: https://github.com/castor-software/deptrim/compare/0.1.1...0.1.2",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/deptrim/tarball/0.1.2",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/deptrim/zipball/0.1.2",
+                "html_url": "https://github.com/ASSERT-KTH/deptrim/releases/tag/0.1.2",
+                "url": "https://api.github.com/repos/ASSERT-KTH/deptrim/releases/89256053",
+                "release_id": 89256053,
+                "date_created": "2023-01-17T15:30:01Z",
+                "date_published": "2023-01-17T15:38:16Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/deptrim/releases/87747678",
+                "tag": "0.1.1",
+                "name": "0.1.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "### What's Changed\r\n- Add optional parameter `createDependencySpecializedPerPom`\r\n- Update dependencies (inc. `depclean-core` to version 2.0.5)\r\n\r\n**Full Changelog**: https://github.com/castor-software/deptrim/compare/0.0.1...0.1.1",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/deptrim/tarball/0.1.1",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/deptrim/zipball/0.1.1",
+                "html_url": "https://github.com/ASSERT-KTH/deptrim/releases/tag/0.1.1",
+                "url": "https://api.github.com/repos/ASSERT-KTH/deptrim/releases/87747678",
+                "release_id": 87747678,
+                "date_created": "2023-01-03T06:54:25Z",
+                "date_published": "2023-01-03T07:00:57Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/ASSERT-KTH/deptrim/releases/86402253",
+                "tag": "0.0.1",
+                "name": "0.0.1",
+                "author": {
+                    "name": "cesarsotovalero",
+                    "type": "User"
+                },
+                "description": "Maven Central: https://mvnrepository.com/artifact/se.kth.castor/deptrim-maven-plugin/0.0.1\r\n\r\n## What's Changed\r\n* Fix https://github.com/castor-software/deptrim/issues/1 by @cesarsotovalero in https://github.com/castor-software/deptrim/pull/3\r\n* Issue2 build with variant by @cesarsotovalero in https://github.com/castor-software/deptrim/pull/4\r\n* Add integration tests by @cesarsotovalero in https://github.com/castor-software/deptrim/pull/6\r\n* Deploy specialized jars to local Maven repo by @Deee92 in https://github.com/castor-software/deptrim/pull/9\r\n* Issue8 trimmed pom by @Deee92 in https://github.com/castor-software/deptrim/pull/10\r\n* Trim all dependencies by default, if flag unset by @Deee92 in https://github.com/castor-software/deptrim/pull/12\r\n* Skip specialization if no used types in dependency by @Deee92 in https://github.com/castor-software/deptrim/pull/14\r\n* Fix issue with ignored dependency scopes in trimmed poms by @cesarsotovalero in https://github.com/castor-software/deptrim/pull/16\r\n* Skip producing specialized dependencies from dependencies that are not modified by DepTrim by @cesarsotovalero in https://github.com/castor-software/deptrim/pull/18\r\n* Fix #19 by @cesarsotovalero in https://github.com/castor-software/deptrim/pull/21\r\n* Fix #20 by @cesarsotovalero in https://github.com/castor-software/deptrim/pull/22\r\n* docs: use LaTeX formatted mathematical expression by @algomaster99 in https://github.com/castor-software/deptrim/pull/24\r\n* Replace \"trim\" by \"specialize\" by @cesarsotovalero in https://github.com/castor-software/deptrim/pull/25\r\n* Deploy to Maven Central v0.0.1 by @cesarsotovalero in https://github.com/castor-software/deptrim/pull/27\r\n\r\n## New Contributors\r\n* @cesarsotovalero made their first contribution in https://github.com/castor-software/deptrim/pull/3\r\n* @Deee92 made their first contribution in https://github.com/castor-software/deptrim/pull/9\r\n* @algomaster99 made their first contribution in https://github.com/castor-software/deptrim/pull/24\r\n\r\n**Full Changelog**: https://github.com/castor-software/deptrim/commits/0.0.1",
+                "tarball_url": "https://api.github.com/repos/ASSERT-KTH/deptrim/tarball/0.0.1",
+                "zipball_url": "https://api.github.com/repos/ASSERT-KTH/deptrim/zipball/0.0.1",
+                "html_url": "https://github.com/ASSERT-KTH/deptrim/releases/tag/0.0.1",
+                "url": "https://api.github.com/repos/ASSERT-KTH/deptrim/releases/86402253",
+                "release_id": 86402253,
+                "date_created": "2022-12-16T21:38:40Z",
+                "date_published": "2022-12-17T12:45:59Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Run DepTrim directly from the command line as follows:\n\n```bash\ncd {PATH_TO_MAVEN_PROJECT}\n# First, compile source and test files of the project.\nmvn compile   \nmvn compiler:testCompile\n# Then, run the latest version of DepTrim.\nmvn se.kth.castor:deptrim-maven-plugin:0.1.1:deptrim -DcreateSinglePomSpecialized=true\n```\n\nAlternatively, configure the original `pom.xml` file of the project to run DepTrim as part of the build as follows:\n\n```xml\n<plugin>\n  <groupId>se.kth.castor</groupId>\n  <artifactId>deptrim-maven-plugin</artifactId>\n  <version>0.1.1</version>\n  <executions>\n    <execution>\n      <goals>\n        <goal>deptrim</goal>\n      </goals>\n      <configurations>\n        <createSinglePomSpecialized>true</createSinglePomSpecialized>\n      </configurations>\n    </execution>\n  </executions>\n</plugin>\n```\n\nIn both cases, a directory name `libs-specialized` will be created in the root of the project, together with a file named `pom-specialized.xml`, which uses the specialized variants of the dependencies.\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "DepTrim <img src=\".img/logo.svg\" align=\"left\" height=\"135px\" alt=\"DepTrim logo\"/>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Prerequisites:\n\n- [Java OpenJDK 17](https://openjdk.java.net) or above\n- [Apache Maven](https://maven.apache.org/)\n\nIn a terminal, clone the repository and switch to the cloned folder:\n\n```bash\ngit clone https://github.com/castor-software/deptrim.git\ncd deptrim\n```\n\nThen run the following Maven command to build the application and install the plugin locally:\n\n```bash\nmvn clean install\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Installing and building from source",
+                "parent_header": [
+                    "DepTrim <img src=\".img/logo.svg\" align=\"left\" height=\"135px\" alt=\"DepTrim logo\"/>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The `pom-specialized.xml` is created following these steps: \n",
+                "original_header": "How does DepTrim works?"
+            },
+            "confidence": 0.9693387139032118,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<img src=\"https://github.com/castor-software/depclean/blob/master/.img/wasp.svg\" height=\"50px\" alt=\"Wallenberg Autonomous Systems and Software Program (WASP)\"/>\n \n",
+                "original_header": "Funding"
+            },
+            "confidence": 0.9934639464983258,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "DepTrim "
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/castor-software/deptrim/main/.img/logo.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://sonarcloud.io/api/project_badges/measure?project=castor-software_deptrim&amp;metric=alert_status"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://sonarcloud.io/api/project_badges/measure?project=castor-software_deptrim&amp;metric=sqale_rating"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://sonarcloud.io/api/project_badges/measure?project=castor-software_deptrim&amp;metric=reliability_rating"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://sonarcloud.io/api/project_badges/measure?project=castor-software_deptrim&amp;metric=security_rating"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://sonarcloud.io/api/project_badges/measure?project=castor-software_deptrim&amp;metric=vulnerabilities"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://sonarcloud.io/api/project_badges/measure?project=castor-software_deptrim&amp;metric=bugs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://sonarcloud.io/api/project_badges/measure?project=castor-software_deptrim&amp;metric=code_smells"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://sonarcloud.io/api/project_badges/measure?project=castor-software_deptrim&amp;metric=ncloc"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://sonarcloud.io/api/project_badges/measure?project=castor-software_deptrim&amp;metric=duplicated_lines_density"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://sonarcloud.io/api/project_badges/measure?project=castor-software_deptrim&amp;metric=sqale_index"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/castor-software/depclean/master/.img/wasp.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/castor-software/deptrim/main/README.md"
+        }
+    ]
+}

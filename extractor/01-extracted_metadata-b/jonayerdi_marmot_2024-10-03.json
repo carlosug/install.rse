@@ -1,0 +1,246 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 22:35:15"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/jonayerdi/marmot",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "jonayerdi",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-10-10T14:45:52Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-10-10T14:49:26Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 Anonymous\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/jonayerdi/marmot/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "MarMot: Metamorphic Runtime Monitoring of Autonomous Driving Systems",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is the code used in the paper \"MarMot: Metamorphic Runtime Monitoring of Autonomous\nDriving Systems\". For replicating our study, the dataset we use can be found at [https://doi.org/10.5281/zenodo.10716933](https://doi.org/10.5281/zenodo.10716933). \n* `evaluation_scripts` Contains the code used for evaluating monitoring approaches (as well as other stuff, like training SelfOracle models).\n* `leorover_scripts` Contains the code ran in the LeoRover vehicle for running ADS models, injecting anomalies, and recording datasets. Most of this is modified from code provided by the LeoRover vendor. It also contains the scripts for training ADS models and generating the mutants. \n",
+                "original_header": "MarMot: Metamorphic Runtime Monitoring of Autonomous Driving Systems"
+            },
+            "confidence": 0.9515793958293375,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/jonayerdi/marmot/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "marmot",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "jonayerdi/marmot",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/jonayerdi/marmot/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/jonayerdi/marmot/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/jonayerdi/marmot/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 292398
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 139051
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jonayerdi/marmot/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/jonayerdi/marmot/master/leorover_scripts/LeoRover_training.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/jonayerdi/marmot/master/leorover_scripts/LeoRover_training.ipynb"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Graphs"
+            },
+            "confidence": 0.9180785997642223,
+            "technique": "supervised_classification"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* SelfOracle\n    * [https://github.com/testingautomated-usi/selforacle](https://github.com/testingautomated-usi/selforacle) (MIT License)\n* LeoRover\n    * [https://github.com/LeoRover/leo_examples/tree/master/leo_example_line_follower](https://github.com/LeoRover/leo_examples/tree/master/leo_example_line_follower) (MIT License)\n* Anomalies\n    * [https://github.com/tsigalko18/transferability-testing-sdcs/blob/main/visualodometry/corruptions/hendrycks.py](https://github.com/tsigalko18/transferability-testing-sdcs/blob/main/visualodometry/corruptions/hendrycks.py) (MIT License)\n    * [https://github.com/hendrycks/robustness/blob/master/ImageNet-C/create_c/make_cifar_c.py](https://github.com/hendrycks/robustness/blob/master/ImageNet-C/create_c/make_cifar_c.py) (Apache License 2.0)\n \n",
+                "original_header": "MarMot: Metamorphic Runtime Monitoring of Autonomous Driving Systems"
+            },
+            "confidence": 0.9800622075456404,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/jonayerdi/marmot/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "MarMot: Metamorphic Runtime Monitoring of Autonomous Driving Systems"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/jonayerdi/marmot/master/README.md"
+        }
+    ]
+}

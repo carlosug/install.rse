@@ -1,0 +1,399 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:54:39"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/henry2cox/lcov",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "henry2cox",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-07-27T13:49:01Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-01-11T20:36:29Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/gpl-2.0",
+                "type": "License",
+                "name": "GNU General Public License v2.0",
+                "url": "https://api.github.com/licenses/gpl-2.0",
+                "spdx_id": "GPL-2.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "LCOV - differential coverage + date/owner  binning",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "  LCOV is an extension of GCOV, a GNU tool which provides information about\n  what parts of a program are actually executed (i.e. \"covered\") while running\n  a particular test case. The extension consists of a set of Perl scripts\n  which build on the textual GCOV output to implement the following enhanced\n  functionality:\n\n    * HTML based output: coverage rates are additionally indicated using bar\n      graphs and specific colors.\n\n    * Support for large projects: overview pages allow quick browsing of\n      coverage data by providing either a hierarchical directory structure\n      view or a three-level detail view: directory, file and source code view.\n\n  LCOV was initially designed to support Linux kernel coverage measurements,\n  but works as well for coverage measurements on standard user space\n  applications.\n\n  LCOV has recently been enhanced to support differential coverage, as well\n  as date- and owner-binning.  See https://arxiv.org/abs/2008.07947 or https://ieeexplore.ieee.org/document/9438597 for\n  a detailed explanation of the concepts and several possible use models.\n  A video presentation of the basic ideas can be found at http://doi.org/10.5281/zenodo.4653252\n\n  In addition, several other features and capabilities have been added.  See section 5, below, for a brief description - and also see the man pages and the test cases.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Description"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/henry2cox/lcov/master/README"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "  1. Included files\n  2. Installing LCOV\n  3. An example of how to access kernel coverage data\n  4. An example of how to access coverage data for a user space program\n  5. New features (compared to lcov 1.16).\n  6. Questions and Comments \n",
+                "original_header": "Further README contents"
+            },
+            "confidence": 0.9398238025207364,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/henry2cox/lcov/master/README"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "lcov",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "henry2cox/lcov",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/henry2cox/lcov/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/henry2cox/lcov/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 6,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/henry2cox/lcov/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Perl",
+                "name": "Perl",
+                "type": "Programming_language",
+                "size": 818143
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 61762
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 27226
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 13557
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 5160
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 2730
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "Contributing to LCOV\n====================\n\nPlease read this document if you would like to help improving the LTP GCOV\nextension (LCOV). In general, all types of contributions are welcome, for\nexample:\n\n * Fixes for code or documentation\n * Performance and compatibility improvements\n * Functional enhancements\n\nThere are some rules that these contributions must follow to be acceptable for\ninclusion:\n\n 1. The contribution must align with the project goals of LCOV.\n 2. The contribution must follow a particular format.\n 3. The contribution must be signed.\n\nOnce you have made sure that your contribution follows these rules, open a\npull request for the LCOV code repository [1].\n\n\nSigning your work\n=================\n\nAll contributions to LCOV must be signed by putting the following line at the\nend of the explanation of a patch:\n\n  Signed-off-by: Your Name <your.email@example.org>\n\nBy signing a patch, you certify the following:\n\n  By making a contribution to the LTP GCOV extension (LCOV) on\n  https://github.com/linux-test-project/lcov, I certify that:\n\n  a) The contribution was created by me and I have the right to submit it\n     under the terms and conditions of the open source license\n     \"GNU General Public License, version 2 or later\".\n     (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).\n\n  b) The contribution is made free of any other party's intellectual property\n     claims or rights.\n\n  c) I understand and agree that this project and the contribution are public\n     and that a record of the contribution (including all personal information\n     I submit with it, including my sign-off) is maintained indefinitely and\n     may be redistributed consistent with this project or the open source\n     license(s) involved.\n\n\nProject goals\n=============\n\nThe goal of LCOV is to provide a set of command line tools that can be used to\ncollect, process and visualize code coverage data as produced by the gcov tool\nthat is part of the GNU Compiler Collection (GCC) [2].\n\nIf you have an idea for a contribution but are unsure if it aligns with the\nproject goals, feel free to discuss the idea using the issue tracker on the\nLCOV code repository site [1].\n\n\nContribution format\n===================\n\nTo contribute a change, please create a patch using 'git format-patch'.\nAlternatively you can use the diff utility with the following command line\noptions:\n\n  diff -Naurp\n\nPlease base your changes on the most current version of LCOV. You can use the\nfollowing command line to obtain this version from the lcov Git repository:\n\n git clone https://github.com/linux-test-project/lcov.git\n\nAdd a meaningful description of the contribution to the top of the patch. The\ndescription should follow this format:\n\n  component: short description\n\n  detailed description\n\n  Signed-off-by: Your Name <your.email@example.org>\n\nWith your Signed-off-by, you certify the rules stated in section\n\"Signing your work\".\n\n\n-- \n\n[1] https://github.com/linux-test-project/lcov\n[2] https://gcc.gnu.org\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/henry2cox/lcov/master/CONTRIBUTING"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/henry2cox/lcov/master/README",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/henry2cox/lcov/master/bin/checkstyle.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/henry2cox/lcov/master/bin/get_version.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/henry2cox/lcov/master/bin/get_changes.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/henry2cox/lcov/master/bin/install.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/henry2cox/lcov/master/bin/copy_dates.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "The LCOV package is available as either RPM or tarball from:\n\n  https://github.com/linux-test-project/lcov/releases\n\nTo install the tarball, unpack it to a directory and run:\n\n  make install\n\nUse Git for the most recent (but possibly unstable) version:\n\n  git clone https://github.com/linux-test-project/lcov.git\n\nChange to the resulting lcov directory and type:\n\n  make install\n\n",
+                "type": "Text_excerpt",
+                "original_header": "2. Installing LCOV"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/henry2cox/lcov/master/README"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "  README             - This README file\n  CHANGES            - List of changes between releases\n  bin/lcov           - Tool for capturing LCOV coverage data\n  bin/genhtml        - Tool for creating HTML output from LCOV data\n  bin/gendesc        - Tool for creating description files as used by genhtml\n  bin/geninfo        - Internal tool (creates LCOV data files)\n  bin/genpng         - Internal tool (creates png overviews of source files)\n  bin/install.sh     - Internal tool (takes care of un-/installing)\n  man                - Directory containing man pages for included tools\n  example            - Directory containing an example to demonstrate LCOV\n  lcovrc             - LCOV configuration file\n  Makefile           - Makefile providing 'install' and 'uninstall' targets \n",
+                "original_header": "1. Important files"
+            },
+            "confidence": 0.999999972525757,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/henry2cox/lcov/master/README"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "  https://github.com/linux-test-project/lcov\n \n",
+                "original_header": "6. Questions and comments"
+            },
+            "confidence": 0.9997331532191335,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/henry2cox/lcov/master/README"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "-------------------------------------------------\n- README file for the LTP GCOV extension (LCOV) -\n- Last changes: 2022-10-04\n------------------------------------------------- \n"
+            },
+            "confidence": 0.9800278476028504,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/henry2cox/lcov/master/README"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Requirements: Follow the Linux kernel coverage setup instructions at:\n\n  https://docs.kernel.org/dev-tools/gcov.html\n\nAs root, do the following:\n\n  a) Resetting counters\n\n     lcov --zerocounters\n\n  b) Capturing the current coverage state to a file\n\n     lcov --capture --output-file kernel.info\n\n  c) Getting HTML output\n\n     genhtml kernel.info\n\nPoint the web browser of your choice to the resulting index.html file.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "3. An example of how to access Linux kernel coverage data"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/henry2cox/lcov/master/README"
+        },
+        {
+            "result": {
+                "value": "Requirements: compile the program in question using GCC with the options\n-fprofile-arcs and -ftest-coverage. During linking, make sure to specify\n-lgcov or -coverage.\n\nAssuming the compile directory is called \"appdir\", do the following:\n\n  a) Resetting counters\n\n     lcov --directory appdir --zerocounters\n\n  b) Capturing the current coverage state to a file\n\n     lcov --directory appdir --capture --output-file app.info\n\n     Note that this step only works after the application has\n     been started and stopped at least once. Otherwise lcov will\n     abort with an error mentioning that there are no data/.gcda files.\n\n  c) Getting HTML output\n\n     genhtml app.info\n\n  d) Generating a differential coverage report\n\n     See the examples in .../tests/gendiffcov.\n\nPoint the web browser of your choice to the resulting index.html file.\n\nPlease note that independently of where the application is installed or\nfrom which directory it is run, the --directory statement needs to\npoint to the directory in which the application was compiled.\n\nFor further information on the gcc profiling mechanism, please also\nconsult the gcov man page.\n\n\n5. New features (compared to lcov 1.16):\n\nNew features and capabilities fall into 6 major categories:\n\n  a) Categorization\n\n     This refers primarily to differentical coverage categorization as\n     well as date- and owner-binning.  See https://arxiv.org/abs/2008.07947\n     or https://ieeexplore.ieee.org/document/9438597 for a detailed\n     description of the concepts.\n\n     Differential categorization and binning are orthogonal in the sense\n     that you can generate differential report without binning as well\n     as 'vanilla' coverage reports with binning.  See the above papers\n     and the genhtml man page for details.\n\n     Related options:\n        --baseline-file, --diff-file, --annotate-script, --date-bins,\n        --new-file-as-baseline, --elide-path-mismtach\n\n  b) Error handling\n\n     A generic - but very simple - error handler has been added to the\n     lcov tool suite.  The error handler is used to report exceptions,\n     and provides a mechanism for the user to ignore the particular\n     message if desired.\n     See the genhtml/lcov/geninfo man pages for details.\n\n     Note that some errors are unrecoverable - and cannot be suppressed or\n     ignored.\n\n     Related options:  --ignore-error, --keep-going\n\n  c) Navigation and display:\n\n     Navigation aids such as hyperlinks to the first uncovered region,\n     to the next uncovered region, etc. have been implemented.  Similarly,\n     new tables, new columns, and new links between tables enable the\n     user to identify the author of particular code (covered or not\n     covered), as well as the time period when the code was written.\n\n     Collectively, these features help the user to quickly identify the\n     cause of code coverage issues, and to then decide what to do.\n\n     An option to generate a 'hierarchical' coverage report (which follows\n     the source code directory structure) as well as various other small\n     features (tooltip popups, user-specified HTML header, footer, and\n     table labels, etc.) are also available.\n\n     See the genhtml man page for some details, as well as the\n     'gendiffcov/simple' testcases for some examples.\n\n      Related options:\n          --baseline-title, --baseline-date, --current-date, --hierarchical,\n          --show-owners, --show-noncode, --show-navigation\n\n  d) Data manipulation\n\n     Filters are used to suppress or remove certain coverage artifacts -\n     for example, branches generated by the compiler (e.g., for exception\n     handling).  These artifacts can overwhelm the user code and obscure\n     coverage features that are interesting to the user.\n\n     Other options are used to focus on or to exclude certain sections\n     of code, as well as to do regexp replacement of file names.\n     (Path munging is useful primarily when the build structure does\n     not exactly match the layout in your revision control system; this\n     is common in large projects with reusable components.)\n\n     See the lcov/geninfo/genhtml man pages for a detailed description of\n     the available filters and manipulation features.\n\n     Related options:\n        --include, --exclude, --omit-lines, --substitute, --filter\n\n  e) Callbacks/customization\n\n     The user can supply callbacks which are used to:\n\n        i) interface with the revision control system\n           Sample scripts:\n             - Perforce:  see 'p4diff' and 'p4annotate'\n             - Git: see 'gitdiff' and 'gitblame'\n        ii) verify that source code versions are compatible, and\n            Sample scripts: see 'get_signature', 'getp4version'\n        iii) enforce a desired code coverage criteria\n             Sample script: criteria\n\n     See the genhtml/lcov/geninfo man pages for details.\n\n     Note that the various sample scripts are found in the source code 'bin'\n     directory, but are installed in the $LCOV_HOME/share/lcov/support-scripts\n     directory of the release.\n\n     Related options:\n       --annotate-script, --criteria-script, --version-script\n\n  f) Performance\n\n     lcov/genhtml/geninfo have been refactored to parallelize computation\n     across multiple cores, if requested.\n     In general, this provides speedup that is nearly linear in the number\n     of cores.\n     There is also an option to throttle parallelism to not exceed peak\n     memory consumption contraints, as well as options to enable simple\n     profile data collection - so you can see where time in going and\n     thus to hint at potential optimizations.  The 'spreadsheet.py'\n     script can be used to view generated profile data..\n\n     See the genhtml/lcov/geninfo man pages for details\n\n     Related options: --parallel, --memory, --profile\n\nIn general, the new features and options are implemented uniformly in lcov,\ngenhtml, and geninfo.  Most of the features can be enabled/disabled\nusing either command line options or by setting defaults in your 'lcovrc'\nfile.  See the lcovrc man page for details.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "4. An example of how to access coverage data for a user space program"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/henry2cox/lcov/master/README"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/henry2cox/lcov/master/README"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2008.07947\n     or https://ieeexplore.ieee.org/document/9438597 for a detailed\n     description of the concepts.\n\n     Differential categorization and binning are orthogonal in the sense\n     that you can generate differential report without binning as well\n     as 'vanilla' coverage reports with binning.  See the above papers\n     and the genhtml man page for details.\n\n     Related options:\n        --baseline-file, --diff-file, --annotate-script, --date-bins,\n        --new-file-as-baseline, --elide-path-mismtach\n\n  b"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/henry2cox/lcov/master/README"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2008.07947 or https://ieeexplore.ieee.org/document/9438597 for\n  a detailed explanation of the concepts and several possible use models.\n  A video presentation of the basic ideas can be found at http://doi.org/10.5281/zenodo.4653252\n\n  In addition, several other features and capabilities have been added.  See section 5, below, for a brief description - and also see the man pages and the test cases.\n\n\nFurther README contents\n-----------------------\n  1. Included files\n  2. Installing LCOV\n  3. An example of how to access kernel coverage data\n  4. An example of how to access coverage data for a user space program\n  5. New features (compared to lcov 1.16"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/henry2cox/lcov/master/README"
+        }
+    ]
+}

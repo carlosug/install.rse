@@ -1,0 +1,370 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:04:36"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/wasiahmad/NeuralCodeSum",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "wasiahmad",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-04-22T19:29:25Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-05T16:41:30Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2020 Wasi Ahmad\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Official implementation of our work, A Transformer-based Approach for Source Code Summarization [ACL 2020].",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "We may want to generate summaries for source codes using a trained model. And this can be done by running [generate.sh](https://github.com/wasiahmad/NeuralCodeSum/blob/master/scripts/generate.sh) script. The input source code file must be under `java` or `python` directory. We need to manually set the value of the [DATASET](https://github.com/wasiahmad/NeuralCodeSum/blob/master/scripts/generate.sh#L15) variable in the bash script. \n\nA sample Java and Python code file is provided at `[data/java/sample.code]` and `[data/python/sample.code]`.\n\n```\n$ cd scripts\n$ bash generate.sh 0 code2jdoc sample.code\n```\n\nThe above command will generate `tmp/code2jdoc_beam.json` file that will contain the predicted summaries.\n",
+                "type": "Text_excerpt",
+                "original_header": "Generating Summaries for Source Codes",
+                "parent_header": [
+                    "A Transformer-based Approach for Source Code Summarization",
+                    "Training/Testing Models"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "NeuralCodeSum",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "wasiahmad/NeuralCodeSum",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/wasiahmad/NeuralCodeSum/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/wasiahmad/NeuralCodeSum/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 192,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 79,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/wasiahmad/NeuralCodeSum/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 310009
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 12857
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/scripts/generate.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/scripts/python/transformer.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/scripts/python/rnn.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/scripts/java/transformer.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/scripts/java/rnn.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/data/python/get_data.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/data/java/get_data.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "You may consider installing the C2NL package. C2NL requires Linux and Python 3.6 or higher. It also requires installing PyTorch version 1.3. Its other dependencies are listed in requirements.txt. CUDA is strongly recommended for speed, but not necessary.\n\nRun the following commands to clone the repository and install C2NL:\n\n```\ngit clone https://github.com/wasiahmad/NeuralCodeSum.git\ncd NeuralCodeSum; pip install -r requirements.txt; python setup.py develop\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Installing C2NL",
+                "parent_header": [
+                    "A Transformer-based Approach for Source Code Summarization"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "- If GPU_ID is set to -1, CPU will be used.\n- If GPU_ID is set to one specific number, only one GPU will be used.\n- If GPU_ID is set to multiple numbers (e.g., 0,1,2), then parallel computing will be used.\n",
+                "type": "Text_excerpt",
+                "original_header": "Running experiments on CPU/GPU/Multi-GPU",
+                "parent_header": [
+                    "A Transformer-based Approach for Source Code Summarization",
+                    "Training/Testing Models"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/README.md"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "We borrowed and modified code from [DrQA](https://github.com/facebookresearch/DrQA), [OpenNMT](https://github.com/OpenNMT/OpenNMT-py). We would like to expresse our gratitdue for the authors of these repositeries.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgement",
+                "parent_header": [
+                    "A Transformer-based Approach for Source Code Summarization"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "```\n@inproceedings{ahmad2020summarization,\n author = {Ahmad, Wasi Uddin and Chakraborty, Saikat and Ray, Baishakhi and Chang, Kai-Wei},\n booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)},\n title = {A Transformer-based Approach for Source Code Summarization},\n year = {2020}\n}\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "A Transformer-based Approach for Source Code Summarization"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{ahmad2020summarization,\n    year = {2020},\n    title = {A Transformer-based Approach for Source Code Summarization},\n    booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)},\n    author = {Ahmad, Wasi Uddin and Chakraborty, Saikat and Ray, Baishakhi and Chang, Kai-Wei},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "A Transformer-based Approach for Source Code Summarization",
+                "author": "Ahmad, Wasi Uddin and Chakraborty, Saikat and Ray, Baishakhi and Chang, Kai-Wei"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To train/evaluate a model, run:\n```\n$ bash script_name.sh GPU_ID MODEL_NAME\n```\nFor example, to train/evaluate the transformer model, run:\n```\n$ bash transformer.sh 0,1 code2jdoc\n```\n \n",
+                "original_header": "Training/Testing Models"
+            },
+            "confidence": 0.9553976121380378,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2005.00653"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/wasiahmad/NeuralCodeSum/master/README.md"
+        }
+    ]
+}

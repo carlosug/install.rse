@@ -1,0 +1,460 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:54:47"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/apcl-research/jam",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "apcl-research",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-05-08T22:04:49Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-01-08T16:39:54Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/LICENSE"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "jam",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "apcl-research/jam",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/apcl-research/jam/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/apcl-research/jam/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/apcl-research/jam/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 73961
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 14578
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/apcl-research/jam/main/transformer_sizing.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/transformer_sizing.ipynb"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "We thank Andrej Karpathy and Daniel Grittner for their work providing the NanoGPT and NanoGPT-LoRA code. This repository forks from Daniel Grittner's [NanoGPT-LoRA](https://github.com/danielgrittner/nanoGPT-LoRA) repository, which is a forked from the original [NanoGPT](https://github.com/karpathy/nanoGPT) by Andrej Karpathy. \n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgement",
+                "parent_header": [
+                    "Jam: A Language Model of Java Methods"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "| Datset      | Description |Link        |\n| ----------- | ----------- |------------|\n| funcom-java-long  | is a dataset for source code summarization by Bansal et al. made available pre-publication we use to fine tune and test our model for source code summarization. This dataset is also annotate as \"q90\" in our scripts | [link](https://huggingface.co/datasets/apcl/funcom-java-long/tree/main)\n\n\nPlease cite the use of the funcom-java-long dataset as follows:\n```\n@article{bansal2023human,\n\ttitle={Towards modeling human attention from eye movements for neutral source code summarization},\n\tauthor={Bansal, Aakash and Sharif, Bonita and McMillan, Collin},\n\tjournal={Proceedings of ACM Human-Computer Interaction, Vol. 7},\n\tyear={2023}\n\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 1: Download the finetuning dataset",
+                "parent_header": [
+                    "Jam: A Language Model of Java Methods",
+                    "Fine-tuning"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "value": "We release our test set as a ``.tar.gz`` file in [apcl/funcom-java-long](https://huggingface.co/datasets/apcl/funcom-java-long/tree/main) repository. You can simiply run the following command to download and extract test set for inference.\n```\npython3 download_extract_file.py \n```\n    --repo_id: the id of repository that you want to download files\n    --local_dir: directory that you want to put your files\n    --filename: name of the file that you want to download\nWe have already set the default parameters to the required parameters for downloading test set. If you just want to download and extract test set, you only need to run the command above.\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 1: Download test set and extract it",
+                "parent_header": [
+                    "Jam: A Language Model of Java Methods",
+                    "Dataset Deduplication"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "value": " You will need both ``train.bin`` and ``val.bin`` to train your models. ``bin`` files can be downloaded in the following command.\n  ```\n  python3 download.py --repo_id=apcl/jm52m --filename={train.bin | val.bin} --local_dir=./data/yourdir --repo_type=dataset\n  ```\n  Note that you will need to put these two files into the same directory as ``train.py``.",
+                "type": "Text_excerpt",
+                "original_header": "Step 1: Download bin files",
+                "parent_header": [
+                    "Jam: A Language Model of Java Methods",
+                    "Re Training"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "We release our test set as a ``.tar.gz`` file in [apcl/funcom-java-long](https://huggingface.co/datasets/apcl/funcom-java-long/tree/main) repository. You can simiply run the following command to download and extract test set for inference.\n```\npython3 download_extract_file.py \n```\n    --repo_id: the id of repository that you want to download files\n    --local_dir: directory that you want to put your files\n    --filename: name of the file that you want to download\nWe have already set the default parameters to the required parameters for downloading test set. If you just want to download and extract test set, you only need to run the command above.\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 1: Download test set and extract it",
+                "parent_header": [
+                    "Jam: A Language Model of Java Methods",
+                    "Dataset Deduplication"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To set up your local environment, run the following command. We recommend the use of a virtual environment for running the experiements.\n```\npip install -r requirements.txt\n``` \n- **If you only want to finetune one of our pre-trained models**, please see [Pre-trained Model Checkpoints](#model), [Fine-tuning](#fine-tuning), and [Inference](#inference). Additionally recommend using [Deduplication toolkit](#dataset-deduplication) before inference on your own test set.\n- If you only want to deduplicate your dataset, refer to subsection 6.3, please see [Deduplication toolkit](#dataset-deduplication).\n- If you want to re-train a model using our processed and tokenized dataset, please see [Retraining](#re-training)\n- if you want to scratch-train, by reprocessing the dataset, pleasde see [Entire process](#entire-process) and [Re-Training](#re-Training) \n",
+                "original_header": "To-do list"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "These steps will show you how to fine-tune for the code summarization application from our paper.  You can hack these scripts to do whatever you need for your own task.\n \n",
+                "original_header": "Fine-tuning"
+            },
+            "confidence": 0.9646644771225177,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```\npython3 train.py config/finetune_funcom.py\n```\nNote that you need to change the ``out_dir`` in the finetune_funcom.py to the same ``dir`` as your ``--local_dir``.\n \n",
+                "original_header": "Step 2: Fine-tune model"
+            },
+            "confidence": 0.9980140964201666,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "After you download and deduplicate the test set, you can simiply run command below for inference.\n```\npython sample_funcom.py --out_dir=outdir\n```\n    --outdir: directory of the model that you want to use for inference\n \n",
+                "original_header": "Inference"
+            },
+            "confidence": 0.9937822572974626,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We release two datasets that we use to pre-train our models. You can use the scripts that we provide to download these datasets automatically. \nTo download the required datasets automatically, you can run the following command. \n```\npython3 download.py --repo_id=apcl/jm52m  --local_dir=./data/yourdir --repo_type=dataset\n```\n \nThis will download the all the files in the repository. If you only want to download specific files, you can simply run the following command.  **Note:** The above command will download the entire dataset including the deduplication files (total 200gb+).  If you just want the raw data, use the --filename parameter like in the next command.  Specific files you might want for the raw data are ``fundats-j1.json.gz`` and ``jm52m.sql.gz``.  Or you may wish to retrain your own Jam models using our processed and tokenized data in ``train.bin`` and ``val.bin``. \n  ```\n  python3 download.py --repo_id=apcl/jm52m --filename=file.pkl --local_dir=./data/yourdir --repo_type=dataset\n  ```\n    --repo_id: either apcl/jm52m or apcl/so13m; apcl/jm52m is for 52 million Java methods and apcl/so13m is for 13 million stackoverflow posts.\n    --filename: the name of the file that you want to download\n    --local_dir: the name of the directory that you want to put your files\n    --repo_type: the type of repo that you download the file; set to dataset if you donwload files from dataset repo \nAgain, you only need ``train.bin`` and ``val.bin`` if you only want to build your Jam models from scratch instead of going through the entire process. You can see more details on [Re-Training](#re-training). However, if you want to go through the entire process, you can check [Entire process](#entire-process) section.\n \n",
+                "original_header": "Dataset"
+            },
+            "confidence": 0.9936819145245851,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To generate 52 millions funcom Java methods, run the following command.\n  ```\n  python3 data/jam_jm52m/prepare_fc_raw.py --num-proc=4 --q90testfids-file=q90testfids.pkl --fundats-file=fundats-j1.pkl\n  ```\n    --num-proc: number of workers in .map() call\n    --q90testfids-file: funcom Java methods test set ID files\n    --fundats-file: Name of Java methods raw code files; It's a dictionary file with key = function id and values = raw code\n  \n  You will need to download q90testfids.pkl for Java methods' ID on test set and fundats-j1.pkl as Java methods' raw code. You can download these two files in [apcl/jm52m](https://huggingface.co/datasets/apcl/jm52m) repository. You may want to refer to [Dataset](#dataset) section to see how to download these files with the script that we release. \nYou can run the following command to generate 13 millions Stackoverflow posts data.\n  ```\n  python3 data/jam_so13m/prepare_stackoverflow.py --num-proc=4 --stackoverflow_filename=jam_so13m.pkl\n  ```\n    --stackoverflow_filename: Name of file for stackoverflow data; This is a dictionary file with key = post id and values = post text\nAfter the script is done, it will have both ``train.bin`` and ``val.bin`` in either ``data/jam_jm52m`` or ``data/jam_so13m`` directory. Be sure to move it to the same directory as ``train.py``.\n \n",
+                "original_header": "Step1: Dataset generation"
+            },
+            "confidence": 0.9830512014442156,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "If you want to train your own models from scratch and you only have one gpu, use the following command to train the model. \n  ```\n  python3 train.py config/{train_funcom_raw | train_stackoverflow}.py\n  ```\n    train_funcom_raw: traninig with 52 millions funcom Java methods \n",
+                "original_header": "Step 2: Train models"
+            },
+            "confidence": 0.999923991706106,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you use this work in an academic paper, please cite the following:\n\n```\n@inproceedings{su2023language,\n      title={A Language Model of Java Methods with Train/Test Deduplication}, \n      author={Chia-Yi Su and Aakash Bansal and Vijayanta Jain and Sepideh Ghanavati and Collin Mcmillan},\n      month={December},\n      year={2023},\n      booktitle={Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},\n      location = {San Francisco, CA, USA},\n      series = {ESEC/FSE 2023}\n}\n```\n\nPDF available here: https://arxiv.org/abs/2305.08286\n",
+                "type": "Text_excerpt",
+                "original_header": "Citations",
+                "parent_header": [
+                    "Jam: A Language Model of Java Methods"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{su2023language,\n    series = {ESEC/FSE 2023},\n    location = {San Francisco, CA, USA},\n    booktitle = {Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},\n    year = {2023},\n    month = {December},\n    author = {Chia-Yi Su and Aakash Bansal and Vijayanta Jain and Sepideh Ghanavati and Collin Mcmillan},\n    title = {A Language Model of Java Methods with Train/Test Deduplication},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "A Language Model of Java Methods with Train/Test Deduplication",
+                "author": "Chia-Yi Su and Aakash Bansal and Vijayanta Jain and Sepideh Ghanavati and Collin Mcmillan"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains all the code and detailed instructions to rebuild Jam models in our HuggingFace [Automatic Program Comprehension Lab](https://huggingface.co/apcl) hub. You can either go through the entire process from scratch including tokenization of raw source code data or just finetuning the models that we provide with the dataset that we provide as tokenized bins. We also provide the scripts for deduplication of any future test sets. \n",
+                "original_header": "Code for ESEC/FSE 2023 demonstration paper, A Language Model trained on Java Methods with Train/Test Deduplication"
+            },
+            "confidence": 0.9912402182987573,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "These steps will show you how to fine-tune for the code summarization application from our paper.  You can hack these scripts to do whatever you need for your own task.\n \n",
+                "original_header": "Fine-tuning"
+            },
+            "confidence": 0.9526287798991105,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To deduplicate the test data included in the training set, use the following command to deduplicate test data included in Java methods\n```\npython3 data/jam_jm52m/dedup_fctest.py --test_filename=tdats.test --lsh_dir=fc_lsh_parts --threshold=0.5 --dedup_outfile=dedup_testfids.txt --fundats_file==fundats-j1.pkl\n```\n    --test_filename: file name of your test file\n    --lsh_dir: directory for lsh files\n    --threshold: control the level similarity; 0.7 would be a good threshold for Java 52 millions methods\n    --dedup_outfile: output file with function id and duplicate functions id in lists\n    --fundats_file: a pickle file that is a dictionary for raw function code with key = function id and value = raw code\n    --partstart: separate deduplication into several programs to speed up; minimum value 0\n    --partend: separate deduplication into several programs to speed up; maximum value 50\nTo deduplicate the test data included in Stackoverflow posts, use the following command.\nBASH2*\n    --stackoverflow_text_id_filename: a pickle file that is a list for stackoverflow file name\n    --fundats_file: a pickle file that is a dictionary for raw function code files with key = function id and value = raw code\n    --stackoverflow_text_filename: a pickle file that is a dictionary for stackoverflow's posts with key = post id and value = stackoverflow post\n    --dedup_outfile: output file with function id and duplicate functions id in lists\n    --threshold: control the level similarity;\n    --test_filename: file name of your test file\n    --lsh_outdir: directory for lsh files\n    --partstart: separate deduplication into several programs to speed up; minimum for partstart = 0\n    --partend: separate deduplication into several programs to speed up; maximum for partstart = 100\n    \n \n",
+                "original_header": "Step 2: Deduplication"
+            },
+            "confidence": 0.9167464385216298,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| Datset      | Description |Link        |\n| ----------- | ----------- |------------|\n| jm52m       | jm52m is a dataset we created containing 52m Java methods from 52k Java projects. The source code originated from the Merobase and Sourcerer data releases, supplemented by our own prior work in [LeClair et al.](https://arxiv.org/abs/1904.02660) It contains code uploaded to code repositories between 2008 and 2018. We then extracted every Java method from every file and project. We removed empty methods, methods from corrupt files, and methods with parsing errors       | [link](https://huggingface.co/datasets/apcl/jm52m) |\n| so13m       | so13m is a dataset containing 13m discussion threads from StackOverflow. The origin of the data is the StackExchange data dump from between January 2014 and December 2022. The threads cover a multitude of topics. This dataset serves as a natural language and (often) accompanying code in the domain of software engineering. Its inclusion could help downstream tasks depending on generating or understanding natural language.           | [link](https://huggingface.co/datasets/apcl/so13m) | \nOur raw data includes full traceability from the methods to the files and projects where those methods originate.  The code for each method is in ``fundats-j1`` as a Python dictionary.  You may download either the json or the pickle version.  The key for each method is an ID number.  That ID number is the ``id`` field of the ``functionalunits`` table in the SQL dump.  Other fields should be self-explanatory. \n",
+                "original_header": "Dataset"
+            },
+            "confidence": 0.9885853234909051,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To download the required datasets automatically, you can run the following command. \n```\npython3 download.py --repo_id=apcl/jm52m  --local_dir=./data/yourdir --repo_type=dataset\n```\n \n",
+                "original_header": "Dataset"
+            },
+            "confidence": 0.9137119700257753,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To generate 52 millions funcom Java methods, run the following command.\n  ```\n  python3 data/jam_jm52m/prepare_fc_raw.py --num-proc=4 --q90testfids-file=q90testfids.pkl --fundats-file=fundats-j1.pkl\n  ```\n    --num-proc: number of workers in .map() call\n    --q90testfids-file: funcom Java methods test set ID files\n    --fundats-file: Name of Java methods raw code files; It's a dictionary file with key = function id and values = raw code\n  \n  You will need to download q90testfids.pkl for Java methods' ID on test set and fundats-j1.pkl as Java methods' raw code. You can download these two files in [apcl/jm52m](https://huggingface.co/datasets/apcl/jm52m) repository. You may want to refer to [Dataset](#dataset) section to see how to download these files with the script that we release. \nYou can run the following command to generate 13 millions Stackoverflow posts data.\n  ```\n  python3 data/jam_so13m/prepare_stackoverflow.py --num-proc=4 --stackoverflow_filename=jam_so13m.pkl\n  ```\n    --stackoverflow_filename: Name of file for stackoverflow data; This is a dictionary file with key = post id and values = post text\nAfter the script is done, it will have both ``train.bin`` and ``val.bin`` in either ``data/jam_jm52m`` or ``data/jam_so13m`` directory. Be sure to move it to the same directory as ``train.py``.\n \n",
+                "original_header": "Step1: Dataset generation"
+            },
+            "confidence": 0.9172602869736465,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Jam: A Language Model of Java Methods"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2305.08286\n\n## Hardware Disclaimer\nWe recommend a GPU of the [NVidia Ampere architecture](https://www.nvidia.com/en-us/data-center/ampere-architecture/"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1904.02660"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/apcl-research/jam/main/README.md"
+        }
+    ]
+}

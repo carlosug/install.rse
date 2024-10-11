@@ -1,0 +1,436 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:05:54"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/KKZ20/DECIDE",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "KKZ20",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-08-22T04:23:34Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-07-11T05:55:23Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Official Implementation of \"Knowledge-Based Version Incompatibility Detection for Deep Learning\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "\r\n This repository contains data and code to replicate experiment results in the paper, which are:\r\n\r\n- `DECIDE`: contains the source code of DECIDE. To help users know the whole pipeline, we also provide examples of building knowledge graph (in `DECIDE/Knowledge-Extraction-Example`) and examples on querying knowledge graph (in `DECIDE/Knowledge-Base-Query-Example`).\r\n- `Experiments`: contains the scripts and data which help reproduce experiments in the paper (Section 6). For more details, see section Experiments.\r\n- `Requirements.md`: contains the hardware and third-party library requirements for DECIDE.\r\n- `Installation.md`: contains the installation instructions to set up an Python environment and run our code.\r\n\r",
+                "type": "Text_excerpt",
+                "original_header": "Introduction",
+                "parent_header": [
+                    "Knowledge-based Version Incompatibility Detection for Deep Learning <a href=\"https://arxiv.org/abs/2308.13276\"><img alt=\"\" src=\"https://img.shields.io/badge/arXiv-2308.13276-b31b1b.svg\" /></a> <a href=\"https://zenodo.org/doi/10.5281/zenodo.10211987\"><img alt=\"DOI\" src=\"https://zenodo.org/badge/681461566.svg\" /></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\r\nThis repository contains data and code of DECIDE, a version incompatibility detection tool based on pre-trained language models proposed in *\"Knowledge-based Version Incompatibility Detection for Deep Learning\"*. Meanwhile, this repository also contains data and code to replicate experiment results in the paper. This repository has been made publicly available on GitHub to support Open Science. \r\n\r \n",
+                "original_header": "Knowledge-based Version Incompatibility Detection for Deep Learning <a href=\"https://arxiv.org/abs/2308.13276\"><img alt=\"\" src=\"https://img.shields.io/badge/arXiv-2308.13276-b31b1b.svg\" /></a> <a href=\"https://zenodo.org/doi/10.5281/zenodo.10211987\"><img alt=\"DOI\" src=\"https://zenodo.org/badge/681461566.svg\" /></a>"
+            },
+            "confidence": 0.9907817567341791,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "DECIDE",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "KKZ20/DECIDE",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/KKZ20/DECIDE/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/KKZ20/DECIDE/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 9,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "deep-learning, version-compatible",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/KKZ20/DECIDE/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 148068
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 2403
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 1396
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/KKZ20/DECIDE/releases/131668557",
+                "tag": "v1.1",
+                "name": "v1.1",
+                "author": {
+                    "name": "KKZ20",
+                    "type": "User"
+                },
+                "description": "This repository contains data and code to build DECIDE, a version incompatibility detection tool based on pre-trained language models proposed in \"Knowledge-based Version Incompatibility Detection for Deep Learning\". Meanwhile, this repository also contains data and code to replicate experiment results in the paper.",
+                "tarball_url": "https://api.github.com/repos/KKZ20/DECIDE/tarball/v1.1",
+                "zipball_url": "https://api.github.com/repos/KKZ20/DECIDE/zipball/v1.1",
+                "html_url": "https://github.com/KKZ20/DECIDE/releases/tag/v1.1",
+                "url": "https://api.github.com/repos/KKZ20/DECIDE/releases/131668557",
+                "release_id": 131668557,
+                "date_created": "2023-10-12T09:59:15Z",
+                "date_published": "2023-11-28T03:52:04Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/KKZ20/DECIDE/releases/118134708",
+                "tag": "v1.0",
+                "name": "v1.0",
+                "author": {
+                    "name": "KKZ20",
+                    "type": "User"
+                },
+                "description": "This repository contains data and code to build DECIDE, a version incompatibility detection tool based on pre-trained language models proposed in *\"Knowledge-based Version Incompatibility Detection for Deep Learning\"*. Meanwhile, this repository also contains data and code to replicate experiment results in the paper.",
+                "tarball_url": "https://api.github.com/repos/KKZ20/DECIDE/tarball/v1.0",
+                "zipball_url": "https://api.github.com/repos/KKZ20/DECIDE/zipball/v1.0",
+                "html_url": "https://github.com/KKZ20/DECIDE/releases/tag/v1.0",
+                "url": "https://api.github.com/repos/KKZ20/DECIDE/releases/118134708",
+                "release_id": 118134708,
+                "date_created": "2023-08-22T08:25:52Z",
+                "date_published": "2023-08-22T08:26:46Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "# Installation\n\nIn this file we present the installation steps for running DECIDE. To help users know more details on the whole pipeline, we also provide installation instructions for running an example of knowledge extracting and and example of knowledge graph querying.\n\n## DECIDE\n\nHere we provide instructions on how to set up our tools, DECIDE. DECIDE can be installed either locally or in Docker.\n\n### Local Installation\n\nTo set up DECIDE, please ensure that you have installed [Python](https://www.python.org/) and [Anaconda](https://www.anaconda.com/). Note that all the code were tested on Ubuntu 18.04 without using GPU.\n\nFirst, install [Neo4j](https://neo4j.com/). The tested version is v4.4.8. Please load the knowledge graph by running:\n\n```shell\n$ cd /PATH/TO/DECIDE\n$ cp DECIDE-KnowledgeGrpah.dump /PATH/TO/NEO4J/data/databases/\n$ cd /PATH/TO/NEO4J\n$ bin/neo4j stop\n$ # Dump the knowledge graph\n$ bin/neo4j-admin load --from=data/databases/DECIDE-KnowledgeGrpah.dump\n$ # Start Neo4j\n$ bin/neo4j start\n```\n\n Then change the configuration in `DECIDE/config/neo4j.json`:\n\n```json\n{\n    \"protocol\": \"http\",\n    \"host\": \"YOUR HOST\",\n    \"port\": \"YOUR PORT\",\n    \"user\": \"YOUR USERNAME\",\n    \"password\": \"YOUR PASSWROD\"\n}\n```\n\nNote that we provide an on-line Neo4j service, the configuration are as follows:\n\n```json\n{\n    \"protocol\": \"http\",\n    \"host\": \"116.62.100.101\",\n    \"port\": \"22467\",\n    \"user\": \"neo4j\",\n    \"password\": \"so-knowledge-summer-20220725-467\"\n}\n```\n\nWe strongly recommend users to reproduce our code in a new virtual Python environment.  One can create a new environment using Anaconda:\n\n```shell\n$ conda create -n YOUR_ENV_NAME python=3.6 -y\n$ conda activate YOUR_ENV_NAME\n```\n\nTo install all the required libraries for DECIDE, run:\n\n```shell\n$ cd PATH/TO/DECIDE\n$ pip install -r requirements.txt \n```\n\nTo test the project in our benchmarks, run:\n\n```shell\n$ python main.py -n PROJECT_NAME\n$ # example: python main.py -n gcn\n```\n\nTo replay the evaluation in our benchmark, please run:\n\n```shell\n$ chmod +x experiment.sh\n$ ./experiment.sh\n```\n\nThe results will be generated in `DECIDE/detection_result`.\n\n### Docker Installation\n\nAfter Docker is installed,  change the working directory to `Docker` folder in the repository with:\n\n```shell\n$ cd PATH/TO/DECIDE/Docker\n```\n\nStart the docker container with the following command:\n\n```sh\n$ docker compose up\n```\n\nYou should see the following output.\n\n<img src=\"./DECIDE/imgs/docker_up.png\" alt=\"Supervised\" style=\"zoom: 80%;\" />\n\n\n\nBy now, you should be able to see a running docker container named `docker` in your docker desktop.\n\n<img src=\"./DECIDE/imgs/docker_one.png\" alt=\"Supervised\" style=\"zoom:80%;\" />\n\n\n\nThe `docker` container should contain two separate docker containers (`myneo4j` and `decide`). Proceed to the terminal of `decide`:\n\n<img src=\"./DECIDE/imgs/two_container.png\" alt=\"Supervised\"  />\n\nNow, you can run DECIDE and reproduce all our experimental results following the instructions from the README file. For example, try running:\n\n```shell\n$ python3 main.py -n gcn\n```\n\nYou should see the following output:\n\n<img src=\"./DECIDE/imgs/script.png\" alt=\"Supervised\"  />\n\n## Knowledge Extraction Examples\n\nFirst, create a new virtual Python environment using Anaconda:\n\n```shell\n$ conda create -n YOUR_ENV_NAME python=3.6 -y\n$ conda activate YOUR_ENV_NAME\n```\n\nThen, install all the required libraries for constructing the knowledge graph, run:\n\n```shell\n$ cd PATH/TO/DECIDE/Knowledge-Extraction-Example/\n$ pip install -r requirements.txt \n$ pip install en_core_web_sm-2.3.1.tar.gz\n```\n\nTo get a quick view on knowledge extraction pipeline, run:\n\n```shell\n$ cd PATH/TO/DECIDE/Knowledge-Extraction-Example/\n$ python example.py\n```\n\n## Knowledge Graph Query Examples\n\nFirst, install Neo4j (see above) and change the configuration file `DECIDE/Knowledge-Base-Query-Example/config.json`:\n\n```\n{\n    \"protocol\": \"http\",\n    \"host\": \"YOUR HOST\",\n    \"port\": \"YOUR PORT\",\n    \"user\": \"YOUR USERNAME\",\n    \"password\": \"YOUR PASSWROD\"\n}\n```\n\nThen, create a new virtual Python environment using Anaconda:\n\n```shell\n$ conda create -n YOUR_ENV_NAME python=3.6 -y\n$ conda activate YOUR_ENV_NAME\n```\n\nThen, install all the required libraries:\n\n```shell\n$ pip install py2neo \n```\n\nTo get a quick view on knowledge graph Query Examples, run:\n\n```shell\n$ cd PATH/TO/DECIDE/Knowledge-Base-Query-Example/\n$ python example.py\n```\n\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/Installation.md"
+        },
+        {
+            "result": {
+                "value": "\r\nPlease refer to [Requirements.md](./Requirements.md) and [Installation.md](./Installation.md).\r\n\r",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites &amp; Installation",
+                "parent_header": [
+                    "Knowledge-based Version Incompatibility Detection for Deep Learning <a href=\"https://arxiv.org/abs/2308.13276\"><img alt=\"\" src=\"https://img.shields.io/badge/arXiv-2308.13276-b31b1b.svg\" /></a> <a href=\"https://zenodo.org/doi/10.5281/zenodo.10211987\"><img alt=\"DOI\" src=\"https://zenodo.org/badge/681461566.svg\" /></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/README.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/DECIDE/experiment.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/DECIDE/Docker/decide/experiment.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/DECIDE/Docker/myneo4j/import.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/Experiments/RQ3/test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/DECIDE/Docker/docker-compose.yml",
+                "type": "Url",
+                "format": "docker_compose"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/DECIDE/Docker/docker-compose.yml"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/DECIDE/Docker/decide/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/DECIDE/Docker/decide/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/DECIDE/Docker/myneo4j/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/DECIDE/Docker/myneo4j/Dockerfile"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "\r\nPlease refer to [Requirements.md](./Requirements.md) and [Installation.md](./Installation.md).\r\n\r",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites &amp; Installation",
+                "parent_header": [
+                    "Knowledge-based Version Incompatibility Detection for Deep Learning <a href=\"https://arxiv.org/abs/2308.13276\"><img alt=\"\" src=\"https://img.shields.io/badge/arXiv-2308.13276-b31b1b.svg\" /></a> <a href=\"https://zenodo.org/doi/10.5281/zenodo.10211987\"><img alt=\"DOI\" src=\"https://zenodo.org/badge/681461566.svg\" /></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "```\r\n@inproceedings{zhao2023knowledge,\r\n  title={Knowledge-Based Version Incompatibility Detection for Deep Learning},\r\n  author={Zhao, Zhongkai and Kou, Bonan and Ibrahim, Mohamed Yilmaz and Chen, Muhao and Zhang, Tianyi},\r\n  booktitle={Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},\r\n  pages={708--719},\r\n  year={2023}\r\n}\r\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "Knowledge-based Version Incompatibility Detection for Deep Learning <a href=\"https://arxiv.org/abs/2308.13276\"><img alt=\"\" src=\"https://img.shields.io/badge/arXiv-2308.13276-b31b1b.svg\" /></a> <a href=\"https://zenodo.org/doi/10.5281/zenodo.10211987\"><img alt=\"DOI\" src=\"https://zenodo.org/badge/681461566.svg\" /></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{zhao2023knowledge,\n    year = {2023},\n    pages = {708--719},\n    booktitle = {Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},\n    author = {Zhao, Zhongkai and Kou, Bonan and Ibrahim, Mohamed Yilmaz and Chen, Muhao and Zhang, Tianyi},\n    title = {Knowledge-Based Version Incompatibility Detection for Deep Learning},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Knowledge-Based Version Incompatibility Detection for Deep Learning",
+                "author": "Zhao, Zhongkai and Kou, Bonan and Ibrahim, Mohamed Yilmaz and Chen, Muhao and Zhang, Tianyi"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Graphs"
+            },
+            "confidence": 0.9155062329824872,
+            "technique": "supervised_classification"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://zenodo.org/doi/10.5281/zenodo.10211987"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Knowledge-based Version Incompatibility Detection for Deep Learning  "
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2308.13276"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/KKZ20/DECIDE/main/README.md"
+        }
+    ]
+}

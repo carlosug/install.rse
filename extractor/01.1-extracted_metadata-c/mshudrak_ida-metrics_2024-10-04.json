@@ -1,0 +1,248 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 16:53:48"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/mxmssh/IDAmetrics",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "mxmssh",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2015-01-28T05:38:27Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-30T00:27:14Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/bsd-2-clause",
+                "type": "License",
+                "name": "BSD 2-Clause \"Simplified\" License",
+                "url": "https://api.github.com/licenses/bsd-2-clause",
+                "spdx_id": "BSD-2-Clause"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Copyright (c) 2015, Maksim Shudrak (mxmssh@gmail.com)\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mshudrak/ida-metrics/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "IDA plugin for software complexity metrics assessment",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Please read attentively current issues before using these scripts. Many metrics\nwere not originally created for binary code, so I made a lot of assumptions \nduring implementation and you should use results of these scripts carefully.\nPlease mail me if you find any inaccuracy or mistakes in the implementation.\n \n",
+                "original_header": "Bugs"
+            },
+            "confidence": 0.9577796158973789,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mshudrak/ida-metrics/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "IDAmetrics",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "mxmssh/IDAmetrics",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mxmssh/IDAmetrics/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mxmssh/IDAmetrics/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 59,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 16,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/mshudrak/ida-metrics/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 83765
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 4250
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mshudrak/ida-metrics/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Minimal requirements: \n",
+                "original_header": "IDAMetrics-static.py"
+            },
+            "confidence": 0.9760286703763255,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mshudrak/ida-metrics/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We tested metrics to predict bugs in the following list of vulnerable apps: http://goo.gl/4dKypy \n",
+                "original_header": "Metrics efficiency analysis"
+            },
+            "confidence": 0.9487037662686649,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mshudrak/ida-metrics/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{shudrak2015improving,\n    organization = {Springer},\n    year = {2015},\n    pages = {246--261},\n    booktitle = {International Conference on Information Security and Cryptology},\n    author = {Shudrak, Maksim O and Zolotarev, Vyacheslav V},\n    title = {Improving fuzzing using software complexity metrics},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Improving fuzzing using software complexity metrics",
+                "author": "Shudrak, Maksim O and Zolotarev, Vyacheslav V"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mshudrak/ida-metrics/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "IDAMetrics-static.py"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mshudrak/ida-metrics/master/README.md"
+        }
+    ]
+}

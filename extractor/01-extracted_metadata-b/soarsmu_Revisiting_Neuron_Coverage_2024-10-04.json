@@ -1,0 +1,420 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:40:04"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/soarsmu/Revisiting_Neuron_Coverage",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "soarsmu",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-11-21T08:26:39Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-07-11T09:14:38Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2020 DNNTesting\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/LICENSE.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "DNN Coverage-based Testing Study",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Deep neural networks (DNN) have been widely applied in modern life, including critical domains like autonomous driving, making it essential to ensure the reliability and robustness of DNN-powered systems. As an analogy to code coverage metrics for testing conventional software, researchers have proposed neuron coverage metrics and coverage-driven methods to generate DNN test cases. However, Yan et al. doubt the usefulness of existing coverage criteria in DNN testing. They show that a coverage-driven method is less effective than a gradient-based method in terms of both uncovering defects and improving model robustness.\nIn this paper, we conduct a replication study of the work by Yan et al. and extend the experiments for deeper analysis. A larger model and a dataset of higher resolution images are included to examine the generalizability of the results. We also extend the experiments with more test case generation techniques and adjust the process of improving model robustness to be closer to the practical life cycle of DNN development. Our experiment results confirm the conclusion from Yan et al. that coverage-driven methods are less effective than gradient-based methods. Yan et al. find that using gradient-based methods to retrain cannot repair defects uncovered by coverage-driven methods. They attribute this to the fact that the two types of methods use different perturbation strategies: gradient-based methods perform differentiable transformations while coveragedriven methods can perform additional non-differentiable transformations. We test several hypotheses and further show that even coverage-driven methods are constrained only to perform differentiable transformations, the uncovered defects still cannot be repaired by adversarial training with gradient-based methods. Thus, defensive strategies for coverage-driven methods should be further studied. \n",
+                "original_header": "Revisiting Neuron Coverage Metrics and Quality of Deep Neural Networks"
+            },
+            "confidence": 0.978576478693147,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```\n- Coverage and Robustness VS. Training Datasets  # Codes folder for coverage and robustness VS. training datasets (RQ1 -> Figure 1 and Figure 2, RQ2)\n- Model Accuracy under Different Scenarios       # Codes folder for model accuracy under different scenarios (RQ3 and RQ4)\ndata                                           # data for experiment\n- CONTACT                                                # Contact information of authors\n- LICENSE                                                # Our code is released under the MIT license\n- README                                                 # The README.md file\n- requirements.txt                                       # Required dependencies\n``` \n",
+                "original_header": "Repo Structure:"
+            },
+            "confidence": 0.9174146256715108,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\nThe following is the original data from [original paper](https://github.com/RU-System-Software-and-Security/CovTesting), the structure of which is a bit unclear. We don't use them. \n",
+                "original_header": "Experiments"
+            },
+            "confidence": 0.9639501919424199,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "You will get two zip files: 'all-data.zip' (12.2 G, the data file) and 'DNNTesting/CovTesting-v1.1.zip' (5.2 M, the codes file). Please unzip the codes and data files to get the codes and data for experiments. After unzipping 'all-data.zip', you will get three zip files named 'data.zip' (4.1 G), 'Table 2 data.zip' (3.5 G) and 'Table 3 data.zip' (4.6 G). \n",
+                "original_header": "The original Data Source"
+            },
+            "confidence": 0.9596453130846715,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Revisiting_Neuron_Coverage",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "soarsmu/Revisiting_Neuron_Coverage",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/soarsmu/Revisiting_Neuron_Coverage/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/soarsmu/Revisiting_Neuron_Coverage/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/soarsmu/Revisiting_Neuron_Coverage/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 634612
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 424786
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 23848
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/install.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/latest-install.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/Correlation/test_example.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/Comparison%20of%20Attack%20Images/attack.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/Comparison%20of%20Attack%20Images/test_example.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/Model%20Accuracy%20under%20Different%20Scenarios/test_example.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/Model%20Accuracy%20under%20Different%20Scenarios/generate_deephunter_adv_examples_on_defended_model.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/Model%20Accuracy%20under%20Different%20Scenarios/train_resnet.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/Model%20Accuracy%20under%20Different%20Scenarios/generate_adv_examples_gradient_on_defended_model.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/Model%20Accuracy%20under%20Different%20Scenarios/generate_adv_examples_gradient.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/Model%20Accuracy%20under%20Different%20Scenarios/generate_deephunter_adv_examples.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/Coverage%20VS.%20%23%20Adv%20Examples/coverage.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/Coverage%20VS.%20%23%20Adv%20Examples/coverage-visualisation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/Coverage%20VS.%20%23%20Adv%20Examples/coverage-visualisation.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "```\npip install gdown\n\ngdown https://drive.google.com/uc?id=1gUiTNIzSF_HSy6HR_Nxo8r5MkUJ-mm_C\ntar -xvf data.tar.gz\n\ngdown https://drive.google.com/uc?id=14up34H2_RVAwYmR2NNJFRI0l-FdI1d_u\ntar -xvf models.tar.gz\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Data Preparation",
+                "parent_header": [
+                    "Revisiting Neuron Coverage Metrics and Quality of Deep Neural Networks"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Download the `adversarial-robustness-toolbox` and install necessary libraries using the following commands,\n```\napt update\napt install git\ngit clone https://github.com/Trusted-AI/adversarial-robustness-toolbox.git\ncd adversarial-robustness-toolbox\npip install .\n```\n \n",
+                "original_header": "Docker"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Alterantively, use the following command to download:\n```\n# Download the 'data' folder, make sure that you are under the root folder.\ngdown https://drive.google.com/uc?id=1bClp6T9VuvTzSwspVf_zRkZptI31F6XI\n# Decompress it\nunzip data.zip\n\n## Download 'Table 2 data.zip' \ncd Comparison\\ of\\ Attack\\ Images/\ngdown https://drive.google.com/uc?id=1DZK2gY6Gz991FS_5mXtLnsx3ZiVhUNMY\n# Decompress it\nunzip Table\\ 2\\ data.zip \nmv Table\\ 2\\ data/data/ data/\nrm -r Table\\ 2\\ data\n\n## Download 'Table 3 data.zip'\ncd Model\\ Accuracy\\ under\\ Different\\ Scenarios/\ngdown https://drive.google.com/uc?id=18MN6HNT-9DR6cML6r8mInPb4GC7drRBc\nunzip unzip Table\\ 3\\ data.zip\nmv Table\\ 3\\ data/data/ data/\nmv Table\\ 3\\ data/new_model/ new_model/\nrm -r Table\\ 3\\ data\n``` \n",
+                "original_header": "The original Data Source"
+            },
+            "confidence": 0.9999975039225321,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```bash\ndocker pull zhouyang996/covtesting\ndocker run --rm --name=covtesting --gpus all --shm-size 32G -it --mount type=bind,src=path_to_revisiting_neuron_coverage_folder,dst=/workspace zhouyang996/covtesting\n``` \n",
+                "original_header": "Docker"
+            },
+            "confidence": 0.9045848774291481,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Revisiting Neuron Coverage Metrics and Quality of Deep Neural Networks"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2201.00191.pdf]  (DOI"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/soarsmu/Revisiting_Neuron_Coverage/master/README.md"
+        }
+    ]
+}

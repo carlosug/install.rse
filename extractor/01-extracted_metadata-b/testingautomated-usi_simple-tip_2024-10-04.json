@@ -1,0 +1,393 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:20:32"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/testingautomated-usi/simple-tip",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "testingautomated-usi",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-04-28T06:44:08Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-12T07:24:34Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 Universit\u00e0 della Svizzera italiana (USI)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "This is the reproduction package of the paper Simple Techniques Work Surprisingly Well for Neural Network Test Prioritization and Active Learning by M.Weiss and P.Tonella, published at ISSTA 2022",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is the reproduction package of the paper **Simple Techniques Work Surprisingly Well for Neural Network\nTest Prioritization and Active Learning** by M.Weiss and P.Tonella, published at ISSTA 2022. [preprint](https://arxiv.org/pdf/2205.00664.pdf) \n\u26a0\ufe0f This repository is indended for reproduction of our results; dependencies are not updated on purpose. The repository may thus contain vulnerabilities. We recommend you run it in a safe environment \u26a0\ufe0f\n \n",
+                "original_header": "Reproduction Package of ISSTA 2022 paper \"Simple Techniques Work Surprisingly Well...\""
+            },
+            "confidence": 0.9225011705853832,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Running the above described reproduction package allows to verify the results \nshown in the paper.\nWe note however, that parts of our code might be directly usable in other contexts,\nfor which such a large and highly-complex reproduction package is \nnot a suitable distribution format. \nWe thus extracted, tested, documented and released three standalone artifacts of parts of our code,\nwhich we expect to be particularly useful for other research projects.\n \n",
+                "original_header": ":rocket:  :rocket:  :rocket: Extracted General-Purpose Artifacts :rocket: :rocket: :rocket:"
+            },
+            "confidence": 0.9880920184944136,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- `./src/dnn_test_prio/`\nContains the modules to configure and run our experiments. Specifically, this includes one `runner` module per case study (e.g. case_study_imdb.py), whose main method allows to run the experiments for said case study. It also contains the specific selection of hyperparameters used for each case study. In addition, the package contains several generic modules (which are used by the `runner` modules) to create and use the appraoches implemented in the `core` package (e.g. handler_surprise.py).\n- `./src/core/`\nContains the modules which we expect to be widely useful in 3rd party studies, much beyond the scope of our paper. It includes, e.g., the implementations of the tested approaches (surprise adequacies, neuron coverages, deep gini). It is designed to facilitate reusability: Special care was given to the code documentation, interfaces are defined using type-hints, and crutial hyperparameters are configurable. The core package is also largely tested by unit tests. Upon acceptance of our paper, the contents of this package will be publicly released as standalone pip-packages.\n- `./src/plotters/`\nContains the logic to create the final results (tables, plots, etc.) from the raw intermediate results persisted when running the experiments. For example, the logic to average the results over all 100 re-runs, or the logic to compute the heatmap of effect size and p-values (Fig. 3 in the paper) can be found in this package.\n- `./Dockerfile` and `./requirements.txt`\nSpecification of the software infrastructure we used to run the experiments. Building docker image specified in the docker file will create the same docker image as the one we used to run the experiments.\n- `./reproduction.py`\nA CLI which allows to easily re-run parts of our experiements (described above).\n \n",
+                "original_header": "Code in this repository"
+            },
+            "confidence": 0.9735914787234883,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "simple-tip",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "testingautomated-usi/simple-tip",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/testingautomated-usi/simple-tip/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/testingautomated-usi/simple-tip/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "active-learning, deep-learning, issta-2022, machine-learning, replication-study, reproducible-research, test-prioritization",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/testingautomated-usi/simple-tip/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 210614
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 708
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/testingautomated-usi/simple-tip/releases/68418248",
+                "tag": "v0.2.0",
+                "name": "v0.2.0 - Post-Acceptance Added Funtionality",
+                "author": {
+                    "name": "MiWeiss",
+                    "type": "User"
+                },
+                "description": "This release adds the capability to extract activation traces (ATs) for all models. The corresponding function has not been present and not been used as part of our paper, but was a simple and useful addition that was proposed to us by a third party.\r\n\r\nIf your primary motivation for using our reproduction package is the verification of reproducibility, you should stick to the reviewed version `v0.1.0`.",
+                "tarball_url": "https://api.github.com/repos/testingautomated-usi/simple-tip/tarball/v0.2.0",
+                "zipball_url": "https://api.github.com/repos/testingautomated-usi/simple-tip/zipball/v0.2.0",
+                "html_url": "https://github.com/testingautomated-usi/simple-tip/releases/tag/v0.2.0",
+                "url": "https://api.github.com/repos/testingautomated-usi/simple-tip/releases/68418248",
+                "release_id": 68418248,
+                "date_created": "2022-06-02T07:00:23Z",
+                "date_published": "2022-06-02T07:05:03Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/testingautomated-usi/simple-tip/releases/65676991",
+                "tag": "v0.1.0",
+                "name": "v0.1.0 - Initial Release",
+                "author": {
+                    "name": "MiWeiss",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/testingautomated-usi/simple-tip/tarball/v0.1.0",
+                "zipball_url": "https://api.github.com/repos/testingautomated-usi/simple-tip/zipball/v0.1.0",
+                "html_url": "https://github.com/testingautomated-usi/simple-tip/releases/tag/v0.1.0",
+                "url": "https://api.github.com/repos/testingautomated-usi/simple-tip/releases/65676991",
+                "release_id": 65676991,
+                "date_created": "2022-04-29T12:45:14Z",
+                "date_published": "2022-04-29T12:46:18Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/Dockerfile"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "On your machine, you'll need the following requirements:\n- Docker\n- Download the `assets.zip` folder from Zenodo ([link](https://doi.org/10.5281/zenodo.6504906)) and uncompress it. \n  For the remainder of this README, we will refer with `/path/to/assets/` as the path to your assets folder.\n  *Note:* Due to the large size of our study, this achive is large: \n  Uncompressing it will take a while, and requires 8.3 GB of disk space. On windows, uncompressing is much faster when using [7zip](https://www.7-zip.org/download.html).\n \n",
+                "type": "Text_excerpt",
+                "original_header": "Dependencies",
+                "parent_header": [
+                    "Reproduction Package of ISSTA 2022 paper \"Simple Techniques Work Surprisingly Well...\"",
+                    "Getting Started: Running the Reproduction Package"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Start the container with the following command (replacing `/path/to/assets/` with the path to the assets folder):\n> docker run -it --rm -v /path/to/assets/:/assets ghcr.io/testingautomated-usi/simple-tip:latest\n\nThis will download and interactively run the docker image.\n\n<sub>\nNote: If running on linux with an nvidia-gpu, optionally install the [nvidia-docker toolkit](https://github.com/NVIDIA/nvidia-docker)\n  which will allow you to use a GPU for training and inference.\n  Then, add `--gpus all` after the `--rm` flag.\n</sub>\n\nYou should now see a Tensorflow welcome message.\n\n*Verify* that you mounted the `assets` volume successfully, by running `ls /assets`. You should see five folders (active_learning,  models,  priorities,  results,  times)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 1: Running the container",
+                "parent_header": [
+                    "Reproduction Package of ISSTA 2022 paper \"Simple Techniques Work Surprisingly Well...\"",
+                    "Getting Started: Running the Reproduction Package"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/README.md"
+        },
+        {
+            "result": {
+                "value": "You can reproduce the results of the paper by using our provided command line interface as follows:\n\n> python reproduction.py\n\nRun `python reproduction.py --help` for more information on the available commands.\n\n**Attention: Running any commands will modify the contents of the `/path/to/assets/` folder.**\n\nYou can exit the docker container by entering `exit`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 2: Running the reproduction package CLI",
+                "parent_header": [
+                    "Reproduction Package of ISSTA 2022 paper \"Simple Techniques Work Surprisingly Well...\"",
+                    "Getting Started: Running the Reproduction Package"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "- Thesaurus from https://github.com/zaibacu/thesaurus, free for commercial use, based on wordnet.\n  Find license [here](https://wordnet.princeton.edu/license-and-commercial-use).\n",
+                "type": "Text_excerpt",
+                "original_header": "Credits:",
+                "parent_header": [
+                    "Reproduction Package of ISSTA 2022 paper \"Simple Techniques Work Surprisingly Well...\""
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\u26a0\ufe0f This repository is indended for reproduction of our results; dependencies are not updated on purpose. The repository may thus contain vulnerabilities. We recommend you run it in a safe environment \u26a0\ufe0f\n \n",
+                "original_header": "Reproduction Package of ISSTA 2022 paper \"Simple Techniques Work Surprisingly Well...\""
+            },
+            "confidence": 0.9787794220850616,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<sub>Please note that these steps contain tensorflow operations which are system dependent\nand intrinsically random (that's why we conducted 100 re-runs) and that, if you abort any \nof these steps before completion, your assets folder might be in a corrupted state.\nIf in doubt, just replace the `/path/to/assets/` folder with a new one downloaded from zenodo.</sub> \n",
+                "original_header": "Re-Generating assets"
+            },
+            "confidence": 0.9997268813091106,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Reproduction Package of ISSTA 2022 paper \"Simple Techniques Work Surprisingly Well...\""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2205.00664.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/simple-tip/main/README.md"
+        }
+    ]
+}

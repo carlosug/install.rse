@@ -1,0 +1,225 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:34:40"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/context-aware-Failure-Identification/CLog",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "context-aware-Failure-Identification",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-12-13T15:35:36Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2022-05-20T03:28:14Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021 CLogCLog\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/context-aware-failure-identification/clog/main/LICENSE"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "CLog",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "context-aware-Failure-Identification/CLog",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/context-aware-Failure-Identification/CLog/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/context-aware-Failure-Identification/CLog/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/context-aware-failure-identification/clog/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 95818
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/context-aware-failure-identification/clog/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "CLog requires log data as input. The minimal requirements for the inputs are 1) log messages and 2) timestamp. Additionally, we assume the availability of a task ID to group logs.\nNevertheless, this assumption can be dropped by including multi-index grouping of the log events by time (e.g., hours and seconds windows.).\nFor evaluation, it's important to know additionally the severity degree of the individual label of the window. Further information like service ID, workload ID, process ID, log level, parameters, templates etc, are available and can be used for greater in-depth information.  \n\nFor parsing one can use Drain. We provide an in-memory implementation of the parser. However, if using the parser please cite the relevant authors: Pinjia He et al. https://github.com/logpai/logparser/tree/master/logparser/Drain. \n",
+                "type": "Text_excerpt",
+                "original_header": "Quick Start",
+                "parent_header": [
+                    "CLog: Context-aware method for log-based failure identification"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/context-aware-failure-identification/clog/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "The requirements can be found in the requirements.tex\n\n1. Clone the Repository git clone https://github.com/context-aware-Failure-Identification/CLog.git\n\n2. Install the requirements using: pip install -r /path/to/requirements.txt\n\n3. Customize the directories and paths\n\n4. Run the parser in the Drain.py: \n   1. Set the depth and the similarity threshold parameters\n\n5. Run the preprocessing scripts 1_, 2_, 3_ to prepare the data;\n   1. Set the parameter window_size\n   2. Set the training and validation sizes to tune the hyperparameters\n\n6. Run CLog_main.py to extract context-aware subprocesses;\n   1. The parameters of the CLog are set here;\n   2. They are set at initialized as described in the paper;\n\n7. Run FD.py to detect failures\n   1. Here one sets the number of states\n\n8. Run FTI.py to identify failure types\n   1. Adjust the training models for the different number of failure types\n   2. Tip: Use different weights if the distributions of your classes are severe.\n\n------------",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisite",
+                "parent_header": [
+                    "CLog: Context-aware method for log-based failure identification",
+                    "Quick Start"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/context-aware-failure-identification/clog/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This project provides code for the paper \"Failure Identification from Unstable Log Data using Deep Learning\"\n \n",
+                "original_header": "CLog: Context-aware method for log-based failure identification"
+            },
+            "confidence": 0.9790970148204657,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/context-aware-failure-identification/clog/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "CLog: Context-aware method for log-based failure identification"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/context-aware-failure-identification/clog/main/README.md"
+        }
+    ]
+}

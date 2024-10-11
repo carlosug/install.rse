@@ -1,0 +1,524 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:39:00"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/hub-se/BeDivFuzz",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "hub-se",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-03-01T08:54:35Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-03T07:11:37Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/bsd-2-clause",
+                "type": "License",
+                "name": "BSD 2-Clause \"Simplified\" License",
+                "url": "https://api.github.com/licenses/bsd-2-clause",
+                "spdx_id": "BSD-2-Clause"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Copyright (c) 2017-2020 The Regents of the University of California\nCopyright (c) 2021-2023 Rohan Padhye and JQF Contributors\n\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n1. Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\nnotice, this list of conditions and the following disclaimer in the\ndocumentation and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nHOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/LICENSE"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "BeDivFuzz",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "hub-se/BeDivFuzz",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/hub-se/BeDivFuzz/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/hub-se/BeDivFuzz/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 13,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/hub-se/BeDivFuzz/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 788154
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 489570
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 66285
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 32089
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 9067
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 462
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 133
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/setup.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/jqf-debug-driver.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/jqf-driver.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/parallel_worker.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/eval_worker.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/run_experiments.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/run_parallel_experiments.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/run_eval_experiments.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/classpath.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/examples_classpath.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/experiments/zest/synt_sem_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/experiments/zest/cov_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/experiments/zest/bench.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/experiments/zest/run_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/experiments/zest/cov.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/experiments/zest/synt_sem.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/experiments/ei/cov_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/experiments/ei/bench.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/experiments/ei/run_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/experiments/ei/cov.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/Dockerfile"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/slurm/plot_results.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/scripts/slurm/plot_results.ipynb"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository provides the code and replication instructions for our paper *BeDivFuzz: Integrating Behaviorial Diversity into Generator-based Fuzzing* ([ICSE'2022](https://arxiv.org/pdf/2202.13114.pdf)). \nBeDivFuzz is implemented as an extension of [JQF](https://github.com/rohanpadhye/JQF). \n \n",
+                "original_header": "BeDivFuzz: Behavioral Diversity Fuzzing"
+            },
+            "confidence": 0.9804775710782012,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- `out_dir` is the folder where the results should be saved\n- `timeout` is the timeout (in seconds) per trial\n- `repetitions` is the number of repetitions to perform\n- `parallel_workers` is the number of parallel trials to perform and must be a factor of `repetitions` to evenly distribute the workload (e.g., with repetitions=30 and parallel_workers=10, each instance will perform 3 repetitions)\n- The `-r` flag enables coverage replay and is required to collect coverage data for RLCheck and QuickCheck  \n",
+                "original_header": "Step 2: Perform the Evaluation"
+            },
+            "confidence": 0.9737415244139849,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Then, run the container (with the current directory mounted to `/workspace` inside the container):\n```\ndocker run -it --rm -v ${PWD}:/workspace bedivfuzz\n```\n \n",
+                "original_header": "Using Docker"
+            },
+            "confidence": 0.983763037202674,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To build BeDivFuzz and Zest, run:\n```\nmvn package\n``` \nRLCheck needs to be build separately:\n```\ncd RLCheck/jqf/\nmvn package\ncd ../..\n```\n \n",
+                "original_header": "Step 1: Build BeDivFuzz, Zest, and RLCheck"
+            },
+            "confidence": 0.9937843998251537,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We can now perform a test run of BeDivFuzz (e.g., on Rhino) as follows:\n```\nbin/jqf-bediv -c $(scripts/examples_classpath.sh) edu.berkeley.cs.jqf.examples.rhino.CompilerTest testWithSplitGenerator\n``` \n",
+                "original_header": "Optional: Test BeDivFuzz"
+            },
+            "confidence": 0.999083458944303,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The evaluation script can be executed as follows:\n ```\nscripts/run_parallel_experiments.sh -o out_dir -t timeout -n repetitions -p parallel_workers [-r]\n ``` \n",
+                "original_header": "Step 2: Perform the Evaluation"
+            },
+            "confidence": 0.9578116863530483,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To generate the crash table (Table 1) from `crash-results`, the following command can be used:\n```\npython3 scripts/gen_crash_table.py crash-results\n```\nThe table will be printed on the terminal, but also saved as `crash-results/crash_table.txt`.\n \n",
+                "original_header": "Step 3: Generate the figures"
+            },
+            "confidence": 0.9890330399774419,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/README.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://doi.org/10.5281/zenodo.6320229"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "BeDivFuzz: Behavioral Diversity Fuzzing"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2202.13114.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/hub-se/BeDivFuzz/main/README.md"
+        }
+    ]
+}

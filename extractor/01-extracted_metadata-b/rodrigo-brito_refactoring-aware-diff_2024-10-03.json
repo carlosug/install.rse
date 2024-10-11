@@ -1,0 +1,406 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:49:27"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/rodrigo-brito/refactoring-aware-diff",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "rodrigo-brito",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-01-07T13:31:55Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-12T04:19:43Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2020 Rodrigo Brito\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/LICENSE"
+        },
+        {
+            "result": {
+                "value": "Distributed under the MIT License. See [LICENSE](LICENSE) for more information.\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "RAID: Refactoring-aware and Intelligent Diffs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "RAID is a tool pipeline that seamlessly enriches GitHub diff results with refactoring information.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Code review is a key practice in modern software development. Currently, this practice is performed using textual diff tools, such as the one provided by GitHub. However, diff results can easily become complex and hard to understand. Refactorings, for example, are not represented at all in diff results. This makes diff understanding more complex because reviewers need to infer themselves that a given group of added and removed lines of code represent, for example, an extract method. \n",
+                "original_header": "RAID: Refactoring-aware and Intelligent Diffs"
+            },
+            "confidence": 0.963699571073569,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "refactoring-aware-diff",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "rodrigo-brito/refactoring-aware-diff",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/rodrigo-brito/refactoring-aware-diff/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/rodrigo-brito/refactoring-aware-diff/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 81,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "actions, chrome-extension, refactoring, review-tools",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/rodrigo-brito/refactoring-aware-diff/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 1279881
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 6432
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 4344
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 66
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/rodrigo-brito/refactoring-aware-diff/releases/23553796",
+                "tag": "v0.1-beta",
+                "author": {
+                    "name": "rodrigo-brito",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/rodrigo-brito/refactoring-aware-diff/tarball/v0.1-beta",
+                "zipball_url": "https://api.github.com/repos/rodrigo-brito/refactoring-aware-diff/zipball/v0.1-beta",
+                "html_url": "https://github.com/rodrigo-brito/refactoring-aware-diff/releases/tag/v0.1-beta",
+                "url": "https://api.github.com/repos/rodrigo-brito/refactoring-aware-diff/releases/23553796",
+                "release_id": 23553796,
+                "date_created": "2020-02-11T01:57:08Z",
+                "date_published": "2020-02-11T02:01:33Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "![Move Method](https://user-images.githubusercontent.com/7620947/83657276-058d1c00-a597-11ea-811b-6761bdf2d58e.png)\n",
+                "type": "Text_excerpt",
+                "original_header": "Example of Move Method",
+                "parent_header": [
+                    "RAID: Refactoring-aware and Intelligent Diffs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md"
+        },
+        {
+            "result": {
+                "value": "We created a simple pull request with commits including toy refactorings, to illustrate the usage of our plug-in. See [here](https://github.com/rodrigo-brito/refactoring-aware-diff/pull/5/commits) (but first you need to install our plug in).\n",
+                "type": "Text_excerpt",
+                "original_header": "Simple Example",
+                "parent_header": [
+                    "RAID: Refactoring-aware and Intelligent Diffs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "To detect refactorings in your repository, you must first install this [Chrome plug-in](https://chrome.google.com/webstore/detail/refactoring-aware-review/bclbegekihgpelanbbleaceefgmekjdd) and configure RefDiff on [Github Actions](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow).\n\n<a href=\"https://chrome.google.com/webstore/detail/refactoring-aware-diff/bclbegekihgpelanbbleaceefgmekjdd\">\n    <img width=\"200px\" src=\"https://user-images.githubusercontent.com/7620947/75341916-26e1bc00-5874-11ea-9526-463ddf1e7f82.png\" />\n</a>\n\nTo execute RefDiff as Github Actions, you need to create a workflow file in `.github/workflows` folder with `.yaml` extension. Example of configuration: `.github/workflows/workflow.yml`:\n\n```yaml\non: [pull_request] # Trigger RefDiff after each pull request\n\njobs:\n    main:\n        runs-on: ubuntu-latest\n        name: Refactoring Detection\n        steps:\n            - name: Git Checkout\n              uses: actions/checkout@v2\n              with:\n                  fetch-depth: 0\n\n            - name: raid\n              env:\n                  LANGUAGE: ${{ github.event.repository.language }} # Supports Java, Javascrit, C and Go.\n                  REV_BEFORE: ${{ github.event.pull_request.base.sha }}\n                  REV_AFTER: ${{ github.event.pull_request.head.sha }}\n              uses: rodrigo-brito/refactoring-aware-diff@action\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "RAID: Refactoring-aware and Intelligent Diffs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p align=\"center\">\n    <img src=\"https://user-images.githubusercontent.com/7620947/76000414-706c7f80-5ee2-11ea-8f21-06bfb2646b36.png\" width= \"400px\" />\n</p> \n",
+                "original_header": "RAID: Refactoring-aware and Intelligent Diffs"
+            },
+            "confidence": 0.9728282780648082,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "```bibtex\n@inproceedings{brito2021, \n  author = {Rodrigo Brito and Marco Tulio Valente}, \n  title = {{RAID}: Tool Support for Refactoring-Aware Code Reviews}, \n  booktitle = {29th International Conference on Program Comprehension (ICPC)}, \n  year = {2021}, \n  pages = {265--275}\n}\n``` \n\nDOI: https://doi.ieeecomputersociety.org/10.1109/ICPC52881.2021.00033\n",
+                "type": "Text_excerpt",
+                "original_header": "How cite RAID",
+                "parent_header": [
+                    "RAID: Refactoring-aware and Intelligent Diffs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{brito2021,\n    pages = {265--275},\n    year = {2021},\n    booktitle = {29th International Conference on Program Comprehension (ICPC)},\n    title = {{RAID}: Tool Support for Refactoring-Aware Code Reviews},\n    author = {Rodrigo Brito and Marco Tulio Valente},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "{RAID}: Tool Support for Refactoring-Aware Code Reviews",
+                "author": "Rodrigo Brito and Marco Tulio Valente"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "RAID: Refactoring-aware and Intelligent Diffs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://user-images.githubusercontent.com/7620947/83893436-4ff0d300-a726-11ea-8a4d-48d34c36d115.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://user-images.githubusercontent.com/7620947/76000414-706c7f80-5ee2-11ea-8f21-06bfb2646b36.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://user-images.githubusercontent.com/7620947/83657276-058d1c00-a597-11ea-811b-6761bdf2d58e.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://user-images.githubusercontent.com/7620947/75341916-26e1bc00-5874-11ea-9526-463ddf1e7f82.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2103.11453\n- IEEE Library: https://www.computer.org/csdl/proceedings-article/icpc/2021/140300a265/1tB7wfFt3ji\n\nCode review is a key practice in modern software development. Currently, this practice is performed using textual diff tools, such as the one provided by GitHub. However, diff results can easily become complex and hard to understand. Refactorings, for example, are not represented at all in diff results. This makes diff understanding more complex because reviewers need to infer themselves that a given group of added and removed lines of code represent, for example, an extract method.\n\n![result](https://user-images.githubusercontent.com/7620947/83893436-4ff0d300-a726-11ea-8a4d-48d34c36d115.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rodrigo-brito/refactoring-aware-diff/master/README.md"
+        }
+    ]
+}

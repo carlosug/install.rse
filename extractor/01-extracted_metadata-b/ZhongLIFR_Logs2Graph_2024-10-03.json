@@ -1,0 +1,251 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:01:01"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ZhongLIFR/Logs2Graph",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ZhongLIFR",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-03-26T07:24:02Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-23T12:12:20Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Logs2Graph",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ZhongLIFR/Logs2Graph",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ZhongLIFR/Logs2Graph/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ZhongLIFR/Logs2Graph/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 14,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/ZhongLIFR/Logs2Graph/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 229933
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ZhongLIFR/Logs2Graph/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "Please ensure that you have the specified environment, which is described in requirements.txt\n",
+                "type": "Text_excerpt",
+                "original_header": "Step0: Check requirements",
+                "parent_header": [
+                    "Logs2Graphs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ZhongLIFR/Logs2Graph/main/README.md"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "Please download the dataset \"Data.zip\" from this link: [zenodo](https://doi.org/10.5281/zenodo.7771548), and put them under the root_path (namely where all python scripts are located) with a name \"Data\". If the downloaded zip file has a name other than \"Data\" after unziping it, you should change it to \"Data\".  \n",
+                "type": "Text_excerpt",
+                "original_header": "Step1: Download Dataset",
+                "parent_header": [
+                    "Logs2Graphs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ZhongLIFR/Logs2Graph/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "Our code is developed based on [GLAM](https://github.com/sawlani/GLAM) and [DiGCN](https://github.com/flyingtango/DiGCN).\n",
+                "type": "Text_excerpt",
+                "original_header": "References",
+                "parent_header": [
+                    "Logs2Graphs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ZhongLIFR/Logs2Graph/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains the lab code for the manuscript \"Graph Neural Networks based Log Anomaly Detection and Explanation\", which has been accepted by [ICSE'24](https://conf.researchr.org/home/icse-2024) poster track (short paper). The full version is under review with the [EAAI journal](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence). Importantly, we are deploying this algorithm on lithography systems with our individual partners [ASML](https://www.asml.com/en) and [VDL](https://www.vdlgroep.com/en). \n",
+                "original_header": "Logs2Graphs"
+            },
+            "confidence": 0.9883618198070975,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ZhongLIFR/Logs2Graph/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Readers can follow these steps to use our code:\n \n",
+                "original_header": "Logs2Graphs"
+            },
+            "confidence": 0.985961439547236,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ZhongLIFR/Logs2Graph/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1. for testing Logs2Graph on HDFS: run GraphGeneration_HDFS.py, and then run main_HDFS.py. \n2. for testing Logs2Graph on Hadoop: run GraphGeneration_Hadoop.py, and then run main_Hadoop.py.\n3. for testing Logs2Graph on Spirit: run GraphGeneration_Spirit.py, and then run main_Spirit.py.\n4. for testing Logs2Graph on BGL: run GraphGeneration_BGL.py, and then run main_BGL.py.\n5. for testing Logs2Graph on Thunderbird: run GraphGeneration_Thunderbird.py, and then run main_Thunderbird.py.\n \n",
+                "original_header": "Step3: Testing"
+            },
+            "confidence": 0.9999999882591056,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ZhongLIFR/Logs2Graph/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "1. for testing Logs2Graph on HDFS: run GraphGeneration_HDFS.py, and then run main_HDFS.py. \n2. for testing Logs2Graph on Hadoop: run GraphGeneration_Hadoop.py, and then run main_Hadoop.py.\n3. for testing Logs2Graph on Spirit: run GraphGeneration_Spirit.py, and then run main_Spirit.py.\n4. for testing Logs2Graph on BGL: run GraphGeneration_BGL.py, and then run main_BGL.py.\n5. for testing Logs2Graph on Thunderbird: run GraphGeneration_Thunderbird.py, and then run main_Thunderbird.py.\n \n",
+                "original_header": "Step3: Testing"
+            },
+            "confidence": 0.9044570559294896,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ZhongLIFR/Logs2Graph/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Logs2Graphs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ZhongLIFR/Logs2Graph/main/README.md"
+        }
+    ]
+}

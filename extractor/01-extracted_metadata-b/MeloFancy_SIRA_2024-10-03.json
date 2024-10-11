@@ -1,0 +1,245 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:03:26"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/MeloFancy/SIRA",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "MeloFancy",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-09-06T09:33:48Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-02-20T14:32:01Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "SIRA",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "MeloFancy/SIRA",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/MeloFancy/SIRA/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/MeloFancy/SIRA/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/MeloFancy/SIRA/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 1093629
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 1493
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/MeloFancy/SIRA/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/MeloFancy/SIRA/master/pytorch_version/run_ner_crf.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/MeloFancy/SIRA/master/pytorch_version/scripts/run_ner_crf.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "- Python 3.6\n- Main libraries: requirements.txt\n- [Pre-trained BERT](https://huggingface.co/bert-base-uncased)\n\t- Path: pytorch_version/prev_trained_model/\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "SIRA: a Semantic-aware, fIne-grained app Review Analysis approach"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/MeloFancy/SIRA/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "```angular2html\nrun_ner_crf.sh\n```\n\nYou can change the configures in `run_ner_crf.sh`, including the `learning_rate`, `per_gpu_train_batch_size`, `per_gpu_eval_batch_size`, `num_train_epochs`, etc. The other important parameters are\n```angular2html\noverwrite_output_dir -- whether overwrite the output directory\ndo_train -- whether train the model\ndo_eval -- whether evluate the model\ndo_predict -- whether predict the results of new data\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Problematic Feature Extraction",
+                "parent_header": [
+                    "SIRA: a Semantic-aware, fIne-grained app Review Analysis approach",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/MeloFancy/SIRA/master/README.md"
+        },
+        {
+            "result": {
+                "value": "This should be run after obtaining the results of Problematic Feature Extraction.\nNeed revision based on the format of your output data, and assign your data to the variable `domain_docs`.\n```angular2html\npreprocess/clustering.py\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Problematic Feature Clustering",
+                "parent_header": [
+                    "SIRA: a Semantic-aware, fIne-grained app Review Analysis approach",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/MeloFancy/SIRA/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The directory `dataset` is for the convenience of viewing the data, which contains labeled data and unlabeled data, respectively. \\\nThe data directory when running our code: `pytorch_version/CLUEdatasets/cluener/`\n \n",
+                "original_header": "Data Directory"
+            },
+            "confidence": 0.9869749672270212,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/MeloFancy/SIRA/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "SIRA: a Semantic-aware, fIne-grained app Review Analysis approach"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/MeloFancy/SIRA/master/README.md"
+        }
+    ]
+}

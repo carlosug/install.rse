@@ -1,0 +1,268 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:58:29"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/PrivacyEngineering/hawk-service",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "PrivacyEngineering",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-01-16T17:49:45Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-07-18T09:09:29Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "The Hawk Services manages all things about the Usage, Mappings and Fields",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "hawk-service",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "PrivacyEngineering/hawk-service",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/PrivacyEngineering/hawk-service/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/PrivacyEngineering/hawk-service/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "gdpr, hawk, privacy",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/PrivacyEngineering/hawk-service/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Kotlin",
+                "name": "Kotlin",
+                "type": "Programming_language",
+                "size": 87747
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/PrivacyEngineering/hawk-service/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "```\n@misc{gr\u00fcnewald2023hawk,\n      title={Hawk: DevOps-driven Transparency and Accountability in Cloud Native Systems}, \n      author={Elias Gr\u00fcnewald and Jannis Kiesel and Siar-Remzi Akbayin and Frank Pallas},\n      year={2023},\n      eprint={2306.02496},\n      archivePrefix={arXiv},\n      primaryClass={cs.DC}\n}\n```",
+                "type": "Text_excerpt",
+                "original_header": "BibTex citation:",
+                "parent_header": [
+                    "Hawk Service"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/hawk-service/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@misc{gr\u00fcnewald2023hawk,\n    primaryclass = {cs.DC},\n    archiveprefix = {arXiv},\n    eprint = {2306.02496},\n    year = {2023},\n    author = {Elias Gr\u00fcnewald and Jannis Kiesel and Siar-Remzi Akbayin and Frank Pallas},\n    title = {Hawk: DevOps-driven Transparency and Accountability in Cloud Native Systems},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Hawk: DevOps-driven Transparency and Accountability in Cloud Native Systems",
+                "author": "Elias Gr\u00fcnewald and Jannis Kiesel and Siar-Remzi Akbayin and Frank Pallas"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/hawk-service/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "For the Hawk Service to run you need to its mandatory to have a PostgreSQL Database connected. With\nsmaller workloads Postgres itself is fine, for bigger workloads you might need some technologies\nlike [YugabyteDB](https://github.com/yugabyte/yugabyte-db). Just pass the following environment\nvariables:\n\n```properties\nSPRING_DATASOURCE_URL=jdbc:postgresql://localhost/hawk\nSPRING_DATASOURCE_USERNAME=xxxx\nSPRING_DATASOURCE_PASSWORD=xxxx\n```\n\nProfiles can be activated using the following environment variable.\n\n```\nSPRING_PROFILES_ACTIVE=flagger-canary,test-data\n```\n\nBy default, the service starts on port 8080. Pass the env `SERVER_PORT` to change that.\n\nTo install via. Docker run the following command and pass the environment variables after using you\nneed:\n\n```\ndocker run -p 8080:8080 -e ENV1=1 ENV2=2 p4skal/hawk-service\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "Hawk Service"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/hawk-service/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "When the Spring Profile `flagger-canary` is active and the current environment is a Kubernetes\nenvironment this services uses\nthe [Fabric8 Kubernetes Client](https://github.com/fabric8io/kubernetes-client) to watch for new\n[Flagger Canary Releases](https://github.com/fluxcd/flagger). Recent and active releases are\navailable at the `/api/release/*` endpoints. \n",
+                "original_header": "Hawk Release"
+            },
+            "confidence": 0.9735749224916153,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/hawk-service/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Although we recommend to create Mappings / Fields with\nthe [Hawk Core Monitor UI](https://github.com/PrivacyEngineering/hawk-core-monitor), when using IaaC\nyou may want to specify the fields / mappings directly. On startup, this service will sync the\nupdates. You have many possibilities to provide such entities, as they are provided\nvia [Spring External Configuration](). The following things are described via. Environment variables.\nIf you want to use Properties, JSON, YAML etc., see there.\n```dotenv\nFIELDS_JSON='[\n    {\n        \"name\": \"user.email\",\n        \"description\": \"E-Mail address of the User\",\n        \"personalData\": false,\n        \"specialCategoryPersonalData\": false,\n        \"legalBases\": [\n            {\n                \"reference\": \"GDPR1\", \n                \"description\": \"\"\n            }\n        ]\n        \"legalRequirement\": false,\n        \"contractualRegulation\": false,\n        \"obligationToProvide\": false,\n        \"consequences\": \"\"\n    }\n]'\nMAPPINGS_JSON='[\n    {\n        endpointId: \"http:GET:user-service:/api/users\"\n        fields: [\n            {\n                field: \"user.email\",\n                side: \"SERVER\",\n                phase: \"RESPONSE\",\n                namespace: \"body\",\n                format: \"json\",\n                path: \"$.[*].email\"\n            }\n        ]\n    }\n]'\n```\nIt is also possible insert those values one by one by using:\nBASH2*\n \n",
+                "original_header": "Mapping / Field import from JSON"
+            },
+            "confidence": 0.9999999772056756,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/hawk-service/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "The Service features a limited Usage generation for Test data. Activate the profile `test-data` for\nthat.\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Random Usage Generation",
+                "parent_header": [
+                    "Hawk Service"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/hawk-service/master/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9514222632036924,
+            "technique": "supervised_classification"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Hawk Service"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/hawk-service/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2306.02496\n\n## BibTex citation:\n```\n@misc{gr\u00fcnewald2023hawk,\n      title={Hawk: DevOps-driven Transparency and Accountability in Cloud Native Systems}, \n      author={Elias Gr\u00fcnewald and Jannis Kiesel and Siar-Remzi Akbayin and Frank Pallas},\n      year={2023},\n      eprint={2306.02496},\n      archivePrefix={arXiv},\n      primaryClass={cs.DC}\n}\n```\n## Overview\n\n![workflow](https://github.com/PrivacyEngineering/hawk-service/actions/workflows/main.yml/badge.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/hawk-service/master/README.md"
+        }
+    ]
+}

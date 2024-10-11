@@ -1,0 +1,234 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:00:57"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/nitzanfarhi/SecurityPatchDetection",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "nitzanfarhi",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-03-24T06:43:36Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-07-10T22:43:45Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "SecurityPatchDetection",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "nitzanfarhi/SecurityPatchDetection",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/nitzanfarhi/SecurityPatchDetection/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/nitzanfarhi/SecurityPatchDetection/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/nitzanfarhi/securitypatchdetection/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 149166
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nitzanfarhi/securitypatchdetection/main/readme.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "```console\npython train.py  -a before --model conv1d -k 10 --metadata -c\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Running the training",
+                "parent_header": [
+                    "Security Patch Detection Repository"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nitzanfarhi/securitypatchdetection/main/readme.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you've found our work useful, please cite our paper \n\n```bibtex\n@article{farhi2023detecting,\n  title={Detecting Security Patches via Behavioral Data in Code Repositories},\n  author={Farhi, Nitzan and Koenigstein, Noam and Shavitt, Yuval},\n  journal={arXiv preprint arXiv:2302.02112},\n  year={2023}\n}\n```\nWhich can be viewed at [https://arxiv.org/abs/2302.02112](https://arxiv.org/abs/2302.02112)\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing our work",
+                "parent_header": [
+                    "Security Patch Detection Repository"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nitzanfarhi/securitypatchdetection/main/readme.md"
+        },
+        {
+            "result": {
+                "value": "@article{farhi2023detecting,\n    year = {2023},\n    journal = {arXiv preprint arXiv:2302.02112},\n    author = {Farhi, Nitzan and Koenigstein, Noam and Shavitt, Yuval},\n    title = {Detecting Security Patches via Behavioral Data in Code Repositories},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Detecting Security Patches via Behavioral Data in Code Repositories",
+                "author": "Farhi, Nitzan and Koenigstein, Noam and Shavitt, Yuval"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nitzanfarhi/securitypatchdetection/main/readme.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Notice that this dataset doesn't include the commits' generated data as it is very big. This can be generated by running only :\n```console\n python data_collection\\create_dataset.py  --commits -data_collection\\data\n``` \n",
+                "original_header": "Creating the dataset"
+            },
+            "confidence": 0.9339099416874863,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nitzanfarhi/securitypatchdetection/main/readme.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Security Patch Detection Repository"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nitzanfarhi/securitypatchdetection/main/readme.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2302.02112"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nitzanfarhi/securitypatchdetection/main/readme.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2302.02112](https://arxiv.org/abs/2302.02112"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nitzanfarhi/securitypatchdetection/main/readme.md"
+        }
+    ]
+}

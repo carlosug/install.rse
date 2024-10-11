@@ -1,0 +1,435 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:44:33"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ChenKen9869/DCA-IOT-system",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ChenKen9869",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-07-16T08:33:42Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-10-10T01:29:01Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 PPPPP\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "go, data analysis, rule-based IoT system",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "DCA IoT System is a rule-based device monitoring and message processing system. \n\nThe implementation principle of the system is here: [*An Adaptable IoT Rule Engine Framework for Dataflow Monitoring and Control Strategies*](https://arxiv.org/abs/2310.05493).\n",
+                "type": "Text_excerpt",
+                "original_header": "Introduction"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        },
+        {
+            "result": {
+                "value": "- Make decision by writing DCA rules.\n- Allow for writing multi-devices rules.\n- Easy to use.\n- Allow for sharing device data among users.\n",
+                "type": "Text_excerpt",
+                "original_header": "Features",
+                "parent_header": [
+                    "Introduction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        },
+        {
+            "result": {
+                "value": "- [DCA IOT system](#dca-iot-system)\n- [Introduction](#introduction)\n  - [Features](#features)\n  - [Outline](#outline)\n- [Quick Start](#quick-start)\n  - [Requirements](#requirements)\n  - [Installation](#installation)\n  - [Basic Use](#basic-use)\n- [Documentation](#documentation)\n  - [Rules For Testing](#rules-for-testing)\n  - [Architecture](#architecture)\n  - [Key Concepts](#key-concepts)\n  - [Expand DCA Rule](#expand-dca-rule)\n    - [Rule Syntax](#rule-syntax)\n    - [Message Accepter](#message-accepter)\n    - [Rule Matcher](#rule-matcher)\n    - [Action Executor](#action-executor)\n  - [WebSocket Connector](#websocket-connector)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Outline",
+                "parent_header": [
+                    "Introduction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "DCA-IOT-system",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ChenKen9869/DCA-IOT-system",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ChenKen9869/DCA-IOT-system/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ChenKen9869/DCA-IOT-system/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/ChenKen9869/DCA-IOT-system/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Go",
+                "name": "Go",
+                "type": "Programming_language",
+                "size": 206338
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 3745
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Batchfile",
+                "name": "Batchfile",
+                "type": "Programming_language",
+                "size": 127
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "[MySQL service](#https://www.mysql.com) and [EMQX service](#https://www.emqx.io/) is required for running this system.\n\n- Deploy MySQL service \n- Deploy EMQX service\n\n[Go](#https://go.dev/) version: 1.18.1\n\nInstall [python](#https://www.python.org/) if you'd like to use the testing message sender script.\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "Quick Start"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "1. Clone this project\n\n```shell\ngit clone https://github.com/ChenKen9869/DCA-IOT-system.git\n```\n\n2. Build it locally\n\n```shell\ncd DCA-IOT-system\ngo build -o ./build/dca\n```\n\n3. Config the project at /config/application.yaml\n\n```shell\nvim ./config/application.yaml\n```\n\n**Deploy this project in server**\n\n1. Use scp command to send the executable file to the server.\n\n   ```shell\n   scp ./build/dca another-server-directory\n   ```\n\n2. Use [go-swagger](#https://github.com/go-swagger/go-swagger) to generate the swagger api file. And also use scp command to send swagger files to the server.\n\n   ```shell\n   swag init\n   scp -r ./docs another-server-directory\n   ```\n\n3. Use scp command to send the config file to the server\n\n   ```shell\n   scp ./config/application.yaml another-server-directory/config/\n   ```\n\n4. Use scp command to send the example device python file to the server for testing rules\n\n   ```shell\n   scp ./scripts/example_device.py another-server-directory/scripts/\n   ```\n\n5.  Start the service\n\n   ```shell\n   ./dca\n   ```\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "Quick Start"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "After deployed and started service, test the system by using swagger api webpage : <http://localhost:5930/swagger/index.html#/>\n\n1. Create an account: **[[POST]/user/register](#http://localhost:5930/swagger/index.html#/User/post_user_register)**, this api will return \"token\". \n\n   Copy \"token\", and add \"Bearer \" before it. \n\n   Paste the \"token\" with \"Bearer \" into \"Authorization\" header when visit other api.\n\n2. Create a company: **[[POST]/company/create](#http://localhost:5930/swagger/index.html#/Company/post_company_create)**\n\n3. Create a biology: **[[POST]/biology/create](#http://localhost:5930/swagger/index.html#/Biology/post_biology_create)**\n\n4. Create a Portable Device or a Fixed Device: **[[POST]/device/portable/create](#http://localhost:5930/swagger/index.html#/Device-portable/post_device_portable_create)** or **[[POST]/device/fixed/create](#http://localhost:5930/swagger/index.html#/Device-fixed/post_device_fixed_create)**\n\n   Record the device id, so you can use it in 5.\n\n5. Create a DCA rule: **[[POST]/rule/create](#http://localhost:5930/swagger/index.html#/Rule/post_rule_create)**\n\n   For example, you just created a portable device whose id = 1. The device type is collar, and its message has the attribute \"temperature\". \n\n   If you'd like to monitor this device and control the temperature of farmhouse by send command to the MQTT topic \"command\", you should write DCA rule such like this:\n\n   **Datasource:** \n\n   ```\n   tem{1, Portable, temperature}\n   ```\n\n   **Condition:**\n\n   ```\n   tem > 22\n   ```\n\n   **Action:**\n\n   ```\n   WebSocket: 1,rule Matched, temperature is $tem!;Mqtt: localhost, 1883, admin, emqx@123456, command, open the electric fan\n   ```\n\n6. Use websocket client to **connect the monitor center** by visit below url.\n\n   ```\n   ws//locallhost:5930/monitorCenter/connect\n   ```\n\n   **Do not** use swagger to visit this api directly. \n\n   If you are willing to disconnect with service, use **[[DELETE]/monitorCenter/disconnect](#http://localhost:5930/swagger/index.html#/MonitorCenter/delete_monitorCenter_disconnect)**, or just close the websocket client.\n\n7. Use MQTT client to listen the command topic **\"command\"** and get messages. \n\n8. Start the DCA rule: **[[GET]/rule/start](#http://localhost:5930/swagger/index.html#/Rule/get_rule_start)**\n\n9. Run test python script to send data to the system. This script simulates sensor data.\n\n   ```shell\n   python ./script/example_device.py\n   ```\n\n   Send the following test message to the system.\n\n   ```\n   0000001, collar, temperature, 25.6\n   ```\n\n   - \"0000001\" stands for device id; \n   - \"collar\" stands for device type; \n   - \"temperature\" stands for message attribution; \n   - \"25.6\" stands for current data of attribution \"temperature\". \n\n   You can change the data in this message form. But when you do this, **change the device's information and rule description at the same time.**\n\n10. You should find message in your WebSocket client and command in MQTT topic \"command\".\n\n11. When finish testing, remember to end the rule: **[[GET]/rule/end](#http://localhost:5930/swagger/index.html#/Rule/get_rule_end)**\n\n    If you just close the service without end the rule, you should **change the rule's status in MySQL manually**. \n\n    ```sql\n    UPDATE rules SET stat='Inactive' WHERE id=id_of_the_test_rule;\n    ```\n\n    If rule's status equals \"Active\" of \"Scheduled\", error will occur when you start or schedule the rule in the next time.\n",
+                "type": "Text_excerpt",
+                "original_header": "Basic Use",
+                "parent_header": [
+                    "Quick Start"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "**Get more information about REST APIs that the system offers at [Swagger UI webpage](http://localhost:5930/swagger/index.html#/) when the system has been deployed.**\n",
+                "type": "Text_excerpt",
+                "original_header": "Documentation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Use  **[[POST]/rule/create](#http://localhost:5930/swagger/index.html#/Rule/post_rule_create)** to create and test more rules. Remember to create devices first. And you should also change the payload of messages send by the test python script.\n\nHere are some of the basic test cases:\n\n**1. Verify single device rule with expression condition and multi actions**\n\nRule1:\n\n**Datasource:** \n\n```\ntem{1, Portable, temperature}\n```\n\n**Condition:**\n\n```\ntem > 22.3\n```\n\n**Action:**\n\n```\nWebSocket: 1,rule Matched, temperature is $tem!;Mqtt: localhost, 1883, admin, emqx@123456, command, open the electric fan\n```\n\n**2. Verify multi-device linkage rule with expression condition and multi actions**\n\nRule2:\n\n**Datasource:** \n\n```\ntem_1{1, Portable, temperature}; tem_2{1, Fixed, temperature}\n```\n\n**Condition:**\n\n```\n(tem_2 > 25.3) & (tenm_1 > tem_2 +3 )\n```\n\n**Action:**\n\n```\nWebSocket: 1,rule Matched, temperature is \\$tem_2 and $tem_1!;Mqtt: localhost, 1883, admin, emqx@123456, command, open fan\n```\n\n**3. Verify functional condition with multi acitons**\n\nRule3:\n\n**Datasource:** \n\n```\nlongitude{1, Portable, longitude}; latitude{1, Portable, latitude}\n```\n\n**Condition:**\n\n```\nPointSurface: longitude, latitude, 1xx.40xxx2, 3x.92xx55, xx6.4xx70x, xx.89xx55, 1xx.40xx92, x9.8xx353, xxx.38xx46, xx.89x365\n```\n\n**Action:**\n\n```\nWebSocket: 1,rule Matched, position is \\$longitude $longitude!;Mqtt: localhost, 1883, admin, emqx@123456, command, find device\n```\n\nThe function of the PointSurface functional condition used in Rule 3 is to determine whether a point is in a surface. We use this rule to determine if the target device is in the given range. Starting from the third parameter and working backwards, we fill in the longitude coordinates and latitude coordinates of the points that enclose the polygon of the given range (the coordinate points are taken from the Amap API). In order to protect privacy, we have blurred the specific coordinate points in the test cases, using x instead of some numbers.\n\n**4. Verify multi rules concurrent running**\n\nIn order to test whether multiple rules run concurrently to get the expected results,  testing Rule 1, Rule 2, and Rule 3 concurrently using the four REST API interfaces of the scheduling rules.\n",
+                "type": "Text_excerpt",
+                "original_header": "Rules For Testing",
+                "parent_header": [
+                    "Documentation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The system is made up by following architecture.\n\n![image-20230906001024716](./README.assets/image-20230906001024716.png)\n",
+                "type": "Text_excerpt",
+                "original_header": "Architecture",
+                "parent_header": [
+                    "Documentation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        },
+        {
+            "result": {
+                "value": "- **User**\n  - The account belongs to one certain user.\n- **Manager & Visitor**\n  - A user could become a manager or a visitor of certain company.\n  - Manager could change the entities of company, such as biology, device, or rule.\n  - Visitor only has read auth to entities.\n- **Company & Owner**\n  - One User create a company, and he/she becomes the owner of this company.\n  - Company's owner is able to grant auth to other users (make them become manger or visitor)\n- **Biology**\n  - Biology is belong to a certain company, and its owner is the company's owner\n- **Device**\n  - Device is divided into portable device and fixed device.\n  - Portable device is bound with certain biology, its owner is the biology's owner.\n  - Fixed device is belong to a certain company, and its owner is the company's owner.\n- **Rule**\n  - Only manger and owner can create/start/end/schedule rule of a company.\n  - And only devices that belong to the company could be defined as datasource in DCA rules.\n  - Auth check will happen in creating rules, it will check if the user has auth permission to the company, and also if devices all belong to the company.\n",
+                "type": "Text_excerpt",
+                "original_header": "Key Concepts",
+                "parent_header": [
+                    "Documentation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Datasource syntax: \n\n\u200b\t\t**Name{id, type, attribute}; Name{id, type, attribute}**\n\nCondition syntax: \n\n\u200b\t\t**Expression of Name** or **TypeSymbol: { params list contains Name split by \",\" }**\n\nAction syntax: \n\n\u200b\t\t**ActionType: { params list contains \\$Name split by \",\" }; ActionType: { params list contains \\$Name split by \",\" }**\n",
+                "type": "Text_excerpt",
+                "original_header": "Rule Syntax",
+                "parent_header": [
+                    "Documentation",
+                    "Expand DCA Rule"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        },
+        {
+            "result": {
+                "value": "This section is about how to create new message accepter.\n\n1. Accept & parse message\n\n   You should transform device_id and device_type of message into id and device_type in MySQL.\n\n   For example:\n\n   **Message: 0000001, collar, temperature, 25.6**\n\n   - In this message, collar means it is from a portable device. \n   - You should use \"0000001\" and \"collar\" as condition to select id from MySQL table \"portable_devices\".\n   - After this, as shown in 2, use id and device_type \"Portable\" to update datasource management.\n\n2. Update datasource management by below function\n\n   ```go\n   package accepter\n   \n   func updateDatasourceManagement(id int, deviceType string, attr string, value float64)\n   ```\n\n3. Save data into MongoDB if you need.\n",
+                "type": "Text_excerpt",
+                "original_header": "Message Accepter",
+                "parent_header": [
+                    "Documentation",
+                    "Expand DCA Rule"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        },
+        {
+            "result": {
+                "value": "This section is about how to create new **function condition rules**.\n\nFunction condition rules are defined as below format:\n\n```\nFunctionConditionType: val_01, val_02, const_01, const_02, const_03, const_04\n```\n\nSuch as: \n\n```\nPointSurface: val_01, val_02, const_01, const_02, const_03, const_04\n```\n\n1. Create new **matcher function**\n\n   Matcher function should define as this format: \n\n   ```go\n   func MatcherFunction(tokenList []ruleparser.Token, innerTable ruleparser.InnerTable) bool \n   ```\n\n   It should take a **ruleparser.Token** list type and an **ruleparser.InnerTable** type variable as input. And the output type must be bool. \n\n   ```go\n   package ruleparser\n   \n   type Token struct {\n   \tTokenType  string\n   \tTokenValue string\n   \tRealNum    float64\n   }\n   \n   type InnerTable = map[string]float64\n   ```\n\n   All symbol which can be found in innerTable will be parsed as **value token**. Other symbols will be parsed as **str token**.\n\n   This means the Token.TokenType is either **ValTokenType** or **StrTokenType**.\n\n   ```go\n   package ruleparser\n   \n   var ValTokenType string = \"VAL\"\n   var StrTokenType string = \"STR\"\n   ```\n\n   For value token, you can use its **Token.TokenValue** attribution to find current data of this symbol in the **innerTable**. \n\n   For example:\n\n   ```go\n   if tokenList[0].TokenType == ruleparser.ValTokenType {\n   \tfor symbol, value := range innerTable {\n   \t\tif symbol == tokenList[0].TokenValue {\n   \t\t\ttokenList[0].RealNum = value\n   \t\t\tbreak\n   \t\t}\n   \t} \n   }\n   ```\n\n2. Create the function **condition type symbol**, such as **\"ConditionType\"**.\n\n   ```go\n   package ruleparser\n   \n   var ConditionType string = \"SymbolOfFunctionConditionType\" \n   ```\n\n3. Initial it in **api/rule/init.go**\n\n   Push the new matcher function into **ruleparser.MatcherMap**. Use condition type symbol as index:\n\n   ```go\n   package rule\n   \n   func InitRule() {\n   \t... ...\n   \truleparser.MatcherMap[ConditionType] = MatcherFunction\n   \t... ...\n   }\n   ```\n",
+                "type": "Text_excerpt",
+                "original_header": "Rule Matcher",
+                "parent_header": [
+                    "Documentation",
+                    "Expand DCA Rule"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        },
+        {
+            "result": {
+                "value": "This section is about how to create action executor.\n\n1. create executor function and it's param channel\n\n   ```go\n   package actions\n   \n   var NewActionChannel chan (string)\n   \n   func ExecNewAction(params string)\n   ```\n\n2. define the params list and the parse function.\n\n   ```go\n   package actions\n   \n   const (\n   \tWebsocketActionType string = \"WebSocket\"\n   \tMqttActionType      string = \"Mqtt\"\n       ... ...\n       NewActionType\t\tstring = \"NewActionTypeSymbol\"\n   )\n   ```\n\n   And register it into **actiona.ActionChannels** in /api/rule/init.go.\n\n   ```go\n   package rule\n   \n   func InitRule() {\n       ... ...\n       actions.NewActionChannel = make(chan string)\n       actions.ActionChannels[actions.NewActionType] = actions.NewActionChannel\n   }\n   ```\n\n3. initial it in api/rule/actions/init.go\n\n   Put the new action executor function and param channel in function **StartActionExecutor**: \n\n   ```go\n   package actions\n   \n   func StartActionExecutor() {\n   \tfor {\n   \t\tselect {\n   \t\t... ...\n           case params := <-NewActionChannel:\n               gopool.Go(func() {\n                   ExecNewAction(params)\n               })    \n   \t\t}\n   \t}\n   }\n   ```\n",
+                "type": "Text_excerpt",
+                "original_header": "Action Executor",
+                "parent_header": [
+                    "Documentation",
+                    "Expand DCA Rule"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Use the message channel inside the system to push message to any user\n\n```go\nvar message string = \"hello!!!\"\n\n// make sure target user has connected with monitor center\nch, exist := monitor.MonitorCenter[userId]\nif exist {\n\tch.MessageChan <- message\n}\n```\n\nIf the target user has connected with monitor center, then the message will be send to the WebSocket client.\n",
+                "type": "Text_excerpt",
+                "original_header": "WebSocket Connector",
+                "parent_header": [
+                    "Documentation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "DCA IOT system"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/./README.assets/image-20230906001024716.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2310.05493"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ChenKen9869/DCA-IOT-system/master/README.md"
+        }
+    ]
+}

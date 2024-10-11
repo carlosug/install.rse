@@ -1,0 +1,1501 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:09:23"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/SAP/project-kb",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "SAP",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-02-13T16:19:46Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-17T15:25:54Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/apache-2.0",
+                "type": "License",
+                "name": "Apache License 2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "spdx_id": "Apache-2.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Home page of project \"KB\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "The goal of `Project KB` is to enable the creation, management and aggregation of a\ndistributed, collaborative knowledge base of vulnerabilities affecting\nopen-source software.\n\n`Project KB` consists of vulnerability data [vulnerability knowledge-base](vulnerability-data)\nas well as set of tools to support the mining, curation and management of such data.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Description",
+                "parent_header": [
+                    "Table of contents"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "value": "In order to feed [Eclipse Steady](https://github.com/eclipse/steady/) with fresh\ndata, we have spent a considerable amount of time, in the past few years, mining\nand curating a knowledge base of vulnerabilities that affect open-source\ncomponents. We know that other parties have been doing the same, in academia as\nwell as in the industry. From this experience, we have learnt that with the\ngrowing size of open source ecosystems and the pace at which new vulnerabilities\nare discovered, the _old approach_ cannot scale. We are also more and more\nconvinced that vulnerability knowledge-bases about open-source should be\nopen-source themselves and adopt the same community-oriented model that governs\nthe rest of the open-source ecosystem.\n\nThese considerations have pushed us to release our vulnerability knowledge base\nin early 2019. In June 2020, we made a further step releasing the `kaybee` tool support to\nmake the creation, aggregation, and consumption of vulnerability data much\neasier. In late 2020, we also released, as a proof-of-concept, the prototype\n`prospector`, whose goal is to automate the mapping of vulnerability advisories\nonto their fix-commits.\n\nWe hope this will encourage more contributors to join our efforts to build a\ncollaborative, comprehensive knowledge base where each party remains in control\nof the data they produce and of how they aggregate and consume data from the\nother sources.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Motivations",
+                "parent_header": [
+                    "Table of contents",
+                    "Description"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Prospector is a vulnerability data mining tool that aims at reducing the effort needed to find security fixes for known vulnerabilities in open source software repositories.\nThe tool takes a vulnerability description (in natural language) as input and produces a ranked list of commits, in decreasing order of relevance. \n",
+                "original_header": "Prospector <a name=\"prosp\"></a>"
+            },
+            "confidence": 0.9538293329856853,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The vulnerability data of Project KB are stored in textual form as a set of YAML files, in the [vulnerability-data branch](https://github.com/SAP/project-kb/tree/vulnerability-data).\n \n",
+                "original_header": "Vulnerability data <a name=\"vuldata\"></a>"
+            },
+            "confidence": 0.9602106240297213,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "> If you wrote a paper that uses the data or the tools from this repository, please let us know (through an issue) and we'll add it to this list. \n",
+                "original_header": "Publications <a name=\"publi\"></a>"
+            },
+            "confidence": 0.9781062210124866,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This project is **work-in-progress**, you can find the list of known issues [here](https://github.com/SAP/project-kb/issues). \n",
+                "original_header": "Limitations and Known Issues <a name=\"limit\"></a>"
+            },
+            "confidence": 0.9393862280088865,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "project-kb",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "SAP/project-kb",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SAP/project-kb/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SAP/project-kb/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 112,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "open-source, vulnerability-data",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 73,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/SAP/project-kb/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 432449
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "TeX",
+                "name": "TeX",
+                "type": "Programming_language",
+                "size": 175369
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Go",
+                "name": "Go",
+                "type": "Programming_language",
+                "size": 123395
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 27418
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 24794
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 6843
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 4803
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 4408
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 3404
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 2063
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jinja",
+                "name": "Jinja",
+                "type": "Programming_language",
+                "size": 1008
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/34221006",
+                "tag": "v0.6.18",
+                "name": "v0.6.18",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "\r\n### New features\r\n * allow more functions in export template ([81a672e](https://github.com/sap/project-kb/commit/81a672e))\r\n\r\n\r\n:mag: [View detailed changes since the previous release](https://github.com/sap/project-kb/compare/v0.6.17...v0.6.18)\r\n",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.18",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.18",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.18",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/34221006",
+                "release_id": 34221006,
+                "date_created": "2020-11-20T10:28:19Z",
+                "date_published": "2020-11-20T10:29:52Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/33710004",
+                "tag": "v0.6.17",
+                "name": "v0.6.17",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "\r\n### Bugfixes\r\n * avoid bash expansion when generating json (#49) ([b91229b](https://github.com/sap/project-kb/commit/b91229b))\r\n\r\n\r\n:mag: [View detailed changes since the previous release](https://github.com/sap/project-kb/compare/v0.6.16...v0.6.17)\r\n",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.17",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.17",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.17",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/33710004",
+                "release_id": 33710004,
+                "date_created": "2020-11-10T09:52:25Z",
+                "date_published": "2020-11-10T09:54:32Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/33570190",
+                "tag": "v0.6.16",
+                "name": "v0.6.16",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "\r\n### Changes\r\n * handling tar files in default conf file (#46) ([c3fe384](https://github.com/sap/project-kb/commit/c3fe384))\r\n\r\n\r\n:mag: [View detailed changes since the previous release](https://github.com/sap/project-kb/compare/v0.6.15...v0.6.16)\r\n",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.16",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.16",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.16",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/33570190",
+                "release_id": 33570190,
+                "date_created": "2020-11-06T15:31:35Z",
+                "date_published": "2020-11-06T15:32:41Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/33401780",
+                "tag": "v0.6.15",
+                "name": "v0.6.15",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "\r\n### Bugfixes\r\n * merge now keeps source tarball into account ([c79e991](https://github.com/sap/project-kb/commit/c79e991))\r\n\r\n### Misc\r\n * remove duplicate tag/add link to Go report (#39) ([f3b6607](https://github.com/sap/project-kb/commit/f3b6607))\r\n\r\n\r\n:mag: [View detailed changes since the previous release](https://github.com/sap/project-kb/compare/v0.6.14...v0.6.15)\r\n",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.15",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.15",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.15",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/33401780",
+                "release_id": 33401780,
+                "date_created": "2020-11-03T13:11:01Z",
+                "date_published": "2020-11-03T13:14:49Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/33390298",
+                "tag": "v0.6.14",
+                "name": "v0.6.14",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "### Bugfixes\r\n * build includes packgr-managed data ([b763b4f](https://github.com/sap/project-kb/commit/b763b4f))\r\n\r\n### Misc\r\n * improve changelog generation ([3a490a6](https://github.com/sap/project-kb/commit/3a490a6))\r\n * update gitignore ([9de1222](https://github.com/sap/project-kb/commit/9de1222))\r\n\r\n\r\n:mag: [View detailed changes since the previous release](https://github.com/sap/project-kb/compare/v0.6.12...v0.6.14)",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.14",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.14",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.14",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/33390298",
+                "release_id": 33390298,
+                "date_created": "2020-11-03T08:45:22Z",
+                "date_published": "2020-11-03T08:49:00Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/32564289",
+                "tag": "v0.6.12",
+                "name": "v0.6.12",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "### Bugfixes\r\n * (export to steady) do not create empty files when checking out changes ([d6a5912](https://github.com/sap/project-kb/commit/d6a5912))\r\n\r\n### Misc\r\n * update reuse tool config ([878b35a](https://github.com/sap/project-kb/commit/878b35a))\r\n * further refinements to automatic release script ([d4c3fb5](https://github.com/sap/project-kb/commit/d4c3fb5))\r\n\r\n### New features\r\n * Added new 'reconcile' command (skeleton only) ([91fc03c](https://github.com/sap/project-kb/commit/91fc03c))\r\n\r\n\r\n:mag: [View detailed changes since the previous release](https://github.com/sap/project-kb/compare/v0.6.11...v0.6.12)\r\n",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.12",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.12",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.12",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/32564289",
+                "release_id": 32564289,
+                "date_created": "2020-10-14T08:37:48Z",
+                "date_published": "2020-10-14T13:37:40Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/32058538",
+                "tag": "v0.6.11",
+                "name": "v0.6.11",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "This release contains no changes with respect to 0.6.10 (the only changes concern release scripts).\r\n",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.11",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.11",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.11",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/32058538",
+                "release_id": 32058538,
+                "date_created": "2020-10-01T17:19:33Z",
+                "date_published": "2020-10-01T17:22:09Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/32058411",
+                "tag": "v0.6.10",
+                "name": "v0.6.10",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "### Misc\r\n * improve release script ([a158a35](https://github.com/sap/project-kb/commit/a158a35))\r\n",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.10",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.10",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.10",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/32058411",
+                "release_id": 32058411,
+                "date_created": "2020-10-01T17:15:47Z",
+                "date_published": "2020-10-01T17:17:27Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/31998757",
+                "tag": "v0.6.9",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "<a name=\"v0.6.9\"></a>\n## [v0.6.9](https://github.com/sap/project-kb/compare/v0.6.8...v0.6.9)\n\n### New features\n * implement automatic download and install of new version, if available ([8f5a767](https://github.com/sap/project-kb/commit/8f5a767))\n",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.9",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.9",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.9",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/31998757",
+                "release_id": 31998757,
+                "date_created": "2020-09-30T15:28:14Z",
+                "date_published": "2020-09-30T15:29:27Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/31995723",
+                "tag": "v0.6.8",
+                "name": "v0.6.8",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "<a name=\"v0.6.8\"></a>\r\n## [v0.6.8](https://github.com/sap/project-kb/compare/v0.6.7...v0.6.8)\r\n\r\n### Changes\r\n * misc changes to import ([ac7100f](https://github.com/sap/project-kb/commit/ac7100f))\r\n * error handling improvements and style improvements ([eb34dab](https://github.com/sap/project-kb/commit/eb34dab))\r\n\r\n### Misc\r\n * updated changelog generation ([c9fb2c0](https://github.com/sap/project-kb/commit/c9fb2c0))\r\n * disabled CI step for automatic building of docs ([872b16b](https://github.com/sap/project-kb/commit/872b16b))\r\n * attempt to fix docs building from CI ([db61fcf](https://github.com/sap/project-kb/commit/db61fcf))\r\n\r\n### Bugfixes\r\n * removed SAP specific data from default config ([fdc031a](https://github.com/sap/project-kb/commit/fdc031a))\r\n * field 'Links' in Bug model has wrong json tag ([63658cd](https://github.com/sap/project-kb/commit/63658cd))\r\n",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.8",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.8",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.8",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/31995723",
+                "release_id": 31995723,
+                "date_created": "2020-09-30T09:51:26Z",
+                "date_published": "2020-09-30T14:37:38Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/30589003",
+                "tag": "v0.6.7",
+                "name": "0.6.7",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "<a name=\"v0.6.7\"></a>\r\n## [v0.6.7](https://github.com/sap/project-kb/compare/v0.6.6...v0.6.7)\r\n\r\n### New features\r\n * improved generated script for steady ([a7ef87c](https://github.com/sap/project-kb/commit/a7ef87c))\r\n\r\n### Misc\r\n * disable test that depends on github authentication to succeed ([2637856](https://github.com/sap/project-kb/commit/2637856))",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.7",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.7",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.7",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/30589003",
+                "release_id": 30589003,
+                "date_created": "2020-09-02T14:15:25Z",
+                "date_published": "2020-09-02T14:19:50Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/30570026",
+                "tag": "v0.6.6",
+                "name": "0.6.6",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "### Bug Fixes\r\n\r\n* invalid maven purl in export\r\n* make repository processing more robust\r\n\r\n### Misc\r\n\r\n* add gitter badge\r\n* add reuse-tool GH action\r\n* setup pre-commit, fix newlines\r\n* update license to std Apache 2, use reuse tool\r\n* improve release script\r\n* use python3 to install mkdocs-material",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.6",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.6",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.6",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/30570026",
+                "release_id": 30570026,
+                "date_created": "2020-09-02T08:59:42Z",
+                "date_published": "2020-09-02T09:09:51Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/28125602",
+                "tag": "v0.6.5",
+                "name": "0.6.5",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "### Changes\r\n * statements are expected to be in the \"statements\" folder ([6e4f1db](https://github.com/sap/project-kb/commit/6e4f1db))\r\n * check for newer releases in \"version\" cmd ([8ce3325](https://github.com/sap/project-kb/commit/8ce3325))\r\n\r\n### Docs\r\n * add credit to Sparta project in docs homepage ([94c1d8b](https://github.com/sap/project-kb/commit/94c1d8b))",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.5",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.5",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.5",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/28125602",
+                "release_id": 28125602,
+                "date_created": "2020-07-01T17:29:02Z",
+                "date_published": "2020-07-01T17:31:25Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/28123724",
+                "tag": "v0.6.4",
+                "name": "0.6.4",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "### Changes\r\n * remove dependency on packer ([9afd5fe](https://github.com/sap/project-kb/commit/9afd5fe))\r\n * default branch for vuln. data is \"vulnerability-data\" ([582f887](https://github.com/sap/project-kb/commit/582f887), [29a1392](https://github.com/sap/project-kb/commit/29a1392))\r\n\r\n### Bugfixes\r\n * fail gracefully if no backend is supplied for import ([a8e8e57](https://github.com/sap/project-kb/commit/a8e8e57))\r\n * harden file access (reduce perms) ([769bf23](https://github.com/sap/project-kb/commit/769bf23))\r\n\r\n### Docs\r\n * add reference to project Sparta to Readme file ([bec615b](https://github.com/sap/project-kb/commit/bec615b))\r\n * user manual, initial draft ([2aa6e60](https://github.com/sap/project-kb/commit/2aa6e60))\r\n\r\n### Chores\r\n * update order of pages in docs ([322b01c](https://github.com/sap/project-kb/commit/322b01c))\r\n * remove deps in mkdocs config ([5146b74](https://github.com/sap/project-kb/commit/5146b74), [71ed691](https://github.com/sap/project-kb/commit/71ed691))\r\n * update docs build action ([a8451f0](https://github.com/sap/project-kb/commit/a8451f0))\r\n * update GH build workflow to use pkger ([295839d](https://github.com/sap/project-kb/commit/295839d))\r\n * scripts to automate release ([9bd5e9a](https://github.com/sap/project-kb/commit/9bd5e9a))\r\n",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.4",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.4",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.4",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/28123724",
+                "release_id": 28123724,
+                "date_created": "2020-07-01T16:07:14Z",
+                "date_published": "2020-07-01T16:39:59Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/28025411",
+                "tag": "v0.6.3",
+                "name": "0.6.3",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "### Bugfixes\r\n * setup cmd works (using pkger), fixes: #17 ([8ddb881](https://github.com/sap/project-kb/commit/8ddb881))\r\n\r\n### Changes\r\n * create cmd now takes vulnID in input ([7478c80](https://github.com/sap/project-kb/commit/7478c80))\r\n\r\n### Chores\r\n * better changelog generation (with links to commits) ([b55374a](https://github.com/sap/project-kb/commit/b55374a))",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.3",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.3",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.3",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/28025411",
+                "release_id": 28025411,
+                "date_created": "2020-06-29T14:14:00Z",
+                "date_published": "2020-06-29T14:17:05Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/27986541",
+                "tag": "v0.6.2",
+                "name": "0.6.2",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "* add changelog generation script ([18f675c](https://github.com/sap/project-kb/commit/18f675c))\r\n* update deps for update cmd ([39d04cd](https://github.com/sap/project-kb/commit/39d04cd))",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.2",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.2",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.2",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/27986541",
+                "release_id": 27986541,
+                "date_created": "2020-06-27T13:13:03Z",
+                "date_published": "2020-06-27T13:22:35Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/27964586",
+                "tag": "v0.6.1",
+                "name": "0.6.1",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "* feat: `update` command to check if new release exists\r\n",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.1",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.1",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.1",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/27964586",
+                "release_id": 27964586,
+                "date_created": "2020-06-26T15:44:07Z",
+                "date_published": "2020-06-26T15:48:22Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/27961468",
+                "tag": "v0.6.0.2",
+                "name": "0.6.0.2",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "* fix: force creation of config file with -f flag (for real this time :-))",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.0.2",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.0.2",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.0.2",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/27961468",
+                "release_id": 27961468,
+                "date_created": "2020-06-26T14:32:48Z",
+                "date_published": "2020-06-26T14:58:32Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/27960154",
+                "tag": "v0.6.0.1",
+                "name": "0.6.0.1",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "* fix: force creation of config file with -f flag (#19)\r\n* fix: build step, install packr",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.0.1",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.0.1",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.0.1",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/27960154",
+                "release_id": 27960154,
+                "date_created": "2020-06-26T14:00:42Z",
+                "date_published": "2020-06-26T14:02:27Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/27957957",
+                "tag": "v0.6.0",
+                "name": "0.6.0",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "* fix: include template config file for setup cmd\r\n* fix: (export) use output filename as configured\r\n* new: export fix metadata in json format\r\n\r\n**BREAKING CHANGES**\r\nThe format of the metadata files produced by the steady script (obtained with\r\nkaybee export -t steady) is now json.",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.6.0",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.6.0",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.6.0",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/27957957",
+                "release_id": 27957957,
+                "date_created": "2020-06-26T13:07:33Z",
+                "date_published": "2020-06-26T13:11:34Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/27952367",
+                "tag": "v0.5.4.3",
+                "name": "0.5.4.3",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "* fix: set default concurrency to 1\r\n",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.5.4.3",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.5.4.3",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.5.4.3",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/27952367",
+                "release_id": 27952367,
+                "date_created": "2020-06-26T10:18:51Z",
+                "date_published": "2020-06-26T10:22:03Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/27951691",
+                "tag": "v0.5.4.2",
+                "name": "0.5.4.2",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "* bug in import command (#15)",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.5.4.2",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.5.4.2",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.5.4.2",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/27951691",
+                "release_id": 27951691,
+                "date_created": "2020-06-26T09:55:04Z",
+                "date_published": "2020-06-26T09:58:24Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/27948300",
+                "tag": "v0.5.4.1",
+                "name": "0.5.4.1",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "* fix: broken `version` command (#14)\r\n",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.5.4.1",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.5.4.1",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.5.4.1",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/27948300",
+                "release_id": 27948300,
+                "date_created": "2020-06-26T08:08:39Z",
+                "date_published": "2020-06-26T08:11:27Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/27922767",
+                "tag": "v0.5.4",
+                "name": "0.5.4",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "* fix: add '/' at the end of backend url if missing\r\n* added some real vulnerability statements",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.5.4",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.5.4",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.5.4",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/27922767",
+                "release_id": 27922767,
+                "date_created": "2020-06-25T15:23:14Z",
+                "date_published": "2020-06-25T15:26:15Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/27881888",
+                "tag": "v0.5.3",
+                "name": "0.5.3",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "* fix: setup command does not require a config file to exist\r\n* new: initial documentation",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.5.3",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.5.3",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.5.3",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/27881888",
+                "release_id": 27881888,
+                "date_created": "2020-06-24T16:23:01Z",
+                "date_published": "2020-06-24T16:33:01Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/27872793",
+                "tag": "v0.5.2",
+                "name": "0.5.2",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "* fix: allow backend to be set via command line flag (-b)\r\n* fix: source url in sample conf file\r\n* fix: broken link to binary downloads",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.5.2",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.5.2",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.5.2",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/27872793",
+                "release_id": 27872793,
+                "date_created": "2020-06-24T13:14:23Z",
+                "date_published": "2020-06-24T13:19:16Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/27814990",
+                "tag": "v0.5.1",
+                "name": "0.5.1",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "* new: release of the `kaybee` tool",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/v0.5.1",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/v0.5.1",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/v0.5.1",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/27814990",
+                "release_id": 27814990,
+                "date_created": "2020-06-22T17:20:50Z",
+                "date_published": "2020-06-23T06:51:26Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/17271549",
+                "tag": "2019-05-10",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "Please use the script `import_vulas_kb.sh` to import into your backend instance.\r\n\r\n**NOTE**: an updated dataset.csv is not available at this time.",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/2019-05-10",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/2019-05-10",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/2019-05-10",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/17271549",
+                "release_id": 17271549,
+                "date_created": "2019-05-10T09:44:27Z",
+                "date_published": "2019-05-10T09:46:27Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SAP/project-kb/releases/17271325",
+                "tag": "2019-02-14",
+                "author": {
+                    "name": "copernico",
+                    "type": "User"
+                },
+                "description": "TIP: to import the vulnerability data in your own instance of Vulas, just download the script `import_vulas_kb.sh` and run it providing the URL of your Vulas backend server as the only argument. The script is self-contained.\r\n\r\nUse the file `dataset.csv` if you are interested in stydying/analyzing/plotting our data.",
+                "tarball_url": "https://api.github.com/repos/SAP/project-kb/tarball/2019-02-14",
+                "zipball_url": "https://api.github.com/repos/SAP/project-kb/zipball/2019-02-14",
+                "html_url": "https://github.com/SAP/project-kb/releases/tag/2019-02-14",
+                "url": "https://api.github.com/repos/SAP/project-kb/releases/17271325",
+                "release_id": 17271325,
+                "date_created": "2019-04-12T08:04:49Z",
+                "date_published": "2019-05-10T09:33:47Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# How to contribute to project KB\n\n### Developer Certificate of Origin (DCO)\nDue to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).\n\n### **Do you have new vulnerability data?**\n\nA structured process to create and share vulnerability data is work in progress.\n\nUntil it is defined, we invite you to just create pull requests in order to\nsubmit new vulnerability data, using an existing statement as a template. You\nshould provide, at least the vulnerability identifier, the URL of the source\ncode repository of the affected component and one or more identifiers of the\ncommits used to fix the vulnerability.\n\n### **Did you find a bug?**\n\n* **Ensure the bug was not already reported** by searching in the [GitHub Issues](https://github.com/sap/project-kb/issues).\n\n* If it is a new one, feel free to [open it](https://github.com/sap/project-kb/issues/new). Be sure to include a\n  **title and a clear description**, as much relevant information as possible, and\n  a **code sample** or an **executable test case** demonstrating the expected\n  behavior that is not occurring.\n\n\n### **Did you write a patch that fixes a bug?**\n\n* Open a new GitHub pull request with the patch.\n* Ensure the PR description clearly describes problem and solution. Include\n  the relevant issue number if applicable.\n* Add one or more test cases as appropriate.\n* Make sure all other tests and checks still pass (that is, run `make check` in\n  the `kaybee` folder; it should succeed)\n\n### **Did you fix whitespace, format code, or make a purely cosmetic patch?**\n\nChanges that are cosmetic in nature and do not modify the\nstability, functionality, or testability are accepted.\n\n### **Do you intend to add a new feature or change an existing one?**\n\n* Suggest your change by creating an issue, then start writing code in your own\n  fork and make a PR when ready. Please make sure you provide tests for your\n  code, and ensure you can successfully execute `make check` (in the `kaybee`\n  folder) with no errors and that you include adequate documentation in your\n  code.\n\n\n### **Do you have questions about the source code?**\n\n* For now, file an issue (we consider that the need of clarifications at this\n  stage indicates missing or inadequate documentation).\n\n### **Do you want to contribute to the documentation?**\n\nYou are most welcome to do so, project KB needs every one of you to succeed,\nevery drop matters!\n\nThanks! :heart: :heart: :heart:\n\nThe project KB team\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/CONTRIBUTING.md"
+        },
+        {
+            "result": {
+                "value": "See [How to contribute](CONTRIBUTING.md).\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributing  <a name=\"contrib\"></a>",
+                "parent_header": [
+                    "Table of contents"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/SAP/project-kb/tree/main/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/SAP/project-kb/wiki",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SAP/project-kb/main/prospector/run_prospector.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SAP/project-kb/main/prospector/docker/service/start.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SAP/project-kb/main/prospector/docker/worker/start_rq_worker.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SAP/project-kb/main/scripts/release.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SAP/project-kb/main/prospector/docker-compose.yml",
+                "type": "Url",
+                "format": "docker_compose"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/prospector/docker-compose.yml"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SAP/project-kb/main/prospector/docker/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/prospector/docker/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SAP/project-kb/main/prospector/docker/cli/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/prospector/docker/cli/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SAP/project-kb/main/prospector/docker/service/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/prospector/docker/service/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SAP/project-kb/main/prospector/docker/worker/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/prospector/docker/worker/Dockerfile"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SAP/project-kb/main/MSR2019/notebooks/msr2019.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/MSR2019/notebooks/msr2019.ipynb"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "  * Tushar Sharma, Maria Kechagia, Stefanos Georgiou, Rohit Tiwari, Indira Vats, Hadi Moazen, and Federica Sarro. [A survey on machine learning techniques applied to source code](https://www.sciencedirect.com/science/article/pii/S0164121223003291). Journal of Systems and Software. (2024).\n\n  * Elder, Sarah, Rahman, Md Rayhanur, Fringer, Gage, Kapoor, Kunal, and Williams, Laurie. [A Survey on Software Vulnerability Exploitability Assessment](https://doi.org/10.1145/3648610). ACM Comput. Surv.. (2024).\n\n  * Janaka Senanayake, Harsha Kalutarage, Andrei Petrovski, Luca Piras, and Mhd Omar Al-Kadri. [Defendroid: Real-time Android code vulnerability detection via blockchain federated neural network with XAI](https://www.sciencedirect.com/science/article/pii/S2214212624000449). Journal of Information Security and Applications. (2024).\n\n  * Alexey Shestov, Rodion Levichev, Ravil Mussabayev, Evgeny Maslov, Anton Cheshkov, and Pavel Zadorozhny. [Finetuning Large Language Models for Vulnerability Detection](https://arxiv.org/abs/2401.17010). arXiv. (2024).\n\n  * Scalco, Simone, and Paramitha, Ranindya. [Hash4Patch: A Lightweight Low False Positive Tool for Finding Vulnerability Patch Commits](https://doi.org/10.1145/3643991.3644871). Proceedings of the 21st International Conference on Mining Software Repositories. (2024).\n\n  * Jiexin Wang, Xitong Luo, Liuwen Cao, Hongkui He, Hailin Huang, Jiayuan Xie, Adam Jatowt, and Yi Cai. [Is Your AI-Generated Code Really Safe? Evaluating Large Language Models on Secure Code Generation with CodeSecEval](https://arxiv.org/abs/2407.02395). arXiv. (2024).\n\n  * Amir M. Mir, Mehdi Keshani, and Sebastian Proksch. [On the Effectiveness of Machine Learning-based Call Graph Pruning: An Empirical Study](https://arxiv.org/abs/2402.07294). arXiv. (2024).\n\n  * Bennett, Gareth, Hall, Tracy, Winter, Emily, and Counsell, Steve. [Semgrep*: Improving the Limited Performance of Static Application Security Testing (SAST) Tools](https://doi.org/10.1145/3661167.3661262). Proceedings of the 28th International Conference on Evaluation and Assessment in Software Engineering. (2024).\n\n  * ZHAN Qi, PAN Sheng-Yi, HU Xing, BAO Ling-Feng, XIA Xin. Survey on Vulnerability Awareness of Open Source Software. Journal of Software. (2024).\n\n  * Fahad {Al Debeyan}, Lech Madeyski, Tracy Hall, and David Bowes. [The impact of hard and easy negative training data on vulnerability prediction performance](https://www.sciencedirect.com/science/article/pii/S0164121224000463). Journal of Systems and Software. (2024).\n\n  * Niklas Risse, and Marcel B\u00f6hme. [Uncovering the Limits of Machine Learning for Automatic Vulnerability Detection](https://arxiv.org/abs/2306.17193). arXiv. (2024).\n\n  * Matteo Esposito, and Davide Falessi. [VALIDATE: A deep dive into vulnerability prediction datasets](https://www.sciencedirect.com/science/article/pii/S0950584924000533). Information and Software Technology. (2024).\n\n  * Akhoundali, Jafar, Nouri, Sajad Rahim, Rietveld, Kristian, and Gadyatskaya, Olga. [MoreFixes: A Large-Scale Dataset of CVE Fix Commits Mined through Enhanced Repository Discovery](https://doi.org/10.1145/3663533.3664036). Proceedings of the 20th International Conference on Predictive Models and Data Analytics in Software Engineering. (2024).\n\n  * Shiyu Sun, Shu Wang, Xinda Wang, Yunlong Xing, Elisa Zhang, and Kun Sun. [Exploring Security Commits in Python](https://arxiv.org/abs/2307.11853). arXiv. (2023).\n\n  * Truong Giang Nguyen, Thanh Le-Cong, Hong Jin Kang, Ratnadira Widyasari, Chengran Yang, Zhipeng Zhao, Bowen Xu, Jiayuan Zhou, Xin Xia, Ahmed E. Hassan, Xuan-Bach D. Le, and David Lo. [Multi-Granularity Detector for Vulnerability Fixes](https://arxiv.org/abs/2305.13884). arXiv. (2023).\n\n  * Trevor Dunlap, Elizabeth Lin, William Enck, and Bradley Reaves. [VFCFinder: Seamlessly Pairing Security Advisories and Patches](https://arxiv.org/abs/2311.01532). arXiv. (2023).\n\n  * Quanjun Zhang, Chunrong Fang, Yuxiang Ma, Weisong Sun, and Zhenyu Chen. [A Survey of Learning-based Automated Program Repair](https://arxiv.org/abs/2301.03270). arXiv. (2023).\n\n  * Laith Alzubaidi, Jinshuai Bai, Aiman Al-Sabaawi, Jos{\\'e} I. Santamar{\\'i}a, Ahmed Shihab Albahri, Bashar Sami Nayyef Al-dabbagh, Mohammed Abdulraheem Fadhel, Mohamed Manoufali, Jinglan Zhang, Ali H. Al-timemy, Ye Duan, Amjed Abdullah, Laith Farhan, Yi Lu, Ashish Gupta, Felix Albu, Amin Abbosh, and Yuantong Gu. [A survey on deep learning tools dealing with data scarcity: definitions, challenges, solutions, tips, and applications](https://api.semanticscholar.org/CorpusID:258137181). Journal of Big Data. (2023).\n\n  * Tam\u00e1s Aladics, P\u00e9ter Heged\u0171s, and Rudolf Ferenc. [An AST-based Code Change Representation and its Performance in Just-in-time Vulnerability Prediction](https://arxiv.org/abs/2303.16591). arXiv. (2023).\n\n  * Singhal, Amit, and Goel, Pawan Kumar. Analysis and Identification of Malicious Mobile Applications. 2023 3rd International Conference on Advancement in Electronics & Communication Engineering (AECE). (2023).\n\n  * Bui, Quang-Cuong, Paramitha, Ranindya, Vu, Duc-Ly, Massacci, Fabio, and Scandariato, Riccardo. APR4Vul: an empirical study of automatic program repair techniques on real-world Java vulnerabilities. Empirical Software Engineering. (2023).\n\n  * Senanayake, Janaka, Kalutarage, Harsha, Al-Kadri, Mhd Omar, Petrovski, Andrei, and Piras, Luca. [Android Source Code Vulnerability Detection: A Systematic Literature Review](https://doi.org/10.1145/3556974). ACM Comput. Surv.. (2023).\n\n  * Reis, Sofia, Abreu, Rui, and Pasareanu, Corina. [Are security commit messages informative? Not enough!](https://doi.org/10.1145/3593434.3593481). Proceedings of the 27th International Conference on Evaluation and Assessment in Software Engineering. (2023).\n\n  * Lyuye Zhang, Chengwei Liu, Zhengzi Xu, Sen Chen, Lingling Fan, Lida Zhao, Jiahui Wu, and Yang Liu. [Compatible Remediation on Vulnerabilities from Third-Party Libraries for Java Projects](https://arxiv.org/abs/2301.08434). arXiv. (2023).\n\n  * Okutan, Ahmet, Mell, Peter, Mirakhorli, Mehdi, Khokhlov, Igor, Santos, Joanna C. S., Gonzalez, Danielle, and Simmons, Steven. Empirical Validation of Automated Vulnerability Curation and Characterization. IEEE Transactions on Software Engineering. (2023).\n\n  * Jiexin Wang, Liuwen Cao, Xitong Luo, Zhiping Zhou, Jiayuan Xie, Adam Jatowt, and Yi Cai. [Enhancing Large Language Models for Secure Code Generation: A Dataset-driven Study on Vulnerability Mitigation](https://arxiv.org/abs/2310.16263). arXiv. (2023).\n\n  * Bottner, Laura, Hermann, Artur, Eppler, Jeremias, Th\\\"{u}m, Thomas, and Kargl, Frank. [Evaluation of Free and Open Source Tools for Automated Software Composition Analysis](https://doi.org/10.1145/3631204.3631862). Proceedings of the 7th ACM Computer Science in Cars Symposium. (2023).\n\n  * Md. Mostafizer Rahman, Yutaka Watanobe, Atsushi Shirafuji, and Mohamed Hamada. [Exploring Automated Code Evaluation Systems and Resources for Code Analysis: A Comprehensive Survey](https://arxiv.org/abs/2307.08705). arXiv. (2023).\n\n  * Ying Zhang, Wenjia Song, Zhengjie Ji, Danfeng, Yao, and Na Meng. [How well does LLM generate security tests?](https://arxiv.org/abs/2310.00710). arXiv. (2023).\n\n  * Wu, Yi, Jiang, Nan, Pham, Hung Viet, Lutellier, Thibaud, Davis, Jordan, Tan, Lin, Babkin, Petr, and Shah, Sameena. [How Effective Are Neural Networks for Fixing Security Vulnerabilities](http://dx.doi.org/10.1145/3597926.3598135). Proceedings of the 32nd ACM SIGSOFT International Symposium on Software Testing and Analysis. (2023).\n\n  * Dunlap, Trevor, Thorn, Seaver, Enck, William, and Reaves, Bradley. Finding Fixed Vulnerabilities with Off-the-Shelf Static Analysis. 2023 IEEE 8th European Symposium on Security and Privacy (EuroS&P). (2023).\n\n  * Catherine Tony, Markus Mutas, Nicol\u00e1s E. D\u00edaz Ferreyra, and Riccardo Scandariato. [LLMSecEval: A Dataset of Natural Language Prompts for Security Evaluations](https://arxiv.org/abs/2303.09384). arXiv. (2023).\n\n  * Chen, Zimin, Kommrusch, Steve, and Monperrus, Martin. [Neural Transfer Learning for Repairing Security Vulnerabilities in C Code](http://dx.doi.org/10.1109/TSE.2022.3147265). IEEE Transactions on Software Engineering. (2023).\n\n  * Jens Dietrich, Shawn Rasheed, Alexander Jordan, and Tim White. [On the Security Blind Spots of Software Composition Analysis](https://arxiv.org/abs/2306.05534). arXiv. (2023).\n\n  * Bhuiyan, Masudul Hasan Masud, Parthasarathy, Adithya Srinivas, Vasilakis, Nikos, Pradel, Michael, and Staicu, Cristian-Alexandru. SecBench.js: An Executable Security Benchmark Suite for Server-Side JavaScript. 2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE). (2023).\n\n  * Ammar Ahmed, Anwar Said, Mudassir Shabbir, and Xenofon Koutsoukos. [Sequential Graph Neural Networks for Source Code Vulnerability Identification](https://arxiv.org/abs/2306.05375). arXiv. (2023).\n\n  * Jiamou Sun, Zhenchang Xing, Qinghua Lu, Xiwei Xu, Liming Zhu, Thong Hoang, and Dehai Zhao. [Silent Vulnerable Dependency Alert Prediction with Vulnerability Key Aspect Explanation](https://arxiv.org/abs/2302.07445). arXiv. (2023).\n\n  * Zhao, Lida, Chen, Sen, Xu, Zhengzi, Liu, Chengwei, Zhang, Lyuye, Wu, Jiahui, Sun, Jun, and Liu, Yang. [Software Composition Analysis for Vulnerability Detection: An Empirical Study on Java Projects](https://doi.org/10.1145/3611643.3616299). Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering. (2023).\n\n  * Xiaozhou Li, Sergio Moreschini, Zheying Zhang, Fabio Palomba, and Davide Taibi. [The anatomy of a vulnerability database: A systematic mapping study](https://www.sciencedirect.com/science/article/pii/S0164121223000742). Journal of Systems and Software. (2023).\n\n  * Congying Xu, Bihuan Chen, Chenhao Lu, Kaifeng Huang, Xin Peng, and Yang Liu. [Tracking Patches for Open Source Software Vulnerabilities](https://arxiv.org/abs/2112.02240). arXiv. (2023).\n\n  * Nie, Xu, Li, Ningke, Wang, Kailong, Wang, Shangguang, Luo, Xiapu, and Wang, Haoyu. [Understanding and Tackling Label Errors in Deep Learning-Based Vulnerability Detection (Experience Paper)](https://doi.org/10.1145/3597926.3598037). Proceedings of the 32nd ACM SIGSOFT International Symposium on Software Testing and Analysis. (2023).\n\n  * Wu, Yulun, Yu, Zeliang, Wen, Ming, Li, Qiang, Zou, Deqing, and Jin, Hai. Understanding the Threats of Upstream Vulnerabilities to Downstream Projects in the Maven Ecosystem. 2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE). (2023).\n\n  * Son Nguyen, Thanh Trong Vu, and Hieu Dinh Vo. [VFFINDER: A Graph-based Approach for Automated Silent Vulnerability-Fix Identification](https://arxiv.org/abs/2309.01971). arXiv. (2023).\n\n  * Tam{\\'a}s Aladics, P{\\'e}ter Heged{\\\"u}s, and Rudolf Ferenc. [A Vulnerability Introducing Commit Dataset for Java: An Improved SZZ based Approach](https://api.semanticscholar.org/CorpusID:250566828). International Conference on Software and Data Technologies. (2022).\n\n  * Bui, Quang-Cuong, Scandariato, Riccardo, and Ferreyra, Nicol\\'{a}s E. D\\'{\\i}az. [Vul4J: a dataset of reproducible Java vulnerabilities geared towards the study of program repair techniques](https://doi.org/10.1145/3524842.3528482). Proceedings of the 19th International Conference on Mining Software Repositories. (2022).\n\n  * Tushar Sharma, Maria Kechagia, Stefanos Georgiou, Rohit Tiwari, Indira Vats, Hadi Moazen, and Federica Sarro. [A Survey on Machine Learning Techniques for Source Code Analysis](https://arxiv.org/abs/2110.09610). arXiv. (2022).\n\n  * Siddiq, Mohammed Latif, and Santos, Joanna C. S.. [SecurityEval dataset: mining vulnerability examples to evaluate machine learning-based code generation techniques](https://doi.org/10.1145/3549035.3561184). Proceedings of the 1st International Workshop on Mining Software Repositories Applications for Privacy and Security. (2022).\n\n  * Bao, Lingfeng, Xia, Xin, Hassan, Ahmed E., and Yang, Xiaohu. [V-SZZ: automatic identification of version ranges affected by CVE vulnerabilities](https://doi.org/10.1145/3510003.3510113). Proceedings of the 44th International Conference on Software Engineering. (2022).\n\n  * Challande, Alexis, David, Robin, and Renault, Gu\\'{e}na\\\"{e}l. [Building a Commit-level Dataset of Real-world Vulnerabilities](https://doi.org/10.1145/3508398.3511495). Proceedings of the Twelfth ACM Conference on Data and Application Security and Privacy. (2022).\n\n  * Nima Shiri Harzevili, Jiho Shin, Junjie Wang, and Song Wang. [Characterizing and Understanding Software Security Vulnerabilities in Machine Learning Libraries](https://arxiv.org/abs/2203.06502). arXiv. (2022).\n\n  * Sonnekalb, Tim, Heinze, Thomas S., and M\\\"{a}der, Patrick. [Deep security analysis of program code: A systematic literature review](https://doi.org/10.1007/s10664-021-10029-x). Empirical Softw. Engg.. (2022).\n\n  * Andrea Stefanoni, Sarunas Girdzijauskas, Christina Jenkins, Zekarias T. Kefato, Licia Sbattella, Vincenzo Scotti, and Emil W{\\aa}reus. [Detecting Security Patches in Java Projects Using NLP Technology](https://api.semanticscholar.org/CorpusID:256739262). International Conference on Natural Language and Speech Processing. (2022).\n\n  * Dejiang Jing. [Improvement of Vulnerable Code Dataset Based on Program Equivalence Transformation](https://dx.doi.org/10.1088/1742-6596/2363/1/012010). Journal of Physics: Conference Series. (2022).\n\n  * Nguyen-Truong, Giang, Kang, Hong Jin, Lo, David, Sharma, Abhishek, Santosa, Andrew E., Sharma, Asankhaya, and Ang, Ming Yi. HERMES: Using Commit-Issue Linking to Detect Vulnerability-Fixing Commits. 2022 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER). (2022).\n\n  * Aurora Papotti, Ranindya Paramitha, and Fabio Massacci. [On the acceptance by code reviewers of candidate security patches suggested by Automated Program Repair tools](https://arxiv.org/abs/2209.07211). arXiv. (2022).\n\n  * Triet H. M. Le, and M. Ali Babar. [On the Use of Fine-grained Vulnerable Code Statements for Software Vulnerability Assessment Models](https://arxiv.org/abs/2203.08417). arXiv. (2022).\n\n  * Chapman, Jon, and Venugopalan, Hari. Open Source Software Computed Risk Framework. 2022 IEEE 17th International Conference on Computer Sciences and Information Technologies (CSIT). (2022).\n\n  * Gerardo Canfora, Andrea {Di Sorbo}, Sara Forootani, Matias Martinez, and Corrado A. Visaggio. [Patchworking: Exploring the code changes induced by vulnerability fixing activities](https://www.sciencedirect.com/science/article/pii/S0950584921001932). Information and Software Technology. (2022).\n\n  * Coskun, Tugce, Halepmollasi, Rusen, Hanifi, Khadija, Fouladi, Ramin Fadaei, De Cnudde, Pinar Comak, and Tosun, Ayse. [Profiling developers to predict vulnerable code changes](https://doi.org/10.1145/3558489.3559069). Proceedings of the 18th International Conference on Predictive Models and Data Analytics in Software Engineering. (2022).\n\n  * Reis, Sofia, Abreu, Rui, Erdogmus, Hakan, and P\\u{a}s\\u{a}reanu, Corina. [SECOM: towards a convention for security commit messages](https://doi.org/10.1145/3524842.3528513). Proceedings of the 19th International Conference on Mining Software Repositories. (2022).\n\n  * Jianlei Chi, Yu Qu, Ting Liu, Qinghua Zheng, and Heng Yin. [SeqTrans: Automatic Vulnerability Fix via Sequence to Sequence Learning](https://arxiv.org/abs/2010.10805). arXiv. (2022).\n\n  * Wang, Shichao, Zhang, Yun, Bao, Liagfeng, Xia, Xin, and Wu, Minghui. VCMatch: A Ranking-based Approach for Automatic Security Patches Localization for OSS Vulnerabilities. 2022 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER). (2022).\n\n  * Sun, Qing, Xu, Lili, Xiao, Yang, Li, Feng, Su, He, Liu, Yiming, Huang, Hongyun, and Huo, Wei. VERJava: Vulnerable Version Identification for Java OSS with a Two-Stage Analysis. 2022 IEEE International Conference on Software Maintenance and Evolution (ICSME). (2022).\n\n  * A. Dann, H. Plate, B. Hermann, S. Ponta, and E. Bodden. Identifying Challenges for OSS Vulnerability Scanners - A Study & Test Suite. IEEE Transactions on Software Engineering. (2022).\n\n  * Arthur D. Sawadogo, Quentin Guimard, Tegawend\u00e9 F. Bissyand\u00e9, Abdoul Kader Kabor\u00e9, Jacques Klein, and Naouel Moha. [Early Detection of Security-Relevant Bug Reports using Machine Learning: How Far Are We?](https://arxiv.org/abs/2112.10123). arXiv. (2021).\n\n  * Sofia Reis, Rui Abreu, and Luis Cruz. [Fixing Vulnerabilities Potentially Hinders Maintainability](https://arxiv.org/abs/2106.03271). arXiv. (2021).\n\n  * Rodrigo Andrade, and Vin\u00edcius Santos. [ Investigating vulnerability datasets](https://sol.sbc.org.br/index.php/vem/article/view/17213). Anais do IX Workshop de Visualiza\u00e7\u00e3o, Evolu\u00e7\u00e3o e Manuten\u00e7\u00e3o de Software. (2021).\n\n  * Lee, Jian Yi David  and       Chieu, Hai Leong. [Co-training for Commit Classification](https://aclanthology.org/2021.wnut-1.43). Proceedings of the Seventh Workshop on Noisy User-generated Text (W-NUT 2021). (2021).\n\n  * Nikitopoulos, Georgios, Dritsa, Konstantina, Louridas, Panos, and Mitropoulos, Dimitris. [CrossVul: a cross-language vulnerability dataset with commit data](https://doi.org/10.1145/3468264.3473122). Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering. (2021).\n\n  * Bhandari, Guru, Naseer, Amara, and Moonen, Leon. [CVEfixes: automated collection of vulnerabilities and their fixes from open-source software](http://dx.doi.org/10.1145/3475960.3475985). Proceedings of the 17th International Conference on Predictive Models and Data Analytics in Software Engineering. (2021).\n\n  * Triet H. M. Le, David Hin, Roland Croft, and M. Ali Babar. [DeepCVA: Automated Commit-level Vulnerability Assessment with Deep Multi-task Learning](https://arxiv.org/abs/2108.08041). arXiv. (2021).\n\n  * Ganz, Tom, H\\\"{a}rterich, Martin, Warnecke, Alexander, and Rieck, Konrad. [Explaining Graph Neural Networks for Vulnerability Discovery](https://doi.org/10.1145/3474369.3486866). Proceedings of the 14th ACM Workshop on Artificial Intelligence and Security. (2021).\n\n  * Guanqun Yang, Shay Dineen, Zhipeng Lin, and Xueqing Liu. [Few-Sample Named Entity Recognition for Security Vulnerability Reports by Fine-Tuning Pre-Trained Language Models](https://arxiv.org/abs/2108.06590). arXiv. (2021).\n\n  * Zhou, Jiayuan, Pacheco, Michael, Wan, Zhiyuan, Xia, Xin, Lo, David, Wang, Yuan, and Hassan, Ahmed E.. Finding A Needle in a Haystack: Automated Mining of Silent Vulnerability Fixes. 2021 36th IEEE/ACM International Conference on Automated Software Engineering (ASE). (2021).\n\n  * Garg, Spandan, Moghaddam, Roshanak Zilouchian, Sundaresan, Neel, and Wu, Chen. [PerfLens: a data-driven performance bug detection and fix platform](https://doi.org/10.1145/3460946.3464318). Proceedings of the 10th ACM SIGPLAN International Workshop on the State Of the Art in Program Analysis. (2021).\n\n  * Piran, Azin, Chang, Che-Pin, and Fard, Amin Milani. Vulnerability Analysis of Similar Code. 2021 IEEE 21st International Conference on Software Quality, Reliability and Security (QRS). (2021).\n\n  * Marchand-Melsom, Alexander, and Nguyen Mai, Duong Bao. [Automatic repair of OWASP Top 10 security vulnerabilities: A survey](https://doi.org/10.1145/3387940.3392200). Proceedings of the IEEE/ACM 42nd International Conference on Software Engineering Workshops. (2020).\n\n  * Arthur D. Sawadogo, Tegawend\u00e9 F. Bissyand\u00e9, Naouel Moha, Kevin Allix, Jacques Klein, Li Li, and Yves Le Traon. [Learning to Catch Security Patches](https://arxiv.org/abs/2001.09148). arXiv. (2020).\n\n  * Fan, Jiahao, Li, Yi, Wang, Shaohua, and Nguyen, Tien N.. [A C/C++ Code Vulnerability Dataset with Code Changes and CVE Summaries](https://doi.org/10.1145/3379597.3387501). Proceedings of the 17th International Conference on Mining Software Repositories. (2020).\n\n  * Patrick Keller, Laura Plein, Tegawend\u00e9 F. Bissyand\u00e9, Jacques Klein, and Yves Le Traon. [What You See is What it Means! Semantic Representation Learning of Code based on Visualization and Transfer Learning](https://arxiv.org/abs/2002.02650). arXiv. (2020).\n\n  * Song Wang, and Nachi Nagappan. [Characterizing and Understanding Software Developer Networks in Security Development](https://arxiv.org/abs/1907.12141). arXiv. (2019).\n\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Papers citing our work",
+                "parent_header": [
+                    "Table of contents",
+                    "Publications <a name=\"publi\"></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The development of Project KB is partially supported by the following projects:\n\n* [Sec4AI4Sec](https://www.sec4ai4sec-project.eu/) (Grant No. 101120393)\n* [AssureMOSS](https://assuremoss.eu) (Grant No. 952647).\n* [Sparta](https://www.sparta.eu/) (Grant No. 830892).\n",
+                "type": "Text_excerpt",
+                "original_header": "EU-funded research projects",
+                "parent_header": [
+                    "Table of contents",
+                    "Credits <a name=\"credit\"></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Vulnerability information from NVD and MITRE might have been used as input\nfor building parts of this knowledge base. See MITRE's [CVE Usage license](http://cve.mitre.org/about/termsofuse.html) for more information.\n",
+                "type": "Text_excerpt",
+                "original_header": "Vulnerability data sources",
+                "parent_header": [
+                    "Table of contents",
+                    "Credits <a name=\"credit\"></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{ponta2019msr,\n    month = {May},\n    year = {2019},\n    booktitle = {Proceedings of the 16th International Conference on Mining Software Repositories},\n    title = {A Manually-Curated Dataset of Fixes to Vulnerabilities of Open-Source Software},\n    author = {Serena E. Ponta and Henrik Plate and Antonino Sabetta and Michele Bezzi and\nC\u00b4edric Dangremont},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "A Manually-Curated Dataset of Fixes to Vulnerabilities of Open-Source Software",
+                "author": "Serena E. Ponta and Henrik Plate and Antonino Sabetta and Michele Bezzi and\nC\u00b4edric Dangremont"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "For the time being, please use [GitHub\nissues](https://github.com/SAP/project-kb/issues) to report bugs, request new features and ask for support.\n",
+                "type": "Text_excerpt",
+                "original_header": "Support <a name=\"support\"></a>",
+                "parent_header": [
+                    "Table of contents"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Project KB"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://api.star-history.com/svg?repos=sap/project-kb&amp;type=Date"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2203.06502"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1907.12141"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2112.10123"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2001.09148"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2306.05534"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2310.00710"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2303.09384"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2407.02395"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1911.07620"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2010.10805"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2108.06590"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2301.03270"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2306.05375"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2002.02650"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2301.08434"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2401.17010"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2106.03271"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2307.11853"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2402.07294"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2112.02240"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2310.16263"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2209.07211"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2203.08417"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2303.16591"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2110.09610"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2302.07445"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2108.08041"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2305.13884"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2311.01532"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2307.08705"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2306.17193"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2309.01971"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SAP/project-kb/main/README.md"
+        }
+    ]
+}

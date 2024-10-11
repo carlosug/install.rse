@@ -1,0 +1,265 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:41:16"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/nadiinchi/dynamic_embeddings",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "nadiinchi",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-04-10T20:31:11Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2022-05-27T12:30:57Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021 nadiinchi\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nadiinchi/dynamic_embeddings/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Code for the NAACL'21 paper On the Embeddings of Variables in Recurrent Neural Networks for Source Code",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The official PyTorch implementation of:\n* __On the Embeddings of Variables in Recurrent Neural Networks for Source Code__ [[arxiv](https://arxiv.org/abs/2010.12693)] (accepted to [NAACL'21](https://2021.naacl.org/))\n \n",
+                "original_header": "RNNs with Dynamic Embeddings for Source Code Processing"
+            },
+            "confidence": 0.9412263140856441,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nadiinchi/dynamic_embeddings/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "dynamic_embeddings",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "nadiinchi/dynamic_embeddings",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/nadiinchi/dynamic_embeddings/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/nadiinchi/dynamic_embeddings/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/nadiinchi/dynamic_embeddings/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 167455
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nadiinchi/dynamic_embeddings/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "The experiments were run on a system with Linux 3.10.0 using Tesla V100 GPU. The implementation is based on PyTorch>=1.5.\n\nRunning experiments:\n1. Download and resplit data, see [this instruction](https://github.com/bayesgroup/code_transformers/tree/main/data_utils) for details;\n2. Preprocess data for a task you are interested in, see `code_completion` or `var_misuse` for details;\n3. Run the experiment you are interested in, see `code_completion` or `var_misuse` for details.\n",
+                "type": "Text_excerpt",
+                "original_header": "Run",
+                "parent_header": [
+                    "RNNs with Dynamic Embeddings for Source Code Processing"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nadiinchi/dynamic_embeddings/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you found this code useful, please cite our paper\n\n```\n@inproceedings{chirkova2021embeddings,\n      title={On the Embeddings of Variables in Recurrent Neural Networks for Source Code}, \n      author={Nadezhda Chirkova},\n      booktitle={North American Chapter of the Association for Computational Linguistics}\n      year={2021}, \n}\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "RNNs with Dynamic Embeddings for Source Code Processing"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nadiinchi/dynamic_embeddings/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The experiments were conducted on the [Python150k](https://www.sri.inf.ethz.ch/py150) and [JavaScript150k](https://www.sri.inf.ethz.ch/js150) datasets, resplitted according to https://github.com/bayesgroup/code_transformers. Please follow [this instruction](https://github.com/bayesgroup/code_transformers/tree/main/data_utils) to obtain data. \n \n",
+                "original_header": "Data"
+            },
+            "confidence": 0.9497147611959225,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nadiinchi/dynamic_embeddings/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Parts of this code are based on the following repositories:\n* [A Transformer-based Approach for Source Code Summarization](https://github.com/wasiahmad/NeuralCodeSum) \n* [OpenNMT](https://github.com/OpenNMT/OpenNMT-py)\n* [DrQA](https://github.com/facebookresearch/DrQA)\n* https://github.com/oleges1/code-completion\n \n",
+                "original_header": "Attribution"
+            },
+            "confidence": 0.9940366789450907,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nadiinchi/dynamic_embeddings/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "RNNs with Dynamic Embeddings for Source Code Processing"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nadiinchi/dynamic_embeddings/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2010.12693"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nadiinchi/dynamic_embeddings/main/README.md"
+        }
+    ]
+}

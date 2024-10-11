@@ -1,0 +1,260 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:17:22"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/sola-st/MetaCodeSum",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "sola-st",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-01-20T16:06:50Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-04-17T11:16:03Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A meta learning based apporach for code summarization",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "A meta learning based approach for code summarization, is an attempt to combine the strengths of individual code summarization models through meta learning. \nSee our [paper](https://arxiv.org/abs/2201.08310) for details: \n\nThis repository provides implementation for two neural network based models and one feature based model. \nThis repository contains the following folder:\n1. models: consisting of implementation for neural meta models and feature based model.\n2. Scripts folder: containing utility scripts for computing output from meta models. \n"
+            },
+            "confidence": 0.9578685406073386,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sola-st/MetaCodeSum/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "MetaCodeSum",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "sola-st/MetaCodeSum",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/sola-st/MetaCodeSum/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/sola-st/MetaCodeSum/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/sola-st/MetaCodeSum/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 48423
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 3107
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sola-st/MetaCodeSum/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sola-st/MetaCodeSum/main/models/feature_model/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sola-st/MetaCodeSum/main/models/neural_models/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "The code requires Linux and Python 3.6 or higher. It also requires installing PyTorch version 1.3 or higher. We additionally require NLTK and  Scikit-learn. CUDA is strongly recommended for speed, but not necessary.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "Meta Learning for Code Summarization",
+                    "Training/Testing Models"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sola-st/MetaCodeSum/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- **MODEL_NAME_epoch_id.pt**\n  - Model files containing the parameters of the model per epoch.\n- **Config.txt**\n  - Configuration file with hyperparameter details.\n- **predictions.json**\n  - The predictions file from the code.\nIn addition to the files, a further `res` directory is created in order to save output of meta model and resultant bleu score. The following files are created in that folder. \n- **meta_summ.txt**\n  - File containing candidate summaries\n- **corpus_bleu.txt**\n  - File containing corpus BLEU.\n \n",
+                "original_header": "Generated log files"
+            },
+            "confidence": 0.940092102128526,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sola-st/MetaCodeSum/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@article{rauf2022meta,\n    year = {2022},\n    journal = {arXiv preprint arXiv:2201.08310},\n    author = {Rauf, Moiz and Pad{\\'o}, Sebastian and Pradel, Michael},\n    title = {Meta Learning for Code Summarization},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Meta Learning for Code Summarization",
+                "author": "Rauf, Moiz and Pad{\\'o}, Sebastian and Pradel, Michael"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sola-st/MetaCodeSum/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Meta Learning for Code Summarization"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sola-st/MetaCodeSum/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2201.08310"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sola-st/MetaCodeSum/main/README.md"
+        }
+    ]
+}

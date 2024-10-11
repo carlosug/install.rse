@@ -1,0 +1,323 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:08:47"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/tianzhaotju/CodeDenoise",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "tianzhaotju",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-04-27T07:04:43Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-03-23T03:57:23Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "In this work, we propose the first input denoising technique (i.e., CodeDenoise) for deep code models. Its key idea is to localize noisy identifiers in (likely) mispredicted inputs, and denoise such inputs by cleansing the located identifiers.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\r\nIn this work, we propose the first input denoising technique (CodeDenoise) for on-the-fly improve performance of deep code models. It consists of randomized-smoothing-based mispredicted input identification, attention-based noise localization, and MCIP-based noise cleansing. Our extensive study on 18 deep code models demonstrates the effectiveness and efficiency of CodeDenoise, significantly outperforming the widely-used fine-tuning technique.\r\n\r\nSee [Zhao Tian](https://tianzhaotju.github.io/), [Junjie Chen](https://sites.google.com/site/junjiechen08/), et al. \"[On-the-fly Improving Performance of Deep Code Models via Input Denoising](https://arxiv.org/abs/2308.09969).\" The 38th IEEE/ACM International Conference on Automated Software Engineering (ASE'23).\r\n\r\n\r\n\r\n--- ---\r\n- [Overview](#overview)\r\n  - [Folder Structure](#folder-structure)\r\n- [Environment Configuration](#environment-configuration)\r\n  - [Docker](#docker)\r\n  - [Build tree-sitter](#build-tree-sitter)\r\n  - [Subjects](#subjects)\r\n- [Experiments](#experiments)\r\n  - [Demo](#demo)\r\n  - [Running Experiments](#running-experiments)\r\n- [Acknowledgements](#acknowledgements) \r\n\r \n",
+                "original_header": "CodeDenoise"
+            },
+            "confidence": 0.9125886274562208,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/tianzhaotju/CodeDenoise/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "CodeDenoise",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "tianzhaotju/CodeDenoise",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/tianzhaotju/CodeDenoise/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/tianzhaotju/CodeDenoise/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 8,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/tianzhaotju/CodeDenoise/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 508593
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 106603
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Rust",
+                "name": "Rust",
+                "type": "Programming_language",
+                "size": 12341
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Scheme",
+                "name": "Scheme",
+                "type": "Programming_language",
+                "size": 7015
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 4184
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 3969
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 2742
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 1341
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 634
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/tianzhaotju/CodeDenoise/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/tianzhaotju/CodeDenoise/main/python_parser/parser_folder/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "The MIT License (MIT)\n\nCopyright (c) 2014 Max Brunsfeld\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/tianzhaotju/CodeDenoise/main/python_parser/parser_folder/tree-sitter-c/LICENSE"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# Introduction\n\nThese guidelines are intended to help developers contribute to the grammar and preserve consistency across the project while doing so.\n\n### Contributions needed\n\nThe main objective of this project is to support all versions of the Java language. This means addressing issues with the \"todo\" and \"known error\" labels, assigning yourself to a problem that you're working on so that work isn't duplicated. We're also open to documentation improvements and feature enhancements and recommend filing an issue.\n\n# Java Grammar Development Guide\n\n#### General grammar structure\n\nLanguage constructs are grouped into the top-level categories denoting declarations, statements within methods and expressions. All granular constructs feed into those through the defined grammar hierarchy.\n\n```\nrules: {\n    program: $ => repeat($._statement),\n\n    _statement: $ => prec(1, choice(\n      $._expression_statement,\n      $._declaration,\n      $._method_statement\n    )),\n```\n\n#### Deviating from the language spec\n\nThe `grammar.js` file follows the BNF grammar outlined in the [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se9/html/jls-19.html).\n\nThere are situations where we've deviated from the spec:\n\n- **Prefered naming:** if common developer parlance prefers a naming convention other than the spec, we tend to deviate. An example of this is for `generic_type` as the outer wrapper for `type_arguments`, since generics are a familiar Java programming concept.\n- **Simplicity:** The spec is convoluted and not conducive to compact, readable code. In this situation, we've preferred structuring things in a way that are more reusable throughout the grammar and also read clearly. An example of this is our preference to use `binary_` and `unary_` expressions to model relationships between operators, as opposed to supporting the spec's [`ConditionalExpression`](https://docs.oracle.com/javase/specs/jls/se9/html/jls-15.html#jls-ConditionalExpression) hierarchy.\n\n#### When it's okay to parse invalid Java\n\nThere are situations in which we parse invalid code to support end-user experiences. For example, it's important to ensure syntax-highlighting doesn't break down for a snippet of Java code in a markdown file. For this reason, we currently allow expressions to be parsed outside of methods, even though that is not valid Java.\n\nTo know what is \"valid enough\", consider what good documentation would look like:\n\n- \u2705 `int x = (1 + 2);` = This is invalid since it is not within a method, but still comprehensible. Parse this.\n- \u274c `int x = (1 + ) =;` This is not only invalid Java, but it is invalid logic. It wouldn't make sense in documentation. Don't parse this.\n\nRunning your code using something like [JavaRepl](https://github.com/albertlatacz/java-repl) is also a good way to verify the correctness of the input program.\n\n#### Adding unit tests\n\nThe recommendation is to be comprehensive in adding tests. If it's a visible node, add it to a `/corpus/` test file. It's typically a good idea to test as many permutations of a particular language construct as possible. This increases test coverage, but doubly acquaints readers with a way to examine expected outputs and understand the \"edges\" of a language.\n\n#### Testing on external repos\n\nThree of the \"most popular\" Java repositories have been cloned into the project under the `/examples` directory (where popularity is defined by repositories that are most starred and have highest number of active contributers within the last month). Parsing these repos allows us to gauge how well our grammar performs at parsing \"real world\" Java.\n\n_To test:_\n- `./script/parse-examples` runs the tests and outputs them to `known-errors.txt`, representing the files that have any errors or `MISSING ;` flags.\n- The goal is to drive down the errors in `known-errors.txt` to 0.\n- `known-errors.txt` allows you to find erroring files and parse them individually to diagnose and debug errors.\n\n#### Testing with other parsers\n\nIt's worth consulting other LR Java parsers (such as [JavaParser](https://github.com/javaparser/javaparser)) to guide your own grammar development. Comparing tree structure and naming can provide valuable insight into what is usable.\n\n#### References\n\n- [JavaParser](https://github.com/javaparser/javaparser)\n- [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se9/html/jls-19.html)\n- [Tree-sitter documentation](http://tree-sitter.github.io/tree-sitter/creating-parsers.html)\n- [JavaRepl](https://github.com/albertlatacz/java-repl)\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/tianzhaotju/CodeDenoise/main/python_parser/parser_folder/tree-sitter-java/CONTRIBUTING.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "CodeDenoise"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/tianzhaotju/CodeDenoise/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/tianzhaotju/CodeDenoise/main/./figs/overview.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/tianzhaotju/CodeDenoise/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/tianzhaotju/CodeDenoise/main/./figs/subjects.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/tianzhaotju/CodeDenoise/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2308.09969"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/tianzhaotju/CodeDenoise/main/README.md"
+        }
+    ]
+}

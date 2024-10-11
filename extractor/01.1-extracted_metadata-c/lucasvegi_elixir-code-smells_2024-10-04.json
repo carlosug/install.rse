@@ -1,0 +1,565 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:29:20"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/lucasvegi/Elixir-Code-Smells",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "lucasvegi",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-02-15T16:03:05Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-30T20:17:24Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 Lucas Francisco da Matta Vegi\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Catalog of Elixir-specific code smells",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "[Elixir][Elixir] is a functional programming language whose popularity is rising in the industry <sup>[link][ElixirInProduction]</sup>. However, there are few works in the scientific literature focused on studying the internal quality of systems implemented in this language.\n\nIn order to better understand the types of sub-optimal code structures that can harm the internal quality of Elixir systems, we scoured websites, blogs, forums, and videos (grey literature review), looking for specific code smells for Elixir that are discussed by its developers.\n\nAs a result of this investigation, we have initially proposed a catalog of 18 new smells that are specific to Elixir systems. After that, 1 new smell emerged from a study with mining software repositories (MSR) performed by us, and other smells are being suggested by the community, so this catalog is constantly being updated __(currently 23 smells)__. These code smells are categorized into two different groups ([design-related](#design-related-smells) and [low-level concerns](#low-level-concerns-smells)), according to the type of impact and code extent they affect. This catalog of Elixir-specific code smells is presented below. Each code smell is documented using the following structure:\n\n* __Name:__ Unique identifier of the code smell. This name is important to facilitate communication between developers;\n* __Category:__ The portion of code affected by smell and its severity;\n* __Problem:__ How the code smell can harm code quality and what impacts this can have for developers;\n* __Example:__ Code and textual descriptions to illustrate the occurrence of the code smell;\n* __Refactoring:__ Examples of refactored code are presented to illustrate higher-quality alternatives compared to smelly code;\n\n* __Treatments:__ How to remove a code smell in a *__disciplined way__* with the assistance of *__refactoring strategies__*.  When a refactoring should be used alone, it is listed in its own bullet point (*i.e.*, &bull;). Conversely, when a refactoring is part of a sequence of operations to assist the removal, it is listed using a pipeline to define its order (*e.g.*, Refactoring1 |> Refactoring2 |> Refactoring3 |> etc.). This disciplined way to refactor a smell will help you change your code one small step at a time, thus minimizing the chances of introducing bugs or altering the original behavior of the system. All the refactoring strategies mapped to the code smells are part of our [Catalog of Elixir Refactorings](https://github.com/lucasvegi/Elixir-Refactorings).\n\nIn addition to the Elixir-specific code smells, our catalog also documents 12 [traditional code smells][TraditionalSmells] discussed in the context of Elixir systems.\n\nThe objective of this catalog of code smells is to instigate the improvement of the quality of code developed in Elixir. For this reason, we are interested in knowing Elixir's community opinion about these code smells: *Do you agree that these code smells can be harmful? Have you seen any of them in production code? Do you have any suggestions about some Elixir-specific code smell not cataloged by us?...*\n\nPlease feel free to make pull requests and suggestions ([Issues][Issues] tab). We want to hear from you!\n\n[\u25b2 back to Index](#table-of-contents)\n",
+                "type": "Text_excerpt",
+                "original_header": "Introduction",
+                "parent_header": [
+                    "<a href=\"https://github.com/lucasvegi/Elixir-Code-Smells\">Catalog of Elixir-specific code smells</a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "value": "* __Category:__ Low-level concerns smells.\n\n* __Note:__ This smell emerged from a study with mining software repositories (MSR).\n\n* __Problem:__ An ``atom`` is a basic data type of Elixir whose value is its own name. They are often useful to identify resources or to express the state of an operation. The creation of an ``atom`` do not characterize a smell by itself; however, ``atoms`` are not collected by Elixir's Garbage Collector, so values of this type live in memory while an application is executing, during its entire lifetime. Also, BEAM limit the number of ``atoms`` that can exist in an application (``1_048_576``) and each ``atom`` has a maximum size limited to 255 Unicode code points. For these reasons, the dynamic atom creation is considered a code smell, since in this way the developer has no control over how many ``atoms`` will be created during the execution of the application. This unpredictable scenario can expose an app to unexpected behavior caused by excessive memory usage, or even by reaching the maximum number of ``atoms`` possible.\n\n* __Example:__ The code shown below is an example of this smell. Imagine that you are implementing a code that performs the conversion of ``string`` values into ``atoms`` to identify resources. These ``strings`` can come from user input or even have been received as response from requests to an API. As this is a dynamic and unpredictable scenario, it is possible for identical ``strings`` to be converted into new ``atoms`` that are repeated unnecessarily. This kind of conversion, in addition to wasting memory, can be problematic for an application if it happens too often.\n\n  ```elixir\n  defmodule Identifier do\n    ...\n\n    def generate(id) when is_bitstring(id) do\n      String.to_atom(id)  #<= dynamic atom creation!!\n    end\n  end\n\n  #...Use examples...\n\n  iex(1)> string_from_user_input = \"my_id\"\n  \"my_id\"\n\n  iex(2)> string_from_API_response = \"my_id\"\n  \"my_id\"\n\n  iex(3)> Identifier.generate(string_from_user_input)\n  :my_id\n\n  iex(4)> Identifier.generate(string_from_API_response)\n  :my_id   #<= atom repeated was created!\n  ```\n\n  When we use the ``String.to_atom/1`` function to dynamically create an ``atom``, it is created regardless of whether there is already another one with the same value in memory, so when this happens automatically, we will not have control over meeting the limits established by BEAM.\n\n* __Refactoring:__ To remove this smell, as shown below, first you must ensure that all the identifier ``atoms`` are created statically, only once, at the beginning of an application's execution:\n\n  ```elixir\n  # statically created atoms...\n  _ = :my_id\n  _ = :my_id2\n  _ = :my_id3\n  _ = :my_id4\n  ```\n\n  Next, you should replace the use of the ``String.to_atom/1`` function with the ``String.to_existing_atom/1`` function. This will allow string-to-atom conversions to just map the strings to atoms already in memory (statically created at the beginning of the execution), thus preventing repeated ``atoms`` from being created dynamically. This second part of the refactoring is presented below.\n\n  ```elixir\n  defmodule Identifier do\n    ...\n\n    def generate(id) when is_bitstring(id) do\n      String.to_existing_atom(id)  #<= just maps a string to an existing atom!\n    end\n  end\n\n  #...Use examples...\n\n  iex(1)> Identifier.generate(\"my_id\")\n  :my_id\n\n  iex(2)> Identifier.generate(\"my_id2\")\n  :my_id2\n\n  iex(3)> Identifier.generate(\"non_existent_id\")\n    ** (ArgumentError) errors were found at the given arguments:\n    * 1st argument: not an already existing atom\n  ```\n\n  Note that in the third use example, when a ``string`` different from an already existing ``atom`` is given, Elixir shows an error instead of performing the conversion. This demonstrates that this refactoring creates a more controlled and predictable scenario for the application in terms of memory usage.\n\n  This example and the refactoring are based on the Elixir's official documentation. Sources: [1][to_atom], [2][to_existing_atom]\n\n* __Treatments:__\n\n  * [Extract function](https://github.com/lucasvegi/Elixir-Refactorings?#extract-function) |> [Introduce pattern matching over a parameter](https://github.com/lucasvegi/Elixir-Refactorings?#introduce-pattern-matching-over-a-parameter)\n  * [Folding against a function definition](https://github.com/lucasvegi/Elixir-Refactorings?#folding-against-a-function-definition)\n  * [Introduce a temporary duplicate definition](https://github.com/lucasvegi/Elixir-Refactorings?#introduce-a-temporary-duplicate-definition) |> [Remove dead code](https://github.com/lucasvegi/Elixir-Refactorings?#remove-dead-code)\n\n[\u25b2 back to Index](#table-of-contents)\n",
+                "type": "Text_excerpt",
+                "original_header": "Dynamic atom creation",
+                "parent_header": [
+                    "<a href=\"https://github.com/lucasvegi/Elixir-Code-Smells\">Catalog of Elixir-specific code smells</a>",
+                    "Low-level concerns smells"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ In Elixir, processes can be primitively created by ``Kernel.spawn/1``, ``Kernel.spawn/3``, ``Kernel.spawn_link/1`` and ``Kernel.spawn_link/3`` functions. Although it is possible to create them this way, it is more common to use abstractions (e.g., [``Agent``][Agent], [``Task``][Task], and [``GenServer``][GenServer]) provided by Elixir to create processes. The use of each specific abstraction is not a code smell in itself; however, there can be trouble when either a ``Task`` or ``Agent`` is used beyond its suggested purposes, being treated like a ``GenServer``. \n* __Example:__ As shown next, ``Agent`` and ``Task`` are abstractions to create processes with specialized purposes. In contrast, ``GenServer`` is a more generic abstraction used to create processes for many different purposes: \n  * ``Agent``: As Elixir works on the principle of immutability, by default no value is shared between multiple places of code, enabling read and write as in a global variable. An ``Agent`` is a simple process abstraction focused on solving this limitation, enabling processes to share state.\n  * ``Task``: This process abstraction is used when we only need to execute some specific action asynchronously, often in an isolated way, without communication with other processes.\n  * ``GenServer``: This is the most generic process abstraction. The main benefit of this abstraction is explicitly segregating the server and the client roles, thus providing a better API for the organization of processes communication. Besides that, a ``GenServer`` can also encapsulate state (like an ``Agent``), provide sync and async calls (like a ``Task``), and more. \n  Examples of this code smell appear when ``Agents`` or ``Tasks`` are used for general purposes and not only for specialized ones such as their documentation suggests. To illustrate some smell occurrences, we will cite two specific situations. 1) When a ``Task`` is used not only to async execute an action, but also to frequently exchange messages with other processes; 2) When an ``Agent``, beside sharing some global value between processes, is also frequently used to execute isolated tasks that are not of interest to other processes. \n",
+                "original_header": "GenServer Envy"
+            },
+            "confidence": 0.965042469737349,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ In Elixir, an ``Agent`` is a process abstraction focused on sharing information between processes by means of message passing. It is a simple wrapper around shared information, thus facilitating its read and update from any place in the code. The use of an ``Agent`` to share information is not a code smell in itself; however, when the responsibility for interacting directly with an ``Agent`` is spread across the entire system, this can be problematic. This bad practice can increase the difficulty of code maintenance and make the code more prone to bugs. \n* __Example:__ The following code seeks to illustrate this smell. The responsibility for interacting directly with the ``Agent`` is spread across four different modules (i.e, ``A``, ``B``, ``C``, and ``D``). \n  This spreading of responsibility can generate duplicated code and make code maintenance more difficult. Also, due to the lack of control over the format of the shared data, complex composed data can be shared. This freedom to use any format of data is dangerous and can induce developers to introduce bugs. \n  ```elixir\n  # start an agent with initial state of an empty list\n  iex(1)> {:ok, agent} = Agent.start_link fn -> [] end\n  {:ok, #PID<0.135.0>}\n\n  # many data format (i.e., List, Map, Integer, Atom) are\n  # combined through direct access spread across the entire system\n  iex(2)> A.update(agent)\n  iex(3)> B.update(agent)\n  iex(4)> C.update(agent)\n\n  # state of shared information\n  iex(5)> D.get(agent)\n  [:atom_value, %{a: 123}]\n  ``` \n* __Refactoring:__ Instead of spreading direct access to an ``Agent`` over many places in the code, it is better to refactor this code by centralizing the responsibility for interacting with an ``Agent`` in a single module. This refactoring improves the maintainability by removing duplicated code; it also allows you to limit the accepted format for shared data, reducing bug-proneness. As shown below, the module ``KV.Bucket`` is centralizing the responsibility for interacting with the ``Agent``. Any other place in the code that needs to access shared data must now delegate this action to ``KV.Bucket``. Also, ``KV.Bucket`` now only allows data to be shared in ``Map`` format. \n",
+                "original_header": "Agent Obsession"
+            },
+            "confidence": 0.968451795411742,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ In Elixir, creating a process outside a supervision tree is not a code smell in itself. However, when code creates a large number of long-running processes outside a supervision tree, this can make visibility and monitoring of these processes difficult, preventing developers from fully controlling their applications. \n* __Example:__ The following code example seeks to illustrate a library responsible for maintaining a numerical ``Counter`` through a ``GenServer`` process outside a supervision tree. Multiple counters can be created simultaneously by a client (one process for each counter), making these unsupervised processes difficult to manage. This can cause problems with the initialization, restart, and shutdown of a system. \n* __Refactoring:__ To ensure that clients of a library have full control over their systems, regardless of the number of processes used and the lifetime of each one, all processes must be started inside a supervision tree. As shown below, this code uses a ``Supervisor`` <sup>[link][Supervisor]</sup> as a supervision tree. When this Elixir application is started, two different counters (``Counter`` and ``C2``) are also started as child processes of the ``Supervisor`` named ``App.Supervisor``. Both are initialized with zero. By means of this supervision tree, it is possible to manage the lifecycle of all child processes (e.g., stopping or restarting each one), improving the visibility of the entire app. \n",
+                "original_header": "Unsupervised process"
+            },
+            "confidence": 0.9433789800238813,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ In Elixir, processes run in an isolated manner, often concurrently with other. Communication between different processes is performed via message passing. The exchange of messages between processes is not a code smell in itself; however, when processes exchange messages, their contents are copied between them. For this reason, if a huge structure is sent as a message from one process to another, the sender can become blocked, compromising performance. If these large message exchanges occur frequently, the prolonged and frequent blocking of processes can cause a system to behave anomalously. \n  This example is based on a original code by Samuel Mullen. Source: [link][LargeMessageExample] \n",
+                "original_header": "Large messages"
+            },
+            "confidence": 0.9180835939336918,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "  This example is based on a original code by Syamil MJ ([@syamilmj][syamilmj]). Source: [link][MultiClauseExample] \n",
+                "original_header": "Unrelated multi-clause function"
+            },
+            "confidence": 0.9263884780310911,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ When we use multi-clause functions, it is possible to extract values in the clauses for further usage and for pattern matching/guard checking. This extraction itself does not represent a code smell, but when you have too many clauses or too many arguments, it becomes hard to know which extracted parts are used for pattern/guards and what is used only inside the function body. This smell is related to [Unrelated multi-clause function](#unrelated-multi-clause-function), but with implications of its own. It impairs the code readability in a different way. \n  While the example is small and looks like a clear code, try to imagine a situation where ``drive/1`` was more complex, having many more clauses, arguments, and extractions. This is the really smelly code! \n",
+                "original_header": "Complex extractions in clauses"
+            },
+            "confidence": 0.9477731117109578,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ This smell refers to code that forces developers to handle exceptions for control-flow. Exception handling itself does not represent a code smell, but this should not be the only alternative available to developers to handle an error in client code. When developers have no freedom to decide if an error is exceptional or not, this is considered a code smell. \n* __Example:__ An example of this code smell, as shown below, is when a library (e.g. ``MyModule``) forces its clients to use ``try .. rescue`` statements to capture and evaluate errors. This library does not allow developers to decide if an error is exceptional or not in their applications. \n* __Refactoring:__ Library authors should guarantee that clients are not required to use exceptions for control-flow in their applications. As shown below, this can be done by refactoring the library ``MyModule``, providing two versions of the function that forces clients to use exceptions for control-flow (e.g., ``janky_function``). 1) a version with the raised exceptions should have the same name as the smelly one, but with a trailing ``!`` (i.e., ``janky_function!``); 2) Another version, without raised exceptions, should have a name identical to the original version (i.e., ``janky_function``), and should return the result wrapped in a tuple. \n  This refactoring gives clients more freedom to decide how to proceed in the event of errors, defining what is exceptional or not in different situations. As shown next, when an error is not exceptional, clients can use specific control-flow structures, such as the ``case`` statement along with pattern matching. \n  This example is based on code written by Tim Austin <sup>[neenjaw][neenjaw]</sup> and Angelika Tyborska <sup>[angelikatyborska][angelikatyborska]</sup>. Source: [link][ExceptionsForControlFlowExamples] \n",
+                "original_header": "Using exceptions for control-flow"
+            },
+            "confidence": 0.9552028835139541,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Example:__ An instance of this code smell happens when a function uses ``to_string()`` to convert data received by parameter. The function ``to_string()`` uses the protocol ``String.Chars`` for conversions. Many Elixir data types (e.g., ``BitString``, ``Integer``, ``Float``, ``URI``) implement this protocol. However, as shown below, other Elixir data types (e.g., ``Map``) do not implement it and can cause an error in ``dasherize/1`` function. Depending on the situation, this behavior can be desired or not. Besides that, it may not make sense to dasherize a ``URI`` or a number as shown next. \n* __Refactoring:__ There are two main alternatives to improve code affected by this smell. __1)__ You can either remove the protocol use (i.e., ``to_string/1``), by adding multi-clauses on ``dasherize/1`` or just remove it; or __2)__ You can document that ``dasherize/1`` uses the protocol ``String.Chars`` for conversions, showing its consequences. As shown next, we refactored using the first alternative, removing the protocol and restricting ``dasherize/1`` parameter only to desired data types (i.e., ``BitString`` and ``Atom``). Besides that, we use ``@doc`` to validate ``dasherize/1`` for desired inputs and to document the behavior to some types that we think don't make sense for the function (e.g., ``Integer`` and ``URI``). \n",
+                "original_header": "Untested polymorphic behaviors"
+            },
+            "confidence": 0.9656926708214826,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ This smell refers to code that is unnecessarily organized by processes. A process itself does not represent a code smell, but it should only be used to model runtime properties (e.g., concurrency, access to shared resources, event scheduling). When a process is used for code organization, it can create bottlenecks in the system. \n* __Example:__ An example of this code smell, as shown below, is a library that implements arithmetic operations (e.g., add, subtract) by means of a ``GenSever`` process<sup>[link][GenServer]</sup>. If the number of calls to this single process grows, this code organization can compromise the system performance, therefore becoming a bottleneck. \n* __Refactoring:__ In Elixir, as shown next, code organization must be done only by modules and functions. Whenever possible, a library should not impose specific behavior (such as parallelization) on its clients. It is better to delegate this behavioral decision to the developers of clients, thus increasing the potential for code reuse of a library. \n",
+                "original_header": "Code organization by process"
+            },
+            "confidence": 0.9588758691570698,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ This code smell is related to ``macros`` that generate too much code. When a ``macro`` provides a large code generation, it impacts how the compiler or the runtime works. The reason for this is that Elixir may have to expand, compile, and execute a code multiple times, which will make compilation slower. \n* __Example:__ The code shown below is an example of this smell. Imagine you are defining a router for a web application, where you could have macros like ``get/2``. On every invocation of the macro, which can be hundreds, the code inside ``get/2`` will be expanded and compiled, which can generate a large volume of code in total. \n* __Refactoring:__ To remove this code smell, the developer must simplify the ``macro``, delegating to other functions part of its work. As shown below, by encapsulating in the function ``__define__/3`` the functionality pre-existing inside the ``quote``, we reduce the code that is expanded and compiled on every invocation of the ``macro``, and instead we dispatch to a function to do the bulk of the work. \n",
+                "original_header": "Large code generation by macros"
+            },
+            "confidence": 0.9654219136871706,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ This code smell refers to modules that perform both data and structural changes in a database schema via ``Ecto.Migration``<sup>[link][Migration]</sup>. Migrations must be used exclusively to modify a database schema over time (e.g., by including or excluding columns and tables). When this responsibility is mixed with data manipulation code, the module becomes less cohesive, more difficult to test, and therefore more prone to bugs. \n* __Example:__ An example of this code smell is when an ``Ecto.Migration`` is used simultaneously to alter a table, adding a new column to it, and also to update all pre-existing data in that table, assigning a value to this new column. As shown below, in addition to adding the ``is_custom_shop`` column in the ``guitars`` table, this ``Ecto.Migration`` changes the value of this column for some specific guitar models. \n* __Refactoring:__ To remove this code smell, it is necessary to separate the data manipulation in a ``mix task`` <sup>[link][MixTask]</sup> different from the module that performs the structural changes in the database via ``Ecto.Migration``. This separation of responsibilities is a best practice for increasing code testability. As shown below, the module ``AddIsCustomShopToGuitars`` now use ``Ecto.Migration`` only to perform structural changes in the database schema: \n",
+                "original_header": "Data manipulation by migration"
+            },
+            "confidence": 0.9899495250976257,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ The ``Application Environment`` <sup>[link][ApplicationEnvironment]</sup> is a mechanism that can be used to parameterize values that will be used in several different places in a system implemented in Elixir. This parameterization mechanism can be very useful and therefore is not considered a code smell by itself. However, when ``Application Environments`` are used as a mechanism for configuring a library's functions, this can make these functions less flexible, making it impossible for a library-dependent application to reuse its functions with different behaviors in different places in the code. Libraries are created to foster code reuse, so this limitation imposed by this parameterization mechanism can be problematic in this scenario. \n  One of the functions implemented by the ``DashSplitter`` library is ``split/1``. This function has the purpose of separating a string received via parameter into a certain number of parts. The character used as a separator in ``split/1`` is always ``\"-\"`` and the number of parts the string is split into is defined globally by the ``Application Environment``. This value is retrieved by the ``split/1`` function by calling ``Application.fetch_env!/2``, as shown next: \n  Due to this type of parameterized value used by the ``DashSplitter`` library, all applications dependent on it can only use the ``split/1`` function with identical behavior in relation to the number of parts generated by string separation. Currently, this value is equal to 3, as we can see in the use examples shown below: \n* __Refactoring:__ To remove this code smell and make the library more adaptable and flexible, this type of configuration must be performed via parameters in function calls. The code shown below performs the refactoring of the ``split/1`` function by adding a new optional parameter of type ``Keyword list``. With this new parameter it is possible to modify the default behavior of the function at the time of its call, allowing multiple different ways of using ``split/2`` within the same application: \n",
+                "original_header": "Using App Configuration for libraries"
+            },
+            "confidence": 0.9747658333232445,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ As explained in the description of [Using App Configuration for libraries](#using-app-configuration-for-libraries), the ``Application Environment`` can be used to parameterize values in an Elixir system. Although it is not a good practice to use this mechanism in the implementation of libraries, sometimes this can be unavoidable. If these parameterized values are assigned to ``module attributes``, it can be especially problematic. As ``module attribute`` values are defined at compile-time, when trying to assign ``Application Environment`` values to these attributes, warnings or errors can be triggered by Elixir. This happens because, when defining module attributes at compile time, the ``Application Environment`` is not yet available in memory. \n* __Example:__ The ``DashSplitter`` module represents a library. This module has an attribute ``@parts`` that has its constant value defined at compile-time by calling ``Application.fetch_env!/2``. The ``split/1`` function, implemented by this library, has the purpose of separating a string received via parameter into a certain number of parts. The character used as a separator in ``split/1`` is always ``\"-\"`` and the number of parts the string is split into is defined by the module attribute ``@parts``, as shown next: \n* __Refactoring:__ To remove this code smell, when it is really unavoidable to use the ``Application Environment`` mechanism to configure library functions, this should be done at runtime and not during compilation. That is, instead of calling ``Application.fetch_env!(:app_config, :parts)`` at compile-time to set ``@parts``, this function must be called at runtime within ``split/1``. This will mitigate the risk that ``Application Environment`` is not yet available in memory when it is necessary to use it. Another possible refactoring, as shown below, is to replace the use of the ``Application.fetch_env!/2`` function to define ``@parts``, with the ``Application.compile_env/3``. The third parameter of ``Application.compile_env/3`` defines a default value that is returned whenever that ``Application Environment`` is not available in memory during the definition of ``@parts``. This prevents Elixir from raising an error at compile-time: \n",
+                "original_header": "Compile-time global configuration"
+            },
+            "confidence": 0.9804619119478786,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ This code smell refers to a function that does not validate its parameters' types and therefore can produce internal non-predicted behavior. When an error is raised inside a function due to an invalid parameter value, this can confuse the developers and make it harder to locate and fix the error. \n* __Example:__ An example of this code smell is when a function receives an invalid parameter and then passes it to a function from a third-party library. This will cause an error (raised deep inside the library function), which may be confusing for the developer who is working with invalid data. As shown next, the function ``foo/1`` is a client of a third-party library and doesn't validate its parameters at the boundary. In this way, it is possible that invalid data will be passed from ``foo/1`` to the library, causing a mysterious error. \n  ```elixir\n  defmodule MyApp do\n    alias ThirdPartyLibrary, as: Library\n\n    def foo(invalid_data) do\n      #...some code...\n      Library.sum(1, invalid_data)\n      #...some code...\n    end\n  end\n\n  #...Use examples...\n\n  # with valid data is ok\n  iex(1)> MyApp.foo(2)\n  3\n\n  #with invalid data cause a confusing error deep inside\n  iex(2)> MyApp.foo(\"Lucas\")\n  ** (ArithmeticError) bad argument in arithmetic expression: 1 + \"Lucas\"\n    :erlang.+(1, \"Lucas\")\n    library.ex:3: ThirdPartyLibrary.sum/2\n  ``` \n* __Refactoring:__ To remove this code smell, client code must validate input parameters at the boundary with the user, via guard clauses or pattern matching. This will prevent errors from occurring deeply, making them easier to understand. This refactoring will also allow libraries to be implemented without worrying about creating internal protection mechanisms. The next code illustrates the refactoring of ``foo/1``, removing this smell: \n  ```elixir\n  defmodule MyApp do\n    alias ThirdPartyLibrary, as: Library\n\n    def foo(data) when is_integer(data) do\n      #...some code...\n      Library.sum(1, data)\n      #...some code...\n    end\n  end\n\n  #...Use examples...\n\n  #with valid data is ok\n  iex(1)> MyApp.foo(2)\n  3\n\n  # with invalid data errors are easy to locate and fix\n  iex(2)> MyApp.foo(\"Lucas\")\n  ** (FunctionClauseError) no function clause matching in MyApp.foo/1\n\n    The following arguments were given to MyApp.foo/1:\n\n        # 1\n        \"Lucas\"\n\n    my_app.ex:6: MyApp.foo/1\n  ``` \n",
+                "original_header": "Working with invalid data"
+            },
+            "confidence": 0.9554103035485297,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ When a function assumes the responsibility of handling multiple errors alone, it can increase its cyclomatic complexity (metric of control-flow) and become incomprehensible. This situation can configure a specific instance of \"Long function\", a traditional code smell, but has implications of its own. Under these circumstances, this function could get very confusing, difficult to maintain and test, and therefore bug-proneness. \n* __Example:__ An example of this code smell is when a function uses the ``case`` control-flow structure or other similar constructs (e.g., ``cond``, or ``receive``) to handle multiple variations of response types returned by the same API endpoint. This practice can make the function more complex, long, and difficult to understand, as shown next. \n  Although ``get_customer/1`` is not really long in this example, it could be. Thinking about this more complex scenario, where a large number of different responses can be provided to the same endpoint, is not a good idea to concentrate all on a single function. This is a risky scenario, where a little typo, or any problem introduced by the programmer in handling a response type, could eventually compromise the handling of all responses from the endpoint (if the function raises an exception, for example). \n* __Refactoring:__ As shown below, in this situation, instead of concentrating all handlings within the same function,  creating a complex branching, it is better to delegate each branch (handling of a response type) to a different private function. In this way, the code will be cleaner, more concise, and readable. \n  While this example of refactoring ``get_customer/1`` might seem quite more verbose than the original code, remember to imagine a scenario where ``get_customer/1`` is responsible for handling a number much larger than three different types of possible responses. This is the smelly scenario! \n  This example is based on code written by Zack <sup>[MrDoops][MrDoops]</sup> and Dimitar Panayotov <sup>[dimitarvp][dimitarvp]</sup>. Source: [link][ComplexErrorHandleExample]. We got suggestions from Jos\u00e9 Valim ([@josevalim][jose-valim]) on the refactoring. \n",
+                "original_header": "Complex branching"
+            },
+            "confidence": 0.9388293271401419,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ This code smell refers to ``with`` statements that flatten all its error clauses into a single complex ``else`` block. This situation is harmful to the code readability and maintainability because difficult to know from which clause the error value came. \n* __Example:__ An example of this code smell, as shown below, is a function ``open_decoded_file/1`` that read a base 64 encoded string content from a file and returns a decoded binary string. This function uses a ``with`` statement that needs to handle two possible errors, all of which are concentrated in a single complex ``else`` block. \n* __Refactoring:__ As shown below, in this situation, instead of concentrating all error handlings within a single complex ``else`` block, it is better to normalize the return types in specific private functions. In this way, due to its organization, the code will be cleaner and more readable. \n",
+                "original_header": "Complex else clauses in with"
+            },
+            "confidence": 0.9234571687876018,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Refactoring:__ To refactor this smell, as shown next, it's better to add in the library a specific function for each return type (e.g., ``parse_no_rest/1``), no longer delegating this to an options parameter. \n",
+                "original_header": "Alternative return types"
+            },
+            "confidence": 0.9417470777073226,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ In Elixir, it is possible to access values from ``Maps``, which are key-value data structures, either strictly or dynamically. When trying to dynamically access the value of a key from a ``Map``, if the informed key does not exist, a null value (``nil``) will be returned. This return can be confusing and does not allow developers to conclude whether the key is non-existent in the ``Map`` or just has no bound value. In this way, this code smell may cause bugs in the code. \n* __Example:__ The code shown below is an example of this smell. The function ``plot/1`` tries to draw a graphic to represent the position of a point in a cartesian plane. This function receives a parameter of ``Map`` type with the point attributes, which can be a point of a 2D or 3D cartesian coordinate system. To decide if a point is 2D or 3D, this function uses dynamic access to retrieve values of the ``Map`` keys: \n* __Refactoring:__ To remove this code smell, whenever a ``Map`` has keys of ``Atom`` type, replace the dynamic access to its values per strict access. When a non-existent key is strictly accessed, Elixir raises an error immediately, allowing developers to find bugs faster. The next code illustrates the refactoring of ``plot/1``, removing this smell: \n",
+                "original_header": "Accessing non-existent Map/Struct fields"
+            },
+            "confidence": 0.9490752791332223,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ Overall, Elixir application\u2019s are composed of many supervised processes, so the effects of an error will be localized in a single process, not propagating to the entire application. A supervisor will detect the failing process, and restart it at that level. For this type of design to behave well, it's important that problematic code crashes when it fails to fulfill its purpose. However, some code may have undesired behavior making many assumptions we have not really planned for, such as being able to return incorrect values instead of forcing a crash. These speculative assumptions can give a false impression that the code is working correctly. \n",
+                "original_header": "Speculative Assumptions"
+            },
+            "confidence": 0.9775752508430777,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Problem:__ This code smell is related to possible module name conflicts that can occur when a library is implemented. Due to a limitation of the Erlang VM (BEAM), also used by Elixir, only one instance of a module can be loaded at a time. If there are name conflicts between more than one module, they will be considered the same by BEAM and only one of them will be loaded. This can cause unwanted code behavior. \n* __Example:__ The code shown below is an example of this smell. Two different modules were defined with identical names (``Foo``). When BEAM tries to load both simultaneously, only the module defined in the file (``module_two.ex``) stay loaded, redefining the current version of ``Foo`` (``module_one.ex``) in memory. That makes it impossible to call ``from_module_one/0``, for example: \n* __Refactoring:__ To remove this code smell, a library must standardize the naming of its modules, always using its own name as a prefix (namespace) for all its module's names (e.g., ``LibraryName.ModuleName``). When a module file is within subdirectories of a library, the names of the subdirectories must also be used in the module naming (e.g., ``LibraryName.SubdirectoryName.ModuleName``). In the refactored code shown below, this module naming pattern was used. For this, the ``Foo`` module, defined in the file ``module_two.ex``, was also moved to the ``utils`` subdirectory. This refactoring, in addition to eliminating the internal conflict of names within the library, will prevent the occurrence of name conflicts with client code: \n",
+                "original_header": "Modules with identical names"
+            },
+            "confidence": 0.9380770397487724,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Example:__ The code shown below is an example of this smell. The ``MyMath`` module implements the ``sum/2`` macro to perform the sum of two numbers received as parameters. While this code has no syntax errors and can be executed correctly to get the desired result, it is unnecessarily more complex. By implementing this functionality as a macro rather than a conventional function, the code became less clear and less objective: \n",
+                "original_header": "Unnecessary macros"
+            },
+            "confidence": 0.9683403610692333,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Elixir-Code-Smells",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "lucasvegi/Elixir-Code-Smells",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/lucasvegi/Elixir-Code-Smells/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/lucasvegi/Elixir-Code-Smells/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1453,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "code-smells, elixir, elixir-examples, elixir-lang, software-quality",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 48,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/lucasvegi/elixir-code-smells/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Elixir",
+                "name": "Elixir",
+                "type": "Programming_language",
+                "size": 1094
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "cff-version: 1.2.1\nmessage: 'If you use this catalog in your work, please cite it as below.'\nauthors:\n  - given-names: Lucas Francisco da Matta\n    family-names: Vegi\n    email: lucasvegi@gmail.com\n    affiliation: UFMG\n    orcid: 'https://orcid.org/0000-0002-7999-7098'\n  - given-names: Marco Tulio\n    family-names: Valente\n    email: mtvalente@gmail.com\n    affiliation: UFMG\n    orcid: 'https://orcid.org/0000-0002-8180-7548'\ntitle: 'Catalog of Elixir-specific code smells'\nversion: '1.0'\ndate-released: '2022-02-15'\nurl: 'https://github.com/lucasvegi/Elixir-Code-Smells'\nkeywords:\n  - elixir\n  - code smells\n  - functional programming\nlicense: MIT\npreferred-citation:\n  type: article\n  message: 'If you use this catalog in your work, please cite it as below.'\n  authors:\n  - given-names: Lucas Francisco da Matta\n    family-names: Vegi\n    email: lucasvegi@dcc.ufmg.br\n    affiliation: Federal University of Minas Gerais (UFMG)\n    orcid: 'https://orcid.org/0000-0002-7999-7098'\n  - given-names: Marco Tulio\n    family-names: Valente\n    email: mtov@dcc.ufmg.br\n    affiliation: Federal University of Minas Gerais (UFMG)\n    orcid: 'https://orcid.org/0000-0002-8180-7548'\n  doi: \"10.1007/s10664-023-10343-6\"  \n  journal: \"Empirical Software Engineering\"\n  pages: 32\n  start: 1 # First page number\n  end: 32 # Last page number\n  title: \"Understanding code smells in Elixir functional language\"\n  issue: 102\n  volume: 28\n  year: 2023\n",
+                "type": "File_dump",
+                "format": "cff"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/CITATION.cff"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/lucasvegi/elixir-code-smells/tree/main/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "static-website",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "* __Category:__ Design-related smells.\n\n* __Note:__ Formerly known as \"Dependency with \"use\" when an \"import\" is enough\".\n\n* __Problem:__ Elixir has mechanisms such as ``import``, ``alias``, and ``use`` to establish dependencies between modules. Establishing dependencies allows a module to call functions from other modules, facilitating code reuse. A code implemented with these mechanisms does not characterize a smell by itself; however, while the ``import`` and ``alias`` directives have lexical scope and only facilitate that a module to use functions of another, the ``use`` directive has a broader scope, something that can be problematic. The ``use`` directive allows a module to inject any type of code into another, including propagating dependencies. In this way, using the ``use`` directive makes code readability worse, because to understand exactly what will happen when it references a module, it is necessary to have knowledge of the internal details of the referenced module.\n\n* __Example:__ The code shown below is an example of this smell. Three different modules were defined -- ``ModuleA``, ``Library``, and ``ClientApp``. ``ClientApp`` is reusing code from the ``Library`` via the ``use`` directive, but is unaware of its internal details. Therefore, when ``Library`` is referenced by ``ClientApp``, it injects into ``ClientApp`` all the content present in its ``__using__/1`` macro. Due to the decreased readability of the code and the lack of knowledge of the internal details of the ``Library``, ``ClientApp`` defines a local function ``foo/0``. This will generate a conflict as ``ModuleA`` also has a function ``foo/0``; when ``ClientApp`` referenced ``Library`` via the ``use`` directive, it has a dependency for ``ModuleA`` propagated to itself:\n\n  ```elixir\n  defmodule ModuleA do\n    def foo do\n      \"From Module A\"\n    end\n  end\n  ```\n\n  ```elixir\n  defmodule Library do\n    defmacro __using__(_opts) do\n      quote do\n        import ModuleA  # <= propagating dependencies!\n\n        def from_lib do\n          \"From Library\"\n        end\n      end\n    end\n\n    def from_lib do\n      \"From Library\"\n    end\n  end\n  ```\n\n  ```elixir\n  defmodule ClientApp do\n    use Library\n\n    def foo do\n      \"Local function from client app\"\n    end\n\n    def from_client_app do\n      from_lib() <> \" - \" <> foo()\n    end\n\n  end\n  ```\n\n  When we try to compile ``ClientApp``, Elixir will detect the conflict and throw the following error:\n\n  ```elixir\n  iex(1)> c(\"client_app.ex\")\n\n  ** (CompileError) client_app.ex:4: imported ModuleA.foo/0 conflicts with local function\n  ```\n\n* __Refactoring:__ To remove this code smell, it may be possible to replace ``use`` with ``alias`` or ``import`` when creating a dependency between an application and a library. This will make code behavior clearer, due to improved readability. In the following code, ``ClientApp`` was refactored in this way, and with that, the conflict as previously shown no longer exists:\n\n  ```elixir\n  defmodule ClientApp do\n    import Library\n\n    def foo do\n      \"Local function from client app\"\n    end\n\n    def from_client_app do\n      from_lib() <> \" - \" <> foo()\n    end\n\n  end\n\n  #...Uses example...\n\n  iex(1)> ClientApp.from_client_app()\n  \"From Library - Local function from client app\"\n  ```\n\n  These examples are based on code provided in Elixir's official documentation. Source: [link][DependencyWithUseExample]\n\n* __Treatments:__\n\n  * [Introduce import](https://github.com/lucasvegi/Elixir-Refactorings?#introduce-import) |> [Remove dead code](https://github.com/lucasvegi/Elixir-Refactorings?#remove-dead-code)\n  * [Alias expansion](https://github.com/lucasvegi/Elixir-Refactorings?#alias-expansion)\n  * [Remove import attributes](https://github.com/lucasvegi/Elixir-Refactorings?#remove-import-attributes)\n\n[\u25b2 back to Index](#table-of-contents)\n",
+                "type": "Text_excerpt",
+                "original_header": "\"Use\" instead of \"import\"",
+                "parent_header": [
+                    "<a href=\"https://github.com/lucasvegi/Elixir-Code-Smells\">Catalog of Elixir-specific code smells</a>",
+                    "Design-related smells"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "We are supported by __[Finbits][Finbits]__<sup>TM</sup>, a Brazilian Elixir-based fintech:\n\n<div align=\"center\">\n  <a href=\"https://www.finbits.com.br/\" alt=\"Click to learn more about Finbits!\" title=\"Click to learn more about Finbits!\"><img width=\"20%\" src=\"https://github.com/lucasvegi/Elixir-Code-Smells/blob/main/etc/finbits.png?raw=true\"></a>\n  <br><br>\n</div>\n\nOur research is also part of the initiative called __[Research with Elixir][ResearchWithElixir]__ (in portuguese).\n\n[\u25b2 back to Index](#table-of-contents)\n\n\n[Elixir Smells]: https://github.com/lucasvegi/Elixir-Code-Smells\n[Elixir]: http://elixir-lang.org\n[ASERG]: http://aserg.labsoft.dcc.ufmg.br/\n[MultiClauseExample]: https://syamilmj.com/2021-09-01-elixir-multi-clause-anti-pattern/\n[ComplexErrorHandleExample]: https://elixirforum.com/t/what-are-sort-of-smells-do-you-tend-to-find-in-elixir-code/14971\n[JoseValimExamples]: http://blog.plataformatec.com.br/2014/09/writing-assertive-code-with-elixir/\n[dimitarvp]: https://elixirforum.com/u/dimitarvp\n[MrDoops]: https://elixirforum.com/u/MrDoops\n[neenjaw]: https://exercism.org/profiles/neenjaw\n[angelikatyborska]: https://exercism.org/profiles/angelikatyborska\n[ExceptionsForControlFlowExamples]: https://exercism.org/tracks/elixir/concepts/try-rescue\n[DataManipulationByMigrationExamples]: https://www.idopterlabs.com.br/post/criando-uma-mix-task-em-elixir\n[Migration]: https://hexdocs.pm/ecto_sql/Ecto.Migration.html\n[MixTask]: https://hexdocs.pm/mix/Mix.html#module-mix-task\n[CodeOrganizationByProcessExample]: https://hexdocs.pm/elixir/main/library-guidelines.html#avoid-using-processes-for-code-organization\n[GenServer]: https://hexdocs.pm/elixir/master/GenServer.html\n[UnsupervisedProcessExample]: https://hexdocs.pm/elixir/main/library-guidelines.html#avoid-spawning-unsupervised-processes\n[Supervisor]: https://hexdocs.pm/elixir/master/Supervisor.html\n[Discussions]: https://github.com/lucasvegi/Elixir-Code-Smells/discussions\n[Issues]: https://github.com/lucasvegi/Elixir-Code-Smells/issues\n[LargeMessageExample]: https://samuelmullen.com/articles/elixir-processes-send-and-receive\n[Agent]: https://hexdocs.pm/elixir/1.13/Agent.html\n[Task]: https://hexdocs.pm/elixir/1.13/Task.html\n[GenServer]: https://hexdocs.pm/elixir/1.13/GenServer.html\n[AgentObsessionExample]: https://elixir-lang.org/getting-started/mix-otp/agent.html#agents\n[ElixirInProduction]: https://elixir-companies.com/\n[WorkingWithInvalidDataExample]: https://hexdocs.pm/elixir/main/library-guidelines.html#avoid-working-with-invalid-data\n[ModulesWithIdenticalNamesExample]: https://hexdocs.pm/elixir/main/library-guidelines.html#avoid-defining-modules-that-are-not-in-your-namespace\n[UnnecessaryMacroExample]: https://hexdocs.pm/elixir/main/library-guidelines.html#avoid-macros\n[ApplicationEnvironment]: https://hexdocs.pm/elixir/1.13/Config.html\n[AppConfigurationForCodeLibsExample]: https://hexdocs.pm/elixir/main/library-guidelines.html#avoid-application-configuration\n[CredoWarningApplicationConfigInModuleAttribute]: https://hexdocs.pm/credo/Credo.Check.Warning.ApplicationConfigInModuleAttribute.html\n[Credo]: https://hexdocs.pm/credo/overview.html\n[DependencyWithUseExample]: https://hexdocs.pm/elixir/main/library-guidelines.html#avoid-use-when-an-import-is-enough\n[ICPC-ERA]: https://conf.researchr.org/track/icpc-2022/icpc-2022-era\n[preprint-copy]: https://doi.org/10.48550/arXiv.2203.08877\n[emse-paper]: https://link.springer.com/epdf/10.1007/s10664-023-10343-6?sharing_token=-a5aIHuxjO5IVwjuWKcGDve4RwlQNchNByi7wbcMAY7M-LcfCdzMaX7W988J1lKodpMwih75AE3ZQ9gFhldJBeLq53jeNkeHR7W04UAwrxBvoXDh5P83TYkQfuz-PrYpU1J5KqxUgojIbDDFDV_jVtrEE8oVtobDqNSSrInauuI%3D\n[jose-valim]: https://github.com/josevalim\n[syamilmj]: https://github.com/syamilmj\n[Complex-extraction-in-clauses-issue]: https://github.com/lucasvegi/Elixir-Code-Smells/issues/9\n[Alternative-return-type-issue]: https://github.com/lucasvegi/Elixir-Code-Smells/issues/6\n[Complex-else-clauses-in-with-issue]: https://github.com/lucasvegi/Elixir-Code-Smells/issues/7\n[Large-code-generation-issue]: https://github.com/lucasvegi/Elixir-Code-Smells/issues/13\n[ICPC22-PDF]: https://github.com/lucasvegi/Elixir-Code-Smells/blob/main/etc/Code-Smells-in-Elixir-ICPC22-Lucas-Vegi.pdf\n[ICPC22-YouTube]: https://youtu.be/3X2gxg13tXo\n[Podcast-Spotify]: http://elixiremfoco.com/episode?id=lucas-vegi-e-marco-tulio\n[to_atom]: https://hexdocs.pm/elixir/String.html#to_atom/1\n[to_existing_atom]: https://hexdocs.pm/elixir/String.html#to_existing_atom/1\n[Finbits]: https://www.finbits.com.br/\n[ResearchWithElixir]: http://pesquisecomelixir.com.br/\n[TraditionalSmells]: https://github.com/lucasvegi/Elixir-Code-Smells/tree/main/traditional\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgments",
+                "parent_header": [
+                    "<a href=\"https://github.com/lucasvegi/Elixir-Code-Smells\">Catalog of Elixir-specific code smells</a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "  ```elixir\n  defmodule SupervisedProcess.Application do\n    use Application\n\n    @impl true\n    def start(_type, _args) do\n      children = [\n        # The counters are Supervisor children started via Counter.start(0).\n        %{\n          id: Counter,\n          start: {Counter, :start, [0]}\n        },\n        %{\n          id: C2,\n          start: {Counter, :start, [0, C2]}\n        }\n      ]\n\n      opts = [strategy: :one_for_one, name: App.Supervisor]\n      Supervisor.start_link(children, opts)\n    end\n  end\n\n  #...Use examples...\n\n  iex(1)> Supervisor.count_children(App.Supervisor)\n  %{active: 2, specs: 2, supervisors: 0, workers: 2}\n\n  iex(2)> Counter.get(Counter)\n  0\n\n  iex(3)> Counter.get(C2)\n  0\n\n  iex(4)> Counter.bump(7, Counter)\n  7\n\n  iex(5)> Supervisor.terminate_child(App.Supervisor, Counter)\n  iex(6)> Supervisor.count_children(App.Supervisor)\n  %{active: 1, specs: 2, supervisors: 0, workers: 2}  #only one active\n\n  iex(7)> Counter.get(Counter)   #Error because it was previously terminated\n  ** (EXIT) no process: the process is not alive...\n\n  iex(8)> Supervisor.restart_child(App.Supervisor, Counter)\n  iex(9)> Counter.get(Counter)   #after the restart, this process can be accessed again\n  0\n  ``` \n",
+                "original_header": "Unsupervised process"
+            },
+            "confidence": 0.9995854793947389,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "  ```elixir\n  defmodule CodeSmells do\n    def dasherize(data) do\n      to_string(data)\n      |> String.replace(\"_\", \"-\")\n    end\n  end\n\n  #...Use examples...\n\n  iex(1)> CodeSmells.dasherize(\"Lucas_Vegi\")\n  \"Lucas-Vegi\"\n\n  iex(2)> CodeSmells.dasherize(10)  #<= Makes sense?\n  \"10\"\n\n  iex(3)> CodeSmells.dasherize(URI.parse(\"http://www.code_smells.com\")) #<= Makes sense?\n  \"http://www.code-smells.com\"\n\n  iex(4)> CodeSmells.dasherize(%{last_name: \"vegi\", first_name: \"lucas\"})\n  ** (Protocol.UndefinedError) protocol String.Chars not implemented\n  for %{first_name: \"lucas\", last_name: \"vegi\"} of type Map\n  ``` \n",
+                "original_header": "Untested polymorphic behaviors"
+            },
+            "confidence": 0.9125281645329849,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "  You can run this smelly migration above by going to the root of your project and typing the next command via console: \n  You can run this ``mix task`` above by typing the next command via console: \n",
+                "original_header": "Data manipulation by migration"
+            },
+            "confidence": 0.9987628056665099,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Note:__ Formerly known as \"App configuration for code libs\". \n* __Example:__ The ``DashSplitter`` module represents a library that configures the behavior of its functions through the global ``Application Environment`` mechanism. These configurations are concentrated in the ``config/config.exs`` file, shown below: \n",
+                "original_header": "Using App Configuration for libraries"
+            },
+            "confidence": 0.9758717356360113,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* __Note:__ Formerly known as \"Compile-time app configuration\". \n  Due to this compile-time configuration based on the ``Application Environment`` mechanism, Elixir can raise warnings or errors, as shown next, during compilation: \n",
+                "original_header": "Compile-time global configuration"
+            },
+            "confidence": 0.9845017481836399,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Please feel free to make pull requests and suggestions ([Issues][Issues] tab). \n",
+                "original_header": "About"
+            },
+            "confidence": 0.9822245383229566,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Catalog of Elixir-specific code smells"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/lucasvegi/Elixir-Code-Smells/main/etc/finbits.png?raw=true"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/lucasvegi/elixir-code-smells/main/README.md"
+        }
+    ]
+}

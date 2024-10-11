@@ -1,0 +1,666 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:18:21"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/Jun-jie-Huang/ExeDS",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "Jun-jie-Huang",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-03-14T09:02:46Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-05-02T21:48:48Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 Jun-jie-Huang\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Source code and data for our paper at DaSH@EMNLP-22: \"Execution-based Evaluation for Data Science Code Generation Models\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Welcome! This repo contains the data and source code for paper **Execution-based Evaluation for Data Science Code Generation Models**.  \nAutomatically generating code is beneficial to the productivity of data science practitioners. Future progress towards this goal requires systems to generate executable code and measure execution correctness. In this repo we introduce ExeDS, a data science code generation dataset for execution evaluation, which contains 534 problems with execution outputs from Jupyter Notebooks, together with 123K examples for training and validation. ExeDS leverages three novel execution metrics to evaluate the executability and output correctness of code, including no error rate, execution exact match, and execution F1 score. We hope our dataset and execution metrics could draw more attention to the execution correctness of code and result in significant advances in code generation! \n \n",
+                "original_header": "ExeDS"
+            },
+            "confidence": 0.9761291691742724,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "In this step, you can generate the code snippets for each example of ExeDS with your model.  \nThe generations for next step evaluation should be written to a `json` file with a list of dictionary, where each should contain at least two keys `target` and `generation`. The template format of the generations should be:\n```\n[\n  {\"target\": \"ground truth code snippet 1\",\n   \"generation\": \"generated code snippet 1\",\n  },\n  \n  {\"target\": \"ground truth code snippet 2\",\n   \"generation\": \"generated code snippet 2\",\n  },\n  ...\n]\n```\n \n",
+                "original_header": "1.2 Generate code snippet"
+            },
+            "confidence": 0.9719715378542007,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The parameter `--do_fairseq_tokenization`  controls whether to prepare data for PyMT5 and JuPyT5  \n",
+                "original_header": "2. Preprocessing"
+            },
+            "confidence": 0.9533785227075446,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "ExeDS",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "Jun-jie-Huang/ExeDS",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Jun-jie-Huang/ExeDS/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Jun-jie-Huang/ExeDS/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/Jun-jie-Huang/ExeDS/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 1130040
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 532249
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 424794
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 276804
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jinja",
+                "name": "Jinja",
+                "type": "Programming_language",
+                "size": 82734
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 18444
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 8870
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Batchfile",
+                "name": "Batchfile",
+                "type": "Programming_language",
+                "size": 7773
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Smarty",
+                "name": "Smarty",
+                "type": "Programming_language",
+                "size": 257
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/codegpt/traineval_gpt.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/codegpt/CodeBLEU/parser/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/preprocess/preprocess_scripts.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/gptneo/only_predict_neo.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/gptneo/traineval_neo.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/gptneo/CodeBLEU/parser/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# Contributing\n\nWe follow the\n[Jupyter Contribution Workflow](https://jupyter.readthedocs.io/en/latest/contributing/content-contributor.html)\nand the [IPython Contributing Guide](https://github.com/ipython/ipython/blob/master/CONTRIBUTING.md).\n\n# Testing\n\nIn order to test all the features of nbconvert you need to have `pandoc` and\n`TexLive` installed. \n\nIn your environment `pip install -e '.[all]'` will be needed to be able to\nrun all of the tests and to test all of the features. \n\nIf you only want to run some of the tests run `pip install -e '.[test]'`.\n\n# Documentation\n\nNbConvert includes a substantial amount of both user and API documentation. \n\nWe use sphinx to build the API documentation. \n\nMuch of the user documentation is written in Jupyter Notebooks and converted on the fly with nbsphinx. \n\n\nTo build nbconvert's documentation you need to have `pandoc` and\n`TexLive` installed. \n\nIf you want to build the docs you will need to install the docs dependencies in addition to\nthe standard dependencies. You can get all of the dependencies by running `pip install -e\n'.[all]'` and if you want only those needed to run the docs you can access them with `pip install -e '.[docs]'`.\n\nFull build instructions can be found at [docs/README.md](docs/README.md).\n\n# Releasing\n\nIf you are going to release a version of `nbconvert` you should also be capable\nof testing it and building the docs. \n\nPlease follow the instructions in [Testing](#testing) and [Documentation](#documentation) if\nyou are unfamiliar with how to do so.\n\nThe rest of the release process can be found in [these release instructions](./docs/source/development_release.rst).\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/evaluation/nbconvert/CONTRIBUTING.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/Jun-jie-Huang/ExeDS/tree/main/evaluation/papermill/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://github.com/Jun-jie-Huang/ExeDS/tree/main/evaluation/nbconvert/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/evaluation/papermill/binder/highlight_dates.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/evaluation/papermill/binder/highlight_dates.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/evaluation/papermill/binder/process_highlight_dates.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/evaluation/papermill/binder/process_highlight_dates.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/evaluation/papermill/binder/cli-simple/simple_input.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/evaluation/papermill/binder/cli-simple/simple_input.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/evaluation/papermill/binder/cli-simple/cli_example.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/evaluation/papermill/binder/cli-simple/cli_example.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/evaluation/papermill/binder/cli-simple/simple_output.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/evaluation/papermill/binder/cli-simple/simple_output.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/evaluation/nbconvert/docs/source/nbconvert_library.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/evaluation/nbconvert/docs/source/nbconvert_library.ipynb"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "First, you can download the whole dataset, including ExeDS testset and training/validation set from this [link](https://drive.google.com/drive/folders/1gX07Uxawj5ch7mvlFKxlDTzAsopZPIxn?usp=sharing). We do not directly put them in this repo due to the file limit of GitHub. Download all the files and move them to `./dataset`. \n\nThe raw notebooks should be found in `./dataset/ExeDS_notebooks/`, each with its data dependencies used when executing. \n\nThe csv file `answers.csv` contains the answers for ExeDS testset. Each row contains information of notebook index, row index, ground truth execution output, ground truth code snippet.\n\nYou don't need to download other raw notebooks if you just want to use ExeDS. All the 13525 notebooks we use in our work are from the JuiCe dataset ([paper link](https://arxiv.org/pdf/1910.02216.pdf)). You can find the original notebooks from [here](https://github.com/rajasagashe/JuICe).\n",
+                "type": "Text_excerpt",
+                "original_header": "1.1 Download ExeDS data",
+                "parent_header": [
+                    "ExeDS",
+                    "1. ExeDS Data and Evaluation Metrics"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Download the data from xxx as described in Section xxx\n",
+                "type": "Text_excerpt",
+                "original_header": "1. Data Preparation",
+                "parent_header": [
+                    "ExeDS",
+                    "2. Rerun baseline mothods"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Before running scripts to evaluate, first set up the environment with the following commands:\n```\ncd ./evaluation\nconda create -n EvalExeDS python==3.7\nconda activate EvalExeDS\npip install -r requirements_execution.txt\npip install tree_sitter==0.19.0\npip install rouge\n```\n \n",
+                "original_header": "1.0 Evaluation Environment"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "(1) Create environment for testing, controlled by  `--do_create_notebook`. \nYou can also separately run the three steps. Here we give the whole scripts for evaluation as follows. It approximately takes 4 hours to run.\n```\nexport SAVE_RESULT=\"dir-to-save-generation-file\"\npython evaluate_execution.py \\\n  --do_create_notebook \\\n  --do_run \\\n  --do_evaluate \\\n  --split test \\\n  --path_generation ${SAVE_RESULT}/split_generation_results.json \\\n  --path_dataset ../dataset/exeds_test.json \\\n  --data_dir ../dataset/ExeDS_notebooks \\\n  --path_save_notebooks ${SAVE_RESULT}/testbed_notebooks \\\n  2>&1 |tee ../logs/evaluate_execution.log\n```\n \n",
+                "original_header": "1.3 Evaluate"
+            },
+            "confidence": 0.9519978204353385,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Use the following scripts to preprocess data for training/validation/test sets.\n```\ncd ./preprocess\npython preprocess.py \\\n            --split train \\\n            --file_name exeds_train.json \\\n            --do_fairseq_tokenization \\\n            --do_gptneo \\\n            --token_type token \\\n            --context_range 3 \\\n            --max_code_cell_tokens 200 \\\n            --max_md_cell_tokens 200 \\\n            --max_ctx_cell_tokens 900\npython preprocess.py \\\n            --split dev \\\n            --file_name exeds_dev.json \\\n            --do_fairseq_tokenization \\\n            --do_gptneo \\\n            --token_type token \\\n            --context_range 3 \\\n            --max_code_cell_tokens 200 \\\n            --max_md_cell_tokens 200 \\\n            --max_ctx_cell_tokens 900\npython preprocess.py \\\n            --split test \\\n            --file_name exeds_test.json \\\n            --do_fairseq_tokenization \\\n            --do_gptneo \\\n            --token_type token \\\n            --context_range 3 \\\n            --max_code_cell_tokens 200 \\\n            --max_md_cell_tokens 200 \\\n            --max_ctx_cell_tokens 900\n```\n \n",
+                "original_header": "2. Preprocessing"
+            },
+            "confidence": 0.9998022847062412,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```\npip install torch==1.6\npip install tensorboard\npip install attrs==19.1.0\npip install transformers==3.3\npip install tree_sitter==0.19.0\npip install tokenizers\npip install sentencepiece\npip install scikit-learn\npip install altair\npip install tqdm\npip install rouge\npip install fuzzywuzzy\n```\n \n",
+                "original_header": "1 Environment:"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Use the following command:\n```\nbash traineval_gpt.sh ../ microsoft/CodeGPT-small-py prepro_addTab-df_madeup_token_range3_lineLen1-25_c200m200a900 30 16\n```\nThe parameters in the above command denote:\n```\n$1: path to the root dir\n$2: checkpoint used to intialize the weights, you can use \"microsoft/CodeGPT-small-py-adaptedGPT2\" or \"microsoft/CodeGPT-small-py\"\n$3: path to the preprocessed data\n$4: epochs (default 30)\n$5: Number of GPUs (8 or 16)\n```\n \n",
+                "original_header": "3 Training"
+            },
+            "confidence": 0.9993471588768301,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```\ncd codegpt/\ncp ../evaluation/* ./ -r\nbash evaluate_execution.sh ../ microsoft/CodeGPT-small-py prepro_addTab-df_madeup_token_range3_lineLen1-25_c200m200a900 30 16\n``` \n",
+                "original_header": "4 Test execution"
+            },
+            "confidence": 0.996146940680295,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Pull docker from Docker Hub: `ranpox/pytorch:1.10.0-cuda10.2-apex`. Then\n```\ncd gptneo/ \npip install -r requirements.txt\npip install tree_sitter==0.19.0\npip install rouge\n```\n \n",
+                "original_header": "4.1 Environment:"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Use the following command:\n```\nbash traineval_neo.sh ../ EleutherAI/gpt-neo-125M prepro_addTab-df_madeup_token_range3_lineLen1-25_c200m200a900 10 16\n```\nThe parameters in the above command denote:\n```\n$1: path to the root dir\n$2: checkpoint used to intialize the weights, you can use \"EleutherAI/gpt-neo-125M\",  \"EleutherAI/gpt-neo-1.3B\", or \"EleutherAI/gpt-neo-2.7B\"\n$3: path to the preprocessed data\n$4: epochs (default 10)\n$5: Number of GPUs (8 or 16)\n```\n \n",
+                "original_header": "4.3 Training"
+            },
+            "confidence": 0.9996442789513555,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```\nbash only_predict_neo.sh ../ EleutherAI/gpt-neo-125M prepro_addTab-df_madeup_token_range3_lineLen1-25_c200m200a900 10 16\n``` \n",
+                "original_header": "4.4 Generate code for testset"
+            },
+            "confidence": 0.980622617933746,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```\ncd gpt_neo/\ncp ../evaluation/* ./ -r\nbash evaluate_execution.sh ../ EleutherAI/gpt-neo-125M prepro_addTab-df_madeup_token_range3_lineLen1-25_c200m200a900 10 16\n``` \n",
+                "original_header": "4.5 Test execution"
+            },
+            "confidence": 0.9978677198197686,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you find this repo and paper helpful for you, please cite: \n\n```\n@article{huang2022execution,\n  title={Execution-based Evaluation for Data Science Code Generation Models},\n  author={Huang, Junjie and Wang, Chenglong and Zhang, Jipeng and Yan, Cong and Cui, Haotian and Inala, Jeevana Priya and Clement, Colin and Duan, Nan and Gao, Jianfeng},\n  journal={arXiv preprint arXiv:2211.09374},\n  year={2022}\n}\n```\n\nIf you use our dataset, please also consider to cite the original JuiCe dataset since our dataset is built upon JuiCe:\n\n```\n@article{Agashe2019JuICe,\n  title={JuICe: A Large Scale Distantly Supervised Dataset for Open Domain Context-based Code Generation},\n  author={Rajas Agashe and Srini Iyer and Luke Zettlemoyer},\n  journal={EMNLP-IJCNLP},\n  year={2019},\n  pages = {5436--5446},\n  url = \"https://aclanthology.org/D19-1546\",\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Cite"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{huang2022execution,\n    year = {2022},\n    journal = {arXiv preprint arXiv:2211.09374},\n    author = {Huang, Junjie and Wang, Chenglong and Zhang, Jipeng and Yan, Cong and Cui, Haotian and Inala, Jeevana Priya and Clement, Colin and Duan, Nan and Gao, Jianfeng},\n    title = {Execution-based Evaluation for Data Science Code Generation Models},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Execution-based Evaluation for Data Science Code Generation Models",
+                "author": "Huang, Junjie and Wang, Chenglong and Zhang, Jipeng and Yan, Cong and Cui, Haotian and Inala, Jeevana Priya and Clement, Colin and Duan, Nan and Gao, Jianfeng"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{Agashe2019JuICe,\n    url = {https://aclanthology.org/D19-1546},\n    pages = {5436--5446},\n    year = {2019},\n    journal = {EMNLP-IJCNLP},\n    author = {Rajas Agashe and Srini Iyer and Luke Zettlemoyer},\n    title = {JuICe: A Large Scale Distantly Supervised Dataset for Open Domain Context-based Code Generation},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "JuICe: A Large Scale Distantly Supervised Dataset for Open Domain Context-based Code Generation",
+                "author": "Rajas Agashe and Srini Iyer and Luke Zettlemoyer",
+                "url": "https://aclanthology.org/D19-1546"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        }
+    ],
+    "contact": [
+        {
+            "result": {
+                "value": "Feel free to contact Junjie Huang ([JunjayHuang@outlook.com](mailto:guody5@mail2.sysu.edu.cn)), Chenglong Wang ([chengwang@microsoft.com](mailto:chenwang@microsoft.com)), and Nan Duan ([nanduan@microsoft.com](mailto:nanduan@microsoft.com)) if you have any further questions.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Contact"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "You can also separately run the three steps. Here we give the whole scripts for evaluation as follows. It approximately takes 4 hours to run.\n```\nexport SAVE_RESULT=\"dir-to-save-generation-file\"\npython evaluate_execution.py \\\n  --do_create_notebook \\\n  --do_run \\\n  --do_evaluate \\\n  --split test \\\n  --path_generation ${SAVE_RESULT}/split_generation_results.json \\\n  --path_dataset ../dataset/exeds_test.json \\\n  --data_dir ../dataset/ExeDS_notebooks \\\n  --path_save_notebooks ${SAVE_RESULT}/testbed_notebooks \\\n  2>&1 |tee ../logs/evaluate_execution.log\n```\n \n",
+                "original_header": "1.3 Evaluate"
+            },
+            "confidence": 0.9224886363712608,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Use the following scripts to preprocess data for training/validation/test sets.\n```\ncd ./preprocess\npython preprocess.py \\\n            --split train \\\n            --file_name exeds_train.json \\\n            --do_fairseq_tokenization \\\n            --do_gptneo \\\n            --token_type token \\\n            --context_range 3 \\\n            --max_code_cell_tokens 200 \\\n            --max_md_cell_tokens 200 \\\n            --max_ctx_cell_tokens 900\npython preprocess.py \\\n            --split dev \\\n            --file_name exeds_dev.json \\\n            --do_fairseq_tokenization \\\n            --do_gptneo \\\n            --token_type token \\\n            --context_range 3 \\\n            --max_code_cell_tokens 200 \\\n            --max_md_cell_tokens 200 \\\n            --max_ctx_cell_tokens 900\npython preprocess.py \\\n            --split test \\\n            --file_name exeds_test.json \\\n            --do_fairseq_tokenization \\\n            --do_gptneo \\\n            --token_type token \\\n            --context_range 3 \\\n            --max_code_cell_tokens 200 \\\n            --max_md_cell_tokens 200 \\\n            --max_ctx_cell_tokens 900\n```\n \n",
+                "original_header": "2. Preprocessing"
+            },
+            "confidence": 0.9058210409948184,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "ExeDS"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2211.09374"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1910.02216.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Jun-jie-Huang/ExeDS/main/README.md"
+        }
+    ]
+}

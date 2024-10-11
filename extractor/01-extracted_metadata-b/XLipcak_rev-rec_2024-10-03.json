@@ -1,0 +1,293 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 21:37:13"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/XLipcak/rev-rec",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "XLipcak",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2016-10-24T17:17:42Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-25T07:59:46Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "This project deals with optimal recommendations of source code reviewers for open source projects.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "rev-rec",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "XLipcak/rev-rec",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/XLipcak/rev-rec/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/XLipcak/rev-rec/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/XLipcak/rev-rec/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 125579
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 2580
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 1148
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/XLipcak/rev-rec/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "This project deals with optimal recommendations of source code reviewers for open source projects. It contains the implementation of RevFinder algorithm (http://ieeexplore.ieee.org/document/7081824/), ReviewBot algorithm (https://labs.vmware.com/download/198/) and of a novel Naive Bayes-based <i>Code Reviewers Recommendation Algorithm</i>.\n",
+                "type": "Text_excerpt",
+                "original_header": "A Large-Scale Study on Source Code Reviewer Recommendation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/XLipcak/rev-rec/master/README.md"
+        },
+        {
+            "result": {
+                "value": "After the aforementioned steps are done, the application can be compiled and launched from its root folder using the following command:\n* `mvn spring-boot:run`\n",
+                "type": "Text_excerpt",
+                "original_header": "Deployment:",
+                "parent_header": [
+                    "A Large-Scale Study on Source Code Reviewer Recommendation",
+                    "Build and Run:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/XLipcak/rev-rec/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "> Lipcak, J., Rossi, B. (2018) A Large-Scale Study on Source Code Reviewer Recommendation, in 44th Euromicro Conference on Software Engineering and Advanced Applications (SEAA) 2018, IEEE.\n",
+                "type": "Text_excerpt",
+                "original_header": "If you use the provided source code and data set, please cite:",
+                "parent_header": [
+                    "A Large-Scale Study on Source Code Reviewer Recommendation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/XLipcak/rev-rec/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "> Lipcak, J., Rossi, B. (2018) A Large-Scale Study on Source Code Reviewer Recommendation, in 44th Euromicro Conference on Software Engineering and Advanced Applications (SEAA) 2018, IEEE.\n",
+                "type": "Text_excerpt",
+                "original_header": "If you use the provided source code and data set, please cite:",
+                "parent_header": [
+                    "A Large-Scale Study on Source Code Reviewer Recommendation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/XLipcak/rev-rec/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "> Lipcak, J., Rossi, B. (2018) A Large-Scale Study on Source Code Reviewer Recommendation, in 44th Euromicro Conference on Software Engineering and Advanced Applications (SEAA) 2018, IEEE.\n",
+                "type": "Text_excerpt",
+                "original_header": "If you use the provided source code and data set, please cite:",
+                "parent_header": [
+                    "A Large-Scale Study on Source Code Reviewer Recommendation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/XLipcak/rev-rec/master/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "* [Apache Maven](https://maven.apache.org/download.cgi) has to be installed.\n* [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (at least version 8) has to be installed and <i>JAVA_HOME</i> environment variable has to be set and point to the JDK installation.",
+                "type": "Text_excerpt",
+                "original_header": "The aplication has the following requirements:",
+                "parent_header": [
+                    "A Large-Scale Study on Source Code Reviewer Recommendation",
+                    "Build and Run:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/XLipcak/rev-rec/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "After the aforementioned steps are done, the application can be compiled and launched from its root folder using the following command:\n* `mvn spring-boot:run`\n",
+                "type": "Text_excerpt",
+                "original_header": "Deployment:",
+                "parent_header": [
+                    "A Large-Scale Study on Source Code Reviewer Recommendation",
+                    "Build and Run:"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/XLipcak/rev-rec/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "A Large-Scale Study on Source Code Reviewer Recommendation"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/XLipcak/rev-rec/master/README.md"
+        }
+    ]
+}

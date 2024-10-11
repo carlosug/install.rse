@@ -1,0 +1,362 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:31:29"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ise-uiuc/NablaFuzz",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ise-uiuc",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-02-09T14:35:43Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-05-29T19:25:33Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Fuzzing Automatic Differentiation in Deep-Learning Libraries (ICSE'23)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is the artifact of the research paper, \"Fuzzing Automatic Differentiation in Deep-Learning Libraries\" (in submission). The authors make their best attempt to anonymize the artifacts. Please note that it may still be possible that the authors' identities are revealed by deeply studying this repository.\n \n",
+                "original_header": "\u2207Fuzz"
+            },
+            "confidence": 0.9005553842831652,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is the \u2207Fuzz's implementation on PyTorch, TensorFlow, JAX, and OneFlow.\n \n",
+                "original_header": "About"
+            },
+            "confidence": 0.9897061929784375,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We provide a list of confirmed bug reports on [PyTorch](https://github.com/NablaFuzz/NablaFuzz/blob/main/PyTorch-confirmed-bugs.csv), [TensorFlow](https://github.com/NablaFuzz/NablaFuzz/blob/main/TensorFlow-confirmed-bugs.csv), [JAX](https://github.com/NablaFuzz/NablaFuzz/blob/main/Jax-confirmed-bugs.csv) and [OneFlow](https://github.com/NablaFuzz/NablaFuzz/blob/main/OneFlow-confirmed-bugs.csv).\n> Please kindly note that this might reveal our identity, please think twice before clicking into this.\n \n",
+                "original_header": "Detected Bugs"
+            },
+            "confidence": 0.9412412441215232,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "NablaFuzz",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ise-uiuc/NablaFuzz",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ise-uiuc/NablaFuzz/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ise-uiuc/NablaFuzz/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 22,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "autodiff, autograd, deep-learning, fuzzing, jax, oneflow, pytorch, tensorflow",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/ise-uiuc/nablafuzz/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 473592
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "1. Our testing framework leverages [MongoDB](https://www.mongodb.com/) so you need to [install and run MongoDB](https://docs.mongodb.com/manual/installation/) first.\n\n\t- After installing MongoDB and before loading the database, run the command `ulimit -n 640000` to adjust the limit that the system resources a process may use. You can see this [document](https://docs.mongodb.com/manual/reference/ulimit/) for more details.\n\n2. Python version >= 3.9.0 (It must support f-string.)\n\n\t- highly recommend to use Python 3.9\n\n3. Check our dependent python libraries in `requirements.txt` and install with:\n\n\t```\n\tpip install -r requirements.txt\n\t```\n\t\n\t- For OneFlow, please use the following command to install:\n\t\n\t```shell\n\tpython3 -m pip install --find-links https://release.oneflow.info oneflow==0.7.0\n\t```\n\n4. JAX install\n\nFor JAX, if you want to reproduce our results on version `0.3.14`, you could use the following commands to install jaxlib on CPU via the wheel archive:\n\n```\n# Install jaxlib on CPU via the wheel archive\npip install jax[cpu]==0.3.14 -f https://storage.googleapis.com/jax-releases/jax_releases.html\n\n# Install the jaxlib 0.3.25 CPU wheel directly\npip install jaxlib==0.3.14 -f https://storage.googleapis.com/jax-releases/jax_releases.html\n```\n\nFor more information about JAX installation, please refer to the [official website](https://jax.readthedocs.io/en/latest/installation.html#installing-jax).\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 1: Requirements",
+                "parent_header": [
+                    "\u2207Fuzz",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Run the following commands in current directory (`NablaFuzz`) to load the database.\n\n```shell\nmongorestore NablaFuzz-PyTorch-Jax/dump\nmongorestore NablaFuzz-Oneflow/dump\nmongorestore NablaFuzz-TensorFlow/dump\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 2: Set up Database",
+                "parent_header": [
+                    "\u2207Fuzz",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Until submission, \u2207Fuzz has detected 173 bugs in total for PyTorch, TensorFlow, JAX and OneFlow, with 144 already confirmed by developers. \n",
+                "original_header": "Detected Bugs"
+            },
+            "confidence": 0.9813195127625527,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Before running, you can set the number of mutants for each API (which is 1000 by default):\n\n```shell\nNUM_MUTANT=100\n```\n\nAlso, you can set the number of APIs you want to test (which is -1 by default, meaning all APIs will be tested)\n\n```shell\nNUM_API=100\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 3: Run",
+                "parent_header": [
+                    "\u2207Fuzz",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "First go into the `NablaFuzz-PyTorch-Jax/src` directory,\n\n```shell\ncd NablaFuzz-PyTorch-Jax/src\n```\n\nRun the following command to start \u2207Fuzz to test PyTorch\n\n```shell\npython torch_test.py --num $NUM_MUTANT --max_api $NUM_API\n```\n\nThe output will be put in `NablaFuzz-PyTorch-Jax/output-ad/torch/union` directory by default. \n\nTo filter out the inconsistent gradients caused by numerical instability, you can run the folloing commands:\n\n```shell\npython torch-diff-filter.py --num $NUM_MUTANT --max_api $NUM_API\n```\n\nRun the following command to start \u2207Fuzz to test JAX\n\n```shell\npython jax_test.py\n```\n\nThe output will be put in `NablaFuzz-PyTorch-Jax/output-ad/jax/union` directory by default. \n\nTo filter out the inconsistent gradients caused by numerical instability, you can run the folloing commands:\n\n```shell\npython jax-diff-filter.py\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "PyTorch &amp; JAX",
+                "parent_header": [
+                    "\u2207Fuzz",
+                    "Getting Started",
+                    "Step 3: Run"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "First go into the `NablaFuzz-Oneflow` directory,\n\n```shell\ncd NablaFuzz-Oneflow\n```\n\nRun the following commands to start \u2207Fuzz to test Oneflow\n\n```shell\npython oneflow_test.py --num $NUM_MUTANT --max_api $NUM_API\n```\n\nThe error code snippets will be put in `NablaFuzz-Oneflow/errors`. \n\n",
+                "type": "Text_excerpt",
+                "original_header": "OneFlow",
+                "parent_header": [
+                    "\u2207Fuzz",
+                    "Getting Started",
+                    "Step 3: Run"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "First go into the `NablaFuzz-TensorFlow/src` directory,\n\n```shell\ncd NablaFuzz-TensorFlow/src\n```\n\nRun the following commands to start \u2207Fuzz to test TensorFlow\n\n```shell\npython tf_adtest.py --num $NUM_MUTANT --max_api $NUM_API\npython tf_filter.py \n```\n\nThe outputs will be put in `NablaFuzz-TensorFlow/expr_outputs` by default. \n",
+                "type": "Text_excerpt",
+                "original_header": "TensorFlow",
+                "parent_header": [
+                    "\u2207Fuzz",
+                    "Getting Started",
+                    "Step 3: Run"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "First go into the `NablaFuzz-PyTorch-Jax/src` directory,\n\n```shell\ncd NablaFuzz-PyTorch-Jax/src\n```\n\nRun the following command to start \u2207Fuzz to test PyTorch\n\n```shell\npython torch_test.py --num $NUM_MUTANT --max_api $NUM_API\n```\n\nThe output will be put in `NablaFuzz-PyTorch-Jax/output-ad/torch/union` directory by default. \n\nTo filter out the inconsistent gradients caused by numerical instability, you can run the folloing commands:\n\n```shell\npython torch-diff-filter.py --num $NUM_MUTANT --max_api $NUM_API\n```\n\nRun the following command to start \u2207Fuzz to test JAX\n\n```shell\npython jax_test.py\n```\n\nThe output will be put in `NablaFuzz-PyTorch-Jax/output-ad/jax/union` directory by default. \n\nTo filter out the inconsistent gradients caused by numerical instability, you can run the folloing commands:\n\n```shell\npython jax-diff-filter.py\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "PyTorch &amp; JAX",
+                "parent_header": [
+                    "\u2207Fuzz",
+                    "Getting Started",
+                    "Step 3: Run"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "First go into the `NablaFuzz-Oneflow` directory,\n\n```shell\ncd NablaFuzz-Oneflow\n```\n\nRun the following commands to start \u2207Fuzz to test Oneflow\n\n```shell\npython oneflow_test.py --num $NUM_MUTANT --max_api $NUM_API\n```\n\nThe error code snippets will be put in `NablaFuzz-Oneflow/errors`. \n\n",
+                "type": "Text_excerpt",
+                "original_header": "OneFlow",
+                "parent_header": [
+                    "\u2207Fuzz",
+                    "Getting Started",
+                    "Step 3: Run"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        },
+        {
+            "result": {
+                "value": "First go into the `NablaFuzz-TensorFlow/src` directory,\n\n```shell\ncd NablaFuzz-TensorFlow/src\n```\n\nRun the following commands to start \u2207Fuzz to test TensorFlow\n\n```shell\npython tf_adtest.py --num $NUM_MUTANT --max_api $NUM_API\npython tf_filter.py \n```\n\nThe outputs will be put in `NablaFuzz-TensorFlow/expr_outputs` by default. \n",
+                "type": "Text_excerpt",
+                "original_header": "TensorFlow",
+                "parent_header": [
+                    "\u2207Fuzz",
+                    "Getting Started",
+                    "Step 3: Run"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "\u2207Fuzz"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        }
+    ],
+    "related_documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://jax.readthedocs.io/",
+                "format": "readthedocs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/nablafuzz/main/README.md"
+        }
+    ]
+}

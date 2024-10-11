@@ -1,0 +1,444 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:58:56"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/joymallyac/FairSSL",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "joymallyac",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-02-27T18:29:29Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2022-02-27T18:33:21Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Source Code for ICSE Fairware 2022 paper - ``Fair-SSL: Building fair ML Software with less data''",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "1> Adult Income dataset - http://archive.ics.uci.edu/ml/datasets/Adult\n\n2> COMPAS - https://github.com/propublica/compas-analysis\n\n3> German Credit - https://archive.ics.uci.edu/ml/datasets/Statlog+%28German+Credit+Data%29 \n\n4> Default Credit - https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients\n\n5> Heart - https://archive.ics.uci.edu/ml/datasets/Heart+Disease\n\n6> Bank Marketing - https://archive.ics.uci.edu/ml/datasets/bank+marketing\n\n7> Home Credit - https://www.kaggle.com/c/home-credit-default-risk\n\n8> Student Performance - https://archive.ics.uci.edu/ml/datasets/Student+Performance\n\n9> MEPS15 - https://meps.ahrq.gov/mepsweb/data_stats/download_data_files_detail.jsp?cboPufNumber=HC-181\n\n10> MEPS16 - https://meps.ahrq.gov/mepsweb/data_stats/download_data_files_detail.jsp?cboPufNumber=HC-192\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Dataset Description -",
+                "parent_header": [
+                    "Fair-SSL"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Ethical bias in machine learning models has become a matter of concern in the software engineering community. Most of the prior software engineering works concentrated on finding ethical bias in models rather than fixing it. After finding bias, the next step is mitigation. Prior researchers mainly tried to use supervised approaches to achieve fairness. However, in the real world, getting data with trustworthy ground truth is challenging and also ground truth can contain human bias. Semi-supervised learning is a domain of machine learning where labeled and unlabeled data both are used to overcome the data labeling challenges. We, in this work, applied four popular semi-supervised techniques as pseudo-labelers to create fair classification models. Our framework, Fair-SSL,  takes a very small amount (10\\%) of labeled data as input and generates pseudo-labels for the unlabeled data. We then synthetically generate new data points to balance the training data based on class and protected attribute as proposed by Chakraborty et al. in FSE 2021. Finally, classification model is trained on the balanced pseudo-labeled data and validated on test data. After experimenting on ten datasets and three learners, we found out that Fair-SSL achieves similar performance like three other state-of-the-art bias mitigation algorithms. Where prior algorithms require much training data, Fair-SSL requires only 10\\% of the labeled training data. As per our knowledge, this is the first SE work where semi-supervised techniques are used to fight against ethical bias in ML models. \n",
+                "original_header": "Fair-SSL"
+            },
+            "confidence": 0.9966800274665505,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "FairSSL",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "joymallyac/FairSSL",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/joymallyac/FairSSL/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/joymallyac/FairSSL/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/joymallyac/FairSSL/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 315537
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 256452
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelPropagation/Adult_Sex_Labelpropagation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelPropagation/Adult_Sex_Labelpropagation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelPropagation/Compas_Sex_LabelPropagation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelPropagation/Compas_Sex_LabelPropagation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelPropagation/Adult_Race_LabelPropagation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelPropagation/Adult_Race_LabelPropagation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelPropagation/Compas_Race_LabelPropagation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelPropagation/Compas_Race_LabelPropagation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Co-training/Adult_Sex_Co-training.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Co-training/Adult_Sex_Co-training.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Co-training/Compas_Race_Co-training.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Co-training/Compas_Race_Co-training.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Co-training/Adult_Race_Co-training.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Co-training/Adult_Race_Co-training.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Co-training/Compas_Sex_Co-training.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Co-training/Compas_Sex_Co-training.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Self-Training/Adult_Sex_SelfTraining.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Self-Training/Adult_Sex_SelfTraining.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Self-Training/Compas_Race_SelfTraining.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Self-Training/Compas_Race_SelfTraining.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Self-Training/Adult_Race_SelfTraining.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Self-Training/Adult_Race_SelfTraining.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Self-Training/Compas_Sex_SelfTraining.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/Self-Training/Compas_Sex_SelfTraining.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelSpreading/Adult_Sex_LabelSpreading.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelSpreading/Adult_Sex_LabelSpreading.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelSpreading/Compas_Sex_LabelSpreading.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelSpreading/Compas_Sex_LabelSpreading.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelSpreading/Adult_Race_LabelSpreading.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelSpreading/Adult_Race_LabelSpreading.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelSpreading/Compas_Race_LabelSpreading.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/LabelSpreading/Compas_Race_LabelSpreading.ipynb"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "```git clone https://github.com/senthusiast/Fair-SSL```\n\n```cd Fair-SSL```\n\n```pip install requirements.txt```\n",
+                "type": "Text_excerpt",
+                "original_header": "Tutorial to run the code",
+                "parent_header": [
+                    "Fair-SSL"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "```git clone https://github.com/senthusiast/Fair-SSL```\n\n```cd Fair-SSL```\n\n```pip install requirements.txt```\n",
+                "type": "Text_excerpt",
+                "original_header": "Tutorial to run the code",
+                "parent_header": [
+                    "Fair-SSL"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/README.md"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "We could not upload MEPS15 and MEPS16 because of space restrictions. Please download them [MEPS15](https://meps.ahrq.gov/mepsweb/data_stats/download_data_files_detail.jsp?cboPufNumber=HC-181) , [MEPS16](https://meps.ahrq.gov/mepsweb/data_stats/download_data_files_detail.jsp?cboPufNumber=HC-192)\n",
+                "type": "Text_excerpt",
+                "original_header": "Download Datasets",
+                "parent_header": [
+                    "Fair-SSL"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "*Self-Training*\n```cd Self-Training```\n \n*LabelSpreading*\n```cd LabelSpreading```\n \n*LabelPropagation*\n```cd LabelPropagation```\n \n",
+                "original_header": "For RQ1, \\&amp; RQ2"
+            },
+            "confidence": 0.922772052641253,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```cd Initial-Set-Variation```\n```python Initial_Set_Variation.py```\n \n",
+                "original_header": "For RQ3"
+            },
+            "confidence": 0.9882889194756411,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```python LabelSpreading.py``` \n```python LabelPropagation.py``` \n```python Co-Training.py```\n \n",
+                "original_header": "For RQ1, \\&amp; RQ2"
+            },
+            "confidence": 0.9215386734516925,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Fair-SSL"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/joymallyac/FairSSL/master/README.md"
+        }
+    ]
+}

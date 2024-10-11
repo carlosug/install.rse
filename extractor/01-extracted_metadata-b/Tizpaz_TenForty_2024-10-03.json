@@ -1,0 +1,237 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:45:24"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/Tizpaz/TenForty",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "Tizpaz",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-02-10T05:15:28Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-02-11T02:06:46Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "TenForty",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "Tizpaz/TenForty",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Tizpaz/TenForty/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Tizpaz/TenForty/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/Tizpaz/TenForty/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 350908
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 12928
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Tizpaz/TenForty/main/readme.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Tizpaz/TenForty/main/OpenTaxSolver2021_19.07_linux64/tax_form_files/US_1040/run_script_final.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Tizpaz/TenForty/main/OpenTaxSolver2020_18.08_linux64/tax_form_files/US_1040/run_script_final.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Tizpaz/TenForty/main/OpenTaxSolver2019_17.08_linux64/tax_form_files/US_1040/run_script_final.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "To run the tool, you first need to download the [OpenTaxSolver](https://opentaxsolver.sourceforge.net/) software (we currently support 2018, 2019, 2020, and 2021 versions).  In doing so, you can access to the source code from [this link](https://sourceforge.net/projects/opentaxsolver/files/). Then, you need to include files from this reposirty in the ``tax_form_files/US_1040``. \n",
+                "type": "Text_excerpt",
+                "original_header": "Setup",
+                "parent_header": [
+                    "TenForty"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Tizpaz/TenForty/main/readme.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "After including the source code, you can simply issue the following command to run the testing for married filing jointly (MFJ) properties (see the paper for more information) of year 2021 when you are at the [`US_1040`](OpenTaxSolver2021_19.07_linux64/tax_form_files/US_1040/):\n```\npython main_joint_2021_final.py --property X --timeout S\n```\nwhere you can simply replace the property number (X) with 1, 2, 4, 5, 6, 8, 10, 11, 12, 13, 14, 15, and 16. The time-out S is 900 in the paper (in seconds). For married filing separately (MFS), you can issue:\n```\npython main_sep_2021_final.py --property X --timeout S\n```\nwhere you can replace X with 3, 7, and 9.\n\nTo run the tool for a different year, you can simply go to the corresponding ``US_1040`` folder and isse the same command with a different year number, e.g., \n```\npython main_joint_2020_final.py --property 1 --timeout 900\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Run Testing",
+                "parent_header": [
+                    "TenForty"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Tizpaz/TenForty/main/readme.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "TenForty"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Tizpaz/TenForty/main/readme.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2205.04998"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Tizpaz/TenForty/main/readme.md"
+        }
+    ]
+}

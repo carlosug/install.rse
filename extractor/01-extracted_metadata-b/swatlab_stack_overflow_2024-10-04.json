@@ -1,0 +1,223 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:12:34"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/swatlab/stack_overflow",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "swatlab",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2016-10-20T02:51:46Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2018-10-08T15:29:54Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Scripts and data for the study \"Stack Overflow: A Code Laundering Platform?\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "- **data_mining_scripts** folder contains the scripts to mine raw data.\n\t- **extract2json.py**: extract Java and Android related code snippets from the Stack Exchange dump (please set Posts.xml's path in line 45).\n    - **write_snippets.py**: extract the results of **extract2json.py** (in JSON) into separate Java files (please set the input path in line 10).\n    - **run_nicad**: run NiCad clone detection tool between Stack Overflow snippets and the _Android inconsistent files_ [1].\n\n- **analytic_scripts** folder contains the scripts to analyze the clone detection results and to answer the research questions.\n  - **case_study.py**: compute code reuse occurrences for the researh questions.\n  - **overlap.py**: compute the _overlap rate (proportion)_ between a code reuse snippet and a license inconsistent snippet for RQ1.\n  - **migrating.py**: identify the \"migrated code snippets\" (in RQ3) in which the 1st app's file and the 2nd app's file are released under different licenses.\n  - **evolution_snippet.py**: extract input files for RQ4.\n  - **RQ4_analysis** folder contains scripts and data to compute code reuse snippets' lifespan.\n- **match_names** folder cotains scripts and data for matching developer names between the studied Android apps and Stack Overflow posts.\n- **raw_data** folder contains Android snippets' creation date and raw data of RQ2 & RQ3.\n- **data** folder contains clone detection results and some intermediate data for analyses.\n- **presentation_slides.pdf** shows the presentation slides for SANER 2017.\n",
+                "type": "Text_excerpt",
+                "original_header": "File description",
+                "parent_header": [
+                    "Stack Overflow: A Code Laundering Platform?"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/swatlab/stack_overflow/master/Readme.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "stack_overflow",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "swatlab/stack_overflow",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/swatlab/stack_overflow/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/swatlab/stack_overflow/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/swatlab/stack_overflow/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 2434181
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 25518
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/swatlab/stack_overflow/master/Readme.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "- Python 2.7 or newer\n- NiCad clone detection tool\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "Stack Overflow: A Code Laundering Platform?"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/swatlab/stack_overflow/master/Readme.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "1. Ons Mlouki, Foutse Khomh and Giuliano Antoniol, On the Detection of Licenses Violations in Android Ecosystem, in _Proceedings of the 23rd IEEE International Conference on Software Analysis, Evolution, and Reengineering (SANER)_.\n",
+                "type": "Text_excerpt",
+                "original_header": "Reference",
+                "parent_header": [
+                    "Stack Overflow: A Code Laundering Platform?"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/swatlab/stack_overflow/master/Readme.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Stack Overflow: A Code Laundering Platform?"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/swatlab/stack_overflow/master/Readme.md"
+        }
+    ]
+}

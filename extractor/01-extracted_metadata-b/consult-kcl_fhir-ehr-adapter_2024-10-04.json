@@ -1,0 +1,514 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:21:33"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/kclconsult/ehr-fhir-converter",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "kclconsult",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-02-16T11:33:16Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-02T04:03:32Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2018 Martin Chapman https://martinchapman.co.uk\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/LICENSE.md"
+        },
+        {
+            "result": {
+                "value": "This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "EHR-FHIR Converter"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Convert arbitrary EHR extracts to FHIR.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Deployment is via [Docker](https://docs.docker.com/compose/install/), and includes containers for this application and an optional message queue. \n",
+                "original_header": "Deployment"
+            },
+            "confidence": 0.9638521567489309,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Produced as part of the [CONSULT](https://consult.kcl.ac.uk/) project. \n",
+                "original_header": "Authors"
+            },
+            "confidence": 0.9629810354530204,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "ehr-fhir-converter",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "kclconsult/ehr-fhir-converter",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/kclconsult/ehr-fhir-converter/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/kclconsult/ehr-fhir-converter/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 8,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "decision-support-system, ehr, electronic-health-record, fhir",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 9,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/consult-kcl/fhir-ehr-adapter/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 95683
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 5314
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 272
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/docker-compose.yml",
+                "type": "Url",
+                "format": "docker_compose"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/docker-compose.yml"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/wait-for-it.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/fhir-parser.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# Contributing\n\nWhen contributing to this repository, please first discuss the change you wish to make via issue,\nemail, or any other method with the owners of this repository before making a change. \n\nPlease note we have a code of conduct, please follow it in all your interactions with the project.\n\n## Pull Request Process\n\n1. Ensure any install or build dependencies are removed before the end of the layer when doing a \n   build.\n2. Update the README.md with details of changes to the interface, this includes new environment \n   variables, exposed ports, useful file locations and container parameters.\n3. Increase the version numbers in any examples files and the README.md to the new version that this\n   Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).\n4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you \n   do not have permission to do that, you may request the second reviewer to merge it for you.\n\n## Code of Conduct\n\n### Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to making participation in our project and\nour community a harassment-free experience for everyone, regardless of age, body\nsize, disability, ethnicity, gender identity and expression, level of experience,\nnationality, personal appearance, race, religion, or sexual identity and\norientation.\n\n### Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\nadvances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic\n  address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n### Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned to this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n### Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces\nwhen an individual is representing the project or its community. Examples of\nrepresenting a project or community include using an official project e-mail\naddress, posting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event. Representation of a project may be\nfurther defined and clarified by project maintainers.\n\n### Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the project team at [INSERT EMAIL ADDRESS]. All\ncomplaints will be reviewed and investigated and will result in a response that\nis deemed necessary and appropriate to the circumstances. The project team is\nobligated to maintain confidentiality with regard to the reporter of an incident.\nFurther details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership.\n\n### Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,\navailable at [http://contributor-covenant.org/version/1/4][version]\n\n[homepage]: http://contributor-covenant.org\n[version]: http://contributor-covenant.org/version/1/4/",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/CONTRIBUTING.md"
+        },
+        {
+            "result": {
+                "value": "Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributing",
+                "parent_header": [
+                    "EHR-FHIR Converter"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/consult-kcl/fhir-ehr-adapter/tree/master/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "[View](https://kclconsult.github.io/ehr-fhir-converter).\n",
+                "type": "Text_excerpt",
+                "original_header": "Documentation",
+                "parent_header": [
+                    "EHR-FHIR Converter"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting Started",
+                "parent_header": [
+                    "EHR-FHIR Converter"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Receives messages from: ehr-integration ([install](https://github.kcl.ac.uk/consult/ehr-integration/blob/master/README.md)).\nSends messages to: fhir-server ([install](https://github.com/kclconsult/hapi-fhir-jpaserver-starter/blob/master/README.md)).\n",
+                "type": "Text_excerpt",
+                "original_header": "Other service communication",
+                "parent_header": [
+                    "EHR-FHIR Converter",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Run as follows:\n\n```\npython listen.py\n```\n\nThe app runs by default on port 3004.\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "EHR-FHIR Converter"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "Before installing, [download and install Python 3](https://www.python.org/download/releases/3.7) and [Pip](https://pip.pypa.io/en/stable/installing/), a Python package manager.\n\n(Recommended) Then install [virtualenv](https://virtualenv.pypa.io/en/stable/installation/).\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites",
+                "parent_header": [
+                    "EHR-FHIR Converter",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Clone this repository:\n\n```\ngit clone git@github.com:kclconsult/ehr-fhir-converter.git\n```\n\nChange into the directory:\n\n```\ncd ehr-fhir-converter/src\n```\n\nInitialise a virtual environment, and activate:\n\n```\nvirtualenv -p python3 env\n. env/bin/activate\n```\n\nInstall dependencies:\n\n```\npip install -r requirements.txt\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Running",
+                "parent_header": [
+                    "EHR-FHIR Converter"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Clone the FHIR parser repository:\n\n```\ngit clone git@github.com:smart-on-fhir/fhir-parser.git src/main/python/fhir-parser\n```\n\nCopy configuration scripts into the directory:\n\n```\ncp src/main/python/mappings.py src/main/python/fhir-parser/\ncp src/main/python/settings.py src/main/python/fhir-parser/\n```\n\nInstall parser requirements:\n\n```\ncd src/main/python/fhir-parser/\npip install -r requirements.txt\n```\n\nGenerate FHIR Python classes:\n\n```\ntouch Default/__init__.py\npython generate.py\n```\n\nMove generated classes into project:\n\n```\ncd ../\nmv models/ models_full/\ntouch models_full/__init__.py\n```\n\nAutomated through `fhir-parser.sh`.\n",
+                "type": "Text_excerpt",
+                "original_header": "(Optional, Option 1) Build FHIR classes",
+                "parent_header": [
+                    "EHR-FHIR Converter",
+                    "Running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\npython setup.py test\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Running the tests",
+                "parent_header": [
+                    "EHR-FHIR Converter"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "Clone the FHIR client repository.\n\n```\ngit clone git@github.com:smart-on-fhir/client-py.git src/main/python/client-py\n```\n\nCopy FHIR classes into project:\n\n```\ncd src/main/python/\ncp -r client-py/fhirclient/models/ models_full/\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "(Optional, Option 2) Download FHIR classes",
+                "parent_header": [
+                    "EHR-FHIR Converter",
+                    "Running"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Run setup tools from the root directory:\n\n```\npython setup.py sdist bdist_wheel\n```\n\nGiven a certain release, either available in ``dist/`` if built, or via Github, install as follows:\n\n```\npython setup.py install\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Install as package",
+                "parent_header": [
+                    "EHR-FHIR Converter"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Build these containers:\n```\ndocker-compose build\n```\nRun these containers:\n```\ndocker-compose up -d\n```\n(Optional) Run without queue:\n```\ndocker-compose up --scale webapp-queue=0 rabbit=0\n```\n \n",
+                "original_header": "Deployment"
+            },
+            "confidence": 0.9817946320192527,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/martinchapman/nokia-health/tags).\n \n",
+                "original_header": "Versioning"
+            },
+            "confidence": 0.9351360543374216,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "EHR-FHIR Converter"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/consult.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://consult.kcl.ac.uk/wp-content/uploads/sites/214/2017/12/overview-consult-768x230.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1911.12254.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/consult-kcl/fhir-ehr-adapter/master/README.md"
+        }
+    ]
+}

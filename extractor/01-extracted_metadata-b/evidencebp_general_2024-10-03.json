@@ -1,0 +1,266 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:07:14"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/evidencebp/general",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "evidencebp",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-07-05T14:50:02Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2022-03-28T05:38:41Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "general",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "evidencebp/general",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/evidencebp/general/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/evidencebp/general/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/evidencebp/general/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/evidencebp/general/releases/47652449",
+                "tag": "1.0",
+                "author": {
+                    "name": "evidencebp",
+                    "type": "User"
+                },
+                "description": "Version used for \"ComSum: Commit Messages Summarization and Meaning Preservation\".\r\n\r\nLive version is at https://github.com/evidencebp/general",
+                "tarball_url": "https://api.github.com/repos/evidencebp/general/tarball/1.0",
+                "zipball_url": "https://api.github.com/repos/evidencebp/general/zipball/1.0",
+                "html_url": "https://github.com/evidencebp/general/releases/tag/1.0",
+                "url": "https://api.github.com/repos/evidencebp/general/releases/47652449",
+                "release_id": 47652449,
+                "date_created": "2021-08-11T08:03:55Z",
+                "date_published": "2021-08-11T08:05:54Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/evidencebp/general/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Supplementary Materials of the [\"Corrective commit probability: a measure of the effort invested in bug fixing\"](https://www.cs.huji.ac.il/~feit/papers/CCP21SQJ.pdf) paper by Idan Amit and [Dror G. Feitelson](https://www.cs.huji.ac.il/~feit/).\n\nPlease cite as\n``` \n@Article{Amit2021CCP,\nauthor={Amit, Idan\nand Feitelson, Dror G.},\ntitle={Corrective commit probability: a measure of the effort invested in bug fixing},\njournal={Software Quality Journal},\nyear={2021},\nmonth={Aug},\nday={05},\nabstract={The effort invested in software development should ideally be devoted to the implementation of new features. But some of the effort is invariably also invested in corrective maintenance, that is in fixing bugs. Not much is known about what fraction of software development work is devoted to bug fixing, and what factors affect this fraction. We suggest the Corrective Commit Probability (CCP), which measures the probability that a commit reflects corrective maintenance, as an estimate of the relative effort invested in fixing bugs. We identify corrective commits by applying a linguistic model to the commit messages, achieving an accuracy of 93{\\%}, higher than any previously reported model. We compute the CCP of all large active GitHub projects (7,557 projects with 200+ commits in 2019). This leads to the creation of an investment scale, suggesting that the bottom 10{\\%} of projects spend less than 6{\\%} of their total effort on bug fixing, while the top 10{\\%} of projects spend at least 39{\\%} of their effort on bug fixing --- more than 6 times more. Being a process metric, CCP is conditionally independent of source code metrics, enabling their evaluation and investigation. Analysis of project attributes shows that lower CCP (that is, lower relative investment in bug fixing) is associated with smaller files, lower coupling, use of languages like JavaScript and C{\\#} as opposed to PHP and C++, fewer code smells, lower project age, better perceived quality, fewer developers, lower developer churn, better onboarding, and better productivity.},\nissn={1573-1367},\ndoi={10.1007/s11219-021-09564-z},\nurl={https://doi.org/10.1007/s11219-021-09564-z},\npages={1--45},\npublisher={Springer}\n\n}\n\n```\n\nIt was later extended as part of\n",
+                "type": "Text_excerpt",
+                "original_header": "Corrective commit probability: a measure of the effort invested in bug fixing"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/evidencebp/general/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To collect the data, follow instructions in queries/main.sql \n",
+                "original_header": "Follow Your Nose - Which Code Smells are Worth Chasing?"
+            },
+            "confidence": 0.9530007217929776,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/evidencebp/general/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Live version is updating at https://github.com/evidencebp/general/ \n",
+                "original_header": "Versions"
+            },
+            "confidence": 0.9988939408453767,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/evidencebp/general/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@article{Amit2021CCP,\n    publisher = {Springer},\n    pages = {1--45},\n    url = {https://doi.org/10.1007/s11219-021-09564-z},\n    doi = {10.1007/s11219-021-09564-z},\n    issn = {1573-1367},\n    abstract = {The effort invested in software development should ideally be devoted to the implementation of new features. But some of the effort is invariably also invested in corrective maintenance, that is in fixing bugs. Not much is known about what fraction of software development work is devoted to bug fixing, and what factors affect this fraction. We suggest the Corrective Commit Probability (CCP), which measures the probability that a commit reflects corrective maintenance, as an estimate of the relative effort invested in fixing bugs. We identify corrective commits by applying a linguistic model to the commit messages, achieving an accuracy of 93{\\%}, higher than any previously reported model. We compute the CCP of all large active GitHub projects (7,557 projects with 200+ commits in 2019). This leads to the creation of an investment scale, suggesting that the bottom 10{\\%} of projects spend less than 6{\\%} of their total effort on bug fixing, while the top 10{\\%} of projects spend at least 39{\\%} of their effort on bug fixing --- more than 6 times more. Being a process metric, CCP is conditionally independent of source code metrics, enabling their evaluation and investigation. Analysis of project attributes shows that lower CCP (that is, lower relative investment in bug fixing) is associated with smaller files, lower coupling, use of languages like JavaScript and C{\\#} as opposed to PHP and C++, fewer code smells, lower project age, better perceived quality, fewer developers, lower developer churn, better onboarding, and better productivity.},\n    day = {05},\n    month = {Aug},\n    year = {2021},\n    journal = {Software Quality Journal},\n    title = {Corrective commit probability: a measure of the effort invested in bug fixing},\n    author = {Amit, Idan\nand Feitelson, Dror G.},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1007/s11219-021-09564-z",
+                "title": "Corrective commit probability: a measure of the effort invested in bug fixing",
+                "author": "Amit, Idan\nand Feitelson, Dror G.",
+                "url": "https://doi.org/10.1007/s11219-021-09564-z"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/evidencebp/general/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@misc{amit2021follow,\n    primaryclass = {cs.SE},\n    archiveprefix = {arXiv},\n    eprint = {2103.01861},\n    year = {2021},\n    author = {Idan Amit and Nili Ben Ezra and Dror G. Feitelson},\n    title = {Follow Your Nose -- Which Code Smells are Worth Chasing?},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Follow Your Nose -- Which Code Smells are Worth Chasing?",
+                "author": "Idan Amit and Nili Ben Ezra and Dror G. Feitelson"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/evidencebp/general/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{Amit2021General,\n    month = {Aug},\n    year = {2021},\n    author = {Idan Amit},\n    publisher = {Zenodo},\n    doi = {10.5281/zenodo.5179783},\n    title = {General infrastructure for Github data analysis over BigQuery },\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.5281/zenodo.5179783",
+                "title": "General infrastructure for Github data analysis over BigQuery ",
+                "author": "Idan Amit"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/evidencebp/general/master/README.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://zenodo.org/badge/latestdoi/277322370"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/evidencebp/general/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "general"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/evidencebp/general/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2103.01861.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/evidencebp/general/master/README.md"
+        }
+    ]
+}

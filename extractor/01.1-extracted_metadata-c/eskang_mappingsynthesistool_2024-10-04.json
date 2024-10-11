@@ -1,0 +1,230 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:07:28"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/eskang/MappingSynthesisTool",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "eskang",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2018-11-16T22:30:22Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-08-10T14:07:16Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "This repository contains a prototype implementation of the Mapping Synthesis Tool.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains the source code for a prototype implementation of the Mapping\nSynthesis tool, which takes (1) a pair of event-based behavioral\nmodels (one depicting a high-level design and another a low-level\nplatform) (2) a property of the high-level design, and (3) produces a\nmapping from the high-level model to the low-level one ensuring that\nthe satisfaction of the given property. \n",
+                "original_header": "MappingSynthesisTool"
+            },
+            "confidence": 0.9457765082281743,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/eskang/mappingsynthesistool/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "MappingSynthesisTool",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "eskang/MappingSynthesisTool",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/eskang/MappingSynthesisTool/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/eskang/MappingSynthesisTool/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/eskang/mappingsynthesistool/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Alloy",
+                "name": "Alloy",
+                "type": "Programming_language",
+                "size": 170817
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Scala",
+                "name": "Scala",
+                "type": "Programming_language",
+                "size": 82624
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 15019
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/eskang/mappingsynthesistool/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "The simplest way to build and execute the synthesizer is by using the\nScala IDE, which is available to download for free:\n\nhttp://scala-ide.org/\n\nOnce inside the IDE, create a new Scala project and import the source files\n(/src). The project relies on native libraries for SAT solvers\n(used by the Alloy Anayzer). These libraries reside in /libs, but the\ndirectory location must be added to the project build path; in the\nIDE, this can be modified through the project \"Properities\" -> \"Java Build Path\" -> \"Source\" -> \"Native library location\".\n\nThe main entry functions for the tool is located in \"/src/synthesis/Synthesizer.scala\".\n",
+                "type": "Text_excerpt",
+                "original_header": "Setup",
+                "parent_header": [
+                    "MappingSynthesisTool"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/eskang/mappingsynthesistool/master/README.md"
+        }
+    ],
+    "contact": [
+        {
+            "result": {
+                "value": "Please send any questions or comments to Eunsuk Kang (eskang@cmu.edu).\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Contact",
+                "parent_header": [
+                    "MappingSynthesisTool"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/eskang/mappingsynthesistool/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "MappingSynthesisTool"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/eskang/mappingsynthesistool/master/README.md"
+        }
+    ]
+}

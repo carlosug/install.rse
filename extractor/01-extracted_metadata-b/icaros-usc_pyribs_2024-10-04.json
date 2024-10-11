@@ -1,0 +1,962 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:02:15"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/icaros-usc/pyribs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "icaros-usc",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-09-10T07:47:17Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-26T23:32:27Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2020, ICAROS Lab\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/LICENSE"
+        },
+        {
+            "result": {
+                "value": "pyribs is released under the\n[MIT License](https://github.com/icaros-usc/pyribs/blob/master/LICENSE).\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "pyribs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A bare-bones Python library for quality diversity optimization.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "A _bare-bones_ Python library for quality diversity (QD) optimization. Pyribs\nimplements the highly modular _Rapid Illumination of Behavior Space (RIBS)_\nframework for QD optimization. Pyribs is also the official implementation of\nCovariance Matrix Adaptation MAP-Elites (CMA-ME), Covariance Matrix Adaptation\nMAP-Elites via a Gradient Arborescence (CMA-MEGA), Covariance Matrix Adaptation\nMAP-Annealing (CMA-MAE), and scalable variants of CMA-MAE.\n \n",
+                "original_header": "pyribs"
+            },
+            "confidence": 0.9639297070611574,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "[Quality diversity (QD) optimization](https://arxiv.org/abs/2012.04322) is a\nsubfield of optimization where solutions generated cover every point in a\n_measure_ space while simultaneously maximizing (or minimizing) a single\n_objective_. QD algorithms within the MAP-Elites family of QD algorithms produce\nheatmaps (archives) as output where each cell contains the best discovered\nrepresentative of a region in measure space. \n- An **archive**, which saves generated solutions within measure space.\n- One or more **emitters**, where each emitter is an algorithm which generates\n  new candidate solutions and responds to feedback about how the solutions were\n  evaluated and how they were inserted into the archive.\n- A **scheduler** that controls the interaction of the **archive** and\n  **emitters**. The **scheduler** also provides an interface for requesting new\n  candidate solutions and telling the algorithm how candidates performed. \nPyribs is an implementation of the RIBS framework designed to support a wide\nrange of users, from beginners entering the field to experienced researchers\nseeking to develop new algorithms. Pyribs achieves these goals by embodying\nthree principles: \nIn contrast to other QD libraries, pyribs is \"bare-bones.\" For example, like\n[pycma](https://pypi.org/project/cma/), pyribs focuses solely on optimizing\nfixed-dimensional continuous domains. Focusing on this one commonly-occurring\nproblem allows us to optimize the library for performance as well as ease of\nuse. Refer to the list of [additional QD libraries](#additional-qd-libraries)\nbelow if you need to handle additional use cases. \n",
+                "original_header": "Overview"
+            },
+            "confidence": 0.9494933229642543,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- [QDax](https://github.com/adaptive-intelligent-robotics/QDax): Implementations\n  of QD algorithms in JAX. QDax is suitable if you want to run entire QD\n  algorithms on hardware accelerators in a matter of minutes, and it is\n  particularly useful if you need to interface with Brax environments.\n- [qdpy](https://gitlab.com/leo.cazenille/qdpy/): Python implementations of a\n  wide variety of QD algorithms.\n- [sferes](https://github.com/sferes2/sferes2): Contains C++ implementations of\n  QD algorithms; can also handle discrete domains.\n \n",
+                "original_header": "Additional QD Libraries"
+            },
+            "confidence": 0.9318063583453186,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "pyribs",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "icaros-usc/pyribs",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 208,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "artificial-intelligence, cma-es, deep-learning, evolutionary-algorithms, evolutionary-computation, map-elites, openai-gym, optimization, python, quality-diversity",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 34,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/icaros-usc/pyribs/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 690335
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 5341
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 2760
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/releases/146529614",
+                "tag": "v0.7.1",
+                "name": "pyribs 0.7.1",
+                "author": {
+                    "name": "btjanaka",
+                    "type": "User"
+                },
+                "description": "This release introduces the\r\n[QDHF tutorial](https://docs.pyribs.org/en/stable/tutorials/qdhf.html)! It also\r\nmakes a couple of minor usability improvements, such as better error checking.\r\n\r\n## Changelog\r\n\r\n### API\r\n\r\n- Support Python 3.12 (#390)\r\n\r\n### Improvements\r\n\r\n- Add qd score to lunar lander example (#458)\r\n- Raise error if `result_archive` and `archive` have different fields\r\n  (#461)\r\n- Warn user if resampling for bounds takes too long in ESs (#462)\r\n\r\n### Documentation\r\n\r\n- Add QDHF tutorial (#459)\r\n\r\n### Bugs\r\n\r\n- Fix solution retrieval in lunar lander eval (#457)",
+                "tarball_url": "https://api.github.com/repos/icaros-usc/pyribs/tarball/v0.7.1",
+                "zipball_url": "https://api.github.com/repos/icaros-usc/pyribs/zipball/v0.7.1",
+                "html_url": "https://github.com/icaros-usc/pyribs/releases/tag/v0.7.1",
+                "url": "https://api.github.com/repos/icaros-usc/pyribs/releases/146529614",
+                "release_id": 146529614,
+                "date_created": "2024-03-14T09:41:36Z",
+                "date_published": "2024-03-14T09:44:26Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/releases/138770641",
+                "tag": "v0.7.0",
+                "name": "pyribs 0.7.0",
+                "author": {
+                    "name": "btjanaka",
+                    "type": "User"
+                },
+                "description": "To learn about this release, see our page on What's New in v0.7.0:\r\nhttps://docs.pyribs.org/en/stable/whats-new.html\r\n\r\nSpecial thanks to our new contributors! @HenryChen4, @svott03, @yutaizhou, @vbhatt-cs\r\n\r\n## Changelog\r\n\r\n### API\r\n\r\n- Support alternative centroid generation methods in CVTArchive (#417,\r\n  #437)\r\n- Add PyCMAEvolutionStrategy for using pycma in ES emitters (#434)\r\n- **Backwards-incompatible:** Add ranking values to evolution strategy tell\r\n  method (#438)\r\n- **Backwards-incompatible:** Move evolution strategy bounds to init (#436)\r\n- **Backwards-incompatible:** Use seed instead of rng in ranker (#432)\r\n- **Backwards-incompatible:** Replace status and value with add_info (#430)\r\n- Support custom data fields in archive, emitters, and scheduler (#421,\r\n  #429)\r\n- **Backwards-incompatible:** Remove `_batch` from parameter names (#422,\r\n  #424, #425, #426, #428)\r\n- Add Gaussian, IsoLine Operators and Refactor GaussianEmitter/IsoLineEmitter\r\n  (#418)\r\n- **Backwards-incompatible:** Remove metadata in favor of custom fields\r\n  (#420)\r\n- Add Base Operator Interface and Emitter Operator Retrieval (#416)\r\n- **Backwards-incompatible:** Return occupied booleans in retrieve (#414)\r\n- **Backwards-incompatible:** Deprecate `as_pandas` in favor of\r\n  `data(return_type=\"pandas\")` (#408)\r\n- **Backwards-incompatible:** Replace ArchiveDataFrame batch methods with\r\n  `get_field` (#413)\r\n- Add field_list and data methods to archives (#412)\r\n- Include threshold in `archive.best_elite` (#409)\r\n- **Backwards-incompatible:** Replace Elite and EliteBatch with dicts\r\n  (#397)\r\n- **Backwards-incompatible:** Rename `measure_*` columns to `measures_*` in\r\n  `as_pandas` (#396)\r\n- Add ArrayStore data structure (#395, #398, #400, #402,\r\n  #403, #404, #406, #407, #411)\r\n- Add GradientOperatorEmitter to support OMG-MEGA and OG-MAP-Elites (#348)\r\n\r\n### Improvements\r\n\r\n- Raise error when threshold_min is set but learning_rate is not (#453)\r\n- Fix interval_size in CVTArchive and SlidingBoundariesArchive (#452)\r\n- Allow overriding ES in sphere example (#439)\r\n- Use NumPy SeedSequence in emitters (#431, #440)\r\n- Use numbers types when checking arguments (#419)\r\n- Reimplement ArchiveBase using ArrayStore (#399)\r\n- Use chunk computation in CVT brute force calculation to reduce memory usage\r\n  (#394)\r\n- Test pyribs installation in tutorials (#384)\r\n- Add cron job for testing installation (#389, #401)\r\n- Fix broken cross-refs in docs (#393)\r\n\r\n### Documentation\r\n\r\n- Tidy up LSI MNIST notebook (#444)",
+                "tarball_url": "https://api.github.com/repos/icaros-usc/pyribs/tarball/v0.7.0",
+                "zipball_url": "https://api.github.com/repos/icaros-usc/pyribs/zipball/v0.7.0",
+                "html_url": "https://github.com/icaros-usc/pyribs/releases/tag/v0.7.0",
+                "url": "https://api.github.com/repos/icaros-usc/pyribs/releases/138770641",
+                "release_id": 138770641,
+                "date_created": "2024-01-27T11:36:51Z",
+                "date_published": "2024-01-27T10:42:33Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/releases/134204684",
+                "tag": "v0.6.4",
+                "name": "pyribs 0.6.4",
+                "author": {
+                    "name": "btjanaka",
+                    "type": "User"
+                },
+                "description": "Small release that adds the scalable CMA-MAE tutorial.\r\n\r\n## Changelog\r\n\r\n### Documentation\r\n\r\n- Add tutorial on scalable CMA-MAE variants (#433, #443)",
+                "tarball_url": "https://api.github.com/repos/icaros-usc/pyribs/tarball/v0.6.4",
+                "zipball_url": "https://api.github.com/repos/icaros-usc/pyribs/zipball/v0.6.4",
+                "html_url": "https://github.com/icaros-usc/pyribs/releases/tag/v0.6.4",
+                "url": "https://api.github.com/repos/icaros-usc/pyribs/releases/134204684",
+                "release_id": 134204684,
+                "date_created": "2023-12-17T02:01:20Z",
+                "date_published": "2023-12-17T02:05:42Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/releases/122521825",
+                "tag": "v0.6.3",
+                "name": "pyribs 0.6.3",
+                "author": {
+                    "name": "btjanaka",
+                    "type": "User"
+                },
+                "description": "Small patch release due to deprecation issues.\r\n\r\n## Changelog\r\n\r\n### Improvements\r\n\r\n- Replace np.product with np.prod due to deprecation (#385)",
+                "tarball_url": "https://api.github.com/repos/icaros-usc/pyribs/tarball/v0.6.3",
+                "zipball_url": "https://api.github.com/repos/icaros-usc/pyribs/zipball/v0.6.3",
+                "html_url": "https://github.com/icaros-usc/pyribs/releases/tag/v0.6.3",
+                "url": "https://api.github.com/repos/icaros-usc/pyribs/releases/122521825",
+                "release_id": 122521825,
+                "date_created": "2023-09-25T21:54:49Z",
+                "date_published": "2023-09-25T21:58:47Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/releases/122133752",
+                "tag": "v0.6.2",
+                "name": "pyribs 0.6.2",
+                "author": {
+                    "name": "btjanaka",
+                    "type": "User"
+                },
+                "description": "Small patch release due to installation issues in our tutorials.\r\n\r\n## Changelog\r\n\r\n### API\r\n\r\n- Import ribs[visualize] in tutorials that need it (#379)\r\n\r\n### Improvements\r\n\r\n- Switch to a branch-based release model (#382)",
+                "tarball_url": "https://api.github.com/repos/icaros-usc/pyribs/tarball/v0.6.2",
+                "zipball_url": "https://api.github.com/repos/icaros-usc/pyribs/zipball/v0.6.2",
+                "html_url": "https://github.com/icaros-usc/pyribs/releases/tag/v0.6.2",
+                "url": "https://api.github.com/repos/icaros-usc/pyribs/releases/122133752",
+                "release_id": 122133752,
+                "date_created": "2023-09-22T02:40:17Z",
+                "date_published": "2023-09-22T02:50:16Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/releases/121354361",
+                "tag": "v0.6.0",
+                "name": "pyribs 0.6.0",
+                "author": {
+                    "name": "btjanaka",
+                    "type": "User"
+                },
+                "description": "Twitter: https://x.com/btjanaka/status/1702766584153121161\r\n\r\n## Changelog\r\n\r\n### API\r\n\r\n- Drop Python 3.7 support and upgrade dependencies (#350)\r\n- Add visualization of QDax repertoires (#353)\r\n- Improve cvt_archive_heatmap flexibility (#354)\r\n- Clip Voronoi regions in cvt_archive_heatmap (#356)\r\n- **Backwards-incompatible:** Allow using kwargs for colorbar in\r\n  parallel_axes_plot (#358)\r\n  - Removes cbar_orientaton and cbar_pad args for parallel_axes_plot\r\n- Add `rasterized` arg for heatmaps (#359)\r\n- Support 1D cvt_archive_heatmap (#362)\r\n- Add 3D plots for CVTArchive (#371)\r\n- Add visualization of 3D QDax repertoires (#373)\r\n- Enable plotting custom data in visualizations (#374)\r\n\r\n### Documentation\r\n\r\n- Use dask instead of multiprocessing for lunar lander tutorial (#346)\r\n- pip install swig before gymnasium[box2d] in lunar lander tutorial (#346)\r\n- Fix lunar lander dependency issues (#366, #367)\r\n- Simplify DQD tutorial imports (#369)\r\n- Improve visualization docs examples (#372)\r\n\r\n### Improvements\r\n\r\n- Improve developer workflow with pre-commit (#351, #363)\r\n- Speed up 2D cvt_archive_heatmap by order of magnitude (#355)\r\n- Refactor visualize module into multiple files (#357)\r\n- Refactor visualize tests into multiple files (#370)\r\n- Add GitHub link roles in documentation (#361)\r\n- Refactor argument validation utilities (#365)\r\n- Use Conda envs in all CI jobs (#368)\r\n- Split tutorial CI into multiple jobs (#375)",
+                "tarball_url": "https://api.github.com/repos/icaros-usc/pyribs/tarball/v0.6.0",
+                "zipball_url": "https://api.github.com/repos/icaros-usc/pyribs/zipball/v0.6.0",
+                "html_url": "https://github.com/icaros-usc/pyribs/releases/tag/v0.6.0",
+                "url": "https://api.github.com/repos/icaros-usc/pyribs/releases/121354361",
+                "release_id": 121354361,
+                "date_created": "2023-09-15T18:56:49Z",
+                "date_published": "2023-09-15T19:14:19Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/releases/112388510",
+                "tag": "v0.5.2",
+                "name": "pyribs 0.5.2",
+                "author": {
+                    "name": "btjanaka",
+                    "type": "User"
+                },
+                "description": "This release contains miscellaneous edits to our documentation from v0.5.1.\r\nFurthermore, the library is updated to support Python 3.11, removed deprecated\r\noptions, and strengthened with more robust checks and error messages in the\r\nschedulers.\r\n\r\n## Changelog\r\n\r\n### API\r\n\r\n- Support Python 3.11 (#342)\r\n- Check that emitters passed in are lists/iterables in scheduler (#341)\r\n- Fix Matplotlib `get_cmap` deprecation (#340)\r\n- **Backwards-incompatible:** Default `plot_centroids` to False when plotting\r\n  (#339)\r\n- Raise error messages when `ask` is called without `ask_dqd` (#338)\r\n\r\n### Documentation\r\n\r\n- Add BibTex citation for GECCO 2023 (#337)\r\n\r\n### Improvements\r\n\r\n- Update distribution dependencies (#344)",
+                "tarball_url": "https://api.github.com/repos/icaros-usc/pyribs/tarball/v0.5.2",
+                "zipball_url": "https://api.github.com/repos/icaros-usc/pyribs/zipball/v0.5.2",
+                "html_url": "https://github.com/icaros-usc/pyribs/releases/tag/v0.5.2",
+                "url": "https://api.github.com/repos/icaros-usc/pyribs/releases/112388510",
+                "release_id": 112388510,
+                "date_created": "2023-07-15T21:47:53Z",
+                "date_published": "2023-07-15T21:52:38Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/releases/94191238",
+                "tag": "v0.5.1",
+                "name": "pyribs 0.5.1",
+                "author": {
+                    "name": "btjanaka",
+                    "type": "User"
+                },
+                "description": "This release contains miscellaneous edits to our documentation from v0.5.0. There were no changes to library functionality in this release.",
+                "tarball_url": "https://api.github.com/repos/icaros-usc/pyribs/tarball/v0.5.1",
+                "zipball_url": "https://api.github.com/repos/icaros-usc/pyribs/zipball/v0.5.1",
+                "html_url": "https://github.com/icaros-usc/pyribs/releases/tag/v0.5.1",
+                "url": "https://api.github.com/repos/icaros-usc/pyribs/releases/94191238",
+                "release_id": 94191238,
+                "date_created": "2023-03-02T07:40:46Z",
+                "date_published": "2023-03-02T08:02:35Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/releases/93269736",
+                "tag": "v0.5.0",
+                "name": "pyribs 0.5.0",
+                "author": {
+                    "name": "btjanaka",
+                    "type": "User"
+                },
+                "description": "To learn about this release, see our page on What's New in v0.5.0:\r\nhttps://docs.pyribs.org/en/stable/whats-new.html\r\n\r\n## Changelog\r\n\r\n### API\r\n\r\n- Schedulers warn if no solutions are inserted into archive (#320)\r\n- Implement `BanditScheduler` (#299)\r\n- **Backwards-incompatible:** Implement Scalable CMA-ES Optimizers (#274, #288)\r\n- Make ribs.emitters.opt public (#281)\r\n- Add normalized QD score to ArchiveStats (#276)\r\n- **Backwards-incompatible:** Make ArchiveStats a dataclass (#275)\r\n- **Backwards-incompatible:** Add shape checks to `tell()` and `tell_dqd()`\r\n  methods (#269)\r\n- Add method for computing CQD score in archives (#252)\r\n- **Backwards-incompatible:** Deprecate positional arguments in constructors\r\n  (#261)\r\n- **Backwards-incompatible:** Allow custom initialization in Gaussian and\r\n  IsoLine emitters (#259, #265)\r\n- Implement CMA-MAE archive thresholds (#256, #260, #314)\r\n  - Revive the old implementation of `add_single` removed in (#221)\r\n  - Add separate tests for `add_single` and `add` with single solution\r\n- Fix all examples and tutorials (#253)\r\n- Add restart timer to `EvolutionStrategyEmitter` and\r\n  `GradientArborescenceEmitter`(#255)\r\n- Rename fields and update documentation (#249, #250)\r\n  - **Backwards-incompatible:** rename `Optimizer` to `Scheduler`\r\n  - **Backwards-incompatible:** rename `objective_value` to `objective`\r\n  - **Backwards-incompatible:** rename `behavior_value`/`bcs` to `measures`\r\n  - **Backwards-incompatible:** `behavior_dim` in archives is now `measure_dim`\r\n  - Rename `n_solutions` to `batch_size` in `Scheduler`.\r\n- Add `GradientArborescenceEmitter`, which is used to implement CMA-MEGA (#240,\r\n  #263, #264, #282, #321)\r\n- Update emitter `tell()` docstrings to no longer say \"Inserts entries into\r\n  archive\" (#247)\r\n- Expose `emitter.restarts` as a property (#248)\r\n- Specify that `x0` is 1D for all emitters (#244)\r\n- Add `best_elite` property for archives (#237)\r\n- Rename methods in ArchiveDataFrame and rename as_pandas behavior columns\r\n  (#236)\r\n- Re-run CVTArchive benchmarks and update CVTArchive (#235)\r\n  - **Backwards-incompatible:** `use_kd_tree` now defaults to True since the k-D\r\n    tree is always faster than brute force in benchmarks.\r\n- Allow adding solutions one at a time in optimizer (#233)\r\n- Minimize numba usage (#232)\r\n- **Backwards-incompatible:** Implement batch addition in archives (#221, #242)\r\n  - `add` now adds a batch of solutions to the archive\r\n  - `add_single` adds a single solution\r\n- `emitter.tell` now takes in `status_batch` and `value_batch` (#227)\r\n- Make epsilon configurable in archives (#226)\r\n- **Backwards-incompatible:** Remove ribs.factory (#225, #228)\r\n- **Backwards-incompatible:** Replaced `ImprovementEmitter`,\r\n  `RandomDirectionEmitter`, and `OptimizingEmitter` with\r\n  `EvolutionStrategyEmitter` (#220, #223, #278)\r\n- Raise ValueError for incorrect array shapes in archive methods (#219)\r\n- Introduced the Ranker object, which is responsible for ranking the solutions\r\n  based on different objectives (#209, #222, #245)\r\n- Add index_of_single method for getting index of measures for one solution\r\n  (#214)\r\n- **Backwards-incompatible:** Replace elite_with_behavior with retrieve and\r\n  retrieve_single in archives (#213, #215, #295)\r\n- **Backwards-incompatible:** Replace get_index with batched index_of method in\r\n  archives (#208)\r\n  - Also added `grid_to_int_index` and `int_to_grid_index` methods for\r\n    `GridArchive` and `SlidingBoundariesArchive`\r\n- **Backwards-incompatible:** Made it such that each archive is initialized\r\n  fully in its constructor instead of needing a separate\r\n  .initialize(solution_dim) call (#200)\r\n- **Backwards-incompatible:** Add `sigma`, `sigma0` options to\r\n  `gaussian_emitter` and `iso_line_emitter` (#199)\r\n  - `gaussian_emitter` constructor requires `sigma`; `sigma0` is optional.\r\n  - `iso_line_emitter` constructor takes in optional parameter `sigma0`.\r\n- **Backwards-incompatible:** Add `cbar`, `aspect` options for\r\n  `cvt_archive_heatmap` (#197)\r\n- **Backwards-incompatible:** Add `aspect` option to `grid_archive_heatmap` +\r\n  support for 1D heatmaps (#196)\r\n  - `square` option no longer works\r\n- **Backwards-incompatible:** Add `cbar` option to `grid_archive_heatmap` (#193)\r\n- **Backwards-incompatible:** Replace `get_random_elite()` with batched\r\n  `sample_elites()` method (#192)\r\n- **Backwards-incompatible:** Add EliteBatch and rename fields in Elite (#191)\r\n- **Backwards-incompatible:** Rename bins to cells for consistency with\r\n  literature (#189)\r\n  - Archive constructors now take in `cells` argument instead of `bins`\r\n  - Archive now have a `cells` property rather than a `bins` property\r\n- **Backwards-incompatible:** Only use integer indices in archives (#185)\r\n  - `ArchiveBase`\r\n    - Replaced `storage_dims` (tuple of int) with `storage_dim` (int)\r\n    - `_occupied_indices` is now a fixed-size array with `_num_occupied`\r\n      indicating its current usage, and `_occupied_indices_cols` has been\r\n      removed\r\n    - `index_of` must now return an integer\r\n\r\n### Bugs\r\n\r\n- Fix boundary lines in sliding boundaries archive heatmap (#271)\r\n- Fix negative eigenvalue in CMA-ES covariance matrix (#285)\r\n\r\n### Documentation\r\n\r\n- Speed up lunar lander tutorial (#319)\r\n- Add DQDTutorial (#267)\r\n- Remove examples extra in favor of individual example deps (#306)\r\n- Facilitate linking to latest version of documentation (#300)\r\n- Update lunar lander tutorial with v0.5.0 features (#292)\r\n- Improve tutorial and example overviews (#291)\r\n- Move tutorials out of examples folder (#290)\r\n- Update lunar lander to use Gymnasium (#289)\r\n- Add CMA-MAE tutorial (#273, #284)\r\n- Update README (#279)\r\n- Add sphinx-codeautolink to docs (#206, #280)\r\n- Fix documentation rendering issues on ReadTheDocs (#205)\r\n- Fix typos and formatting in docstrings of `ribs/visualize.py` (#203)\r\n- Add in-comment type hint rich linking (#204)\r\n- Upgrade Sphinx dependencies (#202)\r\n\r\n### Improvements\r\n\r\n- Move threadpoolctl from optimizer to CMA-ES (#241)\r\n- Remove unnecessary emitter benchmarks (#231)\r\n- Build docs during CI/CD workflow (#211)\r\n- Drop Python 3.6 and add Python 3.10 support (#181)\r\n- Add procedure for updating changelog (#182)\r\n- Add 'visualize' extra (#183, #184, #302)",
+                "tarball_url": "https://api.github.com/repos/icaros-usc/pyribs/tarball/v0.5.0",
+                "zipball_url": "https://api.github.com/repos/icaros-usc/pyribs/zipball/v0.5.0",
+                "html_url": "https://github.com/icaros-usc/pyribs/releases/tag/v0.5.0",
+                "url": "https://api.github.com/repos/icaros-usc/pyribs/releases/93269736",
+                "release_id": 93269736,
+                "date_created": "2023-02-22T09:58:25Z",
+                "date_published": "2023-02-22T10:25:08Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/releases/46626862",
+                "tag": "v0.4.0",
+                "name": "pyribs 0.4.0",
+                "author": {
+                    "name": "btjanaka",
+                    "type": "User"
+                },
+                "description": "To learn about this release, see our blog post: https://pyribs.org/blog/0-4-0\r\n\r\n## Changelog\r\n\r\n### API\r\n\r\n- Add ribs.visualize.parallel_axes_plot for analyzing archives with high-dimensional BCs (#92)\r\n- **Backwards-incompatible:** Reduce attributes and parameters in EmitterBase to make it easier to extend (#101)\r\n- In Optimizer, support emitters that return any number of solutions in ask() (#101)\r\n- **Backwards-incompatible:** Store metadata in archives as described in #87 (#103, #114, #115, #119)\r\n- **Backwards-incompatible:** Rename \"index\" to \"index_0\" in CVTArchive.as_pandas for API consistency (#113)\r\n- **Backwards-incompatible:** Make get_index() public in archives to emphasize each index's meaning (#128)\r\n- **Backwards-incompatible:** Add index to get_random_elite() and elite_with_behavior() in archives (#129)\r\n- Add clear() method to archive (#140, #146)\r\n- Represent archive elites with an Elite namedtuple (#142)\r\n- Add len and iter methods to archives (#151, #152)\r\n- Add statistics to archives (#100, #157)\r\n- Improve manipulation of elites by modifying as_pandas (#123, #149, #153, #158, #168)\r\n- Add checks for optimizer array and list shapes (#166)\r\n\r\n### Documentation\r\n\r\n- Add bibtex citations for tutorials (#122)\r\n- Remove network training from Fooling MNIST tutorial (#161)\r\n- Fix video display for lunar lander in Colab (#163)\r\n- Fix Colab links in stable docs (#164)\r\n\r\n### Improvements\r\n\r\n- Add support for Python 3.9 (#84)\r\n- Test with pinned versions (#110)\r\n- Increase minimum required versions for scipy and numba (#110)\r\n- Refactor as_pandas tests (#114)\r\n- Expand CI/CD to test examples and tutorials (#117)\r\n- Tidy up existing tests (#120, #127)\r\n- Fix vocab in various areas (#138)\r\n- Fix dependency issues in tests (#139)\r\n- Remove tox from CI (#143)\r\n- Replace \"entry\" with \"elite\" in tests (#144)\r\n- Use new archive API in ribs.visualize implementation (#155)",
+                "tarball_url": "https://api.github.com/repos/icaros-usc/pyribs/tarball/v0.4.0",
+                "zipball_url": "https://api.github.com/repos/icaros-usc/pyribs/zipball/v0.4.0",
+                "html_url": "https://github.com/icaros-usc/pyribs/releases/tag/v0.4.0",
+                "url": "https://api.github.com/repos/icaros-usc/pyribs/releases/46626862",
+                "release_id": 46626862,
+                "date_created": "2021-07-19T08:01:05Z",
+                "date_published": "2021-07-22T18:41:28Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/releases/39372666",
+                "tag": "v0.3.1",
+                "name": "pyribs 0.3.1",
+                "author": {
+                    "name": "btjanaka",
+                    "type": "User"
+                },
+                "description": "This release features various bug fixes and improvements. In particular, we have added tests for SlidingBoundariesArchive and believe it is ready for more rigorous use.\r\n\r\n## Changelog\r\n\r\n- Move SlidingBoundariesArchive out of experimental by adding tests and fixing bugs (#93)\r\n- Added nicer figures to the Sphere example with `grid_archive_heatmap` (#86)\r\n- Added testing for Windows and MacOS (#83)\r\n- Fixed package metadata e.g. description",
+                "tarball_url": "https://api.github.com/repos/icaros-usc/pyribs/tarball/v0.3.1",
+                "zipball_url": "https://api.github.com/repos/icaros-usc/pyribs/zipball/v0.3.1",
+                "html_url": "https://github.com/icaros-usc/pyribs/releases/tag/v0.3.1",
+                "url": "https://api.github.com/repos/icaros-usc/pyribs/releases/39372666",
+                "release_id": 39372666,
+                "date_created": "2021-03-06T06:14:33Z",
+                "date_published": "2021-03-06T06:15:36Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/releases/37269961",
+                "tag": "v0.3.0",
+                "name": "pyribs 0.3.0",
+                "author": {
+                    "name": "btjanaka",
+                    "type": "User"
+                },
+                "description": "pyribs is now in beta. Since our alpha release (0.2.0), we have polished the library and added new tutorials and examples to our documentation.\r\n\r\n## Changelog\r\n\r\n- Added a Lunar Lander example that extends the lunar lander tutorial (#70)\r\n- Added New Tutorial: Illuminating the Latent Space of an MNIST GAN (#78)\r\n- GridArchive: Added a boundaries attribute with the upper and lower bounds of each dimension's bins (#76)\r\n- Fixed a bug where CMA-ME emitters do not work with float32 archives (#74)\r\n- Fixed a bug where Optimizer is able to take in non-unique emitter instances (#75)\r\n- Fixed a bug where GridArchive failed for float32 due to a small epsilon (#81)\r\n- Fix issues with bounds in the SlidingBoundaryArchive (#77)\r\n- Added clearer error messages for archives (#82)\r\n- Modified the Python requirements to allow any version above 3.6.0 (#68)\r\n- The wheel is now fixed so that it only supports py3 rather than py2 and py3 (#68)\r\n- Miscellaneous documentation fixes (#71)",
+                "tarball_url": "https://api.github.com/repos/icaros-usc/pyribs/tarball/v0.3.0",
+                "zipball_url": "https://api.github.com/repos/icaros-usc/pyribs/zipball/v0.3.0",
+                "html_url": "https://github.com/icaros-usc/pyribs/releases/tag/v0.3.0",
+                "url": "https://api.github.com/repos/icaros-usc/pyribs/releases/37269961",
+                "release_id": 37269961,
+                "date_created": "2021-02-06T04:45:09Z",
+                "date_published": "2021-02-06T05:00:18Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/releases/37115507",
+                "tag": "v0.2.1",
+                "name": "pyribs 0.2.1",
+                "author": {
+                    "name": "btjanaka",
+                    "type": "User"
+                },
+                "description": "## Changelog\r\n\r\n- Package metadata fixes (author, email, url)\r\n- Miscellaneous documentation improvements",
+                "tarball_url": "https://api.github.com/repos/icaros-usc/pyribs/tarball/v0.2.1",
+                "zipball_url": "https://api.github.com/repos/icaros-usc/pyribs/zipball/v0.2.1",
+                "html_url": "https://github.com/icaros-usc/pyribs/releases/tag/v0.2.1",
+                "url": "https://api.github.com/repos/icaros-usc/pyribs/releases/37115507",
+                "release_id": 37115507,
+                "date_created": "2021-01-30T06:29:35Z",
+                "date_published": "2021-01-30T06:35:53Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/icaros-usc/pyribs/releases/37081153",
+                "tag": "v0.2.0",
+                "name": "pyribs 0.2.0",
+                "author": {
+                    "name": "btjanaka",
+                    "type": "User"
+                },
+                "description": "Alpha release",
+                "tarball_url": "https://api.github.com/repos/icaros-usc/pyribs/tarball/v0.2.0",
+                "zipball_url": "https://api.github.com/repos/icaros-usc/pyribs/zipball/v0.2.0",
+                "html_url": "https://github.com/icaros-usc/pyribs/releases/tag/v0.2.0",
+                "url": "https://api.github.com/repos/icaros-usc/pyribs/releases/37081153",
+                "release_id": 37081153,
+                "date_created": "2021-01-29T12:51:29Z",
+                "date_published": "2021-01-29T13:53:27Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# Contributing\n\nContributions are welcome and are greatly appreciated! Every little bit helps.\nContributions include reporting/fixing bugs, proposing/implementing features\n(see our [Issue Tracker](https://github.com/icaros-usc/pyribs/issues)), writing\ndocumentation in the codebase or on our\n[website repo](https://github.com/icaros-usc/pyribs.org), and submitting\nfeedback.\n\n## Developing pyribs\n\nReady to contribute? Here's how to set up pyribs for local development.\n\n1. [Fork](https://github.com/icaros-usc/pyribs/fork) the pyribs repo on GitHub.\n1. Clone the fork locally:\n\n   ```bash\n   # With SSH:\n   git clone git@github.com:USERNAME/pyribs.git\n\n   # Without SSH:\n   git clone https://github.com/USERNAME/pyribs.git\n   ```\n\n1. Create a branch for local development:\n\n   ```bash\n   git checkout -b name-of-bugfix-or-feature\n   ```\n\n1. Install the local copy and dev requirements into a virtual environment. For\n   instance, with Conda, the following creates an environment at `./env`.\n\n   ```bash\n   cd pyribs\n   conda create --prefix ./env python=3.8  # 3.8 is the minimum version pyribs supports.\n   conda activate ./env\n   pip install -e .[all,dev]  # `all` contains dependencies for all extras of pyribs.\n                              # `dev` contains development dependencies.\n   ```\n\n1. We roughly follow the\n   [Google Style Guide](https://google.github.io/styleguide/pyguide.html) in our\n   codebase by using yapf, isort, and pylint to enforce code format and style.\n   To automatically check for formatting and style every time you commit, we use\n   [pre-commit](https://pre-commit.com). Pre-commit should have already been\n   installed with `.[dev]` above. To set it up, run:\n\n   ```bash\n   pre-commit install\n   ```\n\n1. Now make the appropriate changes locally. If relevant, make sure to write\n   tests for your code in the `tests/` folder.\n\n1. Auto-format and lint your code using YAPF, isort, and pylint. Note that\n   pre-commit will automatically run these whenever you commit your code; you\n   can also run them with `pre-commit run`. You can also run these commands on\n   the command line:\n\n   ```bash\n   yapf -i FILES\n   isort FILES\n   pylint FILES\n   ```\n\n1. After making changes, check that the changes pass the tests:\n\n   ```bash\n   pytest tests/\n   make test # ^ same as above\n   ```\n\n   And to run the benchmarks:\n\n   ```bash\n   pytest -c pytest_benchmark.ini\n   make benchmark # ^ same as above\n   ```\n\n1. Add your change to the changelog for the current version in `HISTORY.md`.\n\n1. Commit the changes and push the branch to GitHub:\n\n   ```bash\n   git add .\n   git commit -m \"Detailed description of changes.\"\n   git push origin name-of-bugfix-or-feature\n   ```\n\n1. Submit a pull request through the GitHub web interface.\n\n## Instructions\n\n### Running a Subset of Tests\n\nTo run a subset of tests, use `pytest` with the directory name, such as:\n\n```bash\npytest tests/core/archives\n```\n\n### Documentation\n\nDocumentation is primarily written in Markdown, as we use the\n[MyST](https://myst-parser.readthedocs.io/en/latest/) Sphinx plugin.\n\nTo preview documentation, use:\n\n```bash\nmake servedocs\n```\n\nThis will open up a browser window and automatically reload as changes are made\nto the docs.\n\n### Adding a Tutorial\n\nTutorials are created in Jupyter notebooks that are stored under `tutorials/` in\nthe repo. To create a tutorial:\n\n1. Write the notebook and save it under `tutorials/`. Notebooks may also be\n   saved in a subdirectory of `tutorials/`, e.g., `tutorials/features`.\n1. Use cell magic (e.g. `%pip install ribs`) to install pyribs and other\n   dependencies.\n   - Installation cells tend to produce a lot of output. Make sure to clear this\n     output in Jupyter lab so that it does not clutter the documentation.\n   - Choose your ribs extra carefully -- in particular, if you use\n     `ribs.visualize` in the tutorial, make sure to use\n     `%pip install ribs[visualize]`.\n1. Before the main loop of the QD algorithm, include a line like\n   `total_itrs = 500` (any other integer will work). This line will be replaced\n   during testing (see `tests/tutorials.sh`) in order to test that the notebook\n   runs end-to-end. By default, the tests run the notebook with\n   `total_itrs = 5`. If this tutorial needs more (or less), modify the\n   switch-case statement in `tests/tutorials.sh`. The name `TOTAL_ITRS` can also\n   be used.\n1. Make sure that the only level 1 heading (e.g. `# Awesome Tutorial`) is the\n   title at the top of the notebook. Subsequent titles should be level 2 (e.g.\n   `## Level 2 Heading`) or higher.\n1. If linking to the pyribs documentation, make sure to link to pages in the\n   `latest` version on ReadTheDocs, i.e. your links should start with\n   `https://docs.pyribs.org/en/latest/`. Note that we do not use Sphinx autodoc\n   (e.g., `:class:`) in the tutorials because such links do not work outside the\n   pyribs website (e.g., on Google Colab).\n1. Add an entry into the toctree in `docs/tutorials.md` and add it to one of the\n   lists of tutorials.\n1. Check that the tutorial shows up on the Tutorials page when serving the docs.\n1. If the tutorial should be excluded from testing (e.g., because it takes too\n   long to run), add it to the list of excluded tutorials in\n   `tests/tutorials_list.sh`.\n1. Create a PR into the website repo that adds the tutorial onto the home page,\n   specifically\n   [this file](https://github.com/icaros-usc/pyribs.org/blob/master/src/index.liquid).\n   In the PR, include a square image that represents the tutorial.\n\n### Adding an Example\n\nExamples are created in Python scripts stored under `examples/` in the repo, and\ntheir source is shown in the docs. To create an example:\n\n1. Write the Python script and save it under `examples/`.\n1. Add any dependencies at the top of the script with a `pip install` command\n   (see existing examples for a sample of how to do this).\n1. Add a shell command to `tests/examples.sh` that calls the script with\n   parameters that will make it run as quickly as possible. This helps us ensure\n   that the script has basic correctness. Also call the `install_deps` function\n   on the script file before running the script.\n1. Add a Markdown file in the `docs/examples` directory with the same name as\n   the Python file -- if the example is `examples/foobar.py`, the Markdown file\n   will be `docs/examples/foobar.md`.\n1. Add a title to the Markdown file, such as:\n   ```\n   # My Awesome Example\n   ```\n1. In the markdown file, include the following so that the source code of the\n   example is displayed.\n   ````\n   ```{eval-rst}\n   .. literalinclude:: ../../examples/EXAMPLE.py\n       :language: python\n       :linenos:\n   ```\n   ````\n1. Add any other relevant info to the Markdown file.\n1. Add an entry into the toctree and list of examples in `docs/examples.md`.\n1. Check that the example shows up on the Examples page when serving the docs.\n\n### Referencing Papers\n\nWhen referencing papers, refer to them as `Lastname YEAR`, e.g. `Smith 2004`.\nAlso, prefer to link to the paper's website, rather than just the PDF.\n\n### Deploying\n\nWe roughly follow the trunk-based release model described\n[here](https://trunkbaseddevelopment.com/branch-for-release/). Namely, we create\nrelease branches for minor versions (e.g., `release/0.6.x`) from our trunk\n(`master` branch). For patch releases, e.g., `0.6.2`, we cherry pick bug fixes\nfrom `master` into the corresponding release branch.\n\n#### Minor Versions\n\n1. Check that the latest version of the docs is building on Read the Docs.\n1. Create a PR into master after doing the following:\n   1. Update the version with `bump2version`:\n      ```bash\n      bump2version minor\n      ```\n   1. Add all necessary info on the version to `HISTORY.md`.\n1. Once the PR above has been merged, create a release branch from master called\n   `release/0.<NUM>.x`, e.g., `release/0.6.x`.\n1. On the release branch, switch tutorial links from latest to stable with:\n   ```bash\n   make tutorial_links\n   ```\n   See [#300](https://github.com/icaros-usc/pyribs/pull/300) for why we do this.\n1. (Optional) On the release branch, run `make release-test`. This uploads the\n   code to TestPyPI to check that the deployment works. If this fails, make\n   fixes as appropriate.\n1. Locally tag the head of the release branch, e.g.,\n   ```bash\n   git tag v0.6.0 HEAD\n   ```\n1. Now push the tag with\n   ```bash\n   git push --tags\n   ```\n1. Check that the version was deployed to PyPI. If it failed, delete the tag and\n   make appropriate fixes on master. Then, cherry pick the fixes into the\n   release branch. Finally, tag the HEAD again and push the tag.\n1. Write up the release on GitHub, and attach it to the tag.\n\n#### Patch Versions\n\n1. Check that the latest version of the docs is building on Read the Docs.\n1. Create a PR into master after doing the following:\n   1. Update the version with `bump2version`:\n      ```bash\n      bump2version patch\n      ```\n   1. Add all necessary info on the version to `HISTORY.md`.\n1. Once the PR above has been merged, checkout the release branch for the\n   corresponding minor version, e.g., for `0.6.2`, check out `release/0.6.x`.\n1. On the release branch, cherry-pick the commit for the PR you just created.\n   Also cherry pick any other bug fixes which need to be released in this patch.\n1. On the release branch, edit `HISTORY.md` to remove any irrelevant history,\n   e.g., if there are upcoming changes that will be included only in the next\n   version.\n1. If any tutorials were added in this release, run `make tutorial_links` to\n   make the links point to the stable version of pyribs.\n1. (Optional) On the release branch, run `make release-test`. This uploads the\n   code to TestPyPI to check that the deployment works. If this fails, make\n   fixes as appropriate.\n1. Locally tag the head of the release branch, e.g.,\n   ```bash\n   git tag v0.6.2 HEAD\n   ```\n1. Now push the tag with\n   ```bash\n   git push --tags\n   ```\n1. Check that the version was deployed to PyPI. If it failed, delete the tag and\n   make appropriate fixes on master. Then, cherry pick the fixes into the\n   release branch. Finally, tag the HEAD again and push the tag.\n1. Write up the release on GitHub, and attach it to the tag.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/CONTRIBUTING.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/icaros-usc/pyribs/tree/master/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "**The documentation is available online [here](https://docs.pyribs.org/). We\nsuggest that new users start with the\n[tutorials](https://docs.pyribs.org/en/stable/tutorials.html).**\n",
+                "type": "Text_excerpt",
+                "original_header": "Documentation",
+                "parent_header": [
+                    "pyribs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/lunar_lander.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/lunar_lander.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/lsi_mnist.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/lsi_mnist.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/qdhf.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/qdhf.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/tom_cruise_dqd.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/tom_cruise_dqd.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/arm_repertoire.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/arm_repertoire.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/cma_mae.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/cma_mae.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/fooling_mnist.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/fooling_mnist.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/scalable_cma_mae.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/scalable_cma_mae.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/features/example.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/tutorials/features/example.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "pyribs supports Python 3.8 and above. The vast majority of users can install\npyribs by running:\n\n```bash\n# If you are on Mac, you may need to use quotations, e.g., pip install \"ribs[visualize]\"\npip install ribs[visualize]\n```\n\nThe command above includes the `visualize` extra. If you will not be using the\npyribs visualization tools, you can install the base version of pyribs with:\n\n```bash\npip install ribs\n```\n\nFor more specific installation commands (e.g., installing from Conda or\ninstalling from source), visit the\n[installation selector](https://pyribs.org/#installation) on our website.\n\nTo test your installation, import pyribs and print the version with this\ncommand:\n\n```bash\npython -c \"import ribs; print(ribs.__version__)\"\n```\n\nYou should see a version number in the output.\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "pyribs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "|                                                       PyPI                                                        |                                                               Conda                                                                |                                                                                                      CI/CD                                                                                                       |                                                                   Docs Status                                                                    |\n| :---------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------: |\n| [![PyPI](https://img.shields.io/pypi/v/ribs.svg?style=flat-square&color=blue)](https://pypi.python.org/pypi/ribs) | [![Conda Recipe](https://img.shields.io/badge/recipe-pyribs-green.svg?style=flat-square)](https://anaconda.org/conda-forge/pyribs) | [![Tests](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Ficaros-usc%2Fpyribs%2Fbadge&style=flat-square)](https://github.com/icaros-usc/pyribs/actions?query=workflow%3A\"Tests\") | [![Documentation Status](https://readthedocs.org/projects/ribs/badge/?version=stable&style=flat-square)](https://readthedocs.org/projects/ribs/) | \n",
+                "original_header": "pyribs"
+            },
+            "confidence": 0.9999699343933021,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Need some help? Want to ask if pyribs is right for your project? Have a question\nthat is not quite a bug and not quite a feature request? \n",
+                "original_header": "Community"
+            },
+            "confidence": 0.9574810052520949,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "pyribs users include: \n",
+                "original_header": "Users"
+            },
+            "confidence": 0.9526486941359469,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Here we show an example application of CMA-ME in pyribs. To initialize the\nalgorithm, we first create:\n\n- A 2D **GridArchive** where each dimension contains 20 cells across the range\n  [-1, 1].\n- Three instances of **EvolutionStrategyEmitter**, all of which start from the\n  search point **0** in 10-dimensional space and a Gaussian sampling\n  distribution with standard deviation 0.1.\n- A **Scheduler** that combines the archive and emitters together.\n\nAfter initializing the components, we optimize (pyribs maximizes) the negative\n10-D Sphere function for 1000 iterations. Users of\n[pycma](https://pypi.org/project/cma/) will be familiar with the ask-tell\ninterface (which pyribs adopted). First, the user must `ask` the scheduler for\nnew candidate solutions. After evaluating the solution, they `tell` the\nscheduler the objectives and measures of each candidate solution. The algorithm\nthen populates the archive and makes decisions on where to sample solutions\nnext. Our toy example uses the first two parameters of the search space as\nmeasures.\n\n```python\nimport numpy as np\n\nfrom ribs.archives import GridArchive\nfrom ribs.emitters import EvolutionStrategyEmitter\nfrom ribs.schedulers import Scheduler\n\narchive = GridArchive(\n    solution_dim=10,\n    dims=[20, 20],\n    ranges=[(-1, 1), (-1, 1)],\n)\nemitters = [\n    EvolutionStrategyEmitter(\n        archive,\n        x0=[0.0] * 10,\n        sigma0=0.1,\n    ) for _ in range(3)\n]\nscheduler = Scheduler(archive, emitters)\n\nfor itr in range(1000):\n    solutions = scheduler.ask()\n\n    # Optimize the 10D negative Sphere function.\n    objective_batch = -np.sum(np.square(solutions), axis=1)\n\n    # Measures: first 2 coordinates of each 10D solution.\n    measures_batch = solutions[:, :2]\n\n    scheduler.tell(objective_batch, measures_batch)\n```\n\nTo visualize this archive with Matplotlib, we then use the\n`grid_archive_heatmap` function from `ribs.visualize`.\n\n```python\nimport matplotlib.pyplot as plt\nfrom ribs.visualize import grid_archive_heatmap\n\ngrid_archive_heatmap(archive)\nplt.show()\n```\n\n![Sphere heatmap](readme_assets/sphere_heatmap.png)\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "pyribs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "Two years after the initial release of pyribs, we released a paper that\nelaborates on the RIBS framework and the design decisions behind pyribs. For\nmore information on this paper, see [here](https://pyribs.org/paper). If you use\npyribs in your research, please consider citing this paper as follows. Also\nconsider citing any algorithms you use as shown\n[below](#citing-algorithms-in-pyribs).\n\n```\n@inproceedings{10.1145/3583131.3590374,\n  author = {Tjanaka, Bryon and Fontaine, Matthew C and Lee, David H and Zhang, Yulun and Balam, Nivedit Reddy and Dennler, Nathaniel and Garlanka, Sujay S and Klapsis, Nikitas Dimitri and Nikolaidis, Stefanos},\n  title = {Pyribs: A Bare-Bones Python Library for Quality Diversity Optimization},\n  year = {2023},\n  isbn = {9798400701191},\n  publisher = {Association for Computing Machinery},\n  address = {New York, NY, USA},\n  url = {https://doi.org/10.1145/3583131.3590374},\n  doi = {10.1145/3583131.3590374},\n  abstract = {Recent years have seen a rise in the popularity of quality diversity (QD) optimization, a branch of optimization that seeks to find a collection of diverse, high-performing solutions to a given problem. To grow further, we believe the QD community faces two challenges: developing a framework to represent the field's growing array of algorithms, and implementing that framework in software that supports a range of researchers and practitioners. To address these challenges, we have developed pyribs, a library built on a highly modular conceptual QD framework. By replacing components in the conceptual framework, and hence in pyribs, users can compose algorithms from across the QD literature; equally important, they can identify unexplored algorithm variations. Furthermore, pyribs makes this framework simple, flexible, and accessible, with a user-friendly API supported by extensive documentation and tutorials. This paper overviews the creation of pyribs, focusing on the conceptual framework that it implements and the design principles that have guided the library's development. Pyribs is available at https://pyribs.org},\n  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},\n  pages = {220\u2013229},\n  numpages = {10},\n  keywords = {framework, quality diversity, software library},\n  location = {Lisbon, Portugal},\n  series = {GECCO '23}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Paper and Citation",
+                "parent_header": [
+                    "pyribs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "value": "If you use the following algorithms, please consider citing their relevant\npapers:\n\n- **CMA-ME:** [Fontaine 2020](https://dl.acm.org/doi/10.1145/3377930.3390232)\n  ```\n  @inproceedings{10.1145/3377930.3390232,\n    author = {Fontaine, Matthew C. and Togelius, Julian and Nikolaidis, Stefanos and Hoover, Amy K.},\n    title = {Covariance Matrix Adaptation for the Rapid Illumination of Behavior Space},\n    year = {2020},\n    isbn = {9781450371285},\n    publisher = {Association for Computing Machinery},\n    address = {New York, NY, USA},\n    url = {https://doi.org/10.1145/3377930.3390232},\n    doi = {10.1145/3377930.3390232},\n    booktitle = {Proceedings of the 2020 Genetic and Evolutionary Computation Conference},\n    pages = {94\u2013102},\n    numpages = {9},\n    location = {Canc\\'{u}n, Mexico},\n    series = {GECCO '20}\n  }\n  ```\n- **CMA-MEGA:**\n  [Fontaine 2021](https://proceedings.neurips.cc/paper/2021/hash/532923f11ac97d3e7cb0130315b067dc-Abstract.html)\n  ```\n  @inproceedings{NEURIPS2021_532923f1,\n   author = {Fontaine, Matthew and Nikolaidis, Stefanos},\n   booktitle = {Advances in Neural Information Processing Systems},\n   editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},\n   pages = {10040--10052},\n   publisher = {Curran Associates, Inc.},\n   title = {Differentiable Quality Diversity},\n   url = {https://proceedings.neurips.cc/paper/2021/file/532923f11ac97d3e7cb0130315b067dc-Paper.pdf},\n   volume = {34},\n   year = {2021}\n  }\n  ```\n- **CMA-MAE:** [Fontaine 2022](https://arxiv.org/abs/2205.10752)\n  ```\n  @misc{cmamae,\n    doi = {10.48550/ARXIV.2205.10752},\n    url = {https://arxiv.org/abs/2205.10752},\n    author = {Fontaine, Matthew C. and Nikolaidis, Stefanos},\n    keywords = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},\n    title = {Covariance Matrix Adaptation MAP-Annealing},\n    publisher = {arXiv},\n    year = {2022},\n    copyright = {arXiv.org perpetual, non-exclusive license}\n  }\n  ```\n- **Scalable CMA-MAE:** [Tjanaka 2022](https://arxiv.org/abs/2210.02622)\n  ```\n  @ARTICLE{10243102,\n    author={Tjanaka, Bryon and Fontaine, Matthew C. and Lee, David H. and Kalkar, Aniruddha and Nikolaidis, Stefanos},\n    journal={IEEE Robotics and Automation Letters},\n    title={Training Diverse High-Dimensional Controllers by Scaling Covariance Matrix Adaptation MAP-Annealing},\n    year={2023},\n    volume={8},\n    number={10},\n    pages={6771-6778},\n    keywords={Covariance matrices;Training;Neural networks;Legged locomotion;Reinforcement learning;Evolutionary robotics;Evolutionary robotics;reinforcement learning},\n    doi={10.1109/LRA.2023.3313012}\n  }\n  ```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing Algorithms in pyribs",
+                "parent_header": [
+                    "pyribs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The pyribs package was initially created with\n[Cookiecutter](https://github.com/audreyr/cookiecutter) and the\n[audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)\nproject template.\n",
+                "type": "Text_excerpt",
+                "original_header": "Credits",
+                "parent_header": [
+                    "pyribs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{10.1145/3583131.3590374,\n    series = {GECCO '23},\n    location = {Lisbon, Portugal},\n    keywords = {framework, quality diversity, software library},\n    numpages = {10},\n    pages = {220\u2013229},\n    booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},\n    abstract = {Recent years have seen a rise in the popularity of quality diversity (QD) optimization, a branch of optimization that seeks to find a collection of diverse, high-performing solutions to a given problem. To grow further, we believe the QD community faces two challenges: developing a framework to represent the field's growing array of algorithms, and implementing that framework in software that supports a range of researchers and practitioners. To address these challenges, we have developed pyribs, a library built on a highly modular conceptual QD framework. By replacing components in the conceptual framework, and hence in pyribs, users can compose algorithms from across the QD literature; equally important, they can identify unexplored algorithm variations. Furthermore, pyribs makes this framework simple, flexible, and accessible, with a user-friendly API supported by extensive documentation and tutorials. This paper overviews the creation of pyribs, focusing on the conceptual framework that it implements and the design principles that have guided the library's development. Pyribs is available at https://pyribs.org},\n    doi = {10.1145/3583131.3590374},\n    url = {https://doi.org/10.1145/3583131.3590374},\n    address = {New York, NY, USA},\n    publisher = {Association for Computing Machinery},\n    isbn = {9798400701191},\n    year = {2023},\n    title = {Pyribs: A Bare-Bones Python Library for Quality Diversity Optimization},\n    author = {Tjanaka, Bryon and Fontaine, Matthew C and Lee, David H and Zhang, Yulun and Balam, Nivedit Reddy and Dennler, Nathaniel and Garlanka, Sujay S and Klapsis, Nikitas Dimitri and Nikolaidis, Stefanos},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1145/3583131.3590374",
+                "title": "Pyribs: A Bare-Bones Python Library for Quality Diversity Optimization",
+                "author": "Tjanaka, Bryon and Fontaine, Matthew C and Lee, David H and Zhang, Yulun and Balam, Nivedit Reddy and Dennler, Nathaniel and Garlanka, Sujay S and Klapsis, Nikitas Dimitri and Nikolaidis, Stefanos",
+                "url": "https://doi.org/10.1145/3583131.3590374"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{10.1145/3377930.3390232,\n    series = {GECCO '20},\n    location = {Canc\\'{u}n, Mexico},\n    numpages = {9},\n    pages = {94\u2013102},\n    booktitle = {Proceedings of the 2020 Genetic and Evolutionary Computation Conference},\n    doi = {10.1145/3377930.3390232},\n    url = {https://doi.org/10.1145/3377930.3390232},\n    address = {New York, NY, USA},\n    publisher = {Association for Computing Machinery},\n    isbn = {9781450371285},\n    year = {2020},\n    title = {Covariance Matrix Adaptation for the Rapid Illumination of Behavior Space},\n    author = {Fontaine, Matthew C. and Togelius, Julian and Nikolaidis, Stefanos and Hoover, Amy K.},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1145/3377930.3390232",
+                "title": "Covariance Matrix Adaptation for the Rapid Illumination of Behavior Space",
+                "author": "Fontaine, Matthew C. and Togelius, Julian and Nikolaidis, Stefanos and Hoover, Amy K.",
+                "url": "https://doi.org/10.1145/3377930.3390232"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{NEURIPS2021_532923f1,\n    year = {2021},\n    volume = {34},\n    url = {https://proceedings.neurips.cc/paper/2021/file/532923f11ac97d3e7cb0130315b067dc-Paper.pdf},\n    title = {Differentiable Quality Diversity},\n    publisher = {Curran Associates, Inc.},\n    pages = {10040--10052},\n    editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},\n    booktitle = {Advances in Neural Information Processing Systems},\n    author = {Fontaine, Matthew and Nikolaidis, Stefanos},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Differentiable Quality Diversity",
+                "author": "Fontaine, Matthew and Nikolaidis, Stefanos",
+                "url": "https://proceedings.neurips.cc/paper/2021/file/532923f11ac97d3e7cb0130315b067dc-Paper.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@misc{cmamae,\n    copyright = {arXiv.org perpetual, non-exclusive license},\n    year = {2022},\n    publisher = {arXiv},\n    title = {Covariance Matrix Adaptation MAP-Annealing},\n    keywords = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},\n    author = {Fontaine, Matthew C. and Nikolaidis, Stefanos},\n    url = {https://arxiv.org/abs/2205.10752},\n    doi = {10.48550/ARXIV.2205.10752},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.48550/ARXIV.2205.10752",
+                "title": "Covariance Matrix Adaptation MAP-Annealing",
+                "author": "Fontaine, Matthew C. and Nikolaidis, Stefanos",
+                "url": "https://arxiv.org/abs/2205.10752"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{10243102,\n    doi = {10.1109/LRA.2023.3313012},\n    keywords = {Covariance matrices;Training;Neural networks;Legged locomotion;Reinforcement learning;Evolutionary robotics;Evolutionary robotics;reinforcement learning},\n    pages = {6771-6778},\n    number = {10},\n    volume = {8},\n    year = {2023},\n    title = {Training Diverse High-Dimensional Controllers by Scaling Covariance Matrix Adaptation MAP-Annealing},\n    journal = {IEEE Robotics and Automation Letters},\n    author = {Tjanaka, Bryon and Fontaine, Matthew C. and Lee, David H. and Kalkar, Aniruddha and Nikolaidis, Stefanos},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/LRA.2023.3313012",
+                "title": "Training Diverse High-Dimensional Controllers by Scaling Covariance Matrix Adaptation MAP-Annealing",
+                "author": "Tjanaka, Bryon and Fontaine, Matthew C. and Lee, David H. and Kalkar, Aniruddha and Nikolaidis, Stefanos"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        }
+    ],
+    "contributors": [
+        {
+            "result": {
+                "value": "pyribs is developed and maintained by the [ICAROS Lab](http://icaros.usc.edu) at\nUSC. For information on contributing to the repo, see\n[CONTRIBUTING](./CONTRIBUTING.md).\n\n- [Bryon Tjanaka](https://btjanaka.net)\n- [Matthew C. Fontaine](https://scholar.google.com/citations?user=RqSvzikAAAAJ)\n- [David H. Lee](https://github.com/itsdawei)\n- [Yulun Zhang](https://github.com/lunjohnzhang)\n- [Nivedit Reddy Balam](https://www.linkedin.com/in/nivedit-reddy)\n- [Nathan Dennler](https://ndennler.github.io/)\n- [Sujay S. Garlanka](https://sujaygarlanka.com)\n- Nikitas Klapsis\n- [Robby Costales](https://robbycostales.com)\n- [Sam Sommerer](https://github.com/sam-sommerer)\n- [Vincent Vu](https://vuvincent.com/)\n- [Stefanos Nikolaidis](https://stefanosnikolaidis.net)\n\nWe thank [Amy K. Hoover](http://amykhoover.com/) and\n[Julian Togelius](http://julian.togelius.com/) for their contributions deriving\nthe CMA-ME algorithm.\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributors",
+                "parent_header": [
+                    "pyribs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "pyribs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        }
+    ],
+    "package_distribution": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://pypi.org/project/ribs/"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://dcbadge.vercel.app/api/server/QxhcJSqZ8G?compact=true&amp;style=flat-square"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/readme_assets/optimization_types.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/readme_assets/ribs.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/readme_assets/sphere_heatmap.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2012.04322"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2205.10752},\n    author = {Fontaine, Matthew C. and Nikolaidis, Stefanos},\n    keywords = {Machine Learning (cs.LG"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2210.02622"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2205.10752"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/icaros-usc/pyribs/master/README.md"
+        }
+    ]
+}

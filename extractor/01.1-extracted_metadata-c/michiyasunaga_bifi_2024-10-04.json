@@ -1,0 +1,547 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:00:20"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/michiyasunaga/BIFI",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "michiyasunaga",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-05-27T05:07:41Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-30T00:02:41Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021 Michihiro Yasunaga\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "[ICML 2021] Break-It-Fix-It: Unsupervised Learning for Program Repair",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repo provides the source code & data of our paper: [Break-It-Fix-It: Unsupervised Learning for Program Repair](http://arxiv.org/abs/2106.06600) (ICML 2021). \n"
+            },
+            "confidence": 0.9336417558237695,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "BIFI",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "michiyasunaga/BIFI",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/michiyasunaga/BIFI/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/michiyasunaga/BIFI/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 110,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "domain-adaptation, program-repair, translation, unsupervised-learning",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 25,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/michiyasunaga/bifi/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 1811830
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 44681
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Cuda",
+                "name": "Cuda",
+                "type": "Programming_language",
+                "size": 36414
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 15854
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Lua",
+                "name": "Lua",
+                "type": "Programming_language",
+                "size": 4210
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 1003
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Batchfile",
+                "name": "Batchfile",
+                "type": "Programming_language",
+                "size": 805
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 607
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/docker/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/docker/Dockerfile"
+        }
+    ],
+    "code_of_conduct": [
+        {
+            "result": {
+                "value": "# Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to make participation in our project and\nour community a harassment-free experience for everyone, regardless of age, body\nsize, disability, ethnicity, sex characteristics, gender identity and expression,\nlevel of experience, education, socio-economic status, nationality, personal\nappearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\n  advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic\n  address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned to this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies within all project spaces, and it also applies when\nan individual is representing the project or its community in public spaces.\nExamples of representing a project or community include using an official\nproject e-mail address, posting via an official social media account, or acting\nas an appointed representative at an online or offline event. Representation of\na project may be further defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the project team at <conduct@pytorch.org>. All\ncomplaints will be reviewed and investigated and will result in a response that\nis deemed necessary and appropriate to the circumstances. The project team is\nobligated to maintain confidentiality with regard to the reporter of an incident.\nFurther details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,\navailable at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html\n\n[homepage]: https://www.contributor-covenant.org\n\nFor answers to common questions about this code of conduct, see\nhttps://www.contributor-covenant.org/faq\n\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/CODE_OF_CONDUCT.md"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# Contributing to Facebook AI Research Sequence-to-Sequence Toolkit (fairseq)\nWe want to make contributing to this project as easy and transparent as\npossible.\n\n## Pull Requests\nWe actively welcome your pull requests.\n\n1. Fork the repo and create your branch from `master`.\n2. If you've added code that should be tested, add tests.\n3. If you've changed APIs, update the documentation.\n4. Ensure the test suite passes.\n5. Make sure your code lints.\n6. If you haven't already, complete the Contributor License Agreement (\"CLA\").\n\n## Contributor License Agreement (\"CLA\")\nIn order to accept your pull request, we need you to submit a CLA. You only need\nto do this once to work on any of Facebook's open source projects.\n\nComplete your CLA here: <https://code.facebook.com/cla>\n\n## Issues\nWe use GitHub issues to track public bugs. Please ensure your description is\nclear and has sufficient instructions to be able to reproduce the issue.\n\n## License\nBy contributing to Facebook AI Research Sequence-to-Sequence Toolkit (fairseq),\nyou agree that your contributions will be licensed under the LICENSE file in\nthe root directory of this source tree.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/CONTRIBUTING.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/examples/backtranslation/prepare-de-monolingual.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/examples/backtranslation/sacrebleu.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/examples/backtranslation/tokenized_bleu.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/examples/backtranslation/prepare-wmt18en2de.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/examples/translation/prepare-wmt14en2de.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/examples/translation/prepare-wmt14en2fr.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/examples/translation/prepare-iwslt14.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/examples/translation/prepare-iwslt17-multilingual.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/examples/joint_alignment_translation/prepare-wmt18en2de_no_norm_no_escape_no_agressive.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/examples/language_model/prepare-wikitext-103.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/examples/roberta/preprocess_RACE.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/examples/roberta/preprocess_GLUE_tasks.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/examples/roberta/commonsense_qa/download_cqa_data.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/examples/byte_level_bpe/get_data.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/scripts/compound_split_bleu.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/utils/fairseq/scripts/sacrebleu_pregen.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/src/run-BT.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/src/run-BIFI.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/src/run-round0.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/src/run-FixerOnly.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "Run the following commands to create a conda environment (assuming CUDA10.1):\n```bash\nconda create -n BIFI python=3.7.7\nconda activate BIFI\npip install tqdm\npip install torch==1.4.0 torchvision==0.5.0\ncd utils/fairseq\npip install -e .\npip install numpy==1.20.1 editdistance\n```\nAlternatively, you can use the Dockerfile in the `docker` folder of this repo to set up the environment.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "0. Dependencies",
+                "parent_header": [
+                    "Break-It-Fix-It: Learning to Repair Programs from Unlabeled Data"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/README.md"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "Download all the data from [here (`data.zip`)](https://nlp.stanford.edu/projects/myasu/BIFI/data.zip) and unzip it (note: 67GB when compressed, 400GB when decompressed). This includes the GitHub-Python dataset, and all the processed training data and trained models associated with BIFI.\nIf you only want the original GitHub-Python dataset, you can download it from [here (`data_minimal.zip`; 1GB)](https://nlp.stanford.edu/projects/myasu/BIFI/data_minimal.zip).\nAfter unzipping the `data.zip`, the resulting file structure will look like:\n```plain\n.\n\u251c\u2500\u2500 README.md\n\u2514\u2500\u2500 data/\n    \u251c\u2500\u2500 orig_bad_code/       (GitHub-Python dataset's bad code)\n    \u251c\u2500\u2500 orig_good_code/      (GitHub-Python dataset's good code)\n    \u2514\u2500\u2500 round0/\n        \u251c\u2500\u2500 data_paired      (paired data used to train fixer in round0)\n        \u2514\u2500\u2500 model-fixer      (fixer trained in round0)\n    \u251c\u2500\u2500 round1-BIFI-part1/\n        \u251c\u2500\u2500 data_paired      (paired data used to train breaker in BIFI round1)\n        \u2514\u2500\u2500 model-breaker    (breaker trained in BIFI round1)\n    \u251c\u2500\u2500 round1-BIFI-part2/\n        \u251c\u2500\u2500 data_paired      (paired data used to train fixer in BIFI round1)\n        \u2514\u2500\u2500 model-fixer      (fixer trained in BIFI round1)\n    \u251c\u2500\u2500 ...\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "1. Download Data",
+                "parent_header": [
+                    "Break-It-Fix-It: Learning to Repair Programs from Unlabeled Data"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/README.md"
+        },
+        {
+            "result": {
+                "value": "We collected 3 million Python3 snippets from GitHub. Using the critic (Python AST parser), the code snippets are split into a set of bad code (with AST parse errors) and a set of good code (with no errors).\nThe set of bad code is located at `data/orig_bad_code/orig.bad.json` and good code at `data/orig_good_code/orig.good.json`.\nEach entry of `orig.bad.json` or `orig.good.json` is a dictionary consisting of\n  - **\"code_string\"**: raw code in the string format\n  - **\"code_toks_joined\"**: the raw code is split into tokens by Python tokenizer, anonymized (string/number is replaced with special tokens `<STRING>`/`<NUMBER>`), and then joined by whitespace. The tokenization was done by `utils/code_utils.py: tokenize_python_code()`\n  - **\"anonymize_dict\"**: mapping betweens raw string/number and `<STRING>`/`<NUMBER>` so that \"code_string\" can be recovered from \"code_toks_joined\". This recovery can be done by `utils/code_utils.py: code_toks_to_code_string()`\n  - **\"err_obj\"**: type of the error caught by the critic (e.g. unbalanced parentheses, indentation error). This is only applicable to `orig.bad.json`.\n\n\nThe bad code snippets in `orig.bad.json` are split into 5 chunks (`orig.0.bad` to `orig.4.bad` in `data/orig_bad_code/`), where 3,4 is heldout as the test set and 0,1,2 is made available for BIFI training. This splitting was done by `scripts/split_orig_bad_and_good.py`\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "About the GitHub-Python dataset",
+                "parent_header": [
+                    "Break-It-Fix-It: Learning to Repair Programs from Unlabeled Data",
+                    "1. Download Data"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{yasunaga2021break,\n    booktitle = {International Conference on Machine Learning (ICML)},\n    year = {2021},\n    title = {Break-It-Fix-It: Unsupervised Learning for Program Repair},\n    author = {Michihiro Yasunaga and Percy Liang},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Break-It-Fix-It: Unsupervised Learning for Program Repair",
+                "author": "Michihiro Yasunaga and Percy Liang"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Break-It-Fix-It: Learning to Repair Programs from Unlabeled Data"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/figs/bifi.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/figs/task.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/michiyasunaga/bifi/main/README.md"
+        }
+    ]
+}

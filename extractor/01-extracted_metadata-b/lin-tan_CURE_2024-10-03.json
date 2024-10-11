@@ -1,0 +1,267 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:54:03"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/lin-tan/CURE",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "lin-tan",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-08-27T20:44:08Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-28T02:34:57Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "BSD 3-Clause License\n\nDeveloped by:\nThe ASSET research group led by Lin Tan\nPurdue University\n\nCopyright (c) 2022\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its\n   contributors may be used to endorse or promote products derived from\n   this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/lin-tan/CURE/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Artefact for our ICSE 2021 paper CURE: Code-Aware Neural Machine Translation for Automatic Program Repair",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "A pytorch implementation of paper [CURE: Code-Aware Neural Machine Translation for Automatic Program Repair](https://www.cs.purdue.edu/homes/lintan/publications/cure-icse21.pdf)\n \n",
+                "original_header": "CURE: Code-Aware Neural Machine Translation for Automatic Program Repair"
+            },
+            "confidence": 0.9632270939558579,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lin-tan/CURE/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* **results**: This folder contains all the bugs in both Defects4J and QuixBugs benchmarks that CURE fixed. Each file contains the buggy line, CURE's patch and the developer's patch\n* **candidate_patches**: This folder contains all the candidate patches CURE generated for bugs in each benchmark\n* **data**: This folder contains the vocabulary file, subword tokenizer, some training data examples, and the GPT PL model pre-trained on code.\n  * **vocabulary**\n    * subword.txt: the subword tokenizer model needed by subword-nmt\n    * vocabulary.txt: the vocabulary file used in CURE's paper\n  * **models**: This folder is used to save the models\n    * code_gpt.pt: the save GPT PL model trained on code\n  * **patches**: This folder is used to save the generated patches\n    * gpt_conut_1.txt: an example file that contains the candidate patches generated by a GPT-CoNuT model, including 100 patches for each QuixBugs bug.\n    * gpt_fconv_1.txt: an example file that contains the candidate patches generated by a GPT-FConv model, including 100 patches for each QuixBugs bug.\n  * **data**: This folder is used to save the training data and validation data\n    * CURE uses the source code training data shared by previous work [CoCoNuT](https://github.com/lin-tan/CoCoNut-Artifact)\n* **src**: This folder includes the source code for CURE's APR model\n \n",
+                "original_header": "File Structure"
+            },
+            "confidence": 0.9511757475891699,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/lin-tan/CURE/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "CURE",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "lin-tan/CURE",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/lin-tan/CURE/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/lin-tan/CURE/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 50,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 17,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/lin-tan/CURE/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 137079
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 24634
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/lin-tan/CURE/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "* Python 3.8\n* PyTorch 1.4.0\n* NumPy 1.18.1\n* Huggingface transformers 2.10.0\n* subword-nmt\n",
+                "type": "Text_excerpt",
+                "original_header": "Dependency",
+                "parent_header": [
+                    "CURE: Code-Aware Neural Machine Translation for Automatic Program Repair"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lin-tan/CURE/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "**To train a GPT-CoNuT model**, run `src/trainer/gpt_conut_trainer.py`\nSome settings you may need to change:\n  * vocab_file: the path to the vocabulary file used by the model\n  * train_file: the path to the training data\n  * valid_file: the path to the validation data\n  * gpt_file: the path to the saved GPT PL model\n  * hyper_parameter: the hyper-parameter of the model (including the number of encoder/decoder layers, dropout rate, etc.)\n  * save_dir: the directory to save the model, default: data/models/\n\n**To train a GPT-FConv model**, run `src/trainer/gpt_fconv_trainer.py`\nSome settings you may need to change:\n  * vocab_file: the path to the vocabulary file used by the model\n  * train_file: the path to the training data\n  * valid_file: the path to the validation data\n  * gpt_file: the path to the saved GPT PL model\n  * hyper_parameter: the hyper-parameter of the model (including the number of encoder/decoder layers, dropout rate, etc.)\n  * save_dir: the directory to save the model, default: data/models/\n\n**To prepare input for new test data**, check `data/data/prepare_testing_data.py`, make sure you check the readme file and follow the three steps to prepare the test input.\n\n**To generate patches**, run `src/tester/generator.py`\nSome settings you may need to change:\n  * vocab_file: the path to the vocabulary file used by the model\n  * input_file: the input data to the model for generating patches, with each line referring to a bug in the following format: `buggy line <CTX> surrounding function`. see `candidate_patches/QuixBugs/quixbugs_bpe.txt` for reference. \n  * identifier_txt_file: the valid identifiers for each bug, with each line being a list of valid identifiers, identifiers are split by space. see `candidate_patches/QuixBugs/identifier.txt` for reference\n  * identifier_token_file: the tokenized identifiers for each bug, with each line being a list of valid identifiers tokenized by camel letter, underscore, and subword. identifiers are split by `\\t`. see `candidate_patches/QuixBugs/identifier.tokens` for reference\n  * output_file: the path to the output result\n  * beam_size: the number of candidate patches generated by each model\n  * model_file: the path to the saved APR model\n  * CURE's trained models: https://zenodo.org/record/7030145#.YwvXfFvMI5l\n  \n`data/patches/gpt_conut_1.txt` and `data/patches/gpt_fconv_1.txt` are example candidate patches generated by GPT-CoNuT and GPT-FConv models for QuixBugs benchmark.\n\n**To validate the candidate patches generated by models**, run `src/validation/rerank.py`, which will rerank the patches generated by all the models and the result will be dumped into `data/patches/reranked_patches.json`, then run `src/validation/validate_quixbugs.py` or `src/validation/validate_defects4j.py`, which will run unit test cases (offered by Defects4J or QuixBugs) to validate the candidate patches. The final result will be dumped into `data/patches/validated_patches.json`\n\n\nIf you use CURE for academic purpose, please cite the following citation:\n```\n@inproceedings{jiang2021cure,\n  author={Jiang, Nan and Lutellier, Thibaud and Tan, Lin},\n  booktitle={2021 IEEE/ACM 43rd International Conference on Software Engineering (ICSE)}, \n  title={CURE: Code-Aware Neural Machine Translation for Automatic Program Repair}, \n  year={2021},\n  pages={1161-1173},\n  doi={10.1109/ICSE43902.2021.00107}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "CURE: Code-Aware Neural Machine Translation for Automatic Program Repair"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/lin-tan/CURE/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{jiang2021cure,\n    doi = {10.1109/ICSE43902.2021.00107},\n    pages = {1161-1173},\n    year = {2021},\n    title = {CURE: Code-Aware Neural Machine Translation for Automatic Program Repair},\n    booktitle = {2021 IEEE/ACM 43rd International Conference on Software Engineering (ICSE)},\n    author = {Jiang, Nan and Lutellier, Thibaud and Tan, Lin},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/ICSE43902.2021.00107",
+                "title": "CURE: Code-Aware Neural Machine Translation for Automatic Program Repair",
+                "author": "Jiang, Nan and Lutellier, Thibaud and Tan, Lin"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/lin-tan/CURE/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "CURE: Code-Aware Neural Machine Translation for Automatic Program Repair"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/lin-tan/CURE/master/README.md"
+        }
+    ]
+}

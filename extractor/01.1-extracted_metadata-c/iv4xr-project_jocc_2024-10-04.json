@@ -1,0 +1,266 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:31:26"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/iv4xr-project/jocc",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "iv4xr-project",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-03-17T20:32:27Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-02-27T17:41:28Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "OCC Implemenrtation\n\nCopyright notice:\n\nCopyright (c) 2019, Utrecht University\nAll rights reserved.\n\nLicense notice:\n\nThis file is part of jocc.\n\njocc is free software: you can redistribute it and/or modify it\nunder the terms of the Lesser GNU General Public License (LGPL) as\npublished by the Free Software Foundation, version 3 of the License.\n\naplib is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with jocc.  If not, see <https://www.gnu.org/licenses/>.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/iv4xr-project/jocc/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A discrete event-based system based implementation of the OCC Theory of emotions.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "JOCC is a 'model-based' approach, as opposed to e.g. a machine-learning based approach. This means that we first to construct a model of the SUT's users' 'mental process' (we will get back to what this means later). JOCC then uses this model to calculate which emotions would emerge when a user observes/experiences certain events, and how the intensity of these emotions would decay over time. So, if we now run a test scenario on the SUT, and let JOCC monitors the run, it then can predict which emotions would emerge during the scenario. This can be matched with some requirements as a form of User Experience (UX) testing. \nJOCC's most important source of information for its emotion calculation is the current likelihood of achieving each goal. Well.. we don't actually know this likelihood. This is ok, because what we want is not the actual likelihood, but rather, how players would perceive what the likelihood is (e.g. do players think that achieving g1 now becomes quite likely, or conversely very unlikely?). We also don't know how players would perceive this, but we can still model how we think they would perceive. This is what is meant by \"modelling players' mental process\" that we mentioned before. In fact, specifying all parameters that JOCC needs before we can use it (e.g. specifying what the players' goals are, the desirability of events, and how they affect goals' likelihood etc) is what we mean by modelling players. In JOCC, this is called **Player Characterization**; JOCC will need such a characterization before it can do its work. \n",
+                "original_header": "UX Testing with OCC"
+            },
+            "confidence": 0.9540798782276791,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/iv4xr-project/jocc/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "   * An 'environment' that connects it to the SUT.\n   * We can give the agent a 'goal structure', which can be thought as describing a test scenario, which the agent can run.\n   * The agent has a state, but additionally also an emotion-state (and instance of the class `OCCState`). This emotion state is not updated directly by the agent, but instead by an OCC-engine (an instance of `iv4xrOCCEngine`, which in turns is a subclass of JOCC's `EmotionAppraisalSystem`).\n   This OCC-engine will need some SUT-specific model of its users. This is the UserCharacterization component. \n",
+                "original_header": "The Architecture of iv4xr Emotive Testagent"
+            },
+            "confidence": 0.9001171502096306,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/iv4xr-project/jocc/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "jocc",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "iv4xr-project/jocc",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/iv4xr-project/jocc/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/iv4xr-project/jocc/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/iv4xr-project/jocc/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 32539
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/iv4xr-project/jocc/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/iv4xr-project/jocc/tree/main/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/iv4xr-project/jocc/wiki",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/iv4xr-project/jocc/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The general steps to do UX testing with JOCC are as follows: \n",
+                "original_header": "UX Testing with OCC"
+            },
+            "confidence": 0.9180125542288635,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/iv4xr-project/jocc/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/iv4xr-project/jocc/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/iv4xr-project/jocc/main/./occ_architecture.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/iv4xr-project/jocc/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2105.05589"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/iv4xr-project/jocc/main/README.md"
+        }
+    ]
+}

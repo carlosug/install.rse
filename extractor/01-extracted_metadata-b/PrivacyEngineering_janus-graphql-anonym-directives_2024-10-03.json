@@ -1,0 +1,237 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 22:40:20"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/PrivacyEngineering/janus-graphql-anonym-directives",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "PrivacyEngineering",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-09-30T08:52:49Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2022-07-06T13:49:46Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Per-Query Role-Based Data Minimization in GraphQL",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "janus-graphql-anonym-directives",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "PrivacyEngineering/janus-graphql-anonym-directives",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/PrivacyEngineering/janus-graphql-anonym-directives/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/PrivacyEngineering/janus-graphql-anonym-directives/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "anonymization, graphql, janus, privacy-engineering, privacy-enhancing-technologies",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/PrivacyEngineering/janus-graphql-anonym-directives/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 5124
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/PrivacyEngineering/janus-graphql-anonym-directives/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "npm install graphql-anonym-directives\r\n```\r",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "graphql-anonym-directives",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/janus-graphql-anonym-directives/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "``` \r\nJWT_SECRET=qwertyuiopasdfghjklzxcvbnm123456\r\n```\r\nIt can be loaded with the ```dotenv``` package in you ```index.js```: \r\n```js\r\nconst dotenv = require(\"dotenv\");\r\ndotenv.config();\r\n```\r\nAlso the context, that is passed as argument for each resolver call needs to store the token passed by the request. This can be done when creating the Apollo server (the argument ```req``` consists of the request information):\r\n```js\r\nconst server = new ApolloServer({\r\n    typeDefs,\r\n    resolvers,\r\n    context: ({req}) => {\r\n        return {req}\r\n    } \r\n})\r\n```\r\n\r\nTo use the anonymization directives, you need to import them and declare the ```getAnonymizationParameter``` function. This function must return the paramters, which then are passed by the directive to the anonymizer function (to learn more, look here for the anonymizer: ). As arguments, it gets the ```role``` and all 4 arguments (```result, args, context, info```), that are also passed to the resolvers.\r\n\r\nDon't forget to add the directive as argument when creating the apollo server.\r\n\r\nThere is also a directive that suppresses data and replaces them with ```null``` if the requester does not have a certain role that can be definded. Therefore, declare the function ```getAllowedRoles``` which returns an array of roles that have the permission to access the corresponding data field. \r\n\r\nA whole implementation could look like this:\r\n\r\n```js\r\n\r\nimport {NoiseDirective} from \"graphql-access-control\";\r\nNoiseDirective.prototype.getAnonymizationParameter = function(role, result, args, context, info){\r\n    const m = new Map();\r\n    m.set((\"Advertiser, Symptom.pain\"), {\r\n        typeOfDistribution: \"normal\", \r\n        distributionParameters:{\r\n            mean: 0,\r\n            standardDeviation: 2,\r\n        }, \r\n        valueParameters:{\r\n            isInt: true,\r\n        }\r\n    });    \r\n\r\n    var lookup = role + \", \" + info.parentType.name + \".\"+ info.fieldName\r\n    return m.get(lookup);\r\n};\r\n\r\nconst server = new ApolloServer({\r\n    typeDefs,\r\n    resolvers,\r\n    context: ({req}) => {\r\n        return {req, models}\r\n    },\r\n    schemaDirectives: { \r\n        noise: NoiseDirective,\r\n    }, \r\n});\r\n```\r\n\r\nThe schema then could implement the noise directive: \r\n\r\n```\r\ntype Symptom{\r\n    id: ID!\r\n    pain: Float @noise\r\n}\r\n```\r\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "graphql-anonym-directives",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/janus-graphql-anonym-directives/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{pallas2022configurable,\n    organization = {Springer Nature},\n    year = {2022},\n    pages = {325},\n    volume = {13362},\n    booktitle = {Web Engineering: 22nd International Conference, ICWE 2022, Bari, Italy, July 5--8, 2022},\n    author = {Frank Pallas and David Hartmann and Paul Heinrich and Josefine Kipke and Elias Gr\u00fcnewald},\n    title = {Configurable Per-Query Data Minimization for Privacy-Compliant Web APIs},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Configurable Per-Query Data Minimization for Privacy-Compliant Web APIs",
+                "author": "Frank Pallas and David Hartmann and Paul Heinrich and Josefine Kipke and Elias Gr\u00fcnewald"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/janus-graphql-anonym-directives/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/janus-graphql-anonym-directives/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2203.09903"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/janus-graphql-anonym-directives/main/README.md"
+        }
+    ]
+}

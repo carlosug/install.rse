@@ -1,0 +1,435 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:14:35"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/dynatrace-research/function-hook-latency-benchmarking",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "dynatrace-research",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-10-13T11:14:28Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-07-13T20:31:13Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/apache-2.0",
+                "type": "License",
+                "name": "Apache License 2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "spdx_id": "Apache-2.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Benchmarking Function Hook Latency in Cloud-Native Environments",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains the source code for the paper \ud83d\udcdc [Benchmarking Function Hook Latency in Cloud-Native Environments](https://dl.gi.de/bitstreams/2c123e9d-8f11-4d6a-88fe-14aabc73e69c/download)\nwhich we published at the 14th Symposium on Software Performance (SSP) in 2023.\nThe presentation slides of that paper can be found [here](./ssp2023_presentation.pdf). \n> **Note**\n> This project is not officially supported by Dynatrace. \n- [`/benchmark`](./benchmark/) contains the Locust load generator, the system under test (SUT), and the Kubernetes manifests for deploying them\n- [`/hook`](./hook/) contains the source code of the function hook (and a pre-built binary) that we inject into the SUT\n- [`/results`](./results/) contains the data from our experiment, and a Jupyter notebook to analyze and visualize it \n",
+                "original_header": "Benchmarking Function Hook Latency in Cloud-Native Environments"
+            },
+            "confidence": 0.9454368343259908,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository already includes a **pre-built version of the function hook in [`/hook/out/readhook.so`](`/hook/out/readhook.so`)** making this step optional.\nFor building, we use a rather old `gcc:7.5.0` image so that we build the hook against an older version of the C standard library (GLIBC 2.28).\nThis way, we have greater backwards compatibility with applications that use older versions of the C standard library. \n",
+                "original_header": "Building the function hook"
+            },
+            "confidence": 0.9918630738681286,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Container for the SUT, on port `8080`\n- Container for the SUT, with `LD_PRELOAD=/opt/hook/readhook.so` set, mounted from `/hook/out` in this repository, on port `8081`\n- Container for the Locust load generator, with `/benchmark/benchmark_results` mounted into this repository, on port `8089` \n",
+                "original_header": "\ud83d\udc0b Experiment 1: Docker"
+            },
+            "confidence": 0.9446948980463893,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "function-hook-latency-benchmarking",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "dynatrace-research/function-hook-latency-benchmarking",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/dynatrace-research/function-hook-latency-benchmarking/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/dynatrace-research/function-hook-latency-benchmarking/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "benchmarking, cloud-native, function-hooks, kubernetes, ld-preload",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/dynatrace-research/function-hook-latency-benchmarking/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 20294
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 14616
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 2976
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 1891
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 697
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 510
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "code_of_conduct": [
+        {
+            "result": {
+                "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nWe as members, contributors, and leaders pledge to make participation in our\ncommunity a harassment-free experience for everyone, regardless of age, body\nsize, visible or invisible disability, ethnicity, sex characteristics, gender\nidentity and expression, level of experience, education, socio-economic status,\nnationality, personal appearance, race, religion, or sexual identity\nand orientation.\n\nWe pledge to act and interact in ways that contribute to an open, welcoming,\ndiverse, inclusive, and healthy community.\n\n## Our Standards\n\nExamples of behavior that contributes to a positive environment for our\ncommunity include:\n\n* Demonstrating empathy and kindness toward other people\n* Being respectful of differing opinions, viewpoints, and experiences\n* Giving and gracefully accepting constructive feedback\n* Accepting responsibility and apologizing to those affected by our mistakes,\n  and learning from the experience\n* Focusing on what is best not just for us as individuals, but for the\n  overall community\n\nExamples of unacceptable behavior include:\n\n* The use of sexualized language or imagery, and sexual attention or\n  advances of any kind\n* Trolling, insulting or derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or email\n  address, without their explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Enforcement Responsibilities\n\nCommunity leaders are responsible for clarifying and enforcing our standards of\nacceptable behavior and will take appropriate and fair corrective action in\nresponse to any behavior that they deem inappropriate, threatening, offensive,\nor harmful.\n\nCommunity leaders have the right and responsibility to remove, edit, or reject\ncomments, commits, code, wiki edits, issues, and other contributions that are\nnot aligned to this Code of Conduct, and will communicate reasons for moderation\ndecisions when appropriate.\n\n## Scope\n\nThis Code of Conduct applies within all community spaces, and also applies when\nan individual is officially representing the community in public spaces.\nExamples of representing our community include using an official e-mail address,\nposting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported to the community leaders responsible for enforcement at\nopensource@dynatrace.com.\nAll complaints will be reviewed and investigated promptly and fairly.\n\nAll community leaders are obligated to respect the privacy and security of the\nreporter of any incident.\n\n## Enforcement Guidelines\n\nCommunity leaders will follow these Community Impact Guidelines in determining\nthe consequences for any action they deem in violation of this Code of Conduct:\n\n### 1. Correction\n\n**Community Impact**: Use of inappropriate language or other behavior deemed\nunprofessional or unwelcome in the community.\n\n**Consequence**: A private, written warning from community leaders, providing\nclarity around the nature of the violation and an explanation of why the\nbehavior was inappropriate. A public apology may be requested.\n\n### 2. Warning\n\n**Community Impact**: A violation through a single incident or series\nof actions.\n\n**Consequence**: A warning with consequences for continued behavior. No\ninteraction with the people involved, including unsolicited interaction with\nthose enforcing the Code of Conduct, for a specified period of time. This\nincludes avoiding interactions in community spaces as well as external channels\nlike social media. Violating these terms may lead to a temporary or\npermanent ban.\n\n### 3. Temporary Ban\n\n**Community Impact**: A serious violation of community standards, including\nsustained inappropriate behavior.\n\n**Consequence**: A temporary ban from any sort of interaction or public\ncommunication with the community for a specified period of time. No public or\nprivate interaction with the people involved, including unsolicited interaction\nwith those enforcing the Code of Conduct, is allowed during this period.\nViolating these terms may lead to a permanent ban.\n\n### 4. Permanent Ban\n\n**Community Impact**: Demonstrating a pattern of violation of community\nstandards, including sustained inappropriate behavior,  harassment of an\nindividual, or aggression toward or disparagement of classes of individuals.\n\n**Consequence**: A permanent ban from any sort of public interaction within\nthe community.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage],\nversion 2.0, available at\n<https://www.contributor-covenant.org/version/2/0/code_of_conduct.html>.\n\nCommunity Impact Guidelines were inspired by [Mozilla's code of conduct\nenforcement ladder](https://github.com/mozilla/diversity).\n\n[homepage]: https://www.contributor-covenant.org\n\nFor answers to common questions about this code of conduct, see the FAQ at\n<https://www.contributor-covenant.org/faq>. Translations are available at\n<https://www.contributor-covenant.org/translations>.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/CODE_OF_CONDUCT.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# How to Contribute\n\nWe'd love to accept your patches and contributions to this project. There are\njust a few small guidelines you need to follow.\n\n## Contributor License Agreement\n\nContributions to this project must be accompanied by a Contributor License\nAgreement. You (or your employer) retain the copyright to your contribution;\nthis simply gives us permission to use and redistribute your contributions as\npart of the project.\n\nYou generally only need to submit a CLA once, so if you've already submitted one\n(even if it was for a different project), you probably don't need to do it\nagain.\n\n## Code Reviews\n\nAll submissions, including submissions by project members, require review. We\nuse GitHub pull requests for this purpose. Consult\n[GitHub Help](https://help.github.com/articles/about-pull-requests/) for more\ninformation on using pull requests.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/CONTRIBUTING.md"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/benchmark/docker-compose.yml",
+                "type": "Url",
+                "format": "docker_compose"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/benchmark/docker-compose.yml"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/hook/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/hook/Dockerfile"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/results/src/analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/results/src/analysis.ipynb"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If this is useful for your work, you can cite our pre-print as follows.\nThe conference version will be available at a later point in time.\n\n```bibtex\n@inproceedings{Kahlhofer2023:BenchmarkingFunctionHookLatency,\n  title = {Benchmarking Function Hook Latency in Cloud-Native Environments},\n  author = {Kahlhofer, Mario and Kern, Patrick and Henning, S{\\\"o}ren and Rass, Stefan},\n  booktitle = {Softwaretechnik-Trends Band 43, Heft 4},\n  eventtitle = {14th Symposium on Software Performance},\n  publisher = {Gesellschaft f{\\\"u}r Informatik e.V.},\n  location = {Karlsruhe, Germany},\n  series = {SSP '23},\n  pages = {11--13},\n  year = {2023},\n  month = nov,\n  issn = {0720-8928},\n  url = {https://dl.gi.de/handle/20.500.12116/43246}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "Benchmarking Function Hook Latency in Cloud-Native Environments"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{Kahlhofer2023:BenchmarkingFunctionHookLatency,\n    url = {https://dl.gi.de/handle/20.500.12116/43246},\n    issn = {0720-8928},\n    month = {November},\n    year = {2023},\n    pages = {11--13},\n    series = {SSP '23},\n    location = {Karlsruhe, Germany},\n    publisher = {Gesellschaft f{\\\"u}r Informatik e.V.},\n    eventtitle = {14th Symposium on Software Performance},\n    booktitle = {Softwaretechnik-Trends Band 43, Heft 4},\n    author = {Kahlhofer, Mario and Kern, Patrick and Henning, S{\\\"o}ren and Rass, Stefan},\n    title = {Benchmarking Function Hook Latency in Cloud-Native Environments},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Benchmarking Function Hook Latency in Cloud-Native Environments",
+                "author": "Kahlhofer, Mario and Kern, Patrick and Henning, S{\\\"o}ren and Rass, Stefan",
+                "url": "https://dl.gi.de/handle/20.500.12116/43246"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "For experiment 3 and 4, we presume that your AWS EKS cluster is already set up and that you have `kubectl` configured to talk to it.\nTypically, this can be done with the AWS CLI, like so:\n\n```sh\naws eks update-kubeconfig --name ${CLUSTER_NAME} --region ${REGION}\n```\n\nWe need to push our container images into AWS ECR. First, login into the container registry (ECR):\n\n```sh\naws ecr get-login-password --region ${REGION} | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com\n```\n\nNext, create repositories for the images:\n\n```sh\naws ecr create-repository --repository-name system-under-test\naws ecr create-repository --repository-name test-bench\naws ecr create-repository --repository-name readhook\n```\n\nThen, build the images locally (also the scratch `readhook` container), tag them, and push them to ECR:\n\n```sh\ncd benchmark\ndocker compose --profile with-readhook build\ndocker tag system-under-test ${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/system-under-test\ndocker tag test-bench ${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/test-bench\ndocker tag readhook ${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/readhook\ndocker push ${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/system-under-test\ndocker push ${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/test-bench\ndocker push ${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/readhook\n```\n\nNote that we have a special `readhook` container image which just contains the `/out/readhook.so` file so that we can mount it without volume claims.\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites for experiments in AWS EKS",
+                "parent_header": [
+                    "Benchmarking Function Hook Latency in Cloud-Native Environments",
+                    "Demonstration"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\ud83d\udcac If you have suggestions on how to improve these recommendations, please let us know by opening an issue or a pull request.\n \n",
+                "original_header": "Recommendations from the paper"
+            },
+            "confidence": 0.9830965541864747,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "In the following, we demonstrate how to reproduce the experiments of our paper.\nAs a prerequisite, you will need to install the following tools: \n",
+                "original_header": "Demonstration"
+            },
+            "confidence": 0.9973339870510042,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository already includes a **pre-built version of the function hook in [`/hook/out/readhook.so`](`/hook/out/readhook.so`)** making this step optional.\nFor building, we use a rather old `gcc:7.5.0` image so that we build the hook against an older version of the C standard library (GLIBC 2.28).\nThis way, we have greater backwards compatibility with applications that use older versions of the C standard library. \nIn Bash, to build the hook in a container and copy it to the host system, run:\n```sh\ncd hook\ndocker build -t readhook .\nid=$(docker create readhook)\ndocker cp $id:/out/readhook.so ./out/readhook.so\ndocker rm -v $id\n```\nIn PowerShell, to build the hook in a container and copy it to the host system, run:\n```sh\ncd hook\ndocker build -t readhook .\n$Id = docker create readhook\ndocker cp \"$($Id):/out/readhook.so\" ./out/readhook.so\ndocker rm -v $Id\n```\n \n",
+                "original_header": "Building the function hook"
+            },
+            "confidence": 0.9999013841022086,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "First, let Compose build and start the containers:\n```sh\ncd benchmark\ndocker compose up -d\n```\n \n- One with the host `http://host.docker.internal:8080` (no trailing slash) to test the SUT without the hook\n- One with the host `http://host.docker.internal:8081` (no trailing slash) to test the SUT with the hook \nTo clean up again, run:\n```sh\ndocker compose down\n```\n \n",
+                "original_header": "\ud83d\udc0b Experiment 1: Docker"
+            },
+            "confidence": 0.9656623116867326,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- One with the host `http://localhost:8080` (no trailing slash) to test the SUT without the hook\n- One with the host `http://localhost:8081` (no trailing slash) to test the SUT with the hook \nTo clean up again, run:\n```sh\nkind delete cluster --name benchmark\n```\n \n",
+                "original_header": "\ud83d\udef3\ufe0f Experiment 2: Kind"
+            },
+            "confidence": 0.9770558237660046,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "_Before continuing, make sure that you read the prerequisites for experiments in AWS EKS from before._ \nLet's start by creating a namespace for our benchmark:\n```sh\nkubectl create namespace benchmark\n```\nThen, we take the `aws-single-pod.template.yaml` manifest and need to change the `REPOSITORY_URL` variable and deploy it.\nIf you use Windows, change this value manually in the file. With Bash, you can use the following command:\n```sh\ncd benchmark\nexport AWS_ACCOUNT_ID=YOUR_AWS_ACCOUNT_ID\nexport REGION=YOUR_AWS_REGION\ncat ./k8s-manifests/aws-single-pod.template.yaml \\\n  | sed -e 's@${REPOSITORY_URL}@'\"${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com\"'@g' \\\n  | kubectl apply -n benchmark -f -\n```\nNext, wait for the deployment and then port-forward the Locust UI locally:\n```sh\nkubectl rollout status deployment tb-single-pod -n benchmark --timeout=60s\nkubectl port-forward -n benchmark service/locust 8089:8089\n```\n \nIn Bash, run the following:\n```sh\npodname=$(kubectl get pods -n benchmark --selector=app.kubernetes.io/name=tb-single-pod --no-headers -o custom-columns=\":metadata.name\")\nkubectl cp -c test-bench \"benchmark/$($PodName):/tmp/benchmark_results\" ./benchmark_results\n```\nIn PowerShell, run the following:\n```sh\n$PodName = kubectl get pods -n benchmark --selector=app.kubernetes.io/name=tb-single-pod --no-headers -o custom-columns=\":metadata.name\"\nkubectl cp -c test-bench \"benchmark/$($PodName):/tmp/benchmark_results\" ./benchmark_results\n```\nTo clean up again, run:\n```sh\nkubectl delete all --all -n benchmark\n```\n \n",
+                "original_header": "\u2693 Experiment 3: AWS EKS with SUT and load generator in a single pod"
+            },
+            "confidence": 0.9695964880160916,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Let's start by creating a namespace for our benchmark:\n```sh\nkubectl create namespace benchmark\n```\nWe need to note down the hostnames of at least two different nodes in our cluster:\n```sh\nkubectl get nodes --no-headers -o custom-columns=\":metadata.name\"\nexport NODE_HOSTNAME_FOR_LOCUST=MANUALLY_COPY_THE_FIRST_HOSTNAME_FROM_ABOVE\nexport NODE_HOSTNAME_FOR_SUT=MANUALLY_COPY_THE_SECOND_HOSTNAME_FROM_ABOVE\n```\nThen, we take the `aws-different-nodes.template.yaml` manifest and need to change the `REPOSITORY_URL`, `NODE_HOSTNAME_FOR_LOCUST`, and `NODE_HOSTNAME_FOR_SUT` variables and deploy it.\nIf you use Windows, change these values manually in the file. With Bash, you can use the following command:\n```sh\ncd benchmark\nexport AWS_ACCOUNT_ID=YOUR_AWS_ACCOUNT_ID\nexport REGION=YOUR_AWS_REGION\ncat ./k8s-manifests/aws-different-nodes.template.yaml \\\n  | sed -e 's@${REPOSITORY_URL}@'\"${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com\"'@g' \\\n  | sed -e 's@${NODE_HOSTNAME_FOR_LOCUST}@'\"${NODE_HOSTNAME_FOR_LOCUST}\"'@g' \\\n  | sed -e 's@${NODE_HOSTNAME_FOR_SUT}@'\"${NODE_HOSTNAME_FOR_SUT}\"'@g' \\\n  | kubectl apply -n benchmark -f -\n```\nNext, wait for the deployment and then port-forward the Locust UI locally:\n```sh\nkubectl rollout status deployment tb-locust-node -n benchmark --timeout=60s\nkubectl port-forward -n benchmark service/locust 8089:8089\n```\n \n- One with the host `http://sut.benchmark.svc.cluster.local:8080` (no trailing slash) to test the SUT without the hook\n- One with the host `http://sut.benchmark.svc.cluster.local:8081` (no trailing slash) to test the SUT with the hook \nIn Bash, run the following:\n```sh\npodname=$(kubectl get pods -n benchmark --selector=app.kubernetes.io/name=tb-locust-node --no-headers -o custom-columns=\":metadata.name\")\nkubectl cp -c test-bench \"benchmark/$($PodName):/tmp/benchmark_results\" ./benchmark_results\n```\nIn PowerShell, run the following:\n```sh\n$PodName = kubectl get pods -n benchmark --selector=app.kubernetes.io/name=tb-locust-node --no-headers -o custom-columns=\":metadata.name\"\nkubectl cp -c test-bench \"benchmark/$($PodName):/tmp/benchmark_results\" ./benchmark_results\n```\nTo clean up again, run:\n```sh\nkubectl delete all --all -n benchmark\n```\n \n",
+                "original_header": "\ud83d\udd31 Experiment 4: AWS EKS with SUT and load generator in separate pods, each pod on a different node"
+            },
+            "confidence": 0.9878086781637859,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Benchmarking Function Hook Latency in Cloud-Native Environments"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dynatrace-research/function-hook-latency-benchmarking/main/README.md"
+        }
+    ]
+}

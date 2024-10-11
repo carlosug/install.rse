@@ -1,0 +1,245 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:04:51"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/FasterXML/smile-format-specification",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "FasterXML",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2017-06-29T19:33:23Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-07-31T09:10:18Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/bsd-2-clause",
+                "type": "License",
+                "name": "BSD 2-Clause \"Simplified\" License",
+                "url": "https://api.github.com/licenses/bsd-2-clause",
+                "spdx_id": "BSD-2-Clause"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "BSD 2-Clause License\n\nCopyright (c) 2017, FasterXML, LLC\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/fasterxml/smile-format-specification/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "New home for Smile format (https://en.wikipedia.org/wiki/Smile_(data_interchange_format))",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "*  [Clojure](http://clojure.org) \n    * [Cheshire](https://github.com/dakrone/cheshire) library offers support via Jackson `jackson-dataformat-smile`\n* C\n    * [libsmile](https://github.com/pierre/libsmile) is a small C-library for reading and writing Smile data.\n* Go\n    * [go-smile](https://github.com/zencoder/go-smile) Smile decoder written in Golang.\n* Java\n    * [Jackson](../../../jackson) provides Smile support through [jackson-dataformat-smile](../../../jackson-dataformats-binary) modules) format codec\n        * Full support: including streaming access, data binding and tree model (100% parity with textual JSON)\n        * [Jackson 2.9](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.9) added \"non-blocking\" ((aka \"asynchronous\") decoding for JSON and Smile format backends\n    * [Protostuff](http://github.com/protostuff/protostuff) project supports Smile both as a low-level data format, and as format used for its RPC implementation\n* Javascript\n    * [smile-js](https://github.com/ngyewch/smile-js) Smile decoder written in Javascript (only decodes (reads), does not encode (write)) \n* Kotlin Multiplatform\n    * [kotlinx-serialization-smile](https://github.com/vooft/kotlinx-serialization-smile) pure Kotlin Multiplatform implementation for `kotlinx-serialization`, supports JVM, Native, JS, etc\n* Python\n    * [NewSmile](https://pypi.org/project/newsmile/) Another Smile Format Decoder/Encoder for Python 3\n    * [PySmile](https://github.com/jhosmer/PySmile) Python codec\n* Rust\n    * [serde-smile](https://github.com/sfackler/serde-smile) Serde serializer and deserializer written in Rust. \n",
+                "original_header": "Implementations"
+            },
+            "confidence": 0.9841374172163643,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/fasterxml/smile-format-specification/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "smile-format-specification",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "FasterXML/smile-format-specification",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/FasterXML/smile-format-specification/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/FasterXML/smile-format-specification/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 92,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "hacktoberfest, smile-format",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 14,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/fasterxml/smile-format-specification/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/fasterxml/smile-format-specification/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "* [SmileFAQ](smile-faq.md)\n* [Smile Wikipedia entry](https://en.wikipedia.org/wiki/Smile_(data_interchange_format))\n* User documentation:\n    * [Understanding Smile data format](https://medium.com/code-with-ayush/understanding-smile-a-data-format-based-on-json-29972a37d376)\n",
+                "type": "Text_excerpt",
+                "original_header": "Documentation",
+                "parent_header": [
+                    "Smile Data Format"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/fasterxml/smile-format-specification/master/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9796744142048208,
+            "technique": "supervised_classification"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Smile Data Format"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fasterxml/smile-format-specification/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2201.03051"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fasterxml/smile-format-specification/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2201.02089"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/fasterxml/smile-format-specification/master/README.md"
+        }
+    ]
+}

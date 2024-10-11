@@ -1,0 +1,283 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:55:59"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/RuYunW/ADG-Seq2Seq",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "RuYunW",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-05-14T22:10:18Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-01T10:16:00Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "the implementation of Embedding API Dependency Graph for Neural Code Generation",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "ADG-Seq2Seq",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "RuYunW/ADG-Seq2Seq",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/RuYunW/ADG-Seq2Seq/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/RuYunW/ADG-Seq2Seq/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 12,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/RuYunW/ADG-Seq2Seq/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 54085
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/RuYunW/ADG-Seq2Seq/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "Our paper:[Embedding API Dependency Graph for neural code generation](https://link.springer.com/article/10.1007/s10664-021-09968-2)\n\n---\n",
+                "type": "Text_excerpt",
+                "original_header": "An Encoder_Decoder_Embedder based model",
+                "parent_header": [
+                    "ADG-Seq2Seq: Embedding API Dependency Graph for neural code generation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/RuYunW/ADG-Seq2Seq/master/README.md"
+        },
+        {
+            "result": {
+                "value": "* Python 3.7\n* Pytorch 1.5.0\n* CUDA 1.5.0\n\n---\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "ADG-Seq2Seq: Embedding API Dependency Graph for neural code generation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/RuYunW/ADG-Seq2Seq/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To train a new model, you can run file `training.py` like:  \n\n```\n    python3 training.py [HS/MTG/EJDT]\n```  \nthe models will be stored into `/model/*`.   \n> * Since large files are not easy to upload and download on github, we put the complete data set on google drive, click [here](https://drive.google.com/drive/folders/1I3oZWdeeKT9dI4eLZmYyiJB_cXFCB0ha?usp=sharing\n) for downloading. We also put some portions of dataset as demos, so before running, please rename them (if use).  \n> * Before training, please new a folder `./model` to store models.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 1: Train a new model",
+                "parent_header": [
+                    "ADG-Seq2Seq: Embedding API Dependency Graph for neural code generation",
+                    "Quick Start"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/RuYunW/ADG-Seq2Seq/master/README.md"
+        },
+        {
+            "result": {
+                "value": "You can run the model by:\n```\n    python3 eval.py [HS/MTG/EJDT]\n```\n---",
+                "type": "Text_excerpt",
+                "original_header": "Step 2: Evaluation",
+                "parent_header": [
+                    "ADG-Seq2Seq: Embedding API Dependency Graph for neural code generation",
+                    "Quick Start"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/RuYunW/ADG-Seq2Seq/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "To train a new model, you can run file `training.py` like:  \n\n```\n    python3 training.py [HS/MTG/EJDT]\n```  \nthe models will be stored into `/model/*`.   \n> * Since large files are not easy to upload and download on github, we put the complete data set on google drive, click [here](https://drive.google.com/drive/folders/1I3oZWdeeKT9dI4eLZmYyiJB_cXFCB0ha?usp=sharing\n) for downloading. We also put some portions of dataset as demos, so before running, please rename them (if use).  \n> * Before training, please new a folder `./model` to store models.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 1: Train a new model",
+                "parent_header": [
+                    "ADG-Seq2Seq: Embedding API Dependency Graph for neural code generation",
+                    "Quick Start"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/RuYunW/ADG-Seq2Seq/master/README.md"
+        },
+        {
+            "result": {
+                "value": "You can run the model by:\n```\n    python3 eval.py [HS/MTG/EJDT]\n```\n---",
+                "type": "Text_excerpt",
+                "original_header": "Step 2: Evaluation",
+                "parent_header": [
+                    "ADG-Seq2Seq: Embedding API Dependency Graph for neural code generation",
+                    "Quick Start"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/RuYunW/ADG-Seq2Seq/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Code Description:\n```\nReads the contents of the specified block into the buffer's page. If the buffer was dirty, then the contents of the previous page are first written to disk.\n```\nExample Code:  \n```\nvoid assignToBlock(BlockId blk){\n    internalLock.writeLock().lock();\n    try {\n        this.blk=blk;\n        contents.read(blk);\n        lastLsn=readPage(contents, LAST_LSN_OFFSET);\n    }\n    finally {\n        internalLock.writeLock().unlock();\n    }\n}\n```\n\n---\n**Citation**:  \nIf you find this code useful in your research, please cite our paper:\n```\n@article{lyu2021embedding,\n  title={Embedding API dependency graph for neural code generation},\n  author={Lyu, Chen and Wang, Ruyun and Zhang, Hongyu and Zhang, Hanwen and Hu, Songlin},\n  journal={Empirical Software Engineering},\n  volume={26},\n  number={4},\n  pages={1--51},\n  year={2021},\n  publisher={Springer}\n}\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Examples",
+                "parent_header": [
+                    "ADG-Seq2Seq: Embedding API Dependency Graph for neural code generation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/RuYunW/ADG-Seq2Seq/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@article{lyu2021embedding,\n    publisher = {Springer},\n    year = {2021},\n    pages = {1--51},\n    number = {4},\n    volume = {26},\n    journal = {Empirical Software Engineering},\n    author = {Lyu, Chen and Wang, Ruyun and Zhang, Hongyu and Zhang, Hanwen and Hu, Songlin},\n    title = {Embedding API dependency graph for neural code generation},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Embedding API dependency graph for neural code generation",
+                "author": "Lyu, Chen and Wang, Ruyun and Zhang, Hongyu and Zhang, Hanwen and Hu, Songlin"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/RuYunW/ADG-Seq2Seq/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "ADG-Seq2Seq: Embedding API Dependency Graph for neural code generation"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/RuYunW/ADG-Seq2Seq/master/README.md"
+        }
+    ]
+}

@@ -1,0 +1,630 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:01:45"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/HALOCORE/SynGuar",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "HALOCORE",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-03-15T04:09:24Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-08-27T22:09:28Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021 halocore\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "SynGuar: Guaranteeing Generalization in Programming by Example",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "A crucial requirement for `SynGuar` to work is that the synthesizer needs to soundly calculate an upper bound of the size of hypothesis space given some I/O examples. We provide two PBE synthesizers `StrSTUN` and `StrPROSE` in this repo that have such ability. They can be combined with `SynGuar` algorithm to synthesize programs with generalization guarantee.  \n",
+                "original_header": "Overview"
+            },
+            "confidence": 0.9791081901604001,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repo contains the implementation of SynGuar algorithm with two PBE synthesizers:\n- `SynGuar` local servers\n  - Python3 implementation of `SynGuar` algorithm\n  - In the form of a set of REST API servers\n  - Decides sample size for provable generalization guarantee. Combined with `StrSTUN` and `StrPROSE` to use.\n  - In folder `./SynGuar`\n  - See [Details-SynGuar.md](./docs/Details-SynGuar.md) for details\n- `StrPROSE` synthesizer\n  - C# implementation of a PROSE-based synthesizer\n  - Designed for string transformation PBE tasks\n  - Version-Space Algebra\n  - In folder `./StrPROSE-synthesizer`\n  - See [Details-StrPROSE.md](./docs/Details-StrPROSE.md) for details\n- `StrSTUN` synthesizer\n  - C++ implementation of a STUN-like synthesizer\n  - Designed to solve SyGuS string PBE tasks\n  - Explicit search with observational equivalence reduction and top level `if-then-else` unification\n  - In folder `./StrSTUN-synthesizer`\n  - See [Details-StrSTUN.md](./docs/Details-StrSTUN.md) for details \nThe following figure shows the workflow of this implementation of `SynGuar`. The `SynGuar` algorithm is implemented as the `SynGuar` Server, and the two PBE synthesizers `StrPROSE` and `StrSTUN` are proxied by `Synth` Server which communicates with `SynGuar` Server. The `benchmark` folder contains i.i.d.samplers that can generate i.i.d. samples for `SynGuar`.  \n",
+                "original_header": "Structure"
+            },
+            "confidence": 0.9787307923163732,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To extend the `SynGuar` framework, you need to have a synthesizer with the ability to count the program space size consistent with a given set of I/O examples specified by a file. You need to write i.i.d. samples to files that can be understood by your synthesizer. Then you need to add proxy code for your synthesizer in `./SynGuar/server_synth/worker.py` follow the examples of `StrPROSE` and `StrSTUN`, and add log parsing code for your synthesizer's\noutput in `./SynGuar/server_synth/cachereader.py`. \n",
+                "original_header": "How to extend"
+            },
+            "confidence": 0.9708709303728525,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "SynGuar",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "HALOCORE/SynGuar",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/HALOCORE/SynGuar/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/HALOCORE/SynGuar/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/halocore/synguar/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 2320969
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 249965
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 126495
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Slash",
+                "name": "Slash",
+                "type": "Programming_language",
+                "size": 84231
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C#",
+                "name": "C#",
+                "type": "Programming_language",
+                "size": 57574
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 10315
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 1968
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Yacc",
+                "name": "Yacc",
+                "type": "Programming_language",
+                "size": 1838
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 1718
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CMake",
+                "name": "CMake",
+                "type": "Programming_language",
+                "size": 1500
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 849
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Lex",
+                "name": "Lex",
+                "type": "Programming_language",
+                "size": 825
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/halocore/synguar/master/docker-stop.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/halocore/synguar/master/docker-connect.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/halocore/synguar/master/docker-build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/halocore/synguar/master/docker-run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/halocore/synguar/master/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/Dockerfile"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Please see the `Build & Run` section in [README.md](./README.md) for a quick guide.\n\nThere are two ways to build and run this artifact:\n- With Docker: Please see [BuildRun-Docker.md](./docs/BuildRun-Docker.md) for details.  \n- Without Docker: Please see [BuildRun-Ubuntu.md](./docs/BuildRun-Ubuntu.md) for details.\n\nWe recommend using Docker and we also provide the docker image in case the build is not successful. See [BuildRun-Docker.md](./docs/BuildRun-Docker.md).",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/INSTALL.md"
+        },
+        {
+            "result": {
+                "value": "Details: See [BuildRun-Docker.md](./docs/BuildRun-Docker.md) for details.  \n\nSteps to run the docker container:\n  1. Make sure `docker` is running and can be controlled under the current user.\n  2. Run `./docker-build.sh` to build the docker image, or run `docker pull unionss/synguar:v0.1.1` and `docker tag unionss/synguar:v0.1.1 synguar:v1` to pull and rename the docker image in case the build is not successful.\n  3. Run `./docker-run.sh` to start a container that is running in the background from the built image.\n  4. Run `./docker-connect.sh` to connect to the running container, with a bash shell.\n  5. Run `./docker-stop.sh` to stop the running container.\n",
+                "type": "Text_excerpt",
+                "original_header": "Set up tools using Docker",
+                "parent_header": [
+                    "Build &amp; Run"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Here <img src=\"https://render.githubusercontent.com/render/math?math=%28%5Cepsilon%2C+%5Cdelta%29\"/>-generalization means with probability at least <img src=\"https://render.githubusercontent.com/render/math?math=1-%5Cdelta\"/>, the synthesized program <img src=\"https://render.githubusercontent.com/render/math?math=f\"/> has true error <img src=\"https://render.githubusercontent.com/render/math?math=%5Cmathbb%7BE%7D%5B%5Cmathbb%7BI%7D%5Bf%28x%29+%5Cneq+c%28x%29%5D%5D\"/> smaller than <img src=\"https://render.githubusercontent.com/render/math?math=%5Cepsilon\"/> with respect to the target function <img src=\"https://render.githubusercontent.com/render/math?math=c\"/> on the distribution <img src=\"https://render.githubusercontent.com/render/math?math=D\"/> where the I/O examples are sampled from. See [SynGuar-algorithm](./docs/proofs/proofs.pdf) for details about this algorithm.  \n",
+                "original_header": "Overview"
+            },
+            "confidence": 1.0,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/halocore/synguar/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/halocore/synguar/tree/master/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "https://www.comp.nus.edu.sg/~wangbo20/synguar/webui/demo/index.html\n",
+                "type": "Text_excerpt",
+                "original_header": "Benchmark Exploration Demo",
+                "parent_header": [
+                    "<img alt=\"SynGuar\" src=\"./docs/figures/SynGuar-icon-fixed.svg\" />"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "There are 2 ways to build and run those tools.\n",
+                "type": "Text_excerpt",
+                "original_header": "Build &amp; Run"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\npython3 server-synth.py --config ./server-config-512g-16thread.json\npython3 server-synguar.py --config ./server-config-512g-16thread.json\npython3 webui.py\n```\nThe first two run servers with specified memory and thread configuration (See [Details-SynGuar.md](./docs/Details-SynGuar.md) for configuration), and the third one provides a monitoring interface in the browser. After the servers start, can interact with them through HTTP requests. For example, the `evaluation.py` script will post tasks and collect data through http requests. See [Details-SynGuar.md](./docs/Details-SynGuar.md) for details.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Run SynGuar servers",
+                "parent_header": [
+                    "Build &amp; Run"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```\ncd benchmark\npython3 ./generate_examples_strprose.py\npython3 ./generate_examples_strstun.py\n```\n\nThe random seeds are read from the following files:\n- `StrPROSE` benchmark: `benchmark/strprose/example_files/_seeds.json`\n- `StrSTUN` benchmark: `benchmark/strprose/example_files/_seeds.json`.\n\nSee details at [Benchmark.md](./docs/Benchmark.md).\n",
+                "type": "Text_excerpt",
+                "original_header": "Generate auxiliary benchmark files",
+                "parent_header": [
+                    "Run the evaluation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "value": "First Step: Make `SynGuar/server-synth.py` and `SynGuar/server-synguar.py` up and running. (`SynGuar/webui.py` is optional, only for monitoring server status). See the previous section **Run SynGuar servers** for detail.\n\nSecond Step: Run `cd SynGuar` to enter `SynGuar` directory. Run the following commands to submit evaluation tasks one at a time. After running each command, wait until the tasks are processed (Use optional Web UI for monitoring).\n\n```\ncd SynGuar\npython3 evaluation.py run-prose   # wait until finish\npython3 evaluation.py sdrop-prose # wait until finish\npython3 evaluation.py run-stun    # wait until finish\npython3 evaluation.py 4eg-stun    # wait until finish\n```\n\nAfter running the `evaluation.py` script, go to `http://localhost:5265/ui/synth/dashboard.html` to check the progress of synthesis tasks, and `http://localhost:5265/ui/synguar/dashboard.html` for the progress of `SynGuar` algorithm on the benchmarks.\n\nNotice that some benchmarks in `run-stun` evaluation tasks require 512GB memory to terminate. For other evaluation tasks, 8GB memory in total suffices. See [Evaluation.md](./docs/Evaluation.md) for details.\n",
+                "type": "Text_excerpt",
+                "original_header": "Run the evaluation tasks",
+                "parent_header": [
+                    "Run the evaluation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "value": "After finishing the benchmark tasks, please use the following command to collect data. Notice that data collection requires the `server-synth.py` and `server-synguar.py` to be up and running for data queries. Run the following command one after another:\n\n```\ncd SynGuar\npython3 evaluation.py data-prose  # wait until finish\npython3 evaluation.py data-stun   # wait until finish\n```\n\nAfter the data collection is finished, \nfor `strprose` benhmark, all data required \nin the paper is written to `./outputs/summaries` folder. For `strstun` benchmark, manual comparison of result programs is required.\nSee [Evaluation.md](./docs/Evaluation.md) for details.\n",
+                "type": "Text_excerpt",
+                "original_header": "Collect and analysis data",
+                "parent_header": [
+                    "Run the evaluation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "value": "After the tool is built, go to the root library of this repo (or default directory of docker container), and run the following to see usage.\n```\n dotnet ./StrPROSE-synthesizer/StrPROSE/bin/Debug/netcoreapp3.1/StrPROSE.dll --help\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Run StrPROSE synthesizer manually",
+                "parent_header": [
+                    "Other Information"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "value": "See [Details-StrSTUN.md](./docs/Details-StrSTUN.md) for details.\n\nAfter the tool is built, go to the root library of this repo (or default directory of docker container), then run the following to run `StrSTUN` synthesizer interactively.\n```\n./build-strstun/strstun\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Run StrSTUN synthesizer manually",
+                "parent_header": [
+                    "Other Information"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/halocore/synguar/master/./docs/figures/how-synguar-works.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/halocore/synguar/master/./docs/figures/SynGuar-icon-fixed.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://render.githubusercontent.com/render/math?math=%28%5Cepsilon%2C+%5Cdelta%29"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://render.githubusercontent.com/render/math?math=%28%5Cepsilon%2C+%5Cdelta%29"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://render.githubusercontent.com/render/math?math=1-%5Cdelta"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://render.githubusercontent.com/render/math?math=f"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://render.githubusercontent.com/render/math?math=%5Cmathbb%7BE%7D%5B%5Cmathbb%7BI%7D%5Bf%28x%29+%5Cneq+c%28x%29%5D%5D"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://render.githubusercontent.com/render/math?math=%5Cepsilon"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://render.githubusercontent.com/render/math?math=c"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://render.githubusercontent.com/render/math?math=D"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/halocore/synguar/master/./docs/figures/artifact-structure.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/halocore/synguar/master/README.md"
+        }
+    ]
+}

@@ -1,0 +1,598 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 16:42:58"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/twiniars/MeROS",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "twiniars",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-05-07T18:33:06Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-17T09:49:57Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 Tomasz Winiarski\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/twiniars/meros/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "MeROS: SysML-based Metamodel for ROS-related Systems",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The complexity of today's robot control systems implies difficulty in developing them efficiently and reliably. Systems engineering (SE) and frameworks come to help. The framework metamodels are needed to support the standardisation and correctness of the created application models. Although the use of frameworks is widespread nowadays, for the most popular of them, Robot Operating System (ROS), a contemporary  metamodel has been missing so far. MeROS is a new SysML-based metamodel for ROS, which addresses the running system and developer workspace. The ROS comes in two versions: ROS 1 and ROS 2. The MeROS includes both versions. In particular, the latest ROS 1 concepts are considered, such as nodelet, action, and metapackage. An essential addition to the original ROS concepts is the grouping of these concepts, which provides an opportunity to illustrate the system's decomposition and varying degrees of detail in its presentation. The matter is described in a standardised way in SysML (Systems Modeling Language). Hence, common development tools that support SysML can help conduct projects in the spirit of SE. \n",
+                "original_header": "MeROS: SysML-based Metamodel for ROS-related Systems"
+            },
+            "confidence": 0.9602541576405365,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/twiniars/meros/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "MeROS",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "twiniars/MeROS",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/twiniars/MeROS/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/twiniars/MeROS/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 20,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/twiniars/meros/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "TeX",
+                "name": "TeX",
+                "type": "Programming_language",
+                "size": 121298
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/167610369",
+                "tag": "3.0.1",
+                "name": "3.0.1",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "- (New) stereotype **Hardware**. Thanks @wstyczen",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/3.0.1",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/3.0.1",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/3.0.1",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/167610369",
+                "release_id": 167610369,
+                "date_created": "2024-07-29T16:06:08Z",
+                "date_published": "2024-07-29T16:07:40Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/161359832",
+                "tag": "3.0.0",
+                "name": "3.0.0",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "- New consequent philosophy to not specify specific Non-ROS aspects in MeROS metamodel, due to theirs very broad and versatile nature. It leads to metamodel simplification.\r\n- Removed most of the Non-ROS stereotypes: DataBase, VerSourcesContain, NROSCompon, NRosConn, Misc. \r\n- (New) added stereotypes: MetaPackage and MicroNode for Micro ROS Node. Thanks @jkaniuka\r\n",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/3.0.0",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/3.0.0",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/3.0.0",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/161359832",
+                "release_id": 161359832,
+                "date_created": "2024-06-20T13:56:02Z",
+                "date_published": "2024-06-20T13:56:25Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/159560556",
+                "tag": "2.0.1",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "- (Fix) Sources Container presentation decomposed into several diagrams with small corrections",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/2.0.1",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/2.0.1",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/2.0.1",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/159560556",
+                "release_id": 159560556,
+                "date_created": "2024-06-09T14:15:21Z",
+                "date_published": "2024-06-09T14:16:57Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/159080157",
+                "tag": "2.0.0",
+                "name": "2.0.0",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "Changes:\r\n\r\n- (Change) Stereotypes: **Intrasystem** and **RunningSystem** unified to **System**. Thanks @czogran, @jkaniuka, @Kubaless\r\n- (Change) Stereotypes: **DataFile** replaced with **Database**. Thanks @czogran\r\n- (New) Stereotypes **RunningSystemCompon** \r\n- (New) Stereotypes: **VerSourcesContainer** replaced **SourcesContainer** in Non-ROS sources containment\r\n- (Fix) various metamodel simplifications and corrections",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/2.0.0",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/2.0.0",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/2.0.0",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/159080157",
+                "release_id": 159080157,
+                "date_created": "2024-06-07T11:25:26Z",
+                "date_published": "2024-06-07T11:27:08Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/152664143",
+                "tag": "1.2.9",
+                "name": "1.2.9",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "Changes:\r\n\r\n- (Fix) Namespace aggregation cardinality \r\n- (New) Group of Packages\r\n- (Fix) Metapackage, Library and Plugin removed from metamodel\r\n- (New) System can aggregate itself\r\n- other minor fixes",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/1.2.9",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/1.2.9",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/1.2.9",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/152664143",
+                "release_id": 152664143,
+                "date_created": "2024-05-22T21:56:13Z",
+                "date_published": "2024-05-22T22:00:03Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/150418073",
+                "tag": "1.2.8",
+                "name": "1.2.8",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "Changes:\r\n\r\n- (Fix) Sources container (Workspace) requirement and bdd update",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/1.2.8",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/1.2.8",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/1.2.8",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/150418073",
+                "release_id": 150418073,
+                "date_created": "2024-04-09T14:50:03Z",
+                "date_published": "2024-04-09T14:55:08Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/149572056",
+                "tag": "1.2.7",
+                "name": "1.2.7",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "Changes:\r\n\r\n- (Bug) Intrasystem specialises Non-ROS Communicating Component (wrong direction of arrow)",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/1.2.7",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/1.2.7",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/1.2.7",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/149572056",
+                "release_id": 149572056,
+                "date_created": "2024-04-03T12:11:12Z",
+                "date_published": "2024-04-03T12:11:46Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/146897076",
+                "tag": "1.2.6",
+                "name": "1.2.6",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "Changes:\r\n\r\n- (Fix) SysML packages names changed to more descriptive\r\n- (Bug) Intrasystem specialises Non-ROS Communicating Component\r\n- other minor fixes\r\n",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/1.2.6",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/1.2.6",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/1.2.6",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/146897076",
+                "release_id": 146897076,
+                "date_created": "2024-03-18T22:20:03Z",
+                "date_published": "2024-03-18T22:23:21Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/144507622",
+                "tag": "1.2.5",
+                "name": "1.2.5",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "Changes:\r\n\r\n- minor fixes",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/1.2.5",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/1.2.5",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/1.2.5",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/144507622",
+                "release_id": 144507622,
+                "date_created": "2024-03-02T18:16:15Z",
+                "date_published": "2024-03-02T18:22:24Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/143667922",
+                "tag": "1.2.4",
+                "name": "1.2.4",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "Changes:\r\n\r\n* added Data Files \\<\\<DataFile\\>\\> (https://github.com/twiniars/MeROS/issues/18)",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/1.2.4",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/1.2.4",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/1.2.4",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/143667922",
+                "release_id": 143667922,
+                "date_created": "2024-02-26T17:07:01Z",
+                "date_published": "2024-02-26T17:10:53Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/140004001",
+                "tag": "1.2.3",
+                "name": "1.2.3",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "Changes:\r\n\r\n*  Communication Channel decomposition fix in exemplary application\r\n*  other small fixes",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/1.2.3",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/1.2.3",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/1.2.3",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/140004001",
+                "release_id": 140004001,
+                "date_created": "2024-02-05T23:05:48Z",
+                "date_published": "2024-02-05T23:10:34Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/139365969",
+                "tag": "1.2.2.1",
+                "name": "1.2.2",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "Changes:\r\n\r\n*  Plugins can be agrregated into Nodes",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/1.2.2.1",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/1.2.2.1",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/1.2.2.1",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/139365969",
+                "release_id": 139365969,
+                "date_created": "2024-01-31T17:44:11Z",
+                "date_published": "2024-01-31T17:37:42Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/139121734",
+                "tag": "1.2.1",
+                "name": "1.2.1",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "Changes:\r\n\r\n*  Shared associations introduced for generality of metamodel\r\n*  Workspaces can agreggate Repositiories now",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/1.2.1",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/1.2.1",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/1.2.1",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/139121734",
+                "release_id": 139121734,
+                "date_created": "2024-01-30T13:30:06Z",
+                "date_published": "2024-01-30T13:32:13Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/139035336",
+                "tag": "1.2.0",
+                "name": "1.2.0",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "Changes:\r\n\r\n*  Stereotype names correction\r\n*  Sources Container added to deal with source code outside ROS Workspace\r\n*  other small fixes\r\n",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/1.2.0",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/1.2.0",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/1.2.0",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/139035336",
+                "release_id": 139035336,
+                "date_created": "2024-01-30T00:52:29Z",
+                "date_published": "2024-01-30T00:59:25Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/134164456",
+                "tag": "1.1.2",
+                "name": "1.1.2",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "Changes:\r\n\r\n*  simplification of service and action connections by unidirectional arrow and removal of client and server labels on arrow ends (https://github.com/twiniars/MeROS/issues/12)",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/1.1.2",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/1.1.2",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/1.1.2",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/134164456",
+                "release_id": 134164456,
+                "date_created": "2023-12-16T01:27:32Z",
+                "date_published": "2023-12-16T01:33:26Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/twiniars/MeROS/releases/121553289",
+                "tag": "1.1.1",
+                "name": "1.1.1",
+                "author": {
+                    "name": "twiniars",
+                    "type": "User"
+                },
+                "description": "Changes:\r\n\r\n* added self composition of \\<\\<CommChannel\\>\\> (https://github.com/twiniars/MeROS/issues/3)\r\n* added groups of packages (https://github.com/twiniars/MeROS/issues/2)\r\n* added \\<\\<Repository\\>\\> as a specialisation of \\<\\<GpPackages\\>\\> (https://github.com/twiniars/MeROS/issues/11)",
+                "tarball_url": "https://api.github.com/repos/twiniars/MeROS/tarball/1.1.1",
+                "zipball_url": "https://api.github.com/repos/twiniars/MeROS/zipball/1.1.1",
+                "html_url": "https://github.com/twiniars/MeROS/releases/tag/1.1.1",
+                "url": "https://api.github.com/repos/twiniars/MeROS/releases/121553289",
+                "release_id": 121553289,
+                "date_created": "2023-09-18T15:09:59Z",
+                "date_published": "2023-09-18T15:11:05Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/twiniars/meros/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p align=\"center\">\n<img src=\"https://github.com/twiniars/MeROS/blob/main/meros-graphical-abstract.png\"> \n</p>\n \n",
+                "original_header": "MeROS: SysML-based Metamodel for ROS-related Systems"
+            },
+            "confidence": 0.9953236700072952,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/twiniars/meros/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* User feedback and contribution is welcome with issues https://github.com/twiniars/MeROS/issues \n",
+                "original_header": "Contribution"
+            },
+            "confidence": 0.998300046373744,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/twiniars/meros/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/twiniars/meros/main/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/twiniars/MeROS/main/meros-graphical-abstract.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/twiniars/meros/main/README.md"
+        }
+    ]
+}

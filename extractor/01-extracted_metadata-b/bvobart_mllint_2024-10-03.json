@@ -1,0 +1,1187 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:57:48"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/bvobart/mllint",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "bvobart",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-03-02T20:08:13Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-25T21:10:36Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/gpl-3.0",
+                "type": "License",
+                "name": "GNU General Public License v3.0",
+                "url": "https://api.github.com/licenses/gpl-3.0",
+                "spdx_id": "GPL-3.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "                    GNU GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n                            Preamble\n\n  The GNU General Public License is a free, copyleft license for\nsoftware and other kinds of works.\n\n  The licenses for most software and other practical works are designed\nto take away your freedom to share and change the works.  By contrast,\nthe GNU General Public License is intended to guarantee your freedom to\nshare and change all versions of a program--to make sure it remains free\nsoftware for all its users.  We, the Free Software Foundation, use the\nGNU General Public License for most of our software; it applies also to\nany other work released this way by its authors.  You can apply it to\nyour programs, too.\n\n  When we speak of free software, we are referring to freedom, not\nprice.  Our General Public Licenses are designed to make sure that you\nhave the freedom to distribute copies of free software (and charge for\nthem if you wish), that you receive source code or can get it if you\nwant it, that you can change the software or use pieces of it in new\nfree programs, and that you know you can do these things.\n\n  To protect your rights, we need to prevent others from denying you\nthese rights or asking you to surrender the rights.  Therefore, you have\ncertain responsibilities if you distribute copies of the software, or if\nyou modify it: responsibilities to respect the freedom of others.\n\n  For example, if you distribute copies of such a program, whether\ngratis or for a fee, you must pass on to the recipients the same\nfreedoms that you received.  You must make sure that they, too, receive\nor can get the source code.  And you must show them these terms so they\nknow their rights.\n\n  Developers that use the GNU GPL protect your rights with two steps:\n(1) assert copyright on the software, and (2) offer you this License\ngiving you legal permission to copy, distribute and/or modify it.\n\n  For the developers' and authors' protection, the GPL clearly explains\nthat there is no warranty for this free software.  For both users' and\nauthors' sake, the GPL requires that modified versions be marked as\nchanged, so that their problems will not be attributed erroneously to\nauthors of previous versions.\n\n  Some devices are designed to deny users access to install or run\nmodified versions of the software inside them, although the manufacturer\ncan do so.  This is fundamentally incompatible with the aim of\nprotecting users' freedom to change the software.  The systematic\npattern of such abuse occurs in the area of products for individuals to\nuse, which is precisely where it is most unacceptable.  Therefore, we\nhave designed this version of the GPL to prohibit the practice for those\nproducts.  If such problems arise substantially in other domains, we\nstand ready to extend this provision to those domains in future versions\nof the GPL, as needed to protect the freedom of users.\n\n  Finally, every program is threatened constantly by software patents.\nStates should not allow patents to restrict development and use of\nsoftware on general-purpose computers, but in those that do, we wish to\navoid the special danger that patents applied to a free program could\nmake it effectively proprietary.  To prevent this, the GPL assures that\npatents cannot be used to render the program non-free.\n\n  The precise terms and conditions for copying, distribution and\nmodification follow.\n\n                       TERMS AND CONDITIONS\n\n  0. Definitions.\n\n  \"This License\" refers to version 3 of the GNU General Public License.\n\n  \"Copyright\" also means copyright-like laws that apply to other kinds of\nworks, such as semiconductor masks.\n\n  \"The Program\" refers to any copyrightable work licensed under this\nLicense.  Each licensee is addressed as \"you\".  \"Licensees\" and\n\"recipients\" may be individuals or organizations.\n\n  To \"modify\" a work means to copy from or adapt all or part of the work\nin a fashion requiring copyright permission, other than the making of an\nexact copy.  The resulting work is called a \"modified version\" of the\nearlier work or a work \"based on\" the earlier work.\n\n  A \"covered work\" means either the unmodified Program or a work based\non the Program.\n\n  To \"propagate\" a work means to do anything with it that, without\npermission, would make you directly or secondarily liable for\ninfringement under applicable copyright law, except executing it on a\ncomputer or modifying a private copy.  Propagation includes copying,\ndistribution (with or without modification), making available to the\npublic, and in some countries other activities as well.\n\n  To \"convey\" a work means any kind of propagation that enables other\nparties to make or receive copies.  Mere interaction with a user through\na computer network, with no transfer of a copy, is not conveying.\n\n  An interactive user interface displays \"Appropriate Legal Notices\"\nto the extent that it includes a convenient and prominently visible\nfeature that (1) displays an appropriate copyright notice, and (2)\ntells the user that there is no warranty for the work (except to the\nextent that warranties are provided), that licensees may convey the\nwork under this License, and how to view a copy of this License.  If\nthe interface presents a list of user commands or options, such as a\nmenu, a prominent item in the list meets this criterion.\n\n  1. Source Code.\n\n  The \"source code\" for a work means the preferred form of the work\nfor making modifications to it.  \"Object code\" means any non-source\nform of a work.\n\n  A \"Standard Interface\" means an interface that either is an official\nstandard defined by a recognized standards body, or, in the case of\ninterfaces specified for a particular programming language, one that\nis widely used among developers working in that language.\n\n  The \"System Libraries\" of an executable work include anything, other\nthan the work as a whole, that (a) is included in the normal form of\npackaging a Major Component, but which is not part of that Major\nComponent, and (b) serves only to enable use of the work with that\nMajor Component, or to implement a Standard Interface for which an\nimplementation is available to the public in source code form.  A\n\"Major Component\", in this context, means a major essential component\n(kernel, window system, and so on) of the specific operating system\n(if any) on which the executable work runs, or a compiler used to\nproduce the work, or an object code interpreter used to run it.\n\n  The \"Corresponding Source\" for a work in object code form means all\nthe source code needed to generate, install, and (for an executable\nwork) run the object code and to modify the work, including scripts to\ncontrol those activities.  However, it does not include the work's\nSystem Libraries, or general-purpose tools or generally available free\nprograms which are used unmodified in performing those activities but\nwhich are not part of the work.  For example, Corresponding Source\nincludes interface definition files associated with source files for\nthe work, and the source code for shared libraries and dynamically\nlinked subprograms that the work is specifically designed to require,\nsuch as by intimate data communication or control flow between those\nsubprograms and other parts of the work.\n\n  The Corresponding Source need not include anything that users\ncan regenerate automatically from other parts of the Corresponding\nSource.\n\n  The Corresponding Source for a work in source code form is that\nsame work.\n\n  2. Basic Permissions.\n\n  All rights granted under this License are granted for the term of\ncopyright on the Program, and are irrevocable provided the stated\nconditions are met.  This License explicitly affirms your unlimited\npermission to run the unmodified Program.  The output from running a\ncovered work is covered by this License only if the output, given its\ncontent, constitutes a covered work.  This License acknowledges your\nrights of fair use or other equivalent, as provided by copyright law.\n\n  You may make, run and propagate covered works that you do not\nconvey, without conditions so long as your license otherwise remains\nin force.  You may convey covered works to others for the sole purpose\nof having them make modifications exclusively for you, or provide you\nwith facilities for running those works, provided that you comply with\nthe terms of this License in conveying all material for which you do\nnot control copyright.  Those thus making or running the covered works\nfor you must do so exclusively on your behalf, under your direction\nand control, on terms that prohibit them from making any copies of\nyour copyrighted material outside their relationship with you.\n\n  Conveying under any other circumstances is permitted solely under\nthe conditions stated below.  Sublicensing is not allowed; section 10\nmakes it unnecessary.\n\n  3. Protecting Users' Legal Rights From Anti-Circumvention Law.\n\n  No covered work shall be deemed part of an effective technological\nmeasure under any applicable law fulfilling obligations under article\n11 of the WIPO copyright treaty adopted on 20 December 1996, or\nsimilar laws prohibiting or restricting circumvention of such\nmeasures.\n\n  When you convey a covered work, you waive any legal power to forbid\ncircumvention of technological measures to the extent such circumvention\nis effected by exercising rights under this License with respect to\nthe covered work, and you disclaim any intention to limit operation or\nmodification of the work as a means of enforcing, against the work's\nusers, your or third parties' legal rights to forbid circumvention of\ntechnological measures.\n\n  4. Conveying Verbatim Copies.\n\n  You may convey verbatim copies of the Program's source code as you\nreceive it, in any medium, provided that you conspicuously and\nappropriately publish on each copy an appropriate copyright notice;\nkeep intact all notices stating that this License and any\nnon-permissive terms added in accord with section 7 apply to the code;\nkeep intact all notices of the absence of any warranty; and give all\nrecipients a copy of this License along with the Program.\n\n  You may charge any price or no price for each copy that you convey,\nand you may offer support or warranty protection for a fee.\n\n  5. Conveying Modified Source Versions.\n\n  You may convey a work based on the Program, or the modifications to\nproduce it from the Program, in the form of source code under the\nterms of section 4, provided that you also meet all of these conditions:\n\n    a) The work must carry prominent notices stating that you modified\n    it, and giving a relevant date.\n\n    b) The work must carry prominent notices stating that it is\n    released under this License and any conditions added under section\n    7.  This requirement modifies the requirement in section 4 to\n    \"keep intact all notices\".\n\n    c) You must license the entire work, as a whole, under this\n    License to anyone who comes into possession of a copy.  This\n    License will therefore apply, along with any applicable section 7\n    additional terms, to the whole of the work, and all its parts,\n    regardless of how they are packaged.  This License gives no\n    permission to license the work in any other way, but it does not\n    invalidate such permission if you have separately received it.\n\n    d) If the work has interactive user interfaces, each must display\n    Appropriate Legal Notices; however, if the Program has interactive\n    interfaces that do not display Appropriate Legal Notices, your\n    work need not make them do so.\n\n  A compilation of a covered work with other separate and independent\nworks, which are not by their nature extensions of the covered work,\nand which are not combined with it such as to form a larger program,\nin or on a volume of a storage or distribution medium, is called an\n\"aggregate\" if the compilation and its resulting copyright are not\nused to limit the access or legal rights of the compilation's users\nbeyond what the individual works permit.  Inclusion of a covered work\nin an aggregate does not cause this License to apply to the other\nparts of the aggregate.\n\n  6. Conveying Non-Source Forms.\n\n  You may convey a covered work in object code form under the terms\nof sections 4 and 5, provided that you also convey the\nmachine-readable Corresponding Source under the terms of this License,\nin one of these ways:\n\n    a) Convey the object code in, or embodied in, a physical product\n    (including a physical distribution medium), accompanied by the\n    Corresponding Source fixed on a durable physical medium\n    customarily used for software interchange.\n\n    b) Convey the object code in, or embodied in, a physical product\n    (including a physical distribution medium), accompanied by a\n    written offer, valid for at least three years and valid for as\n    long as you offer spare parts or customer support for that product\n    model, to give anyone who possesses the object code either (1) a\n    copy of the Corresponding Source for all the software in the\n    product that is covered by this License, on a durable physical\n    medium customarily used for software interchange, for a price no\n    more than your reasonable cost of physically performing this\n    conveying of source, or (2) access to copy the\n    Corresponding Source from a network server at no charge.\n\n    c) Convey individual copies of the object code with a copy of the\n    written offer to provide the Corresponding Source.  This\n    alternative is allowed only occasionally and noncommercially, and\n    only if you received the object code with such an offer, in accord\n    with subsection 6b.\n\n    d) Convey the object code by offering access from a designated\n    place (gratis or for a charge), and offer equivalent access to the\n    Corresponding Source in the same way through the same place at no\n    further charge.  You need not require recipients to copy the\n    Corresponding Source along with the object code.  If the place to\n    copy the object code is a network server, the Corresponding Source\n    may be on a different server (operated by you or a third party)\n    that supports equivalent copying facilities, provided you maintain\n    clear directions next to the object code saying where to find the\n    Corresponding Source.  Regardless of what server hosts the\n    Corresponding Source, you remain obligated to ensure that it is\n    available for as long as needed to satisfy these requirements.\n\n    e) Convey the object code using peer-to-peer transmission, provided\n    you inform other peers where the object code and Corresponding\n    Source of the work are being offered to the general public at no\n    charge under subsection 6d.\n\n  A separable portion of the object code, whose source code is excluded\nfrom the Corresponding Source as a System Library, need not be\nincluded in conveying the object code work.\n\n  A \"User Product\" is either (1) a \"consumer product\", which means any\ntangible personal property which is normally used for personal, family,\nor household purposes, or (2) anything designed or sold for incorporation\ninto a dwelling.  In determining whether a product is a consumer product,\ndoubtful cases shall be resolved in favor of coverage.  For a particular\nproduct received by a particular user, \"normally used\" refers to a\ntypical or common use of that class of product, regardless of the status\nof the particular user or of the way in which the particular user\nactually uses, or expects or is expected to use, the product.  A product\nis a consumer product regardless of whether the product has substantial\ncommercial, industrial or non-consumer uses, unless such uses represent\nthe only significant mode of use of the product.\n\n  \"Installation Information\" for a User Product means any methods,\nprocedures, authorization keys, or other information required to install\nand execute modified versions of a covered work in that User Product from\na modified version of its Corresponding Source.  The information must\nsuffice to ensure that the continued functioning of the modified object\ncode is in no case prevented or interfered with solely because\nmodification has been made.\n\n  If you convey an object code work under this section in, or with, or\nspecifically for use in, a User Product, and the conveying occurs as\npart of a transaction in which the right of possession and use of the\nUser Product is transferred to the recipient in perpetuity or for a\nfixed term (regardless of how the transaction is characterized), the\nCorresponding Source conveyed under this section must be accompanied\nby the Installation Information.  But this requirement does not apply\nif neither you nor any third party retains the ability to install\nmodified object code on the User Product (for example, the work has\nbeen installed in ROM).\n\n  The requirement to provide Installation Information does not include a\nrequirement to continue to provide support service, warranty, or updates\nfor a work that has been modified or installed by the recipient, or for\nthe User Product in which it has been modified or installed.  Access to a\nnetwork may be denied when the modification itself materially and\nadversely affects the operation of the network or violates the rules and\nprotocols for communication across the network.\n\n  Corresponding Source conveyed, and Installation Information provided,\nin accord with this section must be in a format that is publicly\ndocumented (and with an implementation available to the public in\nsource code form), and must require no special password or key for\nunpacking, reading or copying.\n\n  7. Additional Terms.\n\n  \"Additional permissions\" are terms that supplement the terms of this\nLicense by making exceptions from one or more of its conditions.\nAdditional permissions that are applicable to the entire Program shall\nbe treated as though they were included in this License, to the extent\nthat they are valid under applicable law.  If additional permissions\napply only to part of the Program, that part may be used separately\nunder those permissions, but the entire Program remains governed by\nthis License without regard to the additional permissions.\n\n  When you convey a copy of a covered work, you may at your option\nremove any additional permissions from that copy, or from any part of\nit.  (Additional permissions may be written to require their own\nremoval in certain cases when you modify the work.)  You may place\nadditional permissions on material, added by you to a covered work,\nfor which you have or can give appropriate copyright permission.\n\n  Notwithstanding any other provision of this License, for material you\nadd to a covered work, you may (if authorized by the copyright holders of\nthat material) supplement the terms of this License with terms:\n\n    a) Disclaiming warranty or limiting liability differently from the\n    terms of sections 15 and 16 of this License; or\n\n    b) Requiring preservation of specified reasonable legal notices or\n    author attributions in that material or in the Appropriate Legal\n    Notices displayed by works containing it; or\n\n    c) Prohibiting misrepresentation of the origin of that material, or\n    requiring that modified versions of such material be marked in\n    reasonable ways as different from the original version; or\n\n    d) Limiting the use for publicity purposes of names of licensors or\n    authors of the material; or\n\n    e) Declining to grant rights under trademark law for use of some\n    trade names, trademarks, or service marks; or\n\n    f) Requiring indemnification of licensors and authors of that\n    material by anyone who conveys the material (or modified versions of\n    it) with contractual assumptions of liability to the recipient, for\n    any liability that these contractual assumptions directly impose on\n    those licensors and authors.\n\n  All other non-permissive additional terms are considered \"further\nrestrictions\" within the meaning of section 10.  If the Program as you\nreceived it, or any part of it, contains a notice stating that it is\ngoverned by this License along with a term that is a further\nrestriction, you may remove that term.  If a license document contains\na further restriction but permits relicensing or conveying under this\nLicense, you may add to a covered work material governed by the terms\nof that license document, provided that the further restriction does\nnot survive such relicensing or conveying.\n\n  If you add terms to a covered work in accord with this section, you\nmust place, in the relevant source files, a statement of the\nadditional terms that apply to those files, or a notice indicating\nwhere to find the applicable terms.\n\n  Additional terms, permissive or non-permissive, may be stated in the\nform of a separately written license, or stated as exceptions;\nthe above requirements apply either way.\n\n  8. Termination.\n\n  You may not propagate or modify a covered work except as expressly\nprovided under this License.  Any attempt otherwise to propagate or\nmodify it is void, and will automatically terminate your rights under\nthis License (including any patent licenses granted under the third\nparagraph of section 11).\n\n  However, if you cease all violation of this License, then your\nlicense from a particular copyright holder is reinstated (a)\nprovisionally, unless and until the copyright holder explicitly and\nfinally terminates your license, and (b) permanently, if the copyright\nholder fails to notify you of the violation by some reasonable means\nprior to 60 days after the cessation.\n\n  Moreover, your license from a particular copyright holder is\nreinstated permanently if the copyright holder notifies you of the\nviolation by some reasonable means, this is the first time you have\nreceived notice of violation of this License (for any work) from that\ncopyright holder, and you cure the violation prior to 30 days after\nyour receipt of the notice.\n\n  Termination of your rights under this section does not terminate the\nlicenses of parties who have received copies or rights from you under\nthis License.  If your rights have been terminated and not permanently\nreinstated, you do not qualify to receive new licenses for the same\nmaterial under section 10.\n\n  9. Acceptance Not Required for Having Copies.\n\n  You are not required to accept this License in order to receive or\nrun a copy of the Program.  Ancillary propagation of a covered work\noccurring solely as a consequence of using peer-to-peer transmission\nto receive a copy likewise does not require acceptance.  However,\nnothing other than this License grants you permission to propagate or\nmodify any covered work.  These actions infringe copyright if you do\nnot accept this License.  Therefore, by modifying or propagating a\ncovered work, you indicate your acceptance of this License to do so.\n\n  10. Automatic Licensing of Downstream Recipients.\n\n  Each time you convey a covered work, the recipient automatically\nreceives a license from the original licensors, to run, modify and\npropagate that work, subject to this License.  You are not responsible\nfor enforcing compliance by third parties with this License.\n\n  An \"entity transaction\" is a transaction transferring control of an\norganization, or substantially all assets of one, or subdividing an\norganization, or merging organizations.  If propagation of a covered\nwork results from an entity transaction, each party to that\ntransaction who receives a copy of the work also receives whatever\nlicenses to the work the party's predecessor in interest had or could\ngive under the previous paragraph, plus a right to possession of the\nCorresponding Source of the work from the predecessor in interest, if\nthe predecessor has it or can get it with reasonable efforts.\n\n  You may not impose any further restrictions on the exercise of the\nrights granted or affirmed under this License.  For example, you may\nnot impose a license fee, royalty, or other charge for exercise of\nrights granted under this License, and you may not initiate litigation\n(including a cross-claim or counterclaim in a lawsuit) alleging that\nany patent claim is infringed by making, using, selling, offering for\nsale, or importing the Program or any portion of it.\n\n  11. Patents.\n\n  A \"contributor\" is a copyright holder who authorizes use under this\nLicense of the Program or a work on which the Program is based.  The\nwork thus licensed is called the contributor's \"contributor version\".\n\n  A contributor's \"essential patent claims\" are all patent claims\nowned or controlled by the contributor, whether already acquired or\nhereafter acquired, that would be infringed by some manner, permitted\nby this License, of making, using, or selling its contributor version,\nbut do not include claims that would be infringed only as a\nconsequence of further modification of the contributor version.  For\npurposes of this definition, \"control\" includes the right to grant\npatent sublicenses in a manner consistent with the requirements of\nthis License.\n\n  Each contributor grants you a non-exclusive, worldwide, royalty-free\npatent license under the contributor's essential patent claims, to\nmake, use, sell, offer for sale, import and otherwise run, modify and\npropagate the contents of its contributor version.\n\n  In the following three paragraphs, a \"patent license\" is any express\nagreement or commitment, however denominated, not to enforce a patent\n(such as an express permission to practice a patent or covenant not to\nsue for patent infringement).  To \"grant\" such a patent license to a\nparty means to make such an agreement or commitment not to enforce a\npatent against the party.\n\n  If you convey a covered work, knowingly relying on a patent license,\nand the Corresponding Source of the work is not available for anyone\nto copy, free of charge and under the terms of this License, through a\npublicly available network server or other readily accessible means,\nthen you must either (1) cause the Corresponding Source to be so\navailable, or (2) arrange to deprive yourself of the benefit of the\npatent license for this particular work, or (3) arrange, in a manner\nconsistent with the requirements of this License, to extend the patent\nlicense to downstream recipients.  \"Knowingly relying\" means you have\nactual knowledge that, but for the patent license, your conveying the\ncovered work in a country, or your recipient's use of the covered work\nin a country, would infringe one or more identifiable patents in that\ncountry that you have reason to believe are valid.\n\n  If, pursuant to or in connection with a single transaction or\narrangement, you convey, or propagate by procuring conveyance of, a\ncovered work, and grant a patent license to some of the parties\nreceiving the covered work authorizing them to use, propagate, modify\nor convey a specific copy of the covered work, then the patent license\nyou grant is automatically extended to all recipients of the covered\nwork and works based on it.\n\n  A patent license is \"discriminatory\" if it does not include within\nthe scope of its coverage, prohibits the exercise of, or is\nconditioned on the non-exercise of one or more of the rights that are\nspecifically granted under this License.  You may not convey a covered\nwork if you are a party to an arrangement with a third party that is\nin the business of distributing software, under which you make payment\nto the third party based on the extent of your activity of conveying\nthe work, and under which the third party grants, to any of the\nparties who would receive the covered work from you, a discriminatory\npatent license (a) in connection with copies of the covered work\nconveyed by you (or copies made from those copies), or (b) primarily\nfor and in connection with specific products or compilations that\ncontain the covered work, unless you entered into that arrangement,\nor that patent license was granted, prior to 28 March 2007.\n\n  Nothing in this License shall be construed as excluding or limiting\nany implied license or other defenses to infringement that may\notherwise be available to you under applicable patent law.\n\n  12. No Surrender of Others' Freedom.\n\n  If conditions are imposed on you (whether by court order, agreement or\notherwise) that contradict the conditions of this License, they do not\nexcuse you from the conditions of this License.  If you cannot convey a\ncovered work so as to satisfy simultaneously your obligations under this\nLicense and any other pertinent obligations, then as a consequence you may\nnot convey it at all.  For example, if you agree to terms that obligate you\nto collect a royalty for further conveying from those to whom you convey\nthe Program, the only way you could satisfy both those terms and this\nLicense would be to refrain entirely from conveying the Program.\n\n  13. Use with the GNU Affero General Public License.\n\n  Notwithstanding any other provision of this License, you have\npermission to link or combine any covered work with a work licensed\nunder version 3 of the GNU Affero General Public License into a single\ncombined work, and to convey the resulting work.  The terms of this\nLicense will continue to apply to the part which is the covered work,\nbut the special requirements of the GNU Affero General Public License,\nsection 13, concerning interaction through a network will apply to the\ncombination as such.\n\n  14. Revised Versions of this License.\n\n  The Free Software Foundation may publish revised and/or new versions of\nthe GNU General Public License from time to time.  Such new versions will\nbe similar in spirit to the present version, but may differ in detail to\naddress new problems or concerns.\n\n  Each version is given a distinguishing version number.  If the\nProgram specifies that a certain numbered version of the GNU General\nPublic License \"or any later version\" applies to it, you have the\noption of following the terms and conditions either of that numbered\nversion or of any later version published by the Free Software\nFoundation.  If the Program does not specify a version number of the\nGNU General Public License, you may choose any version ever published\nby the Free Software Foundation.\n\n  If the Program specifies that a proxy can decide which future\nversions of the GNU General Public License can be used, that proxy's\npublic statement of acceptance of a version permanently authorizes you\nto choose that version for the Program.\n\n  Later license versions may give you additional or different\npermissions.  However, no additional obligations are imposed on any\nauthor or copyright holder as a result of your choosing to follow a\nlater version.\n\n  15. Disclaimer of Warranty.\n\n  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY\nAPPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT\nHOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY\nOF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM\nIS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF\nALL NECESSARY SERVICING, REPAIR OR CORRECTION.\n\n  16. Limitation of Liability.\n\n  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\nWILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS\nTHE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY\nGENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE\nUSE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF\nDATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD\nPARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),\nEVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGES.\n\n  17. Interpretation of Sections 15 and 16.\n\n  If the disclaimer of warranty and limitation of liability provided\nabove cannot be given local legal effect according to their terms,\nreviewing courts shall apply local law that most closely approximates\nan absolute waiver of all civil liability in connection with the\nProgram, unless a warranty or assumption of liability accompanies a\ncopy of the Program in return for a fee.\n\n                     END OF TERMS AND CONDITIONS\n\n            How to Apply These Terms to Your New Programs\n\n  If you develop a new program, and you want it to be of the greatest\npossible use to the public, the best way to achieve this is to make it\nfree software which everyone can redistribute and change under these terms.\n\n  To do so, attach the following notices to the program.  It is safest\nto attach them to the start of each source file to most effectively\nstate the exclusion of warranty; and each file should have at least\nthe \"copyright\" line and a pointer to where the full notice is found.\n\n    <one line to give the program's name and a brief idea of what it does.>\n    Copyright (C) <year>  <name of author>\n\n    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <https://www.gnu.org/licenses/>.\n\nAlso add information on how to contact you by electronic and paper mail.\n\n  If the program does terminal interaction, make it output a short\nnotice like this when it starts in an interactive mode:\n\n    <program>  Copyright (C) <year>  <name of author>\n    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.\n    This is free software, and you are welcome to redistribute it\n    under certain conditions; type `show c' for details.\n\nThe hypothetical commands `show w' and `show c' should show the appropriate\nparts of the General Public License.  Of course, your program's commands\nmight be different; for a GUI interface, you would use an \"about box\".\n\n  You should also get your employer (if you work as a programmer) or school,\nif any, to sign a \"copyright disclaimer\" for the program, if necessary.\nFor more information on this, and how to apply and follow the GNU GPL, see\n<https://www.gnu.org/licenses/>.\n\n  The GNU General Public License does not permit incorporating your program\ninto proprietary programs.  If your program is a subroutine library, you\nmay consider it more useful to permit linking proprietary applications with\nthe library.  If this is what you want to do, use the GNU Lesser General\nPublic License instead of this License.  But first, please read\n<https://www.gnu.org/licenses/why-not-lgpl.html>.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "`mllint` is a command-line utility to evaluate the technical quality of Python Machine Learning (ML) projects by means of static analysis of the project's repository.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "`mllint` is a command-line utility to evaluate the technical quality of Machine Learning (ML) and Artificial Intelligence (AI) projects written in Python by analysing the project's source code, data and configuration of supporting tools. `mllint` aims to ... \n- ... help data scientists and ML engineers in creating and maintaining production-grade ML and AI projects, both on their own personal computers as well as on CI.\n- ... help ML practitioners inexperienced with Software Engineering (SE) techniques explore and make effective use of battle-hardended SE for ML tools in the Python ecosystem.\n- ... help ML project managers assess the quality of their ML and AI projects and receive recommendations on what aspects of their projects they should focus on improving. \n`mllint` does this by measuring the project's adherence to ML best practices, as collected and deduced from [SE4ML](https://se-ml.github.io/) and Google's [Rules for ML](https://developers.google.com/machine-learning/guides/rules-of-ml). Note that these best practices are rather high-level, while `mllint` aims to give practical, down-to-earth advice to its users. `mllint` may therefore be somewhat opinionated, as it tries to advocate specific tools to best fit these best practices. However, `mllint` aims to only recommend open-source tooling and publically verifiable practices. Feedback is of course always welcome! \nThe Docker containers require that you mount the folder with your project onto the container as a volume on `/app`. Here is an example of how to use this Docker container, assuming that your project is in the current folder. Replace `$(pwd)` with the full path to your project folder if it is somewhere else.\n```sh\ndocker run -it --rm -v $(pwd):/app bvobart/mllint:latest\n```\n \n### Linters, Categories and Rules \n`mllint` analyses your project by evaluating several categories of linting rules. Each category, as well as each rule, has a 'slug', i.e., a lowercased piece of text with dashes or slashes for spaces, e.g., `code-quality/pylint/no-issues`. This slug identifies a rule and is often (if not always) displayed next to the category or rule that it references. \nTo learn more about a certain rule or category, use `mllint describe` along with the slug of the category or rule:\n```sh\n# Describe the Version Control category. This will also list the rules that it checks.\nmllint describe version-control\n\n# Use the exact slug of a rule to describe one rule,\n# e.g., the rule on DVC usage in the Version Control category\nmllint describe version-control/data/dvc\n\n# Use a partial slug to describe all rules whose slug starts with this snippet, \n# e.g., all rules about version controlling data\nmllint describe version-control/data\n``` \n",
+                "original_header": "<a href=\"https://bvobart.github.io/mllint/\">`mllint` \u2014 Linter for Machine Learning projects</a>"
+            },
+            "confidence": 0.9419513232471931,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "mllint",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "bvobart/mllint",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/bvobart/mllint/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/bvobart/mllint/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 74,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "ai, artificial-intelligence, best-practices, engineering, golang-application, lint, linter, machine-learning, machinelearning, machinelearning-python, pip, python, static-analysis",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/bvobart/mllint/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Go",
+                "name": "Go",
+                "type": "Programming_language",
+                "size": 366535
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 7992
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 1620
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 330
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/69883697",
+                "tag": "v0.12.2",
+                "name": "v0.12.2",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n* 1bb68c6 Disable Python 3.6 Docker build because Pygit2 and libgit2-dev are not compatible there\n* f345a39 Support `[tool.poetry.group.dev.dependencies]` for specifying Poetry dev dependencies in pyproject.toml\n* 204f865 Updates ReadMe with warning that mllint is no longer maintained, remove survey message\n* 4b2d33e Fixes #35\n* 10e79de Updates build & publish dependencies, adds Win ARM64 as build target, adds support for Python 3.10, makes Python source package work for all supported platforms\n* f4f0def Updates `mllint` example run SVG and example report\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.12.2",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.12.2",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.12.2",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/69883697",
+                "release_id": 69883697,
+                "date_created": "2022-06-20T22:28:48Z",
+                "date_published": "2022-06-20T22:37:53Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/47738784",
+                "tag": "v0.12.1",
+                "name": "v0.12.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\n7e2a29d Fixes tests for code quality linters\n6826d72 Make Pylint, Mypy, Black, isort and Bandit ignore all virtualenv directories from Python gitignore (env, venv, .env, .venv, env.bak, venv.bak, ENV)\n0691571 Fixes potential nil pointer panic in utils.FileExists. Fixes #29\nd1f4a5f Adds script to run a demo and create an animated SVG of this demo with svg-term\n24c0f41 To prevent empty category sections in report, don't run linters that have no rules (e.g. the `custom` category when unconfigured)\ncfcafde Adds `mllint render` to pretty-print Markdown reports to terminal\n\n\n## Docker images\n\n- `docker pull bvobart/mllint:latest-py3.8`\n- `docker pull bvobart/mllint:0.12.1-py3.8`\n- `docker pull bvobart/mllint:0.12.1`\n- `docker pull bvobart/mllint:latest-py3.9`\n- `docker pull bvobart/mllint:0.12.1-py3.9`\n- `docker pull bvobart/mllint:latest-py3.7`\n- `docker pull bvobart/mllint:0.12.1-py3.7`\n- `docker pull bvobart/mllint:latest-py3.6`\n- `docker pull bvobart/mllint:0.12.1-py3.6`\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.12.1",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.12.1",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.12.1",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/47738784",
+                "release_id": 47738784,
+                "date_created": "2021-08-12T11:30:49Z",
+                "date_published": "2021-08-12T11:45:47Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/47323821",
+                "tag": "v0.12.0",
+                "name": "v0.12.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\n400f497 Fixes `mllint` website deploy job so it correctly triggers for pushes on main and changes to site source code\n9693f88 Fixes `mllint` version not showing correctly on GH Pages site on tagged releases\n2e70662 Updates ReadMe with directly visible link to survey, updates website homepage to better show survey link\n9257d39 Merge pull request #27 from bvobart/category-score\n72969ef Print a score for the entire category in the Markdown report, calculated as weighted average of all rules' scores\n\n\n## Docker images\n\n- `docker pull bvobart/mllint:latest-py3.8`\n- `docker pull bvobart/mllint:0.12.0-py3.8`\n- `docker pull bvobart/mllint:0.12.0`\n- `docker pull bvobart/mllint:latest-py3.9`\n- `docker pull bvobart/mllint:0.12.0-py3.9`\n- `docker pull bvobart/mllint:latest-py3.6`\n- `docker pull bvobart/mllint:0.12.0-py3.6`\n- `docker pull bvobart/mllint:latest-py3.7`\n- `docker pull bvobart/mllint:0.12.0-py3.7`\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.12.0",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.12.0",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.12.0",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/47323821",
+                "release_id": 47323821,
+                "date_created": "2021-08-04T20:54:27Z",
+                "date_published": "2021-08-04T21:34:42Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/47250883",
+                "tag": "v0.11.1",
+                "name": "v0.11.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\n15623de Fixes missing space in describe help text and updates link to survey\n7fd388a Merge pull request #26 from bvobart/mllint-site\n273ad44 Adds links to the website to the ReadMe and adds GoReportCard badge\nfb2bdb5 Updates website description again\nae26179 Fixes website description and adds a note on the homepage asking users to fill in the survey about `mllint`\n675d6f6 Disables building mllint GH Pages website on mllint-site branch, only on master and tags now\ne5eaafa Adds a ReadMe to the docs/gh-pages code\n6aaa32a Fixes mllint version unknown in regular commit GH pages workflow\nd133457 Enable GH Pages workflow on pushes to master & mllint-site branches, fixes GH Pages website footer so that it can show individual commit versions instead of just proper tags\n3b6aa93 Implements a pipeline to build and publish mllint's GitHub pages website\nb7d80b1 Adds a small footer with the `mllint` version used to generate the docs\nac16553 Apply a slight zoom on the example run SVG on GH pages to have the text be better readable\nd3c7341 Adds a flair of colour to the GH pages site with some accent colours for markers, links, inline code blocks and titles\n1c1e92c Ensures home info post and post descriptions get the proper Markdown formatting CSS like post content also gets\n67e41af Tweaks the GH pages menu and adds layouts such that post descriptions get Markdown processing done on them\n24ed2d0 Implements a script to generate Hugo .md content files for every rule and category that `mllint` has.\n63f21ff Sets up a simple documentation website for mllint, built with Hugo using PaperMod theme. Already contains the information from the ReadMe, all it needs now are auto-generated rule & category documentations.\n\n\n## Docker images\n\n- `docker pull bvobart/mllint:latest-py3.8`\n- `docker pull bvobart/mllint:0.11.1-py3.8`\n- `docker pull bvobart/mllint:0.11.1`\n- `docker pull bvobart/mllint:latest-py3.9`\n- `docker pull bvobart/mllint:0.11.1-py3.9`\n- `docker pull bvobart/mllint:latest-py3.6`\n- `docker pull bvobart/mllint:0.11.1-py3.6`\n- `docker pull bvobart/mllint:latest-py3.7`\n- `docker pull bvobart/mllint:0.11.1-py3.7`\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.11.1",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.11.1",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.11.1",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/47250883",
+                "release_id": 47250883,
+                "date_created": "2021-08-03T19:46:12Z",
+                "date_published": "2021-08-03T19:57:43Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/46334252",
+                "tag": "v0.11.0",
+                "name": "v0.11.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\na06595c Adds a message to mllint's `run` command asking users whether they would be so kind to fill in a feedback survey about mllint\nb5d637c Replaces deprecated `use_buildx: true` with `use: buildx` in GoReleaser config\na8d04f1 Merge pull request #25 from bvobart/custom-linter\n093df9e Updates ReadMe with information about custom linting rules\n100be2f Makes custom rules show up in `mllint list all` and allows custom rules to be disabled with through the config as though they are normal rules.\n2648009 Adds TOML example of custom rule definition to `custom` category description\n117ca38 Adds a description for the `custom` category, outlining how to create custom linting rules\nf839d21 Makes it possible to use `mllint describe` with custom rules from the configuration in the current directory\n12f7ee8 Adds the `custom` category and enables the Custom linter\n9e37ff5 Implements option in linter test framework to run the tests with an mllint.Runner, implements custom linter running its custom rules on the runner\ne4ebce6 Implements a linter with tests to run custom rules, expecting a JSON / YAML formatted response as output from the rule's `run` command\nbdbfb6d Implements config structure for custom rule definitions, adds api method to make api.Rule definition from config.CustomRule\n5aa8e36 Fixes coverage reports on CodeCov by only including the coverage.txt generated by the tests\nf8e5ca9 Fixes CodeCov configuration to ignore test coverage files in `linters/testing/test-resources`\n967df03 Adds Go package documentation badge to ReadMe\n\n\n## Docker images\n\n- `docker pull bvobart/mllint:latest-py3.8`\n- `docker pull bvobart/mllint:0.11.0-py3.8`\n- `docker pull bvobart/mllint:0.11.0`\n- `docker pull bvobart/mllint:latest-py3.9`\n- `docker pull bvobart/mllint:0.11.0-py3.9`\n- `docker pull bvobart/mllint:latest-py3.7`\n- `docker pull bvobart/mllint:0.11.0-py3.7`\n- `docker pull bvobart/mllint:latest-py3.6`\n- `docker pull bvobart/mllint:0.11.0-py3.6`\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.11.0",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.11.0",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.11.0",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/46334252",
+                "release_id": 46334252,
+                "date_created": "2021-07-16T16:57:31Z",
+                "date_published": "2021-07-16T17:09:32Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/45243634",
+                "tag": "v0.10.0",
+                "name": "v0.10.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\neb1c0aa Fixes two small layout issues and an error reporting bug in OpenFile\naa3e0ff Fixes a small typo in the details provided with the `testing/coverage` rule as to where the coverage report should be placed\n183a6f9 Merge pull request #22 from bvobart/testing-linter\n5876ada Finally fixes the implementation of `testing/has-tests` such that it conforms to the intendede intuition, updates details and descriptions of all `testing/` rules and `testing` category\n40599ae Fixes tests and fixes behaviour of `testing/has-tests`\n37a2f72 Implements a better config structure for `testing` and test coverage targets. Implements better (and more configurable) check for whether a project has at least a certain amount of test files, or a certain ratio of test files to other files\n9e88a75 Merge pull request #17 from bvobart/license\na549c9b Irons out some kinks in the formatting of details for `testing` rules\n301b892 Adds Testing linter to mllint's analysis\n88ec080 Implements linting rule for checking whether project's tests are in tests folder\na3960e7 Implements the linting rule to check for test coverage including a boatload of tests for it\n9ed90ac Changes license to GPLv3 in mllint's setup.py as well\n7c54535 Create LICENSE\n384f39e linters: expands test suite for `testing` linter\ncc19ce7 linters: test suite: only run tests in parallel when linter is not configurable, as multiple tests trying to configure the same linter object before running creates race conditions\n274c8be Fixes GoReleaser config by removing YAML anchors\n89a3142 Implements some tests for the Testing linter's RuleHasTests\n0d90fcb Adds a test for the template linter\n1876535 Refactors dependency management tests to use new testing framework\n9282364 Implements a simple testing framework to help create linter tests\n0b2b141 Updates `testing` category description\nc3e9890 commands: config: adds `--toml` or `-t` option to output TOML instead of YAML\n1afabd2 Updates `code-quality` category description\n2237cda Enables `docker buildx` for when building `mllint` docker containers\n120fc8e Starts implementing a linter for the Testing category: user should provide JUnit XML test report and Cobertura-compatible XML coverage report that will be analysed for test completion and coverage. Implements checking test completion stats from JUnit XML\n\n\n## Docker images\n\n- `docker pull bvobart/mllint:latest-py3.8`\n- `docker pull bvobart/mllint:0.10.0-py3.8`\n- `docker pull bvobart/mllint:0.10.0`\n- `docker pull bvobart/mllint:latest-py3.9`\n- `docker pull bvobart/mllint:0.10.0-py3.9`\n- `docker pull bvobart/mllint:latest-py3.6`\n- `docker pull bvobart/mllint:0.10.0-py3.6`\n- `docker pull bvobart/mllint:latest-py3.7`\n- `docker pull bvobart/mllint:0.10.0-py3.7`\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.10.0",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.10.0",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.10.0",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/45243634",
+                "release_id": 45243634,
+                "date_created": "2021-06-25T15:14:08Z",
+                "date_published": "2021-06-25T15:24:27Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/44976810",
+                "tag": "v0.9.2",
+                "name": "v0.9.2",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\neec5e44 Updates `code-quality` category description\n\n\n## Docker images\n\n- `docker pull bvobart/mllint:latest-py3.8`\n- `docker pull bvobart/mllint:0.9.2-py3.8`\n- `docker pull bvobart/mllint:0.9.2`\n- `docker pull bvobart/mllint:latest-py3.9`\n- `docker pull bvobart/mllint:0.9.2-py3.9`\n- `docker pull bvobart/mllint:latest-py3.6`\n- `docker pull bvobart/mllint:0.9.2-py3.6`\n- `docker pull bvobart/mllint:latest-py3.7`\n- `docker pull bvobart/mllint:0.9.2-py3.7`\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.9.2",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.9.2",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.9.2",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/44976810",
+                "release_id": 44976810,
+                "date_created": "2021-06-21T16:48:01Z",
+                "date_published": "2021-06-21T16:59:50Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/44040080",
+                "tag": "v0.9.1",
+                "name": "v0.9.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\nf59c814 Finding Python files in project now ignores 'venv' folder\n\n\n## Docker images\n\n- `docker pull bvobart/mllint:latest-py3.6`\n- `docker pull bvobart/mllint:0.9.1-py3.6`\n- `docker pull bvobart/mllint:latest`\n- `docker pull bvobart/mllint:0.9.1`\n- `docker pull bvobart/mllint:latest-py3.9`\n- `docker pull bvobart/mllint:0.9.1-py3.9`\n- `docker pull bvobart/mllint:latest-py3.7`\n- `docker pull bvobart/mllint:0.9.1-py3.7`\n- `docker pull bvobart/mllint:latest-py3.8`\n- `docker pull bvobart/mllint:0.9.1-py3.8`\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.9.1",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.9.1",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.9.1",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/44040080",
+                "release_id": 44040080,
+                "date_created": "2021-06-03T12:19:24Z",
+                "date_published": "2021-06-03T12:38:21Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/43789779",
+                "tag": "v0.9.0",
+                "name": "v0.9.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\n498dedd Merge pull request #14 from bvobart/git-improvements\n29a0a42 setools: git: fixes MakeGitInfo remote URL test on CI\n12832b6 linters: `ci/use` now checks for CI configurations at the Git root of the given project, fixing false negative on this rule when analysing project in subfolder of a monorepo. Implements git.GetGitRoot() to retrieve the root of the Git repo. Refactors the CI linter's tests to be based on files generated in a temp dir, rather than in this repo.\naddf81b Adds Git information to report, i.e. URL of remote, current commit hash & branch and whether folder currently has changes relative to HEAD\n0f08641 linters: `version-control/code/git-no-big-files` now checks the entire Git history for large files instead of just the current revision.\n55e74b6 commands: when specifying `-o` with a path where its folder doesn't exist yet, create it\n\n\n## Docker images\n\n- `docker pull bvobart/mllint:latest-py3.8`\n- `docker pull bvobart/mllint:0.9.0-py3.8`\n- `docker pull bvobart/mllint:latest`\n- `docker pull bvobart/mllint:0.9.0`\n- `docker pull bvobart/mllint:latest-py3.9`\n- `docker pull bvobart/mllint:0.9.0-py3.9`\n- `docker pull bvobart/mllint:latest-py3.6`\n- `docker pull bvobart/mllint:0.9.0-py3.6`\n- `docker pull bvobart/mllint:latest-py3.7`\n- `docker pull bvobart/mllint:0.9.0-py3.7`\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.9.0",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.9.0",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.9.0",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/43789779",
+                "release_id": 43789779,
+                "date_created": "2021-05-28T21:14:01Z",
+                "date_published": "2021-05-28T21:24:54Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/43652860",
+                "tag": "v0.8.8",
+                "name": "v0.8.8",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\n4269be9 Merge pull request #13 from bvobart/docker-and-peer-deps\n01e6e83 Updates ReadMe with info about optional dependencies, Docker containers and describe / config also matching on partial rule slugs\nab82e15 Adds Docker login action to publish workflow\n2312297 Adds a Dockerfile and adds instructions in GoReleaser config to build and publish `mllint` Docker images for Python 3.6, 3.7, 3.8 and 3.9\n1f9d897 Adds a list of optional Python dependencies required to run all `mllint`'s analyses. Can be installed with `pip install mllint[tools]` when released\n\n\n## Docker images\n\n- `docker pull bvobart/mllint:latest-py3.7`\n- `docker pull bvobart/mllint:0.8.8-py3.7`\n- `docker pull bvobart/mllint:latest`\n- `docker pull bvobart/mllint:0.8.8`\n- `docker pull bvobart/mllint:latest-py3.9`\n- `docker pull bvobart/mllint:0.8.8-py3.9`\n- `docker pull bvobart/mllint:latest-py3.6`\n- `docker pull bvobart/mllint:0.8.8-py3.6`\n- `docker pull bvobart/mllint:latest-py3.8`\n- `docker pull bvobart/mllint:0.8.8-py3.8`\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.8.8",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.8.8",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.8.8",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/43652860",
+                "release_id": 43652860,
+                "date_created": "2021-05-26T19:55:35Z",
+                "date_published": "2021-05-26T20:07:17Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/43586995",
+                "tag": "v0.8.7",
+                "name": "v0.8.7",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\n96e85e7 Fixes a bug in `mllint`'s runner that caused a deadlock when calling CollectTasks on a childRunner with an empty list of tasks.\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.8.7",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.8.7",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.8.7",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/43586995",
+                "release_id": 43586995,
+                "date_created": "2021-05-26T10:19:50Z",
+                "date_published": "2021-05-26T10:24:12Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/43560402",
+                "tag": "v0.8.6",
+                "name": "v0.8.6",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\n80e6168 Updates ReadMe with info about example projects repo and updates SVG of example run\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.8.6",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.8.6",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.8.6",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/43560402",
+                "release_id": 43560402,
+                "date_created": "2021-05-25T21:19:44Z",
+                "date_published": "2021-05-25T21:23:23Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/43438050",
+                "tag": "v0.8.5",
+                "name": "v0.8.5",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\na086645 Merge pull request #12 from bvobart/fix-low-core-deadlock\n5537d80 linters: fixes composite linter test that was missing a runner\ne431b95 mllint runner: more concise duration printing\n90b6115 mllint runner: fixes regression where parked tasks wouldn't be scheduled\nece32d6 mllint runner: fixes bug where running mllint with too few cores would deadlock due to linters being 'running', yet awaiting the completion of other linters that they cannot schedule because there are already too many tasks running. Now, by moving CollectTasks from mllint package to be a method on an mllint.Runner, we can pass a child runner to a LinterWithRunner that can alert the parent running when this linter calls CollectTasks to await the tasks it has scheduled. Includes a bit of refactoring, a test that creates a linter that schedules itself 42 times and printing time to completion in task status :)\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.8.5",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.8.5",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.8.5",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/43438050",
+                "release_id": 43438050,
+                "date_created": "2021-05-23T23:40:42Z",
+                "date_published": "2021-05-23T23:42:50Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/43351949",
+                "tag": "v0.8.4",
+                "name": "v0.8.4",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\na51c372 Merge pull request #11 from bvobart/rule-details\n3e3280c setools: mypy: fixes error when message doesn't contain a line and column number\n3c3206a report: adds section about disabled rules in config\n4122ca3 commands: allow `mllint list` and `mllint describe` to output Markdown using `--output` or `-o` flag, fixes tiny bug in utils.AbsolutePath\n40526a0 commands: prettier category and rule printing in `mllint describe` and `mllint list`, moves prettyPrint functions to `commands/util.go`\n6c3427d api: adds more tests\n5c8ee71 linters: fixes failing tests\n7144f0d Rules now no longer get their slugs and names appended with their wrapping linter's name anymore, saving quite some unnecessary complexity\nc71b990 linters: dependency management: fixes failing test\nbd775d8 linters: implements FindRules, fixes DisableRule so that rules can be disabled using partial slug, fixes `mllint describe` so it can handle describing rules from partial slugs as well\nab53318 linters: dependency management: adds a whole load of dependencies that should be dev dependencies\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.8.4",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.8.4",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.8.4",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/43351949",
+                "release_id": 43351949,
+                "date_created": "2021-05-21T13:11:05Z",
+                "date_published": "2021-05-21T13:14:36Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/43279596",
+                "tag": "v0.8.3",
+                "name": "v0.8.3",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\nda851bf ci: should fix GoReleaser changelog generation\n30c0a3d setools: black: explicitly ignore .venv folder because of a rare issue where Black would actually check all Python files in .venv subfolders\nc6ed4c8 commands: run: adds progress counter to LiveRunnerProgress\n1a1f533 linters: dependency management: fixes two typos in rule details\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.8.3",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.8.3",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.8.3",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/43279596",
+                "release_id": 43279596,
+                "date_created": "2021-05-20T11:10:11Z",
+                "date_published": "2021-05-20T11:11:40Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/43231641",
+                "tag": "v0.8.2",
+                "name": "v0.8.2",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\nee24490 setools: Mypy: adds --strict flag and some output flags to make parsing safer and fixes error handling for when mistakes do happen\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.8.2",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.8.2",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.8.2",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/43231641",
+                "release_id": 43231641,
+                "date_created": "2021-05-19T16:23:58Z",
+                "date_published": "2021-05-19T16:28:02Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/43208341",
+                "tag": "v0.8.1",
+                "name": "v0.8.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\n6eda44a Updates ReadMe\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.8.1",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.8.1",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.8.1",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/43208341",
+                "release_id": 43208341,
+                "date_created": "2021-05-19T11:26:29Z",
+                "date_published": "2021-05-19T11:27:40Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/43088081",
+                "tag": "v0.8.0",
+                "name": "v0.8.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\r\n\r\nbe26762 linters: removes dot from title of dependency-management/use-dev\r\na3e2ede linters: dependency management: fixes failing test\r\n74208e3 linters: dependency management: implements new linter to check whether the project is putting their development dependencies in their dev-dependencies section when using Poetry or Pipenv\r\n9d3d0ee setools: cqlinters: parse Pyproject.toml instead of using Poetry depmanager to read it\r\n22d1b69 setools: depmanagers: combines DepmanagerType's For and Detect methods into Detect, adds Dependencies method to return list of all dependencies, fixes tests",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.8.0",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.8.0",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.8.0",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/43088081",
+                "release_id": 43088081,
+                "date_created": "2021-05-17T21:24:09Z",
+                "date_published": "2021-05-17T21:26:19Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/42972881",
+                "tag": "v0.7.3",
+                "name": "v0.7.3",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\n368e2c0 Updates ReadMe and example report\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.7.3",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.7.3",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.7.3",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/42972881",
+                "release_id": 42972881,
+                "date_created": "2021-05-14T15:40:46Z",
+                "date_published": "2021-05-14T17:33:22Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/42953155",
+                "tag": "v0.7.2",
+                "name": "v0.7.2",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\n60f2100 commands: run: fixes LiveRunnerProgress so its much more thread-safe\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.7.2",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.7.2",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.7.2",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/42953155",
+                "release_id": 42953155,
+                "date_created": "2021-05-14T11:03:45Z",
+                "date_published": "2021-05-14T11:08:35Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/42929289",
+                "tag": "v0.7.1",
+                "name": "v0.7.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\n7f0f8fe Merge pull request #10 from bvobart/parallel-linters\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.7.1",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.7.1",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.7.1",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/42929289",
+                "release_id": 42929289,
+                "date_created": "2021-05-13T22:11:34Z",
+                "date_published": "2021-05-13T22:16:24Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/42733660",
+                "tag": "v0.7.0",
+                "name": "v0.7.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\nf3feb4a docs: updates `mllint` example report\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.7.0",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.7.0",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.7.0",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/42733660",
+                "release_id": 42733660,
+                "date_created": "2021-05-10T21:24:15Z",
+                "date_published": "2021-05-10T21:25:59Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/42507323",
+                "tag": "v0.6.0",
+                "name": "v0.6.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\ncca7758 Merge pull request #7 from bvobart/black-linter\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.6.0",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.6.0",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.6.0",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/42507323",
+                "release_id": 42507323,
+                "date_created": "2021-05-05T22:27:10Z",
+                "date_published": "2021-05-05T22:31:14Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/41502592",
+                "tag": "v0.5.1",
+                "name": "v0.5.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\n314e661 linters: fixes CILinter giving no score instead of 0 score to ci/use when not using CI\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.5.1",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.5.1",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.5.1",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/41502592",
+                "release_id": 41502592,
+                "date_created": "2021-04-15T19:03:48Z",
+                "date_published": "2021-04-15T19:06:02Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/41440492",
+                "tag": "v0.5.0",
+                "name": "v0.5.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\n9c878b0 Merge pull request #4 from bvobart/ci-linter\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.5.0",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.5.0",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.5.0",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/41440492",
+                "release_id": 41440492,
+                "date_created": "2021-04-14T20:21:33Z",
+                "date_published": "2021-04-14T20:23:01Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/41247674",
+                "tag": "v0.4.0",
+                "name": "v0.4.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\n\n\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.4.0",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.4.0",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.4.0",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/41247674",
+                "release_id": 41247674,
+                "date_created": "2021-04-11T20:19:47Z",
+                "date_published": "2021-04-11T20:23:13Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/40547095",
+                "tag": "v0.3.3",
+                "name": "v0.3.3",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\r\n\r\n45b3ff9 Fixes setting MLLINT_VERSION in CI so that Linux Pip package publishes successfully again\r\n3946274 Makes cibuildwheel compile Pip wheel for MacOS M1 (ARM64), print mllint version during build\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.3.3",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.3.3",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.3.3",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/40547095",
+                "release_id": 40547095,
+                "date_created": "2021-03-26T15:12:23Z",
+                "date_published": "2021-03-26T15:14:32Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/bvobart/mllint/releases/40537059",
+                "tag": "v0.3.2",
+                "name": "v0.3.2",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## Changelog\r\n\r\nc3fb7bb 3272e21 9d0bebd Attempts at fixing setting MLLINT_VERSION in CI, but resulted in Pip package for Linux having version 0.0.0\r\n032e322 Merge pull request #1 from bvobart/move-to-github",
+                "tarball_url": "https://api.github.com/repos/bvobart/mllint/tarball/v0.3.2",
+                "zipball_url": "https://api.github.com/repos/bvobart/mllint/zipball/v0.3.2",
+                "html_url": "https://github.com/bvobart/mllint/releases/tag/v0.3.2",
+                "url": "https://api.github.com/repos/bvobart/mllint/releases/40537059",
+                "release_id": 40537059,
+                "date_created": "2021-03-26T12:27:54Z",
+                "date_published": "2021-03-26T12:28:53Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bvobart/mllint/main/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/Dockerfile"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bvobart/mllint/main/test.package.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bvobart/mllint/main/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bvobart/mllint/main/mockgen.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bvobart/mllint/main/clean.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bvobart/mllint/main/test.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bvobart/mllint/main/docs/create-demo-svg.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bvobart/mllint/main/docs/demo-script.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bvobart/mllint/main/docs/gh-pages/scripts/clean-docs.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/bvobart/mllint/tree/main/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://github.com/bvobart/mllint/tree/main/docs/gh-pages/content/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "Alternatively, visit the [Categories](https://bvobart.github.io/mllint/docs/categories/) and [Rules](https://bvobart.github.io/mllint/docs/rules/) pages on [`mllint`'s website](https://bvobart.github.io/mllint/) to view the latest online documentation of these rules.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Online Documentation",
+                "parent_header": [
+                    "<a href=\"https://bvobart.github.io/mllint/\">`mllint` \u2014 Linter for Machine Learning projects</a>",
+                    "Usage",
+                    "Linters, Categories and Rules"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "---\ntitle: \"Installation\"\ndescription: \"Options for installing `mllint`\"\nweight: 5\nsummary: \"mllint is compiled for Linux, MacOS and Windows and is published to [PyPI](https://pypi.org/project/mllint/), so it can be installed using `pip install -U mllint` Alternatively, use one of the Docker containers at `bvobart/mllint`\"\n---\n\n`mllint` is compiled for Linux, MacOS and Windows, both 64 and 32 bit x86 (MacOS 64-bit only), as well as 64-bit ARM on Linux and MacOS (Apple M1).\n\n`mllint` is published to [PyPI](https://pypi.org/project/mllint/), so it can be installed globally or in your current environment using `pip`:\n```sh\npip install --upgrade mllint\n```\n\nAlternatively, to add `mllint` to an existing project, if your project uses Poetry for its dependencies:\n```sh\npoetry add --dev mllint\n```\n\nOr if your project uses Pipenv:\n```sh\npipenv install --dev mllint\n```\n\n### Tools\n\n`mllint` has a soft dependency on several Python tools that it uses for its analysis. While `mllint` will recommend that you place these tools in your project's development dependencies, these tools are listed as optional dependencies of `mllint` and can be installed along with `mllint` using:\n\n```sh\npip install --upgrade mllint[tools]\n```\n\n### Docker\n\nThere are also `mllint` Docker containers available on [Docker Hub](https://hub.docker.com/r/bvobart/mllint) at `bvobart/mllint` for Python 3.6, 3.7, 3.8 and 3.9. These may particularly be helpful when running `mllint` in CI environments, such as Gitlab CI or Github Actions. See the Docker Hub for a full list of available tags that can be used.\n\nThe Docker containers require that you mount the folder with your project onto the container as a volume on `/app`. Here is an example of how to use this Docker container, assuming that your project is in the current folder. Replace `$(pwd)` with the full path to your project folder if it is somewhere else.\n\n```sh\ndocker run -it --rm -v $(pwd):/app bvobart/mllint:latest\n```\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/docs/gh-pages/content/docs/installation.md"
+        },
+        {
+            "result": {
+                "value": "`mllint` is compiled for Linux, MacOS and Windows, both 64 and 32 bit x86 (MacOS 64-bit only), as well as 64-bit ARM on Linux and MacOS (Apple M1).\n\n`mllint` is published to [PyPI](https://pypi.org/project/mllint/), so it can be installed globally or in your current environment using `pip`:\n```sh\npip install --upgrade mllint\n```\n\nAlternatively, to add `mllint` to an existing project, if your project uses Poetry for its dependencies:\n```sh\npoetry add --dev mllint\n```\n\nOr if your project uses Pipenv:\n```sh\npipenv install --dev mllint\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "<a href=\"https://bvobart.github.io/mllint/\">`mllint` \u2014 Linter for Machine Learning projects</a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        },
+        {
+            "result": {
+                "value": "`mllint` has a soft dependency on several Python tools that it uses for its analysis. While `mllint` will recommend that you place these tools in your project's development dependencies, these tools are listed as optional dependencies of `mllint` and can be installed along with `mllint` using:\n\n```sh\npip install --upgrade mllint[tools]\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Tools",
+                "parent_header": [
+                    "<a href=\"https://bvobart.github.io/mllint/\">`mllint` \u2014 Linter for Machine Learning projects</a>",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        },
+        {
+            "result": {
+                "value": "There are also `mllint` Docker containers available on [Docker Hub](https://hub.docker.com/r/bvobart/mllint) at `bvobart/mllint` for Python 3.6, 3.7, 3.8 and 3.9. These may particularly be helpful when running `mllint` in CI environments, such as Gitlab CI or Github Actions. See the Docker Hub for a full list of available tags that can be used.\n\nThe Docker containers require that you mount the folder with your project onto the container as a volume on `/app`. Here is an example of how to use this Docker container, assuming that your project is in the current folder. Replace `$(pwd)` with the full path to your project folder if it is somewhere else.\n\n```sh\ndocker run -it --rm -v $(pwd):/app bvobart/mllint:latest\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Docker",
+                "parent_header": [
+                    "<a href=\"https://bvobart.github.io/mllint/\">`mllint` \u2014 Linter for Machine Learning projects</a>",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p align=\"center\">\n  <img alt=\"GitHub Workflow Status\" src=\"https://img.shields.io/github/workflow/status/bvobart/mllint/Build%20mllint%20and%20upload%20to%20PyPI\">\n  <img alt=\"GitHub go.mod Go version\" src=\"https://img.shields.io/github/go-mod/go-version/bvobart/mllint\">\n  <a href=\"https://pkg.go.dev/github.com/bvobart/mllint\"><img src=\"https://pkg.go.dev/badge/github.com/bvobart/mllint.svg\" alt=\"Go Reference\"></a>\n  <a href=\"https://codecov.io/gh/bvobart/mllint\"><img alt=\"Code coverage\" src=\"https://codecov.io/gh/bvobart/mllint/branch/main/graph/badge.svg?token=K9PJMGMFVI\"/></a>\n  <a href=\"https://goreportcard.com/report/github.com/bvobart/mllint\"><img alt=\"GoReportCard\" src=\"https://goreportcard.com/badge/github.com/bvobart/mllint\"/></a>\n  <img alt=\"Platform\" src=\"https://img.shields.io/badge/platform-Linux%20%7C%20MacOS%20%7C%20Windows-informational\">\n</p>\n<p align=\"center\">\n  <a href=\"https://pypi.org/project/mllint/\"><img alt=\"PyPI\" src=\"https://img.shields.io/pypi/v/mllint\"></a>\n  <a href=\"https://pypi.org/project/mllint/\"><img alt=\"PyPI - Status\" src=\"https://img.shields.io/pypi/status/mllint\"></a>\n  <a href=\"https://pypi.org/project/mllint/\"><img alt=\"PyPI - Downloads - Daily\" src=\"https://img.shields.io/pypi/dd/mllint\"></a>\n  <a href=\"https://pypi.org/project/mllint/\"><img alt=\"PyPI - Downloads - Monthly\" src=\"https://img.shields.io/pypi/dm/mllint\"></a>\n  <a href=\"https://pypi.org/project/mllint/\"><img alt=\"PyPI - Python Version\" src=\"https://img.shields.io/pypi/pyversions/mllint\"></a>\n</p> \n<p align=\"center\"><img src=\"./docs/gh-pages/static/example-run.svg\"></p> \n## Installation \n`mllint` is compiled for Linux, MacOS and Windows, both 64 and 32 bit x86 (MacOS 64-bit only), as well as 64-bit ARM on Linux and MacOS (Apple M1). \n`mllint` is published to [PyPI](https://pypi.org/project/mllint/), so it can be installed globally or in your current environment using `pip`:\n```sh\npip install --upgrade mllint\n``` \nAlternatively, to add `mllint` to an existing project, if your project uses Poetry for its dependencies:\n```sh\npoetry add --dev mllint\n``` \nOr if your project uses Pipenv:\n```sh\npipenv install --dev mllint\n``` \n`mllint` has a soft dependency on several Python tools that it uses for its analysis. While `mllint` will recommend that you place these tools in your project's development dependencies, these tools are listed as optional dependencies of `mllint` and can be installed along with `mllint` using:\n```sh\npip install --upgrade mllint[tools]\n```\n \nThe Docker containers require that you mount the folder with your project onto the container as a volume on `/app`. Here is an example of how to use this Docker container, assuming that your project is in the current folder. Replace `$(pwd)` with the full path to your project folder if it is somewhere else.\n```sh\ndocker run -it --rm -v $(pwd):/app bvobart/mllint:latest\n```\n \n`mllint` is designed to be used both on your personal computer as well as on CI systems. So, open a terminal in your project folder and run one of the following commands, or add it to your project's CI script. \nTo run `mllint` on the project in the current folder, simply run:\n```sh\nmllint\n``` \nTo run `mllint` on a project in another folder, simply run:\n```sh\nmllint path/to/my-ml-project\n``` \n`mllint` will analyse your project and create a Markdown-formatted report of its analysis. By default, this will be pretty printed to your terminal.  \nIf you instead prefer to export the raw Markdown text to a file, which may be particularly useful when running on CI, the `--output` or `-o` flag and provide a filename. `mllint` does not overwrite the destination file if it already exists, unless `--force` or `-f` is used. For example:\n```sh\nmllint --output report.md\n``` \nUsing `-` (a dash) as the filename prints the raw Markdown directly to your terminal:\n```sh\nmllint -o -\n``` \nIn CI scripts, such raw markdown output (whether as a file or printed to the standard output) can be used to e.g. make comments on pull/merge requests or create Wiki pages on your repository. \nTo list all available (implemented) categories and linting rules, run:\n```sh\nmllint list all\n``` \nTo list all enabled linting rules, run (optionally providing the path to the project's folder):\n```sh\nmllint list enabled\n``` \n## Configuration \n`mllint` can be configured either using a `.mllint.yml` file or through the project's `pyproject.toml`. This allows you to:\n- selectively disable specific linting rules or categories using their slug\n- define custom linting rules\n- configure specific settings for various linting rules. \n",
+                "original_header": "<a href=\"https://bvobart.github.io/mllint/\">`mllint` \u2014 Linter for Machine Learning projects</a>"
+            },
+            "confidence": 0.977123846858626,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "See the code snippets and commands provided below for examples of such configuration files.\n \n",
+                "original_header": "Configuration"
+            },
+            "confidence": 0.994080821358813,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To print `mllint`'s current configuration in YAML format, run (optionally providing the path to the project's folder):\n```sh\nmllint config\n``` \nTo print `mllint`'s default configuration in YAML format, run (unless there is a folder called `default` in the current directory):\n```sh\nmllint config default\n``` \n",
+                "original_header": "<a href=\"https://bvobart.github.io/mllint/\">`mllint` \u2014 Linter for Machine Learning projects</a>"
+            },
+            "confidence": 0.9983098893560199,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To create a `.mllint.yml` file from `mllint`'s default configuration, run:\n```sh\nmllint config default -q > .mllint.yml\n```\n \n",
+                "original_header": "Commands"
+            },
+            "confidence": 0.9998011493361695,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "An example `.mllint.yml` that disables some rules looks as follows:\n```yaml\nrules:\n  disabled:\n    - version-control/code/git\n    - dependency-management/single\n```\n \nAn example `pyproject.toml` configuration of `mllint` is as follows. Note that it is identical to the YAML example above.\n```toml\n[tool.mllint.rules]\ndisabled = [\"version-control/code/git\", \"dependency-management/single\"]\n```\n \nTo run `mllint` from source, install the latest version of Go for your operating system, then clone this repository and run `go run .` in the root of this repository. Use `go test ./...` or execute `test.sh` to run all of `mllint`'s tests. \nTo test compiling and packaging `mllint` into a Python wheel for your current platform, run `test.package.sh`.\n \n",
+                "original_header": "<a href=\"https://bvobart.github.io/mllint/\">`mllint` \u2014 Linter for Machine Learning projects</a>"
+            },
+            "confidence": 0.981414083856651,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "`mllint` is designed to be used both on your personal computer as well as on CI systems. So, open a terminal in your project folder and run one of the following commands, or add it to your project's CI script.\n\nTo run `mllint` on the project in the current folder, simply run:\n```sh\nmllint\n```\n\nTo run `mllint` on a project in another folder, simply run:\n```sh\nmllint path/to/my-ml-project\n```\n\n`mllint` will analyse your project and create a Markdown-formatted report of its analysis. By default, this will be pretty printed to your terminal. \n\nIf you instead prefer to export the raw Markdown text to a file, which may be particularly useful when running on CI, the `--output` or `-o` flag and provide a filename. `mllint` does not overwrite the destination file if it already exists, unless `--force` or `-f` is used. For example:\n```sh\nmllint --output report.md\n```\n\nUsing `-` (a dash) as the filename prints the raw Markdown directly to your terminal:\n```sh\nmllint -o -\n```\n\nIn CI scripts, such raw markdown output (whether as a file or printed to the standard output) can be used to e.g. make comments on pull/merge requests or create Wiki pages on your repository.\n\nSee [docs/example-report.md](docs/example-report.md) for an example of a report that `mllint` generates, or explore those generated for the [example projects](https://github.com/bvobart/mllint-example-projects).\n\nOf course, feel free to explore `mllint help` for more information about its commands and to discover additional flags that can be used.\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "<a href=\"https://bvobart.github.io/mllint/\">`mllint` \u2014 Linter for Machine Learning projects</a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        },
+        {
+            "result": {
+                "value": "`mllint` analyses your project by evaluating several categories of linting rules. Each category, as well as each rule, has a 'slug', i.e., a lowercased piece of text with dashes or slashes for spaces, e.g., `code-quality/pylint/no-issues`. This slug identifies a rule and is often (if not always) displayed next to the category or rule that it references.\n",
+                "type": "Text_excerpt",
+                "original_header": "Linters, Categories and Rules",
+                "parent_header": [
+                    "<a href=\"https://bvobart.github.io/mllint/\">`mllint` \u2014 Linter for Machine Learning projects</a>",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        },
+        {
+            "result": {
+                "value": "To list all available (implemented) categories and linting rules, run:\n```sh\nmllint list all\n```\n\nTo list all enabled linting rules, run (optionally providing the path to the project's folder):\n```sh\nmllint list enabled\n```\n\nBy default, all of `mllint`'s rules are enabled. See [Configuration](#configuration) to learn how to selectively disable certain rules.\n\nTo learn more about a certain rule or category, use `mllint describe` along with the slug of the category or rule:\n```sh\n# Describe the Version Control category. This will also list the rules that it checks.\nmllint describe version-control\n\n# Use the exact slug of a rule to describe one rule,\n# e.g., the rule on DVC usage in the Version Control category\nmllint describe version-control/data/dvc\n\n# Use a partial slug to describe all rules whose slug starts with this snippet, \n# e.g., all rules about version controlling data\nmllint describe version-control/data\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Command-line",
+                "parent_header": [
+                    "<a href=\"https://bvobart.github.io/mllint/\">`mllint` \u2014 Linter for Machine Learning projects</a>",
+                    "Usage",
+                    "Linters, Categories and Rules"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        },
+        {
+            "result": {
+                "value": "It is also possible to define your own custom linting rules by implementing a script or program that `mllint` will run while performing its analysis.\nThese custom rules need to be defined in `mllint`'s configuration. For more information on how to do this, see `mllint describe custom` or view the documentation online [here](https://bvobart.github.io/mllint/docs/categories/custom/).\n\n---\n",
+                "type": "Text_excerpt",
+                "original_header": "Custom linting rules",
+                "parent_header": [
+                    "<a href=\"https://bvobart.github.io/mllint/\">`mllint` \u2014 Linter for Machine Learning projects</a>",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        },
+        {
+            "result": {
+                "value": "While `mllint` is a tool for the Python ML ecosystem and distributed through PyPI, it is actually written in Go, compiled to a static binary and published as platform-specific Python wheels. \n\nTo run `mllint` from source, install the latest version of Go for your operating system, then clone this repository and run `go run .` in the root of this repository. Use `go test ./...` or execute `test.sh` to run all of `mllint`'s tests.\n\nTo test compiling and packaging `mllint` into a Python wheel for your current platform, run `test.package.sh`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting Started (development)",
+                "parent_header": [
+                    "<a href=\"https://bvobart.github.io/mllint/\">`mllint` \u2014 Linter for Machine Learning projects</a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To print `mllint`'s current configuration in YAML format, run (optionally providing the path to the project's folder):\n```sh\nmllint config\n``` \n",
+                "original_header": "<a href=\"https://bvobart.github.io/mllint/\">`mllint` \u2014 Linter for Machine Learning projects</a>"
+            },
+            "confidence": 0.9023877269042577,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "mllint \u2014 Linter for Machine Learning projects"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/bvobart/mllint/main/./docs/gh-pages/static/example-run.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2201.08246"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2103.04146"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/bvobart/mllint/main/ReadMe.md"
+        }
+    ]
+}

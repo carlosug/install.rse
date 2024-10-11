@@ -1,0 +1,339 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:13:27"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/mlatcl/fbp-vs-soa",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "mlatcl",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-02-15T07:52:59Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-01-04T16:54:48Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021 mlatcl\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Comparison of flow-based programming and service-oriented architecture for building data-driven applications",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repo contains code for comparison flow-based programming (FBP) and software services (SOA) in the context of machine learning deployment. It accompanies the paper \"An Empirical Evaluation of Flow Based Programming in the Machine Learning Deployment Context\" presented at [CAIN 2022 conference](https://conf.researchr.org/track/cain-2022/cain-2022). ArXiv version of the paper is here: https://arxiv.org/abs/2204.12781. Published versions are openly available in [ACM](https://dl.acm.org/doi/abs/10.1145/3522664.3528601) and [IEEE](https://ieeexplore.ieee.org/document/9796395) libraries. \nEarlier version of this repository accompanied paper \"Towards better data discovery and collection with flow-based programming\" presented at [Data-centric AI workshop](https://datacentricai.org/neurips21/) at NeurIPS 2021. The paper is also available on [ArXiv](https://arxiv.org/abs/2108.04105) and its code now lives in a [separate branch](https://github.com/mlatcl/fbp-vs-soa/tree/ride-allocation).\n \n",
+                "original_header": "FBP vs SOA for ML"
+            },
+            "confidence": 0.9448740372565061,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The repository contains four applications: Ride Allocation, MBlogger, Insurance Claims and Playlist Builder. Each app is implemented six times, these implementations represent the same software at different stages of development using one of the aforementioned paradigms. Here is the complete list: \nOther source files are used to define common data types and generate some input data.\n \n",
+                "original_header": "Structure"
+            },
+            "confidence": 0.9508441157770722,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Bash script [code_metrics.sh](code_metrics.sh) can collect code metrics for all the apps. We collect several [Halstead metrics](https://en.wikipedia.org/wiki/Halstead_complexity_measures), [cyclomatic](https://en.wikipedia.org/wiki/Cyclomatic_complexity) and [cognitive](https://blog.sonarsource.com/cognitive-complexity-because-testability-understandability) complexities, [maintainability index](https://radon.readthedocs.io/en/latest/intro.html#maintainability-index), as well as number of words and logical lines of code. \nAll diffs are collected in \"<app_name>/diffs\" folder, and overall metric is available in component_diff.yml in the root of the project.\n \n",
+                "original_header": "How to collect metrics"
+            },
+            "confidence": 0.9542168984510184,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "fbp-vs-soa",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "mlatcl/fbp-vs-soa",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mlatcl/fbp-vs-soa/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/mlatcl/fbp-vs-soa/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 6,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "fbp, machine-learning, soa",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/mlatcl/fbp-vs-soa/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 1695811
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 387391
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 8862
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/metrics_analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/metrics_analysis.ipynb"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/code_metrics.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Before running any apps, make sure you have all dependencies, by running\n\n```\npip install -r requirements.txt\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "How to run the code",
+                "parent_header": [
+                    "FBP vs SOA for ML"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/README.md"
+        },
+        {
+            "result": {
+                "value": "To run FBP apps, use this command from root of the project:\n\n```\npython -m <app_name>.main fbp_app_<stage>\n```\n\nFor example, to run `insurance_claims` at stage `data`, use\n\n```\npython -m insurance_claims.main fbp_app_data\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Running FBP apps",
+                "parent_header": [
+                    "FBP vs SOA for ML",
+                    "How to run the code"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/README.md"
+        },
+        {
+            "result": {
+                "value": "SOA apps are implemented as Flask web services, and thus requires flask process to run to serve requests. Each SOA app has a `flaskr/README.md` file that explains how to do that.\n",
+                "type": "Text_excerpt",
+                "original_header": "Running SOA apps",
+                "parent_header": [
+                    "FBP vs SOA for ML",
+                    "How to run the code"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "FBP vs SOA for ML"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/README.md"
+        }
+    ],
+    "related_documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://radon.readthedocs.io/",
+                "format": "readthedocs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2204.12781. Published versions are openly available in [ACM](https://dl.acm.org/doi/abs/10.1145/3522664.3528601"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2108.04105"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/mlatcl/fbp-vs-soa/main/README.md"
+        }
+    ]
+}

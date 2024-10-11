@@ -1,0 +1,475 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:43:08"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/sulir/runtimesearch",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "sulir",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2017-09-08T20:37:20Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2022-01-10T21:33:09Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/apache-2.0",
+                "type": "License",
+                "name": "Apache License 2.0",
+                "url": "https://api.github.com/licenses/apache-2.0",
+                "spdx_id": "Apache-2.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "This software is available under the [Apache License 2.0](LICENSE.txt). It uses the [ASM library](https://asm.ow2.io) released under the [3-Clause BSD License](agent/src/main/resources/META-INF/LICENSE-ASM.txt).",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "RuntimeSearch"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sulir/runtimesearch/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Ctrl+F for a Running Program",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "When an occurrence is found, a [BreakpointError](shared/src/main/java/com/github/sulir/runtimesearch/shared/BreakpointError.java) is thrown, and the program is suspended thanks to an exception breakpoint.\n \n",
+                "original_header": "Internals"
+            },
+            "confidence": 0.9588908739698552,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sulir/runtimesearch/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "runtimesearch",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "sulir/runtimesearch",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/sulir/runtimesearch/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/sulir/runtimesearch/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/sulir/runtimesearch/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 60045
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 1660
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/sulir/runtimesearch/releases/88518035",
+                "tag": "v2.1",
+                "name": "v2.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- IntelliJ IDEA 2020.3 or newer is now required.\n- Menu items are enabled also during indexing.\n\n",
+                "tarball_url": "https://api.github.com/repos/sulir/runtimesearch/tarball/v2.1",
+                "zipball_url": "https://api.github.com/repos/sulir/runtimesearch/zipball/v2.1",
+                "html_url": "https://github.com/sulir/runtimesearch/releases/tag/v2.1",
+                "url": "https://api.github.com/repos/sulir/runtimesearch/releases/88518035",
+                "release_id": 88518035,
+                "date_created": "2023-01-10T23:32:23Z",
+                "date_published": "2023-01-10T23:41:42Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/sulir/runtimesearch/releases/57057359",
+                "tag": "v2.0",
+                "name": "v2.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- Added search options: Match case, Whole words, Regex.\n- Server port can be modified in Debug Configurations.\n",
+                "tarball_url": "https://api.github.com/repos/sulir/runtimesearch/tarball/v2.0",
+                "zipball_url": "https://api.github.com/repos/sulir/runtimesearch/zipball/v2.0",
+                "html_url": "https://github.com/sulir/runtimesearch/releases/tag/v2.0",
+                "url": "https://api.github.com/repos/sulir/runtimesearch/releases/57057359",
+                "release_id": 57057359,
+                "date_created": "2022-01-13T21:36:48Z",
+                "date_published": "2022-01-13T21:46:31Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/sulir/runtimesearch/releases/52272529",
+                "tag": "v1.4",
+                "name": "v1.4",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- Fix VerifyError in the instrumented programs.\n- Prevent ClassNotFoundException in WildFly/JBoss.\n- Prevent IncompatibleClassChangeError in some projects using ASM (e.g., Geronimo).\n",
+                "tarball_url": "https://api.github.com/repos/sulir/runtimesearch/tarball/v1.4",
+                "zipball_url": "https://api.github.com/repos/sulir/runtimesearch/zipball/v1.4",
+                "html_url": "https://github.com/sulir/runtimesearch/releases/tag/v1.4",
+                "url": "https://api.github.com/repos/sulir/runtimesearch/releases/52272529",
+                "release_id": 52272529,
+                "date_created": "2021-10-28T21:05:12Z",
+                "date_published": "2021-10-28T21:11:57Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/sulir/runtimesearch/releases/51086326",
+                "tag": "v1.3",
+                "name": "v1.3",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- Improved compatibility with new IntelliJ versions.\n- Minor bug fixes.\n",
+                "tarball_url": "https://api.github.com/repos/sulir/runtimesearch/tarball/v1.3",
+                "zipball_url": "https://api.github.com/repos/sulir/runtimesearch/zipball/v1.3",
+                "html_url": "https://github.com/sulir/runtimesearch/releases/tag/v1.3",
+                "url": "https://api.github.com/repos/sulir/runtimesearch/releases/51086326",
+                "release_id": 51086326,
+                "date_created": "2021-10-09T20:48:12Z",
+                "date_published": "2021-10-09T21:02:39Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/sulir/runtimesearch/releases/41951135",
+                "tag": "v1.2",
+                "name": "v1.2",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- Searching can be started also when the program is suspended by the *Pause Program* action.\n- The initial searched text is internally passed via a command-line argument (useful, e.g., for automation).\n",
+                "tarball_url": "https://api.github.com/repos/sulir/runtimesearch/tarball/v1.2",
+                "zipball_url": "https://api.github.com/repos/sulir/runtimesearch/zipball/v1.2",
+                "html_url": "https://github.com/sulir/runtimesearch/releases/tag/v1.2",
+                "url": "https://api.github.com/repos/sulir/runtimesearch/releases/41951135",
+                "release_id": 41951135,
+                "date_created": "2021-04-24T20:44:15Z",
+                "date_published": "2021-04-24T20:53:24Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/sulir/runtimesearch/releases/41378803",
+                "tag": "v1.1",
+                "name": "v1.1",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- Improve IntelliJ version compatibility.\r\n",
+                "tarball_url": "https://api.github.com/repos/sulir/runtimesearch/tarball/v1.1",
+                "zipball_url": "https://api.github.com/repos/sulir/runtimesearch/zipball/v1.1",
+                "html_url": "https://github.com/sulir/runtimesearch/releases/tag/v1.1",
+                "url": "https://api.github.com/repos/sulir/runtimesearch/releases/41378803",
+                "release_id": 41378803,
+                "date_created": "2021-04-13T20:37:02Z",
+                "date_published": "2021-04-13T20:42:41Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/sulir/runtimesearch/releases/41304638",
+                "tag": "v1.0",
+                "name": "v1.0",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "- This is the initial release.\r\n",
+                "tarball_url": "https://api.github.com/repos/sulir/runtimesearch/tarball/v1.0",
+                "zipball_url": "https://api.github.com/repos/sulir/runtimesearch/zipball/v1.0",
+                "html_url": "https://github.com/sulir/runtimesearch/releases/tag/v1.0",
+                "url": "https://api.github.com/repos/sulir/runtimesearch/releases/41304638",
+                "release_id": 41304638,
+                "date_created": "2021-04-12T20:44:49Z",
+                "date_published": "2021-04-12T20:51:04Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sulir/runtimesearch/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/sulir/runtimesearch/tree/master/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sulir/runtimesearch/master/benchmark/benchmark.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "You can install the plugin from the [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/16527-runtimesearch) or directly from IntelliJ IDEA.\n",
+                "type": "Text_excerpt",
+                "original_header": "Download",
+                "parent_header": [
+                    "RuntimeSearch"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sulir/runtimesearch/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "\n![Screenshot](https://github.com/sulir/runtimesearch/blob/master/.github/images/screenshot.png?raw=true)\n\nBefore using, open the Debug Configuration you would like to use via **Run | Edit Configurations**. Under **RuntimeSearch Settings**, check *Enable RuntimeSearch for this configuration*. This may incur minor debugging performance overhead. You can also restrict the search scope to selected packages. Note that non-JVM (e.g., Android) targets are not supported.\n\nTo start searching, select **Run | Find in Runtime**, enter the searched string and press Find. If the program is not yet being debugged, a new process will be started. Then interact with the running application. As soon as any string expression in the program will contain the searched string (substrings are matched), the process will be paused. You can use traditional debugging actions (e.g., Step Over) or search for the next occurrence via **Run | Find Next in Runtime**.\n\nFor a tutorial and sample use cases, please watch the [video](https://sulir.github.io/runtimesearch/#video) or read the [paper](https://sulir.github.io/runtimesearch/#article).\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "RuntimeSearch"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sulir/runtimesearch/master/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9138863722850218,
+            "technique": "supervised_classification"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To build the project, run the command: \nThe resulting plugin will be stored in `dist/runtimesearch-plugin-*.zip`. It can be installed using the \"Install Plugin from Disk\" command in IntelliJ IDEA. Alternatively, you can run it in a sandbox via `./gradlew runIde`.\n \n",
+                "original_header": "Building from Source"
+            },
+            "confidence": 0.9961280756416634,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sulir/runtimesearch/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The project consists of an IntelliJ IDEA plugin and a bytecode [instrumentation agent](https://docs.oracle.com/en/java/javase/17/docs/api/java.instrument/java/lang/instrument/package-summary.html). The initial configuration is passed from the IDE to the agent via command-line arguments when executing the target program: \n",
+                "original_header": "Internals"
+            },
+            "confidence": 0.9884142529023391,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sulir/runtimesearch/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "RuntimeSearch"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sulir/runtimesearch/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sulir/runtimesearch/master/.github/images/screenshot.png?raw=true"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sulir/runtimesearch/master/README.md"
+        }
+    ]
+}

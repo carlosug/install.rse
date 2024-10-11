@@ -1,0 +1,511 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:04:58"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/dynaroars/neuralsat",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "dynaroars",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-08-11T20:10:16Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-01T05:03:10Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2024 ThanhVu Nguyen\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "DPLL(T)-based Verification tool for DNNs",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\n*NeuralSAT* is a deep neural network (DNN) verification tool.  It integrates the DPLL(T) approach commonly used in SMT solving with a theory solver specialized for DNN reasoning. NeuralSAT exploits multicores and GPU for efficiency and can scale to networks with millions of parameters.  It also supports a wide range of neural networks and activation functions. \n",
+                "original_header": "NeuralSAT: A DPLL(T) Framework for Verifying Deep Neural Networks"
+            },
+            "confidence": 0.9595932160783334,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- **standard** input and output formats\n  - input: `onnx` for neural networks and `vnnlib` for specifications\n  - output: `unsat` for proved property, `sat` for disproved property (accompanied with a counterexample), and `unknown` or `timeout` for property that cannot be proved.\n  \n- **versatile**: support multiple types of neural types of networks and activation functions\n  - layers (can be mixture of different types): `fully connected` (fc), `convolutional` (cnn), `residual networks` (resnet), `batch normalization` (bn)\n  - activation functions:  `ReLU`, `sigmoid`, `tanh`, `power` \n",
+                "original_header": "FEATURES"
+            },
+            "confidence": 0.9482144341235645,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "*NeuralSAT* takes as input the formula $\\alpha$ representing the DNN `N` (with non-linear ReLU activation) and the formulae $\\phi_{in}\\Rightarrow \\phi_{out}$ representing the property $\\phi$ to be proved. \nInternally, it checks the satisfiability of the formula: $\\alpha \\land \\phi_{in} \\land \\overline{\\phi_{out}}$. \n*NeuralSAT* returns *`UNSAT`* if the formula is unsatisfiable, indicating  `N` satisfies $\\phi$, and *`SAT`* if the formula is satisfiable, indicating the `N` does not satisfy $\\phi$. \n",
+                "original_header": "OVERVIEW"
+            },
+            "confidence": 0.9121461852390704,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "`Boolean Abstraction` encodes the DNN verification problem into a Boolean constraint to be solved. \nThis step creates Boolean variables to represent the activation status of hidden neurons in the DNN. \n*NeuralSAT* also forms a set of initial clauses ensuring that each status variable is either `T` (active) or `F` (inactive). \n",
+                "original_header": "Boolean Representation"
+            },
+            "confidence": 0.929679219483574,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- `Stabilize` has a similar effect as `BCP` \u2013 reducing mistaken assignments by `Decide` \u2013 but it operates at the theory level not the propositional Boolean level. \nThe key idea in using neuron stability is that if we can determine that a neuron is stable, we can assign the exact truth value for the corresponding Boolean variable instead of having to guess.\nStabilization involves the solution of a mixed integer linear program (MILP) system. \nFirst, a MILP problem is created from the current assignment, the DNN, and the property of interest.\nNext, it collects a list of all unassigned variables which are candidates being stabilized.\nIn general, there are too many unassigned neurons, so `Stabilize` restricts consideration to `k` candidates.\nBecause each neuron has a different impact on abstraction precision we prioritize the candidates. \nIn `Stabilize`, neurons are prioritized based on their interval boundaries with a preference for neurons with either lower or upper bounds that are closer to zero. \nThe intuition is that neurons with bounds close to zero are more likely to become stable after tightening.\n \n",
+                "original_header": "Theory Solver (T-solver)"
+            },
+            "confidence": 0.9598514238373226,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "As with any stochastic algorithm, *NeuralSAT* would perform poorly if it gets into a subspace of the search that does not quickly lead to a solution, e.g., due to choosing a bad sequence of neurons to split.\nThis problem, which has been recognized in early SAT solving, motivates the introduction of restarting\nthe search to avoid being stuck in such a local optima.\n*NeuralSAT*  uses a simple restart heuristic that triggers a restart when either the number of processed assignments (nodes) exceeds a pre-defined number or the number of remaining assignments that need be checked exceeds a pre-defined threshold. \n",
+                "original_header": "Restart"
+            },
+            "confidence": 0.9641607653393923,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To gain insights into the performance improvements of NeuralSAT we require benchmarks that force the algorithm to search a non-trivial portion of the space of activation patterns. \nIt is well-known that SAT problems can be very easy to solve regardless of their size or whether they are satisfiable or unsatisfiable. \nThe same is true for DNN verification problems.\nThe organizers of the first three DNN verifier competitions remark on the need for benchmarks that are \"not so easy that every tool can solve all of them\" in order to assess verifier performance. \n\nTo achieve this we leverage a systematic DNN verification problem generator [GDVB](https://github.com/edwardxu0/GDVB). \nGDVB takes a seed neural network as input and systematically varies a number of architectural parameters, e.g., number of layers, and neurons per layer, to produce a set of DNNs. \nIn this experiment, we begin with a single MNIST network with `3` layers, each with `1024` neurons and generate `38` different DNNs that cover combinations of parameter variations. \nWe leverage the fact that local robustness properties are a pseudo-canonical form for pre-post condition specifications and use GDVB to generate 16 properties with varying radii and center points. \nNext we run two state-of-the-art verifiers: $\\alpha\\beta$-CROWN and MN-BaB, for each of the `38 * 16 = 608` combinations of DNN and property with a small timeout of `200` seconds. \nAny problem that could be solved within that timeout was removed from the benchmark as \"too easy\". \nThis resulted in `90` verification problems that not only are more computationally challenging than benchmarks used in other studies, but also exhibit significant architectural diversity. \nWe use this [MNIST_GDVB](https://github.com/dynaroars/neuralbench/tree/main/instances/mnist_gdvb) benchmark to study the variation in performance on challenging problems.\n \n",
+                "original_header": "PERFORMANCES"
+            },
+            "confidence": 0.9881919953621019,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Here we focus primarily on the benefits and interactions among the optimizations in NeuralSAT compared to the baseline `N` which is NeuralSAT without any optimization.\nThe plot shows the problems solved within the 900-second timeout for each technique sorted by runtime from fastest to slowest; \nproblems that timeout are not shown on the plot.  \nWe omit the use of restart `R` on its own, since it is intended to function in concert with parallelization.\nBoth stabilization `S` and parallelization `P` improve the number of problems solved and reduce cost relative to the baseline, but parallelism `P` yields greater improvements. \nWhen parallelism `P` is combined with restart `R` we see that the number of problems solved increases, but the average time increases slightly. \nThe plot shows the trend in verification solve times for each optimization combination across the benchmarks. \nOne can observe that adding more optimizations improves performance both by the fact that the plots are lower and extend further to the right. \nFor example, extending `P` to `P+S` shows lower solve times for the first `17` problems \u2013 the one's `P` could solve \u2013 and that `38` of the `51` benchmark problems are solved. \nExtending `P+S` to the full set of optimizations exhibits what appears to be a degradation in performance for the first `23` problems solved and this is likely due to the fact that, as explained above, restart forces some re-exploration of the search. \nHowever, the benefit of restart shows in the ability to significantly reduce verification time for `25` of the `48` problems solved by `P+S+R`.\n \n",
+                "original_header": "MNIST_GDVB benchmark"
+            },
+            "confidence": 0.9559129747177824,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "neuralsat",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "dynaroars/neuralsat",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/dynaroars/neuralsat/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/dynaroars/neuralsat/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 13,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "abstraction, adversarial-attacks, ai-assurance, ai-safety, dnn-verification, dpll, neural-network-veri, robustness, robustness-verification, sat-solver, software-verification",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/dynaroars/neuralsat/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 1183113
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 5764
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Cuda",
+                "name": "Cuda",
+                "type": "Programming_language",
+                "size": 1234
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 981
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "```bash\nsudo apt-get install libbz2-dev\nsudo apt-get install lzma\nsudo apt-get install liblzma-dev\n```\n\n```bash\npip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu121\n```\n\n```bash\npip install -r reqs.txt \n```\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/neuralsat-pt201/installation/installation.md"
+        },
+        {
+            "result": {
+                "value": "# NeuralSAT Installation and Usage\n\n> While NeuralSAT can be installed and run on any platforms satisfying its [dependencies](#installation), we mainly develop and test NeuralSAT on Linux.\n\n\n## Content\n\n- ```neuralsat-pt201```: source code\n- ```third_party```: external libraries\n- ```vnncomp_scripts```: scripts for competition\n\n\n## Installation\n\n- [Anaconda](https://www.anaconda.com/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html)\n- [Gurobi](https://www.gurobi.com/): Gurobi requires a license (a [free academic license](https://www.gurobi.com/downloads/free-academic-license/) is available).\n\n- Remove pre-installed environment \n\n```bash\nconda deactivate; conda env remove --name neuralsat\n```\n\n- Install required packages \n\n```bash\nconda env create -f env.yaml\n```\n\n- Activate `conda` environment\n\n```bash\nconda activate neuralsat\n```\n\n- (Optional) Install specific Pytorch C++/CUDA extensions\n\n```bash\npip install \"third_party/haioc\"\n```\n\n- (Optional) Install `DNNV` for ONNX simplification\n\n```bash\nconda deactivate; conda env remove --name dnnv\nconda env create -f neuralsat-pt201/installation/env_dnnv.yaml\nconda activate dnnv\npip install --no-deps git+https://github.com/dlshriver/DNNV.git@d4f59a01810cf4dac99f8f5e5b9d7a350cbfa8d7#egg=dnnv\n```\n\n## \ud83d\ude80 Usage\n\n```python\nmain.py [-h] --net NET --spec SPEC \n        [--batch BATCH] [--timeout TIMEOUT] [--device {cpu,cuda}] [--verbosity {0,1,2}] \n        [--result_file RESULT_FILE] [--export_cex] \n        [--disable_restart] [--disable_stabilize] \n```\n\n### Options\nUse ```-h``` or ```--help``` to see options that can be passed into **NeuralSAT**. \n\n- `--net`: Path to `ONNX` model.\n- `--spec`: Path to `VNNLIB` specification file.\n- `--batch`: Maximum number of parallel checking branches.\n- `--timeout`: Timeout (in second) for verifying one instance.\n- `--device`: Device to use (either `cpu` or `cuda`).\n- `--verbosity`: Logging options (0: NOTSET, 1: INFO, 2: DEBUG).\n- `--result_file`: File to export execution results (including counter-example if found).\n- `--export_cex`: Enable writing counter-example to `result_file`.\n- `--disable_restart`: disable RESTART heuristic.\n- `--disable_stabilize`: disable STABILIZE.\n\n\n### Examples\n\n- Examples showing **NeuralSAT** verifies properties (i.e., returning `unsat``):\n\n```python\npython3 main.py --net \"example/onnx/mnistfc-medium-net-554.onnx\" --spec \"example/vnnlib/test.vnnlib\"\n# unsat,24.9284\n```\n\n```python\npython3 main.py --net \"example/onnx/cifar10_2_255_simplified.onnx\" --spec \"example/vnnlib/cifar10_spec_idx_4_eps_0.00784_n1.vnnlib\"\n# unsat,17.9806\n```\n\n```python\npython3 main.py --net \"example/onnx/ACASXU_run2a_1_1_batch_2000.onnx\" --spec \"example/vnnlib/prop_6.vnnlib\" --disable_restart\n# unsat,3.0907\n```\n\n```python\npython3 main.py --net \"example/onnx/mnist-net_256x4.onnx\" --spec \"example/vnnlib/prop_1_0.03.vnnlib\"\n# unsat,139.4125\n```\n\n- Examples showing **NeuralSAT** disproves properties (i.e., returning `sat` and counterexample):\n\n```python\npython3 main.py --net \"example/onnx/mnist-net_256x2.onnx\" --spec \"example/vnnlib/prop_1_0.05.vnnlib\"\n# sat,0.7526\n```\n\n```python\npython3 main.py --net \"example/onnx/ACASXU_run2a_1_9_batch_2000.onnx\" --spec \"example/vnnlib/prop_7.vnnlib\" --disable_restart\n# sat,6.1320\n```\n\n\n\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/doc/INSTALL.md"
+        },
+        {
+            "result": {
+                "value": "- see [INSTALL.md](./doc/INSTALL.md)\n",
+                "type": "Text_excerpt",
+                "original_header": "INSTALLATION &amp; USAGE",
+                "parent_header": [
+                    "NeuralSAT: A DPLL(T) Framework for Verifying Deep Neural Networks"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/vnncomp_scripts/install_tool.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/vnncomp_scripts/run_instance.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/vnncomp_scripts/prepare_instance.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/third_party/haioc/tools/packaging/prepare_build_environment_windows.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/third_party/haioc/tools/packaging/prepare_build_environment_macos.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/third_party/haioc/tools/packaging/prepare_build_environment_linux.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "- see [INSTALL.md](./doc/INSTALL.md)\n",
+                "type": "Text_excerpt",
+                "original_header": "INSTALLATION &amp; USAGE",
+                "parent_header": [
+                    "NeuralSAT: A DPLL(T) Framework for Verifying Deep Neural Networks"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "The *NeuralSAT* research is partially supported by grants from NSF ([1900676](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1900676), [2019239](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2019239), [2129824](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2129824), [2200621](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2200621), [2217071](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2217071), [2238133](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2238133), [2319131](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2319131)) and an [Amazon Research Award](https://www.amazon.science/research-awards/program-updates/79-amazon-research-awards-recipients-announced).\n\n",
+                "type": "Text_excerpt",
+                "original_header": "ACKNOWLEDGEMENTS",
+                "parent_header": [
+                    "NeuralSAT: A DPLL(T) Framework for Verifying Deep Neural Networks"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@misc{duong2024dpllt,\n    primaryclass = {cs.LG},\n    archiveprefix = {arXiv},\n    eprint = {2307.10266},\n    year = {2024},\n    author = {Hai Duong and ThanhVu Nguyen and Matthew Dwyer},\n    title = {A DPLL(T) Framework for Verifying Deep Neural Networks},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "A DPLL(T) Framework for Verifying Deep Neural Networks",
+                "author": "Hai Duong and ThanhVu Nguyen and Matthew Dwyer"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        },
+        {
+            "result": {
+                "value": "@misc{duong2024harnessing,\n    primaryclass = {cs.LG},\n    archiveprefix = {arXiv},\n    eprint = {2401.14412},\n    year = {2024},\n    author = {Hai Duong and Dong Xu and ThanhVu Nguyen and Matthew B. Dwyer},\n    title = {Harnessing Neuron Stability to Improve DNN Verification},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Harnessing Neuron Stability to Improve DNN Verification",
+                "author": "Hai Duong and Dong Xu and ThanhVu Nguyen and Matthew B. Dwyer"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "NeuralSAT: A DPLL(T) Framework for Verifying Deep Neural Networks"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/dynaroars/neuralsat/wiki",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/./doc/figure/overview.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/./doc/figure/algorithm.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/./doc/figure/mnist-gdvb.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/./doc/figure/vnncomp23.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2307.10266.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2401.14412.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dynaroars/neuralsat/develop/README.md"
+        }
+    ]
+}

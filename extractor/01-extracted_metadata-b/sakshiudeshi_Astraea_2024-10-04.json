@@ -1,0 +1,1805 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 23:59:56"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/sakshiudeshi/Astraea",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "sakshiudeshi",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-09-07T06:20:10Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-01T01:39:04Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Code for \"Astraea: Grammar-based Fairness Testing\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Code for [\"Astraea: Grammar-based Fairness Testing\"](https://arxiv.org/abs/2010.02542). In this repository, we present code for fairness of three\nNLP tasks, [Coreference Resolution](https://demo.allennlp.org/coreference-resolution), \n[Sentiment Analysis](https://demo.allennlp.org/sentiment-analysis) and \n[Masked Language Modeling](https://demo.allennlp.org/masked-lm?text=The%20doctor%20ran%20to%20the%20emergency%20room%20to%20see%20%5BMASK%5D%20patient.)\n \n",
+                "original_header": "Astraea"
+            },
+            "confidence": 0.99011876305765,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The code for the fairness testing of Coreference Resolution (coref) can be found in the `Coreference-Resolution` folder. We test three coref NLP algorithms. Deep-learning based [Neuralcoref](https://github.com/huggingface/neuralcoref), [AllenNLP](https://demo.allennlp.org/coreference-resolution/coreference-resolution) and rule-based [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/) \nFor each coreference resolution module, we have two grammar variants. They are the ambiguous and unambiguous grammars. The ambiguous variant tests for fairness related to occupation, gender and religion whereas the unambiguous variant tests only for fairness with respect to gender. Additionally, for easy reproducilbility and verification we provide all the generated pickles and tokens. These analysis script can be run in the Data-Analysis files for each grammar variant. \n \n",
+                "original_header": "Coreference Resolution"
+            },
+            "confidence": 0.9632176265553722,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "As with the other cases, we provide the tokens and the errors in pickle files for easy reproduction. These are stored in the folder `Masked-Language-Modelling/saved_pickles` \n",
+                "original_header": "Masked Language Modelling"
+            },
+            "confidence": 0.9557578790822145,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Astraea is a two-phase approach. Given an NLP model *f*, the input grammar and sensitive attributes from the\ngrammar, Astraea first randomly (RAND) explores the grammar production rules to generate a large number of input sentences. For any two sentences *a* and *b* that only differ in the sensitive attributes, Astraea highlights an (individual) fairness violation when *f (a)* differs from *f (b)*. In the second phase, Astraea analyses the fairness violations discovered in the first phase and isolates input features (e.g. the specific occupation or gender) that are predominantly responsible for fairness violations. In the second phase, such input features are prioritized in generating the tests.  \nIn our current Python implementation, the RAND method is represented by the files marked `Exploration` and for the PROB method the files use the tag `Exploitation` \n",
+                "original_header": "Random (RAND) vs Probabilistic (PROB)  Test Generation"
+            },
+            "confidence": 0.9702125488561558,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We examine whether Astraea\u2019s bias mitigation of error-inducing input tokens generalises to unseen input sentences, in particular, sentences in the wild that contain previously error-inducing tokens. For instance, if Astraea identified the token \u201cCEO\" as the most error-inducing token in a sentiment analyser, we check if other sentences in the wild containing \u201cCEO\" token still lead to fairness violations in the re-trained models. To address this, we collected five (5) and ten (10) of the topmost error-inducing input tokens identified by Astraea. As an example, we choose the top five or 10 most biased (fe)male occupations from our sentiment analysis experiments. Then, using the sentences provided by a different sentiment analysis dataset [Winogender](https://github.com/rudinger/winogender-schemas), we replaced these error-inducing tokens in these sentences and test them on both the original and re-trained models. Astraea\u2019s bias mitigation generalises to unseen input sentences containing the error-inducing input tokens. The models can be found [here](https://zenodo.org/record/5221098). \n",
+                "original_header": "Bias Mitigation Generalizability"
+            },
+            "confidence": 0.9361374905488813,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Astraea",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "sakshiudeshi/Astraea",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/sakshiudeshi/Astraea/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/sakshiudeshi/Astraea/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 9,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/sakshiudeshi/Astraea/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 30468843
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 64908
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/sakshiudeshi/Astraea/tree/master/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Masked-Language-Modelling/Masked-Language-Modelling-Group-Fairness.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Masked-Language-Modelling/Masked-Language-Modelling-Group-Fairness.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Masked-Language-Modelling/Masked-Language-Modelling-Roberta.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Masked-Language-Modelling/Masked-Language-Modelling-Roberta.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Masked-Language-Modelling/MLM-Individual-Fairness-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Masked-Language-Modelling/MLM-Individual-Fairness-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Masked-Language-Modelling/MLM-Individual-Fairness-Analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Masked-Language-Modelling/MLM-Individual-Fairness-Analysis.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Masked-Language-Modelling/Masked-Language-Modelling-Analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Masked-Language-Modelling/Masked-Language-Modelling-Analysis.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Masked-Language-Modelling/MLM-Individual-Fairness-Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Masked-Language-Modelling/MLM-Individual-Fairness-Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Terminal-Symbol-Count.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Terminal-Symbol-Count.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Religion-Schema/Winograd-Schema-Exploitation-Religion-Discrimination.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Religion-Schema/Winograd-Schema-Exploitation-Religion-Discrimination.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Religion-Schema/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Religion-Schema/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Religion-Schema/Winograd-Schema-Exploration-Religion-Discrimination.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Religion-Schema/Winograd-Schema-Exploration-Religion-Discrimination.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Ambiguous-Schema/Data-Analysis-Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Ambiguous-Schema/Data-Analysis-Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Ambiguous-Schema/Winograd-Schema-Exploitation-Ambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Ambiguous-Schema/Winograd-Schema-Exploitation-Ambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Ambiguous-Schema/Winograd-Schema-Exploration-Ambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Ambiguous-Schema/Winograd-Schema-Exploration-Ambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Ambiguous-Schema/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Ambiguous-Schema/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Occupation-Schema/Winograd-Schema-Exploitation-Occupational-Discrimination.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Occupation-Schema/Winograd-Schema-Exploitation-Occupational-Discrimination.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Occupation-Schema/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Occupation-Schema/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Occupation-Schema/Winograd-Schema-Exploration-Occupation-Discrimination.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Occupation-Schema/Winograd-Schema-Exploration-Occupation-Discrimination.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Data-Analysis-Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Data-Analysis-Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Winograd-Schema-Exploitation-Unambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Winograd-Schema-Exploitation-Unambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Winograd-Schema-Exploration-Unambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Winograd-Schema-Exploration-Unambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Stability-RQ/Data-Analysis-Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Stability-RQ/Data-Analysis-Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Stability-RQ/Winograd-Schema-Exploitation-Unambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Stability-RQ/Winograd-Schema-Exploitation-Unambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Stability-RQ/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Stability-RQ/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Stability-RQ/Winograd-Schema-Exploration-Unambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Stability-RQ/Winograd-Schema-Exploration-Unambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Predictive-Errors/Measure%20Predictive%20Errors.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/Stanford-CoreNLP-Coref/Unambiguous%20Schema/Predictive-Errors/Measure%20Predictive%20Errors.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Ambiguous-Gender-Grammar/Data-Analysis-Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Ambiguous-Gender-Grammar/Data-Analysis-Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Ambiguous-Gender-Grammar/Winograd-Schema-Exploitation-Ambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Ambiguous-Gender-Grammar/Winograd-Schema-Exploitation-Ambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Ambiguous-Gender-Grammar/Winograd-Schema-Exploration-Ambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Ambiguous-Gender-Grammar/Winograd-Schema-Exploration-Ambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Ambiguous-Gender-Grammar/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Ambiguous-Gender-Grammar/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Religion-Bias-Grammar/Winograd-Schema-Exploitation-Religion-Discrimination.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Religion-Bias-Grammar/Winograd-Schema-Exploitation-Religion-Discrimination.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Religion-Bias-Grammar/Winograd-Schema-Exploration-Sexual-Orientation-Discrimination.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Religion-Bias-Grammar/Winograd-Schema-Exploration-Sexual-Orientation-Discrimination.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Religion-Bias-Grammar/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Religion-Bias-Grammar/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Religion-Bias-Grammar/Winograd-Schema-Exploration-Religion-Discrimination.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Religion-Bias-Grammar/Winograd-Schema-Exploration-Religion-Discrimination.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Data-Analysis-Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Data-Analysis-Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Winograd-Schema-Exploitation-Unambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Winograd-Schema-Exploitation-Unambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Winograd-Schema-Exploration-Unambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Winograd-Schema-Exploration-Unambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Stability-RQ/Data-Analysis-Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Stability-RQ/Data-Analysis-Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Stability-RQ/Winograd-Schema-Exploitation-Unambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Stability-RQ/Winograd-Schema-Exploitation-Unambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Stability-RQ/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Stability-RQ/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Stability-RQ/Winograd-Schema-Exploration-Unambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Stability-RQ/Winograd-Schema-Exploration-Unambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Predictive-Errors/Measure%20Predictive%20Errors.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Unambiguous-Gender-Grammar/Predictive-Errors/Measure%20Predictive%20Errors.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Occupational-Bias-Grammar/Winograd-Schema-Exploration-Occupational-Discrimination.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Occupational-Bias-Grammar/Winograd-Schema-Exploration-Occupational-Discrimination.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Occupational-Bias-Grammar/Winograd-Schema-Exploitation-Occupational-Discrimination.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Occupational-Bias-Grammar/Winograd-Schema-Exploitation-Occupational-Discrimination.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Occupational-Bias-Grammar/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/NeuralCoref/Occupational-Bias-Grammar/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Terminal-Symbol-Count.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Terminal-Symbol-Count.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Religion-Schema/Winograd-Schema-Exploitation-Religion-Discrimination.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Religion-Schema/Winograd-Schema-Exploitation-Religion-Discrimination.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Religion-Schema/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Religion-Schema/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Religion-Schema/Winograd-Schema-Exploration-Religion-Discrimination.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Religion-Schema/Winograd-Schema-Exploration-Religion-Discrimination.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Ambiguous-Gender-Schema/Data-Analysis-Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Ambiguous-Gender-Schema/Data-Analysis-Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Ambiguous-Gender-Schema/Winograd-Schema-Exploitation-Ambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Ambiguous-Gender-Schema/Winograd-Schema-Exploitation-Ambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Ambiguous-Gender-Schema/Winograd-Schema-Exploration-Ambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Ambiguous-Gender-Schema/Winograd-Schema-Exploration-Ambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Ambiguous-Gender-Schema/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Ambiguous-Gender-Schema/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Data-Analysis-Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Data-Analysis-Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Winograd-Schema-Exploitation-Unambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Winograd-Schema-Exploitation-Unambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Winograd-Schema-Exploration-Unambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Winograd-Schema-Exploration-Unambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Stability-RQ/Data-Analysis-Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Stability-RQ/Data-Analysis-Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Stability-RQ/Winograd-Schema-Exploitation-Unambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Stability-RQ/Winograd-Schema-Exploitation-Unambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Stability-RQ/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Stability-RQ/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Stability-RQ/Winograd-Schema-Exploration-Unambiguous.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Stability-RQ/Winograd-Schema-Exploration-Unambiguous.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Predictive-Errors/Measure%20Predictive%20Errors.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Unambiguous-Gender-Schema/Predictive-Errors/Measure%20Predictive%20Errors.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Occupational-Bias-Schema/Winograd-Schema-Exploration-Occupational-Discrimination.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Occupational-Bias-Schema/Winograd-Schema-Exploration-Occupational-Discrimination.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Occupational-Bias-Schema/Winograd-Schema-Exploitation-Occupational-Discrimination.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Occupational-Bias-Schema/Winograd-Schema-Exploitation-Occupational-Discrimination.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Occupational-Bias-Schema/Data-Analysis-Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Corerence-Resolution/AllenNLP%20Coref/Occupational-Bias-Schema/Data-Analysis-Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Age-Related%20Bias%20Demo/Age-Bias-Grammar.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Age-Related%20Bias%20Demo/Age-Bias-Grammar.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/Checklist-Comparison-Experiments/Checklist_Sentiment_Analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/Checklist-Comparison-Experiments/Checklist_Sentiment_Analysis.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/Checklist-Comparison-Experiments/Pretrained_Checklist_Sentiment_Analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/Checklist-Comparison-Experiments/Pretrained_Checklist_Sentiment_Analysis.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploitation/TensorFlow_Text_Classification_RNN_I_Unpadding_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploitation/TensorFlow_Text_Classification_RNN_I_Unpadding_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploitation/TensorFlow_Text_Classification_RNN_II_Padding_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploitation/TensorFlow_Text_Classification_RNN_II_Padding_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploitation/TensorFlow_Text_Classification_Hub_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploitation/TensorFlow_Text_Classification_Hub_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploitation/TensorFlow_Text_Classification_RNN_I_Padding_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploitation/TensorFlow_Text_Classification_RNN_I_Padding_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploitation/TensorFlow_Text_Classification_RNN_II_Unpadding_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploitation/TensorFlow_Text_Classification_RNN_II_Unpadding_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/TensorFlow_Text_Classification_RNN_II_Unpadding_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/TensorFlow_Text_Classification_RNN_II_Unpadding_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/TensorFlow_Text_Classification_RNN_I_Padding_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/TensorFlow_Text_Classification_RNN_I_Padding_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/TensorFlow_Text_Classification_RNN_I_Unpadding_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/TensorFlow_Text_Classification_RNN_I_Unpadding_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/Hub_Exploration_with_two_percent_extra_data.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/Hub_Exploration_with_two_percent_extra_data.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/Hub_Exploration_with_five_percent_extra_data.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/Hub_Exploration_with_five_percent_extra_data.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/Hub_Exploration_with_three_percent_extra_data.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/Hub_Exploration_with_three_percent_extra_data.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/get%20grammar-details.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/get%20grammar-details.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/TensorFlow_Text_Classification_Hub_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/TensorFlow_Text_Classification_Hub_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/TensorFlow_Text_Classification_RNN_II_Padding_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/TensorFlow_Text_Classification_RNN_II_Padding_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/Hub_Exploration_with_one_percent_extra_data.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/Hub_Exploration_with_one_percent_extra_data.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/Hub_Exploration_with_four_percent_extra_data.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Exploration/Hub_Exploration_with_four_percent_extra_data.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_NLTK-VaderSentiment_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_NLTK-VaderSentiment_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_Stanford_CoreNLP_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_Stanford_CoreNLP_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_VaderSentiment_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_VaderSentiment_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_TextBlob_Pattern_Analysis_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_TextBlob_Pattern_Analysis_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_TextBlob_Naive_Bayes_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_TextBlob_Naive_Bayes_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_Google-NLP_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_Google-NLP_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_TextBlob_Naive_Bayes_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_TextBlob_Naive_Bayes_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_Google-NLP_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_Google-NLP_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_Stanford_Core_NLP_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_Stanford_Core_NLP_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_NLTK-VaderSentiment_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_NLTK-VaderSentiment_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_VaderSentiment_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_VaderSentiment_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_TextBlob_Pattern_Analysis_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/pre-trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_TextBlob_Pattern_Analysis_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/TensorFlow_Text_Classification_Hub_Re-Training_ten_times_for_each_percent.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/TensorFlow_Text_Classification_Hub_Re-Training_ten_times_for_each_percent.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Small_Unambiguous_Schema_Text_Classification_Hub_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Small_Unambiguous_Schema_Text_Classification_Hub_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/text_classification_with_hub.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/text_classification_with_hub.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/TensorFlow_Text_Classification_Hub_Training-data-generation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/TensorFlow_Text_Classification_Hub_Training-data-generation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Re-training_text_classification_with_hub.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Re-training_text_classification_with_hub.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/TensorFlow_Text_Classification_RNN_Training.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/TensorFlow_Text_Classification_RNN_Training.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/TensorFlow_Text_Classification_Hub_actual_Re-Training.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/TensorFlow_Text_Classification_Hub_actual_Re-Training.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/text_classification_rnn.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/text_classification_rnn.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/TensorFlow_Text_Classification_Hub_Re-Training.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/TensorFlow_Text_Classification_Hub_Re-Training.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-three-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-three-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-nine-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-nine-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-ten-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-ten-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-0.25-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-0.25-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-two-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-two-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-nine-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-nine-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-ten-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-ten-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-0.25-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-0.25-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-eight-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-eight-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-two-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-two-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-seven-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-seven-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-five-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-five-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-0.75-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-0.75-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-one-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-one-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-0.5-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-0.5-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-three-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-three-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-six-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-six-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-four-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-four-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-0.5-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-0.5-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-0.75-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-0.75-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-one-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-one-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-eight-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-eight-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-five-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-10-Diagnosis-TensorFlow-Hub-five-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-seven-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-seven-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-six-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-six-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-four-percent-data-augmentation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Generalisation_of_repair/all_rands_Top-5-Diagnosis-TensorFlow-Hub-four-percent-data-augmentation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_TensorFlow_Hub_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_TensorFlow_Hub_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_TensorFlow_RNN2_Unpadding_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_TensorFlow_RNN2_Unpadding_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_TensorFlow_RNN1_Unpadding_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_TensorFlow_RNN1_Unpadding_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_TensorFlow_RNN1_Padding_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_TensorFlow_RNN1_Padding_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_TensorFlow_RNN2_Padding_Exploitation.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploitation/Grammar_Coverage_TensorFlow_RNN2_Padding_Exploitation.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_TensorFlow_RNN2_Unpadding_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_TensorFlow_RNN2_Unpadding_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_TensorFlow_RNN1_Padding_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_TensorFlow_RNN1_Padding_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_TensorFlow_Hub_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_TensorFlow_Hub_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_TensorFlow_RNN2_Padding_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_TensorFlow_RNN2_Padding_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_TensorFlow_RNN1_Unpadding_Exploration.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Sentiment%20Analysis/trained-sentiment-analyzers/Grammar-Coverage/Exploration/Grammar_Coverage_TensorFlow_RNN1_Unpadding_Exploration.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Grammar-Related%20Reports/Initial-Grammar-Expressiveness.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Grammar-Related%20Reports/Initial-Grammar-Expressiveness.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Grammar-Related%20Reports/User%20Study%20Semantic%20Validity/UserStudyAnalysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Grammar-Related%20Reports/User%20Study%20Semantic%20Validity/UserStudyAnalysis.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Grammar-Related%20Reports/User%20Study%20Semantic%20Validity/Sentence_Ranomizer.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/Grammar-Related%20Reports/User%20Study%20Semantic%20Validity/Sentence_Ranomizer.ipynb"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "This folder contains the code and data used to evaluate the syntactic and semantic validity of the input grammar used by Astraea. \nWe evaluate the correctness of our input grammar by examining the validity of the generated input sentences, in terms of their syntactic and semantic validity. \nFirstly, we employ [grammarly](https://www.grammarly.com/) to evaluate the syntactic validity of all generated inputs, we show that almost all (97.4%) of Astraea\u2019s \ngenerated inputs are syntactically valid. We also conduct a user study with 205 participants to evaluate the semantic validity of ASTRAEA\u2019s generated inputs, \nespecially in comparison to semantic validity of human-written input sentences. Our results show that ASTRAEA\u2019s generated input sentences are 81% as semantically \nvalid as human-written input sentences.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Grammar Related Reports",
+                "parent_header": [
+                    "Astraea"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        }
+    ],
+    "contact": [
+        {
+            "result": {
+                "value": "This repository is still under development. \nPlease email Sakshi Udeshi (sakshi_udeshi@mymail.sutd.edu.sg), Ezekiel Soremekun (ezekiel.soremekun@uni.lu) or Sudipta Chattopadhyay (sudipta_chattopadhyay@sutd.edu.sg) \nfor any questions.\n",
+                "type": "Text_excerpt",
+                "original_header": "Contact",
+                "parent_header": [
+                    "Astraea"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "```\n@article{astraea,\n  title={Astraea: Grammar-based Fairness Testing},\n  author={Ezekiel Soremekun and\n               Sakshi Udeshi and\n               Sudipta Chattopadhyay},\n  booktitle={IEEE Transactions on Software Engineering (TSE)},\n  year={2022}\n}\n```\n\n\n\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing Astraea",
+                "parent_header": [
+                    "Astraea"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{astraea,\n    year = {2022},\n    booktitle = {IEEE Transactions on Software Engineering (TSE)},\n    author = {Ezekiel Soremekun and\nSakshi Udeshi and\nSudipta Chattopadhyay},\n    title = {Astraea: Grammar-based Fairness Testing},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Astraea: Grammar-based Fairness Testing",
+                "author": "Ezekiel Soremekun and\nSakshi Udeshi and\nSudipta Chattopadhyay"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Please see the respective pages for detailed installation instructions.  \n",
+                "original_header": "Coreference Resolution"
+            },
+            "confidence": 0.9968020491991986,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Please refer to the specific page for installation instructions.  \n",
+                "original_header": "Sentiment Analysis"
+            },
+            "confidence": 0.9805956392081369,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Astraea"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        }
+    ],
+    "related_documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://textblob.readthedocs.io/",
+                "format": "readthedocs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/./docs/astraea-use-case.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2010.02542"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/sakshiudeshi/Astraea/master/README.md"
+        }
+    ]
+}

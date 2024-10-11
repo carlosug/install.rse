@@ -1,0 +1,307 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 21:36:15"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ise-uiuc/DeepREL",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ise-uiuc",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-09-21T14:10:37Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-17T02:00:22Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Fuzzing Deep-Learning Libraries via Automated Relational API Inference (ESEC/FSE 2022)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is the artifact of the research paper, \"Fuzzing Deep-Learning Libraries via Automated Relational API Inference\", at ESEC/FSE 2022.\n \n",
+                "original_header": "DeepREL"
+            },
+            "confidence": 0.9236757214304167,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/DeepREL/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is the DeepREL's implementation for testing PyTorch and TensorFlow.\n \n",
+                "original_header": "About"
+            },
+            "confidence": 0.9880729394253187,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/DeepREL/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We provide a list of confirmed bug reports on [PyTorch](https://github.com/ise-uiuc/DeepREL/blob/main/PyTorch%20Issues.csv) and [TensorFlow](https://github.com/ise-uiuc/DeepREL/blob/main/TF%20issues.csv).\nWe also provide a Colab notebook to reproduce all 23 high-priority bugs for PyTorch  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ise-uiuc/DeepREL/blob/main/PyTorch_High_Priority_Issue_Reproduction.ipynb).\n \n",
+                "original_header": "Reproduce Bugs"
+            },
+            "confidence": 0.9046308615660724,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/DeepREL/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "DeepREL",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ise-uiuc/DeepREL",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ise-uiuc/DeepREL/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ise-uiuc/DeepREL/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 34,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "deep-learning, fuzzing, pytorch, tensorflow",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 6,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/ise-uiuc/DeepREL/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 230795
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 34798
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ise-uiuc/DeepREL/main/PyTorch_High_Priority_Issue_Reproduction.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/DeepREL/main/PyTorch_High_Priority_Issue_Reproduction.ipynb"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/ise-uiuc/DeepREL/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "1. Our testing framework leverages [MongoDB](https://www.mongodb.com/) so you should [install and run MongoDB](https://docs.mongodb.com/manual/installation/) first.\n\t- Run the command `ulimit -n 200000` to adjust the limit that the system resources a process may use. You can see this [document](https://docs.mongodb.com/manual/reference/ulimit/) for more details.\n2. You should check our dependent python libraries in `requirements.txt` and run `pip install -r requirements.txt` to install them\n3. Python version >= 3.9.0 (It must support f-string.)\n",
+                "type": "Text_excerpt",
+                "original_header": "1. Requirements",
+                "parent_header": [
+                    "DeepREL",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/DeepREL/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Run the following commands to load the database.\n\n```shell\nmongorestore -h 127.0.0.1:27017 --db tf dump/tf/\nmongorestore -h 127.0.0.1:27017 --db torch dump/torch/\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "2. Setting Up with Dataset",
+                "parent_header": [
+                    "DeepREL",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/DeepREL/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We provide a list of confirmed bug reports on [PyTorch](https://github.com/ise-uiuc/DeepREL/blob/main/PyTorch%20Issues.csv) and [TensorFlow](https://github.com/ise-uiuc/DeepREL/blob/main/TF%20issues.csv).\nWe also provide a Colab notebook to reproduce all 23 high-priority bugs for PyTorch  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ise-uiuc/DeepREL/blob/main/PyTorch_High_Priority_Issue_Reproduction.ipynb).\n \n",
+                "original_header": "Reproduce Bugs"
+            },
+            "confidence": 0.9310787216534303,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/DeepREL/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "After finishing above steps, run the following command to start RelFuzz to test PyTorch\n\n```shell\ncd pytorch/src && python DeepREL.py\n```\n\nRun the following command to start RelFuzz to test TensorFlow\n\n```shell\ncd tensorflow/src && python DeepREL.py\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "3. Run",
+                "parent_header": [
+                    "DeepREL",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/DeepREL/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "There are some hyper-parameters in DeepREL and they could be easily configured by modifying `{pytorch, tensorflow}/src/config/demo.conf`:\n\n1. MongoDB database configuration.\n\n```conf\n[mongodb]\n# your-mongodb-server\nhost = 127.0.0.1\n# mongodb port\nport = 27017 \n# name of pytorch database\ntorch_database = torch\n# name of tensorflow database\ntf_database = tf\n```\n\n2. DeepREL configuration\n```conf\n[DeepREL]\ntest_number = 1000\ntop_k = 10\niteration = 10\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "4. Configuration",
+                "parent_header": [
+                    "DeepREL",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/DeepREL/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "DeepREL"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/DeepREL/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://colab.research.google.com/assets/colab-badge.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/ise-uiuc/DeepREL/main/README.md"
+        }
+    ]
+}

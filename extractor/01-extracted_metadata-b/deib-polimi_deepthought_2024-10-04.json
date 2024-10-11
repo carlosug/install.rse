@@ -1,0 +1,265 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:53:29"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/deib-polimi/deepthought",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "deib-polimi",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-11-11T09:36:23Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-26T16:49:58Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Implementation of \"DeepThought: a Reputation and Voting-based Blockchain Oracle\" (https://link.springer.com/chapter/10.1007/978-3-031-20984-0_26)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "deepthought",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "deib-polimi/deepthought",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/deib-polimi/deepthought/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/deib-polimi/deepthought/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 9,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/deib-polimi/deepthought/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Solidity",
+                "name": "Solidity",
+                "type": "Programming_language",
+                "size": 53870
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 48678
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 737
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/deib-polimi/deepthought/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "DeepThought is a distributed human-based blockchain oracle that combines voting and reputation schemes. The aim is to validate external information before storing it in a blockchain relying on humans that collaboratively cross-check external information. In particular, the first part of the development shows that our approach achieves greater resistance to voter corruption in different configurations. A full paper on this work has been accepted at the International Conference on Service Oriented Computing 2022.\n",
+                "type": "Text_excerpt",
+                "original_header": "DeepThought: a Reputation and Voting-based Blockchain Oracle"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/deib-polimi/deepthought/main/README.md"
+        },
+        {
+            "result": {
+                "value": "![DeepThought](approach.png)\n",
+                "type": "Text_excerpt",
+                "original_header": "Approach",
+                "parent_header": [
+                    "DeepThought: a Reputation and Voting-based Blockchain Oracle"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/deib-polimi/deepthought/main/README.md"
+        },
+        {
+            "result": {
+                "value": "You can find the preprint paper [Here](https://arxiv.org/abs/2209.11032)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Paper",
+                "parent_header": [
+                    "DeepThought: a Reputation and Voting-based Blockchain Oracle"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/deib-polimi/deepthought/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "To compile:\n```\ntruffle compile\n```\n\nTo compile and deploy the contract (remember to check the address in truffle-config.js to match the Ganache one)\n```\ntruffle migrate\n```\n\nCopy and past `truffle migrate` command output: `contract address` into the setup.py code (update the `deployed_contract_address` value).\n\nTo execute DeepThought CLI prototype (remember to check blockchain and contract addresses to match the Ganache ones)\n```\npython DeepThought.py\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Running Instructions",
+                "parent_header": [
+                    "DeepThought: a Reputation and Voting-based Blockchain Oracle"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/deib-polimi/deepthought/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "DeepThought: a Reputation and Voting-based Blockchain Oracle"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/deib-polimi/deepthought/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/deib-polimi/deepthought/main/approach.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/deib-polimi/deepthought/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2209.11032"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/deib-polimi/deepthought/main/README.md"
+        }
+    ]
+}

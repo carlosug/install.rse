@@ -1,0 +1,201 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 18:25:14"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/yaxirhuxxain/Source-Code-Suggestion",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "yaxirhuxxain",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-07-24T10:54:44Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-12-14T02:43:14Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Source-Code-Suggestion",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "yaxirhuxxain/Source-Code-Suggestion",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/yaxirhuxxain/Source-Code-Suggestion/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/yaxirhuxxain/Source-Code-Suggestion/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/yaxirhuxxain/source-code-suggestion/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/yaxirhuxxain/source-code-suggestion/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "Make sure your system meets the followings requirements\n* [Python 3.6+](https://www.python.org/)\n* [Tensorflow 1.13.1+](www.tensorflow.org)\n* [Keras 2.2.2+](https://keras.io/)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites",
+                "parent_header": [
+                    "CodeGRU: Context-aware Deep Learning with Gated Recurrent Unit for Source Code Modeling"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/yaxirhuxxain/source-code-suggestion/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "if you use CodeGRU in academic works, please use the following citation:\n```\n@article{Hussain2020CodeGRU,\nauthor    = {Yasir Hussain and\n            Zhiqiu Huang and\n            Yu Zhou and\n            Senzhang Wang\n            },\ntitle     = {CodeGRU: Context-aware Deep Learning with Gated Recurrent Unit for\n            Source Code Modeling},\njournal   = {Information and Software Technology},\nvolume    = {Volume 125, September 2020, 106309},\nyear      = {2020},\nurl       = {https://doi.org/10.1016/j.infsof.2020.106309},\neprint    = {http://arxiv.org/abs/1903.00884}\n}\n```\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "CodeGRU: Context-aware Deep Learning with Gated Recurrent Unit for Source Code Modeling"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/yaxirhuxxain/source-code-suggestion/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{Hussain2020CodeGRU,\n    eprint = {http://arxiv.org/abs/1903.00884},\n    url = {https://doi.org/10.1016/j.infsof.2020.106309},\n    year = {2020},\n    volume = {Volume 125, September 2020, 106309},\n    journal = {Information and Software Technology},\n    title = {CodeGRU: Context-aware Deep Learning with Gated Recurrent Unit for\nSource Code Modeling},\n    author = {Yasir Hussain and\nZhiqiu Huang and\nYu Zhou and\nSenzhang Wang\n},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "CodeGRU: Context-aware Deep Learning with Gated Recurrent Unit for\nSource Code Modeling",
+                "author": "Yasir Hussain and\nZhiqiu Huang and\nYu Zhou and\nSenzhang Wang\n",
+                "url": "https://doi.org/10.1016/j.infsof.2020.106309"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/yaxirhuxxain/source-code-suggestion/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "CodeGRU: Context-aware Deep Learning with Gated Recurrent Unit for Source Code Modeling"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/yaxirhuxxain/source-code-suggestion/master/README.md"
+        }
+    ]
+}

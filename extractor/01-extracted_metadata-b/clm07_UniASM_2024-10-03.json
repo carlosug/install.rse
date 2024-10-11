@@ -1,0 +1,248 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 21:06:28"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/clm07/UniASM",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "clm07",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-04-06T02:10:12Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-23T08:56:02Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Official implementation for UniASM: Binary Code Similarity Detection without Fine-tuning.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "UniASM",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "clm07/UniASM",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/clm07/UniASM/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/clm07/UniASM/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 17,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/clm07/UniASM/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 103562
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/clm07/UniASM/releases/98291323",
+                "tag": "v2.0",
+                "name": "Model file v2.0",
+                "author": {
+                    "name": "clm07",
+                    "type": "User"
+                },
+                "description": "pre-trained UniASM model file",
+                "tarball_url": "https://api.github.com/repos/clm07/UniASM/tarball/v2.0",
+                "zipball_url": "https://api.github.com/repos/clm07/UniASM/zipball/v2.0",
+                "html_url": "https://github.com/clm07/UniASM/releases/tag/v2.0",
+                "url": "https://api.github.com/repos/clm07/UniASM/releases/98291323",
+                "release_id": 98291323,
+                "date_created": "2023-04-06T02:14:51Z",
+                "date_published": "2023-04-06T03:31:57Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/clm07/UniASM/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "This implementation is based on [bert4keras](https://github.com/bojone/bert4keras), [SimBERT](https://github.com/ZhuiyiTechnology/simbert) and [Asm2Vec-pytorch](https://github.com/oalieno/asm2vec-pytorch).\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgement:",
+                "parent_header": [
+                    "UniASM"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/clm07/UniASM/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "- Tensorflow >= 2.4\n- python3\n- Radare2 (optional, for ASM files generation)\n\n\n\nWe use the following commands to initialize the conda environment:\n\n```\nconda create -n uniasm python=3.8\nconda activate uniasm\npip install numpy==1.19.5 tensorflow==2.5.0 bert_pytorch scikit-learn==1.2.0 pandas==1.4.4 transformers==4.25.1 matplotlib==3.6.2 tqdm\n```\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements:",
+                "parent_header": [
+                    "UniASM"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/clm07/UniASM/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```\npython bin2asm.py -i testdata\\bin\\elfedit-gcc-o0 -o testdata\\out-elfedit-gcc-o0\n``` \n",
+                "original_header": "1. Generate ASM files"
+            },
+            "confidence": 0.9906271384234127,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/clm07/UniASM/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```\npython evaluate_recall@k.py\n``` \n",
+                "original_header": "4. Evaluate Recall@k for BCSD searching task"
+            },
+            "confidence": 0.9193752821829361,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/clm07/UniASM/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "UniASM"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/clm07/UniASM/main/README.md"
+        }
+    ]
+}

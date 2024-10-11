@@ -1,0 +1,310 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:01:28"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/casperboone/dltpy",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "casperboone",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-09-19T13:30:46Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-24T14:07:00Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2019 Fabianstelmach\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/casperboone/dltpy/master/LICENSE"
+        },
+        {
+            "result": {
+                "value": "The MIT License (MIT). Please see the [license file](LICENSE) for more information.\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "DLTPy"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/casperboone/dltpy/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "\u00a0\ud83d\udc0d Deep Learning Type Inference of Python Function Signatures using their  Natural Language Context",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "DLTPy makes type predictions based on comments, on the semantic elements of the function name and argument names,\nand on the semantic elements of identifiers in the return expressions.  Using the natural language of these \ndifferent elements, we have trained a classifier that predicts types. We use a recurrent neural network (RNN)\nwith a Long Short-Term Memory (LSTM) architecture. \n",
+                "original_header": "DLTPy"
+            },
+            "confidence": 0.9017345061664667,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/casperboone/dltpy/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "dltpy",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "casperboone/dltpy",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/casperboone/dltpy/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/casperboone/dltpy/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 15,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "deep-learning, python, typeinference",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 6,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/casperboone/dltpy/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 227557
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "TeX",
+                "name": "TeX",
+                "type": "Programming_language",
+                "size": 87973
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 70668
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/casperboone/dltpy/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/casperboone/dltpy/master/notebooks/Data%20Analysis%20of%20Features.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/casperboone/dltpy/master/notebooks/Data%20Analysis%20of%20Features.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "`input-preparation/generate_df.py` can be used to combine all the separate csv files per project into one big file\nwhile applying filtering.\n\n`input-preparation/df_to_vec.py` can be used to convert this generated csv to vectors.\n\n`input-preparation/embedder.py` can be used to train word embeddings for `input-preparation/df_to_vec.py`.\n",
+                "type": "Text_excerpt",
+                "original_header": "`input-preparation/` Input Preparation (e-f)",
+                "parent_header": [
+                    "DLTPy",
+                    "Components"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/casperboone/dltpy/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Start using:\n``` bash\n$ python preprocessing/pipeline.py\n```\nOptional arguments:\nBASH2*\n \n",
+                "original_header": "`preprocessing/` Preprocessing Pipeline (a-d)"
+            },
+            "confidence": 0.9969868732988083,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/casperboone/dltpy/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "- [Casper Boone](https://github.com/casperboone)\n- [Niels de Bruin](https://github.com/nielsdebruin)\n- [Arjan Langerak](https://github.com/alangerak)\n- [Fabian Stelmach](https://github.com/fabianstelmach)\n- [All contributors](../../contributors)\n",
+                "type": "Text_excerpt",
+                "original_header": "Credits",
+                "parent_header": [
+                    "DLTPy"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/casperboone/dltpy/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "DLTPy"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/casperboone/dltpy/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://user-images.githubusercontent.com/15815208/67791371-98049480-fa77-11e9-95ed-bb94e7b06eeb.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/casperboone/dltpy/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1912.00680"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/casperboone/dltpy/master/README.md"
+        }
+    ]
+}

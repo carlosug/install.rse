@@ -1,0 +1,790 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:30:44"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/salesforce/logai",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "salesforce",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-10-27T17:42:30Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-04T14:27:22Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/bsd-3-clause",
+                "type": "License",
+                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                "url": "https://api.github.com/licenses/bsd-3-clause",
+                "spdx_id": "BSD-3-Clause"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "[BSD 3-Clause License](LICENSE.txt)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "LogAI - An open-source library for log analytics and intelligence",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "LogAI is a one-stop open source library for log analytics and intelligence. LogAI supports various log analytics and log intelligence tasks such as log summarization, log clustering, log anomaly detection and more. It adopts the OpenTelemetry data model, to enable compatibility with different log management platforms. LogAI provides a unified model interface and integrates popular time-series, statistical learning and deep \nlearning models. Alongside this, LogAI also provides an out-of-the-box GUI toolkit for users to conduct interactive log \nanalysis. With LogAI, we can also easily benchmark popular ML and deep-learning algorithms for log anomaly detection \nwithout putting in redundant effort to process the logs. We have opensourced LogAI to facilitate a wide range of \napplications benefiting both academic research and industrial prototyping. \n \nThe following table compares LogAI with several existing log analysis Tools, include both commercial log management platforms\nlike NewRelic and DataDog, or popular log analysis open source tools on Github. \n\n| Coverage  | LogAI | NewRelic Log Monitoring | DataDog Log Explorer | logparser | loglizer | deep-loglizer | log3C | \n| ------------- | ------------- | ------------- |  ------------- | ------------- | ------------- | ------------- | ------------- |\n| OpenTelemetry log data model  | :white_check_mark:  | :white_check_mark:  | :white_check_mark:  | | | | | | \n| Unified data loader and preprocessing | :white_check_mark:  | :white_check_mark:  | :white_check_mark:  | :white_check_mark:  | :white_check_mark:  | :white_check_mark: | |\n| Auto log parsing  | :white_check_mark:  | :white_check_mark: | :white_check_mark: | | | \n| Log clustering | :white_check_mark: | :white_check_mark:  | :white_check_mark:  | | | | :white_check_mark: | \n| Log anomaly detection - time-series | :white_check_mark: | :white_check_mark:  | :white_check_mark:  | | | | | | \n| Log anomaly detection - traditional ML | :white_check_mark: |  |  | | :white_check_mark: |  |  |  \n| Log anomaly detection - deep Learning | :white_check_mark: |  | | | :white_check_mark: | :white_check_mark: |  |  \n| Huggingface integration | :white_check_mark: | | | | | |  |\n| GUI for result visualization | :white_check_mark: | :white_check_mark: | :white_check_mark: | | | | |\n",
+                "type": "Text_excerpt",
+                "original_header": "Introduction",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "logai",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "salesforce/logai",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/salesforce/logai/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/salesforce/logai/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 408,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "ai, aiops, anomaly-detection, benchmarking, log-analysis, log-intelligence, machine-learning, python",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 60,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/salesforce/logai/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 574848
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 17304
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 2343
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 523
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/salesforce/logai/releases/94185815",
+                "tag": "v0.1.5",
+                "name": "Release v0.1.5",
+                "author": {
+                    "name": "yangwenzhuo08",
+                    "type": "User"
+                },
+                "description": "Support Python 3.7",
+                "tarball_url": "https://api.github.com/repos/salesforce/logai/tarball/v0.1.5",
+                "zipball_url": "https://api.github.com/repos/salesforce/logai/zipball/v0.1.5",
+                "html_url": "https://github.com/salesforce/logai/releases/tag/v0.1.5",
+                "url": "https://api.github.com/repos/salesforce/logai/releases/94185815",
+                "release_id": 94185815,
+                "date_created": "2023-03-02T07:03:08Z",
+                "date_published": "2023-03-02T07:04:22Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/salesforce/logai/releases/91426737",
+                "tag": "v0.1.4",
+                "name": "Release v0.1.4",
+                "author": {
+                    "name": "yangwenzhuo08",
+                    "type": "User"
+                },
+                "description": "Fix the pytorch dependency issue when no deep learning based models are used.",
+                "tarball_url": "https://api.github.com/repos/salesforce/logai/tarball/v0.1.4",
+                "zipball_url": "https://api.github.com/repos/salesforce/logai/zipball/v0.1.4",
+                "html_url": "https://github.com/salesforce/logai/releases/tag/v0.1.4",
+                "url": "https://api.github.com/repos/salesforce/logai/releases/91426737",
+                "release_id": 91426737,
+                "date_created": "2023-02-06T07:20:18Z",
+                "date_published": "2023-02-06T07:22:18Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/salesforce/logai/releases/90943377",
+                "tag": "v0.1.3",
+                "name": "Release v0.1.3",
+                "author": {
+                    "name": "qcheng-dev",
+                    "type": "User"
+                },
+                "description": "First Release with full functions.  \r\nv0.1.3 will be available on PYPI.",
+                "tarball_url": "https://api.github.com/repos/salesforce/logai/tarball/v0.1.3",
+                "zipball_url": "https://api.github.com/repos/salesforce/logai/zipball/v0.1.3",
+                "html_url": "https://github.com/salesforce/logai/releases/tag/v0.1.3",
+                "url": "https://api.github.com/repos/salesforce/logai/releases/90943377",
+                "release_id": 90943377,
+                "date_created": "2023-02-01T07:14:34Z",
+                "date_published": "2023-02-01T07:22:55Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/salesforce/logai/releases/90879347",
+                "tag": "v0.1.2",
+                "name": "Preflight Release",
+                "author": {
+                    "name": "qcheng-dev",
+                    "type": "User"
+                },
+                "description": "This is LogAI-v0.1.2 preflight release. \r\nThe change will fix issues the json config files were not included when install package.\r\n",
+                "tarball_url": "https://api.github.com/repos/salesforce/logai/tarball/v0.1.2",
+                "zipball_url": "https://api.github.com/repos/salesforce/logai/zipball/v0.1.2",
+                "html_url": "https://github.com/salesforce/logai/releases/tag/v0.1.2",
+                "url": "https://api.github.com/repos/salesforce/logai/releases/90879347",
+                "release_id": 90879347,
+                "date_created": "2023-01-31T18:13:17Z",
+                "date_published": "2023-01-31T18:54:59Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "code_of_conduct": [
+        {
+            "result": {
+                "value": "<!--\nCopyright (c) 2023 Salesforce.com, inc.\nAll rights reserved.\nSPDX-License-Identifier: BSD-3-Clause\nFor full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause\n\n-->\n# Salesforce Open Source Community Code of Conduct\n\n## About the Code of Conduct\n\nEquality is a core value at Salesforce. We believe a diverse and inclusive\ncommunity fosters innovation and creativity, and are committed to building a\nculture where everyone feels included.\n\nSalesforce open-source projects are committed to providing a friendly, safe, and\nwelcoming environment for all, regardless of gender identity and expression,\nsexual orientation, disability, physical appearance, body size, ethnicity, nationality, \nrace, age, religion, level of experience, education, socioeconomic status, or \nother similar personal characteristics.\n\nThe goal of this code of conduct is to specify a baseline standard of behavior so\nthat people with different social values and communication styles can work\ntogether effectively, productively, and respectfully in our open source community.\nIt also establishes a mechanism for reporting issues and resolving conflicts.\n\nAll questions and reports of abusive, harassing, or otherwise unacceptable behavior\nin a Salesforce open-source project may be reported by contacting the Salesforce\nOpen Source Conduct Committee at ossconduct@salesforce.com.\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to making participation in our project and\nour community a harassment-free experience for everyone, regardless of gender \nidentity and expression, sexual orientation, disability, physical appearance, \nbody size, ethnicity, nationality, race, age, religion, level of experience, education, \nsocioeconomic status, or other similar personal characteristics.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy toward other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\nadvances\n* Personal attacks, insulting/derogatory comments, or trolling\n* Public or private harassment\n* Publishing, or threatening to publish, others' private information\u2014such as\na physical or electronic address\u2014without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\nprofessional setting\n* Advocating for or encouraging any of the above behaviors\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned with this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces\nwhen an individual is representing the project or its community. Examples of\nrepresenting a project or community include using an official project email\naddress, posting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event. Representation of a project may be\nfurther defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the Salesforce Open Source Conduct Committee \nat ossconduct@salesforce.com. All complaints will be reviewed and investigated \nand will result in a response that is deemed necessary and appropriate to the \ncircumstances. The committee is obligated to maintain confidentiality with \nregard to the reporter of an incident. Further details of specific enforcement \npolicies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership and the Salesforce Open Source Conduct \nCommittee.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][contributor-covenant-home],\nversion 1.4, available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html. \nIt includes adaptions and additions from [Go Community Code of Conduct][golang-coc], \n[CNCF Code of Conduct][cncf-coc], and [Microsoft Open Source Code of Conduct][microsoft-coc].\n\nThis Code of Conduct is licensed under the [Creative Commons Attribution 3.0 License][cc-by-3-us].\n\n[contributor-covenant-home]: https://www.contributor-covenant.org (https://www.contributor-covenant.org/)\n[golang-coc]: https://golang.org/conduct\n[cncf-coc]: https://github.com/cncf/foundation/blob/master/code-of-conduct.md\n[microsoft-coc]: https://opensource.microsoft.com/codeofconduct/\n[cc-by-3-us]: https://creativecommons.org/licenses/by/3.0/us/",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/CODE_OF_CONDUCT.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/run_black.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/run_unittests.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/run_flake8.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/docs/build_docs.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/salesforce/logai/tree/main/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "For more detail about LogAI library and advanced use cases, please visit \n[LogAI Documentation](https://opensource.salesforce.com/logai).\n",
+                "type": "Text_excerpt",
+                "original_header": "Documentation",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/examples/jupyter_notebook/tutorial_log_anomaly_detection.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/examples/jupyter_notebook/tutorial_log_anomaly_detection.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/examples/jupyter_notebook/tutorial_log_clustering.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/examples/jupyter_notebook/tutorial_log_clustering.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/examples/jupyter_notebook/log_anomaly_detection_example.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/examples/jupyter_notebook/log_anomaly_detection_example.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/examples/jupyter_notebook/nn_ad_benchmarking/bgl_lstm_unsupervised_parsed_sequential.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/examples/jupyter_notebook/nn_ad_benchmarking/bgl_lstm_unsupervised_parsed_sequential.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/examples/jupyter_notebook/nn_ad_benchmarking/hdfs_lstm_unsupervised_parsed_sequential.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/examples/jupyter_notebook/nn_ad_benchmarking/hdfs_lstm_unsupervised_parsed_sequential.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/examples/jupyter_notebook/nn_ad_benchmarking/bgl_logbert.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/examples/jupyter_notebook/nn_ad_benchmarking/bgl_logbert.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/examples/jupyter_notebook/nn_ad_benchmarking/hdfs_logbert.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/examples/jupyter_notebook/nn_ad_benchmarking/hdfs_logbert.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "You can install LogAI core library using `pip install`:\n\n```shell\n\n# Check out LogAI code repo from Github\ngit clone https://github.com/salesforce/logai.git\ncd logai\n\n# [Optional] Create virtual environment\npython3 -m venv venv\nsource venv/bin/activate\n\n# Install LogAI\npip install logai\n\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Quick Install",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        },
+        {
+            "result": {
+                "value": "LogAI core library is light-weight with limited dependent packages installed. Users can install optional dependencies\nto enable extended functionalities of LogAI.\n\n**Deep Learning Log Analysis**. To conduct deep learning model related tasks and run benchmarking,\nplease install extra requirements by `pip install \"logai[deep-learning]\"`.\n\n**Enable LogAI GUI Portal***. To use LogAI GUI portal, \nplease install extra requirements by `pip install \"logai[gui]\"`.\n\n**LogAI Development**. To contribute to LogAI development, build and test code changes, \nplease install extra requirements by `pip install \"logai[dev]\"`.\n\n**Complete Installation**. you can install the full list of dependencies by `pip install \"logai[all]\"`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Install Optional Dependencies",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        },
+        {
+            "result": {
+                "value": "> :warning: You may see `Resource punkt not found` while using LogAI. You can download `punkt`\n> package from NLTK to solve the problem.\n> ```shell\n> python -m nltk.downloader punkt\n> ```\n",
+                "type": "Text_excerpt",
+                "original_header": "Known Issues",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "LogAI core library is light-weight with limited dependent packages installed. Users can install optional dependencies\nto enable extended functionalities of LogAI.\n\n**Deep Learning Log Analysis**. To conduct deep learning model related tasks and run benchmarking,\nplease install extra requirements by `pip install \"logai[deep-learning]\"`.\n\n**Enable LogAI GUI Portal***. To use LogAI GUI portal, \nplease install extra requirements by `pip install \"logai[gui]\"`.\n\n**LogAI Development**. To contribute to LogAI development, build and test code changes, \nplease install extra requirements by `pip install \"logai[dev]\"`.\n\n**Complete Installation**. you can install the full list of dependencies by `pip install \"logai[all]\"`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Install Optional Dependencies",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Below we briefly introduce several ways to explore and use LogAI, including exploring LogAI GUI\nportal, benchmarking deep-learning based log anomaly detection using LogAI, and building your \nown log analysis application with LogAI.\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting Started",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        },
+        {
+            "result": {
+                "value": "You can also start a local LogAI service and use the GUI portal to explore LogAI.\n\n```shell\n\n# Check out LogAI code repo from Github\ngit clone https://github.com/salesforce/logai.git\ncd logai\n\n# [Optional] Create virtual environment\npython3 -m venv venv # create virtual environment\nsource venv/bin/activate # activate virtual env\n\n# install LogAI and GUI dependencies\npip install \".[dev]\"\npip install \".[gui]\"\n\n# Start LogAI service\nexport PYTHONPATH='.'  # make sure to add current root to PYTHONPATH\npython3 gui/application.py # Run local plotly dash server.\n```\n\nThen open the LogAI portal via http://localhost:8050/ or http://127.0.0.1:8050/ in your browser:\n\n![portal](img/logai_gui_landing.png)\n\nThe control panel is on the left side of the page. There are three applications you can choose from:\nLog Summarization, Log Clustering and Anomaly Detection.\n",
+                "type": "Text_excerpt",
+                "original_header": "Explore LogAI GUI Portal",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        },
+        {
+            "result": {
+                "value": "**File Setting**. You can select the log type and log files to be processed. Now LogAI supports three \npublic datasets: HDFS, BGL and HealthApp. For each log type we included several sample log data. After\nlog file selected, you can choose the attributes you want to be involved in log processing. The selected \nattributes will be treated as structured log attributes.\n\n**Algorithm Setting**. For different applications, the algorithms options may be different.\nFor example, auto-log parsing algorithms are utilized for log summarization, but log clustering uses auto-parsing algorithms,\n vectorization algorithms, categorical encoding and clustering algorithms. You can select an\n algorithm and change the parameters in each algorithm section. After algorithm configuration, simply click \"run\" to\nrun the application.\n",
+                "type": "Text_excerpt",
+                "original_header": "Control Panel",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence",
+                    "Getting Started",
+                    "Explore LogAI GUI Portal"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Log summarization App summarize and group the raw logs by log patterns and attributes. You can click on \neach log pattern and see what the pattern looks like and the dynamic values in each position. You can also \nsee the chart of occurrance trend of this pattern on the right side.\n\n![log summarization](img/logai_summarization_res.png)\n",
+                "type": "Text_excerpt",
+                "original_header": "Log Summarization",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence",
+                    "Getting Started",
+                    "Explore LogAI GUI Portal"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Log clustering App groups raw logs into clusters by calculating the semantic representation of each logline. \nThen using clustering algorithms to generate log clusters. In this example, we choose k-mean where `k==8` to\ngenerate 8 clusters. The result is shown as a pie chart and you can click each portion of the pie chart to check\nthe raw logs in this cluster.\n\n![log clustering](img/logai_clustering_res.png)\n",
+                "type": "Text_excerpt",
+                "original_header": "Log Clustering",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence",
+                    "Getting Started",
+                    "Explore LogAI GUI Portal"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Log anomaly detection App conduct log anomaly detection tasks. Similar to log clustering, log anomaly detection\nalso needs to extract information from raw logs and generate representation of loglines. Depend on the type of anomaly detection,\nThe representation can be different. \n**Time-series anomaly detection**. If we use time-series algorithm like ETS, the raw logs will be converted\ninto log counter vectors by given time interval. Then ETS is performed on the generated log counter vectors and detect\nanomalous timestamps on the counter vector time-series. \n\n**Semantic anomaly detection**. If we use unsupervised outlier detection algorithms such as One-class SVM, the raw logs will \nbe converted into semantic vectors and feed the One-class SVM model. Then the model will detect anomalous loglines.\n\n![log anomaly detection](img/logai_anomaly_detection.png)\n\nLogAI GUI portal is just an example to demo LogAI capabilities. We know this may not be the best way to visualize the \nresults and there might be bugs in how the results are displayed. We will keep working with the open source community\nto improve usability of the portal. Any feedbacks and contributions are welcome :blush:. \n",
+                "type": "Text_excerpt",
+                "original_header": "Anomaly Detection",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence",
+                    "Getting Started",
+                    "Explore LogAI GUI Portal"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        },
+        {
+            "result": {
+                "value": "You can build your own customized log analysis applications using LogAI. Here we show two examples:\n\n* [Tutorial: Log Clustering Using LogAI](./examples/jupyter_notebook/tutorial_log_clustering.ipynb)\n* [Tutorial: Log Anomaly Detection Using LogAI](./examples/jupyter_notebook/tutorial_log_anomaly_detection.ipynb)\n",
+                "type": "Text_excerpt",
+                "original_header": "Build Customized LogAI Applications",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        },
+        {
+            "result": {
+                "value": "LogAI can be used to benchmark deep-learning anomaly detection results. \nA [tutorial](examples/jupyter_notebook/tutorial_deep_ad.md) is provided for \nAnomaly Detection Benchmarking using LSTM anomaly detector for HDFS Dataset. More examples of deep-learning anomaly \ndetection benchmarking on different datasets and algorithms can be found in \n[Deep Anomaly Detection Benchmarking Examples](examples/jupyter_notebook/nn_ad_benchmarking).\n",
+                "type": "Text_excerpt",
+                "original_header": "Deep-learning Anomaly Detection Benchmarking",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "You can also use LogAI in more programtic ways. LogAI supports configuration files in `.json` or `.yaml`. \nBelow is a sample `log_anomaly_detection_config.json` configuration for anomaly detection application. \nMake sure to set `filepath` to the target log dataset file path.\n\n```json\n{\n      \"open_set_data_loader_config\": {\n        \"dataset_name\": \"HDFS\",\n        \"filepath\": \"\"\n      },\n      \"preprocessor_config\": {\n          \"custom_delimiters_regex\":[]\n      },\n      \"log_parser_config\": {\n        \"parsing_algorithm\": \"drain\",\n        \"parsing_algo_params\": {\n          \"sim_th\": 0.5,\n          \"depth\": 5\n        }\n      },\n      \"feature_extractor_config\": {\n          \"group_by_category\": [\"Level\"],\n          \"group_by_time\": \"1s\"\n      },\n      \"log_vectorizer_config\": {\n          \"algo_name\": \"word2vec\"\n      },\n      \"categorical_encoder_config\": {\n          \"name\": \"label_encoder\"\n      },\n      \"anomaly_detection_config\": {\n          \"algo_name\": \"one_class_svm\"\n      }\n    }\n```\n\nThen to run log anomaly detection. You can simply create below python script:\n\n```python\nimport json\n\nfrom logai.applications.application_interfaces import WorkFlowConfig\nfrom logai.applications.log_anomaly_detection import LogAnomalyDetection\n\n# path to json configuration file\njson_config = \"./log_anomaly_detection_config.json\"\n\n# Create log anomaly detection application workflow configuration\nconfig = json.loads(json_config)\nworkflow_config = WorkFlowConfig.from_dict(config) \n\n# Create LogAnomalyDetection Application for given workflow_config\napp = LogAnomalyDetection(workflow_config)\n\n# Execute App\napp.execute()\n\n```\n\nThen you can check anomaly detection results by calling `app.anomaly_results`. \n\nFor full context of this example please check\n[Tutorial: Use Log Anomaly Detection Application](./examples/jupyter_notebook/log_anomaly_detection_example.ipynb).\n",
+                "type": "Text_excerpt",
+                "original_header": "Run Simple Time-series Anomaly Detection Application",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence",
+                    "Getting Started"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "You can find more details about LogAI in the [technical report](https://arxiv.org/abs/2301.13415). \nIf you're using LogAI in your research or applications, please cite using this BibTeX:\n\n```\n@misc{https://doi.org/10.48550/arxiv.2301.13415,\n    title = {LogAI: A Library for Log Analytics and Intelligence},\n    author = {Cheng, Qian and Saha, Amrita and Yang, Wenzhuo and Liu, Chenghao and Sahoo, Doyen and Hoi, Steven},\n    publisher = {arXiv},\n    year = {2023},\n    doi = {10.48550/ARXIV.2301.13415},\n    url = {https://arxiv.org/abs/2301.13415},\n    copyright = {arXiv.org perpetual, non-exclusive license}\n}\n\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Technical Report and Citing LogAI",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "You can find more details about LogAI in the [technical report](https://arxiv.org/abs/2301.13415). \nIf you're using LogAI in your research or applications, please cite using this BibTeX:\n\n```\n@misc{https://doi.org/10.48550/arxiv.2301.13415,\n    title = {LogAI: A Library for Log Analytics and Intelligence},\n    author = {Cheng, Qian and Saha, Amrita and Yang, Wenzhuo and Liu, Chenghao and Sahoo, Doyen and Hoi, Steven},\n    publisher = {arXiv},\n    year = {2023},\n    doi = {10.48550/ARXIV.2301.13415},\n    url = {https://arxiv.org/abs/2301.13415},\n    copyright = {arXiv.org perpetual, non-exclusive license}\n}\n\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Technical Report and Citing LogAI",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@misc{https://doi.org/10.48550/arxiv.2301.13415,\n    copyright = {arXiv.org perpetual, non-exclusive license},\n    url = {https://arxiv.org/abs/2301.13415},\n    doi = {10.48550/ARXIV.2301.13415},\n    year = {2023},\n    publisher = {arXiv},\n    author = {Cheng, Qian and Saha, Amrita and Yang, Wenzhuo and Liu, Chenghao and Sahoo, Doyen and Hoi, Steven},\n    title = {LogAI: A Library for Log Analytics and Intelligence},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.48550/ARXIV.2301.13415",
+                "title": "LogAI: A Library for Log Analytics and Intelligence",
+                "author": "Cheng, Qian and Saha, Amrita and Yang, Wenzhuo and Liu, Chenghao and Sahoo, Doyen and Hoi, Steven",
+                "url": "https://arxiv.org/abs/2301.13415"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        }
+    ],
+    "contact": [
+        {
+            "result": {
+                "value": "If you have any questions, comments or suggestions, \nplease do not hesitate to contact us at [logai@salesforce.com](logai@salesforce.com). \n",
+                "type": "Text_excerpt",
+                "original_header": "Contact",
+                "parent_header": [
+                    "LogAI: A Library for Log Analytics and Intelligence"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "LogAI: A Library for Log Analytics and Intelligence"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/./img/logai_logo.jpg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/img/logai_gui_landing.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/img/logai_summarization_res.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/img/logai_clustering_res.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/salesforce/logai/main/img/logai_anomaly_detection.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2301.13415},\n    copyright = {arXiv.org perpetual, non-exclusive license}\n}\n\n```\n\n## Contact\nIf you have any questions, comments or suggestions, \nplease do not hesitate to contact us at [logai@salesforce.com](logai@salesforce.com"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2301.13415"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/salesforce/logai/main/README.md"
+        }
+    ]
+}

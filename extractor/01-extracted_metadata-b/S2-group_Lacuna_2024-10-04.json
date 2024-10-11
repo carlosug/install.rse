@@ -1,0 +1,714 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:56:10"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/S2-group/Lacuna",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "S2-group",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-09-25T08:19:24Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-09-24T13:02:22Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "JavaScript optimization by removing deadcode using various static and dynamic analysis methods based on an underlying callgraph",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "A in-depth description of the Lacuna approach, its implementation, its internal and external evaluation, and an empirical study on the overhead of JavaScript dead code on the energy and performance of mobile Web apps, please refer to the following publication:\n- Ivano Malavolta, Kishan Nirghin, Gian Luca Scoccia, Simone Romano, Salvatore Lombardi (2023). JavaScript Dead Code Identification, Elimination, and Empirical Assessment. IEEE Transactions on Software Engineering (TSE) - [PDF](http://www.ivanomalavolta.com/files/papers/TSE_2023.pdf) \n",
+                "original_header": "Publications about Lacuna"
+            },
+            "confidence": 0.943392421347957,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Since Esprima has not been developed further for many years, Lacuna has been updated to use Espree as the ECMAScript parsing infrastructure. Espree is compatible with Esprima format and it supports the latest ECMAScript\n- All the underlying dependencies of Lacuna have been updated to the latest versions\n- Lacuna supports ES6 syntax for all analyzers except TAJS and WALA analyzers\n- Jelly analyzer adapted has been integrated in lacuna\n- Probabilistic approach has been incorporated in Lacuna to provide further code optimization\n \n",
+                "original_header": "Overview of recent enhancements"
+            },
+            "confidence": 0.9009344935298801,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Lacuna",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "S2-group/Lacuna",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/S2-group/Lacuna/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/S2-group/Lacuna/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/S2-group/Lacuna/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 672357
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 11815
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 10032
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Vue",
+                "name": "Vue",
+                "type": "Programming_language",
+                "size": 1973
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "TypeScript",
+                "name": "TypeScript",
+                "type": "Programming_language",
+                "size": 691
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 431
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 330
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "Eclipse Public License - v 2.0\n\n    THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE\n    PUBLIC LICENSE (\"AGREEMENT\"). ANY USE, REPRODUCTION OR DISTRIBUTION\n    OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.\n\n1. DEFINITIONS\n\n\"Contribution\" means:\n\n  a) in the case of the initial Contributor, the initial content\n     Distributed under this Agreement, and\n\n  b) in the case of each subsequent Contributor:\n     i) changes to the Program, and\n     ii) additions to the Program;\n  where such changes and/or additions to the Program originate from\n  and are Distributed by that particular Contributor. A Contribution\n  \"originates\" from a Contributor if it was added to the Program by\n  such Contributor itself or anyone acting on such Contributor's behalf.\n  Contributions do not include changes or additions to the Program that\n  are not Modified Works.\n\n\"Contributor\" means any person or entity that Distributes the Program.\n\n\"Licensed Patents\" mean patent claims licensable by a Contributor which\nare necessarily infringed by the use or sale of its Contribution alone\nor when combined with the Program.\n\n\"Program\" means the Contributions Distributed in accordance with this\nAgreement.\n\n\"Recipient\" means anyone who receives the Program under this Agreement\nor any Secondary License (as applicable), including Contributors.\n\n\"Derivative Works\" shall mean any work, whether in Source Code or other\nform, that is based on (or derived from) the Program and for which the\neditorial revisions, annotations, elaborations, or other modifications\nrepresent, as a whole, an original work of authorship.\n\n\"Modified Works\" shall mean any work in Source Code or other form that\nresults from an addition to, deletion from, or modification of the\ncontents of the Program, including, for purposes of clarity any new file\nin Source Code form that contains any contents of the Program. Modified\nWorks shall not include works that contain only declarations,\ninterfaces, types, classes, structures, or files of the Program solely\nin each case in order to link to, bind by name, or subclass the Program\nor Modified Works thereof.\n\n\"Distribute\" means the acts of a) distributing or b) making available\nin any manner that enables the transfer of a copy.\n\n\"Source Code\" means the form of a Program preferred for making\nmodifications, including but not limited to software source code,\ndocumentation source, and configuration files.\n\n\"Secondary License\" means either the GNU General Public License,\nVersion 2.0, or any later versions of that license, including any\nexceptions or additional permissions as identified by the initial\nContributor.\n\n2. GRANT OF RIGHTS\n\n  a) Subject to the terms of this Agreement, each Contributor hereby\n  grants Recipient a non-exclusive, worldwide, royalty-free copyright\n  license to reproduce, prepare Derivative Works of, publicly display,\n  publicly perform, Distribute and sublicense the Contribution of such\n  Contributor, if any, and such Derivative Works.\n\n  b) Subject to the terms of this Agreement, each Contributor hereby\n  grants Recipient a non-exclusive, worldwide, royalty-free patent\n  license under Licensed Patents to make, use, sell, offer to sell,\n  import and otherwise transfer the Contribution of such Contributor,\n  if any, in Source Code or other form. This patent license shall\n  apply to the combination of the Contribution and the Program if, at\n  the time the Contribution is added by the Contributor, such addition\n  of the Contribution causes such combination to be covered by the\n  Licensed Patents. The patent license shall not apply to any other\n  combinations which include the Contribution. No hardware per se is\n  licensed hereunder.\n\n  c) Recipient understands that although each Contributor grants the\n  licenses to its Contributions set forth herein, no assurances are\n  provided by any Contributor that the Program does not infringe the\n  patent or other intellectual property rights of any other entity.\n  Each Contributor disclaims any liability to Recipient for claims\n  brought by any other entity based on infringement of intellectual\n  property rights or otherwise. As a condition to exercising the\n  rights and licenses granted hereunder, each Recipient hereby\n  assumes sole responsibility to secure any other intellectual\n  property rights needed, if any. For example, if a third party\n  patent license is required to allow Recipient to Distribute the\n  Program, it is Recipient's responsibility to acquire that license\n  before distributing the Program.\n\n  d) Each Contributor represents that to its knowledge it has\n  sufficient copyright rights in its Contribution, if any, to grant\n  the copyright license set forth in this Agreement.\n\n  e) Notwithstanding the terms of any Secondary License, no\n  Contributor makes additional grants to any Recipient (other than\n  those set forth in this Agreement) as a result of such Recipient's\n  receipt of the Program under the terms of a Secondary License\n  (if permitted under the terms of Section 3).\n\n3. REQUIREMENTS\n\n3.1 If a Contributor Distributes the Program in any form, then:\n\n  a) the Program must also be made available as Source Code, in\n  accordance with section 3.2, and the Contributor must accompany\n  the Program with a statement that the Source Code for the Program\n  is available under this Agreement, and informs Recipients how to\n  obtain it in a reasonable manner on or through a medium customarily\n  used for software exchange; and\n\n  b) the Contributor may Distribute the Program under a license\n  different than this Agreement, provided that such license:\n     i) effectively disclaims on behalf of all other Contributors all\n     warranties and conditions, express and implied, including\n     warranties or conditions of title and non-infringement, and\n     implied warranties or conditions of merchantability and fitness\n     for a particular purpose;\n\n     ii) effectively excludes on behalf of all other Contributors all\n     liability for damages, including direct, indirect, special,\n     incidental and consequential damages, such as lost profits;\n\n     iii) does not attempt to limit or alter the recipients' rights\n     in the Source Code under section 3.2; and\n\n     iv) requires any subsequent distribution of the Program by any\n     party to be under a license that satisfies the requirements\n     of this section 3.\n\n3.2 When the Program is Distributed as Source Code:\n\n  a) it must be made available under this Agreement, or if the\n  Program (i) is combined with other material in a separate file or\n  files made available under a Secondary License, and (ii) the initial\n  Contributor attached to the Source Code the notice described in\n  Exhibit A of this Agreement, then the Program may be made available\n  under the terms of such Secondary Licenses, and\n\n  b) a copy of this Agreement must be included with each copy of\n  the Program.\n\n3.3 Contributors may not remove or alter any copyright, patent,\ntrademark, attribution notices, disclaimers of warranty, or limitations\nof liability (\"notices\") contained within the Program from any copy of\nthe Program which they Distribute, provided that Contributors may add\ntheir own appropriate notices.\n\n4. COMMERCIAL DISTRIBUTION\n\nCommercial distributors of software may accept certain responsibilities\nwith respect to end users, business partners and the like. While this\nlicense is intended to facilitate the commercial use of the Program,\nthe Contributor who includes the Program in a commercial product\noffering should do so in a manner which does not create potential\nliability for other Contributors. Therefore, if a Contributor includes\nthe Program in a commercial product offering, such Contributor\n(\"Commercial Contributor\") hereby agrees to defend and indemnify every\nother Contributor (\"Indemnified Contributor\") against any losses,\ndamages and costs (collectively \"Losses\") arising from claims, lawsuits\nand other legal actions brought by a third party against the Indemnified\nContributor to the extent caused by the acts or omissions of such\nCommercial Contributor in connection with its distribution of the Program\nin a commercial product offering. The obligations in this section do not\napply to any claims or Losses relating to any actual or alleged\nintellectual property infringement. In order to qualify, an Indemnified\nContributor must: a) promptly notify the Commercial Contributor in\nwriting of such claim, and b) allow the Commercial Contributor to control,\nand cooperate with the Commercial Contributor in, the defense and any\nrelated settlement negotiations. The Indemnified Contributor may\nparticipate in any such claim at its own expense.\n\nFor example, a Contributor might include the Program in a commercial\nproduct offering, Product X. That Contributor is then a Commercial\nContributor. If that Commercial Contributor then makes performance\nclaims, or offers warranties related to Product X, those performance\nclaims and warranties are such Commercial Contributor's responsibility\nalone. Under this section, the Commercial Contributor would have to\ndefend claims against the other Contributors related to those performance\nclaims and warranties, and if a court requires any other Contributor to\npay any damages as a result, the Commercial Contributor must pay\nthose damages.\n\n5. NO WARRANTY\n\nEXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, AND TO THE EXTENT\nPERMITTED BY APPLICABLE LAW, THE PROGRAM IS PROVIDED ON AN \"AS IS\"\nBASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR\nIMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF\nTITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR\nPURPOSE. Each Recipient is solely responsible for determining the\nappropriateness of using and distributing the Program and assumes all\nrisks associated with its exercise of rights under this Agreement,\nincluding but not limited to the risks and costs of program errors,\ncompliance with applicable laws, damage to or loss of data, programs\nor equipment, and unavailability or interruption of operations.\n\n6. DISCLAIMER OF LIABILITY\n\nEXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, AND TO THE EXTENT\nPERMITTED BY APPLICABLE LAW, NEITHER RECIPIENT NOR ANY CONTRIBUTORS\nSHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST\nPROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE\nEXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGES.\n\n7. GENERAL\n\nIf any provision of this Agreement is invalid or unenforceable under\napplicable law, it shall not affect the validity or enforceability of\nthe remainder of the terms of this Agreement, and without further\naction by the parties hereto, such provision shall be reformed to the\nminimum extent necessary to make such provision valid and enforceable.\n\nIf Recipient institutes patent litigation against any entity\n(including a cross-claim or counterclaim in a lawsuit) alleging that the\nProgram itself (excluding combinations of the Program with other software\nor hardware) infringes such Recipient's patent(s), then such Recipient's\nrights granted under Section 2(b) shall terminate as of the date such\nlitigation is filed.\n\nAll Recipient's rights under this Agreement shall terminate if it\nfails to comply with any of the material terms or conditions of this\nAgreement and does not cure such failure in a reasonable period of\ntime after becoming aware of such noncompliance. If all Recipient's\nrights under this Agreement terminate, Recipient agrees to cease use\nand distribution of the Program as soon as reasonably practicable.\nHowever, Recipient's obligations under this Agreement and any licenses\ngranted by Recipient relating to the Program shall continue and survive.\n\nEveryone is permitted to copy and distribute copies of this Agreement,\nbut in order to avoid inconsistency the Agreement is copyrighted and\nmay only be modified in the following manner. The Agreement Steward\nreserves the right to publish new versions (including revisions) of\nthis Agreement from time to time. No one other than the Agreement\nSteward has the right to modify this Agreement. The Eclipse Foundation\nis the initial Agreement Steward. The Eclipse Foundation may assign the\nresponsibility to serve as the Agreement Steward to a suitable separate\nentity. Each new version of the Agreement will be given a distinguishing\nversion number. The Program (including Contributions) may always be\nDistributed subject to the version of the Agreement under which it was\nreceived. In addition, after a new version of the Agreement is published,\nContributor may elect to Distribute the Program (including its\nContributions) under the new version.\n\nExcept as expressly stated in Sections 2(a) and 2(b) above, Recipient\nreceives no rights or licenses to the intellectual property of any\nContributor under this Agreement, whether expressly, by implication,\nestoppel or otherwise. All rights in the Program not expressly granted\nunder this Agreement are reserved. Nothing in this Agreement is intended\nto be enforceable by any entity that is not a Contributor or Recipient.\nNo third-party beneficiary rights are created under this Agreement.\n\nExhibit A - Form of Secondary Licenses Notice\n\n\"This Source Code may also be made available under the following \nSecondary Licenses when the conditions for such availability set forth \nin the Eclipse Public License, v. 2.0 are satisfied: {name license(s),\nversion(s), and exceptions or additional permissions here}.\"\n\n  Simply including a copy of this Agreement, including this Exhibit A\n  is not sufficient to license the Source Code under Secondary Licenses.\n\n  If it is not possible or desirable to put the notice in a particular\n  file, then You may include the notice in a location (such as a LICENSE\n  file in a relevant directory) where a recipient would be likely to\n  look for such a notice.\n\n  You may add additional accurate notices of copyright ownership.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/analyzers/js-callgraph/LICENSE"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "\n# How to contribute\n\nWelcome! We are super happy that you intend to contribute to the javascript-call-graph! This is a great place to start.\n\n#### If you find a bug\n\n* If you can fix it, submit a PR.\n* If not, open up an issue and include any information that could help others reproduce and fix.\n\n#### If you have a feature proposal or want to contribute\n\n* Open up an issue for discussion.\n* Contribute a PR.\n* Respond to code review\n* Watch the PR be merged, and bathe in a job well done :icecream: :+1: :v: :palm_tree:.\n\n## How to create a Pull Request\n\n* First you should **fork** this repository (hit the fork button)\n* **Clone** your forked repository\n* **Create a branch** for you new feature\n* **Commit your changes** to your branch\n* **Keep your fork synced** with the original repository if needed. See [Keeping the fork up to date](#keeping-the-fork-up-to-date) section for further details.\n* When you finished your work:\n\t* **Open a Pull Request** in the original repository and set master as base and your newly created branch as head. Please fill the description field for letting the others know what the contribution is about.\n\t* If your changes seem good for the maintainers they will accept your pull request and merge your commits into the original repository\n\n## Keeping the fork up to date\n\nIt is an optional step. It is recommended when you are working on a larger feature or a complex bug (not a tiny quick fix).\nFollowing the steps below ensures to track the original fork which is usually called __upstream__.\nFirst add the original repository as a remote:\n\n```\n# Add 'upstream' repo to list of remotes\ngit remote add upstream https://github.com/UPSTREAM-USER/ORIGINAL-PROJECT.git\n# Verify the new remote named 'upstream'\ngit remote -v\n```\n\nTo update your fork to the latest version you have to fetch the changes from the upstream:\n  \n```\n# Fetch from upstream remote\ngit fetch upstream\n# View all branches, including those from upstream\ngit branch -va\n```\n\nNow, checkout your own master branch and merge the upstream repo's master branch:\n\n```\n# Checkout your master branch and merge upstream\ngit checkout master\ngit merge upstream/master\n```\n\nNow your master is up to date with the remote upstream repository. Your feature branch should be also updated. For this purpose you can use a rebase command:\n  \n```\ngit checkout newfeature\n# Updates origin/master\ngit fetch origin\n# Rebases current branch onto origin/master\ngit rebase origin/master\n```\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/analyzers/js-callgraph/CONTRIBUTING.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Install the dependent libraries:\n\n```bash\nnpm install\n```\n\nInstall the dependencies for the different analyzers (should only be necessary\nif you want to use them)\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "Lacuna"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```bash\nnpm --prefix ./analyzers/js-callgraph install ./analyzers/js-callgraph\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "js-callgraph",
+                "parent_header": [
+                    "Lacuna",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "- If the dynamic analyzer installation fails, try installing it by ignoring the scripts:\n\n```bash\nnpm --prefix ./analyzers/dynamic install ./analyzers/dynamic --ignore-scripts\n```\n\n- Make sure to have chromium web browser installed before using this analyzer\n",
+                "type": "Text_excerpt",
+                "original_header": "Resolutions for common issues that might be encountered:",
+                "parent_header": [
+                    "Lacuna",
+                    "Installation",
+                    "dynamic"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```bash\nnpm --prefix ./analyzers/wala_full install ./analyzers/wala_full\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "wala full",
+                "parent_header": [
+                    "Lacuna",
+                    "Installation",
+                    "wala"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```bash\nnpm --prefix ./analyzers/wala_single install ./analyzers/wala_single\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "wala single",
+                "parent_header": [
+                    "Lacuna",
+                    "Installation",
+                    "wala"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Clone jelly inside the analyzers directory:\n\n```bash\ngit clone https://github.com/ishaskul/jelly.git ./analyzers/jelly\n```\nInstall dependencies:\n\n```bash\nnpm --prefix ./analyzers/jelly install ./analyzers/jelly\n```\n\nCompile TypeScript code:\n```bash\nnpm --prefix ./analyzers/jelly run build\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "jelly:",
+                "parent_header": [
+                    "Lacuna",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- Identifying scripts within HTML currently fails when there are (extra?) spaces or linebreaks between the words\n- The dynamic analyzer that requires a webdriver doesn't seem to load external\nJS files in headless mode. The workaround currently used is to not run the \nbrowser in headless mode; which has the annoying consequence that it activates/\nfocuses the window on every run. \n \n",
+                "original_header": "Solved issues"
+            },
+            "confidence": 0.9244186944674632,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "```bash\nnpm --prefix ./analyzers/dynamic install ./analyzers/dynamic\n```",
+                "type": "Text_excerpt",
+                "original_header": "dynamic",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options",
+                    "Analyzer"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The intuition is that lacuna runs on a source folder; Relative to this folder \nit will will look for the entry file. From the entry file, all references to \nJS files and all inline JS scripts will be considered for optimization.\n\n__Thus all files that are not referenced by the entry file will be skipped__\n\nE.g. `node lacuna ./example/test/ -a '{\"static\":\"0.6\"}' -d ./example/test.output/ -o 3` \nThis command will optimize the source code with strength 3 (powerfull \noptimization, eliminating as much as possible from the source) and \nas per 0.6 weight threshold value specified for the static analyzer. Whilst\npreserving the original sourceCode since a custom destinationFolder is set.\n\nMoreover, For the purpose of eliminating deadcode, Lacuna internally creates a callgraph. \nEach edge in the callgraph represents the caller-callee relationship between functions. \nA probabilistic weight ranging from 0 to 1 is assigned to each edge in the callgraph.\nFor further code optimization, lacuna internally checks whether the weight of each edge \nin the callgraph is less than the threshold weight specified for each analyzer. \nIf this condition is true (edgeWeight < thresholdWeightForAnalyzer), the edge is eliminated from the callgraph \nand hence the code associated which thse function calls is eliminated. \nIn the above example command, all callgraph edges created by static analyzer which have weights below 0.6, will be eliminated.\n",
+                "type": "Text_excerpt",
+                "original_header": "How to use",
+                "parent_header": [
+                    "Lacuna"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Since there is no guarantee Lacuna will not remove a function that isn't really\ndead, Lacuna features a lazyLoading option.\n\nThis means that instead of completely removing the presumed dead functions, it \nwill replace it with a lazy loading mechanism that will fetch the functionBody\nfrom a server and insert it right back into your application.\n\nThus ensuring not to break the application whilst still removing many \nunnecessary lines of code.\n\nTo enable lazyloading set the optimization level (--olevel -o) to 1.\nAfter Lacuna has optimized your application, ensure to run the lazyloading_server\nwhich will serve all swapped out functionBody's on demand.\n\nFind the generated lazyload_server in the destination folder;\nalso make sure to install the dependent npm modules: express, fs, body-parser and path.\n\nExample\n```\nnode lacuna ./example/proj1 -a '{\"static\":\"0.6\"}' -o 1 -d ./example/proj1_output -f\nnpm --prefix ./example/proj1_output install express fs body-parser path\nnode-dev ./example/proj1_output/lacuna_lazyload_server.js\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Lazy loading",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "| Long                 | Short | Description                                                    | Default                  |\n|----------------------|-------|----------------------------------------------------------------|--------------------------|\n| --analyzer           | -a    | Specify analyzers and their respective threshold weights (multiple allowed in the form of a JSON Object)  | <REQUIRED>               |\n| --olevel             | -o    | Optimization level                                             | 0                        |\n| --entry              | -e    | The entry file, where the JS scripts should be gathered from.  | index.html               |\n| --destination        | -d    | Perform changes in a copy of the sourceFolder.                 | <sourceFolder>           |\n| --logfile            | -l    | Logs of Lacuna execution.                                      | lacuna.log               |\n| --force              | -f    | Force continuing                                               | false                    |\n",
+                "type": "Text_excerpt",
+                "original_header": "Runtime options",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "```json\n{\n  \"<analyzer-name>\": \"<threshold-value>\"\n}\n```\n- Valid values for <analyzer-name> are: (static, dynamic, nativecalls, acg, jelly, tajs, wala, npm_cg)\n- Valid threshold value ranges from 0 to 1 (eg: 0.5, 0.6)\n\neg:\n\n```json\n{\n  \"static\":\"0.5\",\n  \"dynamic\":\"1\"\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Basic schema for the --analyzer JSON Object:",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The analyzers are the techniques that Lacuna applies to mark functions/nodes as \nalive and determine caller-callee relationships between functions.\n\nWhen multiple analyzers are chosen Lacuna merges the results to minimize false\npositives. This means that any function that is picked up as alive by ANY \nanalyzer will be considered alive.\n\nThe currently available analyzer options are",
+                "type": "Text_excerpt",
+                "original_header": "Analyzer",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "This analyzer is based on espree and statically determines all caller -> callee\nrelationships between functions. It does not consider JavaScript native\nfunctions. \n",
+                "type": "Text_excerpt",
+                "original_header": "static",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options",
+                    "Analyzer"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Very similar to the static analyzer wich the main difference is that it only\nconsiders JavaScript native functions.\n",
+                "type": "Text_excerpt",
+                "original_header": "nativecalls",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options",
+                    "Analyzer"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Abstract call graph is our implementation of field-based approach for static analysis.\n\nNOTE: Static, nativecalls and ACG analyzers internally make use of the js-callgraph analyzer that has been adapted for the needs of Lacuna as a part of the following forked repository:\n[js-callgraph](https://github.com/ishaskul/js-callgraph)\n\nOriginal repository: [js-callgraph](https://github.com/gaborantal/js-callgraph)\n\n##### dynamic\nA basic dynamic analyzer that starts up a puppeteer webdriver and marks every\nfunction that is executed on startup as alive.\n\n##### wala\nBased on the internal callgraphs of IBM WALA. WALA supports up to ES5 syntax only as of now. \n",
+                "type": "Text_excerpt",
+                "original_header": "acg",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options",
+                    "Analyzer"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "npm_cg is a handy tool for producing call graphs from JavaScript source code. It has a limitation in that it can consider a single JavaScript file at a time only\n\noriginal repository: [npm_cg](https://github.com/gunar/callgraph)\n",
+                "type": "Text_excerpt",
+                "original_header": "npm_cg",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options",
+                    "Analyzer"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Based on TAJS\nSome notable fixes are:\nby default, TAJS stops processing JavaScript files whenever it encounters a console.log\n( maybe also other native JavaScript calls ); thus to bypass this issue TAJS was modified. It is to be noted that TAJS supports up to ES5 syntax only as of now.\n",
+                "type": "Text_excerpt",
+                "original_header": "TAJS",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options",
+                    "Analyzer"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Based on [Jelly](https://github.com/cs-au-dk/jelly), which overcomes the drawbacks of js-callgraph and TAJS by applying a modular approach that enables static analysis for more complex nodejs applications. In addition to this, Jelly supports the latest ECMAScript. \n\nJelly has been adapted slightly for integration with Lacuna in the following forked repository: [Jelly](https://github.com/ishaskul/jelly)\n",
+                "type": "Text_excerpt",
+                "original_header": "Jelly",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options",
+                    "Analyzer"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "After the dead functions have been identified, Lacuna can also optimize the \napplication by (partially) removing the dead functions. For this optimization, \nLacuna supports multiple levels of caution.\n\n- 0: Do not optimize at all\n- 1: Replace the function body with a lazy loading mechanism\n- 2: Remove the function body\n- 3: Replace the function definition with null\n\nSince there is no guarantee that Lacuna will not yield false positives e.g.\nthat it thinks a function that is really alive is dead, removing the functions\nentirely could break the application.\n",
+                "type": "Text_excerpt",
+                "original_header": "Optimization Level",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "As a part of the --argument a threshold value is required to be specified for each analyzer as mentioned above. \nLacuna internally uses this threshold value to optimize the code further by eliminating callgraph edges that lie below the threshold.\n",
+                "type": "Text_excerpt",
+                "original_header": "Weight threshold value",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The entry file, relative to the sourceFolder, that will serve as a starting \npoint for Lacuna. From this file all references to JS files will be gathered,\nas well as the inline JS scripts; after which they will be considered for \noptimization.\n",
+                "type": "Text_excerpt",
+                "original_header": "Entry",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "By default Lacuna will be performed on the sourceFolder. Meaning that it will\nactually Modify the original source code. Setting a destination will copy the\nentire project to this folder and do all modifications on that folder instead.\n(preserving the original code).\n",
+                "type": "Text_excerpt",
+                "original_header": "Destination",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Where the output of Lacuna will be stored. By default in `lacuna.log`\n",
+                "type": "Text_excerpt",
+                "original_header": "Logfile",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "When the force option is enabled, Lacuna will without warning overwrite any\nfiles or folders. (Instead of the default to prompt it to the user)\n",
+                "type": "Text_excerpt",
+                "original_header": "Force",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Runtime options"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Some more customizable settings can be found in the _settings.js file\na few important settings are:\n",
+                "type": "Text_excerpt",
+                "original_header": "Settings",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Whether Lacuna should take the JS files hosted on other servers into account.\ne.g. references to CDN files, or simply hosted somewhere else for performance.\n\nThe current implementation of Lacuna will download these files and update all\ninline HTML references with the local file. The files will be downloaded to the\nroot of the destination directory under their original filename.\n\nNotice that having multiple references to:\nhttps://code.jquery.com/jquery-3.4.0.min.js\n\nwill store them in the same local file under the name jquery-3.4.0.min.js.\n",
+                "type": "Text_excerpt",
+                "original_header": "CONSIDER_ONLINE_JS_FILES",
+                "parent_header": [
+                    "Lacuna",
+                    "How to use",
+                    "Settings"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@article{TSE_2023,\n    url = {http://www.ivanomalavolta.com/files/papers/TSE_2023.pdf},\n    doi = {10.1109/TSE.2023.3267848},\n    year = {2023},\n    title = {{JavaScript Dead Code Identification, Elimination, and Empirical Assessment}},\n    journal = {IEEE Transactions on Software Engineering},\n    author = {Ivano Malavolta and Kishan Nirghin and {Gian Luca} Scoccia and Simone Romano and Salvatore Lombardi and Giuseppe Scanniello and Patricia Lago},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/TSE.2023.3267848",
+                "title": "{JavaScript Dead Code Identification, Elimination, and Empirical Assessment}",
+                "author": "Ivano Malavolta and Kishan Nirghin and {Gian Luca} Scoccia and Simone Romano and Salvatore Lombardi and Giuseppe Scanniello and Patricia Lago",
+                "url": "http://www.ivanomalavolta.com/files/papers/TSE_2023.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{SANER_2018,\n    title = { An Extensible Approach for Taming the Challenges of JavaScript Dead Code Elimination },\n    author = { Niels Groot Obbink and Ivano Malavolta and Gian Luca Scoccia and Patricia Lago },\n    booktitle = { Software Analysis, Evolution and Reengineering (SANER), 2018 IEEE 25th International Conference on },\n    pages = { 291--401 },\n    year = { 2018 },\n    organization = { IEEE },\n    url = { https://github.com/S2-group/Lacuna/blob/master/publications/SANER_2018.pdf },\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": " An Extensible Approach for Taming the Challenges of JavaScript Dead Code Elimination ",
+                "author": " Niels Groot Obbink and Ivano Malavolta and Gian Luca Scoccia and Patricia Lago ",
+                "url": " https://github.com/S2-group/Lacuna/blob/master/publications/SANER_2018.pdf "
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Lacuna"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/S2-group/Lacuna/master/./example/test/workflow.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/S2-group/Lacuna/master/README.md"
+        }
+    ]
+}

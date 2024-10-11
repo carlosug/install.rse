@@ -1,0 +1,226 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:08:00"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/smartyfh/CMF-CTF",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "smartyfh",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-01-21T23:08:58Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-01-03T03:19:09Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Outlier-Resilient Web Service QoS Prediction",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is the Python implementation of the paper \"**Outlier-Resilient Web Service QoS Prediction**\", WWW 2021. [[paper](https://arxiv.org/abs/2006.01287)]\n \n",
+                "original_header": "CMF-CTF: Outlier-Resilient Web Service QoS Prediction"
+            },
+            "confidence": 0.9661790160579725,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/smartyfh/CMF-CTF/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The proliferation of Web services makes it difficult for users to select the most appropriate one among numerous functionally identical or similar service candidates. Quality-of-Service (QoS) describes the non-functional characteristics of Web services, and it has become the key differentiator for service selection. However, users cannot invoke all Web services to obtain the corresponding QoS values due to high time cost and huge resource overhead. Thus, it is essential to predict unknown QoS values. Although various QoS prediction methods have been proposed, few of them have taken outliers into consideration, which may dramatically degrade the prediction performance. To overcome this limitation, we propose an outlier-resilient QoS prediction method in this paper. Our method utilizes Cauchy loss to measure the discrepancy between the observed QoS values and the predicted ones. Owing to the robustness of Cauchy loss, our method is resilient to outliers. We further extend our method to provide time-aware QoS prediction results by taking the temporal information into consideration. Finally, we conduct extensive experiments on both static and dynamic datasets. The results demonstrate that our method is able to achieve better performance than state-of-the-art baseline methods.\n \n",
+                "original_header": "Abstract"
+            },
+            "confidence": 0.9865715462232374,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/smartyfh/CMF-CTF/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "CMF-CTF",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "smartyfh/CMF-CTF",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/smartyfh/CMF-CTF/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/smartyfh/CMF-CTF/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 6,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "qos-prediction, web-service",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/smartyfh/CMF-CTF/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 25533
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 7464
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/smartyfh/CMF-CTF/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Please go to each folder to see the guidance.\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "CMF-CTF: Outlier-Resilient Web Service QoS Prediction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/smartyfh/CMF-CTF/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "CMF-CTF: Outlier-Resilient Web Service QoS Prediction"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/smartyfh/CMF-CTF/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2006.01287"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/smartyfh/CMF-CTF/main/README.md"
+        }
+    ]
+}

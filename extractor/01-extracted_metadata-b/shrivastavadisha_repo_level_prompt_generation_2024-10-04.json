@@ -1,0 +1,287 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:37:31"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/shrivastavadisha/repo_level_prompt_generation",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "shrivastavadisha",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-06-07T19:53:33Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-20T07:04:12Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 Disha Shrivastava\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/repo_level_prompt_generation/main/LICENSE"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "repo_level_prompt_generation",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "shrivastavadisha/repo_level_prompt_generation",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/shrivastavadisha/repo_level_prompt_generation/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/shrivastavadisha/repo_level_prompt_generation/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 112,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 15,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/shrivastavadisha/repo_level_prompt_generation/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 150598
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/shrivastavadisha/repo_level_prompt_generation/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "* Access to OpenAI Codex API: https://openai.com/blog/openai-codex/. The key should be placed in a file named `openai_api_key`\n* pytorch: https://pytorch.org/\n* Huggingface's transformers: https://pypi.org/project/transformers/\n* tree-sitter-java: https://github.com/tree-sitter/tree-sitter-java\n* tqdm\n* tensorboard \n ",
+                "type": "Text_excerpt",
+                "original_header": "Dependencies"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/repo_level_prompt_generation/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "`get_info_from_predictions.py`\nThis needs a <ins>hole_stats_file</ins> as input (generated from the previous step) and a value of k.\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting results for variation with k",
+                "parent_header": [
+                    "Code"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/repo_level_prompt_generation/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains implementation and data for our work [Repository-Level Prompt Generation for Large Language Models of Code](https://arxiv.org/abs/2206.12839). A block diagram of our approach can be found below. For more details, refer to the paper. \n",
+                "original_header": "Repository-Level Prompt Generation for Large Language Models of Code"
+            },
+            "confidence": 0.9748385533452102,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/repo_level_prompt_generation/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The web URLs for all the repositories used in our work is provided in <ins>projects.txt</ins>. Download and store them in a folder called <ins>gcode-data</ins>. Then run `script_gen_and_preprocess_data.py`. This script will produce an output file called <ins>commands_gen_and_preprocess</ins>. Running it will execute three scripts:\n - `create_sample_data.py`: creates the hole completion data by choosing the midpoint of each line as hole position.\n - `parse_tree.py`: creates a parse tree for each file as well as store repo-level meta-info needed to get rule-context.\n - `check_duplication.py`: check for duplicates within a repo.\nRunning this will create a new folder called rule_classifier_data that has train, val and test subfolders. Inside each folder, we will have a folder for a repository that will contain the following: \n",
+                "original_header": "Data preprocessing"
+            },
+            "confidence": 0.9624454724458205,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/repo_level_prompt_generation/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Example usage: `python generate_rule_representations.py --data_split=val --repo=jata4test --emb_model_type=codebert` \n",
+                "original_header": "Generating the rule context representations for the rule classifier"
+            },
+            "confidence": 0.9265517514497795,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/repo_level_prompt_generation/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "`rearrange_data.py`\nThis script will cap the maximum contribution from a repo to 10000 holes. After this, each repo folder will contain files <ins>capped_holes_10000</ins>, <ins>capped_codebert_mod</ins> and <ins>capped_oracle_10000</ins>.\n \n",
+                "original_header": "Capping the number of holes"
+            },
+            "confidence": 0.9999893577029717,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/repo_level_prompt_generation/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "`generate_rule_representations.py` \n",
+                "original_header": "Generating the rule context representations for the rule classifier"
+            },
+            "confidence": 0.9019229624171622,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/repo_level_prompt_generation/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/repo_level_prompt_generation/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/shrivastavadisha/repo_level_prompt_generation/main/block_diagram.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/repo_level_prompt_generation/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2206.12839"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/shrivastavadisha/repo_level_prompt_generation/main/README.md"
+        }
+    ]
+}

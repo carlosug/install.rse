@@ -1,0 +1,576 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:40:10"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/Christof93/SciKGTeX",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "Christof93",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-10-05T17:50:07Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-29T01:52:07Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 Christof Bless\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "SciKGTeX is a LuaTeX package which introduces commands to mark research contributions in scientific documents.  SciKGTeX will enrich the document\u00a0by adding your contributions to PDF metadata in a structured XMP format which can be picked up by Search Engines and Knowledge Graphs.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "With SciKGTeX, authors of scientific publications can enrich their documents with structured, reduced and machine-readable information which represents the key points of the content they want to communicate.  The production of this additional information improves electronic archiving of the information for the future and boosts discoverability in search engines and recommender systems.\nThe contribution data is embedded into the PDF's XMP metadata where it can be retrieved by anyone who obtains the PDF document and persists for the lifetime of the document.\nAdditionally, the contributions can easily be added automatically to scientific knowledge graphs like the ORKG. \n##### Table of Contents\n- [Installation](#installation)\n    - [Template on Overleaf](#template-on-overleaf)\n- [Using the LaTeX Package](#using-the-latex-package)\n  - [Minimal Example](#minimal-example)\n  - [Optional Properties](#optional-properties)\n  - [Contribution Numbering](#contribution-numbering)\n  - [Invisible Markup](#invisible-markup)\n  - [Referring to Entities](#referring-to-entities)\n  - [Defining Custom Properties](#defining-custom-properties)\n- [Compatibility](#compatibility)\n- [Testing](#testing)\n- [Cite Us](#cite-us)\n- [License](#license) \n2. Set `\\usepackage[compatibility]{scikgtex}` in your document preamble to use the package \n"
+            },
+            "confidence": 0.9584229754682214,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "It is necessary to compile your LaTeX source  with LuaLaTeX for the package to work. This is typically straightforward with most modern LaTeX environments.\nIn Overleaf it can be configured like this for example: \n",
+                "original_header": "Template on Overleaf"
+            },
+            "confidence": 0.9856436009218024,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "As can be seen in the rendered pdf the marked properties can not be distinguished from the other sentences in the text. The annotations can be inspected in the file `xmp_metadata.xml`. The XMP file can be used as an inspection possibility for the user but it is not necessary to distribute it since the whole content is also directly embedded into the produced PDF file in the creation process. For our example the content of the metadata will look as such:\n```xml\n<?xpacket begin=\"?\" id=\"48fdc517-5814-4d0c-cd03-0c296941c6\"?>\n<x:xmpmeta xmlns:x=\"adobe:ns:meta/\">\n<rdf:RDF \n  xmlns:orkg=\"http://orkg.org/core#\"\n  xmlns:orkg_property=\"http://orkg.org/property/\"\n  xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n  xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\">\n  <rdf:Description rdf:about=\"https://www.orkg.org/orkg/paper/48fdc517-5814-4d0c-cd03-0c296941c6\">\n    <rdf:type rdf:resource=\"http://orkg.org/core#Paper\"/>\n    <orkg:hasTitle>Effectiveness of Amoxicillin/Clavulanate Potassium in the Treatment of Acute Bacterial Sinusitis in Children.</orkg:hasTitle>\n    <orkg:hasAuthor>Ellen R. Wald</orkg:hasAuthor>\n    <orkg:hasAuthor>David Nash</orkg:hasAuthor>\n    <orkg:hasAuthor>Jens Eickhoff</orkg:hasAuthor>\n    <orkg:hasResearchField>antibiotic therapy</orkg:hasResearchField>\n    <orkg:hasResearchContribution>\n      <orkg:ResearchContribution rdf:about=\"https://www.orkg.org/orkg/paper/48fdc517-5814-4d0c-cd03-0c296941c6/contribution_ORKG_default\">\n          <orkg_property:P32>antibiotic therapy in managing acute bacterial sinusitis (ABS) in children</orkg_property:P32>\n          <orkg_property:P15051>effectiveness of high-dose amoxicillin/potassium clavulanate in the treatment of children diagnosed with ABS</orkg_property:P15051>\n          <orkg_property:P1005>randomized, double-blind, placebo-controlled study</orkg_property:P1005>\n          <orkg_property:P1005>Patients were stratified according to age (&lt;6 or \u22656 years) and clinical severity and randomly assigned to receive either amoxicillin (90 mg/kg) with potassium clavulanate (6.4 mg/kg) or placebo</orkg_property:P1005>\n          <orkg_property:P1006>Children receiving the antibiotic were more likely to be cured (50% vs 14%) and less likely to have treatment failure (14% vs 68%) than children receiving the placebo</orkg_property:P1006>\n          <orkg_property:P15419>Amoxicillin/potassium clavulanate results in significantly more cures and fewer failures than placebo</orkg_property:P15419>\n      </orkg:ResearchContribution>\n    </orkg:hasResearchContribution>\n  </rdf:Description>\n</rdf:RDF>\n</x:xmpmeta>\n<?xpacket end=\"r\"?>\n```\n \n",
+                "original_header": "Minimal Example"
+            },
+            "confidence": 0.9468926562055753,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "### Referring to Entities\nInstead of using natural language to represent objects, we usually prefer URIs which uniquely identify resources in the Semantic Web. If we want to assign a URI as a property, we can use the `\\uri{}` command inside an annotation. \n```latex\n\\documentclass{article}\n\\usepackage{scikgtex}\n\n\\begin{document}\n% adds a link to the URI of an entity as researchproblem\nThe role of \\researchproblem{\\uri{https://www.orkg.org/orkg/resource/R12259}{antibiotic therapy}} in managing acute bacterial sinusitis (ABS) in children is controversial...\n\\end{document}\n```\n \n"
+            },
+            "confidence": 0.9422709910854611,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "In the XMP metadata file this will result in a new node either with or without a label.\n```xml\n...\n<orkg_property:P32>\n   <rdf:Description rdf:about=\"https://www.orkg.org/orkg/resource/R12259\">\n      <rdfs:label>antibiotic therapy</rdfs:label>\n   </rdf:Description>\n</orkg_property:P32>\n...\n```\nTo add the entity without the hyperlink we can specify the entity with invisible markup like this for example:\n```latex\nThe role of \\researchproblem*{\\uri{https://www.orkg.org/orkg/resource/R12259}} antibiotic therapy in managing acute bacterial sinusitis (ABS) in children is controversial...\n```\n \n",
+                "original_header": "Referring to Entities"
+            },
+            "confidence": 0.9376693262947217,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "However, it might occur that you want to use a property which is already defined semantically in an ontology on the web. In this case you can add the namespace to the annotation schema und use the property in you text.\nFor example, suppose we want to use a property of an already existing ontology like the [argument model ontology](https://sparontologies.github.io/amo/current/amo.html). We can use their property `has_claim` by defining it in our preamble with the `\\addmetaproperty` command like this:\n```latex\n\\documentclass{article}\n\\usepackage{scikgtex}\n\\addmetaproperty[amo, http://purl.org/spar/amo#]{has_claim}\n\\begin{document}\nWe make the claim that \\contribution{has_claim}{the earth is round}.\n...\n```\nIf there are properties with the same name but different meaning depending on the context we can specify the namespace in the actual annotation as well. For example there is a meaning of claim as a legal term denoting the extent of a patent application.\nUsing two properties with the same name in a document can be handled like this:\n```latex\n\\documentclass{article}\n\\usepackage{scikgtex}\n\\addmetaproperty[amo, http://purl.org/spar/amo#]{has_claim}\n\\addmetaproperty[patent, https://other.type/of/]{has_claim}\n\\begin{document}\n\\contribution{amo:has_claim}{The earth is round}.\nOur patent has the following claim: \\contribution{patent:has_claim}{An apparatus for catching mice,\nsaid apparatus comprising a base, a spring member coupled to the base, and a cage}.\n...\n```\n \n",
+                "original_header": "Defining Custom Properties"
+            },
+            "confidence": 0.9039490063777161,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "## Compatibility\nBy default SciKGTeX overwrites the PDF metadata catalog and is not fully compatible with other metadata specification packages such as hyperxmp or pdfx.\nOn top of that, the generated metadata currently can not comply with the PDF/A standard because of the user-defined properties.\nWhen submitting to conferences or other subsequent processors data written in the standard PDF metadata field is often overwritten.\nTo prevent this use the SciKGTeX compatibility mode. \n"
+            },
+            "confidence": 0.9741317383413431,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "SciKGTeX",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "Christof93/SciKGTeX",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Christof93/SciKGTeX/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Christof93/SciKGTeX/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 18,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "latex, markup, semantic-web",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/christof93/scikgtex/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Lua",
+                "name": "Lua",
+                "type": "Programming_language",
+                "size": 380368
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "TeX",
+                "name": "TeX",
+                "type": "Programming_language",
+                "size": 4435
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 4298
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 609
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 557
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/Christof93/SciKGTeX/releases/157937550",
+                "tag": "v3.0.0",
+                "name": "ORKG mappings",
+                "author": {
+                    "name": "Christof93",
+                    "type": "User"
+                },
+                "description": "# v3.0.0 (ORKG mappings)\r\n\r\n- Integrates a big list of properties from the Open research Knowledge Graph\r\n- Warning messages guide the user to find the correct property\r\n- Better example in README\r\n- Various code improvements",
+                "tarball_url": "https://api.github.com/repos/Christof93/SciKGTeX/tarball/v3.0.0",
+                "zipball_url": "https://api.github.com/repos/Christof93/SciKGTeX/zipball/v3.0.0",
+                "html_url": "https://github.com/Christof93/SciKGTeX/releases/tag/v3.0.0",
+                "url": "https://api.github.com/repos/Christof93/SciKGTeX/releases/157937550",
+                "release_id": 157937550,
+                "date_created": "2024-05-29T08:18:46Z",
+                "date_published": "2024-05-29T08:29:11Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/Christof93/SciKGTeX/releases/97903284",
+                "tag": "v2.2.0",
+                "name": "Compatibility Mode",
+                "author": {
+                    "name": "Christof93",
+                    "type": "User"
+                },
+                "description": "New feature:\r\n - compatibility mode to ensure compatibility with other metadata writing packages such as pdfx or hyperxmp. Enables to generate PDF/A compatible documents. Makes metadata safer for long term storage in PDF document. \r\n\r\nBug fixes:\r\n - various bug fixes.",
+                "tarball_url": "https://api.github.com/repos/Christof93/SciKGTeX/tarball/v2.2.0",
+                "zipball_url": "https://api.github.com/repos/Christof93/SciKGTeX/zipball/v2.2.0",
+                "html_url": "https://github.com/Christof93/SciKGTeX/releases/tag/v2.2.0",
+                "url": "https://api.github.com/repos/Christof93/SciKGTeX/releases/97903284",
+                "release_id": 97903284,
+                "date_created": "2023-04-03T19:56:09Z",
+                "date_published": "2023-04-03T20:05:16Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/Christof93/SciKGTeX/releases/82922720",
+                "tag": "v2.1.1",
+                "name": "meta features (+invisible)",
+                "author": {
+                    "name": "Christof93",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/Christof93/SciKGTeX/tarball/v2.1.1",
+                "zipball_url": "https://api.github.com/repos/Christof93/SciKGTeX/zipball/v2.1.1",
+                "html_url": "https://github.com/Christof93/SciKGTeX/releases/tag/v2.1.1",
+                "url": "https://api.github.com/repos/Christof93/SciKGTeX/releases/82922720",
+                "release_id": 82922720,
+                "date_created": "2022-11-13T21:25:15Z",
+                "date_published": "2022-11-13T21:26:31Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/Christof93/SciKGTeX/releases/80742351",
+                "tag": "v2.1.0",
+                "name": "meta features",
+                "author": {
+                    "name": "Christof93",
+                    "type": "User"
+                },
+                "description": "New\r\n---\r\n - new commands `\\metatitle`, `\\metaauthor` and `\\researchfield`\r\n - bug fix: greater than escaped (> to \\&gt;)\r\n - code formatting",
+                "tarball_url": "https://api.github.com/repos/Christof93/SciKGTeX/tarball/v2.1.0",
+                "zipball_url": "https://api.github.com/repos/Christof93/SciKGTeX/zipball/v2.1.0",
+                "html_url": "https://github.com/Christof93/SciKGTeX/releases/tag/v2.1.0",
+                "url": "https://api.github.com/repos/Christof93/SciKGTeX/releases/80742351",
+                "release_id": 80742351,
+                "date_created": "2022-10-23T21:58:31Z",
+                "date_published": "2022-10-23T22:09:09Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/Christof93/SciKGTeX/releases/68806208",
+                "tag": "v2.0.0",
+                "name": "SciKGTeX",
+                "author": {
+                    "name": "Christof93",
+                    "type": "User"
+                },
+                "description": "First official release of SciKGTeX.",
+                "tarball_url": "https://api.github.com/repos/Christof93/SciKGTeX/tarball/v2.0.0",
+                "zipball_url": "https://api.github.com/repos/Christof93/SciKGTeX/zipball/v2.0.0",
+                "html_url": "https://github.com/Christof93/SciKGTeX/releases/tag/v2.0.0",
+                "url": "https://api.github.com/repos/Christof93/SciKGTeX/releases/68806208",
+                "release_id": 68806208,
+                "date_created": "2022-04-20T17:22:52Z",
+                "date_published": "2022-06-07T09:56:56Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/Christof93/SciKGTeX/releases/53846015",
+                "tag": "v1.0.1-alpha",
+                "name": "orkg-pdf-annotator-scheme",
+                "author": {
+                    "name": "Christof93",
+                    "type": "User"
+                },
+                "description": "**Full Changelog**: https://github.com/Christof93/ORKG4LaTeX/compare/v1.0.0-alpha...v1.0.1-alpha",
+                "tarball_url": "https://api.github.com/repos/Christof93/SciKGTeX/tarball/v1.0.1-alpha",
+                "zipball_url": "https://api.github.com/repos/Christof93/SciKGTeX/zipball/v1.0.1-alpha",
+                "html_url": "https://github.com/Christof93/SciKGTeX/releases/tag/v1.0.1-alpha",
+                "url": "https://api.github.com/repos/Christof93/SciKGTeX/releases/53846015",
+                "release_id": 53846015,
+                "date_created": "2021-11-21T20:04:48Z",
+                "date_published": "2021-11-22T14:48:47Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/Christof93/SciKGTeX/releases/53768487",
+                "tag": "v1.0.0-alpha",
+                "name": "orkg-pdf-annotator-scheme",
+                "author": {
+                    "name": "Christof93",
+                    "type": "User"
+                },
+                "description": "First stable release.\r\nAnnotate sentences with \r\n- contribution\r\n- methods\r\n- problem statement\r\n- results\r\n- background\r\n\r\nAnnotations will be saved into xmp metadata field of the produced pdf file.",
+                "tarball_url": "https://api.github.com/repos/Christof93/SciKGTeX/tarball/v1.0.0-alpha",
+                "zipball_url": "https://api.github.com/repos/Christof93/SciKGTeX/zipball/v1.0.0-alpha",
+                "html_url": "https://github.com/Christof93/SciKGTeX/releases/tag/v1.0.0-alpha",
+                "url": "https://api.github.com/repos/Christof93/SciKGTeX/releases/53768487",
+                "release_id": 53768487,
+                "date_created": "2021-11-03T21:55:47Z",
+                "date_published": "2021-11-20T10:42:50Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "# This CITATION.cff file was generated with cffinit.\n# Visit https://bit.ly/cffinit to generate yours today!\n\ncff-version: 1.2.0\ntitle: SciKGTeX - Scientific Knowledge Graph TeX\nmessage: >-\n  If you use this software, please cite it using the\n  metadata from this file.\ntype: software\nauthors:\n  - given-names: Christof\n    family-names: Bless\n    email: christof.bless@hslu.ch\n    affiliation: Lucerne University of Applied Sciences\n    orcid: 'https://orcid.org/0000-0001-9778-8495'\n  - given-names: Ildar\n    family-names: Baimuratov\n    email: baimuratov.i@gmail.com\n    affiliation: Leibniz University Hannover\n    orcid: 'https://orcid.org/0000-0002-6573-131X'\n  - given-names: Oliver\n    family-names: Karras\n    email: oliver.karras@tib.eu\n    affiliation: >-\n      TIB - Leibniz Information Centre for Science and\n      Technology\n    orcid: 'https://orcid.org/0000-0001-5336-6899'\nidentifiers:\n  - type: doi\n    value: 10.48550/arXiv.2304.05327\n    description: The ArXiv deposit of the encompassing paper.\n  - type: doi\n    value: 10.5281/zenodo.7818558\n    description: The Zenodo deposit of the encompassing paper.\nrepository-code: 'https://github.com/Christof93/SciKGTeX'\nurl: 'https://orkg.org/about/33/SciKGTeX'\nrepository: >-\n  https://www.overleaf.com/latex/examples/scikgtex-example/wrhmyrwfgrgw\nrepository-artifact: 'https://ctan.org/pkg/scikgtex?lang=en'\nabstract: >-\n  Scientific Knowledge Graph TeX (SciKGTeX) makes it\n  possible to annotate specific research contributions\n  directly in the LaTeX source code. The idea of extracting\n  research contributions from scholarly publications is\n  derived from the Open Research Knowledge Graph (ORKG).\n\n\n  With SciKGTeX, authors of scientific publications can\n  enrich their documents with structured, reduced and\n  machine-readable information which represents the key\n  points of the content they want to communicate. The\n  production of this additional information improves\n  electronic archiving of the information for the future and\n  boosts discoverability in search engines and recommender\n  systems. The contribution data is embedded into the PDF's\n  XMP metadata where it can be retrieved by anyone who\n  obtains the PDF document and persists for the lifetime of\n  the document. Additionally, the contributions can easily\n  be added automatically to scientific knowledge graphs such\n  as the ORKG.\nkeywords:\n  - Semantic annotation\n  - LaTeX\n  - Markup\n  - FAIR data\n  - Scientific knowledge graph\nlicense: MIT\n",
+                "type": "File_dump",
+                "format": "cff"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/CITATION.cff"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "## Installation\n1. Copy the files `scikgtex.lua` and `scikgtex.sty` from the latest stable release to your latex project \n \n   - latest stable release: https://github.com/Christof93/SciKGTeX/releases/tag/v3.0.0 \n2. Set `\\usepackage[compatibility]{scikgtex}` in your document preamble to use the package \n"
+            },
+            "confidence": 0.9922570802274842,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "You can use this link: https://www.overleaf.com/latex/examples/scikgtex-example/wrhmyrwfgrgw to view a working example in Overleaf with some explanation. Open the template and start making your own metadata annotations right away! \nIt is necessary to compile your LaTeX source  with LuaLaTeX for the package to work. This is typically straightforward with most modern LaTeX environments.\nIn Overleaf it can be configured like this for example: \n",
+                "original_header": "Template on Overleaf"
+            },
+            "confidence": 0.9657119426220961,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "### Optional Properties \n### Defining Custom Properties\nIt is possible to declare new properties (with custom namespaces) in your document preamble with `\\addmetaproperty`.\nThe namespace specification must be added as a comma-separated pair of prefix and uri in the optional argument. If no namesapce is defined the self-defined properties will be added to the namespace `http://orkg.org/property` (which is also the case if you just use them with out defining). \n"
+            },
+            "confidence": 0.9420587766910895,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The compatibility mode can be activated by importing the package with the compatibility parameter:\n```\n\\usepackage[compatibility]{scikgtex}\n```\n \n",
+                "original_header": "Compatibility"
+            },
+            "confidence": 0.9900533927550661,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "## Testing\nA number of integration tests can be run with:\n```\nsh test/run.sh\n```\nIf desired individual test can be run with:\nBASH12*\nTo create a new test, make a new directory starting with the word test and copy the `run_test.sh` script into it. Then, add your LaTeX file called `test.tex` and a file with the expected metadata you want to test against (`xmp_metadata_expected.xml`). Make changes to `run_test.sh` to change the integration test as you see fit. \n"
+            },
+            "confidence": 0.9999997371224144,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Email: christofbless@gmail.com \nGithub: https://github.com/Christof93\n \n",
+                "original_header": "License"
+            },
+            "confidence": 0.9530146967353648,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "## Testing\nA number of integration tests can be run with:\n```\nsh test/run.sh\n```\nIf desired individual test can be run with:\nBASH12*\nTo create a new test, make a new directory starting with the word test and copy the `run_test.sh` script into it. Then, add your LaTeX file called `test.tex` and a file with the expected metadata you want to test against (`xmp_metadata_expected.xml`). Make changes to `run_test.sh` to change the integration test as you see fit. \n"
+            },
+            "confidence": 0.9363075282122182,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/christof93/scikgtex/main/pictures/lualatex_overleaf.png?raw=true"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/christof93/scikgtex/main/pictures/rendered_example.png?raw=true"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/christof93/scikgtex/main/pictures/entity_linking_rendered.png?raw=true"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2304.05327"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/christof93/scikgtex/main/README.md"
+        }
+    ]
+}

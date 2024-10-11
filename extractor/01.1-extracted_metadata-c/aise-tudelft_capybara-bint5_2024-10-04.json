@@ -1,0 +1,251 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 19:05:41"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/AISE-TUDelft/Capybara-BinT5",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "AISE-TUDelft",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-01-04T15:08:13Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-21T10:05:34Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Replication package for the SANER 2023 paper titled \"Extending Source Code Pre-Trained Language Models to Summarise Decompiled Binaries\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Capybara-BinT5",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "AISE-TUDelft/Capybara-BinT5",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/AISE-TUDelft/Capybara-BinT5/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/AISE-TUDelft/Capybara-BinT5/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 13,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/aise-tudelft/capybara-bint5/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 183
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/aise-tudelft/capybara-bint5/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/aise-tudelft/capybara-bint5/main/job.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "First, clone the CodeT5 repo into this directory:\n\n```bash\ngit clone https://github.com/salesforce/CodeT5.git\n```\n\nRun the following command to set the correct working directory in the training script:\n\n```bash\nwdir=\\WORKDIR=\\\"`pwd`/'CodeT5/CodeT5'\\\" && sed -i '1 s#^.*$#'$wdir'#' CodeT5/CodeT5/sh/exp_with_args.sh\n```\n\nNow that the model is set up we need to download the data, use the following commands to download and unpack the data:\n```bash\nwget https://zenodo.org/record/7229809/files/Capybara.zip\nunzip Capybara.zip\nrm Capybara.zip\n```\nSimilarly to download the pretrained BinT5 checkpoints:\n```bash\nwget https://zenodo.org/records/7229913/files/BinT5.zip?download=1\nunzip BinT5.zip\nrm Capybara.zip\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Setup",
+                "parent_header": [
+                    "Capybara-BinT5"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/aise-tudelft/capybara-bint5/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To replicate the experimental setup of the paper follow the following steps:\n \n",
+                "original_header": "HuggingFace \ud83e\udd17"
+            },
+            "confidence": 0.9895226925936823,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/aise-tudelft/capybara-bint5/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "It is recommended to use the provided Docker image, which has the correct Cuda version and all of the required dependencies installed. \nPull the image, create a container, and mount this folder as a volume:\n``` bash\ndocker pull aalkaswan/bint5\ndocker run -i -t --name {containerName} --gpus all -v $(pwd):/data aalkaswan/bint5 /bin/bash\n```\n \nThis should spawn a shell, which allows you to use the container. Change to the mounted volume:\n```bash\ncd /data/\n``` \nAll of the following commands should then be run from within the Docker container. You can respawn the shell using:\n```bash\ndocker exec -it {containerName} /bin/bash\n```\n \nIf you wish to run without using docker, we also provide a `requirements.txt` file.\n \n",
+                "original_header": "Docker Image"
+            },
+            "confidence": 0.9905031376786464,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/aise-tudelft/capybara-bint5/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "To use this data in BinT5, setup the data folders in the CodeT5 project:\n```bash\nmkdir -p CodeT5/CodeT5/data/summarize/{C,decomC,demiStripped,strippedDecomC}\n```\nNow you can simply move the data of your choice from `\\Capybara\\training_data\\{lan}\\{dup/dedup}` to `CodeT5\\data\\summarize\\{lan}`. \nIn the downloaded CodeT5 repo change [this line and add the languages to the subtask list](https://github.com/salesforce/CodeT5/blob/e78a61a17f6dc2f3cbb968447d3e2d065b426e7b/CodeT5/sh/run_exp.py#L134C1-L135C1). \nFinally, edit the `language` variable in the `job.sh` file and start training in detached mode:\n```bash\ndocker exec -d {containerName} /bin/bash \"/data/job.sh\"\n``` \n \n",
+                "original_header": "Finetune Models"
+            },
+            "confidence": 0.9997378769973985,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/aise-tudelft/capybara-bint5/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "For each of the models, a `pytorch.bin` file is provided in its respective folder. \nThese models can be loaded into CodeT5 and used for inference or further training.\n\nTo utilise the models, download the reference CodeT5-base model from HuggingFace:\nbash\n```\nGIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/Salesforce/codet5-base\n```\n\n- This will pull the repo but skip the `pytorch_model.bin` file, which will be replaced in the next step. \n- Select the model that you wish to use from the respective directory. Copy this file and replace the `pytorch_model.bin` in the local `codet5-base` directory downloaded in the previous step. \n- Instead of loading in the model through HuggingFace, load in a local model. To load a local model, change line 66 in the `sh/exp_with_args.sh` file to the path of your local `codet5-base` model which you downloaded and configured in the previous step. The tokenizer does not need to be replaced. \n- The model can now be run by executing `sh/run_exp.py`\n",
+                "type": "Text_excerpt",
+                "original_header": "Use Finetuned BinT5 Checkpoints",
+                "parent_header": [
+                    "Capybara-BinT5"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/aise-tudelft/capybara-bint5/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Capybara-BinT5"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/aise-tudelft/capybara-bint5/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2301.01701"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/aise-tudelft/capybara-bint5/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,381 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:14:37"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/PrivacyEngineering/tira",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "PrivacyEngineering",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-05-04T11:50:35Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-17T17:36:37Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021 PrivacyEngineering\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures ",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\nTransparency \u2013 the provision of information about what personal data is collected for which purposes, how long it is stored, or to which parties it is transferred \u2013 is one of the core privacy principles underlying regulations such as the GDPR. Technical approaches for implementing transparency in practice are, however, only rarely considered. In this paper, we present a novel approach for doing so in current, RESTful application architectures and in line with prevailing agile and DevOps-driven practices. For this purpose, we introduce 1) a transparency-focused extension of OpenAPI specifications that allows individual service descriptions to be enriched with transparency-related annotations in a bottom-up fashion and 2) a set of higher-order tools for aggregating respective information across multiple, interdependent services and for coherently integrating our approach into automated CI/CD-pipelines. Together, these building blocks pave the way for providing transparency information that is more specific and at the same time better reflects the actual implementation givens within complex service architectures than current, overly broad privacy statements. \n",
+                "original_header": "TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures"
+            },
+            "confidence": 0.996388808948505,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "tira",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "PrivacyEngineering/tira",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/PrivacyEngineering/tira/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/PrivacyEngineering/tira/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 11,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "daskita, gdpr, oas3, openapi, openapi3, privacy, rest, swagger",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/PrivacyEngineering/tira/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Ruby",
+                "name": "Ruby",
+                "type": "Programming_language",
+                "size": 132082
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 42897
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "SCSS",
+                "name": "SCSS",
+                "type": "Programming_language",
+                "size": 11298
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 1287
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CoffeeScript",
+                "name": "CoffeeScript",
+                "type": "Programming_language",
+                "size": 1266
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 412
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/docker-compose.yml",
+                "type": "Url",
+                "format": "docker_compose"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/docker-compose.yml"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/PrivacyEngineering/tira/tree/main/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Make sure Ruby is installed.\n\n```bash\nruby --version\n```\n\nTIRA was built using Ruby version `2.6.3`, other/newer versions should work fine, but were not tested against.\nUse [rvm](https://rvm.io/) or `rbenv install --verbose 2.6.3`.\n\n\nInstall bundler\n\n```bash\ngem install bundler\n```\n\nClone the repo\n\n```bash\ngit clone https://github.com/PrivacyEngineering/tira.git\ncd tira/\n```\n\nInstall all gems via bundler\n\n```bash\nbundle install\n```\n\nConfigure secrets and credentils \n\n```bash\nbin/rails credentials:edit\n```\n\nRails tries to open the crendentials with `$EDITOR`.\nYou can define an editor by setting the `EDITOR` variable explicitely, e.g.\n\n```bash\nEDITOR=\"nano\" rails credentials:edit\n```\n\n\nThis will create an encrypted config file and a master key, for details visit [this guide](https://edgeguides.rubyonrails.org/security.html#custom-credentials).\nThe configuration format used can be found in the sample configuration file in `config/credentials_example.yml`.\n\nDatabase name and credentials need to be configured.\nIf a different database adapter than postgres is used, this must be configured in:\n\n```\nconfig/database.yml\n```\n\n\nSet up a postgres database (if you chose to not use postgres, set up a database according to your configuration).\n\nYou can use the offical docker image\n\n```bash\ndocker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres\n```\n\nor set up a postgres database locally\n\n```psql\ncreate database $db_name;\n\ncreate role $user_name with createdb login password 'password';\n\ngrant all privileges on database $db_name to $user_name;\n\n```\n\nNow run the migrations to set up the database\n\n```bash\nbin/rails db:migrate RAILS_ENV=development\n```\n\n\nTransparencyHub is now set up and you can start the application\n\n```bash\nrails s\n```\n\nThe app is now accessible via `http://localhost:3000`\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "We describe a `ToothbrushEvent` that can be shared with other utilizers via the example service from our paper. \n\n```yaml\nopenapi: \"3.0.0\"\nx-tira: \n  utilizer:\n    - name: \"AWS\"\n      non_eu_country: true\n      country: \"UK\"\ninfo:\n  version: \"1.0.2\"\n  description: \"This service can share health data with other health data services and insurances\"\n  title: \"Health Data Sharing Service\"\nservers: \n  - url: \"https://health.domain.tld\"\npaths:\n  \"/{user_id}/toothbrush/share\":\n    parameters:\n      - name: user_id\n        in: \"path\"\n        required: true\n        description: \"User ID of a Health Data Hub User\"\n        schema:\n            type : integer\n    get: \n      description: Get an array of Toothbrush Events for a given time interval.\n      parameters:\n        - name: startday\n          in: \"query\"\n          schema:\n            type : string\n            format: date-time\n          required: true\n          description: \"Start date of requested interval.\"\n        - name: endday\n          in: \"query\"\n          schema:\n            type : string\n            format: date-time\n          description: \"End date of requested interval.\"\n      responses:\n        200:\n          description: \"Request successful.\"\n          content: \n            application/json:\n              schema:\n                $ref: '#/components/schemas/ToothbrushEvent'\ncomponents:\n  schemas:\n    ToothbrushEvent:\n      type: \"object\"\n      required:\n        - user_id\n      properties:\n        seconds:\n          type: \"integer\"\n        datetime:\n          type: \"string\"\n        user_id:\n          type: \"integer\"\n      x-tira: \n        retention-time:\n          volatile: true\n        special_category:\n          category: \"Health Data\"\n        purposes:\n          yappl:\n            '{\n               \"id\":123,\n               \"preference\":[\n                  {\n                     \"rule\":{\n                        \"purpose\":{\n                           \"permitted\": [ \"FitnessData Sharing\", \"Health Insurance Bonus Program\" ],\n                           \"excluded\": [ ... ]\n                        },\n                        \"utilizer\":{\n                           \"permitted\": [ ... ],\n                           \"excluded\": [ ... ]\n                        },\n                        \"transformation\": [ ... ],\n                        \"valid_from\":\"2021-06-09T00:00:00.000Z\",\n                        \"exp_date\":\"0000-01-01T00:00:00.000Z\"\n                     }\n                  }\n               ]\n            }'\n        profiling:\n          reason: \"Health profile based on series of health related behaviour.\"\n        utilizer:\n          - name: \"MyFitnessPal\"\n            non_eu_country: false\n          - name: \"Strava\"\n            non_eu_country: true\n            country: \"USA\"\n        utilizer_category:\n          - name: \"Health Insurance Company\"\n            country: \"Germany\"\n            non_eu_country: false\n            type: \"Insurance Company\"\n            sector: \"Insurance\"\n            sub_sector: \n              - \"Health Insurance\"\n              - \"Health Tax\"\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Example of *x-tira* in an OpenAPI document",
+                "parent_header": [
+                    "TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/README.md"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9381528069770717,
+            "technique": "supervised_classification"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{gruenewald2021tira,\n    year = {2021},\n    doi = {10.1109/EuroSPW54576.2021.00039},\n    publisher = {IEEE Computer Society},\n    booktitle = {2021 IEEE European Symposium on Security and Privacy Workshops (EuroS\\&PW)},\n    author = {Elias Gr\u00fcnewald and Paul Wille and Frank Pallas and Maria C. Borges and Max-R. Ulbricht},\n    title = {TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/EuroSPW54576.2021.00039",
+                "title": "TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures",
+                "author": "Elias Gr\u00fcnewald and Paul Wille and Frank Pallas and Maria C. Borges and Max-R. Ulbricht"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main//docs/img/x-tira-pd.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main//docs/img/application_final.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main//docs/img/thub_stepcount_schema.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2106.06001"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/PrivacyEngineering/tira/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,1399 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:30:48"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/crytic/echidna",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "crytic",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2017-08-27T23:13:10Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-04T15:10:23Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/agpl-3.0",
+                "type": "License",
+                "name": "GNU Affero General Public License v3.0",
+                "url": "https://api.github.com/licenses/agpl-3.0",
+                "spdx_id": "AGPL-3.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "                    GNU AFFERO GENERAL PUBLIC LICENSE\n                       Version 3, 19 November 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n                            Preamble\n\n  The GNU Affero General Public License is a free, copyleft license for\nsoftware and other kinds of works, specifically designed to ensure\ncooperation with the community in the case of network server software.\n\n  The licenses for most software and other practical works are designed\nto take away your freedom to share and change the works.  By contrast,\nour General Public Licenses are intended to guarantee your freedom to\nshare and change all versions of a program--to make sure it remains free\nsoftware for all its users.\n\n  When we speak of free software, we are referring to freedom, not\nprice.  Our General Public Licenses are designed to make sure that you\nhave the freedom to distribute copies of free software (and charge for\nthem if you wish), that you receive source code or can get it if you\nwant it, that you can change the software or use pieces of it in new\nfree programs, and that you know you can do these things.\n\n  Developers that use our General Public Licenses protect your rights\nwith two steps: (1) assert copyright on the software, and (2) offer\nyou this License which gives you legal permission to copy, distribute\nand/or modify the software.\n\n  A secondary benefit of defending all users' freedom is that\nimprovements made in alternate versions of the program, if they\nreceive widespread use, become available for other developers to\nincorporate.  Many developers of free software are heartened and\nencouraged by the resulting cooperation.  However, in the case of\nsoftware used on network servers, this result may fail to come about.\nThe GNU General Public License permits making a modified version and\nletting the public access it on a server without ever releasing its\nsource code to the public.\n\n  The GNU Affero General Public License is designed specifically to\nensure that, in such cases, the modified source code becomes available\nto the community.  It requires the operator of a network server to\nprovide the source code of the modified version running there to the\nusers of that server.  Therefore, public use of a modified version, on\na publicly accessible server, gives the public access to the source\ncode of the modified version.\n\n  An older license, called the Affero General Public License and\npublished by Affero, was designed to accomplish similar goals.  This is\na different license, not a version of the Affero GPL, but Affero has\nreleased a new version of the Affero GPL which permits relicensing under\nthis license.\n\n  The precise terms and conditions for copying, distribution and\nmodification follow.\n\n                       TERMS AND CONDITIONS\n\n  0. Definitions.\n\n  \"This License\" refers to version 3 of the GNU Affero General Public License.\n\n  \"Copyright\" also means copyright-like laws that apply to other kinds of\nworks, such as semiconductor masks.\n\n  \"The Program\" refers to any copyrightable work licensed under this\nLicense.  Each licensee is addressed as \"you\".  \"Licensees\" and\n\"recipients\" may be individuals or organizations.\n\n  To \"modify\" a work means to copy from or adapt all or part of the work\nin a fashion requiring copyright permission, other than the making of an\nexact copy.  The resulting work is called a \"modified version\" of the\nearlier work or a work \"based on\" the earlier work.\n\n  A \"covered work\" means either the unmodified Program or a work based\non the Program.\n\n  To \"propagate\" a work means to do anything with it that, without\npermission, would make you directly or secondarily liable for\ninfringement under applicable copyright law, except executing it on a\ncomputer or modifying a private copy.  Propagation includes copying,\ndistribution (with or without modification), making available to the\npublic, and in some countries other activities as well.\n\n  To \"convey\" a work means any kind of propagation that enables other\nparties to make or receive copies.  Mere interaction with a user through\na computer network, with no transfer of a copy, is not conveying.\n\n  An interactive user interface displays \"Appropriate Legal Notices\"\nto the extent that it includes a convenient and prominently visible\nfeature that (1) displays an appropriate copyright notice, and (2)\ntells the user that there is no warranty for the work (except to the\nextent that warranties are provided), that licensees may convey the\nwork under this License, and how to view a copy of this License.  If\nthe interface presents a list of user commands or options, such as a\nmenu, a prominent item in the list meets this criterion.\n\n  1. Source Code.\n\n  The \"source code\" for a work means the preferred form of the work\nfor making modifications to it.  \"Object code\" means any non-source\nform of a work.\n\n  A \"Standard Interface\" means an interface that either is an official\nstandard defined by a recognized standards body, or, in the case of\ninterfaces specified for a particular programming language, one that\nis widely used among developers working in that language.\n\n  The \"System Libraries\" of an executable work include anything, other\nthan the work as a whole, that (a) is included in the normal form of\npackaging a Major Component, but which is not part of that Major\nComponent, and (b) serves only to enable use of the work with that\nMajor Component, or to implement a Standard Interface for which an\nimplementation is available to the public in source code form.  A\n\"Major Component\", in this context, means a major essential component\n(kernel, window system, and so on) of the specific operating system\n(if any) on which the executable work runs, or a compiler used to\nproduce the work, or an object code interpreter used to run it.\n\n  The \"Corresponding Source\" for a work in object code form means all\nthe source code needed to generate, install, and (for an executable\nwork) run the object code and to modify the work, including scripts to\ncontrol those activities.  However, it does not include the work's\nSystem Libraries, or general-purpose tools or generally available free\nprograms which are used unmodified in performing those activities but\nwhich are not part of the work.  For example, Corresponding Source\nincludes interface definition files associated with source files for\nthe work, and the source code for shared libraries and dynamically\nlinked subprograms that the work is specifically designed to require,\nsuch as by intimate data communication or control flow between those\nsubprograms and other parts of the work.\n\n  The Corresponding Source need not include anything that users\ncan regenerate automatically from other parts of the Corresponding\nSource.\n\n  The Corresponding Source for a work in source code form is that\nsame work.\n\n  2. Basic Permissions.\n\n  All rights granted under this License are granted for the term of\ncopyright on the Program, and are irrevocable provided the stated\nconditions are met.  This License explicitly affirms your unlimited\npermission to run the unmodified Program.  The output from running a\ncovered work is covered by this License only if the output, given its\ncontent, constitutes a covered work.  This License acknowledges your\nrights of fair use or other equivalent, as provided by copyright law.\n\n  You may make, run and propagate covered works that you do not\nconvey, without conditions so long as your license otherwise remains\nin force.  You may convey covered works to others for the sole purpose\nof having them make modifications exclusively for you, or provide you\nwith facilities for running those works, provided that you comply with\nthe terms of this License in conveying all material for which you do\nnot control copyright.  Those thus making or running the covered works\nfor you must do so exclusively on your behalf, under your direction\nand control, on terms that prohibit them from making any copies of\nyour copyrighted material outside their relationship with you.\n\n  Conveying under any other circumstances is permitted solely under\nthe conditions stated below.  Sublicensing is not allowed; section 10\nmakes it unnecessary.\n\n  3. Protecting Users' Legal Rights From Anti-Circumvention Law.\n\n  No covered work shall be deemed part of an effective technological\nmeasure under any applicable law fulfilling obligations under article\n11 of the WIPO copyright treaty adopted on 20 December 1996, or\nsimilar laws prohibiting or restricting circumvention of such\nmeasures.\n\n  When you convey a covered work, you waive any legal power to forbid\ncircumvention of technological measures to the extent such circumvention\nis effected by exercising rights under this License with respect to\nthe covered work, and you disclaim any intention to limit operation or\nmodification of the work as a means of enforcing, against the work's\nusers, your or third parties' legal rights to forbid circumvention of\ntechnological measures.\n\n  4. Conveying Verbatim Copies.\n\n  You may convey verbatim copies of the Program's source code as you\nreceive it, in any medium, provided that you conspicuously and\nappropriately publish on each copy an appropriate copyright notice;\nkeep intact all notices stating that this License and any\nnon-permissive terms added in accord with section 7 apply to the code;\nkeep intact all notices of the absence of any warranty; and give all\nrecipients a copy of this License along with the Program.\n\n  You may charge any price or no price for each copy that you convey,\nand you may offer support or warranty protection for a fee.\n\n  5. Conveying Modified Source Versions.\n\n  You may convey a work based on the Program, or the modifications to\nproduce it from the Program, in the form of source code under the\nterms of section 4, provided that you also meet all of these conditions:\n\n    a) The work must carry prominent notices stating that you modified\n    it, and giving a relevant date.\n\n    b) The work must carry prominent notices stating that it is\n    released under this License and any conditions added under section\n    7.  This requirement modifies the requirement in section 4 to\n    \"keep intact all notices\".\n\n    c) You must license the entire work, as a whole, under this\n    License to anyone who comes into possession of a copy.  This\n    License will therefore apply, along with any applicable section 7\n    additional terms, to the whole of the work, and all its parts,\n    regardless of how they are packaged.  This License gives no\n    permission to license the work in any other way, but it does not\n    invalidate such permission if you have separately received it.\n\n    d) If the work has interactive user interfaces, each must display\n    Appropriate Legal Notices; however, if the Program has interactive\n    interfaces that do not display Appropriate Legal Notices, your\n    work need not make them do so.\n\n  A compilation of a covered work with other separate and independent\nworks, which are not by their nature extensions of the covered work,\nand which are not combined with it such as to form a larger program,\nin or on a volume of a storage or distribution medium, is called an\n\"aggregate\" if the compilation and its resulting copyright are not\nused to limit the access or legal rights of the compilation's users\nbeyond what the individual works permit.  Inclusion of a covered work\nin an aggregate does not cause this License to apply to the other\nparts of the aggregate.\n\n  6. Conveying Non-Source Forms.\n\n  You may convey a covered work in object code form under the terms\nof sections 4 and 5, provided that you also convey the\nmachine-readable Corresponding Source under the terms of this License,\nin one of these ways:\n\n    a) Convey the object code in, or embodied in, a physical product\n    (including a physical distribution medium), accompanied by the\n    Corresponding Source fixed on a durable physical medium\n    customarily used for software interchange.\n\n    b) Convey the object code in, or embodied in, a physical product\n    (including a physical distribution medium), accompanied by a\n    written offer, valid for at least three years and valid for as\n    long as you offer spare parts or customer support for that product\n    model, to give anyone who possesses the object code either (1) a\n    copy of the Corresponding Source for all the software in the\n    product that is covered by this License, on a durable physical\n    medium customarily used for software interchange, for a price no\n    more than your reasonable cost of physically performing this\n    conveying of source, or (2) access to copy the\n    Corresponding Source from a network server at no charge.\n\n    c) Convey individual copies of the object code with a copy of the\n    written offer to provide the Corresponding Source.  This\n    alternative is allowed only occasionally and noncommercially, and\n    only if you received the object code with such an offer, in accord\n    with subsection 6b.\n\n    d) Convey the object code by offering access from a designated\n    place (gratis or for a charge), and offer equivalent access to the\n    Corresponding Source in the same way through the same place at no\n    further charge.  You need not require recipients to copy the\n    Corresponding Source along with the object code.  If the place to\n    copy the object code is a network server, the Corresponding Source\n    may be on a different server (operated by you or a third party)\n    that supports equivalent copying facilities, provided you maintain\n    clear directions next to the object code saying where to find the\n    Corresponding Source.  Regardless of what server hosts the\n    Corresponding Source, you remain obligated to ensure that it is\n    available for as long as needed to satisfy these requirements.\n\n    e) Convey the object code using peer-to-peer transmission, provided\n    you inform other peers where the object code and Corresponding\n    Source of the work are being offered to the general public at no\n    charge under subsection 6d.\n\n  A separable portion of the object code, whose source code is excluded\nfrom the Corresponding Source as a System Library, need not be\nincluded in conveying the object code work.\n\n  A \"User Product\" is either (1) a \"consumer product\", which means any\ntangible personal property which is normally used for personal, family,\nor household purposes, or (2) anything designed or sold for incorporation\ninto a dwelling.  In determining whether a product is a consumer product,\ndoubtful cases shall be resolved in favor of coverage.  For a particular\nproduct received by a particular user, \"normally used\" refers to a\ntypical or common use of that class of product, regardless of the status\nof the particular user or of the way in which the particular user\nactually uses, or expects or is expected to use, the product.  A product\nis a consumer product regardless of whether the product has substantial\ncommercial, industrial or non-consumer uses, unless such uses represent\nthe only significant mode of use of the product.\n\n  \"Installation Information\" for a User Product means any methods,\nprocedures, authorization keys, or other information required to install\nand execute modified versions of a covered work in that User Product from\na modified version of its Corresponding Source.  The information must\nsuffice to ensure that the continued functioning of the modified object\ncode is in no case prevented or interfered with solely because\nmodification has been made.\n\n  If you convey an object code work under this section in, or with, or\nspecifically for use in, a User Product, and the conveying occurs as\npart of a transaction in which the right of possession and use of the\nUser Product is transferred to the recipient in perpetuity or for a\nfixed term (regardless of how the transaction is characterized), the\nCorresponding Source conveyed under this section must be accompanied\nby the Installation Information.  But this requirement does not apply\nif neither you nor any third party retains the ability to install\nmodified object code on the User Product (for example, the work has\nbeen installed in ROM).\n\n  The requirement to provide Installation Information does not include a\nrequirement to continue to provide support service, warranty, or updates\nfor a work that has been modified or installed by the recipient, or for\nthe User Product in which it has been modified or installed.  Access to a\nnetwork may be denied when the modification itself materially and\nadversely affects the operation of the network or violates the rules and\nprotocols for communication across the network.\n\n  Corresponding Source conveyed, and Installation Information provided,\nin accord with this section must be in a format that is publicly\ndocumented (and with an implementation available to the public in\nsource code form), and must require no special password or key for\nunpacking, reading or copying.\n\n  7. Additional Terms.\n\n  \"Additional permissions\" are terms that supplement the terms of this\nLicense by making exceptions from one or more of its conditions.\nAdditional permissions that are applicable to the entire Program shall\nbe treated as though they were included in this License, to the extent\nthat they are valid under applicable law.  If additional permissions\napply only to part of the Program, that part may be used separately\nunder those permissions, but the entire Program remains governed by\nthis License without regard to the additional permissions.\n\n  When you convey a copy of a covered work, you may at your option\nremove any additional permissions from that copy, or from any part of\nit.  (Additional permissions may be written to require their own\nremoval in certain cases when you modify the work.)  You may place\nadditional permissions on material, added by you to a covered work,\nfor which you have or can give appropriate copyright permission.\n\n  Notwithstanding any other provision of this License, for material you\nadd to a covered work, you may (if authorized by the copyright holders of\nthat material) supplement the terms of this License with terms:\n\n    a) Disclaiming warranty or limiting liability differently from the\n    terms of sections 15 and 16 of this License; or\n\n    b) Requiring preservation of specified reasonable legal notices or\n    author attributions in that material or in the Appropriate Legal\n    Notices displayed by works containing it; or\n\n    c) Prohibiting misrepresentation of the origin of that material, or\n    requiring that modified versions of such material be marked in\n    reasonable ways as different from the original version; or\n\n    d) Limiting the use for publicity purposes of names of licensors or\n    authors of the material; or\n\n    e) Declining to grant rights under trademark law for use of some\n    trade names, trademarks, or service marks; or\n\n    f) Requiring indemnification of licensors and authors of that\n    material by anyone who conveys the material (or modified versions of\n    it) with contractual assumptions of liability to the recipient, for\n    any liability that these contractual assumptions directly impose on\n    those licensors and authors.\n\n  All other non-permissive additional terms are considered \"further\nrestrictions\" within the meaning of section 10.  If the Program as you\nreceived it, or any part of it, contains a notice stating that it is\ngoverned by this License along with a term that is a further\nrestriction, you may remove that term.  If a license document contains\na further restriction but permits relicensing or conveying under this\nLicense, you may add to a covered work material governed by the terms\nof that license document, provided that the further restriction does\nnot survive such relicensing or conveying.\n\n  If you add terms to a covered work in accord with this section, you\nmust place, in the relevant source files, a statement of the\nadditional terms that apply to those files, or a notice indicating\nwhere to find the applicable terms.\n\n  Additional terms, permissive or non-permissive, may be stated in the\nform of a separately written license, or stated as exceptions;\nthe above requirements apply either way.\n\n  8. Termination.\n\n  You may not propagate or modify a covered work except as expressly\nprovided under this License.  Any attempt otherwise to propagate or\nmodify it is void, and will automatically terminate your rights under\nthis License (including any patent licenses granted under the third\nparagraph of section 11).\n\n  However, if you cease all violation of this License, then your\nlicense from a particular copyright holder is reinstated (a)\nprovisionally, unless and until the copyright holder explicitly and\nfinally terminates your license, and (b) permanently, if the copyright\nholder fails to notify you of the violation by some reasonable means\nprior to 60 days after the cessation.\n\n  Moreover, your license from a particular copyright holder is\nreinstated permanently if the copyright holder notifies you of the\nviolation by some reasonable means, this is the first time you have\nreceived notice of violation of this License (for any work) from that\ncopyright holder, and you cure the violation prior to 30 days after\nyour receipt of the notice.\n\n  Termination of your rights under this section does not terminate the\nlicenses of parties who have received copies or rights from you under\nthis License.  If your rights have been terminated and not permanently\nreinstated, you do not qualify to receive new licenses for the same\nmaterial under section 10.\n\n  9. Acceptance Not Required for Having Copies.\n\n  You are not required to accept this License in order to receive or\nrun a copy of the Program.  Ancillary propagation of a covered work\noccurring solely as a consequence of using peer-to-peer transmission\nto receive a copy likewise does not require acceptance.  However,\nnothing other than this License grants you permission to propagate or\nmodify any covered work.  These actions infringe copyright if you do\nnot accept this License.  Therefore, by modifying or propagating a\ncovered work, you indicate your acceptance of this License to do so.\n\n  10. Automatic Licensing of Downstream Recipients.\n\n  Each time you convey a covered work, the recipient automatically\nreceives a license from the original licensors, to run, modify and\npropagate that work, subject to this License.  You are not responsible\nfor enforcing compliance by third parties with this License.\n\n  An \"entity transaction\" is a transaction transferring control of an\norganization, or substantially all assets of one, or subdividing an\norganization, or merging organizations.  If propagation of a covered\nwork results from an entity transaction, each party to that\ntransaction who receives a copy of the work also receives whatever\nlicenses to the work the party's predecessor in interest had or could\ngive under the previous paragraph, plus a right to possession of the\nCorresponding Source of the work from the predecessor in interest, if\nthe predecessor has it or can get it with reasonable efforts.\n\n  You may not impose any further restrictions on the exercise of the\nrights granted or affirmed under this License.  For example, you may\nnot impose a license fee, royalty, or other charge for exercise of\nrights granted under this License, and you may not initiate litigation\n(including a cross-claim or counterclaim in a lawsuit) alleging that\nany patent claim is infringed by making, using, selling, offering for\nsale, or importing the Program or any portion of it.\n\n  11. Patents.\n\n  A \"contributor\" is a copyright holder who authorizes use under this\nLicense of the Program or a work on which the Program is based.  The\nwork thus licensed is called the contributor's \"contributor version\".\n\n  A contributor's \"essential patent claims\" are all patent claims\nowned or controlled by the contributor, whether already acquired or\nhereafter acquired, that would be infringed by some manner, permitted\nby this License, of making, using, or selling its contributor version,\nbut do not include claims that would be infringed only as a\nconsequence of further modification of the contributor version.  For\npurposes of this definition, \"control\" includes the right to grant\npatent sublicenses in a manner consistent with the requirements of\nthis License.\n\n  Each contributor grants you a non-exclusive, worldwide, royalty-free\npatent license under the contributor's essential patent claims, to\nmake, use, sell, offer for sale, import and otherwise run, modify and\npropagate the contents of its contributor version.\n\n  In the following three paragraphs, a \"patent license\" is any express\nagreement or commitment, however denominated, not to enforce a patent\n(such as an express permission to practice a patent or covenant not to\nsue for patent infringement).  To \"grant\" such a patent license to a\nparty means to make such an agreement or commitment not to enforce a\npatent against the party.\n\n  If you convey a covered work, knowingly relying on a patent license,\nand the Corresponding Source of the work is not available for anyone\nto copy, free of charge and under the terms of this License, through a\npublicly available network server or other readily accessible means,\nthen you must either (1) cause the Corresponding Source to be so\navailable, or (2) arrange to deprive yourself of the benefit of the\npatent license for this particular work, or (3) arrange, in a manner\nconsistent with the requirements of this License, to extend the patent\nlicense to downstream recipients.  \"Knowingly relying\" means you have\nactual knowledge that, but for the patent license, your conveying the\ncovered work in a country, or your recipient's use of the covered work\nin a country, would infringe one or more identifiable patents in that\ncountry that you have reason to believe are valid.\n\n  If, pursuant to or in connection with a single transaction or\narrangement, you convey, or propagate by procuring conveyance of, a\ncovered work, and grant a patent license to some of the parties\nreceiving the covered work authorizing them to use, propagate, modify\nor convey a specific copy of the covered work, then the patent license\nyou grant is automatically extended to all recipients of the covered\nwork and works based on it.\n\n  A patent license is \"discriminatory\" if it does not include within\nthe scope of its coverage, prohibits the exercise of, or is\nconditioned on the non-exercise of one or more of the rights that are\nspecifically granted under this License.  You may not convey a covered\nwork if you are a party to an arrangement with a third party that is\nin the business of distributing software, under which you make payment\nto the third party based on the extent of your activity of conveying\nthe work, and under which the third party grants, to any of the\nparties who would receive the covered work from you, a discriminatory\npatent license (a) in connection with copies of the covered work\nconveyed by you (or copies made from those copies), or (b) primarily\nfor and in connection with specific products or compilations that\ncontain the covered work, unless you entered into that arrangement,\nor that patent license was granted, prior to 28 March 2007.\n\n  Nothing in this License shall be construed as excluding or limiting\nany implied license or other defenses to infringement that may\notherwise be available to you under applicable patent law.\n\n  12. No Surrender of Others' Freedom.\n\n  If conditions are imposed on you (whether by court order, agreement or\notherwise) that contradict the conditions of this License, they do not\nexcuse you from the conditions of this License.  If you cannot convey a\ncovered work so as to satisfy simultaneously your obligations under this\nLicense and any other pertinent obligations, then as a consequence you may\nnot convey it at all.  For example, if you agree to terms that obligate you\nto collect a royalty for further conveying from those to whom you convey\nthe Program, the only way you could satisfy both those terms and this\nLicense would be to refrain entirely from conveying the Program.\n\n  13. Remote Network Interaction; Use with the GNU General Public License.\n\n  Notwithstanding any other provision of this License, if you modify the\nProgram, your modified version must prominently offer all users\ninteracting with it remotely through a computer network (if your version\nsupports such interaction) an opportunity to receive the Corresponding\nSource of your version by providing access to the Corresponding Source\nfrom a network server at no charge, through some standard or customary\nmeans of facilitating copying of software.  This Corresponding Source\nshall include the Corresponding Source for any work covered by version 3\nof the GNU General Public License that is incorporated pursuant to the\nfollowing paragraph.\n\n  Notwithstanding any other provision of this License, you have\npermission to link or combine any covered work with a work licensed\nunder version 3 of the GNU General Public License into a single\ncombined work, and to convey the resulting work.  The terms of this\nLicense will continue to apply to the part which is the covered work,\nbut the work with which it is combined will remain governed by version\n3 of the GNU General Public License.\n\n  14. Revised Versions of this License.\n\n  The Free Software Foundation may publish revised and/or new versions of\nthe GNU Affero General Public License from time to time.  Such new versions\nwill be similar in spirit to the present version, but may differ in detail to\naddress new problems or concerns.\n\n  Each version is given a distinguishing version number.  If the\nProgram specifies that a certain numbered version of the GNU Affero General\nPublic License \"or any later version\" applies to it, you have the\noption of following the terms and conditions either of that numbered\nversion or of any later version published by the Free Software\nFoundation.  If the Program does not specify a version number of the\nGNU Affero General Public License, you may choose any version ever published\nby the Free Software Foundation.\n\n  If the Program specifies that a proxy can decide which future\nversions of the GNU Affero General Public License can be used, that proxy's\npublic statement of acceptance of a version permanently authorizes you\nto choose that version for the Program.\n\n  Later license versions may give you additional or different\npermissions.  However, no additional obligations are imposed on any\nauthor or copyright holder as a result of your choosing to follow a\nlater version.\n\n  15. Disclaimer of Warranty.\n\n  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY\nAPPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT\nHOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY\nOF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM\nIS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF\nALL NECESSARY SERVICING, REPAIR OR CORRECTION.\n\n  16. Limitation of Liability.\n\n  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\nWILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS\nTHE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY\nGENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE\nUSE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF\nDATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD\nPARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),\nEVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGES.\n\n  17. Interpretation of Sections 15 and 16.\n\n  If the disclaimer of warranty and limitation of liability provided\nabove cannot be given local legal effect according to their terms,\nreviewing courts shall apply local law that most closely approximates\nan absolute waiver of all civil liability in connection with the\nProgram, unless a warranty or assumption of liability accompanies a\ncopy of the Program in return for a fee.\n\n                     END OF TERMS AND CONDITIONS\n\n            How to Apply These Terms to Your New Programs\n\n  If you develop a new program, and you want it to be of the greatest\npossible use to the public, the best way to achieve this is to make it\nfree software which everyone can redistribute and change under these terms.\n\n  To do so, attach the following notices to the program.  It is safest\nto attach them to the start of each source file to most effectively\nstate the exclusion of warranty; and each file should have at least\nthe \"copyright\" line and a pointer to where the full notice is found.\n\n    <one line to give the program's name and a brief idea of what it does.>\n    Copyright (C) <year>  <name of author>\n\n    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU Affero General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU Affero General Public License for more details.\n\n    You should have received a copy of the GNU Affero General Public License\n    along with this program.  If not, see <https://www.gnu.org/licenses/>.\n\nAlso add information on how to contact you by electronic and paper mail.\n\n  If your software can interact with users remotely through a computer\nnetwork, you should also make sure that it provides a way for users to\nget its source.  For example, if your program is a web application, its\ninterface could display a \"Source\" link that leads users to an archive\nof the code.  There are many ways you could offer source, and different\nsolutions will be better for different programs; see section 13 for the\nspecific requirements.\n\n  You should also get your employer (if you work as a programmer) or school,\nif any, to sign a \"copyright disclaimer\" for the program, if necessary.\nFor more information on this, and how to apply and follow the GNU AGPL, see\n<https://www.gnu.org/licenses/>.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/LICENSE"
+        },
+        {
+            "result": {
+                "value": "Echidna is licensed and distributed under the [AGPLv3 license](https://github.com/crytic/echidna/blob/master/LICENSE).\n",
+                "type": "Text_excerpt",
+                "original_header": "License",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Ethereum smart contract fuzzer",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Echidna is a weird creature that eats bugs and is highly electrosensitive (with apologies to Jacob Stanley) \nMore seriously, Echidna is a Haskell program designed for fuzzing/property-based testing of Ethereum smart contracts. It uses sophisticated grammar-based fuzzing campaigns based on a [contract ABI](https://solidity.readthedocs.io/en/develop/abi-spec.html) to falsify user-defined predicates or [Solidity assertions](https://solidity.readthedocs.io/en/develop/control-structures.html#id4). We designed Echidna with modularity in mind, so it can be easily extended to include new mutations or test specific contracts in specific cases.\n \n",
+                "original_header": "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>"
+            },
+            "confidence": 0.9798764938602431,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": ".. and [a beautiful high-resolution handcrafted logo](https://raw.githubusercontent.com/crytic/echidna/master/echidna.png). \n",
+                "original_header": "Features"
+            },
+            "confidence": 0.9628479575834686,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "echidna",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "crytic/echidna",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/crytic/echidna/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/crytic/echidna/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2718,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "ethereum, evm, fuzzer, security, smart-contracts, solidity, testing",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 362,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/trailofbits/echidna/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Haskell",
+                "name": "Haskell",
+                "type": "Programming_language",
+                "size": 307449
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Solidity",
+                "name": "Solidity",
+                "type": "Programming_language",
+                "size": 298955
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Nix",
+                "name": "Nix",
+                "type": "Programming_language",
+                "size": 7769
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 2086
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 764
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/165676709",
+                "tag": "v2.2.4",
+                "name": "Echidna 2.2.4",
+                "author": {
+                    "name": "elopez",
+                    "type": "User"
+                },
+                "description": "Echidna 2.2.4 is an exciting release that brings a host of improvements in fuzzing speed and user experience. This update:\r\n\r\n* **Boosts performance** through optimized shrinking and multicore fuzzing. Adjustments made to our multi-worker implementation will provide increased performance when multiple workers are in use, meaning you can now have a faster and more scalable fuzzing experience. Echidna will now by default run between one to four workers, based on the available CPU cores. While we have set an intelligent default logic, you can continue to manually control the number of workers with the `workers` config option or `--workers` CLI switch. Another welcome tweak is in the shrinking process where a single worker now handles a shrinking task to minimize contention.\r\n\r\n* **Enhances user interface** with handy shortcuts, added metrics, more informative messages, and clearer error responses. The new shortcuts allow for swiftly toggling the visibility of the tests and log panels (`t` and `l`). The newly introduced performance metric `gas/s` should be a more user-friendly indicator of execution performance than its predecessor `calls/s`. Expect insightful time measurements when saving coverage and an added message upon saving reproducers. Last but not least, we improved the error messages in various conditions, for better clarity and ease of understanding.\r\n\r\n* **Adds initial support to TLOAD/TSTORE opcodes** as we continue our work towards achieving full compatibility with Cancun. Note that other new opcodes from Cancun are still not supported, so we recommend working with solc 0.8.24 or older for the time being.\r\n\r\n* **Introduces more configuration options** including the ability to specify the Etherscan API key via the [config file](https://github.com/crytic/echidna/blob/v2.2.4/tests/solidity/basic/default.yaml#L90-L91).\r\n\r\nTake a peek at Echidna v2.2.4 in action fuzzing `assert.sol`:\r\n\r\n![Echidna 2.2.4 fuzzing the example in `assert.sol`](https://github.com/user-attachments/assets/7c32a220-5f56-492e-9500-bd340708a300)\r\n\r\n\r\nThe full changelog is provided below:\r\n\r\n## Added\r\n* Toggle tests and log panes on t and l by @arcz in https://github.com/crytic/echidna/pull/1197\r\n* Use measureIO when saving coverage by @samalws-tob in https://github.com/crytic/echidna/pull/1202\r\n* Adjust default GC allocation area by @elopez in https://github.com/crytic/echidna/pull/1228\r\n* Update filterFallbacks to be selective rather than all-or-nothing by @samalws-tob in https://github.com/crytic/echidna/pull/1200\r\n* Add symbolic execution by @samalws-tob in https://github.com/crytic/echidna/pull/1216\r\n* Support configuring Etherscan API key via config file by @elopez in https://github.com/crytic/echidna/pull/1227\r\n* Allow to use specific filter for direct symexec by @ggrieco-tob in https://github.com/crytic/echidna/pull/1251\r\n* Display assertion failure immediately once falsified in text mode by @samalws-tob in https://github.com/crytic/echidna/pull/1271\r\n* Emit log message when saving reproducers by @samalws-tob in https://github.com/crytic/echidna/pull/1273\r\n* Emit \"saved reproducer\" log message as event rather than putStrLn by @samalws-tob in https://github.com/crytic/echidna/pull/1274\r\n* Show gas per second in the UI by @samalws-tob in https://github.com/crytic/echidna/pull/1279\r\n* Show trace on UnknownFailure by @samalws-tob in https://github.com/crytic/echidna/pull/1283\r\n* Initial support for tstore/tload by @ggrieco-tob in https://github.com/crytic/echidna/pull/1286\r\n* Raise default number of workers by @elopez on https://github.com/crytic/echidna/pull/1288 **[BREAKING CHANGE]**\r\n\r\n## Fixed\r\n* Improve delay shrinking by @arcz in https://github.com/crytic/echidna/pull/1196\r\n* Improved shrinking removing reverts from reproducers by @ggrieco-tob in https://github.com/crytic/echidna/pull/1250\r\n* Shrink on one worker by @arcz in https://github.com/crytic/echidna/pull/1280\r\n* Fix Windows support after crytic-compile changes by @elopez in https://github.com/crytic/echidna/pull/1235\r\n* ci, release: pin macOS runners to the correct architectures by @elopez in https://github.com/crytic/echidna/pull/1244\r\n* Avoid a crash when invalid filtering is used and provide a better error message by @ggrieco-tob in https://github.com/crytic/echidna/pull/1258\r\n* Improve max code size error message by @arcz in https://github.com/crytic/echidna/pull/1269\r\n* Fix MVar issue by @samalws-tob in https://github.com/crytic/echidna/pull/1281\r\n* Minor change for symExecTimeout comments by @samalws-tob in https://github.com/crytic/echidna/pull/1285\r\n* chore: fix some typos by @yetyear in https://github.com/crytic/echidna/pull/1215\r\n* Fix typos by @xiaoxianBoy in https://github.com/crytic/echidna/pull/1217\r\n* chore: remove repetitive word by @findseat in https://github.com/crytic/echidna/pull/1232\r\n* Fix some typos in comments by @momantech in https://github.com/crytic/echidna/pull/1238\r\n* chore: fix some comments by @cangqiaoyuzhuo in https://github.com/crytic/echidna/pull/1272\r\n* Fix typos by @omahs in https://github.com/crytic/echidna/pull/1287\r\n* Docs improvement by @nnsW3 in https://github.com/crytic/echidna/pull/1278\r\n\r\n## Updated\r\n* Bump softprops/action-gh-release from 0.1.15 to 2.0.3 by @dependabot in https://github.com/crytic/echidna/pull/1203\r\n* Bump softprops/action-gh-release from 2.0.3 to 2.0.4 by @dependabot in https://github.com/crytic/echidna/pull/1220\r\n* Bump softprops/action-gh-release from 2.0.4 to 2.0.5 by @dependabot in https://github.com/crytic/echidna/pull/1255\r\n* Bump softprops/action-gh-release from 2.0.5 to 2.0.6 by @dependabot in https://github.com/crytic/echidna/pull/1277\r\n* Bump cachix/install-nix-action from 25 to 26 by @dependabot in https://github.com/crytic/echidna/pull/1204\r\n* Bump cachix/install-nix-action from 26 to 27 by @dependabot in https://github.com/crytic/echidna/pull/1263\r\n* Bump DeterminateSystems/magic-nix-cache-action from 3 to 4 by @dependabot in https://github.com/crytic/echidna/pull/1222\r\n* Bump DeterminateSystems/magic-nix-cache-action from 4 to 6 by @dependabot in https://github.com/crytic/echidna/pull/1257\r\n* Bump DeterminateSystems/magic-nix-cache-action from 6 to 7 by @dependabot in https://github.com/crytic/echidna/pull/1267\r\n* Bump DeterminateSystems/nix-installer-action from 9 to 10 by @dependabot in https://github.com/crytic/echidna/pull/122\r\n* Bump DeterminateSystems/nix-installer-action from 10 to 11 by @dependabot in https://github.com/crytic/echidna/pull/1256\r\n* Bump DeterminateSystems/nix-installer-action from 11 to 12 by @dependabot in https://github.com/crytic/echidna/pull/1268\r\n* Bump cachix/cachix-action from 14 to 15 by @dependabot in https://github.com/crytic/echidna/pull/1262\r\n* Bump docker/build-push-action from 5 to 6 by @dependabot in https://github.com/crytic/echidna/pull/1275\r\n* Bump sigstore/gh-action-sigstore-python from 2.1.1 to 3.0.0 by @dependabot in https://github.com/crytic/echidna/pull/1289\r\n* Upgrade hevm to latest `echidna-patches` commit by @elopez in https://github.com/crytic/echidna/pull/1243\r\n\r\n## New Contributors\r\n* @yetyear made their first contribution in https://github.com/crytic/echidna/pull/1215\r\n* @xiaoxianBoy made their first contribution in https://github.com/crytic/echidna/pull/1217\r\n* @findseat made their first contribution in https://github.com/crytic/echidna/pull/1232\r\n* @momantech made their first contribution in https://github.com/crytic/echidna/pull/1238\r\n* @cangqiaoyuzhuo made their first contribution in https://github.com/crytic/echidna/pull/1272\r\n* @nnsW3 made their first contribution in https://github.com/crytic/echidna/pull/1278\r\n\r\n**Full Changelog**: https://github.com/crytic/echidna/compare/v2.2.3...v2.2.4",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.2.4",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.2.4",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.2.4",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/165676709",
+                "release_id": 165676709,
+                "date_created": "2024-07-16T15:21:32Z",
+                "date_published": "2024-07-16T15:23:22Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/144633680",
+                "tag": "v2.2.3",
+                "name": "Echidna 2.2.3",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## What's Changed\r\n* Bump actions/cache from 3 to 4 by @dependabot in https://github.com/crytic/echidna/pull/1173\r\n* Refactor BuildOutput by @arcz in https://github.com/crytic/echidna/pull/1174\r\n* Validate corpus while replaying by @arcz in https://github.com/crytic/echidna/pull/1177\r\n* Refactor by @arcz in https://github.com/crytic/echidna/pull/1178\r\n* Save traces for every transaction in reproducer by @arcz in https://github.com/crytic/echidna/pull/1180\r\n* Display contract names in UI by @arcz in https://github.com/crytic/echidna/pull/1181\r\n* Fix faulty corpus transaction detection by @arcz in https://github.com/crytic/echidna/pull/1184\r\n* Bump DeterminateSystems/magic-nix-cache-action from 2 to 3 by @dependabot in https://github.com/crytic/echidna/pull/1186\r\n* nix: enhance TERMINFO for Linux builds by @elopez in https://github.com/crytic/echidna/pull/1187\r\n* Update hevm to 0.53.0 by @arcz in https://github.com/crytic/echidna/pull/1189\r\n* Update README.md by @0xicingdeath in https://github.com/crytic/echidna/pull/1190\r\n* Speed up shrinking in some cases by @samalws-tob in https://github.com/crytic/echidna/pull/1192\r\n* feat: add CLI commands for RPC URL and block number by @penandlim in https://github.com/crytic/echidna/pull/1194\r\n* Echidna 2.2.3 by @arcz in https://github.com/crytic/echidna/pull/1195\r\n\r\n## New Contributors\r\n* @penandlim made their first contribution in https://github.com/crytic/echidna/pull/1194\r\n\r\n**Full Changelog**: https://github.com/crytic/echidna/compare/v2.2.2...v2.2.3",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.2.3",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.2.3",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.2.3",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/144633680",
+                "release_id": 144633680,
+                "date_created": "2024-03-04T12:42:16Z",
+                "date_published": "2024-03-04T13:59:00Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/137687995",
+                "tag": "v2.2.2",
+                "name": "Echidna 2.2.2",
+                "author": {
+                    "name": "github-actions[bot]",
+                    "type": "Bot"
+                },
+                "description": "## What's Changed\r\n- Save corpus and reproducers continuously (#1167)\r\n- Deliver status information using server-sent events (#1131)\r\n- Performance improvements for coverage collection (#1160)\r\n- Make slither optional (#1159)\r\n- Rich trace printing (#1157)\r\n- Static builds and release workflow (#1133)\r\n- Re-enables using slither for vyper files (#1108)\r\n- Dependency updates (#1153, #1096, #1154)\r\n\r\n**Full Changelog**: https://github.com/crytic/echidna/compare/v2.2.1...v2.2.2",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.2.2",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.2.2",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.2.2",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/137687995",
+                "release_id": 137687995,
+                "date_created": "2024-01-19T09:43:21Z",
+                "date_published": "2024-01-22T10:22:03Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/112996359",
+                "tag": "v2.2.1",
+                "name": "Echidna 2.2.1",
+                "author": {
+                    "name": "arcz",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* Shanghai fork support with hevm 0.51.3 (#1090)\r\n* Fixed coverage collection for delegatecalls (#1083)\r\n* Added events to JSON output (#1069)\r\n* Changed event sequence to be displayed on new lines (#1079)\r\n* Improved \"No tests found in ABI\" error message (#1077)\r\n* Refactored code (#1070, #1074)\r\n\r\n**Full Changelog**: https://github.com/crytic/echidna/compare/v2.2.0...v2.2.1",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.2.1",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.2.1",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.2.1",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/112996359",
+                "release_id": 112996359,
+                "date_created": "2023-07-20T16:16:59Z",
+                "date_published": "2023-07-20T16:23:43Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/103806562",
+                "tag": "v2.2.0",
+                "name": "Echidna 2.2.0",
+                "author": {
+                    "name": "arcz",
+                    "type": "User"
+                },
+                "description": "Echidna 2.2.0 contains significant improvements to the fuzzing speed and UX:\r\n* **Multicore fuzzing & optimized coverage collection.** Those combined delivered up to 20x fuzzing speed improvement on a real-world internal benchmark. The number of workers can be configured with `workers` config option or `--workers` CLI switch. Echidna runs only one worker by default, but this might change in future releases.\r\n* **Lcov support.** It is output by default and can be controlled with the [coverageFormats config option](https://github.com/crytic/echidna/blob/v2.2.0/tests/solidity/basic/default.yaml#L81). This enables external coverage tools such as [genhtml](https://linux.die.net/man/1/genhtml) or [VSCode plugins](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters).\r\n* **More configuration options.** Added `--timeout <seconds>` CLI switch. RPC URL and block number can now be also [specified in the config file](https://github.com/crytic/echidna/blob/v2.2.0/tests/solidity/basic/default.yaml#L86-L89) for on-chain fuzzing.\r\n* **UI improvements.** Echidna now outputs an event log for any fuzzing breakthrough, such as new coverage. The interactive UI was significantly reworked to accommodate all the changes from this release (see the screenshot below).\r\n\r\n<img width=\"855\" alt=\"Screenshot 2023-05-21 at 20 30 03\" src=\"https://github.com/crytic/echidna/assets/4679721/30439729-9ddb-4b70-9e50-316390e7b4de\">\r\n\r\nNote, we changed the way reverts are shown in coverage reports. Now, only the line where a revert happened is marked, instead of the whole path.\r\n\r\nThe full changelog:\r\n\r\n## Added\r\n\r\n* Multicore fuzzing (#963, #1033, #1026, #1035)\r\n* Lcov format support (#1029)\r\n* Experimental power number generator for uints (#892)\r\n\r\n## Changed\r\n\r\n* Coverage collection optimization (#1003, #1041)\r\n* On-chain fuzzing improvements (#1017)\r\n* Refactored code (#1020, #1021)\r\n* Updated dependencies (#1022, #1023)\r\n* UI improvements (#1031, #1032, #1034, #1040)\r\n* Readme improvements (#1019)",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.2.0",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.2.0",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.2.0",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/103806562",
+                "release_id": 103806562,
+                "date_created": "2023-05-21T20:02:15Z",
+                "date_published": "2023-05-22T12:33:04Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/98197051",
+                "tag": "v2.1.1",
+                "name": "Echidna 2.1.1",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "This is a release focused on fixes and minor features. User facing changes include:\r\n\r\n* Optimized the memory usage during the fuzzing campaign.\r\n* Added initial compatibility with invariant mode from Foundry.\r\n* Added additional information on how Echidna spend time during startup.\r\n* Fixed several small rare crashes.\r\n\r\nThis release also include a number of refactoring changes to make the code easier to improve in future. \r\n\r\n## Added\r\n* Added missing space in ProcessorNotFound message (#977)\r\n* Added measurement and log of external actions (#988)\r\n* Avoid using cheat code address to form fuzzing call sequences (#993)\r\n* Implemented invariant testing from foundry (#989)\r\n\r\n## Changed\r\n* hevm upgraded to 0.50.4 (#986)\r\n* Cleaned and improved codebase (#990, #994, #995, #997)\r\n* Make frequently modified fields strict (#1000)\r\n* Force corpus evaluation (#1002)\r\n* Improved text/headless UI (#991, #1006, #1007, #1009)",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.1.1",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.1.1",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.1.1",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/98197051",
+                "release_id": 98197051,
+                "date_created": "2023-04-05T14:34:16Z",
+                "date_published": "2023-04-05T15:51:12Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/95233115",
+                "tag": "v2.1.0",
+                "name": "Echidna 2.1.0",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "Echidna 2.1.0 introduces on-chain fuzzing. Echidna can now run starting with an existing state provided by an external RPC service (Infura, Alchemy, local node, etc). This enables users to speed up the fuzzing setup when using already deployed contracts. For instance:\r\n\r\n```solidity\r\ncontract TestCompoundEthMint {\r\n constructor() {\r\n    hevm.roll(16771449);  // sets the correct block number\r\n    hevm.warp(1678131671); // sets the expected timestamp for the block number\r\n  }\r\n  \u2026\r\n  Compound comp = Compound(0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5);\r\n  function assertNoBalance() public payable {\r\n    require(comp.balanceOf(address(this)) == 0);\r\n    comp.mint{value: msg.value}();\r\n    assert(comp.balanceOf(address(this)) == 0);\r\n  }\r\n}\r\n```\r\n\r\nWe can specify the RPC endpoint for Echidna to use before running the fuzzing campaign with the following environment variables: \r\n\r\n```\r\nexport ECHIDNA_RPC_URL=http://.. ECHIDNA_RPC_BLOCK=16771449\r\n```\r\n\r\nAnd then Echidna can be executed as usual. At the end of the execution, if the source code mapping of any executed on-chain contract is available on Etherscan, it will be automatically fetched for the coverage report. Optionally, an Etherscan key can be provided using the `ETHERSCAN_API_KEY` environment variable.\r\n\r\nThis release also provides experimental support for Windows binaries. \r\n\r\nAdditionally, this release also includes fixes and a large refactor of several parts of the code that will facilitate the tool development and performance improvements. Other important changes are:\r\n\r\n* `echidna-test` executable was renamed as `echidna`\r\n* `multi-abi` config keyword was renamed to `allContracts`. `multi-abi` still works but will be removed in future.\r\n* FFI cheat code to allow execute execution from Solidity\r\n* Special UI screen to show when there is a crash in Echidna\r\n\r\n# Added\r\n* On-chain fuzzing (#927, #971) **[EXPERIMENTAL]**\r\n* Added Windows support (#943) **[EXPERIMENTAL]**\r\n* Added scrollbar to the UI (#915)\r\n* Added crash display to the UI (#944)\r\n* Added human-friendly errors for panic codes (#965)\r\n* Added support for the FFI cheatcode (#750)\r\n\r\n# Changed\r\n* Refactored code (#903, #906, #908, #924, #925, #928, #946, #956, #966, #968)\r\n* Updated dependencies (#942, #948)\r\n* Build and CI improvements (#912, #914, #917, #952, #967)\r\n* Renamed echidna-test binary to echidna (#826)\r\n* Renamed multi-abi mode to allContracts, multi-abi still works but will be removed in future (#934)\r\n\r\n# Removed\r\n* Removed generation of negative seeds (#933) **[BREAKING CHANGE]**\r\n\r\n# Fixed\r\n* Fixed method filtering in multi-abi mode (#950, #954)\r\n* Fixed config parsing for too large values (#935)\r\n* Fixed parsing string constants that start with 0x (#958)",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.1.0",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.1.0",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.1.0",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/95233115",
+                "release_id": 95233115,
+                "date_created": "2023-03-10T16:59:44Z",
+                "date_published": "2023-03-10T18:13:42Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/89571279",
+                "tag": "v2.0.5",
+                "name": "Echidna 2.0.5",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "This release migrates Echidna to the new [hevm](https://github.com/ethereum/hevm) implementation. Echidna can now use the prank cheat code that we recently [added to hevm](https://github.com/ethereum/hevm/pull/167). It lets you override the msg.sender value for the next external call:\r\n\r\n```solidity\r\ninterface Hevm {\r\n    ...\r\n    function prank(address) external;\r\n}\r\n\r\ncontract Test {\r\n    Hevm hevm = Hevm(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);\r\n    function echidna_test() {\r\n       hevm.prank(0x123..); \r\n       contract.f(); // msg.sender will be 0x123..\r\n       contract.g(); // msg.sender will be address(this)\r\n       ..\r\n    }\r\n} \r\n```\r\n\r\nPrank should be used carefully since it can introduce false positives if used to simulate calls from contracts. Please refer to [this documentation](https://hevm.dev/controlling-the-unit-testing-environment.html#cheat-codes) for the complete list of cheat codes.\r\n\r\nThe release also refactors several parts of the code to facilitate further Echidna development.\r\n\r\n# Added\r\n* Added saving and loading of reproducers for every test (#858)\r\n* Added events and revert reasons for any failure in the constructor (#871)\r\n\r\n# Fixed\r\n* Optimized constant generation (#898, #900)\r\n* Fixed how address are displayed in events (#891)\r\n* Update hevm to 0.50 (#884, #894, #896, #897, #901)\r\n* Fixed uninitialized sender addresses from etheno transactions (#823)\r\n* Fixed crash when minimizing inputs during optimization tests (#837)\r\n* Refactored code and removed useless dependencies (#856, #857, #874, #878, #895, #903)",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.0.5",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.0.5",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.0.5",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/89571279",
+                "release_id": 89571279,
+                "date_created": "2023-01-19T15:44:56Z",
+                "date_published": "2023-01-20T11:06:10Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/83990276",
+                "tag": "v2.0.4",
+                "name": "Echidna 2.0.4",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "This release introduces coverage reports as HTML files. This will ease the detection of uncovered code during fuzzing campaigns. It also includes bug fixes as well as a large refactor of several parts of the code. This means that new features and optimizations are easier to implement.\r\n\r\nEchidna 2.0.4 will automatically generate a coverage report in HTML in the corpus directory following the same approach as the text file report (e.g. covered.X.html). The report will show colors to signal which lines are covered either without errors (green), with a revert (yellow) or not covered at all (red).\r\n\r\n<img src=\"https://user-images.githubusercontent.com/31542053/203557048-1c12ff7a-821f-4d16-aafc-1aeace264a9a.png\" width=50% height=50%>\r\n\r\nAdditionally, lines with no color are not included in the bytecode.\r\n\r\n# Added\r\n* Added colored html for coverage output code (#816)\r\n* Added Homebrew installation instructions (#848) \r\n\r\n# Fixed\r\n* Fixed crash when parsing solc versions (#835) \r\n* Fixed long transactions and event lines in UI (#832)\r\n* Moved all nix stuff to flake and use nix-bundle-exe for macOS release (#851)\r\n* Updated codebase to GHC 9.0.2 (#846) \r\n* Refactored code and removed useless dependencies (#854, #853, #829, #827, #828)\r\n\r\n\r\nWatch [our live streaming series](https://www.twitch.tv/trailofbits) to learn how to use Echidna like a pro (see our recent blogpost: [\"We're streamers now\"](https://blog.trailofbits.com/2022/11/14/livestream-workshop-fuzzing-echidna-slither/))",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.0.4",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.0.4",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.0.4",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/83990276",
+                "release_id": 83990276,
+                "date_created": "2022-11-23T13:18:47Z",
+                "date_published": "2022-11-23T15:12:18Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/76715671",
+                "tag": "v2.0.3",
+                "name": "Echidna 2.0.3",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "This release focuses on getting enhanced coverage during a fuzzing campaign when handling non-utf8 strings, extreme signed integers and the fallback function. It also improved the scripts to build Docker containers.\r\n\r\n# Fixed\r\n* Avoid resetting accounts if there is a deployed contract (#795)\r\n* Fixed decoding non-utf8 strings from slither printer (#799)\r\n* Fixed generation and mutation of extreme signed integers (#791)\r\n* Removed fallback from signature map when it is not defined (#772)\r\n* Refactored Docker scripts and tests (#706)",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.0.3",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.0.3",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.0.3",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/76715671",
+                "release_id": 76715671,
+                "date_created": "2022-09-09T13:53:34Z",
+                "date_published": "2022-09-09T14:19:11Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/67911674",
+                "tag": "v2.0.2",
+                "name": "Echidna 2.0.2",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "This release eases the custom deployment of contracts at fixed addresses, improves the fuzzing's shrinking and fixes a crash the EVM emulation:\r\n\r\n```yaml\r\ndeployContracts: [[\"0x42\", \"ContractA\"], [\"0x43\", \"ContractB\"]]\r\ndeployBytecodes: [[\"0x44\", \"60806..\"]]\r\n```\r\n\r\nAll the contracts are deployed using [the `deployer` address](https://github.com/crytic/echidna/wiki/Config) and will produce an error if they fail.\r\n\r\n# Added \r\n* Added support for deployment of certain contracts or bytecode in specific addresses (#758)\r\n* Added support for detection and handling of ancient solc versions (#675)\r\n* Added explicit static flag and removed pthread one from ghc options (#768)\r\n\r\n# Fixed\r\n* Improved shrinking of dynamic arrays (#775)\r\n* Fixed git attribute to support building docker containers in Windows (#773)\r\n* Fixed crash when the EVM execution triggers more than one query (#760)\r\n",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.0.2",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.0.2",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.0.2",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/67911674",
+                "release_id": 67911674,
+                "date_created": "2022-05-26T12:09:00Z",
+                "date_published": "2022-05-26T12:12:04Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/63246552",
+                "tag": "v2.0.1",
+                "name": "Echidna 2.0.1",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "This release adds support for dapp/foundry properties, improves the input generation and fixes multiple minor bugs. \r\n\r\nEchidna supports writing properties/invariants using three different APIs:\r\n```solidity\r\nfunction echidna_property() public returns (bool) { // A specially named function with no arguments is required\r\n    // The following statement can trigger a failure depending on the returned value. Reverts will force a failure\r\n    return ..;\r\n} // side effects are *not* preserved\r\n\r\nfunction checkInvariant(..) public { // A function with any number of arguments is supported using \"--testMode assertion\"\r\n    assert(..); \r\n    // The following statement will always trigger a failure\r\n    emits AssertionFailure(..);    \r\n} // side effects are preserved\r\n\r\nfunction checkDappTest(..) public { // A function with one or more arguments are required using \"--testMode dapptest\"\r\n    // Any revert will cause a failure, otherwise it passes\r\n    ...\r\n} // side effects are preserved (but usually this runs in stateless mode)\r\n```\r\n\r\nEvery testing mode can be stateful (by default) or stateless (using `--seqLen 1`). Review [our documentation](https://github.com/crytic/building-secure-contracts/blob/master/program-analysis/echidna/testing-modes.md) for more details on how to use these APIs and the difference between stateful and stateless fuzzing. \r\n\r\n# Added \r\n* New testing mode: \"dapptest\" to run foundry and dapptool fuzz tests (#733, #745) (see an example [here](https://github.com/crytic/echidna/tree/master/tests/solidity/dapptest))\r\n* Generate more values closer to the maximum (#736)\r\n\r\n# Fixed\r\n* Expanded and improved command-line help (#741)\r\n* Fixed TERMINFO path for Nix release builds (#731)\r\n* Mitigated large memory consumption when replaying corpus (#725)\r\n* Fixed --shrink-limit to change shrink limit instead of test limit (#728)\r\n* Correctly show lines with multiple types of coverage\r\n* Restored nix support (#717, #743)\r\n\r\n# Removed\r\n* Optimized stateless fuzzing removing some specific mutators (#747)\r\n",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.0.1",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.0.1",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.0.1",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/63246552",
+                "release_id": 63246552,
+                "date_created": "2022-04-04T09:11:37Z",
+                "date_published": "2022-04-04T10:04:55Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/59348983",
+                "tag": "v2.0.0",
+                "name": "Echidna 2.0.0",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "Echidna 2.0.0 is a new major release of our fuzzing tool for smart contracts. All users of Echidna should move to version 2.0.0. We will not provide support for older releases.\r\n\r\n## Major new features\r\n\r\n* Detection of assertion failures in Solidity 0.8.x or greater, including automatic detection of [integer overflows, zero division, invalid casts, and more](https://docs.soliditylang.org/en/v0.8.0/control-structures.html?highlight=assert#panic-via-assert-and-error-via-require) \r\n* Automatic discovery of maximum values for functions that compute a value (e.g., `int256`) with `--test-mode optimization`\r\n* Automatic integer over- and underflow detection in Solidity 0.8.x or greater with `--test-mode overflow`. This mode detects integer issues across all functions of the tested contract. It shows inputs that cause under- or overflows without any additional configuration. For instance, it will detect an overflow in this code snippet without outside assistance:\r\n   ```solidity\r\n   function f(uint x, uint y) public {\r\n     uint z = x + y;\r\n     ... \r\n   }\r\n   ```\r\n\r\n* Automatic detection of contract destruction using `testDestruction` (which usually should trigger failures in other tests)\r\n* Assertion tests using events (e.g., `AssertionFailure(...)`) are improved to work even if the execution reverts\r\n\r\n## Enhanced user experience\r\n\r\nEchidna now shares why a test failed and what state the contract was in when it failed. Echidna now displays:\r\n\r\n* The cause that triggers a failure in a property or assertion (e.g., a revert in a property test) to help quickly detect unexpected failures in properties\r\n* A list of events or custom errors collected during the transaction that triggers a failure, which lets users print any state variable or computation using only events\r\n\r\n## Simplified test configuration\r\n\r\nEchidna 2.0.0 features a simplified interface, using a \"test mode\" to specify the type of tests performed. These are configured via `--test-mode` (CLI) or `testMode` (config file):\r\n\r\n* (Default for no arguments) Run user-defined property tests: `echidna-test contract.sol --test-mode property`\r\n* Detect integer overflows (Solidity 0.8.x+): `echidna-test contract.sol --test-mode overflow`\r\n* Find the maximum value for a function: `echidna-test contract.sol --test-mode optimization`\r\n* Execute every line of code without any testing target (\"unconstrained execution\"): `echidna-test contract.sol --test-mode exploration`\r\n* Detect assertion failures (previously `checkAsserts`): `echidna-test contract.sol --test-mode assertion`\r\n\r\n`checkAsserts` and `benchmarkMode` options have been removed.\r\n\r\n## Changelog\r\n\r\n### Added\r\n* Complete support for assertion detection in Solidity 0.8 and greater\r\n* New testing modes: function optimization\r\n* New testing mode: Integer under and overflow detection in solc 0.8 and greater\r\n* Events and cause of failure are now displayed\r\n* Added a new self-destruction test to check if any contract was destroyed\r\n* Added a new config option to enable or disabled all self-destruction tests using `testDestruction`\r\n\r\n### Removed\r\n* `checkAsserts` and `benchmarkMode` were removed in favor of `testMode` **[BREAKING CHANGE]**\r\n\r\n### Fixed\r\n* Revert cleans all the events\r\n* Incorrect handling of negative constants (#636)\r\n* Incorrect filtering of functions when using assertion mode (#690)\r\n* Value generation can fail in multi-abi mode (#579)\r\n* `psender` and `deployer` address are changed to be `0x10000` and `0x30000` for readability **[BREAKING CHANGE]**\r\n* Upgraded to hevm 0.49\r\n\r\n### Refactored\r\n* Refactored campaign and test internal data structures and code\r\n* Refactored unit test code and moved the related files to the tests directory\r\n* Refactored UI code",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.0.0",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.0.0",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.0.0",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/59348983",
+                "release_id": 59348983,
+                "date_created": "2022-02-11T16:47:44Z",
+                "date_published": "2022-02-11T17:39:24Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/54268906",
+                "tag": "v1.7.3",
+                "name": "Echidna 1.7.3",
+                "author": {
+                    "name": "incertia",
+                    "type": "User"
+                },
+                "description": "This is a small release with some minor bugfixes and quality of life improvements. User facing changes include:\r\n\r\n* removal of old compilation artifacts before starting another campaign\r\n* fixed incorrect function filtering in assertion mode\r\n* improved handling of negative constants\r\n* fixed source line printing within coverage\r\n\r\nSome less important changes are a version bump to hevm 0.48.0 and some nix improvements regarding slither.",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v1.7.3",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v1.7.3",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v1.7.3",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/54268906",
+                "release_id": 54268906,
+                "date_created": "2021-11-29T19:48:40Z",
+                "date_published": "2021-11-29T19:49:56Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/51994381",
+                "tag": "v2.0.0-b2",
+                "name": "Echidna 2.0.0 (beta 2)",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "Echidna 2.0.0 (beta 2) is the second beta release of the new version of our fuzzing tool for smart contracts, which continues with the new features, fixes and breaking changes. This release brings the following new major features:\r\n\r\n* Automatic integer overflow or underflow detection for solc 0.8.x or greater using `--test-mode overflow`. This mode detects integer issues across all the functions of the tested contract to show inputs cause under or overflows without modifying or adding anything in your code. For instance, it will detect an overflow here:\r\n   ```solidity\r\n   function f(uint x, uint y) public {\r\n     uint z = x + y;\r\n     ... \r\n   }\r\n   ```\r\n* Self destruction tests include any contract destruction (and not just the testing one). Additionally, they are disabled by default, making the UI easier to read.\r\n\r\nAdditionally, the `psender` and `deployer` addresses were changed to `0x10000` and `0x30000` respectively to be more readable. Please double check your properties to see if they work as expected. \r\n\r\n# Added \r\n* New testing mode: Integer under and overflow detection in solc 0.8 and greater **[UNSTABLE FEATURE]**\r\n* Added a new self-destruction test to check if any contract was destroyed. \r\n* Added new config options to enable or disabled all self-destruction tests using `testDestruction` **[BREAKING CHANGE]**\r\n\r\n# Removed\r\n* Self-destruction tests are disabled by default. **[BREAKING CHANGE]**\r\n\r\n# Fixed\r\n* psender and deployer address are changed to be `0x10000` and `0x30000`, to be more readable **[BREAKING CHANGE]**\r\n* Upgraded to hevm 0.48.",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.0.0-b2",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.0.0-b2",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.0.0-b2",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/51994381",
+                "release_id": 51994381,
+                "date_created": "2021-10-25T15:55:24Z",
+                "date_published": "2021-10-25T17:03:04Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/50801158",
+                "tag": "v2.0.0-b1",
+                "name": "Echidna 2.0.0 (beta 1)",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "Echidna 2.0.0 (beta 1) is the first beta release of the new version of our fuzzing tool for smart contracts, which brings a number of new features and breaking changes. If you need a stable release right now, please use [v1.7.2](https://github.com/crytic/echidna/releases/tag/v1.7.2), otherwise, we encourage everyone to test this new beta.\r\n\r\nEchidna 2.0 has the following new major features:\r\n\r\n* Full support for solc 0.8.x or greater to detect assertion failures, including automatic detection of [integer overflows, zero division, invalid casts, and others](https://docs.soliditylang.org/en/v0.8.0/control-structures.html?highlight=assert#panic-via-assert-and-error-via-require). \r\n* Assertion tests using events (e.g. `AssertionFailure(...)`) are improved to work even if the execution reverts.\r\n* Value optimization tests, where there is a function that computes a value (`int256`) and Echidna tries to find a maximum.  \r\n* Automatic detection of contract destruction (which usually should trigger failures in other tests).\r\n\r\nOn top of that, Echidna will show us valuable information regarding why the test is failing and what is the state of the contract when it failed:\r\n\r\n* The cause that triggers a failure in a property or assertion (e.g. a revert in a property test). This allows auditors to quickly detect unexpected failures in properties.\r\n* The list of events collected during the transaction that trigger a test failure (or that provides the maximum value of a certain function if optimization is used). This allows users to print any state variable or computation just using events.\r\n\r\nThis new release also features a simplified interface, using a \"test mode\" to specify what type of tests you want. This can be used directly in the command-line:\r\n\r\n* To test assertions and enable the automatic detection of integer overflows (if solc 0.8.x is used):\r\n\r\n```\r\nechidna-test contract.sol --test-mode assertion \r\n```\r\n\r\n* To run a value optimization and find the maximum value in some function:\r\n\r\n```\r\nechidna-test contract.sol --test-mode optimization\r\n```\r\n\r\n* To run unconstrained exploration mode, where echidna will try to execute every line of code without any testing target:\r\n\r\n```\r\nechidna-test contract.sol --test-mode exploration\r\n```\r\n\r\nFinally, by default, `--test-mode` is assumed to be `property`. This new version also **removes  `checkAssertion` and `benchmarkMode` config options**. Instead, users should specify `testMode` in the yaml file which can be one the values previously detailed. \r\n\r\n# Added\r\n* Complete support for assertion detection and other in solc 0.8 and greater\r\n* New testing modes: function optimization **[UNSTABLE FEATURE]**\r\n* Events and cause of failure is now displayed **[UNSTABLE FEATURE]**\r\n* Automatic detection of destructed contracts\r\n\r\n# Removed\r\n* `checkAssertion` and `benchmarkMode` were removed in favor of `testMode` **[BREAKING CHANGE]**\r\n\r\n# Fixed\r\n* Revert cleans all the events\r\n* Incorrect handling of negative constants (#636)\r\n* Incorrect filtering of functions when using assertion mode (#690)\r\n* Value generation can fail in multi-abi mode (#579)\r\n\r\n# Refactored\r\n* Refactored campaign and execution code (#615) \r\n* Refactored integration test code\r\n* Refactored UI code **[UNSTABLE FEATURE]**",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v2.0.0-b1",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v2.0.0-b1",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v2.0.0-b1",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/50801158",
+                "release_id": 50801158,
+                "date_created": "2021-10-05T07:46:33Z",
+                "date_published": "2021-10-05T09:46:55Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/46063842",
+                "tag": "v1.7.2",
+                "name": "Echidna 1.7.2",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "Echidna 1.7.2 is a minor release that brings a variety of fixes and small improvements, including improved command-line options and fixes when using hardhat/brownie to test contracts. It relies on hevm 0.46 for the EVM emulation. This release requires to use [crytic-compile 0.2.0](https://github.com/crytic/crytic-compile/releases/tag/0.2.0) or later but otherwise contains no breaking changes.\r\n\r\n# Fixed\r\n* Fixed check-asserts and multi-abi cli switches (#665)\r\n* Support for loading multiple files with compiled contracts from hardhat/brownie (#659)\r\n\r\n# Refactored\r\n* Updated to hevm 0.4.6 (#660)",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v1.7.2",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v1.7.2",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v1.7.2",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/46063842",
+                "release_id": 46063842,
+                "date_created": "2021-07-12T14:52:03Z",
+                "date_published": "2021-07-12T15:39:37Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/42613562",
+                "tag": "v1.7.1",
+                "name": "Echidna 1.7.1",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "Echidna 1.7.1 is a minor release that brings a variety of fixes and small improvements, including better mutations, two new command-line options, `--corpus-dir` and `--check-asserts`, correct initialization of new addresses and extended notion of coverage to include EVM frames. This release contains no breaking changes.\r\n\r\n# Added\r\n* Documented known issues and limitations (#655)\r\n* Improved coverage to count number of EVM frames (#624)\r\n* Added two CLI options: --corpus-dir and --check-asserts (#640)\r\n\r\n# Fixed\r\n* Tweaked mutators and improved test stability (#628)\r\n* Automatically initialize addresses when used (#657)\r\n* Avoid mutations to generate inputs outside their expected ABI range (#650)\r\n* Various small fixes to run Vyper contracts (#645)\r\n* Fixed link to macOS binary in binaries.soliditylang.org (#629)\r\n* Fixed UI to fit long function calls (#635)\r\n* Fixed default.nix to use 1.7.0 as version (#623)\r\n\r\n\r\n# Refactored\r\n* Refactored shrinkSeq to improve readability (#639)\r\n* Refactored Test type (#622)\r\n* Refactored coverage types and added corpus size in UI (#627)\r\n",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v1.7.1",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v1.7.1",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v1.7.1",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/42613562",
+                "release_id": 42613562,
+                "date_created": "2021-05-07T14:34:37Z",
+                "date_published": "2021-05-07T15:48:54Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/38819947",
+                "tag": "v1.7.0",
+                "name": "Echidna 1.7.0",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "Echidna 1.7.0 is a major release that brings a few major features:\r\n* Coverage guided-fuzzing enabled by default (no need to use `coverage: true`)\r\n* New mutators for transactions and arrays to discover even more interesting paths in your code\r\n* Source code integration to [collect and visualize coverage](https://github.com/crytic/echidna#collecting-and-visualizing-coverage) (enabled using `corpusDir`)\r\n* An new approach for end-to-end testing using [Etheno](), as described in [our new tutorial in the building-secure-smart-contracts repository](https://github.com/crytic/building-secure-contracts/blob/master/program-analysis/echidna/end-to-end-testing.md)\r\n\r\nThis release also includes several internal refactorings, fixes in our CI tests and improved Nix support. The Echidna team would also like to thank @elopez for their fixes submitted as PRs.\r\n\r\n# Added\r\n* Enabled use of coverage by default (#605) **[BREAKING CHANGE]**\r\n* More corpus and array mutations implemented (#372)\r\n* Source coverage is printed after fuzzing campaign (#516)\r\n\r\n# Fixed\r\n* Coverage filenames are not overwritten (#620)\r\n* Nix improvements and fixes (#603, #604, #608, #612)\r\n\r\n# Refactored\r\n* Refactored and improved etheno support to be more useful (#615) \r\n* Refactored the mutator code (#618)\r\n* Run echidna tests in parallel (#571)\r\n* Simplified slither information parsing (#543) ",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v1.7.0",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v1.7.0",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v1.7.0",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/38819947",
+                "release_id": 38819947,
+                "date_created": "2021-02-26T19:46:33Z",
+                "date_published": "2021-02-26T20:39:12Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/37199546",
+                "tag": "v1.6.1",
+                "name": "Echidna 1.6.1",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "Echidna 1.6.1 is a minor release that, most importantly, allows using compiler metadata to detect which contracts are deployed, avoiding any issues when the bytecode modifies its own code (e.g., when they use the `immutable` keyword). This release also contains performance optimizations when executing properties, speeding up the testing when the EVM reverts, and lets users be more precise when whitelisting or blacklisting functions by specifying [the full contract name and ABI](https://github.com/crytic/echidna/blob/master/examples/solidity/basic/blacklist.yaml#L1).\r\n\r\nThe Echidna team would also like to thank @elopez and @KurogeWashu for their fixes submitted as PRs.\r\n\r\n# Fixed\r\n* Use a sensible default value for `block.gaslimit` (#596)\r\n* Use metadata to detect deployed contracts (#593)\r\n* Fixed wait bug when shrinking (#584)\r\n* Small fixes in the macOS CI (#597), the README (#590) and Nix scripts (#581)\r\n\r\n# Added\r\n* Semver integration for improving testing with different solc versions (#594)\r\n* Added some performance improvement in property execution (#576)\r\n* Added funwithnumbers example from Sabre (#565)\r\n* Improved function filtering to be more precise (#570) **[BREAKING CHANGE]**",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v1.6.1",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v1.6.1",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v1.6.1",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/37199546",
+                "release_id": 37199546,
+                "date_created": "2021-02-01T20:10:56Z",
+                "date_published": "2021-02-02T12:36:17Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/34309084",
+                "tag": "v1.6.0",
+                "name": "Echidna 1.6.0",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "Echidna 1.6.0 introduces integration with [Slither](https://github.com/crytic/slither), now a required dependency for Echidna to function properly. Slither can help Echidna understand the structure of Solidity contracts which we use to explore more interesting code paths. This release also updates `hevm` to version 0.42, improves shrinking and pretty-printing of results, and includes a variety of bugfixes and refactoring. Finally, the Echidna team would also like to thank @elopez, @erivas, and @bingen for their work on squashing some annoying issues.\r\n\r\n# Added\r\n* Remove code size restriction (disable EIP-170) by default. Users can restore it using the `codeSize` config  (#544)\r\n* Improved shrinking and pretty printing (#518)\r\n* Integrate slither results (#451) **[BREAKING CHANGE]**\r\n* HEVM updated to [150dddc67b6cbad75fd4ae5a689452892f55ea26] (#511)\r\n* Make stack limit exceeded a revert (#517)\r\n* Various Github Actions improvements (#527, #554)\r\n\r\n# Fixed\r\n* Made sure that `gets` mapped correctly, fixing #474 (#503)\r\n* Fix library timestamp/block delay issue (#510)\r\n* Make large constants work better with dictionaries (#523)\r\n* Fix \"flanky\" corpus tests (#537)\r\n* Fix negative address bug (#552)\r\n\r\n# Refactored\r\n* Reorganized MonadState and MonadReader (#545, #513)\r\n* Multiple code simplification (#548, #549, #513)\r\n* Add some default transaction constants (#532)\r\n\r\n[150dddc67b6cbad75fd4ae5a689452892f55ea26]: https://github.com/dapphub/dapptools/tree/150dddc67b6cbad75fd4ae5a689452892f55ea26",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v1.6.0",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v1.6.0",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v1.6.0",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/34309084",
+                "release_id": 34309084,
+                "date_created": "2020-11-20T19:51:37Z",
+                "date_published": "2020-11-23T17:57:13Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/28364653",
+                "tag": "v1.5.1",
+                "name": "Echidna 1.5.1",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "This minor release focuses on stability. We improved the handling of timestamp and block number to make testing of code depending on these easier and more effective. Additionally, we fixed some corner cases in the handling of contract deployments, we improved the UI to be easier to use, refactored some internal code and added more unit tests. Finally, the Echidna team would also like to thank @elopez, our external contributor for their work on squashing some annoying issues.\r\n\r\n# Added\r\n* Seed to UI (#456)\r\n* Initial timestamp and block number (#455)\r\n* DockerHub containers in addition to GitHub (#445)\r\n\r\n# Fixed\r\n* Timestamp and block delays having the initial timestamp/block added to them (#460, #469)\r\n* GitHub actions due to new macOS image (#468)\r\n* Extcodesize by creating contracts correctly (#453, #454, #465)\r\n* Detect contract deployment failures (#447)\r\n* Brought back print reporting after exiting the UI (#441)\r\n\r\n# Refactored\r\n* Relax package.yaml constraints (#466)\r\n* Refactor unit tests (#457)\r\n* Better README (#450)\r\n* Code simplifications (#448)\r\n* Refactor Tx (#437)",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v1.5.1",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v1.5.1",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v1.5.1",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/28364653",
+                "release_id": 28364653,
+                "date_created": "2020-06-26T17:08:36Z",
+                "date_published": "2020-07-08T17:49:30Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/25542604",
+                "tag": "v1.5.0",
+                "name": "Echidna 1.5.0",
+                "author": {
+                    "name": "incertia",
+                    "type": "User"
+                },
+                "description": "With this release of Echidna we are changing the version format to a 3-number format to be more in line with pre-existing tools and away from the slightly more arcane 4-number Haskell format. With vX.Y.Z, one can expect bumps in Z to not significantly impact any pre-existing echidna installations and scripts. Changes in Y may require a small amount of manual intervention and changes in X will definitely require manual intervention. Please check the release notes when updating to determine what needs to be changed.\r\n\r\nThis release introduces a generic list mutation engine that is used to mutate transaction lists, especially those loaded from a previous Echidna corpus. It also introduces a new JSON output format for use in headless environments. Use the `--format json` command line switch to see it in action. The existing CLI interface remains unchanged. Please consult the [changelog](https://github.com/crytic/echidna/blob/v1.5.0/CHANGELOG.md#150) for further details.\r\n\r\nAs always, we release a MacOS binary as well as a static binary compiled on Ubuntu. Please note that for macOS it is dynamically linked and libsecp256k1 was installed from [this recipe](https://gist.github.com/shazow/c71c652409015479a7e6) and that libff was built from source and installed to `/usr/local/lib`. You can now find Docker autobuilds under our [package registry](https://github.com/crytic/echidna/packages). This release may be found [here](https://github.com/crytic/echidna/packages/136575?version=v1.5.0).\r\n\r\nOn behalf of the Echidna team I would also like to thank our external contributors for their work on quashing some annoying issues.\r\n\r\n[erivas](https://github.com/erivas)\r\n[elopez](https://github.com/elopez)\r\n\r\nEchidna is now bundled within [Crytic CI](https://crytic.io/), which can automatically run Echidna as well as other tools like Slither automatically for you for super easy Github integration. Also check out [building-secure-contracts](https://github.com/crytic/building-secure-contracts) to learn how to write properties and use  Echidna's advanced features.",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v1.5.0",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v1.5.0",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v1.5.0",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/25542604",
+                "release_id": 25542604,
+                "date_created": "2020-04-15T18:31:54Z",
+                "date_published": "2020-04-16T15:44:19Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/24855203",
+                "tag": "v1.4.0.1",
+                "name": "Echidna 1.4.0.1",
+                "author": {
+                    "name": "incertia",
+                    "type": "User"
+                },
+                "description": "This is a minor update to 1.4.0.0. We have bumped the HEVM version so contracts may be compiled with Solidity 0.6.",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v1.4.0.1",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v1.4.0.1",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v1.4.0.1",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/24855203",
+                "release_id": 24855203,
+                "date_created": "2020-03-25T11:44:02Z",
+                "date_published": "2020-03-25T15:29:52Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/24645387",
+                "tag": "v1.4.0.0",
+                "name": "Echidna 1.4.0.0",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "This is the fifth release of Echidna. With this release, we introduce two new features which can be enabled via various configuration flags:\r\n\r\n* Filtering functions either blacklisting or whitelisting functions to call during a fuzzing campaign using this configuration to blacklist:\r\n\r\n```yaml\r\nfilterBlacklist: true\r\nfilterFunctions: [\"f1\", \"f2\", \"f3\"]\r\n```\r\n\r\nor this one to whitelist:\r\n\r\n```yaml\r\nfilterBlacklist: false\r\nfilterFunctions: [\"f1\", \"f2\", \"f3\"]\r\n```\r\n\r\n* Saving and loading a corpus of transactions (in JSON format) using this configuration:\r\n\r\n```yaml\r\ncoverage: true\r\ncorpusDir: \"corpus\"\r\n```\r\n\r\nNote that the `corpus` directory should be already created. ",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v1.4.0.0",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v1.4.0.0",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v1.4.0.0",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/24645387",
+                "release_id": 24645387,
+                "date_created": "2020-03-17T13:06:53Z",
+                "date_published": "2020-03-18T20:09:05Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/23948383",
+                "tag": "v1.3.0.0",
+                "name": "Echidna 1.3.0.0",
+                "author": {
+                    "name": "incertia",
+                    "type": "User"
+                },
+                "description": "This is the fourth release of Echidna. With this release, we introduce several new features which can be enabled via various config flags. Some of the major ones are:\r\n\r\n```yaml\r\n# multi-abi enables the calling of all known contract ABIs passed to echidna at runtime,\r\n# rather than just fuzzing the target contract. e.g. echidna can discover how to falsify\r\n# contract A {\r\n#   uint256 public flag = 0;\r\n#   function setflag(uint256 x) public {\r\n#     flag = x;\r\n#   }\r\n# }\r\n# contract B {\r\n#   A public a;\r\n#   constructor() public {\r\n#     a = new A();\r\n#   }\r\n#   function echidna_test() public {\r\n#     return a.flag() == 1;\r\n#   }\r\n# }\r\nmulti-abi: true\r\n# Given a JSON file describing how to set up an initial blockchain,\r\n# echidna can load these transactions and start fuzzing from there.\r\n# See examples/solidity/basic_multicontract/export.json for more details.\r\n# Leave this null to disable.\r\ninitialize: \"/path/to/file\"\r\n# Turns on the worst case gas estimator. This causes echidna to print the maximum gas usage it saw.\r\nestimateGas: true\r\n```\r\n\r\nPlease note that this release introduces a breaking change from previous releases. The tested contract is now specified with `--contract` rather than being the 2nd argument. This lets us pass more contracts to the command line driver for multi ABI support. See `echidna-test --help` for more details.\r\n\r\nAs always, the full changelog may be viewed [here](https://github.com/crytic/echidna/blob/v1.3.0.0/CHANGELOG.md#1300). Attached to this release are a statically built Ubuntu binary from the [Docker package](https://github.com/crytic/echidna/packages/136575) and a macOS Catalina binary. You can also find this on [Dockerhub](https://hub.docker.com/r/incertia/echidna) under `incertia/echidna` while we sort out automatic builds on the official repository.",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v1.3.0.0",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v1.3.0.0",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v1.3.0.0",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/23948383",
+                "release_id": 23948383,
+                "date_created": "2020-02-24T22:41:02Z",
+                "date_published": "2020-02-25T00:38:34Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/22398014",
+                "tag": "v1.2.0.0",
+                "name": "Echidna 1.2.0.0",
+                "author": {
+                    "name": "incertia",
+                    "type": "User"
+                },
+                "description": "This is the third stable release of Echidna. We provide binaries for MacOS Catalina and Ubuntu. We recommend either using the docker container or building from source instead of the binaries, which are much less portable. Note that the standalone binaries do require [crytic-compile](https://github.com/crytic/crytic-compile) and solc to work. You can install crytic-compile via pip (`pip install crytic-compile`).\r\n\r\nThis release's changelog has some conflicts with the previous Github release, because the changelog was not religiously kept up to date. Future releases should have more accurate changelog information. You can read it [here](https://github.com/crytic/echidna/blob/v1.2.0.0/CHANGELOG.md#1200).",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/v1.2.0.0",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/v1.2.0.0",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/v1.2.0.0",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/22398014",
+                "release_id": 22398014,
+                "date_created": "2019-12-20T19:20:10Z",
+                "date_published": "2020-02-24T23:18:51Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/19343497",
+                "tag": "1.1.0.0",
+                "name": "v1.1.0.0",
+                "author": {
+                    "name": "agroce",
+                    "type": "User"
+                },
+                "description": "Second stable release\r\n\r\n- Provides a statically compiled Linux binary tested in Ubuntu 18.04 (x86_64)\r\n- Mac OS binary is use-at-your-own-risk, may not be portable to other environments\r\n\r\nNote that the standalone binaries do require [crytic-compile](https://github.com/crytic/crytic-compile) and solc to work.  You can install crytic-compile via pip (`pip install crytic-compile`).\r\n\r\nMajor changes since 1.0.0.0:\r\n\r\n- Support for catching assertion violations\r\n- Support for maximum gas limits for properties and transactions\r\n- Support for generation of block number and time changes between transactions\r\n- Constant extraction for return values\r\n- Multisender testing is now default\r\n- Other improvements to default configuration to tune test generation, comments on default config\r\n- In particular, note that by default the property sender and the caller of the contract constructor (thus, often, the owner) are the same now, which can change the behavior of some properties\r\n\r\n- Various bug-fixes and minor improvements",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/1.1.0.0",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/1.1.0.0",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/1.1.0.0",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/19343497",
+                "release_id": 19343497,
+                "date_created": "2019-08-13T15:38:08Z",
+                "date_published": "2019-08-16T17:06:06Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/18003882",
+                "tag": "1.0.0.0",
+                "name": "v1.0.0.0",
+                "author": {
+                    "name": "ggrieco-tob",
+                    "type": "User"
+                },
+                "description": "First stable release of Echidna based on hevm 0.30. \r\n\r\nWe provide a statically compiled Linux binary tested in Ubuntu 18.04 (x86_64)",
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/1.0.0.0",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/1.0.0.0",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/1.0.0.0",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/18003882",
+                "release_id": 18003882,
+                "date_created": "2019-06-14T16:16:41Z",
+                "date_published": "2019-06-14T16:23:52Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/crytic/echidna/releases/11901629",
+                "tag": "e395687",
+                "author": {
+                    "name": "japesinator",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/crytic/echidna/tarball/e395687",
+                "zipball_url": "https://api.github.com/repos/crytic/echidna/zipball/e395687",
+                "html_url": "https://github.com/crytic/echidna/releases/tag/e395687",
+                "url": "https://api.github.com/repos/crytic/echidna/releases/11901629",
+                "release_id": 11901629,
+                "date_created": "2018-07-12T17:56:46Z",
+                "date_published": "2018-07-12T18:11:25Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# Contributing to Echidna\n\nFirst, thanks for your interest in contributing to Echidna! We welcome and\nappreciate all contributions, including bug reports, feature suggestions,\ntutorials/blog posts, and code improvements.\n\nIf you're unsure where to start, we recommend to join our [chat room](https://slack.empirehacking.nyc/)\n(in the #ethereum channel) to discuss new ideas to improve this tool. You can also take a look at the [`help wanted`](https://github.com/crytic/echidna/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)\nissue labels.\n\n## Bug reports and feature suggestions\n\nBug reports and feature suggestions can be submitted to our [issue\ntracker](https://github.com/crytic/echidna/issues). For bug reports,\nattaching the contract that caused the bug will help us in debugging and\nresolving the issue quickly. If you find a security\nvulnerability, do not open an issue; email `opensource@trailofbits.com`\ninstead.\n\n## Questions\n\nQuestions can be submitted to the issue tracker, but you may get a faster\nresponse if you ask in our [chat room](https://slack.empirehacking.nyc/)\n(in the #ethereum channel).\n\n## Code\n\nEchidna uses the pull request contribution model. Please make an account on\nGithub, fork this repo, and submit code contributions via pull request. For\nmore documentation, look [here](https://guides.github.com/activities/forking/).\n\nSome pull request guidelines:\n\n- Minimize irrelevant changes (formatting, whitespace, etc) to code that would\n  otherwise not be touched by this patch. Save formatting or style corrections\n  for a separate pull request that does not make any semantic changes.\n- When possible, large changes should be split up into smaller focused pull\n  requests.\n- Fill out the pull request description with a summary of what your patch does,\n  key changes that have been made, and any further points of discussion, if\n  applicable.\n- Title your pull request with a brief description of what it's changing.\n  \"Fixes #123\" is a good comment to add to the description, but makes for an\n  unclear title on its own.\n- We use a \"CodeClimate\" verification check in every PR to make sure the code merged \n  is tidy and easy to understand.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/CONTRIBUTING.md"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/trailofbits/echidna/master/docker/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/docker/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/trailofbits/echidna/master/.github/container-linux-static/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/.github/container-linux-static/Dockerfile"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/trailofbits/echidna/master/.github/scripts/install-libff.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/trailofbits/echidna/master/.github/scripts/install-solc.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/trailofbits/echidna/master/.github/scripts/install-libsecp256k1.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/trailofbits/echidna/master/.github/scripts/install-crytic-compile.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/trailofbits/echidna/master/.github/scripts/host.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/trailofbits/echidna/master/.github/scripts/build-macos-release.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/trailofbits/echidna/master/.github/scripts/release-binary.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/trailofbits/echidna/master/.github/scripts/install-z3.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "The core Echidna functionality is an executable called `echidna`, which takes a contract and a list\nof invariants (properties that should always remain true) as input. For each invariant, it generates\nrandom sequences of calls to the contract and checks if the invariant holds. If it can find some way\nto falsify the invariant, it prints the call sequence that does so. If it can't, you have some\nassurance the contract is safe.\n",
+                "type": "Text_excerpt",
+                "original_header": "Executing the test runner",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Invariants are expressed as Solidity functions with names that begin with `echidna_`, have no arguments, and return a boolean. For example, if you have some `balance` variable that should never go below `20`, you can write an extra function in your contract like this one:\n\n```solidity\nfunction echidna_check_balance() public returns (bool) {\n    return(balance >= 20);\n}\n```\n\nTo check these invariants, run:\n\n```sh\n$ echidna myContract.sol\n```\n\nAn example contract with tests can be found [tests/solidity/basic/flags.sol](tests/solidity/basic/flags.sol). To run it, you should execute:\n\n```sh\n$ echidna tests/solidity/basic/flags.sol\n```\n\nEchidna should find a call sequence that falsifies `echidna_sometimesfalse` and should be unable to find a falsifying input for `echidna_alwaystrue`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Writing invariants",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "After finishing a campaign, Echidna can save a coverage maximizing **corpus** in a special directory specified with the `corpusDir` config option. This directory will contain two entries: (1) a directory named `coverage` with JSON files that can be replayed by Echidna and (2) a plain-text file named `covered.txt`, a copy of the source code with coverage annotations.\n\nIf you run `tests/solidity/basic/flags.sol` example, Echidna will save a few files serialized transactions in the `coverage` directory and a `covered.$(date +%s).txt` file with the following lines:\n\n```text\n*r  |  function set0(int val) public returns (bool){\n*   |    if (val % 100 == 0)\n*   |      flag0 = false;\n  }\n\n*r  |  function set1(int val) public returns (bool){\n*   |    if (val % 10 == 0 && !flag0)\n*   |      flag1 = false;\n  }\n```\n\nOur tool signals each execution trace in the corpus with the following \"line marker\":\n\n* `*` if an execution ended with a STOP\n* `r` if an execution ended with a REVERT\n* `o` if an execution ended with an out-of-gas error\n* `e` if an execution ended with any other error (zero division, assertion failure, etc)\n",
+                "type": "Text_excerpt",
+                "original_header": "Collecting and visualizing coverage",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Our [Building Secure Smart Contracts](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial) repository contains a crash course on Echidna, including examples, lessons and exercises.\n",
+                "type": "Text_excerpt",
+                "original_header": "Crash course on Echidna",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "There is an Echidna action which can be used to run `echidna` as part of a\nGitHub Actions workflow. Please refer to the\n[crytic/echidna-action](https://github.com/crytic/echidna-action) repository for\nusage instructions and examples.\n",
+                "type": "Text_excerpt",
+                "original_header": "Using Echidna in a GitHub Actions workflow",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Echidna's CLI can be used to choose the contract to test and load a\nconfiguration file.\n\n```sh\n$ echidna contract.sol --contract TEST --config config.yaml\n```\n\nThe configuration file allows users to choose EVM and test generation\nparameters. An example of a complete and annotated config file with the default\noptions can be found at\n[tests/solidity/basic/default.yaml](tests/solidity/basic/default.yaml).\nMore detailed documentation on the configuration options is available in our\n[wiki](https://github.com/trailofbits/echidna/wiki/Config).\n\nEchidna supports three different output drivers. There is the default `text`\ndriver, a `json` driver, and a `none` driver, which should suppress all\n`stdout` output. The JSON driver reports the overall campaign as follows.\n\n```\nCampaign = {\n  \"success\"      : bool,\n  \"error\"        : string?,\n  \"tests\"        : [Test],\n  \"seed\"         : number,\n  \"coverage\"     : Coverage,\n  \"gas_info\"     : [GasInfo]\n}\nTest = {\n  \"contract\"     : string,\n  \"name\"         : string,\n  \"status\"       : string,\n  \"error\"        : string?,\n  \"testType\"     : string,\n  \"transactions\" : [Transaction]?\n}\nTransaction = {\n  \"contract\"     : string,\n  \"function\"     : string,\n  \"arguments\"    : [string]?,\n  \"gas\"          : number,\n  \"gasprice\"     : number\n}\n```\n\n`Coverage` is a dict describing certain coverage-increasing calls.\nEach `GasInfo` entry is a tuple that describes how maximal\ngas usage was achieved, and is also not too important. These interfaces are\nsubject to change to be slightly more user-friendly at a later date. `testType`\nwill either be `property` or `assertion`, and `status` always takes on either\n`fuzzing`, `shrinking`, `solved`, `passed`, or `error`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Configuration options",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "This is a partial list of smart contracts projects that use Echidna for testing:\n\n* [Curvance](https://github.com/curvance/Curvance-CantinaCompetition/tree/CodeFAQAndAdjustments/tests/fuzzing)\n* [Primitive](https://github.com/primitivefinance/rmm-core/tree/main/contracts/crytic)\n* [Uniswap-v3](https://github.com/search?q=org%3AUniswap+echidna&type=commits)\n* [Balancer](https://github.com/balancer-labs/balancer-core/tree/master/echidna)\n* [MakerDAO vest](https://github.com/makerdao/dss-vest/pull/16)\n* [Optimism DAI Bridge](https://github.com/BellwoodStudios/optimism-dai-bridge/blob/master/contracts/test/DaiEchidnaTest.sol)\n* [WETH10](https://github.com/WETH10/WETH10/tree/main/contracts/fuzzing)\n* [Yield](https://github.com/yieldprotocol/fyDai/pull/312)\n* [Convexity Protocol](https://github.com/opynfinance/ConvexityProtocol/tree/dev/contracts/echidna)\n* [Aragon Staking](https://github.com/aragon/staking/blob/82bf54a3e11ec4e50d470d66048a2dd3154f940b/packages/protocol/contracts/test/lib/EchidnaStaking.sol)\n* [Centre Token](https://github.com/centrehq/centre-tokens/tree/master/echidna_tests)\n* [Tokencard](https://github.com/tokencard/contracts/tree/master/tools/echidna)\n* [Minimalist USD Stablecoin](https://github.com/usmfum/USM/pull/41)\n",
+                "type": "Text_excerpt",
+                "original_header": "Property testing suites",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Public use of Echidna"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The following shows public security reviews that used Echidna to uncover vulnerabilities\n\n- [Advanced Blockchain](https://github.com/trailofbits/publications/blob/master/reviews/AdvancedBlockchain.pdf)\n- [Amp](https://github.com/trailofbits/publications/blob/master/reviews/amp.pdf)\n- [Ampleforth](https://github.com/trailofbits/publications/blob/master/reviews/ampleforth.pdf)\n- [Atlendis](https://github.com/trailofbits/publications/blob/master/reviews/2023-03-atlendis-atlendissmartcontracts-securityreview.pdf)\n- [Balancer](https://github.com/trailofbits/publications/blob/master/reviews/2021-04-balancer-balancerv2-securityreview.pdf)\n- [Basis](https://github.com/trailofbits/publications/blob/master/reviews/basis.pdf)\n- [Dai](https://github.com/trailofbits/publications/blob/master/reviews/mc-dai.pdf)\n- [Frax](https://github.com/trailofbits/publications/blob/master/reviews/FraxQ22022.pdf)\n- [Liquity](https://github.com/trailofbits/publications/blob/master/reviews/LiquityProtocolandStabilityPoolFinalReport.pdf)\n- [LooksRare](https://github.com/trailofbits/publications/blob/master/reviews/LooksRare.pdf)\n- [Maple](https://github.com/trailofbits/publications/blob/master/reviews/2022-03-maplefinance-securityreview.pdf)\n- [Optimism](https://github.com/trailofbits/publications/blob/master/reviews/2022-11-optimism-securityreview.pdf)\n- [Opyn](https://github.com/trailofbits/publications/blob/master/reviews/Opyn.pdf)\n- [Origin Dollar](https://github.com/trailofbits/publications/blob/master/reviews/OriginDollar.pdf)\n- [Origin](https://github.com/trailofbits/publications/blob/master/reviews/origin.pdf)\n- [Paxos](https://github.com/trailofbits/publications/blob/master/reviews/paxos.pdf)\n- [Primitive](https://github.com/trailofbits/publications/blob/master/reviews/Primitive.pdf)\n- [RocketPool](https://github.com/trailofbits/publications/blob/master/reviews/RocketPool.pdf)\n- [Seaport](https://github.com/trailofbits/publications/blob/master/reviews/SeaportProtocol.pdf)\n- [Set Protocol](https://github.com/trailofbits/publications/blob/master/reviews/setprotocol.pdf)\n- [Shell protocol](https://github.com/trailofbits/publications/blob/master/reviews/ShellProtocolv2.pdf)\n- [Sherlock](https://github.com/trailofbits/publications/blob/master/reviews/Sherlockv2.pdf)\n- [Pegasys Pantheon](https://github.com/trailofbits/publications/blob/master/reviews/pantheon.pdf)\n- [TokenCard](https://github.com/trailofbits/publications/blob/master/reviews/TokenCard.pdf)\n- [Uniswap](https://github.com/trailofbits/publications/blob/master/reviews/UniswapV3Core.pdf)\n- [Yearn](https://github.com/trailofbits/publications/blob/master/reviews/YearnV2Vaults.pdf)\n- [Yield](https://github.com/trailofbits/publications/blob/master/reviews/YieldProtocol.pdf)\n- [88mph](https://github.com/trailofbits/publications/blob/master/reviews/88mph.pdf)\n- [0x](https://github.com/trailofbits/publications/blob/master/reviews/0x-protocol.pdf)\n",
+                "type": "Text_excerpt",
+                "original_header": "Security reviews",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Public use of Echidna"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The following security vulnerabilities were found by Echidna. If you found a security vulnerability using our tool, please submit a PR with the relevant information.\n\n| Project | Vulnerability | Date |\n|--|--|--|\n[0x Protocol](https://github.com/trailofbits/publications/blob/master/reviews/0x-protocol.pdf) | If an order cannot be filled, then it cannot be canceled | Oct 2019\n[0x Protocol](https://github.com/trailofbits/publications/blob/master/reviews/0x-protocol.pdf) | If an order can be partially filled with zero, then it can be partially filled with one token | Oct 2019\n[0x Protocol](https://github.com/trailofbits/publications/blob/master/reviews/0x-protocol.pdf) | The cobbdouglas function does not revert when valid input parameters are used | Oct 2019\n[Balancer Core](https://github.com/trailofbits/publications/blob/master/reviews/BalancerCore.pdf) | An attacker cannot steal assets from a public pool | Jan 2020\n[Balancer Core](https://github.com/trailofbits/publications/blob/master/reviews/BalancerCore.pdf) | An attacker cannot generate free pool tokens with joinPool | Jan 2020\n[Balancer Core](https://github.com/trailofbits/publications/blob/master/reviews/BalancerCore.pdf) | Calling joinPool-exitPool does not lead to free pool tokens | Jan 2020\n[Balancer Core](https://github.com/trailofbits/publications/blob/master/reviews/BalancerCore.pdf) |  Calling exitswapExternAmountOut does not lead to free assets | Jan 2020\n[Liquity Dollar](https://github.com/trailofbits/publications/blob/master/reviews/Liquity.pdf) | [Closing troves require to hold the full amount of LUSD minted](https://github.com/liquity/dev/blob/echidna_ToB_final/packages/contracts/contracts/TestContracts/E2E.sol#L242-L298) | Dec 2020\n[Liquity Dollar](https://github.com/trailofbits/publications/blob/master/reviews/Liquity.pdf) | [Troves can be improperly removed](https://github.com/liquity/dev/blob/echidna_ToB_final/packages/contracts/contracts/TestContracts/E2E.sol#L242-L298) | Dec 2020\n[Liquity Dollar](https://github.com/trailofbits/publications/blob/master/reviews/Liquity.pdf) | Initial redeem can revert unexpectedly | Dec 2020\n[Liquity Dollar](https://github.com/trailofbits/publications/blob/master/reviews/Liquity.pdf) | Redeem without redemptions might still return success | Dec 2020\n[Origin Dollar](https://github.com/trailofbits/publications/blob/master/reviews/OriginDollar.pdf) | Users are allowed to transfer more tokens that they have | Nov 2020\n[Origin Dollar](https://github.com/trailofbits/publications/blob/master/reviews/OriginDollar.pdf) | User balances can be larger than total supply | Nov 2020\n[Yield Protocol](https://github.com/trailofbits/publications/blob/master/reviews/YieldProtocol.pdf) | Arithmetic computation for buying and selling tokens is imprecise | Aug 2020\n",
+                "type": "Text_excerpt",
+                "original_header": "Trophies",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Public use of Echidna"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "We can also use Echidna to reproduce research examples from smart contract fuzzing papers to show how quickly it can find the solution. All of these can be solved, in a few seconds to one or two minutes on a laptop computer.\n\n| Source | Code\n|--|--\n[Using automatic analysis tools with MakerDAO contracts](https://forum.openzeppelin.com/t/using-automatic-analysis-tools-with-makerdao-contracts/1021) | [SimpleDSChief](https://github.com/crytic/echidna/blob/master/tests/solidity/research/vera_dschief.sol)\n[Integer precision bug in Sigma Prime](https://github.com/b-mueller/sabre#example-2-integer-precision-bug) | [VerifyFunWithNumbers](https://github.com/crytic/echidna/blob/master/tests/solidity/research/solcfuzz_funwithnumbers.sol)\n[Learning to Fuzz from Symbolic Execution with Application to Smart Contracts](https://files.sri.inf.ethz.ch/website/papers/ccs19-ilf.pdf) | [Crowdsale](https://github.com/crytic/echidna/blob/master/tests/solidity/research/ilf_crowdsale.sol)\n[Harvey: A Greybox Fuzzer for Smart Contracts](https://arxiv.org/abs/1905.06944) | [Foo](https://github.com/crytic/echidna/blob/master/test/solidity/research/harvey_foo.sol), [Baz](https://github.com/crytic/echidna/blob/master/tests/solidity/research/harvey_baz.sol)\n",
+                "type": "Text_excerpt",
+                "original_header": "Research",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Public use of Echidna"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "| Paper Title | Venue | Publication Date |\n| --- | --- | --- |\n| [echidna-parade: Diverse multicore smart contract fuzzing](https://agroce.github.io/issta21.pdf) | [ISSTA 2021](https://conf.researchr.org/home/issta-2021) | July 2021 |\n| [Echidna: Effective, usable, and fast fuzzing for smart contracts](https://agroce.github.io/issta20.pdf) | [ISSTA 2020](https://conf.researchr.org/home/issta-2020) | July 2020 |\n| [Echidna: A Practical Smart Contract Fuzzer](papers/echidna_fc_poster.pdf) | [FC 2020](https://fc20.ifca.ai/program.html) | Feb 2020 |\n\nIf you are using Echidna for academic work, consider applying to the [Crytic $10k Research Prize](https://blog.trailofbits.com/2019/11/13/announcing-the-crytic-10k-research-prize/).\n",
+                "type": "Text_excerpt",
+                "original_header": "Academic Publications",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Public use of Echidna"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Feel free to stop by our #ethereum slack channel in [Empire Hacking](https://slack.empirehacking.nyc/) for help using or extending Echidna.\n\n* Get started by reviewing these simple [Echidna invariants](tests/solidity/basic/flags.sol)\n\n* Considering [emailing](mailto:echidna-dev@trailofbits.com) the Echidna development team directly for more detailed questions\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting help",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "Echidna can test contracts compiled with different smart contract build systems, including [Truffle](https://truffleframework.com/) or [hardhat](https://hardhat.org/) using [crytic-compile](https://github.com/crytic/crytic-compile). To invoke echidna with the current compilation framework, use `echidna .`.\n\nOn top of that, Echidna supports two modes of testing complex contracts. Firstly, one can [describe an initialization procedure with Truffle and Etheno](https://github.com/crytic/building-secure-contracts/blob/master/program-analysis/echidna/end-to-end-testing.md) and use that as the base state for Echidna. Secondly, Echidna can call into any contract with a known ABI by passing in the corresponding Solidity source in the CLI. Use `allContracts: true` in your config to turn this on.\n",
+                "type": "Text_excerpt",
+                "original_header": "Support for smart contract build systems",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Feel free to stop by our #ethereum slack channel in [Empire Hacking](https://slack.empirehacking.nyc/) for help using or extending Echidna.\n\n* Get started by reviewing these simple [Echidna invariants](tests/solidity/basic/flags.sol)\n\n* Considering [emailing](mailto:echidna-dev@trailofbits.com) the Echidna development team directly for more detailed questions\n",
+                "type": "Text_excerpt",
+                "original_header": "Getting help",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        }
+    ],
+    "faq": [
+        {
+            "result": {
+                "value": "One way to diagnose Echidna's performance issues is to run `echidna` with profiling on.\nTo run Echidna with basic profiling, add `+RTS -p -s` to your original `echidna` command:\n\n```sh\n$ nix develop # alternatively nix-shell\n$ cabal --enable-profiling run echidna -- ... +RTS -p -s\n$ less echidna.prof\n```\n\nThis produces a report file (`echidna.prof`), that shows which functions take up the most CPU and memory usage.\n\nIf the basic profiling doesn't help, you can use more [advanced profiling techniques](https://input-output-hk.github.io/hs-opt-handbook.github.io/src/Measurement_Observation/Heap_Ghc/eventlog.html).\n\nCommon causes for performance issues that we observed:\n\n- Costly functions called in hot paths\n- Lazy data constructors that accumulate thunks\n- Inefficient data structures used in hot paths\n\nChecking for these is a good place to start. If you suspect some computation is too lazy and\nleaks memory, you can use `force` from `Control.DeepSeq` to make sure it gets evaluated.\n",
+                "type": "Text_excerpt",
+                "original_header": "Debugging Performance Problems",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Before starting, make sure Slither is [installed](https://github.com/crytic/slither) (`pip3 install slither-analyzer --user`).\nIf you want to quickly test Echidna in Linux or MacOS, we provide statically linked Linux binaries built on Ubuntu and mostly static MacOS binaries on our [releases page](https://github.com/crytic/echidna/releases). You can also grab the same type of binaries from our [CI pipeline](https://github.com/crytic/echidna/actions?query=workflow%3ACI+branch%3Amaster+event%3Apush), just click the commit to find binaries for Linux or MacOS.\n",
+                "type": "Text_excerpt",
+                "original_header": "Precompiled binaries",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "If you have Homebrew installed on your Mac or Linux machine, you can install Echidna and all of its dependencies (Slither, crytic-compile) by running `brew install echidna`.\n\nYou can also compile and install the latest `master` branch code by running `brew install --HEAD echidna`\n\nYou can get further information in the [`echidna` Homebrew Formula](https://formulae.brew.sh/formula/echidna) page. The formula itself is maintained as part of the [homebrew-core repository](https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/e/echidna.rb)\n",
+                "type": "Text_excerpt",
+                "original_header": "Homebrew (macOS / Linux)",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "If you prefer to use a pre-built Docker container, check out our [docker\npackage](https://github.com/orgs/crytic/packages?repo_name=echidna), which is\nauto-built via GitHub Actions. The `echidna` container is based on\n`ubuntu:focal` and it is meant to be a small yet flexible enough image to use\nEchidna on. It provides a pre-built version of `echidna`, as well as\n`slither`, `crytic-compile`, `solc-select` and `nvm` under 200 MB.\n\nNote that the container images currently only build on x86 systems. Running them\non ARM devices, such as Mac M1 systems, is not recommended due to the performance\nloss incurred by the CPU emulation.\n\nDifferent tags are available for the Docker container image:\n\n| Tag           | Build in tag\n|---------------|-------------\n| `vx.y.z`      | Build corresponding to release `vx.y.z`\n| `latest`      | Latest Echidna tagged release.\n| `edge`        | Most recent commit on the default branch.\n| `testing-foo` | Testing build based on the `foo` branch.\n\nTo run the container with the latest Echidna version interactively, you can use\nsomething like the following command. It will map the current directory as\n`/src` inside the container, and give you a shell where you can use\n`echidna`:\n\n```sh\n$ docker run --rm -it -v `pwd`:/src ghcr.io/crytic/echidna/echidna\n```\n\nOtherwise, if you want to locally build the latest version of Echidna, we\nrecommend using Docker. From within a clone of this repository, run the\nfollowing command to build the Docker container image:\n\n```sh\n$ docker build -t echidna -f docker/Dockerfile --target final-ubuntu .\n```\n\nThen, you can run the `echidna` image locally. For example, to install solc\n0.5.7 and check `tests/solidity/basic/flags.sol`, you can run:\n\n```sh\n$ docker run -it -v `pwd`:/src echidna bash -c \"solc-select install 0.5.7 && solc-select use 0.5.7 && echidna /src/tests/solidity/basic/flags.sol\"\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Docker container",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "If you'd prefer to build from source, use [Stack](https://docs.haskellstack.org/en/stable/README/). `stack install` should build and compile `echidna` in `~/.local/bin`. You will need to link against libreadline and libsecp256k1 (built with recovery enabled), which should be installed with the package manager of your choosing. You also need to install the latest release of [libff](https://github.com/scipr-lab/libff). Refer to our [CI tests](.github/scripts/install-libff.sh) for guidance.\n\nSome Linux distributions do not ship static libraries for certain things that Haskell needs, e.g. Arch Linux, which will cause `stack build` to fail with linking errors because we use the `-static` flag. In that case, use `--flag echidna:-static` to produce a dynamically linked binary.\n\nIf you're getting errors building related to linking, try tinkering with `--extra-include-dirs` and `--extra-lib-dirs`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Building using Stack",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "value": "[Nix users](https://nixos.org/download.html) can install the latest Echidna with:\n\n```sh\n$ nix-env -i -f https://github.com/crytic/echidna/tarball/master\n```\n\nWith flakes enabled, you can run Echidna straight from this repo:\n```sh\n$ nix run github:crytic/echidna # master\n$ nix run github:crytic/echidna/v2.1.1 # specific ref (tag/branch/commit)\n```\n\nTo build a standalone release for non-Nix macOS systems, the following will\nbuild Echidna in a mostly static binary. This can also be used on Linux systems\nto produce a fully static binary.\n\n```sh\n$ nix build .#echidna-redistributable\n```\n\nNix will automatically install all the dependencies required for development\nincluding `crytic-compile` and `solc`. A quick way to start developing Echidna:\n\n```sh\n$ git clone https://github.com/crytic/echidna\n$ cd echidna\n$ nix develop # alternatively nix-shell\n[nix-shell]$ cabal run echidna\n[nix-shell]$ cabal run tests\n[nix-shell]$ cabal new-repl\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Building using Nix (works natively on Apple M1 systems)",
+                "parent_header": [
+                    "Echidna: A Fast Smart Contract Fuzzer <a href=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\"><img src=\"https://raw.githubusercontent.com/crytic/echidna/master/echidna.png\" width=\"75\"/></a>",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<a href=\"https://i.imgur.com/saFWti4.png\"><img src=\"https://i.imgur.com/saFWti4.png\" width=\"650\"/></a>\n \n",
+                "original_header": "Features"
+            },
+            "confidence": 0.9992148756636572,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| Description | Issue | Status |\n| :---        | :---: | :---:  |\n| Vyper support is limited | [#652](https://github.com/crytic/echidna/issues/652) | *wont fix* |\n| Limited library support for testing | [#651](https://github.com/crytic/echidna/issues/651) | *wont fix* |\n \n",
+                "original_header": "Limitations and known issues"
+            },
+            "confidence": 0.96679119055123,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Echidna: A Fast Smart Contract Fuzzer "
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        }
+    ],
+    "related_documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://solidity.readthedocs.io/",
+                "format": "readthedocs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/trailofbits/echidna/wiki/Config",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/crytic/echidna/master/echidna.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://i.imgur.com/saFWti4.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1905.06944"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/trailofbits/echidna/master/README.md"
+        }
+    ]
+}

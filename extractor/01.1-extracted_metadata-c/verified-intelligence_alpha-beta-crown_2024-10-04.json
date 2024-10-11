@@ -1,0 +1,660 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:29:55"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/Verified-Intelligence/alpha-beta-CROWN",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "Verified-Intelligence",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-06-29T04:26:31Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-10-02T15:44:43Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Copyright (C) 2021-2024 The \u03b1,\u03b2-CROWN Team\nSee CONTRIBUTORS for the list of all contributors and their affiliations.\nPrimary contacts: Huan Zhang <huan@huan-zhang.com>\n                  Zhouxing Shi <zshi@cs.ucla.edu>\n                  Kaidi Xu <kx46@drexel.edu>\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "alpha-beta-CROWN: An Efficient, Scalable and GPU Accelerated Neural Network Verifier (winner of VNN-COMP 2021, 2022, and 2023)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\u03b1,\u03b2-CROWN (alpha-beta-CROWN) is a neural network verifier based on an efficient\nlinear bound propagation framework and branch and bound. It can be accelerated\nefficiently on **GPUs** and can scale to relatively large convolutional\nnetworks (e.g., millions of parameters). It also supports a wide range of\nneural network architectures (e.g., **CNN**, **ResNet**, and various activation\nfunctions), thanks to the versatile\n**[auto\\_LiRPA](http://github.com/Verified-Intelligence/auto_LiRPA) library developed by us**.\n\u03b1,\u03b2-CROWN can provide provable robustness guarantees against adversarial\nattacks and can also verify other general properties of neural networks,\nsuch as [Lyapunov stability](https://arxiv.org/pdf/2404.07956) in control. \n",
+                "original_header": "\u03b1,\u03b2-CROWN (alpha-beta-CROWN): A Fast and Scalable Neural Network Verifier with Efficient Bound Propagation"
+            },
+            "confidence": 0.9893018978238017,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* **CROWN** ([Zhang et al. 2018](https://arxiv.org/pdf/1811.00866.pdf)): the basic linear bound propagation framework for neural networks.\n* **\u03b1-CROWN** ([Xu et al., 2021](https://arxiv.org/pdf/2011.13824.pdf)): incomplete verification with gradient optimized bound propagation.\n* **\u03b2-CROWN** ([Wang et al. 2021](https://arxiv.org/pdf/2103.06624.pdf)): complete verification with bound propagation and branch and bound for ReLU networks.\n* **GenBaB** ([Shi et al. 2024](https://arxiv.org/pdf/2405.21063.pdf)): Branch and bound for general nonlinear functions.\n* **GCP-CROWN** ([Zhang et al. 2022](https://arxiv.org/pdf/2208.05740.pdf)): CROWN-like bound propagation with general cutting plane constraints.\n* **BaB-Attack** ([Zhang et al. 2022](https://proceedings.mlr.press/v162/zhang22ae/zhang22ae.pdf)): Branch and bound based adversarial attack for tackling hard instances.\n* **MIP** ([Tjeng et al., 2017](https://arxiv.org/pdf/1711.07356.pdf)): mixed integer programming (slow but can be useful on small models).\n* **INVPROP** ([Kotha et al. 2023](https://arxiv.org/pdf/2302.01404.pdf)): tightens bounds with constraints on model outputs, and computes provable preimages for neural networks. \nThe bound propagation engine in \u03b1,\u03b2-CROWN is implemented as a separate library, **[auto_LiRPA](https://github.com/Verified-Intelligence/auto_LiRPA) ([Xu et al. 2020](https://arxiv.org/pdf/2002.12920.pdf))**, for computing symbolic bounds for general computational graphs. We support these neural network architectures: \n* Lp norm perturbation (p=1,2,infinity, as often used in robustness verification)\n* VNNLIB format input (at most two layers of AND/OR clause, as used in VNN-COMP)\n* Any linear specifications on neural network output (which can be added as a linear layer) \n",
+                "original_header": "Supported Features"
+            },
+            "confidence": 0.972292787682742,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* **CROWN** ([Zhang et al. NeurIPS 2018](https://arxiv.org/pdf/1811.00866.pdf)) is a very efficient bound propagation based verification algorithm. CROWN propagates a linear inequality backward through the network and utilizes linear bounds to relax activation functions. \n* The **\"convex relaxation barrier\"** ([Salman et al., NeurIPS 2019](https://arxiv.org/pdf/1902.08722)) paper concludes that optimizing the ReLU relaxation allows CROWN (referred to as a \"greedy\" primal space solver) to achieve the same solution as linear programming (LP) based verifiers. \n* **LiRPA** ([Xu et al., NeurIPS 2020](https://arxiv.org/pdf/2002.12920.pdf)) is a generalization of CROWN on general computational graphs and we also provide an efficient GPU implementation, the [auto\\_LiRPA](https://github.com/Verified-Intelligence/auto_LiRPA) library. \n* **\u03b2-CROWN** ([Wang et al., NeurIPS 2021](https://arxiv.org/pdf/2103.06624.pdf)) incorporates ReLU split constraints in branch and bound (BaB) into the CROWN bound propagation procedure via an additional optimizable parameter \u03b2. The combination of efficient and GPU-accelerated bound propagation with branch and bound produces a powerful and scalable neural network verifier. \n* **BaB-Attack** ([Zhang et al., ICML 2022](https://proceedings.mlr.press/v162/zhang22ae/zhang22ae.pdf)) is a strong falsifier (adversarial attack) based on branch and bound, which can find adversarial examples for hard instances where gradient or input-space-search based methods cannot succeed. \n* **GenBaB** ([Shi et al. 2024](https://arxiv.org/pdf/2405.21063.pdf)) enables branch-and-bound based verification for non-ReLU and general nonlinear functions, achieving significant improvements on verifying neural networks with non-ReLU activation functions such as Transformer and LSTM networks, and models that consist of neural networks and additional nonlinear operations such as [ML for AC Optimal Power Flow](https://github.com/AI4OPT/ml4acopf_benchmark). \n* **INVPROP** ([Kotha et al., NeurIPS 2023](https://arxiv.org/pdf/2302.01404.pdf)) handles constraints on the outputs of neural networks which enables tight and provable bounds on the preimage of a neural network. We demonstrated several applications, including OOD detection, backward reachability analysis for NN-controlled systems, and tightening bounds for robustness verification. \n",
+                "original_header": "Publications"
+            },
+            "confidence": 0.9585471577752047,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Our library is released under the BSD 3-Clause license. A copy of the license is included [here](LICENSE). \n",
+                "original_header": "Developers and Copyright"
+            },
+            "confidence": 0.9306453669708834,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "alpha-beta-CROWN",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "Verified-Intelligence/alpha-beta-CROWN",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Verified-Intelligence/alpha-beta-CROWN/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Verified-Intelligence/alpha-beta-CROWN/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 228,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "adversarial-examples, adversarial-robustness, formal-verification, neural-network-verification, neural-networks, robustness, robustness-verification",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 54,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/verified-intelligence/alpha-beta-crown/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 1122035
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 17539
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 10826
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 279
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/vnncomp_scripts/install_tool.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/vnncomp_scripts/post_install_tool.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/vnncomp_scripts/install_tool_general.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/vnncomp_scripts/run_instance.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/vnncomp_scripts/prepare_instance.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "contributors": [
+        {
+            "result": {
+                "value": "Team lead:\n\nHuan Zhang (huan@huan-zhang.com), UIUC\n\nCurrent developers:\n\nZhouxing Shi (zshi@cs.ucla.edu), UCLA\nLinyi Li (linyi2@illinois.edu), UIUC\nChristopher Brix (brix@cs.rwth-aachen.de), RWTH Aachen University\nKaidi Xu (kx46@drexel.edu), Drexel University\nXiangru Zhong (xiangruzh0915@gmail.com), Sun Yat-sen University\nQirui Jin (qiruijin@umich.edu), University of Michigan\nZhuolin Yang (zhuolin5@illinois.edu), UIUC\nZhuowen Yuan (realzhuowen@gmail.com), UIUC\nZhuoxuan Zhang (zz3052@columbia.edu), Columbia University\n\nPast developers:\n\nShiqi Wang (sw3215@columbia.edu), Columbia University\nYihan Wang (yihanwang@ucla.edu), UCLA\nJinqi (Kathryn) Chen (jinqic@cs.cmu.edu), CMU\n\nAdvisors:\n\nZico Kolter (zkolter@cs.cmu.edu), CMU\nCho-Jui Hsieh (chohsieh@cs.ucla.edu), UCLA\nSuman Jana (suman@cs.columbia.edu), Columbia University\nBo Li (lbo@illinois.edu), UIUC\nXue Lin (xue.lin@northeastern.edu), Northeastern University\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/complete_verifier/CONTRIBUTORS"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/verified-intelligence/alpha-beta-crown/tree/main/complete_verifier/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "\u03b1,\u03b2-CROWN is tested on Python 3.11 and PyTorch 2.2.1 (lower versions, including Python 3.7 and PyTorch 1.11, may also work). It can be installed\neasily into a conda environment. If you don't have conda, you can install\n[miniconda](https://docs.conda.io/en/latest/miniconda.html).\n\nClone our verifier including the [auto_LiRPA](https://github.com/Verified-Intelligence/auto_LiRPA) submodule:\n```bash\ngit clone --recursive https://github.com/Verified-Intelligence/alpha-beta-CROWN.git\n```\n\nSetup the conda environment:\n```bash\n# Remove the old environment, if necessary.\nconda deactivate; conda env remove --name alpha-beta-crown\n# install all dependents into the alpha-beta-crown environment\nconda env create -f complete_verifier/environment.yaml --name alpha-beta-crown\n# activate the environment\nconda activate alpha-beta-crown\n```\n\nIf you use the CROWN, \u03b1-CROWN and/or \u03b2-CROWN verifiers (which cover the most use\ncases), a Gurobi license is *not needed*.  If you want to use MIP-based\nverification algorithms (which are feasible only for small models), you need to\ninstall a Gurobi license with the `grbgetkey` command.  If you don't have\naccess to a license, by default, the above installation procedure includes a\nfree and restricted license, which is actually sufficient for many relatively\nsmall NNs. If you use the GCP-CROWN verifier, an installation of IBM CPlex\nsolver is required. Instructions to install the CPlex solver can be found\nin the [VNN-COMP benchmark instructions](/complete_verifier/docs/vnn_comp.md#installation)\nor the [GCP-CROWN instructions](https://github.com/tcwangshiqi-columbia/GCP-CROWN).\n\nIf you prefer to install packages manually rather than using a prepared conda\nenvironment, you can refer to this [installation\nscript](/vnncomp_scripts/install_tool_general.sh).\n\nIf you want to run \u03b1,\u03b2-CROWN verifier on the VNN-COMP benchmarks\n(e.g., to make a comparison to a new verifier), you can follow [this\nguide](/complete_verifier/docs/vnn_comp.md).\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation and Setup",
+                "parent_header": [
+                    "\u03b1,\u03b2-CROWN (alpha-beta-CROWN): A Fast and Scalable Neural Network Verifier with Efficient Bound Propagation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p align=\"center\">\n<a href=\"https://arxiv.org/pdf/2103.06624.pdf\"><img src=\"https://www.huan-zhang.com/images/upload/alpha-beta-crown/logo_2022.png\" width=\"36%\"></a>\n</p> \n",
+                "original_header": "\u03b1,\u03b2-CROWN (alpha-beta-CROWN): A Fast and Scalable Neural Network Verifier with Efficient Bound Propagation"
+            },
+            "confidence": 0.9979156459346756,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p align=\"center\">\n<a href=\"https://arxiv.org/pdf/2103.06624.pdf\"><img src=\"https://www.huan-zhang.com/images/upload/alpha-beta-crown/banner.png\" width=\"100%\"></a>\n</p> \nSee the [Guide on Algorithm\nSelection](/complete_verifier/docs/abcrown_usage.md#guide-on-algorithm-selection)\nto find the most suitable example to get started.\n \n",
+                "original_header": "Supported Features"
+            },
+            "confidence": 0.9950102631587534,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We provide a unified front-end for the verifier, `abcrown.py`.  All parameters\nfor the verifier are defined in a `yaml` config file. For example, to run\nrobustness verification on a CIFAR-10 ResNet network, you just run:\n```bash\nconda activate alpha-beta-crown  # activate the conda environment\ncd complete_verifier\npython abcrown.py --config exp_configs/tutorial_examples/cifar_resnet_2b.yaml\n```\n \n",
+                "original_header": "Instructions"
+            },
+            "confidence": 0.9999999983557473,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@article{zhang2018efficient,\n    url = {https://arxiv.org/pdf/1811.00866.pdf},\n    year = {2018},\n    pages = {4939--4948},\n    volume = {31},\n    journal = {Advances in Neural Information Processing Systems},\n    author = {Zhang, Huan and Weng, Tsui-Wei and Chen, Pin-Yu and Hsieh, Cho-Jui and Daniel, Luca},\n    title = {Efficient Neural Network Robustness Certification with General Activation Functions},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Efficient Neural Network Robustness Certification with General Activation Functions",
+                "author": "Zhang, Huan and Weng, Tsui-Wei and Chen, Pin-Yu and Hsieh, Cho-Jui and Daniel, Luca",
+                "url": "https://arxiv.org/pdf/1811.00866.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{xu2020automatic,\n    year = {2020},\n    volume = {33},\n    journal = {Advances in Neural Information Processing Systems},\n    author = {Xu, Kaidi and Shi, Zhouxing and Zhang, Huan and Wang, Yihan and Chang, Kai-Wei and Huang, Minlie and Kailkhura, Bhavya and Lin, Xue and Hsieh, Cho-Jui},\n    title = {Automatic perturbation analysis for scalable certified robustness and beyond},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Automatic perturbation analysis for scalable certified robustness and beyond",
+                "author": "Xu, Kaidi and Shi, Zhouxing and Zhang, Huan and Wang, Yihan and Chang, Kai-Wei and Huang, Minlie and Kailkhura, Bhavya and Lin, Xue and Hsieh, Cho-Jui"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{salman2019convex,\n    year = {2019},\n    pages = {9835--9846},\n    volume = {32},\n    journal = {Advances in Neural Information Processing Systems},\n    author = {Salman, Hadi and Yang, Greg and Zhang, Huan and Hsieh, Cho-Jui and Zhang, Pengchuan},\n    title = {A Convex Relaxation Barrier to Tight Robustness Verification of Neural Networks},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "A Convex Relaxation Barrier to Tight Robustness Verification of Neural Networks",
+                "author": "Salman, Hadi and Yang, Greg and Zhang, Huan and Hsieh, Cho-Jui and Zhang, Pengchuan"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{xu2021fast,\n    url = {https://openreview.net/forum?id=nVZtXBI6LNn},\n    year = {2021},\n    booktitle = {International Conference on Learning Representations},\n    author = {Kaidi Xu and Huan Zhang and Shiqi Wang and Yihan Wang and Suman Jana and Xue Lin and Cho-Jui Hsieh},\n    title = {{Fast and Complete}: Enabling Complete Neural Network Verification with Rapid and Massively Parallel Incomplete Verifiers},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "{Fast and Complete}: Enabling Complete Neural Network Verification with Rapid and Massively Parallel Incomplete Verifiers",
+                "author": "Kaidi Xu and Huan Zhang and Shiqi Wang and Yihan Wang and Suman Jana and Xue Lin and Cho-Jui Hsieh",
+                "url": "https://openreview.net/forum?id=nVZtXBI6LNn"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{wang2021beta,\n    year = {2021},\n    volume = {34},\n    journal = {Advances in Neural Information Processing Systems},\n    author = {Wang, Shiqi and Zhang, Huan and Xu, Kaidi and Lin, Xue and Jana, Suman and Hsieh, Cho-Jui and Kolter, J Zico},\n    title = {{Beta-CROWN}: Efficient bound propagation with per-neuron split constraints for complete and incomplete neural network verification},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "{Beta-CROWN}: Efficient bound propagation with per-neuron split constraints for complete and incomplete neural network verification",
+                "author": "Wang, Shiqi and Zhang, Huan and Xu, Kaidi and Lin, Xue and Jana, Suman and Hsieh, Cho-Jui and Kolter, J Zico"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{zhang22babattack,\n    year = {2022},\n    pages = {26591--26604},\n    volume = {162},\n    booktitle = {Proceedings of the 39th International Conference on Machine Learning},\n    author = {Zhang, Huan and Wang, Shiqi and Xu, Kaidi and Wang, Yihan and Jana, Suman and Hsieh, Cho-Jui and Kolter, Zico},\n    title = {A Branch and Bound Framework for Stronger Adversarial Attacks of {R}e{LU} Networks},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "A Branch and Bound Framework for Stronger Adversarial Attacks of {R}e{LU} Networks",
+                "author": "Zhang, Huan and Wang, Shiqi and Xu, Kaidi and Wang, Yihan and Jana, Suman and Hsieh, Cho-Jui and Kolter, Zico"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{zhang2022general,\n    year = {2022},\n    journal = {Advances in Neural Information Processing Systems},\n    author = {Zhang, Huan and Wang, Shiqi and Xu, Kaidi and Li, Linyi and Li, Bo and Jana, Suman and Hsieh, Cho-Jui and Kolter, J Zico},\n    title = {General Cutting Planes for Bound-Propagation-Based Neural Network Verification},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "General Cutting Planes for Bound-Propagation-Based Neural Network Verification",
+                "author": "Zhang, Huan and Wang, Shiqi and Xu, Kaidi and Li, Linyi and Li, Bo and Jana, Suman and Hsieh, Cho-Jui and Kolter, J Zico"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{shi2024genbab,\n    year = {2024},\n    journal = {arXiv preprint arXiv:2405.21063},\n    author = {Shi, Zhouxing and Jin, Qirui and Kolter, Zico and Jana, Suman and Hsieh, Cho-Jui and Zhang, Huan},\n    title = {Neural Network Verification with Branch-and-Bound for General Nonlinearities},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Neural Network Verification with Branch-and-Bound for General Nonlinearities",
+                "author": "Shi, Zhouxing and Jin, Qirui and Kolter, Zico and Jana, Suman and Hsieh, Cho-Jui and Zhang, Huan"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{kotha2023provably,\n    year = {2023},\n    volume = {36},\n    url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/fe061ec0ae03c5cf5b5323a2b9121bfd-Paper-Conference.pdf},\n    title = {Provably Bounding Neural Network Preimages},\n    publisher = {Curran Associates, Inc.},\n    pages = {80270--80290},\n    editor = {A. Oh and T. Neumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},\n    booktitle = {Advances in Neural Information Processing Systems},\n    author = {Kotha, Suhas and Brix, Christopher and Kolter, J. Zico and Dvijotham, Krishnamurthy and Zhang, Huan},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Provably Bounding Neural Network Preimages",
+                "author": "Kotha, Suhas and Brix, Christopher and Kolter, J. Zico and Dvijotham, Krishnamurthy and Zhang, Huan",
+                "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/fe061ec0ae03c5cf5b5323a2b9121bfd-Paper-Conference.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "\u03b1,\u03b2-CROWN (alpha-beta-CROWN): A Fast and Scalable Neural Network Verifier with Efficient Bound Propagation"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://www.huan-zhang.com/images/upload/alpha-beta-crown/logo_2022.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://www.huan-zhang.com/images/upload/alpha-beta-crown/banner.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2103.06624.pdf\"><img src=\"https://www.huan-zhang.com/images/upload/alpha-beta-crown/logo_2022.png\" width=\"36%\"></a>\n</p>\n\n\u03b1,\u03b2-CROWN (alpha-beta-CROWN"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1811.00866.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2103.06624.pdf\"><img src=\"https://www.huan-zhang.com/images/upload/alpha-beta-crown/banner.png\" width=\"100%\"></a>\n</p>\n\nOur verifier consists of the following core algorithms:\n\n* **CROWN** ([Zhang et al. 2018](https://arxiv.org/pdf/1811.00866.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2405.21063.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2011.13824.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2002.12920.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2404.07956"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2103.06624.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2208.05740.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1902.08722"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1811.00866.pdf}\n}\n\n@article{xu2020automatic,\n  title={Automatic perturbation analysis for scalable certified robustness and beyond},\n  author={Xu, Kaidi and Shi, Zhouxing and Zhang, Huan and Wang, Yihan and Chang, Kai-Wei and Huang, Minlie and Kailkhura, Bhavya and Lin, Xue and Hsieh, Cho-Jui},\n  journal={Advances in Neural Information Processing Systems},\n  volume={33},\n  year={2020}\n}\n\n@article{salman2019convex,\n  title={A Convex Relaxation Barrier to Tight Robustness Verification of Neural Networks},\n  author={Salman, Hadi and Yang, Greg and Zhang, Huan and Hsieh, Cho-Jui and Zhang, Pengchuan},\n  journal={Advances in Neural Information Processing Systems},\n  volume={32},\n  pages={9835--9846},\n  year={2019}\n}\n\n@inproceedings{xu2021fast,\n    title={{Fast and Complete}: Enabling Complete Neural Network Verification with Rapid and Massively Parallel Incomplete Verifiers},\n    author={Kaidi Xu and Huan Zhang and Shiqi Wang and Yihan Wang and Suman Jana and Xue Lin and Cho-Jui Hsieh},\n    booktitle={International Conference on Learning Representations},\n    year={2021},\n    url={https://openreview.net/forum?id=nVZtXBI6LNn}\n}\n\n@article{wang2021beta,\n  title={{Beta-CROWN}: Efficient bound propagation with per-neuron split constraints for complete and incomplete neural network verification},\n  author={Wang, Shiqi and Zhang, Huan and Xu, Kaidi and Lin, Xue and Jana, Suman and Hsieh, Cho-Jui and Kolter, J Zico},\n  journal={Advances in Neural Information Processing Systems},\n  volume={34},\n  year={2021}\n}\n\n@InProceedings{zhang22babattack,\n  title = \t {A Branch and Bound Framework for Stronger Adversarial Attacks of {R}e{LU} Networks},\n  author =       {Zhang, Huan and Wang, Shiqi and Xu, Kaidi and Wang, Yihan and Jana, Suman and Hsieh, Cho-Jui and Kolter, Zico},\n  booktitle = \t {Proceedings of the 39th International Conference on Machine Learning},\n  volume = \t {162},\n  pages = \t {26591--26604},\n  year = \t {2022},\n}\n\n@article{zhang2022general,\n  title={General Cutting Planes for Bound-Propagation-Based Neural Network Verification},\n  author={Zhang, Huan and Wang, Shiqi and Xu, Kaidi and Li, Linyi and Li, Bo and Jana, Suman and Hsieh, Cho-Jui and Kolter, J Zico},\n  journal={Advances in Neural Information Processing Systems},\n  year={2022}\n}\n\n@article{shi2024genbab,\n  title={Neural Network Verification with Branch-and-Bound for General Nonlinearities},\n  author={Shi, Zhouxing and Jin, Qirui and Kolter, Zico and Jana, Suman and Hsieh, Cho-Jui and Zhang, Huan},\n  journal={arXiv preprint arXiv:2405.21063},\n  year={2024}\n}\n\n@inproceedings{kotha2023provably,\n author = {Kotha, Suhas and Brix, Christopher and Kolter, J. Zico and Dvijotham, Krishnamurthy and Zhang, Huan},\n booktitle = {Advances in Neural Information Processing Systems},\n editor = {A. Oh and T. Neumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},\n pages = {80270--80290},\n publisher = {Curran Associates, Inc.},\n title = {Provably Bounding Neural Network Preimages},\n url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/fe061ec0ae03c5cf5b5323a2b9121bfd-Paper-Conference.pdf},\n volume = {36},\n year = {2023}\n}\n```\n\nDevelopers and Copyright\n----------------------\n\nThe \u03b1,\u03b2-CROWN verifier is currently being developed by a multi-institutional team:\n\n**Team lead**:\n* Huan Zhang (huan@huan-zhang.com"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1711.07356.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2405.21063"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2312.16760"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2302.01404.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2212.10376.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2109.00498"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/verified-intelligence/alpha-beta-crown/main/README.md"
+        }
+    ]
+}

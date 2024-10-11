@@ -1,0 +1,538 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:02:52"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/nasa/vscode-pvs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "nasa",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-06-24T21:07:18Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-12T12:31:50Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "(see also file LICENSES/VSCode-PVS-NOSA.pdf)\nNASA OPEN SOURCE AGREEMENT VERSION 1.3\n\nTHIS OPEN SOURCE AGREEMENT (\u201cAGREEMENT\u201d) DEFINES THE RIGHTS OF USE,\nREPRODUCTION, DISTRIBUTION, MODIFICATION AND REDISTRIBUTION OF CERTAIN\nCOMPUTER SOFTWARE ORIGINALLY RELEASED BY THE UNITED STATES GOVERNMENT\nAS REPRESENTED BY THE GOVERNMENT AGENCY LISTED BELOW (\"GOVERNMENT\nAGENCY\"). THE UNITED STATES GOVERNMENT, AS REPRESENTED BY GOVERNMENT\nAGENCY, IS AN INTENDED THIRD-PARTY BENEFICIARY OF ALL SUBSEQUENT\nDISTRIBUTIONS OR REDISTRIBUTIONS OF THE SUBJECT SOFTWARE. ANYONE WHO\nUSES, REPRODUCES, DISTRIBUTES, MODIFIES OR REDISTRIBUTES THE SUBJECT\nSOFTWARE, AS DEFINED HEREIN, OR ANY PART THEREOF, IS, BY THAT ACTION,\nACCEPTING IN FULL THE RESPONSIBILITIES AND OBLIGATIONS CONTAINED IN THIS\nAGREEMENT.\n\nGovernment Agency: National Aeronautics and Space Administration\nGovernment Agency Original Software Designation: LAR-19642-1\nGovernment Agency Original Software Title: Visual Studio Code Extension for PVS\nGovernment Agency Point of Contact for Original Software: cesar.a.munoz@nasa.gov\n\n1. DEFINITIONS\n\nA. \u201cContributor\u201d means Government Agency, as the developer of the Original Software,\nand any entity that makes a Modification.\nB. \u201cCovered Patents\u201d mean patent claims licensable by a Contributor that are necessarily\ninfringed by the use or sale of its Modification alone or when combined with the\nSubject Software.\nC. \u201cDisplay\u201d means the showing of a copy of the Subject Software, either directly or by\nmeans of an image, or any other device.\nD. \u201cDistribution\u201d means conveyance or transfer of the Subject Software, regardless of\nmeans, to another.\nE. \u201cLarger Work\u201d means computer software that combines Subject Software, or portions\nthereof, with software separate from the Subject Software that is not governed by the\nterms of this Agreement.\nF. \u201cModification\u201d means any alteration of, including addition to or deletion from, the\nsubstance or structure of either the Original Software or Subject Software, and includes\nderivative works, as that term is defined in the Copyright Statute, 17 USC 101.\nHowever, the act of including Subject Software as part of a Larger Work does not in\nand of itself constitute a Modification.\nG. \u201cOriginal Software\u201d means the computer software first released under this Agreement\nby Government Agency with Government Agency designation LAR-19642-1 and\nentitled Visual Studio Code Extension for PVS, including source code, object code and\naccompanying documentation, if any.\nH. \u201cRecipient\u201d means anyone who acquires the Subject Software under this Agreement,\nincluding all Contributors.\nI. \u201cRedistribution\u201d means Distribution of the Subject Software after a Modification has\nbeen made.\nJ. \u201cReproduction\u201d means the making of a counterpart, image or copy of the Subject\nSoftware.\nK. \u201cSale\u201d means the exchange of the Subject Software for money or equivalent value.\nL. \u201cSubject Software\u201d means the Original Software, Modifications, or any respective\nparts thereof.\nM. \u201cUse\u201d means the application or employment of the Subject Software for any purpose.\n\n2. GRANT OF RIGHTS\n\nA. Under Non-Patent Rights: Subject to the terms and conditions of this Agreement, each\nContributor, with respect to its own contribution to the Subject Software, hereby grants\nto each Recipient a non-exclusive, world-wide, royalty-free license to engage in the\nfollowing activities pertaining to the Subject Software:\n1. Use\n2. Distribution\n3. Reproduction\n4. Modification\n5. Redistribution\n6. Display\n\nB. Under Patent Rights: Subject to the terms and conditions of this Agreement, each\nContributor, with respect to its own contribution to the Subject Software, hereby grants\nto each Recipient under Covered Patents a non-exclusive, world-wide, royalty-free\nlicense to engage in the following activities pertaining to the Subject Software:\n1. Use\n2. Distribution\n3. Reproduction\n4. Sale\n5. Offer for Sale\n\nC. The rights granted under Paragraph B. also apply to the combination of a Contributor\u2019s\nModification and the Subject Software if, at the time the Modification is added by the\nContributor, the addition of such Modification causes the combination to be covered by\nthe Covered Patents. It does not apply to any other combinations that include a\nModification.\n\nD. The rights granted in Paragraphs A. and B. allow the Recipient to sublicense those\nsame rights. Such sublicense must be under the same terms and conditions of this\nAgreement.\n\n3. OBLIGATIONS OF RECIPIENT\n\nA. Distribution or Redistribution of the Subject Software must be made under this\nAgreement except for additions covered under paragraph 3H.\n1. Whenever a Recipient distributes or redistributes the Subject Software, a copy of\nthis Agreement must be included with each copy of the Subject Software; and\n2. If Recipient distributes or redistributes the Subject Software in any form other\nthan source code, Recipient must also make the source code freely available, and\nmust provide with each copy of the Subject Software information on how to\nobtain the source code in a reasonable manner on or through a medium\ncustomarily used for software exchange.\n\nB. Each Recipient must ensure that the following copyright notice appears prominently in\nthe Subject Software:\nCopyright 2019 United States Government as represented by the Administrator of the\nNational Aeronautics and Space Administration. All Rights Reserved.\n\nC. Each Contributor must characterize its alteration of the Subject Software as a\nModification and must identify itself as the originator of its Modification in a manner\nthat reasonably allows subsequent Recipients to identify the originator of the\nModification. In fulfillment of these requirements, Contributor must include a file\n(e.g., a change log file) that describes the alterations made and the date of the\nalterations, identifies Contributor as originator of the alterations, and consents to\ncharacterization of the alterations as a Modification, for example, by including a\nstatement that the Modification is derived, directly or indirectly, from Original\nSoftware provided by Government Agency. Once consent is granted, it may not\nthereafter be revoked.\n\nD. A Contributor may add its own copyright notice to the Subject Software. Once a\ncopyright notice has been added to the Subject Software, a Recipient may not remove it\nwithout the express permission of the Contributor who added the notice.\n\nE. A Recipient may not make any representation in the Subject Software or in any\npromotional, advertising or other material that may be construed as an endorsement by\nGovernment Agency or by any prior Recipient of any product or service provided by\nRecipient, or that may seek to obtain commercial advantage by the fact of Government\nAgency's or a prior Recipient\u2019s participation in this Agreement.\n\nF. In an effort to track usage and maintain accurate records of the Subject Software, each\nRecipient, upon receipt of the Subject Software, is requested to provide Government\nAgency, by e-mail to the Government Agency Point of Contact listed in clause 5.F., the\nfollowing information: First and Last Name; Email Address; and Affiliation.\nRecipient\u2019s name and personal information shall be used for statistical purposes only.\nOnce a Recipient makes a Modification available, it is requested that the Recipient\ninform Government Agency, by e-mail to the Government Agency Point of Contact\nlisted in clause 5.F., how to access the Modification.\n\nG. Each Contributor represents that that its Modification is believed to be Contributor\u2019s\noriginal creation and does not violate any existing agreements, regulations, statutes or\nrules, and further that Contributor has sufficient rights to grant the rights conveyed by\nthis Agreement.\n\nH. A Recipient may choose to offer, and to charge a fee for, warranty, support, indemnity\nand/or liability obligations to one or more other Recipients of the Subject Software. A\nRecipient may do so, however, only on its own behalf and not on behalf of\nGovernment Agency or any other Recipient. Such a Recipient must make it absolutely\nclear that any such warranty, support, indemnity and/or liability obligation is offered\nby that Recipient alone. Further, such Recipient agrees to indemnify Government\nAgency and every other Recipient for any liability incurred by them as a result of\nwarranty, support, indemnity and/or liability offered by such Recipient.\n\nI. A Recipient may create a Larger Work by combining Subject Software with separate\nsoftware not governed by the terms of this agreement and distribute the Larger Work as\na single product. In such case, the Recipient must make sure Subject Software, or\nportions thereof, included in the Larger Work is subject to this Agreement.\n\nJ. Notwithstanding any provisions contained herein, Recipient is hereby put on notice\nthat export of any goods or technical data from the United States may require some\nform of export license from the U.S. Government. Failure to obtain necessary export\nlicenses may result in criminal liability under U.S. laws. Government Agency neither\nrepresents that a license shall not be required nor that, if required, it shall be issued.\nNothing granted herein provides any such export license.\n\n4. DISCLAIMER OF WARRANTIES AND LIABILITIES; WAIVER AND INDEMNIFICATION\n\nA. No Warranty: THE SUBJECT SOFTWARE IS PROVIDED \u201cAS IS\u201d WITHOUT\nANY WARRANTY OF ANY KIND, EITHER EXPRESSED, IMPLIED, OR\nSTATUTORY, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTY THAT\nTHE SUBJECT SOFTWARE WILL CONFORM TO SPECIFICATIONS, ANY\nIMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A\nPARTICULAR PURPOSE, OR FREEDOM FROM INFRINGEMENT, ANY\nWARRANTY THAT THE SUBJECT SOFTWARE WILL BE ERROR FREE, OR\nANY WARRANTY THAT DOCUMENTATION, IF PROVIDED, WILL CONFORM\nTO THE SUBJECT SOFTWARE. THIS AGREEMENT DOES NOT, IN ANY\nMANNER, CONSTITUTE AN ENDORSEMENT BY GOVERNMENT AGENCY\nOR ANY PRIOR RECIPIENT OF ANY RESULTS, RESULTING DESIGNS,\nHARDWARE, SOFTWARE PRODUCTS OR ANY OTHER APPLICATIONS\nRESULTING FROM USE OF THE SUBJECT SOFTWARE. FURTHER,\nGOVERNMENT AGENCY DISCLAIMS ALL WARRANTIES AND LIABILITIES\nREGARDING THIRD-PARTY SOFTWARE, IF PRESENT IN THE ORIGINAL\nSOFTWARE, AND DISTRIBUTES IT \u201cAS IS.\u201d\n\nB. Waiver and Indemnity: RECIPIENT AGREES TO WAIVE ANY AND ALL\nCLAIMS AGAINST THE UNITED STATES GOVERNMENT, ITS\nCONTRACTORS AND SUBCONTRACTORS, AS WELL AS ANY PRIOR\nRECIPIENT. IF RECIPIENT'S USE OF THE SUBJECT SOFTWARE RESULTS IN\nANY LIABILITIES, DEMANDS, DAMAGES, EXPENSES OR LOSSES ARISING\nFROM SUCH USE, INCLUDING ANY DAMAGES FROM PRODUCTS BASED\nON, OR RESULTING FROM, RECIPIENT'S USE OF THE SUBJECT SOFTWARE,\nRECIPIENT SHALL INDEMNIFY AND HOLD HARMLESS THE UNITED\nSTATES GOVERNMENT, ITS CONTRACTORS AND SUBCONTRACTORS, AS\nWELL AS ANY PRIOR RECIPIENT, TO THE EXTENT PERMITTED BY LAW.\nRECIPIENT'S SOLE REMEDY FOR ANY SUCH MATTER SHALL BE THE\nIMMEDIATE, UNILATERAL TERMINATION OF THIS AGREEMENT.\n\n5. GENERAL TERMS\n\nA. Termination: This Agreement and the rights granted hereunder will terminate\nautomatically if a Recipient fails to comply with these terms and conditions, and fails\nto cure such noncompliance within thirty (30) days of becoming aware of such\nnoncompliance. Upon termination, a Recipient agrees to immediately cease use and\ndistribution of the Subject Software. All sublicenses to the Subject Software properly\ngranted by the breaching Recipient shall survive any such termination of this\nAgreement.\n\nB. Severability: If any provision of this Agreement is invalid or unenforceable under\napplicable law, it shall not affect the validity or enforceability of the remainder of the\nterms of this Agreement.\n\nC. Applicable Law: This Agreement shall be subject to United States federal law only for\nall purposes, including, but not limited to, determining the validity of this Agreement,\nthe meaning of its provisions and the rights, obligations and remedies of the parties.\n\nD. Entire Understanding: This Agreement constitutes the entire understanding and\nagreement of the parties relating to release of the Subject Software and may not be\nsuperseded, modified or amended except by further written agreement duly executed\nby the parties.\n\nE. Binding Authority: By accepting and using the Subject Software under this\nAgreement, a Recipient affirms its authority to bind the Recipient to all terms and\nconditions of this Agreement and that that Recipient hereby agrees to all terms and\nconditions herein.\n\nF. Point of Contact: Any Recipient contact with Government Agency is to be directed to\nthe designated representative as follows:\nBonnie Lumanog\nSoftware Release Authority\nMS 50, NASA Langley Research Center\nHampton, VA 23681\nFax: 757-864-4287\nPhone: 757-864-2933\nEmail: larc-sra@mail.nasa.gov",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "LAR-19642-1: Visual Studio Code Extension for PVS",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "vscode-pvs",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "nasa/vscode-pvs",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/nasa/vscode-pvs/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/nasa/vscode-pvs/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 41,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 8,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/nasa/vscode-pvs/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "TypeScript",
+                "name": "TypeScript",
+                "type": "Programming_language",
+                "size": 7406019
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 92319
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "ANTLR",
+                "name": "ANTLR",
+                "type": "Programming_language",
+                "size": 36240
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 22468
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 11251
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Common Lisp",
+                "name": "Common Lisp",
+                "type": "Programming_language",
+                "size": 11118
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 6118
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 191
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/nasa/vscode-pvs/tree/master/vscode-pvs/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "- [Walkthrough on VSCode-PVS](https://github.com/nasa/vscode-pvs/blob/master/vscode-pvs/docs/WALKTHROUGH.md)\n- [Quick reference guide](https://github.com/nasa/vscode-pvs/blob/master/vscode-pvs/docs/USER-INTERFACE.md) for the VSCode-PVS User Interface\n- [FAQs](https://github.com/nasa/vscode-pvs/blob/master/vscode-pvs/docs/FAQ.md) on VSCode-PVS, including troubleshooting techniques for basic problems.\n- Are you new to PVS? Try out our [tutorial](https://github.com/nasa/vscode-pvs/blob/master/vscode-pvs/docs/TUTORIAL.md)!\n- Join the new [PVS group on Google](https://groups.google.com/g/pvs-group)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Documentation",
+                "parent_header": [
+                    "VSCode-PVS: An Integrated Development Environment for the Prototype Verification System"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/vscode-pvs/extra/pvs-doc/pvs2html/pvs2html.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/vscode-pvs/extra/pvs-doc/pvs2latex/pvs2latex.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "- Linux or Intel Mac\n- NodeJS (v12.16.1 or greater) https://nodejs.org/en/download\n- Visual Studio Code (v1.49.0 or greater) https://code.visualstudio.com\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "VSCode-PVS: An Integrated Development Environment for the Prototype Verification System"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "VSCode-PVS can be installed from the Visual Studio Code Marketplace or from GitHub.\n\n>Note: When installing VSCode-PVS for the first time, the extension will check if PVS Allegro v7.1.0 is present on your system. If PVS Allegro is not present, VSCode-PVS will show a dialog and try to download and install PVS Allegro. Should the extension fail to download and install PVS Allegro, try to download and install PVS Allegro manually from https://pvs.csl.sri.com/. Should everything else fail, please report the problem on the [PVS group on Google](https://groups.google.com/g/pvs-group), we will help you out.\n\n**Automatic installation of VSCode-PVS from the Marketplace (recommended)**\n- Search `pvs` in https://marketplace.visualstudio.com and select `install`\n<br><br><img src=\"https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/how-to-install-vscode-pvs-from-marketplace.gif\" width=\"600\">\n\n**Manual installation of VSCode-PVS from GitHub**\n1. Download the .vsix file of VSCode-PVS from [github](https://github.com/nasa/vscode-pvs/raw/master/releases).\n2. Click on the Extensions icon in the Activity Bar \n3. Click on the `...` menu in the title bar, and use `Install from VSIX` to select the downloaded .vsix file\n<br><br><img src=\"https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/how-to-install-vscode-pvs.gif\" width=\"600\">\n\n<br>\n\n**Installation of PVS Allegro**\n\nIf PVS Allegro is not already installed on your machine, VSCode-PVS will automatically download and install it. Should VSCode-PVS fail to download and install PVS Allegro, please try the following two steps:\n1. Download PVS Allegro v7.1.0 for [MacOS](https://pvs.csl.sri.com/license.html?tgzfile=pvs7.1.0-ix86_64-Linux-allegro.tgz) or [Linux](https://pvs.csl.sri.com/license.html?tgzfile=pvs-6.0-ix86_64-Linux-allegro.tgz)\n2. Follow the installation instructions reported in the `INSTALL` file included in the downloaded PVS package. \n\nOnce PVS Allegro is installed on your machine, you can link up PVS and VSCode-PVS by indicating the location of the PVS executables in the VSCode-PVS settings.\n\n<br>\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation instructions",
+                "parent_header": [
+                    "VSCode-PVS: An Integrated Development Environment for the Prototype Verification System"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<img src=\"https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-screenshot.png\" width=\"800\">\n \n",
+                "original_header": "VSCode-PVS: An Integrated Development Environment for the Prototype Verification System"
+            },
+            "confidence": 0.9992639098145457,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "All settings and preferences will be maintained when installing a new release. \nIf you would like to perform manual updates, e.g., to try out pre-releases, you can download and install the .vsix files posted on the [PVS google group](https://groups.google.com/g/pvs-group). \n",
+                "original_header": "Updating VSCode-PVS"
+            },
+            "confidence": 0.9905403447722156,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The main functionalities provided by the environment are as follows:\n- **Syntax highlighting**: PVS keywords and library functions are automatically highlighted.\n- **Autocompletion and code snippets**: Tooltips suggesting function names and language keywords are automatically presented in the editor when placing the mouse over a symbol name. Code snippets are provided for frequent modeling blocks, e.g., if-then-else. \n<br><br> <img src=\"https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-autocompletion.gif\" width=\"600\"> \n- **Hover information for symbol definitions**: Hover boxes providing information about identifiers are automatically displayed when the user places the cursor over an identifier.\n<br><br> <img src=\"https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-hover.gif\" width=\"600\"> \n- **Go-to definition**: Click on the name of the identifier while holding down the Ctrl key to jump to the location where the identifier is declared.\n<br><br> <img src=\"https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-goto-definition.gif\" width=\"600\"> \n- **Workspace Explorer**: Interactive tree view showing all theories in the current workspace, name and status of theorems and typecheck conditions.\n<br><br> <img src=\"https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-theory-explorer.gif\" width=\"600\"> \n- **Proof Explorer + Prover Console**: Interactive tree view for viewing and editing the current proof. A prover console allows interaction with the theorem prover. Auto-completion is provided (using the TAB key) for prover commands, as well as access to the commands history.\n<br><br> <img src=\"https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-proof-explorer.gif\" width=\"600\"> \n- **Plot Executable Functions**: Executable functions that return a list of real numbers can be rendered in a plot diagram (see examples in [helloworld.pvs](https://github.com/nasa/vscode-pvs/blob/master/vscode-pvs/examples/helloworld/helloworld.pvs))\n<br><br> <img src=\"https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-plot-expression.gif\" width=\"600\"> \n- **Search NASALib**: Search definitions and theorems in [NASALib](https://github.com/nasa/pvslib), an extensive PVS library developed and maintained by the NASA Langley Formal Methods Team.\n<br><br> <img src=\"https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-search-nasalib.gif\" width=\"600\"> \n- **Prototype Builder**: Build interactive visual prototypes to demonstrate the behavior of executable PVS specifications (see also [pvsio-web prototype examples](https://github.com/pvsioweb/examples/tree/5ac4fdb40bcd489b8a28b0e42c6bf32fa94577ee))\n<br><br> <img src=\"https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-rapid-prototyping.gif\" width=\"600\"> \n",
+                "original_header": "Functionalities"
+            },
+            "confidence": 0.9736037220010411,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        }
+    ],
+    "contact": [
+        {
+            "result": {
+                "value": "* Paolo Masci (NIA) (paolo.masci@nianet.org)\n* Aaron Dutle (NASA LaRC) (aaron.m.dutle@nasa.gov)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Contacts",
+                "parent_header": [
+                    "VSCode-PVS: An Integrated Development Environment for the Prototype Verification System"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "VSCode-PVS: An Integrated Development Environment for the Prototype Verification System"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://vsmarketplacebadges.dev/version/paolomasci.vscode-pvs.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://vsmarketplacebadges.dev/installs-short/paolomasci.vscode-pvs.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-screenshot.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/how-to-install-vscode-pvs-from-marketplace.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/how-to-install-vscode-pvs.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-autocompletion.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-hover.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-goto-definition.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-live-diagnostics.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-theory-explorer.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-proof-explorer.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-proof-mate.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-plot-expression.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-search-nasalib.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/nasa/vscode-pvs/raw/master/vscode-pvs/screenshots/vscode-pvs-rapid-prototyping.gif"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/1912.10632v1"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/nasa/vscode-pvs/master/README.md"
+        }
+    ]
+}

@@ -1,0 +1,296 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:59:06"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/dyninst/fuzz",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "dyninst",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-08-13T16:33:02Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2023-10-10T15:37:30Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "fuzz",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "dyninst/fuzz",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/dyninst/fuzz/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/dyninst/fuzz/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 11,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/dyninst/fuzz/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 38941
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 28860
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 121
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/dyninst/fuzz/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "This work is a revisit to Prof. Miller's previous fuzzing works, i.e., [1990](https://dl.acm.org/doi/abs/10.1145/96267.96279), [1995](https://minds.wisconsin.edu/bitstream/handle/1793/59964/TR1268.pdf) and [2006](https://dl.acm.org/doi/abs/10.1145/1145735.1145743). We applied original fuzzing techniques to command-line utilities on multiple platforms and found that 9 crash or hang out of 74 utilities on Linux, 15 out of 78 utilities\non FreeBSD, and 12 out of 76 utilities on MacOS. We found that the failure rates of command-line utilities are higher than those in previous studies. We also provided detailed bug analysis, including when a bug was introduced and when it was solved. Some of the errors that we found have been present in the codebase for many years. Plus, we fuzzed core utilities implemented in Rust.\n",
+                "type": "Text_excerpt",
+                "original_header": "Description",
+                "parent_header": [
+                    "The Relevance of Classic Fuzz Testing: Have We Solved This One?"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/dyninst/fuzz/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "In this directory: \n",
+                "original_header": "./src"
+            },
+            "confidence": 0.9685666227769482,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dyninst/fuzz/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\u200b&emsp;For each program tested with ptyjig, we specify a string to append to the random input to attempt to terminate the utility. For example, when testing vim, we append the sequence \u201cESC :q !\u201d. In this way we can distinguish if the program is waiting for more input after the end of random input from a program that is hung. \n",
+                "original_header": "./run_test"
+            },
+            "confidence": 0.9431495380211059,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dyninst/fuzz/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you find this implementation useful in your research, please consider citing:\n\n```\n@article{miller2020relevance,\n  title={The Relevance of Classic Fuzz Testing: Have We Solved This One?},\n  author={Miller, Barton and Zhang, Mengxiao and Heymann, Elisa},\n  journal={IEEE Transactions on Software Engineering},\n  year={2020},\n  publisher={IEEE}\n}\n```",
+                "type": "Text_excerpt",
+                "original_header": "Reference",
+                "parent_header": [
+                    "The Relevance of Classic Fuzz Testing: Have We Solved This One?"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/dyninst/fuzz/master/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{miller2020relevance,\n    publisher = {IEEE},\n    year = {2020},\n    journal = {IEEE Transactions on Software Engineering},\n    author = {Miller, Barton and Zhang, Mengxiao and Heymann, Elisa},\n    title = {The Relevance of Classic Fuzz Testing: Have We Solved This One?},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "The Relevance of Classic Fuzz Testing: Have We Solved This One?",
+                "author": "Miller, Barton and Zhang, Mengxiao and Heymann, Elisa"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dyninst/fuzz/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "In this study, we updated the source code used in the [original fuzzing study](https://dl.acm.org/doi/abs/10.1145/96267.96279). Now it applies to Linux, OS X and FreeBSD.\n \n",
+                "original_header": "Code"
+            },
+            "confidence": 0.9263297027606978,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dyninst/fuzz/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\u200b&emsp;To build fuzz.c and ptyjig.c, run: \n\u200b&emsp;```cd ./src && make all``` \n",
+                "original_header": "./src"
+            },
+            "confidence": 0.9575733952709393,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dyninst/fuzz/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\u200b&emsp;Name and option pools of each cmd to be tested on Linux. \n\u200b&emsp;Name and option pools of each cmd to be tested on MacOS. \n\u200b&emsp;Name and option pools of each cmd to be tested on FreeBSD. \n\u200b&emsp;Automatic script to test all utilities listed in a configuration file(see ./test_Linux/ or ./test_MacOS/ or ./test_FreeBSD/).  \n",
+                "original_header": "./run_test"
+            },
+            "confidence": 0.9454721814628206,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dyninst/fuzz/master/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "run.py \n",
+                "original_header": "./run_test"
+            },
+            "confidence": 0.929604066955189,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/dyninst/fuzz/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "The Relevance of Classic Fuzz Testing: Have We Solved This One?"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/dyninst/fuzz/master/README.md"
+        }
+    ]
+}

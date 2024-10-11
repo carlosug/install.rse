@@ -1,0 +1,284 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:45:39"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/Wardat-ISU/DeepLocalize",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "Wardat-ISU",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-02-08T18:16:29Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-10T20:22:52Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "DeepLocalize: Fault Localization for Deep NeuralNetworks",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The core principle of our callback to get a view on internal states and statistics of the model during training. \n",
+                "original_header": "Our Callback Method"
+            },
+            "confidence": 0.9063386466010847,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Wardat-ISU/DeepLocalize/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "DeepLocalize",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "Wardat-ISU/DeepLocalize",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Wardat-ISU/DeepLocalize/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Wardat-ISU/DeepLocalize/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 25,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 8,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/Wardat-ISU/DeepLocalize/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 518218
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MATLAB",
+                "name": "MATLAB",
+                "type": "Programming_language",
+                "size": 664
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 640
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Wardat-ISU/DeepLocalize/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Wardat-ISU/DeepLocalize/main/Benchmark/GitHub/Buggy%20Model/kaggle-melbourne_properties/run_experiments.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Wardat-ISU/DeepLocalize/main/Benchmark/GitHub/Correct%20Model/kaggle-melbourne_properties/run_experiments.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "Version numbers below are of confirmed working releases for this project.\n\n    python 3.6.5\n    Keras  2.2.0\n    Keras-Applications  1.0.2\n    Keras-Preprocessing 1.0.1  \n    numpy 1.19.2\n    pandas 1.1.5\n    scikit-learn 0.21.2\n    scipy 1.6.0\n    tensorflow 1.14.0\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites",
+                "parent_header": [
+                    "DeepLocalize: Fault Localization for Deep Neural Networks"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Wardat-ISU/DeepLocalize/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you find this [paper](https://conf.researchr.org/details/icse-2021/icse-2021-papers/1/DeepLocalize-Fault-Localization-for-Deep-Neural-Networks) useful in your research, please consider citing:\n\n    @inproceedings{wardat21DeepLocalize,\n\tAuthor = {Mohammad Wardat and Wei Le and Hridesh Rajan},\n\tTitle = {DeepLocalize: Fault Localization for Deep Neural Networks},\n\tBooktitle  = {ICSE'21: The 43nd International Conference on Software Engineering},\n\tYear = {2021},\n\tentrysubtype = {conference}\n    }\n",
+                "type": "Text_excerpt",
+                "original_header": "BibTeX Reference",
+                "parent_header": [
+                    "DeepLocalize: Fault Localization for Deep Neural Networks"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Wardat-ISU/DeepLocalize/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{wardat21DeepLocalize,\n    entrysubtype = {conference},\n    year = {2021},\n    booktitle = {ICSE'21: The 43nd International Conference on Software Engineering},\n    title = {DeepLocalize: Fault Localization for Deep Neural Networks},\n    author = {Mohammad Wardat and Wei Le and Hridesh Rajan},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "DeepLocalize: Fault Localization for Deep Neural Networks",
+                "author": "Mohammad Wardat and Wei Le and Hridesh Rajan"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Wardat-ISU/DeepLocalize/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "You can start training a new model using the following commands in Terminal (macOS/Linux) or cmd (Windows) as following: \n",
+                "original_header": "Our Tool"
+            },
+            "confidence": 0.999965916540958,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Wardat-ISU/DeepLocalize/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "    python main.py \n",
+                "original_header": "Our Tool"
+            },
+            "confidence": 0.9170969481393187,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Wardat-ISU/DeepLocalize/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "DeepLocalize: Fault Localization for Deep Neural Networks"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Wardat-ISU/DeepLocalize/main/README.md"
+        }
+    ]
+}

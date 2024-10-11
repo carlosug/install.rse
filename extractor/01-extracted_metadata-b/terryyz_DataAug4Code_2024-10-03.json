@@ -1,0 +1,309 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:46:42"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/terryyz/DataAug4Code",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "terryyz",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-05-31T12:45:06Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-18T14:47:59Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Source Code Data Augmentation for Deep Learning: A Survey.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository is based on our paper, [Source Code Data Augmentation for Deep Learning: A Survey](https://ArXiv.org/abs/2305.19915). You can cite it as follows: \n"
+            },
+            "confidence": 0.9771970804000335,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| Paper                                                                                                                                                                           | Datasets                    |\n| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |\n| Contrastive Code Representation Learning ([EMNLP'22](https://aclanthology.org/2021.emnlp-main.482/))                                                                            | JavaScript (paper-specific) |\n| Data Augmentation by Program Transformation ([JSS'22](https://www.sciencedirect.com/science/article/pii/S0164121222000541))                                                     | BCB                         |\n| Natural Attack for Pre-trained Models of Code ([ICSE'22](https://dl.acm.org/doi/abs/10.1145/3510003.3510146))                                                                   | BigCloneBench               |\n| Unleashing the Power of Compiler Intermediate Representation to Enhance Neural Program Embeddings ([ICSE'22](https://dl.acm.org/doi/abs/10.1145/3510003.3510217))               | POJ-104, GCJ                |\n| Heloc: Hierarchical contrastive learning of source code representation ([ICPC'22](https://dl.acm.org/doi/abs/10.1145/3524610.3527896))                                          | GCJ, OJClone                |\n| COMBO: Pre-Training Representations of Binary Code Using Contrastive Learning ([ArXiv'22](https://ArXiv.org/abs/2210.05102))                                                    | BinaryCorp-3M               |\n| Evaluation of Contrastive Learning with Various Code Representations for Code Clone Detection ([ArXiv'22](http://ArXiv.org/abs/2206.08726))                                     | POJ-104, Codeforces         |\n| Towards Learning (Dis)-Similarity of Source Code from Program Contrasts ([ACL'22](https://aclanthology.org/2022.acl-long.436))                                                  | POJ-104, BigCloneBench      |\n| ReACC: A retrieval-augmented code completion framework ([ACL'22](https://aclanthology.org/2022.acl-long.431/))                                                                  | CodeNet                     |\n| Bridging pre-trained models and downstream tasks for source code understanding ([ICSE'22](https://dl.acm.org/doi/abs/10.1145/3510003.3510062))                                  | POJ-104                     |\n| Boosting Source Code Learning with Data Augmentation: An Empirical Study ([ArXiv'23](https://ArXiv.org/abs/2303.06808))                                                         | BigCloneBench               |\n| CLAWSAT: Towards Both Robust and Accurate Code Models  ([SANER'22](https://ArXiv.org/abs/2211.11711))                                                                           | ---                         |\n| ContraBERT: Enhancing Code Pre-trained Models via Contrastive Learning ([ICSE'22](https://ArXiv.org/abs/2301.09072))                                                            | POJ-104                     |\n| Pathways to Leverage Transcompiler based Data Augmentation for Cross-Language Clone Detection ([ICPC'23](https://ArXiv.org/abs/2303.01435))                                     | CLCDSA                      |\n| Code Difference Guided Adversarial Example Generation for Deep Code Models ([ASE'23](https://ArXiv.org(/abs/2301.02412230))                                                     | BigCloneBench               |\n| A Pre-training Method for Enhanced Code Representation Based on Multimodal Contrastive Learning ([JoS'23](https://www.jos.org.cn/josen/article/abstract/7016?st=article_issue)) | POJ-104, BigCloneBench      |\n| CONCORD: Clone-aware Contrastive Learning for Source Code ([ISSTA'23](https://www.jos.org.cn/josen/article/abstract/7016?st=article_issue))                                     | CodeNet (Java), POJ104      |\n| Neuro-symbolic Zero-Shot Code Cloning with Cross-Language Intermediate Representation ([ArXiv'23](https://ArXiv.org/abs/2304.13350))                                            | CodeNet (C, COBOL)          |\n| Multi-target Backdoor Attacks for Code Pre-trained Models ([ACL'23](https://aclanthology.org/2023.acl-long.399/))                                                               | BCB                         |\n \n",
+                "original_header": "Clone Detection"
+            },
+            "confidence": 0.9320305060543297,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| Paper                                                                                                                                                                     | Datasets                                               |\n| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |\n| Adversarial Examples for Models of Code ([OOPSLA'20](https://ArXiv.org/abs/2301.02412230))                                                                                | VarMisuse                                              |\n| Self-Supervised Bug Detection and Repair ([NeurIPS'21](https://openreview.net/forum?id=zOngaSKrElL))                                                                      | RANDOMBUGS, PYPIBUGS                                   |\n| Semantic-Preserving Adversarial Code Comprehension ([COLING'22](https://aclanthology.org/2022.coling-1.267))                                                              | Defects4J                                              |\n| Path-sensitive code embedding via contrastive learning for software vulnerability detection ([ISSTA'22](https://dl.acm.org/doi/abs/10.1145/3533767.3534371))              | D2A, Fan, Devign                                       |\n| Natural Attack for Pre-trained Models of Code ([ICSE'22](https://dl.acm.org/doi/abs/10.1145/3510003.3510146))                                                             | Devign                                                 |\n| COMBO: Pre-Training Representations of Binary Code Using Contrastive Learning ([ArXiv'22](https://ArXiv.org/abs/2210.05102))                                              | SySeVR                                                 |\n| Towards Learning (Dis)-Similarity of Source Code from Program Contrasts ([ACL'22](https://aclanthology.org/2022.acl-long.436))                                            | REVEAL, CodeXGLUE                                      |\n| Boosting Source Code Learning with Data Augmentation: An Empirical Study ([ArXiv'23](https://ArXiv.org/abs/2303.06808))                                                   | Refactory, CodRep1                                     |\n| MIXCODE: Enhancing Code Classification by Mixup-Based Data Augmentation ([SANER'23](https://www.computer.org/csdl/proceedings-article/saner/2023/527800a379/1Nc0QvHneMg)) | Refactory, CodRep1                                     |\n| ContraBERT: Enhancing Code Pre-trained Models via Contrastive Learning ([ICSE'23](https://ArXiv.org/abs/2301.09072))                                                      | Devign                                                 |\n| Code Difference Guided Adversarial Example Generation for Deep Code Models ([ASE'23](https://ArXiv.org/abs/2301.02412230))                                                | Devign, CodeChef                                       |\n| MUFIN: Improving Neural Repair Models with Back-Translation ([ArXiv'23](https://ArXiv.org/abs/2304.02301))                                                                | Defects4J (paper-specific),  QuixBugs (paper-specific) |\n| Leveraging Causal Inference for Explainable Automatic Program Repair ([IJCNN'22](https://ArXiv.org/abs/2205.13342))                                                       | Defects4J,  QuixBugs, BugAID                           |\n| Deepdebug: Fixing python bugs using stack traces, backtranslation, and code skeletons ([ArXiv'21](https://ArXiv.org/abs/2105.09352))                                      | paper-specific                                         |\n| Break-It-Fix-It: Unsupervised Learning for Program Repair ([ArXiv'21](https://ArXiv.org/abs/2105.09352))                                                                  | paper-specific, DeepFix                                |\n| Multi-target Backdoor Attacks for Code Pre-trained Models ([ACL'23](https://aclanthology.org/2023.acl-long.399/))                                                         | Devign. Bug2Fix                                        |\n| InferFix: End-to-End Program Repair with LLMs over Retrieval-Augmented Prompts ([ArXiv'23](https://ArXiv.org/abs/2303.07263))                                             | InferredBugs                                           |\n| RAP-Gen: Retrieval-Augmented Patch Generation with CodeT5 for Automatic Program Repair ([FSE'23](https://ArXiv.org/abs/2303.07263))                                       | TFix, Bug2Fix, Defects4J                               |\n| Too Few Bug Reports? Exploring Data Augmentation for Improved Changeset-based Bug Localization ([ArXiv'23](https://arxiv.org/abs/2305.16430))                             | Locus data                                             |\n \n",
+                "original_header": "Defect Detection and Repair"
+            },
+            "confidence": 0.9682476683254674,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| Paper                                                                                                                                                                              | Datasets                                             |\n| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |\n| AugmentedCode: Examining the Effects of Natural Language Resources in Code Retrieval Models ([ArXiv'21](https://ArXiv.org/abs/2110.08512))                                         | CodeSearchNet                                        |\n| Cosqa: 20, 000+ web queries for code search and question answering ([ACL'21](https://aclanthology.org/2021.acl-long.442))                                                          | CoSQA                                                |\n| A search-based testing framework for deep neural networks of source code embedding ([ICST'21](https://www.computer.org/csdl/proceedings-article/icst/2021/683600a036/1tRP9PPnyj6)) | paper-specific                                       |\n| Semantic-Preserving Adversarial Code Comprehension ([COLING'22](https://aclanthology.org/2022.coling-1.267))                                                                       | CodeSearchNet                                        |\n| Exploring Representation-Level Augmentation for Code Search ([EMNLP'22](https://aclanthology.org/2022.emnlp-main.327/))                                                            | CodeSearchNet                                        |\n| Cross-Modal Contrastive Learning for Code Search ([ICSME'22](https://ieeexplore.ieee.org/document/9978195/))                                                                       | AdvTest, CoSQA                                       |\n| Bridging pre-trained models and downstream tasks for source code understanding ([ICSE'22](https://dl.acm.org/doi/abs/10.1145/3510003.3510062))                                     | CodeSearchNet                                        |\n| A Closer Look into Transformer-Based Code Intelligence Through Code Transformation: Challenges and Opportunities ([ArXiv'22](https://ArXiv.org/abs/2207.04285))                    | CodeSearchNet (Python, Java)                         |\n| ContraBERT: Enhancing Code Pre-trained Models via Contrastive Learning ([ICSE'23](https://ArXiv.org/abs/2301.09072))                                                               | AdvTest, WebQueryTest                                |\n| CoCoSoDa: Effective Contrastive Learning for Code Search ([ICSE'23](https://ArXiv.org/abs/2204.03293))                                                                             | CodeSearchNet                                        |\n| Contrastive Learning with Keyword-based Data Augmentation for Code Search and Code Question Answering ([EACL'23](https://aclanthology.org/2023.eacl-main.262/))                    | WebQueryTest                                         |\n| A Pre-training Method for Enhanced Code Representation Based on Multimodal Contrastive Learning ([JoS'23](https://www.jos.org.cn/josen/article/abstract/7016?st=article_issue))    | CodeSearchNet                                        |\n| Rethinking Negative Pairs in Code Search ([EMNLP'23](https://ArXiv.org/abs/2310.08069))                                                                                            | CodeSearchNet                                        |\n| Towards Better Multilingual Code Search through Cross-Lingual Contrastive Learning ([Internetware'23](https://dl.acm.org/doi/10.1145/3609437.3609439))                             | XLCoST                                               |\n| MCodeSearcher: Multi-View Contrastive Learning for Code Search ([Internetware'23](https://dl.acm.org/doi/10.1145/3609437.3609456))                                                 | CodeSearchNet (Python, Java), CoSQA, StaQC, WebQuery |\n| MulCS: Towards a Unified Deep Representation for Multilingual Code Search ([SANER'23](https://ieeexplore.ieee.org/document/10123512))                                              | CodeSearchNet (Python, Java), paper-specific         |\n| Two Birds with One Stone: Boosting Code Generation and Code Search via a Generative Adversarial Network ([OOPSLA'23](https://dl.acm.org/doi/10.1145/3622815))                      | CodeSearchNet (Python, Java)                         |\n \n",
+                "original_header": "Code Search"
+            },
+            "confidence": 0.9684318717933679,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| Paper                                                                                                                                                                      | Datasets                                    |\n| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |\n| Generative Code Modeling with Graphs ([ICLR'19](https://openreview.net/forum?id=Bke4KsA5FX))                                                                               | ExprGen Data (paper-specific)               |\n| Adversarial Robustness of Program Synthesis Models ([AIPLANS'21](https://openreview.net/forum?id=17C-dfA5X69))                                                             | ALGOLISP                                    |\n| ReACC: A retrieval-augmented code completion framework ([ACL'22](https://aclanthology.org/2022.acl-long.431/))                                                             | PY150 (CodeXGLUE), GithHub Java (CodeXGLUE) |\n| Test-Driven Multi-Task Learning with Functionally Equivalent Code Transformation for Neural Code Generation ([ASE'22](https://dl.acm.org/doi/abs/10.1145/3551349.3559549)) | MBPP                                        |\n| How Important are Good Method Names in Neural Code Generation? A Model Robustness Perspective ([ArXiv'22](https://ArXiv.org/abs/2211.15844))                               | refined CONCODE, refined PyTorrent          |\n| A Closer Look into Transformer-Based Code Intelligence Through Code Transformation: Challenges and Opportunities ([ArXiv'22](https://ArXiv.org/abs/2207.04285))            | CodeSearchNet (Python, Java)                |\n| ReCode: Robustness Evaluation of Code Generation Models ([ACL'23](https://ArXiv.org/abs/2212.10264))                                                                       | HumanEval, MBPP                             |\n| CLAWSAT: Towards Both Robust and Accurate Code Models ([SANER'23](https://ArXiv.org/abs/2211.11711))                                                                       | ---                                         |\n| Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning ([ICSE'23](https://people.ece.ubc.ca/amesbah/resources/papers/cedar-icse23.pdf))                       | ATLAS, TFIX                                 |\n| RustGen: An Augmentation Approach for Generating Compilable Rust Code with Large Language Models ([DeployableGenerativeAI'23](https://openreview.net/forum?id=y9A0vJ5vuM)) | paper-specific                              |\n| Multi-target Backdoor Attacks for Code Pre-trained Models ([ACL'23](https://aclanthology.org/2023.acl-long.399/))                                                          | GithHub Java (CodeXGLUE)                    |\n| Domain Adaptive Code Completion via Language Models and Decoupled Domain Databases ([ASE'23](https://ArXiv.org/abs/2308.09313))                                            | paper-specific                              |\n| APICom: Automatic API Completion via Prompt Learning and Adversarial Training-based Data Augmentation ([Internetware'23](https://dl.acm.org/doi/10.1145/3609437.3609450))  | paper-specific                              |\n| Test-Driven Multi-Task Learning with Functionally Equivalent Code Transformation for Neural Code Generation ([ASE'22](https://dl.acm.org/doi/abs/10.1145/3551349.3559549)) | MBPP                                        |\n| Better Language Models of Code through Self-Improvement ([ACL'23](https://aclanthology.org/2023.findings-acl.823))                                                         | CONCODE                                     |\n \n",
+                "original_header": "Code Completion"
+            },
+            "confidence": 0.9692588117783713,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| Paper                                                                                                                                                 | Datasets              |\n| ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |\n| Leveraging Automated Unit Tests for Unsupervised Code Translation ([ICLR'23](https://ArXiv.org/abs/2110.06773))                                       | paper-specifc         |\n| Exploring Data Augmentation for Code Generation Tasks ([EACL'23](https://aclanthology.org/2023.findings-eacl.114/))                                   | CodeTrans (CodeXGLUE) |\n| Summarize and Generate to Back-translate: Unsupervised Translation of Programming Languages ([EACL'23](https://aclanthology.org/2023.eacl-main.112/)) | Transcoder Data       |\n| ContraBERT: Enhancing Code Pre-trained Models via Contrastive Learning ([ICSE'23](https://ArXiv.org/abs/2301.09072))                                  | CodeTrans (CodeXGLUE) |\n| Code Translation with Compiler Representations ([ICLR'23](https://openreview.net/forum?id=XomEU3eNeSQ))                                               | Transcoder Data       |\n| Data Augmentation for Code Translation with Comparable Corpora and Multiple References ([EMNLP'23](https://openreview.net/forum?id=XomEU3eNeSQ))      | Transcoder Data       |\n| Assessing and Improving Syntactic Adversarial Robustness of Pre-trained Models for Code Translation ([ArXiv'23](https://ArXiv.org/abs/2310.18587))    | AVATAR                |\n| Multi-target Backdoor Attacks for Code Pre-trained Models ([ACL'23](https://aclanthology.org/2023.acl-long.399/))                                     | Transcoder Data       |\n \n",
+                "original_header": "Code Translation"
+            },
+            "confidence": 0.9885119874571425,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| Paper                                                                                                                                                           | Datasets                  |\n| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |\n| Cosqa: 20, 000+ web queries for code search and question answering ([ACL'21](https://aclanthology.org/2021.acl-long.442))                                       | CoSQA                     |\n| Semantic-Preserving Adversarial Code Comprehension ([COLING'22](https://aclanthology.org/2022.coling-1.267))                                                    | CodeQA                    |\n| Contrastive Learning with Keyword-based Data Augmentation for Code Search and Code Question Answering ([EACL'23](https://aclanthology.org/2023.eacl-main.262/)) | CoSQA                     |\n| MCodeSearcher: Multi-View Contrastive Learning for Code Search ([Internetware'23](https://dl.acm.org/doi/10.1145/3609437.3609456))                              | WebQuery (paper-specific) |\n \n",
+                "original_header": "Code Question Answering"
+            },
+            "confidence": 0.967737710739578,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| Paper                                                                                                                                                                                                                          | Datasets            |\n| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- |\n| Generating Adversarial Examples for Holding Robustness of Source Code Processing Models ([AAAI'20](https://ojs.aaai.org/index.php/AAAI/article/view/5469))                                                                     | OJ                  |\n| Generating Adversarial Examples of Source Code Classification Models via Q-Learning-Based Markov Decision Process ([QRS'21](https://ieeexplore.ieee.org/document/9724884))                                                     | OJ                  |\n| Heloc: Hierarchical contrastive learning of source code representation ([ICPC'22](https://dl.acm.org/doi/abs/10.1145/3524610.3527896))                                                                                         | GCJ, OJ             |\n| COMBO: Pre-Training Representations of Binary Code Using Contrastive Learning ([ArXiv'22](https://ArXiv.org/abs/2210.05102))                                                                                                   | POJ-104 (CodeXGLUE) |\n| Bridging pre-trained models and downstream tasks for source code understanding ([ICSE'22](https://dl.acm.org/doi/abs/10.1145/3510003.3510062))                                                                                 | POJ-104             |\n| Boosting Source Code Learning with Data Augmentation: An Empirical Study ([ArXiv'23](https://ArXiv.org/abs/2303.06808))                                                                                                        | Java250, Python800  |\n| MIXCODE: Enhancing Code Classification by Mixup-Based Data Augmentation ([SANER'23](https://www.computer.org/csdl/proceedings-article/saner/2023/527800a379/1Nc0QvHneMg))                                                      | Java250, Python800  |\n| Code Difference Guided Adversarial Example Generation for Deep Code Models ([ASE'23](https://ArXiv.org/abs/2301.02412230))                                                                                                     | GCJ                 |\n| An Enhanced Data Augmentation Approach to Support Multi-Class Code Readability Classification ([SEKE'22](https://ksiresearch.org/seke/seke22paper/paper130.pdf))                                                               | paper-specific      |\n| Improving Multi-Class Code Readability Classification with An Enhanced Data Augmentation Approach (130) ([International Journal of Software Engineering and Knowledge Engineering](https://doi.org/10.1142/S0218194022500656)) | paper-specific      |\n \n",
+                "original_header": "Code Classification"
+            },
+            "confidence": 0.9476935045509285,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| Paper                                                                                                                                                                              | Datasets       |\n| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |\n| Adversarial Examples for Models of Code ([OOPSLA'20](https://ArXiv.org/abs/2301.02412230))                                                                                         | Code2vec       |\n| A search-based testing framework for deep neural networks of source code embedding ([ICST'21](https://www.computer.org/csdl/proceedings-article/icst/2021/683600a036/1tRP9PPnyj6)) | paper-specific |\n| On the Generalizability of Neural Program Models with respect to Semantic-Preserving Program Transformations ([IST'21](https://doi.org/10.1016/j.infsof.2021.106552))              | Code2Seq       |\n| Data Augmentation by Program Transformation ([JSS'22](https://www.sciencedirect.com/science/article/pii/S0164121222000541))                                                        | Code2vec       |\n| Discrete Adversarial Attack to Models of Code ([PLDI'23](https://www.sciencedirect.com/science/article/pii/S0164121222000541))                                                     | Code2vec       |\n \n",
+                "original_header": "Method Name Prediction"
+            },
+            "confidence": 0.9704596563704481,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "DataAug4Code",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "terryyz/DataAug4Code",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/terryyz/DataAug4Code/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/terryyz/DataAug4Code/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 59,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "adversarial-attacks, artificial-intelligence, awesome-list, code-generation, deep-learning, deeplearning, gpt-4, large-language-models, llm, machine-learning, paper, paper-list, representation-learning, software-engineering, source-code, survey, transformer",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/terryyz/DataAug4Code/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "We thank [Steven Y. Feng, et al.](https://ArXiv.org/abs/2105.03075) for their open-source paper list on [DataAug4NLP](https://github.com/styfeng/DataAug4NLP).\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgement",
+                "parent_header": [
+                    "Data Augmentation Approaches for Source Code Models"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Authors: <a href=\"https://terryyz.github.io\">Terry Yue Zhuo</a>,\n\t\t\t  <a href=\"https://yangzhou6666.github.io/\">Zhou Yang</a>,\n\t\t\t  <a href=\"https://v587su.github.io/\">Zhensu Sun</a>,\n\t\t\t  <a href=\"https://scholar.google.com/citations?user=gFoSqqkAAAAJ&hl=en\">Yufei Wang</a>,\n\t\t\t  <a href=\"http://lilicoding.github.io/\">Li Li</a>,\n              <a href=\"https://xiaoningdu.github.io/\">Xiaoning Du</a>,\n\t\t\t  <a href=\"https://scholar.google.com/citations?user=0vCxuH4AAAAJ&hl=en\">Zhenchang Xing</a>,\n\t\t\t  <a href=\"http://www.mysmu.edu/faculty/davidlo/\">David Lo</a> \n",
+                "original_header": "Data Augmentation Approaches for Source Code Models"
+            },
+            "confidence": 0.9999999999978968,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@article{zhuo2023source,\n    primaryclass = {cs.CL},\n    archiveprefix = {arXiv},\n    eprint = {2305.19915},\n    year = {2023},\n    author = {Terry Yue Zhuo and Zhou Yang and Zhensu Sun and Yufei Wang and Li Li and Xiaoning Du and Zhenchang Xing and David Lo},\n    title = {Source Code Data Augmentation for Deep Learning: A Survey},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Source Code Data Augmentation for Deep Learning: A Survey",
+                "author": "Terry Yue Zhuo and Zhou Yang and Zhensu Sun and Yufei Wang and Li Li and Xiaoning Du and Zhenchang Xing and David Lo"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Data Augmentation Approaches for Source Code Models"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2305.16430"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/terryyz/DataAug4Code/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,196 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:13:51"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/software-bugs/change-clone",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "software-bugs",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-01-25T10:45:16Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2022-01-04T14:11:39Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "change-clone",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "software-bugs/change-clone",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/software-bugs/change-clone/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/software-bugs/change-clone/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/software-bugs/change-clone/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/software-bugs/change-clone/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/software-bugs/change-clone/tree/main/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "This repository contains data from the paper [A large-scale study on human-cloned changes for automated program repair](https://arxiv.org/abs/2104.02386), which is presented in a [web page](https://software-bugs.github.io/change-clone/).\n\nTo cite the study, please use the following bibtex:\n\n```bibtex\n@inproceedings{Madeiral2021changeclone,\n  author = {Fernanda Madeiral and Thomas Durieux},\n  title = {A large-scale study on human-cloned changes for automated program repair},\n  booktitle = {Proceedings of the 18th International Conference on Mining Software Repositories (MSR '21) --- Mining Challenge},\n  year = {2021},\n  url = {https://arxiv.org/abs/2104.02386}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Change clone study"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/software-bugs/change-clone/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{Madeiral2021changeclone,\n    url = {https://arxiv.org/abs/2104.02386},\n    year = {2021},\n    booktitle = {Proceedings of the 18th International Conference on Mining Software Repositories (MSR '21) --- Mining Challenge},\n    title = {A large-scale study on human-cloned changes for automated program repair},\n    author = {Fernanda Madeiral and Thomas Durieux},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "A large-scale study on human-cloned changes for automated program repair",
+                "author": "Fernanda Madeiral and Thomas Durieux",
+                "url": "https://arxiv.org/abs/2104.02386"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/software-bugs/change-clone/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Change clone study"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/software-bugs/change-clone/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2104.02386"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/software-bugs/change-clone/main/README.md"
+        }
+    ]
+}

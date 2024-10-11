@@ -1,0 +1,443 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:36:26"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/Ahmadreza-SY/TCP-CI",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "Ahmadreza-SY",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-09-23T16:00:13Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-16T10:50:34Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "This project aims to extract and compute test case features from different data sources related to a software repository. It analyzes the source code both statically and based on its version control history and creates dependency graphs containing the relationships between files/functions and their association weights. It also processes build logs and computes features based on test case execution records. Finally, since the goal of collecting these features is for solving the Test Case Prioritization (TCP) problem, it runs various experiments to measure the scalability and effectiveness of TCP.\n\nIn the following sections, we provide information on the requirements and instructions for running this project as well as descriptions regarding the data that this project generates. We also provide links to our **publication** and **public datasets** for reference and future work.\n",
+                "type": "Text_excerpt",
+                "original_header": "Introduction",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        },
+        {
+            "result": {
+                "value": "This repository is a supplement to our academic paper which can be found on [10.1109/TSE.2022.3184842](https://ieeexplore.ieee.org/document/9801672). Please refer to the paper for details on definitions, experiments, and results. Please cite our paper in any published work that uses resources that are provided in this repository:\n```\n@article{yaraghi2021tcp,\n    title={Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts},\n    author={Saboor Yaraghi, Ahmadreza and Bagherzadeh, Mojtaba and Kahani, Nafiseh and Briand, Lionel},\n    journal={IEEE Transactions on Software Engineering},\n    year={2022},\n    doi={10.1109/TSE.2022.3184842}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Publication",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                    "Introduction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        },
+        {
+            "result": {
+                "value": "In our work, we collected datasets for 25 carefully selected open-source projects using this repository. The datasets are publicly available here:\n[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6415365.svg)](https://doi.org/10.5281/zenodo.6415365)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Dataset",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                    "Introduction"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The association weights are extracted by analyzing co-changes across Git commits and applying association rule mining to them using the Apriori algorithm. For each dependency, the association weight is either a single zero or four real numbers. A single zero means although Understand detected a static relation, there is no historical dependency between these two entities. In other words, among all analyzed commits, there is no commit in which both entities have changed. On the other hand, the four real numbers represent `support`, `forward_confidence`, `backward_confidence`, and `lift`. Note that assuming A has a dependency on B, `forward_confidence` is the confidence for A given B (A|B) and `backward_confidence` is the confidence for B given A (B|A). For precise definitions of the mentioned association metrics, please refer to the paper. Additionally, the `tar.csv` file represents the dependencies between test entities and entities of the SUT. This file is similar to `dep.csv`.\n \n",
+                "original_header": "The `analysis` Folder"
+            },
+            "confidence": 0.9167695258291004,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "TCP-CI",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "Ahmadreza-SY/TCP-CI",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Ahmadreza-SY/TCP-CI/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/Ahmadreza-SY/TCP-CI/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 16,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/Ahmadreza-SY/TCP-CI/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 200554
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "This project is tested on Python 3.7+. The required Python dependencies can be installed via the following command:\n```bash\npip install -r requirements.txt\n```",
+                "type": "Text_excerpt",
+                "original_header": "Python Environment",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                    "Environment Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        },
+        {
+            "result": {
+                "value": "Understand is a code analysis enterprise software with a wide variety of [supported languages](https://support.scitools.com/support/solutions/articles/70000582794-supported-languages) which provides static dependencies available in a source code between files, functions, classes, etc. For more details on the feature of this software, visit [this link](https://scitools.com/features). In this project, we utilize Understand to create static dependency graphs to collect a part of our features. \n\nIn this section, we will explain how to install and set up Understand to obtain a file with `.und` format which is the output of Understand's analysis. Note that this project needs Understand's database for extracting features and will not work without it.\n",
+                "type": "Text_excerpt",
+                "original_header": "Understand",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                    "Environment Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        },
+        {
+            "result": {
+                "value": "You can download the latest stable version of Understand from [this link](https://licensing.scitools.com/download). To run this project, you need to add the `und` command to your PATH environment variable so the `und` command is recognized in the shell. `und` is located in the `bin` directory of Understand's software.\n\n```bash\nexport PATH=\"$PATH:/path/to/understand/scitools/bin/linux64\"\n```\n\nFinally, run the following command to make sure `und` is successfully installed:\n\n```bash\n$ und version\n(Build 1029)\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Installing Understand's CLI",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                    "Environment Setup",
+                    "Understand"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        },
+        {
+            "result": {
+                "value": "This project has been tested on *Build 1029* of Understand on Linux (specifically Ubuntu). It may require minor compatibility changes if it is used on other Understand builds or other operating systems.\n",
+                "type": "Text_excerpt",
+                "original_header": "Note",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                    "Environment Setup",
+                    "Understand"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        },
+        {
+            "result": {
+                "value": "Unlike typical projects, Understand does not provide its Python library in the well-known pip package installer, and you need to manually add the package to your Python environment. The instructions for adding the package are explained in [this link](https://support.scitools.com/support/solutions/articles/70000582852-getting-started-with-the-python-api).\n",
+                "type": "Text_excerpt",
+                "original_header": "Adding Understand Python Package/Library",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                    "Environment Setup",
+                    "Understand"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        },
+        {
+            "result": {
+                "value": "This project uses [RankLib](https://sourceforge.net/p/lemur/wiki/RankLib) for training and testing machine learning ranking models. RankLib is a library of learning-to-rank algorithms, and it is written in Java. Hence, this project requires Java for running training and testing experiments. This project is trained and tested on OpenJDK version `1.8.0_292` and `11.0.11`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Java",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                    "Environment Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "After setting up the environment, you are ready to start using the project.\n\nThis project consists of multiple sub-commands and each performs a different task. Each sub-command is explained in the following sections.\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage Instructions",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        },
+        {
+            "result": {
+                "value": "This sub-command processes *Maven* build logs that were downloaded by [*TravisTorrent*](https://github.com/TestRoots/travistorrent-tools) and creates the CI data required by the `dataset` sub-command. This sub-command requires the `repo-data-travis.json` and `data.csv` files and the build logs generated by TravisTorrent for each project. The arguments for this sub-command are shown in the following table.\n\nArgument Name | Description\n--- | ---\n-r REPO, --repo REPO | The login and name of the repo separated by `@` (e.g., apache@commons).\n-i INPUT_PATH, --input-path INPUT_PATH | Specifies the directory of *TravisTorrent* raw data (builds info and logs).\n-o OUTPUT_PATH, --output-path OUTPUT_PATH | Specifies the directory to save resulting data.\n\nAn example of using the `tr_torrent` sub-command:\n```\npython main.py tr_torrent -i ../travistorrent-tools -o ../tr-torrent -r apache@commons\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "The `tr_torrent` Sub-command",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                    "Usage Instructions"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        },
+        {
+            "result": {
+                "value": "This sub-command collects and creates a training dataset including all test case features for each failed CI build (cycle). It requires two main sources of data: source code and CI data. The source code can be either provided in form of a GitHub repository or a path to the source code. For CI data, a path should be provided which includes a repository folder containing two CSV files with a specific format (the file format will be discussed later). The arguments for this sub-command are shown in the following table.\n\nArgument Name | Description\n--- | ---\n-p PROJECT_PATH, --project-path PROJECT_PATH | Project's source code Git repository path.\n-s PROJECT_SLUG, --project-slug PROJECT_SLUG | The project's GitHub slug, e.g., apache/commons.\n-c CI_DATA_PATH, --ci-data-path CI_DATA_PATH | Path to CI data root directory.\n-o OUTPUT_PATH, --output-path OUTPUT_PATH | Specifies the directory to save resulting datasets.\n\nAn example of using the `dataset` sub-command:\n```\npython main.py dataset -s apache/commons -c ../rtp-torrent -o ./datasets/apache@commons\n```\n\n**Note:** At least one of the `--project-path` or `--project-slug` arguments should be provided since the project requires the source code for analysis.\n",
+                "type": "Text_excerpt",
+                "original_header": "The `dataset` Sub-command",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                    "Usage Instructions"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        },
+        {
+            "result": {
+                "value": "The CI data files for each project should be under a folder named with its repository name (login and name of the repo separated by `@`, e.g., `apache@commons`). The repository folder should contain two files with names `<repo-name>-full.csv` and `<repo-name>-builds.csv` (e.g., `apache@commons-full.csv`, `apache@commons-builds.csv`). The `<repo-name>-full.csv` file should contain test case execution records for all jobs across all builds, which includes the following columns:\n- `travisBuildId`: Id of the Travis CI build.\n- `travisJobId`: Id of the Travis CI job.\n- `testName`: The class name of the test case including its package name (e.g., `com.example.Test`).\n- `duration`: The duration of the test case execution in seconds.\n- `count`: The number of test methods executed in the test class.\n- `failures`: The number of failures that occurred in the execution of the test class.\n- `errors`: The number of errors that occurred in the execution of the test class.\n- `skipped`: The number of skipped test methods in the execution of the test class.\n\n**Note:** The full test class name is required for matching it with its corresponding source file. Also, the last four columns are based on the data available in *Maven* logs. `failures` refer to test cases' failures due to wrong outputs or assertion errors, whereas `errors` refer to unexpected behaviors such as runtime exceptions.\n\nThe `<repo-name>-builds.csv` file should contain build information, which includes the following columns:\n- `tr_build_id`: Id of the Travis CI build.\n- `git_all_built_commits`: Full hashes of all Git commits that were built in the build, and the commit hashes are separated by the `#` character.\n- `gh_build_started_at`: The starting date and time of the build (e.g., `2020-01-15 17:56:24 UTC`).\n- `jobs`: A JSON list of all Travis CI job ids that were executed in the build (e.g., `\"[620564834, 620564835]\"`).\n",
+                "type": "Text_excerpt",
+                "original_header": "The CI Data File Format",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                    "Usage Instructions",
+                    "The `dataset` Sub-command"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        },
+        {
+            "result": {
+                "value": "This sub-command performs learning (training and evaluation) experiments on collected features using RankLib. Since it requires test case features as input, the `dataset` sub-command should be successfully executed before executing this sub-command. The arguments for this sub-command are shown in the following table.\n\nArgument Name | Description\n--- | ---\n-o OUTPUT_PATH, --output-path OUTPUT_PATH | Specifies the directory to load required data and save results.\n-t TEST_COUNT, --test-count TEST_COUNT | Specifies the number of recent builds to test the trained models on.\n-r {best,all}, --ranking-models {best,all} | Specifies the ranking model(s) to use for learning.\n-e EXPERIMENT, --experiment EXPERIMENT | Specifies the experiment to run. Only works when the best ranking model is selected.\n\nAn example of using the `learn` sub-command:\n```\npython main.py learn -o ./datasets/apache@commons -t 50 -r best -e FULL\n```\n\n**Note:** The `all` option for the `--ranking-models` argument runs the learning experiments on six ranking algorithms including all test case features. Based on our study, the Random Forest (RF) model was the best algorithm, and therefore, when the option `best` is selected for `--ranking-models`, RF will be used. Finally, the `--experiment` can have the following values: {FULL, WO_IMP, WO_TES_COM, WO_TES_PRO, WO_TES_CHN, WO_REC, WO_COV, WO_COD_COV_COM, WO_COD_COV_PRO, WO_COD_COV_CHN, WO_DET_COV, W_Code, W_Execution, W_Coverage}. In the `FULL` experiment, all test case features will be included in the learning process. However, the options that begin with `WO_` will exclude the feature group in their name (e.g., `WO_TES_COM` will exclude `TES_COM`), and the options that begin with `W_` will only include the high-level feature group in their name. For detailed information regarding the experiments, please refer to our paper.\n",
+                "type": "Text_excerpt",
+                "original_header": "The `learn` Sub-command",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                    "Usage Instructions"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        },
+        {
+            "result": {
+                "value": "This sub-command performs TCP model decay experiments on trained models (for more details about this experiment, refer to the paper). Since it reuses the previously trained models, the `learn` sub-command should be successfully executed before executing this sub-command. The arguments for this sub-command are shown in the following table.\n\nArgument Name | Description\n--- | ---\n-o OUTPUT_PATH, --output-path OUTPUT_PATH | Specifies the directory to load required data and save results.\n-p PROJECT_PATH, --project-path PROJECT_PATH | Project's source code Git repository path.\n\nAn example of using the `decay_test` sub-command:\n```\npython main.py decay_test -o ./datasets/apache@commons -p ./datasets/apache@commons/commons\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "The `decay_test` Sub-command",
+                "parent_header": [
+                    "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                    "Usage Instructions"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@article{yaraghi2021tcp,\n    doi = {10.1109/TSE.2022.3184842},\n    year = {2022},\n    journal = {IEEE Transactions on Software Engineering},\n    author = {Saboor Yaraghi, Ahmadreza and Bagherzadeh, Mojtaba and Kahani, Nafiseh and Briand, Lionel},\n    title = {Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1109/TSE.2022.3184842",
+                "title": "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts",
+                "author": "Saboor Yaraghi, Ahmadreza and Bagherzadeh, Mojtaba and Kahani, Nafiseh and Briand, Lionel"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://doi.org/10.5281/zenodo.6415365"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Scalable and Accurate Test Case Prioritization in Continuous Integration Contexts"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/docs/tcp-ci-dataset.jpg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/Ahmadreza-SY/TCP-CI/main/Readme.md"
+        }
+    ]
+}

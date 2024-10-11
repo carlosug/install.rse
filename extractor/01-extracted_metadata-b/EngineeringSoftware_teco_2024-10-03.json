@@ -1,0 +1,566 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:09:43"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/EngineeringSoftware/teco",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "EngineeringSoftware",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-01-24T17:30:48Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-16T17:59:11Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 EngineeringSoftware\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/LICENSE.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "TeCo: an ML+Execution model for test completion",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "TeCo is a deep learning model using code semantics to automatically complete the next statement in a test method. Completing tests requires reasoning about the execution of the code under test, which is hard to do with only syntax-level data that existing code completion models use. To solve this problem, we leverage the fact that tests are readily executable. TeCo extracts and uses execution-guided code semantics as inputs for the ML model, and performs reranking via test execution to improve the outputs. On a large dataset with 131K tests from 1270 open-source Java projects, TeCo outperforms the state-of-the-art by 29% in terms of test completion accuracy. \n",
+                "original_header": "TeCo"
+            },
+            "confidence": 0.9765895151364057,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Our test completion corpus contains several artifacts that are useful at different stages of data collection and model training/evaluation. Some large artifacts need to be downloaded separately from UTBox, and for those we provide download links and instructions to unpack the downloaded files to this repository.\n \n",
+                "original_header": "Test Completion Corpus"
+            },
+            "confidence": 0.972961661768794,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- The list of repositories used in our study.\n- In this repository: `_work/repos/filtered/`\n- Contents:\n  - `repos.json` is the list of repositories with metadata.\n  - `licenses.tgz` contains the licenses of these repositories.\n \n",
+                "original_header": "repositories list"
+            },
+            "confidence": 0.9922078690614407,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "teco",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "EngineeringSoftware/teco",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/EngineeringSoftware/teco/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/EngineeringSoftware/teco/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 26,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "machine-learning, ml4se, test-completion, testing",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 3,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/EngineeringSoftware/teco/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 658957
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 255132
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 10527
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/prepare-env.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/check-prereq.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/src/CodeBLEU/parser/build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "The following software/hardware are required to run TeCo. GPU is required for training and evaluating the model, but not required if you only use the data collection and processing scripts.\n\n- Linux operating system\n- [Miniconda](https://docs.anaconda.com/free/miniconda/index.html) or Anaconda\n- JDK 8 and Maven 3.8 (recommended to install via [sdkman](https://sdkman.io/))\n- Nvidia GPU with at least 8GB memory, and appropriate driver installed\n\nRun `./check-prereq.sh` to check if you have these pre-requisites ready.\n\nDebugging tips: you should have these commands available in PATH: `conda`, `java`, `mvn`, `nvidia-smi` (if you want to use GPU), `nvcc` (if you want to use system-installed cuda instead of letting conda install it).\n",
+                "type": "Text_excerpt",
+                "original_header": "Pre-requisites",
+                "parent_header": [
+                    "TeCo"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Ensure that you met the [pre-requisites](#pre-requisites) before proceeding.\n\nThen, you can install a conda environment for TeCo by running the following script, which includes GPU support if GPU is available:\n```\n./prepare-env.sh\n```\n\nAfter this script finishes, you can activate the conda environment by running:\n```\nconda activate teco\n```\nIf this step is successful you should see a `(teco)` prefix in the command line prompt. You may need to reactivate this conda environment every time you open a new terminal.\n\nIf you need to rerun the installation script, make sure the existing conda environment is deactivated by `conda deactivate`.\n\nYou can run the following commands to quickly check if the installation is successful:\n```\n# try if data collection is working\ninv data.collect-raw-data --debug\n\n# try if model training is working (requires first downloading the processed corpus)\ninv data.eval-setup --debug\ninv exp.train-codet5 --setup CSNm-Debug --overwrite --suffix teco-norr --args \"--model.inputs=[fields_notset,last_called_method,types_local,types_absent,similar_stmt_1_0,setup_teardown,focalm,sign,prev_stmts] --model.output=stmt --seed_everything=4197\"\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "TeCo"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "value": "TL;DR:\n- If you have an older GPU (e.g., GTX 1080 Ti) and encounter CUDA-related errors, try `./prepare-env.sh 10.2`.\n- If you want to use the system-wide installed CUDA (must be 10.2/11.3/11.6) together with cuDNN and NCCL, do `./prepare-env.sh system`.\n\nTeCo uses PyTorch 1.12.1, which requires CUDA with version 10.2/11.3/11.6, together with cuDNN and NCCL libraries. Our installation script detects whether GPU is available by checking the output of `nvidia-smi`. If GPU is not available, this script will install PyTorch in CPU-only mode, which is usually not suitable for training and evaluating the ML models (unless you know what you're doing), but enables the data collection and processing part of the TeCo to run. If GPU is available, this script will install CUDA 11.6, cuDNN, and NCCL in the conda environment. The installed CUDA is only usable when the conda environment is activated.\n\nYou can change the CUDA version installed by adding an option to the installation script: `./prepare-env.sh cuda_version`, where cuda_version can be cpu, system, 10.2, 11.3, 11.6. Use \"cpu\" if you want to install PyTorch in CPU-only mode even if GPU is available. Use \"system\" if you have already performed a system-wide installation of CUDA (must be one of 10.2/11.3/11.6), together with cuDNN and NCCL, and would like to use it instead of installing another CUDA. The default option \"11.6\" is usually fine especially if you're using a recent GPU, but if you're using an older GPU (e.g., GTX 1080 Ti) and encounter CUDA-related errors, you may want to try \"10.2\" instead.\n",
+                "type": "Text_excerpt",
+                "original_header": "Notes on GPU support and alternative CUDA installation methods",
+                "parent_header": [
+                    "TeCo",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- The files of the repositories used in our study, archived in case some repositories are removed or renamed. To reproduce the full data collection + model training/evaluation workflow, you need to download all repositories (*large size* - 41GB). To reproduce only the model training/evaluation part, you need to download the repositories in the evaluation set (2GB).\n- Download link for all repositories: https://utexas.box.com/s/n2gjzd4toy5j4t0sv4ztnngezxrx3rhc\n  - Unzip the files (multi-volume zip files) with the following commands: `zip -s 0 downloads.zip --out downloads-single.zip && unzip downloads-single.zip && rm downloads-single.zip`, then move the extracted `downloads` folder to this repository at `_work/downloads`.\n- Download link for repositories in the evaluation set: https://utexas.box.com/s/edmidy4h1plpmoeg5ew1bru3qg6zp8hi\n  - Unzip the downloaded file with `tar xzf downloads.tgz`, then move the extracted `downloads` folder to this repository at `_work/downloads`.\n- Contents:\n  - each repository is stored in a separate folder, with the folder name being the `{user_name}_{repo_name}` (e.g., `apache_fluo` corresponds to github.com/apache/fluo).\n \n",
+                "original_header": "repositories files"
+            },
+            "confidence": 0.9999998495849354,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "TL;DR:\n- If you have an older GPU (e.g., GTX 1080 Ti) and encounter CUDA-related errors, try `./prepare-env.sh 10.2`.\n- If you want to use the system-wide installed CUDA (must be 10.2/11.3/11.6) together with cuDNN and NCCL, do `./prepare-env.sh system`.\n\nTeCo uses PyTorch 1.12.1, which requires CUDA with version 10.2/11.3/11.6, together with cuDNN and NCCL libraries. Our installation script detects whether GPU is available by checking the output of `nvidia-smi`. If GPU is not available, this script will install PyTorch in CPU-only mode, which is usually not suitable for training and evaluating the ML models (unless you know what you're doing), but enables the data collection and processing part of the TeCo to run. If GPU is available, this script will install CUDA 11.6, cuDNN, and NCCL in the conda environment. The installed CUDA is only usable when the conda environment is activated.\n\nYou can change the CUDA version installed by adding an option to the installation script: `./prepare-env.sh cuda_version`, where cuda_version can be cpu, system, 10.2, 11.3, 11.6. Use \"cpu\" if you want to install PyTorch in CPU-only mode even if GPU is available. Use \"system\" if you have already performed a system-wide installation of CUDA (must be one of 10.2/11.3/11.6), together with cuDNN and NCCL, and would like to use it instead of installing another CUDA. The default option \"11.6\" is usually fine especially if you're using a recent GPU, but if you're using an older GPU (e.g., GTX 1080 Ti) and encounter CUDA-related errors, you may want to try \"10.2\" instead.\n",
+                "type": "Text_excerpt",
+                "original_header": "Notes on GPU support and alternative CUDA installation methods",
+                "parent_header": [
+                    "TeCo",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "This section includes the entire workflow of TeCo's experiments, from data collection and processing to model training and evaluation. Unless otherwise specified, all commands should be run in the project directory and with the teco conda environment activated.\n\nIf you're only interested in the model training/evaluation part, download the part of our test completion corpus for that (the processed corpus + the repositories in the evaluation set), then jump to [Model training and evaluation](#model-training-and-evaluation).\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "TeCo"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "value": "These steps are for collecting the data for test completion, as well as extracting the code semantics. To simplify debugging, you can add `--debug` to each command to run them on a small subset of the corpus (but debugging each step requires running the previous step on the full corpus).\n\n*Inputs*: nothing in addition to the current repo, but in case some subject repositories have been removed from GitHub, you may download our archived repositories files (see [Corpus > repositories files](#repositories-files)).\n\n*Outputs*: processed corpus at `_work/data`.\n\n*Workflow*:\n\n- [Collecting code elements](#collecting-code-elements)\n- [Extracting syntax-level data](#extracting-syntax-level-data)\n- [Extracting code semantics](#extracting-code-semantics)\n",
+                "type": "Text_excerpt",
+                "original_header": "Data collection and processing",
+                "parent_header": [
+                    "TeCo",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "value": "This step extracts the raw code elements sets from the repositories, i.e., the collection phase in our paper. (time: ~6h)\n```\ninv data.collect-raw-data\n```\nThe extracted code elements will be stored at `_work/raw-data`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Collecting code elements",
+                "parent_header": [
+                    "TeCo",
+                    "Usage",
+                    "Data collection and processing"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "value": "This step processes the raw code elements sets to extract the syntax-level data (i.e., method under test, test method signature, test method statements). It also performs data filtering based on the criteria described in our paper's Section V. (time: ~1.5h)\n```\ninv data.process\n```\nThe process corpus will be stored at `_work/data`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Extracting syntax-level data",
+                "parent_header": [
+                    "TeCo",
+                    "Usage",
+                    "Data collection and processing"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "value": "This step extracts the code semantics from the raw code elements sets (i.e., local var types, absent types, unset fields, setup teardown, last called method, similar statement). (time: ~20h)\n```\ninv data.extend-data-all\n```\nThe additional code semantics data will be amended to `_work/data`.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Extracting code semantics",
+                "parent_header": [
+                    "TeCo",
+                    "Usage",
+                    "Data collection and processing"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "value": "These steps are for training and evaluating TeCo model after data is collected.\n\n*Inputs*: \n\n- the processed corpus at `_work/data` (prepared from [Data collection and processing](#data-collection-and-processing) or downloaded from [Corpus > processed corpus](#processed-corpus)).\n- the subject repositories needed during computing runtime metrics will be automatically cloned from GitHub, but in case some subject repositories have been removed from GitHub, you may download our archived repositories files (see [Corpus > repositories files](#repositories-files)).\n\n*Outputs*:\n\n- trained model at `_work/exp/CSNm/train/CodeT5-teco-norr`.\n- evaluation results at `_work/exp/CSNm/eval-{any,runnable-any,assert,runnable-assert}-stmt/test/SingleEvaluator-teco/bs10-last`\n\n*Workflow*:\n\n- [Splitting corpus](#splitting-corpus)\n- [Training model](#training-model) OR [Downloading model](#downloading-model)\n- [Evaluating model](#evaluating-model)\n- [Computing compilable/runnable status](#computing-compilablerunnable-status)\n- [Reranking via execution](#reranking-via-execution)\n",
+                "type": "Text_excerpt",
+                "original_header": "Model training and evaluation",
+                "parent_header": [
+                    "TeCo",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "value": "```\ninv data.eval-setup\n```\n\nAs training and running ML models can be time-consuming, we provide a small version of the corpus after splitting for debugging purposes, CSNm-Debug, with 800/25/25 tests in train/val/eval sets. To obtain this debug version, run:\n```\ninv data.eval-setup --debug\n```\nThe generated sets will be stored in `_work/setup/CSNm-Debug`. To use it in the following commands of training and evaluating the model, replace `--setup CSNm` with `--setup CSNm-Debug`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Splitting corpus",
+                "parent_header": [
+                    "TeCo",
+                    "Usage",
+                    "Model training and evaluation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The training hyper-parameters are specified in `configs/CodeT5.yaml`. The default hyper-parameters are suitable for training the model on our machine with 4 GTX 1080Ti GPUs. You may want to change `batch_size` and `gradient_accumulation_steps` to fit your GPU configurations.\n\nTo train the model: (time: ~20h on our machine with 4 GTX 1080Ti GPUs)\n```\ninv exp.train-codet5 --setup CSNm --overwrite --suffix teco-norr --args \"--model.inputs=[fields_notset,last_called_method,types_local,types_absent,similar_stmt_1_0,setup_teardown,focalm,sign,prev_stmts] --model.output=stmt --seed_everything=4197\"\n```\nThe trained model will be stored in `_work/exp/CSNm/train/CodeT5-teco-norr`. Note that the model at this point is the variant of TeCo without reranking (i.e., TeCo-noRr in the paper). You still need to complete a few more steps below to obtain the full TeCo model.\n",
+                "type": "Text_excerpt",
+                "original_header": "Training model",
+                "parent_header": [
+                    "TeCo",
+                    "Usage",
+                    "Model training and evaluation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "value": "To evaluate the trained model on the eval set, run:\n```\ninv exp.eval-single --setup CSNm --overwrite --suffix teco-norr --trained CodeT5-teco-norr --decoding bs10 --eval-set eval-any-stmt/test --args \"--seed_everything=4197\"\n```\nThe results will be stored in `_work/exp/CSNm/eval-any-stmt/test/SingleEvaluator-teco-norr/bs10-last`. The `metrics_summary.json` contains the automated metrics, and the `preds.jsonl` contains the raw predictions.\n\nThen, compute the metrics on the runnable subset and oracle subset:\n```\ninv exp.gen-subset-preds --setup CSNm --model SingleEvaluator-teco-norr --from-set eval-any-stmt/test --to-set eval-runnable-any-stmt/test\ninv exp.gen-subset-preds --setup CSNm --model SingleEvaluator-teco-norr --from-set eval-any-stmt/test --to-set eval-assert-stmt/test\n```\nThe results will be stored in `_work/exp/CSNm/eval-runnable-any-stmt/test/SingleEvaluator-teco-norr/bs10-last` and `_work/exp/CSNm/eval-assert-stmt/test/SingleEvaluator-teco-norr/bs10-last`, correspondingly.\n",
+                "type": "Text_excerpt",
+                "original_header": "Evaluating model",
+                "parent_header": [
+                    "TeCo",
+                    "Usage",
+                    "Model training and evaluation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The next step is to check if the predicted statements are compilable/runnable on the runnable subset. First, we need to compile the repositories that will be used in the evaluation:\n```\nSEUTIL_SHOW_FULL_OUTPUT=1 inv exp.compute-runtime-metrics --setup CSNm --compile-only --models SingleEvaluator-teco-norr\n```\nIf any compilation error occurs, it means the runtime environment (e.g., JDK 8 and Maven) is not properly set up. Please check the error messages and fix them. The compilation of repositories only need to be done once and can be used for evaluating the compilable/runnable status of any number of models.\n\nThen, compute the compilable/runnable status of the TeCo-noRr model: (time: ~12h)\n```\ninv exp.compute-runtime-metrics --setup CSNm --no-compile --models SingleEvaluator-teco-norr --mode=\"first-runnable\" --pool-size=32 --batch-size=200\n```\nThe results will be amended to `_work/exp/CSNm/eval-runnable-any-stmt/test/SingleEvaluator-teco-norr/bs10-last`.\n\nFinally, we can compute the metrics (with %compile/%run) on the runnable-oracle subset:\n```\ninv exp.gen-subset-preds --setup CSNm --model SingleEvaluator-teco-norr --from-set eval-runnable-any-stmt/test --to-set eval-runnable-assert-stmt/test\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Computing compilable/runnable status",
+                "parent_header": [
+                    "TeCo",
+                    "Usage",
+                    "Model training and evaluation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The last step is to perform reranking based on the compilable/runnable status:\n```\ninv exp.rerank-runnable --setup CSNm --src SingleEvaluator-teco-norr --tgt SingleEvaluator-teco\n```\nThis will generate the results of the full TeCo model on the evaluation set and its three subsets, located at the following places.\neval set: `_work/exp/CSNm/eval-any-stmt/test/SingleEvaluator-teco/bs10-last`\nrunnable subset: `_work/exp/CSNm/eval-runnable-any-stmt/test/SingleEvaluator-teco/bs10-last`\noracle subset: `_work/exp/CSNm/eval-assert-stmt/test/SingleEvaluator-teco/bs10-last`\nrunnable-oracle subset: `_work/exp/CSNm/eval-runnable-assert-stmt/test/SingleEvaluator-teco/bs10-last`\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Reranking via execution",
+                "parent_header": [
+                    "TeCo",
+                    "Usage",
+                    "Model training and evaluation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "Alternative to training the model yourself, you can download the version of the model we trained from \n[\ud83e\udd17 hub](https://huggingface.co/EngineeringSoftware/teco):\n```\ninv exp.pull-model\n```\nThe pulled model will also be stored in `_work/exp/CSNm/train/CodeT5-teco-norr`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Downloading model",
+                "parent_header": [
+                    "TeCo",
+                    "Usage",
+                    "Model training and evaluation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you have used Teco in a research project, please cite the research paper in any related publication:\n```\n@inproceedings{NieETAL22Teco,\n  title =        {Learning Deep Semantics for Test Completion},\n  author =       {Pengyu Nie and Rahul Banerjee and Junyi Jessy Li and Raymond J. Mooney and Milos Gligoric},\n  booktitle =    {International Conference on Software Engineering},\n  year =         {2023},\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation",
+                "parent_header": [
+                    "TeCo"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{NieETAL22Teco,\n    year = {2023},\n    booktitle = {International Conference on Software Engineering},\n    author = {Pengyu Nie and Rahul Banerjee and Junyi Jessy Li and Raymond J. Mooney and Milos Gligoric},\n    title = {Learning Deep Semantics for Test Completion},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Learning Deep Semantics for Test Completion",
+                "author": "Pengyu Nie and Rahul Banerjee and Junyi Jessy Li and Raymond J. Mooney and Milos Gligoric"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "TeCo"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2302.10166.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/EngineeringSoftware/teco/main/README.md"
+        }
+    ]
+}

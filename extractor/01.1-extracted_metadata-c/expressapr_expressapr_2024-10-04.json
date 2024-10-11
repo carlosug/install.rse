@@ -1,0 +1,389 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:33:11"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ExpressAPR/ExpressAPR",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ExpressAPR",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-01-25T13:59:47Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-12T10:49:38Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "ExpressAPR",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ExpressAPR/ExpressAPR",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ExpressAPR/ExpressAPR/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ExpressAPR/ExpressAPR/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 6,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/expressapr/expressapr/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 201160
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 90557
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 891
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 586
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/expressapr/expressapr/master/demo.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/expressapr/expressapr/master/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/expressapr/expressapr/master/Dockerfile"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/expressapr/expressapr/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/expressapr/expressapr/tree/master/src/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "- Clone this respository\n- Download the Docker image [from FigShare](https://doi.org/10.6084/m9.figshare.21559650)\n- `docker load -i expapr-cli.tar.gz`\n- `./demo.sh`\n  - Only during the first run, it takes 1~3 minutes to instrument the project under validation\n  - Then it loads the three sample patch sets (105 patches in total) in the `demo-patches/` folder, and validate them in several seconds\n  - It prints the validation result (`F` = test failure, `C` = compile error, `s` = success) onto the screen\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "\ud83d\udc68\u200d\ud83c\udfeb Quick demo with Docker",
+                "parent_header": [
+                    "ExpressAPR"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/expressapr/expressapr/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Say that you want to work with the bug Math-65 from Defects4J with the degree of parallelization as 3.\n\n1. Find an empty directory for ExpressAPR to work with (say, `/path/to/workdir`). Projects will be checked out in this directory. Validation results will be saved there as well.\n2. Execute `./expapr-cli init -i defects4j -b Math-65 -w /path/to/workdir -j 3 -d trivial`, which may take up to several minutes.\n   - `-i defects4j` and `-b Math-65` specify the project to validate.\n   - `-w /path/to/workdir` tells ExpressAPR to initialize the proejct into this directory.\n   - `-j 3` enables parallel patch validation (in Step 4) with 3 processes. The initialization step itself is not parallelized.\n   - `-d trivial` turns on basic mutant deduplication.\n\n*The initialization step does not depend on patches, so it can be done prior to the repair process.*\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 2. Initialize ExpressAPR for a project (`init`)",
+                "parent_header": [
+                    "ExpressAPR",
+                    "\ud83d\udcda Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/expressapr/expressapr/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Run your APR tool to generate candidate patches to be validated.\n\nIt should store candidate patches in JSON format, each JSON file corresponding to a patch set containing all patches to the same location.\n\nBelow is an example patch set (don't include the comments):\n\n```json\n{\n    \"manifest_version\": 3,\n    // the version of this json data file.\n    // set it to 3 for now.\n    \n    \"interface\": \"defects4j\",\n    \"bug\": \"Math-65\",\n    // the bug you are working on.\n    // must be consistent with what you have typed in the `init` command.\n    \n    \"filename\": \"src/main/java/path/to/Modified.java\",\n    // path of the patched source file, relative to the project root.\n    \n    \"context_above\": \"public class Modified { void foo() { int x =\",\n    \"unpatched\": \"Integer.MAX_VALUE\",\n    \"context_below\": \"; int y = x + 1; } }\",\n    // this marks the patch location of this patch set.\n    // context_above + unpatched + context_below should be the original content of the file.\n    \n    \"patches\": [\n        \"-100\",\n        \"-100; x++\",\n        \"Integer.MAX_VALUE; return\"\n    ]\n    // the generated patches. each of them replaces the \"unpatched\" part.\n    // for the best acceleration, keep the \"unpatched\" part as short as possible.\n    //   e.g., as all patches do not touch \"int x =\", it is put to \"context_above\".\n}\n```\n\n*The [demo-patches/](demo-patches/) folder contains three real patch sets collected from our experiment for demonstration.*\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 3. Generate candidate patches",
+                "parent_header": [
+                    "ExpressAPR",
+                    "\ud83d\udcda Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/expressapr/expressapr/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Both `init` and `run` command support command-line options to tweak some behaviors. Use `--help` to see the full list of options.\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Command-line options",
+                "parent_header": [
+                    "ExpressAPR",
+                    "\ud83d\udcda Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/expressapr/expressapr/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "- Use Linux (we have tested on Ubuntu 18.04 and 22.04)\n- Install Git, JDK \u22651.8, and Python \u22653.7\n- Install [Defects4J](https://github.com/rjust/defects4j) and/or Maven if you want to validate patches with them\n- Clone this repository\n- `pip3 install -r requirements.txt`\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 1. Preparation",
+                "parent_header": [
+                    "ExpressAPR",
+                    "\ud83d\udcda Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/expressapr/expressapr/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- **Equipped with mutation testing accerelation techniques**\n  - Mutant Schemata + Mutant Deduplication + Test Virtualization + Test Case Prioritization + Parallelization\n  - ~100x faster than `defects4j compile && defects4j test` (experimented with four APR systems) \n",
+                "original_header": "\u2728 Highlights"
+            },
+            "confidence": 0.9380905096958598,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/expressapr/expressapr/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "**Step 2: Use `-t fallback` flag.** If the result is still wrong with `--no-dedup`, it may be a problem in [VMVM](https://github.com/Programming-Systems-Lab/vmvm), a third-party Test Virtualization dependency of ExpressAPR (similar to the JVM Reset component in UniAPR). We have [already fixed a few problems we encounter](https://github.com/ExpressAPR/VMVM/compare/07a36dc21373147c50ceacd7bff2b2e7a86c8780...master) in our VMVM fork, but there may be more problems. You may investigate the problem, or pass `-t fallback` to the `expapr-cli run` command to disable Test Virtualization (and also Mutant Deduplication that depends on it).\n \n",
+                "original_header": "Q2. Patch validation results are wrong"
+            },
+            "confidence": 0.9745911524695523,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/expressapr/expressapr/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We currently don't support validating patches to submodules. If this is the case, please directly validate the submodule (set `-b` to the directory of the submodule), not the parent module. \n",
+                "original_header": "Q3. Cannot `init` for a Maven project"
+            },
+            "confidence": 0.9670008527147421,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/expressapr/expressapr/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Say that all patch sets are stored in the `/path/to/patches/` folder.\n\n1. Execute `./expapr-cli run -w /tmp/workdir \"/tmp/patches/*.json\"`\n   - `-w /tmp/workdir` specifies the working directory initialized by the `init` command.\n   - `\"/tmp/patches/*.json\"` specifies the glob pattern to find the patch sets to be validated (make sure to quote this pattern, or it will be expanded by your shell).\n2. Inspect validation result at `/path/to/workdir/result.jsonl`\n\nEach line of that file (in JSON format) corresponds to the result for one patch set. Below is an example result:\n\n```json\n{\n    \"patches_path\": \"/tmp/patches/1.json\",\n    // the filename of the patch set.\n    \n    \"technique\": \"expapr\",\n    // \"expapr\" if it is successfully validated by ExpressAPR.\n    // \"fallback\" if ExpressAPR reports a validation failure so the fallback technique is used.\n    // null if both techniques fail.\n    \n    \"succlist\": \"FFFFFFFCFFFFFFCCCFFCCFCCCFFCFCFC\",\n    // the validation result of each patch in the patch set.\n    // lowercase \"s\" (not in this example) means a plausible patch.\n    // other letters mean an implausible patch.\n    //   some examples: \"F\": test failed. \"C\": compile failed. \"T\": timed out.\n    \n    \"extra\": {...}\n    // some telemetry numbers.\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 4. Run ExpressAPR to validate them (`run`)",
+                "parent_header": [
+                    "ExpressAPR",
+                    "\ud83d\udcda Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/expressapr/expressapr/master/README.md"
+        }
+    ],
+    "faq": [
+        {
+            "result": {
+                "value": "Most Linux distributions (e.g., Ubuntu) limit the maximum number of processes a user can use. This may cause problems with some projects (e.g., Closure) if you are running with a large number of threads. Get the current limit with these two commands:\n\n- `sudo cat /proc/sys/kernel/pid_max` (kernel limit)\n- `sudo cat /sys/fs/cgroup/pids/user.slice/user-$(id -u).slice/pids.max` (systemd limit)\n\nIncrease the limit by modifying the files above.\n",
+                "type": "Text_excerpt",
+                "original_header": "Q1. Problems when using a large `-j` parameter",
+                "parent_header": [
+                    "ExpressAPR",
+                    "\ud83d\udc8a Troubleshooting"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/expressapr/expressapr/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We provide out-of-the-box support for Defects4J (`-i defects4j -b Math-65`) and Maven (`-i maven -b /path/to/maven-project`). To add support for other benchmarks, you need to provide an **interface** (as a Python class) so that the CLI know how to check out the project and get information about the bug. \n",
+                "original_header": "\ud83d\udee0 Configuring for other benchmarks"
+            },
+            "confidence": 0.9090438958606014,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/expressapr/expressapr/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "We currently don't support validating patches to submodules. If this is the case, please directly validate the submodule (set `-b` to the directory of the submodule), not the parent module. \n",
+                "original_header": "Q3. Cannot `init` for a Maven project"
+            },
+            "confidence": 0.964372188780338,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/expressapr/expressapr/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "ExpressAPR"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/expressapr/expressapr/master/README.md"
+        }
+    ]
+}

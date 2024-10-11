@@ -1,0 +1,264 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:14:04"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/rajasagashe/JuICe",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "rajasagashe",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2019-10-17T02:49:48Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-01-14T07:36:06Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Code for generating the JuICe dataset.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "JuICe",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "rajasagashe/JuICe",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/rajasagashe/JuICe/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/rajasagashe/JuICe/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 37,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/rajasagashe/juice/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 104505
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 1595
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rajasagashe/juice/master/run_all.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rajasagashe/juice/master/jupyter/combine_dataset.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/rajasagashe/juice/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "Get the notebooks [here](https://drive.google.com/file/d/1hNtknKrJyOXBM5IfApYs_YyBESLOz_6w/view?usp=sharing). \n\n",
+                "type": "Text_excerpt",
+                "original_header": "Download notebooks",
+                "parent_header": [
+                    "JuICe Dataset"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rajasagashe/juice/master/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "    conda create -n {name} python=3.6\n    conda activate {name}\n    \n    pip install -r requirements.txt\n    \n    # decompress the downloaded notebooks file\n    unzip juice_notebooks.zip\n",
+                "type": "Text_excerpt",
+                "original_header": "Setup",
+                "parent_header": [
+                    "JuICe Dataset"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rajasagashe/juice/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Code for the [paper](https://arxiv.org/abs/1910.02216). This repository produces the dataset from the collected Jupyter notebooks. The dataset is available [here](https://drive.google.com/file/d/1xWDV__5hjTWVuJlXD42Ar7nkjU2hRTic/view?usp=sharing) if you don't want to run this pipeline. Modeling code is [here](https://github.com/rajasagashe/JuICe-models).\n \n",
+                "original_header": "JuICe Dataset"
+            },
+            "confidence": 0.9998548501214548,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/rajasagashe/juice/master/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "Produces the dataset. The pipeline requires around 254gb of disk space, and takes about 12 hours to complete on a 12 core machine.\n\n    ./run_all {downloaded notebooks directory} {pipeline directory}\n    \nThe datasets will be created under ```{pipeline directory}/final-dataset```\n",
+                "type": "Text_excerpt",
+                "original_header": "Running pipelines",
+                "parent_header": [
+                    "JuICe Dataset"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/rajasagashe/juice/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "JuICe Dataset"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rajasagashe/juice/master/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/1910.02216"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/rajasagashe/juice/master/README.md"
+        }
+    ]
+}

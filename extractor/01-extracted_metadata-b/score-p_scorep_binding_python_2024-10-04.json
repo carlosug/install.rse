@@ -1,0 +1,803 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:16:16"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/score-p/scorep_binding_python",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "score-p",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2017-06-21T15:53:12Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-04-30T12:02:01Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": null,
+                "type": "License",
+                "name": "Other",
+                "url": null,
+                "spdx_id": "NOASSERTION"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Copyright 2022-2023,\nAndreas Gocht-Zech\n\nCopyright 2017-2022, Technische Universitaet Dresden, Germany, all rights reserved.\nAuthor: Andreas Gocht-Zech\n\nportions copyright 2001, Autonomous Zones Industries, Inc., all rights...\nerr...  reserved and offered to the public under the terms of the\nPython 2.2 license.\nAuthor: Zooko O'Whielacronx\nhttp://zooko.com/\nmailto:zooko@zooko.com\n\nCopyright 2000, Mojam Media, Inc., all rights reserved.\nAuthor: Skip Montanaro\n\nCopyright 1999, Bioreason, Inc., all rights reserved.\nAuthor: Andrew Dalke\n\nCopyright 1995-1997, Automatrix, Inc., all rights reserved.\nAuthor: Skip Montanaro\n\nCopyright 1991-1995, Stichting Mathematisch Centrum, all rights reserved.\n\nPermission to use, copy, modify, and distribute this Python software and\nits associated documentation for any purpose without fee is hereby\ngranted, provided that the above copyright notice appears in all copies,\nand that both that copyright notice and this permission notice appear in\nsupporting documentation, and that the name of neither Automatrix,\nBioreason, Mojam Media or TU Dresden be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Allows tracing of python code using Score-P",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "scorep is a module that allows tracing of python scripts using [Score-P](https://score-p.org/).\n \n",
+                "original_header": "scorep"
+            },
+            "confidence": 0.9353234677303531,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "scorep_binding_python",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "score-p/scorep_binding_python",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 34,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 11,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/score-p/scorep_binding_python/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 79207
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C++",
+                "name": "C++",
+                "type": "Programming_language",
+                "size": 42140
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 17779
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CMake",
+                "name": "CMake",
+                "type": "Programming_language",
+                "size": 6889
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 819
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/133761098",
+                "tag": "v4.4.0",
+                "name": "Release v4.4.0: Add class name into region name",
+                "author": {
+                    "name": "NanoNabla",
+                    "type": "User"
+                },
+                "description": "- add class name to region name\r\n- changes in supported Python versions\r\n  - drop support for CPython < 3.8 and CPython 2.7\r\n  - drop support for PyPy  < 3.9, PyPy 2.7 is still supported\r\n  - add support for CPython 3.12 and PyPy 3.10",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v4.4.0",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v4.4.0",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v4.4.0",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/133761098",
+                "release_id": 133761098,
+                "date_created": "2023-12-13T14:52:03Z",
+                "date_published": "2023-12-13T15:00:59Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/115892513",
+                "tag": "v4.3.1",
+                "name": "Fix PyPI Package of 4.3.0",
+                "author": {
+                    "name": "NanoNabla",
+                    "type": "User"
+                },
+                "description": "This Release fixes the PyPI package of 4.3.0",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v4.3.1",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v4.3.1",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v4.3.1",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/115892513",
+                "release_id": 115892513,
+                "date_created": "2023-08-10T09:30:34Z",
+                "date_published": "2023-08-10T09:32:50Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/115884268",
+                "tag": "v4.3.0",
+                "name": "Python 3.11 Support",
+                "author": {
+                    "name": "NanoNabla",
+                    "type": "User"
+                },
+                "description": "This Release is mostly about Python 3.11 support.",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v4.3.0",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v4.3.0",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v4.3.0",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/115884268",
+                "release_id": 115884268,
+                "date_created": "2023-08-10T08:25:19Z",
+                "date_published": "2023-08-10T08:36:06Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/87529377",
+                "tag": "v4.2.0",
+                "name": "Score-P 8.0 Support",
+                "author": {
+                    "name": "AndreasGocht",
+                    "type": "User"
+                },
+                "description": "This Release is mostly about Score-P 8.0 support and the related CI fixes.",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v4.2.0",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v4.2.0",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v4.2.0",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/87529377",
+                "release_id": 87529377,
+                "date_created": "2022-12-29T15:09:19Z",
+                "date_published": "2022-12-29T15:11:55Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/71973981",
+                "tag": "v4.1.0",
+                "name": "Expose force_finalize and reregister_exit_handler",
+                "author": {
+                    "name": "AndreasGocht",
+                    "type": "User"
+                },
+                "description": "This release adds `force_finalize` and `reregister_exit_handler` to the `scorep.user` module. They have already been present in the instrumenters, but not explicitly made available.",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v4.1.0",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v4.1.0",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v4.1.0",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/71973981",
+                "release_id": 71973981,
+                "date_created": "2022-07-14T08:06:43Z",
+                "date_published": "2022-07-14T08:10:05Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/70030465",
+                "tag": "v4.0.3",
+                "name": "Bugfix Release",
+                "author": {
+                    "name": "AndreasGocht",
+                    "type": "User"
+                },
+                "description": "The newer setuptools overwrite distutils, which might lead to an error in python < 3.9. This release fixes this error.",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v4.0.3",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v4.0.3",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v4.0.3",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/70030465",
+                "release_id": 70030465,
+                "date_created": "2022-06-22T11:12:47Z",
+                "date_published": "2022-06-22T11:15:50Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/64841682",
+                "tag": "v4.0.2",
+                "name": "Bugfix Release ",
+                "author": {
+                    "name": "AndreasGocht",
+                    "type": "User"
+                },
+                "description": "This release fixes #144 and makes the instrumentation consistent again.",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v4.0.2",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v4.0.2",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v4.0.2",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/64841682",
+                "release_id": 64841682,
+                "date_created": "2022-04-20T12:59:24Z",
+                "date_published": "2022-04-20T13:01:30Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/58083992",
+                "tag": "v4.0.1",
+                "name": "Bugfix Release",
+                "author": {
+                    "name": "AndreasGocht",
+                    "type": "User"
+                },
+                "description": "Rolling back to Distutils as Setuptools introduced a bug ( #142 ).",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v4.0.1",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v4.0.1",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v4.0.1",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/58083992",
+                "release_id": 58083992,
+                "date_created": "2022-01-27T10:05:34Z",
+                "date_published": "2022-01-27T10:35:15Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/57558183",
+                "tag": "v4.0.0",
+                "name": "v4.0.0 performance improvements",
+                "author": {
+                    "name": "AndreasGocht",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* The python Instrumenters does now also apply try_region_[begin|end] and are therefore faster\r\n* The backend requires now c++17 as `string_view` is used a lot to avoid string copies (therefore 4.0.0)\r\n* Implement cTrace and cProfile for python 2.7\r\n* Update ci \r\n* move to setuptools\r\n\r\n**Full Changelog**: https://github.com/score-p/scorep_binding_python/compare/v3.4.0...v4.0.0",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v4.0.0",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v4.0.0",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v4.0.0",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/57558183",
+                "release_id": 57558183,
+                "date_created": "2022-01-20T09:48:02Z",
+                "date_published": "2022-01-20T09:57:03Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/56611002",
+                "tag": "v3.4.0",
+                "name": "Release v3.4.0: various improvements",
+                "author": {
+                    "name": "AndreasGocht",
+                    "type": "User"
+                },
+                "description": "* Instrumenter file, to allow user and selective instrumentation without changing any files\r\n* Some updates to the Benchmarks\r\n* Remove Onlne Access (OA) Interface\r\n    * The OA-Interface is no longer enabled per default in Score-P and deprecated\r\n* Add decorators for selective instrumentation\r\n* Check for access to TMP dir, as some HPC-Systems might forbid executing from `/tmp` in some cases.\r\n* Add `force_finalize` to finalise a trace\r\n    * Please note: adding events to a finalised trace is unsupported\r\n* Add `reregister_exit_handler`  in case Score-P's exit handlers have been overwritten\r\n* Performance optimisations\r\n    * Check if a region is already known before asking for any strings\r\n    * cTrace/cProfile only",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v3.4.0",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v3.4.0",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v3.4.0",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/56611002",
+                "release_id": 56611002,
+                "date_created": "2022-01-07T13:18:24Z",
+                "date_published": "2022-01-07T13:29:17Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/41045447",
+                "tag": "v3.3.1",
+                "name": "use our own abspath function",
+                "author": {
+                    "name": "AndreasGocht",
+                    "type": "User"
+                },
+                "description": "* Fix an exception that might occur during the shutdown of a process.\r\n\r\nWe have only seen this in some multiprocessing use cases, so no need to worry.",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v3.3.1",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v3.3.1",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v3.3.1",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/41045447",
+                "release_id": 41045447,
+                "date_created": "2021-04-07T09:08:59Z",
+                "date_published": "2021-04-07T09:11:27Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/40644608",
+                "tag": "v3.3.0",
+                "name": "cProfile as default when available and PyPy support",
+                "author": {
+                    "name": "AndreasGocht",
+                    "type": "User"
+                },
+                "description": "We choose to enable the cProfile instrumenter as the default instrumenter when available, e.g. currently only using CPython 3.\r\n\r\nHowever, during the change, we decided to modify the build and initialisation process a bit. As a result, we can now support PyPy using the traditional Python instrumenters. With minor modifications to `scorep/instrumenter.py:has_c_instrumenter()`, it might be possible to extend the support to other Python instrumenters as well, but that is not supported.\r\n",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v3.3.0",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v3.3.0",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v3.3.0",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/40644608",
+                "release_id": 40644608,
+                "date_created": "2021-03-29T15:53:38Z",
+                "date_published": "2021-03-29T16:03:36Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/40157456",
+                "tag": "v3.2.0",
+                "name": "CInstrumenters",
+                "author": {
+                    "name": "AndreasGocht",
+                    "type": "User"
+                },
+                "description": "There have been a lot of updates since the last release. However, the most important updates are:\r\n\r\n* Support C backend for tracing\r\n    * Not enabled by default \r\n    * Only Python 3\r\n    * Huge reduction of instrumentation overhead\r\n* Context managers can now be coupled with a User Region\r\n* New test system (pytest)",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v3.2.0",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v3.2.0",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v3.2.0",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/40157456",
+                "release_id": 40157456,
+                "date_created": "2021-03-22T10:52:44Z",
+                "date_published": "2021-03-22T12:23:27Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/21472103",
+                "tag": "v3.0",
+                "name": "Decorators",
+                "author": {
+                    "name": "AndreasGocht",
+                    "type": "User"
+                },
+                "description": "The Score-P Python bindings do now support decorators to user Instrument functions. Together with the introduction of Decorators, some internal interfaces have been changed.\r\n\r\nOther improvements are:\r\n* The Instrumenter now remembers its initial state\r\n* The LD_PRELOAD variable is emptied after Score-P is successfully initialised (Important if the python script starts another program)\r\n* OPARI (OpenMP) compatibility was improved\r\n* A fundamental performance benchmark was added\r\n* Various bugfixes\r\n",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v3.0",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v3.0",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v3.0",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/21472103",
+                "release_id": 21472103,
+                "date_created": "2019-11-15T09:14:36Z",
+                "date_published": "2019-11-15T09:17:38Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/19189940",
+                "tag": "v2.0",
+                "name": "Score-P 6.0 and Context Managers",
+                "author": {
+                    "name": "AndreasGocht",
+                    "type": "User"
+                },
+                "description": "This release is drafted due to the release of Score-P 6.0. It introduces the notion of `instrumenters`, which care about the interface between Score-P and Python. Different instrumenters are available. Other changes are:\r\n\r\n* Introduce python context managers (used in the `with` statement) for user regions as well as enabling and disabling the instrumenter\r\n* Use the sys.setprofile for the default instrumenter (should speed up the tracing)\r\n* Allow to \"unregister\" the instrumenter to disable the recording of python calls (unregistering reduces the overhead)\r\n* Add a dummy instrumenter (allows to leave user instrumentation in the code, even if no Score-P is loaded, it does nothing)\r\n* Add rewind support\r\n* Update the CI to bionic",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v2.0",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v2.0",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v2.0",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/19189940",
+                "release_id": 19189940,
+                "date_created": "2019-08-09T11:43:06Z",
+                "date_published": "2019-08-09T11:55:30Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/18035767",
+                "tag": "v1.1",
+                "name": "python2 compiant again",
+                "author": {
+                    "name": "AndreasGocht",
+                    "type": "User"
+                },
+                "description": "The python bindings are now Python 2 complaint again. Moreover, a CI system with testing is now in place. ",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v1.1",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v1.1",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v1.1",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/18035767",
+                "release_id": 18035767,
+                "date_created": "2019-06-17T12:32:31Z",
+                "date_published": "2019-06-17T12:36:47Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/score-p/scorep_binding_python/releases/16354107",
+                "tag": "v1.0",
+                "name": "The first Release",
+                "author": {
+                    "name": "AndreasGocht",
+                    "type": "User"
+                },
+                "description": "A lot has changed since the first Version. A few things are:\r\n* use the Score-P `LD_PRELOAD` infrastructure\r\n* allow the user to specify the Score-P flags to use\r\n* the build, i.e. for `pip install` is simpler\r\n* use only user instrumentation is possible again (by setting `--no-python`)\r\n* grouping is now part of Score-P 5.0 and used to group modules\r\n* ...\r\n",
+                "tarball_url": "https://api.github.com/repos/score-p/scorep_binding_python/tarball/v1.0",
+                "zipball_url": "https://api.github.com/repos/score-p/scorep_binding_python/zipball/v1.0",
+                "html_url": "https://github.com/score-p/scorep_binding_python/releases/tag/v1.0",
+                "url": "https://api.github.com/repos/score-p/scorep_binding_python/releases/16354107",
+                "release_id": 16354107,
+                "date_created": "2019-03-26T13:36:30Z",
+                "date_published": "2019-03-26T13:41:12Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/benchmark/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/benchmark/compare_commits.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "You need at least Score-P 5.0, build with `--enable-shared` and the gcc compiler plugin.\nPlease make sure that `scorep-config` is in your `PATH` variable.\n\nFor Ubuntu LTS systems there is a non-official ppa of Score-P available: https://launchpad.net/~andreasgocht/+archive/ubuntu/scorep .\n\nThen install the package from PyPI\n\n```\npip install scorep\n```\n\nor build them from source \n\n\n```\npip install .\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Install"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "To trace the full script, you need to run\n\n```\npython -m scorep <script.py>\n```\n\nThe usual Score-P environment Variables will be respected.\nPlease have a look at:\n\n[score-p.org](https://score-p.org)\n\nand\n\n[Score-P Documentation](https://perftools.pages.jsc.fz-juelich.de/cicd/scorep/tags/latest/html/)\n\nThere is also a small [HowTo](https://github.com/score-p/scorep_binding_python/wiki) in the wiki.\n\nSince version 0.9 it is possible to pass the traditional Score-P instrumentation commands to the Score-P bindings, e.g.:\n\n```\npython -m scorep --mpp=mpi --thread=pthread <script.py>\n```\n\nPlease be aware that these commands are forwarded to `scorep-config`, not to `scorep`. Flags like `--verbose` won't work.\n",
+                "type": "Text_excerpt",
+                "original_header": "Use"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The instrumenter ist the key part of the bindings.\nIt registers with the Python tracing interface, and cares about the fowarding of events to Score-P.\nThere are currently five different instrumenter types available as described in the following section [Instrumenter Types](#instrumenter-types) .\nA user interface, to dynamically enable and disable the automatic instrumentation, using the python hooks, is also available and described under [Instrumenter User Interface](#instrumenter-user-interface)\n",
+                "type": "Text_excerpt",
+                "original_header": "Instrumenter",
+                "parent_header": [
+                    "Use"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        },
+        {
+            "result": {
+                "value": "With version 2.0 of the python bindings, the term \"instrumenter\" is introduced.\nThe instrumenter describes the class that maps the Python `trace` or `profile` events to Score-P.\nPlease be aware, that `trace` and `profile` does not refer to the traditional Score-P terms of tracing and profiling, but to the Python functions [sys.settrace](https://docs.python.org/3/library/sys.html#sys.settrace) and [sys.setprofile](https://docs.python.org/3/library/sys.html#sys.setprofile).\n\nThe instrumenter that shall be used for tracing can be specified using `--instrumenter-type=<type>`.\nCurrently there are the following instrumenters available:\n * `profile` (default) implements `call` and `return`  \n * `trace` implements `call` and `return`\n * `cProfile` / `cTrace` are the same as the above but implemented in C++\n * `dummy` does nothing, can be used without `-m scorep` (as done by user instrumentation)\n\nThe `profile` instrumenter should have a smaller overhead than `trace`.\nUsing the instrumenters implemented in C++ additionally reduces the overhead but those are only available in Python 3.\n\nIt is possible to disable the instrumenter passing  `--noinstrumenter`.\nHowever, the [Instrumenter User Interface](#instrumenter-user-interface) may override this flag.\n",
+                "type": "Text_excerpt",
+                "original_header": "Instrumenter Types",
+                "parent_header": [
+                    "Use",
+                    "Instrumenter"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        },
+        {
+            "result": {
+                "value": "It is possible to enable or disable the instrumenter during the program runtime using a user interface:\n\n```\nwith scorep.instrumenter.disable():\n    do_something()\n\nwith scorep.instrumenter.enable():\n    do_something()    \n```\n\nThe main idea is to reduce the instrumentation overhead for regions that are not of interest.\nWhenever the instrumenter is disabled, function enter or exits will not be trace.\nHowever, user regions as described in [User Regions](#user-regions) are not affected.\nBoth functions are also available as decorators.\n\nAs an example:\n\n```\nimport numpy as np\n\n[...]\nc = np.dot(a,b)\n[...]\n```\n\nYou might not be interested, what happens during the import of numpy, but actually how long `dot` takes.\nIf you change the code to\n\n```\nimport numpy as np\nimport scorep\n\n[...]\nwith scorep.instrumenter.enable():\n    c = np.dot(a,b)\n[...]\n```\nand run the code with `python -m scorep --noinstrumenter run.py` only the call to np.dot and everything below will be instrumented.\n\nWith version 3.1 the bindings support the annotation of regions where the instrumenter setting was changed.\nYou can pass a `region_name` to the instrumenter calls, e.g. `scorep.instrumenter.enable(\"enabled_region_name\")` or `scorep.instrumenter.disable(\"disabled_region_name\")`.\nThis might be useful if you do something expensive, and just want to know how long it takes, but you do not care what happens exactly e.g.:\n\n```\n[...]\ndef fun_calls(n):\n    if (n>0):\n        fun_calls(n-1)\n\nwith scorep.instrumenter.disable(\"my_fun_calls\"):\n    fun_calls(1000000)\n[...]\n```\n\n`my_fun_calls` will be present in the trace or profile but `fun_calls` will not.\n\nHowever, doing \n```\n[...]\nwith scorep.instrumenter.disable():\n    with scorep.instrumenter.disable(\"my_fun_calls\"):\n        fun_calls(1000000)\n[...]\n```\nwill only disable the instrumenter, but `my_fun_calls` will not appear in the trace or profile, as the second call to `scorep.instrumenter.disable` did not change the state of the instrumenter.\nPlease look to [User Regions](#user-regions), if you want to annotate a region, no matter what the instrumenter state is.\n",
+                "type": "Text_excerpt",
+                "original_header": "Instrumenter User Interface",
+                "parent_header": [
+                    "Use",
+                    "Instrumenter"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Handing a Python file to `--instrumenter-file` allows the instrumentation of modules and functions without changing their code.\nThe file handed to `--instrumenter-file` is executed before the script is executed so that the original function definition can be overwritten before the function is executed.\nHowever, using this approach, it is no longer possible to track the bring up of the module.\n\nTo simplify the instrumentation, the user instrumentation contains two helper calls:\n```\nscorep.user.instrument_function(function, instrumenter_fun=scorep.user.region)\nscorep.user.instrument_module(module, instrumenter_fun=scorep.user.region):\n```\nwhile `instrumenter_fun` might be one of:\n * `scorep.user.region`, decorator as explained below\n * `scorep.instrumenter.enable`, decorator as explained above\n * `scorep.instrumenter.disable`, decorator as explained above\n\nUsing the `scorep.instrumenter` decorators, the instrumentation can be enabled or disabled from the given function.\nThe function is executed below `enable` or `disable`.\nUsing `scorep.user.region`, it is possible to instrument a full python program.\nHowever, I discourage this usage, as the overhead of the user instrumentation is higher than the built-in instrumenters.\n\nUsing `scorep.user.instrument_module`, all functions of the given Python Module are instrumented.\n\nAn example instrumenter file might look like the following:\n```\nimport scorep.user\n\n# import module that shall be instrumented\nimport module_to_instrument\nimport module\n\n# hand over the imported module, containing functions which shall be instrumented\nscorep.user.instrument_module(module_to_instrument)\n\n# hand the function to be instrumented, and overwrite the original definiton of that function\nmodule.function_to_instrument = scorep.user.instrument_function(module.function_to_instrument)\n\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Instrumenter File",
+                "parent_header": [
+                    "Use",
+                    "Instrumenter"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To use trace an MPI parallel application, please specify\n\n```\npython -m scorep --mpp=mpi <script.py>\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "MPI",
+                "parent_header": [
+                    "Use"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Since version 2.0 the python bindings support context managers for user regions:\n\n```\nwith scorep.user.region(\"region_name\"):\n    do_something()\n```\n\nSince version 2.1 the python bindings support also decorators for functions:\n\n```\n@scorep.user.region(\"region_name\")\ndef do_something():\n    #do some things\n```\nIf no region name is given, the function name will be used e.g.:\n\n```\n@scorep.user.region()\ndef do_something():\n    #do some things\n```\n\nwill result in `__main__:do_something`.\n\nThe traditional calls to define a region still exists, but the usage is discouraged:\n\n```\nscorep.user.region_begin(\"region_name\")\nscorep.user.region_end(\"region_name\")\n```\n\nUser parameters can be used in any case:\n\n```\nscorep.user.parameter_int(name, val)\nscorep.user.parameter_uint(name, val)\nscorep.user.parameter_string(name, string)\n```\n\nwhere `name` defines the name of the parameter or region, while `val` or `string` represents the value that is passed to Score-P.\n\nDisabling the recording with Score-P is still also possible:\n\n```\nscorep.user.enable_recording()\nscorep.user.disable_recording()\n```\n\nHowever, please be aware that the runtime impact of disabling Score-P is rather small, as the instrumenter is still active.\nFor details about the instrumenter, please see [Instrumenter](#Instrumenter).\n",
+                "type": "Text_excerpt",
+                "original_header": "User Regions",
+                "parent_header": [
+                    "Use"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        },
+        {
+            "result": {
+                "value": "The following flags are special to the python bindings:\n\n * `--noinstrumenter` disables the instrumentation of python code. Useful for user instrumentation and to trace only specific code regions using `scorep.instrumenter.enable`.\n * `--instrumenter-type=<type>` choose an instrumenter. See  [Instrumenter](#Instrumenter).\n * `--keep-files` temporary files are kept.\n",
+                "type": "Text_excerpt",
+                "original_header": "Overview about Flags",
+                "parent_header": [
+                    "Use"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        },
+        {
+            "result": {
+                "value": "To maintain backwards compatibility, the following flags are set per default:\n\n```\npython -m scorep --compiler --thread=pthread <script.py>\n```\n\nThe traditional `--mpi` does still work, and is similar to the following call:\n\n```\npython -m scorep --compiler --thread=pthread --mpp=mpi <script.py>\n```\n\nTo disable compiler interface, please specify:\n\n```\npython -m scorep --nocompiler <script.py>\n```\n\nHowever, this will not remove any compiler instrumentation in any binary.\n\nFor other thread schemes just specify `--thread=<something>`.\nE.g. :\n\n```\npython -m scorep --thread=omp <script.py>\n```\n\nPlease be aware the `--user` is always passed to Score-P, as this is needed for the python instrumentation.\n",
+                "type": "Text_excerpt",
+                "original_header": "Backward Compatibility",
+                "parent_header": [
+                    "Use"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you publish some work using the python bindings, we would appriciate, if you could cite one of the following paper:\n\n```\nGocht A., Sch\u00f6ne R., Frenzel J. (2021)\nAdvanced Python Performance Monitoring with Score-P.\nIn: Mix H., Niethammer C., Zhou H., Nagel W.E., Resch M.M. (eds) Tools for High Performance Computing 2018 / 2019. Springer, Cham.\nhttps://doi.org/10.1007/978-3-030-66057-4_14 \n```\n\nA preprint can be found at: \nhttp://arxiv.org/abs/2010.15444\n\nThe full paper is available at:\nhttps://doi.org/10.1007/978-3-030-66057-4_14 \n\n\n```\nGocht-Zech A., Grund A. and Sch\u00f6ne R. (2021)\nControlling the Runtime Overhead of Python Monitoring with Selective Instrumentation\nIn: 2021 IEEE/ACM International Workshop on Programming and Performance Visualization Tools (ProTools)\nhttps://doi.org/10.1109/ProTools54808.2021.00008\n```\n\nThe full paper is available at:\n\nhttps://doi.org/10.1109/ProTools54808.2021.00008\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "The European Union initially supported this work as part of the European Union\u2019s Horizon 2020 project READEX (grant agreement number 671657).\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgments"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "scorep"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/score-p/scorep_binding_python/wiki",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/score-p/scorep_binding_python/master/README.md"
+        }
+    ]
+}

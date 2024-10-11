@@ -1,0 +1,352 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 00:20:27"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/eth-sri/mn-bab",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "eth-sri",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-03-07T10:49:35Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-04-05T19:40:30Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "[ICLR 2022] Complete Verification via Multi-Neuron Relaxation Guided Branch-and-Bound",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Multi-Neuron Guided Branch-and-Bound ([MN-BaB](https://www.sri.inf.ethz.ch/publications/ferrari2022complete)) is a state-of-the-art complete neural network verifier that builds on the tight multi-neuron \nconstraints proposed in [PRIMA](https://www.sri.inf.ethz.ch/publications/mueller2021precise) and leverages these constraints within a BaB framework to yield an efficient, GPU based dual solver.\nMN-BaB is developed at the [SRI Lab, Department of Computer Science, ETH Zurich](https://www.sri.inf.ethz.ch/) as part of the [Safe AI project](http://safeai.ethz.ch/). \nThis version is an adaptation of the [VNN-COMP'22](https://arxiv.org/abs/2212.10376) entry allowing for the certification of models trained with the novel certified training method [SABR](https://openreview.net/forum?id=7oFuxtJtUMH), without modifications. \n \n",
+                "original_header": "MN-BaB <img width=\"100\" alt=\"portfolio_view\" align=\"right\" src=\"http://safeai.ethz.ch/img/sri-logo.svg\">"
+            },
+            "confidence": 0.9756635234269371,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "mn-bab",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "eth-sri/mn-bab",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/eth-sri/mn-bab/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/eth-sri/mn-bab/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 6,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/eth-sri/mn-bab/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 1358891
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 6539
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/setup.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/gurobi_install.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/install_tool.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/run_instance.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/prepare_instance.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "```\n  conda create --name MNBAB python=3.7 -y\n  conda activate MNBAB\n  ```\n\nThis script installs a few necessary prerequisites including the ELINA library and GUROBI solver and sets some PATHS. It was tested on an AWS Deep Learning AMI (Ubuntu 18.04) instance.\n\n```\nsource setup.sh\n```\n\nInstall remaining dependencies:\n```\npython3 -m pip install -r requirements.txt\nPYTHONPATH=$PYTHONPATH:$PWD\n```\n\nDownload the full MNIST, CIFAR10, and TinyImageNet test datasets in the right format and copy them into the `test_data` directory:  \n[MNIST](https://files.sri.inf.ethz.ch/sabr/mnist_test_full.csv)  \n[CIFAR10](https://files.sri.inf.ethz.ch/sabr/cifar10_test_full.csv)  \n[TinyImageNet](https://files.sri.inf.ethz.ch/sabr/tin_val.csv)  \n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "MN-BaB <img width=\"100\" alt=\"portfolio_view\" align=\"right\" src=\"http://safeai.ethz.ch/img/sri-logo.svg\">"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "```\ngit clone --branch SABR_ready --recurse-submodules https://github.com/eth-sri/mn-bab\n``` \nor clone normally and initialize the submodule later on\n```\ngit clone --branch SABR_ready https://github.com/eth-sri/mn-bab\ngit submodule init\ngit submodule update\n```\n \nThere's no need for a further installation of the submodules. \n",
+                "original_header": "Cloning"
+            },
+            "confidence": 0.9717208072619531,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "```\npython src/verify.py -c configs/cifar10_conv_small.json\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Example usage",
+                "parent_header": [
+                    "MN-BaB <img width=\"100\" alt=\"portfolio_view\" align=\"right\" src=\"http://safeai.ethz.ch/img/sri-logo.svg\">"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/README.md"
+        }
+    ],
+    "contributors": [
+        {
+            "result": {
+                "value": "* [Claudio Ferrari ](https://github.com/ferraric) - c101@gmx.ch\n* [Mark Niklas M\u00fcller](https://www.sri.inf.ethz.ch/people/mark) - mark.mueller@inf.ethz.ch  \n* [Nikola Jovanovic](https://www.sri.inf.ethz.ch/people/nikola) - nikola.jovanovic@inf.ethz.ch\n* [Robin Staab]()\n* [Dr. Timon Gehr](https://www.sri.inf.ethz.ch/people/timon)\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributors",
+                "parent_header": [
+                    "MN-BaB <img width=\"100\" alt=\"portfolio_view\" align=\"right\" src=\"http://safeai.ethz.ch/img/sri-logo.svg\">"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "If you find this work useful for your research, please cite it as:\n\n```\n@inproceedings{\n    ferrari2022complete,\n    title={Complete Verification via Multi-Neuron Relaxation Guided Branch-and-Bound},\n    author={Claudio Ferrari and Mark Niklas Mueller and Nikola Jovanovi{\\'c} and Martin Vechev},\n    booktitle={International Conference on Learning Representations},\n    year={2022},\n    url={https://openreview.net/forum?id=l_amHf1oaK}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citing This Work",
+                "parent_header": [
+                    "MN-BaB <img width=\"100\" alt=\"portfolio_view\" align=\"right\" src=\"http://safeai.ethz.ch/img/sri-logo.svg\">"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{ferrari2022complete,\n    url = {https://openreview.net/forum?id=l_amHf1oaK},\n    year = {2022},\n    booktitle = {International Conference on Learning Representations},\n    author = {Claudio Ferrari and Mark Niklas Mueller and Nikola Jovanovi{\\'c} and Martin Vechev},\n    title = {Complete Verification via Multi-Neuron Relaxation Guided Branch-and-Bound},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Complete Verification via Multi-Neuron Relaxation Guided Branch-and-Bound",
+                "author": "Claudio Ferrari and Mark Niklas Mueller and Nikola Jovanovi{\\'c} and Martin Vechev",
+                "url": "https://openreview.net/forum?id=l_amHf1oaK"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/README.md"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "* Copyright (c) 2022 [Secure, Reliable, and Intelligent Systems Lab (SRI), Department of Computer Science ETH Zurich](https://www.sri.inf.ethz.ch/)\n* Licensed under the [Apache License](https://www.apache.org/licenses/LICENSE-2.0)",
+                "type": "Text_excerpt",
+                "original_header": "License and Copyright",
+                "parent_header": [
+                    "MN-BaB <img width=\"100\" alt=\"portfolio_view\" align=\"right\" src=\"http://safeai.ethz.ch/img/sri-logo.svg\">"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "MN-BaB "
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "http://safeai.ethz.ch/img/sri-logo.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2212.10376"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/eth-sri/mn-bab/SABR_ready/README.md"
+        }
+    ]
+}

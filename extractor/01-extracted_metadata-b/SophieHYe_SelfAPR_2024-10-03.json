@@ -1,0 +1,324 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 18:56:23"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/ASSERT-KTH/SelfAPR",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "ASSERT-KTH",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-12-24T05:19:05Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-03-08T04:49:08Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "repo of \"SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics\" (ASE 22) https://oadoi.org/10.1145/3551349.3556926",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "SelfAPR",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "ASSERT-KTH/SelfAPR",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/SelfAPR/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/ASSERT-KTH/SelfAPR/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 22,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 7,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/SophieHYe/SelfAPR/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 2193023055
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 68452
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SophieHYe/SelfAPR/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": " ```\nInstall Defects4J from https://github.com/rjust/defects4j \nexport PATH=$PATH:\"path2defects4j\"/framework/bin\n ```\n\n ```\nJDK 1.8 for Defects4J\nexport JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64\nexport PATH=$JAVA_HOME/bin:$PATH\nexport CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar\n ```\n \nFor python, install the prerequisities with:\n\n   pip3 install -r requirements.txt\n ",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisites:",
+                "parent_header": [
+                    "SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SophieHYe/SelfAPR/main/README.md"
+        }
+    ],
+    "download": [
+        {
+            "result": {
+                "value": "```\nhttps://doi.org/10.5281/zenodo.6582348\njava -jar ./perturbation_model/target/perturbation-0.0.1-SNAPSHOT-jar-with-dependencies.jar Your/JAVA/FILE/PATH Options=SelfAPR|BugLab|test-'buggyLineNo'\n```\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "We also uploaded a jar package on Zenodo. Download the jar file and execute it as below.",
+                "parent_header": [
+                    "SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics",
+                    "Building the Java code"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SophieHYe/SelfAPR/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "```\nhttps://doi.org/10.5281/zenodo.6582348\njava -jar ./perturbation_model/target/perturbation-0.0.1-SNAPSHOT-jar-with-dependencies.jar Your/JAVA/FILE/PATH Options=SelfAPR|BugLab|test-'buggyLineNo'\n```\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "We also uploaded a jar package on Zenodo. Download the jar file and execute it as below.",
+                "parent_header": [
+                    "SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics",
+                    "Building the Java code"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SophieHYe/SelfAPR/main/README.md"
+        },
+        {
+            "result": {
+                "value": "```\npython3  2_execute_perturbation.py\n```",
+                "type": "Text_excerpt",
+                "original_header": "Iterate each file of the considered projects, generate perturbed project-specific trianings samples and execute them against test cases:",
+                "parent_header": [
+                    "SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics",
+                    "Code perturbation scripts"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SophieHYe/SelfAPR/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "```\npython3  1_perturb_projects.py\n```",
+                "type": "Text_excerpt",
+                "original_header": "Checkout the buggy projects, apply the human written patches on them and make sure NO failling tests. Start the perturbation with this script:",
+                "parent_header": [
+                    "SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics",
+                    "Code perturbation scripts"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SophieHYe/SelfAPR/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "```\npython3 3_prepare_test_data.py\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Prepare a set of evaluation bugs from Defects4J:",
+                "parent_header": [
+                    "SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics",
+                    "Code perturbation scripts"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SophieHYe/SelfAPR/main/README.md"
+        },
+        {
+            "result": {
+                "value": "```\npip install transformers\npip install sentencepiece\npython3 4_train.py\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "We are ready to train the perturbed samples with transformer:Pytorch==1.7.1 and transformers&gt;=4.10.0",
+                "parent_header": [
+                    "SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics",
+                    "Code perturbation scripts"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SophieHYe/SelfAPR/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "|\tPerturb Actions\t| Explanation |\n|\t---\t|---\t|\n|\tP1 Replace type\t|modify declaring type ... |\n|\tP2 Replace operator\t| modify operator ==, !=, etc|\n|\tP3 replace literal\t| modify literal, \"STRING\", true, false |\n|\tP4 replace constructor\t| modify constructor |\n|\tP5 replace variable\t| modify arguments/swap argumens |\n|\tP6 replace condition expression\t| reduce/expand boolean expression|\n|\tP7 replace invocation\t| modify invocation |\n|\tP8 compound statement\t| compound of rules|\n|\tP9 replace with similarity\t| replace by transplanting a similar donor statement|\n|\tP10 move statement\t| move a later statement before the target statement |\n|\tP11 transplatant statement\t| transplanting a donor statement |\n|\tP12 transplatant condition\t|  wrap target statement with an existing conditional block|\n|\tP13 transplatant a block\t| insert an existing block (if, loop, etc)|\n|\tP14 remove a statement\t| delete statement |\n|\tP15 unwrap a statement\t| unwrap block |\n|\tP16 remove a block\t| remove block | \n",
+                "original_header": "All perturbed rules generated by SelfAPR"
+            },
+            "confidence": 0.9999902398969833,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/SophieHYe/SelfAPR/main/README.md"
+        }
+    ],
+    "invocation": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": " ```bash\n\u251c\u2500\u2500 perturbation_model: the source code of java implemented perturbation model\n\u2502\u00a0\n\u251c\u2500\u2500 Samples_BugLab: the generated perturbation-based samples with four BugLab repair actions\n\u2502\u00a0\n\u251c\u2500\u2500 Samples_SelfAPR: the generated perturbation-based samples with 16 SelfAPR repair actions\n\u2502\u00a0\u00a0 \n\u251c\u2500\u2500 Dataset\n\u2502   \u251c\u2500\u2500 SelfAPR.csv.tar.gz : the dataset used to train SelfAPR model\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 SelfAPR_ALL.csv.tar.gz : all generated training samples\n\u2502   \u251c\u2500\u2500 SelfAPR_FE.csv.tar.gz  : functional error training samples\n\u2502   \u251c\u2500\u2500 SelfAPR_CE.csv.tar.gz : compilation error training samples\n\u2502   \u251c\u2500\u2500 test.csv : the testing set from Defects4j bug dataset\n\u2502\u00a0\n\u251c\u2500\u2500 result \n\u2502   \u251c\u2500\u2500defects4j-patches.txt : the correctly generated patches by SelfAPR trained model.\n\u2502   \u251c\u2500\u2500patch_execution_result.csv : the execution results for patches generated for test set.\n\u2502   \u251c\u2500\u2500valid_patches.csv : the patches classified as plausible or identical to the human-written patches.\n\u2514\u2500\u2500  \n\n``` \n",
+                "original_header": "Folder Structure"
+            },
+            "confidence": 0.921402530636147,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/SophieHYe/SelfAPR/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{selfAPR2022,\n    doi = {10.1145/3551349.3556926},\n    publisher = {Association for Computing Machinery},\n    numpages = {13},\n    articleno = {92},\n    booktitle = {37th IEEE/ACM International Conference on Automated Software Engineering},\n    year = {2022},\n    author = {Ye, He and Martinez, Matias and Luo, Xiapu and Zhang, Tao and Monperrus, Martin},\n    title = {SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.1145/3551349.3556926",
+                "title": "SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics",
+                "author": "Ye, He and Martinez, Matias and Luo, Xiapu and Zhang, Tao and Monperrus, Martin"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SophieHYe/SelfAPR/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SophieHYe/SelfAPR/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,249 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 23:58:54"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/carlos-molina/conch",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "carlos-molina",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2013-02-07T16:22:34Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-16T17:33:48Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "conch (Contract Compliance Checker) is a software for performing contract compliance checking",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "conch",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "carlos-molina/conch",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/carlos-molina/conch/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/carlos-molina/conch/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/carlos-molina/conch/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 134522
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 1304
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 1154
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Batchfile",
+                "name": "Batchfile",
+                "type": "Programming_language",
+                "size": 168
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "0. Install java jdk 7\n1. Clone conch repo https://github.com/gsfyrakis/conch (Branch cccv2)\n2. install mysql 5.6 https://dev.mysql.com/downloads/mysql/5.6.html#downloads\n3. download jboss-eap-6.4 https://developers.redhat.com/download-manager/file/jboss-eap-6.4.0.GA-installer.jar or jboss as 7.1.1 http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.zip\n4. install jboss-eap \u279c choose admin password\n5. copy conch/JBOSS-EAP-6.4 configuration/mysql folder to jboss-eap-6.4/modules/com\n6. add datasource and driver configuration in jboss-eap-6.4/standalone/configuration/standalone-full.xml file\n\n`<datasource jta=\"false\" jndi-name=\"java:jboss/datasources/RopeDS\" pool-name=\"RopeDS\" enabled=\"true\" use-ccm=\"false\">\n                    <connection-url>jdbc:mysql://127.0.0.1:3306/rope_historical</connection-url>\n                    <driver-class>com.mysql.jdbc.Driver</driver-class>\n                    <driver>mysql</driver>\n                    <security>\n                        <user-name>rope</user-name>\n                        <password>Me!Uj4^w</password>\n                    </security>\n                    <validation>\n                        <validate-on-match>false</validate-on-match>\n                        <background-validation>false</background-validation>\n                    </validation>\n                    <statement>\n                        <share-prepared-statements>false</share-prepared-statements>\n                    </statement>\n                </datasource>\n                <drivers>\n                    <driver name=\"mysql\" module=\"com.mysql\"/>\n                    <driver name=\"h2\" module=\"com.h2database.h2\">\n                        <xa-datasource-class>org.h2.jdbcx.JdbcDataSource</xa-datasource-class>\n                    </driver>\n                </drivers>`\n\n6. copy conch/JBOSS-EAP-6.4 configuration/drools to  jboss-eap-6.4/standalone/ to install default contract\n7. edit change-set.xml in  jboss-eap-6.4/standalone/drools/upload with full path to Rule.drl   \n8. `export JBOSS_HOME=<installation` path for jboss-eap-6.4>\n9. execute `conch/run.sh` script \n10. check for any exceptions\n11. install maven 3.3.9\n12. create `.mavenrc` file in user folder \n13. add  configuration to `.mavenrc`  file\n`JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home'`\n`JAVA_OPTS=\u201c-Xms512m -Xmx1024m -Xss512k -XX:PermSize=64m -XX:MaxPermSize=128m\u201d`\n\n14. copy `conch/JBOSS-EAP-6.4/settings.xml` to `~/.m2/`\n15. follow the tutorial to adjust the configuration of the maven jboss-as plugin, if it is needed, in order to deploy the `CCC-Rest-ear.ear` archive to jboss server after each maven build.  http://mastertheboss.com/jboss-frameworks/maven-tutorials/jboss-maven/maven-jboss-as-7-plugin-tutorial\nThe configuration for the maven jboss-as plugin is on the `conch/pom.xml` file.\n\nAnother way to manually deploy the CCC-Rest-ear.ear archive is by visiting the management console of jboss: http://www.mastertheboss.com/jboss-server/jboss-deploy/how-to-deploy-an-application-remotely-with-jboss-as  \n\n16. execute in conch folder \u279e `mvn clean package jboss-as:deploy`\n17. check jboss logs for any exceptions\n    15:45:22,446 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS015859: Deployed \u201cCCCRest-ear.ear\u201d (runtime-name : \u201cCCCRest-ear.ear\"\n18. `http://localhost:8080/CCCRest-ear-web/UploadForm.html` to upload a new set of rules to the CCC\n19. build client and run examples using client app under `conch/CCCRestClient/runClient.sh` (change path to sequence events) \n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/carlos-molina/conch/master/install.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/carlos-molina/conch/master/run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/carlos-molina/conch/master/CCCRestClient/runClient.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/carlos-molina/conch/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/carlos-molina/conch/master/README.me",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "conch"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/carlos-molina/conch/master/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/carlos-molina/conch/wiki",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/carlos-molina/conch/master/README.md"
+        }
+    ]
+}

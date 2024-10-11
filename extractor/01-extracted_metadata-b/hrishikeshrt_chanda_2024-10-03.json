@@ -1,0 +1,253 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:56:47"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/hrishikeshrt/chanda",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "hrishikeshrt",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-05-03T11:33:38Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-12T12:42:22Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Sanskrit Meter Identification and Utilization",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "chanda",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "hrishikeshrt/chanda",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/hrishikeshrt/chanda/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/hrishikeshrt/chanda/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/hrishikeshrt/chanda/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 521328
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 54814
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 45765
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 417
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/hrishikeshrt/chanda/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "* Install Python requirements using\n\n```pip install -r requirements.txt```\n\n* Copy `settings.sample.py` to `settings.py` and configure settings.\n\n**Note**: OCR systems need to be setup independently.\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "Chandoj\u00f1\u0101nam"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/hrishikeshrt/chanda/master/README.md"
+        },
+        {
+            "result": {
+                "value": "* Link: https://pypi.org/project/google-drive-ocr/\n* Follow setup instructions to setup a project on Google Cloud Platform\n",
+                "type": "Text_excerpt",
+                "original_header": "Google OCR",
+                "parent_header": [
+                    "Chandoj\u00f1\u0101nam",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/hrishikeshrt/chanda/master/README.md"
+        },
+        {
+            "result": {
+                "value": "* Link: https://github.com/tesseract-ocr/\n* Also install language files for Indian languages such as Sanskrit (`san`), Marathi (`mar`), Hindi (`hin`), Bengali (`ben`), Telugu (`tel`), Tamil (`tam`), Kannada (`kan`), Malayalam (`mal`), Gujarati (`guj`) etc.\n* e.g.,\n```sudo apt install tesseract-ocr-(san|mar|hin|ben|tel|tam|kan|mal|guj)```\n",
+                "type": "Text_excerpt",
+                "original_header": "Tesseract OCR",
+                "parent_header": [
+                    "Chandoj\u00f1\u0101nam",
+                    "Installation"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/hrishikeshrt/chanda/master/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Source code for https://sanskrit.iitk.ac.in/jnanasangraha/chanda/\n \n",
+                "original_header": "Chandoj\u00f1\u0101nam"
+            },
+            "confidence": 0.9469586415309419,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/hrishikeshrt/chanda/master/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Chandoj\u00f1\u0101nam"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/hrishikeshrt/chanda/master/README.md"
+        }
+    ]
+}

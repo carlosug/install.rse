@@ -1,0 +1,606 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:00:02"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/microsoft/coderec_programming_states",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "microsoft",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-10-28T18:46:14Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-12T18:54:50Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "    MIT License\n\n    Copyright (c) Microsoft Corporation.\n\n    Permission is hereby granted, free of charge, to any person obtaining a copy\n    of this software and associated documentation files (the \"Software\"), to deal\n    in the Software without restriction, including without limitation the rights\n    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n    copies of the Software, and to permit persons to whom the Software is\n    furnished to do so, subject to the following conditions:\n\n    The above copyright notice and this permission notice shall be included in all\n    copies or substantial portions of the Software.\n\n    THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n    SOFTWARE\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Code and Data for: Reading Between the Lines: Modeling User Behavior and Costs in AI-Assisted Programming",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Code and Data for: \n- [Reading Between the Lines: Modeling User Behavior and Costs in AI-Assisted Programming](https://arxiv.org/abs/2210.14306)\n  [Go To Code](#Reading-Between-the-Lines) - CHI 2024 \n\nDataframe of telemetry for the study is available in [data pickle](data/data_labeled_study.pkl) and processed in folder [data](data/) \n",
+                "original_header": "Understanding and Improving Copilot"
+            },
+            "confidence": 0.9551257464002375,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- **Understanding how programmers use Copilot**: our work enables an in depth study of how programmers use Copilot, and the different states programmers are in when using Copilot (CUPS). This repository contributes telemetry data of programmers completing tasks with Copilot and a detailed analysis of that data. \n- **When should a suggestion be shown in Copilot?** We contribute a simple method that predicts the probability of a programmer accepting a suggestion, and show that it can be used to improve the performance of Copilot by selectively showing suggestions. \n",
+                "original_header": "What is This?"
+            },
+            "confidence": 0.9767948398526369,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft \ntrademarks or logos is subject to and must follow \n[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).\nUse of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.\nAny use of third-party trademarks or logos are subject to those third-party's policies.\n \n",
+                "original_header": "Trademarks"
+            },
+            "confidence": 0.9725227067402532,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "coderec_programming_states",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "microsoft/coderec_programming_states",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/microsoft/coderec_programming_states/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/microsoft/coderec_programming_states/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 26,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 8,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/microsoft/coderec_programming_states/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 1589808
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 121172
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 19506
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 17224
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 11069
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "code_of_conduct": [
+        {
+            "result": {
+                "value": "# Microsoft Open Source Code of Conduct\n\nThis project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).\n\nResources:\n\n- [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)\n- [Microsoft Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)\n- Contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with questions or concerns\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/CODE_OF_CONDUCT.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/between_the_lines/user_study_analysis/section5.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/between_the_lines/user_study_analysis/section5.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/between_the_lines/user_study_analysis/section6.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/between_the_lines/user_study_analysis/section6.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/between_the_lines/user_study_analysis/participants_analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/between_the_lines/user_study_analysis/participants_analysis.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/between_the_lines/user_study_analysis/viz_draw.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/between_the_lines/user_study_analysis/viz_draw.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/between_the_lines/user_study_webapp/coding_tasks.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/between_the_lines/user_study_webapp/coding_tasks.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/between_the_lines/predict_cups/predict_cups.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/between_the_lines/predict_cups/predict_cups.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/when_to_show/max_reward_accept.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/when_to_show/max_reward_accept.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/when_to_show/cdhf.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/when_to_show/cdhf.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/when_to_show/predict_accept_user_study.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/when_to_show/predict_accept_user_study.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/when_to_show/effect_of_latent_state.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/when_to_show/effect_of_latent_state.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/when_to_show/extended_logs/hmm_copilot_new.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/when_to_show/extended_logs/hmm_copilot_new.ipynb"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "The environment named 'coderec' is available as a yml file and can be installed using:\n```\nconda env create -f environment.yml\n```\n\nSome of the packages are not required for all the scrips and notebooks, but are included in the environment for convenience. \n\nThere is also a requirements.txt file available, but it does not include pip install so it is insufficient, to use that:\n```\nconda create --name coderec --file requirements.txt\n```\nWe will also need to install further libraries and tools.\n\n- Treesitter for getting code labels\n```\n git clone https://github.com/tree-sitter/tree-sitter-python\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft \ntrademarks or logos is subject to and must follow \n[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).\nUse of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.\nAny use of third-party trademarks or logos are subject to those third-party's policies.\n \n",
+                "original_header": "Trademarks"
+            },
+            "confidence": 0.9988852287322683,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "You can interact with the study data using our annotation interface.\n\nSteps:\n\n- First make sure to download the data including the labels (.json files) and the videos (.mp4 files). \n- Place both the json and mp4 in the 'user_study_webapp/app_study/static' folder.\n- For each study,  run the following commands:\n\n```\npython server.py -p static/logs_user_8.json -v static/video_cropped_8.mp4\n```\n- Go to http://localhost:8080/ on your browser to see the interface.\n\n\n![Annotation Interface](images/interface_sreenshot.png)\n\n\n\nWe include the instructions for each coding task in [coding_tasks](between_the_lines/user_study_webapp/coding_tasks.ipynb)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "User Interface for Study Data",
+                "parent_header": [
+                    "Reading Between the Lines"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Our study complete data is stored in '/data/data_labeled_study.pkl' which contains python  array which we will name 'df_observations' where: 'df_observations[i]' is the session for the ith user stored as a pandas dataframe.\n\nTo be more explicit, df_observations[i] is a pandas dataframe that contains the following columns:\n```\n'UserId' \n'TimeGenerated': timestamp for event\n'StateName': betweeen 'Shown', 'Accepted', 'Rejected', 'Replay' (consecutive shown), 'Browsing' (shown different choice index)\n'HiddenState' : high level hidden state between 'UserBeforeAction', 'UserPaused', 'UserTyping'\n'TimeSpentInState'\n'CurrentSuggestion' \n'CurrentPrompt'\n'Measurements': measurements from logs\n'EditPercentage': an array containing the relative edit distance (in 0-1) for the 5 stillincode events for this completion\n'LabeledState': the state label by the user for the current state\n```\n\nThe LabeledState takes the following values:\n```\nThinking About Suggestion (a): actively thinking/verifying about suggestion shown, also includes going to the internet to verify <br>\nNot Thinking (s): not thinking about suggestion shown  <br>\nDeferring Thought For Later (d): decide to not think now about suggestion, but will think later about it  <br>\nThinking About New Code To Write (f): thinking about code outside suggestions to write, new functionality  <br>\nWaiting For Suggestion (g): waiting for Copilot suggestion to be shown   <br>\nWriting New Code (z): writing code that implements new functionality <br>\nEditing Recent Suggestions (x): editing recent Copilot suggestions<br>\nEditing (Personally) Written Code(c): editing code you wrote that was not a Copilot suggestion for purpose of fixing functionality <br>\nPrompt Crafting (v): writing comment or code with intention of copilot completion<br>\nWriting Documentation (b): adding comments for purpose of documentation,<br>\nDebugging/Testing Code (h): running or debugging code to check functionality, may include writing tests or debugging statements<br>\nLooking at documentation: looking online for documentation\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Dataframe for user study",
+                "parent_header": [
+                    "Reading Between the Lines"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "All code is found [here](when_to_show/)\n\n![cdhf](images/cdhf.JPG)\n\n",
+                "type": "Text_excerpt",
+                "original_header": "When to Show a Suggestion"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        },
+        {
+            "result": {
+                "value": "We have already performed this step for you for the user study logs and processed data is in [data/featureframe_user_study.pkl](data/featureframe_user_study.pkl)\n\nGiven the extended logs, we will generate features for the prediction and decoding models.\n\nThe below command will generate a pickle file containing a python variable, name it 'df_features', of the following form:\n\ndf_features[i][j][h]: is the h'th feature for the k'th event for the ith user.\n\nLet us elaborate further, df_features[i] is the all the data for the ith user. df_features[i][k] contains the features for the k'th event in the session. Finally, df_features[i][k][h] contains the h'th feature, more precisely, df_features[i][k] is a list of different feature, where df_features[i][k][h] is a list contains a representation of the h'th feature as follows:\n```\n   feature_dict = {'Measurements: compCharLen, confidence, documentLength, numLines, numTokens, promptCharLen, promptEndPos, quantile': 0,\n    'edit percentage': 1, 'time_in_state': 2, 'session_features':3, 'suggestion_label':4, 'prompt_label':5,\n    'suggestion_embedding':6, 'prompt_embedding':7, 'suggestion_text_features':8, 'prompt_text_features':9, 'statename':10}\n```\nmeaning df_features[i][k][0] is a list contaning all measurement features, i.e. compCharLen, confidence, documentLength, numLines, numTokens, promptCharLen, promptEndPos, quantile in a row. And then df_features[i][k][6] is the 768 dimensional suggestion embedding and so forth.\n\nThe command to get the features pickle file is:\n```\npython action_prediction/generate_features.py -p'OUTPUT_PATH_EXTENDED_LOGS.pkl' \\\n-c 0 \\\n-b 1000 \\\n-o 'OUTPUT_PATH_features.pkl' \\\n-e 1 \\\n-m 99999  \\ \n```\nthe documentation for the args is:\n```\n('-p', '--path', help='Path to extended logs frame', required=True) \n('-c', '--cudadevice', help='cuda device id', default=0, required=True, type=int)\n('-b', '--batchsize', help='batch size', default=1000, required=True, type=int)\n('-o', '--output', help='Output path of .pkl file', required=True) \n('-e', '--embedding', help='Whether to get embeddings for suggestion and prompt', required=True, type=int)\n('-m', '--maxusers', help='max users', default=100, required=True, type=int)\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Generating Features from the Dataframe for Prediction and Decoding",
+                "parent_header": [
+                    "When to Show a Suggestion"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The figures and tables in the paper are generated using data from a larger dataset that is not provided for privacy reasons. However, one can perform all the analysis in the paper with the user study data that is collected in our 2022 paper. \n\n- Effect of Programmer Latent State analysis (page 6) can be replicated with the notebook [effect_of_latent_state.ipynb](./when_to_show/effect_of_latent_state.ipynb)\n\n- The results (page 10) of predicting accepts with XGB can be replicated with [predict_accept_user_study.ipynb](./when_to_show/predict_accept_user_study.ipynb)\n\n- Figure 7 (CDHF) can be replicated by first generating the models m1 and m2 and then running the notebook [cdhf.ipynb](./when_to_show/cdhf.ipynb)\n\n- Figure 8 (which suggestion to show) and 10-11 can be replicated by first generating a model that only takes prompt and suggestion embeddings and running the notebook [max_reward_accept.ipynb](when_to_show/max_reward_accept.ipynb)\n\nOther figures (Figure 5, Figure 6) require the larger dataset and are not included in this release.\n",
+                "type": "Text_excerpt",
+                "original_header": "Replicating Figures and Tables",
+                "parent_header": [
+                    "When to Show a Suggestion"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "Please cite our papers if you use our dataset or code:\n\n```\n@article{mozannar2022reading,\n  title={Reading Between the Lines: Modeling User Behavior and Costs in AI-Assisted Programming},\n  author={Mozannar, Hussein and Bansal, Gagan and Fourney, Adam and Horvitz, Eric},\n  journal={arXiv preprint arXiv:2210.14306},\n  year={2022}\n}\n\n@article{mozannar2023show,\n  title={When to Show a Suggestion? Integrating Human Feedback in AI-Assisted Programming},\n  author={Mozannar, Hussein and Bansal, Gagan and Fourney, Adam and Horvitz, Eric},\n  journal={arXiv preprint arXiv:2306.04930},\n  year={2023}\n}\n```\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{mozannar2022reading,\n    year = {2022},\n    journal = {arXiv preprint arXiv:2210.14306},\n    author = {Mozannar, Hussein and Bansal, Gagan and Fourney, Adam and Horvitz, Eric},\n    title = {Reading Between the Lines: Modeling User Behavior and Costs in AI-Assisted Programming},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Reading Between the Lines: Modeling User Behavior and Costs in AI-Assisted Programming",
+                "author": "Mozannar, Hussein and Bansal, Gagan and Fourney, Adam and Horvitz, Eric"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@article{mozannar2023show,\n    year = {2023},\n    journal = {arXiv preprint arXiv:2306.04930},\n    author = {Mozannar, Hussein and Bansal, Gagan and Fourney, Adam and Horvitz, Eric},\n    title = {When to Show a Suggestion? Integrating Human Feedback in AI-Assisted Programming},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "When to Show a Suggestion? Integrating Human Feedback in AI-Assisted Programming",
+                "author": "Mozannar, Hussein and Bansal, Gagan and Fourney, Adam and Horvitz, Eric"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "result": {
+                "value": "This release is part of research done during an internship at Microsoft Research ([privacy statement](https://privacy.microsoft.com/en-us/privacystatement)) and was based on valuable feedback from colleagues across MSR and GitHub including Saleema Amershi, Victor Dibia, Forough Poursabzi, Andrew Rice, Eirini Kalliamvakou, and Edward Aftandilian.\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Acknowledgements",
+                "parent_header": [
+                    "Other"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "This project welcomes contributions and suggestions.  Most contributions require you to agree to a\nContributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us\nthe rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.\n\nWhen you submit a pull request, a CLA bot will automatically determine whether you need to provide\na CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions\nprovided by the bot. You will only need to do this once across all repos using our CLA.\n\nThis project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).\nFor more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or\ncontact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributing",
+                "parent_header": [
+                    "Other"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Understanding and Improving Copilot"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/images/interface_sreenshot.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/images/user_timeline.PNG"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/images/graph.JPG"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/images/cdhf.JPG"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2306.04930"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2306.04930"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2210.14306"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/microsoft/coderec_programming_states/main/README.md"
+        }
+    ]
+}

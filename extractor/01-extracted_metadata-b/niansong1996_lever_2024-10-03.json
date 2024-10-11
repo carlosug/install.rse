@@ -1,0 +1,481 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:01:36"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/niansong1996/lever",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "niansong1996",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-02-16T06:01:49Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-20T11:55:20Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 Ansong Ni\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Code for paper \"LEVER: Learning to Verifiy Language-to-Code Generation with Execution\" (ICML'23)",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Code for paper \"[LEVER: Learning to Verify Language-to-Code Generation with Execution](https://arxiv.org/abs/2302.08468)\". LEVER is a simple method that improves the code generation ability of large language models trained on code (CodeLMs), by learning to verify and rerank CodeLM-generated programs with their execution results. LEVER + Codex (*code-davinci-002*) achieves new SOTA results on the [Spider](https://yale-lily.github.io/spider), [WikiTableQuestions](https://github.com/ppasupat/WikiTableQuestions), [GSM8k](https://github.com/openai/grade-school-math), and [MBPP](https://github.com/google-research/google-research/tree/master/mbpp) datasets. \n",
+                "original_header": "LEVER: Learning to Verify Language-to-Code Generation with Execution"
+            },
+            "confidence": 0.9776304039519675,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "lever",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "niansong1996/lever",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/niansong1996/lever/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/niansong1996/lever/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 77,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 6,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/niansong1996/lever/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 230124
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "(Recommended) Create a new conda environment\n```bash\nconda create -n lever python=3.8\nconda activate lever\n```\nInstall the dependencies\n```bash\npip install -r requirements.txt\n```\n> **NOTE**: all of the pipelines are only tested on Linux machines, you may need to build your own `tree-sitter` parsers if a different platform is used.\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution",
+                    "Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        },
+        {
+            "result": {
+                "value": "> We share only the verification data, which is essential to reproduce our results, under the [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license. For the original datasets, please refer to their own pages. \n\nDownload the data from [here](https://drive.google.com/file/d/1pxFSnQVZKTJ9uAeZWiMopMbP8pdWK7GI/view?usp=sharing) and create a `data` folder:\n```bash\ncd lever\nmkdir data\ncd data\nunzip lever_verification_data.zip\n```\nAfter this, make sure your `data` directory looks something like this:\n```\ndata\n|-- gsm8k\n|   |-- ...\n|-- mbpp\n|   |-- ...\n|-- spider \n|   |-- ...\n|-- wikitq\n|   |-- wikitq_codex_verification_dev.jsonl\n|   |-- wikitq_codex_verification_test.jsonl\n|   |-- wikitq_codex_verification_train.jsonl\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Data",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution",
+                    "Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        },
+        {
+            "result": {
+                "value": "(For Codex) Set up OpenAI API key. Either put this line in your `~/.bashrc` (or equivalent), or add this line to every inference commands:\n```bash\nexport OPENAI_API_KEY=<your key, should start with \"sk-\">\n```\n\n(For experiment logging) Prepend `export EXP_NAME=<your exp name>` to the python commands to log to `wandb`, for example:\n```bash\nexport EXP_NAME=lever-reproduce-mbpp; \n```\nBut you may need to setup a W&B account first (you may follow the instructions [here](https://docs.wandb.ai/ref/cli/wandb-login)). Then change the following lines in `trainer.logger+` fields of the `yaml` config file you would like to run:\n```yaml\nentity: <your-user/org-name>\nproject: <your-project-name>\n```\n\n(Common error) At any point, if you met with the Python import problem (e.g., `ModuleNotFoundError`), try doing this in the main (`lever`) directory:\n```bash\nexport PYTHONPATH=`pwd`\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Optional Setups",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution",
+                    "Setup"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "<p align=\"left\">\n    <a href=\"https://img.shields.io/github/license/niansong1996/lever\">\n        <img src=\"https://img.shields.io/github/license/niansong1996/lever\">\n    </a>\n    <a href=\"https://img.shields.io/github/last-commit/HKUNLP/Binder?color=green\">\n        <img src=\"https://img.shields.io/github/last-commit/HKUNLP/Binder?color=green\">\n    </a>\n    <a href=\"https://img.shields.io/badge/PRs-Welcome-red\">\n        <img src=\"https://img.shields.io/badge/PRs-Welcome-red\">\n    </a>\n    <br/>\n</p> \n",
+                "original_header": "LEVER: Learning to Verify Language-to-Code Generation with Execution"
+            },
+            "confidence": 0.9999999999951115,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "**If you would like to:**\n* Try out LEVER or look at some more examples, we highly recommend you to visit our [Demo Page](https://huggingface.co/spaces/niansong1996/lever-demo);\n* Reproduce our results on all datasets on *preprocessed* datasets, first check the [Data](https://github.com/niansong1996/lever#data) section to download the data, then see the [Reproduce](https://github.com/niansong1996/lever#reproduce) section;\n* Apply *trained* LEVER on one of the four datasets, but to the outputs of different code LLM (e.g., GPT-4, ChatGPT, StarCoder), follow the instructions at [New LLMs](https://github.com/niansong1996/lever#new-llms) section;\n* Apply LEVER to a different dataset, this requires generating training data and re-train LEVER from scratch, please follow the instructions at [Training](https://github.com/niansong1996/lever#new-datasets) section.\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        },
+        {
+            "result": {
+                "value": "For easy reproducibility, we share the weights of all the trained models for all 4 datasets on the huggingface model hub:\n* LEVER for Codex on Spider: [*niansong1996/lever-spider-codex*](https://huggingface.co/niansong1996/lever-spider-codex)\n* LEVER for Codex on WikiTQ: [*niansong1996/lever-wikitq-codex*](https://huggingface.co/niansong1996/lever-wikitq-codex)\n* LEVER for Codex on GSM8K: [*niansong1996/lever-gsm8k-codex*](https://huggingface.co/niansong1996/lever-gsm8k-codex)\n* LEVER for Codex on MBPP: [*niansong1996/lever-mbpp-codex*](https://huggingface.co/niansong1996/lever-mbpp-codex)\n\n> If you would like to use the trained model weights for InCoder and CodeGen models, please open a feature request [here](https://github.com/niansong1996/lever/issues).\n",
+                "type": "Text_excerpt",
+                "original_header": "Model Checkpoints",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        },
+        {
+            "result": {
+                "value": "If you would like to apply trained LEVER models to existing datasets, to existing models, or maybe even outputs of different code LLMs*, you only need to load the pretrained weights of LEVER and run inference.\n\n> *: As shown in Table 8 of the [paper](https://arxiv.org/abs/2302.08468), transfer learning works surprisingly well.\n",
+                "type": "Text_excerpt",
+                "original_header": "Inference",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        },
+        {
+            "result": {
+                "value": "The easiest way to reproduce our results is to run the trained models on the prepared datasets used in the paper.\nAfter obtaining the data and put them in the specific locations as described in the [Data](https://github.com/niansong1996/lever#data) section, run the following commands with `<dataset>=spider|wikitq|gsm8k|mbpp`\n```bash\npython finetuning/trainer.py validate --config finetuning/training_configs/verification/<dataset>_verification.yaml --trainer.accelerator gpu --trainer.gpus 1\n```\nFor example, it only takes ~7mins to run LEVER on Spider dev set on the *CPUs** of my M1 Max MacBook Pro, with the following command:\n```bash\npython finetuning/trainer.py validate --config finetuning/training_configs/verification/spider_verification.yaml --trainer.accelerator cpu --trainer.gpus 4 --data.val_batch_size 4\n```\nOf course, also feel free to modify the `yaml` config file directly, all the fields should be self-explanatory.\n> *: I can't get MPS to work with T5 models, if you know how to do it, please open an issue / PR.\n",
+                "type": "Text_excerpt",
+                "original_header": "Reproduce",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution",
+                    "Usage",
+                    "Inference"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        },
+        {
+            "result": {
+                "value": "To apply LEVER to new LLMs on existing datasets, for each example, you first need to sample candidate programs with the new LLMs. We have some example `yaml` on how you can do this for GSM8K for `Codex`, `InCoder` and `CodeGen` models in `finetuning/training_configs/few_shot/`.\n\nTo add a new LLM in the few-shot generation pipeline, you would need to add it in `finetuning/lightning_modules/models/seq2seq_model_util.py`\n```python\n    ...\n    elif model_name.startswith(\"codex-\"):\n        ...\n    elif model_name == ###### Add your model here ##########\n        \"\"\"Initialize and return the tokenizer and the model \"\"\"\n        ######## End adding model ##############\n    else:\n        print(f\"unknown model: {model_name}\")\n        raise NotImplementedError\n```\nAlso don't forget to update the two helper functions accordingly:\n```python\ndef is_model_gpt_style(name: str) -> bool:\n    ...\n\ndef is_encoder_only_model(name: str) -> bool:\n    ...\n```\n\nAfter all this is done, you should be able to run few-shot generation with your own model like this:\n```bash\npython finetuning/trainer.py validate --config finetuning/training_configs/few_shot/<your_new_llm_config>.yaml\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "New LLMs",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution",
+                    "Usage",
+                    "Inference"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        },
+        {
+            "result": {
+                "value": "While LEVER works well when it's trained with the outputs from another LLM and apply it to a different LLM **for the same dataset**, if you would like to apply LEVER to a different dataset, you may need to implement a new dataset under our framework, generate your own training data and train your own LEVER model. \n\nWhile it will be too verbose to give a full tutorial of all these parts, we point you to the different parts of the repo and hopefully you can follow those examples to build such a pipeline for a new dataset.\n",
+                "type": "Text_excerpt",
+                "original_header": "Training",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        },
+        {
+            "result": {
+                "value": "First check out the examples at `finetuning/lightning_modules/datasets`, more specifically, we suggest look at these two classes `FewShotMathQADataset` and `FewShotMathQADataModule` in `finetuning/lightning_modules/datasets/mathqa_reader.py` and the functions you need to override.\n",
+                "type": "Text_excerpt",
+                "original_header": "Implement new dataset class for few-shot generation",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution",
+                    "Usage",
+                    "Training"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Now that you have the candidate programs for your own dataset, you need to implement another two dataset classes for verification, for this, check out `MathQAEndVerificationDataset` and `MathQAEndVerificationDataModule` in `finetuning/lightning_modules/datasets/mathqa_reader.py` for examples. \n",
+                "type": "Text_excerpt",
+                "original_header": "Implement new dataset class for verification",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution",
+                    "Usage",
+                    "Training"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Next, you will train LEVER with the training data you just generated, with command like:\n```python\npython finetuning/trainer.py fit --config finetuning/training_configs/verification/<your_new_dataset_config>.yaml\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Train LEVER",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution",
+                    "Usage",
+                    "Training"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "You would need to run few-shot generation on both the training data and dev/test data for your own dataset, the general command should be like:\n```python\npython finetuning/trainer.py validate --config finetuning/training_configs/few_shot/<your_new_dataset_config>.yaml\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Running few-shot generation",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution",
+                    "Usage",
+                    "Training"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        },
+        {
+            "result": {
+                "value": "By default, if you put the path of the dev data in the `yaml` file of `<your_new_dataset_config>.yaml` in your previous command, you should see the validation results between each epochs of training, but you can also just run it like:\n```python\npython finetuning/trainer.py validate --config finetuning/training_configs/verification/<your_new_dataset_config>.yaml --model.load_ckpt_file <path_to_ckpt>\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Run LEVER on your dev/test data",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution",
+                    "Usage",
+                    "Training"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "Part of the code adapted from [https://github.com/Yale-LILY/NLP4Code](https://github.com/Yale-LILY/NLP4Code) (Apache-2.0 License) and [https://github.com/microsoft/TraceCodegen](https://github.com/microsoft/TraceCodegen) (MIT License). \n\nIf you use the code or data in this repository, please cite:\n```bib\n@inproceedings{ni2023lever,\n  title={Lever: Learning to verify language-to-code generation with execution},\n  author={Ni, Ansong and Iyer, Srini and Radev, Dragomir and Stoyanov, Ves and Yih, Wen-tau and Wang, Sida I and Lin, Xi Victoria},\n  booktitle={Proceedings of the 40th International Conference on Machine Learning (ICML'23)},\n  year={2023}\n}\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "References",
+                "parent_header": [
+                    "LEVER: Learning to Verify Language-to-Code Generation with Execution"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{ni2023lever,\n    year = {2023},\n    booktitle = {Proceedings of the 40th International Conference on Machine Learning (ICML'23)},\n    author = {Ni, Ansong and Iyer, Srini and Radev, Dragomir and Stoyanov, Ves and Yih, Wen-tau and Wang, Sida I and Lin, Xi Victoria},\n    title = {Lever: Learning to verify language-to-code generation with execution},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Lever: Learning to verify language-to-code generation with execution",
+                "author": "Ni, Ansong and Iyer, Srini and Radev, Dragomir and Stoyanov, Ves and Yih, Wen-tau and Wang, Sida I and Lin, Xi Victoria"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "LEVER: Learning to Verify Language-to-Code Generation with Execution"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://huggingface.co/niansong1996/lever-wikitq-codex",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/niansong1996/lever/main/imgs/reranker_pipeline.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2302.08468"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/niansong1996/lever/main/README.md"
+        }
+    ]
+}

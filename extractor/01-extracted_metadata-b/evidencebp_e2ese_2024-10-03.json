@@ -1,0 +1,258 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 19:53:48"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/evidencebp/e2ese",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "evidencebp",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-07-28T07:27:53Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-22T15:32:41Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "e2ese",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "evidencebp/e2ese",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/evidencebp/e2ese/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/evidencebp/e2ese/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/evidencebp/e2ese/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 921
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/evidencebp/e2ese/releases/52502463",
+                "tag": "1.0",
+                "name": "End to End Software Engineering Repository",
+                "author": {
+                    "name": "evidencebp",
+                    "type": "User"
+                },
+                "description": "End to end learning is machine learning starting in raw data and predicting a desired concept, with all steps done automatically.\r\nIn software engineering context, we see it as starting from the source code and predicting process metrics.\r\nThis framework can be used for predicting defects, code quality, productivity and more.\r\nEnd to end improves over features based machine learning by not requiring domain experts and being able to extract new knowledge.\r\nWe describe a data set constructed for this goal.\r\nThe data set is constructed in a way that enables not only predicting concepts but also investigating their causes.",
+                "tarball_url": "https://api.github.com/repos/evidencebp/e2ese/tarball/1.0",
+                "zipball_url": "https://api.github.com/repos/evidencebp/e2ese/zipball/1.0",
+                "html_url": "https://github.com/evidencebp/e2ese/releases/tag/1.0",
+                "url": "https://api.github.com/repos/evidencebp/e2ese/releases/52502463",
+                "release_id": 52502463,
+                "date_created": "2021-11-02T09:09:51Z",
+                "date_published": "2021-11-02T09:15:06Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/evidencebp/e2ese/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/evidencebp/e2ese/main/src/scripts/compress_and_extract.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The goal of this repository is to enable [End to End Software Engineering research](https://arxiv.org/pdf/2112.11858).\nIt started in the source code as input and provide multiple process metrics that can be used as concepts in supervised learning. \nWhile pridcitve models have value, we would like to take a step further and look for causal relations.\nFor that we provide the source code in different dates.\nThat enables using co-change analysis in order to identify likely causal relations.\nThe source code also provides intervention points, were one can use the classical experimental methodology. \nThis repository contains the source code needed for the generation and some auxaliry data. \nThe main data is in different repositories since their volum is very large the sturcture is rather similar.\nThe first batch of 1.8 million Java files from June 2021 is [here](https://github.com/evidencebp/e2ese-dataset)\nThe last batch is from December 2022, a year and a half later.\nThe [BigQuery github_repos scheme](https://cloud.google.com/blog/topics/public-datasets/github-on-bigquery-analyze-all-the-open-source-code) was update in the last time at November 27 2022 and therefore we cannot use it to further extend this repository.\n \n",
+                "original_header": "e2ese"
+            },
+            "confidence": 0.9704678111710238,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/evidencebp/e2ese/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The goal of this data is to enable comming up with new process metrics.\n \n",
+                "original_header": "Commits"
+            },
+            "confidence": 0.9898297813115652,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/evidencebp/e2ese/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The first split is by the code repository.\nThis are split and appear in different directories in zipped files.\nInside each file, the samples (which are files in the subject repository) are also bing split into train, validation and test. \n",
+                "original_header": "File properties"
+            },
+            "confidence": 0.9030195230971829,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/evidencebp/e2ese/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The evolvment of code enable defining a similarity function over them.\nDifferent versions of the sme file are similar, other files are not.\nOf course, the negtive set is much lerger so we require the negative to be files from the same project and directory and downsampling them.\nThe content files in the code_similarity files contain thos chnage in the next version(e.g., August).\nThe rest of the files should be taken from the currnet version (e.g., June). \n",
+                "original_header": "Code similarity"
+            },
+            "confidence": 0.9760689674205567,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/evidencebp/e2ese/main/README.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://zenodo.org/badge/latestdoi/390256043"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/evidencebp/e2ese/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "e2ese"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/evidencebp/e2ese/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2112.11858"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/evidencebp/e2ese/main/README.md"
+        }
+    ]
+}

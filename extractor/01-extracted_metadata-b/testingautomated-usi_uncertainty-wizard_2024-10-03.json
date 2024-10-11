@@ -1,0 +1,714 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 20:34:49"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/testingautomated-usi/uncertainty-wizard",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "testingautomated-usi",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-12-13T04:33:38Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-08-08T06:32:42Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2020 Michael Weiss and Paolo Tonella and the Universit\u00e0 della Svizzera italiana\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Uncertainty-Wizard is a plugin on top of tensorflow.keras, allowing to easily and efficiently create uncertainty-aware deep neural networks. Also useful if you want to train multiple small models in parallel.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "The first paper [(preprint)](https://arxiv.org/abs/2102.00902) provides \nan empricial study comparing the approaches implemented in uncertainty wizard,\nand a list of lessons learned useful for reasearchers working with uncertainty wizard.\nThe second paper [(preprint)](https://arxiv.org/abs/2101.00982) is a technical tool paper,\n providing a more detailed discussion of uncertainty wizards api and implementation. \n",
+                "original_header": "Authors and Papers"
+            },
+            "confidence": 0.925912350735956,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "\nUncertainty wizard is a plugin on top of `tensorflow.keras`,\n allowing to easily and efficiently create uncertainty-aware deep neural networks: \n* Plain Keras Syntax: Use the layers and APIs you know and love.\n* Conversion from keras: Convert existing keras models into uncertainty aware models.\n* Smart Randomness: Use the same model for point predictions and sampling based inference.\n* Fast ensembles: Train and evaluate deep ensembles lazily loaded and using parallel processing - optionally on multiple GPUs.\n* Super easy setup: Pip installable. Only tensorflow as dependency. \n"
+            },
+            "confidence": 0.9129047023170767,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "uncertainty-wizard",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "testingautomated-usi/uncertainty-wizard",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 43,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "keras, keras-tensorflow, testing, uncertainty, uncertainty-neural-networks, uncertainty-quantification",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 6,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/testingautomated-usi/uncertainty-wizard/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 205167
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 8575
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/92685339",
+                "tag": "v0.4.0",
+                "name": "v0.4.0 - multi-gpu and result-by-alias",
+                "author": {
+                    "name": "MiWeiss",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* :bug: Multi-GPU ensembles are possible again. Just extend the `DeviceAllocatorContextManagerV2` context manager.\r\n* :sparkles: Add `return_alias_dict=True` when calling `predict_quantified` and the return value will be a dict of quantifier aliases pointing to (prediction, confidence_or_uncertainty) tuples.",
+                "tarball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/tarball/v0.4.0",
+                "zipball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/zipball/v0.4.0",
+                "html_url": "https://github.com/testingautomated-usi/uncertainty-wizard/releases/tag/v0.4.0",
+                "url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/92685339",
+                "release_id": 92685339,
+                "date_created": "2023-02-16T12:07:05Z",
+                "date_published": "2023-02-16T12:11:34Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/91243895",
+                "tag": "v0.3.2",
+                "name": "v0.3.2 - Fix missing quantifier aliases",
+                "author": {
+                    "name": "MiWeiss",
+                    "type": "User"
+                },
+                "description": "Minor fix regarding some quantifier aliases which were described in the docs, but not actually implemented.",
+                "tarball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/tarball/v0.3.2",
+                "zipball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/zipball/v0.3.2",
+                "html_url": "https://github.com/testingautomated-usi/uncertainty-wizard/releases/tag/v0.3.2",
+                "url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/91243895",
+                "release_id": 91243895,
+                "date_created": "2023-02-03T09:47:59Z",
+                "date_published": "2023-02-03T09:48:55Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/91243450",
+                "tag": "v0.3.1",
+                "name": "v0.3.1 - Warn for dependency conflicts",
+                "author": {
+                    "name": "MiWeiss",
+                    "type": "User"
+                },
+                "description": "There were some issues with recent tf versions, especially regarding experimental features. These are not fixed, but a corresponding warning is raised, explaining workarounds to users",
+                "tarball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/tarball/v0.3.1",
+                "zipball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/zipball/v0.3.1",
+                "html_url": "https://github.com/testingautomated-usi/uncertainty-wizard/releases/tag/v0.3.1",
+                "url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/91243450",
+                "release_id": 91243450,
+                "date_created": "2023-02-03T09:43:01Z",
+                "date_published": "2023-02-03T09:44:37Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/65883162",
+                "tag": "v0.3.0",
+                "name": "v0.3.0 - DeepGini",
+                "author": {
+                    "name": "MiWeiss",
+                    "type": "User"
+                },
+                "description": "New Feature:\r\n- #92 Added `DeepGini` as a point-prediction based quantifier. This is part of our most recent [issta paper](https://arxiv.org/abs/2205.00664) .\r\n\r\nBugfix:\r\n- #86 Added a missing alias to the `PredictiveEntropy` quantifier",
+                "tarball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/tarball/v0.3.0",
+                "zipball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/zipball/v0.3.0",
+                "html_url": "https://github.com/testingautomated-usi/uncertainty-wizard/releases/tag/v0.3.0",
+                "url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/65883162",
+                "release_id": 65883162,
+                "date_created": "2022-05-03T05:59:23Z",
+                "date_published": "2022-05-03T06:05:54Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/55464301",
+                "tag": "v0.2.0",
+                "name": "v0.2.0",
+                "author": {
+                    "name": "MiWeiss",
+                    "type": "User"
+                },
+                "description": "Release Notes:\r\n\r\n- Allow model independent tasks on ensembles, i.e., tasks where no model is loaded or persisted. This can typically be helpful for pre- or postprocessing tasks which have to be conducted for every model, but are independent of said model. (#50)\r\n- A context manager for ensembles that runs only on CPU, even if GPUs are available. (#52)\r\n- Tasks on ensemble methods (create, consume, predict, predict_quantified, ...) can now be executed on a selected subset of models. There are many use-cases for this. For example, it can be used if you need to re-train only one model in an ensemble, or if you have multiple distinct machines create atomic models for the same ensemble at the same time, using a shared drive. (#65)\r\n- Minor updates to documentation and code comments (#51, #73)\r\n",
+                "tarball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/tarball/v0.2.0",
+                "zipball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/zipball/v0.2.0",
+                "html_url": "https://github.com/testingautomated-usi/uncertainty-wizard/releases/tag/v0.2.0",
+                "url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/55464301",
+                "release_id": 55464301,
+                "date_created": "2021-12-16T14:13:32Z",
+                "date_published": "2021-12-16T15:31:59Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/46592645",
+                "tag": "v0.1.3",
+                "name": "v0.1.3",
+                "author": {
+                    "name": "MiWeiss",
+                    "type": "User"
+                },
+                "description": "[Refactor]\r\n- **Refactor broadcasting and aggregation logic of stochastic models into a separate class** \\\r\nAs a side effect, this allows broadcasting behavior to be overriden by users: Extend  `uwiz.models.stochastic_utils.Broadcaster` or`uwiz.models.stochastic_utils.DefaultBroadcaster` and pass it as `broadcaster=...` when calling `predict_quantified`.",
+                "tarball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/tarball/v0.1.3",
+                "zipball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/zipball/v0.1.3",
+                "html_url": "https://github.com/testingautomated-usi/uncertainty-wizard/releases/tag/v0.1.3",
+                "url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/46592645",
+                "release_id": 46592645,
+                "date_created": "2021-07-22T09:37:53Z",
+                "date_published": "2021-07-22T09:41:24Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/45496587",
+                "tag": "v0.1.2",
+                "name": "v0.1.2",
+                "author": {
+                    "name": "MiWeiss",
+                    "type": "User"
+                },
+                "description": "This release contains no functional changes, but various minor updates to the project description and docstrings.",
+                "tarball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/tarball/v0.1.2",
+                "zipball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/zipball/v0.1.2",
+                "html_url": "https://github.com/testingautomated-usi/uncertainty-wizard/releases/tag/v0.1.2",
+                "url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/45496587",
+                "release_id": 45496587,
+                "date_created": "2021-06-30T14:31:03Z",
+                "date_published": "2021-06-30T14:32:22Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/37789820",
+                "tag": "v0.1.1",
+                "name": "v0.1.1",
+                "author": {
+                    "name": "MiWeiss",
+                    "type": "User"
+                },
+                "description": "Docs and Description Updates",
+                "tarball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/tarball/v0.1.1",
+                "zipball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/zipball/v0.1.1",
+                "html_url": "https://github.com/testingautomated-usi/uncertainty-wizard/releases/tag/v0.1.1",
+                "url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/37789820",
+                "release_id": 37789820,
+                "date_created": "2021-02-09T10:02:48Z",
+                "date_published": "2021-02-09T10:04:01Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/35537744",
+                "tag": "v0.1.0",
+                "name": "v0.1.0",
+                "author": {
+                    "name": "MiWeiss",
+                    "type": "User"
+                },
+                "description": "Initial public release.\r\n\r\nNote: This is not yet tested on tensorflow 2.4 (which has been released only a couple of days ago)",
+                "tarball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/tarball/v0.1.0",
+                "zipball_url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/zipball/v0.1.0",
+                "html_url": "https://github.com/testingautomated-usi/uncertainty-wizard/releases/tag/v0.1.0",
+                "url": "https://api.github.com/repos/testingautomated-usi/uncertainty-wizard/releases/35537744",
+                "release_id": 35537744,
+                "date_created": "2020-12-20T10:40:06Z",
+                "date_published": "2020-12-20T10:43:12Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "cff-version: 1.2.0\n\nmessage: \"If you use this software, please cite it as below.\"\ntype: software\nauthors:\n  - given-names: Michael\n    family-names: Weiss\n    email: michael.weiss@usi.ch\n    affiliation: Universit\u00e0 della Svizzera italiana\n    orcid: 'https://orcid.org/0000-0002-8944-389X'\n  - given-names: Paolo\n    family-names: Tonella\n    email: paolo.tonella@usi.ch\n    affiliation: Universit\u00e0 della Svizzera italiana\n    orcid: 'https://orcid.org/0000-0003-3088-0339'\nidentifiers:\n  - type: doi\n    value: 10.5281/zenodo.5121368\n    description: The software archived on zenodo\n  - type: doi\n    value: 10.5281/zenodo.4651517\n    description: The talk given when presenting the software\n  - type: doi\n    value: 10.1109/ICST49551.2021.00056\n    description: The published paper\ntitle: >-\n  Uncertainty-wizard: Fast and user-friendly neural\n  network uncertainty quantification\ndoi: 10.5281/zenodo.5121368\ndate-released: 2020-12-18\nurl: \"https://github.com/testingautomated-usi/uncertainty-wizard\"\nrepository: 'https://zenodo.org/record/5121368'\nrepository-artifact: 'https://pypi.org/project/uncertainty-wizard/'\nlicense: MIT\npreferred-citation:\n  type: article\n  authors:\n  - given-names: Michael\n    family-names: Weiss\n    email: michael.weiss@usi.ch\n    affiliation: Universit\u00e0 della Svizzera italiana\n    orcid: 'https://orcid.org/0000-0002-8944-389X'\n  - given-names: Paolo\n    family-names: Tonella\n    email: paolo.tonella@usi.ch\n    affiliation: Universit\u00e0 della Svizzera italiana\n    orcid: 'https://orcid.org/0000-0003-3088-0339'\n  doi: \"10.1109/ICST49551.2021.00056\"\n  journal: \"2021 14th IEEE Conference on Software Testing, Verification and Validation (ICST)\"\n  month: 4\n  start: 436 # First page number\n  end: 441 # Last page number\n  title: \"Uncertainty-Wizard: Fast and User-Friendly Neural Network Uncertainty Quantification\"\n  year: 2021\n",
+                "type": "File_dump",
+                "format": "cff"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{Weiss2021FailSafe,\n    organization = {IEEE},\n    year = {2021},\n    pages = {24--35},\n    booktitle = {2021 14th IEEE Conference on Software Testing, Verification and Validation (ICST)},\n    author = {Weiss, Michael and Tonella, Paolo},\n    title = {Fail-safe execution of deep learning based systems through uncertainty monitoring},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Fail-safe execution of deep learning based systems through uncertainty monitoring",
+                "author": "Weiss, Michael and Tonella, Paolo"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@inproceedings{Weiss2021UncertaintyWizard,\n    organization = {IEEE},\n    year = {2021},\n    pages = {436--441},\n    booktitle = {2021 14th IEEE Conference on Software Testing, Verification and Validation (ICST)},\n    author = {Weiss, Michael and Tonella, Paolo},\n    title = {Uncertainty-wizard: Fast and user-friendly neural network uncertainty quantification},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Uncertainty-wizard: Fast and user-friendly neural network uncertainty quantification",
+                "author": "Weiss, Michael and Tonella, Paolo"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/testingautomated-usi/uncertainty-wizard/tree/main/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "Our documentation is deployed to\n[uncertainty-wizard.readthedocs.io](https://uncertainty-wizard.readthedocs.io/).\nIn addition, as uncertainty wizard has a 100% docstring coverage on public method and classes,\nyour IDE will be able to provide you with a good amount of docs out of the box.\n\nYou may also want to check out the technical tool paper [(preprint)](https://arxiv.org/abs/2101.00982),\ndescribing uncertainty wizard functionality and api as of version `v0.1.0`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Documentation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://uncertainty-wizard.readthedocs.io/",
+                "format": "readthedocs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/examples/MnistStochasticSequential.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/examples/MnistStochasticSequential.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/examples/LoadStochasticFromKeras.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/examples/LoadStochasticFromKeras.ipynb"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/examples/MnistEnsemble.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/examples/MnistEnsemble.ipynb"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/scripts/run_examples.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/scripts/docker_build.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/scripts/gen_dockerf.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/scripts/run_unit_tests.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/scripts/pypi_deploy.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/scripts/run_coverage.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/scripts/format.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/scripts/run_docstring_coverage.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "It's as easy as `pip install uncertainty-wizard`\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "`uncertainty-wizard` is tested on python 3.8 and recent tensorflow versions. \nOther versions (python 3.6+ and tensorflow 2.3+) should mostly work as well, but may require some mild tweaks.\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "A set of small and easy examples, perfect to get started can be found in the \n[models user guide](https://uncertainty-wizard.readthedocs.io/en/latest/user_guide_models.html)\nand the [quantifiers user guide](https://uncertainty-wizard.readthedocs.io/en/latest/user_guide_quantifiers.html).\nLarger and examples are also provided - and you can run them in colab right away.\nYou can find them here: [Jupyter examples](https://uncertainty-wizard.readthedocs.io/en/latest/examples.html).\n",
+                "type": "Text_excerpt",
+                "original_header": "Examples"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "Issues and PRs are welcome! Before investing a lot of time for a PR, please open an issue first, describing your contribution.\nThis way, we can make sure that the contribution fits well into this repository.\nWe also mark issues which are great to start contributing as as [good first issues](https://github.com/testingautomated-usi/uncertainty-wizard/contribute).\nIf you want to implement an existing issue, don't forget to comment on it s.t. everyone knows that you are working on it.\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributing"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        }
+    ],
+    "related_documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://black.readthedocs.io/",
+                "format": "readthedocs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        }
+    ],
+    "logo": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/testingautomated-usi/uncertainty-wizard/raw/main/docs/uwiz_logo.PNG"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.githubassets.com/images/icons/emoji/unicode/1f389.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.githubassets.com/images/icons/emoji/unicode/1f947.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.githubassets.com/images/icons/emoji/unicode/1f947.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.githubassets.com/images/icons/emoji/unicode/1f389.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2102.00902"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2101.00982"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/testingautomated-usi/uncertainty-wizard/main/README.md"
+        }
+    ]
+}

@@ -1,0 +1,818 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:01:55"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/codepod-io/codepod",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "codepod-io",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2020-10-04T15:55:31Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-04T18:39:45Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 CodePod Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/codepod-io/codepod/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Codepod IDE: Scalable Interactive Coding",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "codepod",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "codepod-io/codepod",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/codepod-io/codepod/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/codepod-io/codepod/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 74,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "ide, interactive-programming, jupyter, repl",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 15,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/codepod-io/codepod/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "TypeScript",
+                "name": "TypeScript",
+                "type": "Programming_language",
+                "size": 398171
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 81484
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 17602
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 5300
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 640
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 619
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 484
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/127444489",
+                "tag": "v0.4.13",
+                "name": "v0.4.13 CLI app and many features & fixes",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* fix: compileLHS for subscript and attribute by @lihebi in https://github.com/codepod-io/codepod/pull/311\r\n* fix: check status of loading google oauth script by @lihebi in https://github.com/codepod-io/codepod/pull/313\r\n* Feat: Fork a Repo by @li-xin-yi in https://github.com/codepod-io/codepod/pull/312\r\n* Add gallery in README.md by @forrestbao in https://github.com/codepod-io/codepod/pull/320\r\n* Remove reactflow attribution by @lihebi in https://github.com/codepod-io/codepod/pull/325\r\n* fix: dirty status on repo initial loading by @lihebi in https://github.com/codepod-io/codepod/pull/326\r\n* feat: add jump between pods by @lihebi in https://github.com/codepod-io/codepod/pull/327\r\n* Updated layout and added auto hide for output menu options by @chimmyten in https://github.com/codepod-io/codepod/pull/329\r\n* revise README by @forrestbao in https://github.com/codepod-io/codepod/pull/334\r\n* trigger auto-layout when auto-layout setting is toggled on by @chimmyten in https://github.com/codepod-io/codepod/pull/339\r\n* stylize output box options by @forrestbao in https://github.com/codepod-io/codepod/pull/336\r\n* [UI] Apply \"Show Line Numbers\" as toggle switch in sidebar by @senwang86 in https://github.com/codepod-io/codepod/pull/341\r\n* move dev manual to codepod.io repo by @lihebi in https://github.com/codepod-io/codepod/pull/342\r\n* fix content loss caused by `dirty` status override by @lihebi in https://github.com/codepod-io/codepod/pull/344\r\n* fix remirror toolbar position when panning on canvas by @lihebi in https://github.com/codepod-io/codepod/pull/346\r\n* refine editor toolbar appearance by @lihebi in https://github.com/codepod-io/codepod/pull/347\r\n* use :8080 port by default by @lihebi in https://github.com/codepod-io/codepod/pull/348\r\n* move website to the main repo by @lihebi in https://github.com/codepod-io/codepod/pull/349\r\n* update docs for changing port to :8080 by @lihebi in https://github.com/codepod-io/codepod/pull/352\r\n* [UI] Jupyter Notebook export in Frontend by @senwang86 in https://github.com/codepod-io/codepod/pull/343\r\n* fix: [UI] add confirm delete repo dialog by @sumtsui in https://github.com/codepod-io/codepod/pull/353\r\n* [UI][Fix] Fix the Remirror export initialization by @senwang86 in https://github.com/codepod-io/codepod/pull/356\r\n* Feat: AI Code AutoCompletion with Codeium Support by @li-xin-yi in https://github.com/codepod-io/codepod/pull/328\r\n* chore: filter keys in the beginning of useJump by @lihebi in https://github.com/codepod-io/codepod/pull/358\r\n* fix: two console errors from #328 by @lihebi in https://github.com/codepod-io/codepod/pull/359\r\n* use one global instance of Prisma client by @lihebi in https://github.com/codepod-io/codepod/pull/362\r\n* docs: DB schema migration by @lihebi in https://github.com/codepod-io/codepod/pull/363\r\n* chore: enhance delete repo UX by @sumtsui in https://github.com/codepod-io/codepod/pull/364\r\n* cleanup: prod configs (docker and k8s) by @lihebi in https://github.com/codepod-io/codepod/pull/361\r\n* [Fix] Specific error message for Codeium verification failure  by @li-xin-yi in https://github.com/codepod-io/codepod/pull/370\r\n* [UI] Import Jupyter notebook  by @senwang86 in https://github.com/codepod-io/codepod/pull/369\r\n* fix: sx not an object warning by @lihebi in https://github.com/codepod-io/codepod/pull/372\r\n* [UI] Allow importing the Python script by @senwang86 in https://github.com/codepod-io/codepod/pull/374\r\n* fix: unit test tree-sitter loading by @lihebi in https://github.com/codepod-io/codepod/pull/377\r\n* use Monaco's addAction instead of addCommand by @lihebi in https://github.com/codepod-io/codepod/pull/379\r\n* fix: recursive function symbol table by @lihebi in https://github.com/codepod-io/codepod/pull/368\r\n* mount runtime src into spawned docker container for development by @lihebi in https://github.com/codepod-io/codepod/pull/380\r\n* [Feat] Add LaTeX syntax support for math in notes by @li-xin-yi in https://github.com/codepod-io/codepod/pull/382\r\n* fix: add .dev tlds for link; remove /table slash cmd by @lihebi in https://github.com/codepod-io/codepod/pull/385\r\n* add a toolbar with edit & open buttons when user clicks on a link by @lihebi in https://github.com/codepod-io/codepod/pull/386\r\n* contextual zoom font size adjustment by @chimmyten in https://github.com/codepod-io/codepod/pull/376\r\n* fix: node height changing bug caused by border by @lihebi in https://github.com/codepod-io/codepod/pull/387\r\n* make newpod buttons non-overlap with editor by @lihebi in https://github.com/codepod-io/codepod/pull/388\r\n* fix link toolbar lag by @lihebi in https://github.com/codepod-io/codepod/pull/389\r\n* add markdown link input rules for Rich editor by @lihebi in https://github.com/codepod-io/codepod/pull/390\r\n* chore: make wysiwyg plugins explicit by @lihebi in https://github.com/codepod-io/codepod/pull/391\r\n* add spine to lists; add list-style for nested <ol> by @lihebi in https://github.com/codepod-io/codepod/pull/392\r\n* refactor: Remirror link extension by @lihebi in https://github.com/codepod-io/codepod/pull/393\r\n* fix: kebab-case sx property error by @lihebi in https://github.com/codepod-io/codepod/pull/394\r\n* fix: docker spawner runtime container mount math by @lihebi in https://github.com/codepod-io/codepod/pull/395\r\n* fix: Chinese input method in Remirror editor by @lihebi in https://github.com/codepod-io/codepod/pull/396\r\n* fix: markdown gen place by @lihebi in https://github.com/codepod-io/codepod/pull/397\r\n* feat: add slash command extension in Remirror by @lihebi in https://github.com/codepod-io/codepod/pull/400\r\n* [UI] Support exporting pod stdout and result by @senwang86 in https://github.com/codepod-io/codepod/pull/399\r\n* [UI][1/n] Edit/Command mode by @senwang86 in https://github.com/codepod-io/codepod/pull/398\r\n* [UI] Add execution_count in Code node by @senwang86 in https://github.com/codepod-io/codepod/pull/402\r\n* fix: do not attach guestToken when signup/login by @lihebi in https://github.com/codepod-io/codepod/pull/405\r\n* feat: add Notion-style block editor drag handle by @lihebi in https://github.com/codepod-io/codepod/pull/406\r\n* feat: confirmed deletion for pods and scopes by @lihebi in https://github.com/codepod-io/codepod/pull/407\r\n* auto-change textfield size of repo title by @lihebi in https://github.com/codepod-io/codepod/pull/408\r\n* fix: remove drag handle on leaving Rich pod by @lihebi in https://github.com/codepod-io/codepod/pull/409\r\n* feat: add star by @lihebi in https://github.com/codepod-io/codepod/pull/416\r\n* [UI] Jupyter notebook export patch by @senwang86 in https://github.com/codepod-io/codepod/pull/417\r\n* feat: use popup handles to create new nodes by @lihebi in https://github.com/codepod-io/codepod/pull/421\r\n* refactor: dashboard by @lihebi in https://github.com/codepod-io/codepod/pull/422\r\n* [UI] make dashboard cleaner by @lihebi in https://github.com/codepod-io/codepod/pull/423\r\n* chore: rename repos.tsx to dashboard.tsx by @lihebi in https://github.com/codepod-io/codepod/pull/424\r\n* fix: dashboard regression: console warnings and refetchQueries by @lihebi in https://github.com/codepod-io/codepod/pull/425\r\n* include yjs server code in api/ folder by @lihebi in https://github.com/codepod-io/codepod/pull/426\r\n* feat: add authentication to yjs server by @lihebi in https://github.com/codepod-io/codepod/pull/428\r\n* [UI] Edit cmd mode patch by @senwang86 in https://github.com/codepod-io/codepod/pull/431\r\n* fix: remove anonymous guest user by @lihebi in https://github.com/codepod-io/codepod/pull/432\r\n* fix: click away listener for add-node-handle's popper by @lihebi in https://github.com/codepod-io/codepod/pull/433\r\n* Tool bar size adjustment when contextually zooming out by @chimmyten in https://github.com/codepod-io/codepod/pull/434\r\n* disable portal to allow paning over handle menus by @lihebi in https://github.com/codepod-io/codepod/pull/435\r\n* [Backend] Refactor ipynb kernel messages serialization by @senwang86 in https://github.com/codepod-io/codepod/pull/436\r\n* [UI] Move multi-pod into a scope by @senwang86 in https://github.com/codepod-io/codepod/pull/438\r\n* [UI] Drag-n-drop entire pod/scope by @senwang86 in https://github.com/codepod-io/codepod/pull/439\r\n* feat: use yjs as the source-of-truth by @lihebi in https://github.com/codepod-io/codepod/pull/440\r\n* use root YMap by @lihebi in https://github.com/codepod-io/codepod/pull/443\r\n* fix: await bug; rootMap.set typo by @lihebi in https://github.com/codepod-io/codepod/pull/444\r\n* fix: queue sync1 message and handle it after ydoc is loaded by @lihebi in https://github.com/codepod-io/codepod/pull/445\r\n* UI: single click to edit when pod is selected by @lihebi in https://github.com/codepod-io/codepod/pull/447\r\n* UI: in edit mode, hitting <ESC> will select the pod by @lihebi in https://github.com/codepod-io/codepod/pull/448\r\n* refactor: replace doRemote... functions with useMutation by @lihebi in https://github.com/codepod-io/codepod/pull/449\r\n* fix: compile error by @lihebi in https://github.com/codepod-io/codepod/pull/450\r\n* remove state.pods; fix runtime & results by @lihebi in https://github.com/codepod-io/codepod/pull/451\r\n* simplify copy-n-paste by @lihebi in https://github.com/codepod-io/codepod/pull/452\r\n* feat: support cross-page pasting by @lihebi in https://github.com/codepod-io/codepod/pull/453\r\n* set partial selection mode by @lihebi in https://github.com/codepod-io/codepod/pull/454\r\n* feat: support copying edge by @lihebi in https://github.com/codepod-io/codepod/pull/455\r\n* fix: remove parentnode in copying by @lihebi in https://github.com/codepod-io/codepod/pull/456\r\n* feat: support copying scopes by @lihebi in https://github.com/codepod-io/codepod/pull/457\r\n* [UI] Add Toc in Sidebar by @senwang86 in https://github.com/codepod-io/codepod/pull/458\r\n* [UI] Fix ToC failure due to empty node2children by @senwang86 in https://github.com/codepod-io/codepod/pull/459\r\n* refactor: repo store, inline utility functions by @lihebi in https://github.com/codepod-io/codepod/pull/460\r\n* remove CursorNode, fix pod center-on-selection by @lihebi in https://github.com/codepod-io/codepod/pull/461\r\n* refactor: remove stdout/stderr in results by @lihebi in https://github.com/codepod-io/codepod/pull/463\r\n* fix: runtime children computation by @lihebi in https://github.com/codepod-io/codepod/pull/465\r\n* feat: put runtime behind yjs by @lihebi in https://github.com/codepod-io/codepod/pull/466\r\n* refactor: use pnpm workspace (monorepo) by @lihebi in https://github.com/codepod-io/codepod/pull/467\r\n* Replace CRA with vite by @lihebi in https://github.com/codepod-io/codepod/pull/468\r\n* chore: Vite leftover by @lihebi in https://github.com/codepod-io/codepod/pull/469\r\n* [UI] Fix export import after pr 467 by @senwang86 in https://github.com/codepod-io/codepod/pull/470\r\n* [Fix] Auto-completion dependencies by @li-xin-yi in https://github.com/codepod-io/codepod/pull/472\r\n* chore: remove pnpm-locks in subdirs and run pnpm install by @lihebi in https://github.com/codepod-io/codepod/pull/473\r\n* [docker-compose] Add setup service to install node_modules and init db by @lihebi in https://github.com/codepod-io/codepod/pull/475\r\n* add docker volume for pnpm-store by @lihebi in https://github.com/codepod-io/codepod/pull/476\r\n* cleanup: remove aws-sdk and related code for backend-file-export by @lihebi in https://github.com/codepod-io/codepod/pull/477\r\n* chore: fix jest dep; remove deprecated test by @lihebi in https://github.com/codepod-io/codepod/pull/478\r\n* chore: support String.replaceAll in tsconfig for linting by @lihebi in https://github.com/codepod-io/codepod/pull/479\r\n* refactor: move prisma to a package by @lihebi in https://github.com/codepod-io/codepod/pull/480\r\n* refactor: move yjs out of api into an app by @lihebi in https://github.com/codepod-io/codepod/pull/481\r\n* cleanup: prune unused packages with depcheck by @lihebi in https://github.com/codepod-io/codepod/pull/482\r\n* fix: observe result change to save yblob by @lihebi in https://github.com/codepod-io/codepod/pull/485\r\n* setup: use index.ts as package's main for auto-watching by @lihebi in https://github.com/codepod-io/codepod/pull/486\r\n* docs: move website to its standalone repo by @lihebi in https://github.com/codepod-io/codepod/pull/487\r\n* [backend] Fix new repo error from PR 485 by @senwang86 in https://github.com/codepod-io/codepod/pull/488\r\n* [Backend] Reduce resultMap sync frequency by @senwang86 in https://github.com/codepod-io/codepod/pull/489\r\n* feat: add native-rendered Electron app by @lihebi in https://github.com/codepod-io/codepod/pull/491\r\n* refactor: stand-alone spawner service; remove proxy and nginx by @lihebi in https://github.com/codepod-io/codepod/pull/493\r\n* [Config] Add JWT_SECRET in spawner by @senwang86 in https://github.com/codepod-io/codepod/pull/494\r\n* fix: await provider.synced before adding runtime by @lihebi in https://github.com/codepod-io/codepod/pull/496\r\n* fix: delete runtime by @lihebi in https://github.com/codepod-io/codepod/pull/497\r\n* add basic auth to spawner by @lihebi in https://github.com/codepod-io/codepod/pull/498\r\n* properly update activeRuntime by @lihebi in https://github.com/codepod-io/codepod/pull/499\r\n* clean up runtime disconnected status/UI by @lihebi in https://github.com/codepod-io/codepod/pull/500\r\n* feat: add native runtime spawner by @lihebi in https://github.com/codepod-io/codepod/pull/501\r\n* [UI] Update ToC when nodesMap change by @senwang86 in https://github.com/codepod-io/codepod/pull/505\r\n* [UI] Unify export functions into one component by @senwang86 in https://github.com/codepod-io/codepod/pull/504\r\n* add vite-checker by @lihebi in https://github.com/codepod-io/codepod/pull/508\r\n* refactor: move apolloClient out of Zustand store by @lihebi in https://github.com/codepod-io/codepod/pull/507\r\n* refactor: remove deprecated resolver code by @lihebi in https://github.com/codepod-io/codepod/pull/509\r\n* Add desktop-ui initial Vite template by @lihebi in https://github.com/codepod-io/codepod/pull/510\r\n* init file-backend by @lihebi in https://github.com/codepod-io/codepod/pull/511\r\n* Adapt `ui/` configs to `desktop-ui/` by @lihebi in https://github.com/codepod-io/codepod/pull/512\r\n* do not auto-jump to login page by @lihebi in https://github.com/codepod-io/codepod/pull/513\r\n* add codepod app to desktop-ui by @lihebi in https://github.com/codepod-io/codepod/pull/514\r\n* chore: rename desktop-ui to ui-desktop by @lihebi in https://github.com/codepod-io/codepod/pull/515\r\n* add ui-web by @lihebi in https://github.com/codepod-io/codepod/pull/516\r\n* chore: print info when setup finishes by @lihebi in https://github.com/codepod-io/codepod/pull/517\r\n* remove codeium related code by @lihebi in https://github.com/codepod-io/codepod/pull/519\r\n* Make all treeview items expanded. Disable toggle. by @lihebi in https://github.com/codepod-io/codepod/pull/520\r\n* refactor: header and sidebar data passing logic by @lihebi in https://github.com/codepod-io/codepod/pull/521\r\n* move user auth into only ui-web by @lihebi in https://github.com/codepod-io/codepod/pull/524\r\n* chore: move @codepod/ui to packages/ folder by @lihebi in https://github.com/codepod-io/codepod/pull/525\r\n* chore: rename folder into web- and desktop- prefix by @lihebi in https://github.com/codepod-io/codepod/pull/526\r\n* [UI] add settings for sidebar position by @lihebi in https://github.com/codepod-io/codepod/pull/527\r\n* fix: yjs container name by @lihebi in https://github.com/codepod-io/codepod/pull/528\r\n* chore: remove nginx conf by @lihebi in https://github.com/codepod-io/codepod/pull/529\r\n* refactor: use y-websocket.js from @codepod/ui by @lihebi in https://github.com/codepod-io/codepod/pull/530\r\n* refactor: extract out bindState and writeState by @lihebi in https://github.com/codepod-io/codepod/pull/531\r\n* fix: profile button by @lihebi in https://github.com/codepod-io/codepod/pull/533\r\n* better typing for getNodesMap by @lihebi in https://github.com/codepod-io/codepod/pull/534\r\n* move Yjs into package (conflict resolved) by @lihebi in https://github.com/codepod-io/codepod/pull/535\r\n* fix: remove dotenv by @lihebi in https://github.com/codepod-io/codepod/pull/537\r\n* add desktop-yjs by @lihebi in https://github.com/codepod-io/codepod/pull/539\r\n* split dashboard user loading for web and desktop by @lihebi in https://github.com/codepod-io/codepod/pull/540\r\n* implement desktop api file-backend saving by @lihebi in https://github.com/codepod-io/codepod/pull/541\r\n* functional refactor & fix: remove state.role by @lihebi in https://github.com/codepod-io/codepod/pull/542\r\n* move yjs observers to provider.once(\"synced\") by @lihebi in https://github.com/codepod-io/codepod/pull/543\r\n* use NodeResizeControl for pod resizing by @lihebi in https://github.com/codepod-io/codepod/pull/545\r\n* refactor: useStore! instead of checking for null by @lihebi in https://github.com/codepod-io/codepod/pull/546\r\n* [desktop] save repo meta and yjsblob into desktop-var-codepod volume by @lihebi in https://github.com/codepod-io/codepod/pull/547\r\n* [desktop] make star/unstar work by @lihebi in https://github.com/codepod-io/codepod/pull/548\r\n* fix: handle useMe null; add typing to useMe by @lihebi in https://github.com/codepod-io/codepod/pull/549\r\n* allow read-only access to YDoc to anonymous users by @lihebi in https://github.com/codepod-io/codepod/pull/550\r\n* fix: support editor view mode; sync on new pods by @lihebi in https://github.com/codepod-io/codepod/pull/551\r\n* refactor: move desktop related containers into compose/desktop by @lihebi in https://github.com/codepod-io/codepod/pull/552\r\n* refactor: rename compose/dev to compose/web by @lihebi in https://github.com/codepod-io/codepod/pull/553\r\n* chore: cleanup console log by @lihebi in https://github.com/codepod-io/codepod/pull/554\r\n* replace pnpm with bun by @lihebi in https://github.com/codepod-io/codepod/pull/555\r\n* fix reactflow to 11.8 by @lihebi in https://github.com/codepod-io/codepod/pull/557\r\n* add bun's yarn.lock to git by @lihebi in https://github.com/codepod-io/codepod/pull/559\r\n* major refactor: on switching to a local cmd app by @lihebi in https://github.com/codepod-io/codepod/pull/560\r\n* cleanup: remove web-app related code by @lihebi in https://github.com/codepod-io/codepod/pull/562\r\n* refactor: rename app into apps/ui app/api folder by @lihebi in https://github.com/codepod-io/codepod/pull/563\r\n* chore: depcheck by @lihebi in https://github.com/codepod-io/codepod/pull/564\r\n* make codepod (cli) support /path/to/repo; publish codepod to npm by @lihebi in https://github.com/codepod-io/codepod/pull/565\r\n* fix & enable spawner in desktop app; use trpc by @lihebi in https://github.com/codepod-io/codepod/pull/566\r\n* refactor: inline runtime & yjs packages by @lihebi in https://github.com/codepod-io/codepod/pull/567\r\n* cleanup: folder structure by @lihebi in https://github.com/codepod-io/codepod/pull/568\r\n* fix: use workspace (back) to fix yjs version error by @lihebi in https://github.com/codepod-io/codepod/pull/569\r\n* refactor: restructure `api/` folder inner files by @lihebi in https://github.com/codepod-io/codepod/pull/570\r\n* fix npm cli; parameterize yjs port in trpc router by @lihebi in https://github.com/codepod-io/codepod/pull/571\r\n* save a plain version of yjs content by @lihebi in https://github.com/codepod-io/codepod/pull/572\r\n* add CI for npm build & publish by @lihebi in https://github.com/codepod-io/codepod/pull/573\r\n* add registry-url by @lihebi in https://github.com/codepod-io/codepod/pull/574\r\n\r\n## New Contributors\r\n* @forrestbao made their first contribution in https://github.com/codepod-io/codepod/pull/320\r\n* @chimmyten made their first contribution in https://github.com/codepod-io/codepod/pull/329\r\n* @senwang86 made their first contribution in https://github.com/codepod-io/codepod/pull/341\r\n* @sumtsui made their first contribution in https://github.com/codepod-io/codepod/pull/353\r\n\r\n**Full Changelog**: https://github.com/codepod-io/codepod/compare/v0.4.12...v0.4.13",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.4.13",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.4.13",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.4.13",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/127444489",
+                "release_id": 127444489,
+                "date_created": "2023-10-31T22:03:34Z",
+                "date_published": "2023-10-31T22:14:07Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/102472555",
+                "tag": "v0.4.12",
+                "name": "v0.4.12: At JupyterCon 2023: auto-shrink; run-chain; geo-based execution; allow anonymous user; clean UI with everything hided; d3-force based auto-layout; rich text features: link, image, table, yjs, slash command; persist execution results; snapping; parser fixes; recursive exports; lexical scoping; scoped class; contextual zoom; export svg",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* add run-norewrite button by @lihebi in https://github.com/codepod-io/codepod/pull/229\r\n* fix ResultBlock's setLayout button regression bug by @lihebi in https://github.com/codepod-io/codepod/pull/230\r\n* Fix (better drag-n-drop): Scope Handler & Scope right-click Menu for adding new nodes by @li-xin-yi in https://github.com/codepod-io/codepod/pull/232\r\n* fix floating toolbar anchorEl warning by @lihebi in https://github.com/codepod-io/codepod/pull/233\r\n* use floating toolbar in scope pod by @lihebi in https://github.com/codepod-io/codepod/pull/234\r\n* proper scope highlighting by @lihebi in https://github.com/codepod-io/codepod/pull/235\r\n* feat: add auto shrink by @lihebi in https://github.com/codepod-io/codepod/pull/236\r\n* add scope's width and height in debug mode by @lihebi in https://github.com/codepod-io/codepod/pull/237\r\n* fix: delete user repo data before deleting a repo by @lihebi in https://github.com/codepod-io/codepod/pull/238\r\n* feat: add run-chain to run a chain of pods by @lihebi in https://github.com/codepod-io/codepod/pull/239\r\n* feat: geographical order based scope execution by @lihebi in https://github.com/codepod-io/codepod/pull/240\r\n* refactor: node type CODE, SCOPE, RICH in front-end by @lihebi in https://github.com/codepod-io/codepod/pull/241\r\n* feat: add anonymous Guest user by @lihebi in https://github.com/codepod-io/codepod/pull/242\r\n* chore: adjust wording by @lihebi in https://github.com/codepod-io/codepod/pull/243\r\n* feat: auto hide edge handles by @lihebi in https://github.com/codepod-io/codepod/pull/244\r\n* feat: add d3-force to push away overlapped pods by @lihebi in https://github.com/codepod-io/codepod/pull/245\r\n* feat: add auto-run setting for auto-layout by @lihebi in https://github.com/codepod-io/codepod/pull/246\r\n* auto hide resize handles for code and rich pods by @lihebi in https://github.com/codepod-io/codepod/pull/247\r\n* feat: add drag handles; remove Remirror's scrollbar by @lihebi in https://github.com/codepod-io/codepod/pull/248\r\n* fix: cannot delete repos shared with others by @lihebi in https://github.com/codepod-io/codepod/pull/249\r\n* add isGuest field and make guest userId the same format as registered users by @lihebi in https://github.com/codepod-io/codepod/pull/250\r\n* simplify k8s container names by @lihebi in https://github.com/codepod-io/codepod/pull/251\r\n* set autorun-layout setting default to false by @lihebi in https://github.com/codepod-io/codepod/pull/252\r\n* fix: drag on toolbar handle into a scope by @lihebi in https://github.com/codepod-io/codepod/pull/253\r\n* show `cursor: grab` only on drag handle by @lihebi in https://github.com/codepod-io/codepod/pull/254\r\n* fix: remirror emotion error by @lihebi in https://github.com/codepod-io/codepod/pull/256\r\n* feat: use remirror link extension by @lihebi in https://github.com/codepod-io/codepod/pull/257\r\n* use remirror image extension by @lihebi in https://github.com/codepod-io/codepod/pull/258\r\n* fix: getAuthHeaders typing by @lihebi in https://github.com/codepod-io/codepod/pull/259\r\n* feat: add remirror yjs extension for rich-text real-time sync by @lihebi in https://github.com/codepod-io/codepod/pull/260\r\n* feat: add slash command to insert remirror table by @lihebi in https://github.com/codepod-io/codepod/pull/261\r\n* fix: web-tree-sitter load wasm error by @lihebi in https://github.com/codepod-io/codepod/pull/263\r\n* fix: revert yarn.lock to fix resizer; reinstall remirror by @lihebi in https://github.com/codepod-io/codepod/pull/265\r\n* feat: persist execution results to DB by @lihebi in https://github.com/codepod-io/codepod/pull/266\r\n* fix: filter comment nodes when compile ForStmt by @lihebi in https://github.com/codepod-io/codepod/pull/267\r\n* filter comment everywhere in the compiler by @lihebi in https://github.com/codepod-io/codepod/pull/268\r\n* fix: check undefined nodes in compileXXX functions by @lihebi in https://github.com/codepod-io/codepod/pull/269\r\n* use rectangle collision in d3-force auto layout by @lihebi in https://github.com/codepod-io/codepod/pull/270\r\n* feat: add snapping with helper lines by @lihebi in https://github.com/codepod-io/codepod/pull/271\r\n* fix YMap import by @lihebi in https://github.com/codepod-io/codepod/pull/272\r\n* feat: add new-pod buttons by @lihebi in https://github.com/codepod-io/codepod/pull/274\r\n* fix: binary-op parsing by @lihebi in https://github.com/codepod-io/codepod/pull/275\r\n* add more auto-layout ticks by @lihebi in https://github.com/codepod-io/codepod/pull/276\r\n* fix edge zindex to make edges selectible above scope background by @lihebi in https://github.com/codepod-io/codepod/pull/279\r\n* allow pod to be moved into ROOT scope by @lihebi in https://github.com/codepod-io/codepod/pull/280\r\n* fix: disconnect parentnode in DB; fix ROOT scopeId compare by @lihebi in https://github.com/codepod-io/codepod/pull/281\r\n* feat: add contextual zoom by @lihebi in https://github.com/codepod-io/codepod/pull/282\r\n* feat: add export to svg by @lihebi in https://github.com/codepod-io/codepod/pull/283\r\n* feat: allow pod to access to names in all ancestor scopes by @lihebi in https://github.com/codepod-io/codepod/pull/284\r\n* run auto-layout on pod resize by @lihebi in https://github.com/codepod-io/codepod/pull/285\r\n* feat: add recursive @export by @lihebi in https://github.com/codepod-io/codepod/pull/286\r\n* feat: consider output box in auto layout; better output box-sizing constraint by @lihebi in https://github.com/codepod-io/codepod/pull/287\r\n* fix: do not set pod as running when socket isn't connected by @lihebi in https://github.com/codepod-io/codepod/pull/288\r\n* show green tick for runs in the current session; show last executed at by @lihebi in https://github.com/codepod-io/codepod/pull/289\r\n* add clear result button by @lihebi in https://github.com/codepod-io/codepod/pull/290\r\n* add a left drag handle on the toolbar (deprecate the 4 handle idea) by @lihebi in https://github.com/codepod-io/codepod/pull/291\r\n* allow up to 20MB graphql payload by @lihebi in https://github.com/codepod-io/codepod/pull/292\r\n* fix: unexpected jumpback after resizing by @lihebi in https://github.com/codepod-io/codepod/pull/293\r\n* run auto layout on result change by @lihebi in https://github.com/codepod-io/codepod/pull/294\r\n* auto-layout leave some room for toolbar by @lihebi in https://github.com/codepod-io/codepod/pull/295\r\n* fix: scope offset by @lihebi in https://github.com/codepod-io/codepod/pull/296\r\n* display show/hide buttons only when there're results by @lihebi in https://github.com/codepod-io/codepod/pull/297\r\n* add result focus button and mode by @lihebi in https://github.com/codepod-io/codepod/pull/298\r\n* fix: build node2children map on node add by @lihebi in https://github.com/codepod-io/codepod/pull/299\r\n* fix: vardef parsing by @lihebi in https://github.com/codepod-io/codepod/pull/300\r\n* fix: error for displaying result when node is removed by @lihebi in https://github.com/codepod-io/codepod/pull/301\r\n* feat: add scoped Class by @lihebi in https://github.com/codepod-io/codepod/pull/302\r\n* fix: skip running an empty cell by @lihebi in https://github.com/codepod-io/codepod/pull/303\r\n* remove signup page promotion checkbox; fix link by @lihebi in https://github.com/codepod-io/codepod/pull/304\r\n\r\n\r\n**Full Changelog**: https://github.com/codepod-io/codepod/compare/v0.4.11...v0.4.12",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.4.12",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.4.12",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.4.12",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/102472555",
+                "release_id": 102472555,
+                "date_created": "2023-05-10T09:20:52Z",
+                "date_published": "2023-05-10T10:42:04Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/93769547",
+                "tag": "v0.4.11",
+                "name": "v0.4.11: file exporting; arrow-import runtime semantics; copy-paste scopes; persist arrows; refined arrow UI; order projects by last open time",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* Fix: Minor fixes by @li-xin-yi in https://github.com/codepod-io/codepod/pull/207\r\n* Fix: incomplete dashed cutting hint by @li-xin-yi in https://github.com/codepod-io/codepod/pull/214\r\n* Feat: Scope cut-copy-paste by @li-xin-yi in https://github.com/codepod-io/codepod/pull/215\r\n* refactor resolvers; enforce graphQL api required fields by @lihebi in https://github.com/codepod-io/codepod/pull/217\r\n* add python and JSON file export by @lihebi in https://github.com/codepod-io/codepod/pull/218\r\n* feat: add updatedAt field; order projects by last update time by @lihebi in https://github.com/codepod-io/codepod/pull/219\r\n* add createdAt and updatedAt to user table by @lihebi in https://github.com/codepod-io/codepod/pull/220\r\n* Refine Arrow connection UI by @lihebi in https://github.com/codepod-io/codepod/pull/221\r\n* persist arrows to db by @lihebi in https://github.com/codepod-io/codepod/pull/222\r\n* use computed id for UserRepoData by @lihebi in https://github.com/codepod-io/codepod/pull/224\r\n* fix error caused by switching to computed UserRepoData.id by @lihebi in https://github.com/codepod-io/codepod/pull/225\r\n* feat: add arrow-import runtime semantic by @lihebi in https://github.com/codepod-io/codepod/pull/226\r\n* use BezierPath for arrows; anchor at four handles by @lihebi in https://github.com/codepod-io/codepod/pull/227\r\n* properly delete connected edges when deleting pods by @lihebi in https://github.com/codepod-io/codepod/pull/228\r\n\r\n\r\n**Full Changelog**: https://github.com/codepod-io/codepod/compare/v0.4.10...v0.4.11",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.4.11",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.4.11",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.4.11",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/93769547",
+                "release_id": 93769547,
+                "date_created": "2023-02-27T10:16:35Z",
+                "date_published": "2023-02-27T10:52:36Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/88402863",
+                "tag": "v0.4.10",
+                "name": "v0.4.10: smooth runtime connection; copy-n-paste; rework yjs,store,db syncing",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* Feat: single-pod cut-n-paste support by @li-xin-yi in https://github.com/codepod-io/codepod/pull/165\r\n* Fix: unselect all nodes when richnode is focused & disable repo name editing by non-owner users by @li-xin-yi in https://github.com/codepod-io/codepod/pull/168\r\n* fix: Nginx url had double leading slash by @lihebi in https://github.com/codepod-io/codepod/pull/182\r\n* re-render ResultBlock on stream; memo it by @lihebi in https://github.com/codepod-io/codepod/pull/183\r\n* refactor zustand store by @lihebi in https://github.com/codepod-io/codepod/pull/185\r\n* fix repo name sync time and UI by @lihebi in https://github.com/codepod-io/codepod/pull/187\r\n* docs: Wording changes and proper syntax highlighting by @codingEzio in https://github.com/codepod-io/codepod/pull/188\r\n* refactor Canvas by @lihebi in https://github.com/codepod-io/codepod/pull/189\r\n* fix: stable retry connect for runtime and yjs sockets by @lihebi in https://github.com/codepod-io/codepod/pull/190\r\n* refactor repos page by @lihebi in https://github.com/codepod-io/codepod/pull/191\r\n* smooth runtime connection with restart button by @lihebi in https://github.com/codepod-io/codepod/pull/192\r\n* fix: scoped func/var annotation re-rendering on switch by @lihebi in https://github.com/codepod-io/codepod/pull/194\r\n* Fix: some miscellaneous & tiny bugs  by @li-xin-yi in https://github.com/codepod-io/codepod/pull/193\r\n* allow text selection in result block by @lihebi in https://github.com/codepod-io/codepod/pull/196\r\n* add devMode by @lihebi in https://github.com/codepod-io/codepod/pull/197\r\n* fix potential pod syncing with pod.isSyncing by @lihebi in https://github.com/codepod-io/codepod/pull/198\r\n* Minor fixes by @li-xin-yi in https://github.com/codepod-io/codepod/pull/199\r\n* add runtime WebSocket retry logic by @lihebi in https://github.com/codepod-io/codepod/pull/200\r\n* add dev container for k8s by @lihebi in https://github.com/codepod-io/codepod/pull/201\r\n* rework yjs-store-db syncing by @lihebi in https://github.com/codepod-io/codepod/pull/205\r\n* rename Dev Mode to Debug Mode by @lihebi in https://github.com/codepod-io/codepod/pull/206\r\n\r\n## New Contributors\r\n* @codingEzio made their first contribution in https://github.com/codepod-io/codepod/pull/188\r\n\r\n**Full Changelog**: https://github.com/codepod-io/codepod/compare/v0.4.9...v0.4.10",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.4.10",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.4.10",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.4.10",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/88402863",
+                "release_id": 88402863,
+                "date_created": "2023-01-10T05:55:38Z",
+                "date_published": "2023-01-10T05:58:20Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/86873148",
+                "tag": "v0.4.9",
+                "name": "v0.4.9: scoped variables; copy-n-paste; rich-text editor",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* feat: support scoped variable via proper compile pass by @lihebi in https://github.com/codepod-io/codepod/pull/154\r\n* feat: cross-page single-pod copy-paste in mouse-bound `ctrl`-`v` way by @li-xin-yi in https://github.com/codepod-io/codepod/pull/158\r\n* feat: add rich-text node by @lihebi in https://github.com/codepod-io/codepod/pull/160\r\n* fix(ui): remove bg and circle button on scope's bar by @fundon in https://github.com/codepod-io/codepod/pull/153\r\n* fix: deleteRepo using id instead of name by @lihebi in https://github.com/codepod-io/codepod/pull/159\r\n* chore: remove deprecated kernel startup code by @lihebi in https://github.com/codepod-io/codepod/pull/161\r\n\r\n\r\n**Full Changelog**: https://github.com/codepod-io/codepod/compare/v0.4.8...v0.4.9",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.4.9",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.4.9",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.4.9",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/86873148",
+                "release_id": 86873148,
+                "date_created": "2022-12-22T00:46:51Z",
+                "date_published": "2022-12-22T00:52:44Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/86293118",
+                "tag": "v0.4.8",
+                "name": "v0.4.8: add runtime TTL; share button rework; multi-pod selection; editable repo name; better yjs sync",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* feat: add docker runtime TTL; better runtime connection & feedback by @lihebi in https://github.com/codepod-io/codepod/pull/135\r\n* Fix: multi-selection with the same-parent rule & drop multiple pods into a scope at once by @li-xin-yi in https://github.com/codepod-io/codepod/pull/136\r\n* fix: call setPodPosition on drag stop by @lihebi in https://github.com/codepod-io/codepod/pull/137\r\n* Fix: sync store.pods[id].parent/position immediately on updates from anywhere by @li-xin-yi in https://github.com/codepod-io/codepod/pull/140\r\n* feat: add k8s runtime ttl by @lihebi in https://github.com/codepod-io/codepod/pull/139\r\n* add GOOGLE_CLIENT_ID; use hosted db; use 12h runtime ttl; add prisma by @lihebi in https://github.com/codepod-io/codepod/pull/141\r\n* feat: create repo without a name; generate userId and repoId from server by @lihebi in https://github.com/codepod-io/codepod/pull/142\r\n* Fix: update all children node levels when dragging into a scope by @li-xin-yi in https://github.com/codepod-io/codepod/pull/145\r\n* use relation for collaborators by @lihebi in https://github.com/codepod-io/codepod/pull/146\r\n* fix: add hasToken to avoid loading repo to early by @lihebi in https://github.com/codepod-io/codepod/pull/147\r\n* do not set repo.name on creation, use \"Untitled\" as placeholder by @lihebi in https://github.com/codepod-io/codepod/pull/148\r\n* Feat: add a top-right share-button on the repo page by @li-xin-yi in https://github.com/codepod-io/codepod/pull/152\r\n\r\n\r\n**Full Changelog**: https://github.com/codepod-io/codepod/compare/v0.4.7...v0.4.8",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.4.8",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.4.8",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.4.8",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/86293118",
+                "release_id": 86293118,
+                "date_created": "2022-12-16T10:19:22Z",
+                "date_published": "2022-12-16T10:25:02Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/85633472",
+                "tag": "v0.4.7",
+                "name": "v0.4.7: OAuth; public repos & access control; better performance; add pod names; bug fixes",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* feat: refactor output box by @nibilin33 in https://github.com/codepod-io/codepod/pull/93\r\n* Fix: auth error auto redirect & tree-sitter load path & toast notification by @li-xin-yi in https://github.com/codepod-io/codepod/pull/101\r\n* support scoped variables by @lihebi in https://github.com/codepod-io/codepod/pull/103\r\n* disable scoped variables by @lihebi in https://github.com/codepod-io/codepod/pull/104\r\n* fix setloading recursive rendering issue by @lihebi in https://github.com/codepod-io/codepod/pull/106\r\n* add MIT license by @lihebi in https://github.com/codepod-io/codepod/pull/107\r\n* move analyzeCode logic into wsRun by @lihebi in https://github.com/codepod-io/codepod/pull/108\r\n* remove and inline toolbox.tsx by @lihebi in https://github.com/codepod-io/codepod/pull/109\r\n* prettier formatting by @lihebi in https://github.com/codepod-io/codepod/pull/110\r\n* Fix: read/write access control for public repos by @li-xin-yi in https://github.com/codepod-io/codepod/pull/115\r\n* feat: header and sidebar improvement by @pionxzh in https://github.com/codepod-io/codepod/pull/116\r\n* fix: fix typo by @pionxzh in https://github.com/codepod-io/codepod/pull/117\r\n* chore: improve webpack hot-reloading on Windows WSL by @pionxzh in https://github.com/codepod-io/codepod/pull/119\r\n* Fix: Lock interactivity & sync width resize & improve render performance by @li-xin-yi in https://github.com/codepod-io/codepod/pull/120\r\n* fix: add back setCurrentEditor by @lihebi in https://github.com/codepod-io/codepod/pull/122\r\n* add google login by @lihebi in https://github.com/codepod-io/codepod/pull/123\r\n* Fix: Support Multi-selection in `ctrl` way by @li-xin-yi in https://github.com/codepod-io/codepod/pull/125\r\n* feat: support naming on pod and scope by @pionxzh in https://github.com/codepod-io/codepod/pull/129\r\n* fix: #98 by @fundon in https://github.com/codepod-io/codepod/pull/130\r\n* fix annoying horizontal scroll bar in repos in dabshboard by @lihebi in https://github.com/codepod-io/codepod/pull/131\r\n* Feat: Sync pod name among users in real-time by @li-xin-yi in https://github.com/codepod-io/codepod/pull/132\r\n* Fix: remove output indices and horizontal scroll bar in result blocks by @li-xin-yi in https://github.com/codepod-io/codepod/pull/133\r\n* don't set name on start when data.name is undefined by @lihebi in https://github.com/codepod-io/codepod/pull/134\r\n\r\n## New Contributors\r\n* @pionxzh made their first contribution in https://github.com/codepod-io/codepod/pull/116\r\n* @fundon made their first contribution in https://github.com/codepod-io/codepod/pull/130\r\n\r\n**Full Changelog**: https://github.com/codepod-io/codepod/compare/v0.4.6...v0.4.7",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.4.7",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.4.7",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.4.7",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/85633472",
+                "release_id": 85633472,
+                "date_created": "2022-12-10T17:50:12Z",
+                "date_published": "2022-12-10T17:55:51Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/84062466",
+                "tag": "v0.4.6",
+                "name": "v0.4.6: scoped runtime; repo sharing & access; dashboard UI rework",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* fix: dropping into nested scope by @lihebi in https://github.com/codepod-io/codepod/pull/78\r\n* feat: add scoped runtime by @lihebi in https://github.com/codepod-io/codepod/pull/82\r\n* Feat: Share Projects & Access Controls by @li-xin-yi in https://github.com/codepod-io/codepod/pull/81\r\n* fix scope drop children update by @lihebi in https://github.com/codepod-io/codepod/pull/83\r\n* Add prisma migrate by @lihebi in https://github.com/codepod-io/codepod/pull/84\r\n* feat: refactor dashboard by @nibilin33 in https://github.com/codepod-io/codepod/pull/86\r\n\r\n\r\n**Full Changelog**: https://github.com/codepod-io/codepod/compare/v0.4.5...v0.4.6",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.4.6",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.4.6",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.4.6",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/84062466",
+                "release_id": 84062466,
+                "date_created": "2022-11-24T06:15:22Z",
+                "date_published": "2022-11-24T06:16:53Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/83793200",
+                "tag": "v0.4.5",
+                "name": "v0.4.5: collaborative editing; major UI changes",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* Feat(UI): troggle line numbers in editors by @li-xin-yi in https://github.com/codepod-io/codepod/pull/43\r\n* Feature: collaborative editing by @li-xin-yi in https://github.com/codepod-io/codepod/pull/36\r\n* Fix(erro box): init ydoc when entering a repo by @li-xin-yi in https://github.com/codepod-io/codepod/pull/44\r\n* Fix (remaining awareness): add clean up function by @li-xin-yi in https://github.com/codepod-io/codepod/pull/45\r\n* Better output layout by @lihebi in https://github.com/codepod-io/codepod/pull/50\r\n* use all four handles; add marker arrow by @lihebi in https://github.com/codepod-io/codepod/pull/38\r\n* add example runtime containers to pull images by @lihebi in https://github.com/codepod-io/codepod/pull/53\r\n* move result to top; fix bottom handle; use width=700 for code pods by @lihebi in https://github.com/codepod-io/codepod/pull/54\r\n* Fix: Unnecessary Re-rendering by @li-xin-yi in https://github.com/codepod-io/codepod/pull/61\r\n* core: ui refactor by @nibilin33 in https://github.com/codepod-io/codepod/pull/68\r\n* feat: add width ajustment by @nibilin33 in https://github.com/codepod-io/codepod/pull/69\r\n* fix: pod excution by @nibilin33 in https://github.com/codepod-io/codepod/pull/70\r\n* feat: add button to control output by @nibilin33 in https://github.com/codepod-io/codepod/pull/71\r\n* Add alpha release; add yjs server to k8s deploy; bump version to 0.4.5 by @lihebi in https://github.com/codepod-io/codepod/pull/72\r\n* remove storybook by @lihebi in https://github.com/codepod-io/codepod/pull/73\r\n\r\n## New Contributors\r\n* @nibilin33 made their first contribution in https://github.com/codepod-io/codepod/pull/68\r\n\r\n**Full Changelog**: https://github.com/codepod-io/codepod/compare/v0.4.4...v0.4.5",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.4.5",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.4.5",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.4.5",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/83793200",
+                "release_id": 83793200,
+                "date_created": "2022-11-21T19:24:05Z",
+                "date_published": "2022-11-21T19:24:37Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/82615090",
+                "tag": "v0.4.4",
+                "name": "v0.4.4: re-enable runtime; k8s deployment",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* Replace redux with zustand for state management. by @lihebi in https://github.com/codepod-io/codepod/pull/11\r\n* Re-enable runtime by @lihebi in https://github.com/codepod-io/codepod/pull/12\r\n* Fix: Simplify the code to resize a node by @li-xin-yi in https://github.com/codepod-io/codepod/pull/14\r\n* add k8s spawner by @lihebi in https://github.com/codepod-io/codepod/pull/13\r\n* Cleanup docker-compose files by @lihebi in https://github.com/codepod-io/codepod/pull/15\r\n* fix prisma container \"permission denied\" issue by @lihebi in https://github.com/codepod-io/codepod/pull/16\r\n* fix(node_delete): check pod by @li-xin-yi in https://github.com/codepod-io/codepod/pull/18\r\n* Migrate all JS files in to TS by @lihebi in https://github.com/codepod-io/codepod/pull/19\r\n* fix custom node typing by @lihebi in https://github.com/codepod-io/codepod/pull/20\r\n* use the React Component apollo client in fetch.ts by @lihebi in https://github.com/codepod-io/codepod/pull/21\r\n* fix(node_delete): check if the pod exists by @li-xin-yi in https://github.com/codepod-io/codepod/pull/22\r\n* Add helm chart by @lihebi in https://github.com/codepod-io/codepod/pull/24\r\n* add cert-manager tls to traefik ingressroute by @lihebi in https://github.com/codepod-io/codepod/pull/26\r\n* Improve UI (nav bar and canvas sidebar) by @lihebi in https://github.com/codepod-io/codepod/pull/34\r\n* fix access permission for repos by @lihebi in https://github.com/codepod-io/codepod/pull/35\r\n* add docker build workflow by @lihebi in https://github.com/codepod-io/codepod/pull/39\r\n* fix: Docker build workflow by @lihebi in https://github.com/codepod-io/codepod/pull/40\r\n* Properly build docker images workflow by @lihebi in https://github.com/codepod-io/codepod/pull/42\r\n\r\n## New Contributors\r\n* @li-xin-yi made their first contribution in https://github.com/codepod-io/codepod/pull/14\r\n\r\n**Full Changelog**: https://github.com/codepod-io/codepod/compare/v0.4.2...v0.4.4",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.4.4",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.4.4",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.4.4",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/82615090",
+                "release_id": 82615090,
+                "date_created": "2022-11-09T23:38:54Z",
+                "date_published": "2022-11-09T23:40:27Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/80391357",
+                "tag": "v0.4.2",
+                "name": "v0.4.2: Use right-click context menu; fix bugs; optimized prod build; deploy on k8s.",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* Add k8s deployments. by @lihebi in https://github.com/lihebi/codepod/pull/6\r\n* convert project from JS to TS by @lihebi in https://github.com/lihebi/codepod/pull/7\r\n* add storybook by @lihebi in https://github.com/lihebi/codepod/pull/8\r\n* Graph UI fix by @lihebi in https://github.com/lihebi/codepod/pull/9\r\n* Prod build by @lihebi in https://github.com/lihebi/codepod/pull/10\r\n\r\n\r\n**Full Changelog**: https://github.com/lihebi/codepod/compare/v0.4.0...v0.4.2",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.4.2",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.4.2",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.4.2",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/80391357",
+                "release_id": 80391357,
+                "date_created": "2022-10-19T23:04:33Z",
+                "date_published": "2022-10-19T23:06:10Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/80253993",
+                "tag": "v0.4.0",
+                "name": "v0.4.0: Graph-based design.",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.4.0",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.4.0",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.4.0",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/80253993",
+                "release_id": 80253993,
+                "date_created": "2022-09-30T19:13:44Z",
+                "date_published": "2022-10-18T20:10:39Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/78065687",
+                "tag": "v0.3.0",
+                "name": "v0.3.0: Back to webapp.",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "Drop electron support, and revert to webapp.",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.3.0",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.3.0",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.3.0",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/78065687",
+                "release_id": 78065687,
+                "date_created": "2022-09-23T16:45:46Z",
+                "date_published": "2022-09-25T07:22:39Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/56243922",
+                "tag": "v0.2.1",
+                "name": "v0.2.1: handle python's symbol table manually",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "Python's eval and exec turn out not to be possible to handle namespaces. Thus, the namespace is handled manually using symbol tables. This fixes the problem of previous version where a python function cannot see other functions in the same namespace. Also, now for python, the re-definition of a pod will update all its uses; utility pods are also correctly handled for python.",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.2.1",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.2.1",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.2.1",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/56243922",
+                "release_id": 56243922,
+                "date_created": "2022-01-01T05:08:15Z",
+                "date_published": "2022-01-01T05:18:26Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/55717068",
+                "tag": "v0.2.0",
+                "name": "v0.2.0: magic commands `@export` and `@reexport`",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "The following two magic commands can be used at the start of the pod to declare exports:\r\n- `@export foo`: export to parent\r\n-  `@reexport foo`: export a child deck's exported `foo` further up\r\n\r\nPrevious UI-based exports are now disabled.\r\n\r\nE.g.\r\n\r\n```py\r\n@export foo\r\ndef foo():\r\n    return 1+2\r\n```",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.2.0",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.2.0",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.2.0",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/55717068",
+                "release_id": 55717068,
+                "date_created": "2021-12-21T03:46:13Z",
+                "date_published": "2021-12-21T03:54:28Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/55644306",
+                "tag": "v0.1.4",
+                "name": "v0.1.4: fix python 3.6",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "- remove ast.unparse dependence\r\n- fix remote runtime add button",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.1.4",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.1.4",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.1.4",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/55644306",
+                "release_id": 55644306,
+                "date_created": "2021-12-20T05:33:51Z",
+                "date_published": "2021-12-20T05:46:41Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/55245164",
+                "tag": "v0.1.3",
+                "name": "v0.1.3: Support remote runtime",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "- switch from chakra and mui@v4 to mui@v5\r\n- add remote runtime with RabbitMQ support",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.1.3",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.1.3",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.1.3",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/55245164",
+                "release_id": 55245164,
+                "date_created": "2021-12-14T06:44:31Z",
+                "date_published": "2021-12-14T06:56:32Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/55123879",
+                "tag": "v0.1.2",
+                "name": "v0.1.2: Support Python Powerruns",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "- cheaper procedure to compute pod dirty status to speed up code execution\r\n- add double-click-to-edit\r\n- add repo config\r\n- support python powerruns",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.1.2",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.1.2",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.1.2",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/55123879",
+                "release_id": 55123879,
+                "date_created": "2021-12-12T06:01:22Z",
+                "date_published": "2021-12-12T06:08:32Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/54669848",
+                "tag": "v0.1.1",
+                "name": "v0.1.1",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "- support python prior to 3.9\r\n- fix addPod/pastePod/deletePod order issues",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.1.1",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.1.1",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.1.1",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/54669848",
+                "release_id": 54669848,
+                "date_created": "2021-12-05T21:21:47Z",
+                "date_published": "2021-12-05T22:34:15Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/codepod-io/codepod/releases/54115859",
+                "tag": "v0.1.0",
+                "name": "v0.1.0: The first CodePod Electron App",
+                "author": {
+                    "name": "lihebi",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* Electron app by @lihebi in https://github.com/lihebi/codepod/pull/1\r\n\r\n## New Contributors\r\n* @lihebi made their first contribution in https://github.com/lihebi/codepod/pull/1\r\n\r\n**Full Changelog**: https://github.com/lihebi/codepod/commits/v0.1.0",
+                "tarball_url": "https://api.github.com/repos/codepod-io/codepod/tarball/v0.1.0",
+                "zipball_url": "https://api.github.com/repos/codepod-io/codepod/zipball/v0.1.0",
+                "html_url": "https://github.com/codepod-io/codepod/releases/tag/v0.1.0",
+                "url": "https://api.github.com/repos/codepod-io/codepod/releases/54115859",
+                "release_id": 54115859,
+                "date_created": "2021-11-26T07:48:09Z",
+                "date_published": "2021-11-26T07:51:26Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/codepod-io/codepod/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/codepod-io/codepod/main/ui/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/codepod-io/codepod/main/ui/Dockerfile"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/codepod-io/codepod/main/ui/set-env.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "You can [use CodePod online](https://app.codepod.io) without installing it\nlocally. To install it on your computer:\n\nStep 1: install prerequisite: [nodejs](https://nodejs.org/en/download) runtime\nand python & ipykernel:\n\n```\nbrew install node # example for MacOS\npip3 install ipykernel\n```\n\nStep 2: Install codepod CLI app from [npm registry](https://www.npmjs.com/package/codepod):\n\n```\n> npm install -g codepod\n> codepod --version\n# 0.0.7\n```\n\nStep 3: launch CodePod from terminal:\n\n```\n> codepod /path/to/local/repo\n# ... \ud83d\ude80 Server ready at http://localhost:4001\n```\n\nOpen this URL in your browser to see the app. The files will be saved to the\ndirectory `/path/to/repo/codepod.bin|json`. The `codepod.bin` is the source of\ntruth, and `codepod.json` is for human-readability only.\n\nIn the future, you can update the app:\n\n```\n> npm update -g codepod\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Install"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/codepod-io/codepod/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "Open two terminals. On one:\n```\ncd apps/api\npnpm dev\n```\nOn the other:\n```\ncd apps/ui\npnpm dev\n```\n \nNow go to `http://localhost:3000` to see the app.\n \n",
+                "original_header": "Develop"
+            },
+            "confidence": 0.9806399009395269,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/codepod-io/codepod/main/README.md"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "CodePod is open-source under an MIT license. Feel free to contribute to make\nit better together with us. You can contribute by [creating awesome showcases](#gallery),\n[reporting a bug, suggesting a feature](https://github.com/codepod-io/codepod/issues),\nor submitting a pull request.\nDo use [Prettier](https://prettier.io/) (e.g., [its VSCode\nplugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode))\nto format your code before checking in.\n",
+                "type": "Text_excerpt",
+                "original_header": "Contributing"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/codepod-io/codepod/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "https://arxiv.org/abs/2301.02410\n\n```\n@misc{https://doi.org/10.48550/arxiv.2301.02410,\n  doi = {10.48550/ARXIV.2301.02410},\n  url = {https://arxiv.org/abs/2301.02410},\n  author = {Li, Hebi and Bao, Forrest Sheng and Xiao, Qi and Tian, Jin},\n  title = {Codepod: A Namespace-Aware, Hierarchical Jupyter for Interactive Development at Scale},\n  publisher = {arXiv},\n  year = {2023},\n  copyright = {Creative Commons Attribution 4.0 International}\n}\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Citation"
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/codepod-io/codepod/main/README.md"
+        },
+        {
+            "result": {
+                "value": "@misc{https://doi.org/10.48550/arxiv.2301.02410,\n    copyright = {Creative Commons Attribution 4.0 International},\n    year = {2023},\n    publisher = {arXiv},\n    title = {Codepod: A Namespace-Aware, Hierarchical Jupyter for Interactive Development at Scale},\n    author = {Li, Hebi and Bao, Forrest Sheng and Xiao, Qi and Tian, Jin},\n    url = {https://arxiv.org/abs/2301.02410},\n    doi = {10.48550/ARXIV.2301.02410},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "doi": "10.48550/ARXIV.2301.02410",
+                "title": "Codepod: A Namespace-Aware, Hierarchical Jupyter for Interactive Development at Scale",
+                "author": "Li, Hebi and Bao, Forrest Sheng and Xiao, Qi and Tian, Jin",
+                "url": "https://arxiv.org/abs/2301.02410"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/codepod-io/codepod/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "CodePod: coding on a canvas, organized."
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/codepod-io/codepod/main/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/codepod-io/codepod/wiki",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/codepod-io/codepod/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/codepod-io/codepod/main/./screenshot-canvas.png"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/codepod-io/codepod/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2301.02410\n\n```\n@misc{https://doi.org/10.48550/arxiv.2301.02410,\n  doi = {10.48550/ARXIV.2301.02410"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/codepod-io/codepod/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2301.02410"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/codepod-io/codepod/main/README.md"
+        }
+    ]
+}

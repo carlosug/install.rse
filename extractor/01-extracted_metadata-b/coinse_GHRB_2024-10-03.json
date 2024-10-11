@@ -1,0 +1,633 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-03 22:40:10"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/coinse/GHRB",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "coinse",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2023-10-17T06:58:48Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-09-06T02:27:44Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A Repository of Real, Recent Java Bugs",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "GitHub Recent Bugs (GHRB) is a collection of real-world bugs merged _after_\nthe OpenAI LLM training cutoff point (Sep. 2021), along with a command-line\ninterface to easily execute code. It was constructed to facilitate\nevaluation of LLM-based automated debugging techniques, free from concern\nof training data contamination.\n \n",
+                "original_header": "GHRB: GitHub Recent Bugs"
+            },
+            "confidence": 0.914333298325035,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/coinse/GHRB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "As of July 1st, 2024: \n",
+                "original_header": "Available Bugs"
+            },
+            "confidence": 0.9716345168917587,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/coinse/GHRB/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "GHRB",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "coinse/GHRB",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/coinse/GHRB/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/coinse/GHRB/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 13,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/coinse/GHRB/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 107483
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 10329
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 2686
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 2137
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Vim Script",
+                "name": "Vim Script",
+                "type": "Programming_language",
+                "size": 188
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/coinse/GHRB/releases/173757859",
+                "tag": "v1.1.9",
+                "name": "v1.1.9",
+                "author": {
+                    "name": "jaeyonglee0205",
+                    "type": "User"
+                },
+                "description": "GHRB v1.1.9, consisting of 109 bugs, as of September 1, 2024.\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/coinse/GHRB/tarball/v1.1.9",
+                "zipball_url": "https://api.github.com/repos/coinse/GHRB/zipball/v1.1.9",
+                "html_url": "https://github.com/coinse/GHRB/releases/tag/v1.1.9",
+                "url": "https://api.github.com/repos/coinse/GHRB/releases/173757859",
+                "release_id": 173757859,
+                "date_created": "2024-09-06T02:27:39Z",
+                "date_published": "2024-09-06T02:28:19Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/coinse/GHRB/releases/168380759",
+                "tag": "v1.1.8",
+                "name": "v.1.1.8",
+                "author": {
+                    "name": "jaeyonglee0205",
+                    "type": "User"
+                },
+                "description": "GHRB v1.1.8, consisting of 107 bugs, as of August 1, 2024.",
+                "tarball_url": "https://api.github.com/repos/coinse/GHRB/tarball/v1.1.8",
+                "zipball_url": "https://api.github.com/repos/coinse/GHRB/zipball/v1.1.8",
+                "html_url": "https://github.com/coinse/GHRB/releases/tag/v1.1.8",
+                "url": "https://api.github.com/repos/coinse/GHRB/releases/168380759",
+                "release_id": 168380759,
+                "date_created": "2024-08-02T05:13:45Z",
+                "date_published": "2024-08-02T05:14:36Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/coinse/GHRB/releases/163274474",
+                "tag": "v1.1.7",
+                "name": "v1.1.7",
+                "author": {
+                    "name": "jaeyonglee0205",
+                    "type": "User"
+                },
+                "description": "GHRB v1.1.7, consisting of 105 bugs, as of July 1, 2024.",
+                "tarball_url": "https://api.github.com/repos/coinse/GHRB/tarball/v1.1.7",
+                "zipball_url": "https://api.github.com/repos/coinse/GHRB/zipball/v1.1.7",
+                "html_url": "https://github.com/coinse/GHRB/releases/tag/v1.1.7",
+                "url": "https://api.github.com/repos/coinse/GHRB/releases/163274474",
+                "release_id": 163274474,
+                "date_created": "2024-07-01T05:51:14Z",
+                "date_published": "2024-07-01T05:52:13Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/coinse/GHRB/releases/159305503",
+                "tag": "v1.1.6",
+                "name": "v1.1.6",
+                "author": {
+                    "name": "jaeyonglee0205",
+                    "type": "User"
+                },
+                "description": "GHRB v1.1.6, consisting of 99 bugs, as of June 1, 2024.",
+                "tarball_url": "https://api.github.com/repos/coinse/GHRB/tarball/v1.1.6",
+                "zipball_url": "https://api.github.com/repos/coinse/GHRB/zipball/v1.1.6",
+                "html_url": "https://github.com/coinse/GHRB/releases/tag/v1.1.6",
+                "url": "https://api.github.com/repos/coinse/GHRB/releases/159305503",
+                "release_id": 159305503,
+                "date_created": "2024-06-07T04:46:35Z",
+                "date_published": "2024-06-07T04:47:28Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/coinse/GHRB/releases/153772094",
+                "tag": "v1.1.5",
+                "name": "v1.1.5",
+                "author": {
+                    "name": "jaeyonglee0205",
+                    "type": "User"
+                },
+                "description": "GHRB v1.1.5, consisting of 97 bugs, as of May 1, 2024.",
+                "tarball_url": "https://api.github.com/repos/coinse/GHRB/tarball/v1.1.5",
+                "zipball_url": "https://api.github.com/repos/coinse/GHRB/zipball/v1.1.5",
+                "html_url": "https://github.com/coinse/GHRB/releases/tag/v1.1.5",
+                "url": "https://api.github.com/repos/coinse/GHRB/releases/153772094",
+                "release_id": 153772094,
+                "date_created": "2024-05-02T07:31:04Z",
+                "date_published": "2024-05-02T07:32:18Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/coinse/GHRB/releases/149716363",
+                "tag": "v1.1.4.1",
+                "name": "v1.1.4.1",
+                "author": {
+                    "name": "jaeyonglee0205",
+                    "type": "User"
+                },
+                "description": "GHRB v1.1.4.1, consisting of 91 bugs, as of April 1, 2024, released due to some bugs being deprecated.",
+                "tarball_url": "https://api.github.com/repos/coinse/GHRB/tarball/v1.1.4.1",
+                "zipball_url": "https://api.github.com/repos/coinse/GHRB/zipball/v1.1.4.1",
+                "html_url": "https://github.com/coinse/GHRB/releases/tag/v1.1.4.1",
+                "url": "https://api.github.com/repos/coinse/GHRB/releases/149716363",
+                "release_id": 149716363,
+                "date_created": "2024-04-04T07:34:01Z",
+                "date_published": "2024-04-04T07:36:03Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/coinse/GHRB/releases/149198414",
+                "tag": "v1.1.4",
+                "name": "v1.1.4",
+                "author": {
+                    "name": "jaeyonglee0205",
+                    "type": "User"
+                },
+                "description": "GHRB v1.1.4, consisting of 92 bugs, as of April 1, 2024.",
+                "tarball_url": "https://api.github.com/repos/coinse/GHRB/tarball/v1.1.4",
+                "zipball_url": "https://api.github.com/repos/coinse/GHRB/zipball/v1.1.4",
+                "html_url": "https://github.com/coinse/GHRB/releases/tag/v1.1.4",
+                "url": "https://api.github.com/repos/coinse/GHRB/releases/149198414",
+                "release_id": 149198414,
+                "date_created": "2024-04-01T08:19:00Z",
+                "date_published": "2024-04-01T08:19:49Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/coinse/GHRB/releases/144313896",
+                "tag": "v1.1.3",
+                "name": "v1.1.3",
+                "author": {
+                    "name": "jaeyonglee0205",
+                    "type": "User"
+                },
+                "description": "GHRB v1.1.3, consisting of 89 bugs, as of March 1, 2024.",
+                "tarball_url": "https://api.github.com/repos/coinse/GHRB/tarball/v1.1.3",
+                "zipball_url": "https://api.github.com/repos/coinse/GHRB/zipball/v1.1.3",
+                "html_url": "https://github.com/coinse/GHRB/releases/tag/v1.1.3",
+                "url": "https://api.github.com/repos/coinse/GHRB/releases/144313896",
+                "release_id": 144313896,
+                "date_created": "2024-03-01T05:13:01Z",
+                "date_published": "2024-03-01T05:13:59Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/coinse/GHRB/releases/139691010",
+                "tag": "v1.1.2",
+                "name": "v1.1.2",
+                "author": {
+                    "name": "jaeyonglee0205",
+                    "type": "User"
+                },
+                "description": "GHRB v1.1.2, consisting of 87 bugs, as of February 3, 2024.",
+                "tarball_url": "https://api.github.com/repos/coinse/GHRB/tarball/v1.1.2",
+                "zipball_url": "https://api.github.com/repos/coinse/GHRB/zipball/v1.1.2",
+                "html_url": "https://github.com/coinse/GHRB/releases/tag/v1.1.2",
+                "url": "https://api.github.com/repos/coinse/GHRB/releases/139691010",
+                "release_id": 139691010,
+                "date_created": "2024-02-02T15:36:35Z",
+                "date_published": "2024-02-02T15:37:45Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/coinse/GHRB/releases/137912030",
+                "tag": "v1.1.0",
+                "name": "v1.1.1",
+                "author": {
+                    "name": "jaeyonglee0205",
+                    "type": "User"
+                },
+                "description": "GHRB v1.1.1, consisting of 85 bugs, as of January 22, 2024.",
+                "tarball_url": "https://api.github.com/repos/coinse/GHRB/tarball/v1.1.0",
+                "zipball_url": "https://api.github.com/repos/coinse/GHRB/zipball/v1.1.0",
+                "html_url": "https://github.com/coinse/GHRB/releases/tag/v1.1.0",
+                "url": "https://api.github.com/repos/coinse/GHRB/releases/137912030",
+                "release_id": 137912030,
+                "date_created": "2024-01-22T02:06:18Z",
+                "date_published": "2024-01-22T02:10:34Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/GHRB/main/run_docker_container.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/GHRB/main/arm64_run_docker_container.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/GHRB/main/scripts/set_jdk_11.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/GHRB/main/scripts/install_mvn_3_8_1.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/GHRB/main/scripts/set_mvn_3_8_6.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/GHRB/main/scripts/set_mvn_3_8_1.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/GHRB/main/scripts/set_jdk_8.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/GHRB/main/scripts/install_mvn_3_8_6.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/GHRB/main/scripts/set_jdk_17.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/GHRB/main/debug/run_bug.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/GHRB/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/GHRB/main/Docker/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/coinse/GHRB/main/Docker/Dockerfile"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/GHRB/main/d4j_leak_analysis/QuantitativeD4JLeakAnalysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/coinse/GHRB/main/d4j_leak_analysis/QuantitativeD4JLeakAnalysis.ipynb"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "First, build the docker image:\n```bash\ncd Docker\ndocker build -t ghrb_framework .\n```\n\nNext, make a docker container:\n```bash\nsh run_docker_container.sh\n```\n\nInside the docker, the following commands need to be executed to complete setup:\n\n```bash\ncd /root/framework\nchmod +x cli.py\n\ncd debug\npython collector.py\ncd ..\n```\n\nFinally, check whether cli.py runs correctly via:\n```bash\n./cli.py -h\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Setting up GHRB",
+                "parent_header": [
+                    "GHRB: GitHub Recent Bugs"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/coinse/GHRB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "| Project | Bugs | Deprecated |\n| ------- | ---- | ---------- |\n| fastjson | 1 | 0 |\n| nacos | 6 | 0 | \n| dubbo | 1 | 0 |\n| rocketmq | 28 | 0 | \n| assertj | 4 | 0 |\n| checkstyle | 21 | 1 |\n| jackson-core | 3 | 0 |\n| jackson-databind | 7 | 0 |\n| jackson-dataformat-xml | 1 | 0 |\n| gson | 12 | 0 | \n| sslcontext-kickstart | 7 | 0 | \n| jsoup | 5 | 0 |\n| openapi-generator | 9 | 0 |\n| seata | 2 | 0 |\n| retrofit | 1 | 0 |\n| Apktool | 1 | 0 |\n| **Total** | **107** | **1** |\n \n",
+                "original_header": "Available Bugs"
+            },
+            "confidence": 0.9774982226623224,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/coinse/GHRB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "(Note that all directory paths given to the tool need to be absolute paths \nwithin the container.) \n 1. `info` - View information about a project or a particular bug.\n    *  Example: `./cli.py info -p gson`\n 2. `checkout` - checkout the buggy or fixed version of a bug.\n    *  Example: `./cli.py checkout -p gson -v 1b -w /root/framework/testing` \n 3. `compile` - compile the code in a directory.\n    *  Example: `./cli.py compile -w /root/framework/testing`\n 4. `test` - run the tests for a project.\n    *  Example: `./cli.py test -w /root/framework/testing` \n",
+                "original_header": "Using GHRB"
+            },
+            "confidence": 0.9871416065042735,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/coinse/GHRB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "With a file that consists of a list of url to the repositories, use\n```\npython filter_repo.py --repository_list <link_file>\n```\nto collect the metadata of repositories prior to gathering pull request information. `<link_file>` should look like:\n```\nhttps://github.com/coinse/GHRB\nhttps://github.com/coinse/libro\n...\n```\n \n",
+                "original_header": "Fetching Metadata of Repositories"
+            },
+            "confidence": 0.9990374841368054,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/coinse/GHRB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "`<repo_info_file>` should have a format like:\n```jsonc\n\n    [\n        {\n        \"name\": // name of the repo,\n        \"owner\": \n            {\n                \"login\": // owner of the repo\n            },\n        \"url\": // full url for git clone\n        },\n    ]\n\n```\n \n",
+                "original_header": "Fetching Pull Request Data"
+            },
+            "confidence": 0.994536268042542,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/coinse/GHRB/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "* Fetch git diff of the test files (test_diff) and production files (prod_diff) of each pull request data collected from above, which are to be located in `collected/test_diff` and `collected/prod_diff` accordingly. **This can be neglected if diff files were already collected from running `collect_raw_data.py`.**\n* For each pull request:\n    * Checkout to the buggy commit, apply test diff only, and verify that the **test fails**.\n    * Checkout to the buggy commit, apply both test diff and prod diff, and verify that the **test passes**.\n* Move the diff files for the verified pull requests from above into `data/test_diff` and `data/prod_diff` \nThe current script is specifically designed for the automated pipeline for maintenance, therefore in=n order to verify the bugs of your choice, please modify the script at your will before running.\n \n",
+                "original_header": "Verifying the Pull Requests"
+            },
+            "confidence": 0.9107040380054952,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/coinse/GHRB/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "GHRB: GitHub Recent Bugs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/coinse/GHRB/main/README.md"
+        }
+    ]
+}

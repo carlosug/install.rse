@@ -1,0 +1,455 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:06:49"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/coinse/Defects4J-multifault",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "coinse",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2021-07-26T04:15:40Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-06-19T02:36:27Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2021 Gabin An, Shin Yoo\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Artifact of \"Searching for Multi-Fault Programs in Defects4J\", SSBSE 2021",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "- [./multiple_faults](./multiple_faults): A dataset of multiple faults. A `<project>.json` file includes the bugs contained in each buggy version in `<project>`.\n- [./fault_data/multi/](./fault_data/multi): Raw search results (about *3GB*). \n  - The following files are written in `<project>-<N>-<M>`\n    - `.*_error`: these files are created when an error occurs during the test transplanation, test compile, or execution.\n    - `.overlapping`: this file is created when the revealing test cases of the bug `N` and `M` are ovelapped. \n    - `tests.trigger.*`:\n      - `expected`: the original set of fault revealing test cases of `N`\n      - `actual`: the set of tests that fail on `<project>-<M>b` containing the fault-revealing test cases of `N`\n      - `actual.fixed`: the set of tests that fail on `<project>-<M>f` containing the fault-revealing test cases of `N` (generated only when `.overlapping` exists)\n    - `failing_tests.*`:\n      - `expected`: the original error messages of fault revealing test cases of `N`\n      - `actual`: the error messages of failing tests on `<project>-<M>b` containing the fault-revealing test cases of `N`\n      - `actual.fixed`: the error messages of failing tests on `<project>-<M>f` containing the fault-revealing test cases of `N` (generated only when `.overlapping` exists) \n    - `<project>-<N>-<M>.patch`: the git patch that transplants the fault-revealing test cases of `<project>-<N>` to `<project>-<M>b`\n    - `test_copy.log`: log produced during the test transplanation. Similar to `<project>-<N>-<M>.patch`\n    - `*.xml`: the coverage of fault-revealing test cases of `N` on `<project>-<M>b`.\n    - `.not_exist`: if this file exists, `N` is not revealed in `<project>-<M>b`. See the file contents for more details.\n  - [./analysis.ipynb](./analysis.ipynb): The data analysis script used to draw the figures in the paper\n  ",
+                "type": "Text_excerpt",
+                "original_header": "Description of result files",
+                "parent_header": [
+                    "Multiple faults dataset for Java programs (Extension of Defects4J)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Defects4J-multifault",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "coinse/Defects4J-multifault",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/coinse/Defects4J-multifault/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/coinse/Defects4J-multifault/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 8,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "dataset, debugging, defects4j, multifault",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/coinse/defects4j-multifault/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Jupyter Notebook",
+                "name": "Jupyter Notebook",
+                "type": "Programming_language",
+                "size": 47111
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 16056
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 7575
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Java",
+                "name": "Java",
+                "type": "Programming_language",
+                "size": 3702
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 2298
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Vim Script",
+                "name": "Vim Script",
+                "type": "Programming_language",
+                "size": 190
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "executable_example": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/analysis.ipynb",
+                "type": "Url",
+                "format": "jupyter_notebook"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/analysis.ipynb"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/docker/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/docker/Dockerfile"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/docker/resources/install_defects4j.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/docker/resources/workspace/measure_coverage.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/docker/resources/workspace/check_exist_core.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/docker/resources/workspace/check_exist.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/fault_data/extract.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "* Docker\n* (Host machine) Python version 3.9.1\n",
+                "type": "Text_excerpt",
+                "original_header": "Prerequisite",
+                "parent_header": [
+                    "A Guide to Replication"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Build the docker image & execute the docker container\n```bash\ncd docker/\n# build a docker image\ndocker build --tag mf:latest .\n# create a docker container in the background\ndocker run -dt --name mf -v $(pwd)/resources/workspace:/root/workspace -v $(pwd)/../fault_data:/root/fault_data mf:latest\n# execute an interactive bash shell on the container\ndocker exec -it mf bash\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 1. Preparing the docker environment",
+                "parent_header": [
+                    "A Guide to Replication"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/README.md"
+        },
+        {
+            "result": {
+                "value": "One can use the following command to check a specific bug `<project>-<N>` exists in the buggy version `<project>-<M>b`. \n```bash\n# on the docker container\nsh check_exist.sh <project> <N> <M> <savepath>\n# ex) sh check_exish.sh Math 5 6 ./Math-5-6\n```\nThe existence check result will be saved into `<savepath>`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Want to test for a single pair of N and M?",
+                "parent_header": [
+                    "A Guide to Replication",
+                    "Step 2. Running the search"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/README.md"
+        },
+        {
+            "result": {
+                "value": "**Note that we do not alter any source codes to artifically inject faults. We only added bug-revealing test cases that can reveal multiple faults in the original code version**\n\nAfter the step 2, you may want to check out the multiple fault version where \nthe source code remains the same, but additional bug-revealing test cases are transplanted.\n\nOn the docker container, use the following command to check out the source code:\n```bash\n# on the docker container\npython3.6 checkout.py Lang-26-27-31 -w /tmp/Lang-26-27-31\ncd /tmp/Lang-26-27-31\ngit diff\ncat tests.trigger.*\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 3. Checkout the multi-fault version (Optional)",
+                "parent_header": [
+                    "A Guide to Replication"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/README.md"
+        },
+        {
+            "result": {
+                "value": "```bash\n# on the host machine (repository root)\npython create_dataset.py <project> --savepath <savepath>\n```\nThis command creates two result files, `<savepath>` and `<savepath>.pairs.csv`.\n\nFor example, executing the following command\n```\npython create_dataset.py Lang --savepath multiple_faults_replicated/Lang.json\n```\nwill create `multiple_faults_replicated/Lang.json` and `multiple_faults_replicated/Lang.json.pairs.csv`. \nPlease refer to [`multiple_faults/README.md`](./multiple_faults/README.md) for more details about the data format.\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 4. Analysing the search results and creating the dataset of multiple faults",
+                "parent_header": [
+                    "A Guide to Replication"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "You can simply extract the search results to `fault_data/multi/` using the following command.\n```\ncd fault_data; sh extract.sh multi.tar.bz2\n``` \n",
+                "original_header": "Raw search results are available!"
+            },
+            "confidence": 0.9999692605873036,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "To replicate the whole search in the paper, \n```bash\n# on the docker container\ncd /root/workspace\npython3.6 search.py <projects> --savedir <dirname>\n```\n\nThen, the search results are saved to `/root/fault_data/<dirname>/` directory in the container (which is `./fault_data/<dirname>` in the host machine).\n\nFor example,\n```\npython3.6 search.py Lang,Chart,Time,Math,Closure --savedir multi_replicated\n```\nwill save the searh results to `/root/fault_data/multi_replicated/`\n",
+                "type": "Text_excerpt",
+                "original_header": "Step 2. Running the search",
+                "parent_header": [
+                    "A Guide to Replication"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/README.md"
+        },
+        {
+            "result": {
+                "value": "One can use the following command to check a specific bug `<project>-<N>` exists in the buggy version `<project>-<M>b`. \n```bash\n# on the docker container\nsh check_exist.sh <project> <N> <M> <savepath>\n# ex) sh check_exish.sh Math 5 6 ./Math-5-6\n```\nThe existence check result will be saved into `<savepath>`.\n",
+                "type": "Text_excerpt",
+                "original_header": "Want to test for a single pair of N and M?",
+                "parent_header": [
+                    "A Guide to Replication",
+                    "Step 2. Running the search"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "@inproceedings{an2021searching,\n    organization = {Springer},\n    year = {2021},\n    pages = {153--158},\n    booktitle = {International Symposium on Search Based Software Engineering},\n    author = {An, Gabin and Yoon, Juyeon and Yoo, Shin},\n    title = {Searching for Multi-fault Programs in Defects4J},\n}",
+                "type": "Text_excerpt",
+                "format": "bibtex",
+                "title": "Searching for Multi-fault Programs in Defects4J",
+                "author": "An, Gabin and Yoon, Juyeon and Yoo, Shin"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Multiple faults dataset for Java programs (Extension of Defects4J)"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2108.04455.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/coinse/defects4j-multifault/main/README.md"
+        }
+    ]
+}

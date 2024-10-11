@@ -1,0 +1,190 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 20:25:27"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/DIVERSIFY-project/sosie-results",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "DIVERSIFY-project",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2015-08-26T11:56:52Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2016-03-23T08:27:00Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "all results about \" Automatic Software Diversity in the Light of Test Suites\"",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This repository contains all supplementary plots and data for our work on [Automatic Software Diversity in the Light of Test Suites](http://arxiv.org/abs/1509.00144). This work is currently under submission. \nThe repository includes three folders:\n- __[data](https://github.com/DIVERSIFY-project/sosie-results/tree/master/data)__ contains all raw data from which we extract all plots: \n    - the distribution of statements w.r.t test coverage and median depth (PROJECTNAME-stmt.csv) \n    - the characteristics of all trials of sosiefication (PROJECTNAME-trials.csv)\n- __[plot](https://github.com/DIVERSIFY-project/sosie-results/tree/master/plot)__  contains five plots for each project:                            \n    - distribution of statements w.r.t test coverage and median depth (PROJECTNAME-stmt-medianDepth.pdf)\n    - sosiefication rate w.r.t test coverage of transplantation points (PROJECTNAME-testCases-SR.pdf)\n    - sosiefication rate w.r.t transformation type (PROJECTNAME-transformationType-SR.pdf)\n    - sosiefication rate w.r.t the type of the transplantation point and delete transformation (PROJECTNAME-delete-transplantation-SR.pdf)\n    - sosiefication rate w.r.t the type of the transplant and add transformation (PROJECTNAME-add-transplant-SR.pdf)\n- __[project](https://github.com/DIVERSIFY-project/sosie-results/tree/master/project)__ contains the source code of the 6 Java libraries and test suites that we used to synthesize sosies                      \n",
+                "original_header": "sosie-results"
+            },
+            "confidence": 0.9617655538541712,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/diversify-project/sosie-results/master/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "sosie-results",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "DIVERSIFY-project/sosie-results",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/DIVERSIFY-project/sosie-results/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/DIVERSIFY-project/sosie-results/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/diversify-project/sosie-results/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/diversify-project/sosie-results/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "type": [
+        {
+            "result": {
+                "value": "non-software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "sosie-results"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/diversify-project/sosie-results/master/README.md"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://github.com/diversify-project/sosie-results/wiki",
+                "format": "wiki"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/diversify-project/sosie-results/master/README.md"
+        }
+    ]
+}

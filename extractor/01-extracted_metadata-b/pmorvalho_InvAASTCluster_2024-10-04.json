@@ -1,0 +1,461 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.9.5",
+        "somef_schema_version": "1.0.0",
+        "date": "2024-10-04 01:15:03"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/pmorvalho/InvAASTCluster",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "pmorvalho",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2022-06-27T12:19:18Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2024-01-11T07:11:35Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://api.github.com/licenses/mit",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2022 Pedro Orvalho\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "InvAASTCluster: AASTs and Invariant-Based Program Clustering",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "This is an implementation of the program clustering framework for introductory programming assignments (IPAs), described in the following paper: _\"InvAASTCluster: On Applying Invariant-Based Program Clustering to Introductory Programming Assignments\"_ ([https://arxiv.org/abs/2206.14175](https://arxiv.org/abs/2206.14175)). \nInvAASTCluster is a novel and efficient approach for clustering submissions for introductory programming assignments (IPAs) based on the submissions' sets of program invariants and anonymized abstract syntax tree (AAST) representations. \n",
+                "original_header": "InvAASTCluster: On Applying Invariant-Based Program Clustering to Introductory Programming Assignments"
+            },
+            "confidence": 0.9202495380257139,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "InvAASTCluster",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "pmorvalho/InvAASTCluster",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/pmorvalho/InvAASTCluster/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/pmorvalho/InvAASTCluster/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": "aast, ast, c-pack-ipas, introductory-programming, invariants, ipas, program-analysis, program-clustering, program-repair",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 0,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/pmorvalho/InvAASTCluster/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "C",
+                "name": "C",
+                "type": "Programming_language",
+                "size": 5150784
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 110163
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 34972
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Batchfile",
+                "name": "Batchfile",
+                "type": "Programming_language",
+                "size": 335
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/pmorvalho/InvAASTCluster/releases/70828197",
+                "tag": "InvAASTCluster-22",
+                "name": "InvAASTCluster-22",
+                "author": {
+                    "name": "pmorvalho",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/pmorvalho/InvAASTCluster/tarball/InvAASTCluster-22",
+                "zipball_url": "https://api.github.com/repos/pmorvalho/InvAASTCluster/zipball/InvAASTCluster-22",
+                "html_url": "https://github.com/pmorvalho/InvAASTCluster/releases/tag/InvAASTCluster-22",
+                "url": "https://api.github.com/repos/pmorvalho/InvAASTCluster/releases/70828197",
+                "release_id": 70828197,
+                "date_created": "2022-06-29T06:34:36Z",
+                "date_published": "2022-06-29T06:35:50Z"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/bash_scripts/get_clara_repairs.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/bash_scripts/run_all_clustering.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/bash_scripts/save_bows.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/bash_scripts/inject_student_programs.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/bash_scripts/get_daikon_invariants.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/bash_scripts/save_invariants_pickles.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/bash_scripts/get_correct_progs_clara_supports.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/bash_scripts/get_clara_clusters.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/bash_scripts/clustering_bows_vectors.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/bash_scripts/get_closest_programs.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/bash_scripts/run_all_repair.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "+ To run InvAASTCluster on a new set of IPAs (e.g. _new_dataset_)\n\n  In order to use InvAASTCluster on a new set of IPAs, _new_dataset_, the user should divide the set of IPAs into correct and semantically incorrect submissions. Then, the user should put the correct submissions on the subdirectory    **correct_submissions/new_dataset** and the set of incorrect submissions on the folder **incorrect_submissions/new_dataset**.\n\n  Afterward, the scripts **bash_scripts/run_all_clustering.sh** and **bash_scripts/run_all_repairing.sh** should be modified in order to use the new dataset.\n  \n+ To run InvAASTCluster on the available datasets of IPAs, ITSP and C-Pack-IPAs, the user should execute:\n\n  + Only for clustering all the IPAs:\n  ```\n  bash ./bash_scripts/run_all_clustering.sh\n  ```\n\n  + For clustering and repairing:\n  ```\n  bash ./bash_scripts/run_all_repairing.sh\n  ```\n",
+                "type": "Text_excerpt",
+                "original_header": "How to use InvAASTCluster",
+                "parent_header": [
+                    "InvAASTCluster: On Applying Invariant-Based Program Clustering to Introductory Programming Assignments"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/README.md"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "value": "Pedro Orvalho, Mikol\u00e1\u0161 Janota, and Vasco Manquinho. InvAASTCluster: On Applying Invariant-Based Program Clustering to Introductory Programming Assignments. 2022. [https://arxiv.org/pdf/2206.14175.pdf](https://arxiv.org/pdf/2206.14175.pdf)\n",
+                "type": "Text_excerpt",
+                "original_header": "References",
+                "parent_header": [
+                    "InvAASTCluster: On Applying Invariant-Based Program Clustering to Introductory Programming Assignments"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/README.md"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "+ Python 3.8.5\n+ [pycparser](https://github.com/eliben/pycparser) : version 2.21\n  ```\n  pip install pycparser==2.21\n  ```\n+ numpy : version 1.19.2\n  ```\n  pip install numpy==1.19.2\n  ```\n\n+ Clara\n\n   Clara is the program repair framework used. Clara should be installed as a submodule in the subdirectory \"InvAASTCluster/clara\". To install Clara, follow the instructions available on https://github.com/iradicek/clara. The user should create a conda environment called \"clara\" to run clara with our scripts.\n\n+ Daikon\n\n  Daikon was used to compute dynamically-generated likely invariants observed over several program executions for each student submission using a set of predefined input-output tests for each programming assignment. To install Daikon follow the instructions available on https://plse.cs.washington.edu/daikon/download/.\n  \n+ runsolver\n\n  Runsolver was used to control the memory and CPU used and timeout while running the program clustering/repairing evaluations. To install Runsolver follow the instructions available on https://github.com/utpalbora/runsolver.\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation Requirements",
+                "parent_header": [
+                    "InvAASTCluster: On Applying Invariant-Based Program Clustering to Introductory Programming Assignments"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/README.md"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "+ Python 3.8.5\n+ [pycparser](https://github.com/eliben/pycparser) : version 2.21\n  ```\n  pip install pycparser==2.21\n  ```\n+ numpy : version 1.19.2\n  ```\n  pip install numpy==1.19.2\n  ```\n\n+ Clara\n\n   Clara is the program repair framework used. Clara should be installed as a submodule in the subdirectory \"InvAASTCluster/clara\". To install Clara, follow the instructions available on https://github.com/iradicek/clara. The user should create a conda environment called \"clara\" to run clara with our scripts.\n\n+ Daikon\n\n  Daikon was used to compute dynamically-generated likely invariants observed over several program executions for each student submission using a set of predefined input-output tests for each programming assignment. To install Daikon follow the instructions available on https://plse.cs.washington.edu/daikon/download/.\n  \n+ runsolver\n\n  Runsolver was used to control the memory and CPU used and timeout while running the program clustering/repairing evaluations. To install Runsolver follow the instructions available on https://github.com/utpalbora/runsolver.\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Installation Requirements",
+                "parent_header": [
+                    "InvAASTCluster: On Applying Invariant-Based Program Clustering to Introductory Programming Assignments"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "InvAASTCluster: On Applying Invariant-Based Program Clustering to Introductory Programming Assignments"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/README.md"
+        }
+    ],
+    "related_papers": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2206.14175.pdf](https://arxiv.org/pdf/2206.14175.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2206.14175](https://arxiv.org/abs/2206.14175"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2206.08768.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2206.14175.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/pdf/2206.08768.pdf](https://arxiv.org/pdf/2206.08768.pdf"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://arxiv.org/abs/2206.14175"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/pmorvalho/InvAASTCluster/main/README.md"
+        }
+    ]
+}
