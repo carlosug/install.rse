@@ -10,35 +10,12 @@ Implementation of research software involves numerous challenges; a rigorous sta
 ## Folder structure
 
 
-```md
-├── data
-│   ├── raw                 # Unprocessed data, as obtained.
-│   ├── processed           # Cleaned and processed data ready for analysis.
-│   └── external            # Data from third-party sources.
-├── notebooks               # Jupyter notebooks for exploratory analysis and visualization.
-├── src                     # Source code for use in this project.
-│   ├── __init__.py         # Makes src a Python module.
-│   ├── data                # Scripts to download or generate data.
-│   │   └── __init__.py
-│   ├── features            # Scripts to turn raw data into features for modeling.
-│   │   └── __init__.py
-│   ├── models              # Scripts to train models and then use trained models to make predictions.
-│   │   ├── __init__.py
-│   │   ├── cluster.py      # Clustering algorithms.
-│   │   └── predict.py      # Scripts for prediction using trained models.
-│   └── visualization       # Scripts to create exploratory and results-oriented visualizations.
-│       └── __init__.py
-├── tests                   # Automated tests for the project.
-│   ├── __init__.py
-│   └── test_data.py
-├── docs                    # Documentation files for the project.
-│   └── install.rse.md      # Installation instructions.
-├── .gitignore              # Specifies intentionally untracked files to ignore.
-├── LICENSE
-├── README.md               # Project overview and usage instructions.
-├── requirements.txt        # The dependencies file for reproducing the analysis environment.
-└── setup.py                # Makes project pip installable (pip install -e .) so src can be imported.
-```
+* `data` folder: 
+  - `golden`: `repo_manual_annotations.csv` --> corpus of 100 repos selected with various annotations
+  - `processed`:`00_bidir_dataset_unique.csv`: input for SOMEF extractor
+* `extractor` folder: invoke SOMEF to extract readme metadata on `00_bidir_dataset_unique.csv`
+ - `01-extracted_metadata` folder: the folder created by SOMEF automatically. Its now *empty* but it should contains the json files *(SOMEF got token limitation so I split the process)*
+ - `02.1-extractor_install_combined.py` is the script to output the JSON file with installation_instruction readmes `02_combined_installation_readmes.json`.
 
 ## Analysis
 The analysis described in our paper should be replicated with `.py` files and jupyter notebook `.ipynb`
