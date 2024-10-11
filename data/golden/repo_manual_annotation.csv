@@ -1,4 +1,4 @@
-search,id,arxiv_url,topic,arxiv_title,github_URL,Star,has_installation,h1,h2,h3,h4,h5,h6,text,method_type,time_accessed,notes,
+search,id,arxiv_url,topic,arxiv_title,github_URL,Star,has_installation,h1,h2,h3,h4,h5,h6,text,method_type,time_accessed,comments Annotator 1,
 arxiv.API,arXiv:2409.00613,arXiv:2409.00613,q-bio.GN,BWT construction and search at the terabase scale,https://github.com/lh3/ropebwt3,75,FALSE,,,,,,,,,,,
 arxiv.API,https://arxiv.org/abs/2409.02143,https://arxiv.org/abs/2409.02143,"q-bio.GN, cs.LG","CMOB: Large-Scale Cancer Multi-Omics Benchmark with Open Datasets, Tasks, and Baselines",https://github.com/chenzRG/Cancer-Multi-Omics-Benchmark,1,TRUE,Installations,,,,,,"Here, we provide guidelines for setting up the library. 
 ```bash
@@ -9,7 +9,7 @@ conda activate
 # Installation
 pip install -r requirements.txt
 ```",source,,,
-arxiv.API,arXiv:2409.05484 ,https://arxiv.org/abs/2409.05484,"cs.LG, cs.AI, q-bio.GN, q-bio.QM",CRADLE-VAE: Enhancing Single-Cell Gene Perturbation Modeling with Counterfactual Reasoning-based Artifact Disentanglemen,CRADLE-VAE: Enhancing Single-Cell Gene Perturbation Modeling with Counterfactual Reasoning-based Artifact Disentanglement,5,TRUE,,,Install environment (Linux),,,,"```
+arxiv.API,arXiv:2409.05484 ,https://arxiv.org/abs/2409.05484,"cs.LG, cs.AI, q-bio.GN, q-bio.QM",CRADLE-VAE: Enhancing Single-Cell Gene Perturbation Modeling with Counterfactual Reasoning-based Artifact Disentanglemen,https://github.com/dmis-lab/CRADLE-VAE,9,TRUE,,,Install environment (Linux),,,,"```
 conda env create --file environment.yml
 conda activate cradle_vae_env
 ```
@@ -20,7 +20,7 @@ pip install 'rapids-singlecell[rapids11]' --extra-index-url=https://pypi.nvidia.
 pip install 'rapids-singlecell[rapids12]' --extra-index-url=https://pypi.nvidia.com #CUDA12
 ```
 - Install `rapids-singlecell` according to your CUDA version",source,,,
-arxiv.API,https://arxiv.org/abs/2408.09896,https://arxiv.org/abs/2408.09896, cs.LG physics.chem-ph q-bio.BM , Instruction-Based Molecular Graph Generation with Unified Text-Graph Diffusion Model ,https://github.com/ran1812/utgdiff,5,TRUE,,Environment setup,,,,,"
+arxiv.API,https://arxiv.org/abs/2408.09896,https://arxiv.org/abs/2408.09896, cs.LG physics.chem-ph q-bio.BM , Instruction-Based Molecular Graph Generation with Unified Text-Graph Diffusion Model ,https://github.com/ran1812/utgdiff,5,FALSE,,Environment setup,,,,,"
 The basic environment requirement is pytorch, here's an example for environment setup:
 
 ```
@@ -31,14 +31,14 @@ conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvi
 pip install -r requirements.txt 
 ```
 
-All the model checkpoint is saved at https://drive.google.com/drive/folders/18EqQ7MDHesmtiMiZz2o09PyeSwyf0hXb?usp=drive_link",source,,,
-arxiv.API,https://arxiv.org/abs/2408.11884,https://arxiv.org/abs/2408.11884,q-bio.NC cs.LG,ST-USleepNet: A Spatial-Temporal Coupling Prominence Network for Multi-Channel Sleep Staging,https://github.com/Majy-Yuji/ST-USleepNet.git,0,FALSE,README,,,,,,"This README provides a step-by-step guide on how to run the model using the `ISRUC-S3` dataset.
+All the model checkpoint is saved at https://drive.google.com/drive/folders/18EqQ7MDHesmtiMiZz2o09PyeSwyf0hXb?usp=drive_link",source,,"It has environment setup, but not installation instructions",
+arxiv.API,https://arxiv.org/abs/2408.11884,https://arxiv.org/abs/2408.11884,q-bio.NC cs.LG,ST-USleepNet: A Spatial-Temporal Coupling Prominence Network for Multi-Channel Sleep Staging,https://github.com/Majy-Yuji/ST-USleepNet.git,0,TRUE,README,,,,,,"This README provides a step-by-step guide on how to run the model using the `ISRUC-S3` dataset.
 
 1. Run `sh get_ISRUC_S3.sh` to download the data.
 2. run `python process_slice.py` to preprocess the data.
 3. Run `python src/main.py` to execute the model.",source,,"how to run, instead of how to install",
-arxiv.API,https://arxiv.org/abs/2408.05420,https://arxiv.org/abs/2408.05420,q-bio.QM,Facilitating bootstrapped and rarefaction-based microbiome diversity analysis with q2-boots,https://github.com/caporaso-lab/q2-boots,3,FALSE,,,,,,,,,,External doc URL: https://q2-boots.readthedocs.io/en/latest/,
-arxiv.API,https://arxiv.org/abs/2408.06377,https://arxiv.org/abs/2408.06377,q-bio.GN cs.AI cs.LG,Masked Graph Autoencoders with Contrastive Augmentation for Spatially Resolved Transcriptomics Data,https://github.com/wenwenmin/STMGAC,13,TRUE,Setup,,,,,,-   `pip install -r requirement.txt`,source,,,
+arxiv.API,https://arxiv.org/abs/2408.05420,https://arxiv.org/abs/2408.05420,q-bio.QM,Facilitating bootstrapped and rarefaction-based microbiome diversity analysis with q2-boots,https://github.com/caporaso-lab/q2-boots,3,TRUE,,,,,,,"To learn how to install, use, or get help with q2-boots, refer to the [q2-boots documentation](https://q2-boots.readthedocs.io/en/latest/).",,,External doc URL: https://q2-boots.readthedocs.io/en/latest/,
+arxiv.API,https://arxiv.org/abs/2408.06377,https://arxiv.org/abs/2408.06377,q-bio.GN cs.AI cs.LG,Masked Graph Autoencoders with Contrastive Augmentation for Spatially Resolved Transcriptomics Data,https://github.com/wenwenmin/STMGAC,13,TRUE,,Setup,,,,,-   `pip install -r requirement.txt`,source,,,
 arxiv.API,https://arxiv.org/abs/2408.01869,https://arxiv.org/abs/2408.01869, cs.CL cs.AI cs.IR cs.LG cs.MA q-bio.QM ,MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented Generation for Pharmacovigilance,https://github.com/jihyechoi77/malade,8,TRUE,,**__ Set up environment and install dependencies**,,,,,"We leverage the awesome [Langroid](https://github.com/langroid/langroid) 
 open-source Python library for multi-agent LLM applications.
 
@@ -71,105 +71,53 @@ Install dependencies with Poetry:
 ```bash
 # Optionally: poetry lock
 poetry install
-```",,,to discuss: setup versus steps on setup environment variables,
+```",source,,to discuss: setup versus steps on setup environment variables,
+arxiv.API,https://arxiv.org/abs/2408.01869,https://arxiv.org/abs/2408.01869, cs.CL cs.AI cs.IR cs.LG cs.MA q-bio.QM ,MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented Generation for Pharmacovigilance,https://github.com/jihyechoi77/malade,8,TRUE,," **__ Set up environment variables (API keys, etc)**",,,,,"To use the example scripts with an OpenAI LLM, you need an OpenAI API Key.
+In the root of the repo, copy the `.env-template` file to a new file `.env`:
+```bash
+cp .env-template .env
+```
+
+First, an [OpenAI API key](https://platform.openai.com/docs/quickstart) is required;
+save it in the `.env` file as `OPENAI_API_KEY=...` (no quotes).
+
+A Qdrant instance and API key is required (see the [Langroid instructions](https://github.com/langroid/langroid?tab=readme-ov-file#set-up-environment-variables-api-keys-etc)); set up `QDRANT_API_URL` and `QDRANT_API_KEY` in `.env` as described there. 
+
+An OpenFDA API key is also required (get one [here](https://open.fda.gov/apis/authentication/)), set it as 
+`OPENFDA_API_KEY=...` in the `.env` file.",source,,to discuss: setup versus steps on setup environment variables,
+arxiv.API,https://arxiv.org/abs/2408.01869,https://arxiv.org/abs/2408.01869, cs.CL cs.AI cs.IR cs.LG cs.MA q-bio.QM ,MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented Generation for Pharmacovigilance,https://github.com/jihyechoi77/malade,8,TRUE,,,### **(Optional) Setup for drug representative generation**,,,,"This step is required only to run `DrugFinder` and the process to find
+representative drugs in a category based on MIMIC-IV data.
+
+Make sure that MIMIC-IV is installed and running on your machine as PostgreSQL database.
+The MIMIC-IV can be obtained [here](https://physionet.org/content/mimiciv/2.2/#files). \
+Access requires completing the following training described [here](https://physionet.org/content/mimiciv/view-required-training/2.2/#1). \
+Instructions and code for loading MIMIC-IV into PostgreSQL are [here](https://github.com/MIT-LCP/mimic-code/tree/main/mimic-iv/buildmimic/postgres). \
+Finally, ensure that your user account has access to the `mimiciv` database.",source,,to discuss: setup versus steps on setup environment variables,
 arxiv.API,https://arxiv.org/abs/2408.09344,https://arxiv.org/abs/2408.09344,q-bio.OT,GitHub is an effective platform for collaborative and reproducible laboratory research,https://github.com/rasilab/github_demo,5,FALSE,,,,,,,,,,its not a RS perse,
-arxiv.API,https://arxiv.org/abs/2408.14343,https://arxiv.org/abs/2408.14343,cs.CV q-bio.QM,A Brief Analysis of the Iterative Next Boundary Detection Network for Tree Rings Delineation in Images of Pinus taeda,https://github.com/hmarichal93/mlbrief_inbd,1,TRUE,,Installation,,,,,"### INBD
+arxiv.API,https://arxiv.org/abs/2408.14343,https://arxiv.org/abs/2408.14343,cs.CV q-bio.QM,A Brief Analysis of the Iterative Next Boundary Detection Network for Tree Rings Delineation in Images of Pinus taeda,https://github.com/hmarichal93/mlbrief_inbd,1,TRUE,,Installation,,,,,,,,,
+arxiv.API,https://arxiv.org/abs/2408.14343,https://arxiv.org/abs/2408.14343,cs.CV q-bio.QM,A Brief Analysis of the Iterative Next Boundary Detection Network for Tree Rings Delineation in Images of Pinus taeda,https://github.com/hmarichal93/mlbrief_inbd,1,TRUE,,,### INBD,,,,"### INBD
 Go to ./INBD
-
-### UruDendro
-Go to ./urudendro
-
-## Procedure
-1. Download the dataset from the following link:
-```bash
-python uruDendro/dataset.py --download --dataset_path DATASET_DIR
-```
-
-Where: 
-- `DATASET_DIR` is the path where the dataset will be downloaded. `DATASET_DIR` must be an absolute path.
-
-
-2. Transform the UruDendro annotations to the INBD format:
-```bash
-python uruDendro/src/dataset_urudendro.py --dataset_dir DATASET_DIR --output_folder DATASET_SIZE_DIR --size SIZE
-```
-
-Where:
-- `DATASET_DIR` is the path to the dataset folder.
-- `DATASET_SIZE_DIR` is the path to the output folder.
-- `SIZE` is the size of the images in pixels
-
-It is possible to resize the INBD dataset using the following command:
-```bash
-python uruDendro/src/dataset_inbd.py --resize --dataset_dir DATASET_DIR --output_folder DATASET_SIZE_DIR --size SIZE
-```
-
-Where:
-- `DATASET_DIR` is the path to the dataset folder.
-- `DATASET_SIZE_DIR` is the path to the output folder.
-- `SIZE` is the size of the images in pixels
-
-3. Train the model using the following command (INBD Readme):
-```bash
-python INBD/main.py train segmentation DATASET_SIZE_DIR/train_inputimages.txt DATASET_SIZE_DIR/train_annotations.txt
-```
-```bash
-python INBD/main.py train INBD DATASET_SIZE_DIR/train_inputimages.txt DATASET_SIZE_DIR/train_annotations.txt --segmentationmodel=checkpoints/segmentationmodel/model.pt.zip
-```
-
-4. Inference using the following command (test annotations are used to get the pith center boundary):
-```bash
-python src/inbd_inference_with_center_boundary.py --input_images_path
-DATASET_SIZE_DIR/test_images.txt
---input_annotations_path
-DATASET_SIZE_DIR/test_annotations.txt
---root_dataset
-DATASET_SIZE_DIR
---output_dir
-INBD_RESULTS
---inbd_model_path
-INBD_MODEL_PATH
-```
-    
-Where:
-    - `DATASET_SIZE_DIR` is the path to the dataset folder.
-    - `INBD_RESULTS` is the path to the output folder.
-    - `INBD_MODEL_PATH` is the path to the INBD model.
-
-5. Evaluate the model using the following command (INBD metric):
-```bash
-python INBD/main.py evaluate INBD_RESULTS DATASET_SIZE_DIR/test_annotations.txt
-```
-
-Where:
-- `INBD_RESULTS` is the path to the INBD results folder.
-- `DATASET_SIZE_DIR` is the path to the dataset folder.
-
-6. Evaluate the model using the following command (UruDendro metric). First INBD results are transformed to UruDendro format:
-```bash
-python src/from_inbd_to_urudendro.py --root_dataset DATASET_SIZE_DIR 
---root_inbd_results
-/data/maestria/resultados/mlbrief_PinusTaedaV1_1500/inference/inbd_results/inbd_
---output_dir
-/data/maestria/resultados/mlbrief_PinusTaedaV1_1500/inference/inbd_results/inbd_
-```
-Then, the UruDendro metric is computed:
-```bash
-python src/compute_urudendro_metric.py ----annotations_file_path ANNOTATIONS_FILE_PATH  --root_original_dataset DATASET_DIR
---output_dir OUTPUT_DIR --inbd_inference_results_dir INBD_RESULTS --inbd_center_mask_dir INBD_RESULTS/center
-```
-
-Where:
-- `ANNOTATIONS_FILE_PATH` is the path to the UruDendro annotations file.
-- `DATASET_DIR` is the path to the original dataset folder.
-- `INBD_RESULTS` is the path to the INBD results folder. INBD_RESULTS/center is where the center mask images are located using during the inference.",source,,,
+ center mask images are located using during the inference.",,,,
+arxiv.API,https://arxiv.org/abs/2408.14343,https://arxiv.org/abs/2408.14343,cs.CV q-bio.QM,A Brief Analysis of the Iterative Next Boundary Detection Network for Tree Rings Delineation in Images of Pinus taeda,https://github.com/hmarichal93/mlbrief_inbd,1,TRUE,,,### UruDendro,,,,"### INBD
+Go to ./INBD
+ center mask images are located using during the inference.",,,,
 arxiv.API,https://arxiv.org/abs/2408.11707,https://arxiv.org/abs/2408.11707,q-bio.OT,biorecap: an R package for summarizing bioRxiv preprints with a local LLM,https://github.com/stephenturner/biorecap,47,TRUE,,Installation,,,,,"install biorecap from GitHub (keep `dependencies=TRUE` to get Suggests
 packages needed to create the HTML report):
 
 ``` r
 # install.packages(""remotes"")
-remotes::install_github(""stephenturner/biorecap"", dependencies=TRUE)",package manager,,,
-arxiv.API,https://arxiv.org/abs/2408.05258,https://arxiv.org/abs/2408.05258,q-bio.GN cs.AI cs.LG,scASDC: Attention Enhanced Structural Deep Clustering for Single-cell RNA-seq Data,https://github.com/wenwenmin/scASDC,13,FALSE,,,,,,,,source,,it provides only requirement.txt,
+remotes::install_github(""stephenturner/biorecap"", dependencies=TRUE)",package_manager,,,
+arxiv.API,https://arxiv.org/abs/2408.05258,https://arxiv.org/abs/2408.05258,q-bio.GN cs.AI cs.LG,scASDC: Attention Enhanced Structural Deep Clustering for Single-cell RNA-seq Data,https://github.com/wenwenmin/scASDC,13,TRUE,,Requirements,,,,,"`scASDC` method mainly relies on the following Python packages:
+```
+numpy
+scanpy
+scikit-learn
+torch
+pandas
+h5py
+scipy
+```
+For more detailed settings, please refer to: [requirement.txt](requirement.txt).",source,,it provides only requirement.txt,
 arxiv.API,https://arxiv.org/abs/2408.08316,https://arxiv.org/abs/2408.08316,q-bio.TO cs.LG,SepAl: Sepsis Alerts On Low Power Wearables With Digital Biomarkers and On-Device Tiny Machine Learning,https://github.com/mgiordy/sepsis-prediction,0,TRUE,,,Installation,,,,"###  Installation
 
 <h4>From <code>source</code></h4>
@@ -189,9 +137,7 @@ arxiv.API,https://arxiv.org/abs/2408.08316,https://arxiv.org/abs/2408.08316,q-bi
 > ```console
 > $ pip install -r requirements.txt
 > ```",source,,,
-pwc.greatest,,,,,https://github.com/tensorflow/tensorflow,"185,472",TRUE,,Install,,,,,"## Install
-
-See the [TensorFlow install guide](https://www.tensorflow.org/install) for the
+pwc.greatest,,,,,https://github.com/tensorflow/tensorflow,"185,472",TRUE,,Install,,,,,"See the [TensorFlow install guide](https://www.tensorflow.org/install) for the
 [pip package](https://www.tensorflow.org/install/pip), to
 [enable GPU support](https://www.tensorflow.org/install/gpu), use a
 [Docker container](https://www.tensorflow.org/install/docker), and
@@ -237,21 +183,333 @@ b'Hello, TensorFlow!'
 ```
 
 For more examples, see the
-[TensorFlow tutorials](https://www.tensorflow.org/tutorials/).","package manager,container,binary",,the container is on the external website,
-pwc.greatest,,,,,https://github.com/huggingface/transformers,"132,008",TRUE,,Installation,"With pip, With conda",,,,,"package manager,container,binary",,,
-pwc.greatest,,,,,https://github.com/hwchase17/langchain,"92,298",TRUE,,Quick Install,,,,,"With pip, With conda",package manager,,,
-pwc.greatest,,,,,https://github.com/pytorch/pytorch,"82,127",TRUE,,Installation,"Binaries, From Source, Docker Image",,,,,"source, container, package manager, binary",,complicated to define the annotation,
-pwc.greatest,,,,,https://github.com/tensorflow/models,"76,950",TRUE,,Installation,,"Method 1: Install the TensorFlow Model Garden pip package, Method 2: Clone the source",,,,"source, package manager",,,
-pwc.greatest,,,,,https://github.com/compvis/stable-diffusion,"69,141",FALSE,,Requirements,,,,,,source,,environment.yaml,
-pwc.greatest,,,,,https://github.com/openai/whisper,"67,527",TRUE,,Setup,,,,,,package manager,,,
-pwc.greatest,,,,,https://github.com/ggerganov/llama.cpp,"64,931",TRUE,,,Basic usage,,,,"Basic usage
+[TensorFlow tutorials](https://www.tensorflow.org/tutorials/).","package manager,container,binary",,from the header we cant predict which method is. We need to add the `TEXT`  field,
+pwc.greatest,,,,,https://github.com/huggingface/transformers,"132,008",TRUE,,Installation,With pip,,,,"This repository is tested on Python 3.8+, Flax 0.4.1+, PyTorch 1.11+, and TensorFlow 2.6+.
 
-Firstly, you need to get the binary. There are different methods that you can follow:
-- Method 1: Clone this repository and build locally, see [how to build](./docs/build.md)
-- Method 2: If you are using MacOS or Linux, you can install llama.cpp via [brew, flox or nix](./docs/install.md)
-- Method 3: Use a Docker image, see [documentation for Docker](./docs/docker.md)
-- Method 4: Download pre-built binary from [releases](https://github.com/ggerganov/llama.cpp/releases)",,,,
-,,,,,https://github.com/tesseract-ocr/tesseract,"60,991",TRUE,,Installing Tesseract,,,,,,"binary, source",,from external sources,
+You should install __ Transformers in a [virtual environment](https://docs.python.org/3/library/venv.html). If you're unfamiliar with Python virtual environments, check out the [user guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).
+
+First, create a virtual environment with the version of Python you're going to use and activate it.
+
+Then, you will need to install at least one of Flax, PyTorch, or TensorFlow.
+Please refer to [TensorFlow installation page](https://www.tensorflow.org/install/), [PyTorch installation page](https://pytorch.org/get-started/locally/#start-locally) and/or [Flax](https://github.com/google/flax#quick-install) and [Jax](https://github.com/google/jax#installation) installation pages regarding the specific installation command for your platform.
+
+When one of those backends has been installed, __ Transformers can be installed using pip as follows:
+
+```bash
+pip install transformers
+```
+
+If you'd like to play with the examples or need the bleeding edge of the code and can't wait for a new release, you must [install the library from source](https://huggingface.co/docs/transformers/installation#installing-from-source).",package_manager,,,
+pwc.greatest,,,,,https://github.com/huggingface/transformers,"132,008",TRUE,,Installation,With conda,,,,"__ Transformers can be installed using conda as follows:
+
+```shell script
+conda install conda-forge::transformers
+```
+
+> **_NOTE:_** Installing `transformers` from the `huggingface` channel is deprecated.
+
+Follow the installation pages of Flax, PyTorch or TensorFlow to see how to install them with conda.
+
+> **_NOTE:_**  On Windows, you may be prompted to activate Developer Mode in order to benefit from caching. If this is not an option for you, please let us know in [this issue](https://github.com/huggingface/huggingface_hub/issues/1062).",package_manager,,,
+pwc.greatest,,,,,https://github.com/hwchase17/langchain,"92,298",TRUE,,Quick Install,,,,,"With pip:
+
+```bash
+pip install langchain
+```
+
+With conda:
+
+```bash
+conda install langchain -c conda-forge",package_manager,,from the header we cant predict which method is. We need to add the `TEXT`  field,
+pwc.greatest,,,,,https://github.com/pytorch/pytorch,"82,127",TRUE,,Installation,Binaries,,,,Commands to install binaries via Conda or pip wheels are on our website: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/),binary,,,
+pwc.greatest,,,,,https://github.com/pytorch/pytorch,"82,127",TRUE,,,,NVIDIA Jetson Platforms,,,"Python wheels for NVIDIA's Jetson Nano, Jetson TX1/TX2, Jetson Xavier NX/AGX, and Jetson AGX Orin are provided [here](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-10-now-available/72048) and the L4T container is published [here](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/l4t-pytorch)
+
+They require JetPack 4.2 and above, and [@dusty-nv](https://github.com/dusty-nv) and [@ptrblck](https://github.com/ptrblck) are maintaining them.",,,,
+pwc.greatest,,,,,https://github.com/pytorch/pytorch,"82,127",TRUE,,Installation,From Source,,,,,source,,,
+pwc.greatest,,,,,https://github.com/pytorch/pytorch,"82,127",TRUE,,,,Prerequisites,,,"If you are installing from source, you will need:
+- Python 3.8 or later (for Linux, Python 3.8.1+ is needed)
+- A compiler that fully supports C++17, such as clang or gcc (gcc 9.4.0 or newer is required, on Linux)
+- Visual Studio or Visual Studio Build Tool on Windows
+
+\* PyTorch CI uses Visual C++ BuildTools, which come with Visual Studio Enterprise,
+Professional, or Community Editions. You can also install the build tools from
+https://visualstudio.microsoft.com/visual-cpp-build-tools/. The build tools *do not*
+come with Visual Studio Code by default.
+
+\* We highly recommend installing an [Anaconda](https://www.anaconda.com/download) environment. You will get a high-quality BLAS library (MKL) and you get controlled dependency versions regardless of your Linux distro.
+
+An example of environment setup is shown below:
+
+* Linux:
+
+```bash
+$ source <CONDA_INSTALL_DIR>/bin/activate
+$ conda create -y -n <CONDA_NAME>
+$ conda activate <CONDA_NAME>
+```
+
+* Windows:
+
+```bash
+$ source <CONDA_INSTALL_DIR>\Scripts\activate.bat
+$ conda create -y -n <CONDA_NAME>
+$ conda activate <CONDA_NAME>
+$ call ""C:\Program Files\Microsoft Visual Studio\<VERSION>\Community\VC\Auxiliary\Build\vcvarsall.bat"" x64",,,,
+pwc.greatest,,,,,https://github.com/pytorch/pytorch,"82,127",TRUE,,,,,NVIDIA CUDA Support,,"If you want to compile with ROCm support, install
+- [AMD ROCm](https://rocm.docs.amd.com/en/latest/deploy/linux/quick_start.html) 4.0 and above installation
+- ROCm is currently supported only for Linux systems.
+
+By default the build system expects ROCm to be installed in `/opt/rocm`. If ROCm is installed in a different directory, the `ROCM_PATH` environment variable must be set to the ROCm installation directory. The build system automatically detects the AMD GPU architecture. Optionally, the AMD GPU architecture can be explicitly set with the `PYTORCH_ROCM_ARCH` environment variable [AMD GPU architecture](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/reference/system-requirements.html#supported-gpus)
+
+If you want to disable ROCm support, export the environment variable `USE_ROCM=0`.
+Other potentially useful environment variables may be found in `setup.py`.",,,,
+pwc.greatest,,,,,https://github.com/pytorch/pytorch,"82,127",TRUE,,,,,Intel GPU Support,,"If you want to compile with Intel GPU support, follow these
+- [PyTorch Prerequisites for Intel GPUs](https://www.intel.com/content/www/us/en/developer/articles/tool/pytorch-prerequisites-for-intel-gpus.html) instructions.
+- Intel GPU is supported for Linux and Windows.
+
+If you want to disable Intel GPU support, export the environment variable `USE_XPU=0`.
+Other potentially useful environment variables may be found in `setup.py`.",,,,
+pwc.greatest,,,,,https://github.com/pytorch/pytorch,"82,127",TRUE,,,,Get the PyTorch Source,,,"```bash
+git clone --recursive https://github.com/pytorch/pytorch
+cd pytorch
+# if you are updating an existing checkout
+git submodule sync
+git submodule update --init --recursive
+```",,,,
+pwc.greatest,,,,,https://github.com/pytorch/pytorch,"82,127",TRUE,,,,Install Dependencies,,,"**Common**
+
+```bash
+conda install cmake ninja
+# Run this command on native Windows
+conda install rust
+# Run this command from the PyTorch directory after cloning the source code using the “Get the PyTorch Source“ section below
+pip install -r requirements.txt
+```
+
+**On Linux**
+
+```bash
+pip install mkl-static mkl-include
+# CUDA only: Add LAPACK support for the GPU if needed
+conda install -c pytorch magma-cuda121  # or the magma-cuda* that matches your CUDA version from https://anaconda.org/pytorch/repo
+
+# (optional) If using torch.compile with inductor/triton, install the matching version of triton
+# Run from the pytorch directory after cloning
+# For Intel GPU support, please explicitly `export USE_XPU=1` before running command.
+make triton
+```
+
+**On MacOS**
+
+```bash
+# Add this package on intel x86 processor machines only
+pip install mkl-static mkl-include
+# Add these packages if torch.distributed is needed
+conda install pkg-config libuv
+```
+
+**On Windows**
+
+```bash
+pip install mkl-static mkl-include
+# Add these packages if torch.distributed is needed.
+# Distributed package support on Windows is a prototype feature and is subject to changes.
+conda install -c conda-forge libuv=1.39",,,,
+pwc.greatest,,,,,https://github.com/pytorch/pytorch,"82,127",TRUE,,,,Install PyTorch,,,"**On Linux**
+
+If you would like to compile PyTorch with [new C++ ABI](https://gcc.gnu.org/onlinedocs/libstdc++/manual/using_dual_abi.html) enabled, then first run this command:
+```bash
+export _GLIBCXX_USE_CXX11_ABI=1
+```
+
+Please **note** that starting from PyTorch 2.5, the PyTorch build with XPU supports both new and old C++ ABIs. Previously, XPU only supported the new C++ ABI. If you want to compile with Intel GPU support, please follow [Intel GPU Support](#intel-gpu-support).
+
+If you're compiling for AMD ROCm then first run this command:
+```bash
+# Only run this if you're compiling for ROCm
+python tools/amd_build/build_amd.py
+```
+
+Install PyTorch
+```bash
+export CMAKE_PREFIX_PATH=${CONDA_PREFIX:-""$(dirname $(which conda))/../""}
+python setup.py develop
+```
+
+> _Aside:_ If you are using [Anaconda](https://www.anaconda.com/distribution/#download-section), you may experience an error caused by the linker:
+>
+> ```plaintext
+> build/temp.linux-x86_64-3.7/torch/csrc/stub.o: file not recognized: file format not recognized
+> collect2: error: ld returned 1 exit status
+> error: command 'g++' failed with exit status 1
+> ```
+>
+> This is caused by `ld` from the Conda environment shadowing the system `ld`. You should use a newer version of Python that fixes this issue. The recommended Python version is 3.8.1+.
+
+**On macOS**
+
+```bash
+python3 setup.py develop
+```
+
+**On Windows**
+
+If you want to build legacy python code, please refer to [Building on legacy code and CUDA](https://github.com/pytorch/pytorch/blob/main/CONTRIBUTING.md#building-on-legacy-code-and-cuda)
+
+**CPU-only builds**
+
+In this mode PyTorch computations will run on your CPU, not your GPU
+
+```cmd
+python setup.py develop
+```
+
+Note on OpenMP: The desired OpenMP implementation is Intel OpenMP (iomp). In order to link against iomp, you'll need to manually download the library and set up the building environment by tweaking `CMAKE_INCLUDE_PATH` and `LIB`. The instruction [here](https://github.com/pytorch/pytorch/blob/main/docs/source/notes/windows.rst#building-from-source) is an example for setting up both MKL and Intel OpenMP. Without these configurations for CMake, Microsoft Visual C OpenMP runtime (vcomp) will be used.
+
+**CUDA based build**
+
+In this mode PyTorch computations will leverage your GPU via CUDA for faster number crunching
+
+[NVTX](https://docs.nvidia.com/gameworks/content/gameworkslibrary/nvtx/nvidia_tools_extension_library_nvtx.htm) is needed to build Pytorch with CUDA.
+NVTX is a part of CUDA distributive, where it is called ""Nsight Compute"". To install it onto an already installed CUDA run CUDA installation once again and check the corresponding checkbox.
+Make sure that CUDA with Nsight Compute is installed after Visual Studio.
+
+Currently, VS 2017 / 2019, and Ninja are supported as the generator of CMake. If `ninja.exe` is detected in `PATH`, then Ninja will be used as the default generator, otherwise, it will use VS 2017 / 2019.
+<br/> If Ninja is selected as the generator, the latest MSVC will get selected as the underlying toolchain.
+
+Additional libraries such as
+[Magma](https://developer.nvidia.com/magma), [oneDNN, a.k.a. MKLDNN or DNNL](https://github.com/oneapi-src/oneDNN), and [Sccache](https://github.com/mozilla/sccache) are often needed. Please refer to the [installation-helper](https://github.com/pytorch/pytorch/tree/main/.ci/pytorch/win-test-helpers/installation-helpers) to install them.
+
+You can refer to the [build_pytorch.bat](https://github.com/pytorch/pytorch/blob/main/.ci/pytorch/win-test-helpers/build_pytorch.bat) script for some other environment variables configurations
+
+
+```cmd
+cmd
+
+:: Set the environment variables after you have downloaded and unzipped the mkl package,
+:: else CMake would throw an error as `Could NOT find OpenMP`.
+set CMAKE_INCLUDE_PATH={Your directory}\mkl\include
+set LIB={Your directory}\mkl\lib;%LIB%
+
+:: Read the content in the previous section carefully before you proceed.
+:: [Optional] If you want to override the underlying toolset used by Ninja and Visual Studio with CUDA, please run the following script block.
+:: ""Visual Studio 2019 Developer Command Prompt"" will be run automatically.
+:: Make sure you have CMake >= 3.12 before you do this when you use the Visual Studio generator.
+set CMAKE_GENERATOR_TOOLSET_VERSION=14.27
+set DISTUTILS_USE_SDK=1
+for /f ""usebackq tokens=*"" %i in (`""%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe"" -version [15^,17^) -products * -latest -property installationPath`) do call ""%i\VC\Auxiliary\Build\vcvarsall.bat"" x64 -vcvars_ver=%CMAKE_GENERATOR_TOOLSET_VERSION%
+
+:: [Optional] If you want to override the CUDA host compiler
+set CUDAHOSTCXX=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\bin\HostX64\x64\cl.exe
+
+python setup.py develop
+
+```",,,,
+pwc.greatest,,,,,https://github.com/pytorch/pytorch,"82,127",TRUE,,,,,Adjust Build Options (Optional),,"You can adjust the configuration of cmake variables optionally (without building first), by doing
+the following. For example, adjusting the pre-detected directories for CuDNN or BLAS can be done
+with such a step.
+
+On Linux
+```bash
+export CMAKE_PREFIX_PATH=${CONDA_PREFIX:-""$(dirname $(which conda))/../""}
+python setup.py build --cmake-only
+ccmake build  # or cmake-gui build
+```
+
+On macOS
+```bash
+export CMAKE_PREFIX_PATH=${CONDA_PREFIX:-""$(dirname $(which conda))/../""}
+MACOSX_DEPLOYMENT_TARGET=10.9 CC=clang CXX=clang++ python setup.py build --cmake-only
+ccmake build  # or cmake-gui build
+```",,,,
+pwc.greatest,,,,,https://github.com/pytorch/pytorch,"82,127",TRUE,,Installation,Docker Image,,,,,container,,,
+pwc.greatest,,,,,https://github.com/pytorch/pytorch,"82,127",TRUE,,,,Using pre-built images,,,"You can also pull a pre-built docker image from Docker Hub and run with docker v19.03+
+
+```bash
+docker run --gpus all --rm -ti --ipc=host pytorch/pytorch:latest
+```
+
+Please note that PyTorch uses shared memory to share data between processes, so if torch multiprocessing is used (e.g.
+for multithreaded data loaders) the default shared memory segment size that container runs with is not enough, and you
+should increase shared memory size either with `--ipc=host` or `--shm-size` command line options to `nvidia-docker run`.",,,,
+pwc.greatest,,,,,https://github.com/pytorch/pytorch,"82,127",TRUE,,,,Building the image yourself,,,"**NOTE:** Must be built with a docker version > 18.06
+
+The `Dockerfile` is supplied to build images with CUDA 11.1 support and cuDNN v8.
+You can pass `PYTHON_VERSION=x.y` make variable to specify which Python version is to be used by Miniconda, or leave it
+unset to use the default.
+
+```bash
+make -f docker.Makefile
+# images are tagged as docker.io/${your_docker_username}/pytorch
+```
+
+You can also pass the `CMAKE_VARS=""...""` environment variable to specify additional CMake variables to be passed to CMake during the build.
+See [setup.py](./setup.py) for the list of available variables.
+
+```bash
+make -f docker.Makefile
+```",,,,
+pwc.greatest,,,,,https://github.com/tensorflow/models,"76,950",TRUE,,Installation,,Method 1: Install the TensorFlow Model Garden pip package,,,,"source, package manager",,,
+pwc.greatest,,,,,https://github.com/tensorflow/models,"76,950",TRUE,,Installation,,Method 2: Clone the source,,,,,,,
+pwc.greatest,,,,,https://github.com/compvis/stable-diffusion,"69,141",TRUE,,Requirements,,,,,"A suitable [conda](https://conda.io/) environment named `ldm` can be created
+and activated with:
+
+```
+conda env create -f environment.yaml
+conda activate ldm
+```
+
+You can also update an existing [latent diffusion](https://github.com/CompVis/latent-diffusion) environment by running
+
+```
+conda install pytorch torchvision -c pytorch
+pip install transformers==4.19.2 diffusers invisible-watermark
+pip install -e .
+``` ",source,,environment.yaml,
+pwc.greatest,,,,,https://github.com/openai/whisper,"67,527",TRUE,,Setup,,,,,"We used Python 3.9.9 and [PyTorch](https://pytorch.org/) 1.10.1 to train and test our models, but the codebase is expected to be compatible with Python 3.8-3.11 and recent PyTorch versions. The codebase also depends on a few Python packages, most notably [OpenAI's tiktoken](https://github.com/openai/tiktoken) for their fast tokenizer implementation. You can download and install (or update to) the latest release of Whisper with the following command:
+
+    pip install -U openai-whisper
+
+Alternatively, the following command will pull and install the latest commit from this repository, along with its Python dependencies:
+
+    pip install git+https://github.com/openai/whisper.git 
+
+To update the package to the latest version of this repository, please run:
+
+    pip install --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git
+
+It also requires the command-line tool [`ffmpeg`](https://ffmpeg.org/) to be installed on your system, which is available from most package managers:
+
+```bash
+# on Ubuntu or Debian
+sudo apt update && sudo apt install ffmpeg
+
+# on Arch Linux
+sudo pacman -S ffmpeg
+
+# on MacOS using Homebrew (https://brew.sh/)
+brew install ffmpeg
+
+# on Windows using Chocolatey (https://chocolatey.org/)
+choco install ffmpeg
+
+# on Windows using Scoop (https://scoop.sh/)
+scoop install ffmpeg
+```
+
+You may need [`rust`](http://rust-lang.org) installed as well, in case [tiktoken](https://github.com/openai/tiktoken) does not provide a pre-built wheel for your platform. If you see installation errors during the `pip install` command above, please follow the [Getting started page](https://www.rust-lang.org/learn/get-started) to install Rust development environment. Additionally, you may need to configure the `PATH` environment variable, e.g. `export PATH=""$HOME/.cargo/bin:$PATH""`. If the installation fails with `No module named 'setuptools_rust'`, you need to install `setuptools_rust`, e.g. by running:
+
+```bash
+pip install setuptools-rust
+```",package_manager,,,
+pwc.greatest,,,,,https://github.com/ggerganov/llama.cpp,"64,931",TRUE,,Usage,Basic usage,,,,"- Method 1: Clone this repository and build locally, see [how to build](./docs/build.md)",source,,,
+pwc.greatest,,,,,https://github.com/ggerganov/llama.cpp,"64,931",TRUE,,Usage,Basic usage,,,,"- Method 2: If you are using MacOS or Linux, you can install llama.cpp via [brew, flox or nix](./docs/install.md)",package_manager,,,
+pwc.greatest,,,,,https://github.com/ggerganov/llama.cpp,"64,931",TRUE,,Usage,Basic usage,,,,"- Method 3: Use a Docker image, see [documentation for Docker](./docs/docker.md)",container,,,
+pwc.greatest,,,,,https://github.com/ggerganov/llama.cpp,"64,931",TRUE,,Usage,Basic usage,,,,- Method 4: Download pre-built binary from [releases](https://github.com/ggerganov/llama.cpp/releases),binary,,,
+,,,,,https://github.com/tesseract-ocr/tesseract,"60,991",TRUE,,Installing Tesseract,,,,,"You can either [Install Tesseract via pre-built binary package](https://tesseract-ocr.github.io/tessdoc/Installation.html)
+or [build it from source](https://tesseract-ocr.github.io/tessdoc/Compiling.html).
+
+Before building Tesseract from source, please check that your system has a compiler which is one of the [supported compilers](https://tesseract-ocr.github.io/tessdoc/supported-compilers.html).","binary, source",,from external sources,
 bio.tools.updated.latest,https://bio.tools/crocodeel,,,,https://github.com/metagenopolis/CroCoDeEL,5,TRUE,,Installations,,,,,"## Installation
 
 CroCoDeEL is available on bioconda:
@@ -268,12 +526,19 @@ pip install crocodeel
 Finally, you can test that CroCoDeEL is correctly installed with the following command:
 ```
 crocodeel test_install
-```","source,pacakge",,,
-bio.tools.updated.latest,https://bio.tools/bcftools,,,,,,,,,,,,,,,,,
-bio.tools.updated.latest,https://bio.tools/samtools,,,,,,,,,,,,,,,,,
-bio.tools.updated.latest,https://bio.tools/htslib,,,,,,,,,,,,,,,,,
-bio.tools.updated.latest,https://bio.tools/sirius,,,,,,,,,,,,,,,,,
-bio.tools.updated.latest,https://bio.tools/qcxms,,,,https://github.com/qcxms/QCxMS,35,TRUE,,,"Binary, Conda, Meson",,,,"**Installation**
+```",package_manager,,,
+bio.tools.updated.latest,https://bio.tools/bcftools,,,,https://github.com/samtools/bcftools,,FALSE,,,,,,,,,,,
+bio.tools.updated.latest,https://bio.tools/htslib,,,,https://github.com/samtools/htslib/blob/develop/INSTALL,,TRUE,,,,,,,,,,Install.me,
+bio.tools.updated.latest,https://bio.tools/sirius,,,,https://github.com/sirius-ms/sirius/blob/stable/README.md,,TRUE,,,[Installation](https://v6.docs.sirius-ms.io/install),,,,"For  Windows and MacOS, the installer version of SIRIUS (msi/pkg) should be preferred but might require administrator permissions.
+
+Since we do not pay Microsoft/Apple for certification, you might have to confirm that you want to trust ""software from
+an unknown source"" on Windows/MacOS when using the installers provided by the Böcker group.
+Therefore, we highly recommend using the [**signed** installers](https://github.com/bright-giant/sirius/releases) provided by
+[Bright Giant](https://bright-giant.com) (also linked above).
+These installers ease the installation process by triggering no (or less) security issues of the respective OS.
+
+See the [documentation](https://v6.docs.sirius-ms.io/install) for details.",system,,,
+bio.tools.updated.latest,https://bio.tools/qcxms,,,,https://github.com/qcxms/QCxMS,35,TRUE,,,Binary,,,,"**Installation**
 
 ### Binary 
 
@@ -323,23 +588,32 @@ meson setup build -Dfortran_link_args=-static
 ninja -C build 
 ```
 
-This will build a static linked binary in the ``build`` folder. Copy the binary from ``build/qcxms`` file into a directory in your path, e.g. ``~/bin/``.","binary, package manager, container",,new_build_system? Meson?,
-bio.tools.updated.latest,https://bio.tools/xtb_molecular_optimization,,,,https://github.com/grimme-lab/xtb,568,TRUE,,Installation,"Meson, Cmake, Conda",,,,,"binary, package manager, build system",,,
-bio.tools.updated.latest,https://bio.tools/MSIdV,,,,,,,,,,,,,,,,,
-bio.tools.updated.latest,https://bio.tools/msigen,,,,https://github.com/LabLaskin/MSIGen,1,TRUE,,Installation on Windows,,,,,"Run the following in Anaconda Prompt one line at a time:
+This will build a static linked binary in the ``build`` folder. Copy the binary from ``build/qcxms`` file into a directory in your path, e.g. ``~/bin/``.",binary,,,
+bio.tools.updated.latest,https://bio.tools/qcxms,,,,https://github.com/qcxms/QCxMS,35,TRUE,,,Conda,,,,,package_manager,,"cmake should be package manager or build system?
+    Build systems/tools manage your compilation requirements.
+    Package managers/tools manager your library requirements.
+    A build tool may have integrated package management.",
+bio.tools.updated.latest,https://bio.tools/qcxms,,,,https://github.com/qcxms/QCxMS,35,TRUE,,,Meson,,,,,build_system,,,
+bio.tools.updated.latest,https://bio.tools/xtb_molecular_optimization,,,,https://github.com/grimme-lab/xtb,568,TRUE,,Installation,Meson,Compiling with meson on macOS,,,,build_system,,,
+bio.tools.updated.latest,https://bio.tools/xtb_molecular_optimization,,,,https://github.com/grimme-lab/xtb,568,TRUE,,Installation,Cmake,,,,,build_system,,,
+bio.tools.updated.latest,https://bio.tools/xtb_molecular_optimization,,,,https://github.com/grimme-lab/xtb,568,TRUE,,Installation,Conda,,,,,package_manager,,,
+bio.tools.updated.latest,https://bio.tools/msigen,,,,https://github.com/LabLaskin/MSIGen,1,TRUE,,Installation on Windows,,,,,"Using Anaconda (https://www.anaconda.com/download), create a new environment titled ""MSIGen"" with python >=3.9 and <3.12 and activate it. Then, MSIGen can be installed using the pip package manager.
+
+Run the following in Anaconda Prompt one line at a time:
 ```
 conda create --name MSIGen python=3.11 -y
 conda activate MSIGen
-pip install MSIGen",package manager,,,
-bio.tools.updated.latest,https://bio.tools/alphaesm_hfolds,,,,,,,,,,,,,,,,,
+pip install MSIGen
+```",package_manager,,,
+bio.tools.updated.latest,https://bio.tools/msigen,,,,https://github.com/LabLaskin/MSIGen,1,TRUE,,,For GUI tool,,,,,,,,
+bio.tools.updated.latest,https://bio.tools/msigen,,,,https://github.com/LabLaskin/MSIGen,1,TRUE,,,For Juper Notebook Tool,,,,,,,,
+bio.tools.updated.latest,https://bio.tools/msigen,,,,https://github.com/LabLaskin/MSIGen,1,TRUE,,,Command Line Interface,,,,,,,,
 bio.tools.updated.latest,https://bio.tools/scGraph2Vec,,,,https://github.com/LPH-BIG/scGraph2Vec,0,TRUE,Installation,,,,,,"```
 conda create -n scgraph2vec python=3.7
 source activate scgraph2vec
 git clone https://github.com/LPH-BIG/scGraph2Vec
 ```",source,,,
-bio.tools.updated.latest,https://bio.tools/imzmlconverter,,,,,,,,,,,,,,,,,
 bio.tools.updated.latest,https://bio.tools/AluMine,,,,https://github.com/bioinfo-ut/AluMine,,FALSE,,,,,,,,,,,
-bio.tools.updated.latest,https://bio.tools/cytoviewer,,,,,,,,,,,,,,,,,
 bio.tools.updated.latest,https://bio.tools/ecti_atopic_dermatitis,,,,https://github.com/JenHungWang/ECTI_Atopic_Dermatitis,0,TRUE,,Usage,,,,,"
 ## **Usage**
 1. Execution via cross-platform executable GUI
@@ -353,31 +627,39 @@ bio.tools.updated.latest,https://bio.tools/ecti_atopic_dermatitis,,,,https://git
         pip install -r requirements.txt
         ```
     - Run `AD_Assessment_GUI.py`
-    - Analysis results will be saved within the selected path in a folder titled `CNO_Detection`
+    - Analysis results will be saved within the selected path in a folder titled `CNO_Detection`",source,,to check the first method -- executable GUI?,
+bio.tools.updated.latest,https://bio.tools/ecti_atopic_dermatitis,,,,https://github.com/JenHungWang/ECTI_Atopic_Dermatitis,0,TRUE,,Usage,,,,,2. Execution via python script,source,,,
+bio.tools.updated.latest,https://bio.tools/artem,,,,https://github.com/david-bogdan-r/ARTEM,1,TRUE,,Installation,,,,,"Clone the GitHub repository by typing
+    git clone https://github.com/david-bogdan-r/ARTEM.git",source,,,
+bio.tools.updated.latest,https://bio.tools/squarna,,,,https://github.com/febos/SQUARNA,10,TRUE,Installation & Dependencies,,,,,,"Clone the GitHub repository by typing:
 
-## **Executable**
+	git clone https://github.com/febos/SQUARNA
+	
+SQUARNA requires Python3 of at least 3.8 version along with
+a (hopefully) arbitrary version of NumPy library. 
 
-1. Install PyInstaller in terminal:
-                
-    ```    
-    pip install pyinstaller
-    ```
-   
-2. Run command in terminal:
+To use as a Python function:
 
-    ```    
-    pyinstaller --onedir .\AD_Assessment_GUI.py
-    ```",source,,to check the first method -- executable GUI?,
-bio.tools.updated.latest,https://bio.tools/Fiji,,,,,,,,,,,,,,,,,
-bio.tools.updated.latest,https://bio.tools/demuxSNP,,,,,,,,,,,,,,,,,
-bio.tools.updated.latest,https://bio.tools/artem,,,,https://github.com/david-bogdan-r/ARTEM,1,TRUE,,Installation,,,,,,source,,,
-bio.tools.updated.latest,https://bio.tools/squarna,,,,https://github.com/febos/SQUARNA,10,TRUE,Installation & Dependencies,,,,,,,package manager,,,
-bio.tools.updated.latest,https://bio.tools/artemis3D,,,,https://github.com/david-bogdan-r/ARTEMIS,3,TRUE,,Installation,,,,,,source,,,
-bio.tools.updated.latest,https://bio.tools/bdpn,,,,https://github.com/evolbioinfo/bdpn,1,TRUE,,Installation,"Run in python3 or command-line (for linux systems, recommended Ubuntu 21 or newer versions), Basic usage in a command line",,,,"There are 4 alternative ways to run __bdpn__ on your computer: 
+	pip install SQUARNA",package_manager,,,
+bio.tools.updated.latest,https://bio.tools/bdpn,,,,https://github.com/evolbioinfo/bdpn,1,TRUE,,Installation,,,,,"There are 4 alternative ways to run __bdpn__ on your computer: 
 with [docker](https://www.docker.com/community-edition), 
 [apptainer](https://apptainer.org/),
-in Python3, or via command line (requires installation with Python3).","package manager, source, container",,,
-acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/DeepSoftwareAnalytics/LibDB,33,TRUE,,,Build artifact,,,,,source,,,
+in Python3, or via command line (requires installation with Python3).",package_manager,,,
+bio.tools.updated.latest,https://bio.tools/bdpn,,,,https://github.com/evolbioinfo/bdpn,1,TRUE,,Installation,"Run in python3 or command-line (for linux systems, recommended Ubuntu 21 or newer versions)",Basic usage in a command line,,,,source,,,
+bio.tools.updated.latest,https://bio.tools/bdpn,,,,https://github.com/evolbioinfo/bdpn,1,TRUE,,Installation,Run with docker,Basic usage,,,,container,,,
+bio.tools.updated.latest,https://bio.tools/bdpn,,,,https://github.com/evolbioinfo/bdpn,1,TRUE,,Installation,Run with apptainer,Basic usage,,,,,,,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/DeepSoftwareAnalytics/LibDB,33,TRUE,,,Pre-requisites,,,,"Basic knowledge about Java Development, Springboot and Annotation Development.<br>
+For example, if you use IDE like VScode or Idea, basic java development environment need to be installed such as `Java Extension Pack`, `MAVEN for JAVA`. It should be noted that we use Lombok Annotation and Springboot in code that may depend on extensions `Lombok Annotations Support` and `Spring Boot Tools` for IDE to debug or run. Besides, LibmagicJnaWrapper depends on libmagic to get file type, please install this library and modify the paths in LibmagicJnaWrapper.java. It can be easily installed using apt/brew command on Linux/MacOS.",,,I dont know,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/DeepSoftwareAnalytics/LibDB,33,TRUE,,,Build artifact,,,,"Env:
+- Java: Java 11.
+- IntelliJ Idea. (We have found that the extractor artifact works well only under IntelliJ Idea to build the artifact. Tested successful under Windows IntelliJ Idea 2021.2) 
+
+Steps:
+1. Ghidra: 9.1.2. The file `ghidra.jar` is stored under `/user/lib/ghidra.jar` you should put it under `/featureExtractor/bcat_client/lib` first.
+2. Open Idea, open project ""binary_lib_detection-main\featureExtractor"". Wait until indexing finish, if error occurs, try reopen/clean the project.
+3. File -> Project Structure -> Project SDK, select Java SDK 11.
+4. File -> Project Structure -> Artifacts -> ""+"" -> jar -> from modules with dependencies -> Module (""bcat_client"") -> Main Class (""ClientApplication"") -> JAR files from libraries (select `copy to the output directory and link via manifest`) 
+    5. The jars will be generated at path: featureExtractor\out\artifacts\bcat_client_jar, with `bcat_client.jar` inside.",,,I dont know,
 acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/yrahul3910/code-smell-detection,5,FALSE,,,,,,,,,,,
 acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/microsoft/methods2test,130,FALSE,,,,,,,,,,,
 acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/ideas-labo/MSR2022-encoding-study,0,TRUE,Installation,,,,,," 1. Download all the files into the same folder.
@@ -385,80 +667,757 @@ acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced
  3. Run Encoding.py and install all missing packages according to the runtime messages. ",source,,,
 acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/pridkett/gitminer-data-rails,0,FALSE,,,,,,,,,,,
 acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/unknowngithubuser1/data,0,FALSE,,,,,,,,,,,
-acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/SoftwareUnderstanding/inspect4py,27,TRUE,,Install,"Installation from pypi, Installation from code, Installation through Docker",,,,,"source, package manager, container",,,
-acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/tue-mdse/conferenceMetrics,,FALSE,,,,,,,,,,,Interesting dataset to reuse
-acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/Anonymous633671/STABILIZER,1,TRUE,,How to run,,,,,,source,,,
-acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/gitbugactions/gitbug-java,21,TRUE,,Setup GitBug-Java,,,,,,source,,,to be confirmed
-acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/JetBrains-Research/topias,4,TRUE,,How to use,,,,,,plugin,,,new method?
-acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/ISE-Research/girt-model,5,TRUE,,,"How to load model (local), UI (online)",,,,,"package manager, other",,,new method UI?
-acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/PurdueDualityLab/PeaTMOSS-Artifact,3,TRUE,,How To Install,,,,,,source,,,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/SoftwareUnderstanding/inspect4py,27,TRUE,,Install,Preliminaries,,,,,,,,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/SoftwareUnderstanding/inspect4py,27,TRUE,,Install,Python version,,,,,,,,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/SoftwareUnderstanding/inspect4py,27,TRUE,,Install,Operative System,,,,,,,,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/SoftwareUnderstanding/inspect4py,27,TRUE,,Install,Installation from pypi,,,,,package_manager,,,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/SoftwareUnderstanding/inspect4py,27,TRUE,,Install,Installation from code,,,,,source,,,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/SoftwareUnderstanding/inspect4py,27,TRUE,,Install,Package depenencies,,,,,,,,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/SoftwareUnderstanding/inspect4py,27,TRUE,,Install,Installation through Docker,,,,,container,,,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/Anonymous633671/STABILIZER,1,TRUE,,How to run,,,,,"each of the case studies (1) Defect Prediction Casse Study (2) Project Health Estimation Case Study
+Assuming there are N projects we want to use as trining data, run the following commands sequentially -
+### Defect Prediction:
+1. python src/Birch_Bellwether.py N 
+2. python src/calculate_comparisons.py N 
+3. python src/Birch_Bellwether_v2.py
+4. python src/Find_Bellwethers.py
+5. python src/Final_Performance.py
+6. python src/TCA.py
+7. python src/TPTL.py
+8. python src/TCA_test.py
+9. python src/Stats.py
+
+### Project Health Estimation:
+1. python src/birch_bellwether_time.py N
+2. python src/calculate_comparisons.py N
+3. python src/attribute_selector.py
+4. python src/birch_bellwether_p_CFS.py
+5. python src/Find_bellwethers.py
+6. python src/Performance_Calculator.py
+7. python src/Stats_files.py
+
+## Generating Results",source,,,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/gitbugactions/gitbug-java,21,TRUE,,Setup GitBug-Java,,,,,"
+Requirements:
+- Python (Recommended 3.11)
+- Poetry (Recommended 1.8 and higher)
+- Docker (v20 or higher)
+- If you are on Ubuntu/Debian, choose a system with GLIBC 2.32 or 2.34 as some of the dependencies require these versions (A docker image would not be suitable as it would require DinD). 
+
+  For example you can create a virtual machine of ubuntu 21.10 (glibc 2.32). Here is a quick setup of an ubuntu VM:
+  - Install multipass (allows to quickly create ubuntu VMs and works on Linux/Mac/Windows). Follow instructions here: https://multipass.run/docs/install-multipass.
+  - create an ubuntu image (e.g, 280G in disk space, 16G in memory and 2 cpus): 
+    ```bash
+    multipass launch 21.10 --disk 280G --memory 16G --cpus 2
+    ```
+  - login the newly created VM
+    ```bash
+    multipass shell VM-NAME-PRINTED-LAST-STEP
+    ```
+  - install docker within the image and add the user to the docker group
+
+Once the above requirements are satisfied within your system or the VM machine is created, clone this repository and execute the following steps:
+
+1. Setup Python environment
+    ```bash
+    poetry shell
+    poetry install --no-root
+    ```
+
+    **Note:** Poetry shell will attempt to create a new virtual environment. 
+    However, if you are already inside a virtual environment, poetry will use the that environment.
+    In such case, the subsequent commands would only work with a Python3.11 environment.
+
+2. Add GitBug-Java and custom Act version to path
+    ```bash
+    export PATH=""$(pwd):$(pwd)/bin:$PATH""
+    ```
+    **Note:** The above command needs to be executed on every new shell instance
+    
+3. Run Setup (Installs Docker Image ~50GiB, downloads required dependencies ~80GiB). The downloadable data size is around 130GB. However, after unzipping files, the space taken goes up to 240GB (it goes down after deleting the zipped files).
+    ```bash
+    gitbug-java setup
+    ```
+
+**NOTE: Ensure that all `gitbug-java` commands are executed without using `sudo` to guarantee correct functionality.**",source,,to be confirmed,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/JetBrains-Research/topias,4,TRUE,,How to use,,,,,"Just install plugin from official JetBrains repository, and it will find a VCS root in your Java project. If VCS root was not found, you could set it manually in plugin's settings (Settings -> Topias plugin settings).",plugin,,new method?,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/ISE-Research/girt-model,5,TRUE,,,How to load model (local),,,,,package_manager,,transformers,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/ISE-Research/girt-model,5,TRUE,,,UI (online),,,,"
+This UI is designed to interact with GIRT-Model, it is also accessible in huggingface: https://huggingface.co/spaces/nafisehNik/girt-space
+1. IRT input examples
+2. metadata fields of IRT inputs
+3. summary field of IRT inputs
+4. model config
+5. generated instruction based on the IRT inputs
+6. generated IRT",,,,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/PurdueDualityLab/PeaTMOSS-Artifact,3,TRUE,,How To Install,,,,,"To run the scripts in this project, you must install python 3.11 and SQLAlchemy v2.0 or greater.
+
+These package can be installed using the `anaconda` environment manager
+1. Install the latest version of anaconda from [here](https://www.anaconda.com/download)
+1. run `conda env create -f environment.yml` to create the anaconda environment `PeaTMOSS`
+1. Activate the environment using `conda activate PeaTMOSS`
+
+Alternatively, you can navigate to each packages respective pages and install them.",source,,,
 acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/ISE-Research/DistilKaggle,,FALSE,,,,,,,,,,,
-acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/refactorings/anti-copy-paster,6,TRUE,,How To Install,,,,,,plugin,,,
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/mustafalail/TPV-Tool/tree/main,1,TRUE,,TPV Installation Instructions,,,,,,"plugin, source",,,to be checked
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/jpmorganchase/topical,19,TRUE,,,,,,,,source,,,
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/LiamTodd/github-inclusifier,1,TRUE,,GitHubInclusifier source code,"Front end, Back end",,,,,"package manager, source",,,to be checked
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/saifarnab/code_review,1,TRUE,,,,,,,,source,,,
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/X-lab2017/open-galaxy,27,TRUE,Install,,Build your own graphs,,,,,source,,,
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/FSoft-AI4Code/Dopamin,7,TRUE,,Set up,,,,,,source,,,
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/lunyiliu/LogPrompt,36,TRUE,,__ Installation,,,,,,source,,,should we include usage?
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/andrehora/spotflow,9,TRUE,,Install,,,,,,package manager,,,
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/feifeiniu-se/RAT_Demo,0,TRUE,,How to run,,,,,,binary, ,,
+acm.msr,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&sortBy=cited,,,,https://github.com/refactorings/anti-copy-paster,6,TRUE,,How To Install,,,,,"AntiCopyPaster requires IntelliJ IDEA version 2023.2 to work. To install the plugin:
+
+1. Download the pre-built version of the plugin from 
+   [here](https://sourceforge.net/projects/anti-copy-paster/files/latest/download).
+2. Open IntelliJ IDEA and go to `File`/`Settings`/`Plugins`.
+3. Select the gear icon, and choose `Install Plugin from Disk...`.
+4. Choose the downloaded ZIP archive.
+5. Click `Apply`.
+6. Restart the IDE.",plugin,,,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/mustafalail/TPV-Tool/tree/main,1,TRUE,,TPV Installation Instructions,,,,,"This repository contains a modified distribution of USE that includes our TPV plug-in. To install the tool, download the repository files as a zip folder and extract them in the desired install directory.
+
+**Note: You must install the Java Runtime Environment in order to run USE**.",source,to be checked,,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/LiamTodd/github-inclusifier,1,TRUE,,GitHubInclusifier source code,Front end,,,,"The front end is implemented with ReactJS, and can be started by running `npm start`.",package_manager,to be checked,,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/LiamTodd/github-inclusifier,1,TRUE,,GitHubInclusifier source code,Back end,,,,"The back end is implemented with Django, and can be started by activating the virtual environment with `.\venv\Scipts\activate`, followed by `python ./backend/manage.py runserver`.",source,,,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/saifarnab/code_review,1,TRUE,How to run:,,,,,,"- Required python version >= 3.8.10
+'- Create virtual environment and activate venv in project
+```shell script
+$ python -m venv env
+$ source venv/bin/activate
+```",source,,,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/X-lab2017/open-galaxy,27,TRUE,Install,,,,,,"Some packages in this repository are old, `Node 14` MUST be used to start the project. [nvm](https://github.com/nvm-sh/nvm) is recommended to manage multiple versions of `Node` in your machine.
+
+```bash
+git config --global url.""https://github.com/"".insteadOf git://github.com/ # one package uses a no longer supported url, this is a fix
+git clone https://github.com/X-lab2017/open-galaxy.git
+cd open-galaxy
+yarn install
+yarn start # This will start local development sever with auto-rebuild.
+```",source,,,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/FSoft-AI4Code/Dopamin,7,TRUE,,Set up,,,,,"lone Dopamin repo:
+```
+git clone https://github.com/FSoft-AI4Code/Dopamin.git
+cd Dopamin
+```
+
+Python >= 3.8
+
+Install requirements: ```pip install -r requirements.txt```
+
+**Note:** We employ 2 NVIDIA A100 GPUs for training the model, configuring a batch size of 32 per GPU, thus the total batchsize is 64. However, replication may not be feasible when utilizing a single GPU with a batch size of 64.",source,,,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/lunyiliu/LogPrompt,36,TRUE,,__ Installation,,,,,"```
+$ pip install -r requirements.txt
+```",source,,should we include usage?,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/andrehora/spotflow,9,TRUE,,Install,,,,,"```
+pip install spotflow
+```",package_manager,,,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/feifeiniu-se/RAT_Demo,0,TRUE,,How to run,,,,,"Requirements: JDK>=17
+
+Download the ""xxx-jar-with-dependency.jar"" from: https://github.com/feifeiniu-se/RAT_Demo/releases/tag/release-v1.0.0
+
+RAT is command line tool so far, it supports three types of commands:
+
+```
+> -a <git-repo-folder> -s <sqlite-file-path> # detects all code history
+
+> -bc <git-repo-folder> <start-commit-sha1> <end-commit-sha1> -s <sqlite-file-path> # detects code history between start commit and end commit
+
+> -c <git-repo-folder> <commit-sha1> -s <sqlite-file-path> #detects code history between last commit and this commit
+```
+""&lt; git-repo-folder &gt;"" defines the path of the local repository, ""&lt; sqlite-file-path &gt;"" indicates the path for saving the SQLite database.
+
+Tip: SQLite is a lightweight database, which requires no server, users can read the data with python, or other interfaces.
+
+For future we may support IDEs, Chrome extension...
+
+
+
+Example for how to use in command _
+
+```
+> java -jar TraceabilityModel-1.0-SNAPSHOT-jar-with-dependencies.jar -bc C:\dataset\maven 698119ea0be74b3733fdcf49997a6bf46f160950 a15c47e27076ebfe87f4df881fe9173a7887ae50 -s D:\\tool\\database\\maven.sqlite3
+
+> java -jar TraceabilityModel-1.0-SNAPSHOT-jar-with-dependencies.jar -bc C:\dataset\jitfine\ant-ivy 929363e121230286922d1ec3aaee21b2defba5b6 dbdf9d6c0534733bf98e14de914a337e133f0123 -s D:\\tool\\database\\ant-ivy.sqlite3
+
+> java -jar TraceabilityModel-1.0-SNAPSHOT-jar-with-dependencies.jar -a C:\dataset\maven -s D:\\tool\\database\\maven.sqlite3
+
+> java -jar TraceabilityModel-1.0-SNAPSHOT-jar-with-dependencies.jar -c C:\dataset\jitfine\archiva 8e757bd2a0faec0732b512ea1d4df1e082aea6ff -s D:\\tool\\database\\archiva.sqlite3
+```
+
+You can replace the path of git repository, start hash code, end hash code and the path of sqlite file.
+
+The following are the github URLs in the example_
+
+https://github.com/apache/ant-ivy
+
+https://github.com/apache/maven
+
+https://github.com/apache/archiva",binary, ,,
 acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/hypertrons/hypertrons-crx,344,TRUE,,Install,,,,,"<img src=""https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/chrome/chrome.svg"" width=""48"" alt=""Chrome"" valign=""middle""> [Click here to install Chrome extension](https://chrome.google.com/webstore/detail/hypercrx/ijchfbpdgeljmhnhokmekkecpbdkgabc)
 
 <img src=""https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/edge/edge.svg"" width=""48"" alt=""Edge"" valign=""middle""> [Click here to install Edge extension](https://microsoftedge.microsoft.com/addons/detail/hypercrx/lbbajaehiibofpconjgdjonmkidpcome)
 
-For more information please refer to [Installation Guide](./INSTALLATION.md).",plugin,,,to check the installation.md
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/TSUMahmud/apicia,2,TRUE,,How to run,,,,,,source,,,
+For more information please refer to [Installation Guide](./INSTALLATION.md).",,,to check the installation.md,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/TSUMahmud/apicia,2,TRUE,,How to run,,,,,"- If you do not have the requirements installed in python: run ""pip install -r requirements.txt"" to install all the requirements
+'- Within the app, first identify the folder where the app code and the tests are localized, i.e., ""android/src/main/java/"" and android/src/test/java/"", where the Jacoco store its coverage reports, i.e., ""android/build/reports/jacoco/jacocoUnitTestReport/html/"" and the targetSDKVersion of the app which is 26 for this app.
+'- To run: ""python apicia.py <--app path--> <--source code path--> <--test path--> <--Jacoco report path--> <--current targetSDKVersion--> <--new targetSDKVersion-->"", i.e., ""python apicia.py example/FAST/ android/src/main/java android/src/test/java android/build/reports/jacoco/jacocoUnitTestReport/html/ 26 32""
+'- The output will be shown in the console as well as saved in the ""apicia_output.txt"" file.",source,,,
 acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/Trusted-AI-in-System-Test,,FALSE,,,,,,,,,,,
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/jpmorganchase/api-miner,10,TRUE,,Quick Setup,,,,,,source,,,
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/bugswarm/actions-remaker,2,TRUE,,,Installation,,,,,source,,,
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/SERG-Delft/testknight,10,TRUE,,,Running Instructions,"Running the Plugin, Running the Server",Running from within IntelliJ,,,"plugin, system?",,,t0 be checked
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/stilab-ets/terametrics,2,TRUE,,,Installation,,,,,source,,,
-acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/queserasera22/Calibration-of-Pretrained-Code-Models,2,TRUE,,Environment configuration,,,,,,source,,,
-acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/Smallqqqq/DeployQA,0,TRUE,Install,,,,,,,container,,,nice paper
-acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/SoftwareSystemsLaboratory/prime,,TRUE,,,,,,,,package manager,,,no header ## only about
-acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/vlab-cs-ucsb/quacky,4,TRUE,,Imstalling Quacky,,,,,See REQUIREMENTS and INSTALL.,,,,install.md
-acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/RobotCodeLab/Maktub,1,TRUE,,How to Use,,,,,,,,,Its a unity package
-acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/MUICT-SERU/V-Achilles,3,TRUE,,Installation Guides,,,,,,"package manager, container",,,sub READMEs
-acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/saracouto1318/LiveRef,0,TRUE,,How to install,,,,,,plugin,,,Its IntelliJ plugin
-acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/TQRG/VDET-for-Java,10,TRUE,,Setup,"Start plugin-backend, start VS Code extension __",,,,,"package manager, plugin",,,to check
-acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/ehhhhjw/tool_ElecDaug.git,0,TRUE,,,,,,,,source,,,to check
-acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/ashish-gehani/Trimmer,11,TRUE,Build,,,,,,,"source, build",,,to check
-acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/ennioVisco/webmonitor,3,TRUE,,,,,,,,,,,to check
-acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/JetBrains-Research/anti-copy-paster,101,TRUE,,,How to install,,,,,Plugin,,,
-acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/bytedance/Fastbot_Android,1000,TRUE,,Build,,,,,,compiler?,,,to check
-acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/tjusenchen/AUSERA,28,,,Usage,,,,,,compiler?,,,to check
-acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/TechSumBot/TechSumBot,5,,,,,,,,,,,,no really a tool?
-acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/NewGillig/VInj,1,TRUE,,Installation,,,,,,"container, source",,,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/jpmorganchase/api-miner,10,TRUE,,Quick Setup,1) Clone API-Miner into your local system,,,,,source,,,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/jpmorganchase/api-miner,10,TRUE,,,2) Load your dataset,,,,,source,,,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/jpmorganchase/api-miner,10,TRUE,,,3) Set up your environment,,,,,source,,,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/bugswarm/actions-remaker,2,TRUE,,,Installation,,,,"1. Clone the repository
+    ```shell
+    ~$ git clone https://github.com/BugSwarm/actions-remaker
+    ~$ cd actions-remaker
+    ```
+
+2. Create and activate a Python virtual environment
+    ```shell
+    ~/actions-remaker$ virtualenv -p python3.8 venv
+    ~/actions-remaker$ . venv/bin/activate
+    ```
+
+3. Add personal access token to credentials
+   - Open `bugswarm/common/credentials.py`
+   - Replace `GITHUB_TOKENS = []` with `GITHUB_TOKENS = ['my_personal_token']`
+
+
+4. Install dependencies
+    ```shell
+    (venv) ~/actions-remaker$ pip install -e .
+    ```",source,,,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/SERG-Delft/testknight,10,TRUE,,Running Instructions,Running the Plugin,Running from within IntelliJ,,,,plugin,,t0 be checked,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/SERG-Delft/testknight,10,TRUE,,Running Instructions, Running the Server,,,,,package_manager,,t0 be checked,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/stilab-ets/terametrics,2,TRUE,,,Installation,,,,"1. Clone the repository to your local machine:
+
+    ```bash
+    git clone https://github.com/stilab-ets/terametrics.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd terametrics
+    ```
+
+3. Build the project using Maven:
+
+    ```bash
+    mvn clean install
+    ```
+
+
+<p align=""right"">(<a href=""#readme-top"">back to top</a>)</p>
+
+
+<!-- USAGE EXAMPLES -->
+
+## Usage 
+
+**TerraMetrics** is available as JAR file that could be standalone executable file. The use can find the JAR file named as [terraform_metrics-1.0.jar](src/main/resources/terraform_metrics-1.0.jar).
+
+To run the tool you need execute [terraform_metrics-1.0.jar](src/main/resources/terraform_metrics-1.0.jar) with the right parameters. In the following we detail the possible parameters:
+
+1. To view the documentation:
+
+    - ```-h```: boolean parameter to print the user guide.
+   
+    ```bash
+    java -jar /path/to/terraform_metrics-1.0.jar -h
+    ```
+
+2. To measure the HCL metrics for a given Terraform file, 3 parameters are required:
+  
+   -  ```--file```: path to the Terraform file.
+   -  ```-b```: boolean parameter to indicate the file-level execution.
+   -  ```--target```: path to the result file.
+   
+   ```bash
+        java -jar </path/to/terraform_metrics-1.0.jar> --file </path/to/file.tf> -b --target </path/to/target.json>
+   ```
+
+3. To measure the HCL metrics for a given *Local Folder* or *GitHub Repository* that contain Terraform file, 4 parameters are required:
+
+   -  ```-l```: boolean parameter to indicate the local-level execution.
+   -  ```--repo```: to indicate the path to the local folder.
+   - ```--target```: to indicate the path to the output file.
+   - ```--project```: to indicate the project name.
+   - ```-g```: boolean parameter to indicate to get the repository from GitHub.
+
+   For *Local Folder*: 
+
+   ```bash
+      java -jar /path/to/terraform_metrics-1.0.jar -l --repo </path/to/localrepo> --target </path/to/target.json> --project <projectName>
+   ```
+
+   For *GitHub Repository*:
+
+   ```bash
+      java -jar /path/to/terraform_metrics-1.0.jar -g --repo </path/to/localrepo> --target </path/to/target.json> --project <GitHubRepositoryFullName>
+   ```
+
+A demonstration video is available at:
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/DGeyDlu1fac/0.jpg)](https://www.youtube.com/watch?v=DGeyDlu1fac)
+",source,,,
+acm.icse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=dl&AllField=Abstract%3A%28https%3A%2F%2Fgithub.com%2F%29&startPage=0&sortBy=cited,,,,https://github.com/queserasera22/Calibration-of-Pretrained-Code-Models,2,TRUE,,Environment configuration,,,,,"To reproduce our experiments, machines with GPUs and NVIDIA CUDA toolkit are required.
+
+The environment dependencies are listed in the file ""requirements.txt"". You can create conda environment to install required dependencies:",source,,,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/Smallqqqq/DeployQA,0,TRUE,Install,,,,,,"You can use docker to directly deploy our tool.
+
+**1. Pull docker images**
+```
+docker-compose pull
+```
+
+**2. Launch containers**
+```
+docker-compose up
+```
+
+**Note**: The following containers listens three ports:
+* DeployQA Framework: listens on port 8000
+* Elasticsearch: listens on port 9200
+* Streamlit UI: listens on port 8501",container,,nice paper,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/SoftwareSystemsLaboratory/prime,,TRUE,PRIME: Command Line Metrics Tool,,,,,,"> A complete installer for PRIME (Transitioning from CLIME)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6477789.svg)](https://doi.org/10.5281/zenodo.6477789)
+[![Release Project](https://github.com/SoftwareSystemsLaboratory/clime/actions/workflows/release.yml/badge.svg)](https://github.com/SoftwareSystemsLaboratory/clime/actions/workflows/release.yml)",package_manager,,no header ## only about,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/SoftwareSystemsLaboratory/prime,,TRUE,PRIME: Command Line Metrics Tool,About,,,,,You can install the entirety of the PRIME project from Pypi with `pip install --upgrade pip clime-metrics`.,,,,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/vlab-cs-ucsb/quacky,4,TRUE,,Imstalling Quacky,,,,,See REQUIREMENTS and INSTALL.,,,install.md,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/RobotCodeLab/Maktub,1,TRUE,,How to Use,,,,,"After importing Maktub into your Unity project, each test scene needs to have a `Maktub Root` in it. This can be found in the `Prefabs` folder and placed anywhere in the scene. Now collision and rotation goals can be placed in your scene. If you select a goal after placing it and look at its inspector tab you will see a series of options:
+* Is Failure Goal
+  * Tells Maktub whether or not this goal being completed counts as a failure or a success for the test
+* Is Sequenced
+  * Tells Maktub whether or not this goal needs to have other goals completed before this one can be marked as complete
+* Prerequisites
+  * This tab only appears if `Is Sequenced` has been checked off
+  * This is a list that can be expanded to include as many prerequisite goals as you want
+  * Each element has a goal object and an operator (AND or OR) that chains them together
+    * the first elements `operation` does nothing (the fact that it has one is a bug and will be fixed eventually)
+
+![inspector](Runtime/Resources/Textures/inspector.png)",package_manager,,Its a unity package,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/MUICT-SERU/V-Achilles,3,TRUE,,Installation Guides,,,,,"The Achilles website was built by two folders below, please read `README.md` in each folder to see how to get started. 
+- achilles-frontend (Front-end): [README.md](https://github.com/MUICT-SERU/Achilles/blob/master/achilles-frontend/README.md)
+- baak-dataload-sql (Back-end): [README.md](https://github.com/MUICT-SERU/Achilles/blob/master/baak-dataload-sql/README.md)",,,sub READMEs,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/saracouto1318/LiveRef,0,TRUE,,How to install,,,,,"
+To use this tool, we need to install it on IntelliJ IDE by following the next steps:
+
+1. Launch the **IntelliJ IDE**;
+2. Select your IDE's preferences. There you will find the ***“Plugins”*** menu;
+3. Select the option of ___“Install Plugin from Disk”___ (see the following image);
+4. Search the folder where you place the **plugin distribution** and select its **.zip** folder depending of your IntelliJ IDE version ([LiveRef-2021.zip](./LiveRef-IntelliJ-2021.zip) or [LiveRef-2022.zip](./LiveRef-IntelliJ-2022.zip));
+5. Then, IntelliJ will install the plugin. 
+     ",plugin,,Its IntelliJ plugin,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/TQRG/VDET-for-Java,10,TRUE,,Setup,1. Start plugin-backend,,,,"To run plugin-backend server (from dir: `plugin-backend/`):
+
+1. Install required packages (listed at requirements.txt):
+    ```
+    pip install -r requirements.txt
+    ```
+2. Make sure you have a serialized pretrained model and multi-label binarizer (ours are available [here](https://drive.google.com/drive/folders/1QXzoY0lfNUZwgot2Px_VZCHr6QyhJjFj?usp=sharing)). Then, create your ```.env``` file (from the provided template, in the same location) and add the paths to the serialized objects.
+
+3. Start the server (it runs on port 5000 by default):
+    ```
+    python server.py 
+    ```
+    
+4. Check the available routes (they can be used without the extension):
+
+    **1.** Analyse code section (with line interval):
+        ```  POST /predict/section ```
+
+    **2.** Analyse complete file:
+        ```  POST /predict/file ```",package_manager,,to check,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/TQRG/VDET-for-Java,10,TRUE,,Setup,2. Start VS Code extension __,,,,"To run the extension (from dir: `plugin/vdet-java/`)
+
+1. Make sure you have Node.js and Git installed
+2. Install yo and generator-code
+    ```
+    npm install -g yo generator-code
+    ```
+3. Install required packages
+    ```
+    npm install
+    ```
+4. Start the extension by pressing F5. A new VS Code window should open _
+
+**Note:** if you have any trouble starting the extension, please check [""VS Code: Your First Extension""](https://code.visualstudio.com/api/get-started/your-first-extension) tutorial.",plugin,,,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/ehhhhjw/tool_ElecDaug.git,0,TRUE,,,,,,,"Our ElecDaug tool has been deployed in the server, where 30data.json is an ElecDaug input data. 
+And users should preferably use a computer equipped with a Windows operating system to access it.
+If you want to reuse ElecDaug, you need to modify the path to the file in ElecDaug_Frontend/src/components/page and the front-end port, etc.
+In addition, you need to modify the path information and port number of ElecDaug_Frontend/flask.py.
+
+To run ElecDaug the following requirements need to be met.
+Operating Environment.
+- Hardware Environment: 
+	CPU: Dual-core AMD64 processor or equivalent x86-compatible processor
+	Memory: 8GB and above
+	Available disk space: 200GB and above
+- Software Environment.
+		Operating system: Windows 7 and above
+		Database: MySQL 8.0 and above, Redis 5.0 and above
+		Application software: Python 3.7
+Browser engine: we recommend using the latest version of chorme v8 browser engine",source,,to check,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/ashish-gehani/Trimmer,11,TRUE,Build,,,,,,"We provide a script [bootstrap.sh](vagrants/16.04/bootstrap.sh) to install the dependencies needed, including [LLVM](https://llvm.org)'s `clang` (version 7) sources and [SVF](https://github.com/SVF-tools/SVF), to build **Trimmer** and run it on the included examples. (**Note**: It replaces `~/.bash_profile`. Adjust as needed.) The build has been tested on Ubuntu 16.04 with Python 3.5.2
+
+At its core, the **Trimmer** build is effected with:
+```
+mkdir build
+export TRIMMER_HOME=<path to top-level of Trimmer>
+export LLVM_COMPILER=clang
+cd build
+cmake ../
+make
+```
+   
+If your system has unconventional names / locations for LLVM utilities, adjust the below environment variables as needed :",build,,,to check
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/ashish-gehani/Trimmer,11,TRUE,Build,,,,,,"**Trimmer** operates on bitcode files, which can be generated using either [wllvm](https://github.com/SRI-CSL/whole-program-llvm) or [gllvm](https://github.com/SRI-CSL/gllvm). wllvm can be directly installed using pip:
+
+```
+pip install wllvm
+```",package_manager,,,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/JetBrains-Research/anti-copy-paster,101,TRUE,,,How to install,,,,"
+AntiCopyPaster requires IntelliJ IDEA of version 2022.3 to work. To install the plugin:
+
+1. Download the pre-built version of the plugin from [here](https://drive.google.com/file/d/1ULBHbUmoiM3qE-qxomSYzWVlu7aiaqZc/view?usp=share_link);
+2. Open IntelliJ IDEA and go to `File`/`Settings`/`Plugins`;
+3. Select the gear icon, and choose `Install Plugin from Disk...`;
+4. Choose the downloaded ZIP archive;
+5. Click `Apply`;
+6. Restart the IDE.",Plugin,,,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/bytedance/Fastbot_Android,1000,TRUE,,Build,,,,,"The specific method of compiling Fastbot's apk file monkey.apk.
+
+The compilation of this project depends on gradle, so please install gradle first. Since there are many versions of gradle, the compatibility between different versions is different, so it is recommended to use sdkman to download and manage different versions of gradle. For specific installation and use of sdkman, please refer to: https://sdkman.io/
+
+In short, to install sdkman, execute the following command in the shell:
+
+```shell
+curl -s ""https://get.sdkman.io"" | bash
+```
+
+After installing sdkman, please cd to the Fastbot project folder to open the shell, and execute the following command in the shell:
+
+```shell
+sdk install gradle 7.6.2 
+```
+```shell
+gradle wrapper
+```
+
+This project relies on ndk and cmake. After installing gradle, please install the SDK required for Android development and execute the following command to install the specific version of ndk and cmake required by this project. Of course, you can also modify the build.gradle file in the monkey directory to modify the versions of ndk and cmake to the versions in your development environment.
+
+```shell
+sdkmanager ""cmake;3.18.1""
+sdkmanager ""ndk;25.2.9519653""
+```
+
+After that, enter the following command: 
+```shell
+./gradlew clean makeJar
+~/Library/Android/sdk/build-tools/28.0.3/dx --dex --output=monkeyq.jar monkey/build/libs/monkey.jar
+```
+
+After the compilation process is over, you can see the monkeyq.jar file in the root directory. This file is the final compiled Fastbot java package.
+
+After compiling the so file, run:
+```shell
+sh ./build_native.sh
+```
+
+After the compilation process, you can see the .so file in the libs directory. This file directory is the final compiled Fastbot so package.
+",build,,to check,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/tjusenchen/AUSERA,28,TRUE,,Usage,,,,,"> Please put target apk file under test to `apks` folder
+> 
+> output report can be found in `engine-result/engine-report/apk_sha256_output.json`
+
+**Command format:**
+
+`python apk-engine.py [Repo_Path] [JAVA_HOME_Path] [SDK_Platform_Path]`
+
+
+**Example:**
+
+`python2.7 apk-engine.py /media/dell/49fff1d2-ef19-4e4d-855b-4eca95be873a/dell/Tools/ausera-main/ /usr/lib/jvm/jdk1.8.0_45/ /media/dell/49fff1d2-ef19-4e4d-855b-4eca95be873a/dell/Tools/ausera-main/engine-configuration/libs/android-platforms/`",compiler?,,to check,
+acm.ase,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119381&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/TechSumBot/TechSumBot,5,FALSE,,,,,,,,,,no really a tool?,
+acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/NewGillig/VInj,1,TRUE,,Installation,,,,,"We provide two ways to install VInJ. The best way is to use our docker image and this is recommended:
+```
+docker pull g2ecb/vinj:latest
+containerid=`docker run -d -it --gpus all g2ecb/vinj:latest bash`
+docker exec -it $containerid bash
+```
+Once the docker container is set up, you can directly go to **usage** Section for the next step.
+
+Otherwise, please follow the instructions below to set up the environments on your computer.
+
+First, set up the environments and install dependencies.
+1. Install Java>=11.
+2. Install srcml for parsing code into AST: https://www.srcml.org/
+3. Download and extract our specific **gumtree-lite.zip**: https://figshare.com/s/d85b715edc26ea99c5fa.
+4. Set environment path for gumtree-lite:
+```
+export GUMTREE=YOUR_GUMTREE_PATH
+export PATH=$PATH:$GUMTREE
+```
+5. Clone the VInj repository: 
+```
+git clone https://github.com/NewGillig/VInj.git
+```
+6. Install the dependencies of the localization model:
+```
+pip install transformers
+pip install torch
+pip install numpy
+pip install tqdm
+pip install pandas
+pip install tokenizers
+pip install datasets
+pip install gdown
+pip install tensorboard
+pip install scikit-learn
+```
+7. Install pypy3 to improve efficiency: https://www.pypy.org/",container,,,
+acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/NewGillig/VInj,1,TRUE,,Installation,,,,,"Otherwise, please follow the instructions below to set up the environments on your computer.
+
+First, set up the environments and install dependencies.
+1. Install Java>=11.
+2. Install srcml for parsing code into AST: https://www.srcml.org/
+3. Download and extract our specific **gumtree-lite.zip**: https://figshare.com/s/d85b715edc26ea99c5fa.
+4. Set environment path for gumtree-lite:
+```
+export GUMTREE=YOUR_GUMTREE_PATH
+export PATH=$PATH:$GUMTREE
+```
+5. Clone the VInj repository: 
+```
+git clone https://github.com/NewGillig/VInj.git
+```
+6. Install the dependencies of the localization model:
+```
+pip install transformers
+pip install torch
+pip install numpy
+pip install tqdm
+pip install pandas
+pip install tokenizers
+pip install datasets
+pip install gdown
+pip install tensorboard
+pip install scikit-learn
+```
+7. Install pypy3 to improve efficiency: https://www.pypy.org/",source,,,
 acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/xlab-uiuc/ctest4j,3,TRUE,,Download Ctest4J,Build from Source,,,,,source,,,
-acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/EngineeringSoftware/exli,3,TRUE,,Install,,,,,,container,,,
+acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/EngineeringSoftware/exli,3,TRUE,,Install,,,,,"Build a docker image
+
+`docker build -t exli .`
+
+`docker run -it exli /bin/bash`
+
+
+In the docker, create a Python environment named `exli`
+
+`cd exli/python && bash prepare-conda-env.sh`
+
+`conda activate exli`",container,,,
 acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/NetManAIOps/Chain-of-Event,2,FALSE,,,,,,,,,,,
-acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/seccross/xguard,1,TRUE,,How to install,,,,,,"source, container",,,
-acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/ZJU-ACES-ISE/ChatUniTest,0,TRUE,,,,,,,,source,,,Its in in subfolder: https://github.com/ZJU-ACES-ISE/ChatUniTest/tree/python
-acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/fmlab-iis/llvm2cryptoline,8,TRUE,,,,,,,===== LLVM Installation =====,"binary, cmake?",,,
-acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/toni-tang/D2S2,1,TRUE,,,Available Scripts,,,,,source,,,
-acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/Invincibleyc/P4B-Translator,4,TRUE,,,,Build,,,"git clone --recursive git@github.com:Invincibleyc/P4B-Translator.git
+acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/seccross/xguard,1,TRUE,,How to install,,,,,"> **Note** <br />
+> Xguard requires Python 3.8+.
+If you're **not** going to use one of the [supported compilation frameworks](https://github.com/crytic/crytic-compile), you need [solc](https://github.com/ethereum/solidity/), the Solidity compiler; we recommend using [solc-select](https://github.com/crytic/solc-select) to conveniently switch between solc versions.",source,,,
+acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/seccross/xguard,1,TRUE,,How to install,,,,,"
+```bash
+pip3 install slither-analyzer
+git clone git@github.com:seccross/xguard.git && cd xguard
+python3 setup.py install
+```
+
+We recommend using a Python virtual environment, as detailed in the [Developer Installation Instructions](https://github.com/trailofbits/slither/wiki/Developer-installation), if you prefer to install XGuard via git.",container,,,
+acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/ZJU-ACES-ISE/ChatUniTest,0,FALSE,,,,,,,,source,,,Its in in subfolder: https://github.com/ZJU-ACES-ISE/ChatUniTest/tree/python
+acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/fmlab-iis/llvm2cryptoline,8,TRUE,llvm2cryptoline,,,,,,"===== LLVM Installation =====
+
+NOTE: If you have already installed LLVM, you can skip this part.
+
+1. Download LLVM (3.7.0 <= version <= 7.0.0) source code from
+   http://releases.llvm.org/download.html
+
+2. Extract the source code from the downloaded package. Assume that
+   the top-level directory of the source code is SRC_ROOT.
+
+3. Enter BUILD_DIR, where you want to build your LLVM. 
+   For example, create directory SRC_ROOT/build and enter in:
+
+    cd SRC_ROOT
+    mkdir build && cd build
+
+4. Assume that you want to install LLVM into the directory
+   INSTALL_DIR, then:
+
+    cmake -DCMAKE_INSTALL_PREFIX=INSTALL_DIR SRC_ROOT
+    
+   For example, if you are in SRC_ROOT/build, you can:
+
+    cmake -DCMAKE_INSTALL_PREFIX=INSTALL_DIR ..
+
+5. Build:
+ 
+    make
+
+   Or use n processors to speed up:
+
+    make -jn
+
+6. Install:
+
+    make install
+
+7. Now you can delete all files in SRC_ROOT and BUILD_DIR.",build,,to be checked,
+acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/toni-tang/D2S2,1,TRUE,,Available Scripts,npm install,,,,,source,,,
+acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/Invincibleyc/P4B-Translator,4,TRUE,,Build,,,,,"git clone --recursive git@github.com:Invincibleyc/P4B-Translator.git
 mkdir build
 cd build
 cmake ..
 make -j4
-sudo make install",source,,,
-acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/dawnvince/MTS_CAD,2,TRUE,,Environment,,,,,,source,,,
-acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/ideas-labo/DaL,3,TRUE,,,Prerequisites and Installation,,,,,source,,,
-acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/NetManAIOps/GTrace.git,4,TRUE,,Evaluation of Accuracy,,,,,,source,,,
-acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/DDroid-Android/home,11,TRUE,,2. Instructions for using Themis+,,,,,,source,,,
+sudo make install",build,,,
+acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/dawnvince/MTS_CAD,2,TRUE,,Environment,,,,,"Our implementation uses pytorch-lightning framework with 
+
+***Pytorch version 1.12.0*** and ***Python 3.8+***. 
+
+Conda is recommended to set environment.
+
+Install by conda
+```bash
+conda create -n cad python=3.8 
+conda activate cad
+
+conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch -y
+conda install -c conda-forge pytorch-lightning==1.8.0 -y
+conda install tensorboardX -y 
+
+```
+
+Other dependency or installed by pip please refer to `requirement.txt`.",source,,,
+acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/ideas-labo/DaL,3,TRUE,,,Prerequisites and Installation,,,,"1. Download all the files into the same folder/clone the repository.
+
+2. Install the specified version of Python and Tensorflow:
+the codes have been tested with **Python 3.6 - 3.9** and **Tensorflow 2.x**, other versions might cause errors.
+
+3. Install all missing packages according to **requirements.txt** and runtime messages.
+",source,,,
+acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/NetManAIOps/GTrace.git,4,TRUE,,Evaluation of Accuracy,,,,,"We provide dataset B for evaluation.
+- Download [dataset_b.zip](https://cloud.tsinghua.edu.cn/f/d7868566fb344541bb26/?dl=1) and put it under `dataset/` after unzipping it.
+- Install Python 3.8+ on your system.
+- Run `pip3 install -r requirements.txt` to install the dependencies.
+- Run `python3 -m tracegnn.models.gtrace.main` to start training. The evaluation will automatically starts after training.
+- If you want to run on GPU, you can modify the `device` in `tracegnn/models/config.py`.
+  ",source,,,
+acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/DDroid-Android/home,11,TRUE,,2. Instructions for using Themis+,,,,,"Before using Themis+, you need to install Android SDK and emulators. Then you can follow the steps below to run Themis+.
+
+**Step 1. open a terminal and switch to the scripts directory**
+
+```
+cd scripts/
+```
+
+**Step 2. run Monkey on one target bug for 6 hours**
+
+```
+python3 themis.py --no-headless --avd Android7.1 --apk ../ActivityDiary/instrumented-Scarlet-Notes-#114.apk --time 6h -o ../monkey-results/ --monkey
+```
+
+Here, 
+* `--no-headless` shows the emulator GUI. 
+* `--avd Android7.1` specifies the name of the emulator (which has already been created in the VM).
+* `--apk ../Scarlet-Notes/instrumented-Scarlet-Notes-#114.apk` specifies the target bug which is `ScarletNotes`'s bug `#114` in `v1.1.8`.
+* `--time 6h` allocates 6 hours for the testing tool to find the bug 
+* `-o ../monkey-results/` specifies the output directory of testing results
+* `--monkey` specifies the testing tool
+
+**Step 3. run the analysis script to analyze the effectiveness of Monkey**
+
+First, we need to change the cwd to `/home/ddroid-core`:
+
+```
+cd ../ddroid-core/
+```
+
+* To analyze one single round of testing results which is outputted under `../monkey-results/`:
+
+```
+python3 main.py ../monkey-results/instrumented-Scarlet-Notes-#114.apk.monkey.result
+```
+
+Here, `../monkey-results/instrumented-Scarlet-Notes-#114.apk.monkey.result` is generated by **Step 2**
+
+
+* To analyze multiple rounds of testing results which are outputted under `../monkey-results/`:
+
+```
+python3 main.py -b ../monkey-results/
+```
+
+Here, 
+* `-b` (`--batch`) is used to output the all detailed coverage statistics in terms of event coverage, event-pair coverage and trace-based minimal distance under a specific directory
+* Use `-v` option to generate html format clues",source,to be checked,,
 acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/ntgiang71096/VFDetector,18,TRUE,,Preparation,Use Docker Image,,,,,container,,,
-acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/kadron/tsa-tool,0,TRUE,,Installation:,,,,,,source,,,
-ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,Https://github.com/flairNLP/flair,3800,TRUE,,Quick Start,Requirements and Installation,,,,,package manager,,,
-ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/cbmi-group/MRE,0,TRUE,,Setup,Installing dependencies,,,,,source,,,
-ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/ARUP-NGS/jenever/,0,TRUE,,Installation,Requirements,,,,,source,,,
+acm.fse,https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&expand=dl&field1=Abstract&text1=https%3A%2F%2Fgithub.com%2F&startPage=0&sortBy=EpubDate_desc,,,,https://github.com/kadron/tsa-tool,0,TRUE,,Installation:,,,,,"You can install TSA as a package using pip for the current user as moving to the directory, TSA and executing:
+```
+pip install . --user
+```
+
+Dependencies:
+* Python 3.7+
+
+Python libraries required:
+* docker
+* scapy
+* numpy
+* scipy
+* matplotlib
+* scikit-learn
+
+If you want to try the Mathematica notebook on alignment or the Python code on alignment, the extra dependencies are:
+* Mathematica 
+* MAFFT (Multiple Sequence Alignment Library)
+
+If you want to use the classifiers for attack synthesis, _pytorch_ library is required.
+
+If you want to use F-BLEAU for leakage quantification, it needs to be installed in addition to all the other dependencies.",source,,,
+ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,Https://github.com/flairNLP/flair,3800,TRUE,,Quick Start,Requirements and Installation,,,,"In your favorite virtual environment, simply do:
+
+```
+pip install flair
+```
+
+Flair requires Python 3.8+. ",package_manager,,,
+ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/cbmi-group/MRE,0,TRUE,,Setup,Installing dependencies,,,,"To install all the dependencies, please run the following:
+
+```
+pip install -r requirements.txt or conda install --yes --file requirements.txt
+```",source,,,
+ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/ARUP-NGS/jenever/,0,TRUE,,Installation,Requirements,,,,"You'll need a linux / unix compatible system (MacOS is fine) with python >= 3.10 and pip installed. 
+
+To install jenever, clone this repository, navigate to the repository directory, and enter: 
+
+    pip install  .
+
+on the command line. There are some pretty large dependencies (pytorch, pysam, sklearn, etc), so installation may take a few minutes.
+
+It's a good idea to install in a separate conda environment or python virtualenv if possible, but not required unless there are dependency conflicts. ",source,,,
 ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/pingxuan-hlju/DHDMP,0,FALSE,,,,,,,,,,,
-ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/IBM/AutoPeptideML,15,TRUE,,"Installation <a name=""installation""></a>",1. Python Package,"1.1.From PyPI, 1.2. Directly from source",,,,"source, package manager",,,
+ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/IBM/AutoPeptideML,15,TRUE,,"Installation <a name=""installation""></a>",1. Python Package,1.1.From PyPI,,,,source,,,
+ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/IBM/AutoPeptideML,15,TRUE,,"Installation <a name=""installation""></a>",1. Python Package,1.2. Directly from source,,,,package_manager,,,
 ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/opain/GenoPred,,FALSE,,,,,,,,,,,
-ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/HuangStomach/SISDTA,0,TRUE,,,,,,,,source,,,
+ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/HuangStomach/SISDTA,0,TRUE,,Installation,,,,,"
+Follow the `PyTroch` and `PyG` installation instructions to install the dependencies_
+
+[PyTroch installation instructions](https://pytorch.org/get-started/locally/)
+
+[PyG installation instructions](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html)
+
+For other dependencies and their versions please refer to the [requirements.txt](./requirements.txt) file.
+
+``` bash
+pip install -r requirements.txt
+```",source,,,
 ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/BaranziniLab/KG_RAG,609,TRUE,,How to run KG-RAG,Step 1: Clone the repo,,,,,source,,,
+ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/BaranziniLab/KG_RAG,,,,,Step 2: Create a virtual environment,,,,,source,,,
 ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/farmeh/ComplexTome_extraction,0,FALSE,,,,,,,,,,,
-ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/Dulab2020/NeoaPred,6,TRUE,,Installation,"Docker ####, Linux ####",,,,,"source, container",,,
+ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/Dulab2020/NeoaPred,6,TRUE,,Installation,Docker ####,,,,,source,,,
+ox.aca.bio,https://academic.oup.com/bioinformatics/search-results?f_ContentType=Journal+Article&f_ContentSubTypeDisplayName=Research+Article&fl_SiteID=5139&qb=%7b%22ContentAbstract1%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d&cqb=%5b%7b%22terms%22%3a%5b%7b%22filter%22%3a%22ContentAbstract%22%2c%22input%22%3a%22https%3a%2f%2fgithub.com%2f%22%7d%5d%7d%5d&page=1&sort=Date+%e2%80%93+Newest+First,,,,https://github.com/Dulab2020/NeoaPred,6,TRUE,,Installation,Linux ####,,,,,container,,,
 awesome-ai-devtools,,,,,,,,,,,,,,,,,,
 awesome-healthcare,,,,,,,,,,,,,,,,,,
 awesome-genome-visualization,,,,,,,,,,,,,,,,,,
