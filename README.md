@@ -7,8 +7,10 @@ Implementation of research software involves numerous challenges; a rigorous sta
 
 
 
-## Folder structure
+- [Explanation for Annotation Procedures for Gold Standard Corpus](./data/golden/README.md)
 
+
+## Folder structure
 
 * `data` folder: 
   - `golden`: `repo_manual_annotations.csv` --> corpus of 100 repos selected with various annotations
@@ -18,7 +20,10 @@ Implementation of research software involves numerous challenges; a rigorous sta
  - `02.1-extractor_install_combined.py` is the script to output the JSON file with installation_instruction readmes `02_combined_installation_readmes.json`.
 
 ## Analysis
-The analysis described in our paper should be replicated with `.py` files and jupyter notebook `.ipynb`
+The analysis for *RQs* described in our paper should be replicated with `.py` files and jupyter notebook `.ipynb` in [results](./results/) with [visuals](./visualisations/)
+
+## Classifier
+The models should be saved in [classifier](./classifier/)
 
 ## Citation
 
