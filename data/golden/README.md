@@ -13,7 +13,7 @@ The dataset was manually annotated to investigate how researchers report install
 3. If headers contain information to detect a method e.g., `## With Pip`, then annotate method type `Package_manager`
 4. If headers does not contain information to detect a method, check the text under the header and verify its method (*very often researchers use headers for `## Installation` and add text and code commands ```pip install .```*)
 
-> The basic idea of our annotation is that README headers work as an overview of the contents beneath them. By examining the section headers, we can discern whether the sections are relevant to our target method delving into the detailed content. This could also be an strategy for the **classifier**. The idea also is the annontate **[../../extractor/corpus.json](../../extractor/corpus.json)**
+> The basic idea of our annotation is that README headers work as an overview of the contents beneath them. By examining the section headers, we can discern whether the sections are relevant to our target method delving into the detailed content. This could also be an strategy for the **classifier**. The idea also to annontate the randomly selected **[../../extractor/corpus.json](../../extractor/corpus.json)** file
 
 ## Variable Descriptions
 
