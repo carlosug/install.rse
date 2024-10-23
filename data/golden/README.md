@@ -2,7 +2,7 @@
 
 ## Annotation Procedures for Gold Standard Corpus
 The dataset was manually annotated to investigate how researchers report installation instructions in GitHub repositories. The annotation focused on identifying patterns on the installation methods provided in the README files of these repositories. The main steps involved in the annotation process were:
-1. **Repo Selection**: A sample of repositories was selected based on specific criteria.
+1. **Repo Selection**: A sample of repositories was selected from broad research domains and diverse research software project scope
 2. **Manual Annotation**: Each repository's README file was examined manually to identify the presence of installation instructions and their respective methods.
 3. **Classification of Installation Methods**: The installation methods were categorized into types such as "source" "package manager", "container," "build" and "plugin".
 4. **Analysis of Headers**: The headers in the README files (H1 to H6) were analyzed to detect trends and patterns in the structure of installation instructions.
@@ -13,9 +13,14 @@ The dataset was manually annotated to investigate how researchers report install
 3. If headers contain information to detect a method e.g., `## With Pip`, then annotate method type `Package_manager`
 4. If headers does not contain information to detect a method, check the text under the header and verify its method (*very often researchers use headers for `## Installation` and add text and code commands ```pip install .```*)
 
-> The basic idea of our annotation is that README headers work as an overview of the contents beneath them. By examining the section headers, we can discern whether the sections are relevant to our target method delving into the detailed content. This could also be an strategy for the **classifier**. The idea also to annontate the randomly selected **[../../extractor/corpus.json](../../extractor/corpus.json)** file
+> The basic idea of our annotation is that README headers work as an overview of the contents beneath them. By examining the section headers, we can discern whether the sections are relevant to our target method delving into the detailed content. This could also be an strategy for the **classifier**. The idea also is to annontate the randomly selected **[../../extractor/corpus.json](../../extractor/corpus.json)** file.
 
-## Variable Descriptions
+## Ongoing manual annotations for corpus:
+1. Created a random sample function for the bidir dataset. Output: [../../extractor/corpus.json](../../extractor/corpus.json) file
+2. Utilized some for each ID and filter `installation_instructions`
+3. For each ID, annotated "installation_method" . Output (_work in progress_): [../../extractor/corpus.json](../../extractor/corpus_annotated.json) file
+
+## Variable Descriptions for `data/golden/repo_manual_annotation.csv`
 
 | Variable Name           | Description                                                                                           |
 |-------------------------|-------------------------------------------------------------------------------------------------------|
