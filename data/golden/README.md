@@ -18,7 +18,7 @@ The dataset was manually annotated to investigate how researchers report install
 ## Ongoing manual annotations for corpus:
 1. Created a random sample function for the bidir dataset. Output: [../../extractor/corpus.json](../../extractor/corpus.json) file
 2. Utilized some for each ID and filter `installation_instructions`
-3. For each ID, annotated "installation_method" . Output (_work in progress_): [data/golden/annotated_corpus.json](data/golden/annotated_corpus.json) file
+3. For each ID, annotated "installation_method" . Output (_work in progress_): [annotated_corpus.json](annotated_corpus.json) file
 
 ## Variable Descriptions for `data/golden/repo_manual_annotation.csv`
 
