@@ -156,6 +156,19 @@ Brief Scoping Literature Review - Paper to include - Criteria:
 * ICSE (results: 75)
 
 
+| Title                                                                 | Conf year | What is about                                                                                                      |
+|-----------------------------------------------------------------------|-----------|--------------------------------------------------------------------------------------------------------------------|
+| [Characterizing the differences between pre- and post- release versions of software](https://dl.acm.org/doi/10.1145/1985793.1985894) | MSR 2011  | we examine application crash, application hang,s                                                 |
+| [Why do software packages conflict?](https://dl.acm.org/doi/10.5555/2664446.2664470) | MSR 2012  |Determining whether two or more packages cannot be installed together is an important issue in the quality assurance
+| [A historical analysis of Debian package incompatibilities](https://dl.acm.org/doi/10.5555/2820518.2820545) | MSR 2015  | nstallation problems due to conflicting packages                                            |
+| [Mining Component Repositories for Installability Issues](https://dl.acm.org/doi/10.5555/2820518.2820524) | MSR 2015  | Investigates installability issues in component repositories                                                       |
+| [Accelerating software engineering research adoption with analysis bots](https://dl.acm.org/doi/10.1109/ICSE-NIER.2017.17) | ICSE 2017 | explore bots for software engineering
+| [Evaluating Unit Testing Practices in R Packages](https://dl.acm.org/doi/10.1109/ICSE43902.2021.00136) | ICSE 2021 |R is a package-based programming ecosystem that provides an easy way to install third-party code
+| [Evaluation of user engagement and message comprehension in a pervasive software installation](https://dl.acm.org/doi/10.5555/2663700.2663706) | MSR 2014  | no reference
+| [DockerKG: A Knowledge Graph of Docker Artifacts](https://dl.acm.org/doi/10.1145/3387940.3392161) | MSR 2020  |Docker extractor
+
+
+
 #### Reviewed resources:
 
 | Title                                                              | Conf year | What is about:                                                                                                                                               | Strategy                                                      | Relevant for us in: |
@@ -200,3 +213,10 @@ Brief Scoping Literature Review - Paper to include - Criteria:
 
 | [Automatically assessing code understandability](https://dl.acm.org/doi/10.1145/3196398.3196441) | 2018 | Software Engineering | Combined metrics for code understandability | - | easure of code
 understandability (no reference to installation methods) |
+| [Investigating code review practices in defective files: an empirical study of the Qt system](https://dl.acm.org/doi/10.5555/2820518.2820540) | MSR 2015 | Software Engineering | Code review practices in defective files | - | Empirical study of code review practices in the Qt system  (no reference to installation methods)  |
+
+| [Options Matter: Documenting and Fixing Non-Reproducible Builds in Highly-Configurable Systems](https://dl.acm.org/doi/10.1145/3643991.3644913) | MSR 2024 | Software Engineering | Investigates which configuration options impact the reproducibility of builds and proposes an approach to identify these options | - | Relevant for understanding the impact of configuration options on reproducibility and how to document and fix non-reproducible builds (no reference to installation methods) |
+
+| [Choosing an NLP library for analyzing software documentation: a systematic literature review and a series of experiments](https://dl.acm.org/doi/10.1109/MSR.2017.42) | MSR 2017 | Software Engineering | Systematic literature review and experiments on NLP libraries for software documentation analysis | - | Relevant for understanding the use of NLP libraries in analyzing software documentation (no references for installation methods) |
+
+| [Mining component repositories for installability issues](https://dl.acm.org/doi/10.5555/2820518.2820524) | 2015 | Software Engineering | Investigates installability issues in component repositories | - | Relevant for understanding common installability issues in component repositories |
