@@ -117,23 +117,46 @@ List of articles, papers and notes about research software documentation. We see
 | [Gewaltig et al.,](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003376)  | 2014  | computational neuroscience|Ten Simple Rules for the Open Development of Scientific Software  | "easy to install" for "research-ready" software type, but not specified the tpye of installation|   ||
 | [Yuyang et al.,](https://linkinghub.elsevier.com/retrieve/pii/S0950584922000775)  | 2022  | computer science|readme files, softwre popularity, clustering  | "easy to install" for "research-ready" software type, but not specified the tpye of installation|  "softwares with installation instructions on readme gets more stars", "Setup, Install, or Installation as a sectionheading used to provide information about installing a repository." ||
 
-### Empirical Studies on Software Documentation
+### Empirical Studies on Software Documentation: Literature Review
 
 Brief Scoping Literature Review - Paper to include - Criteria:
 
-- On conferences MSR and or ICSE
+- On conferences MSR, FSE and ICSE
 - Terms “README” and/or “installation instructions”
 - Information databases:
        + ACM Digital Library (DONE)
-       + IEEE Xplore 
-       + Google scholar
+       + IEEE Xplore (TODO)
+       + Google scholar (TODO)
 
-1. ACM: [Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=dl&EpubDate=%5B20190703+TO+20240703%5D&AllField=Fulltext%3A%28readme%29+OR+Fulltext%3A%28installation+instructions%29+OR+Fulltext%3A%28research+software%29)
-MSR (results:268) ("query": { Fulltext:(readme) OR Fulltext:(installation instructions) OR Fulltext:(research software) }
-"filter": { Conference Collections: MSR: Mining Software Repositories, E-Publication Date: Past 5 years, ACM Content: DL })
+#### 1. ACM - MSR: 
+[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28best+practices%29+OR+Abstract%3A%28installation%29+OR+Abstract%3A%28documentation%29+OR+Abstract%3A%28readme%29+OR+Abstract%3A%28research+software%29+OR+Abstract%3A%28installability%29)
+
+* MSR (results:409)
+
+```sql
+"query": {Abstract:(best practices) OR Abstract:(installation) OR Abstract:(documentation) OR Abstract:(readme) OR Abstract:(research software) OR Abstract:(installability)} "filter": {Conference Collections: MSR: Mining Software Repositories}
+```
+
+#### 2. ACM - FSE 
+[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&ContentItemType=research-article&expand=dl&AllField=Abstract%3A%28best+practices%29+OR+Abstract%3A%28installation%29+OR+Abstract%3A%28documentation%29+OR+Abstract%3A%28readme%29+OR+Abstract%3A%28research+software%29+OR+Abstract%3A%28installability%29)
+
+* FSE (results:585) 
+
+```sql
+"query": {Abstract:(best practices) OR Abstract:(installation) OR Abstract:(documentation) OR Abstract:(readme) OR Abstract:(research software) OR Abstract:(installability)} "filter": {Conference Collections: FSE: Foundations of Software Engineering},{Article Type: Research Article},{ACM Content: DL}
+```
+#### 3. ACM - ICSE
+
+[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=all&AllField=Abstract%3A%28best+practices%29+OR+Abstract%3A%28installation%29+OR+Abstract%3A%28documentation%29+OR+Abstract%3A%28readme%29+OR+Abstract%3A%28research+software%29+OR+Abstract%3A%28installability%29&startPage=&ContentItemType=research-article)
+
+```sql
+"query": {Abstract:(best practices) OR Abstract:(installation) OR Abstract:(documentation) OR Abstract:(readme) OR Abstract:(research software) OR Abstract:(installability)} "filter": {Conference Collections: ICSE: International Conference on Software Engineering},{Article Type: Research Article}
+```
+
+* ICSE (results: 2616)
 
 
-
+#### Reviewed resources:
 
 | Title                                                              | Conf year | What is about:                                                                                                                                               | Strategy                                                      | Relevant for us in: |
 |--------------------------------------------------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|---------------------|
