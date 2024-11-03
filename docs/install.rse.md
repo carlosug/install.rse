@@ -129,31 +129,31 @@ Brief Scoping Literature Review - Paper to include - Criteria:
        + Google scholar (TODO)
 
 #### 1. ACM - MSR: 
-[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28best+practices%29+OR+Abstract%3A%28installation%29+OR+Abstract%3A%28documentation%29+OR+Abstract%3A%28readme%29+OR+Abstract%3A%28research+software%29+OR+Abstract%3A%28installability%29)
+[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28best+practices%29+AND+Abstract%3A%28readme%29+AND+Abstract%3A%28research+software%29+AND+Abstract%3A%28installation%29+OR+Abstract%3A%28installation+method*%29+OR+Abstract%3A%28installability%29&startPage=&ContentItemType=research-article)
 
-* MSR (results:409)
+* MSR (results:7)
 
 ```sql
 "query": {Abstract:(best practices) OR Abstract:(installation) OR Abstract:(documentation) OR Abstract:(readme) OR Abstract:(research software) OR Abstract:(installability)} "filter": {Conference Collections: MSR: Mining Software Repositories}
 ```
 
 #### 2. ACM - FSE 
-[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&ContentItemType=research-article&expand=dl&AllField=Abstract%3A%28best+practices%29+OR+Abstract%3A%28installation%29+OR+Abstract%3A%28documentation%29+OR+Abstract%3A%28readme%29+OR+Abstract%3A%28research+software%29+OR+Abstract%3A%28installability%29)
+[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&ContentItemType=research-article&expand=dl&AllField=Abstract%3A%28best+practices%29+AND+Abstract%3A%28readme%29+AND+Abstract%3A%28research+software%29+AND+Abstract%3A%28installation%29+OR+Abstract%3A%28installation+method*%29+OR+Abstract%3A%28installability%29)
 
-* FSE (results:585) 
+* FSE (results:25) 
 
 ```sql
-"query": {Abstract:(best practices) OR Abstract:(installation) OR Abstract:(documentation) OR Abstract:(readme) OR Abstract:(research software) OR Abstract:(installability)} "filter": {Conference Collections: FSE: Foundations of Software Engineering},{Article Type: Research Article},{ACM Content: DL}
+"query": {Abstract:(best practices) AND Abstract:(readme) AND Abstract:(research software) AND Abstract:(installation) OR Abstract:(installation method*) OR Abstract:(installability)} "filter": {Conference Collections: FSE: Foundations of Software Engineering},{Article Type: Research Article},{ACM Content: DL}
 ```
 #### 3. ACM - ICSE
 
-[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&expand=all&AllField=Abstract%3A%28best+practices%29+OR+Abstract%3A%28installation%29+OR+Abstract%3A%28documentation%29+OR+Abstract%3A%28readme%29+OR+Abstract%3A%28research+software%29+OR+Abstract%3A%28installability%29&startPage=&ContentItemType=research-article)
+[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&ContentItemType=research-article&expand=all&AllField=Abstract%3A%28best+practices%29+AND+Abstract%3A%28readme%29+AND+Abstract%3A%28research+software%29+AND+Abstract%3A%28installation%29+OR+Abstract%3A%28installation+method*%29+OR+Abstract%3A%28installability%29)
 
 ```sql
-"query": {Abstract:(best practices) OR Abstract:(installation) OR Abstract:(documentation) OR Abstract:(readme) OR Abstract:(research software) OR Abstract:(installability)} "filter": {Conference Collections: ICSE: International Conference on Software Engineering},{Article Type: Research Article}
+"query": {Abstract:(best practices) AND Abstract:(readme) AND Abstract:(research software) AND Abstract:(installation) OR Abstract:(installation method*) OR Abstract:(installability)} "filter": {Conference Collections: ICSE: International Conference on Software Engineering},{Article Type: Research Article}
 ```
 
-* ICSE (results: 2616)
+* ICSE (results: 75)
 
 
 #### Reviewed resources:
@@ -197,3 +197,6 @@ Brief Scoping Literature Review - Paper to include - Criteria:
 | [Categorizing the Content of GitHub README File](https://arxiv.org/abs/1802.06997)                        |          | https://www.researchgate.net/publication/312184512_A_Complexity_Measure_for_Textual_Requirements                                                              | search engine                                                 |                     |
 | [A large-scale analysis of bioinformatics code on GitHub](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205898)                        |          | https://www.researchgate.net/publication/312184512_A_Complexity_Measure_for_Textual_Requirements                                                              | search engine                                                 |                     |
 | [An Empirical Study of README contents for JavaScript Packages](https://www.jstage.jst.go.jp/article/transinf/E102.D/2/E102.D_2018EDP7071/_article)                        |          | https://www.researchgate.net/publication/312184512_A_Complexity_Measure_for_Textual_Requirements                                                              | search engine                                                 |                     |
+
+| [Automatically assessing code understandability](https://dl.acm.org/doi/10.1145/3196398.3196441) | 2018 | Software Engineering | Combined metrics for code understandability | - | easure of code
+understandability (no reference to installation methods) |
