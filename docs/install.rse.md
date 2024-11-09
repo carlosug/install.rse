@@ -60,6 +60,14 @@ List of articles, papers and notes about research software documentation. We see
 
 - Sharing practices of software artefacts and source code for reproducible research: https://link.springer.com/article/10.1007/s41060-024-00617-7
 
+### Research Software Engineer training materials
+
+Below you'll find an *(work in progress)* curated list of research software engineering training material. All material is:
+
+*General*
+* [CodeRefinery](courses.md#1-coderefinery-workshop)
+* [Software Carpentry Workshop with Python](courses.md#2-software-carpentry-workshop-with-python)
+
 ### Suggestions for a good README
 - [Github Guidelines](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 - [Makeareadme 101](https://www.makeareadme.com/)
@@ -213,7 +221,6 @@ query: {Abstract:(best practices) OR Abstract:(readme) AND Abstract:(research so
 | [Categorizing the Content of GitHub README File](https://arxiv.org/abs/1802.06997)                        |          | https://www.researchgate.net/publication/312184512_A_Complexity_Measure_for_Textual_Requirements                                                              | snowballed approach                                                 |                     |
 | [A large-scale analysis of bioinformatics code on GitHub](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205898)                        |          | https://www.researchgate.net/publication/312184512_A_Complexity_Measure_for_Textual_Requirements                                                              | snowballed approach                                                 |                     |
 | [An Empirical Study of README contents for JavaScript Packages](https://www.jstage.jst.go.jp/article/transinf/E102.D/2/E102.D_2018EDP7071/_article)                        |          | https://www.researchgate.net/publication/312184512_A_Complexity_Measure_for_Textual_Requirements                                                              | snowballed approach                                                 |                     |
-
 | [Automatically assessing code understandability](https://dl.acm.org/doi/10.1145/3196398.3196441) | 2018 | Software Engineering | Combined metrics for code understandability | - | easure of code
 understandability (no reference to installation methods) |
 | [Investigating code review practices in defective files: an empirical study of the Qt system](https://dl.acm.org/doi/10.5555/2820518.2820540) | MSR 2015 | Software Engineering | Code review practices in defective files | - | Empirical study of code review practices in the Qt system  (no reference to installation methods)  |
