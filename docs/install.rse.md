@@ -224,9 +224,6 @@ query: {Abstract:(best practices) OR Abstract:(readme) AND Abstract:(research so
 | [Automatically assessing code understandability](https://dl.acm.org/doi/10.1145/3196398.3196441) | 2018 | Software Engineering | Combined metrics for code understandability | - | easure of code
 understandability (no reference to installation methods) |
 | [Investigating code review practices in defective files: an empirical study of the Qt system](https://dl.acm.org/doi/10.5555/2820518.2820540) | MSR 2015 | Software Engineering | Code review practices in defective files | - | Empirical study of code review practices in the Qt system  (no reference to installation methods)  |
-
 | [Options Matter: Documenting and Fixing Non-Reproducible Builds in Highly-Configurable Systems](https://dl.acm.org/doi/10.1145/3643991.3644913) | MSR 2024 | Software Engineering | Investigates which configuration options impact the reproducibility of builds and proposes an approach to identify these options | - | Relevant for understanding the impact of configuration options on reproducibility and how to document and fix non-reproducible builds (no reference to installation methods) |
-
 | [Choosing an NLP library for analyzing software documentation: a systematic literature review and a series of experiments](https://dl.acm.org/doi/10.1109/MSR.2017.42) | MSR 2017 | Software Engineering | Systematic literature review and experiments on NLP libraries for software documentation analysis | - | Relevant for understanding the use of NLP libraries in analyzing software documentation (no references for installation methods) |
-
 | [Mining component repositories for installability issues](https://dl.acm.org/doi/10.5555/2820518.2820524) | 2015 | Software Engineering | Investigates installability issues in component repositories | - | Relevant for understanding common installability issues in component repositories |
