@@ -28,14 +28,3 @@ The models should be saved in [classifier](./classifier/)
 ## Citation
 
 *Annonymized*.
-
-<!-- If you use our provided data or results, please cite our paper:
-
-```
-@article{carlosug,
-  title={},
-  author={Carlos Utrilla Guerrero, Oscar Corcho and Daniel Garijo},
-  journal={arXiv preprint arXiv:XXX.XXX},
-  year={2024}
-}
-``` -->
