@@ -129,31 +129,31 @@ Brief Scoping Literature Review - Paper to include - Criteria:
        + Google scholar (TODO)
 
 #### 1. ACM - MSR: 
-[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&expand=all&AllField=Abstract%3A%28best+practices%29+AND+Abstract%3A%28readme%29+AND+Abstract%3A%28research+software%29+AND+Abstract%3A%28installation%29+OR+Abstract%3A%28installation+method*%29+OR+Abstract%3A%28installability%29&startPage=&ContentItemType=research-article)
+[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=120045&ContentItemType=research-article&expand=all&EpubDate=%5B20191107+TO+20241107%5D&AllField=Abstract%3A%28best+practices%29+AND+Abstract%3A%28readme%29+AND+Abstract%3A%28research+software%29+AND+Abstract%3A%28installation%29+OR+Abstract%3A%28installation+method*%29+OR+Abstract%3A%28installability%29+OR+Abstract%3A%28Rules%29+OR+Abstract%3A%28recommendation*%29+OR+Abstract%3A%28software+documentation%29)
 
-* MSR (results:7)
+* MSR (results:34)
 
 ```sql
-"query": {Abstract:(best practices) OR Abstract:(installation) OR Abstract:(documentation) OR Abstract:(readme) OR Abstract:(research software) OR Abstract:(installability)} "filter": {Conference Collections: MSR: Mining Software Repositories}
+query: {Abstract:(best practices) OR Abstract:(readme) AND Abstract:(research software) AND Abstract:(installation) OR Abstract:(installation method*) OR Abstract:(installability) OR Abstract:(Rules) OR Abstract:(recommendation*) OR Abstract:(software documentation)} "filter": {Conference Collections: MSR: Mining Software Repositories},{Article Type: Research Article},{E-Publication Date: Past 5 years}
 ```
 
 #### 2. ACM - FSE 
-[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&ContentItemType=research-article&expand=dl&AllField=Abstract%3A%28best+practices%29+AND+Abstract%3A%28readme%29+AND+Abstract%3A%28research+software%29+AND+Abstract%3A%28installation%29+OR+Abstract%3A%28installation+method*%29+OR+Abstract%3A%28installability%29)
+[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119584&ContentItemType=research-article&expand=dl&EpubDate=%5B20191107+TO+20241107%5D&AllField=Abstract%3A%28best+practices%29+OR+Abstract%3A%28readme%29+AND+Abstract%3A%28research+software%29+AND+Abstract%3A%28installation%29+OR+Abstract%3A%28installation+method*%29+OR+Abstract%3A%28installability%29+OR+Abstract%3A%28Rules%29+OR+Abstract%3A%28recommendation*%29+OR+Abstract%3A%28software+documentation%29%7D+%22filter%22%3A+%7BConference+Collections%3A+MSR%3A+Mining+Software+Repositories%7D%2C%7BArticle+Type%3A+Research+Article%7D%2C%7BE-Publication+Date%3A+Past+5+years#)
 
-* FSE (results:25) 
+* FSE (results:139) 
 
 ```sql
-"query": {Abstract:(best practices) AND Abstract:(readme) AND Abstract:(research software) AND Abstract:(installation) OR Abstract:(installation method*) OR Abstract:(installability)} "filter": {Conference Collections: FSE: Foundations of Software Engineering},{Article Type: Research Article},{ACM Content: DL}
+"query": {Abstract:(best practices) OR Abstract:(readme) AND Abstract:(research software) AND Abstract:(installation) OR Abstract:(installation method*) OR Abstract:(installability) OR Abstract:(Rules) OR Abstract:(recommendation*) OR Abstract:(software documentation)} "filter": {Conference Collections: MSR: Mining Software Repositories},{Article Type: Research Article},{E-Publication Date: Past 5 years}
 ```
 #### 3. ACM - ICSE
 
-[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&ContentItemType=research-article&expand=all&AllField=Abstract%3A%28best+practices%29+AND+Abstract%3A%28readme%29+AND+Abstract%3A%28research+software%29+AND+Abstract%3A%28installation%29+OR+Abstract%3A%28installation+method*%29+OR+Abstract%3A%28installability%29)
+[Link Query](https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=119230&ContentItemType=research-article&expand=all&EpubDate=%5B20191107+TO+20241107%5D&AllField=Abstract%3A%28best+practices%29+OR+Abstract%3A%28readme%29+AND+Abstract%3A%28research+software%29+AND+Abstract%3A%28installation%29+OR+Abstract%3A%28installation+method*%29+OR+Abstract%3A%28installability%29+OR+Abstract%3A%28Rules%29+OR+Abstract%3A%28recommendation*%29+OR+Abstract%3A%28software+documentation%29%7D)
 
 ```sql
-"query": {Abstract:(best practices) AND Abstract:(readme) AND Abstract:(research software) AND Abstract:(installation) OR Abstract:(installation method*) OR Abstract:(installability)} "filter": {Conference Collections: ICSE: International Conference on Software Engineering},{Article Type: Research Article}
+"query": Abstract:(best practices) OR Abstract:(readme) AND Abstract:(research software) AND Abstract:(installation) OR Abstract:(installation method*) OR Abstract:(installability) OR Abstract:(Rules) OR Abstract:(recommendation*) OR Abstract:(software documentation)} "filter": {Conference Collections: MSR: Mining Software Repositories},{Article Type: Research Article},{E-Publication Date: Past 5 years}
 ```
 
-* ICSE (results: 75)
+* ICSE (results: 370)
 
 
 
