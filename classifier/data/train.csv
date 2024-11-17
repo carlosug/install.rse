@@ -1,0 +1,1169 @@
+search,headers,instruction,method_type
+pwc.greatest,usage basic usage,- method 4: download pre-built binary from [releases](https://github.com/ggerganov/llama.cpp/releases),other
+acm.icse,how to run,"requirements: jdk>=17
+
+download the ""xxx-jar-with-dependency.jar"" from: https://github.com/feifeiniu-se/rat_demo/releases/tag/release-v1.0.0
+
+rat is command line tool so far, it supports three types of commands:
+
+```
+> -a <git-repo-folder> -s <sqlite-file-path> # detects all code history
+
+> -bc <git-repo-folder> <start-commit-sha1> <end-commit-sha1> -s",other
+acm.icse,how to run,"<sqlite-file-path> # detects code history between start commit and end commit
+
+> -c <git-repo-folder> <commit-sha1> -s <sqlite-file-path> #detects code history between last commit and this commit
+```
+""&lt; git-repo-folder &gt;"" defines the path of the local repository, ""&lt; sqlite-file-path &gt;"" indicates the path for saving the sqlite database. tip: sqlite is a lightweight database, which requires no server, users can read the data with python, or other interfaces.",other
+acm.icse,how to run,"for future we may support ides, chrome extension...
+
+
+
+example for how to use in command _
+
+```
+> java -jar traceabilitymodel-1.0-snapshot-jar-with-dependencies.jar -bc c:\dataset\maven 698119ea0be74b3733fdcf49997a6bf46f160950 a15c47e27076ebfe87f4df881fe9173a7887ae50 -s d:\\tool\\database\\maven.sqlite3
+
+> java -jar traceabilitymodel-1.0-snapshot-jar-with-dependencies.jar -bc c:\dataset\jitfine\ant-ivy 929363e121230286922d1ec3aaee21b2defba5b6 dbdf9d6c0534733bf98e14de914a337e133f0123 -s",other
+acm.icse,how to run,"d:\\tool\\database\\ant-ivy.sqlite3
+
+> java -jar traceabilitymodel-1.0-snapshot-jar-with-dependencies.jar -a c:\dataset\maven -s d:\\tool\\database\\maven.sqlite3
+
+> java -jar traceabilitymodel-1.0-snapshot-jar-with-dependencies.jar -c c:\dataset\jitfine\archiva 8e757bd2a0faec0732b512ea1d4df1e082aea6ff -s d:\\tool\\database\\archiva.sqlite3
+```
+
+you can replace the path of git repository, start hash code, end hash code and the path of sqlite file.",other
+acm.icse,how to run,"the following are the github urls in the example_
+
+https://github.com/apache/ant-ivy
+
+https://github.com/apache/maven
+
+https://github.com/apache/archiva",other
+bio.tools.updated.latest,binary,"**installation**
+
+# ## binary 
+
+statically linked binaries (intel compiler 21.3.0) can be found at the [latest release page](https://github.com/qcxms/qcxms/releases/latest). untar the zipped archive:
+
+```bash
+tar -xvzf qcxms.vx.x.tar.xz
+```
+
+the following files are being extracted: `qcxms` `pqcxms` `q-batch` `getres` `.xtbparam` `example`
+
+place the executables into your ``$home/bin/`` directory or path.",other
+bio.tools.updated.latest,binary,place the `.xtbparam` folder and `.mass_raw.arg` file into your `$home` directory (these files can appear to be hidden). ### conda [!,other
+bio.tools.updated.latest,binary,"[conda version](https://img.shields.io/conda/vn/conda-forge/qcxms.svg)](https://anaconda.org/conda-forge/qcxms)
+
+installing `qcxms` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+
+```
+conda config --add channels conda-forge
+```
+
+once the `conda-forge` channel has been enabled, `qcxms` can be installed with:
+
+```
+conda install qcxms
+```
+
+it is possible to list all",other
+bio.tools.updated.latest,binary,"een enabled, `qcxms` can be installed with:
+
+```
+conda install qcxms
+```
+
+it is possible to list all of the versions of `qcxms` available on your platform with:
+
+```
+conda search qcxms --channel conda-forge
+```
+
+
+### meson
+
+using [meson](https://mesonbuild.com/) as build system requires you to install a fairly new version like 0.57.2 or newer. to use the default backend of meson you have to install [ninja](https://ninja-build.org/) version 1.10 or newer.",other
+bio.tools.updated.latest,binary,"```bash
+export fc=ifort cc=icc
+meson setup build -dfortran_link_args=-static
+ninja -c build 
+```
+
+this will build a static linked binary in the ``build`` folder. copy the binary from ``build/qcxms`` file into a directory in your path, e.g. ``~/bin/``.",other
+pwc.greatest,installation binaries,commands to install binaries via conda or pip wheels are on our website: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/),other
+acm.ase,build,"we provide a script [bootstrap.sh](vagrants/16.04/bootstrap.sh) to install the dependencies needed, including [llvm](https://llvm.org)'s `clang` (version 7) sources and [svf](https://github.com/svf-tools/svf), to build **trimmer** and run it on the included examples. (**note**: it replaces `~/.bash_profile`. adjust as needed.)",other
+acm.ase,build,"the build has been tested on ubuntu 16.04 with python 3.5.2
+
+at its core, the **trimmer** build is effected with:
+```
+mkdir build
+export trimmer_home=<path to top-level of trimmer>
+export llvm_compiler=clang
+cd build
+cmake ../
+make
+```
+   
+if your system has unconventional names / locations for llvm utilities, adjust the below environment variables as needed :",other
+acm.fse,build,"git clone --recursive git@github.com:invincibleyc/p4b-translator.git
+mkdir build
+cd build
+cmake ..
+make -j4
+sudo make install",other
+acm.ase,build,"the specific method of compiling fastbot's apk file monkey.apk. the compilation of this project depends on gradle, so please install gradle first. since there are many versions of gradle, the compatibility between different versions is different, so it is recommended to use sdkman to download and manage different versions of gradle.",other
+acm.ase,build,"for specific installation and use of sdkman, please refer to: https://sdkman.io/
+
+in short, to install sdkman, execute the following command in the shell:
+
+```shell
+curl -s ""https://get.sdkman.io"" | bash
+```
+
+after installing sdkman, please cd to the fastbot project folder to open the shell, and execute the following command in the shell:
+
+```shell
+sdk install gradle 7.6.2 
+```
+```shell
+gradle wrapper
+```
+
+this project relies on ndk and cmake.",other
+acm.ase,build,"after installing gradle, please install the sdk required for android development and execute the following command to install the specific version of ndk and cmake required by this project. of course, you can also modify the build.gradle file in the monkey directory to modify the versions of ndk and cmake to the versions in your development environment.",other
+acm.ase,build,"```shell
+sdkmanager ""cmake;3.18.1""
+sdkmanager ""ndk;25.2.9519653""
+```
+
+after that, enter the following command: 
+```shell
+./gradlew clean makejar
+~/library/android/sdk/build-tools/28.0.3/dx --dex --output=monkeyq.jar monkey/build/libs/monkey.jar
+```
+
+after the compilation process is over, you can see the monkeyq.jar file in the root directory. this file is the final compiled fastbot java package. after compiling the so file, run:
+```shell
+sh",other
+acm.ase,build,"./build_native.sh
+```
+
+after the compilation process, you can see the .so file in the libs directory. this file directory is the final compiled fastbot so package.",other
+acm.ase,usage,"> please put target apk file under test to `apks` folder
+> 
+> output report can be found in `engine-result/engine-report/apk_sha256_output.json`
+
+**command format:**
+
+`python apk-engine.py [repo_path] [java_home_path] [sdk_platform_path]`
+
+
+**example:**
+
+`python2.7 apk-engine.py /media/dell/49fff1d2-ef19-4e4d-855b-4eca95be873a/dell/tools/ausera-main/ /usr/lib/jvm/jdk1.8.0_45/ /media/dell/49fff1d2-ef19-4e4d-855b-4eca95be873a/dell/tools/ausera-main/engine-configuration/libs/android-platforms/`",other
+acm.ase,install,"you can use docker to directly deploy our tool.
+
+**1. pull docker images**
+```
+docker-compose pull
+```
+
+**2. launch containers**
+```
+docker-compose up
+```
+
+**note**: the following containers listens three ports:
+* deployqa framework: listens on port 8000
+* elasticsearch: listens on port 9200
+* streamlit ui: listens on port 8501",container
+pwc.greatest,usage basic usage,"- method 3: use a docker image, see [documentation for docker](./docs/docker.md)",container
+acm.fse,installation,"we provide two ways to install vinj. the best way is to use our docker image and this is recommended:
+```
+docker pull g2ecb/vinj:latest
+containerid=`docker run -d -it --gpus all g2ecb/vinj:latest bash`
+docker exec -it $containerid bash
+```
+once the docker container is set up, you can directly go to **usage** section for the next step. otherwise, please follow the instructions below to set up the environments on your computer. first, set up the environments and install dependencies. 1. install java>=11. 2.",container
+acm.fse,installation,"install srcml for parsing code into ast: https://www.srcml.org/
+3. download and extract our specific **gumtree-lite.zip**: https://figshare.com/s/d85b715edc26ea99c5fa. 4. set environment path for gumtree-lite:
+```
+export gumtree=your_gumtree_path
+export path=$path:$gumtree
+```
+5. clone the vinj repository: 
+```
+git clone https://github.com/newgillig/vinj.git
+```
+6.",container
+acm.fse,installation,"install the dependencies of the localization model:
+```
+pip install transformers
+pip install torch
+pip install numpy
+pip install tqdm
+pip install pandas
+pip install tokenizers
+pip install datasets
+pip install gdown
+pip install tensorboard
+pip install scikit-learn
+```
+7. install pypy3 to improve efficiency: https://www.pypy.org/",container
+acm.fse,install,"build a docker image
+
+`docker build -t exli .`
+
+`docker run -it exli /bin/bash`
+
+
+in the docker, create a python environment named `exli`
+
+`cd exli/python && bash prepare-conda-env.sh`
+
+`conda activate exli`",container
+acm.fse,how to install,"
+```bash
+pip3 install slither-analyzer
+git clone git@github.com:seccross/xguard.git && cd xguard
+python3 setup.py install
+```
+
+we recommend using a python virtual environment, as detailed in the [developer installation instructions](https://github.com/trailofbits/slither/wiki/developer-installation), if you prefer to install xguard via git.",container
+acm.ase,how to use,"after importing maktub into your unity project, each test scene needs to have a `maktub root` in it. this can be found in the `prefabs` folder and placed anywhere in the scene. now collision and rotation goals can be placed in your scene. if you select a goal after placing it and look at its inspector tab you will see a series of options:
+* is failure goal
+  * tells maktub whether or not this goal being completed counts as a failure or a success for the test
+* is sequenced
+  *",package_manager
+acm.ase,how to use,"tells maktub whether or not this goal needs to have other goals completed before this one can be marked as complete
+* prerequisites
+  * this tab only appears if `is sequenced` has been checked off
+  * this is a list that can be expanded to include as many prerequisite goals as you want
+  * each element has a goal object and an operator (and or or) that chains them together
+    * the first elements `operation` does nothing (the fact that it has one is a bug and will be fixed eventually)
+
+!",package_manager
+acm.ase,how to use,[inspector](runtime/resources/textures/inspector.png),package_manager
+acm.ase,prime: command line metrics tool,"> a complete installer for prime (transitioning from clime)
+
+[![doi](https://zenodo.org/badge/doi/10.5281/zenodo.6477789.svg)](https://doi.org/10.5281/zenodo.6477789)
+[![release project](https://github.com/softwaresystemslaboratory/clime/actions/workflows/release.yml/badge.svg)](https://github.com/softwaresystemslaboratory/clime/actions/workflows/release.yml)",package_manager
+bio.tools.updated.latest,installation,"there are 4 alternative ways to run __bdpn__ on your computer: 
+with [docker](https://www.docker.com/community-edition), 
+[apptainer](https://apptainer.org/),
+in python3, or via command line (requires installation with python3).",package_manager
+acm.ase,setup 1. start plugin-backend,"to run plugin-backend server (from dir: `plugin-backend/`):
+
+1. install required packages (listed at requirements.txt):
+    ```
+    pip install -r requirements.txt
+    ```
+2. make sure you have a serialized pretrained model and multi-label binarizer (ours are available [here](https://drive.google.com/drive/folders/1qxzoy0lfnuzwgot2px_vzchr6qyhjjfj?usp=sharing)). then, create your ```.env``` file (from the provided template, in the same location) and add the paths to the serialized objects.",package_manager
+acm.ase,setup 1. start plugin-backend,"3. start the server (it runs on port 5000 by default):
+    ```
+    python server.py 
+    ```
+    
+4. check the available routes (they can be used without the extension):
+
+    **1.* * analyse code section (with line interval):
+        ```  post /predict/section ```
+
+    **2.** analyse complete file:
+        ```  post /predict/file ```",package_manager
+acm.ase,build,"**trimmer** operates on bitcode files, which can be generated using either [wllvm](https://github.com/sri-csl/whole-program-llvm) or [gllvm](https://github.com/sri-csl/gllvm). wllvm can be directly installed using pip:
+
+```
+pip install wllvm
+```",package_manager
+ox.aca.bio,quick start requirements and installation,"in your favorite virtual environment, simply do:
+
+```
+pip install flair
+```
+
+flair requires python 3.8+. ",package_manager
+acm.icse,install,"```
+pip install spotflow
+```",package_manager
+bio.tools.updated.latest,installation & dependencies,"clone the github repository by typing:
+
+	git clone https://github.com/febos/squarna
+	
+squarna requires python3 of at least 3.8 version along with
+a (hopefully) arbitrary version of numpy library. 
+
+to use as a python function:
+
+	pip install squarna",package_manager
+acm.icse,githubinclusifier source code front end,"the front end is implemented with reactjs, and can be started by running `npm start`.",package_manager
+pwc.greatest,quick install,"with pip:
+
+```bash
+pip install langchain
+```
+
+with conda:
+
+```bash
+conda install langchain -c conda-forge",package_manager
+pwc.greatest,installation with conda,"__ transformers can be installed using conda as follows:
+
+```shell script
+conda install conda-forge::transformers
+```
+
+> **_note:_** installing `transformers` from the `huggingface` channel is deprecated. follow the installation pages of flax, pytorch or tensorflow to see how to install them with conda.
+
+> **_note: _**  on windows, you may be prompted to activate developer mode in order to benefit from caching.",package_manager
+pwc.greatest,installation with conda,"if this is not an option for you, please let us know in [this issue](https://github.com/huggingface/huggingface_hub/issues/1062).",package_manager
+bio.tools.updated.latest,installations,"## installation
+
+crocodeel is available on bioconda:
+```
+conda create --name crocodeel_env -c conda-forge -c bioconda crocodeel
+conda activate crocodeel_env
+```
+
+alternatively, you can use pip:
+```
+pip install crocodeel
+```
+
+finally, you can test that crocodeel is correctly installed with the following command:
+```
+crocodeel test_install
+```",package_manager
+arxiv.API,installation,"install biorecap from github (keep `dependencies=true` to get suggests
+packages needed to create the html report):
+
+``` r
+# install.packages(""remotes"")
+remotes::install_github(""stephenturner/biorecap"", dependencies=true)",package_manager
+pwc.greatest,setup,"we used python 3.9.9 and [pytorch](https://pytorch.org/) 1.10.1 to train and test our models, but the codebase is expected to be compatible with python 3.8-3.11 and recent pytorch versions. the codebase also depends on a few python packages, most notably [openai's tiktoken](https://github.com/openai/tiktoken) for their fast tokenizer implementation.",package_manager
+pwc.greatest,setup,"you can download and install (or update to) the latest release of whisper with the following command:
+
+    pip install -u openai-whisper
+
+alternatively, the following command will pull and install the latest commit from this repository, along with its python dependencies:
+
+    pip install git+https://github.com/openai/whisper.git",package_manager
+pwc.greatest,setup,"to update the package to the latest version of this repository, please run:
+
+    pip install --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git
+
+it also requires the command-line tool",package_manager
+pwc.greatest,setup,"[`ffmpeg`](https://ffmpeg.org/) to be installed on your system, which is available from most package managers:
+
+```bash
+# on ubuntu or debian
+sudo apt update && sudo apt install ffmpeg
+
+# on arch linux
+sudo pacman -s ffmpeg
+
+# on macos using homebrew (https://brew.sh/)
+brew install ffmpeg
+
+# on windows using chocolatey (https://chocolatey.org/)
+choco install ffmpeg
+
+# on windows using scoop (https://scoop.sh/)",package_manager
+pwc.greatest,setup,"scoop install ffmpeg
+```
+
+you may need [`rust`](http://rust-lang.org) installed as well, in case [tiktoken](https://github.com/openai/tiktoken) does not provide a pre-built wheel for your platform. if you see installation errors during the `pip install` command above, please follow the [getting started page](https://www.rust-lang.org/learn/get-started) to install rust development environment.",package_manager
+pwc.greatest,setup,"additionally, you may need to configure the `path` environment variable, e.g. `export path=""$home/.cargo/bin:$path""`. if the installation fails with `no module named 'setuptools_rust'`, you need to install `setuptools_rust`, e.g. by running:
+
+```bash
+pip install setuptools-rust
+```",package_manager
+pwc.greatest,usage basic usage,"- method 2: if you are using macos or linux, you can install llama.cpp via [brew, flox or nix](./docs/install.md)",package_manager
+bio.tools.updated.latest,installation on windows,"using anaconda (https://www.anaconda.com/download), create a new environment titled ""msigen"" with python >=3.9 and <3.12 and activate it. then, msigen can be installed using the pip package manager.
+
+run the following in anaconda prompt one line at a time:
+```
+conda create --name msigen python=3.11 -y
+conda activate msigen
+pip install msigen
+```",package_manager
+pwc.greatest,installation with pip,"this repository is tested on python 3.8+, flax 0.4.1+, pytorch 1.11+, and tensorflow 2.6+. you should install __ transformers in a [virtual environment](https://docs.python.org/3/library/venv.html). if you're unfamiliar with python virtual environments, check out the [user guide](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/). first, create a virtual environment with the version of python you're going to use and activate it.",package_manager
+pwc.greatest,installation with pip,"then, you will need to install at least one of flax, pytorch, or tensorflow. please refer to [tensorflow installation page](https://www.tensorflow.org/install/), [pytorch installation page](https://pytorch.org/get-started/locally/#start-locally) and/or [flax](https://github.com/google/flax#quick-install) and [jax](https://github.com/google/jax#installation) installation pages regarding the specific installation command for your platform. when one of those backends has been installed, __",package_manager
+pwc.greatest,installation with pip,"transformers can be installed using pip as follows:
+
+```bash
+pip install transformers
+```
+
+if you'd like to play with the examples or need the bleeding edge of the code and can't wait for a new release, you must [install the library from source](https://huggingface.co/docs/transformers/installation#installing-from-source).",package_manager
+acm.fse,installation,"otherwise, please follow the instructions below to set up the environments on your computer. first, set up the environments and install dependencies. 1. install java>=11. 2. install srcml for parsing code into ast: https://www.srcml.org/
+3. download and extract our specific **gumtree-lite.zip**: https://figshare.com/s/d85b715edc26ea99c5fa. 4. set environment path for gumtree-lite:
+```
+export gumtree=your_gumtree_path
+export path=$path:$gumtree
+```
+5.",source
+acm.fse,installation,"clone the vinj repository: 
+```
+git clone https://github.com/newgillig/vinj.git
+```
+6. install the dependencies of the localization model:
+```
+pip install transformers
+pip install torch
+pip install numpy
+pip install tqdm
+pip install pandas
+pip install tokenizers
+pip install datasets
+pip install gdown
+pip install tensorboard
+pip install scikit-learn
+```
+7. install pypy3 to improve efficiency: https://www.pypy.org/",source
+arxiv.API,### **(optional) setup for drug representative generation**,"this step is required only to run `drugfinder` and the process to find
+representative drugs in a category based on mimic-iv data. make sure that mimic-iv is installed and running on your machine as postgresql database. the mimic-iv can be obtained [here](https://physionet.org/content/mimiciv/2.2/#files). \
+access requires completing the following training described [here](https://physionet.org/content/mimiciv/view-required-training/2.2/#1).",source
+arxiv.API,### **(optional) setup for drug representative generation**,"\
+instructions and code for loading mimic-iv into postgresql are [here](https://github.com/mit-lcp/mimic-code/tree/main/mimic-iv/buildmimic/postgres). \
+finally, ensure that your user account has access to the `mimiciv` database.",source
+acm.fse,how to install,"> **note** <br />
+> xguard requires python 3.8+.
+if you're **not** going to use one of the [supported compilation frameworks](https://github.com/crytic/crytic-compile), you need [solc](https://github.com/ethereum/solidity/), the solidity compiler; we recommend using [solc-select](https://github.com/crytic/solc-select) to conveniently switch between solc versions.",source
+arxiv.API," **__ set up environment variables (api keys, etc)**","to use the example scripts with an openai llm, you need an openai api key. in the root of the repo, copy the `.env-template` file to a new file `.env`:
+```bash
+cp .env-template .env ```
+
+first, an [openai api key](https://platform.openai.com/docs/quickstart) is required;
+save it in the `.env` file as `openai_api_key=...` (no quotes). a qdrant instance and api key is required (see the [langroid instructions](https://github.com/langroid/langroid?tab",source
+arxiv.API," **__ set up environment variables (api keys, etc)**","=readme-ov-file#set-up-environment-variables-api-keys-etc)); set up `qdrant_api_url` and `qdrant_api_key` in `.env` as described there. an openfda api key is also required (get one [here](https://open.fda.gov/apis/authentication/)), set it as 
+`openfda_api_key=...` in the `.env` file.",source
+arxiv.API,installation,"###  installation
+
+<h4>from <code>source</code></h4>
+
+> 1. clone the  repository:
+>
+> ```console
+> $ git clone https://git.ee.ethz.ch/pbl/research/sepsis_prediction
+> ```
+>
+> 2. change to the project directory:
+> ```console
+> $ cd sepsis_prediction
+> ```
+>
+> 3. install the dependencies:
+> ```console
+> $ pip install -r requirements.txt
+> ```",source
+arxiv.API,**__ set up environment and install dependencies**,"we leverage the awesome [langroid](https://github.com/langroid/langroid) 
+open-source python library for multi-agent llm applications. important: please ensure you are using python 3.11+. if you are using poetry,
+you may be able to just run `poetry env use 3.11` if you have python 3.11 available in your system. ```bash
+# clone this repository 
+git clone",source
+arxiv.API,**__ set up environment and install dependencies**,"[this-repository]
+cd malade
+```
+
+environment setup with conda:
+```bash
+# create empty environment:
+conda env create -n malade python=3.11 -c conda-forge
+conda activate malade
+```
+
+setup with venv:
+```bash
+# create a virtual env under project root, .venv directory
+python3 -m venv .venv
+
+# activate the virtual env
+. .venv/bin/activate
+```
+
+install dependencies with poetry:
+```bash
+# optionally: poetry lock
+poetry install
+```",source
+arxiv.API,requirements,"`scasdc` method mainly relies on the following python packages:
+```
+numpy
+scanpy
+scikit-learn
+torch
+pandas
+h5py
+scipy
+```
+for more detailed settings, please refer to: [requirement.txt](requirement.txt).",source
+bio.tools.updated.latest,installation,"clone the github repository by typing
+    git clone https://github.com/david-bogdan-r/artem.git",source
+acm.fse,environment,"our implementation uses pytorch-lightning framework with 
+
+***pytorch version 1.12.0*** and ***python 3.8+***. 
+
+conda is recommended to set environment.
+
+install by conda
+```bash
+conda create -n cad python=3.8 
+conda activate cad
+
+conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch -y
+conda install -c conda-forge pytorch-lightning==1.8.0 -y
+conda install tensorboardx -y 
+
+```
+
+other dependency or installed by pip please refer to `requirement.txt`.",source
+acm.fse,prerequisites and installation,"1. download all the files into the same folder/clone the repository.
+
+2. install the specified version of python and tensorflow:
+the codes have been tested with **python 3.6 - 3.9** and **tensorflow 2.x**, other versions might cause errors.
+
+3. install all missing packages according to **requirements.txt** and runtime messages.
+",source
+acm.fse,evaluation of accuracy,"we provide dataset b for evaluation.
+- download [dataset_b.zip](https://cloud.tsinghua.edu.cn/f/d7868566fb344541bb26/?dl=1) and put it under `dataset/` after unzipping it.
+- install python 3.8+ on your system.
+- run `pip3 install -r requirements.txt` to install the dependencies.
+- run `python3 -m tracegnn.models.gtrace.main` to start training. the evaluation will automatically starts after training.
+- if you want to run on gpu, you can modify the `device` in `tracegnn/models/config.py`.
+  ",source
+acm.fse,2. instructions for using themis+,"before using themis+, you need to install android sdk and emulators. then you can follow the steps below to run themis+. **step 1. open a terminal and switch to the scripts directory**
+
+```
+cd scripts/
+```
+
+**step 2. run monkey on one target bug for 6 hours**
+
+```
+python3 themis.py --no-headless --avd android7.1 --apk ../activitydiary/instrumented-scarlet-notes-#114.apk --time 6h -o ../monkey-results/ --monkey
+```
+
+here, 
+* `--no-headless` shows the emulator gui.",source
+acm.fse,2. instructions for using themis+,* `--avd android7.1` specifies the name of the emulator (which has already been created in the vm). * `--apk ../scarlet-notes/instrumented-scarlet-notes-#114.apk` specifies the target bug which is `scarletnotes`'s bug `#114` in `v1.1.8`.,source
+acm.fse,2. instructions for using themis+,"* `--time 6h` allocates 6 hours for the testing tool to find the bug 
+* `-o ../monkey-results/` specifies the output directory of testing results
+* `--monkey` specifies the testing tool
+
+**step 3. run the analysis script to analyze the effectiveness of monkey**
+
+first, we need to change the cwd to `/home/ddroid-core`:
+
+```
+cd ../ddroid-core/
+```
+
+*",source
+acm.fse,2. instructions for using themis+,"to analyze one single round of testing results which is outputted under `../monkey-results/`:
+
+```
+python3 main.py ../monkey-results/instrumented-scarlet-notes-#114.apk.monkey.result
+```
+
+here, `../monkey-results/instrumented-scarlet-notes-#114.apk.monkey.result` is generated by **step 2**
+
+
+* to analyze multiple rounds of testing results which are outputted under `../monkey-results/`:
+
+```
+python3 main.py -b",source
+acm.fse,2. instructions for using themis+,"le rounds of testing results which are outputted under `../monkey-results/`:
+
+```
+python3 main.py -b ../monkey-results/
+```
+
+here, 
+* `-b` (`--batch`) is used to output the all detailed coverage statistics in terms of event coverage, event-pair coverage and trace-based minimal distance under a specific directory
+* use `-v` option to generate html format clues",source
+arxiv.API,readme,"this readme provides a step-by-step guide on how to run the model using the `isruc-s3` dataset.
+
+1. run `sh get_isruc_s3.sh` to download the data.
+2. run `python process_slice.py` to preprocess the data.
+3. run `python src/main.py` to execute the model.",source
+acm.fse,installation:,"you can install tsa as a package using pip for the current user as moving to the directory, tsa and executing:
+```
+pip install . --user
+```
+
+dependencies:
+* python 3.7+
+
+python libraries required:
+* docker
+* scapy
+* numpy
+* scipy
+* matplotlib
+* scikit-learn
+
+if you want to try the mathematica notebook on alignment or the python code on alignment, the extra dependencies are: * mathematica 
+* mafft (multiple sequence alignment library)",source
+acm.fse,installation:,"if you want to use the classifiers for attack synthesis, _pytorch_ library is required. if you want to use f-bleau for leakage quantification, it needs to be installed in addition to all the other dependencies.",source
+arxiv.API,environment setup,"
+the basic environment requirement is pytorch, here's an example for environment setup:
+
+```
+cd ./text-graph-diffusion/
+conda create -n utgdiff python=3.10
+conda activate utgdiff
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+pip install -r requirements.txt 
+```
+
+all the model checkpoint is saved at https://drive.google.com/drive/folders/18eqq7mdhesmtimizz2o09pyeswyf0hxb?usp=drive_link",source
+ox.aca.bio,setup installing dependencies,"to install all the dependencies, please run the following:
+
+```
+pip install -r requirements.txt or conda install --yes --file requirements.txt
+```",source
+ox.aca.bio,installation requirements,"you'll need a linux / unix compatible system (macos is fine) with python >= 3.10 and pip installed. 
+
+to install jenever, clone this repository, navigate to the repository directory, and enter: 
+
+    pip install  .
+
+on the command line. there are some pretty large dependencies (pytorch, pysam, sklearn, etc), so installation may take a few minutes.
+
+it's a good idea to install in a separate conda environment or python virtualenv if possible, but not required unless there are dependency conflicts. ",source
+arxiv.API,install environment (linux),"```
+conda env create --file environment.yml
+conda activate cradle_vae_env
+```
+- if you encounter a conflict, run this command: `conda config --set channel_priority disabled`
+
+```
+pip install 'rapids-singlecell[rapids11]' --extra-index-url=https://pypi.nvidia.com #cuda11.x
+pip install 'rapids-singlecell[rapids12]' --extra-index-url=https://pypi.nvidia.com #cuda12
+```
+- install `rapids-singlecell` according to your cuda version",source
+ox.aca.bio,installation,"
+follow the `pytroch` and `pyg` installation instructions to install the dependencies_
+
+[pytroch installation instructions](https://pytorch.org/get-started/locally/)
+
+[pyg installation instructions](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html)
+
+for other dependencies and their versions please refer to the [requirements.txt](./requirements.txt) file.
+
+``` bash
+pip install -r requirements.txt
+```",source
+arxiv.API,setup,-   `pip install -r requirement.txt`,source
+arxiv.API,installations,"here, we provide guidelines for setting up the library. 
+```bash
+# set up the environment
+conda create -n cmob python=3.9
+conda activate 
+
+# installation
+pip install -r requirements.txt
+```",source
+bio.tools.updated.latest,usage,"## **usage**
+1. execution via cross-platform executable gui
+    - download [ad_assessment_gui.zip](https://huggingface.co/jenhung/ecti_assessment_gui)
+    - run `ad_assessment_gui.exe`
+    - analysis results will be saved within the selected path in a folder titled `cno_detection`
+
+2.",source
+bio.tools.updated.latest,usage,"execution via python script
+    - install packages in terminal:
+        ```    
+        pip install -r requirements.txt
+        ```
+    - run `ad_assessment_gui.py`
+    - analysis results will be saved within the selected path in a folder titled `cno_detection`",source
+bio.tools.updated.latest,installation,"```
+conda create -n scgraph2vec python=3.7
+source activate scgraph2vec
+git clone https://github.com/lph-big/scgraph2vec
+```",source
+acm.msr,installation," 1. download all the files into the same folder.
+ 2. install the specified version of python and tensorflow.
+ 3. run encoding.py and install all missing packages according to the runtime messages. ",source
+acm.msr,how to run,"each of the case studies (1) defect prediction casse study (2) project health estimation case study
+assuming there are n projects we want to use as trining data, run the following commands sequentially -
+### defect prediction:
+1. python src/birch_bellwether.py n 
+2. python src/calculate_comparisons.py n 
+3. python src/birch_bellwether_v2.py
+4. python src/find_bellwethers.py
+5. python src/final_performance.py
+6. python src/tca.py
+7. python src/tptl.py
+8. python src/tca_test.py
+9.",source
+acm.msr,how to run,"python src/stats.py
+
+### project health estimation:
+1. python src/birch_bellwether_time.py n
+2. python src/calculate_comparisons.py n
+3. python src/attribute_selector.py
+4. python src/birch_bellwether_p_cfs.py
+5. python src/find_bellwethers.py
+6. python src/performance_calculator.py
+7. python src/stats_files.py
+
+## generating results",source
+acm.msr,setup gitbug-java,"requirements:
+- python (recommended 3.11)
+- poetry (recommended 1.8 and higher)
+- docker (v20 or higher)
+- if you are on ubuntu/debian, choose a system with glibc 2.32 or 2.34 as some of the dependencies require these versions (a docker image would not be suitable as it would require dind). for example you can create a virtual machine of ubuntu 21.10 (glibc 2.32). here is a quick setup of an ubuntu vm:
+  - install multipass (allows to quickly create ubuntu vms and works on linux/mac/windows).",source
+acm.msr,setup gitbug-java,"follow instructions here: https://multipass.run/docs/install-multipass.
+  - create an ubuntu image (e.g, 280g in disk space, 16g in memory and 2 cpus): 
+    ```bash
+    multipass launch 21.10 --disk 280g --memory 16g --cpus 2
+    ```
+  - login the newly created vm
+    ```bash
+    multipass shell vm-name-printed-last-step
+    ```
+  - install docker within the image and add the user to the docker group
+
+once th",source
+acm.msr,setup gitbug-java,"-last-step
+    ```
+  - install docker within the image and add the user to the docker group
+
+once the above requirements are satisfied within your system or the vm machine is created, clone this repository and execute the following steps:
+
+1. setup python environment
+    ```bash
+    poetry shell
+    poetry install --no-root
+    ```
+
+    **note:** poetry shell will attempt to create a new virtual environment. however, if you are already inside a virtual environment, poetry will use the that environment.",source
+acm.msr,setup gitbug-java,"in such case, the subsequent commands would only work with a python3.11 environment. 2. add gitbug-java and custom act version to path
+    ```bash
+    export path=""$(pwd):$(pwd)/bin:$path""
+    ```
+    **note :** the above command needs to be executed on every new shell instance
+    
+3. run setup (installs docker image ~50gib, downloads required dependencies ~80gib). the downloadable data size is around 130gb.",source
+acm.msr,setup gitbug-java,"however, after unzipping files, the space taken goes up to 240gb (it goes down after deleting the zipped files). ```bash
+    gitbug-java setup
+    ```
+
+**note: ensure that all `gitbug-java` commands are executed without using `sudo` to guarantee correct functionality. **",source
+acm.msr,how to install,"to run the scripts in this project, you must install python 3.11 and sqlalchemy v2.0 or greater.
+
+these package can be installed using the `anaconda` environment manager
+1. install the latest version of anaconda from [here](https://www.anaconda.com/download)
+1. run `conda env create -f environment.yml` to create the anaconda environment `peatmoss`
+1. activate the environment using `conda activate peatmoss`
+
+alternatively, you can navigate to each packages respective pages and install them.",source
+acm.icse,tpv installation instructions,"this repository contains a modified distribution of use that includes our tpv plug-in. to install the tool, download the repository files as a zip folder and extract them in the desired install directory.
+
+**note: you must install the java runtime environment in order to run use**.",source
+acm.icse,githubinclusifier source code back end,"the back end is implemented with django, and can be started by activating the virtual environment with `.\venv\scipts\activate`, followed by `python ./backend/manage.py runserver`.",source
+acm.ase,,"our elecdaug tool has been deployed in the server, where 30data.json is an elecdaug input data. and users should preferably use a computer equipped with a windows operating system to access it. if you want to reuse elecdaug, you need to modify the path to the file in elecdaug_frontend/src/components/page and the front-end port, etc. in addition, you need to modify the path information and port number of elecdaug_frontend/flask.py. to run elecdaug the following requirements need to be met.",source
+acm.ase,,"operating environment.
+- hardware environment: 
+	cpu: dual-core amd64 processor or equivalent x86-compatible processor
+	memory: 8gb and above
+	available disk space: 200gb and above
+- software environment. operating system: windows 7 and above
+		database: mysql 8.0 and above, redis 5.0 and above
+		application software: python 3.7
+browser engine: we recommend using the latest version of chorme v8 browser engine",source
+acm.icse,how to run:,"- required python version >= 3.8.10
+'- create virtual environment and activate venv in project
+```shell script
+$ python -m venv env
+$ source venv/bin/activate
+```",source
+acm.icse,set up,"lone dopamin repo:
+```
+git clone https://github.com/fsoft-ai4code/dopamin.git
+cd dopamin
+```
+
+python >= 3.8
+
+install requirements: ```pip install -r requirements.txt```
+
+**note:** we employ 2 nvidia a100 gpus for training the model, configuring a batch size of 32 per gpu, thus the total batchsize is 64. however, replication may not be feasible when utilizing a single gpu with a batch size of 64.",source
+acm.icse,__ installation,"```
+$ pip install -r requirements.txt
+```",source
+acm.icse,how to run,"- if you do not have the requirements installed in python: run ""pip install -r requirements.txt"" to install all the requirements
+'- within the app, first identify the folder where the app code and the tests are localized, i.e., ""android/src/main/java/"" and android/src/test/java/"", where the jacoco store its coverage reports, i.e., ""android/build/reports/jacoco/jacocounittestreport/html/"" and the targetsdkversion of the app which is 26 for this app.",source
+acm.icse,how to run,"'- to run: ""python apicia.py <--app path--> <--source code path--> <--test path--> <--jacoco report path--> <--current targetsdkversion--> <--new targetsdkversion-->"", i.e., ""python apicia.py example/fast/ android/src/main/java android/src/test/java android/build/reports/jacoco/jacocounittestreport/html/ 26 32""
+'- the output will be shown in the console as well as saved in the ""apicia_output.txt"" file.",source
+acm.icse,installation,"1. clone the repository
+    ```shell
+    ~$ git clone https://github.com/bugswarm/actions-remaker
+    ~$ cd actions-remaker
+    ```
+
+2. create and activate a python virtual environment
+    ```shell
+    ~/actions-remaker$ virtualenv -p python3.8 venv
+    ~/actions-remaker$ . venv/bin/activate
+    ```
+
+3. add personal access token to credentials
+   - open `bugswarm/common/credentials.py`
+   - replace `github_tokens = []` with `github_tokens = ['my_personal_token']`
+
+
+4.",source
+acm.icse,installation,"install dependencies
+    ```shell
+    (venv) ~/actions-remaker$ pip install -e . ```",source
+pwc.greatest,usage basic usage,"- method 1: clone this repository and build locally, see [how to build](./docs/build.md)",source
+acm.icse,installation,"1. clone the repository to your local machine:
+
+    ```bash
+    git clone https://github.com/stilab-ets/terametrics.git
+    ```
+
+2. navigate to the project directory:
+
+    ```bash
+    cd terametrics
+    ```
+
+3. build the project using maven:
+
+    ```bash
+    mvn clean install
+    ```
+
+
+<p align=""right"">(<a href=""#readme-top"">back to top</a>)</p>
+
+
+<!-- usage examples -->
+
+## usage 
+
+**terrametrics** is available as jar file that could be standalone executable file.",source
+acm.icse,installation,"the use can find the jar file named as [terraform_metrics-1.0.jar](src/main/resources/terraform_metrics-1.0.jar). to run the tool you need execute [terraform_metrics-1.0.jar](src/main/resources/terraform_metrics-1.0.jar) with the right parameters. in the following we detail the possible parameters:
+
+1. to view the documentation:
+
+    - ```-h```: boolean parameter to print the user guide. ```bash
+    java -jar /path/to/terraform_metrics-1.0.jar -h
+    ```
+
+2.",source
+acm.icse,installation,"to measure the hcl metrics for a given terraform file, 3 parameters are required:
+  
+   -  ```--file```: path to the terraform file.
+   -  ```-b```: boolean parameter to indicate the file-level execution.
+   -  ```--target```: path to the result file. ```bash
+        java -jar </path/to/terraform_metrics-1.0.jar> --file </path/to/file.tf> -b --target </path/to/target.json>
+   ```
+
+3.",source
+acm.icse,installation,"to measure the hcl metrics for a given *local folder* or *github repository* that contain terraform file, 4 parameters are required:
+
+   -  ```-l```: boolean parameter to indicate the local-level execution.
+   -  ```--repo```: to indicate the path to the local folder.
+   - ```--target```: to indicate the path to the output file.
+   - ```--project```: to indicate the project name.
+   - ```-g```: boolean parameter to indicate to get the repository from github.",source
+acm.icse,installation,"for *local folder*: 
+
+   ```bash
+      java -jar /path/to/terraform_metrics-1.0.jar -l --repo </path/to/localrepo> --target </path/to/target.json> --project <projectname>
+   ```
+
+   for *github repository*:
+
+   ```bash
+      java -jar /path/to/terraform_metrics-1.0.jar -g --repo </path/to/localrepo> --target </path/to/target.json> --project <githubrepositoryfullname>
+   ```
+
+a demonstration video is available at:",source
+acm.icse,installation,[![image alt text here](https://img.youtube.com/vi/dgeydlu1fac/0.jpg)](https://www.youtube.com/watch?v=dgeydlu1fac),source
+acm.icse,environment configuration,"to reproduce our experiments, machines with gpus and nvidia cuda toolkit are required.
+
+the environment dependencies are listed in the file ""requirements.txt"". you can create conda environment to install required dependencies:",source
+pwc.greatest,requirements,"a suitable [conda](https://conda.io/) environment named `ldm` can be created
+and activated with:
+
+```
+conda env create -f environment.yaml
+conda activate ldm
+```
+
+you can also update an existing [latent diffusion](https://github.com/compvis/latent-diffusion) environment by running
+
+```
+conda install pytorch torchvision -c pytorch
+pip install transformers==4.19.2 diffusers invisible-watermark
+pip install -e .
+``` ",source
+bio.tools.updated.latest,usage,2. execution via python script,source
+acm.icse,install,"some packages in this repository are old, `node 14` must be used to start the project. [nvm](https://github.com/nvm-sh/nvm) is recommended to manage multiple versions of `node` in your machine.
+
+```bash
+git config --global url.""https://github.com/"".insteadof git://github.com/ # one package uses a no longer supported url, this is a fix
+git clone https://github.com/x-lab2017/open-galaxy.git
+cd open-galaxy
+yarn install
+yarn start # this will start local development sever with auto-rebuild.
+```",source
+bio.tools.updated.latest,[installation](https://v6.docs.sirius-ms.io/install),"for  windows and macos, the installer version of sirius (msi/pkg) should be preferred but might require administrator permissions. since we do not pay microsoft/apple for certification, you might have to confirm that you want to trust ""software from
+an unknown source"" on windows/macos when using the installers provided by the bcker group.",other
+bio.tools.updated.latest,[installation](https://v6.docs.sirius-ms.io/install),"therefore, we highly recommend using the [**signed** installers](https://github.com/bright-giant/sirius/releases) provided by
+[bright giant](https://bright-giant.com) (also linked above). these installers ease the installation process by triggering no (or less) security issues of the respective os. see the [documentation](https://v6.docs.sirius-ms.io/install) for details.",other
+arxiv.API,,"to learn how to install, use, or get help with q2-boots, refer to the [q2-boots documentation](https://q2-boots.readthedocs.io/en/latest/).",other
+arxiv.API,### inbd,"### inbd
+go to ./inbd
+ center mask images are located using during the inference.",other
+arxiv.API,### urudendro,"### inbd
+go to ./inbd
+ center mask images are located using during the inference.",other
+pwc.greatest,nvidia jetson platforms,"python wheels for nvidia's jetson nano, jetson tx1/tx2, jetson xavier nx/agx, and jetson agx orin are provided [here](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-10-now-available/72048) and the l4t container is published [here](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/l4t-pytorch)
+
+they require jetpack 4.2 and above, and [@dusty-nv](https://github.com/dusty-nv) and [@ptrblck](https://github.com/ptrblck) are maintaining them.",other
+pwc.greatest,prerequisites,"if you are installing from source, you will need:
+- python 3.8 or later (for linux, python 3.8.1+ is needed)
+- a compiler that fully supports c++17, such as clang or gcc (gcc 9.4.0 or newer is required, on linux)
+- visual studio or visual studio build tool on windows
+
+\* pytorch ci uses visual c++ buildtools, which come with visual studio enterprise,
+professional, or community editions. you can also install the build tools from
+https://visualstudio.microsoft.com/visual-cpp-build-tools/.",other
+pwc.greatest,prerequisites,"the build tools *do not*
+come with visual studio code by default. \* we highly recommend installing an [anaconda](https://www.anaconda.com/download) environment. you will get a high-quality blas library (mkl) and you get controlled dependency versions regardless of your linux distro.",other
+pwc.greatest,prerequisites,"an example of environment setup is shown below:
+
+* linux:
+
+```bash
+$ source <conda_install_dir>/bin/activate
+$ conda create -y -n <conda_name>
+$ conda activate <conda_name>
+```
+
+* windows:
+
+```bash
+$ source <conda_install_dir>\scripts\activate.bat
+$ conda create -y -n <conda_name>
+$ conda activate <conda_name>
+$ call ""c:\program files\microsoft visual studio\<version>\community\vc\auxiliary\build\vcvarsall.bat"" x64",other
+pwc.greatest,nvidia cuda support,"if you want to compile with rocm support, install
+- [amd rocm](https://rocm.docs.amd.com/en/latest/deploy/linux/quick_start.html) 4.0 and above installation
+- rocm is currently supported only for linux systems. by default the build system expects rocm to be installed in `/opt/rocm`. if rocm is installed in a different directory, the `rocm_path` environment variable must be set to the rocm installation directory. the build system automatically detects the amd gpu architecture.",other
+pwc.greatest,nvidia cuda support,"optionally, the amd gpu architecture can be explicitly set with the `pytorch_rocm_arch` environment variable [amd gpu architecture](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/reference/system-requirements.html#supported-gpus) if you want to disable rocm support, export the environment variable `use_rocm=0`. other potentially useful environment variables may be found in `setup.py`.",other
+pwc.greatest,intel gpu support,"if you want to compile with intel gpu support, follow these
+- [pytorch prerequisites for intel gpus](https://www.intel.com/content/www/us/en/developer/articles/tool/pytorch-prerequisites-for-intel-gpus.html) instructions.
+- intel gpu is supported for linux and windows.
+
+if you want to disable intel gpu support, export the environment variable `use_xpu=0`.
+other potentially useful environment variables may be found in `setup.py`.",other
+pwc.greatest,get the pytorch source,"```bash
+git clone --recursive https://github.com/pytorch/pytorch
+cd pytorch
+# if you are updating an existing checkout
+git submodule sync
+git submodule update --init --recursive
+```",other
+pwc.greatest,install dependencies,"**common**
+
+```bash
+conda install cmake ninja
+# run this command on native windows
+conda install rust
+# run this command from the pytorch directory after cloning the source code using the òget the pytorch sourceò section below
+pip install -r requirements.txt
+```
+
+**on linux**
+
+```bash
+pip install mkl-static mkl-include
+# cuda only:",other
+pwc.greatest,install dependencies,"add lapack support for the gpu if needed
+conda install -c pytorch magma-cuda121  # or the magma-cuda* that matches your cuda version from https://anaconda.org/pytorch/repo
+
+# (optional) if using torch.compile with inductor/triton, install the matching version of triton
+# run from the pytorch directory after cloning
+# for intel gpu support, please explicitly `export use_xpu=1` before running command.",other
+pwc.greatest,install dependencies,"make triton
+```
+
+**on macos**
+
+```bash
+# add this package on intel x86 processor machines only
+pip install mkl-static mkl-include
+# add these packages if torch.distributed is needed
+conda install pkg-config libuv
+```
+
+**on windows**
+
+```bash
+pip install mkl-static mkl-include
+# add these packages if torch.distributed is needed. # distributed package support on windows is a prototype feature and is subject to changes. conda install -c conda-forge libuv=1.39",other
+pwc.greatest,install pytorch,"**on linux**
+
+if you would like to compile pytorch with [new c++ abi](https://gcc.gnu.org/onlinedocs/libstdc++/manual/using_dual_abi.html) enabled, then first run this command:
+```bash
+export _glibcxx_use_cxx11_abi=1
+```
+
+please **note** that starting from pytorch 2.5, the pytorch build with xpu supports both new and old c++ abis. previously, xpu only supported the new c++ abi. if you want to compile with intel gpu support, please follow [intel gpu support](#intel-gpu-support).",other
+pwc.greatest,install pytorch,"if you're compiling for amd rocm then first run this command:
+```bash
+# only run this if you're compiling for rocm
+python tools/amd_build/build_amd.py
+```
+
+install pytorch
+```bash
+export cmake_prefix_path=${conda_prefix:-""$(dirname $(which conda))/../""}
+python setup.py develop
+```
+
+> _aside:_",other
+pwc.greatest,install pytorch,"if you are using [anaconda](https://www.anaconda.com/distribution/#download-section), you may experience an error caused by the linker:
+>
+> ```plaintext
+> build/temp.linux-x86_64-3.7/torch/csrc/stub.o: file not recognized: file format not recognized
+> collect2: error: ld returned 1 exit status
+> error: command 'g++' failed with exit status 1
+> ```
+>
+> this is caused by `ld` from the conda environment shadowing the system `ld`. you should use a newer version of python that fixes this issue.",other
+pwc.greatest,install pytorch,"the recommended python version is 3.8.1+. **on macos**
+
+```bash
+python3 setup.py develop
+```
+
+**on windows**
+
+if you want to build legacy python code, please refer to [building on legacy code and cuda](https://github.com/pytorch/pytorch/blob/main/contributing.md#building-on-legacy-code-and-cuda)
+
+**cpu-only builds**
+
+in this mode pytorch computations will run on your cpu, not your gpu
+
+```cmd
+python setup.py develop
+```
+
+note on openmp: the desired openmp implementation is intel openmp (iomp).",other
+pwc.greatest,install pytorch,"in order to link against iomp, you'll need to manually download the library and set up the building environment by tweaking `cmake_include_path` and `lib`. the instruction [here](https://github.com/pytorch/pytorch/blob/main/docs/source/notes/windows.rst#building-from-source) is an example for setting up both mkl and intel openmp. without these configurations for cmake, microsoft visual c openmp runtime (vcomp) will be used.",other
+pwc.greatest,install pytorch,"**cuda based build**
+
+in this mode pytorch computations will leverage your gpu via cuda for faster number crunching
+
+[nvtx](https://docs.nvidia.com/gameworks/content/gameworkslibrary/nvtx/nvidia_tools_extension_library_nvtx.htm) is needed to build pytorch with cuda. nvtx is a part of cuda distributive, where it is called ""nsight compute"". to install it onto an already installed cuda run cuda installation once again and check the corresponding checkbox.",other
+pwc.greatest,install pytorch,"make sure that cuda with nsight compute is installed after visual studio. currently, vs 2017 / 2019, and ninja are supported as the generator of cmake. if `ninja.exe` is detected in `path`, then ninja will be used as the default generator, otherwise, it will use vs 2017 / 2019. <br/> if ninja is selected as the generator, the latest msvc will get selected as the underlying toolchain.",other
+pwc.greatest,install pytorch,"additional libraries such as
+[magma](https://developer.nvidia.com/magma), [onednn, a.k.a. mkldnn or dnnl](https://github.com/oneapi-src/onednn), and [sccache](https://github.com/mozilla/sccache) are often needed. please refer to the [installation-helper](https://github.com/pytorch/pytorch/tree/main/.ci/pytorch/win-test-helpers/installation-helpers) to install them.",other
+pwc.greatest,install pytorch,"you can refer to the [build_pytorch.bat](https://github.com/pytorch/pytorch/blob/main/.ci/pytorch/win-test-helpers/build_pytorch.bat) script for some other environment variables configurations
+
+
+```cmd
+cmd
+
+:: set the environment variables after you have downloaded and unzipped the mkl package,
+:: else cmake would throw an error as `could not find openmp`.
+set cmake_include_path={your directory}\mkl\include
+s",other
+pwc.greatest,install pytorch,"uld throw an error as `could not find openmp`.
+set cmake_include_path={your directory}\mkl\include
+set lib={your directory}\mkl\lib;%lib%
+
+:: read the content in the previous section carefully before you proceed.
+:: [optional] if you want to override the underlying toolset used by ninja and visual studio with cuda, please run the following script block.
+:: ""visual studio 2019 developer command prompt"" will be",other
+pwc.greatest,install pytorch,"uda, please run the following script block.
+:: ""visual studio 2019 developer command prompt"" will be run automatically.
+:: make sure you have cmake >= 3.12 before you do this when you use the visual studio generator. set cmake_generator_toolset_version=14.27
+set distutils_use_sdk=1
+for /f ""usebackq tokens=*"" %i in (`""%programfiles(x86)%\microsoft visual studio\installer\vswhere.exe"" -version",other
+pwc.greatest,install pytorch,"[15^,17^) -products * -latest -property installationpath`) do call ""%i\vc\auxiliary\build\vcvarsall.bat"" x64 -vcvars_ver=%cmake_generator_toolset_version%
+
+:: [optional] if you want to override the cuda host compiler
+set cudahostcxx=c:\program files (x86)\microsoft visual studio\2019\community\vc\tools\msvc\14.27.29110\bin\hostx64\x64\cl.exe
+
+python setup.py develop
+
+```",other
+pwc.greatest,adjust build options (optional),"you can adjust the configuration of cmake variables optionally (without building first), by doing
+the following. for example, adjusting the pre-detected directories for cudnn or blas can be done
+with such a step. on linux
+```bash
+export cmake_prefix_path=${conda_prefix:-""$(dirname $(which conda))/../""}
+python setup.py build --cmake-only
+ccmake build  # or cmake-gui build
+```
+
+on macos
+```bash
+export cmake_prefix_path=${conda_prefix:-""$(dirname $(which conda))/../",other
+pwc.greatest,adjust build options (optional),"""}
+macosx_deployment_target=10.9 cc=clang cxx=clang++ python setup.py build --cmake-only
+ccmake build  # or cmake-gui build
+```",other
+pwc.greatest,using pre-built images,"you can also pull a pre-built docker image from docker hub and run with docker v19.03+
+
+```bash
+docker run --gpus all --rm -ti",other
+pwc.greatest,using pre-built images,"--ipc=host pytorch/pytorch:latest
+```
+
+please note that pytorch uses shared memory to share data between processes, so if torch multiprocessing is used (e.g.
+for multithreaded data loaders) the default shared memory segment size that container runs with is not enough, and you
+should increase shared memory size either with `--ipc=host` or `--shm-size` command line options to `nvidia-docker run`.",other
+pwc.greatest,building the image yourself,"**note:** must be built with a docker version > 18.06 the `dockerfile` is supplied to build images with cuda 11.1 support and cudnn v8. you can pass `python_version=x.y` make variable to specify which python version is to be used by miniconda, or leave it
+unset to use the default. ```bash
+make -f docker.",other
+pwc.greatest,building the image yourself,"makefile
+# images are tagged as docker.io/${your_docker_username}/pytorch
+```
+
+you can also pass the `cmake_vars=""...""` environment variable to specify additional cmake variables to be passed to cmake during the build. see [setup.py](./setup.py) for the list of available variables. ```bash
+make -f docker. makefile
+```",other
+acm.msr,pre-requisites,"basic knowledge about java development, springboot and annotation development.<br>
+for example, if you use ide like vscode or idea, basic java development environment need to be installed such as `java extension pack`, `maven for java`. it should be noted that we use lombok annotation and springboot in code that may depend on extensions `lombok annotations support` and `spring boot tools` for ide to debug or run.",other
+acm.msr,pre-requisites,"besides, libmagicjnawrapper depends on libmagic to get file type, please install this library and modify the paths in libmagicjnawrapper.java. it can be easily installed using apt/brew command on linux/macos.",other
+acm.msr,build artifact,"env:
+- java: java 11.
+- intellij idea. (we have found that the extractor artifact works well only under intellij idea to build the artifact. tested successful under windows intellij idea 2021.2) 
+
+steps:
+1. ghidra: 9.1.2. the file `ghidra.jar` is stored under `/user/lib/ghidra.jar` you should put it under `/featureextractor/bcat_client/lib` first. 2. open idea, open project ""binary_lib_detection-main\featureextractor"". wait until indexing finish, if error occurs, try reopen/clean the project. 3.",other
+acm.msr,build artifact,"file -> project structure -> project sdk, select java sdk 11.
+4. file -> project structure -> artifacts -> ""+"" -> jar -> from modules with dependencies -> module (""bcat_client"") -> main class (""clientapplication"") -> jar files from libraries (select `copy to the output directory and link via manifest`) 
+    5. the jars will be generated at path: featureextractor\out\artifacts\bcat_client_jar, with `bcat_client.jar` inside.",other
+acm.msr,ui (online),"
+this ui is designed to interact with girt-model, it is also accessible in huggingface: https://huggingface.co/spaces/nafisehnik/girt-space
+1. irt input examples
+2. metadata fields of irt inputs
+3. summary field of irt inputs
+4. model config
+5. generated instruction based on the irt inputs
+6. generated irt",other
+acm.icse,install,"<img src=""https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/chrome/chrome.svg"" width=""48"" alt=""chrome"" valign=""middle""> [click here to install chrome extension](https://chrome.google.com/webstore/detail/hypercrx/ijchfbpdgeljmhnhokmekkecpbdkgabc)
+
+<img src=""https://raw.githubusercontent.com/alrra/browser-logos/90fdf03c/src/edge/edge.svg"" width=""48"" alt=""edge"" valign=""middle"">",other
+acm.icse,install,[click here to install edge extension](https://microsoftedge.microsoft.com/addons/detail/hypercrx/lbbajaehiibofpconjgdjonmkidpcome) for more information please refer to [installation guide](./installation.md).,other
+acm.ase,prime: command line metrics tool about,you can install the entirety of the prime project from pypi with `pip install --upgrade pip clime-metrics`.,other
+acm.ase,imstalling quacky,see requirements and install.,other
+acm.ase,installation guides,"the achilles website was built by two folders below, please read `readme.md` in each folder to see how to get started. 
+- achilles-frontend (front-end): [readme.md](https://github.com/muict-seru/achilles/blob/master/achilles-frontend/readme.md)
+- baak-dataload-sql (back-end): [readme.md](https://github.com/muict-seru/achilles/blob/master/baak-dataload-sql/readme.md)",other

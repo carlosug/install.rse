@@ -1,0 +1,3406 @@
+headers,instruction,method_type
+Installing AFL++ - Neuzz++ - Neural program smoothing for fuzzing in AFL++ - Installation,"Neuzz++ is implemented as a custom mutator for AFL++, so it requires this fuzzer to be installed.
+",source
+Installing AFL++ - Neuzz++ - Neural program smoothing for fuzzing in AFL++ - Installation,"For reproducing experimental results from the paper, we recommend using the AFL++ version specified by the commit hash below.
+",source
+Installing AFL++ - Neuzz++ - Neural program smoothing for fuzzing in AFL++ - Installation,"We provide two alternative installation options:
+*",source
+Installing AFL++ - Neuzz++ - Neural program smoothing for fuzzing in AFL++ - Installation,"Either clone and compile AFL++ from source in the folder of your choice:
+
+      git clone https://github.com/AFLplusplus/AFLplusplus
+      cd AFLplusplus/
+      git checkout 9e2a94532b7fd5191de905a8464176114ee7d258
+      make
+
+* Or install from Ubuntu repositories:
+
+      sudo apt install afl++
+",source
+Install Python dependencies - Neuzz++ - Neural program smoothing for fuzzing in AFL++ - Installation,"This project uses `python>=3.8` and [`poetry`](https://python-poetry.org/) for managing the Python environment.
+Install `poetry` system-wide or in an empty virtual environment (e.g., created via `virtualenv` or `conda`).
+Then run
+
+    poetry install --without dev
+
+to install the project dependencies.
+Note that Neuzz++ and MLFuzz have the same Pythhon dependencies; you only need to create one virtual environment for both of them.
+Use
+
+    poetry shell
+
+to activate the environment.
+",package_manager
+Build Neuzz++ custom mutator - Neuzz++ - Neural program smoothing for fuzzing in AFL++ - Installation,"In the cloned `NEUZZplusplus` folder, run:
+
+    make -C ./aflpp-plugins/
+",source
+Set environment variables - Neuzz++ - Neural program smoothing for fuzzing in AFL++ - Installation,"Finally, export the `AFL_PATH` and `NEUZZPP_PATH` pointing to the cloned repos:
+
+    export AFL_PATH=/path/to/AFLplusplus/
+    export NEUZZPP_PATH=/path/to/NEUZZplusplus/
+
+You are now ready to use Neuzz++.
+",other
+,"Setting up the constraint analysis part of SmartDiet is relatively
+straightforward, but involves a bit of work. You'll need a machine with
+Java installed and sources codes for one or more Android programs. You need to
+compile the SmartDiet analysis program (written in Scala). You also need to 
+unzip Android SDK jars in order to track dependencies to the Android SDK
+files. This section covers the setup of this part of SmartDiet.
+",source
+Compiling the SmartDiet toolkit - Setting up constraint analysis tool,"* Run <code>./sbt</code> to open up SBT (simple-build-tool) console. SBT documentation at
+  https://github.com/harrah/xsbt/wiki, if you want to dig deeper.
+* Fetch dependencies by running <code>update</code> in sbt console. This will take a while.
+* Assemble a runnable JAR by running <code>assembly:assembly</code> in sbt console.
+* You should see <code>target/smartdiet-{version}.jar</code>, runnable with
+  <code>java -jar smartdiet-{version}.jar</code>.
+",
+Configuring the constraint analysis tool - Setting up constraint analysis tool,"Configure applications in <code>sources.json</code> or a file similar to this
+(the name of the configuration file can be specified from the command line).
+
+",
+Configuring the constraint analysis tool - Setting up constraint analysis tool,"Remember to point the SDK directory (""sdkClassFilePath"") to one where you have
+*unzipped* all the SDK <code>.class</code> files, the tool doesn't read the
+library files from inside jars.
+
+",
+Configuring the constraint analysis tool - Setting up constraint analysis tool,"For each program, you should specify:
+
+* ""name"": Just something to describe it.
+",
+Configuring the constraint analysis tool - Setting up constraint analysis tool,"* ""appPath"": Directory containing compiled <code>.class</code> files for all application classes.
+",
+Configuring the constraint analysis tool - Setting up constraint analysis tool,"* ""appSrcPath"": Directory containing <code>.java</code> source files for all application classes.
+",
+Configuring the constraint analysis tool - Setting up constraint analysis tool,"* ""libPath"": Directory containing compiled <code>.class</code> files for all libraries that the application depends on (except for the SDK classes, which are under the sdkClassFilepath).",
+Configuring the constraint analysis tool - Setting up constraint analysis tool,"These also need to be unzipped, nothing is looked from inside jars.
+",
+,"To start using dynamic energy profiling part of SmartDiet, you need a more
+complex procedure.",
+,"You will need to root your Nexus One phone, compile the
+Android distribution and a custom kernel with some patches.",
+,"You'll also need to
+compile the traffic monitor kernel module against this same custom kernel.  ",
+,"The
+custom stuff then needs to be installed into the phone.",
+,"This section will cover
+these topics.
+
+",
+,"Note that I'm assuming you're familiar with the Android platform and know that
+there is a risk of bricking your phone, as always when installing custom
+firmware.",
+,You're doing all of this on your own risk.,
+,"Shouldn't be too big
+a risk if you're careful, but still.
+",
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"Start by compiling the Android platform.
+
+",source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"Official instructions are available at http://source.android.com/source/initializing.html,
+these are the steps that worked for me in Ubuntu 11.04.",source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"Another useful resource is
+http://source.android.com/source/build-numbers.html for the various build numbers and
+identifiers for Android.
+
+",source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,* Fetch the repo script if you don't already have it.,source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"Tested with version (1,13)
+  <pre>
+  $ curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+  </pre>
+*",source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"Make sure your system is configured with Java 1.5 (Android compilation requires this).
+  ",source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"For my Ubuntu 11.04 this can be done with the following command:
+  <pre>
+  $ sudo update-alternatives --set java /usr/lib/jvm/java-1.5.0-sun/jre/bin/java
+  </pre>
+*",source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,Create a working directory for the platform compilation.,source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"Rest of the instructions assume you work under the
+  directory created here.
+  ",source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"<pre>
+  $ mkdir android-2.2.1-r2
+  $ cd android-2.2.1-r2
+  </pre>
+* Initialize and fetch the repository (last step downloads a *lot* of stuff and takes time)
+  <pre>
+  $ repo init -u https://android.googlesource.com/platform/manifest -b android-2.2.1_r2
+  $ repo sync
+  </pre>
+*",source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"Compile the ADB tool and make it available in PATH
+  <pre>
+  $ make adb
+  $ export PATH=`pwd`/out/host/linux-x86/bin:$PATH
+  $ which adb
+  </pre>
+  You should see <code>/home/amsaarin/android/2.2.1-r2/out/host/linux-x86/bin/adb</code> or something similar.
+",source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"* Connect the Nexus One with USB and test connection with adb
+  <pre>
+  $ adb devices
+  List of devices attached
+  HT0B2P800954  device
+  </pre>
+*",source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,Fetch required proprietary files from Nexus One (in order to compile the platform).,source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"These
+  files are not distributed with the platform sources, so you need to have the stock Android
+  2.2 in the phone to do this.
+  ",source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"<pre>
+  $ cd device/htc/passion
+  $ ./extract-files.sh
+  </pre>
+* Compile Android platform first without any modifications (to make sure everything works in your environment).
+  ",source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"This will also take a while, results should appear in <code>out/target/product/passion/</code>
+  <pre>
+  $ source build/envsetup.sh
+  $ echo 4 | lunch
+  $ make -j2
+  </pre>
+  Results will appear in <code>out/target/product/passion/</code>",source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"if everything went well.
+",source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,*,source
+Compiling Android 2.2.1-r2 - Setting up energy analysis tool,"Install the resulting images to your phone to make sure everything works as supposed at this point.
+",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"* First compile the distribution, and then go to <code>out/target/product/passion/</code>
+  <pre>
+  $ cd out/target/product/passion/
+  </pre>
+*",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"Reboot the phone to bootloader
+  <pre>
+  $ adb reboot-bootloader
+  </pre>
+*",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"Find path to fastboot (should appear there if you adjusted the PATH earlier in the compile process).
+  ",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"<pre>
+  $ which fastboot
+  /home/amsaarin/android/2.2.1-r2/out/host/linux-x86/bin/fastboot
+  </pre>
+  Yours should look similar to this.",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"Adjust paths correctly in the following commands.
+",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,*,source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,Flash all partitions.,source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"Make sure you don't disconnect or boot the phone while flashing.
+  ",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"<pre>
+  $ sudo /home/amsaarin/android/2.2.1-r2/out/host/linux-x86/bin/fastboot flash boot boot.img
+        sending 'boot' (2338 KB)...",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"OKAY [  0.338s]
+                  writing 'boot'... OKAY [  0.975s]
+  finished.",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"total time: 1.313s
+  $ sudo /home/amsaarin/android/2.2.1-r2/out/host/linux-x86/bin/fastboot flash recovery recovery.img
+    sending 'recovery' (2564 KB)...",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"OKAY [  0.369s]
+              writing 'recovery'...",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"OKAY [  1.063s]
+  finished.",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"total time: 1.433s
+  $ sudo /home/amsaarin/android/2.2.1-r2/out/host/linux-x86/bin/fastboot flash system system.img
+     sending 'system' (74841 KB)...",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"OKAY [ 10.323s]
+                writing 'system'... OKAY [ 27.256s]
+  finished.",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"total time: 37.580s
+  $ sudo /home/amsaarin/android/2.2.1-r2/out/host/linux-x86/bin/fastboot flash userdata userdata.img
+       sending 'userdata' (2 KB)...",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"OKAY [  0.014s]
+              writing 'userdata'... OKAY [  2.377s]
+  finished.",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"total time: 2.391s
+  </pre>
+*",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"Reboot the phone
+  <pre>
+  $ sudo /home/amsaarin/android/2.2.1-r2/out/host/linux-x86/bin/fastboot reboot
+  </pre>
+* Phone should boot up normally, goto Settings -> About phone and check that Build number is something like this:
+  <pre>
+  full_passion-userdebug 2.2.1 FRG83D eng.
+  ",source
+Installing custom Android distribution to Nexus One - Setting up energy analysis tool,"amsaarin.20111024.152752 test-keys
+  </pre>
+",source
+Compiling a custom kernel - Setting up energy analysis tool,"Next, you'll need to compile your custom kernel.",source
+Compiling a custom kernel - Setting up energy analysis tool,"I used kernel version 2.6.32
+and patches are available for that version.",source
+Compiling a custom kernel - Setting up energy analysis tool,"Modifications might be needed if
+another version is used.
+
+",source
+Compiling a custom kernel - Setting up energy analysis tool,"As a result you will have a compiled kernel which will be referred later as
+<code>/path/to/zImage</code>.",source
+Compiling a custom kernel - Setting up energy analysis tool,"It will lie under the kernel source tree
+at <code>arch/arm/boot/zImage</code>.",source
+Compiling a custom kernel - Setting up energy analysis tool,"You should test this kernel as-is, and
+then continue applying our patches for it.
+
+",source
+Compiling a custom kernel - Setting up energy analysis tool,"Short instructions for compiling the kernel:
+
+1) Clone the msm kernel repository
+
+As of now (Dec 2th, 2011)",source
+Compiling a custom kernel - Setting up energy analysis tool,"the official Android kernel source code repository is
+down because kernel.org was hacked a few months ago and Google is still in the
+process of recovering the hosting of the kernel sources.",source
+Compiling a custom kernel - Setting up energy analysis tool,"So you need to use one
+of the unofficial mirrors to get the sources, this one worked for me:
+
+<pre>
+$ git clone https://github.com/android/kernel_msm.git
+</pre>
+
+2) Checkout a new custom branch from 2.6.32 in <code>kernel_msm</code>
+
+<pre>
+$ cd kernel_msm
+$ git checkout remotes/origin/archive/android-msm-2.6.32
+$ git checkout -b smartdiet-2.6.32
+</pre>
+
+3) Get the default kernel configuration
+
+One is available at with SmartDiet as a patch:
+
+<pre>
+$ git am /path/to/smartdiet/patches/kernel-2.6.32/0002-Add-in",source
+Compiling a custom kernel - Setting up energy analysis tool,"itial-config.patch
+Applying: Added initial config
+</pre>
+
+Alternatively, if you have a stock 2.2.1-r2 in your phone, you can use the
+following to get your stock configuration from the phone as well:
+
+<pre>
+$ adb pull /proc/config.gz
+$ gunzip config.gz
+</pre>
+
+4) Setup environment for kernel compiling 
+
+",source
+Compiling a custom kernel - Setting up energy analysis tool,"Do it manually or use the script provided with smartdiet:
+
+<pre>
+$ source /path/to/smartdiet/patches/env_kernel.sh
+</pre>
+
+5) Make the kernel
+
+<pre>
+$ make
+</pre>
+
+",source
+Compiling a custom kernel - Setting up energy analysis tool,"And you're done. 
+",source
+Compiling custom kernel with SmartDiet patches - Setting up energy analysis tool,"In order to work with the traffic monitor kernel module, you need to patch the
+kernel a bit.",
+Compiling custom kernel with SmartDiet patches - Setting up energy analysis tool,"SmartDiet kernel also includes patches to enable oprofiler and
+TaintDroid support (http://appanalysis.org/), which are not necessary to use
+SmartDiet but will make other debugging tasks easier.",
+Compiling custom kernel with SmartDiet patches - Setting up energy analysis tool,"You can take a look into
+what's under <code>patches/kernel-2.6.32</code> and decide to only use part of
+the patches, if you wish.
+
+",
+Compiling custom kernel with SmartDiet patches - Setting up energy analysis tool,"You can apply all patches to the kernel source tree by running the following
+under the git checkout of the Android kernel source tree:
+
+<pre>
+$ git am /path/to/smartdiet/patches/kernel-2.6.32/*
+Applying: Add traffic monitor protocol
+Applying:",
+Compiling custom kernel with SmartDiet patches - Setting up energy analysis tool,"Added initial config
+Applying:",
+Compiling custom kernel with SmartDiet patches - Setting up energy analysis tool,"Add profiling support to config
+Applying: Remove support for ext2 and ext3 from kernel to make it fit
+Applying:",
+Compiling custom kernel with SmartDiet patches - Setting up energy analysis tool,"Add patch for oprofile and Nexus One
+Applying: yaffs2: Add xattr patches by TaintDroid guys
+Applying: Enable YAFFS2 support in .config for TaintDroid
+</pre>
+",
+Compiling the traffic monitor kernel module - Setting up energy analysis tool,See the <code>trafficmonitor</code> subdirectory for more information.  ,
+Compiling the traffic monitor kernel module - Setting up energy analysis tool,"This is
+a separate kernel module developed at the Aalto University School of Science
+and it can be compiled against the patched kernel sources.",
+Compiling the traffic monitor kernel module - Setting up energy analysis tool,"You should get a
+<code>ec.ko</code> file which should be put into the <code>files</code>
+subdirectory to be used by the measurement scripts later on (they will upload
+and load it into use into the phone).",
+Compiling the traffic monitor kernel module - Setting up energy analysis tool,"Note that because this is a kernel
+module, it has to be compiled against the exact kernel version you are running
+or it won't load up correctly.
+
+",
+Compiling Android with custom kernel - Setting up energy analysis tool,"Next you should compile the Android with your custom kernel and check that it
+works. 
+
+",source
+Compiling Android with custom kernel - Setting up energy analysis tool,"Note that standard kernel modules distributed with the Android distribution
+will be incompatible with the new kernel and won't hence load up.",source
+Compiling Android with custom kernel - Setting up energy analysis tool,"Most
+important one is the driver dealing with WiFi, <code>bcm4329.ko</code>, so
+you'll want to copy the new driver into the distribution before compiling it.
+",source
+Compiling Android with custom kernel - Setting up energy analysis tool,"Copy the one from the compiled kernel under
+<code>drivers/net/wireless/bcm4329/bcm4329.ko</code> to
+<code>device/htc/passion-common/bcm4329.ko</code> under the Android
+distribution before compiling, and it'll be shipped to the phone when flashing.
+
+",source
+Compiling Android with custom kernel - Setting up energy analysis tool,"Compile the distribution with your new kernel by running the following in the
+Android platform directory (not the kernel source directory):
+
+<pre>
+$ make TARGET_PREBUILT_KERNEL=/path/to/zImage
+</pre>
+
+<code>/path/to/zImage</code> refers now to the custom kernel you built earlier.
+
+",source
+Compiling Android with custom kernel - Setting up energy analysis tool,"Before continuing, check that everything works by booting up the phone and
+checking versions (in addition to the platform version, kernel version should
+now  also change in Settings -> About phone to refer somehow into your
+machine).
+",source
+Compiling SmartDiet modifications to Android platform with the custom kernel - Setting up energy analysis tool,"This procedure will allow SmartDiet to get more information about Java threads
+under Dalvik VM because of some added loggings.
+
+",source
+Compiling SmartDiet modifications to Android platform with the custom kernel - Setting up energy analysis tool,"* Compile stock Android 2.2.1-r2 first as instructed above
+* Go to <code>dalvik</code> subdirectory in your <code>android-2.2.1-r2</code> platform source directory.
+  ",source
+Compiling SmartDiet modifications to Android platform with the custom kernel - Setting up energy analysis tool,"<pre>
+  $ cd dalvik
+  </pre>
+* Apply patch using <code>git am</code>
+  <pre>
+  $ git am /path/to/smartdiet/patches/android-2.2.1-r2/dalvik-logging.patch
+  Applying:",source
+Compiling SmartDiet modifications to Android platform with the custom kernel - Setting up energy analysis tool,"Log more clock-related variables and increase buffer size
+  </pre>
+*",source
+Compiling SmartDiet modifications to Android platform with the custom kernel - Setting up energy analysis tool,"Verify that patch got applied by running <code>git log</code>
+* Recompile Android, run the following in your <code>android-2.2.1-r2</code> platform source directory.
+  ",source
+Compiling SmartDiet modifications to Android platform with the custom kernel - Setting up energy analysis tool,"<pre>
+  $ echo 4 | lunch
+  $ make -j2
+  </pre>
+*",source
+Compiling SmartDiet modifications to Android platform with the custom kernel - Setting up energy analysis tool,Install the modified version to the phone using the same procedure as before.,source
+Compiling SmartDiet modifications to Android platform with the custom kernel - Setting up energy analysis tool,"This time you only
+  need to re-flash the system partition.
+",source
+Compiling SmartDiet modifications to Android SDK - Setting up energy analysis tool,"This procedure will increment the default buffer size that DDMS sets when
+recording a Java execution trace.",source
+Compiling SmartDiet modifications to Android SDK - Setting up energy analysis tool,"This enabled you to capture longer execution
+runs, the default buffer size will overflow rather quickly and you only record
+very short runs, especially with CPU intensive apps.
+
+",source
+Compiling SmartDiet modifications to Android SDK - Setting up energy analysis tool,"* Go to your <code>android-2.2.1-r2</code> platform source directory.
+",source
+Compiling SmartDiet modifications to Android SDK - Setting up energy analysis tool,"* Go to <code>sdk/ddms</code> subdirectory in your <code>android-2.2.1-r2</code> platform source directory.
+  ",source
+Compiling SmartDiet modifications to Android SDK - Setting up energy analysis tool,"<pre>
+  $ cd sdk/ddms
+  </pre>
+* Apply patch using <code>git am</code>
+  <pre>
+  $ git am /path/to/smartdiet/patches/android-2.2.1-r2/ddms-buffer_size_increase.patch
+  Applying:",source
+Compiling SmartDiet modifications to Android SDK - Setting up energy analysis tool,"Increase default buffer size in ddms java application
+  </pre>
+* Verify that patch got applied by running <code>git log</code>
+*",source
+Compiling SmartDiet modifications to Android SDK - Setting up energy analysis tool,"Compile Android SDK, run the following in your <code>android-2.2.1-r2</code> platform source directory.
+  ",source
+Compiling SmartDiet modifications to Android SDK - Setting up energy analysis tool,"<pre>
+  $ echo 1 | lunch
+  $ make sdk
+  </pre>
+*",source
+Compiling SmartDiet modifications to Android SDK - Setting up energy analysis tool,"Compiled SDK is available under <code>out/host/linux-x86/sdk/</code>, to use DDMS with a bigger
+  tracing buffer size limit, run it from there (<code>tools/ddms</code>).
+
+",source
+Compiling SmartDiet modifications to Android SDK - Setting up energy analysis tool,"To take this new buffer size limit into use, you need to use the newly compiled
+DDMS and not the one which comes with the official SDK from Google.
+",source
+,"The LCOV package is available as either RPM or tarball from:
+
+  https://github.com/linux-test-project/lcov/releases
+
+To install the tarball, unpack it to a directory and run:
+
+  make install
+
+Use Git for the most recent (but possibly unstable) version:
+
+  git clone https://github.com/linux-test-project/lcov.git
+
+Change to the resulting lcov directory and type:
+
+  make install
+
+",source
+Installing Ganache CLI - Caterpillar,"By default, the core of Caterpillar was configured to run on top of Ganache CLI which is a Node.js based Ethereum client for testing and development.",
+Installing Ganache CLI - Caterpillar,It uses ethereumjs to simulate full client behavior and make developing Ethereum applications.,
+Installing Ganache CLI - Caterpillar,All the instructions about the installation can be found here: https://github.com/trufflesuite/ganache-cli/.,
+Installing Ganache CLI - Caterpillar,"However, the Ethereum Provider can be updated at the beginning of the source code in the controller ""caterpillar-core/src/models/models.controller.ts"" (check the comments).
+
+",
+Installing Ganache CLI - Caterpillar,Note that Ganache CLI is written in Javascript and distributed as a Node package via npm.,
+Installing Ganache CLI - Caterpillar,Make sure you have Node.js (>= v6.11.5) installed.,
+Installing Ganache CLI - Caterpillar,"Besides, be aware to start the Ganache CLI server before running the applications Caterpillar Core and Services Manager.",
+Installing Ganache CLI - Caterpillar,"In that respect, you only need to open a terminal on your computer and run the command:
+
+     ganache-cli
+",
+Experimental environment - LLM4CBI - Setup Instructions,"* Operating System: Ubuntu 18.04
+* Python version: 3.9.16
+* Torch version 1.4.0
+",
+"Step 1: Build compilers with coverage profilers (i.e.,`gcov`) - LLM4CBI - Setup Instructions","```
+# To isolate GCC bugs for example
+$ cd llm4cbi-gcc
+$ python setup-gcc.py
+```
+
+We provide the required compiler version in the file `llvmbug.txt` and `gccbugs.txt`.",source
+"Step 1: Build compilers with coverage profilers (i.e.,`gcov`) - LLM4CBI - Setup Instructions","An example of this format shown in gccbugs.txt is as follows:
+
+ ```
+57303,r198967,-O0,-O1,checkIsPass_wrongcodeOneline,install_no
+```
+
+* `57303` is the bug ID in the [GCC bug repository](https://gcc.gnu.org/bugzilla/).
+",source
+"Step 1: Build compilers with coverage profilers (i.e.,`gcov`) - LLM4CBI - Setup Instructions","* `r198967` is the buggy version on SVN.
+",source
+"Step 1: Build compilers with coverage profilers (i.e.,`gcov`) - LLM4CBI - Setup Instructions","* `-O0,-O1` are correct and wrong optimization options.
+",source
+"Step 1: Build compilers with coverage profilers (i.e.,`gcov`) - LLM4CBI - Setup Instructions","* `checkIsPass_wrongcodeOneline` is the test oracle checking, please refer to the description",source
+"Step 1: Build compilers with coverage profilers (i.e.,`gcov`) - LLM4CBI - Setup Instructions","[here]( https://github.com/haoyang9804/RecBi/tree/master?tab=readme-ov-file#deploying--1--preparing-for-installing-target-llvm-trunk).
+",source
+"Step 1: Build compilers with coverage profilers (i.e.,`gcov`) - LLM4CBI - Setup Instructions","* `install_no` means this LLVM trunk has not been installed while `install_yes` means the opposite.
+",source
+Installation - PATSQL - SQL Synthesizer,"Execute the following maven command. This generates `patsql-engine-1.0.0.jar` in the `target` directory. 
+
+```
+mvn install -DskipTests
+```
+",package_manager
+Installation - TeCo,"Ensure that you met the [pre-requisites](#pre-requisites) before proceeding.
+
+",source
+Installation - TeCo,"Then, you can install a conda environment for TeCo by running the following script, which includes GPU support if GPU is available:
+```
+./prepare-env.sh
+```
+
+After this script finishes, you can activate the conda environment by running:
+```
+conda activate teco
+```
+If this step is successful you should see a `(teco)` prefix in the command line prompt.",source
+Installation - TeCo,"You may need to reactivate this conda environment every time you open a new terminal.
+
+",source
+Installation - TeCo,"If you need to rerun the installation script, make sure the existing conda environment is deactivated by `conda deactivate`.
+
+",source
+Installation - TeCo,"You can run the following commands to quickly check if the installation is successful:
+```
+# try if data collection is working
+inv data.collect-raw-data --debug
+
+# try if model training is working (requires first downloading the processed corpus)
+inv data.eval-setup --debug
+inv exp.train-codet5 --setup CSNm-Debug --overwrite --suffix teco-norr --args ""--model.inputs=[fields_notset,last_called_method,types_local,types_absent,similar_stmt_1_0,setup_teardown,focalm,sign,prev_stmts] --model.output=stmt --seed_e",source
+Installation - TeCo,"verything=4197""
+```
+",source
+Notes on GPU support and alternative CUDA installation methods - TeCo - Installation,"TL;DR:
+- If you have an older GPU (e.g., GTX 1080 Ti) and encounter CUDA-related errors, try `./prepare-env.sh 10.2`.
+- If you want to use the system-wide installed CUDA (must be 10.2/11.3/11.6) together with cuDNN and NCCL, do `./prepare-env.sh system`.
+
+",source
+Notes on GPU support and alternative CUDA installation methods - TeCo - Installation,"TeCo uses PyTorch 1.12.1, which requires CUDA with version 10.2/11.3/11.6, together with cuDNN and NCCL libraries.",source
+Notes on GPU support and alternative CUDA installation methods - TeCo - Installation,Our installation script detects whether GPU is available by checking the output of `nvidia-smi`.,source
+Notes on GPU support and alternative CUDA installation methods - TeCo - Installation,"If GPU is not available, this script will install PyTorch in CPU-only mode, which is usually not suitable for training and evaluating the ML models (unless you know what you're doing), but enables the data collection and processing part of the TeCo to run.",source
+Notes on GPU support and alternative CUDA installation methods - TeCo - Installation,"If GPU is available, this script will install CUDA 11.6, cuDNN, and NCCL in the conda environment.",source
+Notes on GPU support and alternative CUDA installation methods - TeCo - Installation,"The installed CUDA is only usable when the conda environment is activated.
+
+",source
+Notes on GPU support and alternative CUDA installation methods - TeCo - Installation,"You can change the CUDA version installed by adding an option to the installation script: `./prepare-env.sh cuda_version`, where cuda_version can be cpu, system, 10.2, 11.3, 11.6.",source
+Notes on GPU support and alternative CUDA installation methods - TeCo - Installation,"Use ""cpu"" if you want to install PyTorch in CPU-only mode even if GPU is available.",source
+Notes on GPU support and alternative CUDA installation methods - TeCo - Installation,"Use ""system"" if you have already performed a system-wide installation of CUDA (must be one of 10.2/11.3/11.6), together with cuDNN and NCCL, and would like to use it instead of installing another CUDA.",source
+Notes on GPU support and alternative CUDA installation methods - TeCo - Installation,"The default option ""11.6"" is usually fine especially if you're using a recent GPU, but if you're using an older GPU (e.g., GTX 1080 Ti) and encounter CUDA-related errors, you may want to try ""10.2"" instead.
+",source
+Installing Pynguin - Pynguin,"Pynguin can be easily installed using the `pip` tool by typing:
+```bash
+pip install pynguin
+```
+
+Make sure that your version of `pip` is that of a supported Python version, as any 
+older version is not supported by Pynguin!
+",package_manager
+Installation - Logparser,"
+We recommend installing the logparser package and requirements via pip install.
+
+",package_manager
+Installation - Logparser,"```
+pip install logparser3
+```
+
+In particular, the package depends on the following requirements.",package_manager
+Installation - Logparser,"Note that regex matching in Python is brittle, so we recommend fixing the regex library to version 2022.3.2.
+
+",package_manager
+Installation - Logparser,"+ python 3.6+
++ regex 2022.3.2
++ numpy
++ pandas
++ scipy
++ scikit-learn
+
+Conditional requirements:
+
+",package_manager
+Installation - Logparser,"+ If using MoLFI: `deap`
++ If using SHISO: `nltk`
++ If using SLCT: `gcc`
++ If using LogCluster: `perl`
++ If using NuLog: `torch`, `torchvision`, `keras_preprocessing`
++ If using DivLog: `openai`, `tiktoken` (require python 3.8+)
+
+",package_manager
+,"``jobrunner setup <JobWorkDir>`` creates a ``job.setup`` file using
+``job.setup`` scripts defined in Jobfiles along the directory tree.
+",source
+,"Jobrunner executes each script serially by changing the working
+directory to the location of the script.",source
+,"A special environment variable
+``JobWorkDir`` provides the value of ``<JobWorkDir>`` supplied during
+invocation of the command.
+
+",source
+,".. code:: console
+
+   Working directory: /Project/simulation/",source
+,"PoolBoiling
+   Parsing Jobfiles in directory tree
+
+   job.setup:",source
+,"[
+           /Project/environment.sh
+           /Project/simulation/PoolBoiling/flashSetup.sh
+           ]
+",source
+Install HeaderGen - HeaderGen,"```
+pip install headergen
+```
+",package_manager
+Setup - RefSearch - Installation,"1. Launch the app
+   - `make up`
+   - or equivalently, `docker compose --compatibility up -d --build`
+2. Go to http://localhost:8080/ to view the app.
+   - See ""Usage"" below for how to use the app.
+3. Stop the app
+   - `make down`
+   - or equivalently, `docker compose down`
+",container
+Quick Start Reference Guide - stress-ng (stress next generation),"The [Ubuntu stress-ng reference guide](https://wiki.ubuntu.com/Kernel/Reference/stress-ng)
+contains a brief overview and worked examples.
+",
+Installation - R-U-SURE? Uncertainty-Aware Code Suggestions By Maximizing Utility Across Random User Intents,"If you would like to install the R-U-SURE library on your own system, you can
+follow the instructions below.
+",
+Prerequisite: Setting up a virtual environment - R-U-SURE? Uncertainty-Aware Code Suggestions By Maximizing Utility Across Random User Intents - Installation,"It is highly recommended to install this package into a virtual environment,
+as it currently depends on a patched version of `numba` that may be incompatible
+with a global installation.
+
+",source
+Prerequisite: Setting up a virtual environment - R-U-SURE? Uncertainty-Aware Code Suggestions By Maximizing Utility Across Random User Intents - Installation,"To create and activate a virtual environment, you can run the Bash commands
+
+```
+# you can use any path here
+venv_path=""$HOME/venvs/rusure""
+python3 -m venv $venv_path
+source $venv_path/bin/activate
+echo ""Active virtual environment is: $VIRTUAL_ENV""
+```
+
+(On Linux, you may need to run `sudo apt-get install python3-venv` first.)
+",source
+Installing the package directly from GitHub - R-U-SURE? Uncertainty-Aware Code Suggestions By Maximizing Utility Across Random User Intents - Installation,"If you want to use the `r_u_sure` package from Python without modifying it, you
+can directly install it from GitHub using `pip`:
+
+```
+# Optional: disable some unused numba features to prevent build errors
+export NUMBA_DISABLE_TBB=1
+export NUMBA_DISABLE_OPENMP=1
+
+pip install ""r_u_sure @ git+https://github.com/google-research/r_u_sure""
+```
+
+`pip` will then automatically install the most recent version of the package
+and make it available from Python via `import r_u_sure`.
+
+",source
+Installing the package directly from GitHub - R-U-SURE? Uncertainty-Aware Code Suggestions By Maximizing Utility Across Random User Intents - Installation,"Note that you can also add `r_u_sure @ git+https://github.com/google-research/r_u_sure`
+to your `requirements.txt` or `pyproject.toml` files if you are developing a
+package that depends on R-U-SURE.
+",source
+Installing from source - R-U-SURE? Uncertainty-Aware Code Suggestions By Maximizing Utility Across Random User Intents - Installation,"If you prefer to download the R-U-SURE source files manually, or if you would
+like to contribute to the R-U-SURE library, you can perform a local installation.
+",source
+Installing from source - R-U-SURE? Uncertainty-Aware Code Suggestions By Maximizing Utility Across Random User Intents - Installation,"Start by cloning this GitHub repository:
+
+```
+git clone https://github.com/google-research/r_u_sure
+cd r_u_sure
+```
+
+Next, install it:
+
+```
+# Optional: disable some unused numba features to prevent build errors
+export NUMBA_DISABLE_TBB=1
+export NUMBA_DISABLE_OPENMP=1
+
+pip install -e .
+",source
+Installing from source - R-U-SURE? Uncertainty-Aware Code Suggestions By Maximizing Utility Across Random User Intents - Installation,"```
+
+Local edits to the source files will now be reflected properly in the python
+interpreter.
+
+",source
+Installing from source - R-U-SURE? Uncertainty-Aware Code Suggestions By Maximizing Utility Across Random User Intents - Installation,"(If you'd prefer, you can also omit the `export NUMBA_DISABLE_{X}=1` lines to
+compile those features into numba.",source
+Installing from source - R-U-SURE? Uncertainty-Aware Code Suggestions By Maximizing Utility Across Random User Intents - Installation,"Those features have additional dependencies;
+see the [Numba documentation][numba-opt-deps].)
+
+",source
+Installing from source - R-U-SURE? Uncertainty-Aware Code Suggestions By Maximizing Utility Across Random User Intents - Installation,"[numba-opt-deps]: https://numba.readthedocs.io/en/stable/user/installing.html#build-time-environment-variables-and-configuration-of-optional-components
+",source
+Step 1. Preparation - ExpressAPR - 📚 Usage,"- Use Linux (we have tested on Ubuntu 18.04 and 22.04)
+- Install Git, JDK ≥1.8, and Python ≥3.7
+- Install [Defects4J](https://github.com/rjust/defects4j) and/or Maven if you want to validate patches with them
+- Clone this repository
+- `pip3 install -r requirements.txt`
+",source
+"Installation - MN-BaB <img width=""100"" alt=""portfolio_view"" align=""right"" src=""http://safeai.ethz.ch/img/sri-logo.svg"">","```
+  conda create --name MNBAB python=3.7 -y
+  conda activate MNBAB
+  ```
+
+This script installs a few necessary prerequisites including the ELINA library and GUROBI solver and sets some PATHS.",source
+"Installation - MN-BaB <img width=""100"" alt=""portfolio_view"" align=""right"" src=""http://safeai.ethz.ch/img/sri-logo.svg"">","It was tested on an AWS Deep Learning AMI (Ubuntu 18.04) instance.
+
+",source
+"Installation - MN-BaB <img width=""100"" alt=""portfolio_view"" align=""right"" src=""http://safeai.ethz.ch/img/sri-logo.svg"">","```
+source setup.sh
+```
+
+Install remaining dependencies:
+```
+python3 -m pip install -r requirements.txt
+PYTHONPATH=$PYTHONPATH:$PWD
+```
+
+Download the full MNIST, CIFAR10, and TinyImageNet test datasets in the right format and copy them into the `test_data` directory:  
+[MNIST](https://files.sri.inf.ethz.ch/sabr/mnist_test_full.csv)  
+",source
+"Installation - MN-BaB <img width=""100"" alt=""portfolio_view"" align=""right"" src=""http://safeai.ethz.ch/img/sri-logo.svg"">","[CIFAR10](https://files.sri.inf.ethz.ch/sabr/cifar10_test_full.csv)  
+",source
+"Installation - MN-BaB <img width=""100"" alt=""portfolio_view"" align=""right"" src=""http://safeai.ethz.ch/img/sri-logo.svg"">","[TinyImageNet](https://files.sri.inf.ethz.ch/sabr/tin_val.csv)  
+",source
+,"[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4130780.svg)](https://zenodo.org/record/4130780)
+
+This is the data set and scripts for our paper ""Uncovering the Hidden Dangers: Finding Unsafe Go Code in the Wild"".
+
+**Authors:**  
+Johannes Lauinger, Lars Baumgärtner, Anna-Katharina Wickert, and Mira Mezini  
+Technische Universität Darmstadt, D-64289 Darmstadt, Germany  
+E-mail: {baumgaertner, wickert, mezini} (with) cs.tu-darmstadt.de, jlauinger (with) seemoo.tu-darmstadt.de
+
+",
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,"To create and process the data for our study, we used the following pipeline:
+
+ 1.",
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,**Raw Projects and Dependencies.,
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,**,
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,"This set contains the 500 open-source Go projects that we crawled from GitHub.
+    ",
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,"The projects at the specific revision that we examined are referenced in this repository through Git submodules.
+    ",
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,"The `projects/` directory contains the submodules.
+ ",
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,2. **Package and Unsafe Data.,
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,**,
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,"From the projects and their dependencies, we compiled the list of all packages used
+    transitively.",
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,"Within all packages, we identified usages of `unsafe` Go code.",
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,"The results of this stage are
+    included in the `data/` directory.
+ ",
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,3. **Labeled Unsafe Usages.,
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,**,
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,"We used Python to examine the data and sample 1,400 code snippets for manual classification by unsafe usage type
+    and purpose.",
+Research pipeline - Data Set: Finding Unsafe Go Code in the Wild,"The results of this stage are included in the `analysis/` and `labeled-usages-dataset/` directories.
+
+",
+Directory structure - Data Set: Finding Unsafe Go Code in the Wild,"The directories in this repository contain the following:
+
+ - `data/` contains gzipped versions of the CSV files holding project, package, and unsafe code block information,
+   as well as the sampled and labeled code snippets.
+ ",
+Directory structure - Data Set: Finding Unsafe Go Code in the Wild,"- `figures/` contains Figures 1 to 5 as included in our paper.
+ - `labeled-usages-dataset/` contains our data set of labaled usages of unsafe code blocks in Go code.",
+Directory structure - Data Set: Finding Unsafe Go Code in the Wild,"The data set
+   is divided into 400 Go standard library usages (*std*) and 1,000 application code (non-standard library) usages
+   (app).",
+Directory structure - Data Set: Finding Unsafe Go Code in the Wild,"Each directory contains subfolders with names similar to `efficiency__cast-struct`, where the purpose
+   label and usage label as used in our paper are included, separated by two underscores.",
+Directory structure - Data Set: Finding Unsafe Go Code in the Wild,"Each of the directories
+   contains one file for each classified usage, as described in more detail below.
+ - `projects/` contains Git submodules for each of the 500 projects under examination, set to the specific revision
+   that we analyzed.
+ - `scripts/` contains Python scripts to replicate the figures and tables included in our paper, as well as the
+   data acquisition tool that we used to extract unsafe code blocks from the projects and a Jupyter notebook with
+   the Python code that we used to explore",
+Directory structure - Data Set: Finding Unsafe Go Code in the Wild," the data.
+
+",
+Data: unsafe code blocks - Data Set: Finding Unsafe Go Code in the Wild,The `data/geiger_findings.csv.gz` file contains the unsafe code findings.,
+Data: unsafe code blocks - Data Set: Finding Unsafe Go Code in the Wild,"Each line in the file represents one
+finding.",
+Data: unsafe code blocks - Data Set: Finding Unsafe Go Code in the Wild,"It holds the corresponding code line, as +/- 5 lines of code context, as well as meta data about the finding.
+",
+Data: unsafe code blocks - Data Set: Finding Unsafe Go Code in the Wild,"This meta data includes the line number, column, file, package, module, and project where it was found.",
+Data: unsafe code blocks - Data Set: Finding Unsafe Go Code in the Wild,"Package and
+project data is a foreign key to the `data/packages.csv.gz` and `data/projects.csv.gz` files, respectively,
+which provide more detailed information.",
+Data: unsafe code blocks - Data Set: Finding Unsafe Go Code in the Wild,"For example, the packages file contains total finding counts for each
+package.
+
+",
+Data: unsafe code blocks - Data Set: Finding Unsafe Go Code in the Wild,"The `data/vet_findings.csv.gz` and `data/gosec_findings.csv.gz` contain warnings that were generated by `go vet` and
+`gosec` on the packages.
+
+",
+Data: unsafe code blocks - Data Set: Finding Unsafe Go Code in the Wild,"The `data/` directory also contains the `sampled_usages_app.csv.gz` and `sampled_usages_std.csv.gz` files, which are
+samples subsets of the `geiger_findings.csv.gz` file containing 1,000 and 400 unique samples together with two
+labels for each line.
+
+",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"As described in our paper, we randomly sampled 1,400 unique unsafe usages from the 10 projects with the most overall
+unsafe usages.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"We then manually classified these samples in two dimensions: by what is being done and for what purpose.
+
+",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"We identified the following classes for the first dimension, what is being done:
+
+ - `cast-struct`, `cast-basic`, `cast-bytes`, `cast-pointer`, `cast-header` (all summarized as `cast` in our paper to
+   save space): all kinds of casts between arbitrary types and structs, basic Go types, `[]byte` slices or `[N]byte`
+   arrays, actual `unsafe.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"Pointer` values, or `reflect.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,SliceHeader` and `reflect.,
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"StringHeader` values, respectively.
+ - `memory-access`: dereferencing of unsafe pointers, manipulation of referenced memory, or comparison of the actual
+   stored addresses.
+ - `pointer-arithmetic`: all kinds of arithmetic manipulation of addresses, such as manually advancing a slice.
+ - `definition`: groups usages where a field or method of type `unsafe.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"Pointer` is declared for later usage.
+ - `delegate`: instances where unsafe is needed only because another function requires an argument of type `unsafe.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"Pointer`.
+ - `syscall`: groups calls to `syscall.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"Syscall` or other native syscalls.
+ - `unused`: occurences that are not actually being used, e.g. dead code or unused function parameters.
+
+",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"Purpose of usage is labeled with the following classes:
+
+ - `efficiency`: all uses of unsafe to improve time or space complexity, such as in-place casts.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"Code contained in this class could also be written
+   without the use of unsafe, decreasing effeciency.
+ ",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"- `serialization`: contains marshalling and serialization operations.
+ - `generics`: contains usages of unsafe that achieve functionality that could have been written without unsafe if Go provided
+   support for generics.
+ - `no-gc` (avoid garbage collection): contains usages where unsafe is used to tell the compiler to not free a value until
+   a function returns, such as when calling assembly code.
+ - `atomic` (atomic operations): contains usages of the atomic package which require unsafe.
+ - `ffi` (forei",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"gn function interface): contains calls to Cgo or other function interfaces that require unsafe by their contract.
+ - `hide-escape`: contains snippets where unsafe is used to hide a value from Go escape analysis.
+ - `layout` (memory layout control): contains unsafe usages to achieve low-level memory management, such as precise alignment.
+ - `types`: contains unsafe usages needed to implement the Go type system itself.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"Only present in the `std` samples.
+ - `reflect`: contains instances of type reflection and re-implementations of some types from the reflect package,
+   such as using `unsafe.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"Pointer` instead of `uintptr` for slice headers.
+ - `unused`: again, contains occurences that are not actually being used.
+
+",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"The `labeled-usages-dataset` is organized as follows: the `app` and `std` contain 1,000 and 400 samples, respectively, divided by
+application (non-standard libraries) and standard-library usages.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"Each of them contains subdirectories grouping the snippets by
+their combination of labels.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,The subdirectories are named similar to `efficiency__cast-struct`.,
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"Both labels of the samples are
+concatenated using two underscores.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"Every combination of labels that actually contains samples has its own directory.
+
+",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,The samples are provided as one file for each sample.,
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"The file name is a hash of line number, file, package etc. of the finding,
+providing a guaranteed unique name.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,The files contain 4 sections divided by dashes.,
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"The first section provides information
+about the module, version, package, file, and line of the snippet.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"It also states which project included this snippet (but
+there can be more projects in the data set that share usage of the snippet), and the labels as already included in the directory
+name.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,The information is guaranteed to be in the same line number across files.,
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"The second section contains the snippet
+code line.",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"The third and fourth section contain a +/- 5 lines and +/- 100 lines context, respectively.
+
+",
+Labeled data set of unsafe usages in the wild - Data Set: Finding Unsafe Go Code in the Wild,"Additionally, the labaled data set is included in machine-readable CSV format in the `data/sampled_usages_app.csv.gz` and
+`data/sampled_usaged_std.csv.gz` as described previously.
+
+",
+How to reproduce figures and tables - Data Set: Finding Unsafe Go Code in the Wild,"To reproduce the figures and tables included in our paper, simply execute the corresponding scripts in the `scripts/` directory.
+",source
+How to reproduce figures and tables - Data Set: Finding Unsafe Go Code in the Wild,"They also provide formal documentation about the specific data analysis that we did:
+
+```
+cd scripts
+./create-figure-distribution-unsafe-types.py
+./create-figure-unsafe-import-depth.py
+./create-table-dataset-labels.py
+./create-table-dataset-projects.py
+```
+
+Figures are saved as PDF files in the same directory, tables are written to the terminal as LaTeX code.
+
+",source
+How to reproduce figures and tables - Data Set: Finding Unsafe Go Code in the Wild,"To execute the scripts, you need the following Python libraries:
+
+ - Pandas
+ - Numpy
+ - Matplotlib
+ - Tikzplotlib
+ - Seaborn
+
+",source
+How to reproduce the data set - Data Set: Finding Unsafe Go Code in the Wild,"To reproduce the data set, first obtain the raw project code and dependencies.",source
+How to reproduce the data set - Data Set: Finding Unsafe Go Code in the Wild,"The easiest way to do this is to get the
+compressed archive with the exact project code that we used from our Zenodo record:
+",source
+How to reproduce the data set - Data Set: Finding Unsafe Go Code in the Wild,"[https://zenodo.org/record/4001728](https://zenodo.org/record/4001728)
+
+Alternatively, you can recursively clone this repository to check out the projects data set submodules.",source
+How to reproduce the data set - Data Set: Finding Unsafe Go Code in the Wild,"The projects
+are included as submodules at the correct revision that we used for analysis in this repository.",source
+How to reproduce the data set - Data Set: Finding Unsafe Go Code in the Wild,"They are located in
+the `projects/` directory.",source
+How to reproduce the data set - Data Set: Finding Unsafe Go Code in the Wild,"After recursively cloning the repositories, you may need to run `go mod vendor` in the root
+directory of each repository to make sure that all dependencies are properly downloaded.",source
+How to reproduce the data set - Data Set: Finding Unsafe Go Code in the Wild,"This step is unnecessary when
+using the Zenodo record.
+
+",source
+How to reproduce the data set - Data Set: Finding Unsafe Go Code in the Wild,"Then, build and execute the data acquisition tool in the `scripts/data-acquisition-tool` directory.",source
+How to reproduce the data set - Data Set: Finding Unsafe Go Code in the Wild,"The folder contains
+a README file with the build instructions and usage information.
+
+",source
+Install - PRINS: Scalable Model Inference for Component-based System Logs,"Firstly, to render generated models in PDF, you must install `dot`. 
+",source
+Install - PRINS: Scalable Model Inference for Component-based System Logs,"Try the following command to check if `dot` is installed:
+```shell script
+dot -V
+```
+
+If `dot` is not installed, you can install it by following [this page](https://www.graphviz.org/download/).
+",source
+Install - PRINS: Scalable Model Inference for Component-based System Logs,"On Windows, you can follow the [installation procedure](https://forum.graphviz.org/t/new-simplified-installation-procedure-on-windows/224).
+
+",source
+Install - PRINS: Scalable Model Inference for Component-based System Logs,"Second, initialize python's virtual environment & install required packages:
+```shell script
+python3 -m venv venv
+source venv/bin/activate  # venv should be activated during the execution of PRINS
+pip install -r requirements.txt
+```
+
+Finally, you must have JDK to run MINT, which is used as a backend for PRINS. 
+",source
+Install - PRINS: Scalable Model Inference for Component-based System Logs,"Try the following command to check if JDK is installed:
+```shell script
+java -version
+```
+
+If JDK is not installed, you can install it by following [this page](https://openjdk.org/install/).
+",source
+Installation - NVIDIA FLARE,"To install the [current release](https://pypi.org/project/nvflare/):
+```
+$ python3 -m pip install nvflare
+```",package_manager
+Installation - graphql-anonym-directives - Usage,"npm install graphql-anonym-directives
+```
+",package_manager
+Installation - PyXAB - Python *X*-Armed Bandit,"To install via pip, run the following lines of code
+```bash
+pip install PyXAB                 # normal install
+pip install --upgrade PyXAB       # or update if needed
+```
+
+
+To install via git, run the following lines of code
+```bash
+git clone https://github.com/WilliamLwj/PyXAB.git
+cd PyXAB
+pip install .
+```
+
+",package_manager
+Install - Coming,"Coming is deployed on Maven Central, see [past versions](https://repo1.maven.org/maven2/com/github/spoonlabs/coming/).
+",source
+Install - Coming,"As of version 1.72 (May 2024), it requires Java 17.
+
+",source
+Install - Coming,"To build yourself, the procedure is as follows.
+
+",source
+Install - Coming,"Add a github token in `.m2/settings.xml`.
+
+```xml
+<settings>
+  <servers>
+    <server>
+      <id>brufulascam</id>
+      <username>yourlogin</username>
+      
+      <password>FOOBAR</password>
+    </server>
+  </servers>
+</settings>
+```
+
+
+Install a JDK 17 and configure Maven or your IDE to use it.
+
+
+",source
+Install - Coming,"```
+$ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64/
+$ mvn -version
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 17.0.9, vendor: Private Build, runtime: /usr/lib/jvm/java-17-openjdk-amd64
+
+# now installing
+$ mvn install -DskipTests
+```
+
+Tests:
+
+```
+git clone https://github.com/SpoonLabs/repogit4testv0
+mvn test
+```
+
+
+`repogit4testv0` is a GIT repository included inside Coming which is used by the test cases.
+
+",source
+Bug fix keywords - Coming - Filtering Commits - By commit message,"
+For studying only commits which messages include words related to bug fixing (e.g., bug, fix, issue), add the following command.
+
+```
+
+-filter bugfix 
+```
+
+The bugfix keywords are predefined. If you want to use  other keywords, use the `Custom keywords`.
+
+",
+Installation - A Python package implementing a new simple and interpretable model for text classification - Want to give PySS3 a shot? :eyeglasses: :coffee:,"
+Simply use:
+```console
+pip install pyss3
+```
+",package_manager
+,"📌
+We have tested using Ubuntu 18.04 LTS and Python 3.8.12. Additionally, we use a Docker 
+container to run dynamic analysis which also needs to be installed. 
+",container
+Directory Structure - Requirements &amp; Setup,"The directory structure is as follows:
+
+```shell
+src/ #",source
+Directory Structure - Requirements &amp; Setup,"The root directory of all source files
+benchmark/ #",source
+Directory Structure - Requirements &amp; Setup,"This may contain the input Python files & the Jupyter Notebooks
+dynamic_analysis_runner/ # Code for running Dynamic Analysis
+src/dynamic_analysis_tracker_local_package/ # Python package for saving the assignments encountered during execution
+src/get_scripts_and_instrument/ # Code for getting Jupyter Notebooks, converting them to Python scripts and instrumenting
+src/nn/ # Code for running the Classifier
+results/ #",source
+Directory Structure - Requirements &amp; Setup,"The results generated by running the experiments are written here
+```
+",source
+Python Packages - Requirements &amp; Setup,The required packages are listed in _requirements.txt_.,source
+Python Packages - Requirements &amp; Setup,"The packages may be installed using the command ```pip install -r requirements.txt```. 
+",source
+Python Packages - Requirements &amp; Setup,"Additionally, install the [PyTorch](https://pytorch.org/get-started/locally/) package (We have tested on PyTorch version 1.10.1).  
+
+",source
+Python Packages - Requirements &amp; Setup,"📌
+```shell
+pip install -r requirements.txt
+pip install torch==1.10.1+cpu torchvision==0.11.2+cpu torchaudio==0.10.1+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
+```
+
+💡 The above command will install the **CPU** version of PyTorch.",source
+Python Packages - Requirements &amp; Setup,"If you want CUDA support, please change the command accordingly as mentioned in the [link](https://pytorch.org/get-started/locally).
+",source
+Jupyter Notebook Dataset - Requirements &amp; Setup,"We use the dataset from a CHI’18 [paper](https://dl.acm.org/doi/10.1145/3173574.3173606) that has analyzed more than 1.3 million publicly available Jupyter 
+Notebooks from GitHub. Download the dataset using the [link](https://library.ucsd.edu/dc/collection/bb6931851t).
+We provide a sample of about 2000 Jupyter notebooks (_benchmark/jupyter_notebook_datasets/sample.zip_) obtained from this dataset for testing (Download the sample from 
+the Zenodo [archive](https://zenodo.org/record/6078527)). 
+",
+Embedding - Requirements &amp; Setup,"📌
+Download the embedding file present at _benchmark/python_embeddings.bin_ from the Zenodo [archive](https://zenodo.org/record/6078527) and put in the _benchmark_ folder.
+
+---
+",
+Cannot Install FDR: Depends: libpng12-0 but it is not installable - Varanus 0.9.4,"Using the instructions from: https://www.linuxuprising.com/2018/05/fix-libpng12-0-missing-in-ubuntu-1804.html
+
+The instructions below work for **Ubuntu 22.10, 22.04, 21.10 or 20.04** (for 18.04, check https://www.linuxuprising.com/2018/05/fix-libpng12-0-missing-in-ubuntu-1804.html )
+
+```
+sudo add-apt-repository ppa:linuxuprising/libpng12
+sudo apt update
+sudo apt install libpng12-0
+```
+",other
+Install - Saṅgrāhaka,"Saṅgrāhaka is presented as a full-stack application that you can install on your own server.
+
+The detailed installation instructions are available at [INSTALL.md](INSTALL.md).
+",
+Basic Setup - Saṅgrāhaka - Install,"* Clone (or Download) this repository.
+",source
+Basic Setup - Saṅgrāhaka - Install,"* `pip install -r requirements.txt`
+* Copy `settings.sample.py` to `settings.py` and make appropriate changes.
+",source
+Basic Setup - Saṅgrāhaka - Install,*,source
+Basic Setup - Saṅgrāhaka - Install,"Run application server using `python3 server.py`
+* Load the URL displayed on the terminal in the browser of your choice.
+",source
+Basic Setup - Saṅgrāhaka - Install,"* Login using the administrator username and password set by you in `settings.py`
+* Go to `Admin` tab to create a corpus and upload chapter files.
+",source
+Basic Setup - Saṅgrāhaka - Install,"* Create `Ontology` in one of the two ways.
+  - Use GUI to `Add` single relations.
+  - Use `CSV` or `JSON` files to upload `Ontology` in bulk.",source
+Basic Setup - Saṅgrāhaka - Install,"(Check to [data/tables](data/tables) for file format and sample data)
+
+Your Sangrahaka instance is now ready for annotation!
+
+",source
+Basic Setup - Saṅgrāhaka - Install,*,source
+Basic Setup - Saṅgrāhaka - Install,"Ask your annotators to create accounts on your system.
+",source
+Basic Setup - Saṅgrāhaka - Install,"* Go to `Admin` tab to add `Annotator` role to the desired users.
+",source
+Graph Setup - Saṅgrāhaka - Install,"*  Install [Neo4j](https://neo4j.com/download-center/#community) (Required for querying)
+  - Navigate to the `Neo4j` installation directory
+  - Start the graph server: `./bin/neo4j console`
+*",other
+Graph Setup - Saṅgrāhaka - Install,"Construct the knowledge graph.
+",other
+Graph Setup - Saṅgrāhaka - Install,*,other
+Graph Setup - Saṅgrāhaka - Install,"Load the knowledge graph into Neo4j.
+",other
+Graph Setup - Saṅgrāhaka - Install,"* Prepare the query templates file and place it in the `data/` folder.
+",other
+Graph Setup - Saṅgrāhaka - Install,"* Restart web server.
+
+",other
+Graph Setup - Saṅgrāhaka - Install,"**Disclaimer**: Steps such as preparing corpus files, query templates building knowledge graph requires
+a certain level of familiarity with programming and the computational aspects.
+
+",other
+Graph Setup - Saṅgrāhaka - Install,"**Note**: `examples` directory contains sample files for corpus creation, query template and graph building.
+",other
+Installation - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development - Getting started,"Clone this repo, then from the root of repo directory, run
+
+    pip install -e .
+",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"The minimal setup (as provided by the folders in this project) is as follows.
+ 
+",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,* An .md file containing requirements simulates system requirements.,source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"For instance, the following text would represent a single requirement with id REQ1 that has traces to user stories US1 and US2:
+
+	```
+	Some supplementary text
+	[requirement id=REQ1 story=US1,US2]
+	Requirement text
+	[/requirement]
+	More supplementary text
+	```
+*",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,A test case file with test cases.,source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,Test cases can be markdown files (for manual test routines) or source files (here: python) (for automated test scripts).,source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,An example for a manual test case and a python test case are depicted below.,source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"In both cases, the [testcase] tag contains a test case id as well as tracing information to user stories and system requirements.
+
+	",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"```
+	[testcase id=TC1TestCaseName story=US1 req=REQ1]
+	Purpose: Purpose of the test case without linebreak.
+	
+	",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"## Setup
+	Describe any steps that must be done before performing the test.
+	
+	",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"## Scenario / Steps
+	
+	## Expected outcome
+	
+	## Tear down
+	Describe what to do after the test
+	
+	## Test result
+	Protocol of the result of executing this test, latest on top.
+	",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"```
+
+	```
+	#==================================
+	#",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"[testcase id=TC_python_test1 story=US4 req=REQ3]
+	# 
+	#",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"<Purpose of the test case>
+	# 
+	#==================================
+	testcase TC1__test_case_name() {
+	...
+	}
+	```	
+*",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,A list of user stories.,source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"Currently, both issues in the github project labeled ""user story"" and markdown files are accepted.",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"In both cases, the [userstory] tag is required to obtain a unique id for each story.",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"An example for a markdown file containing user stories is depicted below.
+
+	",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"```
+	[userstory id=US2]
+	",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"As a system manager, I want to make sure that proposed updates to requirements are of good quality, do not conflict with each other, or with the product mission. 
+	
+	",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"[userstory id=US3]
+	As member of an experimenting team, I want to experiment with new requirements and features so that I can better assess their business value and cost.",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"This must not affect existing requirements during the experiment or block the requirements database afterwards. 
+	
+	",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"[userstory id=US4]
+	As a test architect or system manager, I want to be aware of new requirements for the test infrastructure early on so that I can plan verification and validation pro-actively. 
+",source
+Minimal setup - T-Reqs: Tool Support for Managing Requirements in Large-Scale Agile System Development,"```
+
+The formats are here mainly chosen for convenience, but can easily be adapted to any company standard. 
+",source
+"Setup - SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair - Model creation, training and use:","Choose a directory and:
+```bash
+git clone https://github.com/OpenNMT/OpenNMT-py
+```
+When testing a new configuration, copy a working data directory and modify *sh files as desired.
+
+Set up environment variables:
+
+```bash
+export CUDA_VISIBLE_DEVICES=0
+export THC_CACHING_ALLOCATOR=0
+export OpenNMT_py=.../OpenNMT-py
+export data_path=.../results/Golden  # Or a new directory path as desired
+```
+",source
+Install - AEON,"Installing all the packages using `pip` is suggested:
+```
+$ pip install -r requirements.txt 
+```
+",source
+,"Simply clone the repo. 
+
+    ",source
+,"git clone https://github.com/jkoppel/QuixBugs
+    
+",source
+,The Java programs are already compiled (see `*.class` files in `java_programs`).,source
+,Note the all java programs are in the same package called `java_programs`.,source
+,"The utility class `JavaDeserialization.java` requires you to download the external library Gson.
+
+",source
+,"All Python is written in Python3.
+
+",source
+,"To run both defective versions of a program against their tests, as well as the corrected Python version, use the test driver:
+
+> python3 tester.py _program\_name_
+
+",source
+,"Output is printed for visual comparison.
+",source
+Using JUnit tests - Installation &amp; Usage,There are JUnit tests in the `java_testcases/junit` folder for the Java version.,
+Using JUnit tests - Installation &amp; Usage,"Running `TestsGenerator.java` can regenerate them if needed.
+
+",
+Using JUnit tests - Installation &amp; Usage,"To run these tests, you can use [Gradle](https://gradle.org/) tasks provided by the `build.gradle` file.",
+Using JUnit tests - Installation &amp; Usage,"First, install Gradle.",
+Using JUnit tests - Installation &amp; Usage,"Then,
+
+- `gradle test` can be used to run tests on the buggy programs (Runs JUnit tests from the `java_testcases/junit` folder);
+- `gradle crtTest` can be used to run tests on the correct programs (Runs JUnit tests from the `java_testcases/junit/crt_program` folder).
+
+",
+Using JUnit tests - Installation &amp; Usage,"It is also possible to run tests for a single program with the `--tests` option:
+
+```bash
+$ gradle test --tests KNAPSACK_TEST
+
+>",
+Using JUnit tests - Installation &amp; Usage,"Task :test
+
+java_testcases.junit.KNAPSACK_TEST > test_1 FAILED
+    java.lang.",
+Using JUnit tests - Installation &amp; Usage,"AssertionError at KNAPSACK_TEST.java:14
+
+java_testcases.junit.KNAPSACK_TEST >",
+Using JUnit tests - Installation &amp; Usage,"test_3 FAILED
+    java.lang.AssertionError at KNAPSACK_TEST.java:26
+
+java_testcases.junit.KNAPSACK_TEST >",
+Using JUnit tests - Installation &amp; Usage,"test_4 FAILED
+    java.lang.",
+Using JUnit tests - Installation &amp; Usage,"AssertionError at KNAPSACK_TEST.java:32
+
+java_testcases.junit.KNAPSACK_TEST > test_5 FAILED
+    java.lang.",
+Using JUnit tests - Installation &amp; Usage,"AssertionError at KNAPSACK_TEST.java:38
+
+java_testcases.junit.KNAPSACK_TEST",
+Using JUnit tests - Installation &amp; Usage,"> test_6 FAILED
+    java.lang.",
+Using JUnit tests - Installation &amp; Usage,"AssertionError at KNAPSACK_TEST.java:44
+
+java_testcases.junit.KNAPSACK_TEST",
+Using JUnit tests - Installation &amp; Usage,"> test_7 FAILED
+    java.lang.",
+Using JUnit tests - Installation &amp; Usage,"AssertionError at KNAPSACK_TEST.java:50
+
+10 tests completed, 6 failed
+```
+
+```bash
+$ gradle crtTest --tests KNAPSACK_TEST
+
+BUILD SUCCESSFUL in 4s
+```
+",
+Using pytest tests - Installation &amp; Usage,"For the Python version, there are [pytest](https://pytest.org/) tests for each program in the `python_testcases` folder.",source
+Using pytest tests - Installation &amp; Usage,"To run them, install pytest using `pip` and then, from the root of the repository, call `pytest` to run tests for a single program or target the whole directory to run every test inside it.
+
+",source
+Using pytest tests - Installation &amp; Usage,"```bash
+pip install pytest
+pytest python_testcases/test_quicksort.py
+# Or
+pytest python_testcases
+```
+
+Tests work for both buggy and correct versions of programs.",source
+Using pytest tests - Installation &amp; Usage,"The default test calls the buggy version, but there is a custom `--correct` flag that uses the correct version of a program.
+
+",source
+Using pytest tests - Installation &amp; Usage,"```bash
+pytest --correct python_testcases
+```
+
+Most of the tests run fast and finish in less than a second, but two tests are slow.",source
+Using pytest tests - Installation &amp; Usage,"The first one is the last test case of the `knapsack` program, and the second one is the fourth test case of the `levenshtein` program.",source
+Using pytest tests - Installation &amp; Usage,The default behavior skips both these tests.,source
+Using pytest tests - Installation &amp; Usage,"For the `knapsack` test case, using the `--runslow` pytest option will include it in the running tests.",source
+Using pytest tests - Installation &amp; Usage,"However, the `levenshtein` test case is always skipped since it takes a long time to pass and is ignored by the JUnit tests as well.
+
+",source
+Using pytest tests - Installation &amp; Usage,"```bash
+$ pytest --correct --runslow python_testcases/test_knapsack.py
+
+collected 10 items
+python_testcases/test_knapsack.py ..........     ",source
+Using pytest tests - Installation &amp; Usage,"[100%]
+
+========== 10 passed in 240.97s (0:04:00) ========== 
+```
+
+```bash
+$ pytest --correct python_testcases/test_knapsack.py
+
+collected 10 items
+python_testcases/test_knapsack.py ..........     ",source
+Using pytest tests - Installation &amp; Usage,"[100%]
+
+========== 9 passed, 1 skipped in 0.08s ========== 
+```
+
+Some tests, such as the `bitcount` ones, need a timeout.",source
+Using pytest tests - Installation &amp; Usage,"pytest itself doesn't have a timeout mechanism, but there is a [pytest-timeout](https://github.com/pytest-dev/pytest-timeout) plugin for it.",source
+Using pytest tests - Installation &amp; Usage,"Installing pytest-timeout adds additional options to the `pytest` CLI so, for example, to timeout `bitcount` tests after five seconds, you can do like this:
+
+```bash
+pip install pytest-timeout
+pytest --timeout=5 python_testcases/test_bitcount.py
+```
+Make sure to check pytest-timeout's documentation to understand its caveats and how it handles timeouts on different systems.
+
+",source
+Using pytest tests - Installation &amp; Usage,"There is also a [pytest-xdist](https://github.com/pytest-dev/pytest-xdist) plugin that runs tests in parallel and can be used similarly to the timeout plugin.
+",source
+Installation - Hawk Service,For the Hawk Service to run you need to its mandatory to have a PostgreSQL Database connected.,container
+Installation - Hawk Service,"With
+smaller workloads Postgres itself is fine, for bigger workloads you might need some technologies
+like [YugabyteDB](https://github.com/yugabyte/yugabyte-db).",container
+Installation - Hawk Service,"Just pass the following environment
+variables:
+
+```properties
+SPRING_DATASOURCE_URL=jdbc:postgresql://localhost/hawk
+SPRING_DATASOURCE_USERNAME=xxxx
+SPRING_DATASOURCE_PASSWORD=xxxx
+```
+
+Profiles can be activated using the following environment variable.
+
+",container
+Installation - Hawk Service,"```
+SPRING_PROFILES_ACTIVE=flagger-canary,test-data
+```
+
+By default, the service starts on port 8080.",container
+Installation - Hawk Service,"Pass the env `SERVER_PORT` to change that.
+
+",container
+Installation - Hawk Service,To install via.,container
+Installation - Hawk Service,"Docker run the following command and pass the environment variables after using you
+need:
+
+```
+docker run -p 8080:8080 -e ENV1=1 ENV2=2 p4skal/hawk-service
+```
+",container
+Installation - About,"You can install the latest version of this software directly from GitHub with ```pip```:
+
+```pip install git+https://github.com/mmabrouk/chatgpt-wrapper```
+
+This will install chatgpt-wrapper and its dependencies.",source
+Installation - About,"Before starting the program, you will need to install a browser
+in Playwright (if you haven't already).",source
+Installation - About,"The program will use Firefox by default.
+
+",source
+Installation - About,"```playwright install firefox```
+
+With that done, you should start up the program in install mode, which will open up a browser window.
+
+",source
+Installation - About,"```chatgpt install```
+
+Log in to ChatGPT in the browser window, then stop the program.
+",source
+Setup - Capybara-BinT5,"First, clone the CodeT5 repo into this directory:
+
+```bash
+git clone https://github.com/salesforce/CodeT5.git
+```
+
+Run the following command to set the correct working directory in the training script:
+
+```bash
+wdir=\WORKDIR=\""`pwd`/'CodeT5/CodeT5'\"" && sed -i '1 s#^.*$#'$wdir'#' CodeT5/CodeT5/sh/exp_with_args.sh
+```
+
+Now that the model is set up we need to download the data, use the following commands to download and unpack the data:
+```bash
+wget https://zenodo.org/record/7229809/files/Capybara.zip
+unzip C",source
+Setup - Capybara-BinT5,"apybara.zip
+rm Capybara.zip
+```
+Similarly to download the pretrained BinT5 checkpoints:
+```bash
+wget https://zenodo.org/records/7229913/files/BinT5.zip?download=1
+unzip BinT5.zip
+rm Capybara.zip
+```
+",source
+,"1. Download all the files into the same folder/clone the repository.
+
+2. Install the specified version of Python and Tensorflow:
+the codes have been tested with **Python 3.6 - 3.9** and **Tensorflow 2.x**, other versions might cause errors.
+
+3. Install all missing packages according to **requirements.txt** and runtime messages.
+
+",source
+Installation - HiGitClass: Keyword-Driven Hierarchical Classification of GitHub Repositories,"For training, a GPU is strongly recommended.
+",
+Keras - HiGitClass: Keyword-Driven Hierarchical Classification of GitHub Repositories - Installation,"The code is based on Keras. You can find installation instructions [**here**](https://keras.io/#installation).
+",
+Installation - EasyMLServe: Easy Deployment of REST Machine Learning Services,"To install the framework, simply use pip within this directory by calling `pip install .` or `pip install -e .` if you want to change the code and directly test it within your projects.
+",source
+Installation - PyRCA: A Python library for Root Cause Analysis,You can install ``pyrca`` from PyPI by calling ``pip install sfr-pyrca``.,package_manager
+Installation - PyRCA: A Python library for Root Cause Analysis,"You may install from source by
+cloning the PyRCA repo, navigating to the root directory, and calling
+``pip install .",package_manager
+Installation - PyRCA: A Python library for Root Cause Analysis,"``, or ``pip install -e .",package_manager
+Installation - PyRCA: A Python library for Root Cause Analysis,`` to install in editable mode.,package_manager
+Installation - PyRCA: A Python library for Root Cause Analysis,"You may install additional dependencies:
+
+- **For plotting & visualization**: Calling ``pip install sfr-pyrca[plot]``, or ``pip install .[plot]`` from the
+  root directory of the repo.
+- **Install all the dependencies**: Calling ``pip install sfr-pyrca[all]``, or ``pip install .[all]",package_manager
+Installation - PyRCA: A Python library for Root Cause Analysis,"`` from the
+  root directory of the repo.
+",package_manager
+Installation - VeRLPy,"The easiest way to start using VeRLPy is to install it using `pip install verlpy`
+
+VeRLPy is currently dependent on OpenAI [Gym](https://gym.openai.com/), [cocotb](https://docs.cocotb.org/en/stable/),",package_manager
+Installation - VeRLPy,"[cocotb-bus](https://github.com/cocotb/cocotb-bus), and [Stable Baselines3](https://stable-baselines3.readthedocs.io/en/master/).",package_manager
+Installation - VeRLPy,These packages should get installed alongside VeRLPy when installing using `pip`.,package_manager
+Installation - VeRLPy,"For running the verification, a simulator compatible with cocotb is additionally required.",package_manager
+Installation - VeRLPy,"Please refer to the official  [cocotb](https://docs.cocotb.org/en/stable/) documentation to set this up.
+",package_manager
+Usage Guide - VeRLPy,"Having familiarity with [cocotb](https://docs.cocotb.org/en/stable/), OpenAI [Gym](https://gym.openai.com/) and [this whitepaper on VeRLPy](https://arxiv.org/abs/2108.03978) will be very beneficial to get started with the VeRLPy library.
+
+",
+Usage Guide - VeRLPy,The hardware design provided in Verilog or VHDL is simulated by cocotb using the chosen simulator.,
+Usage Guide - VeRLPy,VeRLPy aims to offer a clean interface for bringing RL logic into the conventional cocotb testbench while adhering to the OpenAI Gym environment structure allowing users to leverage the standard RL tools.,
+Usage Guide - VeRLPy,The DUT and the verification testbench are the environment for the RL agent to act on.,
+Usage Guide - VeRLPy,"The agent chooses an action which is executed on the environment and the consequences of that action are informed back to the agent in terms of the state and the reward. 
+",
+Identifying verification goals and defining the MDP - VeRLPy - Usage Guide,"To build a testbench using VeRLPy, we need to start by defining the verification goals in terms of functional coverage.",
+Identifying verification goals and defining the MDP - VeRLPy - Usage Guide,This involves identifying the events occurring in the DUT that correspond to the features that are part of the design specifications.,
+Identifying verification goals and defining the MDP - VeRLPy - Usage Guide,"The reward given to the RL agent will be a function of how often these events occur during the simulation.
+
+",
+Identifying verification goals and defining the MDP - VeRLPy - Usage Guide,"In addition, since there is the additional RL component involved, the MDP has to be defined.",
+Identifying verification goals and defining the MDP - VeRLPy - Usage Guide,"This means identifying what each timestep and each episode corresponds to in terms of verification logic and input stimulus to the DUT, and what the state and the action space of the MDP represent. 
+
+",
+Identifying verification goals and defining the MDP - VeRLPy - Usage Guide,Each RL episode starts with a call to to the `reset()` function of the Gym environment.,
+Identifying verification goals and defining the MDP - VeRLPy - Usage Guide,"Followed by this, there are one or more calls to the `step(action)` function until `done` is returned with a value of `True` from the RL environment.  ",
+Identifying verification goals and defining the MDP - VeRLPy - Usage Guide,"Refer to [Gym](https://gym.openai.com/) for a more detailed understanding of how the control flow occurs in a Gym environment. 
+",
+Inheriting CocotbEnv - VeRLPy - Usage Guide,The library provides a Gym environment object `CocotbEnv` which can be inherited to build the verification testbench.,source
+Inheriting CocotbEnv - VeRLPy - Usage Guide,This class has predefined functions/coroutines which interact with the RL agent to facilitate the learning process.,source
+Inheriting CocotbEnv - VeRLPy - Usage Guide,"These functions are triggered by the `reset()`, `step(action)`, `done` variable, etc.",source
+Inheriting CocotbEnv - VeRLPy - Usage Guide,Please refer [here](https://github.com/aebeljs/VeRLPy/blob/main/src/cocotb_env.py) for more detailed explanations of these functions and their implementation details.,source
+Inheriting CocotbEnv - VeRLPy - Usage Guide,"We start with implementing this class that inherits `CocotbEnv`. 
+
+",source
+Inheriting CocotbEnv - VeRLPy - Usage Guide,"```python
+# test_my_example_design.py
+
+import cocotb
+from verlpy import CocotbEnv
+
+class MyExampleDesignCocotbEnv(CocotbEnv):
+    def __init__(self, dut, observation_space):
+        super().__init__()
+        self.dut = dut # DUT object used for cocotb-based verification
+        self.observation_space = observation_space # state space of the RL agent
+
+        # add here any ""self.""",source
+Inheriting CocotbEnv - VeRLPy - Usage Guide,"variables that need to be accessed in
+        # other functions below
+
+    @cocotb.coroutine
+    def setup_rl_episode(self):
+        # add here the logic to be 
+        # executed on each call to reset() by the RL agent
+
+    @cocotb.coroutine
+    def rl_step(self):
+        # add here the verification logic to be 
+        # executed on each call to step() by the RL agent
+        
+
+    @cocotb.coroutine
+    def terminate_rl_episode(self):
+        # add here the logic to be executed at the end
+        # of eac",source
+Inheriting CocotbEnv - VeRLPy - Usage Guide,"h RL episode when done == 1 for the Gym env
+
+
+    def finish_experiment(self):
+        # add here the logic to be executed after all
+        # the episodes are completed
+```
+Note that all the coroutines with the decorator `cocotb.coroutine` require a `yield` statement in the body like how it is in standard cocotb testbenches.
+",source
+Instantiating the verification environment object - VeRLPy - Usage Guide,The functions/coroutine implementations defined in `MyExampleDesignCocotbEnv` should contain the appropriate logic that must run from the cocotb side.,source
+Instantiating the verification environment object - VeRLPy - Usage Guide,"Once this class is defined, the cocotb test can be added to invoke the verification logic from this class.",source
+Instantiating the verification environment object - VeRLPy - Usage Guide,"While defining this, the state space of the MDP should also be passed as an argument as shown below.
+
+",source
+Instantiating the verification environment object - VeRLPy - Usage Guide,"```python
+# test_my_example_design.py
+
+import cocotb
+from verlpy import CocotbEnv, utils
+import gym
+
+class MyExampleDesignCocotbEnv(CocotbEnv):
+    def __init__(self, dut, observation_space):
+        super().__init__()
+        self.dut = dut
+        self.observation_space = observation_space
+
+        # add here any ""self.""",source
+Instantiating the verification environment object - VeRLPy - Usage Guide,"variables that need to be accessed in
+        # other functions below
+
+    @cocotb.coroutine
+    def setup_rl_episode(self):
+        # add here the logic to be 
+        # executed on each call to reset() by the RL agent
+
+    @cocotb.coroutine
+    def rl_step(self):
+        # add here the verification logic to be 
+        # executed on each call to step() by the RL agent
+        
+
+    @cocotb.coroutine
+    def terminate_rl_episode(self):
+        # add here the logic to be executed at the end
+        # of eac",source
+Instantiating the verification environment object - VeRLPy - Usage Guide,"h RL episode when done == 1 for the Gym env
+
+
+    def finish_experiment(self):
+        # add here the logic to be executed after all
+        # the episodes are completed
+
+# entry point for the cocotb verification test
+@cocotb.test()
+def run_test(dut):
+    cocotb_env = MyExampleDesignCocotbEnv(dut, gym.spaces.Discrete(1))
+    # gym.spaces.",source
+Instantiating the verification environment object - VeRLPy - Usage Guide,Discrete(1),source
+Instantiating the verification environment object - VeRLPy - Usage Guide,=>,source
+Instantiating the verification environment object - VeRLPy - Usage Guide,"Just 1 state in the state space
+    yield cocotb_env.run()
+
+    # plot the results of the verification experiment
+    utils.visualize(cocotb_env.log_file_name)
+```
+
+VeRLPy also provides some plotting capabilities which can be accessed from `utils` as shown above.
+",source
+Adding coroutines to track events - VeRLPy - Usage Guide,"The identified functional coverage events can be tracked by using cocotb coroutines like in conventional cocotb-based verification.
+
+",source
+Adding coroutines to track events - VeRLPy - Usage Guide,"```python
+# test_my_example_design.py
+
+import cocotb
+from verlpy import CocotbEnv, utils
+import gym
+
+class MyExampleDesignCocotbEnv(CocotbEnv):
+    def __init__(self, dut, observation_space):
+        super().__init__()
+        self.dut = dut
+        self.observation_space = observation_space
+
+        # add here any ""self.""",source
+Adding coroutines to track events - VeRLPy - Usage Guide,"variables that need to be accessed in
+        # other functions below
+
+    @cocotb.coroutine
+    def setup_rl_episode(self):
+        # add here the logic to be 
+        # executed on each call to reset() by the RL agent
+        self.cocotb_coverage.clear() # clear last episode's coverage
+        self.coverage_coroutine = cocotb.fork(monitor_signals(self.dut, self.cocotb_coverage))
+
+    @cocotb.coroutine
+    def rl_step(self):
+        # add here the verification logic to be 
+        # executed on each call t",source
+Adding coroutines to track events - VeRLPy - Usage Guide,"o step() by the RL agent
+        
+
+    @cocotb.coroutine
+    def terminate_rl_episode(self):
+        # add here the logic to be executed at the end
+        # of each RL episode when done == 1 for the Gym env
+
+        self.coverage_coroutine.kill()
+
+
+    def finish_experiment(self):
+        # add here the logic to be executed after all
+        # the episodes are completed
+
+@cocotb.coroutine
+def monitor_signals(dut, cocotb_coverage):
+    while True:
+        yield RisingEdge(dut.",source
+Adding coroutines to track events - VeRLPy - Usage Guide,"CLK)
+        ",source
+Adding coroutines to track events - VeRLPy - Usage Guide,"s = [(int)(dut.reg_1.value == 1),
+             (int)((dut.reg_2.value) % 4 != 0),
+             (int)(dut.reg_3.value == 32)]
+        # Here reg_1, reg_2 and reg_3 are some
+        # key registers of interest in the DUT
+
+        s = ''.join(map(str, s))
+        cocotb_coverage.append(s)
+
+# entry point for the cocotb verification test
+@cocotb.test()
+def run_test(dut):
+    cocotb_env = MyExampleDesignCocotbEnv(dut, gym.spaces.Discrete(1))
+    # gym.spaces.",source
+Adding coroutines to track events - VeRLPy - Usage Guide,Discrete(1),source
+Adding coroutines to track events - VeRLPy - Usage Guide,=>,source
+Adding coroutines to track events - VeRLPy - Usage Guide,"Just 1 state in the state space
+    yield cocotb_env.run()
+
+    # plot the results of the verification experiment
+    utils.visualize(cocotb_env.log_file_name)
+```
+The `monitor_signals` coroutine added above monitors the DUT for events of interest that count towards the functional coverage.",source
+Adding coroutines to track events - VeRLPy - Usage Guide,The  boolean logical expressions in the list `s` above correspond to the logical expressions for identifying each event.,source
+Adding coroutines to track events - VeRLPy - Usage Guide,The number of times these events occur affect the reward signal given to the RL agent.,source
+Adding coroutines to track events - VeRLPy - Usage Guide,`monitor_signals` should track these events and add them to the `cocotb_coverage` attribute of the `MyExampleDesignCocotbEnv` class that we wrote.,source
+Adding coroutines to track events - VeRLPy - Usage Guide,`monitor_signals` is invoked in the `setup_rl_episode` coroutine along with the clock and reset coroutines.,source
+Adding coroutines to track events - VeRLPy - Usage Guide,It is passed the `cocotb_coverage` attribute as an argument.,source
+Adding coroutines to track events - VeRLPy - Usage Guide,Note that `monitor_signals` is killed in the `terminate_rl_episode` coroutine at the end of each RL episode.,source
+Adding coroutines to track events - VeRLPy - Usage Guide,"This is important for all coroutines since it might otherwise lead to performance issues with multiple ""alive"" coroutines still ongoing from previous episodes.
+",source
+Configuration File - VeRLPy - Usage Guide,A configuration file `config.ini` needs to be provided to specify the parameters related to the simulation and the RL agent.,source
+Configuration File - VeRLPy - Usage Guide,"A sample coniguration file is provided below with comments for what each section and key corresponds to.
+
+",source
+Configuration File - VeRLPy - Usage Guide,"```ini
+; This section is to provide the
+; main parameters for the verification runs
+",source
+Configuration File - VeRLPy - Usage Guide,"[main]
+; number of RL steps for which the experiment is run
+num_steps = 1000
+
+; number of functional events tracked
+num_events = 3
+
+; weightage of each functional event for reward computation
+reward_function = [0, 0, 1]
+
+; set log_step as 0 for logging just aggregated results and 1 for logging details in each step
+log_step = 0
+
+; set mode as 0 to generate the random baseline without RL and 1 for using RL
+mode = 1
+
+; specify the stable_baselines3 algorithm to be used from SAC, DDPG and TD3
+algorithm = SAC
+
+;",source
+Configuration File - VeRLPy - Usage Guide," fsm_states contains the regex patterns for 
+; state-based binary sequence generation
+; (leave as [] unless utils.get_next_state_of_FSM() is needed in the code)
+fsm_states",source
+Configuration File - VeRLPy - Usage Guide,=,source
+Configuration File - VeRLPy - Usage Guide,"[]
+
+; Provide the discrete action component names here. 
+",source
+Configuration File - VeRLPy - Usage Guide,"; The valid dscrete value set for the specified keys
+; should be given in the [discrete] section
+discrete_params = ['count_width', 'fmap_len']
+
+
+; This section is to provide the bounds
+; of the continuous dimensions of the action space.
+",source
+Configuration File - VeRLPy - Usage Guide,"; If multiple dimensions are there, provide the list of bounds for each dimension
+; eg: lower_bounds = [0, 0, 1] and upper_bounds = [1, 1, 3] corresponds to
+;",source
+Configuration File - VeRLPy - Usage Guide,"[0, 1] x",source
+Configuration File - VeRLPy - Usage Guide,"[0, 1] x",source
+Configuration File - VeRLPy - Usage Guide,"[1, 3] as the continuous action space
+",source
+Configuration File - VeRLPy - Usage Guide,"[continuous]
+lower_bounds = [0, 5]
+upper_bounds = [1, 7]
+
+
+; This section is to provide the list of valid 
+; discrete values for each discrete action
+; component named in discrete_params
+[discrete]
+count_width = [1, 2, 3, 4, 5, 6, 7, 8]
+fmap_len = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+
+
+; This section is to provide the required
+; hyperparameters of the chosen stable_baselines3 algorithm
+",source
+Configuration File - VeRLPy - Usage Guide,"[RL]
+policy = 'MlpPolicy'
+learning_starts = 100
+learning_rate = 0.0003
+train_freq = (1, 'episode')
+verbose = 1
+```
+The `reward_function` key specifies how the functional events tracked in the `self.cocotb_coverage` attribute need to be rewarded for improving coverage.",source
+Configuration File - VeRLPy - Usage Guide,"`reward_function` set as `[0, 0, 1]` like above implies that if the third functional event occurs during a step, a reward is given to the RL agent.",source
+Configuration File - VeRLPy - Usage Guide,"Refer to the [paper](https://arxiv.org/abs/2108.03978) for the actual computation details.
+
+",source
+Configuration File - VeRLPy - Usage Guide,The `[continuous]` and `[discrete]` sections together specify the total action space of the RL agent.,source
+Configuration File - VeRLPy - Usage Guide,"The continuous dimensions of the action space based on the above configuration file is the cross product `[0, 1] x",source
+Configuration File - VeRLPy - Usage Guide,"[5, 7]`.",source
+Configuration File - VeRLPy - Usage Guide,"The discrete dimensions of the the action space is the cross product `{1, 2, ..., 8} x {100, 200, ..., 1000}`.",source
+Configuration File - VeRLPy - Usage Guide,"Therefore the complete action space is the cross product `[0, 1] x",source
+Configuration File - VeRLPy - Usage Guide,"[5, 7] x {1, 2, ..., 8} x {100, 200, ..., 1000}`.
+",source
+Filling in the verification logic - VeRLPy - Usage Guide,"Finally, the body of each of the coroutines overriden in `MyExampleDesignCocotbEnv` need to be completed.",
+Filling in the verification logic - VeRLPy - Usage Guide,The action suggested by the RL agent based on the `config.ini` can be accessed through the `self.continuous_actions` and `self.discrete_actions` attributes of the class.,
+Filling in the verification logic - VeRLPy - Usage Guide,"In the above example, `self.continuous_actions` will sample from `[0, 1] x",
+Filling in the verification logic - VeRLPy - Usage Guide,"[5, 7]` and `self.discrete_actions` will sample from `{1, 2, ..., 8} x {100, 200, ..., 1000}`.
+
+",
+Filling in the verification logic - VeRLPy - Usage Guide,The list `self.cocotb_coverage` needs to be updated with the strings corresponding to the covered events from the previous timestep of the RL episode for proper reward computation based on the reward function defined in the `config.ini` file.,
+Filling in the verification logic - VeRLPy - Usage Guide,"This update will happen on its own if `self.cocotb_coverage` is passed as the argument `cocotb_coverage` to the  `monitor_signals` coroutine defined above  Refer to the examples folder for more concrete examples on how this is done in various designs.
+",
+Multi-step RL - VeRLPy - Usage Guide,"VeRLPy by default assumes a single step single state MDP. If a multi-step MDP is required, it can be implemented by overriding `compute_rl_observation` function in the `MyExampleDesignCocotbEnv` class. The internal elements of the DUT that need to be tracked for computing the observation/state after each step can be done so by utilizing a separate coroutine like how `monitor_signals` is used for tracking the coverage to compute the reward.
+",
+Make file - VeRLPy - Usage Guide,"The make file can be written like how it is done usually in cocotb testbenches. Once it is done and `make` is run, the verification simulation runs and the logs, models and plots are generated. Use the `mode` configuration parameter in `config.ini` for running the verification with/without the RL feedback.
+",
+Prepare the Python environments for ML models - Impact of Evaluation Methodologies on Code Summarization - Code for Training and Evaluating Models,"Requires Anaconda/Miniconda, and the models' source code at `_work/src/`.
+
+",
+Prepare the Python environments for ML models - Impact of Evaluation Methodologies on Code Summarization - Code for Training and Evaluating Models,"```
+python",
+Prepare the Python environments for ML models - Impact of Evaluation Methodologies on Code Summarization - Code for Training and Evaluating Models,"-m tseval.main prepare_envs --which=$model_cls
+# Example: python -m",
+Prepare the Python environments for ML models - Impact of Evaluation Methodologies on Code Summarization - Code for Training and Evaluating Models,"tseval.main prepare_envs --which=TransformerACL20
+```
+
+Where the `$model_cls` for each model can be looked up in this table
+(Transformer and Seq2Seq are using the same model class and
+environment):
+
+| $task | $model_cls         ",
+Prepare the Python environments for ML models - Impact of Evaluation Methodologies on Code Summarization - Code for Training and Evaluating Models,"| Model         |
+|:------|:-------------------|:--------------|
+| CG    | DeepComHybridESE19",
+Prepare the Python environments for ML models - Impact of Evaluation Methodologies on Code Summarization - Code for Training and Evaluating Models,| DeepComHybrid,
+Prepare the Python environments for ML models - Impact of Evaluation Methodologies on Code Summarization - Code for Training and Evaluating Models,"|
+| CG    | TransformerACL20   | Transformer   |
+| CG    | TransformerACL20   | Seq2Seq       |
+| MN    | Code2VecPOPL19     | Code2Vec      |
+| MN    | Code2SeqICLR19     | Code2Seq      |
+
+",
+Prepare the Python environments for ML models - Impact of Evaluation Methodologies on Code Summarization - Code for Training and Evaluating Models,"The name of the conda environment created is `tseval-$task-$model_cls`.
+",
+Installation - OpenTau: Using Large Language Models for Gradual Type Inference,"Run `make` while being in the directory
+
+The output binary (symlinked) will be at `/out/client`
+",source
+Installation - logzip,"Logzip can be directly execute through source code. 
+
+1. Download and install python3 [here](https://www.python.org/downloads/).
+
+2. Install Pandas.
+
+   ```$ pip3 install pandas```
+
+3. Clone logzip.
+
+   ``` $ clone https://github.com/logpai/logzip.git``` 
+",source
+Step 1. Download and set up Z3 solvers - SNAP for building very small test suites - Installation,"We used [Z3 v4.8.4](https://github.com/Z3Prover/z3/releases/tag/z3-4.8.4) during the experiment, but newer version could be probably faster.
+```
+wget https://github.com/Z3Prover/z3/archive/z3-4.8.4.tar.gz
+tar -xzf z3-4.8.4.tar.gz
+# follow steps in README.md inside the z3-4.8.4 like following...
+python scripts/mk_make.py
+cd build
+make
+sudo make install
+```",source
+Step 4. Understanding the Benchmark ID - SNAP for building very small test suites - Installation,"In the SNAP, for convenient, we use the ID to represent the benchmarks,  you can also replace or add more test cases by editing the `src/commons/utility/utility.h`.
+",
+Step 4. Understanding the Benchmark ID - SNAP for building very small test suites - Installation,"Be default, the id shows as 
+```
+static std::vector<std::string> benchmark_models{
+    ""Benchmarks/Blasted_Real/blasted_case47.cnf"", // 0
+    ""Benchmarks/Blasted_Real/blasted_case110.cnf"", // 1
+    ""Benchmarks/V7/s820a_7_4.cnf"", // 2
+    ""Benchmarks/V15/s820a_15_7.cnf"", // 3
+    ""Benchmarks/V3/s1238a_3_2.cnf"", // 4
+    ""Benchmarks/V3/s1196a_3_2.cnf"", // 5
+    ""Benchmarks/V15/s832a_15_7.cnf"", // 6
+    ""Benchmarks/Blasted_Real/blasted_case_1_b12_2.cnf"", // 7
+    ""Benchmarks/Blasted_Real/blasted_squaring16.cnf",
+Step 4. Understanding the Benchmark ID - SNAP for building very small test suites - Installation,""", // 8
+    ""Benchmarks/Blasted_Real/blasted_squaring7.cnf"", // 9
+    ""Benchmarks/70.sk_3_40.cnf"", // 10
+    ""Benchmarks/ProcessBean.sk_8_64.cnf"", // 11
+    ""Benchmarks/56.sk_6_38.cnf"", // 12
+    ""Benchmarks/35.sk_3_52.cnf"", // 13
+    ""Benchmarks/80.sk_2_48.cnf"", // 14
+    ""Benchmarks/7.sk_4_50.cnf"", // 15
+    ""Benchmarks/doublyLinkedList.sk_8_37.cnf"", // 16
+    ""Benchmarks/19.sk_3_48.cnf"", // 17
+    ""Benchmarks/29.sk_3_45.cnf"", // 18
+    ""Benchmarks/isolateRightmost.sk_7_481.cnf"", //19
+    ""Benchmarks/17.s",
+Step 4. Understanding the Benchmark ID - SNAP for building very small test suites - Installation,"k_3_45.cnf"", // 20
+    ""Benchmarks/81.sk_5_51.cnf"", // 21
+    ""Benchmarks/LoginService2.sk_23_36.cnf"", // 22
+    ""Benchmarks/sort.sk_8_52.cnf"", // 23
+    ""Benchmarks/parity.sk_11_11.cnf"", // 24
+    ""Benchmarks/77.sk_3_44.cnf"", // 25
+    ""Benchmarks/20.sk_1_51.cnf"", // 26
+    ""Benchmarks/enqueueSeqSK.sk_10_42.cnf"", // 27
+    ""Benchmarks/karatsuba.sk_7_41.cnf"", // 28
+    ""Benchmarks/tutorial3.sk_4_31.cnf"" // 29
+};
+```
+",
+Step 5. Compile SNAP and execution - SNAP for building very small test suites - Installation,"```
+cd /path/to/SatSpaceExpo
+make snap
+/path/to/SatSpaceExpo/bin/snap -i ID@Step4
+
+# To clean up all compiled binaries
+cd /path/to/SatSpaceExpo
+make clean
+```
+",source
+Running a trained model on a test set - Replication package for RoBERTa Model - CODE,"python3 run_on_test_set.py --model_path [path of the trained model] --test_set_inputs_path [Path of the test file (has the name matching *_masked_code_test.txt)] --predictions_path [Path of the textual file where predictions will be written (the file is created by the script)]
+",source
+Installation - DeepOrder,"Clone the GitHub repository and install the dependencies.
+1. Clone the repo and go to the directory 
+```
+$ git clone https://github.com/T3AS/DeepOrder-ICSME21/DeepOrder.git
+$ cd DeepOrder
+
+```
+2. Install Anaconda (for creating and activating a separate environment)
+3. Run: 
+```
+$ conda create -n DeepOrder python==3.6
+$ conda activate DeepOrder
+```
+4. Inside the enviroment, run:
+```
+$ pip install -r requirements.txt
+```",source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>",Kaiaulu has been tested on OS X and Ubuntu.,source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>","For Windows and other OS users, try [Virtualbox](https://www.virtualbox.org/),
+",source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>","[VMware](https://www.vmware.com/), or any other software to run virtual machines for Ubuntu. 
+
+",source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>","You can install Kaiaulu using the following command in your R console:
+
+```
+if (!require(""devtools""))",source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>","install.packages(""devtools"")
+devtools::install_github(""sailuh/kaiaulu"")
+```
+
+I also recommend you download the repo to have some example project configuration files, and notebooks to experiment:
+
+ 1.",source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>","Clone this repo 
+ 2.",source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>",Open `kaiaulu.,source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>","Rproj` using RStudio
+ 3.",source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>",Run the unit tests `devtools::test()`.,source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>","If any fail, and you are not clear why, feel free to [ask in Discussions](https://github.com/sailuh/kaiaulu/discussions)
+ 4.",source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>","Build the documentation `devtools::document(roclets = c('rd', 'collate', 'namespace'))`.
+ 5.",source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>","Build Kaiaulu (Top right pane in RStudio -> Build tab -> Install and Restart)
+ 6.",source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>",Run `vignettes/kaiaulu_architecture.,source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>","Rmd` 
+ 7.",source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>",See the Wiki's [Third Party Tools Setup](https://github.com/sailuh/kaiaulu/wiki/Third-Party-Tools-Setup) if you are using a Notebook that relies on them.,source
+"Installation - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a>","These require very minimal overhead by downloading a binary file, and specifying their path on `tools.yml` (see example on the repository). 
+ ",source
+"Cheatsheets - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a> - Installation","
+| Social Smells | Architectural Flaws |
+| -------------",
+"Cheatsheets - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a> - Installation",| -------------,
+"Cheatsheets - Kaiāulu <a href=""https://github.com/sailuh/kaiaulu""><img src=""man/figures/logo.png"" align=""right"" height=""140"" /></a> - Installation","|
+| <a href=""https://github.com/sailuh/kaiaulu_cheatsheet/blob/main/cheatsheets/social-smells-cheatsheet.pdf""><img src=""https://github.com/sailuh/kaiaulu_cheatsheet/blob/main/cheatsheets/social_smells_cheatsheet.png"" width=""272"" height=""210""/></a> |  <a href=""https://github.com/sailuh/kaiaulu_cheatsheet/blob/main/cheatsheets/dv8-cheatsheet.pdf""><img src=""https://github.com/sailuh/kaiaulu_cheatsheet/blob/main/cheatsheets/dv8_cheatsheet.png"" width=""272"" height=""210""/></a>   |
+
+
+",
+Install as package - EHR-FHIR Converter,"Run setup tools from the root directory:
+
+```
+python setup.py sdist bdist_wheel
+```
+
+Given a certain release, either available in ``dist/`` if built, or via Github, install as follows:
+
+```
+python setup.py install
+```
+",source
+Install - Mahotas,"If you are using [conda](https://anaconda.org/), you can install mahotas from
+[conda-forge](https://conda-forge.github.io/) using the following commands:
+
+```bash
+conda config --add channels conda-forge
+conda install mahotas
+```
+",package_manager
+Compilation from source - Mahotas - Install,"You will need python (naturally), numpy, and a C++ compiler. Then you
+should be able to use:
+
+```bash
+pip install mahotas
+```
+
+You can test your installation by running:
+
+```bash
+python -c ""import mahotas as mh; mh.test()""
+```
+
+If you run into issues, the manual has more [extensive documentation on
+mahotas
+installation](https://mahotas.readthedocs.io/en/latest/install.html),
+including how to find pre-built for several platforms.
+",package_manager
+"UNIX based systems (GNU/Linux, MacOS) - Installing","Clone the repository
+
+```
+git clone https://github.com/bfsc/qmethod
+```
+
+Install Python 3 and then
+
+```
+cd qmethod
+python3 -m http.server 8080 --bind 127.0.0.1 
+```
+Then, you may access by typing on your browser address bar: 127.0.0.1:8080
+",source
+Windows 7/8/10: - Installing,"Clone the repository using Github app.
+
+You may use the same python 3 trick or download, install and then use Fenix web server: http://fenixwebserver.com/
+
+<a name=""qme"">1</a>: https://www.betterevaluation.org/en/evaluation-options/qmethodology
+
+
+For more information on how to configure and run Qmethod, head to the [wiki](https://github.com/bfsc/qmethod/wiki) or
+download our [guide.](https://github.com/bfsc/qmethod/blob/res/res/getting-started.pdf)
+",source
+Installation - Quartermaster,"To explore and develop locally, you can clone this repository. Then, run `npm i` to install dependencies. This provides the examples and Typescript source code in an easy to consume format.
+",source
+Installation - TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures,"Make sure Ruby is installed.
+
+",source
+Installation - TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures,"```bash
+ruby --version
+```
+
+TIRA was built using Ruby version `2.6.3`, other/newer versions should work fine, but were not tested against.
+",source
+Installation - TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures,"Use [rvm](https://rvm.io/) or `rbenv install --verbose 2.6.3`.
+
+
+",source
+Installation - TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures,"Install bundler
+
+```bash
+gem install bundler
+```
+
+Clone the repo
+
+```bash
+git clone https://github.com/PrivacyEngineering/tira.git
+cd tira/
+```
+
+Install all gems via bundler
+
+```bash
+bundle install
+```
+
+Configure secrets and credentils 
+
+```bash
+bin/rails credentials:edit
+```
+
+Rails tries to open the crendentials with `$EDITOR`.
+",source
+Installation - TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures,"You can define an editor by setting the `EDITOR` variable explicitely, e.g.
+
+```bash
+EDITOR=""nano"" rails credentials:edit
+```
+
+
+This will create an encrypted config file and a master key, for details visit",source
+Installation - TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures,"[this guide](https://edgeguides.rubyonrails.org/security.html#custom-credentials).
+",source
+Installation - TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures,"The configuration format used can be found in the sample configuration file in `config/credentials_example.yml`.
+
+",source
+Installation - TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures,"Database name and credentials need to be configured.
+",source
+Installation - TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures,"If a different database adapter than postgres is used, this must be configured in:
+
+```
+config/database.yml
+```
+
+
+Set up a postgres database (if you chose to not use postgres, set up a database according to your configuration).
+
+",source
+Installation - TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures,"You can use the offical docker image
+
+```bash
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+```
+
+or set up a postgres database locally
+
+```psql
+create database $db_name;
+
+create role $user_name with createdb login password 'password';
+
+grant all privileges on database $db_name to $user_name;
+
+```
+
+Now run the migrations to set up the database
+
+```bash
+bin/rails db:migrate RAILS_ENV=development
+```
+
+
+TransparencyHub is now set up and you can start the application
+
+```bash
+",source
+Installation - TIRA: An OpenAPI Extension and Toolbox for GDPR Transparency in RESTful Architectures,"rails s
+```
+
+The app is now accessible via `http://localhost:3000`
+
+",source
+Prepare a set of evaluation bugs from Defects4J: - SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics - Code perturbation scripts,"```
+python3 3_prepare_test_data.py
+```
+",source
+We are ready to train the perturbed samples with transformer:Pytorch==1.7.1 and transformers&gt;=4.10.0 - SelfAPR: Self-supervised Program Repair with Test Execution Diagnostics - Code perturbation scripts,"```
+pip install transformers
+pip install sentencepiece
+python3 4_train.py
+```
+",source
+AWS setup instructions - Hawk Release,"https://github.com/PrivacyEngineering/hawk-release/tree/master/terraform-aws
+",
+GCP setup instructions - Hawk Release,https://github.com/PrivacyEngineering/hawk-release/tree/master/terraform-gcp,
+Step 1: Mining Fix Template - TypeFix - Code,"```
+python fix_miner.py
+```
+
+The above command will start the fix template mining process based on the collected `final_combined_commits.json`. This process generally takes several hours and require at least 128GB RAM. It will generate a file `large_mined_templates.json` that contains all mined fix templates.
+",source
+,"To install the plugin run:
+
+```shell
+pip install omnisolver-pt
+```
+",package_manager
+Installation - Roosterize,"You can install Roosterize from source code by cloning this GitHub
+repository and setting up the dependencies following steps 1 & 2.
+(Alternatively, you can download the a [binary
+distribution](https://github.com/EngineeringSoftware/roosterize/releases)
+which already contains the Python dependencies, and then you only need
+step 1.)
+
+```
+git clone https://github.com/EngineeringSoftware/roosterize.git
+cd roosterize
+```
+",source
+"1. Installation of OCaml, Coq, and SerAPI - Roosterize - Installation","We strongly recommend installing the required versions of OCaml, Coq,
+and SerAPI via the [OPAM package manager](https://opam.ocaml.org),
+version 2.0.7 or later.
+
+To set up the OPAM-based OCaml environment, use:
+```
+opam switch create roosterize 4.07.1
+opam switch roosterize
+eval $(opam env)
+```
+Then, install Coq and SerAPI, pinning them to avoid unintended upgrades:
+```
+opam update
+opam pin add coq 8.10.2
+opam pin add coq-serapi 8.10.0+0.7.1
+```
+",source
+2. Installation of PyTorch and Python libraries - Roosterize - Installation,"We strongly recommend installing the required versions of Python and
+PyTorch using [Conda](https://docs.conda.io/en/latest/miniconda.html).
+
+",source
+2. Installation of PyTorch and Python libraries - Roosterize - Installation,"To set up the Conda environment, use one of the following command
+suitable for your operating system and whether you want to use it on a
+CPU or GPU.
+
+- Linux, CPU:
+```
+conda env create --name roosterize --file conda-envs/cpu.yml
+```
+
+- Linux, GPU w/ CUDA 10.0:
+```
+conda env create --name roosterize --file conda-envs/gpu-cuda10.yml
+```
+
+- Linux, GPU w/ CUDA 9.0:
+```
+conda env create --name roosterize --file conda-envs/gpu-cuda9.yml
+```
+
+- Mac, CPU:
+```
+conda env create --name roosterize --file conda-envs/mac",source
+2. Installation of PyTorch and Python libraries - Roosterize - Installation,"-cpu.yml
+```
+
+Finally, activate the Conda environment before using Roosterize:
+```
+conda activate roosterize
+```
+",source
+Installation of trained models - Roosterize - Installation,"Next, you need to obtain a pre-trained model that capture naming
+conventions.  ",source
+Installation of trained models - Roosterize - Installation,"The default pre-trained model, which was trained using
+our [corpus][math-comp-corpus] and follows the conventions used in the
+[Mathematical Components][math-comp-website] family of projects, can
+be obtained by running the command:
+
+```
+./bin/roosterize download_global_model
+```
+
+The model will be downloaded to `$HOME/.roosterize/`.",source
+Installation of trained models - Roosterize - Installation,"To use a
+different model (that we [released][latest-release] or you trained),
+simply put it in `$HOME/.roosterize/`.
+",source
+Setting up conda environment - StructCoder,"    conda create -n structcoder --file structcoder.yml
+    conda activate structcoder
+For running preprocessing notebooks, add the created structcoder conda enviroment to jupyter notebook using the following commands.
+
+    conda install -c anaconda ipykernel
+    python3 -m ipykernel install --user --name=structcoder
+",source
+Installation - Getting started,"On most systems with python pip and setuputils installed, just run:
+
+.. code:: bash
+
+    pip install --user osaca
+
+for the latest release.
+
+To build OSACA from source, clone this repository using ``git clone https://github.com/RRZE-HPC/OSACA`` and run in the root directory:
+
+.. code:: bash
+
+   python ./setup.py install
+
+After installation, OSACA can be started with the command ``osaca`` in the CLI.
+",package_manager
+Installing Git LFS - Quick Start,"Download and install Git LFS using the instructions from [the Git LFS website](https://git-lfs.github.com).
+",
+Installing Git-Theta - Quick Start,"1) Install the git-theta Python package:
+```bash
+pip install git-theta
+```
+
+By default, installing `git-theta` with `pip` will not install any of the supported machine learning frameworks (PyTorch, TensorFlow, etc.).
+If you want to install the framework you intend to use when installing `git-theta`, you can specify it when installing (e.g. by running `pip install git-theta[pytorch]` for PyTorch).
+
+2) Configure Git to use Git-Theta when tracking model checkpoints:
+```bash
+git theta install
+```
+",package_manager
+,This project uses `black` for code formatting and `isort` for import statement ordering.,source
+,"Additionally, it includes CI that checks for compliance.
+",source
+,"We include pre-commit hooks that will automatically run `black` and `isort` against any python files staged for commit.
+ ",source
+,"These hooks can be installed with:
+
+```bash
+$ pip install -r requirements-dev.txt
+$ pre-commit install
+```
+
+When one of these tools must reformat your file, it will show as the pre-commit hook failing and your commit will be cancelled.
+",source
+,"Reformatted source files will appear in your working directory ready to be re-added to staging (`git add`).
+ ",source
+,Running `git commit -m ${msg}` again will result in the hooks passing and the commit actually happening.,source
+,*Note:*,source
+,"As your initial commit was blocked, you will probably want to use the same message in the commit that actually goes through.
+",source
+"Abstract: - Official Code for <a href=""https://arxiv.org/abs/2206.07796"">FixEval: Execution-based Evaluation of Program Fixes for Competitive Programming Problems</a>","Source code repositories consist of large codebases, often containing error-prone programs.",
+"Abstract: - Official Code for <a href=""https://arxiv.org/abs/2206.07796"">FixEval: Execution-based Evaluation of Program Fixes for Competitive Programming Problems</a>",The increasing complexity of software has led to a drastic rise in time and costs for identifying and fixing these defects.,
+"Abstract: - Official Code for <a href=""https://arxiv.org/abs/2206.07796"">FixEval: Execution-based Evaluation of Program Fixes for Competitive Programming Problems</a>",Various methods exist to automatically generate fixes for buggy code.,
+"Abstract: - Official Code for <a href=""https://arxiv.org/abs/2206.07796"">FixEval: Execution-based Evaluation of Program Fixes for Competitive Programming Problems</a>","However, due to the large combinatorial space of possible solutions for a particular bug, there are not many tools and datasets available to evaluate generated code effectively.",
+"Abstract: - Official Code for <a href=""https://arxiv.org/abs/2206.07796"">FixEval: Execution-based Evaluation of Program Fixes for Competitive Programming Problems</a>","In this work, we introduce FixEval, a benchmark comprising buggy code submissions to competitive programming problems and their respective fixes.",
+"Abstract: - Official Code for <a href=""https://arxiv.org/abs/2206.07796"">FixEval: Execution-based Evaluation of Program Fixes for Competitive Programming Problems</a>",We introduce a richtest suite to evaluate and assess the correctness of model-generated program fixes.,
+"Abstract: - Official Code for <a href=""https://arxiv.org/abs/2206.07796"">FixEval: Execution-based Evaluation of Program Fixes for Competitive Programming Problems</a>","We consider two Transformer language models pretrained on programming languages as our baselines, and compare them using match-based and execution-based evaluation metrics.",
+"Abstract: - Official Code for <a href=""https://arxiv.org/abs/2206.07796"">FixEval: Execution-based Evaluation of Program Fixes for Competitive Programming Problems</a>","Our experiments show that match-based metrics do not reflect model-generated program fixes accurately, while execution-based methods evaluate programs through all cases and scenarios specifically designed for that solution.",
+"Abstract: - Official Code for <a href=""https://arxiv.org/abs/2206.07796"">FixEval: Execution-based Evaluation of Program Fixes for Competitive Programming Problems</a>","Therefore, we believe FixEval provides a step towards real-world automatic bug fixing and model-generated code evaluation.
+",
+,"The preferred installation method is to run this command (You may need to change the bash file to update the environment names, etc.):
+```
+bash install_env.sh
+```
+
+Another method is to run the following (You may need to manually add some libraries): 
+```
+conda env create -n python -f src/environment.yml
+conda activate python36
+```
+All the commands below assume that you installed everything in this environment correctly and activated the environment. 
+",source
+Environment Setup - FMViz - Usage,"**The visualization tool**
+
+In any directory, clone the repository:
+
+```git clone --recursive git@github.com:AftabHussain/afl-test-viz.git```
+
+Build and install AFL, patched with the tool’s Test Input
+Color Representation Generator component, as shown below:
+
+```cd afl-test-viz/code/AFL-mut-viz/AFL && make -j32 && make install```
+
+**libxml2**
+
+Build the test subject (libxml2) with AFL’s
+compiler (```afl-gcc```), which prepares libxml2 binaries as fuzzing targets. 
+
+",source
+Environment Setup - FMViz - Usage,"Get libxml2 as follows in a folder outside ```afl-test-viz``` directory:
+
+```git clone https://github.com/GNOME/libxml2.git && cd libxml2 && git checkout 1fbcf40```
+
+Configure and build libxml2:
+
+```cd libxml2 && export CC=afl-gcc && ./autogen.sh && make -j32```
+",source
+Build - OrdinalFix: Fixing Compilation Errors via Shortest-Path CFL Reachability,"```bash
+cargo build --release
+```
+",other
+General Installation - How to Start?,1.,source
+General Installation - How to Start?,"Clone the Repo
+2.",source
+General Installation - How to Start?,"Prepare the data
+
+    1.",source
+General Installation - How to Start?,"Data ([download](https://mega.nz/file/5jFiAKoa#cNITq38YDnAyqS3eGzWncJJ7XPfO4FPvYPS5xjQMYqA))
+    2.",source
+General Installation - How to Start?,"Model ([download](https://mega.nz/file/Eyk0Qa6L#IbLmo7_ZE_1TYyGnH7kM8uSOKkRhbBTGiLkbJiAyRCE))
+      - Models are also available at [HuggingFace](https://huggingface.co/kaanakdeniz)
+
+    Download all the data and model from the links provided above, unzip/ unarchive the data, and then copy the `data` ve `model` folders to the main directory in the repo.
+
+",source
+General Installation - How to Start?,"3. Make sure you have `Python 3.9.13` installed on your system
+4.",source
+General Installation - How to Start?,"In order to use the GitHub API, you need to rename the `example.config.ini` file to `config.ini` and enter your api token.
+",source
+General Installation - How to Start?,"5. Follow the steps specified in [Requirements](#Requirements)
+",source
+"Preparation - code for replication of results for paper ""Semantic Similarity Loss for Neural Source Code Summarization""","- Please create a directory named outdir with 3 subdirectories named histories, models, and predictions.
+",source
+"Preparation - code for replication of results for paper ""Semantic Similarity Loss for Neural Source Code Summarization""",- Please download the model and config file from our [Hugginface profile](https://huggingface.co/apcl/funcom_useloss/tree/main) and put the files in the config directory to your local directory called histories and put the files in funcom-java-long/funcom-java/funcom-python directory to your local directory,source
+"Preparation - code for replication of results for paper ""Semantic Similarity Loss for Neural Source Code Summarization""","called models if you want to finetune models with SIMILE or BLEU.
+- Note that you need to put files in config directory to the same directory as the outdir argument in train.py
+- For setting up your environment, run the following command.",source
+"Preparation - code for replication of results for paper ""Semantic Similarity Loss for Neural Source Code Summarization""","We recommend you to use virtual environment.
+
+  ",source
+"Preparation - code for replication of results for paper ""Semantic Similarity Loss for Neural Source Code Summarization""","```
+  pip install -r requirements.txt
+  ```
+",source
+Installation - Web API Fuzzing Project (WAFP),"WAFP is built around Docker and is tested against the `20.10.0` version. Check [the official Docker docs](https://docs.docker.com/get-docker/) for installation guide.
+Other dependencies are managed via `poetry` (check out the [installation guide](https://github.com/sdispater/poetry#installation)):
+
+```
+poetry install
+```
+
+It also automatically installs WAFP CLI to the current environment that is available via the `wafp` entry point.
+",container
+,"1. Clone this repo with
+
+```shell
+git clone https://github.com/gabeorlanski/springresearch.git
+```
+
+2. Install the requirements with
+
+```shell
+pip install -r requirements.txt
+```
+
+3. Install these python libraries from their repositories:
+
+* [TaskIO](https://github.com/gabeorlanski/taskio)
+* [Apex](https://github.com/NVIDIA/apex)
+",source
+,"**Dataset for our Findings of EMNLP 2022 paper ""Using Developer Discussions to Guide Fixing Bugs in Software""**
+
+The *Discussion-Augmented BFP* datasets can be found [here](https://drive.google.com/drive/folders/1raydTeLxsW07KOER_HodOblFFesbMLQC?usp=sharing).
+
+",
+,"To compile these datasets, we augmentrf the [BFP](https://arxiv.org/pdf/1812.08693.pdf) datasets with bug report discussions from GitHub Issues.",
+,"We relied on the preprocessed version of this BFP data released in [MODIT](https://github.com/modit-team/MODIT).
+
+",
+,"If you find this work useful, please consider citing our paper:
+
+```
+@inproceedings{PanthaplackelETAL22UsingDeveloperDiscussions,
+  author = {Panthaplackel, Sheena and Gligoric, Milos and Li, Junyi Jessy and Mooney, Raymond J.},
+  title = {Using Developer Discussions to Guide Fixing Bugs in Software},
+  booktitle = {Findings of EMNLP},
+  pages = {To Appear},
+  year = {2022},
+}
+```
+",
+"Installation - <a href=""https://arxiv.org/pdf/2309.03685.pdf"">PyGraft: Configurable Generation of Synthetic Schemas and Knowledge Graphs at Your Fingertips</a>","The latest stable version of PyGraft can be downloaded and installed from [PyPI](https://pypi.org/project/pygraft) with:
+
+```bash
+pip install pygraft
+```
+
+The latest version of PyGraft can be installed directly from [GitHub](https://github.com/nicolas-hbt/pygraft) source with:
+
+```bash
+pip install git+https://github.com/nicolas-hbt/pygraft.git
+```
+",package_manager
+Installation - TypeT5: Seq2seq Type Inference using Static Analysis,This project uses [pipenv](https://pipenv.pypa.io/en/latest/) to manage the package dependencies.,source
+Installation - TypeT5: Seq2seq Type Inference using Static Analysis,Pipenv tracks the exact package versions and manages the (project-specific) virtual environment for you.,source
+Installation - TypeT5: Seq2seq Type Inference using Static Analysis,"To install all dependencies, make sure you have pipenv and Python 3.10 installed, then, at the project root, run the following two commands:
+```bash
+pipenv --python",source
+Installation - TypeT5: Seq2seq Type Inference using Static Analysis,"<path-to-your-python-3.10>  # create a new environment for this project
+pipenv sync --dev # install all specificed dependencies
+```
+
+More about pipenv:
+- To add new dependences into the virtual environment, you can either add them via `pipenv install ..` (using `pipenv`) or `pipenv run pip install ..` (using `pip` from within the virtual environment).
+-",source
+Installation - TypeT5: Seq2seq Type Inference using Static Analysis,"If your pytorch installation is not working properly, you might need to reinstall it via the `pipenv run pip install` approach rather than `pipenv install`.
+- All `.py` scripts below can be run via `pipenv run python <script-name.py>`.",source
+Installation - TypeT5: Seq2seq Type Inference using Static Analysis,"For `.ipynb` notebooks, make sure you select the pipenv environment as the kernel.",source
+Installation - TypeT5: Seq2seq Type Inference using Static Analysis,"You can run all unit tests by running `pipenv run pytest` at the project root.
+
+",source
+Installation - TypeT5: Seq2seq Type Inference using Static Analysis,"If you are not using pipenv:
+- Make sure to add the environment variables in the [.env](.env) file to your shell environment when you run the scripts (needed by the parsing library).
+",source
+Installation - TypeT5: Seq2seq Type Inference using Static Analysis,"- We also provided a [requirements.txt](requirements.txt) file for you to install the dependencies via `pip install -r requirements.txt`.
+
+",source
+,"In the paper we mention three approaches to estimate the weight term, BM25, SimCSE, and trained models.
+For BM25, it is a built-in function. However, for learning-based SimCSE and trained models, you need to train them first.
+",
+SimCSE - Preparation,"To train the unsupervised SimCSE, run:
+```angular2html
+python nl_simcse.py \
+--output_dir ./saved_models/SimCSE \
+--root_path ./data/ \
+--train_batch_size 256 \
+--num_train_epochs 10  \
+```
+",source
+CodeBERT - Preparation - Trained Models,"To train the CodeBERT with InfoNCE loss, run:
+```angular2html
+lang=python
+save_dir=trained-codebert-${lang}
+python run_siamese_test.py \
+--model_type roberta \
+--do_train \
+--do_eval \
+--evaluate_during_training \
+--eval_all_checkpoints \
+--data_dir ./data/ \
+--train_data_file train.jsonl \
+--code_type code \
+--max_seq_length 200 \
+--per_gpu_train_batch_size 32 \
+--per_gpu_retrieval_batch_size 100 \
+--learning_rate",source
+CodeBERT - Preparation - Trained Models,"1e-6 \
+--num_train_epochs 10 \
+--gradient_accumulation_steps 1 \
+--output_dir ./model/${save_dir} \
+--encoder_name_or_path microsoft/codebert-base \
+--lang ${lang} \
+--infonce
+```
+",source
+GraphCodeBERT - Preparation - Trained Models,"To train the GraphCodeBERT with InfoNCE loss, run:
+```angular2html
+lang=python
+save_dir=trained-graphcodebert-${lang}
+python run.py \
+--output_dir=./saved_models/${save_dir} \
+--config_name=microsoft/graphcodebert-base \
+--model_name_or_path=microsoft/graphcodebert-base \
+--tokenizer_name=microsoft/graphcodebert-base \
+--lang=${lang} \
+--do_train \
+--do_eval \
+--train_data_file=./data/${lang}/train.jsonl \
+--eval_data_file=./data/${lang}/valid.jsonl \
+--test_data_file=./data/${lang}/test.jsonl \
+--codebase_",source
+GraphCodeBERT - Preparation - Trained Models,"file=./data/${lang}/codebase.jsonl \
+--num_train_epochs 30 \
+--code_length 256 \
+--data_flow_length 64 \
+--nl_length 128 \
+--train_batch_size 32 \
+--eval_batch_size 64 \
+--learning_rate 2e-5 \
+--seed 123456 \
+--infonce
+```
+",source
+UniXCoder - Preparation - Trained Models,"To train the UniXCoder with InfoNCE loss, run:
+```angular2html
+lang=python
+save_dir=trained-unixcoder-${lang}
+python run.py \
+--output_dir ./saved_models/${save_dir} \
+--model_name_or_path microsoft/unixcoder-base \
+--do_train \
+--do_eval \
+--train_data_file ./data/${lang}/train.jsonl \
+--eval_data_file ./data/${lang}/test.jsonl",source
+UniXCoder - Preparation - Trained Models,"\
+--codebase_file ./data/${lang}/codebase.jsonl \
+--num_train_epochs 10 \
+--code_length 256 \
+--nl_length 128 \
+--train_batch_size 64 \
+--eval_batch_size 64 \
+--learning_rate 2e-5 \
+--seed 123456 \
+--infonce
+```
+Note that for the simplicity of reproduction, we will directly upload the parameters of the above-mentioned models directly
+once the paper is accepted.
+",source
+Setting up a Jepsen + Mallory environment - Jepsen &amp; Mallory,"We provide a ready-made environment using Vagrant:
+
+```bash
+cd docker/
+vagrant plugin install vagrant-reload   # only needed once
+vagrant up
+```
+",container
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"If you have an existing Jepsen test harness, Mallory takes the place of your
+existing nemesis package and generator.
+
+",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"```Clojure
+(:require",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"[jepsen.mediator.wrapper :as med])
+
+;; this should be a list of packages, as returned by
+;; jepsen/nemesis/combined.clj:nemesis-packages
+;; and NOT a combined package (as returned by compose-package)
+;; If you have custom nemeses, you need to write a version of this yourself
+;; that includes your custom nemesis.
+",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"packages      (nemesis/nemesis-packages nemesis-opts)
+
+;; Previously, the nemesis package was obtained as such:
+;; nemesis       (nemesis/nemesis-package nemesis-opts)
+nemesis      (med/adaptive-nemesis packages nemesis-opts)]
+
+;; in your test, make the nemesis generator refer to the adaptive package:
+:generator
+        (->> (:generator workload)
+                (gen/stagger (/ (:rate opts)))
+                ;; use the adaptive nemesis generator
+                (gen/nemesis (:generator nemesis))
+           ",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"     (gen/time-limit (:time-limit opts)))
+```
+
+IMPORTANT:
+- if your nemesis package only uses nemeses in Jepsen's default
+  `jepsen/nemesis/combined.clj`, our distribution rewrites those so they are
+  usable by Mallory;
+- if you package custom nemeses, you must modify them as follows: (1) add a
+  `:ops` field that returns the set of operations (and arguments) supported by
+  the nemesis, and (2) add a `:dispatch` field that takes an operation type
+  returned by `op` and returns an instantiated operation that",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment," can be invoked by
+  the nemesis client
+
+Here is an example nemesis adapted for use with Mallory:
+
+```Clojure
+(defn partition-package
+  ""A nemesis and generator package for network partitions.",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"Options as for
+  nemesis-package.",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"""
+  [opts]
+  (let [needed?",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"((:faults opts) :partition)
+        db      (:db opts)
+        targets (:targets (:partition opts) (partition-specs db))
+        ",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"start (fn start [_ _]
+                {:type  :info
+                 :f     :start-partition
+                 :value (rand-nth targets)})
+        stop  {:type :info, :f :stop-partition, :value nil}
+        gen   (->> (gen/flip-flop start (repeat stop))
+                   (gen/stagger (:interval opts default-interval)))
+        ;; Needed by Mallory -- to inform at start-up which operations this nemesis can perform
+        ops   (cond-> []
+                needed?",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,(concat,other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"[{:f :start-partition :values (vec targets)}, {:f :stop-partition, :values [nil]}]))]
+    ;; Needed by Mallory -- to transform an operation type into a specific operation
+    (defn dispatch",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"[op test ctx]
+      (case (:f op)
+        :start-partition  ((fn start [_ _] {:type  :info
+                                            :f     :start-partition
+                                            :value (or (:value op) (rand-nth targets))}) test ctx)
+        :stop-partition  stop
+        nil))
+
+    {:generator       (when needed?",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"gen)
+     :final-generator (when needed?",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"stop)
+     :nemesis         (partition-nemesis db)
+     :perf            #{{:name  ""partition""
+                         :start #{:start-partition}
+                         :stop  #{:stop-partition}
+                         :color ""#E9DCA0""}}
+     ;; these two fields are needed by Mallory
+     :ops             ops
+     :dispatch        dispatch}))
+```
+
+An example `nemesis-packages` function (with many custom nemesis packages):
+
+```Clojure
+(defn nemesis-packages
+  ""Constructs a nemesis and generators for dqli",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"te.""
+  ",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"[opts]
+  (let [opts (update opts :faults set)]
+    (->> (concat [(nc/partition-package opts)
+                  (nc/db-package opts)
+                  (member-package opts)
+                  (stop-package opts)
+                  (stable-package opts)]
+                 ",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"(:extra-packages opts))
+         (remove nil?))))
+```
+
+A much simpler one:
+
+```Clojure
+(defn nemesis-packages
+  ""Builds a combined package for the given options.",other
+Modifying an existing Jepsen test for Mallory - Jepsen &amp; Mallory - Setting up a Jepsen + Mallory environment,"""
+  [opts]
+  (->> (nc/nemesis-packages opts)
+       (concat [(member-package opts)])
+       (remove nil?)))
+```
+
+",other
+Setup Linux Environment - VerilogEval Overview,"In order to use PyHDL-Eval you will need to install iverilog, verilator,
+and python3 along with several Python packages.",source
+Setup Linux Environment - VerilogEval Overview,"These are the versions
+which were used for this project:
+
+ - iverilog (v12)
+ - python3 (v3.11.0)
+
+**Please note that iverilog v13 (development release) is not supported.",source
+Setup Linux Environment - VerilogEval Overview,"**
+
+To install Python 3.11:
+```
+$ conda create -n codex python=3.11
+$ conda activate codex
+```
+
+Install [ICARUS Verilog](https://github.com/steveicarus/iverilog):
+```
+$ git clone https://github.com/steveicarus/iverilog.git && cd iverilog \
+        && git checkout v12-branch \
+        && sh ./autoconf.sh && ./configure && make -j4\
+        && make install
+```
+
+You will also need the following Python packages:
+
+```
+ % pip install langchain langchain-openai langchain-nvidia-ai-endpoints
+```
+
+We plan to provide",source
+Setup Linux Environment - VerilogEval Overview," a Dockerfile and backwards compatibility mode with a prebuilt jsonl soon.
+",source
+Setting it up - SLACC: Simion-based Language Agnostic Code Clones,The artifacts for SLACC can be installed by following the instructions in [INSTALL.md](https://github.com/DynamicCodeSearch/SLACC/blob/ICSE20/INSTALL.md).,
+Setting it up - SLACC: Simion-based Language Agnostic Code Clones,SLACC can either be [setup from scratch](https://github.com/DynamicCodeSearch/SLACC/edit/ICSE20/INSTALL.md#setting-up-from-scratch) or reusing the preconfigured [virtualbox image](https://github.com/DynamicCodeSearch/SLACC/edit/ICSE20/INSTALL.md#preconfigured-image).,
+Setting it up - SLACC: Simion-based Language Agnostic Code Clones,We would recommend using the preconfigured image for prototyping or running the `Example` dataset used in the motivation section of the paper.,
+Setting it up - SLACC: Simion-based Language Agnostic Code Clones,"For running the `CodeJam` dataset, it might be best to setup from the scratch or use the image on a machine with at least 16GB of memory and 2 processors.
+",
+,"You can [use CodePod online](https://app.codepod.io) without installing it
+locally.",package_manager
+,"To install it on your computer:
+
+Step 1: install prerequisite: [nodejs](https://nodejs.org/en/download) runtime
+and python & ipykernel:
+
+```
+brew install node # example for MacOS
+pip3 install ipykernel
+```
+
+Step 2: Install codepod CLI app from [npm registry](https://www.npmjs.com/package/codepod):
+
+```
+> npm install -g codepod
+> codepod --version
+# 0.0.7
+```
+
+Step 3: launch CodePod from terminal:
+
+```
+> codepod /path/to/local/repo
+# ...",package_manager
+,🚀,package_manager
+,"Server ready at http://localhost:4001
+```
+
+Open this URL in your browser to see the app.",package_manager
+,"The files will be saved to the
+directory `/path/to/repo/codepod.bin|json`.",package_manager
+,"The `codepod.bin` is the source of
+truth, and `codepod.json` is for human-readability only.
+
+",package_manager
+,"In the future, you can update the app:
+
+```
+> npm update -g codepod
+```
+",package_manager
+,"Find information on file `_README.first` in this repository as well as requirements for running it stand-alone.
+",
+1. Installation and configuration - Code2DFD,"Before running the tool, [Python](https://www.python.org/downloads/) version 3.x and the packages specified in `requirements.txt` need to be installed.
+",
+1. Installation and configuration - Code2DFD,"The path to the application that is to be analysed can be written in the `config/config.ini` file or given as parameter (see 2.).
+",
+1. Installation and configuration - Code2DFD,"A number of repositories is already given in that file, for all of which a manually created DFD exists [here](https://github.com/tuhh-softsec/microSecEnD).
+",
+1. Installation and configuration - Code2DFD,"The corresponding path only needs to be un-commented for analysis (all others have to be commented out with a "";"")
+
+",
+Data Preparation - Revisiting Neuron Coverage Metrics and Quality of Deep Neural Networks,"```
+pip install gdown
+
+gdown https://drive.google.com/uc?id=1gUiTNIzSF_HSy6HR_Nxo8r5MkUJ-mm_C
+tar -xvf data.tar.gz
+
+gdown https://drive.google.com/uc?id=14up34H2_RVAwYmR2NNJFRI0l-FdI1d_u
+tar -xvf models.tar.gz
+```
+",package_manager
+"Setup - Dataset, scripts, and additional material for the paper ""Best-Answer Prediction in Technical Q&amp;A Sites"" - Python and  R scripts","To ensure proper execution, first run the following commands to check for the presence and eventually install all the required packages for R and Python.
+```bash
+$ RScript requirements.R
+$ pip install -r requirements.txt
+```
+",source
+Installing dependencies - Building,"* Install basic dependencies:
+```
+   sudo apt install -y build-essential make cmake ninja-build git binutils-gold binutils-dev curl wget
+```
+
+* Install Boost 1.71:
+```
+   sudo apt install libboost-all-dev libboost-dev
+```
+
+*",package_manager
+Installing dependencies - Building,Install LLVM 11.0.0 with Gold-plugin(can refer to this [building script](./scripts/build-llvm-11.sh).,package_manager
+Installing dependencies - Building,"After that, please copy the following libraries into the specified location:
+```
+   sudo cp /usr/lib/llvm-11/lib/libLTO.so /usr/lib/bfd-plugins/
+   sudo cp /usr/lib/llvm-11/lib/LLVMgold.so /usr/lib/bfd-plugins/ 
+```
+* Install spot 2.9.7.",package_manager
+Installing dependencies - Building,"You could also follow thses [instructions](https://spot.lrde.epita.fr/install.html).
+  
+",package_manager
+Installing dependencies - Building,"```
+   wget -q -O - https://www.lrde.epita.fr/repo/debian.gpg | sudo apt-key add -
+   sudo echo 'deb http://www.lrde.epita.fr/repo/debian/ stable/' >> /etc/apt/sources.list
+   sudo apt update
+   sudo apt install -y spot libspot-dev libgtest-dev
+```
+* Install Python3 and related modules:
+
+```
+   sudo install python3 python3-dev python3-pip
+   sudo pip3 install --upgrade pip
+   sudo pip3 install networkx pydot pydotplus
+```
+",package_manager
+Installing LTL-Fuzzer - Building,"* Clone LTL-Fuzzer and them compile as follows: 
+```
+  cd LTL-Fuzzer 
+  mkdir build
+  cd build
+  cmake ../
+  make
+  cd ../AFLGo
+  make 
+  cd llvm-mode
+  make
+  cd ../distance_calculator
+  cmake -G Ninja ./
+  cmake --build ./
+```",source
+Preparing for Instrumentation - Example Usage - Protocol Example,"* Specifying the home directory, e.g., at home dir:
+```
+  export LTLFuzzer=~/LTL-Fuzzer/
+```
+* Specifying the subject directory and name under test:
+```
+  export SUBJECT=$LTLFuzzer/experiment/Problem1/
+  export EXECName=Problem1
+```
+* Specifying a LTL property to be checked:
+```
+  export LTL=""!(! (true U oU) | (! oU U ((oZ & ! oU) & X (! oU U oP))))""
+```
+",other
+Docker Setup - ToGA Artifact,"For an easy setup, we recommend our docker container that includes all data, pretrained models, and source. Otherwise, follow the setup instructions in the next section.
+
+First, pull the docker image:
+`docker pull edinella/toga-artifact`
+
+Connect to it:
+`docker run -i -t edinella/toga-artifact`
+
+Then, setup some environment variables:
+`export PATH=$PATH:/home/defects4j/framework/bin`
+`export ATLAS_PATH=/home/icse2022_artifact/data/atlas---deep-learning-assert-statements/`
+",container
+Setup - ToGA Artifact,"Requirements: `python3.9`, `git lfs`
+
+First, clone this repo and install the dependencies:
+```
+cd toga/
+git lfs pull
+pip install -r requirements.txt
+git clone https://gitlab.com/cawatson/atlas---deep-learning-assert-statements.git
+export ATLAS_PATH=<path_to_atlas...>/atlas---deep-learning-assert-statements/
+```
+",source
+Tree Sitter setup (optional): - ToGA Artifact - Setup,"Paring and extracting new sets of unit test inputs requires the tree sitter java grammar. See https://github.com/tree-sitter/py-tree-sitter for instructions on building a tree sitter grammar and use 'vendor/tree-sitter-java'.
+
+Once the grammar is built in a `my-languages.so` file, place it in `/tmp/tree-sitter-repos/my-languages.so`
+
+A prebuilt `my-languages.so` for linux is provided in `lib/tree_sitter`.
+",
+Defects4j setup (optional): - ToGA Artifact - Setup,"If you want to build and execute defects4j tests, [defects4j](https://github.com/rjust/defects4j) must be installed.
+
+Requirements:
+```
+sudo apt install libdbi-perl
+sudo apt install openjdk-8-jdk
+sudo apt install libdbd-csv-perl
+```
+
+",
+INSTALLATION &amp; USAGE - NeuralSAT: A DPLL(T) Framework for Verifying Deep Neural Networks,"- see [INSTALL.md](./doc/INSTALL.md)
+",
+Hardware - ⚙️AutoPruner✂️ - 🔧 Installations - Requirements,"- More than 200GB disk space
+- 2 NVIDIA GPU that CUDA 11.3; supports and have at least 8GB memory.",
+Software - ⚙️AutoPruner✂️ - 🔧 Installations - Requirements,"- Ubuntu 18.04 or newer
+- Docker/Conda
+ ",
+Conda - ⚙️AutoPruner✂️ - 🔧 Installations - Environment Configuration,"```
+conda env create -n autopruner --file environment.yml
+```
+",source
+Docker - ⚙️AutoPruner✂️ - 🔧 Installations - Environment Configuration,"For ease of use, we also provide a 
+installation package via a [docker image](https://hub.docker.com/r/thanhlecong/autopruner).",container
+Docker - ⚙️AutoPruner✂️ - 🔧 Installations - Environment Configuration,"User can setup AutoPruner's docker step-by-step as follows:
+
+- Pull AutoPruner's docker image: 
+```
+docker pull thanhlecong/autopruner:v2
+```
+- Run a docker container:
+```
+docker run --name autopruner -it --shm-size 16G --gpus all thanhlecong/autopruner:v2
+```
+- Activate conda:
+```
+source /opt/conda/bin/activate
+```
+- Activate AutoPruner's conda enviroment: 
+```
+conda activate autopruner
+```
+Note that, the source code of AutoPruner are stored at /workspace/ in Docker.",container
+Docker - ⚙️AutoPruner✂️ - 🔧 Installations - Environment Configuration,"So, please move to this folder before running experiments. 
+
+",container
+Setup - Natural Language to Code Translation with Execution,"1. Download the [MBPP](https://github.com/google-research/google-research/tree/master/mbpp), [Spider](https://yale-lily.github.io/spider), and [NL2Bash](https://github.com/TellinaTool/nl2bash) datasets to `data/` and follow their instructions for necessary preprocessing steps. 
+",source
+Setup - Natural Language to Code Translation with Execution,2. Download our [collected Codex data](https://dl.fbaipublicfiles.com/mbr-exec/mbr-exec-release.zip).,source
+Setup - Natural Language to Code Translation with Execution,"We have included the pre-executed result with the data; see also `execution.py` if you'd like to execute automatically collected code locally. 
+",source
+Setup - Natural Language to Code Translation with Execution,"3. Install the `conda` environment by 
+```bash
+conda env create -f env.yml
+```
+---",source
+**A. Environmental Setup** - **Fonte: Finding Bug Inducing Commit From Failure (ICSE'23)**,"- Hardware
+  - Developed under Mac with Intel chip
+  - Compatible with AMD64 processors
+- Software
+  - Tested with bash (recommended), zsh, PowerShell
+  - Python 3.9+
+    - If using `pyenv`, use these commands:
+      ```bash
+      pyenv install 3.9.1
+      pyenv local 3.9.1
+      ```
+    - **Install dependencies**:
+        ```bash
+        pip install --upgrade pip
+        python -m pip install numpy pandas scipy tqdm matplotlib seaborn rank-bm25 tabulate jupyter setuptools
+        python -m pip install lib/",package_manager
+**A. Environmental Setup** - **Fonte: Finding Bug Inducing Commit From Failure (ICSE'23)**,"SBFL
+        # Alternative: python -m pip install git+https://github.com/Suresoft-GLaDOS/SBFL 
+        python -m pip install lib/spiral
+        # Alternative: python -m pip install git+https://github.com/casics/spiral
+        ```
+  - [Docker client](https://www.docker.com/products/docker-desktop) (only for the future extension)
+",package_manager
+"Installing and building from source - DepClean <img src=""https://github.com/castor-software/depclean/blob/master/.img/logo.svg"" align=""left"" height=""135px"" alt=""DepClean logo""/>","Prerequisites:
+
+- [Java OpenJDK 11](https://openjdk.java.net) or above
+- [Apache Maven](https://maven.apache.org/)
+
+In a terminal clone the repository and switch to the cloned folder:
+
+```bash
+git clone https://github.com/castor-software/depclean.git
+cd depclean
+```
+Then run the following Maven command to build the application and install the plugin locally:
+
+```bash
+mvn clean install
+```
+",source
+Installing Requirements on Linux (Debian Packages) - FormatFuzzer - Prerequisites,"```
+sudo apt install git g++ make automake python3-pip zlib1g-dev libboost1.71-dev
+pip3 install py010parser six intervaltree
+```
+",package_manager
+Installing Requirements on MacOS (with Xcode &amp; Homebrew) - FormatFuzzer - Prerequisites,"```
+xcode-select --install
+brew install python3 automake boost
+pip3 install py010parser six intervaltree
+```
+",package_manager
+Installing Python Packages Only (All Operating Systems) - FormatFuzzer - Prerequisites,"On all systems, using `pip`:
+```
+pip install py010parser
+pip install six
+pip install intervaltree
+```
+
+",package_manager
+Method 3: Manual steps - FormatFuzzer - Building,"If the above `make` method does not work, or if you want more control, you may have to proceed manually.
+",other
+Step 1: Compiling Binary Template Files into C++ code - FormatFuzzer - Building - Method 3: Manual steps,"Run the `ffcompile` compiler to compile the binary template into C++ code. It takes two arguments: the `.bt` binary template, and a `.cpp` C++ file to be generated.
+```
+./ffcompile templates/gif.bt gif.cpp
+```
+
+",other
+Step 2: Compiling the C++ code - FormatFuzzer - Building - Method 3: Manual steps,"Use the following commands to create a fuzzer `gif-fuzzer`.
+",other
+Step 2: Compiling the C++ code - FormatFuzzer - Building - Method 3: Manual steps,"First, compile the generic command-line driver:
+
+```
+g++ -c -I .",other
+Step 2: Compiling the C++ code - FormatFuzzer - Building - Method 3: Manual steps,-std=c++17 -g,other
+Step 2: Compiling the C++ code - FormatFuzzer - Building - Method 3: Manual steps,"-O3 -Wall fuzzer.cpp
+```
+(`-I .` denotes the location of the `bt.h` file; `-std=c++17` sets the C++ standard.)
+
+",other
+Step 2: Compiling the C++ code - FormatFuzzer - Building - Method 3: Manual steps,"Then, compile the binary parser/compiler:
+
+```
+g++ -c -I .",other
+Step 2: Compiling the C++ code - FormatFuzzer - Building - Method 3: Manual steps,-std=c++17 -g,other
+Step 2: Compiling the C++ code - FormatFuzzer - Building - Method 3: Manual steps,-O3,other
+Step 2: Compiling the C++ code - FormatFuzzer - Building - Method 3: Manual steps,"-Wall gif.cpp
+```
+
+Finally, link the binary parser/compiler with the command-line driver to obtain an executable.",other
+Step 2: Compiling the C++ code - FormatFuzzer - Building - Method 3: Manual steps,"If you use any extra libraries (such as `-lz`), be sure to specify these here too.
+",other
+Step 2: Compiling the C++ code - FormatFuzzer - Building - Method 3: Manual steps,"```
+g++ -O3 gif.o fuzzer.o -o gif-fuzzer -lz
+```
+
+",other
+,"1. (Optional) Creating conda environment
+
+```bash
+conda create -n docchecker python=3.8
+conda activate docchecker
+```
+
+2. Install from [PyPI](https://pypi.org/project/docchecker/):
+```bash
+pip install docchecker
+```
+    
+3. Alternatively, build DocChecker from source:
+
+```bash
+git clone https://github.com/FSoft-AI4Code/DocChecker.git
+cd DocChecker
+pip install -r requirements.txt .
+```
+",source
+Installation for Pre-training - Getting Started - Pre-training Pipeline,"Setup environment and install dependencies for pre-training.
+```bash
+cd ./DocChecker
+pip -r install requirements.txt
+```
+",source
+"Installation - Generic Boltzmann Brain <a href=""https://tldrlegal.com/license/bsd-3-clause-license-(revised)""><img alt=""License"" src=""https://img.shields.io/badge/license-BSD--3-orange.svg"" /></a>","Currently, no pre-compiled binaries are available.
+
+`generic-boltzmann-brain` uses an external [Python](https://www.python.org/) library
+called [Paganini](https://github.com/maciej-bendkowski/paganini) to do the construction
+of Boltzmann samplers. `Python` with available `paganini` are expected to be executable
+and present in the `PATH`.
+
+We recommend using `stack` for compiling `generic-boltzmann-brain` sources.
+",other
+Installation - ReCode: Robustness Evaluation of Code Generation Models,"We are using python 3.8, cuda 11.6.",source
+Installation - ReCode: Robustness Evaluation of Code Generation Models,Anaconda would be recommended.,source
+Installation - ReCode: Robustness Evaluation of Code Generation Models,"Please run the following commands for installation.
+",source
+Installation - ReCode: Robustness Evaluation of Code Generation Models,"```
+conda deactivate; conda env remove --name ReCode
+conda create --name ReCode python=3.8
+conda activate ReCode
+```
+
+Installing huggingface for model inference
+```
+pip install transformers==4.21.1
+pip install -U torch==1.11.0+cu113 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+Installing humaneval.",source
+Installation - ReCode: Robustness Evaluation of Code Generation Models,"Need to enable humaneval by uncommenting out execution line `exec(check_program, exec_globals)` in `execution.py`.
+",source
+Installation - ReCode: Robustness Evaluation of Code Generation Models,"```
+cd evaluate-public-models
+git clone https://github.com/openai/human-eval
+pip install -e human-eval
+cd ..
+",source
+Installation - ReCode: Robustness Evaluation of Code Generation Models,"```
+
+Installing nlaugmenter for perturbations
+```
+cd nlaugmenter
+pip install -r requirements.txt
+pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0.tar.gz
+cd ..
+```
+
+Installing treesitter for perturbations.",source
+Installation - ReCode: Robustness Evaluation of Code Generation Models,"Note that we customized our code syntax perturbatons based on [natgen](https://github.com/saikat107/NatGen). 
+",source
+Installation - ReCode: Robustness Evaluation of Code Generation Models,"```
+cd natgen/treesitter
+git clone https://github.com/tree-sitter/tree-sitter-python # clone the py-tree-sitter
+python build.py # build my-languages.so file
+cd ../transformations
+",source
+Installation - ReCode: Robustness Evaluation of Code Generation Models,"ln -s ../treesitter/build/my-languages.so ./
+pip install sympy
+cd ../..
+",source
+Installation - ReCode: Robustness Evaluation of Code Generation Models,"```
+",source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,"We provide a script ""setup.sh"" to simply build everything.",source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,"But please read first the explanations below. 
+
+",source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,"The folder *tool* contains 3 subfolders:
+
+* *afl-2.51b-wca*: KelinciWCA, and hence also DifFuzz, is using [AFL](http://lcamtuf.coredump.cx/afl/) as the underlying fuzzing engine.",source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,"KelinciWCA leverages a server-client architecture to make AFL applicable to Java applications, please refer to the Kelinci",source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,[poster-paper](https://dl.acm.org/citation.cfm?id=3138820) for more details.,source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,"In order to make it easy for the users, we provide our complete modified AFL variant in this folder.",source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,Note that we only modified the file *afl-fuzz.c*.,source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,For our experiments we have used [afl-2.51b](http://lcamtuf.coredump.cx/afl/releases/?O=D).,source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,Please build AFL by following their instructions.,source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,"Although the `make` command should be enough.
+
+",source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,* *fuzzerside*: This folder includes the *interface* program to connect the *Kelinci server* to the AFL fuzzer.,source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,Simply use `make` to compile the interface.c file.,source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,"If there is an error, you will have to modify the Makefile according to your system setup.
+
+",source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,* *instrumentor*: This folder includes the *Kelinci server* and the *instrumentor* written in Java.,source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,"The instrumentor is used to instrument the Java bytecode, which is necessary to add the coverage reporting and other metric collecting for the fuzzing.",source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,The Kelinci server handles requests from AFL to execute a mutated input on the application.,source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,Both are included in the same Gradle project.,source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,"Therefore, you can simply use `gradle build` to build them.
+
+",source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,"As already mentioned, we have provided a script to build everything.",source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,Please execute `tool/setup.sh` to trigger that.,source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,"Note that depending on your execution environment, you may want to modify this script.",source
+Installation - DifFuzz: Differential Fuzzing for Side-Channel Analysis - Tool,"We tested our scripts on a Ubuntu Ubuntu 18.04.1 LTS machine.
+",source
+2. Setting Up with Dataset - DeepREL - Getting Started,"Run the following commands to load the database.
+
+```shell
+mongorestore -h 127.0.0.1:27017 --db tf dump/tf/
+mongorestore -h 127.0.0.1:27017 --db torch dump/torch/
+```
+
+",other
+Installation - security-maintainability,"Requirements installation:
+
+```
+virtualenv --python=python3.7 venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+Merge different caches in `scripts/maintainability/caches/` folder:
+```
+source venv/bin/activate
+cd scripts
+python -m maintainability.merge_cache -cache maintainability/cache -output maintainability/bch_cache.zip
+``` 
+",source
+Setup &amp; requirements - Malware evasion for Wasm,"- Clone this repo and its submodules `git clone --recursive`
+- Install Rust in your computer
+    - Set nightly as the version `rustup default nightly`
+    - Compile the analyzer tool `cd crates/evasor && cargo build`
+
+- As an alternative, you can download the [ubuntu release binary](https://github.com/Jacarte/obfuscation_wasm/releases/download/0.1.0/analyzer) `wget -O analyzer https://github.com/Jacarte/obfuscation_wasm/releases/download/0.1.0/evasor_linux_64amd`
+",source
+Step 1: Installing Gurobi - IVAN - Reproducing Testing Experiments,"GUROBI installation instructions can be found at `https://www.gurobi.com/documentation/9.5/quickstart_linux/software_installation_guid.html`
+
+For Linux-based systems the installation steps are:
+Install Gurobi:
+```
+wget https://packages.gurobi.com/9.1/gurobi9.1.2_linux64.tar.gz
+tar -xvf gurobi9.1.2_linux64.tar.gz
+cd gurobi912/linux64/src/build
+sed -ie 's/^C++FLAGS =.*$/& -fPIC/' Makefile
+make
+cp libgurobi_c++.a ../..",source
+Step 1: Installing Gurobi - IVAN - Reproducing Testing Experiments,"/lib/
+cd ../..",source
+Step 1: Installing Gurobi - IVAN - Reproducing Testing Experiments,"/
+cp lib/libgurobi91.so /usr/local/lib -> (You may need to use sudo command for this)   
+",source
+Step 1: Installing Gurobi - IVAN - Reproducing Testing Experiments,"python3 setup.py install
+cd ../../
+```
+
+Update environment variables:
+i)",source
+Step 1: Installing Gurobi - IVAN - Reproducing Testing Experiments,"Run following export commands in command prompt/terminal (these environment values are only valid for the current session) 
+ii) Or copy the lines in the .bashrc file (or .zshrc if using zshell), and save the file 
+
+```
+export GUROBI_HOME=""$HOME/opt/gurobi950/linux64""
+export GRB_LICENSE_FILE=""$HOME/gurobi.lic""
+export PATH=""${PATH}:${GUROBI_HOME}/bin""
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/$HOME/usr/local/lib:/usr/local/lib
+```
+
+Getting the free academic license
+To run GUROBI one also needs to get a free ac",source
+Step 1: Installing Gurobi - IVAN - Reproducing Testing Experiments,ademic license.,source
+Step 1: Installing Gurobi - IVAN - Reproducing Testing Experiments,"https://www.gurobi.com/documentation/9.5/quickstart_linux/retrieving_a_free_academic.html#subsection:academiclicense
+
+a) Register using any academic email ID on the GUROBI website.",source
+Step 1: Installing Gurobi - IVAN - Reproducing Testing Experiments,"b) Generate the license on https://portal.gurobi.com/iam/licenses/request/
+
+Choose Named-user Academic
+
+
+c)Use the command in the command prompt to generate the licesne. 
+
+
+",source
+Step 1: Installing Gurobi - IVAN - Reproducing Testing Experiments,"(If not automatically done, place the license in one of the following locations “/opt/gurobi/gurobi.lic” or “$HOME/gurobi.lic”)
+",source
+Step 2: Installing Python dependencies in a virtual environment - IVAN - Reproducing Testing Experiments,"First, make sure you have venv (https://docs.python.org/3/library/venv.html).
+",package_manager
+Step 2: Installing Python dependencies in a virtual environment - IVAN - Reproducing Testing Experiments,"If venv is not already installed, install it with the following command (Use appropriate python version)
+
+`sudo apt-get install python3.8-venv`
+
+(One can also use other environments such as conda, however we have not tested the experiments on other Python environments) 
+
+To create the virtual environment,
+
+`python3 -m venv env`
+
+Then to enter the virtual environment, run
+
+`source env/bin/activate`
+
+Install all packages including the compiler with
+
+`pip install -r requirements.txt` 
+
+Even if installation of ",package_manager
+Step 2: Installing Python dependencies in a virtual environment - IVAN - Reproducing Testing Experiments,"any of the libraries does not work, ignore and continue with the next steps
+",package_manager
+Install - DapStep - How to use,"```
+pip install -r requirements.txt
+```
+",package_manager
+Install - ai-cli-lib: AI help for CLI programs,"```sh
+cd src
+
+# Global installation for all users
+sudo make install
+
+# Local installation for the user executing the command
+make install PREFIX=~
+```
+",source
+Installing LogLead - LogLead,"Simply install with `pip`:
+
+```
+python -m pip install loglead
+```
+
+NOTE: pip version does not have the `tensorflow` dependencies necessary for `BertEmbeddings`.
+Install them manually (preferably in a conda enviroment).
+",source
+Known issues - LogLead - Installing LogLead,"- If `scikit-learn` wheel fails to compile, check that you can `gcc` and `g++` installed.
+
+",
+,"* git clone https://github.com/yylonly/medshare.git
+* cd medshare
+* docker-compose build
+* docker-compose up -d
+",container
+,**Abstract**: Contextual information plays a vital role for software developers when understanding and fixing a bug.,
+,Context can also be important in deep learning-based program repair to provide extra information about the bug and its fix.,
+,"Existing techniques, however, treat context in an arbitrary manner, by extracting code in close proximity of the buggy statement within the enclosing file, class, or method, without any analysis to find actual relations with the bug.",
+,"To reduce noise, they use a predefined maximum limit on the number of tokens to be used as context.",
+,"We present a program slicing-based approach, in which instead of arbitrarily including code as context, we analyze statements that have a control or data dependency on the buggy statement.",
+,"We propose a novel concept called dual slicing, which leverages the context of both buggy and fixed versions of the code to capture relevant repair ingredients.",
+,"We present our technique and tool called Katana, the first to apply slicing-based context for a program repair task.",
+,The results show Katana effectively preserves sufficient information for a model to choose contextual information while reducing noise.,
+,We compare against four recent state-of-the-art context-aware program repair techniques.,
+,"Our results show Katana fixes between 1.5 to 3.7 times more bugs than existing techniques.
+",
+Installation - sql4ml,"Sql4ml uses the open source project queryparser (https://github.com/uber/queryparser), also in Haskell.
+",other
+Installation - sql4ml,"To build queryparser, follow the instructions on the Github page of the project.
+
+",other
+Installation - sql4ml,"The sql4ml module is in file sql4ml_translator.hs.
+",other
+Installation - sql4ml,"You can load the module via ghci.
+
+",other
+Installation - sql4ml,"File main.hs containts two examples on how to translate SQL to TensorFlow code end-to-end.
+
+",other
+Installation - sql4ml,"To compile main.hs, run in a terminal:
+
+    ghc -o main main.hs
+
+Sql4ml uses the MySQL database (https://www.mysql.com/) for storing data.
+",other
+Installation - sql4ml,"To run the generated TensorFlow code, you need to install MySQL.
+",other
+Installation - sql4ml,"To install it follow the instructions in https://www.mysql.com/.
+
+After installing MySQL, you can run the SQL scripts in the directory /db_setups to create two toy databases, one based
+on the Boston Housing dataset (https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html) and the other based
+on the Iris dataset (https://archive.ics.uci.edu/ml/datasets/iris), which you can find in the directory /data.
+",other
+Install - migA,"First, execute `mvn clean -Dmaven.test.skip=true`
+
+",other
+"Recruiting - Recruiting and Preparation <a name=""prep""></a>","## Recruiting
+Participants in the co-design workshops should consist of a variety of software engineers, UX designers, and product managers representing the major software development roles at the site. It is ideal that experience and functioning roles of participants can reflect the demongraphics of the office, but be aware that software developers' time are expensive. The number of participants varied from 17 to 22 across our three workshops at SAP.
+",
+"Preparation - Recruiting and Preparation <a name=""prep""></a>","This workshop is recommended in a large conference room with roundtable seatings, and equipped with whiteboard spaces and wall displays.",
+"Preparation - Recruiting and Preparation <a name=""prep""></a>","If there are remote participants, collaborative design space is recommended, including SurfaceHub and Jamboard.",
+"Preparation - Recruiting and Preparation <a name=""prep""></a>",**LOTS of sticky notes** will be used during these sessions.,
+"Preparation - Recruiting and Preparation <a name=""prep""></a>","For a session size with 20 participants, two facilitators would be sufficient.
+
+",
+"Preparation - Recruiting and Preparation <a name=""prep""></a>","Agenda email and calendar invite need to be sent at least one week before the actuall workshop happen for coordinating time.
+",
+Setup - FINER,"
+```shell
+conda env create --name FINER --file finer.yml
+conda activate FINER
+```
+
+",source
+,"Open a system's console or an Anaconda Prompt depending on your python installation.
+
+First, clone the repository.
+```bash
+git clone https://github.com/OrtegaSA/squwals-repo
+```
+This creates a folder called squwals-repo. Change the directory to it.
+```bash
+cd squwals-repo
+```
+Install the package using pip.
+```bash
+pip install .
+```
+
+Alternativelly, you can download the folder squwals and copy it in your python working directory, or in some directory included in PYTHONPATH.
+
+  
+",source
+Installation - GLITCH,"To install run:
+```
+python -m pip install -e .
+```
+
+To use the tool for Chef you also need Ruby and its Ripper package installed.
+",source
+Set up - A Comparison of Reinforcement Learning Frameworks for Software Testing Tasks,"```
+pip install -r requirements.txt
+```",source
+Python &gt;= 3.6 - DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction - Getting Started - Environments Set-up,"*We suggest use virtual environment to avoid messing up your own environments.*
+
+~~~sh
+$ python -m venv ./venv
+$ source ./venv/bin/activate
+$ pip install -r ./server/deepstellar_backend/requirements.txt
+~~~
+",source
+NPM &gt;= 7 - DeepSeer: Interactive RNN Explanation and Debugging via State Abstraction - Getting Started - Environments Set-up,"~~~sh
+$ cd ./web/dashboard
+$ npm install
+~~~
+",source
